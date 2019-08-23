@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>${project.title}</title>
+		<!-- standard meta data -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Holger Machens">
+		<meta name="date" content="${system.datetime}">
+		<!-- meta data for search engines -->
+		<meta name="description" content="${project.description}">
+		<meta name="keywords" lang="en" content="${project.keywords}">
+		<!-- meta name="robots" content="noindex,nofollow"-->
+</head>
+<body>
+<h1 style="text-align: center">Java .Blend</h1>
+<br/>
+<p style="text-align: center"><em>Providing Type-Safe Read/Write File Access to</em></p>
+<p style="text-align: center"><em>the Full Blender DNA in Java</em></p>
+<br/>
+<p style="text-align: center"><b>Version ${project.version}</b></p>
+<br/>
+<p style="text-align: center">(open source and free)</p>
+<p style="text-align: center"><a href="https://github.com/homacs/org.cakelab.blender.io">github</a></p>
+<p style="text-align: center">${system.date}</p>
+<p style="text-align: center">Holger Machens</p>
+
+
+<h2 id="about">About</h2>
+<p>
+Java .Blend provides an object-oriented type-safe Java API to read and/or write 
+data in <a href="blender.org">Blender's</a> .blend files. The API reflects 
+all data types and structures of a .blend file, and thereby provides access to
+literally every single bit of data. This comes at the cost, that each Java .Blend 
+library can only be used with a certain range of Blender versions. Low-level access 
+happens fully transparent - no need for data lookup, byte ordering or conversion between 
+native types. The API provides a high level of freedom but demands some 
+in-depth knowledge in Blender's source code, too. The basics of
+Blender's data model are explained in the documentation and the example applications
+will help to get started.
+</p>
+<p>
+<a href="http://homac.cakelab.org/contact/">-homac</a>
+</p>
+
+
+
+<h2 id="download">Download</h2>
+<h3>Java .Blend Library</h3>
+<p>
+These libraries contain the Java .Blend APIs for a certain range of Blender versions.
+The version numbers provided in the table below are Blender's 
+version and minimum version supported by the library. If you need support for a 
+different Blender version refer to Section <a href="spec.html#GeneratingCode">Generating Data Model and Utilities</a> 
+in the <a href="spec.html">documentation</a>.
+</p>
+<table border="1">
+<tr><th>version</th><th>minversion</th><th></th><th></th><th></th></tr>
+<tr><th>2.80-75</th><th>2.80-0</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.80.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.80.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.80.zip">javadoc</a></td></tr>
+<tr><th>2.79-0</th><th>2.70-6</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.79.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.79.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.79.zip">javadoc</a></td></tr>
+<tr><th>2.78-0</th><th>2.70-6</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.78.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.78.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.78.zip">javadoc</a></td></tr>
+<tr><th>2.76-0</th><th>2.70-5</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.76.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.76.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.76.zip">javadoc</a></td></tr>
+<tr><th>2.72-2</th><th>2.70-5</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.72.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.72.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.72.zip">javadoc</a></td></tr>
+<tr><th>2.69-0</th><th>2.62-0</th><td><a href="downloads/JavaBlend-${project.version}-DNA-2.69.jar">binary</a></td><td><a href="downloads/JavaBlend-src-${project.version}-DNA-2.69.zip">src</a></td><td><a href="downloads/JavaBlend-javadoc-${project.version}-DNA-2.69.zip">javadoc</a></td></tr>
+</table>
+
+<h3>Examples</h3>
+<p>
+<a href="http://homac.cakelab.org/projects/JavaBlendViewer">Java .Blend Viewer</a> is 
+an example application which demonstrates reading of a simple scene 
+from a blender file. It also contains examples for writing blend files.
+</p>
+
+<h3>Java .Blend SDK</h3>
+<p>
+This package contains the source code of the code generator and utilities library. The code 
+generator is used to generate a Java.Blend API for a certain range of Blender versions.
+</p>
+<table border="1">
+<tr><th>version</th><th></th><th></th></tr>
+<tr><th>${project.version}</th><td><a href="downloads/JavaBlend-SDK-${project.version}.jar">binary</a></td><td><a href="downloads/JavaBlend-SDK-src-${project.version}.zip">src</a></td></tr>
+<tr><th>1.0.4</th><td><a href="downloads/JavaBlend-SDK-1.0.4.jar">binary</a></td><td><a href="downloads/JavaBlend-SDK-src-1.0.4.zip">src</a></td></tr>
+</table>
+
+<h3>Java .Blend's Externally Maintained Documentation</h3>
+<p>
+Source code documentation for generated facade classes is maintained in a separate repository on github.
+</p>
+<p>
+<b>Link: </b><a href="https://github.com/homacs/JavaBlendDocs">https://github.com/homacs/JavaBlendDocs</a>
+</p>
+
+<h2 id="changelog">Change Log</h2>
+<ul>
+<li>[1.1.2-r1446][16/08/2019]: Changes for Blender 2.80.
+	<ul>
+	<li>add: added new block codes</li>
+	</ul>
+</li>
+<li>[1.1.1-r1271][20/10/2017]: adjusted scripts to generate DNA lib for Blender 2.79.
+	<ul>
+	<li>add: javadoc packages</li>
+	<li>fix: wrong path for java.blend docs</li>
+	<li>fix: crash in type cast when parameter is null</li>
+	<li>add: copy constructor for all generated facade classes</li>
+	<li>mod: set methods accept argument null interpreting it as NULL pointer</li>
+	<li>mod: get methods of pointers return null if the C pointer refers to NULL</li>
+	</ul>
+</li>
+<li>[1.1.0-r1117][12/11/2016]: fixed bugs due to overlapping blocks since 2.76 and even more source code documentation 
+	<ul>
+	<li>Added support for offheap areas (see documentation).</li>
+	<li>Fixed issue with TreeStoreElem (since 2.76) due to overlapping address areas in blocks (offheap).</li>
+	<li>Added tools to extract source code documentation from blender source code using doxygen.</li>
+	</ul>
+</li>
+<li>[1.0.4-r759][18/01/2016]: clarified versioning and conversion between DNA versions 
+	<ul>
+	<li>Added compatibility check.</li>
+	<li>Added more details on necessary semantic conversion between DNA versions in documentation.</li>
+	</ul>
+</li>
+<li>[1.0.3-r755][18/01/2016]: fixed build issue
+	<ul>
+	<li>Fixed missing sdna image.</li>
+	</ul>
+</li>
+<li>[1.0.2-r738][10/01/2016]: minor improvement
+	<ul>
+	<li>Added static method to check file before instantiating MainLib.</li>
+	</ul>
+</li>
+<li>[1.0.1-r718][06/01/2016]: minor hotfix
+	<ul>
+	<li>Added missing metainf in jar.</li>
+	<li>Fixed issue with unicode on windows.</li>
+	<li>Fixed issue with reading of file version specifiers in newer Blender versions.</li>
+	</ul>
+</li>
+<li>[1.0.0-r702][04/01/2016]: 1st release.
+	<ul>
+	<li>Added licenses for all packages.</li>
+	<li>Added documentation with an introduction to Blender DNA, Java .Blend's system specification and a getting started guide.</li>
+	<li>Moved documentation files for generated classes in a separate project.</li>
+	<li>Reorganised the website.</li>
+	<li>Finished Java .Blend's own source code documentation.</li>
+	<li>Finished utilities package with MainLib and Factory class.</li>
+	<li>Added example to write a .blend file compatible with Blender's clipboard functionality.</li>
+	<li>Added example to convert a .blend file into a JSON representation.</li>
+	<li>Fixed remaining bugs.</li>
+	</ul>
+</li>
+<li>[0.0.2][r658]: Second tech. demo comprising all specified features
+	<ul>
+	<li>Refactored the hell out of it!</li>
+	<li>Fixed several bugs</li>
+	<li>Improved source code documentation all over the place</li>
+	<li>Added support for Blender <b>version compatibility checks</b> against data model version</li>
+	<li>Introduced Blender file <b>write access</b></li>
+	<li>Introduced Blender <b>file creation</b> and initialisation (with StructDNA and FileGlobal)</li>
+	<li>Added creation of StructDNA to support initialisation of .blend files.</li>
+	<li>Added Blender <b>factory class</b> supporting allocation of blocks and implicit assignment to facades</li>
+	<li>Made generation of Blender version specific utilities optional, since those are not fully generic.</li>
+	<li>Introduced <b>allocator to manage virtual addresses</b> of a block table for block allocation</li>
+	<li>Introduced <b>documentation system</b> to provide more information to generated classes</li>
+	<li>Added script to extract documentation from Blender python api</li>
+	<li>Documentation system considers file version to retrieve appropriate version of available documentation</li>
+	<li>Added several methods to convert between strings, arrays, pointers considering null termination and charsets.</li>
+	<li>Added conversion of pointers or array facades to Java native scalar type arrays</li>
+	<li>Introduced iterators for arrays</li>
+	<li>Optimised bulk data retrieval</li>
+	<li>Improved runtime adaption to architecture dependent encoding (byte order and address width)</li>
+	</ul>
+</li> <!-- 0.0.2 -->
+<li>[0.0.1][r617]: First demo of model generation and data reading capabilities
+	<ul>
+	<li>add: Facade concept for structured C types</li>
+	<li>add: Abstraction for C pointers and arrays</li>
+	<li>add: data model generation from StructDNA</li>
+	<li>add: runtime conversion between Java and native data representations</li>
+	<li>mod: demo application (cube.blend)</li>
+	</ul>
+</li> <!-- 0.0.1 -->
+</ul>
+
+<h2 id="Licensing">Licensing</h2>
+<h3>Java .Blend SDK</h3>
+<p>
+Java .Blend SDK is published under the terms of 
+the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License V2.0</a>. 
+</p>
+<h3>Java .Blend's Externally Maintained Documentation</h3>
+<p>
+<a href="https://github.com/homacs/JavaBlendDocs">Java .Blend's Externally Maintained Documentation</a> is licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>.
+</p>
+<h3>Pregenerated Data Model Packages</h3>
+<p>
+Binary packages are licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License V2.0</a>.
+</p>
+<p>
+Source code packages contain documentation of Java .Blend's externally maintained documentation, 
+and therefore licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>.
+</p>
+<h3>Reasons and Effects of the Different Licenses</h3>
+<p>
+The reason for the different licensing is, that parts of the documentation are copied
+from Blender source code and Blender is published under GPLv2. Thus, the documentation is
+derived work and has to respect the terms of Blender's license.
+</p>
+<p>
+The different licenses mainly affect redistribution of work based on
+the documentation files. This means, if someone redistributes work 
+which includes the original or modified documentation files or 
+source code which contains parts of the documentation files 
+(such as comments in generated facade classes), then this work has 
+to respect the terms of the GPLv3.
+</p>
+<p>
+Thus, if you consider redistributing derived work under a different 
+license compatible with the Apache license of the SDK, than you just 
+need to generate facade classes without Javadoc comments. Refer to 
+Section <a href="spec.html#GeneratingCode">Generating Data Model and 
+Utilities</a> in Java .Blend's documentation in order to learn how 
+to do this.
+</p>
+<p>
+If there are still licensing issues that can't be handled that way, 
+than feel free to contact me and I'll try to help find a solution - even if I really hate this topic!</p>
+</body>
+</html>
