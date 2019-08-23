@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -18,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=36, size64=40)
 public class bMotionPath extends CFacade {
 
 	/**
@@ -29,7 +30,7 @@ public class bMotionPath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 341;
+	public static final int __DNA__SDNA_INDEX = 345;
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
@@ -124,6 +125,52 @@ public class bMotionPath extends CFacade {
 	public static final long[] __DNA__FIELD__end_frame = new long[]{12, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional custom color </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD__color);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_color = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'color'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__color = new long[]{16, 20};
+
+	/**
+	 * Field descriptor (offset) for struct member 'line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> line thickness </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD__line_thickness);
+	 * CPointer&lt;Integer&gt; p_line_thickness = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'line_thickness'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__line_thickness = new long[]{28, 32};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -144,7 +191,7 @@ public class bMotionPath extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__flag = new long[]{32, 36};
 
 	public bMotionPath(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -295,6 +342,86 @@ public class bMotionPath extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional custom color </p>
+	 * @see #__DNA__FIELD__color
+	 */
+	
+	public CArrayFacade<Float> getColor() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional custom color </p>
+	 * @see #__DNA__FIELD__color
+	 */
+	
+	public void setColor(CArrayFacade<Float> color) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 20;
+		} else {
+			__dna__offset = 16;
+		}
+		if (__io__equals(color, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, color)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, color);
+		} else {
+			__io__generic__copy( getColor(), color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> line thickness </p>
+	 * @see #__DNA__FIELD__line_thickness
+	 */
+	
+	public int getLine_thickness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 32);
+		} else {
+			return __io__block.readInt(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> line thickness </p>
+	 * @see #__DNA__FIELD__line_thickness
+	 */
+	
+	public void setLine_thickness(int line_thickness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 32, line_thickness);
+		} else {
+			__io__block.writeInt(__io__address + 28, line_thickness);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -305,9 +432,9 @@ public class bMotionPath extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 32);
 		}
 	}
 
@@ -322,9 +449,9 @@ public class bMotionPath extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, flag);
+			__io__block.writeInt(__io__address + 36, flag);
 		} else {
-			__io__block.writeInt(__io__address + 16, flag);
+			__io__block.writeInt(__io__address + 32, flag);
 		}
 	}
 

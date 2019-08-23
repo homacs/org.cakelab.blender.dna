@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Render Layers Render Layer </p>
  */
 
-@CMetaData(size32=152, size64=184)
+@CMetaData(size32=156, size64=192)
 public class SceneRenderLayer extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class SceneRenderLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 170;
+	public static final int __DNA__SDNA_INDEX = 173;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -317,6 +317,26 @@ public class SceneRenderLayer extends CFacade {
 	public static final long[] __DNA__FIELD__pass_alpha_threshold = new long[]{108, 124};
 
 	/**
+	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SceneRenderLayer scenerenderlayer = ...;
+	 * CPointer&lt;Object&gt; p = scenerenderlayer.__dna__addressof(SceneRenderLayer.__DNA__FIELD__prop);
+	 * CPointer&lt;CPointer&lt;IDProperty&gt;&gt; p_prop = p.cast(new Class[]{CPointer.class, IDProperty.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prop'</li>
+	 * <li>Signature: 'IDProperty*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prop = new long[]{112, 128};
+
+	/**
 	 * Field descriptor (offset) for struct member 'freestyleConfig'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -334,7 +354,7 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/56</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__freestyleConfig = new long[]{112, 128};
+	public static final long[] __DNA__FIELD__freestyleConfig = new long[]{116, 136};
 
 	public SceneRenderLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -787,6 +807,38 @@ public class SceneRenderLayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public CPointer<IDProperty> getProp() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
+		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public void setProp(CPointer<IDProperty> prop) throws IOException
+	{
+		long __address = ((prop == null) ? 0 : prop.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 128, __address);
+		} else {
+			__io__block.writeLong(__io__address + 112, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'freestyleConfig'.
 	 * @see #__DNA__FIELD__freestyleConfig
 	 */
@@ -794,9 +846,9 @@ public class SceneRenderLayer extends CFacade {
 	public FreestyleConfig getFreestyleConfig() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new FreestyleConfig(__io__address + 128, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 136, __io__block, __io__blockTable);
 		} else {
-			return new FreestyleConfig(__io__address + 112, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 116, __io__block, __io__blockTable);
 		}
 	}
 
@@ -809,9 +861,9 @@ public class SceneRenderLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 116;
 		}
 		if (__io__equals(freestyleConfig, __io__address + __dna__offset)) {
 			return;

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Poses PoseChannel ------------------------------<mdash/><mdash/>  PoseChannel</p><p> A PoseChannel stores the results of Actions and transform information with respect to the restposition of Armature bones </p>
+ *  Poses PoseChannel ----------------------------------  PoseChannel</p><p> A PoseChannel stores the results of Actions and transform information with respect to the restposition of Armature bones </p>
  */
 
 @CMetaData(size32=528, size64=600)
@@ -29,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 343;
+	public static final int __DNA__SDNA_INDEX = 347;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

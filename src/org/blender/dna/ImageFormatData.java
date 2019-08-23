@@ -29,7 +29,7 @@ public class ImageFormatData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 176;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
@@ -175,7 +175,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
+	 * <p>--  format specific --  OpenEXR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -669,7 +669,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
+	 * <p>--  format specific --  OpenEXR </p>
 	 * @see #__DNA__FIELD__exr_codec
 	 */
 	
@@ -686,7 +686,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
+	 * <p>--  format specific --  OpenEXR </p>
 	 * @see #__DNA__FIELD__exr_codec
 	 */
 	

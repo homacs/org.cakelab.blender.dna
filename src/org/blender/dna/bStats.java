@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Assorted {@link Scene}  Data -------------------------------------<mdash/><mdash/>  Stats (show in Info header) </p>
+ *  Assorted {@link Scene}  Data -----------------------------------------  Stats (show in Info header) </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -28,7 +28,7 @@ public class bStats extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 196;
+	public static final int __DNA__SDNA_INDEX = 200;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totobj'.

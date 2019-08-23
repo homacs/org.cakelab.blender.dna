@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=108, size64=128)
+@CMetaData(size32=116, size64=136)
 public class MirrorModifierData extends CFacade {
 
 	/**
@@ -114,6 +115,26 @@ public class MirrorModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__tolerance = new long[]{100, 116};
 
 	/**
+	 * Field descriptor (offset) for struct member 'uv_offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MirrorModifierData mirrormodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mirrormodifierdata.__dna__addressof(MirrorModifierData.__DNA__FIELD__uv_offset);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_uv_offset = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_offset'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_offset = new long[]{104, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'mirror_ob'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -131,7 +152,7 @@ public class MirrorModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mirror_ob = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__mirror_ob = new long[]{112, 128};
 
 	public MirrorModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -272,6 +293,46 @@ public class MirrorModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'uv_offset'.
+	 * @see #__DNA__FIELD__uv_offset
+	 */
+	
+	public CArrayFacade<Float> getUv_offset() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_offset'.
+	 * @see #__DNA__FIELD__uv_offset
+	 */
+	
+	public void setUv_offset(CArrayFacade<Float> uv_offset) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 120;
+		} else {
+			__dna__offset = 104;
+		}
+		if (__io__equals(uv_offset, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, uv_offset)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, uv_offset);
+		} else {
+			__io__generic__copy( getUv_offset(), uv_offset);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'mirror_ob'.
 	 * @see #__DNA__FIELD__mirror_ob
 	 */
@@ -280,9 +341,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -297,9 +358,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __address = ((mirror_ob == null) ? 0 : mirror_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 

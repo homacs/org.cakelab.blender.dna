@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Drivers --------------------------------<mdash/><mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
+ * <p> Drivers ------------------------------------  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
 @CMetaData(size32=80, size64=88)
@@ -28,7 +28,7 @@ public class DriverTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 512;
+	public static final int __DNA__SDNA_INDEX = 516;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Visualization General ------------------<mdash/><mdash/><mdash/>  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
+ * <p> Visualization General ------------------------  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
  */
 
 @CMetaData(size32=48, size64=48)
@@ -27,13 +27,13 @@ public class bAnimVizSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 342;
+	public static final int __DNA__SDNA_INDEX = 346;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ghost_sf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings --------------<mdash/>  </p>
+	 * <p> Onion-Skinning Settings ----------------  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,7 +191,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -214,7 +214,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -400,7 +400,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'ghost_sf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings --------------<mdash/>  </p>
+	 * <p> Onion-Skinning Settings ----------------  </p>
 	 * @see #__DNA__FIELD__ghost_sf
 	 */
 	
@@ -417,7 +417,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'ghost_sf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings --------------<mdash/>  </p>
+	 * <p> Onion-Skinning Settings ----------------  </p>
 	 * @see #__DNA__FIELD__ghost_sf
 	 */
 	
@@ -632,7 +632,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -649,7 +649,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ------------------<mdash/><mdash/>  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -666,7 +666,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	
@@ -683,7 +683,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	

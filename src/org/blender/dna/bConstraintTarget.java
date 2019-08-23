@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Multiple-target constraints ---------------<mdash/><mdash/>  This struct defines a constraint target. It is used during constraint solving regardless of how many targets the constraint has. </p>
+ * <p> Multiple-target constraints -------------------  This struct defines a constraint target. It is used during constraint solving regardless of how many targets the constraint has. </p>
  */
 
 @CMetaData(size32=148, size64=160)
@@ -28,7 +28,7 @@ public class bConstraintTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 354;
+	public static final int __DNA__SDNA_INDEX = 358;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

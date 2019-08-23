@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeHueSat'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> NOTE: Only for do-version code. </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -26,7 +27,7 @@ public class NodeHueSat extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 411;
+	public static final int __DNA__SDNA_INDEX = 415;
 
 	/**
 	 * Field descriptor (offset) for struct member 'hue'.

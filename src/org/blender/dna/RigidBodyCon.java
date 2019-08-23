@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  *  RigidBody Constraint RigidBodyConstraint (rbc)</p><p> Represents an constraint connecting two rigid bodies. </p>
  */
 
-@CMetaData(size32=116, size64=128)
+@CMetaData(size32=140, size64=152)
 public class RigidBodyCon extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class RigidBodyCon extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 570;
+	public static final int __DNA__SDNA_INDEX = 574;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob1'.
@@ -498,6 +498,66 @@ public class RigidBodyCon extends CFacade {
 	public static final long[] __DNA__FIELD__spring_stiffness_z = new long[]{80, 88};
 
 	/**
+	 * Field descriptor (offset) for struct member 'spring_stiffness_ang_x'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_stiffness_ang_x);
+	 * CPointer&lt;Float&gt; p_spring_stiffness_ang_x = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_stiffness_ang_x'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_stiffness_ang_x = new long[]{84, 92};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spring_stiffness_ang_y'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_stiffness_ang_y);
+	 * CPointer&lt;Float&gt; p_spring_stiffness_ang_y = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_stiffness_ang_y'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_stiffness_ang_y = new long[]{88, 96};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spring_stiffness_ang_z'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_stiffness_ang_z);
+	 * CPointer&lt;Float&gt; p_spring_stiffness_ang_z = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_stiffness_ang_z'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_stiffness_ang_z = new long[]{92, 100};
+
+	/**
 	 * Field descriptor (offset) for struct member 'spring_damping_x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -518,7 +578,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spring_damping_x = new long[]{84, 92};
+	public static final long[] __DNA__FIELD__spring_damping_x = new long[]{96, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spring_damping_y'.
@@ -538,7 +598,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spring_damping_y = new long[]{88, 96};
+	public static final long[] __DNA__FIELD__spring_damping_y = new long[]{100, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spring_damping_z'.
@@ -558,7 +618,67 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spring_damping_z = new long[]{92, 100};
+	public static final long[] __DNA__FIELD__spring_damping_z = new long[]{104, 112};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spring_damping_ang_x'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_damping_ang_x);
+	 * CPointer&lt;Float&gt; p_spring_damping_ang_x = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_damping_ang_x'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_damping_ang_x = new long[]{108, 116};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spring_damping_ang_y'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_damping_ang_y);
+	 * CPointer&lt;Float&gt; p_spring_damping_ang_y = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_damping_ang_y'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_damping_ang_y = new long[]{112, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spring_damping_ang_z'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyCon rigidbodycon = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodycon.__dna__addressof(RigidBodyCon.__DNA__FIELD__spring_damping_ang_z);
+	 * CPointer&lt;Float&gt; p_spring_damping_ang_z = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spring_damping_ang_z'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spring_damping_ang_z = new long[]{116, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motor_lin_target_velocity'.
@@ -581,7 +701,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motor_lin_target_velocity = new long[]{96, 104};
+	public static final long[] __DNA__FIELD__motor_lin_target_velocity = new long[]{120, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motor_ang_target_velocity'.
@@ -604,7 +724,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motor_ang_target_velocity = new long[]{100, 108};
+	public static final long[] __DNA__FIELD__motor_ang_target_velocity = new long[]{124, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motor_lin_max_impulse'.
@@ -627,7 +747,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motor_lin_max_impulse = new long[]{104, 112};
+	public static final long[] __DNA__FIELD__motor_lin_max_impulse = new long[]{128, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motor_ang_max_impulse'.
@@ -650,7 +770,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motor_ang_max_impulse = new long[]{108, 116};
+	public static final long[] __DNA__FIELD__motor_ang_max_impulse = new long[]{132, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'physics_constraint'.
@@ -673,7 +793,7 @@ public class RigidBodyCon extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__physics_constraint = new long[]{112, 120};
+	public static final long[] __DNA__FIELD__physics_constraint = new long[]{136, 144};
 
 	public RigidBodyCon(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1362,6 +1482,90 @@ public class RigidBodyCon extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'spring_stiffness_ang_x'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_x
+	 */
+	
+	public float getSpring_stiffness_ang_x() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 92);
+		} else {
+			return __io__block.readFloat(__io__address + 84);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_stiffness_ang_x'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_x
+	 */
+	
+	public void setSpring_stiffness_ang_x(float spring_stiffness_ang_x) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 92, spring_stiffness_ang_x);
+		} else {
+			__io__block.writeFloat(__io__address + 84, spring_stiffness_ang_x);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spring_stiffness_ang_y'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_y
+	 */
+	
+	public float getSpring_stiffness_ang_y() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 96);
+		} else {
+			return __io__block.readFloat(__io__address + 88);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_stiffness_ang_y'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_y
+	 */
+	
+	public void setSpring_stiffness_ang_y(float spring_stiffness_ang_y) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 96, spring_stiffness_ang_y);
+		} else {
+			__io__block.writeFloat(__io__address + 88, spring_stiffness_ang_y);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spring_stiffness_ang_z'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_z
+	 */
+	
+	public float getSpring_stiffness_ang_z() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 100);
+		} else {
+			return __io__block.readFloat(__io__address + 92);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_stiffness_ang_z'.
+	 * @see #__DNA__FIELD__spring_stiffness_ang_z
+	 */
+	
+	public void setSpring_stiffness_ang_z(float spring_stiffness_ang_z) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 100, spring_stiffness_ang_z);
+		} else {
+			__io__block.writeFloat(__io__address + 92, spring_stiffness_ang_z);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'spring_damping_x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1372,9 +1576,9 @@ public class RigidBodyCon extends CFacade {
 	public float getSpring_damping_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 104);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 96);
 		}
 	}
 
@@ -1389,9 +1593,9 @@ public class RigidBodyCon extends CFacade {
 	public void setSpring_damping_x(float spring_damping_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 92, spring_damping_x);
+			__io__block.writeFloat(__io__address + 104, spring_damping_x);
 		} else {
-			__io__block.writeFloat(__io__address + 84, spring_damping_x);
+			__io__block.writeFloat(__io__address + 96, spring_damping_x);
 		}
 	}
 
@@ -1403,9 +1607,9 @@ public class RigidBodyCon extends CFacade {
 	public float getSpring_damping_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 108);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -1417,9 +1621,9 @@ public class RigidBodyCon extends CFacade {
 	public void setSpring_damping_y(float spring_damping_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, spring_damping_y);
+			__io__block.writeFloat(__io__address + 108, spring_damping_y);
 		} else {
-			__io__block.writeFloat(__io__address + 88, spring_damping_y);
+			__io__block.writeFloat(__io__address + 100, spring_damping_y);
 		}
 	}
 
@@ -1431,9 +1635,9 @@ public class RigidBodyCon extends CFacade {
 	public float getSpring_damping_z() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -1445,9 +1649,93 @@ public class RigidBodyCon extends CFacade {
 	public void setSpring_damping_z(float spring_damping_z) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, spring_damping_z);
+			__io__block.writeFloat(__io__address + 112, spring_damping_z);
 		} else {
-			__io__block.writeFloat(__io__address + 92, spring_damping_z);
+			__io__block.writeFloat(__io__address + 104, spring_damping_z);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spring_damping_ang_x'.
+	 * @see #__DNA__FIELD__spring_damping_ang_x
+	 */
+	
+	public float getSpring_damping_ang_x() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 116);
+		} else {
+			return __io__block.readFloat(__io__address + 108);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_damping_ang_x'.
+	 * @see #__DNA__FIELD__spring_damping_ang_x
+	 */
+	
+	public void setSpring_damping_ang_x(float spring_damping_ang_x) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 116, spring_damping_ang_x);
+		} else {
+			__io__block.writeFloat(__io__address + 108, spring_damping_ang_x);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spring_damping_ang_y'.
+	 * @see #__DNA__FIELD__spring_damping_ang_y
+	 */
+	
+	public float getSpring_damping_ang_y() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 120);
+		} else {
+			return __io__block.readFloat(__io__address + 112);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_damping_ang_y'.
+	 * @see #__DNA__FIELD__spring_damping_ang_y
+	 */
+	
+	public void setSpring_damping_ang_y(float spring_damping_ang_y) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 120, spring_damping_ang_y);
+		} else {
+			__io__block.writeFloat(__io__address + 112, spring_damping_ang_y);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spring_damping_ang_z'.
+	 * @see #__DNA__FIELD__spring_damping_ang_z
+	 */
+	
+	public float getSpring_damping_ang_z() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 124);
+		} else {
+			return __io__block.readFloat(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spring_damping_ang_z'.
+	 * @see #__DNA__FIELD__spring_damping_ang_z
+	 */
+	
+	public void setSpring_damping_ang_z(float spring_damping_ang_z) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 124, spring_damping_ang_z);
+		} else {
+			__io__block.writeFloat(__io__address + 116, spring_damping_ang_z);
 		}
 	}
 
@@ -1462,9 +1750,9 @@ public class RigidBodyCon extends CFacade {
 	public float getMotor_lin_target_velocity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -1479,9 +1767,9 @@ public class RigidBodyCon extends CFacade {
 	public void setMotor_lin_target_velocity(float motor_lin_target_velocity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, motor_lin_target_velocity);
+			__io__block.writeFloat(__io__address + 128, motor_lin_target_velocity);
 		} else {
-			__io__block.writeFloat(__io__address + 96, motor_lin_target_velocity);
+			__io__block.writeFloat(__io__address + 120, motor_lin_target_velocity);
 		}
 	}
 
@@ -1496,9 +1784,9 @@ public class RigidBodyCon extends CFacade {
 	public float getMotor_ang_target_velocity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -1513,9 +1801,9 @@ public class RigidBodyCon extends CFacade {
 	public void setMotor_ang_target_velocity(float motor_ang_target_velocity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, motor_ang_target_velocity);
+			__io__block.writeFloat(__io__address + 132, motor_ang_target_velocity);
 		} else {
-			__io__block.writeFloat(__io__address + 100, motor_ang_target_velocity);
+			__io__block.writeFloat(__io__address + 124, motor_ang_target_velocity);
 		}
 	}
 
@@ -1530,9 +1818,9 @@ public class RigidBodyCon extends CFacade {
 	public float getMotor_lin_max_impulse() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -1547,9 +1835,9 @@ public class RigidBodyCon extends CFacade {
 	public void setMotor_lin_max_impulse(float motor_lin_max_impulse) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, motor_lin_max_impulse);
+			__io__block.writeFloat(__io__address + 136, motor_lin_max_impulse);
 		} else {
-			__io__block.writeFloat(__io__address + 104, motor_lin_max_impulse);
+			__io__block.writeFloat(__io__address + 128, motor_lin_max_impulse);
 		}
 	}
 
@@ -1564,9 +1852,9 @@ public class RigidBodyCon extends CFacade {
 	public float getMotor_ang_max_impulse() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -1581,9 +1869,9 @@ public class RigidBodyCon extends CFacade {
 	public void setMotor_ang_max_impulse(float motor_ang_max_impulse) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, motor_ang_max_impulse);
+			__io__block.writeFloat(__io__address + 140, motor_ang_max_impulse);
 		} else {
-			__io__block.writeFloat(__io__address + 108, motor_ang_max_impulse);
+			__io__block.writeFloat(__io__address + 132, motor_ang_max_impulse);
 		}
 	}
 
@@ -1599,9 +1887,9 @@ public class RigidBodyCon extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1619,9 +1907,9 @@ public class RigidBodyCon extends CFacade {
 	{
 		long __address = ((physics_constraint == null) ? 0 : physics_constraint.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 

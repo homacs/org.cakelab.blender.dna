@@ -26,7 +26,7 @@ public class MaskSpline extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 565;
+	public static final int __DNA__SDNA_INDEX = 569;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

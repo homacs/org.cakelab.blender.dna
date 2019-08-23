@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  NLA - Non-Linear Animation NLA Strips -------------------------------<mdash/><mdash/>  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
+ *  NLA - Non-Linear Animation NLA Strips -----------------------------------  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
  */
 
 @CMetaData(size32=164, size64=208)
@@ -29,7 +29,7 @@ public class NlaStrip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 519;
+	public static final int __DNA__SDNA_INDEX = 523;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

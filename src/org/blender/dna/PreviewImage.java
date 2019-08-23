@@ -179,6 +179,29 @@ public class PreviewImage extends CFacade {
 	public static final long[] __DNA__FIELD__icon_id = new long[]{40, 56};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PreviewImage previewimage = ...;
+	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__tag);
+	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag = new long[]{44, 60};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -192,34 +215,11 @@ public class PreviewImage extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{44, 60};
-
-	/**
-	 * Field descriptor (offset) for struct member 'use_deferred'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for now a mere bool, if we add more deferred loading methods we can switch to bitflag. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * PreviewImage previewimage = ...;
-	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__use_deferred);
-	 * CPointer&lt;Byte&gt; p_use_deferred = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'use_deferred'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__use_deferred = new long[]{47, 63};
+	public static final long[] __DNA__FIELD__pad = new long[]{46, 62};
 
 	public PreviewImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -516,6 +516,40 @@ public class PreviewImage extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public short getTag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 60);
+		} else {
+			return __io__block.readShort(__io__address + 44);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public void setTag(short tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 60, tag);
+		} else {
+			__io__block.writeShort(__io__address + 44, tag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
@@ -524,12 +558,12 @@ public class PreviewImage extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 62, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -542,9 +576,9 @@ public class PreviewImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 62;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 46;
 		}
 		if (__io__equals(pad, __io__address + __dna__offset)) {
 			return;
@@ -552,40 +586,6 @@ public class PreviewImage extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
 		} else {
 			__io__generic__copy( getPad(), pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'use_deferred'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for now a mere bool, if we add more deferred loading methods we can switch to bitflag. </p>
-	 * @see #__DNA__FIELD__use_deferred
-	 */
-	
-	public byte getUse_deferred() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 63);
-		} else {
-			return __io__block.readByte(__io__address + 47);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'use_deferred'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for now a mere bool, if we add more deferred loading methods we can switch to bitflag. </p>
-	 * @see #__DNA__FIELD__use_deferred
-	 */
-	
-	public void setUse_deferred(byte use_deferred) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 63, use_deferred);
-		} else {
-			__io__block.writeByte(__io__address + 47, use_deferred);
 		}
 	}
 

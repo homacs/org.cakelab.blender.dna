@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> runtime only, but include here for rna access </p>
  */
 
-@CMetaData(size32=168, size64=184)
+@CMetaData(size32=176, size64=192)
 public class DupliObject extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class DupliObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 152;
+	public static final int __DNA__SDNA_INDEX = 155;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -267,6 +267,49 @@ public class DupliObject extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__particle_system = new long[]{164, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'random_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Random id for this dupli object
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DupliObject dupliobject = ...;
+	 * CPointer&lt;Object&gt; p = dupliobject.__dna__addressof(DupliObject.__DNA__FIELD__random_id);
+	 * CPointer&lt;Integer&gt; p_random_id = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'random_id'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__random_id = new long[]{168, 184};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DupliObject dupliobject = ...;
+	 * CPointer&lt;Object&gt; p = dupliobject.__dna__addressof(DupliObject.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{172, 188};
 
 	public DupliObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -682,6 +725,68 @@ public class DupliObject extends CFacade {
 			__io__block.writeLong(__io__address + 176, __address);
 		} else {
 			__io__block.writeLong(__io__address + 164, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'random_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Random id for this dupli object
+	 * @see #__DNA__FIELD__random_id
+	 */
+	
+	public int getRandom_id() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 184);
+		} else {
+			return __io__block.readInt(__io__address + 168);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'random_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Random id for this dupli object
+	 * @see #__DNA__FIELD__random_id
+	 */
+	
+	public void setRandom_id(int random_id) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 184, random_id);
+		} else {
+			__io__block.writeInt(__io__address + 168, random_id);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 188);
+		} else {
+			return __io__block.readInt(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 188, pad);
+		} else {
+			__io__block.writeInt(__io__address + 172, pad);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Image/UV Editor ======================================== Image/UV Editor </p>
  */
 
-@CMetaData(size32=10528, size64=10576)
+@CMetaData(size32=10536, size64=10584)
 public class SpaceImage extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 224;
+	public static final int __DNA__SDNA_INDEX = 228;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -567,6 +567,49 @@ public class SpaceImage extends CFacade {
 	public static final long[] __DNA__FIELD__around = new long[]{10515, 10559};
 
 	/**
+	 * Field descriptor (offset) for struct member 'other_uv_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter settings when editor shows other object's UVs. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__other_uv_filter);
+	 * CPointer&lt;Integer&gt; p_other_uv_filter = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'other_uv_filter'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__other_uv_filter = new long[]{10516, 10560};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__pad2);
+	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{10520, 10564};
+
+	/**
 	 * Field descriptor (offset) for struct member 'mask_info'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -584,7 +627,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_info = new long[]{10516, 10560};
+	public static final long[] __DNA__FIELD__mask_info = new long[]{10524, 10568};
 
 	public SpaceImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1427,6 +1470,68 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'other_uv_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter settings when editor shows other object's UVs. </p>
+	 * @see #__DNA__FIELD__other_uv_filter
+	 */
+	
+	public int getOther_uv_filter() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 10560);
+		} else {
+			return __io__block.readInt(__io__address + 10516);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'other_uv_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter settings when editor shows other object's UVs. </p>
+	 * @see #__DNA__FIELD__other_uv_filter
+	 */
+	
+	public void setOther_uv_filter(int other_uv_filter) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 10560, other_uv_filter);
+		} else {
+			__io__block.writeInt(__io__address + 10516, other_uv_filter);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public int getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 10564);
+		} else {
+			return __io__block.readInt(__io__address + 10520);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(int pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 10564, pad2);
+		} else {
+			__io__block.writeInt(__io__address + 10520, pad2);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'mask_info'.
 	 * @see #__DNA__FIELD__mask_info
 	 */
@@ -1434,9 +1539,9 @@ public class SpaceImage extends CFacade {
 	public MaskSpaceInfo getMask_info() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MaskSpaceInfo(__io__address + 10560, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10568, __io__block, __io__blockTable);
 		} else {
-			return new MaskSpaceInfo(__io__address + 10516, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10524, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1449,9 +1554,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10560;
+			__dna__offset = 10568;
 		} else {
-			__dna__offset = 10516;
+			__dna__offset = 10524;
 		}
 		if (__io__equals(mask_info, __io__address + __dna__offset)) {
 			return;

@@ -27,7 +27,7 @@ public class BoidSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 534;
+	public static final int __DNA__SDNA_INDEX = 538;
 
 	/**
 	 * Field descriptor (offset) for struct member 'options'.

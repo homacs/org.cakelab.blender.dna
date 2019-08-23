@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=144, size64=192)
+@CMetaData(size32=152, size64=200)
 public class CollisionModifierData extends CFacade {
 
 	/**
@@ -290,6 +291,49 @@ public class CollisionModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__time_xnew = new long[]{136, 180};
 
 	/**
+	 * Field descriptor (offset) for struct member 'is_static'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collider doesn't move this frame, i.e. x[].co==xnew[].co </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CollisionModifierData collisionmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__is_static);
+	 * CPointer&lt;Byte&gt; p_is_static = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'is_static'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__is_static = new long[]{140, 184};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CollisionModifierData collisionmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{141, 185};
+
+	/**
 	 * Field descriptor (offset) for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -310,7 +354,7 @@ public class CollisionModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bvhtree = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__bvhtree = new long[]{148, 192};
 
 	public CollisionModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -735,6 +779,80 @@ public class CollisionModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'is_static'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collider doesn't move this frame, i.e. x[].co==xnew[].co </p>
+	 * @see #__DNA__FIELD__is_static
+	 */
+	
+	public byte getIs_static() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 184);
+		} else {
+			return __io__block.readByte(__io__address + 140);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'is_static'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collider doesn't move this frame, i.e. x[].co==xnew[].co </p>
+	 * @see #__DNA__FIELD__is_static
+	 */
+	
+	public void setIs_static(byte is_static) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 184, is_static);
+		} else {
+			__io__block.writeByte(__io__address + 140, is_static);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 185, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 141, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 185;
+		} else {
+			__dna__offset = 141;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -746,9 +864,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -766,9 +884,9 @@ public class CollisionModifierData extends CFacade {
 	{
 		long __address = ((bvhtree == null) ? 0 : bvhtree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 

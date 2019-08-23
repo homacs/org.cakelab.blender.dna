@@ -27,7 +27,7 @@ public class CurveMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 456;
+	public static final int __DNA__SDNA_INDEX = 460;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.

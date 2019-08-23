@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=644, size64=720)
+@CMetaData(size32=672, size64=752)
 public class SmokeDomainSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 535;
+	public static final int __DNA__SDNA_INDEX = 539;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
@@ -1534,6 +1534,289 @@ public class SmokeDomainSettings extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__flame_smoke_color = new long[]{632, 708};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
+	 * <p> Display settings </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__slice_method);
+	 * CPointer&lt;Byte&gt; p_slice_method = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_method'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_method = new long[]{644, 720};
+
+	/**
+	 * Field descriptor (offset) for struct member 'axis_slice_method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__axis_slice_method);
+	 * CPointer&lt;Byte&gt; p_axis_slice_method = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'axis_slice_method'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__axis_slice_method = new long[]{645, 721};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_axis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__slice_axis);
+	 * CPointer&lt;Byte&gt; p_slice_axis = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_axis'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_axis = new long[]{646, 722};
+
+	/**
+	 * Field descriptor (offset) for struct member 'draw_velocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Toggle visualization of the velocity field as needles
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__draw_velocity);
+	 * CPointer&lt;Byte&gt; p_draw_velocity = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'draw_velocity'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__draw_velocity = new long[]{647, 723};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_per_voxel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How many slices per voxel should be generated
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__slice_per_voxel);
+	 * CPointer&lt;Float&gt; p_slice_per_voxel = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_per_voxel'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_per_voxel = new long[]{648, 724};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__slice_depth);
+	 * CPointer&lt;Float&gt; p_slice_depth = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_depth'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_depth = new long[]{652, 728};
+
+	/**
+	 * Field descriptor (offset) for struct member 'display_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Thickness of smoke drawing in the viewport
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__display_thickness);
+	 * CPointer&lt;Float&gt; p_display_thickness = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'display_thickness'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__display_thickness = new long[]{656, 732};
+
+	/**
+	 * Field descriptor (offset) for struct member 'coba'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__coba);
+	 * CPointer&lt;CPointer&lt;ColorBand&gt;&gt; p_coba = p.cast(new Class[]{CPointer.class, ColorBand.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'coba'</li>
+	 * <li>Signature: 'ColorBand*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__coba = new long[]{660, 736};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vector_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for scaling the vectors
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__vector_scale);
+	 * CPointer&lt;Float&gt; p_vector_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vector_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vector_scale = new long[]{664, 744};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vector_draw_type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__vector_draw_type);
+	 * CPointer&lt;Byte&gt; p_vector_draw_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vector_draw_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vector_draw_type = new long[]{668, 748};
+
+	/**
+	 * Field descriptor (offset) for struct member 'use_coba'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__use_coba);
+	 * CPointer&lt;Byte&gt; p_use_coba = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_coba'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_coba = new long[]{669, 749};
+
+	/**
+	 * Field descriptor (offset) for struct member 'coba_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <p> simulation field used for the color mapping </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__coba_field);
+	 * CPointer&lt;Byte&gt; p_coba_field = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'coba_field'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__coba_field = new long[]{670, 750};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__pad2);
+	 * CPointer&lt;Byte&gt; p_pad2 = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{671, 751};
 
 	public SmokeDomainSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -4068,6 +4351,420 @@ public class SmokeDomainSettings extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, flame_smoke_color);
 		} else {
 			__io__generic__copy( getFlame_smoke_color(), flame_smoke_color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
+	 * <p> Display settings </p>
+	 * @see #__DNA__FIELD__slice_method
+	 */
+	
+	public byte getSlice_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 720);
+		} else {
+			return __io__block.readByte(__io__address + 644);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
+	 * <p> Display settings </p>
+	 * @see #__DNA__FIELD__slice_method
+	 */
+	
+	public void setSlice_method(byte slice_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 720, slice_method);
+		} else {
+			__io__block.writeByte(__io__address + 644, slice_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public byte getAxis_slice_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 721);
+		} else {
+			return __io__block.readByte(__io__address + 645);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public void setAxis_slice_method(byte axis_slice_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 721, axis_slice_method);
+		} else {
+			__io__block.writeByte(__io__address + 645, axis_slice_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public byte getSlice_axis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 722);
+		} else {
+			return __io__block.readByte(__io__address + 646);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public void setSlice_axis(byte slice_axis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 722, slice_axis);
+		} else {
+			__io__block.writeByte(__io__address + 646, slice_axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'draw_velocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Toggle visualization of the velocity field as needles
+	 * @see #__DNA__FIELD__draw_velocity
+	 */
+	
+	public byte getDraw_velocity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 723);
+		} else {
+			return __io__block.readByte(__io__address + 647);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'draw_velocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Toggle visualization of the velocity field as needles
+	 * @see #__DNA__FIELD__draw_velocity
+	 */
+	
+	public void setDraw_velocity(byte draw_velocity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 723, draw_velocity);
+		} else {
+			__io__block.writeByte(__io__address + 647, draw_velocity);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_per_voxel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How many slices per voxel should be generated
+	 * @see #__DNA__FIELD__slice_per_voxel
+	 */
+	
+	public float getSlice_per_voxel() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 724);
+		} else {
+			return __io__block.readFloat(__io__address + 648);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_per_voxel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How many slices per voxel should be generated
+	 * @see #__DNA__FIELD__slice_per_voxel
+	 */
+	
+	public void setSlice_per_voxel(float slice_per_voxel) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 724, slice_per_voxel);
+		} else {
+			__io__block.writeFloat(__io__address + 648, slice_per_voxel);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * @see #__DNA__FIELD__slice_depth
+	 */
+	
+	public float getSlice_depth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 728);
+		} else {
+			return __io__block.readFloat(__io__address + 652);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * @see #__DNA__FIELD__slice_depth
+	 */
+	
+	public void setSlice_depth(float slice_depth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 728, slice_depth);
+		} else {
+			__io__block.writeFloat(__io__address + 652, slice_depth);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'display_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Thickness of smoke drawing in the viewport
+	 * @see #__DNA__FIELD__display_thickness
+	 */
+	
+	public float getDisplay_thickness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 732);
+		} else {
+			return __io__block.readFloat(__io__address + 656);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'display_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Thickness of smoke drawing in the viewport
+	 * @see #__DNA__FIELD__display_thickness
+	 */
+	
+	public void setDisplay_thickness(float display_thickness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 732, display_thickness);
+		} else {
+			__io__block.writeFloat(__io__address + 656, display_thickness);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'coba'.
+	 * @see #__DNA__FIELD__coba
+	 */
+	
+	public CPointer<ColorBand> getCoba() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 736);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 660);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
+		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'coba'.
+	 * @see #__DNA__FIELD__coba
+	 */
+	
+	public void setCoba(CPointer<ColorBand> coba) throws IOException
+	{
+		long __address = ((coba == null) ? 0 : coba.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 736, __address);
+		} else {
+			__io__block.writeLong(__io__address + 660, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vector_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for scaling the vectors
+	 * @see #__DNA__FIELD__vector_scale
+	 */
+	
+	public float getVector_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 744);
+		} else {
+			return __io__block.readFloat(__io__address + 664);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vector_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for scaling the vectors
+	 * @see #__DNA__FIELD__vector_scale
+	 */
+	
+	public void setVector_scale(float vector_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 744, vector_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 664, vector_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vector_draw_type'.
+	 * @see #__DNA__FIELD__vector_draw_type
+	 */
+	
+	public byte getVector_draw_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 748);
+		} else {
+			return __io__block.readByte(__io__address + 668);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vector_draw_type'.
+	 * @see #__DNA__FIELD__vector_draw_type
+	 */
+	
+	public void setVector_draw_type(byte vector_draw_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 748, vector_draw_type);
+		} else {
+			__io__block.writeByte(__io__address + 668, vector_draw_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'use_coba'.
+	 * @see #__DNA__FIELD__use_coba
+	 */
+	
+	public byte getUse_coba() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 749);
+		} else {
+			return __io__block.readByte(__io__address + 669);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_coba'.
+	 * @see #__DNA__FIELD__use_coba
+	 */
+	
+	public void setUse_coba(byte use_coba) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 749, use_coba);
+		} else {
+			__io__block.writeByte(__io__address + 669, use_coba);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'coba_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <p> simulation field used for the color mapping </p>
+	 * @see #__DNA__FIELD__coba_field
+	 */
+	
+	public byte getCoba_field() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 750);
+		} else {
+			return __io__block.readByte(__io__address + 670);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'coba_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <p> simulation field used for the color mapping </p>
+	 * @see #__DNA__FIELD__coba_field
+	 */
+	
+	public void setCoba_field(byte coba_field) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 750, coba_field);
+		} else {
+			__io__block.writeByte(__io__address + 670, coba_field);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public byte getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 751);
+		} else {
+			return __io__block.readByte(__io__address + 671);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(byte pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 751, pad2);
+		} else {
+			__io__block.writeByte(__io__address + 671, pad2);
 		}
 	}
 

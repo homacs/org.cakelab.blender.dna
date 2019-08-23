@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Base}  Struct for Anim -------------------------------<mdash/><mdash/>  Used for BKE_animdata_from_id() All ID-datablocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
+ * <p>{@link Base}  Struct for Anim -----------------------------------  Used for BKE_animdata_from_id() All ID-datablocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
  */
 
 @CMetaData(size32=104, size64=128)
@@ -27,7 +27,7 @@ public class IdAdtTemplate extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 525;
+	public static final int __DNA__SDNA_INDEX = 529;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

@@ -40,17 +40,17 @@ import org.cakelab.blender.nio.CPointer;
  * <p> The following illustrates the orientation of the bounding box in local space</p><p><pre></pre></p><p><pre> Z  Y
  * | /
  * |/
- * .--<mdash/></pre></p><p><pre><pre>2----------6
+ * .----</pre></p><p><pre><pre>2----------6
  * </pre> 2----------6
  * 
  *    /|         /|
  *   / |        / |
- *  1-------<mdash/> 5  |
+ *  1--------- 5  |
  *  |  |       |  |
- *  |  3----<mdash/> |<ndash/> 7
+ *  |  3------ |<ndash/> 7
  *  | /        | /
  *  |/         |/
- *  0-------<mdash/></pre>  </p>
+ *  0---------</pre>  </p>
  */
 
 @CMetaData(size32=104, size64=104)
@@ -64,7 +64,7 @@ public class BoundBox extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 148;
+	public static final int __DNA__SDNA_INDEX = 151;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.

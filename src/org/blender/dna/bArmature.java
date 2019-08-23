@@ -26,7 +26,7 @@ public class bArmature extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 339;
+	public static final int __DNA__SDNA_INDEX = 343;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -395,7 +395,7 @@ public class bArmature extends CFacade {
 	 * Field descriptor (offset) for struct member 'ghostep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
+	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1187,7 +1187,7 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'ghostep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
+	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
 	 * @see #__DNA__FIELD__ghostep
 	 */
 	
@@ -1204,7 +1204,7 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'ghostep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
+	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
 	 * @see #__DNA__FIELD__ghostep
 	 */
 	

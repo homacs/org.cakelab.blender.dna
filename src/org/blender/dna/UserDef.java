@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=11952, size64=12008)
+@CMetaData(size32=12024, size64=12080)
 public class UserDef extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 250;
+	public static final int __DNA__SDNA_INDEX = 254;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -74,6 +74,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserPref_Flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,6 +97,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eDupli_ID_Flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -394,7 +400,7 @@ public class UserDef extends CFacade {
 	 * Field descriptor (offset) for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> style of timecode display </p>
+	 * <p> eTimecodeStyles, style of timecode display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -495,6 +501,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uiflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -515,6 +524,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uiflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -740,6 +752,52 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__dpi = new long[]{8524, 8524};
 
 	/**
+	 * Field descriptor (offset) for struct member 'ui_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface scale </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__ui_scale);
+	 * CPointer&lt;Float&gt; p_ui_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_scale = new long[]{8528, 8528};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ui_line_width'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface line width </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__ui_line_width);
+	 * CPointer&lt;Integer&gt; p_ui_line_width = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_line_width'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_line_width = new long[]{8532, 8532};
+
+	/**
 	 * Field descriptor (offset) for struct member 'node_margin'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -760,7 +818,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__node_margin = new long[]{8528, 8528};
+	public static final long[] __DNA__FIELD__node_margin = new long[]{8536, 8536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
@@ -780,10 +838,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{8529, 8529};
+	public static final long[] __DNA__FIELD__pad2 = new long[]{8537, 8537};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transopts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_Translation_Flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -800,7 +861,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transopts = new long[]{8530, 8530};
+	public static final long[] __DNA__FIELD__transopts = new long[]{8538, 8538};
 
 	/**
 	 * Field descriptor (offset) for struct member 'menuthreshold1'.
@@ -820,7 +881,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__menuthreshold1 = new long[]{8532, 8532};
+	public static final long[] __DNA__FIELD__menuthreshold1 = new long[]{8540, 8540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'menuthreshold2'.
@@ -840,7 +901,30 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__menuthreshold2 = new long[]{8534, 8534};
+	public static final long[] __DNA__FIELD__menuthreshold2 = new long[]{8542, 8542};
+
+	/**
+	 * Field descriptor (offset) for struct member 'app_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> startup template </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__app_template);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_app_template = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'app_template'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__app_template = new long[]{8544, 8544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'themes'.
@@ -860,7 +944,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__themes = new long[]{8536, 8536};
+	public static final long[] __DNA__FIELD__themes = new long[]{8608, 8608};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifonts'.
@@ -880,7 +964,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uifonts = new long[]{8544, 8552};
+	public static final long[] __DNA__FIELD__uifonts = new long[]{8616, 8624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uistyles'.
@@ -900,7 +984,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uistyles = new long[]{8552, 8568};
+	public static final long[] __DNA__FIELD__uistyles = new long[]{8624, 8640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keymaps'.
@@ -925,7 +1009,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keymaps = new long[]{8560, 8584};
+	public static final long[] __DNA__FIELD__keymaps = new long[]{8632, 8656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'user_keymaps'.
@@ -945,7 +1029,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__user_keymaps = new long[]{8568, 8600};
+	public static final long[] __DNA__FIELD__user_keymaps = new long[]{8640, 8672};
 
 	/**
 	 * Field descriptor (offset) for struct member 'addons'.
@@ -965,7 +1049,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__addons = new long[]{8576, 8616};
+	public static final long[] __DNA__FIELD__addons = new long[]{8648, 8688};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autoexec_paths'.
@@ -985,7 +1069,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autoexec_paths = new long[]{8584, 8632};
+	public static final long[] __DNA__FIELD__autoexec_paths = new long[]{8656, 8704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyconfigstr'.
@@ -1005,7 +1089,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyconfigstr = new long[]{8592, 8648};
+	public static final long[] __DNA__FIELD__keyconfigstr = new long[]{8664, 8720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'undosteps'.
@@ -1025,7 +1109,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__undosteps = new long[]{8656, 8712};
+	public static final long[] __DNA__FIELD__undosteps = new long[]{8728, 8784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'undomemory'.
@@ -1045,7 +1129,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__undomemory = new long[]{8658, 8714};
+	public static final long[] __DNA__FIELD__undomemory = new long[]{8730, 8786};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_manhattendist'.
@@ -1065,7 +1149,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_manhattendist = new long[]{8660, 8716};
+	public static final long[] __DNA__FIELD__gp_manhattendist = new long[]{8732, 8788};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_euclideandist'.
@@ -1085,7 +1169,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_euclideandist = new long[]{8662, 8718};
+	public static final long[] __DNA__FIELD__gp_euclideandist = new long[]{8734, 8790};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_eraser'.
@@ -1105,10 +1189,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_eraser = new long[]{8664, 8720};
+	public static final long[] __DNA__FIELD__gp_eraser = new long[]{8736, 8792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGP_UserdefSettings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1125,7 +1212,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_settings = new long[]{8666, 8722};
+	public static final long[] __DNA__FIELD__gp_settings = new long[]{8738, 8794};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tb_leftmouse'.
@@ -1145,7 +1232,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tb_leftmouse = new long[]{8668, 8724};
+	public static final long[] __DNA__FIELD__tb_leftmouse = new long[]{8740, 8796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tb_rightmouse'.
@@ -1165,7 +1252,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tb_rightmouse = new long[]{8670, 8726};
+	public static final long[] __DNA__FIELD__tb_rightmouse = new long[]{8742, 8798};
 
 	/**
 	 * Field descriptor (offset) for struct member 'light'.
@@ -1185,7 +1272,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 168/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__light = new long[]{8672, 8728};
+	public static final long[] __DNA__FIELD__light = new long[]{8744, 8800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tw_hotspot'.
@@ -1205,7 +1292,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tw_hotspot = new long[]{8840, 8896};
+	public static final long[] __DNA__FIELD__tw_hotspot = new long[]{8912, 8968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tw_flag'.
@@ -1225,7 +1312,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tw_flag = new long[]{8842, 8898};
+	public static final long[] __DNA__FIELD__tw_flag = new long[]{8914, 8970};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tw_handlesize'.
@@ -1245,7 +1332,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tw_handlesize = new long[]{8844, 8900};
+	public static final long[] __DNA__FIELD__tw_handlesize = new long[]{8916, 8972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tw_size'.
@@ -1265,7 +1352,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tw_size = new long[]{8846, 8902};
+	public static final long[] __DNA__FIELD__tw_size = new long[]{8918, 8974};
 
 	/**
 	 * Field descriptor (offset) for struct member 'textimeout'.
@@ -1285,7 +1372,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__textimeout = new long[]{8848, 8904};
+	public static final long[] __DNA__FIELD__textimeout = new long[]{8920, 8976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texcollectrate'.
@@ -1305,13 +1392,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texcollectrate = new long[]{8850, 8906};
+	public static final long[] __DNA__FIELD__texcollectrate = new long[]{8922, 8978};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wmdrawmethod'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> removed wmpad </p>
+	 * <p> eWM_DrawMethod </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1328,7 +1415,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wmdrawmethod = new long[]{8852, 8908};
+	public static final long[] __DNA__FIELD__wmdrawmethod = new long[]{8924, 8980};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dragthreshold'.
@@ -1348,7 +1435,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dragthreshold = new long[]{8854, 8910};
+	public static final long[] __DNA__FIELD__dragthreshold = new long[]{8926, 8982};
 
 	/**
 	 * Field descriptor (offset) for struct member 'memcachelimit'.
@@ -1368,7 +1455,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__memcachelimit = new long[]{8856, 8912};
+	public static final long[] __DNA__FIELD__memcachelimit = new long[]{8928, 8984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prefetchframes'.
@@ -1388,7 +1475,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prefetchframes = new long[]{8860, 8916};
+	public static final long[] __DNA__FIELD__prefetchframes = new long[]{8932, 8988};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad_rot_angle'.
@@ -1411,7 +1498,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad_rot_angle = new long[]{8864, 8920};
+	public static final long[] __DNA__FIELD__pad_rot_angle = new long[]{8936, 8992};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameserverport'.
@@ -1431,27 +1518,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frameserverport = new long[]{8868, 8924};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad4'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef userdef = ...;
-	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__pad4);
-	 * CPointer&lt;Short&gt; p_pad4 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad4'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad4 = new long[]{8870, 8926};
+	public static final long[] __DNA__FIELD__frameserverport = new long[]{8940, 8996};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obcenter_dia'.
@@ -1471,7 +1538,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obcenter_dia = new long[]{8872, 8928};
+	public static final long[] __DNA__FIELD__obcenter_dia = new long[]{8942, 8998};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rvisize'.
@@ -1494,7 +1561,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rvisize = new long[]{8874, 8930};
+	public static final long[] __DNA__FIELD__rvisize = new long[]{8944, 9000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rvibright'.
@@ -1517,7 +1584,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rvibright = new long[]{8876, 8932};
+	public static final long[] __DNA__FIELD__rvibright = new long[]{8946, 9002};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recent_files'.
@@ -1540,7 +1607,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recent_files = new long[]{8878, 8934};
+	public static final long[] __DNA__FIELD__recent_files = new long[]{8948, 9004};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_viewtx'.
@@ -1563,7 +1630,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_viewtx = new long[]{8880, 8936};
+	public static final long[] __DNA__FIELD__smooth_viewtx = new long[]{8950, 9006};
 
 	/**
 	 * Field descriptor (offset) for struct member 'glreslimit'.
@@ -1583,7 +1650,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__glreslimit = new long[]{8882, 8938};
+	public static final long[] __DNA__FIELD__glreslimit = new long[]{8952, 9008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curssize'.
@@ -1603,10 +1670,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curssize = new long[]{8884, 8940};
+	public static final long[] __DNA__FIELD__curssize = new long[]{8954, 9010};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_picker_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eColorPicker_Types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1623,7 +1693,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_picker_type = new long[]{8886, 8942};
+	public static final long[] __DNA__FIELD__color_picker_type = new long[]{8956, 9012};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo_new'.
@@ -1646,7 +1716,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo_new = new long[]{8888, 8944};
+	public static final long[] __DNA__FIELD__ipo_new = new long[]{8958, 9014};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyhandles_new'.
@@ -1669,7 +1739,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyhandles_new = new long[]{8889, 8945};
+	public static final long[] __DNA__FIELD__keyhandles_new = new long[]{8959, 9015};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_select_method'.
@@ -1689,10 +1759,53 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpu_select_method = new long[]{8890, 8946};
+	public static final long[] __DNA__FIELD__gpu_select_method = new long[]{8960, 9016};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpu_select_pick_deph'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gpu_select_pick_deph);
+	 * CPointer&lt;Byte&gt; p_gpu_select_pick_deph = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpu_select_pick_deph'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpu_select_pick_deph = new long[]{8961, 9017};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__pad4);
+	 * CPointer&lt;Byte&gt; p_pad4 = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad4'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad4 = new long[]{8962, 9018};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eZoomFrame_Mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1709,7 +1822,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_frame_type = new long[]{8891, 8947};
+	public static final long[] __DNA__FIELD__view_frame_type = new long[]{8963, 9019};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_keyframes'.
@@ -1732,7 +1845,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_frame_keyframes = new long[]{8892, 8948};
+	public static final long[] __DNA__FIELD__view_frame_keyframes = new long[]{8964, 9020};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_seconds'.
@@ -1755,7 +1868,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_frame_seconds = new long[]{8896, 8952};
+	public static final long[] __DNA__FIELD__view_frame_seconds = new long[]{8968, 9024};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrcastfps'.
@@ -1778,7 +1891,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scrcastfps = new long[]{8900, 8956};
+	public static final long[] __DNA__FIELD__scrcastfps = new long[]{8972, 9028};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrcastwait'.
@@ -1801,7 +1914,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scrcastwait = new long[]{8902, 8958};
+	public static final long[] __DNA__FIELD__scrcastwait = new long[]{8974, 9030};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widget_unit'.
@@ -1824,7 +1937,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widget_unit = new long[]{8904, 8960};
+	public static final long[] __DNA__FIELD__widget_unit = new long[]{8976, 9032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anisotropic_filter'.
@@ -1844,7 +1957,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anisotropic_filter = new long[]{8906, 8962};
+	public static final long[] __DNA__FIELD__anisotropic_filter = new long[]{8978, 9034};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_16bit_textures'.
@@ -1864,7 +1977,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_16bit_textures = new long[]{8908, 8964};
+	public static final long[] __DNA__FIELD__use_16bit_textures = new long[]{8980, 9036};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_gpu_mipmap'.
@@ -1884,7 +1997,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_gpu_mipmap = new long[]{8910, 8966};
+	public static final long[] __DNA__FIELD__use_gpu_mipmap = new long[]{8982, 9038};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_sensitivity'.
@@ -1907,7 +2020,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ndof_sensitivity = new long[]{8912, 8968};
+	public static final long[] __DNA__FIELD__ndof_sensitivity = new long[]{8984, 9040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_orbit_sensitivity'.
@@ -1927,7 +2040,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ndof_orbit_sensitivity = new long[]{8916, 8972};
+	public static final long[] __DNA__FIELD__ndof_orbit_sensitivity = new long[]{8988, 9044};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_deadzone'.
@@ -1950,13 +2063,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ndof_deadzone = new long[]{8920, 8976};
+	public static final long[] __DNA__FIELD__ndof_deadzone = new long[]{8992, 9048};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for 3D mouse </p>
+	 * <p> eNdof_Flag, flags for 3D mouse </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1973,13 +2086,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ndof_flag = new long[]{8924, 8980};
+	public static final long[] __DNA__FIELD__ndof_flag = new long[]{8996, 9052};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
+	 * <p> eMultiSample_Type, amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1996,13 +2109,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ogl_multisamples = new long[]{8928, 8984};
+	public static final long[] __DNA__FIELD__ogl_multisamples = new long[]{9000, 9056};
 
 	/**
 	 * Field descriptor (offset) for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
+	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2019,7 +2132,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__image_draw_method = new long[]{8930, 8986};
+	public static final long[] __DNA__FIELD__image_draw_method = new long[]{9002, 9058};
 
 	/**
 	 * Field descriptor (offset) for struct member 'glalphaclip'.
@@ -2039,13 +2152,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__glalphaclip = new long[]{8932, 8988};
+	public static final long[] __DNA__FIELD__glalphaclip = new long[]{9004, 9060};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> autokeying mode </p>
+	 * <p> eAutokey_Mode, autokeying mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2062,7 +2175,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_mode = new long[]{8936, 8992};
+	public static final long[] __DNA__FIELD__autokey_mode = new long[]{9008, 9064};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
@@ -2085,7 +2198,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_flag = new long[]{8938, 8994};
+	public static final long[] __DNA__FIELD__autokey_flag = new long[]{9010, 9066};
 
 	/**
 	 * Field descriptor (offset) for struct member 'text_render'.
@@ -2105,7 +2218,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__text_render = new long[]{8940, 8996};
+	public static final long[] __DNA__FIELD__text_render = new long[]{9012, 9068};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad9'.
@@ -2128,7 +2241,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad9 = new long[]{8942, 8998};
+	public static final long[] __DNA__FIELD__pad9 = new long[]{9014, 9070};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba_weight'.
@@ -2151,7 +2264,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 776/776</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coba_weight = new long[]{8944, 9000};
+	public static final long[] __DNA__FIELD__coba_weight = new long[]{9016, 9072};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_overlay_col'.
@@ -2171,7 +2284,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_overlay_col = new long[]{9720, 9776};
+	public static final long[] __DNA__FIELD__sculpt_paint_overlay_col = new long[]{9792, 9848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_new_layer_col'.
@@ -2194,7 +2307,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_new_layer_col = new long[]{9732, 9788};
+	public static final long[] __DNA__FIELD__gpencil_new_layer_col = new long[]{9804, 9860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tweak_threshold'.
@@ -2214,7 +2327,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tweak_threshold = new long[]{9748, 9804};
+	public static final long[] __DNA__FIELD__tweak_threshold = new long[]{9820, 9876};
 
 	/**
 	 * Field descriptor (offset) for struct member 'navigation_mode'.
@@ -2234,7 +2347,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__navigation_mode = new long[]{9750, 9806};
+	public static final long[] __DNA__FIELD__navigation_mode = new long[]{9822, 9878};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -2254,7 +2367,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{9751, 9807};
+	public static final long[] __DNA__FIELD__pad = new long[]{9823, 9879};
 
 	/**
 	 * Field descriptor (offset) for struct member 'author'.
@@ -2277,7 +2390,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 80/80</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__author = new long[]{9752, 9808};
+	public static final long[] __DNA__FIELD__author = new long[]{9824, 9880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'font_path_ui'.
@@ -2297,7 +2410,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__font_path_ui = new long[]{9832, 9888};
+	public static final long[] __DNA__FIELD__font_path_ui = new long[]{9904, 9960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'font_path_ui_mono'.
@@ -2317,7 +2430,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__font_path_ui_mono = new long[]{10856, 10912};
+	public static final long[] __DNA__FIELD__font_path_ui_mono = new long[]{10928, 10984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'compute_device_type'.
@@ -2337,7 +2450,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__compute_device_type = new long[]{11880, 11936};
+	public static final long[] __DNA__FIELD__compute_device_type = new long[]{11952, 12008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'compute_device_id'.
@@ -2357,7 +2470,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__compute_device_id = new long[]{11884, 11940};
+	public static final long[] __DNA__FIELD__compute_device_id = new long[]{11956, 12012};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fcu_inactive_alpha'.
@@ -2380,7 +2493,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fcu_inactive_alpha = new long[]{11888, 11944};
+	public static final long[] __DNA__FIELD__fcu_inactive_alpha = new long[]{11960, 12016};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pixelsize'.
@@ -2403,7 +2516,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixelsize = new long[]{11892, 11948};
+	public static final long[] __DNA__FIELD__pixelsize = new long[]{11964, 12020};
 
 	/**
 	 * Field descriptor (offset) for struct member 'virtual_pixel'.
@@ -2426,7 +2539,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__virtual_pixel = new long[]{11896, 11952};
+	public static final long[] __DNA__FIELD__virtual_pixel = new long[]{11968, 12024};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_interaction_type'.
@@ -2449,7 +2562,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_interaction_type = new long[]{11900, 11956};
+	public static final long[] __DNA__FIELD__pie_interaction_type = new long[]{11972, 12028};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_initial_timeout'.
@@ -2472,7 +2585,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_initial_timeout = new long[]{11902, 11958};
+	public static final long[] __DNA__FIELD__pie_initial_timeout = new long[]{11974, 12030};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_animation_timeout'.
@@ -2492,7 +2605,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_animation_timeout = new long[]{11904, 11960};
+	public static final long[] __DNA__FIELD__pie_animation_timeout = new long[]{11976, 12032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_confirm'.
@@ -2512,7 +2625,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_confirm = new long[]{11906, 11962};
+	public static final long[] __DNA__FIELD__pie_menu_confirm = new long[]{11978, 12034};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_radius'.
@@ -2535,7 +2648,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_radius = new long[]{11908, 11964};
+	public static final long[] __DNA__FIELD__pie_menu_radius = new long[]{11980, 12036};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_threshold'.
@@ -2558,7 +2671,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_threshold = new long[]{11910, 11966};
+	public static final long[] __DNA__FIELD__pie_menu_threshold = new long[]{11982, 12038};
 
 	/**
 	 * Field descriptor (offset) for struct member 'walk_navigation'.
@@ -2578,7 +2691,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__walk_navigation = new long[]{11912, 11968};
+	public static final long[] __DNA__FIELD__walk_navigation = new long[]{11984, 12040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opensubdiv_compute_type'.
@@ -2598,7 +2711,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opensubdiv_compute_type = new long[]{11944, 12000};
+	public static final long[] __DNA__FIELD__opensubdiv_compute_type = new long[]{12016, 12072};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad5'.
@@ -2618,7 +2731,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad5 = new long[]{11946, 12002};
+	public static final long[] __DNA__FIELD__pad5 = new long[]{12018, 12074};
 
 	public UserDef(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2692,6 +2805,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserPref_Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -2706,6 +2822,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserPref_Flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -2720,6 +2839,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'dupflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eDupli_ID_Flags </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
@@ -2734,6 +2856,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'dupflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eDupli_ID_Flags </p>
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
@@ -3270,7 +3395,7 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> style of timecode display </p>
+	 * <p> eTimecodeStyles, style of timecode display </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -3287,7 +3412,7 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'timecode_style'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> style of timecode display </p>
+	 * <p> eTimecodeStyles, style of timecode display </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -3414,6 +3539,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'uiflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
 	
@@ -3428,6 +3556,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'uiflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag </p>
 	 * @see #__DNA__FIELD__uiflag
 	 */
 	
@@ -3442,6 +3573,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'uiflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag2 </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
 	
@@ -3456,6 +3590,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'uiflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_UI_Flag2 </p>
 	 * @see #__DNA__FIELD__uiflag2
 	 */
 	
@@ -3761,6 +3898,74 @@ public class UserDef extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ui_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface scale </p>
+	 * @see #__DNA__FIELD__ui_scale
+	 */
+	
+	public float getUi_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 8528);
+		} else {
+			return __io__block.readFloat(__io__address + 8528);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ui_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface scale </p>
+	 * @see #__DNA__FIELD__ui_scale
+	 */
+	
+	public void setUi_scale(float ui_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 8528, ui_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 8528, ui_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ui_line_width'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface line width </p>
+	 * @see #__DNA__FIELD__ui_line_width
+	 */
+	
+	public int getUi_line_width() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 8532);
+		} else {
+			return __io__block.readInt(__io__address + 8532);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ui_line_width'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interface line width </p>
+	 * @see #__DNA__FIELD__ui_line_width
+	 */
+	
+	public void setUi_line_width(int ui_line_width) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 8532, ui_line_width);
+		} else {
+			__io__block.writeInt(__io__address + 8532, ui_line_width);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'node_margin'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -3771,9 +3976,9 @@ public class UserDef extends CFacade {
 	public byte getNode_margin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8528);
+			return __io__block.readByte(__io__address + 8536);
 		} else {
-			return __io__block.readByte(__io__address + 8528);
+			return __io__block.readByte(__io__address + 8536);
 		}
 	}
 
@@ -3788,9 +3993,9 @@ public class UserDef extends CFacade {
 	public void setNode_margin(byte node_margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8528, node_margin);
+			__io__block.writeByte(__io__address + 8536, node_margin);
 		} else {
-			__io__block.writeByte(__io__address + 8528, node_margin);
+			__io__block.writeByte(__io__address + 8536, node_margin);
 		}
 	}
 
@@ -3802,9 +4007,9 @@ public class UserDef extends CFacade {
 	public byte getPad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8529);
+			return __io__block.readByte(__io__address + 8537);
 		} else {
-			return __io__block.readByte(__io__address + 8529);
+			return __io__block.readByte(__io__address + 8537);
 		}
 	}
 
@@ -3816,37 +4021,43 @@ public class UserDef extends CFacade {
 	public void setPad2(byte pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8529, pad2);
+			__io__block.writeByte(__io__address + 8537, pad2);
 		} else {
-			__io__block.writeByte(__io__address + 8529, pad2);
+			__io__block.writeByte(__io__address + 8537, pad2);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'transopts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_Translation_Flags </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
 	
 	public short getTransopts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8530);
+			return __io__block.readShort(__io__address + 8538);
 		} else {
-			return __io__block.readShort(__io__address + 8530);
+			return __io__block.readShort(__io__address + 8538);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'transopts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_Translation_Flags </p>
 	 * @see #__DNA__FIELD__transopts
 	 */
 	
 	public void setTransopts(short transopts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8530, transopts);
+			__io__block.writeShort(__io__address + 8538, transopts);
 		} else {
-			__io__block.writeShort(__io__address + 8530, transopts);
+			__io__block.writeShort(__io__address + 8538, transopts);
 		}
 	}
 
@@ -3858,9 +4069,9 @@ public class UserDef extends CFacade {
 	public short getMenuthreshold1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8532);
+			return __io__block.readShort(__io__address + 8540);
 		} else {
-			return __io__block.readShort(__io__address + 8532);
+			return __io__block.readShort(__io__address + 8540);
 		}
 	}
 
@@ -3872,9 +4083,9 @@ public class UserDef extends CFacade {
 	public void setMenuthreshold1(short menuthreshold1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8532, menuthreshold1);
+			__io__block.writeShort(__io__address + 8540, menuthreshold1);
 		} else {
-			__io__block.writeShort(__io__address + 8532, menuthreshold1);
+			__io__block.writeShort(__io__address + 8540, menuthreshold1);
 		}
 	}
 
@@ -3886,9 +4097,9 @@ public class UserDef extends CFacade {
 	public short getMenuthreshold2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8534);
+			return __io__block.readShort(__io__address + 8542);
 		} else {
-			return __io__block.readShort(__io__address + 8534);
+			return __io__block.readShort(__io__address + 8542);
 		}
 	}
 
@@ -3900,9 +4111,55 @@ public class UserDef extends CFacade {
 	public void setMenuthreshold2(short menuthreshold2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8534, menuthreshold2);
+			__io__block.writeShort(__io__address + 8542, menuthreshold2);
 		} else {
-			__io__block.writeShort(__io__address + 8534, menuthreshold2);
+			__io__block.writeShort(__io__address + 8542, menuthreshold2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'app_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> startup template </p>
+	 * @see #__DNA__FIELD__app_template
+	 */
+	
+	public CArrayFacade<Byte> getApp_template() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 8544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 8544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'app_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> startup template </p>
+	 * @see #__DNA__FIELD__app_template
+	 */
+	
+	public void setApp_template(CArrayFacade<Byte> app_template) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 8544;
+		} else {
+			__dna__offset = 8544;
+		}
+		if (__io__equals(app_template, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, app_template)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, app_template);
+		} else {
+			__io__generic__copy( getApp_template(), app_template);
 		}
 	}
 
@@ -3914,9 +4171,9 @@ public class UserDef extends CFacade {
 	public ListBase getThemes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8536, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8608, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8536, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8608, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3929,9 +4186,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8536;
+			__dna__offset = 8608;
 		} else {
-			__dna__offset = 8536;
+			__dna__offset = 8608;
 		}
 		if (__io__equals(themes, __io__address + __dna__offset)) {
 			return;
@@ -3950,9 +4207,9 @@ public class UserDef extends CFacade {
 	public ListBase getUifonts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8552, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8624, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8544, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8616, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3965,9 +4222,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8552;
+			__dna__offset = 8624;
 		} else {
-			__dna__offset = 8544;
+			__dna__offset = 8616;
 		}
 		if (__io__equals(uifonts, __io__address + __dna__offset)) {
 			return;
@@ -3986,9 +4243,9 @@ public class UserDef extends CFacade {
 	public ListBase getUistyles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8568, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8640, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8552, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8624, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4001,9 +4258,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8568;
+			__dna__offset = 8640;
 		} else {
-			__dna__offset = 8552;
+			__dna__offset = 8624;
 		}
 		if (__io__equals(uistyles, __io__address + __dna__offset)) {
 			return;
@@ -4027,9 +4284,9 @@ public class UserDef extends CFacade {
 	public ListBase getKeymaps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8584, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8656, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8560, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8632, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4047,9 +4304,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8584;
+			__dna__offset = 8656;
 		} else {
-			__dna__offset = 8560;
+			__dna__offset = 8632;
 		}
 		if (__io__equals(keymaps, __io__address + __dna__offset)) {
 			return;
@@ -4068,9 +4325,9 @@ public class UserDef extends CFacade {
 	public ListBase getUser_keymaps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8600, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8672, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8568, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8640, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4083,9 +4340,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8600;
+			__dna__offset = 8672;
 		} else {
-			__dna__offset = 8568;
+			__dna__offset = 8640;
 		}
 		if (__io__equals(user_keymaps, __io__address + __dna__offset)) {
 			return;
@@ -4104,9 +4361,9 @@ public class UserDef extends CFacade {
 	public ListBase getAddons() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8616, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8688, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8576, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8648, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4119,9 +4376,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8616;
+			__dna__offset = 8688;
 		} else {
-			__dna__offset = 8576;
+			__dna__offset = 8648;
 		}
 		if (__io__equals(addons, __io__address + __dna__offset)) {
 			return;
@@ -4140,9 +4397,9 @@ public class UserDef extends CFacade {
 	public ListBase getAutoexec_paths() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 8632, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8704, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 8584, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8656, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4155,9 +4412,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8632;
+			__dna__offset = 8704;
 		} else {
-			__dna__offset = 8584;
+			__dna__offset = 8656;
 		}
 		if (__io__equals(autoexec_paths, __io__address + __dna__offset)) {
 			return;
@@ -4180,9 +4437,9 @@ public class UserDef extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 8648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 8720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 8592, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 8664, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4195,9 +4452,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8648;
+			__dna__offset = 8720;
 		} else {
-			__dna__offset = 8592;
+			__dna__offset = 8664;
 		}
 		if (__io__equals(keyconfigstr, __io__address + __dna__offset)) {
 			return;
@@ -4216,9 +4473,9 @@ public class UserDef extends CFacade {
 	public short getUndosteps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8712);
+			return __io__block.readShort(__io__address + 8784);
 		} else {
-			return __io__block.readShort(__io__address + 8656);
+			return __io__block.readShort(__io__address + 8728);
 		}
 	}
 
@@ -4230,9 +4487,9 @@ public class UserDef extends CFacade {
 	public void setUndosteps(short undosteps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8712, undosteps);
+			__io__block.writeShort(__io__address + 8784, undosteps);
 		} else {
-			__io__block.writeShort(__io__address + 8656, undosteps);
+			__io__block.writeShort(__io__address + 8728, undosteps);
 		}
 	}
 
@@ -4244,9 +4501,9 @@ public class UserDef extends CFacade {
 	public short getUndomemory() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8714);
+			return __io__block.readShort(__io__address + 8786);
 		} else {
-			return __io__block.readShort(__io__address + 8658);
+			return __io__block.readShort(__io__address + 8730);
 		}
 	}
 
@@ -4258,9 +4515,9 @@ public class UserDef extends CFacade {
 	public void setUndomemory(short undomemory) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8714, undomemory);
+			__io__block.writeShort(__io__address + 8786, undomemory);
 		} else {
-			__io__block.writeShort(__io__address + 8658, undomemory);
+			__io__block.writeShort(__io__address + 8730, undomemory);
 		}
 	}
 
@@ -4272,9 +4529,9 @@ public class UserDef extends CFacade {
 	public short getGp_manhattendist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8716);
+			return __io__block.readShort(__io__address + 8788);
 		} else {
-			return __io__block.readShort(__io__address + 8660);
+			return __io__block.readShort(__io__address + 8732);
 		}
 	}
 
@@ -4286,9 +4543,9 @@ public class UserDef extends CFacade {
 	public void setGp_manhattendist(short gp_manhattendist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8716, gp_manhattendist);
+			__io__block.writeShort(__io__address + 8788, gp_manhattendist);
 		} else {
-			__io__block.writeShort(__io__address + 8660, gp_manhattendist);
+			__io__block.writeShort(__io__address + 8732, gp_manhattendist);
 		}
 	}
 
@@ -4300,9 +4557,9 @@ public class UserDef extends CFacade {
 	public short getGp_euclideandist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8718);
+			return __io__block.readShort(__io__address + 8790);
 		} else {
-			return __io__block.readShort(__io__address + 8662);
+			return __io__block.readShort(__io__address + 8734);
 		}
 	}
 
@@ -4314,9 +4571,9 @@ public class UserDef extends CFacade {
 	public void setGp_euclideandist(short gp_euclideandist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8718, gp_euclideandist);
+			__io__block.writeShort(__io__address + 8790, gp_euclideandist);
 		} else {
-			__io__block.writeShort(__io__address + 8662, gp_euclideandist);
+			__io__block.writeShort(__io__address + 8734, gp_euclideandist);
 		}
 	}
 
@@ -4328,9 +4585,9 @@ public class UserDef extends CFacade {
 	public short getGp_eraser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8720);
+			return __io__block.readShort(__io__address + 8792);
 		} else {
-			return __io__block.readShort(__io__address + 8664);
+			return __io__block.readShort(__io__address + 8736);
 		}
 	}
 
@@ -4342,37 +4599,43 @@ public class UserDef extends CFacade {
 	public void setGp_eraser(short gp_eraser) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8720, gp_eraser);
+			__io__block.writeShort(__io__address + 8792, gp_eraser);
 		} else {
-			__io__block.writeShort(__io__address + 8664, gp_eraser);
+			__io__block.writeShort(__io__address + 8736, gp_eraser);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gp_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGP_UserdefSettings </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
 	
 	public short getGp_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8722);
+			return __io__block.readShort(__io__address + 8794);
 		} else {
-			return __io__block.readShort(__io__address + 8666);
+			return __io__block.readShort(__io__address + 8738);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gp_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGP_UserdefSettings </p>
 	 * @see #__DNA__FIELD__gp_settings
 	 */
 	
 	public void setGp_settings(short gp_settings) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8722, gp_settings);
+			__io__block.writeShort(__io__address + 8794, gp_settings);
 		} else {
-			__io__block.writeShort(__io__address + 8666, gp_settings);
+			__io__block.writeShort(__io__address + 8738, gp_settings);
 		}
 	}
 
@@ -4384,9 +4647,9 @@ public class UserDef extends CFacade {
 	public short getTb_leftmouse() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8724);
+			return __io__block.readShort(__io__address + 8796);
 		} else {
-			return __io__block.readShort(__io__address + 8668);
+			return __io__block.readShort(__io__address + 8740);
 		}
 	}
 
@@ -4398,9 +4661,9 @@ public class UserDef extends CFacade {
 	public void setTb_leftmouse(short tb_leftmouse) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8724, tb_leftmouse);
+			__io__block.writeShort(__io__address + 8796, tb_leftmouse);
 		} else {
-			__io__block.writeShort(__io__address + 8668, tb_leftmouse);
+			__io__block.writeShort(__io__address + 8740, tb_leftmouse);
 		}
 	}
 
@@ -4412,9 +4675,9 @@ public class UserDef extends CFacade {
 	public short getTb_rightmouse() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8726);
+			return __io__block.readShort(__io__address + 8798);
 		} else {
-			return __io__block.readShort(__io__address + 8670);
+			return __io__block.readShort(__io__address + 8742);
 		}
 	}
 
@@ -4426,9 +4689,9 @@ public class UserDef extends CFacade {
 	public void setTb_rightmouse(short tb_rightmouse) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8726, tb_rightmouse);
+			__io__block.writeShort(__io__address + 8798, tb_rightmouse);
 		} else {
-			__io__block.writeShort(__io__address + 8670, tb_rightmouse);
+			__io__block.writeShort(__io__address + 8742, tb_rightmouse);
 		}
 	}
 
@@ -4444,9 +4707,9 @@ public class UserDef extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<SolidLight>(__io__address + 8728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<SolidLight>(__io__address + 8800, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<SolidLight>(__io__address + 8672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<SolidLight>(__io__address + 8744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4459,9 +4722,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8728;
+			__dna__offset = 8800;
 		} else {
-			__dna__offset = 8672;
+			__dna__offset = 8744;
 		}
 		if (__io__equals(light, __io__address + __dna__offset)) {
 			return;
@@ -4480,9 +4743,9 @@ public class UserDef extends CFacade {
 	public short getTw_hotspot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8896);
+			return __io__block.readShort(__io__address + 8968);
 		} else {
-			return __io__block.readShort(__io__address + 8840);
+			return __io__block.readShort(__io__address + 8912);
 		}
 	}
 
@@ -4494,9 +4757,9 @@ public class UserDef extends CFacade {
 	public void setTw_hotspot(short tw_hotspot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8896, tw_hotspot);
+			__io__block.writeShort(__io__address + 8968, tw_hotspot);
 		} else {
-			__io__block.writeShort(__io__address + 8840, tw_hotspot);
+			__io__block.writeShort(__io__address + 8912, tw_hotspot);
 		}
 	}
 
@@ -4508,9 +4771,9 @@ public class UserDef extends CFacade {
 	public short getTw_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8898);
+			return __io__block.readShort(__io__address + 8970);
 		} else {
-			return __io__block.readShort(__io__address + 8842);
+			return __io__block.readShort(__io__address + 8914);
 		}
 	}
 
@@ -4522,9 +4785,9 @@ public class UserDef extends CFacade {
 	public void setTw_flag(short tw_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8898, tw_flag);
+			__io__block.writeShort(__io__address + 8970, tw_flag);
 		} else {
-			__io__block.writeShort(__io__address + 8842, tw_flag);
+			__io__block.writeShort(__io__address + 8914, tw_flag);
 		}
 	}
 
@@ -4536,9 +4799,9 @@ public class UserDef extends CFacade {
 	public short getTw_handlesize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8900);
+			return __io__block.readShort(__io__address + 8972);
 		} else {
-			return __io__block.readShort(__io__address + 8844);
+			return __io__block.readShort(__io__address + 8916);
 		}
 	}
 
@@ -4550,9 +4813,9 @@ public class UserDef extends CFacade {
 	public void setTw_handlesize(short tw_handlesize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8900, tw_handlesize);
+			__io__block.writeShort(__io__address + 8972, tw_handlesize);
 		} else {
-			__io__block.writeShort(__io__address + 8844, tw_handlesize);
+			__io__block.writeShort(__io__address + 8916, tw_handlesize);
 		}
 	}
 
@@ -4564,9 +4827,9 @@ public class UserDef extends CFacade {
 	public short getTw_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8902);
+			return __io__block.readShort(__io__address + 8974);
 		} else {
-			return __io__block.readShort(__io__address + 8846);
+			return __io__block.readShort(__io__address + 8918);
 		}
 	}
 
@@ -4578,9 +4841,9 @@ public class UserDef extends CFacade {
 	public void setTw_size(short tw_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8902, tw_size);
+			__io__block.writeShort(__io__address + 8974, tw_size);
 		} else {
-			__io__block.writeShort(__io__address + 8846, tw_size);
+			__io__block.writeShort(__io__address + 8918, tw_size);
 		}
 	}
 
@@ -4592,9 +4855,9 @@ public class UserDef extends CFacade {
 	public short getTextimeout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8904);
+			return __io__block.readShort(__io__address + 8976);
 		} else {
-			return __io__block.readShort(__io__address + 8848);
+			return __io__block.readShort(__io__address + 8920);
 		}
 	}
 
@@ -4606,9 +4869,9 @@ public class UserDef extends CFacade {
 	public void setTextimeout(short textimeout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8904, textimeout);
+			__io__block.writeShort(__io__address + 8976, textimeout);
 		} else {
-			__io__block.writeShort(__io__address + 8848, textimeout);
+			__io__block.writeShort(__io__address + 8920, textimeout);
 		}
 	}
 
@@ -4620,9 +4883,9 @@ public class UserDef extends CFacade {
 	public short getTexcollectrate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8906);
+			return __io__block.readShort(__io__address + 8978);
 		} else {
-			return __io__block.readShort(__io__address + 8850);
+			return __io__block.readShort(__io__address + 8922);
 		}
 	}
 
@@ -4634,9 +4897,9 @@ public class UserDef extends CFacade {
 	public void setTexcollectrate(short texcollectrate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8906, texcollectrate);
+			__io__block.writeShort(__io__address + 8978, texcollectrate);
 		} else {
-			__io__block.writeShort(__io__address + 8850, texcollectrate);
+			__io__block.writeShort(__io__address + 8922, texcollectrate);
 		}
 	}
 
@@ -4644,16 +4907,16 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'wmdrawmethod'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> removed wmpad </p>
+	 * <p> eWM_DrawMethod </p>
 	 * @see #__DNA__FIELD__wmdrawmethod
 	 */
 	
 	public short getWmdrawmethod() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8908);
+			return __io__block.readShort(__io__address + 8980);
 		} else {
-			return __io__block.readShort(__io__address + 8852);
+			return __io__block.readShort(__io__address + 8924);
 		}
 	}
 
@@ -4661,16 +4924,16 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'wmdrawmethod'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> removed wmpad </p>
+	 * <p> eWM_DrawMethod </p>
 	 * @see #__DNA__FIELD__wmdrawmethod
 	 */
 	
 	public void setWmdrawmethod(short wmdrawmethod) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8908, wmdrawmethod);
+			__io__block.writeShort(__io__address + 8980, wmdrawmethod);
 		} else {
-			__io__block.writeShort(__io__address + 8852, wmdrawmethod);
+			__io__block.writeShort(__io__address + 8924, wmdrawmethod);
 		}
 	}
 
@@ -4682,9 +4945,9 @@ public class UserDef extends CFacade {
 	public short getDragthreshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8910);
+			return __io__block.readShort(__io__address + 8982);
 		} else {
-			return __io__block.readShort(__io__address + 8854);
+			return __io__block.readShort(__io__address + 8926);
 		}
 	}
 
@@ -4696,9 +4959,9 @@ public class UserDef extends CFacade {
 	public void setDragthreshold(short dragthreshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8910, dragthreshold);
+			__io__block.writeShort(__io__address + 8982, dragthreshold);
 		} else {
-			__io__block.writeShort(__io__address + 8854, dragthreshold);
+			__io__block.writeShort(__io__address + 8926, dragthreshold);
 		}
 	}
 
@@ -4710,9 +4973,9 @@ public class UserDef extends CFacade {
 	public int getMemcachelimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8912);
+			return __io__block.readInt(__io__address + 8984);
 		} else {
-			return __io__block.readInt(__io__address + 8856);
+			return __io__block.readInt(__io__address + 8928);
 		}
 	}
 
@@ -4724,9 +4987,9 @@ public class UserDef extends CFacade {
 	public void setMemcachelimit(int memcachelimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8912, memcachelimit);
+			__io__block.writeInt(__io__address + 8984, memcachelimit);
 		} else {
-			__io__block.writeInt(__io__address + 8856, memcachelimit);
+			__io__block.writeInt(__io__address + 8928, memcachelimit);
 		}
 	}
 
@@ -4738,9 +5001,9 @@ public class UserDef extends CFacade {
 	public int getPrefetchframes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8916);
+			return __io__block.readInt(__io__address + 8988);
 		} else {
-			return __io__block.readInt(__io__address + 8860);
+			return __io__block.readInt(__io__address + 8932);
 		}
 	}
 
@@ -4752,9 +5015,9 @@ public class UserDef extends CFacade {
 	public void setPrefetchframes(int prefetchframes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8916, prefetchframes);
+			__io__block.writeInt(__io__address + 8988, prefetchframes);
 		} else {
-			__io__block.writeInt(__io__address + 8860, prefetchframes);
+			__io__block.writeInt(__io__address + 8932, prefetchframes);
 		}
 	}
 
@@ -4769,9 +5032,9 @@ public class UserDef extends CFacade {
 	public float getPad_rot_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8920);
+			return __io__block.readFloat(__io__address + 8992);
 		} else {
-			return __io__block.readFloat(__io__address + 8864);
+			return __io__block.readFloat(__io__address + 8936);
 		}
 	}
 
@@ -4786,9 +5049,9 @@ public class UserDef extends CFacade {
 	public void setPad_rot_angle(float pad_rot_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8920, pad_rot_angle);
+			__io__block.writeFloat(__io__address + 8992, pad_rot_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 8864, pad_rot_angle);
+			__io__block.writeFloat(__io__address + 8936, pad_rot_angle);
 		}
 	}
 
@@ -4800,9 +5063,9 @@ public class UserDef extends CFacade {
 	public short getFrameserverport() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8924);
+			return __io__block.readShort(__io__address + 8996);
 		} else {
-			return __io__block.readShort(__io__address + 8868);
+			return __io__block.readShort(__io__address + 8940);
 		}
 	}
 
@@ -4814,37 +5077,9 @@ public class UserDef extends CFacade {
 	public void setFrameserverport(short frameserverport) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8924, frameserverport);
+			__io__block.writeShort(__io__address + 8996, frameserverport);
 		} else {
-			__io__block.writeShort(__io__address + 8868, frameserverport);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad4'.
-	 * @see #__DNA__FIELD__pad4
-	 */
-	
-	public short getPad4() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8926);
-		} else {
-			return __io__block.readShort(__io__address + 8870);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad4'.
-	 * @see #__DNA__FIELD__pad4
-	 */
-	
-	public void setPad4(short pad4) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8926, pad4);
-		} else {
-			__io__block.writeShort(__io__address + 8870, pad4);
+			__io__block.writeShort(__io__address + 8940, frameserverport);
 		}
 	}
 
@@ -4856,9 +5091,9 @@ public class UserDef extends CFacade {
 	public short getObcenter_dia() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8928);
+			return __io__block.readShort(__io__address + 8998);
 		} else {
-			return __io__block.readShort(__io__address + 8872);
+			return __io__block.readShort(__io__address + 8942);
 		}
 	}
 
@@ -4870,9 +5105,9 @@ public class UserDef extends CFacade {
 	public void setObcenter_dia(short obcenter_dia) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8928, obcenter_dia);
+			__io__block.writeShort(__io__address + 8998, obcenter_dia);
 		} else {
-			__io__block.writeShort(__io__address + 8872, obcenter_dia);
+			__io__block.writeShort(__io__address + 8942, obcenter_dia);
 		}
 	}
 
@@ -4887,9 +5122,9 @@ public class UserDef extends CFacade {
 	public short getRvisize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8930);
+			return __io__block.readShort(__io__address + 9000);
 		} else {
-			return __io__block.readShort(__io__address + 8874);
+			return __io__block.readShort(__io__address + 8944);
 		}
 	}
 
@@ -4904,9 +5139,9 @@ public class UserDef extends CFacade {
 	public void setRvisize(short rvisize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8930, rvisize);
+			__io__block.writeShort(__io__address + 9000, rvisize);
 		} else {
-			__io__block.writeShort(__io__address + 8874, rvisize);
+			__io__block.writeShort(__io__address + 8944, rvisize);
 		}
 	}
 
@@ -4921,9 +5156,9 @@ public class UserDef extends CFacade {
 	public short getRvibright() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8932);
+			return __io__block.readShort(__io__address + 9002);
 		} else {
-			return __io__block.readShort(__io__address + 8876);
+			return __io__block.readShort(__io__address + 8946);
 		}
 	}
 
@@ -4938,9 +5173,9 @@ public class UserDef extends CFacade {
 	public void setRvibright(short rvibright) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8932, rvibright);
+			__io__block.writeShort(__io__address + 9002, rvibright);
 		} else {
-			__io__block.writeShort(__io__address + 8876, rvibright);
+			__io__block.writeShort(__io__address + 8946, rvibright);
 		}
 	}
 
@@ -4955,9 +5190,9 @@ public class UserDef extends CFacade {
 	public short getRecent_files() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8934);
+			return __io__block.readShort(__io__address + 9004);
 		} else {
-			return __io__block.readShort(__io__address + 8878);
+			return __io__block.readShort(__io__address + 8948);
 		}
 	}
 
@@ -4972,9 +5207,9 @@ public class UserDef extends CFacade {
 	public void setRecent_files(short recent_files) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8934, recent_files);
+			__io__block.writeShort(__io__address + 9004, recent_files);
 		} else {
-			__io__block.writeShort(__io__address + 8878, recent_files);
+			__io__block.writeShort(__io__address + 8948, recent_files);
 		}
 	}
 
@@ -4989,9 +5224,9 @@ public class UserDef extends CFacade {
 	public short getSmooth_viewtx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8936);
+			return __io__block.readShort(__io__address + 9006);
 		} else {
-			return __io__block.readShort(__io__address + 8880);
+			return __io__block.readShort(__io__address + 8950);
 		}
 	}
 
@@ -5006,9 +5241,9 @@ public class UserDef extends CFacade {
 	public void setSmooth_viewtx(short smooth_viewtx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8936, smooth_viewtx);
+			__io__block.writeShort(__io__address + 9006, smooth_viewtx);
 		} else {
-			__io__block.writeShort(__io__address + 8880, smooth_viewtx);
+			__io__block.writeShort(__io__address + 8950, smooth_viewtx);
 		}
 	}
 
@@ -5020,9 +5255,9 @@ public class UserDef extends CFacade {
 	public short getGlreslimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8938);
+			return __io__block.readShort(__io__address + 9008);
 		} else {
-			return __io__block.readShort(__io__address + 8882);
+			return __io__block.readShort(__io__address + 8952);
 		}
 	}
 
@@ -5034,9 +5269,9 @@ public class UserDef extends CFacade {
 	public void setGlreslimit(short glreslimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8938, glreslimit);
+			__io__block.writeShort(__io__address + 9008, glreslimit);
 		} else {
-			__io__block.writeShort(__io__address + 8882, glreslimit);
+			__io__block.writeShort(__io__address + 8952, glreslimit);
 		}
 	}
 
@@ -5048,9 +5283,9 @@ public class UserDef extends CFacade {
 	public short getCurssize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8940);
+			return __io__block.readShort(__io__address + 9010);
 		} else {
-			return __io__block.readShort(__io__address + 8884);
+			return __io__block.readShort(__io__address + 8954);
 		}
 	}
 
@@ -5062,37 +5297,43 @@ public class UserDef extends CFacade {
 	public void setCurssize(short curssize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8940, curssize);
+			__io__block.writeShort(__io__address + 9010, curssize);
 		} else {
-			__io__block.writeShort(__io__address + 8884, curssize);
+			__io__block.writeShort(__io__address + 8954, curssize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'color_picker_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eColorPicker_Types </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
 	
 	public short getColor_picker_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8942);
+			return __io__block.readShort(__io__address + 9012);
 		} else {
-			return __io__block.readShort(__io__address + 8886);
+			return __io__block.readShort(__io__address + 8956);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'color_picker_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eColorPicker_Types </p>
 	 * @see #__DNA__FIELD__color_picker_type
 	 */
 	
 	public void setColor_picker_type(short color_picker_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8942, color_picker_type);
+			__io__block.writeShort(__io__address + 9012, color_picker_type);
 		} else {
-			__io__block.writeShort(__io__address + 8886, color_picker_type);
+			__io__block.writeShort(__io__address + 8956, color_picker_type);
 		}
 	}
 
@@ -5107,9 +5348,9 @@ public class UserDef extends CFacade {
 	public byte getIpo_new() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8944);
+			return __io__block.readByte(__io__address + 9014);
 		} else {
-			return __io__block.readByte(__io__address + 8888);
+			return __io__block.readByte(__io__address + 8958);
 		}
 	}
 
@@ -5124,9 +5365,9 @@ public class UserDef extends CFacade {
 	public void setIpo_new(byte ipo_new) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8944, ipo_new);
+			__io__block.writeByte(__io__address + 9014, ipo_new);
 		} else {
-			__io__block.writeByte(__io__address + 8888, ipo_new);
+			__io__block.writeByte(__io__address + 8958, ipo_new);
 		}
 	}
 
@@ -5141,9 +5382,9 @@ public class UserDef extends CFacade {
 	public byte getKeyhandles_new() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8945);
+			return __io__block.readByte(__io__address + 9015);
 		} else {
-			return __io__block.readByte(__io__address + 8889);
+			return __io__block.readByte(__io__address + 8959);
 		}
 	}
 
@@ -5158,9 +5399,9 @@ public class UserDef extends CFacade {
 	public void setKeyhandles_new(byte keyhandles_new) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8945, keyhandles_new);
+			__io__block.writeByte(__io__address + 9015, keyhandles_new);
 		} else {
-			__io__block.writeByte(__io__address + 8889, keyhandles_new);
+			__io__block.writeByte(__io__address + 8959, keyhandles_new);
 		}
 	}
 
@@ -5172,9 +5413,9 @@ public class UserDef extends CFacade {
 	public byte getGpu_select_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8946);
+			return __io__block.readByte(__io__address + 9016);
 		} else {
-			return __io__block.readByte(__io__address + 8890);
+			return __io__block.readByte(__io__address + 8960);
 		}
 	}
 
@@ -5186,37 +5427,99 @@ public class UserDef extends CFacade {
 	public void setGpu_select_method(byte gpu_select_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8946, gpu_select_method);
+			__io__block.writeByte(__io__address + 9016, gpu_select_method);
 		} else {
-			__io__block.writeByte(__io__address + 8890, gpu_select_method);
+			__io__block.writeByte(__io__address + 8960, gpu_select_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpu_select_pick_deph'.
+	 * @see #__DNA__FIELD__gpu_select_pick_deph
+	 */
+	
+	public byte getGpu_select_pick_deph() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9017);
+		} else {
+			return __io__block.readByte(__io__address + 8961);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpu_select_pick_deph'.
+	 * @see #__DNA__FIELD__gpu_select_pick_deph
+	 */
+	
+	public void setGpu_select_pick_deph(byte gpu_select_pick_deph) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9017, gpu_select_pick_deph);
+		} else {
+			__io__block.writeByte(__io__address + 8961, gpu_select_pick_deph);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public byte getPad4() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9018);
+		} else {
+			return __io__block.readByte(__io__address + 8962);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public void setPad4(byte pad4) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9018, pad4);
+		} else {
+			__io__block.writeByte(__io__address + 8962, pad4);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'view_frame_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eZoomFrame_Mode </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
 	
 	public byte getView_frame_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8947);
+			return __io__block.readByte(__io__address + 9019);
 		} else {
-			return __io__block.readByte(__io__address + 8891);
+			return __io__block.readByte(__io__address + 8963);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'view_frame_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eZoomFrame_Mode </p>
 	 * @see #__DNA__FIELD__view_frame_type
 	 */
 	
 	public void setView_frame_type(byte view_frame_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8947, view_frame_type);
+			__io__block.writeByte(__io__address + 9019, view_frame_type);
 		} else {
-			__io__block.writeByte(__io__address + 8891, view_frame_type);
+			__io__block.writeByte(__io__address + 8963, view_frame_type);
 		}
 	}
 
@@ -5231,9 +5534,9 @@ public class UserDef extends CFacade {
 	public int getView_frame_keyframes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8948);
+			return __io__block.readInt(__io__address + 9020);
 		} else {
-			return __io__block.readInt(__io__address + 8892);
+			return __io__block.readInt(__io__address + 8964);
 		}
 	}
 
@@ -5248,9 +5551,9 @@ public class UserDef extends CFacade {
 	public void setView_frame_keyframes(int view_frame_keyframes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8948, view_frame_keyframes);
+			__io__block.writeInt(__io__address + 9020, view_frame_keyframes);
 		} else {
-			__io__block.writeInt(__io__address + 8892, view_frame_keyframes);
+			__io__block.writeInt(__io__address + 8964, view_frame_keyframes);
 		}
 	}
 
@@ -5265,9 +5568,9 @@ public class UserDef extends CFacade {
 	public float getView_frame_seconds() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8952);
+			return __io__block.readFloat(__io__address + 9024);
 		} else {
-			return __io__block.readFloat(__io__address + 8896);
+			return __io__block.readFloat(__io__address + 8968);
 		}
 	}
 
@@ -5282,9 +5585,9 @@ public class UserDef extends CFacade {
 	public void setView_frame_seconds(float view_frame_seconds) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8952, view_frame_seconds);
+			__io__block.writeFloat(__io__address + 9024, view_frame_seconds);
 		} else {
-			__io__block.writeFloat(__io__address + 8896, view_frame_seconds);
+			__io__block.writeFloat(__io__address + 8968, view_frame_seconds);
 		}
 	}
 
@@ -5299,9 +5602,9 @@ public class UserDef extends CFacade {
 	public short getScrcastfps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8956);
+			return __io__block.readShort(__io__address + 9028);
 		} else {
-			return __io__block.readShort(__io__address + 8900);
+			return __io__block.readShort(__io__address + 8972);
 		}
 	}
 
@@ -5316,9 +5619,9 @@ public class UserDef extends CFacade {
 	public void setScrcastfps(short scrcastfps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8956, scrcastfps);
+			__io__block.writeShort(__io__address + 9028, scrcastfps);
 		} else {
-			__io__block.writeShort(__io__address + 8900, scrcastfps);
+			__io__block.writeShort(__io__address + 8972, scrcastfps);
 		}
 	}
 
@@ -5333,9 +5636,9 @@ public class UserDef extends CFacade {
 	public short getScrcastwait() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8958);
+			return __io__block.readShort(__io__address + 9030);
 		} else {
-			return __io__block.readShort(__io__address + 8902);
+			return __io__block.readShort(__io__address + 8974);
 		}
 	}
 
@@ -5350,9 +5653,9 @@ public class UserDef extends CFacade {
 	public void setScrcastwait(short scrcastwait) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8958, scrcastwait);
+			__io__block.writeShort(__io__address + 9030, scrcastwait);
 		} else {
-			__io__block.writeShort(__io__address + 8902, scrcastwait);
+			__io__block.writeShort(__io__address + 8974, scrcastwait);
 		}
 	}
 
@@ -5367,9 +5670,9 @@ public class UserDef extends CFacade {
 	public short getWidget_unit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8960);
+			return __io__block.readShort(__io__address + 9032);
 		} else {
-			return __io__block.readShort(__io__address + 8904);
+			return __io__block.readShort(__io__address + 8976);
 		}
 	}
 
@@ -5384,9 +5687,9 @@ public class UserDef extends CFacade {
 	public void setWidget_unit(short widget_unit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8960, widget_unit);
+			__io__block.writeShort(__io__address + 9032, widget_unit);
 		} else {
-			__io__block.writeShort(__io__address + 8904, widget_unit);
+			__io__block.writeShort(__io__address + 8976, widget_unit);
 		}
 	}
 
@@ -5398,9 +5701,9 @@ public class UserDef extends CFacade {
 	public short getAnisotropic_filter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8962);
+			return __io__block.readShort(__io__address + 9034);
 		} else {
-			return __io__block.readShort(__io__address + 8906);
+			return __io__block.readShort(__io__address + 8978);
 		}
 	}
 
@@ -5412,9 +5715,9 @@ public class UserDef extends CFacade {
 	public void setAnisotropic_filter(short anisotropic_filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8962, anisotropic_filter);
+			__io__block.writeShort(__io__address + 9034, anisotropic_filter);
 		} else {
-			__io__block.writeShort(__io__address + 8906, anisotropic_filter);
+			__io__block.writeShort(__io__address + 8978, anisotropic_filter);
 		}
 	}
 
@@ -5426,9 +5729,9 @@ public class UserDef extends CFacade {
 	public short getUse_16bit_textures() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8964);
+			return __io__block.readShort(__io__address + 9036);
 		} else {
-			return __io__block.readShort(__io__address + 8908);
+			return __io__block.readShort(__io__address + 8980);
 		}
 	}
 
@@ -5440,9 +5743,9 @@ public class UserDef extends CFacade {
 	public void setUse_16bit_textures(short use_16bit_textures) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8964, use_16bit_textures);
+			__io__block.writeShort(__io__address + 9036, use_16bit_textures);
 		} else {
-			__io__block.writeShort(__io__address + 8908, use_16bit_textures);
+			__io__block.writeShort(__io__address + 8980, use_16bit_textures);
 		}
 	}
 
@@ -5454,9 +5757,9 @@ public class UserDef extends CFacade {
 	public short getUse_gpu_mipmap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8966);
+			return __io__block.readShort(__io__address + 9038);
 		} else {
-			return __io__block.readShort(__io__address + 8910);
+			return __io__block.readShort(__io__address + 8982);
 		}
 	}
 
@@ -5468,9 +5771,9 @@ public class UserDef extends CFacade {
 	public void setUse_gpu_mipmap(short use_gpu_mipmap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8966, use_gpu_mipmap);
+			__io__block.writeShort(__io__address + 9038, use_gpu_mipmap);
 		} else {
-			__io__block.writeShort(__io__address + 8910, use_gpu_mipmap);
+			__io__block.writeShort(__io__address + 8982, use_gpu_mipmap);
 		}
 	}
 
@@ -5485,9 +5788,9 @@ public class UserDef extends CFacade {
 	public float getNdof_sensitivity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8968);
+			return __io__block.readFloat(__io__address + 9040);
 		} else {
-			return __io__block.readFloat(__io__address + 8912);
+			return __io__block.readFloat(__io__address + 8984);
 		}
 	}
 
@@ -5502,9 +5805,9 @@ public class UserDef extends CFacade {
 	public void setNdof_sensitivity(float ndof_sensitivity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8968, ndof_sensitivity);
+			__io__block.writeFloat(__io__address + 9040, ndof_sensitivity);
 		} else {
-			__io__block.writeFloat(__io__address + 8912, ndof_sensitivity);
+			__io__block.writeFloat(__io__address + 8984, ndof_sensitivity);
 		}
 	}
 
@@ -5516,9 +5819,9 @@ public class UserDef extends CFacade {
 	public float getNdof_orbit_sensitivity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8972);
+			return __io__block.readFloat(__io__address + 9044);
 		} else {
-			return __io__block.readFloat(__io__address + 8916);
+			return __io__block.readFloat(__io__address + 8988);
 		}
 	}
 
@@ -5530,9 +5833,9 @@ public class UserDef extends CFacade {
 	public void setNdof_orbit_sensitivity(float ndof_orbit_sensitivity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8972, ndof_orbit_sensitivity);
+			__io__block.writeFloat(__io__address + 9044, ndof_orbit_sensitivity);
 		} else {
-			__io__block.writeFloat(__io__address + 8916, ndof_orbit_sensitivity);
+			__io__block.writeFloat(__io__address + 8988, ndof_orbit_sensitivity);
 		}
 	}
 
@@ -5547,9 +5850,9 @@ public class UserDef extends CFacade {
 	public float getNdof_deadzone() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8976);
+			return __io__block.readFloat(__io__address + 9048);
 		} else {
-			return __io__block.readFloat(__io__address + 8920);
+			return __io__block.readFloat(__io__address + 8992);
 		}
 	}
 
@@ -5564,9 +5867,9 @@ public class UserDef extends CFacade {
 	public void setNdof_deadzone(float ndof_deadzone) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8976, ndof_deadzone);
+			__io__block.writeFloat(__io__address + 9048, ndof_deadzone);
 		} else {
-			__io__block.writeFloat(__io__address + 8920, ndof_deadzone);
+			__io__block.writeFloat(__io__address + 8992, ndof_deadzone);
 		}
 	}
 
@@ -5574,16 +5877,16 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for 3D mouse </p>
+	 * <p> eNdof_Flag, flags for 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
 	public int getNdof_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8980);
+			return __io__block.readInt(__io__address + 9052);
 		} else {
-			return __io__block.readInt(__io__address + 8924);
+			return __io__block.readInt(__io__address + 8996);
 		}
 	}
 
@@ -5591,16 +5894,16 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'ndof_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for 3D mouse </p>
+	 * <p> eNdof_Flag, flags for 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
 	public void setNdof_flag(int ndof_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8980, ndof_flag);
+			__io__block.writeInt(__io__address + 9052, ndof_flag);
 		} else {
-			__io__block.writeInt(__io__address + 8924, ndof_flag);
+			__io__block.writeInt(__io__address + 8996, ndof_flag);
 		}
 	}
 
@@ -5608,16 +5911,16 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
+	 * <p> eMultiSample_Type, amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
 	public short getOgl_multisamples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8984);
+			return __io__block.readShort(__io__address + 9056);
 		} else {
-			return __io__block.readShort(__io__address + 8928);
+			return __io__block.readShort(__io__address + 9000);
 		}
 	}
 
@@ -5625,16 +5928,16 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'ogl_multisamples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
+	 * <p> eMultiSample_Type, amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
 	public void setOgl_multisamples(short ogl_multisamples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8984, ogl_multisamples);
+			__io__block.writeShort(__io__address + 9056, ogl_multisamples);
 		} else {
-			__io__block.writeShort(__io__address + 8928, ogl_multisamples);
+			__io__block.writeShort(__io__address + 9000, ogl_multisamples);
 		}
 	}
 
@@ -5642,16 +5945,16 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
+	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
 	
 	public short getImage_draw_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8986);
+			return __io__block.readShort(__io__address + 9058);
 		} else {
-			return __io__block.readShort(__io__address + 8930);
+			return __io__block.readShort(__io__address + 9002);
 		}
 	}
 
@@ -5659,16 +5962,16 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'image_draw_method'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
+	 * <p> eImageDrawMethod, Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
 	
 	public void setImage_draw_method(short image_draw_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8986, image_draw_method);
+			__io__block.writeShort(__io__address + 9058, image_draw_method);
 		} else {
-			__io__block.writeShort(__io__address + 8930, image_draw_method);
+			__io__block.writeShort(__io__address + 9002, image_draw_method);
 		}
 	}
 
@@ -5680,9 +5983,9 @@ public class UserDef extends CFacade {
 	public float getGlalphaclip() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8988);
+			return __io__block.readFloat(__io__address + 9060);
 		} else {
-			return __io__block.readFloat(__io__address + 8932);
+			return __io__block.readFloat(__io__address + 9004);
 		}
 	}
 
@@ -5694,9 +5997,9 @@ public class UserDef extends CFacade {
 	public void setGlalphaclip(float glalphaclip) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8988, glalphaclip);
+			__io__block.writeFloat(__io__address + 9060, glalphaclip);
 		} else {
-			__io__block.writeFloat(__io__address + 8932, glalphaclip);
+			__io__block.writeFloat(__io__address + 9004, glalphaclip);
 		}
 	}
 
@@ -5704,16 +6007,16 @@ public class UserDef extends CFacade {
 	 * Get method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> autokeying mode </p>
+	 * <p> eAutokey_Mode, autokeying mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
 	public short getAutokey_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8992);
+			return __io__block.readShort(__io__address + 9064);
 		} else {
-			return __io__block.readShort(__io__address + 8936);
+			return __io__block.readShort(__io__address + 9008);
 		}
 	}
 
@@ -5721,16 +6024,16 @@ public class UserDef extends CFacade {
 	 * Set method for struct member 'autokey_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> autokeying mode </p>
+	 * <p> eAutokey_Mode, autokeying mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
 	public void setAutokey_mode(short autokey_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8992, autokey_mode);
+			__io__block.writeShort(__io__address + 9064, autokey_mode);
 		} else {
-			__io__block.writeShort(__io__address + 8936, autokey_mode);
+			__io__block.writeShort(__io__address + 9008, autokey_mode);
 		}
 	}
 
@@ -5745,9 +6048,9 @@ public class UserDef extends CFacade {
 	public short getAutokey_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8994);
+			return __io__block.readShort(__io__address + 9066);
 		} else {
-			return __io__block.readShort(__io__address + 8938);
+			return __io__block.readShort(__io__address + 9010);
 		}
 	}
 
@@ -5762,9 +6065,9 @@ public class UserDef extends CFacade {
 	public void setAutokey_flag(short autokey_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8994, autokey_flag);
+			__io__block.writeShort(__io__address + 9066, autokey_flag);
 		} else {
-			__io__block.writeShort(__io__address + 8938, autokey_flag);
+			__io__block.writeShort(__io__address + 9010, autokey_flag);
 		}
 	}
 
@@ -5776,9 +6079,9 @@ public class UserDef extends CFacade {
 	public short getText_render() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8996);
+			return __io__block.readShort(__io__address + 9068);
 		} else {
-			return __io__block.readShort(__io__address + 8940);
+			return __io__block.readShort(__io__address + 9012);
 		}
 	}
 
@@ -5790,9 +6093,9 @@ public class UserDef extends CFacade {
 	public void setText_render(short text_render) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8996, text_render);
+			__io__block.writeShort(__io__address + 9068, text_render);
 		} else {
-			__io__block.writeShort(__io__address + 8940, text_render);
+			__io__block.writeShort(__io__address + 9012, text_render);
 		}
 	}
 
@@ -5807,9 +6110,9 @@ public class UserDef extends CFacade {
 	public short getPad9() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8998);
+			return __io__block.readShort(__io__address + 9070);
 		} else {
-			return __io__block.readShort(__io__address + 8942);
+			return __io__block.readShort(__io__address + 9014);
 		}
 	}
 
@@ -5824,9 +6127,9 @@ public class UserDef extends CFacade {
 	public void setPad9(short pad9) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8998, pad9);
+			__io__block.writeShort(__io__address + 9070, pad9);
 		} else {
-			__io__block.writeShort(__io__address + 8942, pad9);
+			__io__block.writeShort(__io__address + 9014, pad9);
 		}
 	}
 
@@ -5841,9 +6144,9 @@ public class UserDef extends CFacade {
 	public ColorBand getCoba_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorBand(__io__address + 9000, __io__block, __io__blockTable);
+			return new ColorBand(__io__address + 9072, __io__block, __io__blockTable);
 		} else {
-			return new ColorBand(__io__address + 8944, __io__block, __io__blockTable);
+			return new ColorBand(__io__address + 9016, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5859,9 +6162,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9000;
+			__dna__offset = 9072;
 		} else {
-			__dna__offset = 8944;
+			__dna__offset = 9016;
 		}
 		if (__io__equals(coba_weight, __io__address + __dna__offset)) {
 			return;
@@ -5884,9 +6187,9 @@ public class UserDef extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 9776, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 9848, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 9720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 9792, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5899,9 +6202,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9776;
+			__dna__offset = 9848;
 		} else {
-			__dna__offset = 9720;
+			__dna__offset = 9792;
 		}
 		if (__io__equals(sculpt_paint_overlay_col, __io__address + __dna__offset)) {
 			return;
@@ -5927,9 +6230,9 @@ public class UserDef extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 9788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 9860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 9732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 9804, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5945,9 +6248,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9788;
+			__dna__offset = 9860;
 		} else {
-			__dna__offset = 9732;
+			__dna__offset = 9804;
 		}
 		if (__io__equals(gpencil_new_layer_col, __io__address + __dna__offset)) {
 			return;
@@ -5966,9 +6269,9 @@ public class UserDef extends CFacade {
 	public short getTweak_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 9804);
+			return __io__block.readShort(__io__address + 9876);
 		} else {
-			return __io__block.readShort(__io__address + 9748);
+			return __io__block.readShort(__io__address + 9820);
 		}
 	}
 
@@ -5980,9 +6283,9 @@ public class UserDef extends CFacade {
 	public void setTweak_threshold(short tweak_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 9804, tweak_threshold);
+			__io__block.writeShort(__io__address + 9876, tweak_threshold);
 		} else {
-			__io__block.writeShort(__io__address + 9748, tweak_threshold);
+			__io__block.writeShort(__io__address + 9820, tweak_threshold);
 		}
 	}
 
@@ -5994,9 +6297,9 @@ public class UserDef extends CFacade {
 	public byte getNavigation_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 9806);
+			return __io__block.readByte(__io__address + 9878);
 		} else {
-			return __io__block.readByte(__io__address + 9750);
+			return __io__block.readByte(__io__address + 9822);
 		}
 	}
 
@@ -6008,9 +6311,9 @@ public class UserDef extends CFacade {
 	public void setNavigation_mode(byte navigation_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 9806, navigation_mode);
+			__io__block.writeByte(__io__address + 9878, navigation_mode);
 		} else {
-			__io__block.writeByte(__io__address + 9750, navigation_mode);
+			__io__block.writeByte(__io__address + 9822, navigation_mode);
 		}
 	}
 
@@ -6022,9 +6325,9 @@ public class UserDef extends CFacade {
 	public byte getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 9807);
+			return __io__block.readByte(__io__address + 9879);
 		} else {
-			return __io__block.readByte(__io__address + 9751);
+			return __io__block.readByte(__io__address + 9823);
 		}
 	}
 
@@ -6036,9 +6339,9 @@ public class UserDef extends CFacade {
 	public void setPad(byte pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 9807, pad);
+			__io__block.writeByte(__io__address + 9879, pad);
 		} else {
-			__io__block.writeByte(__io__address + 9751, pad);
+			__io__block.writeByte(__io__address + 9823, pad);
 		}
 	}
 
@@ -6057,9 +6360,9 @@ public class UserDef extends CFacade {
 			80
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 9808, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9880, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 9752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9824, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6075,9 +6378,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9808;
+			__dna__offset = 9880;
 		} else {
-			__dna__offset = 9752;
+			__dna__offset = 9824;
 		}
 		if (__io__equals(author, __io__address + __dna__offset)) {
 			return;
@@ -6100,9 +6403,9 @@ public class UserDef extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 9888, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 9832, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9904, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6115,9 +6418,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9888;
+			__dna__offset = 9960;
 		} else {
-			__dna__offset = 9832;
+			__dna__offset = 9904;
 		}
 		if (__io__equals(font_path_ui, __io__address + __dna__offset)) {
 			return;
@@ -6140,9 +6443,9 @@ public class UserDef extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10912, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10984, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10856, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10928, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6155,9 +6458,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10912;
+			__dna__offset = 10984;
 		} else {
-			__dna__offset = 10856;
+			__dna__offset = 10928;
 		}
 		if (__io__equals(font_path_ui_mono, __io__address + __dna__offset)) {
 			return;
@@ -6176,9 +6479,9 @@ public class UserDef extends CFacade {
 	public int getCompute_device_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 11936);
+			return __io__block.readInt(__io__address + 12008);
 		} else {
-			return __io__block.readInt(__io__address + 11880);
+			return __io__block.readInt(__io__address + 11952);
 		}
 	}
 
@@ -6190,9 +6493,9 @@ public class UserDef extends CFacade {
 	public void setCompute_device_type(int compute_device_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 11936, compute_device_type);
+			__io__block.writeInt(__io__address + 12008, compute_device_type);
 		} else {
-			__io__block.writeInt(__io__address + 11880, compute_device_type);
+			__io__block.writeInt(__io__address + 11952, compute_device_type);
 		}
 	}
 
@@ -6204,9 +6507,9 @@ public class UserDef extends CFacade {
 	public int getCompute_device_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 11940);
+			return __io__block.readInt(__io__address + 12012);
 		} else {
-			return __io__block.readInt(__io__address + 11884);
+			return __io__block.readInt(__io__address + 11956);
 		}
 	}
 
@@ -6218,9 +6521,9 @@ public class UserDef extends CFacade {
 	public void setCompute_device_id(int compute_device_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 11940, compute_device_id);
+			__io__block.writeInt(__io__address + 12012, compute_device_id);
 		} else {
-			__io__block.writeInt(__io__address + 11884, compute_device_id);
+			__io__block.writeInt(__io__address + 11956, compute_device_id);
 		}
 	}
 
@@ -6235,9 +6538,9 @@ public class UserDef extends CFacade {
 	public float getFcu_inactive_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 11944);
+			return __io__block.readFloat(__io__address + 12016);
 		} else {
-			return __io__block.readFloat(__io__address + 11888);
+			return __io__block.readFloat(__io__address + 11960);
 		}
 	}
 
@@ -6252,9 +6555,9 @@ public class UserDef extends CFacade {
 	public void setFcu_inactive_alpha(float fcu_inactive_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 11944, fcu_inactive_alpha);
+			__io__block.writeFloat(__io__address + 12016, fcu_inactive_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 11888, fcu_inactive_alpha);
+			__io__block.writeFloat(__io__address + 11960, fcu_inactive_alpha);
 		}
 	}
 
@@ -6269,9 +6572,9 @@ public class UserDef extends CFacade {
 	public float getPixelsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 11948);
+			return __io__block.readFloat(__io__address + 12020);
 		} else {
-			return __io__block.readFloat(__io__address + 11892);
+			return __io__block.readFloat(__io__address + 11964);
 		}
 	}
 
@@ -6286,9 +6589,9 @@ public class UserDef extends CFacade {
 	public void setPixelsize(float pixelsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 11948, pixelsize);
+			__io__block.writeFloat(__io__address + 12020, pixelsize);
 		} else {
-			__io__block.writeFloat(__io__address + 11892, pixelsize);
+			__io__block.writeFloat(__io__address + 11964, pixelsize);
 		}
 	}
 
@@ -6303,9 +6606,9 @@ public class UserDef extends CFacade {
 	public int getVirtual_pixel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 11952);
+			return __io__block.readInt(__io__address + 12024);
 		} else {
-			return __io__block.readInt(__io__address + 11896);
+			return __io__block.readInt(__io__address + 11968);
 		}
 	}
 
@@ -6320,9 +6623,9 @@ public class UserDef extends CFacade {
 	public void setVirtual_pixel(int virtual_pixel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 11952, virtual_pixel);
+			__io__block.writeInt(__io__address + 12024, virtual_pixel);
 		} else {
-			__io__block.writeInt(__io__address + 11896, virtual_pixel);
+			__io__block.writeInt(__io__address + 11968, virtual_pixel);
 		}
 	}
 
@@ -6337,9 +6640,9 @@ public class UserDef extends CFacade {
 	public short getPie_interaction_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11956);
+			return __io__block.readShort(__io__address + 12028);
 		} else {
-			return __io__block.readShort(__io__address + 11900);
+			return __io__block.readShort(__io__address + 11972);
 		}
 	}
 
@@ -6354,9 +6657,9 @@ public class UserDef extends CFacade {
 	public void setPie_interaction_type(short pie_interaction_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11956, pie_interaction_type);
+			__io__block.writeShort(__io__address + 12028, pie_interaction_type);
 		} else {
-			__io__block.writeShort(__io__address + 11900, pie_interaction_type);
+			__io__block.writeShort(__io__address + 11972, pie_interaction_type);
 		}
 	}
 
@@ -6371,9 +6674,9 @@ public class UserDef extends CFacade {
 	public short getPie_initial_timeout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11958);
+			return __io__block.readShort(__io__address + 12030);
 		} else {
-			return __io__block.readShort(__io__address + 11902);
+			return __io__block.readShort(__io__address + 11974);
 		}
 	}
 
@@ -6388,9 +6691,9 @@ public class UserDef extends CFacade {
 	public void setPie_initial_timeout(short pie_initial_timeout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11958, pie_initial_timeout);
+			__io__block.writeShort(__io__address + 12030, pie_initial_timeout);
 		} else {
-			__io__block.writeShort(__io__address + 11902, pie_initial_timeout);
+			__io__block.writeShort(__io__address + 11974, pie_initial_timeout);
 		}
 	}
 
@@ -6402,9 +6705,9 @@ public class UserDef extends CFacade {
 	public short getPie_animation_timeout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11960);
+			return __io__block.readShort(__io__address + 12032);
 		} else {
-			return __io__block.readShort(__io__address + 11904);
+			return __io__block.readShort(__io__address + 11976);
 		}
 	}
 
@@ -6416,9 +6719,9 @@ public class UserDef extends CFacade {
 	public void setPie_animation_timeout(short pie_animation_timeout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11960, pie_animation_timeout);
+			__io__block.writeShort(__io__address + 12032, pie_animation_timeout);
 		} else {
-			__io__block.writeShort(__io__address + 11904, pie_animation_timeout);
+			__io__block.writeShort(__io__address + 11976, pie_animation_timeout);
 		}
 	}
 
@@ -6430,9 +6733,9 @@ public class UserDef extends CFacade {
 	public short getPie_menu_confirm() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11962);
+			return __io__block.readShort(__io__address + 12034);
 		} else {
-			return __io__block.readShort(__io__address + 11906);
+			return __io__block.readShort(__io__address + 11978);
 		}
 	}
 
@@ -6444,9 +6747,9 @@ public class UserDef extends CFacade {
 	public void setPie_menu_confirm(short pie_menu_confirm) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11962, pie_menu_confirm);
+			__io__block.writeShort(__io__address + 12034, pie_menu_confirm);
 		} else {
-			__io__block.writeShort(__io__address + 11906, pie_menu_confirm);
+			__io__block.writeShort(__io__address + 11978, pie_menu_confirm);
 		}
 	}
 
@@ -6461,9 +6764,9 @@ public class UserDef extends CFacade {
 	public short getPie_menu_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11964);
+			return __io__block.readShort(__io__address + 12036);
 		} else {
-			return __io__block.readShort(__io__address + 11908);
+			return __io__block.readShort(__io__address + 11980);
 		}
 	}
 
@@ -6478,9 +6781,9 @@ public class UserDef extends CFacade {
 	public void setPie_menu_radius(short pie_menu_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11964, pie_menu_radius);
+			__io__block.writeShort(__io__address + 12036, pie_menu_radius);
 		} else {
-			__io__block.writeShort(__io__address + 11908, pie_menu_radius);
+			__io__block.writeShort(__io__address + 11980, pie_menu_radius);
 		}
 	}
 
@@ -6495,9 +6798,9 @@ public class UserDef extends CFacade {
 	public short getPie_menu_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 11966);
+			return __io__block.readShort(__io__address + 12038);
 		} else {
-			return __io__block.readShort(__io__address + 11910);
+			return __io__block.readShort(__io__address + 11982);
 		}
 	}
 
@@ -6512,9 +6815,9 @@ public class UserDef extends CFacade {
 	public void setPie_menu_threshold(short pie_menu_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 11966, pie_menu_threshold);
+			__io__block.writeShort(__io__address + 12038, pie_menu_threshold);
 		} else {
-			__io__block.writeShort(__io__address + 11910, pie_menu_threshold);
+			__io__block.writeShort(__io__address + 11982, pie_menu_threshold);
 		}
 	}
 
@@ -6526,9 +6829,9 @@ public class UserDef extends CFacade {
 	public WalkNavigation getWalk_navigation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new WalkNavigation(__io__address + 11968, __io__block, __io__blockTable);
+			return new WalkNavigation(__io__address + 12040, __io__block, __io__blockTable);
 		} else {
-			return new WalkNavigation(__io__address + 11912, __io__block, __io__blockTable);
+			return new WalkNavigation(__io__address + 11984, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6541,9 +6844,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 11968;
+			__dna__offset = 12040;
 		} else {
-			__dna__offset = 11912;
+			__dna__offset = 11984;
 		}
 		if (__io__equals(walk_navigation, __io__address + __dna__offset)) {
 			return;
@@ -6562,9 +6865,9 @@ public class UserDef extends CFacade {
 	public short getOpensubdiv_compute_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12000);
+			return __io__block.readShort(__io__address + 12072);
 		} else {
-			return __io__block.readShort(__io__address + 11944);
+			return __io__block.readShort(__io__address + 12016);
 		}
 	}
 
@@ -6576,9 +6879,9 @@ public class UserDef extends CFacade {
 	public void setOpensubdiv_compute_type(short opensubdiv_compute_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12000, opensubdiv_compute_type);
+			__io__block.writeShort(__io__address + 12072, opensubdiv_compute_type);
 		} else {
-			__io__block.writeShort(__io__address + 11944, opensubdiv_compute_type);
+			__io__block.writeShort(__io__address + 12016, opensubdiv_compute_type);
 		}
 	}
 
@@ -6594,9 +6897,9 @@ public class UserDef extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 12002, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12074, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 11946, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12018, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6609,9 +6912,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12002;
+			__dna__offset = 12074;
 		} else {
-			__dna__offset = 11946;
+			__dna__offset = 12018;
 		}
 		if (__io__equals(pad5, __io__address + __dna__offset)) {
 			return;

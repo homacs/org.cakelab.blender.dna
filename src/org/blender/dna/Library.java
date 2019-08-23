@@ -164,6 +164,9 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp data needed by read/write code. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,24 +186,47 @@ public class Library extends CFacade {
 	public static final long[] __DNA__FIELD__temp_index = new long[]{2160, 2192};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'versionfile'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Library library = ...;
-	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD___pad);
-	 * CPointer&lt;Integer&gt; p__pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__versionfile);
+	 * CPointer&lt;Short&gt; p_versionfile = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'versionfile'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{2164, 2196};
+	public static final long[] __DNA__FIELD__versionfile = new long[]{2164, 2196};
+
+	/**
+	 * Field descriptor (offset) for struct member 'subversionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Library library = ...;
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__subversionfile);
+	 * CPointer&lt;Short&gt; p_subversionfile = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subversionfile'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subversionfile = new long[]{2166, 2198};
 
 	public Library(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -448,6 +474,9 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'temp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp data needed by read/write code. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
 	
@@ -462,6 +491,9 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'temp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp data needed by read/write code. </p>
 	 * @see #__DNA__FIELD__temp_index
 	 */
 	
@@ -475,30 +507,64 @@ public class Library extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'versionfile'.
+	 * @see #__DNA__FIELD__versionfile
 	 */
 	
-	public int get_pad() throws IOException
+	public short getVersionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2196);
+			return __io__block.readShort(__io__address + 2196);
 		} else {
-			return __io__block.readInt(__io__address + 2164);
+			return __io__block.readShort(__io__address + 2164);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'versionfile'.
+	 * @see #__DNA__FIELD__versionfile
 	 */
 	
-	public void set_pad(int _pad) throws IOException
+	public void setVersionfile(short versionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2196, _pad);
+			__io__block.writeShort(__io__address + 2196, versionfile);
 		} else {
-			__io__block.writeInt(__io__address + 2164, _pad);
+			__io__block.writeShort(__io__address + 2164, versionfile);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'subversionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
+	 * @see #__DNA__FIELD__subversionfile
+	 */
+	
+	public short getSubversionfile() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 2198);
+		} else {
+			return __io__block.readShort(__io__address + 2166);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subversionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
+	 * @see #__DNA__FIELD__subversionfile
+	 */
+	
+	public void setSubversionfile(short subversionfile) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 2198, subversionfile);
+		} else {
+			__io__block.writeShort(__io__address + 2166, subversionfile);
 		}
 	}
 

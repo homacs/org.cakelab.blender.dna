@@ -27,7 +27,7 @@ public class MaskParent extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 562;
+	public static final int __DNA__SDNA_INDEX = 566;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id_type'.
@@ -105,7 +105,7 @@ public class MaskParent extends CFacade {
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,7 +129,7 @@ public class MaskParent extends CFacade {
 	 * Field descriptor (offset) for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -319,7 +319,7 @@ public class MaskParent extends CFacade {
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -341,7 +341,7 @@ public class MaskParent extends CFacade {
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> entity of parent to which parenting happened in case of parenting to movie tracking data contains name of layer </p>
 	 * @see #__DNA__FIELD__parent
 	 */
@@ -367,7 +367,7 @@ public class MaskParent extends CFacade {
 	 * Get method for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track </p>
 	 * @see #__DNA__FIELD__sub_parent
 	 */
@@ -389,7 +389,7 @@ public class MaskParent extends CFacade {
 	 * Set method for struct member 'sub_parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Name of parent sub-object in specified data block to which parenting happens<h4>Blender Source Code:</h4>
+	 * Name of parent sub-object in specified data-block to which parenting happens<h4>Blender Source Code:</h4>
 	 * <p> sub-entity of parent to which parenting happened in case of parenting to movie tracking data contains name of track </p>
 	 * @see #__DNA__FIELD__sub_parent
 	 */

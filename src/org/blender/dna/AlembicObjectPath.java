@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1032, size64=1040)
+@CMetaData(size32=4104, size64=4112)
 public class AlembicObjectPath extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class AlembicObjectPath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 615;
+	public static final int __DNA__SDNA_INDEX = 619;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -86,8 +86,8 @@ public class AlembicObjectPath extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'path'</li>
-	 * <li>Signature: 'char[1024]'</li>
-	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
+	 * <li>Signature: 'char[4096]'</li>
+	 * <li>Actual Size (32bit/64bit): 4096/4096</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__path = new long[]{8, 16};
@@ -176,7 +176,7 @@ public class AlembicObjectPath extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			1024
+			4096
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);

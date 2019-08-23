@@ -29,7 +29,7 @@ public class Sculpt extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 186;
+	public static final int __DNA__SDNA_INDEX = 189;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -171,9 +171,8 @@ public class Sculpt extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (as percentage of blender unit)<h4>Blender Source Code:</h4>
-	 * <p> scale for constant detail size </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,9 +490,8 @@ public class Sculpt extends CFacade {
 	/**
 	 * Get method for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (as percentage of blender unit)<h4>Blender Source Code:</h4>
-	 * <p> scale for constant detail size </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail) </p>
 	 * @see #__DNA__FIELD__constant_detail
 	 */
 	
@@ -509,9 +507,8 @@ public class Sculpt extends CFacade {
 	/**
 	 * Set method for struct member 'constant_detail'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (as percentage of blender unit)<h4>Blender Source Code:</h4>
-	 * <p> scale for constant detail size </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale for constant detail size Constant detail resolution (Blender unit / constant_detail) </p>
 	 * @see #__DNA__FIELD__constant_detail
 	 */
 	

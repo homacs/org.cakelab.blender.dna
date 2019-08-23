@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p><mdash/>  ID-Datablock <mdash/>  IPO Data-Block </p>
+ * <p>--  ID-Datablock --  IPO Data-Block </p>
  */
 
 @CMetaData(size32=132, size64=160)

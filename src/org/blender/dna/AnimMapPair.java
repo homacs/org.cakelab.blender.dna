@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see {@link DNA_action_types.h}  instead************************************************ Animation Reuse - i.e. users of Actions Retargetting -----------------------------<mdash/><mdash/>  Retargetting Pair</p><p> Defines what parts of the paths should be remapped from 'abc' to 'xyz'. TODO:<ul><li><p> Regrex (possibly provided through PY, though having our own module might be faster) would be important to have at some point. Current replacements are just simple string matches... </p></li></ul> 
+ *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see {@link DNA_action_types.h}  instead************************************************ Animation Reuse - i.e. users of Actions Retargetting ---------------------------------  Retargetting Pair</p><p> Defines what parts of the paths should be remapped from 'abc' to 'xyz'. TODO:<ul><li><p> Regrex (possibly provided through PY, though having our own module might be faster) would be important to have at some point. Current replacements are just simple string matches... </p></li></ul> 
  * Regrex (possibly provided through PY, though having our own module might be faster) would be important to have at some point. Current replacements are just simple string matches... 
  * </p>
  */
@@ -31,7 +31,7 @@ public class AnimMapPair extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 517;
+	public static final int __DNA__SDNA_INDEX = 521;
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.

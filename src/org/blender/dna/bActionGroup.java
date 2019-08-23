@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Action Groups --------------------------------<mdash/><mdash/>  Action-Channel {@link Group}  (agrp)</p><p> These are stored as a list per-Action, and are only used to group that Action's channels in an Animation Editor.</p><p> Even though all FCurves live in a big list per Action, each group they are in also holds references to the achans within that list which belong to it. Care must be taken to ensure that action-groups never end up being the sole 'owner' of a channel.</p><p> This is also exploited for bone-groups. Bone-Groups are stored per {@link bPose} , and are used primarily to color bones in the 3d-view. There are other benefits too, but those are mostly related to Action-Groups.</p><p> Note that these two uses each have their own RNA 'ActionGroup' and 'BoneGroup'. </p>
+ *  Action Groups ------------------------------------  Action-Channel {@link Group}  (agrp)</p><p> These are stored as a list per-Action, and are only used to group that Action's channels in an Animation Editor.</p><p> Even though all FCurves live in a big list per Action, each group they are in also holds references to the achans within that list which belong to it. Care must be taken to ensure that action-groups never end up being the sole 'owner' of a channel.</p><p> This is also exploited for bone-groups. Bone-Groups are stored per {@link bPose} , and are used primarily to color bones in the 3d-view. There are other benefits too, but those are mostly related to Action-Groups.</p><p> Note that these two uses each have their own RNA 'ActionGroup' and 'BoneGroup'. </p>
  */
 
 @CMetaData(size32=104, size64=120)
@@ -29,7 +29,7 @@ public class bActionGroup extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 347;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

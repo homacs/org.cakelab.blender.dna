@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1200, size64=1224)
+@CMetaData(size32=1208, size64=1232)
 public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 443;
+	public static final int __DNA__SDNA_INDEX = 447;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -254,6 +254,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime only by sampling RNA API. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +274,46 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pd = new long[]{1052, 1056};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cached_resolution'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__cached_resolution);
+	 * CPointer&lt;Integer&gt; p_cached_resolution = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cached_resolution'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cached_resolution = new long[]{1200, 1224};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__pad2);
+	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{1204, 1228};
 
 	public NodeShaderTexPointDensity(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -616,6 +659,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'pd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime only by sampling RNA API. </p>
 	 * @see #__DNA__FIELD__pd
 	 */
 	
@@ -630,6 +676,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'pd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime only by sampling RNA API. </p>
 	 * @see #__DNA__FIELD__pd
 	 */
 	
@@ -647,6 +696,62 @@ public class NodeShaderTexPointDensity extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, pd);
 		} else {
 			__io__generic__copy( getPd(), pd);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cached_resolution'.
+	 * @see #__DNA__FIELD__cached_resolution
+	 */
+	
+	public int getCached_resolution() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1224);
+		} else {
+			return __io__block.readInt(__io__address + 1200);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cached_resolution'.
+	 * @see #__DNA__FIELD__cached_resolution
+	 */
+	
+	public void setCached_resolution(int cached_resolution) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1224, cached_resolution);
+		} else {
+			__io__block.writeInt(__io__address + 1200, cached_resolution);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public int getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1228);
+		} else {
+			return __io__block.readInt(__io__address + 1204);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(int pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1228, pad2);
+		} else {
+			__io__block.writeInt(__io__address + 1204, pad2);
 		}
 	}
 

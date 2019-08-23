@@ -30,7 +30,7 @@ public class Sequence extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 272;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -714,6 +714,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effect_fader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Custom fade value
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2281,6 +2284,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'effect_fader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Custom fade value
 	 * @see #__DNA__FIELD__effect_fader
 	 */
 	
@@ -2295,6 +2301,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'effect_fader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Custom fade value
 	 * @see #__DNA__FIELD__effect_fader
 	 */
 	

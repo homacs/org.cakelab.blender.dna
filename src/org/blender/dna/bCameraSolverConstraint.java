@@ -27,7 +27,7 @@ public class bCameraSolverConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 381;
+	public static final int __DNA__SDNA_INDEX = 385;
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.

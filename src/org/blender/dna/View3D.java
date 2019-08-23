@@ -28,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 203;
+	public static final int __DNA__SDNA_INDEX = 207;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1198,7 +1198,7 @@ public class View3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'defmaterial'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used by matcap now </p>
+	 * <p> Allocated per view, not library data (used by matcap). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3288,7 +3288,7 @@ public class View3D extends CFacade {
 	 * Get method for struct member 'defmaterial'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used by matcap now </p>
+	 * <p> Allocated per view, not library data (used by matcap). </p>
 	 * @see #__DNA__FIELD__defmaterial
 	 */
 	
@@ -3308,7 +3308,7 @@ public class View3D extends CFacade {
 	 * Set method for struct member 'defmaterial'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used by matcap now </p>
+	 * <p> Allocated per view, not library data (used by matcap). </p>
 	 * @see #__DNA__FIELD__defmaterial
 	 */
 	

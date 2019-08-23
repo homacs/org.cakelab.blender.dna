@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=68, size64=72)
+@CMetaData(size32=84, size64=88)
 public class FFMpegCodecData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class FFMpegCodecData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 168;
+	public static final int __DNA__SDNA_INDEX = 171;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -229,6 +229,29 @@ public class FFMpegCodecData extends CFacade {
 	public static final long[] __DNA__FIELD__gop_size = new long[]{36, 36};
 
 	/**
+	 * Field descriptor (offset) for struct member 'max_b_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FFMpegCodecData ffmpegcodecdata = ...;
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__max_b_frames);
+	 * CPointer&lt;Integer&gt; p_max_b_frames = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'max_b_frames'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__max_b_frames = new long[]{40, 40};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -246,7 +269,50 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__flags = new long[]{44, 44};
+
+	/**
+	 * Field descriptor (offset) for struct member 'constant_rate_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FFMpegCodecData ffmpegcodecdata = ...;
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__constant_rate_factor);
+	 * CPointer&lt;Integer&gt; p_constant_rate_factor = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'constant_rate_factor'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__constant_rate_factor = new long[]{48, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ffmpeg_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see FFMpegPreset </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FFMpegCodecData ffmpegcodecdata = ...;
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__ffmpeg_preset);
+	 * CPointer&lt;Integer&gt; p_ffmpeg_preset = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ffmpeg_preset'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ffmpeg_preset = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rc_min_rate'.
@@ -266,7 +332,7 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rc_min_rate = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__rc_min_rate = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rc_max_rate'.
@@ -286,7 +352,7 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rc_max_rate = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__rc_max_rate = new long[]{60, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rc_buffer_size'.
@@ -306,7 +372,7 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rc_buffer_size = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__rc_buffer_size = new long[]{64, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mux_packet_size'.
@@ -326,7 +392,7 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mux_packet_size = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__mux_packet_size = new long[]{68, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mux_rate'.
@@ -346,7 +412,27 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mux_rate = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__mux_rate = new long[]{72, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FFMpegCodecData ffmpegcodecdata = ...;
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__pad1);
+	 * CPointer&lt;Integer&gt; p_pad1 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad1'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad1 = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
@@ -366,7 +452,7 @@ public class FFMpegCodecData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__properties = new long[]{80, 80};
 
 	public FFMpegCodecData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -657,6 +743,40 @@ public class FFMpegCodecData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'max_b_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * @see #__DNA__FIELD__max_b_frames
+	 */
+	
+	public int getMax_b_frames() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 40);
+		} else {
+			return __io__block.readInt(__io__address + 40);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_b_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * @see #__DNA__FIELD__max_b_frames
+	 */
+	
+	public void setMax_b_frames(int max_b_frames) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 40, max_b_frames);
+		} else {
+			__io__block.writeInt(__io__address + 40, max_b_frames);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flags'.
 	 * @see #__DNA__FIELD__flags
 	 */
@@ -664,9 +784,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 44);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 44);
 		}
 	}
 
@@ -678,9 +798,71 @@ public class FFMpegCodecData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, flags);
+			__io__block.writeInt(__io__address + 44, flags);
 		} else {
-			__io__block.writeInt(__io__address + 40, flags);
+			__io__block.writeInt(__io__address + 44, flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'constant_rate_factor'.
+	 * @see #__DNA__FIELD__constant_rate_factor
+	 */
+	
+	public int getConstant_rate_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 48);
+		} else {
+			return __io__block.readInt(__io__address + 48);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'constant_rate_factor'.
+	 * @see #__DNA__FIELD__constant_rate_factor
+	 */
+	
+	public void setConstant_rate_factor(int constant_rate_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 48, constant_rate_factor);
+		} else {
+			__io__block.writeInt(__io__address + 48, constant_rate_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ffmpeg_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see FFMpegPreset </p>
+	 * @see #__DNA__FIELD__ffmpeg_preset
+	 */
+	
+	public int getFfmpeg_preset() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 52);
+		} else {
+			return __io__block.readInt(__io__address + 52);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ffmpeg_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see FFMpegPreset </p>
+	 * @see #__DNA__FIELD__ffmpeg_preset
+	 */
+	
+	public void setFfmpeg_preset(int ffmpeg_preset) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 52, ffmpeg_preset);
+		} else {
+			__io__block.writeInt(__io__address + 52, ffmpeg_preset);
 		}
 	}
 
@@ -692,9 +874,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getRc_min_rate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 56);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 56);
 		}
 	}
 
@@ -706,9 +888,9 @@ public class FFMpegCodecData extends CFacade {
 	public void setRc_min_rate(int rc_min_rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, rc_min_rate);
+			__io__block.writeInt(__io__address + 56, rc_min_rate);
 		} else {
-			__io__block.writeInt(__io__address + 44, rc_min_rate);
+			__io__block.writeInt(__io__address + 56, rc_min_rate);
 		}
 	}
 
@@ -720,9 +902,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getRc_max_rate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 48);
+			return __io__block.readInt(__io__address + 60);
 		} else {
-			return __io__block.readInt(__io__address + 48);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -734,9 +916,9 @@ public class FFMpegCodecData extends CFacade {
 	public void setRc_max_rate(int rc_max_rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 48, rc_max_rate);
+			__io__block.writeInt(__io__address + 60, rc_max_rate);
 		} else {
-			__io__block.writeInt(__io__address + 48, rc_max_rate);
+			__io__block.writeInt(__io__address + 60, rc_max_rate);
 		}
 	}
 
@@ -748,9 +930,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getRc_buffer_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 64);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 64);
 		}
 	}
 
@@ -762,9 +944,9 @@ public class FFMpegCodecData extends CFacade {
 	public void setRc_buffer_size(int rc_buffer_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, rc_buffer_size);
+			__io__block.writeInt(__io__address + 64, rc_buffer_size);
 		} else {
-			__io__block.writeInt(__io__address + 52, rc_buffer_size);
+			__io__block.writeInt(__io__address + 64, rc_buffer_size);
 		}
 	}
 
@@ -776,9 +958,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getMux_packet_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 68);
 		} else {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 68);
 		}
 	}
 
@@ -790,9 +972,9 @@ public class FFMpegCodecData extends CFacade {
 	public void setMux_packet_size(int mux_packet_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 56, mux_packet_size);
+			__io__block.writeInt(__io__address + 68, mux_packet_size);
 		} else {
-			__io__block.writeInt(__io__address + 56, mux_packet_size);
+			__io__block.writeInt(__io__address + 68, mux_packet_size);
 		}
 	}
 
@@ -804,9 +986,9 @@ public class FFMpegCodecData extends CFacade {
 	public int getMux_rate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 72);
 		} else {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 72);
 		}
 	}
 
@@ -818,9 +1000,37 @@ public class FFMpegCodecData extends CFacade {
 	public void setMux_rate(int mux_rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 60, mux_rate);
+			__io__block.writeInt(__io__address + 72, mux_rate);
 		} else {
-			__io__block.writeInt(__io__address + 60, mux_rate);
+			__io__block.writeInt(__io__address + 72, mux_rate);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public int getPad1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 76);
+		} else {
+			return __io__block.readInt(__io__address + 76);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public void setPad1(int pad1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 76, pad1);
+		} else {
+			__io__block.writeInt(__io__address + 76, pad1);
 		}
 	}
 
@@ -833,9 +1043,9 @@ public class FFMpegCodecData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -850,9 +1060,9 @@ public class FFMpegCodecData extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		} else {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		}
 	}
 

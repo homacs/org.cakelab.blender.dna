@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=144)
+@CMetaData(size32=132, size64=152)
 public class ScrewModifierData extends CFacade {
 
 	/**
@@ -169,44 +170,24 @@ public class ScrewModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__angle = new long[]{116, 136};
 
 	/**
-	 * Field descriptor (offset) for struct member 'axis'.
+	 * Field descriptor (offset) for struct member 'merge_dist'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ScrewModifierData screwmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__axis);
-	 * CPointer&lt;Byte&gt; p_axis = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__merge_dist);
+	 * CPointer&lt;Float&gt; p_merge_dist = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'axis'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: 'merge_dist'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__axis = new long[]{120, 140};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ScrewModifierData screwmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{121, 141};
+	public static final long[] __DNA__FIELD__merge_dist = new long[]{120, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -226,7 +207,47 @@ public class ScrewModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{122, 142};
+	public static final long[] __DNA__FIELD__flag = new long[]{124, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'axis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrewModifierData screwmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__axis);
+	 * CPointer&lt;Byte&gt; p_axis = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'axis'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__axis = new long[]{126, 146};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrewModifierData screwmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{127, 147};
 
 	public ScrewModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -445,58 +466,30 @@ public class ScrewModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'axis'.
-	 * @see #__DNA__FIELD__axis
+	 * Get method for struct member 'merge_dist'.
+	 * @see #__DNA__FIELD__merge_dist
 	 */
 	
-	public byte getAxis() throws IOException
+	public float getMerge_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 140);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readByte(__io__address + 120);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'axis'.
-	 * @see #__DNA__FIELD__axis
+	 * Set method for struct member 'merge_dist'.
+	 * @see #__DNA__FIELD__merge_dist
 	 */
 	
-	public void setAxis(byte axis) throws IOException
+	public void setMerge_dist(float merge_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 140, axis);
+			__io__block.writeFloat(__io__address + 140, merge_dist);
 		} else {
-			__io__block.writeByte(__io__address + 120, axis);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public byte getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 141);
-		} else {
-			return __io__block.readByte(__io__address + 121);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(byte pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 141, pad);
-		} else {
-			__io__block.writeByte(__io__address + 121, pad);
+			__io__block.writeFloat(__io__address + 120, merge_dist);
 		}
 	}
 
@@ -508,9 +501,9 @@ public class ScrewModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 142);
+			return __io__block.readShort(__io__address + 144);
 		} else {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 124);
 		}
 	}
 
@@ -522,9 +515,77 @@ public class ScrewModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 142, flag);
+			__io__block.writeShort(__io__address + 144, flag);
 		} else {
-			__io__block.writeShort(__io__address + 122, flag);
+			__io__block.writeShort(__io__address + 124, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'axis'.
+	 * @see #__DNA__FIELD__axis
+	 */
+	
+	public byte getAxis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 146);
+		} else {
+			return __io__block.readByte(__io__address + 126);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'axis'.
+	 * @see #__DNA__FIELD__axis
+	 */
+	
+	public void setAxis(byte axis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 146, axis);
+		} else {
+			__io__block.writeByte(__io__address + 126, axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			5
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 147, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 127, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 147;
+		} else {
+			__dna__offset = 127;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

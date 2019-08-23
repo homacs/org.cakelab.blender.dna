@@ -242,24 +242,24 @@ public class DisplaceModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__midlevel = new long[]{248, 272};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * DisplaceModifierData displacemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = displacemodifierdata.__dna__addressof(DisplaceModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = displacemodifierdata.__dna__addressof(DisplaceModifierData.__DNA__FIELD__space);
+	 * CPointer&lt;Integer&gt; p_space = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'space'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{252, 276};
+	public static final long[] __DNA__FIELD__space = new long[]{252, 276};
 
 	public DisplaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -614,11 +614,11 @@ public class DisplaceModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'space'.
+	 * @see #__DNA__FIELD__space
 	 */
 	
-	public int getPad() throws IOException
+	public int getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 276);
@@ -628,16 +628,16 @@ public class DisplaceModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'space'.
+	 * @see #__DNA__FIELD__space
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setSpace(int space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 276, pad);
+			__io__block.writeInt(__io__address + 276, space);
 		} else {
-			__io__block.writeInt(__io__address + 252, pad);
+			__io__block.writeInt(__io__address + 252, space);
 		}
 	}
 

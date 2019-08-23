@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -28,7 +27,7 @@ public class NodeGlare extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 422;
+	public static final int __DNA__SDNA_INDEX = 426;
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
@@ -92,6 +91,11 @@ public class NodeGlare extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,24 +155,44 @@ public class NodeGlare extends CFacade {
 	public static final long[] __DNA__FIELD__size = new long[]{5, 5};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'star_45'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeGlare nodeglare = ...;
-	 * CPointer&lt;Object&gt; p = nodeglare.__dna__addressof(NodeGlare.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = nodeglare.__dna__addressof(NodeGlare.__DNA__FIELD__star_45);
+	 * CPointer&lt;Byte&gt; p_star_45 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'star_45'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__star_45 = new long[]{6, 6};
+
+	/**
+	 * Field descriptor (offset) for struct member 'streaks'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeGlare nodeglare = ...;
+	 * CPointer&lt;Object&gt; p = nodeglare.__dna__addressof(NodeGlare.__DNA__FIELD__streaks);
+	 * CPointer&lt;Byte&gt; p_streaks = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'streaks'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__streaks = new long[]{7, 7};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colmod'.
@@ -384,6 +408,11 @@ public class NodeGlare extends CFacade {
 
 	/**
 	 * Get method for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -398,6 +427,11 @@ public class NodeGlare extends CFacade {
 
 	/**
 	 * Set method for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX angle is only kept for backward/forward compatibility, was used for two different things, see T50736. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -467,42 +501,58 @@ public class NodeGlare extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'star_45'.
+	 * @see #__DNA__FIELD__star_45
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public byte getStar_45() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 6);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 6);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'star_45'.
+	 * @see #__DNA__FIELD__star_45
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setStar_45(byte star_45) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6;
+			__io__block.writeByte(__io__address + 6, star_45);
 		} else {
-			__dna__offset = 6;
+			__io__block.writeByte(__io__address + 6, star_45);
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+	}
+
+	/**
+	 * Get method for struct member 'streaks'.
+	 * @see #__DNA__FIELD__streaks
+	 */
+	
+	public byte getStreaks() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 7);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			return __io__block.readByte(__io__address + 7);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'streaks'.
+	 * @see #__DNA__FIELD__streaks
+	 */
+	
+	public void setStreaks(byte streaks) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 7, streaks);
+		} else {
+			__io__block.writeByte(__io__address + 7, streaks);
 		}
 	}
 

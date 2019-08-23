@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1132, size64=1152)
+@CMetaData(size32=1136, size64=1160)
 public class MeshSeqCacheModifierData extends CFacade {
 
 	/**
@@ -70,6 +70,26 @@ public class MeshSeqCacheModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__cache_file = new long[]{96, 112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'reader'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MeshSeqCacheModifierData meshseqcachemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD__reader);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_reader = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'reader'</li>
+	 * <li>Signature: 'CacheReader*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__reader = new long[]{100, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -90,7 +110,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_path = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__object_path = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'read_flag'.
@@ -110,7 +130,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__read_flag = new long[]{1124, 1144};
+	public static final long[] __DNA__FIELD__read_flag = new long[]{1128, 1152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -130,7 +150,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1125, 1145};
+	public static final long[] __DNA__FIELD__pad = new long[]{1129, 1153};
 
 	public MeshSeqCacheModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -209,6 +229,38 @@ public class MeshSeqCacheModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'reader'.
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public CPointer<Object> getReader() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'reader'.
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public void setReader(CPointer<Object> reader) throws IOException
+	{
+		long __address = ((reader == null) ? 0 : reader.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 120, __address);
+		} else {
+			__io__block.writeLong(__io__address + 100, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -223,9 +275,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -241,9 +293,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 104;
 		}
 		if (__io__equals(object_path, __io__address + __dna__offset)) {
 			return;
@@ -262,9 +314,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 	public byte getRead_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1144);
+			return __io__block.readByte(__io__address + 1152);
 		} else {
-			return __io__block.readByte(__io__address + 1124);
+			return __io__block.readByte(__io__address + 1128);
 		}
 	}
 
@@ -276,9 +328,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 	public void setRead_flag(byte read_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1144, read_flag);
+			__io__block.writeByte(__io__address + 1152, read_flag);
 		} else {
-			__io__block.writeByte(__io__address + 1124, read_flag);
+			__io__block.writeByte(__io__address + 1128, read_flag);
 		}
 	}
 
@@ -294,9 +346,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1145, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1153, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1125, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1129, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -309,9 +361,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1145;
+			__dna__offset = 1153;
 		} else {
-			__dna__offset = 1125;
+			__dna__offset = 1129;
 		}
 		if (__io__equals(pad, __io__address + __dna__offset)) {
 			return;

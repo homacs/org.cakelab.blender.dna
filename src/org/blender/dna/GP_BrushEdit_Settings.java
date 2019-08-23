@@ -28,7 +28,7 @@ public class GP_BrushEdit_Settings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 190;
+	public static final int __DNA__SDNA_INDEX = 193;
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
@@ -123,24 +123,27 @@ public class GP_BrushEdit_Settings extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{96, 100};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'lock_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock drawing to one axis </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * GP_BrushEdit_Settings gp_brushedit_settings = ...;
-	 * CPointer&lt;Object&gt; p = gp_brushedit_settings.__dna__addressof(GP_BrushEdit_Settings.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = gp_brushedit_settings.__dna__addressof(GP_BrushEdit_Settings.__DNA__FIELD__lock_axis);
+	 * CPointer&lt;Integer&gt; p_lock_axis = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'lock_axis'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{100, 104};
+	public static final long[] __DNA__FIELD__lock_axis = new long[]{100, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -326,42 +329,36 @@ public class GP_BrushEdit_Settings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'lock_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock drawing to one axis </p>
+	 * @see #__DNA__FIELD__lock_axis
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public int getLock_axis() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 104);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 100);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'lock_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock drawing to one axis </p>
+	 * @see #__DNA__FIELD__lock_axis
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setLock_axis(int lock_axis) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__io__block.writeInt(__io__address + 104, lock_axis);
 		} else {
-			__dna__offset = 100;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__block.writeInt(__io__address + 100, lock_axis);
 		}
 	}
 

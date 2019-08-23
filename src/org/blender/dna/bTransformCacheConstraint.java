@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Transform matrix cache constraint </p>
  */
 
-@CMetaData(size32=1028, size64=1032)
+@CMetaData(size32=1032, size64=1040)
 public class bTransformCacheConstraint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bTransformCacheConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 387;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_file'.
@@ -51,6 +51,26 @@ public class bTransformCacheConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__cache_file = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'reader'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformCacheConstraint btransformcacheconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformcacheconstraint.__dna__addressof(bTransformCacheConstraint.__DNA__FIELD__reader);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_reader = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'reader'</li>
+	 * <li>Signature: 'CacheReader*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__reader = new long[]{4, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -71,7 +91,7 @@ public class bTransformCacheConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_path = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__object_path = new long[]{8, 16};
 
 	public bTransformCacheConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -114,6 +134,38 @@ public class bTransformCacheConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'reader'.
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public CPointer<Object> getReader() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 4);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'reader'.
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public void setReader(CPointer<Object> reader) throws IOException
+	{
+		long __address = ((reader == null) ? 0 : reader.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 8, __address);
+		} else {
+			__io__block.writeLong(__io__address + 4, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -128,9 +180,9 @@ public class bTransformCacheConstraint extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -146,9 +198,9 @@ public class bTransformCacheConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8;
+			__dna__offset = 16;
 		} else {
-			__dna__offset = 4;
+			__dna__offset = 8;
 		}
 		if (__io__equals(object_path, __io__address + __dna__offset)) {
 			return;
