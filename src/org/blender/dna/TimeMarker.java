@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TimeMarker'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Markers </p>
  */
 
 @CMetaData(size32=84, size64=96)
@@ -27,7 +29,7 @@ public class TimeMarker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 180;
+	public static final int __DNA__SDNA_INDEX = 181;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

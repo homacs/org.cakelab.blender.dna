@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmKeyMap'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> stored in WM, the actively used keymaps </p>
  */
 
 @CMetaData(size32=104, size64=136)
@@ -27,7 +28,7 @@ public class wmKeyMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 499;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,6 +112,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global editor keymaps, or for more per space/region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'spaceid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +158,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see above </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +181,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +204,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kmi_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last kmi id </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +227,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modal_items'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for modal, EnumPropertyItem for now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -375,6 +394,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global editor keymaps, or for more per space/region </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -393,6 +415,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global editor keymaps, or for more per space/region </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -415,6 +440,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'spaceid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	
@@ -429,6 +457,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'spaceid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	
@@ -443,6 +474,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see above </p>
 	 * @see #__DNA__FIELD__regionid
 	 */
 	
@@ -457,6 +491,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see above </p>
 	 * @see #__DNA__FIELD__regionid
 	 */
 	
@@ -471,6 +508,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -485,6 +525,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -499,6 +542,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'kmi_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last kmi id </p>
 	 * @see #__DNA__FIELD__kmi_id
 	 */
 	
@@ -513,6 +559,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'kmi_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last kmi id </p>
 	 * @see #__DNA__FIELD__kmi_id
 	 */
 	
@@ -527,6 +576,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'modal_items'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for modal, EnumPropertyItem for now </p>
 	 * @see #__DNA__FIELD__modal_items
 	 */
 	
@@ -544,6 +596,9 @@ public class wmKeyMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'modal_items'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for modal, EnumPropertyItem for now </p>
 	 * @see #__DNA__FIELD__modal_items
 	 */
 	

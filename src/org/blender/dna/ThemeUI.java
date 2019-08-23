@@ -27,10 +27,13 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 238;
+	public static final int __DNA__SDNA_INDEX = 242;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +414,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'panel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +457,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'menu_shadow_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +560,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis Colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -619,6 +631,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Get method for struct member 'wcol_regular'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * @see #__DNA__FIELD__wcol_regular
 	 */
 	
@@ -633,6 +648,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Set method for struct member 'wcol_regular'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Interface Elements (buttons, menus, icons) </p>
 	 * @see #__DNA__FIELD__wcol_regular
 	 */
 	
@@ -1303,6 +1321,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Get method for struct member 'panel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
 	 * @see #__DNA__FIELD__panel
 	 */
 	
@@ -1317,6 +1338,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Set method for struct member 'panel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
 	 * @see #__DNA__FIELD__panel
 	 */
 	
@@ -1379,6 +1403,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Get method for struct member 'menu_shadow_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * @see #__DNA__FIELD__menu_shadow_fac
 	 */
 	
@@ -1393,6 +1420,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Set method for struct member 'menu_shadow_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fac: 0 - 1 for blend factor, width in pixels </p>
 	 * @see #__DNA__FIELD__menu_shadow_fac
 	 */
 	
@@ -1543,6 +1573,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Get method for struct member 'xaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis Colors </p>
 	 * @see #__DNA__FIELD__xaxis
 	 */
 	
@@ -1561,6 +1594,9 @@ public class ThemeUI extends CFacade {
 
 	/**
 	 * Set method for struct member 'xaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis Colors </p>
 	 * @see #__DNA__FIELD__xaxis
 	 */
 	

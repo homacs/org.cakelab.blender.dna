@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNearSensor'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ****************** SENSORS ********************* </p>
  */
 
 @CMetaData(size32=80, size64=80)
@@ -27,10 +28,13 @@ public class bNearSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 288;
+	public static final int __DNA__SDNA_INDEX = 294;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,6 +143,9 @@ public class bNearSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -157,6 +164,9 @@ public class bNearSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

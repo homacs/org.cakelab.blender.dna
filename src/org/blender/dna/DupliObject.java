@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DupliObject'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> runtime only, but include here for rna access </p>
  */
 
-@CMetaData(size32=136, size64=152)
+@CMetaData(size32=168, size64=184)
 public class DupliObject extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class DupliObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 151;
+	public static final int __DNA__SDNA_INDEX = 152;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,6 +112,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'orco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Generated coordinates in parent object space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    UV coordinates in parent object space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +158,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Duplicator type that generated this dupli object<h4>Blender Source Code:</h4>
+	 * <p> from Object.transflag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +222,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'persistent_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur<h4>Blender Source Code:</h4>
+	 * <p> persistent identifier for a dupli object, for inter-frame matching of objects with motion blur, or inter-update matching for syncing 2*MAX_DUPLI_RECUR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -223,14 +238,18 @@ public class DupliObject extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'persistent_id'</li>
-	 * <li>Signature: 'int[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Signature: 'int[16]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__persistent_id = new long[]{100, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Particle system that this dupli object was instanced from<h4>Blender Source Code:</h4>
+	 * <p> particle this dupli was generated from </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,7 +266,7 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_system = new long[]{132, 144};
+	public static final long[] __DNA__FIELD__particle_system = new long[]{164, 176};
 
 	public DupliObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -396,6 +415,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'orco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Generated coordinates in parent object space
 	 * @see #__DNA__FIELD__orco
 	 */
 	
@@ -414,6 +436,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'orco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Generated coordinates in parent object space
 	 * @see #__DNA__FIELD__orco
 	 */
 	
@@ -436,6 +461,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    UV coordinates in parent object space
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -454,6 +482,9 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    UV coordinates in parent object space
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -476,6 +507,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Duplicator type that generated this dupli object<h4>Blender Source Code:</h4>
+	 * <p> from Object.transflag </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -490,6 +525,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Duplicator type that generated this dupli object<h4>Blender Source Code:</h4>
+	 * <p> from Object.transflag </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -560,6 +599,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'persistent_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur<h4>Blender Source Code:</h4>
+	 * <p> persistent identifier for a dupli object, for inter-frame matching of objects with motion blur, or inter-update matching for syncing 2*MAX_DUPLI_RECUR </p>
 	 * @see #__DNA__FIELD__persistent_id
 	 */
 	
@@ -567,7 +610,7 @@ public class DupliObject extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		int[] __dna__dimensions = new int[]{
-			8
+			16
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Integer>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -578,6 +621,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'persistent_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur<h4>Blender Source Code:</h4>
+	 * <p> persistent identifier for a dupli object, for inter-frame matching of objects with motion blur, or inter-update matching for syncing 2*MAX_DUPLI_RECUR </p>
 	 * @see #__DNA__FIELD__persistent_id
 	 */
 	
@@ -600,6 +647,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'particle_system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Particle system that this dupli object was instanced from<h4>Blender Source Code:</h4>
+	 * <p> particle this dupli was generated from </p>
 	 * @see #__DNA__FIELD__particle_system
 	 */
 	
@@ -607,9 +658,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ParticleSystem.class};
 		return new CPointer<ParticleSystem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ParticleSystem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -617,6 +668,10 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'particle_system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Particle system that this dupli object was instanced from<h4>Blender Source Code:</h4>
+	 * <p> particle this dupli was generated from </p>
 	 * @see #__DNA__FIELD__particle_system
 	 */
 	
@@ -624,9 +679,9 @@ public class DupliObject extends CFacade {
 	{
 		long __address = ((particle_system == null) ? 0 : particle_system.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 

@@ -50,6 +50,11 @@ public class MirrorModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use flag instead </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use flag instead </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,6 +179,11 @@ public class MirrorModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use flag instead </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use flag instead </p>
 	 * @see #__DNA__FIELD__axis
 	 */
 	
@@ -188,6 +198,11 @@ public class MirrorModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use flag instead </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use flag instead </p>
 	 * @see #__DNA__FIELD__axis
 	 */
 	

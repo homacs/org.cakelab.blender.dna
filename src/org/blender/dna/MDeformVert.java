@@ -70,6 +70,9 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag only in use for weightpaint now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +161,9 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag only in use for weightpaint now </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -172,6 +178,9 @@ public class MDeformVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag only in use for weightpaint now </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

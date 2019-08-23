@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DriverVar'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Driver Variable (dvar)</p><p> A 'variable' for use as an input for the driver evaluation. Defines a way of accessing some channel to use, that can be referred to in the expression as a variable, thus simplifying expressions and also Depsgraph building. </p>
  */
 
-@CMetaData(size32=464, size64=536)
+@CMetaData(size32=720, size64=792)
 public class DriverVar extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class DriverVar extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 502;
+	public static final int __DNA__SDNA_INDEX = 513;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the variable to use in py-expression (must be valid python identifier) - MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_DRIVER_TARGETS, target slots </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -104,13 +111,16 @@ public class DriverVar extends CFacade {
 	 * <ul>
 	 * <li>Field: 'targets'</li>
 	 * <li>Signature: 'DriverTarget[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 384/448</li>
+	 * <li>Actual Size (32bit/64bit): 640/704</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__targets = new long[]{72, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of targets actually used by this variable </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -118,19 +128,22 @@ public class DriverVar extends CFacade {
 	 * <pre>
 	 * DriverVar drivervar = ...;
 	 * CPointer&lt;Object&gt; p = drivervar.__dna__addressof(DriverVar.__DNA__FIELD__num_targets);
-	 * CPointer&lt;Short&gt; p_num_targets = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_num_targets = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'num_targets'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_targets = new long[]{456, 528};
+	public static final long[] __DNA__FIELD__num_targets = new long[]{712, 784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of driver variable (eDriverVar_Types) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,19 +151,45 @@ public class DriverVar extends CFacade {
 	 * <pre>
 	 * DriverVar drivervar = ...;
 	 * CPointer&lt;Object&gt; p = drivervar.__dna__addressof(DriverVar.__DNA__FIELD__type);
-	 * CPointer&lt;Short&gt; p_type = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_type = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{713, 785};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> validation tags, etc. (eDriverVar_Flags) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DriverVar drivervar = ...;
+	 * CPointer&lt;Object&gt; p = drivervar.__dna__addressof(DriverVar.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{458, 530};
+	public static final long[] __DNA__FIELD__flag = new long[]{714, 786};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -167,7 +206,7 @@ public class DriverVar extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curval = new long[]{460, 532};
+	public static final long[] __DNA__FIELD__curval = new long[]{716, 788};
 
 	public DriverVar(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -243,6 +282,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the variable to use in py-expression (must be valid python identifier) - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -261,6 +303,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the variable to use in py-expression (must be valid python identifier) - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -283,6 +328,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Get method for struct member 'targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_DRIVER_TARGETS, target slots </p>
 	 * @see #__DNA__FIELD__targets
 	 */
 	
@@ -301,6 +349,9 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Set method for struct member 'targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_DRIVER_TARGETS, target slots </p>
 	 * @see #__DNA__FIELD__targets
 	 */
 	
@@ -323,85 +374,137 @@ public class DriverVar extends CFacade {
 
 	/**
 	 * Get method for struct member 'num_targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of targets actually used by this variable </p>
 	 * @see #__DNA__FIELD__num_targets
 	 */
 	
-	public short getNum_targets() throws IOException
+	public byte getNum_targets() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 528);
+			return __io__block.readByte(__io__address + 784);
 		} else {
-			return __io__block.readShort(__io__address + 456);
+			return __io__block.readByte(__io__address + 712);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'num_targets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of targets actually used by this variable </p>
 	 * @see #__DNA__FIELD__num_targets
 	 */
 	
-	public void setNum_targets(short num_targets) throws IOException
+	public void setNum_targets(byte num_targets) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 528, num_targets);
+			__io__block.writeByte(__io__address + 784, num_targets);
 		} else {
-			__io__block.writeShort(__io__address + 456, num_targets);
+			__io__block.writeByte(__io__address + 712, num_targets);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of driver variable (eDriverVar_Types) </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
-	public short getType() throws IOException
+	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 530);
+			return __io__block.readByte(__io__address + 785);
 		} else {
-			return __io__block.readShort(__io__address + 458);
+			return __io__block.readByte(__io__address + 713);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of driver variable (eDriverVar_Types) </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
-	public void setType(short type) throws IOException
+	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 530, type);
+			__io__block.writeByte(__io__address + 785, type);
 		} else {
-			__io__block.writeShort(__io__address + 458, type);
+			__io__block.writeByte(__io__address + 713, type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> validation tags, etc. (eDriverVar_Flags) </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 786);
+		} else {
+			return __io__block.readShort(__io__address + 714);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> validation tags, etc. (eDriverVar_Flags) </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 786, flag);
+		} else {
+			__io__block.writeShort(__io__address + 714, flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
 	public float getCurval() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 532);
+			return __io__block.readFloat(__io__address + 788);
 		} else {
-			return __io__block.readFloat(__io__address + 460);
+			return __io__block.readFloat(__io__address + 716);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
 	public void setCurval(float curval) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 532, curval);
+			__io__block.writeFloat(__io__address + 788, curval);
 		} else {
-			__io__block.writeFloat(__io__address + 460, curval);
+			__io__block.writeFloat(__io__address + 716, curval);
 		}
 	}
 

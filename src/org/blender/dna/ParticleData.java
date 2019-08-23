@@ -27,10 +27,13 @@ public class ParticleData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 472;
+	public static final int __DNA__SDNA_INDEX = 479;
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current global coordinates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev_state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous state </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> hair vertices </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +100,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyed keys </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +123,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'boid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boids data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +146,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of hair or keyed keys </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +189,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lifetime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dietime is not nescessarily time+lifetime as </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +212,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dietime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particles can die unnaturally (collision) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +235,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'num'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! index to vert/edge/face </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +258,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_dmcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index to derived mesh data (face) to avoid slow lookups </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +301,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'foffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates on face/edge number "num" and depth along </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +324,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> face normal for volume emission size and multiplier so that we can update size when ever </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +347,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sphdensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> density of sph particle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +430,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the life state of a particle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -419,6 +461,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current global coordinates </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
@@ -433,6 +478,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current global coordinates </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
@@ -455,6 +503,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev_state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous state </p>
 	 * @see #__DNA__FIELD__prev_state
 	 */
 	
@@ -469,6 +520,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev_state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous state </p>
 	 * @see #__DNA__FIELD__prev_state
 	 */
 	
@@ -491,6 +545,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'hair'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> hair vertices </p>
 	 * @see #__DNA__FIELD__hair
 	 */
 	
@@ -508,6 +565,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'hair'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> hair vertices </p>
 	 * @see #__DNA__FIELD__hair
 	 */
 	
@@ -523,6 +583,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'keys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyed keys </p>
 	 * @see #__DNA__FIELD__keys
 	 */
 	
@@ -540,6 +603,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'keys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyed keys </p>
 	 * @see #__DNA__FIELD__keys
 	 */
 	
@@ -555,6 +621,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'boid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boids data </p>
 	 * @see #__DNA__FIELD__boid
 	 */
 	
@@ -572,6 +641,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'boid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boids data </p>
 	 * @see #__DNA__FIELD__boid
 	 */
 	
@@ -587,6 +659,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of hair or keyed keys </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -601,6 +676,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of hair or keyed keys </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -643,6 +721,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'lifetime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dietime is not nescessarily time+lifetime as </p>
 	 * @see #__DNA__FIELD__lifetime
 	 */
 	
@@ -657,6 +738,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'lifetime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dietime is not nescessarily time+lifetime as </p>
 	 * @see #__DNA__FIELD__lifetime
 	 */
 	
@@ -671,6 +755,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dietime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particles can die unnaturally (collision) </p>
 	 * @see #__DNA__FIELD__dietime
 	 */
 	
@@ -685,6 +772,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dietime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particles can die unnaturally (collision) </p>
 	 * @see #__DNA__FIELD__dietime
 	 */
 	
@@ -699,6 +789,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'num'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! index to vert/edge/face </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -713,6 +806,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'num'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! index to vert/edge/face </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -727,6 +823,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'num_dmcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index to derived mesh data (face) to avoid slow lookups </p>
 	 * @see #__DNA__FIELD__num_dmcache
 	 */
 	
@@ -741,6 +840,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'num_dmcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index to derived mesh data (face) to avoid slow lookups </p>
 	 * @see #__DNA__FIELD__num_dmcache
 	 */
 	
@@ -795,6 +897,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'foffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates on face/edge number "num" and depth along </p>
 	 * @see #__DNA__FIELD__foffset
 	 */
 	
@@ -809,6 +914,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'foffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates on face/edge number "num" and depth along </p>
 	 * @see #__DNA__FIELD__foffset
 	 */
 	
@@ -823,6 +931,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> face normal for volume emission size and multiplier so that we can update size when ever </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -837,6 +948,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> face normal for volume emission size and multiplier so that we can update size when ever </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -851,6 +965,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'sphdensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> density of sph particle </p>
 	 * @see #__DNA__FIELD__sphdensity
 	 */
 	
@@ -865,6 +982,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'sphdensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> density of sph particle </p>
 	 * @see #__DNA__FIELD__sphdensity
 	 */
 	
@@ -963,6 +1083,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Get method for struct member 'alive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the life state of a particle </p>
 	 * @see #__DNA__FIELD__alive
 	 */
 	
@@ -977,6 +1100,9 @@ public class ParticleData extends CFacade {
 
 	/**
 	 * Set method for struct member 'alive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the life state of a particle </p>
 	 * @see #__DNA__FIELD__alive
 	 */
 	

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiFont'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> default fonts to load/initalize first font is the default (index 0), others optional </p>
  */
 
 @CMetaData(size32=1040, size64=1048)
@@ -27,7 +28,7 @@ public class uiFont extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 235;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blf_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from blfont lib </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +118,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> own id </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +141,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'r_to_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fonts that read from left to right </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,6 +256,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Get method for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -261,6 +277,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Set method for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -283,6 +302,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Get method for struct member 'blf_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from blfont lib </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
 	
@@ -297,6 +319,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Set method for struct member 'blf_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from blfont lib </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
 	
@@ -311,6 +336,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Get method for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> own id </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -325,6 +353,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Set method for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> own id </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -339,6 +370,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Get method for struct member 'r_to_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fonts that read from left to right </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */
 	
@@ -353,6 +387,9 @@ public class uiFont extends CFacade {
 
 	/**
 	 * Set method for struct member 'r_to_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fonts that read from left to right </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */
 	

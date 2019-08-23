@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FPoint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> F-Curves --------------------------------<mdash/><mdash/>  {@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -27,10 +28,13 @@ public class FPoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 504;
+	public static final int __DNA__SDNA_INDEX = 515;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time + value </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class FPoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection info </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,6 +106,9 @@ public class FPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'vec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time + value </p>
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -117,6 +127,9 @@ public class FPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'vec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time + value </p>
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -139,6 +152,9 @@ public class FPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection info </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -153,6 +169,9 @@ public class FPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection info </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

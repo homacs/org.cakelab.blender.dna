@@ -151,6 +151,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +174,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -395,6 +401,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -413,6 +422,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -435,6 +447,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -452,6 +467,9 @@ public class ModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	

@@ -27,7 +27,7 @@ public class CurveMapping extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 450;
+	public static final int __DNA__SDNA_INDEX = 457;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -51,6 +51,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cur; for buttons, to show active curve </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +134,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current rect, clip rect (is default rect too) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> max 4 builtin curves per mapping struct now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +200,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'white'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point (black[0] abused for current frame) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +223,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bwmul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point multiply value, for speed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +246,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sample'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample values, if flag set it draws line and intersection </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,6 +305,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cur; for buttons, to show active curve </p>
 	 * @see #__DNA__FIELD__cur
 	 */
 	
@@ -301,6 +322,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cur; for buttons, to show active curve </p>
 	 * @see #__DNA__FIELD__cur
 	 */
 	
@@ -407,6 +431,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'clipr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current rect, clip rect (is default rect too) </p>
 	 * @see #__DNA__FIELD__clipr
 	 */
 	
@@ -421,6 +448,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'clipr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current rect, clip rect (is default rect too) </p>
 	 * @see #__DNA__FIELD__clipr
 	 */
 	
@@ -443,6 +473,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'cm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> max 4 builtin curves per mapping struct now </p>
 	 * @see #__DNA__FIELD__cm
 	 */
 	
@@ -461,6 +494,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'cm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> max 4 builtin curves per mapping struct now </p>
 	 * @see #__DNA__FIELD__cm
 	 */
 	
@@ -523,6 +559,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'white'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point (black[0] abused for current frame) </p>
 	 * @see #__DNA__FIELD__white
 	 */
 	
@@ -541,6 +580,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'white'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point (black[0] abused for current frame) </p>
 	 * @see #__DNA__FIELD__white
 	 */
 	
@@ -563,6 +605,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'bwmul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point multiply value, for speed </p>
 	 * @see #__DNA__FIELD__bwmul
 	 */
 	
@@ -581,6 +626,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'bwmul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> black/white point multiply value, for speed </p>
 	 * @see #__DNA__FIELD__bwmul
 	 */
 	
@@ -603,6 +651,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'sample'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample values, if flag set it draws line and intersection </p>
 	 * @see #__DNA__FIELD__sample
 	 */
 	
@@ -621,6 +672,9 @@ public class CurveMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'sample'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample values, if flag set it draws line and intersection </p>
 	 * @see #__DNA__FIELD__sample
 	 */
 	

@@ -26,7 +26,7 @@ public class PaintCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 461;
+	public static final int __DNA__SDNA_INDEX = 468;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -50,6 +50,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> points of curve </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +93,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index where next point will be added </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -154,6 +160,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> points of curve </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -171,6 +180,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> points of curve </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -214,6 +226,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'add_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index where next point will be added </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
 	
@@ -228,6 +243,9 @@ public class PaintCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'add_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index where next point will be added </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
 	

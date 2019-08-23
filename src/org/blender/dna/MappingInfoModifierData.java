@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MappingInfoModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> not a real modifier </p>
  */
 
 @CMetaData(size32=176, size64=200)
@@ -91,6 +92,9 @@ public class MappingInfoModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -259,6 +263,9 @@ public class MappingInfoModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -277,6 +284,9 @@ public class MappingInfoModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	

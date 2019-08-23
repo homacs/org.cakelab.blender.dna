@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Noise'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> noise modifier data </p>
  */
 
 @CMetaData(size32=20, size64=20)
@@ -26,7 +27,7 @@ public class FMod_Noise extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 499;
+	public static final int __DNA__SDNA_INDEX = 510;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.

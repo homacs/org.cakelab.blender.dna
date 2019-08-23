@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=10928, size64=10984)
+@CMetaData(size32=11952, size64=12008)
 public class UserDef extends CFacade {
 
 	/**
@@ -27,10 +27,13 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 246;
+	public static final int __DNA__SDNA_INDEX = 250;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +134,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tempdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR length </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +177,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'renderdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX length </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +200,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_cachedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> EXR cache path 768 = FILE_MAXDIR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +303,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'image_editor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +326,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'anim_player'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +369,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d_min_gridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> minimum spacing between gridlines in {@link View2D}  grids </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +392,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'timecode_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style of timecode display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -671,6 +695,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrollback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> console scrollback limit </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -691,6 +718,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range 48-128? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -711,6 +741,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'node_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> node insert offset (aka auto-offset) margin, but might be useful for later stuff as well </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -871,6 +904,11 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keymaps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated in favor of user_keymaps </p>
+	 * @deprecated
+	 *  Deprecateddeprecated in favor of user_keymaps </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1271,6 +1309,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wmdrawmethod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> removed wmpad </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1351,6 +1392,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad_rot_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1431,6 +1475,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rvisize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1451,6 +1498,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rvibright'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon brightness </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1471,6 +1521,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'recent_files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> maximum number of recently used files to remember </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1491,6 +1544,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_viewtx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> miliseconds to spend spinning the view </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1571,6 +1627,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interpolation mode for newly added F-Curves </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1591,6 +1650,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyhandles_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle types for newly added keyframes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1651,6 +1713,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_keyframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of keyframes to zoom around current frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1671,6 +1736,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_frame_seconds'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds to zoom around current frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1691,6 +1759,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrcastfps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame rate for screencast to be played back </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1711,6 +1782,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrcastwait'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> milliseconds between screencast snapshots </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1731,6 +1805,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'widget_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, defaults to 20 for 72 DPI setting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1811,6 +1888,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_sensitivity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overall sensitivity of 3D mouse </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1851,6 +1931,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_deadzone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deadzone of 3D mouse </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1871,6 +1954,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ndof_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for 3D mouse </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1891,6 +1977,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ogl_multisamples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1911,6 +2000,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'image_draw_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1951,6 +2043,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> autokeying mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1971,6 +2066,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for autokeying </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2011,6 +2109,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad9'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> options for text rendering </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2031,6 +2132,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from texture.h </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2071,6 +2175,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_new_layer_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default color for newly created Grease Pencil layers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2151,6 +2258,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'author'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> author name for file formats supporting it </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2190,6 +2300,26 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__font_path_ui = new long[]{9832, 9888};
 
 	/**
+	 * Field descriptor (offset) for struct member 'font_path_ui_mono'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__font_path_ui_mono);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_font_path_ui_mono = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'font_path_ui_mono'</li>
+	 * <li>Signature: 'char[1024]'</li>
+	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__font_path_ui_mono = new long[]{10856, 10912};
+
+	/**
 	 * Field descriptor (offset) for struct member 'compute_device_type'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -2207,7 +2337,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__compute_device_type = new long[]{10856, 10912};
+	public static final long[] __DNA__FIELD__compute_device_type = new long[]{11880, 11936};
 
 	/**
 	 * Field descriptor (offset) for struct member 'compute_device_id'.
@@ -2227,10 +2357,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__compute_device_id = new long[]{10860, 10916};
+	public static final long[] __DNA__FIELD__compute_device_id = new long[]{11884, 11940};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fcu_inactive_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity of inactive F-Curves in F-Curve Editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2247,10 +2380,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fcu_inactive_alpha = new long[]{10864, 10920};
+	public static final long[] __DNA__FIELD__fcu_inactive_alpha = new long[]{11888, 11944};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pixelsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, set by GHOST, to multiply DPI with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2267,10 +2403,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixelsize = new long[]{10868, 10924};
+	public static final long[] __DNA__FIELD__pixelsize = new long[]{11892, 11948};
 
 	/**
 	 * Field descriptor (offset) for struct member 'virtual_pixel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> virtual pixelsize mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2287,10 +2426,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__virtual_pixel = new long[]{10872, 10928};
+	public static final long[] __DNA__FIELD__virtual_pixel = new long[]{11896, 11952};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_interaction_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2307,10 +2449,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_interaction_type = new long[]{10876, 10932};
+	public static final long[] __DNA__FIELD__pie_interaction_type = new long[]{11900, 11956};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_initial_timeout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction in the pie menu will always be calculated from the initial position within this time limit </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2327,7 +2472,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_initial_timeout = new long[]{10878, 10934};
+	public static final long[] __DNA__FIELD__pie_initial_timeout = new long[]{11902, 11958};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_animation_timeout'.
@@ -2347,7 +2492,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_animation_timeout = new long[]{10880, 10936};
+	public static final long[] __DNA__FIELD__pie_animation_timeout = new long[]{11904, 11960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_confirm'.
@@ -2367,10 +2512,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_confirm = new long[]{10882, 10938};
+	public static final long[] __DNA__FIELD__pie_menu_confirm = new long[]{11906, 11962};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu radius </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2387,10 +2535,13 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_radius = new long[]{10884, 10940};
+	public static final long[] __DNA__FIELD__pie_menu_radius = new long[]{11908, 11964};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pie_menu_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu distance from center before a direction is set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2407,7 +2558,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pie_menu_threshold = new long[]{10886, 10942};
+	public static final long[] __DNA__FIELD__pie_menu_threshold = new long[]{11910, 11966};
 
 	/**
 	 * Field descriptor (offset) for struct member 'walk_navigation'.
@@ -2427,7 +2578,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__walk_navigation = new long[]{10888, 10944};
+	public static final long[] __DNA__FIELD__walk_navigation = new long[]{11912, 11968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opensubdiv_compute_type'.
@@ -2447,7 +2598,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opensubdiv_compute_type = new long[]{10920, 10976};
+	public static final long[] __DNA__FIELD__opensubdiv_compute_type = new long[]{11944, 12000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad5'.
@@ -2467,7 +2618,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad5 = new long[]{10922, 10978};
+	public static final long[] __DNA__FIELD__pad5 = new long[]{11946, 12002};
 
 	public UserDef(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2479,6 +2630,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
@@ -2493,6 +2647,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link UserDef}  has separate do-version handling, and can be read from other files </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
@@ -2619,6 +2776,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'tempdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR length </p>
 	 * @see #__DNA__FIELD__tempdir
 	 */
 	
@@ -2637,6 +2797,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'tempdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR length </p>
 	 * @see #__DNA__FIELD__tempdir
 	 */
 	
@@ -2699,6 +2862,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'renderdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX length </p>
 	 * @see #__DNA__FIELD__renderdir
 	 */
 	
@@ -2717,6 +2883,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'renderdir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX length </p>
 	 * @see #__DNA__FIELD__renderdir
 	 */
 	
@@ -2739,6 +2908,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'render_cachedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> EXR cache path 768 = FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__render_cachedir
 	 */
 	
@@ -2757,6 +2929,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'render_cachedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> EXR cache path 768 = FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__render_cachedir
 	 */
 	
@@ -2939,6 +3114,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'image_editor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__image_editor
 	 */
 	
@@ -2957,6 +3135,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'image_editor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__image_editor
 	 */
 	
@@ -2979,6 +3160,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'anim_player'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__anim_player
 	 */
 	
@@ -2997,6 +3181,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'anim_player'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__anim_player
 	 */
 	
@@ -3047,6 +3234,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d_min_gridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> minimum spacing between gridlines in {@link View2D}  grids </p>
 	 * @see #__DNA__FIELD__v2d_min_gridsize
 	 */
 	
@@ -3061,6 +3251,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d_min_gridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> minimum spacing between gridlines in {@link View2D}  grids </p>
 	 * @see #__DNA__FIELD__v2d_min_gridsize
 	 */
 	
@@ -3075,6 +3268,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'timecode_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style of timecode display </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -3089,6 +3285,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'timecode_style'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style of timecode display </p>
 	 * @see #__DNA__FIELD__timecode_style
 	 */
 	
@@ -3495,6 +3694,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'scrollback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> console scrollback limit </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
 	
@@ -3509,6 +3711,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'scrollback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> console scrollback limit </p>
 	 * @see #__DNA__FIELD__scrollback
 	 */
 	
@@ -3523,6 +3728,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range 48-128? </p>
 	 * @see #__DNA__FIELD__dpi
 	 */
 	
@@ -3537,6 +3745,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range 48-128? </p>
 	 * @see #__DNA__FIELD__dpi
 	 */
 	
@@ -3551,6 +3762,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'node_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> node insert offset (aka auto-offset) margin, but might be useful for later stuff as well </p>
 	 * @see #__DNA__FIELD__node_margin
 	 */
 	
@@ -3565,6 +3779,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'node_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> node insert offset (aka auto-offset) margin, but might be useful for later stuff as well </p>
 	 * @see #__DNA__FIELD__node_margin
 	 */
 	
@@ -3799,6 +4016,11 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'keymaps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated in favor of user_keymaps </p>
+	 * @deprecated
+	 *  Deprecateddeprecated in favor of user_keymaps </p>
 	 * @see #__DNA__FIELD__keymaps
 	 */
 	
@@ -3813,6 +4035,11 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'keymaps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated in favor of user_keymaps </p>
+	 * @deprecated
+	 *  Deprecateddeprecated in favor of user_keymaps </p>
 	 * @see #__DNA__FIELD__keymaps
 	 */
 	
@@ -4415,6 +4642,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'wmdrawmethod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> removed wmpad </p>
 	 * @see #__DNA__FIELD__wmdrawmethod
 	 */
 	
@@ -4429,6 +4659,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'wmdrawmethod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> removed wmpad </p>
 	 * @see #__DNA__FIELD__wmdrawmethod
 	 */
 	
@@ -4527,6 +4760,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad_rot_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use </p>
 	 * @see #__DNA__FIELD__pad_rot_angle
 	 */
 	
@@ -4541,6 +4777,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad_rot_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> control the rotation step of the view when PAD2, PAD4, PAD6&PAD8 is use </p>
 	 * @see #__DNA__FIELD__pad_rot_angle
 	 */
 	
@@ -4639,6 +4878,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'rvisize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon size </p>
 	 * @see #__DNA__FIELD__rvisize
 	 */
 	
@@ -4653,6 +4895,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'rvisize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon size </p>
 	 * @see #__DNA__FIELD__rvisize
 	 */
 	
@@ -4667,6 +4912,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'rvibright'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon brightness </p>
 	 * @see #__DNA__FIELD__rvibright
 	 */
 	
@@ -4681,6 +4929,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'rvibright'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotating view icon brightness </p>
 	 * @see #__DNA__FIELD__rvibright
 	 */
 	
@@ -4695,6 +4946,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'recent_files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> maximum number of recently used files to remember </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
 	
@@ -4709,6 +4963,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'recent_files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> maximum number of recently used files to remember </p>
 	 * @see #__DNA__FIELD__recent_files
 	 */
 	
@@ -4723,6 +4980,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'smooth_viewtx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> miliseconds to spend spinning the view </p>
 	 * @see #__DNA__FIELD__smooth_viewtx
 	 */
 	
@@ -4737,6 +4997,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'smooth_viewtx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> miliseconds to spend spinning the view </p>
 	 * @see #__DNA__FIELD__smooth_viewtx
 	 */
 	
@@ -4835,6 +5098,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interpolation mode for newly added F-Curves </p>
 	 * @see #__DNA__FIELD__ipo_new
 	 */
 	
@@ -4849,6 +5115,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> interpolation mode for newly added F-Curves </p>
 	 * @see #__DNA__FIELD__ipo_new
 	 */
 	
@@ -4863,6 +5132,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyhandles_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle types for newly added keyframes </p>
 	 * @see #__DNA__FIELD__keyhandles_new
 	 */
 	
@@ -4877,6 +5149,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyhandles_new'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle types for newly added keyframes </p>
 	 * @see #__DNA__FIELD__keyhandles_new
 	 */
 	
@@ -4947,6 +5222,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'view_frame_keyframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of keyframes to zoom around current frame </p>
 	 * @see #__DNA__FIELD__view_frame_keyframes
 	 */
 	
@@ -4961,6 +5239,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'view_frame_keyframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of keyframes to zoom around current frame </p>
 	 * @see #__DNA__FIELD__view_frame_keyframes
 	 */
 	
@@ -4975,6 +5256,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'view_frame_seconds'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds to zoom around current frame </p>
 	 * @see #__DNA__FIELD__view_frame_seconds
 	 */
 	
@@ -4989,6 +5273,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'view_frame_seconds'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds to zoom around current frame </p>
 	 * @see #__DNA__FIELD__view_frame_seconds
 	 */
 	
@@ -5003,6 +5290,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'scrcastfps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame rate for screencast to be played back </p>
 	 * @see #__DNA__FIELD__scrcastfps
 	 */
 	
@@ -5017,6 +5307,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'scrcastfps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame rate for screencast to be played back </p>
 	 * @see #__DNA__FIELD__scrcastfps
 	 */
 	
@@ -5031,6 +5324,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'scrcastwait'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> milliseconds between screencast snapshots </p>
 	 * @see #__DNA__FIELD__scrcastwait
 	 */
 	
@@ -5045,6 +5341,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'scrcastwait'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> milliseconds between screencast snapshots </p>
 	 * @see #__DNA__FIELD__scrcastwait
 	 */
 	
@@ -5059,6 +5358,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'widget_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, defaults to 20 for 72 DPI setting </p>
 	 * @see #__DNA__FIELD__widget_unit
 	 */
 	
@@ -5073,6 +5375,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'widget_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, defaults to 20 for 72 DPI setting </p>
 	 * @see #__DNA__FIELD__widget_unit
 	 */
 	
@@ -5171,6 +5476,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'ndof_sensitivity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overall sensitivity of 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_sensitivity
 	 */
 	
@@ -5185,6 +5493,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'ndof_sensitivity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overall sensitivity of 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_sensitivity
 	 */
 	
@@ -5227,6 +5538,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'ndof_deadzone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deadzone of 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_deadzone
 	 */
 	
@@ -5241,6 +5555,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'ndof_deadzone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deadzone of 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_deadzone
 	 */
 	
@@ -5255,6 +5572,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'ndof_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
@@ -5269,6 +5589,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'ndof_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for 3D mouse </p>
 	 * @see #__DNA__FIELD__ndof_flag
 	 */
 	
@@ -5283,6 +5606,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'ogl_multisamples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
@@ -5297,6 +5623,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'ogl_multisamples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> amount of samples for OpenGL FSA, if zero no FSA </p>
 	 * @see #__DNA__FIELD__ogl_multisamples
 	 */
 	
@@ -5311,6 +5640,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'image_draw_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
 	
@@ -5325,6 +5657,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'image_draw_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method to be used to draw the images (AUTO, GLSL, Textures or DrawPixels) </p>
 	 * @see #__DNA__FIELD__image_draw_method
 	 */
 	
@@ -5367,6 +5702,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> autokeying mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
@@ -5381,6 +5719,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> autokeying mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
@@ -5395,6 +5736,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for autokeying </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
@@ -5409,6 +5753,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for autokeying </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
@@ -5451,6 +5798,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad9'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> options for text rendering </p>
 	 * @see #__DNA__FIELD__pad9
 	 */
 	
@@ -5465,6 +5815,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad9'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> options for text rendering </p>
 	 * @see #__DNA__FIELD__pad9
 	 */
 	
@@ -5479,6 +5832,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'coba_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from texture.h </p>
 	 * @see #__DNA__FIELD__coba_weight
 	 */
 	
@@ -5493,6 +5849,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'coba_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from texture.h </p>
 	 * @see #__DNA__FIELD__coba_weight
 	 */
 	
@@ -5555,6 +5914,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpencil_new_layer_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default color for newly created Grease Pencil layers </p>
 	 * @see #__DNA__FIELD__gpencil_new_layer_col
 	 */
 	
@@ -5573,6 +5935,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpencil_new_layer_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default color for newly created Grease Pencil layers </p>
 	 * @see #__DNA__FIELD__gpencil_new_layer_col
 	 */
 	
@@ -5679,6 +6044,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'author'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> author name for file formats supporting it </p>
 	 * @see #__DNA__FIELD__author
 	 */
 	
@@ -5697,6 +6065,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'author'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> author name for file formats supporting it </p>
 	 * @see #__DNA__FIELD__author
 	 */
 	
@@ -5758,6 +6129,46 @@ public class UserDef extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'font_path_ui_mono'.
+	 * @see #__DNA__FIELD__font_path_ui_mono
+	 */
+	
+	public CArrayFacade<Byte> getFont_path_ui_mono() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1024
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 10912, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 10856, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'font_path_ui_mono'.
+	 * @see #__DNA__FIELD__font_path_ui_mono
+	 */
+	
+	public void setFont_path_ui_mono(CArrayFacade<Byte> font_path_ui_mono) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 10912;
+		} else {
+			__dna__offset = 10856;
+		}
+		if (__io__equals(font_path_ui_mono, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, font_path_ui_mono)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, font_path_ui_mono);
+		} else {
+			__io__generic__copy( getFont_path_ui_mono(), font_path_ui_mono);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'compute_device_type'.
 	 * @see #__DNA__FIELD__compute_device_type
 	 */
@@ -5765,9 +6176,9 @@ public class UserDef extends CFacade {
 	public int getCompute_device_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 10912);
+			return __io__block.readInt(__io__address + 11936);
 		} else {
-			return __io__block.readInt(__io__address + 10856);
+			return __io__block.readInt(__io__address + 11880);
 		}
 	}
 
@@ -5779,9 +6190,9 @@ public class UserDef extends CFacade {
 	public void setCompute_device_type(int compute_device_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 10912, compute_device_type);
+			__io__block.writeInt(__io__address + 11936, compute_device_type);
 		} else {
-			__io__block.writeInt(__io__address + 10856, compute_device_type);
+			__io__block.writeInt(__io__address + 11880, compute_device_type);
 		}
 	}
 
@@ -5793,9 +6204,9 @@ public class UserDef extends CFacade {
 	public int getCompute_device_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 10916);
+			return __io__block.readInt(__io__address + 11940);
 		} else {
-			return __io__block.readInt(__io__address + 10860);
+			return __io__block.readInt(__io__address + 11884);
 		}
 	}
 
@@ -5807,149 +6218,179 @@ public class UserDef extends CFacade {
 	public void setCompute_device_id(int compute_device_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 10916, compute_device_id);
+			__io__block.writeInt(__io__address + 11940, compute_device_id);
 		} else {
-			__io__block.writeInt(__io__address + 10860, compute_device_id);
+			__io__block.writeInt(__io__address + 11884, compute_device_id);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'fcu_inactive_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity of inactive F-Curves in F-Curve Editor </p>
 	 * @see #__DNA__FIELD__fcu_inactive_alpha
 	 */
 	
 	public float getFcu_inactive_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10920);
+			return __io__block.readFloat(__io__address + 11944);
 		} else {
-			return __io__block.readFloat(__io__address + 10864);
+			return __io__block.readFloat(__io__address + 11888);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'fcu_inactive_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity of inactive F-Curves in F-Curve Editor </p>
 	 * @see #__DNA__FIELD__fcu_inactive_alpha
 	 */
 	
 	public void setFcu_inactive_alpha(float fcu_inactive_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10920, fcu_inactive_alpha);
+			__io__block.writeFloat(__io__address + 11944, fcu_inactive_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 10864, fcu_inactive_alpha);
+			__io__block.writeFloat(__io__address + 11888, fcu_inactive_alpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pixelsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, set by GHOST, to multiply DPI with </p>
 	 * @see #__DNA__FIELD__pixelsize
 	 */
 	
 	public float getPixelsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10924);
+			return __io__block.readFloat(__io__address + 11948);
 		} else {
-			return __io__block.readFloat(__io__address + 10868);
+			return __io__block.readFloat(__io__address + 11892);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pixelsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, set by GHOST, to multiply DPI with </p>
 	 * @see #__DNA__FIELD__pixelsize
 	 */
 	
 	public void setPixelsize(float pixelsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10924, pixelsize);
+			__io__block.writeFloat(__io__address + 11948, pixelsize);
 		} else {
-			__io__block.writeFloat(__io__address + 10868, pixelsize);
+			__io__block.writeFloat(__io__address + 11892, pixelsize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'virtual_pixel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> virtual pixelsize mode </p>
 	 * @see #__DNA__FIELD__virtual_pixel
 	 */
 	
 	public int getVirtual_pixel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 10928);
+			return __io__block.readInt(__io__address + 11952);
 		} else {
-			return __io__block.readInt(__io__address + 10872);
+			return __io__block.readInt(__io__address + 11896);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'virtual_pixel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> virtual pixelsize mode </p>
 	 * @see #__DNA__FIELD__virtual_pixel
 	 */
 	
 	public void setVirtual_pixel(int virtual_pixel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 10928, virtual_pixel);
+			__io__block.writeInt(__io__address + 11952, virtual_pixel);
 		} else {
-			__io__block.writeInt(__io__address + 10872, virtual_pixel);
+			__io__block.writeInt(__io__address + 11896, virtual_pixel);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pie_interaction_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu </p>
 	 * @see #__DNA__FIELD__pie_interaction_type
 	 */
 	
 	public short getPie_interaction_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10932);
+			return __io__block.readShort(__io__address + 11956);
 		} else {
-			return __io__block.readShort(__io__address + 10876);
+			return __io__block.readShort(__io__address + 11900);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pie_interaction_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if keeping a pie menu spawn button pressed after this time, it turns into a drag/release pie menu </p>
 	 * @see #__DNA__FIELD__pie_interaction_type
 	 */
 	
 	public void setPie_interaction_type(short pie_interaction_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10932, pie_interaction_type);
+			__io__block.writeShort(__io__address + 11956, pie_interaction_type);
 		} else {
-			__io__block.writeShort(__io__address + 10876, pie_interaction_type);
+			__io__block.writeShort(__io__address + 11900, pie_interaction_type);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pie_initial_timeout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction in the pie menu will always be calculated from the initial position within this time limit </p>
 	 * @see #__DNA__FIELD__pie_initial_timeout
 	 */
 	
 	public short getPie_initial_timeout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10934);
+			return __io__block.readShort(__io__address + 11958);
 		} else {
-			return __io__block.readShort(__io__address + 10878);
+			return __io__block.readShort(__io__address + 11902);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pie_initial_timeout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction in the pie menu will always be calculated from the initial position within this time limit </p>
 	 * @see #__DNA__FIELD__pie_initial_timeout
 	 */
 	
 	public void setPie_initial_timeout(short pie_initial_timeout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10934, pie_initial_timeout);
+			__io__block.writeShort(__io__address + 11958, pie_initial_timeout);
 		} else {
-			__io__block.writeShort(__io__address + 10878, pie_initial_timeout);
+			__io__block.writeShort(__io__address + 11902, pie_initial_timeout);
 		}
 	}
 
@@ -5961,9 +6402,9 @@ public class UserDef extends CFacade {
 	public short getPie_animation_timeout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10936);
+			return __io__block.readShort(__io__address + 11960);
 		} else {
-			return __io__block.readShort(__io__address + 10880);
+			return __io__block.readShort(__io__address + 11904);
 		}
 	}
 
@@ -5975,9 +6416,9 @@ public class UserDef extends CFacade {
 	public void setPie_animation_timeout(short pie_animation_timeout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10936, pie_animation_timeout);
+			__io__block.writeShort(__io__address + 11960, pie_animation_timeout);
 		} else {
-			__io__block.writeShort(__io__address + 10880, pie_animation_timeout);
+			__io__block.writeShort(__io__address + 11904, pie_animation_timeout);
 		}
 	}
 
@@ -5989,9 +6430,9 @@ public class UserDef extends CFacade {
 	public short getPie_menu_confirm() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10938);
+			return __io__block.readShort(__io__address + 11962);
 		} else {
-			return __io__block.readShort(__io__address + 10882);
+			return __io__block.readShort(__io__address + 11906);
 		}
 	}
 
@@ -6003,65 +6444,77 @@ public class UserDef extends CFacade {
 	public void setPie_menu_confirm(short pie_menu_confirm) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10938, pie_menu_confirm);
+			__io__block.writeShort(__io__address + 11962, pie_menu_confirm);
 		} else {
-			__io__block.writeShort(__io__address + 10882, pie_menu_confirm);
+			__io__block.writeShort(__io__address + 11906, pie_menu_confirm);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pie_menu_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu radius </p>
 	 * @see #__DNA__FIELD__pie_menu_radius
 	 */
 	
 	public short getPie_menu_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10940);
+			return __io__block.readShort(__io__address + 11964);
 		} else {
-			return __io__block.readShort(__io__address + 10884);
+			return __io__block.readShort(__io__address + 11908);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pie_menu_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu radius </p>
 	 * @see #__DNA__FIELD__pie_menu_radius
 	 */
 	
 	public void setPie_menu_radius(short pie_menu_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10940, pie_menu_radius);
+			__io__block.writeShort(__io__address + 11964, pie_menu_radius);
 		} else {
-			__io__block.writeShort(__io__address + 10884, pie_menu_radius);
+			__io__block.writeShort(__io__address + 11908, pie_menu_radius);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pie_menu_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu distance from center before a direction is set </p>
 	 * @see #__DNA__FIELD__pie_menu_threshold
 	 */
 	
 	public short getPie_menu_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10942);
+			return __io__block.readShort(__io__address + 11966);
 		} else {
-			return __io__block.readShort(__io__address + 10886);
+			return __io__block.readShort(__io__address + 11910);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pie_menu_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pie menu distance from center before a direction is set </p>
 	 * @see #__DNA__FIELD__pie_menu_threshold
 	 */
 	
 	public void setPie_menu_threshold(short pie_menu_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10942, pie_menu_threshold);
+			__io__block.writeShort(__io__address + 11966, pie_menu_threshold);
 		} else {
-			__io__block.writeShort(__io__address + 10886, pie_menu_threshold);
+			__io__block.writeShort(__io__address + 11910, pie_menu_threshold);
 		}
 	}
 
@@ -6073,9 +6526,9 @@ public class UserDef extends CFacade {
 	public WalkNavigation getWalk_navigation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new WalkNavigation(__io__address + 10944, __io__block, __io__blockTable);
+			return new WalkNavigation(__io__address + 11968, __io__block, __io__blockTable);
 		} else {
-			return new WalkNavigation(__io__address + 10888, __io__block, __io__blockTable);
+			return new WalkNavigation(__io__address + 11912, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6088,9 +6541,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10944;
+			__dna__offset = 11968;
 		} else {
-			__dna__offset = 10888;
+			__dna__offset = 11912;
 		}
 		if (__io__equals(walk_navigation, __io__address + __dna__offset)) {
 			return;
@@ -6109,9 +6562,9 @@ public class UserDef extends CFacade {
 	public short getOpensubdiv_compute_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10976);
+			return __io__block.readShort(__io__address + 12000);
 		} else {
-			return __io__block.readShort(__io__address + 10920);
+			return __io__block.readShort(__io__address + 11944);
 		}
 	}
 
@@ -6123,9 +6576,9 @@ public class UserDef extends CFacade {
 	public void setOpensubdiv_compute_type(short opensubdiv_compute_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10976, opensubdiv_compute_type);
+			__io__block.writeShort(__io__address + 12000, opensubdiv_compute_type);
 		} else {
-			__io__block.writeShort(__io__address + 10920, opensubdiv_compute_type);
+			__io__block.writeShort(__io__address + 11944, opensubdiv_compute_type);
 		}
 	}
 
@@ -6141,9 +6594,9 @@ public class UserDef extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10978, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12002, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 10922, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 11946, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6156,9 +6609,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10978;
+			__dna__offset = 12002;
 		} else {
-			__dna__offset = 10922;
+			__dna__offset = 11946;
 		}
 		if (__io__equals(pad5, __io__address + __dna__offset)) {
 			return;

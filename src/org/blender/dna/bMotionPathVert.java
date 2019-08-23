@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMotionPathVert'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Visualization Motion Paths ---------------------------<mdash/><mdash/><mdash/>  (used for Pose Channels and Objects) Data point for motion path (mpv) </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -27,10 +29,13 @@ public class bMotionPathVert extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 334;
+	public static final int __DNA__SDNA_INDEX = 340;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates of point in 3D-space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class bMotionPathVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,6 +87,9 @@ public class bMotionPathVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates of point in 3D-space </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -97,6 +108,9 @@ public class bMotionPathVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates of point in 3D-space </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -119,6 +133,9 @@ public class bMotionPathVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -133,6 +150,9 @@ public class bMotionPathVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

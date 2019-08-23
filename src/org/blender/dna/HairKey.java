@@ -27,10 +27,13 @@ public class HairKey extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 465;
+	public static final int __DNA__SDNA_INDEX = 472;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> location of hair vertex </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time along hair, default 0-100 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> softbody weight </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +100,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved particled edit mode flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +171,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Get method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> location of hair vertex </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -177,6 +192,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Set method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> location of hair vertex </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -199,6 +217,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Get method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time along hair, default 0-100 </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -213,6 +234,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Set method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time along hair, default 0-100 </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -227,6 +251,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> softbody weight </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -241,6 +268,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> softbody weight </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -255,6 +285,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Get method for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved particled edit mode flags </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	
@@ -269,6 +302,9 @@ public class HairKey extends CFacade {
 
 	/**
 	 * Set method for struct member 'editflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved particled edit mode flags </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	

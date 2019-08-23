@@ -26,7 +26,7 @@ public class NodeTexWave extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 432;
+	public static final int __DNA__SDNA_INDEX = 439;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -69,24 +69,24 @@ public class NodeTexWave extends CFacade {
 	public static final long[] __DNA__FIELD__wave_type = new long[]{964, 968};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'wave_profile'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexWave nodetexwave = ...;
-	 * CPointer&lt;Object&gt; p = nodetexwave.__dna__addressof(NodeTexWave.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nodetexwave.__dna__addressof(NodeTexWave.__DNA__FIELD__wave_profile);
+	 * CPointer&lt;Integer&gt; p_wave_profile = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'wave_profile'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__wave_profile = new long[]{968, 972};
 
 	public NodeTexWave(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -161,11 +161,11 @@ public class NodeTexWave extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'wave_profile'.
+	 * @see #__DNA__FIELD__wave_profile
 	 */
 	
-	public int getPad() throws IOException
+	public int getWave_profile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 972);
@@ -175,16 +175,16 @@ public class NodeTexWave extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'wave_profile'.
+	 * @see #__DNA__FIELD__wave_profile
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setWave_profile(int wave_profile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, pad);
+			__io__block.writeInt(__io__address + 972, wave_profile);
 		} else {
-			__io__block.writeInt(__io__address + 968, pad);
+			__io__block.writeInt(__io__address + 968, wave_profile);
 		}
 	}
 

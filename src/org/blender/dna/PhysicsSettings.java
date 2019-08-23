@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'PhysicsSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Global/Common Physics Settings </p>
  */
 
 @CMetaData(size32=24, size64=24)
@@ -27,7 +29,7 @@ public class PhysicsSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 194;
+	public static final int __DNA__SDNA_INDEX = 198;
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.

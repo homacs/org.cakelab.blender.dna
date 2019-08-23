@@ -26,7 +26,7 @@ public class bArmature extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 333;
+	public static final int __DNA__SDNA_INDEX = 339;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -110,6 +110,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> editbone listbase, we use pointer so we can check state </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +133,11 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +158,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_edbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active editbone (in editmode) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +181,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sketch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sketch struct for etch-a-ton </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -230,6 +244,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gevertdeformer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how vertex deformation is handled in the ge </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,6 +327,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for UI, to show which layers are there </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -350,6 +370,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_protected'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons to work, both variables in this order together </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -370,6 +393,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ghostep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,6 +416,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ghostsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames to ghosts to show, and step between them </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -430,6 +459,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ghost drawing options and number of frames between points of path </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -470,6 +502,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ghostef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of ghost-drawing range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,6 +545,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of path-calculation range for all bones </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -550,6 +588,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -718,6 +759,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'edbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> editbone listbase, we use pointer so we can check state </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	
@@ -735,6 +779,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'edbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> editbone listbase, we use pointer so we can check state </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	
@@ -750,6 +797,11 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'act_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */
 	
@@ -767,6 +819,11 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'act_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */
 	
@@ -782,6 +839,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'act_edbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active editbone (in editmode) </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
 	
@@ -799,6 +859,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'act_edbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active editbone (in editmode) </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
 	
@@ -814,6 +877,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'sketch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sketch struct for etch-a-ton </p>
 	 * @see #__DNA__FIELD__sketch
 	 */
 	
@@ -831,6 +897,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'sketch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sketch struct for etch-a-ton </p>
 	 * @see #__DNA__FIELD__sketch
 	 */
 	
@@ -902,6 +971,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'gevertdeformer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how vertex deformation is handled in the ge </p>
 	 * @see #__DNA__FIELD__gevertdeformer
 	 */
 	
@@ -916,6 +988,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'gevertdeformer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how vertex deformation is handled in the ge </p>
 	 * @see #__DNA__FIELD__gevertdeformer
 	 */
 	
@@ -1014,6 +1089,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for UI, to show which layers are there </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
 	
@@ -1028,6 +1106,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for UI, to show which layers are there </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
 	
@@ -1070,6 +1151,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer_protected'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons to work, both variables in this order together </p>
 	 * @see #__DNA__FIELD__layer_protected
 	 */
 	
@@ -1084,6 +1168,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer_protected'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons to work, both variables in this order together </p>
 	 * @see #__DNA__FIELD__layer_protected
 	 */
 	
@@ -1098,6 +1185,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'ghostep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
 	 * @see #__DNA__FIELD__ghostep
 	 */
 	
@@ -1112,6 +1202,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'ghostep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated... old animaton system (armature only viz) <mdash/> . </p>
 	 * @see #__DNA__FIELD__ghostep
 	 */
 	
@@ -1126,6 +1219,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'ghostsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames to ghosts to show, and step between them </p>
 	 * @see #__DNA__FIELD__ghostsize
 	 */
 	
@@ -1140,6 +1236,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'ghostsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames to ghosts to show, and step between them </p>
 	 * @see #__DNA__FIELD__ghostsize
 	 */
 	
@@ -1182,6 +1281,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'pathsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ghost drawing options and number of frames between points of path </p>
 	 * @see #__DNA__FIELD__pathsize
 	 */
 	
@@ -1196,6 +1298,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'pathsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ghost drawing options and number of frames between points of path </p>
 	 * @see #__DNA__FIELD__pathsize
 	 */
 	
@@ -1238,6 +1343,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'ghostef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of ghost-drawing range </p>
 	 * @see #__DNA__FIELD__ghostef
 	 */
 	
@@ -1252,6 +1360,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'ghostef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of ghost-drawing range </p>
 	 * @see #__DNA__FIELD__ghostef
 	 */
 	
@@ -1294,6 +1405,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'pathef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of path-calculation range for all bones </p>
 	 * @see #__DNA__FIELD__pathef
 	 */
 	
@@ -1308,6 +1422,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'pathef'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start and end frames of path-calculation range for all bones </p>
 	 * @see #__DNA__FIELD__pathef
 	 */
 	
@@ -1350,6 +1467,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Get method for struct member 'pathac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
 	 * @see #__DNA__FIELD__pathac
 	 */
 	
@@ -1364,6 +1484,9 @@ public class bArmature extends CFacade {
 
 	/**
 	 * Set method for struct member 'pathac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
 	 * @see #__DNA__FIELD__pathac
 	 */
 	

@@ -26,10 +26,13 @@ public class GlowVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 272;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fMini'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Minimum intensity to trigger a glow </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +73,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fBoost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Amount to multiply glow intensity </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +96,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dDist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of glow blurring </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +139,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bNoComp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SHOW/HIDE glow buffer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +170,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Get method for struct member 'fMini'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Minimum intensity to trigger a glow </p>
 	 * @see #__DNA__FIELD__fMini
 	 */
 	
@@ -172,6 +187,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Set method for struct member 'fMini'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Minimum intensity to trigger a glow </p>
 	 * @see #__DNA__FIELD__fMini
 	 */
 	
@@ -214,6 +232,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Get method for struct member 'fBoost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Amount to multiply glow intensity </p>
 	 * @see #__DNA__FIELD__fBoost
 	 */
 	
@@ -228,6 +249,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Set method for struct member 'fBoost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Amount to multiply glow intensity </p>
 	 * @see #__DNA__FIELD__fBoost
 	 */
 	
@@ -242,6 +266,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Get method for struct member 'dDist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of glow blurring </p>
 	 * @see #__DNA__FIELD__dDist
 	 */
 	
@@ -256,6 +283,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Set method for struct member 'dDist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of glow blurring </p>
 	 * @see #__DNA__FIELD__dDist
 	 */
 	
@@ -298,6 +328,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Get method for struct member 'bNoComp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SHOW/HIDE glow buffer </p>
 	 * @see #__DNA__FIELD__bNoComp
 	 */
 	
@@ -312,6 +345,9 @@ public class GlowVars extends CFacade {
 
 	/**
 	 * Set method for struct member 'bNoComp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SHOW/HIDE glow buffer </p>
 	 * @see #__DNA__FIELD__bNoComp
 	 */
 	

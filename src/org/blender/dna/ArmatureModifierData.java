@@ -71,6 +71,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'multi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deformflag replaces armature->deformflag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +134,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prevCos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stored input of previous modifier, for vertexgroup blending </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,6 +252,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'multi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deformflag replaces armature->deformflag </p>
 	 * @see #__DNA__FIELD__multi
 	 */
 	
@@ -257,6 +269,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'multi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deformflag replaces armature->deformflag </p>
 	 * @see #__DNA__FIELD__multi
 	 */
 	
@@ -331,6 +346,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'prevCos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stored input of previous modifier, for vertexgroup blending </p>
 	 * @see #__DNA__FIELD__prevCos
 	 */
 	
@@ -348,6 +366,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'prevCos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stored input of previous modifier, for vertexgroup blending </p>
 	 * @see #__DNA__FIELD__prevCos
 	 */
 	
@@ -363,6 +384,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -381,6 +405,9 @@ public class ArmatureModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	

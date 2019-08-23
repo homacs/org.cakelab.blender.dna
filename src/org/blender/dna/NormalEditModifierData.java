@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NormalEditModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Set Split Normals modifier </p>
  */
 
-@CMetaData(size32=188, size64=208)
+@CMetaData(size32=196, size64=216)
 public class NormalEditModifierData extends CFacade {
 
 	/**
@@ -51,6 +52,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,6 +197,26 @@ public class NormalEditModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__mix_factor = new long[]{172, 192};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mix_limit'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NormalEditModifierData normaleditmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = normaleditmodifierdata.__dna__addressof(NormalEditModifierData.__DNA__FIELD__mix_limit);
+	 * CPointer&lt;Float&gt; p_mix_limit = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_limit'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_limit = new long[]{176, 196};
+
+	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -207,7 +234,27 @@ public class NormalEditModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__offset = new long[]{180, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad_f1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NormalEditModifierData normaleditmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = normaleditmodifierdata.__dna__addressof(NormalEditModifierData.__DNA__FIELD__pad_f1);
+	 * CPointer&lt;Float&gt; p_pad_f1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad_f1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad_f1 = new long[]{192, 212};
 
 	public NormalEditModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -255,6 +302,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -273,6 +323,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -295,6 +348,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -312,6 +368,9 @@ public class NormalEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Source of normals, or center of ellipsoid. </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -478,6 +537,34 @@ public class NormalEditModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mix_limit'.
+	 * @see #__DNA__FIELD__mix_limit
+	 */
+	
+	public float getMix_limit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 196);
+		} else {
+			return __io__block.readFloat(__io__address + 176);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_limit'.
+	 * @see #__DNA__FIELD__mix_limit
+	 */
+	
+	public void setMix_limit(float mix_limit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 196, mix_limit);
+		} else {
+			__io__block.writeFloat(__io__address + 176, mix_limit);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'offset'.
 	 * @see #__DNA__FIELD__offset
 	 */
@@ -489,9 +576,9 @@ public class NormalEditModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -504,9 +591,9 @@ public class NormalEditModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 180;
 		}
 		if (__io__equals(offset, __io__address + __dna__offset)) {
 			return;
@@ -514,6 +601,34 @@ public class NormalEditModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, offset);
 		} else {
 			__io__generic__copy( getOffset(), offset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad_f1'.
+	 * @see #__DNA__FIELD__pad_f1
+	 */
+	
+	public float getPad_f1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 212);
+		} else {
+			return __io__block.readFloat(__io__address + 192);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad_f1'.
+	 * @see #__DNA__FIELD__pad_f1
+	 */
+	
+	public void setPad_f1(float pad_f1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 212, pad_f1);
+		} else {
+			__io__block.writeFloat(__io__address + 192, pad_f1);
 		}
 	}
 

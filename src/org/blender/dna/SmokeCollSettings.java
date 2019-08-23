@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SmokeCollSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> struct BVHTreeFromMesh *bvh; float mat[4][4]; float mat_old[4][4]; </p><p> collision objects (filled with smoke) </p>
  */
 
 @CMetaData(size32=20, size64=32)
@@ -26,10 +27,13 @@ public class SmokeCollSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 526;
+	public static final int __DNA__SDNA_INDEX = 537;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +162,9 @@ public class SmokeCollSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -175,6 +182,9 @@ public class SmokeCollSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	

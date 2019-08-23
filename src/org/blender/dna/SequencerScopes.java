@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SequencerScopes'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ***************** {@link Scopes}  ****************** </p>
  */
 
 @CMetaData(size32=24, size64=48)
@@ -26,7 +27,7 @@ public class SequencerScopes extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 280;
+	public static final int __DNA__SDNA_INDEX = 286;
 
 	/**
 	 * Field descriptor (offset) for struct member 'reference_ibuf'.

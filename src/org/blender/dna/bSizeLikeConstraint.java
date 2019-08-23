@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bSizeLikeConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Copy Scale Constraint </p>
  */
 
 @CMetaData(size32=76, size64=80)
@@ -27,7 +28,7 @@ public class bSizeLikeConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 355;
+	public static final int __DNA__SDNA_INDEX = 361;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -91,6 +92,9 @@ public class bSizeLikeConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -207,6 +211,9 @@ public class bSizeLikeConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -225,6 +232,9 @@ public class bSizeLikeConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	

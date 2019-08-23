@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DriverTarget'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Drivers --------------------------------<mdash/><mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
-@CMetaData(size32=48, size64=56)
+@CMetaData(size32=80, size64=88)
 public class DriverTarget extends CFacade {
 
 	/**
@@ -27,10 +28,14 @@ public class DriverTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 501;
+	public static final int __DNA__SDNA_INDEX = 512;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <p> ID-block which owns the target, no user count </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +79,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pchan_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -83,14 +94,17 @@ public class DriverTarget extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pchan_name'</li>
-	 * <li>Signature: 'char[32]'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pchan_name = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transChan'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -107,10 +121,13 @@ public class DriverTarget extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transChan = new long[]{40, 48};
+	public static final long[] __DNA__FIELD__transChan = new long[]{72, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,10 +144,13 @@ public class DriverTarget extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{42, 50};
+	public static final long[] __DNA__FIELD__flag = new long[]{74, 82};
 
 	/**
 	 * Field descriptor (offset) for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of ID-block that this target can use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -147,7 +167,7 @@ public class DriverTarget extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__idtype = new long[]{44, 52};
+	public static final long[] __DNA__FIELD__idtype = new long[]{76, 84};
 
 	public DriverTarget(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -159,6 +179,10 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <p> ID-block which owns the target, no user count </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -176,6 +200,10 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
+	 * <p> ID-block which owns the target, no user count </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -191,6 +219,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -208,6 +239,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -223,6 +257,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'pchan_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
 	
@@ -230,7 +267,7 @@ public class DriverTarget extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			32
+			64
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -241,6 +278,9 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'pchan_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
 	
@@ -263,85 +303,103 @@ public class DriverTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'transChan'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
 	
 	public short getTransChan() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 80);
 		} else {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 72);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'transChan'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
 	
 	public void setTransChan(short transChan) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 48, transChan);
+			__io__block.writeShort(__io__address + 80, transChan);
 		} else {
-			__io__block.writeShort(__io__address + 40, transChan);
+			__io__block.writeShort(__io__address + 72, transChan);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readShort(__io__address + 82);
 		} else {
-			return __io__block.readShort(__io__address + 42);
+			return __io__block.readShort(__io__address + 74);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 50, flag);
+			__io__block.writeShort(__io__address + 82, flag);
 		} else {
-			__io__block.writeShort(__io__address + 42, flag);
+			__io__block.writeShort(__io__address + 74, flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of ID-block that this target can use </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	
 	public int getIdtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 84);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 76);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of ID-block that this target can use </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	
 	public void setIdtype(int idtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, idtype);
+			__io__block.writeInt(__io__address + 84, idtype);
 		} else {
-			__io__block.writeInt(__io__address + 44, idtype);
+			__io__block.writeInt(__io__address + 76, idtype);
 		}
 	}
 

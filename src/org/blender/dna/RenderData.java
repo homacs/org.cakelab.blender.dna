@@ -13,10 +13,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RenderData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Render Data </p>
  */
 
-@CMetaData(size32=3984, size64=4032)
+@CMetaData(size32=4320, size64=4416)
 public class RenderData extends CFacade {
 
 	/**
@@ -27,7 +29,7 @@ public class RenderData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 174;
+	public static final int __DNA__SDNA_INDEX = 175;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -171,6 +173,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames as in 'images' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +196,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subframe offset from cfra, in 0.0-1.0 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +239,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pefra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start+end frames of preview range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +382,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edgeR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For UR edge rendering: give the edges this color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +445,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fullscreen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +470,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +495,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'yplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +520,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'freqplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -511,6 +545,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -531,6 +570,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'attrib'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +595,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames to jump during render/playback </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -571,6 +618,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereomode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> standalone player stereo settings </p>
+	 * @deprecated
+	 *  Deprecatedstandalone player stereo settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -591,6 +643,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dimensionspreset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> for the dimensions presets menu </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -611,6 +666,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filtertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter is box, tent, gauss, mitch, etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -631,6 +689,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size in % </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -651,6 +712,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'maximsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> max in Kb </p>
+	 * @deprecated
+	 *  Deprecatedmax in Kb </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -691,6 +757,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xsch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from buttons: The desired number of pixels in the x direction </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -711,6 +780,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ysch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The desired number of pixels in the y direction </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -731,6 +803,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the x direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -751,6 +828,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'yparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the y direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -771,6 +853,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tilex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render tile dimensions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -811,6 +896,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'planes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -831,6 +921,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -851,6 +946,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subimtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -871,6 +971,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -891,6 +994,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'displaymode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Render to image editor, fullscreen or to new window. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -951,6 +1057,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scemode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -971,6 +1080,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -991,6 +1103,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'raytrace_options'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for raytrace settings. Use bit-masking to access the settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1011,6 +1126,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'raytrace_structure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Raytrace acceleration structure </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1051,6 +1169,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ocres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> octree resolution </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1091,6 +1212,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alphamode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> What to do with the sky/background. Picks sky/premul/key blending for the background </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1111,6 +1235,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of samples to use per pixel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1171,6 +1298,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'safety'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> safety, border and display rect </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1231,6 +1361,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information on different layers to be rendered </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1271,6 +1404,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mblur_samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of mblur samples </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1291,6 +1427,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xasp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Adjustment factors for the aspect ratio in the x direction, was a short in 2.45 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1351,6 +1490,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gauss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Value used to define filter size for all filter options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1371,6 +1513,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_mgt_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management settings - color profiles, gamma correction, etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1391,6 +1536,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'postgamma'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> post-production settings. deprecated, but here for upwards compat (initialized to 1) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1451,6 +1599,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dither_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dither noise intensity </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1471,6 +1622,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bake_osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake Render options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1711,6 +1865,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> path to render output 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1731,6 +1888,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamps flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1771,6 +1931,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> select one of blenders bitmap fonts </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1791,6 +1954,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stamp_udata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamp info user data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1811,6 +1977,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fg_stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> foreground/background color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1851,6 +2020,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seq_prev_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequencer options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1891,6 +2063,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seq_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag use for sequence render/draw </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1931,6 +2106,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render simplify </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2091,6 +2269,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cineonwhite'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cineon 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2151,6 +2334,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'jp2_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> jpeg2000 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2211,6 +2399,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'domeres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> Dome variables
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2251,6 +2444,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'domeangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2351,6 +2549,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_thickness_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line thickness options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2371,6 +2572,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'unit_line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2391,6 +2595,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'engine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render engine </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2411,6 +2618,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bake'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cycles baking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2451,6 +2661,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'debug_pass_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2491,6 +2704,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'views'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MultiView {@link SceneRenderView}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2568,6 +2784,29 @@ public class RenderData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pad8 = new long[]{3980, 4028};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mblur_shutter_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Motion blur shutter </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__mblur_shutter_curve);
+	 * CPointer&lt;CurveMapping&gt; p_mblur_shutter_curve = p.cast(new Class[]{CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mblur_shutter_curve'</li>
+	 * <li>Signature: 'CurveMapping'</li>
+	 * <li>Actual Size (32bit/64bit): 336/384</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mblur_shutter_curve = new long[]{3984, 4032};
 
 	public RenderData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2807,6 +3046,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames as in 'images' </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -2821,6 +3063,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames as in 'images' </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -2835,6 +3080,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'subframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subframe offset from cfra, in 0.0-1.0 </p>
 	 * @see #__DNA__FIELD__subframe
 	 */
 	
@@ -2849,6 +3097,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'subframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subframe offset from cfra, in 0.0-1.0 </p>
 	 * @see #__DNA__FIELD__subframe
 	 */
 	
@@ -2891,6 +3142,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pefra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start+end frames of preview range </p>
 	 * @see #__DNA__FIELD__pefra
 	 */
 	
@@ -2905,6 +3159,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pefra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start+end frames of preview range </p>
 	 * @see #__DNA__FIELD__pefra
 	 */
 	
@@ -3087,6 +3344,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'edgeR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For UR edge rendering: give the edges this color </p>
 	 * @see #__DNA__FIELD__edgeR
 	 */
 	
@@ -3101,6 +3361,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'edgeR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For UR edge rendering: give the edges this color </p>
 	 * @see #__DNA__FIELD__edgeR
 	 */
 	
@@ -3171,6 +3434,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'fullscreen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__fullscreen
 	 */
 	
@@ -3185,6 +3453,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'fullscreen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__fullscreen
 	 */
 	
@@ -3199,6 +3472,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xplay
 	 */
 	
@@ -3213,6 +3491,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xplay
 	 */
 	
@@ -3227,6 +3510,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'yplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yplay
 	 */
 	
@@ -3241,6 +3529,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'yplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yplay
 	 */
 	
@@ -3255,6 +3548,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'freqplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__freqplay
 	 */
 	
@@ -3269,6 +3567,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'freqplay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__freqplay
 	 */
 	
@@ -3283,6 +3586,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -3297,6 +3605,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> standalone player
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -3311,6 +3624,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'attrib'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__attrib
 	 */
 	
@@ -3325,6 +3643,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'attrib'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__attrib
 	 */
 	
@@ -3339,6 +3662,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'frame_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames to jump during render/playback </p>
 	 * @see #__DNA__FIELD__frame_step
 	 */
 	
@@ -3353,6 +3679,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'frame_step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames to jump during render/playback </p>
 	 * @see #__DNA__FIELD__frame_step
 	 */
 	
@@ -3367,6 +3696,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'stereomode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> standalone player stereo settings </p>
+	 * @deprecated
+	 *  Deprecatedstandalone player stereo settings </p>
 	 * @see #__DNA__FIELD__stereomode
 	 */
 	
@@ -3381,6 +3715,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'stereomode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> standalone player stereo settings </p>
+	 * @deprecated
+	 *  Deprecatedstandalone player stereo settings </p>
 	 * @see #__DNA__FIELD__stereomode
 	 */
 	
@@ -3395,6 +3734,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dimensionspreset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> for the dimensions presets menu </p>
 	 * @see #__DNA__FIELD__dimensionspreset
 	 */
 	
@@ -3409,6 +3751,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dimensionspreset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> for the dimensions presets menu </p>
 	 * @see #__DNA__FIELD__dimensionspreset
 	 */
 	
@@ -3423,6 +3768,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'filtertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter is box, tent, gauss, mitch, etc </p>
 	 * @see #__DNA__FIELD__filtertype
 	 */
 	
@@ -3437,6 +3785,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'filtertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter is box, tent, gauss, mitch, etc </p>
 	 * @see #__DNA__FIELD__filtertype
 	 */
 	
@@ -3451,6 +3802,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size in % </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -3465,6 +3819,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size in % </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -3479,6 +3836,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'maximsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> max in Kb </p>
+	 * @deprecated
+	 *  Deprecatedmax in Kb </p>
 	 * @see #__DNA__FIELD__maximsize
 	 */
 	
@@ -3493,6 +3855,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'maximsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> max in Kb </p>
+	 * @deprecated
+	 *  Deprecatedmax in Kb </p>
 	 * @see #__DNA__FIELD__maximsize
 	 */
 	
@@ -3535,6 +3902,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xsch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from buttons: The desired number of pixels in the x direction </p>
 	 * @see #__DNA__FIELD__xsch
 	 */
 	
@@ -3549,6 +3919,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xsch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> from buttons: The desired number of pixels in the x direction </p>
 	 * @see #__DNA__FIELD__xsch
 	 */
 	
@@ -3563,6 +3936,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'ysch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The desired number of pixels in the y direction </p>
 	 * @see #__DNA__FIELD__ysch
 	 */
 	
@@ -3577,6 +3953,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'ysch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The desired number of pixels in the y direction </p>
 	 * @see #__DNA__FIELD__ysch
 	 */
 	
@@ -3591,6 +3970,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the x direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xparts
 	 */
 	
@@ -3605,6 +3989,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the x direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xparts
 	 */
 	
@@ -3619,6 +4008,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'yparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the y direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yparts
 	 */
 	
@@ -3633,6 +4027,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'yparts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of part to use in the y direction
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yparts
 	 */
 	
@@ -3647,6 +4046,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'tilex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render tile dimensions </p>
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -3661,6 +4063,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'tilex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render tile dimensions </p>
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -3703,6 +4108,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'planes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__planes
 	 */
 	
@@ -3717,6 +4127,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'planes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__planes
 	 */
 	
@@ -3731,6 +4146,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'imtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__imtype
 	 */
 	
@@ -3745,6 +4165,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'imtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__imtype
 	 */
 	
@@ -3759,6 +4184,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'subimtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__subimtype
 	 */
 	
@@ -3773,6 +4203,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'subimtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__subimtype
 	 */
 	
@@ -3787,6 +4222,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ! </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -3801,6 +4239,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ! </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -3815,6 +4256,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'displaymode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Render to image editor, fullscreen or to new window. </p>
 	 * @see #__DNA__FIELD__displaymode
 	 */
 	
@@ -3829,6 +4273,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'displaymode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Render to image editor, fullscreen or to new window. </p>
 	 * @see #__DNA__FIELD__displaymode
 	 */
 	
@@ -3899,6 +4346,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'scemode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__scemode
 	 */
 	
@@ -3913,6 +4363,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'scemode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__scemode
 	 */
 	
@@ -3927,6 +4380,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -3941,6 +4397,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for render settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -3955,6 +4414,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'raytrace_options'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for raytrace settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__raytrace_options
 	 */
 	
@@ -3969,6 +4431,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'raytrace_options'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags for raytrace settings. Use bit-masking to access the settings. </p>
 	 * @see #__DNA__FIELD__raytrace_options
 	 */
 	
@@ -3983,6 +4448,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'raytrace_structure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Raytrace acceleration structure </p>
 	 * @see #__DNA__FIELD__raytrace_structure
 	 */
 	
@@ -3997,6 +4465,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'raytrace_structure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Raytrace acceleration structure </p>
 	 * @see #__DNA__FIELD__raytrace_structure
 	 */
 	
@@ -4039,6 +4510,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'ocres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> octree resolution </p>
 	 * @see #__DNA__FIELD__ocres
 	 */
 	
@@ -4053,6 +4527,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'ocres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> octree resolution </p>
 	 * @see #__DNA__FIELD__ocres
 	 */
 	
@@ -4095,6 +4572,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'alphamode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> What to do with the sky/background. Picks sky/premul/key blending for the background </p>
 	 * @see #__DNA__FIELD__alphamode
 	 */
 	
@@ -4109,6 +4589,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'alphamode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> What to do with the sky/background. Picks sky/premul/key blending for the background </p>
 	 * @see #__DNA__FIELD__alphamode
 	 */
 	
@@ -4123,6 +4606,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of samples to use per pixel. </p>
 	 * @see #__DNA__FIELD__osa
 	 */
 	
@@ -4137,6 +4623,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of samples to use per pixel. </p>
 	 * @see #__DNA__FIELD__osa
 	 */
 	
@@ -4207,6 +4696,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'safety'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> safety, border and display rect </p>
 	 * @see #__DNA__FIELD__safety
 	 */
 	
@@ -4221,6 +4713,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'safety'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> safety, border and display rect </p>
 	 * @see #__DNA__FIELD__safety
 	 */
 	
@@ -4315,6 +4810,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information on different layers to be rendered </p>
 	 * @see #__DNA__FIELD__layers
 	 */
 	
@@ -4329,6 +4827,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information on different layers to be rendered </p>
 	 * @see #__DNA__FIELD__layers
 	 */
 	
@@ -4379,6 +4880,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mblur_samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of mblur samples </p>
 	 * @see #__DNA__FIELD__mblur_samples
 	 */
 	
@@ -4393,6 +4897,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mblur_samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of mblur samples </p>
 	 * @see #__DNA__FIELD__mblur_samples
 	 */
 	
@@ -4407,6 +4914,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xasp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Adjustment factors for the aspect ratio in the x direction, was a short in 2.45 </p>
 	 * @see #__DNA__FIELD__xasp
 	 */
 	
@@ -4421,6 +4931,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xasp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Adjustment factors for the aspect ratio in the x direction, was a short in 2.45 </p>
 	 * @see #__DNA__FIELD__xasp
 	 */
 	
@@ -4491,6 +5004,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'gauss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Value used to define filter size for all filter options </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -4505,6 +5021,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'gauss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Value used to define filter size for all filter options </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -4519,6 +5038,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_mgt_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management settings - color profiles, gamma correction, etc </p>
 	 * @see #__DNA__FIELD__color_mgt_flag
 	 */
 	
@@ -4533,6 +5055,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_mgt_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management settings - color profiles, gamma correction, etc </p>
 	 * @see #__DNA__FIELD__color_mgt_flag
 	 */
 	
@@ -4547,6 +5072,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'postgamma'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> post-production settings. deprecated, but here for upwards compat (initialized to 1) </p>
 	 * @see #__DNA__FIELD__postgamma
 	 */
 	
@@ -4561,6 +5089,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'postgamma'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> post-production settings. deprecated, but here for upwards compat (initialized to 1) </p>
 	 * @see #__DNA__FIELD__postgamma
 	 */
 	
@@ -4631,6 +5162,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dither_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dither noise intensity </p>
 	 * @see #__DNA__FIELD__dither_intensity
 	 */
 	
@@ -4645,6 +5179,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dither_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dither noise intensity </p>
 	 * @see #__DNA__FIELD__dither_intensity
 	 */
 	
@@ -4659,6 +5196,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bake_osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake Render options </p>
 	 * @see #__DNA__FIELD__bake_osa
 	 */
 	
@@ -4673,6 +5213,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bake_osa'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake Render options </p>
 	 * @see #__DNA__FIELD__bake_osa
 	 */
 	
@@ -4995,6 +5538,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> path to render output 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__pic
 	 */
 	
@@ -5013,6 +5559,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> path to render output 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__pic
 	 */
 	
@@ -5035,6 +5584,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamps flags. </p>
 	 * @see #__DNA__FIELD__stamp
 	 */
 	
@@ -5049,6 +5601,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamps flags. </p>
 	 * @see #__DNA__FIELD__stamp
 	 */
 	
@@ -5091,6 +5646,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> select one of blenders bitmap fonts </p>
 	 * @see #__DNA__FIELD__pad3
 	 */
 	
@@ -5105,6 +5663,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> select one of blenders bitmap fonts </p>
 	 * @see #__DNA__FIELD__pad3
 	 */
 	
@@ -5119,6 +5680,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'stamp_udata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamp info user data. </p>
 	 * @see #__DNA__FIELD__stamp_udata
 	 */
 	
@@ -5137,6 +5701,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'stamp_udata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stamp info user data. </p>
 	 * @see #__DNA__FIELD__stamp_udata
 	 */
 	
@@ -5159,6 +5726,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'fg_stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> foreground/background color. </p>
 	 * @see #__DNA__FIELD__fg_stamp
 	 */
 	
@@ -5177,6 +5747,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'fg_stamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> foreground/background color. </p>
 	 * @see #__DNA__FIELD__fg_stamp
 	 */
 	
@@ -5239,6 +5812,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'seq_prev_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequencer options </p>
 	 * @see #__DNA__FIELD__seq_prev_type
 	 */
 	
@@ -5253,6 +5829,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'seq_prev_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequencer options </p>
 	 * @see #__DNA__FIELD__seq_prev_type
 	 */
 	
@@ -5295,6 +5874,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'seq_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag use for sequence render/draw </p>
 	 * @see #__DNA__FIELD__seq_flag
 	 */
 	
@@ -5309,6 +5891,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'seq_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag use for sequence render/draw </p>
 	 * @see #__DNA__FIELD__seq_flag
 	 */
 	
@@ -5363,6 +5948,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'simplify_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render simplify </p>
 	 * @see #__DNA__FIELD__simplify_flag
 	 */
 	
@@ -5377,6 +5965,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'simplify_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render simplify </p>
 	 * @see #__DNA__FIELD__simplify_flag
 	 */
 	
@@ -5587,6 +6178,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cineonwhite'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cineon 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__cineonwhite
 	 */
 	
@@ -5601,6 +6197,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cineonwhite'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cineon 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__cineonwhite
 	 */
 	
@@ -5671,6 +6272,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'jp2_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> jpeg2000 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__jp2_preset
 	 */
 	
@@ -5685,6 +6291,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'jp2_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> jpeg2000 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__jp2_preset
 	 */
 	
@@ -5755,6 +6366,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'domeres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> Dome variables
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__domeres
 	 */
 	
@@ -5769,6 +6385,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'domeres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated since 2.5. </p><p> Dome variables
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__domeres
 	 */
 	
@@ -5811,6 +6432,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'domeangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__domeangle
 	 */
 	
@@ -5825,6 +6451,11 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'domeangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__domeangle
 	 */
 	
@@ -5955,6 +6586,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'line_thickness_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line thickness options </p>
 	 * @see #__DNA__FIELD__line_thickness_mode
 	 */
 	
@@ -5969,6 +6603,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'line_thickness_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line thickness options </p>
 	 * @see #__DNA__FIELD__line_thickness_mode
 	 */
 	
@@ -5983,6 +6620,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'unit_line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in pixels </p>
 	 * @see #__DNA__FIELD__unit_line_thickness
 	 */
 	
@@ -5997,6 +6637,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'unit_line_thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in pixels </p>
 	 * @see #__DNA__FIELD__unit_line_thickness
 	 */
 	
@@ -6011,6 +6654,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'engine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render engine </p>
 	 * @see #__DNA__FIELD__engine
 	 */
 	
@@ -6029,6 +6675,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'engine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render engine </p>
 	 * @see #__DNA__FIELD__engine
 	 */
 	
@@ -6051,6 +6700,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bake'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cycles baking </p>
 	 * @see #__DNA__FIELD__bake
 	 */
 	
@@ -6065,6 +6717,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bake'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cycles baking </p>
 	 * @see #__DNA__FIELD__bake
 	 */
 	
@@ -6115,6 +6770,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'debug_pass_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
 	 * @see #__DNA__FIELD__debug_pass_type
 	 */
 	
@@ -6129,6 +6787,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'debug_pass_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of the debug pass to use. Only used when built with debug passes support. </p>
 	 * @see #__DNA__FIELD__debug_pass_type
 	 */
 	
@@ -6171,6 +6832,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'views'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MultiView {@link SceneRenderView}  </p>
 	 * @see #__DNA__FIELD__views
 	 */
 	
@@ -6185,6 +6849,9 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'views'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MultiView {@link SceneRenderView}  </p>
 	 * @see #__DNA__FIELD__views
 	 */
 	
@@ -6298,6 +6965,48 @@ public class RenderData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, pad8);
 		} else {
 			__io__generic__copy( getPad8(), pad8);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mblur_shutter_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Motion blur shutter </p>
+	 * @see #__DNA__FIELD__mblur_shutter_curve
+	 */
+	
+	public CurveMapping getMblur_shutter_curve() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new CurveMapping(__io__address + 4032, __io__block, __io__blockTable);
+		} else {
+			return new CurveMapping(__io__address + 3984, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mblur_shutter_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Motion blur shutter </p>
+	 * @see #__DNA__FIELD__mblur_shutter_curve
+	 */
+	
+	public void setMblur_shutter_curve(CurveMapping mblur_shutter_curve) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 4032;
+		} else {
+			__dna__offset = 3984;
+		}
+		if (__io__equals(mblur_shutter_curve, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, mblur_shutter_curve)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, mblur_shutter_curve);
+		} else {
+			__io__generic__copy( getMblur_shutter_curve(), mblur_shutter_curve);
 		}
 	}
 

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'BGpic'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> This is needed to not let VC choke on near and far... old proprietary MS extensions... ******************************** The near/far thing is a Win EXCEPTION. Thus, leave near/far in the code, and patch for windows. Background Picture in 3D-View </p>
  */
 
 @CMetaData(size32=92, size64=112)
@@ -27,7 +28,7 @@ public class BGpic extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 197;
+	public static final int __DNA__SDNA_INDEX = 201;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

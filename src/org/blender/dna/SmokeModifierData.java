@@ -70,6 +70,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inflow, outflow, smoke objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +93,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'coll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collision objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +136,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, inflow, outflow, ... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -226,6 +235,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inflow, outflow, smoke objects </p>
 	 * @see #__DNA__FIELD__flow
 	 */
 	
@@ -243,6 +255,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inflow, outflow, smoke objects </p>
 	 * @see #__DNA__FIELD__flow
 	 */
 	
@@ -258,6 +273,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'coll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collision objects </p>
 	 * @see #__DNA__FIELD__coll
 	 */
 	
@@ -275,6 +293,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'coll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> collision objects </p>
 	 * @see #__DNA__FIELD__coll
 	 */
 	
@@ -318,6 +339,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, inflow, outflow, ... </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -332,6 +356,9 @@ public class SmokeModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, inflow, outflow, ... </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

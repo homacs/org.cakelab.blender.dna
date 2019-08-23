@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmKeyMapItem'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> partial copy of the event, for matching by eventhandler </p>
  */
 
 @CMetaData(size32=168, size64=184)
@@ -27,7 +28,7 @@ public class wmKeyMapItem extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 486;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator used to retrieve operator type pointer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator properties, assigned to ptr->data and can be written to a file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +118,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'propvalue_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modal runtime temporary storage for loading </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +141,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'propvalue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if used, the item is from modal map </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +164,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> event event code itself </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +187,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'val'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> KM_ANY, KM_PRESS, KM_NOTHING etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +270,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'oskey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> oskey is apple or windowskey, value denotes order of pressed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +293,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keymodifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rawkey modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +316,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag: inactive, expanded </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +339,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'maptype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime keymap editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +362,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unique identifier. Positive for kmi that override builtins, negative otherwise </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +405,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rna pointer to access properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -463,6 +500,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator used to retrieve operator type pointer </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -481,6 +521,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator used to retrieve operator type pointer </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -503,6 +546,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'properties'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator properties, assigned to ptr->data and can be written to a file </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -520,6 +566,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'properties'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator properties, assigned to ptr->data and can be written to a file </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -535,6 +584,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'propvalue_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modal runtime temporary storage for loading </p>
 	 * @see #__DNA__FIELD__propvalue_str
 	 */
 	
@@ -553,6 +605,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'propvalue_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modal runtime temporary storage for loading </p>
 	 * @see #__DNA__FIELD__propvalue_str
 	 */
 	
@@ -575,6 +630,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'propvalue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if used, the item is from modal map </p>
 	 * @see #__DNA__FIELD__propvalue
 	 */
 	
@@ -589,6 +647,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'propvalue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if used, the item is from modal map </p>
 	 * @see #__DNA__FIELD__propvalue
 	 */
 	
@@ -603,6 +664,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> event event code itself </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -617,6 +681,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> event event code itself </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -631,6 +698,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'val'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> KM_ANY, KM_PRESS, KM_NOTHING etc </p>
 	 * @see #__DNA__FIELD__val
 	 */
 	
@@ -645,6 +715,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'val'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> KM_ANY, KM_PRESS, KM_NOTHING etc </p>
 	 * @see #__DNA__FIELD__val
 	 */
 	
@@ -743,6 +816,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'oskey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> oskey is apple or windowskey, value denotes order of pressed </p>
 	 * @see #__DNA__FIELD__oskey
 	 */
 	
@@ -757,6 +833,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'oskey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> oskey is apple or windowskey, value denotes order of pressed </p>
 	 * @see #__DNA__FIELD__oskey
 	 */
 	
@@ -771,6 +850,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'keymodifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rawkey modifier </p>
 	 * @see #__DNA__FIELD__keymodifier
 	 */
 	
@@ -785,6 +867,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'keymodifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rawkey modifier </p>
 	 * @see #__DNA__FIELD__keymodifier
 	 */
 	
@@ -799,6 +884,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag: inactive, expanded </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -813,6 +901,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag: inactive, expanded </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -827,6 +918,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'maptype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime keymap editor </p>
 	 * @see #__DNA__FIELD__maptype
 	 */
 	
@@ -841,6 +935,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'maptype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime keymap editor </p>
 	 * @see #__DNA__FIELD__maptype
 	 */
 	
@@ -855,6 +952,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unique identifier. Positive for kmi that override builtins, negative otherwise </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -869,6 +969,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unique identifier. Positive for kmi that override builtins, negative otherwise </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -911,6 +1014,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Get method for struct member 'ptr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rna pointer to access properties </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	
@@ -928,6 +1034,9 @@ public class wmKeyMapItem extends CFacade {
 
 	/**
 	 * Set method for struct member 'ptr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rna pointer to access properties </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	

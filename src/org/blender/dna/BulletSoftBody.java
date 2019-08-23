@@ -26,10 +26,13 @@ public class BulletSoftBody extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 158;
+	public static final int __DNA__SDNA_INDEX = 159;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various boolean options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'linStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> linear stiffness 0..1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +76,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'angStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angular stiffness 0..1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +99,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> volume preservation 0..1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +122,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'viterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities solver iterations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +145,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'piterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Positions solver iterations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +168,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'diterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drift solver iterations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +191,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'citerations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cluster solver iterations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,6 +214,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSRHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid hardness [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,6 +237,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSKHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs kinetic hardness [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -230,6 +260,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSSHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs soft hardness [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -250,6 +283,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSR_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,6 +306,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSK_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -290,6 +329,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSS_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,6 +352,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kVCF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities correction factor (Baumgarte) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -330,6 +375,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kDP'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Damping coefficient [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -350,6 +398,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kDG'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drag coefficient [0,+inf] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -370,6 +421,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kLF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lift coefficient [0,+inf] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,6 +444,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kPR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pressure coefficient [-inf,+inf] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -410,6 +467,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kVC'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Volume conversation coefficient [0,+inf] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -430,6 +490,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kDF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dynamic friction coefficient [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -450,6 +513,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kMT'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pose matching coefficient [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -470,6 +536,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kCHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rigid contacts hardness [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -490,6 +559,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kKHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kinetic contacts hardness [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,6 +582,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kSHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft contacts hardness [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -530,6 +605,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kAHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Anchors hardness [0,1] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -550,6 +628,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'collisionflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex/Face or Signed Distance Field(SDF) or Clusters, Soft versus Soft or Rigid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -570,6 +651,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'numclusteriterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of iterations to refine collision clusters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -590,6 +674,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'welding'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> welding limit to remove duplicate/nearby vertices, 0.0..0.01 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -610,6 +697,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> margin specific to softbody </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -638,6 +728,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various boolean options </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -652,6 +745,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various boolean options </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -666,6 +762,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'linStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> linear stiffness 0..1 </p>
 	 * @see #__DNA__FIELD__linStiff
 	 */
 	
@@ -680,6 +779,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'linStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> linear stiffness 0..1 </p>
 	 * @see #__DNA__FIELD__linStiff
 	 */
 	
@@ -694,6 +796,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'angStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angular stiffness 0..1 </p>
 	 * @see #__DNA__FIELD__angStiff
 	 */
 	
@@ -708,6 +813,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'angStiff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angular stiffness 0..1 </p>
 	 * @see #__DNA__FIELD__angStiff
 	 */
 	
@@ -722,6 +830,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'volume'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> volume preservation 0..1 </p>
 	 * @see #__DNA__FIELD__volume
 	 */
 	
@@ -736,6 +847,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'volume'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> volume preservation 0..1 </p>
 	 * @see #__DNA__FIELD__volume
 	 */
 	
@@ -750,6 +864,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'viterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities solver iterations </p>
 	 * @see #__DNA__FIELD__viterations
 	 */
 	
@@ -764,6 +881,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'viterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities solver iterations </p>
 	 * @see #__DNA__FIELD__viterations
 	 */
 	
@@ -778,6 +898,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'piterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Positions solver iterations </p>
 	 * @see #__DNA__FIELD__piterations
 	 */
 	
@@ -792,6 +915,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'piterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Positions solver iterations </p>
 	 * @see #__DNA__FIELD__piterations
 	 */
 	
@@ -806,6 +932,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'diterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drift solver iterations </p>
 	 * @see #__DNA__FIELD__diterations
 	 */
 	
@@ -820,6 +949,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'diterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drift solver iterations </p>
 	 * @see #__DNA__FIELD__diterations
 	 */
 	
@@ -834,6 +966,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'citerations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cluster solver iterations </p>
 	 * @see #__DNA__FIELD__citerations
 	 */
 	
@@ -848,6 +983,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'citerations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cluster solver iterations </p>
 	 * @see #__DNA__FIELD__citerations
 	 */
 	
@@ -862,6 +1000,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSRHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSRHR_CL
 	 */
 	
@@ -876,6 +1017,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSRHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSRHR_CL
 	 */
 	
@@ -890,6 +1034,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSKHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs kinetic hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSKHR_CL
 	 */
 	
@@ -904,6 +1051,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSKHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs kinetic hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSKHR_CL
 	 */
 	
@@ -918,6 +1068,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSSHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs soft hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSSHR_CL
 	 */
 	
@@ -932,6 +1085,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSSHR_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs soft hardness [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSSHR_CL
 	 */
 	
@@ -946,6 +1102,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSR_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSR_SPLT_CL
 	 */
 	
@@ -960,6 +1119,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSR_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSR_SPLT_CL
 	 */
 	
@@ -974,6 +1136,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSK_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSK_SPLT_CL
 	 */
 	
@@ -988,6 +1153,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSK_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSK_SPLT_CL
 	 */
 	
@@ -1002,6 +1170,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSS_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSS_SPLT_CL
 	 */
 	
@@ -1016,6 +1187,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSS_SPLT_CL'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft vs rigid impulse split [0,1] (cluster only) </p>
 	 * @see #__DNA__FIELD__kSS_SPLT_CL
 	 */
 	
@@ -1030,6 +1204,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kVCF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities correction factor (Baumgarte) </p>
 	 * @see #__DNA__FIELD__kVCF
 	 */
 	
@@ -1044,6 +1221,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kVCF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocities correction factor (Baumgarte) </p>
 	 * @see #__DNA__FIELD__kVCF
 	 */
 	
@@ -1058,6 +1238,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kDP'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Damping coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kDP
 	 */
 	
@@ -1072,6 +1255,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kDP'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Damping coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kDP
 	 */
 	
@@ -1086,6 +1272,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kDG'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drag coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kDG
 	 */
 	
@@ -1100,6 +1289,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kDG'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Drag coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kDG
 	 */
 	
@@ -1114,6 +1306,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kLF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lift coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kLF
 	 */
 	
@@ -1128,6 +1323,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kLF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lift coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kLF
 	 */
 	
@@ -1142,6 +1340,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kPR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pressure coefficient [-inf,+inf] </p>
 	 * @see #__DNA__FIELD__kPR
 	 */
 	
@@ -1156,6 +1357,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kPR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pressure coefficient [-inf,+inf] </p>
 	 * @see #__DNA__FIELD__kPR
 	 */
 	
@@ -1170,6 +1374,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kVC'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Volume conversation coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kVC
 	 */
 	
@@ -1184,6 +1391,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kVC'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Volume conversation coefficient [0,+inf] </p>
 	 * @see #__DNA__FIELD__kVC
 	 */
 	
@@ -1198,6 +1408,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kDF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dynamic friction coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kDF
 	 */
 	
@@ -1212,6 +1425,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kDF'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dynamic friction coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kDF
 	 */
 	
@@ -1226,6 +1442,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kMT'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pose matching coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kMT
 	 */
 	
@@ -1240,6 +1459,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kMT'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pose matching coefficient [0,1] </p>
 	 * @see #__DNA__FIELD__kMT
 	 */
 	
@@ -1254,6 +1476,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kCHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rigid contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kCHR
 	 */
 	
@@ -1268,6 +1493,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kCHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rigid contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kCHR
 	 */
 	
@@ -1282,6 +1510,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kKHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kinetic contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kKHR
 	 */
 	
@@ -1296,6 +1527,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kKHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kinetic contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kKHR
 	 */
 	
@@ -1310,6 +1544,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kSHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kSHR
 	 */
 	
@@ -1324,6 +1561,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kSHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Soft contacts hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kSHR
 	 */
 	
@@ -1338,6 +1578,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'kAHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Anchors hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kAHR
 	 */
 	
@@ -1352,6 +1595,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'kAHR'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Anchors hardness [0,1] </p>
 	 * @see #__DNA__FIELD__kAHR
 	 */
 	
@@ -1366,6 +1612,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'collisionflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex/Face or Signed Distance Field(SDF) or Clusters, Soft versus Soft or Rigid </p>
 	 * @see #__DNA__FIELD__collisionflags
 	 */
 	
@@ -1380,6 +1629,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'collisionflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex/Face or Signed Distance Field(SDF) or Clusters, Soft versus Soft or Rigid </p>
 	 * @see #__DNA__FIELD__collisionflags
 	 */
 	
@@ -1394,6 +1646,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'numclusteriterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of iterations to refine collision clusters </p>
 	 * @see #__DNA__FIELD__numclusteriterations
 	 */
 	
@@ -1408,6 +1663,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'numclusteriterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of iterations to refine collision clusters </p>
 	 * @see #__DNA__FIELD__numclusteriterations
 	 */
 	
@@ -1422,6 +1680,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'welding'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> welding limit to remove duplicate/nearby vertices, 0.0..0.01 </p>
 	 * @see #__DNA__FIELD__welding
 	 */
 	
@@ -1436,6 +1697,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'welding'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> welding limit to remove duplicate/nearby vertices, 0.0..0.01 </p>
 	 * @see #__DNA__FIELD__welding
 	 */
 	
@@ -1450,6 +1714,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> margin specific to softbody </p>
 	 * @see #__DNA__FIELD__margin
 	 */
 	
@@ -1464,6 +1731,9 @@ public class BulletSoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> margin specific to softbody </p>
 	 * @see #__DNA__FIELD__margin
 	 */
 	

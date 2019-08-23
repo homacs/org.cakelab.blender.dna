@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GPUDOFSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> properties for dof effect </p>
  */
 
 @CMetaData(size32=24, size64=24)
@@ -30,6 +31,10 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
+	 * <p> focal distance for depth of field </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +55,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fstop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * F-stop for dof effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +78,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'focal_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Focal length for dof effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +101,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Size of sensor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +172,10 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'focus_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
+	 * <p> focal distance for depth of field </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */
 	
@@ -172,6 +190,10 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'focus_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
+	 * <p> focal distance for depth of field </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */
 	
@@ -186,6 +208,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fstop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * F-stop for dof effect
 	 * @see #__DNA__FIELD__fstop
 	 */
 	
@@ -200,6 +225,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fstop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * F-stop for dof effect
 	 * @see #__DNA__FIELD__fstop
 	 */
 	
@@ -214,6 +242,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'focal_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Focal length for dof effect
 	 * @see #__DNA__FIELD__focal_length
 	 */
 	
@@ -228,6 +259,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'focal_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Focal length for dof effect
 	 * @see #__DNA__FIELD__focal_length
 	 */
 	
@@ -242,6 +276,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'sensor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Size of sensor
 	 * @see #__DNA__FIELD__sensor
 	 */
 	
@@ -256,6 +293,9 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'sensor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Size of sensor
 	 * @see #__DNA__FIELD__sensor
 	 */
 	

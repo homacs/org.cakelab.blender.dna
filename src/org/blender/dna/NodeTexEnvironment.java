@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1008, size64=1016)
+@CMetaData(size32=1016, size64=1024)
 public class NodeTexEnvironment extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexEnvironment extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 427;
+	public static final int __DNA__SDNA_INDEX = 434;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -107,6 +107,46 @@ public class NodeTexEnvironment extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__projection = new long[]{1004, 1012};
+
+	/**
+	 * Field descriptor (offset) for struct member 'interpolation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexEnvironment nodetexenvironment = ...;
+	 * CPointer&lt;Object&gt; p = nodetexenvironment.__dna__addressof(NodeTexEnvironment.__DNA__FIELD__interpolation);
+	 * CPointer&lt;Integer&gt; p_interpolation = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'interpolation'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__interpolation = new long[]{1008, 1016};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexEnvironment nodetexenvironment = ...;
+	 * CPointer&lt;Object&gt; p = nodetexenvironment.__dna__addressof(NodeTexEnvironment.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{1012, 1020};
 
 	public NodeTexEnvironment(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -241,6 +281,62 @@ public class NodeTexEnvironment extends CFacade {
 			__io__block.writeInt(__io__address + 1012, projection);
 		} else {
 			__io__block.writeInt(__io__address + 1004, projection);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'interpolation'.
+	 * @see #__DNA__FIELD__interpolation
+	 */
+	
+	public int getInterpolation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1016);
+		} else {
+			return __io__block.readInt(__io__address + 1008);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'interpolation'.
+	 * @see #__DNA__FIELD__interpolation
+	 */
+	
+	public void setInterpolation(int interpolation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1016, interpolation);
+		} else {
+			__io__block.writeInt(__io__address + 1008, interpolation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1020);
+		} else {
+			return __io__block.readInt(__io__address + 1012);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1020, pad);
+		} else {
+			__io__block.writeInt(__io__address + 1012, pad);
 		}
 	}
 

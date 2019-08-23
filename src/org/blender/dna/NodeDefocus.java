@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeDefocus'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> qdn: Defocus blur node </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -26,7 +27,7 @@ public class NodeDefocus extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 413;
+	public static final int __DNA__SDNA_INDEX = 420;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bktype'.

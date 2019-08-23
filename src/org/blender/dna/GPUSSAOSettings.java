@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GPUSSAOSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> properties for SSAO effect </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -31,6 +32,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the SSAO effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color for screen space ambient occlusion effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +78,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance of object that contribute to the SSAO effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +101,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Attenuation constant
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +124,10 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of samples<h4>Blender Source Code:</h4>
+	 * <p> ray samples, we use presets here for easy control instead of </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +176,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the SSAO effect
 	 * @see #__DNA__FIELD__factor
 	 */
 	
@@ -173,6 +193,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the SSAO effect
 	 * @see #__DNA__FIELD__factor
 	 */
 	
@@ -187,6 +210,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color for screen space ambient occlusion effect
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -205,6 +231,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color for screen space ambient occlusion effect
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -227,6 +256,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'distance_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance of object that contribute to the SSAO effect
 	 * @see #__DNA__FIELD__distance_max
 	 */
 	
@@ -241,6 +273,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'distance_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance of object that contribute to the SSAO effect
 	 * @see #__DNA__FIELD__distance_max
 	 */
 	
@@ -255,6 +290,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'attenuation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Attenuation constant
 	 * @see #__DNA__FIELD__attenuation
 	 */
 	
@@ -269,6 +307,9 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'attenuation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Attenuation constant
 	 * @see #__DNA__FIELD__attenuation
 	 */
 	
@@ -283,6 +324,10 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of samples<h4>Blender Source Code:</h4>
+	 * <p> ray samples, we use presets here for easy control instead of </p>
 	 * @see #__DNA__FIELD__samples
 	 */
 	
@@ -297,6 +342,10 @@ public class GPUSSAOSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of samples<h4>Blender Source Code:</h4>
+	 * <p> ray samples, we use presets here for easy control instead of </p>
 	 * @see #__DNA__FIELD__samples
 	 */
 	

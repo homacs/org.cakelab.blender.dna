@@ -71,6 +71,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Format of the source data set to render
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +214,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for rendering smoke sims </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +257,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'still_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The frame number to always use
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +280,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'source_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +303,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dataset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,6 +442,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Format of the source data set to render
 	 * @see #__DNA__FIELD__file_format
 	 */
 	
@@ -441,6 +459,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Format of the source data set to render
 	 * @see #__DNA__FIELD__file_format
 	 */
 	
@@ -623,6 +644,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for rendering smoke sims </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -640,6 +664,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for rendering smoke sims </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -683,6 +710,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'still_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The frame number to always use
 	 * @see #__DNA__FIELD__still_frame
 	 */
 	
@@ -697,6 +727,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'still_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The frame number to always use
 	 * @see #__DNA__FIELD__still_frame
 	 */
 	
@@ -711,6 +744,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'source_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__source_path
 	 */
 	
@@ -729,6 +765,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'source_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__source_path
 	 */
 	
@@ -751,6 +790,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dataset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data </p>
 	 * @see #__DNA__FIELD__dataset
 	 */
 	
@@ -768,6 +810,9 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dataset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data </p>
 	 * @see #__DNA__FIELD__dataset
 	 */
 	

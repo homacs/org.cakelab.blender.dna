@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bFollowPathConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Follow {@link Path}  constraints </p>
  */
 
 @CMetaData(size32=20, size64=24)
@@ -26,10 +27,13 @@ public class bFollowPathConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 362;
+	public static final int __DNA__SDNA_INDEX = 368;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be path object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset in time on the path (in frames), when NOT using 'fixed position' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +77,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Parametric offset factor defining position along path, when using 'fixed position' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +168,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be path object </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -175,6 +188,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be path object </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -190,6 +206,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset in time on the path (in frames), when NOT using 'fixed position' </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -204,6 +223,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset in time on the path (in frames), when NOT using 'fixed position' </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -218,6 +240,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Parametric offset factor defining position along path, when using 'fixed position' </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	
@@ -232,6 +257,9 @@ public class bFollowPathConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Parametric offset factor defining position along path, when using 'fixed position' </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	

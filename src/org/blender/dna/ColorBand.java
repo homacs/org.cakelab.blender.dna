@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ColorBand'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> 32 = MAXCOLORBAND note that this has to remain a single struct, for {@link UserDef}  </p>
  */
 
 @CMetaData(size32=776, size64=776)

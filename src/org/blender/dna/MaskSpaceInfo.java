@@ -27,10 +27,13 @@ public class MaskSpaceInfo extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> **** mask editing **** </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class MaskSpaceInfo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draw options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,6 +145,9 @@ public class MaskSpaceInfo extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> **** mask editing **** </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -156,6 +165,9 @@ public class MaskSpaceInfo extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> **** mask editing **** </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -171,6 +183,9 @@ public class MaskSpaceInfo extends CFacade {
 
 	/**
 	 * Get method for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draw options </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	
@@ -185,6 +200,9 @@ public class MaskSpaceInfo extends CFacade {
 
 	/**
 	 * Set method for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draw options </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	

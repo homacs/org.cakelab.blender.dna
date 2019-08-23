@@ -27,10 +27,13 @@ public class bMessageSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 300;
+	public static final int __DNA__SDNA_INDEX = 306;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fromObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single sender object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be used to filter on subjects like this </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) body to filter on </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,6 +108,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'fromObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single sender object </p>
 	 * @see #__DNA__FIELD__fromObject
 	 */
 	
@@ -116,6 +128,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'fromObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single sender object </p>
 	 * @see #__DNA__FIELD__fromObject
 	 */
 	
@@ -131,6 +146,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be used to filter on subjects like this </p>
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -149,6 +167,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be used to filter on subjects like this </p>
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -171,6 +192,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) body to filter on </p>
 	 * @see #__DNA__FIELD__body
 	 */
 	
@@ -189,6 +213,9 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) body to filter on </p>
 	 * @see #__DNA__FIELD__body
 	 */
 	

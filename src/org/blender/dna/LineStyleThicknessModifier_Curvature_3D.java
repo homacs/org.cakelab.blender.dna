@@ -26,7 +26,7 @@ public class LineStyleThicknessModifier_Curvature_3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 575;
+	public static final int __DNA__SDNA_INDEX = 586;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,6 +50,9 @@ public class LineStyleThicknessModifier_Curvature_3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Curve used for the curve mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,6 +237,9 @@ public class LineStyleThicknessModifier_Curvature_3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -251,6 +257,9 @@ public class LineStyleThicknessModifier_Curvature_3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Curve used for the curve mapping
 	 * @see #__DNA__FIELD__curve
 	 */
 	

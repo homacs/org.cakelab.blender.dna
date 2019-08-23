@@ -12,7 +12,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Base'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * Wrapper for referencing Objects in a Scene<h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  {@link Scene}  Data {@link Base}  - Wrapper for referencing Objects in a {@link Scene}  </p>
  */
 
 @CMetaData(size32=28, size64=40)
@@ -26,10 +29,13 @@ public class Base extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 164;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * next object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +56,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * previous object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +79,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +122,32 @@ public class Base extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	BA_WAS_SEL          (1 << 1)
+	 * 	BA_HAS_RECALC_OB    (1 << 2)
+	 * 	BA_HAS_RECALC_DATA  (1 << 3)
+	 * 	// NOTE: this was used as a proper setting in past, so nullify before using 
+	 * 	BA_TEMP_TAG         (1 << 5)
+	 * 
+	 *     // BA_FROMSET          (1 << 7)  //UNUSED
+	 * 
+	 * 	BA_TRANSFORM_CHILD  (1 << 8)  // child of a transformed object 
+	 * 	BA_TRANSFORM_PARENT (1 << 13)  // parent of a transformed object
+	 * 
+	 * 
+	 * 	// an initial attempt as making selection more specific!
+	 * 	BA_DESELECT     0
+	 * 	BA_SELECT       1
+	 * 
+	 * 
+	 * 	OB_FROMDUPLI        (1 << 9)
+	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
+	 * 	// OB_RADIO            (1 << 11) // deprecated
+	 * 	OB_FROMGROUP        (1 << 12)
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +208,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * this object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -198,6 +239,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * next object
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -215,6 +259,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * next object
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -230,6 +277,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * previous object
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -247,6 +297,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * previous object
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -262,6 +315,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -276,6 +332,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -318,6 +377,32 @@ public class Base extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	BA_WAS_SEL          (1 << 1)
+	 * 	BA_HAS_RECALC_OB    (1 << 2)
+	 * 	BA_HAS_RECALC_DATA  (1 << 3)
+	 * 	// NOTE: this was used as a proper setting in past, so nullify before using 
+	 * 	BA_TEMP_TAG         (1 << 5)
+	 * 
+	 *     // BA_FROMSET          (1 << 7)  //UNUSED
+	 * 
+	 * 	BA_TRANSFORM_CHILD  (1 << 8)  // child of a transformed object 
+	 * 	BA_TRANSFORM_PARENT (1 << 13)  // parent of a transformed object
+	 * 
+	 * 
+	 * 	// an initial attempt as making selection more specific!
+	 * 	BA_DESELECT     0
+	 * 	BA_SELECT       1
+	 * 
+	 * 
+	 * 	OB_FROMDUPLI        (1 << 9)
+	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
+	 * 	// OB_RADIO            (1 << 11) // deprecated
+	 * 	OB_FROMGROUP        (1 << 12)
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -332,6 +417,32 @@ public class Base extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	BA_WAS_SEL          (1 << 1)
+	 * 	BA_HAS_RECALC_OB    (1 << 2)
+	 * 	BA_HAS_RECALC_DATA  (1 << 3)
+	 * 	// NOTE: this was used as a proper setting in past, so nullify before using 
+	 * 	BA_TEMP_TAG         (1 << 5)
+	 * 
+	 *     // BA_FROMSET          (1 << 7)  //UNUSED
+	 * 
+	 * 	BA_TRANSFORM_CHILD  (1 << 8)  // child of a transformed object 
+	 * 	BA_TRANSFORM_PARENT (1 << 13)  // parent of a transformed object
+	 * 
+	 * 
+	 * 	// an initial attempt as making selection more specific!
+	 * 	BA_DESELECT     0
+	 * 	BA_SELECT       1
+	 * 
+	 * 
+	 * 	OB_FROMDUPLI        (1 << 9)
+	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
+	 * 	// OB_RADIO            (1 << 11) // deprecated
+	 * 	OB_FROMGROUP        (1 << 12)
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -402,6 +513,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * this object
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -419,6 +533,9 @@ public class Base extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * this object
 	 * @see #__DNA__FIELD__object
 	 */
 	

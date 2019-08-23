@@ -27,7 +27,7 @@ public class bPathCompare extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 243;
+	public static final int __DNA__SDNA_INDEX = 247;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +71,9 @@ public class bPathCompare extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,6 +206,9 @@ public class bPathCompare extends CFacade {
 
 	/**
 	 * Get method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -221,6 +227,9 @@ public class bPathCompare extends CFacade {
 
 	/**
 	 * Set method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DynamicPaintBrushSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Brush}  settings </p>
  */
 
 @CMetaData(size32=88, size64=112)
@@ -26,10 +27,13 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 549;
+	public static final int __DNA__SDNA_INDEX = 560;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -290,6 +294,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum distance from brush to mesh surface to affect paint
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,6 +317,10 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
+	 * <p> color ramps Proximity paint falloff </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -330,6 +341,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vel_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocity paint ramp </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -350,6 +364,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Proximity falloff type
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -430,6 +447,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for wave influence of this brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -450,6 +470,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum level of surface intersection used to influence waves (use 0.0 to disable)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -490,6 +513,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'smudge_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Smudge effect strength
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -518,6 +544,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -535,6 +564,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -898,6 +930,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'paint_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum distance from brush to mesh surface to affect paint
 	 * @see #__DNA__FIELD__paint_distance
 	 */
 	
@@ -912,6 +947,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'paint_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum distance from brush to mesh surface to affect paint
 	 * @see #__DNA__FIELD__paint_distance
 	 */
 	
@@ -926,6 +964,10 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'paint_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
+	 * <p> color ramps Proximity paint falloff </p>
 	 * @see #__DNA__FIELD__paint_ramp
 	 */
 	
@@ -943,6 +985,10 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'paint_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
+	 * <p> color ramps Proximity paint falloff </p>
 	 * @see #__DNA__FIELD__paint_ramp
 	 */
 	
@@ -958,6 +1004,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'vel_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocity paint ramp </p>
 	 * @see #__DNA__FIELD__vel_ramp
 	 */
 	
@@ -975,6 +1024,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'vel_ramp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocity paint ramp </p>
 	 * @see #__DNA__FIELD__vel_ramp
 	 */
 	
@@ -990,6 +1042,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'proximity_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Proximity falloff type
 	 * @see #__DNA__FIELD__proximity_falloff
 	 */
 	
@@ -1004,6 +1059,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'proximity_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Proximity falloff type
 	 * @see #__DNA__FIELD__proximity_falloff
 	 */
 	
@@ -1102,6 +1160,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for wave influence of this brush
 	 * @see #__DNA__FIELD__wave_factor
 	 */
 	
@@ -1116,6 +1177,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplier for wave influence of this brush
 	 * @see #__DNA__FIELD__wave_factor
 	 */
 	
@@ -1130,6 +1194,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum level of surface intersection used to influence waves (use 0.0 to disable)
 	 * @see #__DNA__FIELD__wave_clamp
 	 */
 	
@@ -1144,6 +1211,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum level of surface intersection used to influence waves (use 0.0 to disable)
 	 * @see #__DNA__FIELD__wave_clamp
 	 */
 	
@@ -1186,6 +1256,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'smudge_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Smudge effect strength
 	 * @see #__DNA__FIELD__smudge_strength
 	 */
 	
@@ -1200,6 +1273,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'smudge_strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Smudge effect strength
 	 * @see #__DNA__FIELD__smudge_strength
 	 */
 	

@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bStats'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Assorted {@link Scene}  Data -------------------------------------<mdash/><mdash/>  Stats (show in Info header) </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -26,10 +28,13 @@ public class bStats extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 192;
+	public static final int __DNA__SDNA_INDEX = 196;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totobj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene totals for visible layers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -198,6 +203,9 @@ public class bStats extends CFacade {
 
 	/**
 	 * Get method for struct member 'totobj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene totals for visible layers </p>
 	 * @see #__DNA__FIELD__totobj
 	 */
 	
@@ -212,6 +220,9 @@ public class bStats extends CFacade {
 
 	/**
 	 * Set method for struct member 'totobj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene totals for visible layers </p>
 	 * @see #__DNA__FIELD__totobj
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceFile'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> File Browser </p>
  */
 
 @CMetaData(size32=64, size64=112)
@@ -26,7 +27,7 @@ public class SpaceFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 212;
+	public static final int __DNA__SDNA_INDEX = 216;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -70,6 +71,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +134,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'params'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> config and input for file select </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +157,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of files to show </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +180,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'folders_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of previous directories to show </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,6 +203,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'folders_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of next directories (pushed from previous) to show </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,6 +226,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -442,6 +461,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -456,6 +478,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -534,6 +559,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'params'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> config and input for file select </p>
 	 * @see #__DNA__FIELD__params
 	 */
 	
@@ -551,6 +579,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'params'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> config and input for file select </p>
 	 * @see #__DNA__FIELD__params
 	 */
 	
@@ -566,6 +597,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of files to show </p>
 	 * @see #__DNA__FIELD__files
 	 */
 	
@@ -583,6 +617,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'files'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of files to show </p>
 	 * @see #__DNA__FIELD__files
 	 */
 	
@@ -598,6 +635,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'folders_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of previous directories to show </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
 	
@@ -615,6 +655,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'folders_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of previous directories to show </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
 	
@@ -630,6 +673,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'folders_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of next directories (pushed from previous) to show </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
 	
@@ -647,6 +693,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'folders_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> holds the list of next directories (pushed from previous) to show </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
 	
@@ -662,6 +711,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */
 	
@@ -679,6 +731,9 @@ public class SpaceFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'op'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator that is invoking fileselect op->exec() will be called on the 'Load' button. if operator provides op->cancel(), then this will be invoked on the cancel button. </p>
 	 * @see #__DNA__FIELD__op
 	 */
 	

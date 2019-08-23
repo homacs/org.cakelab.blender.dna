@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeImageLayer'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> layer info for image node outputs </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -26,10 +27,13 @@ public class NodeImageLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 400;
+	public static final int __DNA__SDNA_INDEX = 407;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index in the Image->layers->passes lists </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class NodeImageLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render pass flag, in case this is an original render pass </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +85,9 @@ public class NodeImageLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index in the Image->layers->passes lists </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
 	
@@ -92,6 +102,9 @@ public class NodeImageLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index in the Image->layers->passes lists </p>
 	 * @see #__DNA__FIELD__pass_index
 	 */
 	
@@ -106,6 +119,9 @@ public class NodeImageLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'pass_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render pass flag, in case this is an original render pass </p>
 	 * @see #__DNA__FIELD__pass_flag
 	 */
 	
@@ -120,6 +136,9 @@ public class NodeImageLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'pass_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render pass flag, in case this is an original render pass </p>
 	 * @see #__DNA__FIELD__pass_flag
 	 */
 	

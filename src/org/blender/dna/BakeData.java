@@ -27,7 +27,7 @@ public class BakeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 174;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -51,6 +51,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,24 +173,24 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__cage_extrusion = new long[]{1280, 1288};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'pass_filter'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BakeData bakedata = ...;
-	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__pad2);
-	 * CPointer&lt;Float&gt; p_pad2 = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__pass_filter);
+	 * CPointer&lt;Integer&gt; p_pass_filter = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: 'pass_filter'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{1284, 1292};
+	public static final long[] __DNA__FIELD__pass_filter = new long[]{1284, 1292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_swizzle'.
@@ -271,6 +274,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -335,6 +341,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -353,6 +362,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -514,30 +526,30 @@ public class BakeData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'pass_filter'.
+	 * @see #__DNA__FIELD__pass_filter
 	 */
 	
-	public float getPad2() throws IOException
+	public int getPass_filter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1292);
+			return __io__block.readInt(__io__address + 1292);
 		} else {
-			return __io__block.readFloat(__io__address + 1284);
+			return __io__block.readInt(__io__address + 1284);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'pass_filter'.
+	 * @see #__DNA__FIELD__pass_filter
 	 */
 	
-	public void setPad2(float pad2) throws IOException
+	public void setPass_filter(int pass_filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1292, pad2);
+			__io__block.writeInt(__io__address + 1292, pass_filter);
 		} else {
-			__io__block.writeFloat(__io__address + 1284, pad2);
+			__io__block.writeInt(__io__address + 1284, pass_filter);
 		}
 	}
 
@@ -679,6 +691,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__cage
 	 */
 	
@@ -697,6 +712,9 @@ public class BakeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__cage
 	 */
 	

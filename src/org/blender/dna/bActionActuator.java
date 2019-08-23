@@ -27,10 +27,13 @@ public class bActionActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 307;
+	public static final int __DNA__SDNA_INDEX = 313;
 
 	/**
 	 * Field descriptor (offset) for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to action </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Playback type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start & End frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For property-driven playback, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +189,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames of blending </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +212,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Execution priority </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +235,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Animation layer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +258,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'end_reset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ending the actuator (negative pulse) wont reset the action to its starting frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +281,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strideaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement axis </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +304,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer blending mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +327,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stridelength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement incurred by cycle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +350,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p><p> How much of the previous layer to use for blending. (<0 = disable, 0 = add mode) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -339,6 +381,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to action </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -356,6 +401,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to action </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -399,6 +447,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Playback type </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -413,6 +464,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Playback type </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -427,6 +481,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'sta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p>
 	 * @see #__DNA__FIELD__sta
 	 */
 	
@@ -441,6 +498,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'sta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p>
 	 * @see #__DNA__FIELD__sta
 	 */
 	
@@ -455,6 +515,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start & End frames </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -469,6 +532,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start & End frames </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -483,6 +549,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For property-driven playback, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -501,6 +570,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For property-driven playback, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -523,6 +595,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * @see #__DNA__FIELD__frameProp
 	 */
 	
@@ -541,6 +616,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * @see #__DNA__FIELD__frameProp
 	 */
 	
@@ -563,6 +641,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames of blending </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
@@ -577,6 +658,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames of blending </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
@@ -591,6 +675,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Execution priority </p>
 	 * @see #__DNA__FIELD__priority
 	 */
 	
@@ -605,6 +692,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Execution priority </p>
 	 * @see #__DNA__FIELD__priority
 	 */
 	
@@ -619,6 +709,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Animation layer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
@@ -633,6 +726,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Animation layer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
@@ -647,6 +743,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'end_reset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ending the actuator (negative pulse) wont reset the action to its starting frame </p>
 	 * @see #__DNA__FIELD__end_reset
 	 */
 	
@@ -661,6 +760,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'end_reset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ending the actuator (negative pulse) wont reset the action to its starting frame </p>
 	 * @see #__DNA__FIELD__end_reset
 	 */
 	
@@ -675,6 +777,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'strideaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement axis </p>
 	 * @see #__DNA__FIELD__strideaxis
 	 */
 	
@@ -689,6 +794,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'strideaxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement axis </p>
 	 * @see #__DNA__FIELD__strideaxis
 	 */
 	
@@ -703,6 +811,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer blending mode </p>
 	 * @see #__DNA__FIELD__blend_mode
 	 */
 	
@@ -717,6 +828,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer blending mode </p>
 	 * @see #__DNA__FIELD__blend_mode
 	 */
 	
@@ -731,6 +845,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'stridelength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement incurred by cycle </p>
 	 * @see #__DNA__FIELD__stridelength
 	 */
 	
@@ -745,6 +862,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'stridelength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Displacement incurred by cycle </p>
 	 * @see #__DNA__FIELD__stridelength
 	 */
 	
@@ -759,6 +879,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p><p> How much of the previous layer to use for blending. (<0 = disable, 0 = add mode) </p>
 	 * @see #__DNA__FIELD__layer_weight
 	 */
 	
@@ -773,6 +896,9 @@ public class bActionActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not in use </p><p> How much of the previous layer to use for blending. (<0 = disable, 0 = add mode) </p>
 	 * @see #__DNA__FIELD__layer_weight
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MCol'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> tessellation vertex color data. at the moment alpha is abused for vertex painting and not used for transparency, note that red and blue are swapped </p>
  */
 
 @CMetaData(size32=4, size64=4)

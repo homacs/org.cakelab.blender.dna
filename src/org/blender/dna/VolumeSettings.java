@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'VolumeSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> WATCH IT: change type? also make changes in ipo.h </p>
  */
 
 @CMetaData(size32=88, size64=88)

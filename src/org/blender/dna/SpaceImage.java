@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceImage'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Image/UV Editor ======================================== Image/UV Editor </p>
  */
 
-@CMetaData(size32=10532, size64=10584)
+@CMetaData(size32=10528, size64=10576)
 public class SpaceImage extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 224;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,27 +174,10 @@ public class SpaceImage extends CFacade {
 	public static final long[] __DNA__FIELD__iuser = new long[]{28, 48};
 
 	/**
-	 * Field descriptor (offset) for struct member 'cumap'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceImage spaceimage = ...;
-	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__cumap);
-	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_cumap = p.cast(new Class[]{CPointer.class, CurveMapping.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cumap'</li>
-	 * <li>Signature: 'CurveMapping*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cumap = new long[]{64, 88};
-
-	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> histogram waveform and vectorscope </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -207,10 +194,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5248/5264</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scopes = new long[]{68, 96};
+	public static final long[] __DNA__FIELD__scopes = new long[]{64, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sample_line_hist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample line histogram </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -227,10 +217,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5160/5160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sample_line_hist = new long[]{5316, 5360};
+	public static final long[] __DNA__FIELD__sample_line_hist = new long[]{5312, 5352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease pencil data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,10 +240,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{10476, 10520};
+	public static final long[] __DNA__FIELD__gpd = new long[]{10472, 10512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV editor 2d cursor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -267,7 +263,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cursor = new long[]{10480, 10528};
+	public static final long[] __DNA__FIELD__cursor = new long[]{10476, 10520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
@@ -287,10 +283,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{10488, 10536};
+	public static final long[] __DNA__FIELD__xof = new long[]{10484, 10528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined offset, image is centered </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -307,10 +306,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{10492, 10540};
+	public static final long[] __DNA__FIELD__yof = new long[]{10488, 10532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined zoom level </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -327,7 +329,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zoom = new long[]{10496, 10544};
+	public static final long[] __DNA__FIELD__zoom = new long[]{10492, 10536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'centx'.
@@ -347,10 +349,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__centx = new long[]{10500, 10548};
+	public static final long[] __DNA__FIELD__centx = new long[]{10496, 10540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'centy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage for offset while render drawing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,10 +372,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__centy = new long[]{10504, 10552};
+	public static final long[] __DNA__FIELD__centy = new long[]{10500, 10544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> view/paint/mask </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -387,7 +395,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{10508, 10556};
+	public static final long[] __DNA__FIELD__mode = new long[]{10504, 10548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pin'.
@@ -407,7 +415,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pin = new long[]{10509, 10557};
+	public static final long[] __DNA__FIELD__pin = new long[]{10505, 10549};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -427,10 +435,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{10510, 10558};
+	public static final long[] __DNA__FIELD__pad = new long[]{10506, 10550};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curtile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the currently active tile of the image when tile is enabled, is kept in sync with the active faces tile </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -447,7 +458,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curtile = new long[]{10512, 10560};
+	public static final long[] __DNA__FIELD__curtile = new long[]{10508, 10552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lock'.
@@ -467,10 +478,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lock = new long[]{10514, 10562};
+	public static final long[] __DNA__FIELD__lock = new long[]{10510, 10554};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dt_uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV draw type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,10 +501,13 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt_uv = new long[]{10516, 10564};
+	public static final long[] __DNA__FIELD__dt_uv = new long[]{10512, 10556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sticky'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sticky selection type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -507,7 +524,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sticky = new long[]{10517, 10565};
+	public static final long[] __DNA__FIELD__sticky = new long[]{10513, 10557};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dt_uvstretch'.
@@ -527,7 +544,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt_uvstretch = new long[]{10518, 10566};
+	public static final long[] __DNA__FIELD__dt_uvstretch = new long[]{10514, 10558};
 
 	/**
 	 * Field descriptor (offset) for struct member 'around'.
@@ -547,7 +564,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__around = new long[]{10519, 10567};
+	public static final long[] __DNA__FIELD__around = new long[]{10515, 10559};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_info'.
@@ -567,7 +584,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_info = new long[]{10520, 10568};
+	public static final long[] __DNA__FIELD__mask_info = new long[]{10516, 10560};
 
 	public SpaceImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -643,6 +660,9 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -657,6 +677,9 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -802,53 +825,27 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'cumap'.
-	 * @see #__DNA__FIELD__cumap
-	 */
-	
-	public CPointer<CurveMapping> getCumap() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
-		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'cumap'.
-	 * @see #__DNA__FIELD__cumap
-	 */
-	
-	public void setCumap(CPointer<CurveMapping> cumap) throws IOException
-	{
-		long __address = ((cumap == null) ? 0 : cumap.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
-		} else {
-			__io__block.writeLong(__io__address + 64, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> histogram waveform and vectorscope </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
 	public Scopes getScopes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Scopes(__io__address + 96, __io__block, __io__blockTable);
+			return new Scopes(__io__address + 88, __io__block, __io__blockTable);
 		} else {
-			return new Scopes(__io__address + 68, __io__block, __io__blockTable);
+			return new Scopes(__io__address + 64, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> histogram waveform and vectorscope </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
@@ -856,9 +853,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 64;
 		}
 		if (__io__equals(scopes, __io__address + __dna__offset)) {
 			return;
@@ -871,20 +868,26 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Get method for struct member 'sample_line_hist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample line histogram </p>
 	 * @see #__DNA__FIELD__sample_line_hist
 	 */
 	
 	public Histogram getSample_line_hist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Histogram(__io__address + 5360, __io__block, __io__blockTable);
+			return new Histogram(__io__address + 5352, __io__block, __io__blockTable);
 		} else {
-			return new Histogram(__io__address + 5316, __io__block, __io__blockTable);
+			return new Histogram(__io__address + 5312, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sample_line_hist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sample line histogram </p>
 	 * @see #__DNA__FIELD__sample_line_hist
 	 */
 	
@@ -892,9 +895,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 5360;
+			__dna__offset = 5352;
 		} else {
-			__dna__offset = 5316;
+			__dna__offset = 5312;
 		}
 		if (__io__equals(sample_line_hist, __io__address + __dna__offset)) {
 			return;
@@ -907,6 +910,9 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -914,9 +920,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 10520);
+			__dna__targetAddress = __io__block.readLong(__io__address + 10512);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 10476);
+			__dna__targetAddress = __io__block.readLong(__io__address + 10472);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -924,6 +930,9 @@ public class SpaceImage extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -931,14 +940,17 @@ public class SpaceImage extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 10520, __address);
+			__io__block.writeLong(__io__address + 10512, __address);
 		} else {
-			__io__block.writeLong(__io__address + 10476, __address);
+			__io__block.writeLong(__io__address + 10472, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV editor 2d cursor </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -949,14 +961,17 @@ public class SpaceImage extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 10528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 10520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 10480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 10476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV editor 2d cursor </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -964,9 +979,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10528;
+			__dna__offset = 10520;
 		} else {
-			__dna__offset = 10480;
+			__dna__offset = 10476;
 		}
 		if (__io__equals(cursor, __io__address + __dna__offset)) {
 			return;
@@ -985,9 +1000,9 @@ public class SpaceImage extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10536);
+			return __io__block.readFloat(__io__address + 10528);
 		} else {
-			return __io__block.readFloat(__io__address + 10488);
+			return __io__block.readFloat(__io__address + 10484);
 		}
 	}
 
@@ -999,65 +1014,77 @@ public class SpaceImage extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10536, xof);
+			__io__block.writeFloat(__io__address + 10528, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 10488, xof);
+			__io__block.writeFloat(__io__address + 10484, xof);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined offset, image is centered </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10540);
+			return __io__block.readFloat(__io__address + 10532);
 		} else {
-			return __io__block.readFloat(__io__address + 10492);
+			return __io__block.readFloat(__io__address + 10488);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined offset, image is centered </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10540, yof);
+			__io__block.writeFloat(__io__address + 10532, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 10492, yof);
+			__io__block.writeFloat(__io__address + 10488, yof);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined zoom level </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
 	public float getZoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10544);
+			return __io__block.readFloat(__io__address + 10536);
 		} else {
-			return __io__block.readFloat(__io__address + 10496);
+			return __io__block.readFloat(__io__address + 10492);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user defined zoom level </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
 	public void setZoom(float zoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10544, zoom);
+			__io__block.writeFloat(__io__address + 10536, zoom);
 		} else {
-			__io__block.writeFloat(__io__address + 10496, zoom);
+			__io__block.writeFloat(__io__address + 10492, zoom);
 		}
 	}
 
@@ -1069,9 +1096,9 @@ public class SpaceImage extends CFacade {
 	public float getCentx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10548);
+			return __io__block.readFloat(__io__address + 10540);
 		} else {
-			return __io__block.readFloat(__io__address + 10500);
+			return __io__block.readFloat(__io__address + 10496);
 		}
 	}
 
@@ -1083,65 +1110,77 @@ public class SpaceImage extends CFacade {
 	public void setCentx(float centx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10548, centx);
+			__io__block.writeFloat(__io__address + 10540, centx);
 		} else {
-			__io__block.writeFloat(__io__address + 10500, centx);
+			__io__block.writeFloat(__io__address + 10496, centx);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'centy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage for offset while render drawing </p>
 	 * @see #__DNA__FIELD__centy
 	 */
 	
 	public float getCenty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 10552);
+			return __io__block.readFloat(__io__address + 10544);
 		} else {
-			return __io__block.readFloat(__io__address + 10504);
+			return __io__block.readFloat(__io__address + 10500);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'centy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage for offset while render drawing </p>
 	 * @see #__DNA__FIELD__centy
 	 */
 	
 	public void setCenty(float centy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 10552, centy);
+			__io__block.writeFloat(__io__address + 10544, centy);
 		} else {
-			__io__block.writeFloat(__io__address + 10504, centy);
+			__io__block.writeFloat(__io__address + 10500, centy);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> view/paint/mask </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10556);
+			return __io__block.readByte(__io__address + 10548);
 		} else {
-			return __io__block.readByte(__io__address + 10508);
+			return __io__block.readByte(__io__address + 10504);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> view/paint/mask </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10556, mode);
+			__io__block.writeByte(__io__address + 10548, mode);
 		} else {
-			__io__block.writeByte(__io__address + 10508, mode);
+			__io__block.writeByte(__io__address + 10504, mode);
 		}
 	}
 
@@ -1153,9 +1192,9 @@ public class SpaceImage extends CFacade {
 	public byte getPin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10557);
+			return __io__block.readByte(__io__address + 10549);
 		} else {
-			return __io__block.readByte(__io__address + 10509);
+			return __io__block.readByte(__io__address + 10505);
 		}
 	}
 
@@ -1167,9 +1206,9 @@ public class SpaceImage extends CFacade {
 	public void setPin(byte pin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10557, pin);
+			__io__block.writeByte(__io__address + 10549, pin);
 		} else {
-			__io__block.writeByte(__io__address + 10509, pin);
+			__io__block.writeByte(__io__address + 10505, pin);
 		}
 	}
 
@@ -1181,9 +1220,9 @@ public class SpaceImage extends CFacade {
 	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10558);
+			return __io__block.readShort(__io__address + 10550);
 		} else {
-			return __io__block.readShort(__io__address + 10510);
+			return __io__block.readShort(__io__address + 10506);
 		}
 	}
 
@@ -1195,37 +1234,43 @@ public class SpaceImage extends CFacade {
 	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10558, pad);
+			__io__block.writeShort(__io__address + 10550, pad);
 		} else {
-			__io__block.writeShort(__io__address + 10510, pad);
+			__io__block.writeShort(__io__address + 10506, pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'curtile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the currently active tile of the image when tile is enabled, is kept in sync with the active faces tile </p>
 	 * @see #__DNA__FIELD__curtile
 	 */
 	
 	public short getCurtile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10560);
+			return __io__block.readShort(__io__address + 10552);
 		} else {
-			return __io__block.readShort(__io__address + 10512);
+			return __io__block.readShort(__io__address + 10508);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'curtile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the currently active tile of the image when tile is enabled, is kept in sync with the active faces tile </p>
 	 * @see #__DNA__FIELD__curtile
 	 */
 	
 	public void setCurtile(short curtile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10560, curtile);
+			__io__block.writeShort(__io__address + 10552, curtile);
 		} else {
-			__io__block.writeShort(__io__address + 10512, curtile);
+			__io__block.writeShort(__io__address + 10508, curtile);
 		}
 	}
 
@@ -1237,9 +1282,9 @@ public class SpaceImage extends CFacade {
 	public short getLock() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10562);
+			return __io__block.readShort(__io__address + 10554);
 		} else {
-			return __io__block.readShort(__io__address + 10514);
+			return __io__block.readShort(__io__address + 10510);
 		}
 	}
 
@@ -1251,65 +1296,77 @@ public class SpaceImage extends CFacade {
 	public void setLock(short lock) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10562, lock);
+			__io__block.writeShort(__io__address + 10554, lock);
 		} else {
-			__io__block.writeShort(__io__address + 10514, lock);
+			__io__block.writeShort(__io__address + 10510, lock);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dt_uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV draw type </p>
 	 * @see #__DNA__FIELD__dt_uv
 	 */
 	
 	public byte getDt_uv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10564);
+			return __io__block.readByte(__io__address + 10556);
 		} else {
-			return __io__block.readByte(__io__address + 10516);
+			return __io__block.readByte(__io__address + 10512);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dt_uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV draw type </p>
 	 * @see #__DNA__FIELD__dt_uv
 	 */
 	
 	public void setDt_uv(byte dt_uv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10564, dt_uv);
+			__io__block.writeByte(__io__address + 10556, dt_uv);
 		} else {
-			__io__block.writeByte(__io__address + 10516, dt_uv);
+			__io__block.writeByte(__io__address + 10512, dt_uv);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sticky'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sticky selection type </p>
 	 * @see #__DNA__FIELD__sticky
 	 */
 	
 	public byte getSticky() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10565);
+			return __io__block.readByte(__io__address + 10557);
 		} else {
-			return __io__block.readByte(__io__address + 10517);
+			return __io__block.readByte(__io__address + 10513);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sticky'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sticky selection type </p>
 	 * @see #__DNA__FIELD__sticky
 	 */
 	
 	public void setSticky(byte sticky) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10565, sticky);
+			__io__block.writeByte(__io__address + 10557, sticky);
 		} else {
-			__io__block.writeByte(__io__address + 10517, sticky);
+			__io__block.writeByte(__io__address + 10513, sticky);
 		}
 	}
 
@@ -1321,9 +1378,9 @@ public class SpaceImage extends CFacade {
 	public byte getDt_uvstretch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10566);
+			return __io__block.readByte(__io__address + 10558);
 		} else {
-			return __io__block.readByte(__io__address + 10518);
+			return __io__block.readByte(__io__address + 10514);
 		}
 	}
 
@@ -1335,9 +1392,9 @@ public class SpaceImage extends CFacade {
 	public void setDt_uvstretch(byte dt_uvstretch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10566, dt_uvstretch);
+			__io__block.writeByte(__io__address + 10558, dt_uvstretch);
 		} else {
-			__io__block.writeByte(__io__address + 10518, dt_uvstretch);
+			__io__block.writeByte(__io__address + 10514, dt_uvstretch);
 		}
 	}
 
@@ -1349,9 +1406,9 @@ public class SpaceImage extends CFacade {
 	public byte getAround() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 10567);
+			return __io__block.readByte(__io__address + 10559);
 		} else {
-			return __io__block.readByte(__io__address + 10519);
+			return __io__block.readByte(__io__address + 10515);
 		}
 	}
 
@@ -1363,9 +1420,9 @@ public class SpaceImage extends CFacade {
 	public void setAround(byte around) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 10567, around);
+			__io__block.writeByte(__io__address + 10559, around);
 		} else {
-			__io__block.writeByte(__io__address + 10519, around);
+			__io__block.writeByte(__io__address + 10515, around);
 		}
 	}
 
@@ -1377,9 +1434,9 @@ public class SpaceImage extends CFacade {
 	public MaskSpaceInfo getMask_info() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MaskSpaceInfo(__io__address + 10568, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10560, __io__block, __io__blockTable);
 		} else {
-			return new MaskSpaceInfo(__io__address + 10520, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10516, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1392,9 +1449,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10568;
+			__dna__offset = 10560;
 		} else {
-			__dna__offset = 10520;
+			__dna__offset = 10516;
 		}
 		if (__io__equals(mask_info, __io__address + __dna__offset)) {
 			return;

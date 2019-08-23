@@ -26,7 +26,7 @@ public class BoidRuleGoalAvoid extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 516;
+	public static final int __DNA__SDNA_INDEX = 527;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.
@@ -110,6 +110,9 @@ public class BoidRuleGoalAvoid extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'signal_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> signals </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -282,6 +285,9 @@ public class BoidRuleGoalAvoid extends CFacade {
 
 	/**
 	 * Get method for struct member 'signal_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */
 	
@@ -296,6 +302,9 @@ public class BoidRuleGoalAvoid extends CFacade {
 
 	/**
 	 * Set method for struct member 'signal_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> signals </p>
 	 * @see #__DNA__FIELD__signal_id
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=508, size64=584)
+@CMetaData(size32=644, size64=720)
 public class SmokeDomainSettings extends CFacade {
 
 	/**
@@ -27,10 +27,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 524;
+	public static final int __DNA__SDNA_INDEX = 535;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +94,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluid_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit fluid objects to this group
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +277,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'p0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation data start point of BB in local space (includes sub-cell shift for adaptive domain) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +300,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end point of BB in local space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +323,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dp0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> difference from object center to grid start point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +346,10 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cell_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <p> size of simulation cell in local space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +370,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'global_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global size of domain axises </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +413,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current domain shift in simulation cells </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +436,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> exact domain shift </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +459,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'obj_shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how much object has shifted since previous smoke frame (used to "lock" domain while drawing) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +482,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object imat </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +505,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'obmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain obmat </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -490,7 +527,56 @@ public class SmokeDomainSettings extends CFacade {
 	public static final long[] __DNA__FIELD__obmat = new long[]{220, 268};
 
 	/**
+	 * Field descriptor (offset) for struct member 'fluidmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> low res fluid matrix </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__fluidmat);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_fluidmat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fluidmat'</li>
+	 * <li>Signature: 'float[4][4]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fluidmat = new long[]{284, 332};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fluidmat_wt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> high res fluid matrix </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__fluidmat_wt);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_fluidmat_wt = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fluidmat_wt'</li>
+	 * <li>Signature: 'float[4][4]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fluidmat_wt = new long[]{348, 396};
+
+	/**
 	 * Field descriptor (offset) for struct member 'base_res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial "non-adapted" resolution </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -507,10 +593,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_res = new long[]{284, 332};
+	public static final long[] __DNA__FIELD__base_res = new long[]{412, 460};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell min </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -527,10 +616,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_min = new long[]{296, 344};
+	public static final long[] __DNA__FIELD__res_min = new long[]{424, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell max </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,10 +639,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_max = new long[]{308, 356};
+	public static final long[] __DNA__FIELD__res_max = new long[]{436, 484};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data resolution (res_max-res_min) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,7 +662,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res = new long[]{320, 368};
+	public static final long[] __DNA__FIELD__res = new long[]{448, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'total_cells'.
@@ -587,10 +682,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__total_cells = new long[]{332, 380};
+	public static final long[] __DNA__FIELD__total_cells = new long[]{460, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1.0f / res </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -607,10 +705,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dx = new long[]{336, 384};
+	public static final long[] __DNA__FIELD__dx = new long[]{464, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> largest domain size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -627,10 +728,14 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{340, 388};
+	public static final long[] __DNA__FIELD__scale = new long[]{468, 516};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <p> user settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -647,7 +752,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_margin = new long[]{344, 392};
+	public static final long[] __DNA__FIELD__adapt_margin = new long[]{472, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_res'.
@@ -667,10 +772,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_res = new long[]{348, 396};
+	public static final long[] __DNA__FIELD__adapt_res = new long[]{476, 524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -687,10 +795,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_threshold = new long[]{352, 400};
+	public static final long[] __DNA__FIELD__adapt_threshold = new long[]{480, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -707,10 +818,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{356, 404};
+	public static final long[] __DNA__FIELD__alpha = new long[]{484, 532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'beta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -727,10 +841,14 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__beta = new long[]{360, 408};
+	public static final long[] __DNA__FIELD__beta = new long[]{488, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplify'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enhance the resolution of smoke by this factor using noise<h4>Blender Source Code:</h4>
+	 * <p> wavelet amplification </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -747,10 +865,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__amplify = new long[]{364, 412};
+	public static final long[] __DNA__FIELD__amplify = new long[]{492, 540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> longest axis on the BB gets this resolution assigned </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -767,10 +888,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxres = new long[]{368, 416};
+	public static final long[] __DNA__FIELD__maxres = new long[]{496, 544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show up-res or low res, etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -787,7 +911,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{372, 420};
+	public static final long[] __DNA__FIELD__flags = new long[]{500, 548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewsettings'.
@@ -807,10 +931,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewsettings = new long[]{376, 424};
+	public static final long[] __DNA__FIELD__viewsettings = new long[]{504, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> noise type: wave, curl, anisotropic </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -827,7 +954,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise = new long[]{380, 428};
+	public static final long[] __DNA__FIELD__noise = new long[]{508, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'diss_percent'.
@@ -847,10 +974,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__diss_percent = new long[]{382, 430};
+	public static final long[] __DNA__FIELD__diss_percent = new long[]{510, 558};
 
 	/**
 	 * Field descriptor (offset) for struct member 'diss_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -867,10 +997,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__diss_speed = new long[]{384, 432};
+	public static final long[] __DNA__FIELD__diss_speed = new long[]{512, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -887,7 +1020,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{388, 436};
+	public static final long[] __DNA__FIELD__strength = new long[]{516, 564};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_wt'.
@@ -907,7 +1040,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_wt = new long[]{392, 440};
+	public static final long[] __DNA__FIELD__res_wt = new long[]{520, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dx_wt'.
@@ -927,10 +1060,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dx_wt = new long[]{404, 452};
+	public static final long[] __DNA__FIELD__dx_wt = new long[]{532, 580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> point cache options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -947,7 +1083,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_comp = new long[]{408, 456};
+	public static final long[] __DNA__FIELD__cache_comp = new long[]{536, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_high_comp'.
@@ -967,10 +1103,103 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_high_comp = new long[]{412, 460};
+	public static final long[] __DNA__FIELD__cache_high_comp = new long[]{540, 588};
+
+	/**
+	 * Field descriptor (offset) for struct member 'openvdb_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB cache options </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__openvdb_comp);
+	 * CPointer&lt;Integer&gt; p_openvdb_comp = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'openvdb_comp'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__openvdb_comp = new long[]{544, 592};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cache_file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select the file format to be used for caching
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__cache_file_format);
+	 * CPointer&lt;Byte&gt; p_cache_file_format = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cache_file_format'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cache_file_format = new long[]{548, 596};
+
+	/**
+	 * Field descriptor (offset) for struct member 'data_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__data_depth);
+	 * CPointer&lt;Byte&gt; p_data_depth = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'data_depth'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__data_depth = new long[]{549, 597};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SmokeDomainSettings smokedomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = smokedomainsettings.__dna__addressof(SmokeDomainSettings.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{550, 598};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. definition is in {@link DNA_object_force.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -987,7 +1216,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_cache = new long[]{416, 464};
+	public static final long[] __DNA__FIELD__point_cache = new long[]{552, 600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
@@ -1007,10 +1236,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{424, 480};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{560, 616};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1027,10 +1259,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_weights = new long[]{440, 512};
+	public static final long[] __DNA__FIELD__effector_weights = new long[]{576, 648};
 
 	/**
 	 * Field descriptor (offset) for struct member 'border_collisions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How domain border collisions are handled </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1047,10 +1282,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__border_collisions = new long[]{444, 520};
+	public static final long[] __DNA__FIELD__border_collisions = new long[]{580, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust simulation speed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1067,10 +1305,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_scale = new long[]{448, 524};
+	public static final long[] __DNA__FIELD__time_scale = new long[]{584, 660};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of turbulence/rotation in fluid
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1087,7 +1328,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vorticity = new long[]{452, 528};
+	public static final long[] __DNA__FIELD__vorticity = new long[]{588, 664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_fields'.
@@ -1107,10 +1348,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_fields = new long[]{456, 532};
+	public static final long[] __DNA__FIELD__active_fields = new long[]{592, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> monitor color situation of simulation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1127,10 +1371,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_color = new long[]{460, 536};
+	public static final long[] __DNA__FIELD__active_color = new long[]{596, 672};
 
 	/**
 	 * Field descriptor (offset) for struct member 'highres_sampling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method for sampling the high resolution flow
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1147,10 +1394,14 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__highres_sampling = new long[]{472, 548};
+	public static final long[] __DNA__FIELD__highres_sampling = new long[]{608, 684};
 
 	/**
 	 * Field descriptor (offset) for struct member 'burning_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed of the burning reaction (use larger values for smaller flame)<h4>Blender Source Code:</h4>
+	 * <p> flame parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1167,10 +1418,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__burning_rate = new long[]{476, 552};
+	public static final long[] __DNA__FIELD__burning_rate = new long[]{612, 688};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of smoke created by burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1187,10 +1441,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_smoke = new long[]{480, 556};
+	public static final long[] __DNA__FIELD__flame_smoke = new long[]{616, 692};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional vorticity for the flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1207,10 +1464,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_vorticity = new long[]{484, 560};
+	public static final long[] __DNA__FIELD__flame_vorticity = new long[]{620, 696};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_ignition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum temperature of flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1227,10 +1487,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_ignition = new long[]{488, 564};
+	public static final long[] __DNA__FIELD__flame_ignition = new long[]{624, 700};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_max_temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum temperature of flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1247,10 +1510,13 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_max_temp = new long[]{492, 568};
+	public static final long[] __DNA__FIELD__flame_max_temp = new long[]{628, 704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of smoke emitted from burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1267,7 +1533,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_smoke_color = new long[]{496, 572};
+	public static final long[] __DNA__FIELD__flame_smoke_color = new long[]{632, 708};
 
 	public SmokeDomainSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1279,6 +1545,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -1296,6 +1565,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'smd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -1375,6 +1647,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fluid_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit fluid objects to this group
 	 * @see #__DNA__FIELD__fluid_group
 	 */
 	
@@ -1392,6 +1667,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fluid_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit fluid objects to this group
 	 * @see #__DNA__FIELD__fluid_group
 	 */
 	
@@ -1663,6 +1941,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'p0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation data start point of BB in local space (includes sub-cell shift for adaptive domain) </p>
 	 * @see #__DNA__FIELD__p0
 	 */
 	
@@ -1681,6 +1962,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'p0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation data start point of BB in local space (includes sub-cell shift for adaptive domain) </p>
 	 * @see #__DNA__FIELD__p0
 	 */
 	
@@ -1703,6 +1987,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end point of BB in local space </p>
 	 * @see #__DNA__FIELD__p1
 	 */
 	
@@ -1721,6 +2008,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end point of BB in local space </p>
 	 * @see #__DNA__FIELD__p1
 	 */
 	
@@ -1743,6 +2033,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'dp0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> difference from object center to grid start point </p>
 	 * @see #__DNA__FIELD__dp0
 	 */
 	
@@ -1761,6 +2054,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'dp0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> difference from object center to grid start point </p>
 	 * @see #__DNA__FIELD__dp0
 	 */
 	
@@ -1783,6 +2079,10 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'cell_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <p> size of simulation cell in local space </p>
 	 * @see #__DNA__FIELD__cell_size
 	 */
 	
@@ -1801,6 +2101,10 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'cell_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Cell Size<h4>Blender Source Code:</h4>
+	 * <p> size of simulation cell in local space </p>
 	 * @see #__DNA__FIELD__cell_size
 	 */
 	
@@ -1823,6 +2127,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'global_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global size of domain axises </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
 	
@@ -1841,6 +2148,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'global_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> global size of domain axises </p>
 	 * @see #__DNA__FIELD__global_size
 	 */
 	
@@ -1903,6 +2213,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'shift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current domain shift in simulation cells </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	
@@ -1921,6 +2234,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'shift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current domain shift in simulation cells </p>
 	 * @see #__DNA__FIELD__shift
 	 */
 	
@@ -1943,6 +2259,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> exact domain shift </p>
 	 * @see #__DNA__FIELD__shift_f
 	 */
 	
@@ -1961,6 +2280,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> exact domain shift </p>
 	 * @see #__DNA__FIELD__shift_f
 	 */
 	
@@ -1983,6 +2305,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'obj_shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how much object has shifted since previous smoke frame (used to "lock" domain while drawing) </p>
 	 * @see #__DNA__FIELD__obj_shift_f
 	 */
 	
@@ -2001,6 +2326,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'obj_shift_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how much object has shifted since previous smoke frame (used to "lock" domain while drawing) </p>
 	 * @see #__DNA__FIELD__obj_shift_f
 	 */
 	
@@ -2023,6 +2351,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object imat </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -2042,6 +2373,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object imat </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -2064,6 +2398,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'obmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain obmat </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -2083,6 +2420,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'obmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain obmat </p>
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -2104,7 +2444,104 @@ public class SmokeDomainSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'fluidmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> low res fluid matrix </p>
+	 * @see #__DNA__FIELD__fluidmat
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getFluidmat() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			4,
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fluidmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> low res fluid matrix </p>
+	 * @see #__DNA__FIELD__fluidmat
+	 */
+	
+	public void setFluidmat(CArrayFacade<CArrayFacade<Float>> fluidmat) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 332;
+		} else {
+			__dna__offset = 284;
+		}
+		if (__io__equals(fluidmat, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, fluidmat)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, fluidmat);
+		} else {
+			__io__generic__copy( getFluidmat(), fluidmat);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fluidmat_wt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> high res fluid matrix </p>
+	 * @see #__DNA__FIELD__fluidmat_wt
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getFluidmat_wt() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			4,
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fluidmat_wt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> high res fluid matrix </p>
+	 * @see #__DNA__FIELD__fluidmat_wt
+	 */
+	
+	public void setFluidmat_wt(CArrayFacade<CArrayFacade<Float>> fluidmat_wt) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 396;
+		} else {
+			__dna__offset = 348;
+		}
+		if (__io__equals(fluidmat_wt, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, fluidmat_wt)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, fluidmat_wt);
+		} else {
+			__io__generic__copy( getFluidmat_wt(), fluidmat_wt);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'base_res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial "non-adapted" resolution </p>
 	 * @see #__DNA__FIELD__base_res
 	 */
 	
@@ -2115,14 +2552,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'base_res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial "non-adapted" resolution </p>
 	 * @see #__DNA__FIELD__base_res
 	 */
 	
@@ -2130,9 +2570,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 332;
+			__dna__offset = 460;
 		} else {
-			__dna__offset = 284;
+			__dna__offset = 412;
 		}
 		if (__io__equals(base_res, __io__address + __dna__offset)) {
 			return;
@@ -2145,6 +2585,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'res_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell min </p>
 	 * @see #__DNA__FIELD__res_min
 	 */
 	
@@ -2155,14 +2598,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'res_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell min </p>
 	 * @see #__DNA__FIELD__res_min
 	 */
 	
@@ -2170,9 +2616,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 344;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 296;
+			__dna__offset = 424;
 		}
 		if (__io__equals(res_min, __io__address + __dna__offset)) {
 			return;
@@ -2185,6 +2631,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'res_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell max </p>
 	 * @see #__DNA__FIELD__res_max
 	 */
 	
@@ -2195,14 +2644,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'res_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cell max </p>
 	 * @see #__DNA__FIELD__res_max
 	 */
 	
@@ -2210,9 +2662,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 356;
+			__dna__offset = 484;
 		} else {
-			__dna__offset = 308;
+			__dna__offset = 436;
 		}
 		if (__io__equals(res_max, __io__address + __dna__offset)) {
 			return;
@@ -2225,6 +2677,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data resolution (res_max-res_min) </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
@@ -2235,14 +2690,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data resolution (res_max-res_min) </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
@@ -2250,9 +2708,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 368;
+			__dna__offset = 496;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 448;
 		}
 		if (__io__equals(res, __io__address + __dna__offset)) {
 			return;
@@ -2271,9 +2729,9 @@ public class SmokeDomainSettings extends CFacade {
 	public int getTotal_cells() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 380);
+			return __io__block.readInt(__io__address + 508);
 		} else {
-			return __io__block.readInt(__io__address + 332);
+			return __io__block.readInt(__io__address + 460);
 		}
 	}
 
@@ -2285,93 +2743,113 @@ public class SmokeDomainSettings extends CFacade {
 	public void setTotal_cells(int total_cells) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 380, total_cells);
+			__io__block.writeInt(__io__address + 508, total_cells);
 		} else {
-			__io__block.writeInt(__io__address + 332, total_cells);
+			__io__block.writeInt(__io__address + 460, total_cells);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1.0f / res </p>
 	 * @see #__DNA__FIELD__dx
 	 */
 	
 	public float getDx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 512);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 464);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1.0f / res </p>
 	 * @see #__DNA__FIELD__dx
 	 */
 	
 	public void setDx(float dx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, dx);
+			__io__block.writeFloat(__io__address + 512, dx);
 		} else {
-			__io__block.writeFloat(__io__address + 336, dx);
+			__io__block.writeFloat(__io__address + 464, dx);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> largest domain size </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 516);
 		} else {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 468);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> largest domain size </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, scale);
+			__io__block.writeFloat(__io__address + 516, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 340, scale);
+			__io__block.writeFloat(__io__address + 468, scale);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'adapt_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <p> user settings </p>
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
 	
 	public int getAdapt_margin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 392);
+			return __io__block.readInt(__io__address + 520);
 		} else {
-			return __io__block.readInt(__io__address + 344);
+			return __io__block.readInt(__io__address + 472);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'adapt_margin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Margin added around fluid to minimize boundary interference<h4>Blender Source Code:</h4>
+	 * <p> user settings </p>
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
 	
 	public void setAdapt_margin(int adapt_margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 392, adapt_margin);
+			__io__block.writeInt(__io__address + 520, adapt_margin);
 		} else {
-			__io__block.writeInt(__io__address + 344, adapt_margin);
+			__io__block.writeInt(__io__address + 472, adapt_margin);
 		}
 	}
 
@@ -2383,9 +2861,9 @@ public class SmokeDomainSettings extends CFacade {
 	public int getAdapt_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 396);
+			return __io__block.readInt(__io__address + 524);
 		} else {
-			return __io__block.readInt(__io__address + 348);
+			return __io__block.readInt(__io__address + 476);
 		}
 	}
 
@@ -2397,177 +2875,215 @@ public class SmokeDomainSettings extends CFacade {
 	public void setAdapt_res(int adapt_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 396, adapt_res);
+			__io__block.writeInt(__io__address + 524, adapt_res);
 		} else {
-			__io__block.writeInt(__io__address + 348, adapt_res);
+			__io__block.writeInt(__io__address + 476, adapt_res);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'adapt_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
 	
 	public float getAdapt_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 400);
+			return __io__block.readFloat(__io__address + 528);
 		} else {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 480);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'adapt_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
 	
 	public void setAdapt_threshold(float adapt_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 400, adapt_threshold);
+			__io__block.writeFloat(__io__address + 528, adapt_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 352, adapt_threshold);
+			__io__block.writeFloat(__io__address + 480, adapt_threshold);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 404);
+			return __io__block.readFloat(__io__address + 532);
 		} else {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 484);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 404, alpha);
+			__io__block.writeFloat(__io__address + 532, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 356, alpha);
+			__io__block.writeFloat(__io__address + 484, alpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'beta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
 	
 	public float getBeta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 408);
+			return __io__block.readFloat(__io__address + 536);
 		} else {
-			return __io__block.readFloat(__io__address + 360);
+			return __io__block.readFloat(__io__address + 488);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'beta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
 	
 	public void setBeta(float beta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 408, beta);
+			__io__block.writeFloat(__io__address + 536, beta);
 		} else {
-			__io__block.writeFloat(__io__address + 360, beta);
+			__io__block.writeFloat(__io__address + 488, beta);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'amplify'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enhance the resolution of smoke by this factor using noise<h4>Blender Source Code:</h4>
+	 * <p> wavelet amplification </p>
 	 * @see #__DNA__FIELD__amplify
 	 */
 	
 	public int getAmplify() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 412);
+			return __io__block.readInt(__io__address + 540);
 		} else {
-			return __io__block.readInt(__io__address + 364);
+			return __io__block.readInt(__io__address + 492);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'amplify'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enhance the resolution of smoke by this factor using noise<h4>Blender Source Code:</h4>
+	 * <p> wavelet amplification </p>
 	 * @see #__DNA__FIELD__amplify
 	 */
 	
 	public void setAmplify(int amplify) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 412, amplify);
+			__io__block.writeInt(__io__address + 540, amplify);
 		} else {
-			__io__block.writeInt(__io__address + 364, amplify);
+			__io__block.writeInt(__io__address + 492, amplify);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'maxres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> longest axis on the BB gets this resolution assigned </p>
 	 * @see #__DNA__FIELD__maxres
 	 */
 	
 	public int getMaxres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 416);
+			return __io__block.readInt(__io__address + 544);
 		} else {
-			return __io__block.readInt(__io__address + 368);
+			return __io__block.readInt(__io__address + 496);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'maxres'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> longest axis on the BB gets this resolution assigned </p>
 	 * @see #__DNA__FIELD__maxres
 	 */
 	
 	public void setMaxres(int maxres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 416, maxres);
+			__io__block.writeInt(__io__address + 544, maxres);
 		} else {
-			__io__block.writeInt(__io__address + 368, maxres);
+			__io__block.writeInt(__io__address + 496, maxres);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show up-res or low res, etc </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 420);
+			return __io__block.readInt(__io__address + 548);
 		} else {
-			return __io__block.readInt(__io__address + 372);
+			return __io__block.readInt(__io__address + 500);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show up-res or low res, etc </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 420, flags);
+			__io__block.writeInt(__io__address + 548, flags);
 		} else {
-			__io__block.writeInt(__io__address + 372, flags);
+			__io__block.writeInt(__io__address + 500, flags);
 		}
 	}
 
@@ -2579,9 +3095,9 @@ public class SmokeDomainSettings extends CFacade {
 	public int getViewsettings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 552);
 		} else {
-			return __io__block.readInt(__io__address + 376);
+			return __io__block.readInt(__io__address + 504);
 		}
 	}
 
@@ -2593,37 +3109,43 @@ public class SmokeDomainSettings extends CFacade {
 	public void setViewsettings(int viewsettings) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 424, viewsettings);
+			__io__block.writeInt(__io__address + 552, viewsettings);
 		} else {
-			__io__block.writeInt(__io__address + 376, viewsettings);
+			__io__block.writeInt(__io__address + 504, viewsettings);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'noise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> noise type: wave, curl, anisotropic </p>
 	 * @see #__DNA__FIELD__noise
 	 */
 	
 	public short getNoise() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 428);
+			return __io__block.readShort(__io__address + 556);
 		} else {
-			return __io__block.readShort(__io__address + 380);
+			return __io__block.readShort(__io__address + 508);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'noise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> noise type: wave, curl, anisotropic </p>
 	 * @see #__DNA__FIELD__noise
 	 */
 	
 	public void setNoise(short noise) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 428, noise);
+			__io__block.writeShort(__io__address + 556, noise);
 		} else {
-			__io__block.writeShort(__io__address + 380, noise);
+			__io__block.writeShort(__io__address + 508, noise);
 		}
 	}
 
@@ -2635,9 +3157,9 @@ public class SmokeDomainSettings extends CFacade {
 	public short getDiss_percent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 430);
+			return __io__block.readShort(__io__address + 558);
 		} else {
-			return __io__block.readShort(__io__address + 382);
+			return __io__block.readShort(__io__address + 510);
 		}
 	}
 
@@ -2649,65 +3171,77 @@ public class SmokeDomainSettings extends CFacade {
 	public void setDiss_percent(short diss_percent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 430, diss_percent);
+			__io__block.writeShort(__io__address + 558, diss_percent);
 		} else {
-			__io__block.writeShort(__io__address + 382, diss_percent);
+			__io__block.writeShort(__io__address + 510, diss_percent);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'diss_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in frames </p>
 	 * @see #__DNA__FIELD__diss_speed
 	 */
 	
 	public int getDiss_speed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 432);
+			return __io__block.readInt(__io__address + 560);
 		} else {
-			return __io__block.readInt(__io__address + 384);
+			return __io__block.readInt(__io__address + 512);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'diss_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in frames </p>
 	 * @see #__DNA__FIELD__diss_speed
 	 */
 	
 	public void setDiss_speed(int diss_speed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 432, diss_speed);
+			__io__block.writeInt(__io__address + 560, diss_speed);
 		} else {
-			__io__block.writeInt(__io__address + 384, diss_speed);
+			__io__block.writeInt(__io__address + 512, diss_speed);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of noise
 	 * @see #__DNA__FIELD__strength
 	 */
 	
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 436);
+			return __io__block.readFloat(__io__address + 564);
 		} else {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 516);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of noise
 	 * @see #__DNA__FIELD__strength
 	 */
 	
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 436, strength);
+			__io__block.writeFloat(__io__address + 564, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 388, strength);
+			__io__block.writeFloat(__io__address + 516, strength);
 		}
 	}
 
@@ -2723,9 +3257,9 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 568, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2738,9 +3272,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 440;
+			__dna__offset = 568;
 		} else {
-			__dna__offset = 392;
+			__dna__offset = 520;
 		}
 		if (__io__equals(res_wt, __io__address + __dna__offset)) {
 			return;
@@ -2759,9 +3293,9 @@ public class SmokeDomainSettings extends CFacade {
 	public float getDx_wt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 452);
+			return __io__block.readFloat(__io__address + 580);
 		} else {
-			return __io__block.readFloat(__io__address + 404);
+			return __io__block.readFloat(__io__address + 532);
 		}
 	}
 
@@ -2773,37 +3307,43 @@ public class SmokeDomainSettings extends CFacade {
 	public void setDx_wt(float dx_wt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 452, dx_wt);
+			__io__block.writeFloat(__io__address + 580, dx_wt);
 		} else {
-			__io__block.writeFloat(__io__address + 404, dx_wt);
+			__io__block.writeFloat(__io__address + 532, dx_wt);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'cache_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> point cache options </p>
 	 * @see #__DNA__FIELD__cache_comp
 	 */
 	
 	public int getCache_comp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 456);
+			return __io__block.readInt(__io__address + 584);
 		} else {
-			return __io__block.readInt(__io__address + 408);
+			return __io__block.readInt(__io__address + 536);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'cache_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> point cache options </p>
 	 * @see #__DNA__FIELD__cache_comp
 	 */
 	
 	public void setCache_comp(int cache_comp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 456, cache_comp);
+			__io__block.writeInt(__io__address + 584, cache_comp);
 		} else {
-			__io__block.writeInt(__io__address + 408, cache_comp);
+			__io__block.writeInt(__io__address + 536, cache_comp);
 		}
 	}
 
@@ -2815,9 +3355,9 @@ public class SmokeDomainSettings extends CFacade {
 	public int getCache_high_comp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 460);
+			return __io__block.readInt(__io__address + 588);
 		} else {
-			return __io__block.readInt(__io__address + 412);
+			return __io__block.readInt(__io__address + 540);
 		}
 	}
 
@@ -2829,14 +3369,160 @@ public class SmokeDomainSettings extends CFacade {
 	public void setCache_high_comp(int cache_high_comp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 460, cache_high_comp);
+			__io__block.writeInt(__io__address + 588, cache_high_comp);
 		} else {
-			__io__block.writeInt(__io__address + 412, cache_high_comp);
+			__io__block.writeInt(__io__address + 540, cache_high_comp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'openvdb_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB cache options </p>
+	 * @see #__DNA__FIELD__openvdb_comp
+	 */
+	
+	public int getOpenvdb_comp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 592);
+		} else {
+			return __io__block.readInt(__io__address + 544);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'openvdb_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB cache options </p>
+	 * @see #__DNA__FIELD__openvdb_comp
+	 */
+	
+	public void setOpenvdb_comp(int openvdb_comp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 592, openvdb_comp);
+		} else {
+			__io__block.writeInt(__io__address + 544, openvdb_comp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cache_file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select the file format to be used for caching
+	 * @see #__DNA__FIELD__cache_file_format
+	 */
+	
+	public byte getCache_file_format() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 596);
+		} else {
+			return __io__block.readByte(__io__address + 548);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cache_file_format'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select the file format to be used for caching
+	 * @see #__DNA__FIELD__cache_file_format
+	 */
+	
+	public void setCache_file_format(byte cache_file_format) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 596, cache_file_format);
+		} else {
+			__io__block.writeByte(__io__address + 548, cache_file_format);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'data_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * @see #__DNA__FIELD__data_depth
+	 */
+	
+	public byte getData_depth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 597);
+		} else {
+			return __io__block.readByte(__io__address + 549);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'data_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * @see #__DNA__FIELD__data_depth
+	 */
+	
+	public void setData_depth(byte data_depth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 597, data_depth);
+		} else {
+			__io__block.writeByte(__io__address + 549, data_depth);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 598, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 550, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 598;
+		} else {
+			__dna__offset = 550;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -2847,14 +3533,18 @@ public class SmokeDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<PointCache>>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<PointCache>>(__io__address + 600, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CPointer<PointCache>>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<PointCache>>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -2862,9 +3552,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 464;
+			__dna__offset = 600;
 		} else {
-			__dna__offset = 416;
+			__dna__offset = 552;
 		}
 		if (__io__equals(point_cache, __io__address + __dna__offset)) {
 			return;
@@ -2887,9 +3577,9 @@ public class SmokeDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ListBase>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ListBase>(__io__address + 616, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<ListBase>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ListBase>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2902,9 +3592,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 480;
+			__dna__offset = 616;
 		} else {
-			__dna__offset = 424;
+			__dna__offset = 560;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -2917,6 +3607,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_weights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -2924,9 +3617,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 512);
+			__dna__targetAddress = __io__block.readLong(__io__address + 648);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 440);
+			__dna__targetAddress = __io__block.readLong(__io__address + 576);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{EffectorWeights.class};
 		return new CPointer<EffectorWeights>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EffectorWeights.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2934,6 +3627,9 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_weights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -2941,93 +3637,111 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __address = ((effector_weights == null) ? 0 : effector_weights.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 512, __address);
+			__io__block.writeLong(__io__address + 648, __address);
 		} else {
-			__io__block.writeLong(__io__address + 440, __address);
+			__io__block.writeLong(__io__address + 576, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'border_collisions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How domain border collisions are handled </p>
 	 * @see #__DNA__FIELD__border_collisions
 	 */
 	
 	public int getBorder_collisions() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 520);
+			return __io__block.readInt(__io__address + 656);
 		} else {
-			return __io__block.readInt(__io__address + 444);
+			return __io__block.readInt(__io__address + 580);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'border_collisions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How domain border collisions are handled </p>
 	 * @see #__DNA__FIELD__border_collisions
 	 */
 	
 	public void setBorder_collisions(int border_collisions) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 520, border_collisions);
+			__io__block.writeInt(__io__address + 656, border_collisions);
 		} else {
-			__io__block.writeInt(__io__address + 444, border_collisions);
+			__io__block.writeInt(__io__address + 580, border_collisions);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'time_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
 	public float getTime_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 524);
+			return __io__block.readFloat(__io__address + 660);
 		} else {
-			return __io__block.readFloat(__io__address + 448);
+			return __io__block.readFloat(__io__address + 584);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'time_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
 	public void setTime_scale(float time_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 524, time_scale);
+			__io__block.writeFloat(__io__address + 660, time_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 448, time_scale);
+			__io__block.writeFloat(__io__address + 584, time_scale);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of turbulence/rotation in fluid
 	 * @see #__DNA__FIELD__vorticity
 	 */
 	
 	public float getVorticity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 528);
+			return __io__block.readFloat(__io__address + 664);
 		} else {
-			return __io__block.readFloat(__io__address + 452);
+			return __io__block.readFloat(__io__address + 588);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of turbulence/rotation in fluid
 	 * @see #__DNA__FIELD__vorticity
 	 */
 	
 	public void setVorticity(float vorticity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 528, vorticity);
+			__io__block.writeFloat(__io__address + 664, vorticity);
 		} else {
-			__io__block.writeFloat(__io__address + 452, vorticity);
+			__io__block.writeFloat(__io__address + 588, vorticity);
 		}
 	}
 
@@ -3039,9 +3753,9 @@ public class SmokeDomainSettings extends CFacade {
 	public int getActive_fields() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 532);
+			return __io__block.readInt(__io__address + 668);
 		} else {
-			return __io__block.readInt(__io__address + 456);
+			return __io__block.readInt(__io__address + 592);
 		}
 	}
 
@@ -3053,14 +3767,17 @@ public class SmokeDomainSettings extends CFacade {
 	public void setActive_fields(int active_fields) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 532, active_fields);
+			__io__block.writeInt(__io__address + 668, active_fields);
 		} else {
-			__io__block.writeInt(__io__address + 456, active_fields);
+			__io__block.writeInt(__io__address + 592, active_fields);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'active_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> monitor color situation of simulation </p>
 	 * @see #__DNA__FIELD__active_color
 	 */
 	
@@ -3071,14 +3788,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'active_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> monitor color situation of simulation </p>
 	 * @see #__DNA__FIELD__active_color
 	 */
 	
@@ -3086,9 +3806,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 536;
+			__dna__offset = 672;
 		} else {
-			__dna__offset = 460;
+			__dna__offset = 596;
 		}
 		if (__io__equals(active_color, __io__address + __dna__offset)) {
 			return;
@@ -3101,174 +3821,215 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'highres_sampling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
 	
 	public int getHighres_sampling() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 548);
+			return __io__block.readInt(__io__address + 684);
 		} else {
-			return __io__block.readInt(__io__address + 472);
+			return __io__block.readInt(__io__address + 608);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'highres_sampling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
 	
 	public void setHighres_sampling(int highres_sampling) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 548, highres_sampling);
+			__io__block.writeInt(__io__address + 684, highres_sampling);
 		} else {
-			__io__block.writeInt(__io__address + 472, highres_sampling);
+			__io__block.writeInt(__io__address + 608, highres_sampling);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'burning_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed of the burning reaction (use larger values for smaller flame)<h4>Blender Source Code:</h4>
+	 * <p> flame parameters </p>
 	 * @see #__DNA__FIELD__burning_rate
 	 */
 	
 	public float getBurning_rate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 552);
+			return __io__block.readFloat(__io__address + 688);
 		} else {
-			return __io__block.readFloat(__io__address + 476);
+			return __io__block.readFloat(__io__address + 612);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'burning_rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed of the burning reaction (use larger values for smaller flame)<h4>Blender Source Code:</h4>
+	 * <p> flame parameters </p>
 	 * @see #__DNA__FIELD__burning_rate
 	 */
 	
 	public void setBurning_rate(float burning_rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 552, burning_rate);
+			__io__block.writeFloat(__io__address + 688, burning_rate);
 		} else {
-			__io__block.writeFloat(__io__address + 476, burning_rate);
+			__io__block.writeFloat(__io__address + 612, burning_rate);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flame_smoke'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
 	
 	public float getFlame_smoke() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 556);
+			return __io__block.readFloat(__io__address + 692);
 		} else {
-			return __io__block.readFloat(__io__address + 480);
+			return __io__block.readFloat(__io__address + 616);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flame_smoke'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
 	
 	public void setFlame_smoke(float flame_smoke) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 556, flame_smoke);
+			__io__block.writeFloat(__io__address + 692, flame_smoke);
 		} else {
-			__io__block.writeFloat(__io__address + 480, flame_smoke);
+			__io__block.writeFloat(__io__address + 616, flame_smoke);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flame_vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
 	
 	public float getFlame_vorticity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 560);
+			return __io__block.readFloat(__io__address + 696);
 		} else {
-			return __io__block.readFloat(__io__address + 484);
+			return __io__block.readFloat(__io__address + 620);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flame_vorticity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
 	
 	public void setFlame_vorticity(float flame_vorticity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 560, flame_vorticity);
+			__io__block.writeFloat(__io__address + 696, flame_vorticity);
 		} else {
-			__io__block.writeFloat(__io__address + 484, flame_vorticity);
+			__io__block.writeFloat(__io__address + 620, flame_vorticity);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flame_ignition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum temperature of flames
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
 	
 	public float getFlame_ignition() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 564);
+			return __io__block.readFloat(__io__address + 700);
 		} else {
-			return __io__block.readFloat(__io__address + 488);
+			return __io__block.readFloat(__io__address + 624);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flame_ignition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum temperature of flames
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
 	
 	public void setFlame_ignition(float flame_ignition) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 564, flame_ignition);
+			__io__block.writeFloat(__io__address + 700, flame_ignition);
 		} else {
-			__io__block.writeFloat(__io__address + 488, flame_ignition);
+			__io__block.writeFloat(__io__address + 624, flame_ignition);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flame_max_temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum temperature of flames
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
 	
 	public float getFlame_max_temp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 568);
+			return __io__block.readFloat(__io__address + 704);
 		} else {
-			return __io__block.readFloat(__io__address + 492);
+			return __io__block.readFloat(__io__address + 628);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flame_max_temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum temperature of flames
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
 	
 	public void setFlame_max_temp(float flame_max_temp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 568, flame_max_temp);
+			__io__block.writeFloat(__io__address + 704, flame_max_temp);
 		} else {
-			__io__block.writeFloat(__io__address + 492, flame_max_temp);
+			__io__block.writeFloat(__io__address + 628, flame_max_temp);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flame_smoke_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
 	
@@ -3279,14 +4040,17 @@ public class SmokeDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 708, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flame_smoke_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
 	
@@ -3294,9 +4058,9 @@ public class SmokeDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 572;
+			__dna__offset = 708;
 		} else {
-			__dna__offset = 496;
+			__dna__offset = 632;
 		}
 		if (__io__equals(flame_smoke_color, __io__address + __dna__offset)) {
 			return;

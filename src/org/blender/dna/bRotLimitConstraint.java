@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bRotLimitConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Limit Rotation Constraint </p>
  */
 
 @CMetaData(size32=28, size64=28)
@@ -26,7 +27,7 @@ public class bRotLimitConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 370;
+	public static final int __DNA__SDNA_INDEX = 376;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xmin'.

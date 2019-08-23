@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceOops'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Outliner =============================================== Outliner </p>
  */
 
-@CMetaData(size32=256, size64=304)
+@CMetaData(size32=288, size64=336)
 public class SpaceOops extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class SpaceOops extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 204;
+	public static final int __DNA__SDNA_INDEX = 208;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +210,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'treestore'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> treestore is an ordered list of {@link TreeStoreElem} 's from outliner tree; Note that treestore may contain duplicate elements if element is used multiple times in outliner tree (e. g. linked objects) Also note that BLI_mempool can not be read/written in DNA directly, therefore readfile.c/writefile.c linearize treestore into {@link TreeStore}  structure </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +233,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_string'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search stuff </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -223,8 +248,8 @@ public class SpaceOops extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'search_string'</li>
-	 * <li>Signature: 'char[32]'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__search_string = new long[]{200, 240};
@@ -247,7 +272,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__search_tse = new long[]{232, 272};
+	public static final long[] __DNA__FIELD__search_tse = new long[]{264, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -267,7 +292,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{244, 288};
+	public static final long[] __DNA__FIELD__flag = new long[]{276, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'outlinevis'.
@@ -287,7 +312,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__outlinevis = new long[]{246, 290};
+	public static final long[] __DNA__FIELD__outlinevis = new long[]{278, 322};
 
 	/**
 	 * Field descriptor (offset) for struct member 'storeflag'.
@@ -307,7 +332,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__storeflag = new long[]{248, 292};
+	public static final long[] __DNA__FIELD__storeflag = new long[]{280, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_flags'.
@@ -327,10 +352,13 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__search_flags = new long[]{250, 294};
+	public static final long[] __DNA__FIELD__search_flags = new long[]{282, 326};
 
 	/**
 	 * Field descriptor (offset) for struct member 'treehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointers to treestore elements, grouped by (id, type, nr) in hashtable for faster searching </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,7 +375,7 @@ public class SpaceOops extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treehash = new long[]{252, 296};
+	public static final long[] __DNA__FIELD__treehash = new long[]{284, 328};
 
 	public SpaceOops(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -423,6 +451,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -437,6 +468,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -487,6 +521,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -501,6 +540,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -515,6 +559,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -533,6 +582,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -555,6 +609,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -569,6 +628,11 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -627,6 +691,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'treestore'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> treestore is an ordered list of {@link TreeStoreElem} 's from outliner tree; Note that treestore may contain duplicate elements if element is used multiple times in outliner tree (e. g. linked objects) Also note that BLI_mempool can not be read/written in DNA directly, therefore readfile.c/writefile.c linearize treestore into {@link TreeStore}  structure </p>
 	 * @see #__DNA__FIELD__treestore
 	 */
 	
@@ -644,6 +711,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'treestore'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> treestore is an ordered list of {@link TreeStoreElem} 's from outliner tree; Note that treestore may contain duplicate elements if element is used multiple times in outliner tree (e. g. linked objects) Also note that BLI_mempool can not be read/written in DNA directly, therefore readfile.c/writefile.c linearize treestore into {@link TreeStore}  structure </p>
 	 * @see #__DNA__FIELD__treestore
 	 */
 	
@@ -659,6 +729,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_string'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search stuff </p>
 	 * @see #__DNA__FIELD__search_string
 	 */
 	
@@ -666,7 +739,7 @@ public class SpaceOops extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			32
+			64
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -677,6 +750,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_string'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search stuff </p>
 	 * @see #__DNA__FIELD__search_string
 	 */
 	
@@ -705,9 +781,9 @@ public class SpaceOops extends CFacade {
 	public TreeStoreElem getSearch_tse() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new TreeStoreElem(__io__address + 272, __io__block, __io__blockTable);
+			return new TreeStoreElem(__io__address + 304, __io__block, __io__blockTable);
 		} else {
-			return new TreeStoreElem(__io__address + 232, __io__block, __io__blockTable);
+			return new TreeStoreElem(__io__address + 264, __io__block, __io__blockTable);
 		}
 	}
 
@@ -720,9 +796,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 304;
 		} else {
-			__dna__offset = 232;
+			__dna__offset = 264;
 		}
 		if (__io__equals(search_tse, __io__address + __dna__offset)) {
 			return;
@@ -741,9 +817,9 @@ public class SpaceOops extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 288);
+			return __io__block.readShort(__io__address + 320);
 		} else {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readShort(__io__address + 276);
 		}
 	}
 
@@ -755,9 +831,9 @@ public class SpaceOops extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 288, flag);
+			__io__block.writeShort(__io__address + 320, flag);
 		} else {
-			__io__block.writeShort(__io__address + 244, flag);
+			__io__block.writeShort(__io__address + 276, flag);
 		}
 	}
 
@@ -769,9 +845,9 @@ public class SpaceOops extends CFacade {
 	public short getOutlinevis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 290);
+			return __io__block.readShort(__io__address + 322);
 		} else {
-			return __io__block.readShort(__io__address + 246);
+			return __io__block.readShort(__io__address + 278);
 		}
 	}
 
@@ -783,9 +859,9 @@ public class SpaceOops extends CFacade {
 	public void setOutlinevis(short outlinevis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 290, outlinevis);
+			__io__block.writeShort(__io__address + 322, outlinevis);
 		} else {
-			__io__block.writeShort(__io__address + 246, outlinevis);
+			__io__block.writeShort(__io__address + 278, outlinevis);
 		}
 	}
 
@@ -797,9 +873,9 @@ public class SpaceOops extends CFacade {
 	public short getStoreflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 292);
+			return __io__block.readShort(__io__address + 324);
 		} else {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 280);
 		}
 	}
 
@@ -811,9 +887,9 @@ public class SpaceOops extends CFacade {
 	public void setStoreflag(short storeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 292, storeflag);
+			__io__block.writeShort(__io__address + 324, storeflag);
 		} else {
-			__io__block.writeShort(__io__address + 248, storeflag);
+			__io__block.writeShort(__io__address + 280, storeflag);
 		}
 	}
 
@@ -825,9 +901,9 @@ public class SpaceOops extends CFacade {
 	public short getSearch_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 294);
+			return __io__block.readShort(__io__address + 326);
 		} else {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 282);
 		}
 	}
 
@@ -839,14 +915,17 @@ public class SpaceOops extends CFacade {
 	public void setSearch_flags(short search_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 294, search_flags);
+			__io__block.writeShort(__io__address + 326, search_flags);
 		} else {
-			__io__block.writeShort(__io__address + 250, search_flags);
+			__io__block.writeShort(__io__address + 282, search_flags);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'treehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointers to treestore elements, grouped by (id, type, nr) in hashtable for faster searching </p>
 	 * @see #__DNA__FIELD__treehash
 	 */
 	
@@ -854,9 +933,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -864,6 +943,9 @@ public class SpaceOops extends CFacade {
 
 	/**
 	 * Set method for struct member 'treehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointers to treestore elements, grouped by (id, type, nr) in hashtable for faster searching </p>
 	 * @see #__DNA__FIELD__treehash
 	 */
 	
@@ -871,9 +953,9 @@ public class SpaceOops extends CFacade {
 	{
 		long __address = ((treehash == null) ? 0 : treehash.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceText'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Text}  Editor ============================================ {@link Text}  Editor </p>
  */
 
 @CMetaData(size32=656, size64=680)
@@ -27,7 +28,7 @@ public class SpaceText extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 221;
+	public static final int __DNA__SDNA_INDEX = 225;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +265,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lheight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user preference, is font_size! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +308,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'linenrs_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime computed, character width and the number of chars to use when showing line numbers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +451,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'live_edit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> run python while editing, evil </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +574,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'findstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -571,6 +597,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'replacestr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -591,6 +620,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'margin_column'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> column number to show right margin at </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -611,6 +643,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lheight_dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual lineheight, dpi controlled </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -651,6 +686,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for faster drawing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -671,6 +709,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_accum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime, for scroll increments smaller than a line </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -763,6 +804,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -777,6 +821,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -827,6 +874,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -841,6 +893,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -855,6 +912,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -873,6 +935,11 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -1039,6 +1106,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'lheight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user preference, is font_size! </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
 	
@@ -1053,6 +1123,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'lheight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user preference, is font_size! </p>
 	 * @see #__DNA__FIELD__lheight
 	 */
 	
@@ -1095,6 +1168,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'linenrs_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime computed, character width and the number of chars to use when showing line numbers </p>
 	 * @see #__DNA__FIELD__linenrs_tot
 	 */
 	
@@ -1109,6 +1185,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'linenrs_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime computed, character width and the number of chars to use when showing line numbers </p>
 	 * @see #__DNA__FIELD__linenrs_tot
 	 */
 	
@@ -1291,6 +1370,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'live_edit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> run python while editing, evil </p>
 	 * @see #__DNA__FIELD__live_edit
 	 */
 	
@@ -1305,6 +1387,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'live_edit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> run python while editing, evil </p>
 	 * @see #__DNA__FIELD__live_edit
 	 */
 	
@@ -1475,6 +1560,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'findstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * @see #__DNA__FIELD__findstr
 	 */
 	
@@ -1493,6 +1581,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'findstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * @see #__DNA__FIELD__findstr
 	 */
 	
@@ -1515,6 +1606,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'replacestr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * @see #__DNA__FIELD__replacestr
 	 */
 	
@@ -1533,6 +1627,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'replacestr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ST_MAX_FIND_STR </p>
 	 * @see #__DNA__FIELD__replacestr
 	 */
 	
@@ -1555,6 +1652,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'margin_column'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> column number to show right margin at </p>
 	 * @see #__DNA__FIELD__margin_column
 	 */
 	
@@ -1569,6 +1669,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'margin_column'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> column number to show right margin at </p>
 	 * @see #__DNA__FIELD__margin_column
 	 */
 	
@@ -1583,6 +1686,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'lheight_dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual lineheight, dpi controlled </p>
 	 * @see #__DNA__FIELD__lheight_dpi
 	 */
 	
@@ -1597,6 +1703,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'lheight_dpi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual lineheight, dpi controlled </p>
 	 * @see #__DNA__FIELD__lheight_dpi
 	 */
 	
@@ -1651,6 +1760,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'drawcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for faster drawing </p>
 	 * @see #__DNA__FIELD__drawcache
 	 */
 	
@@ -1668,6 +1780,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'drawcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for faster drawing </p>
 	 * @see #__DNA__FIELD__drawcache
 	 */
 	
@@ -1683,6 +1798,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'scroll_accum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime, for scroll increments smaller than a line </p>
 	 * @see #__DNA__FIELD__scroll_accum
 	 */
 	
@@ -1701,6 +1819,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'scroll_accum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime, for scroll increments smaller than a line </p>
 	 * @see #__DNA__FIELD__scroll_accum
 	 */
 	

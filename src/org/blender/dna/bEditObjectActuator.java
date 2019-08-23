@@ -27,7 +27,7 @@ public class bEditObjectActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 310;
+	public static final int __DNA__SDNA_INDEX = 316;
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
@@ -131,6 +131,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +154,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'linVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial lin. velocity on creation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +177,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'angVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial ang. velocity on creation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +220,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'localflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for the lin & ang. vel: apply locally </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +283,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'trackflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for up axis and track axis </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -467,6 +482,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -485,6 +503,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -507,6 +528,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'linVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial lin. velocity on creation </p>
 	 * @see #__DNA__FIELD__linVelocity
 	 */
 	
@@ -525,6 +549,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'linVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial lin. velocity on creation </p>
 	 * @see #__DNA__FIELD__linVelocity
 	 */
 	
@@ -547,6 +574,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'angVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial ang. velocity on creation </p>
 	 * @see #__DNA__FIELD__angVelocity
 	 */
 	
@@ -565,6 +595,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'angVelocity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> initial ang. velocity on creation </p>
 	 * @see #__DNA__FIELD__angVelocity
 	 */
 	
@@ -615,6 +648,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'localflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for the lin & ang. vel: apply locally </p>
 	 * @see #__DNA__FIELD__localflag
 	 */
 	
@@ -629,6 +665,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'localflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for the lin & ang. vel: apply locally </p>
 	 * @see #__DNA__FIELD__localflag
 	 */
 	
@@ -699,6 +738,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'trackflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for up axis and track axis </p>
 	 * @see #__DNA__FIELD__trackflag
 	 */
 	
@@ -713,6 +755,9 @@ public class bEditObjectActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'trackflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag for up axis and track axis </p>
 	 * @see #__DNA__FIELD__trackflag
 	 */
 	

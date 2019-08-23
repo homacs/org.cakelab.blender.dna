@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TransformOrientation'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Transform Orientations </p>
  */
 
 @CMetaData(size32=112, size64=120)
@@ -27,7 +29,7 @@ public class TransformOrientation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 188;
+	public static final int __DNA__SDNA_INDEX = 191;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,10 @@ public class TransformOrientation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,6 +209,10 @@ public class TransformOrientation extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -221,6 +231,10 @@ public class TransformOrientation extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the custom transform orientation<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

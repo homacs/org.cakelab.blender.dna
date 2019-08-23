@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDframe'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Grease-Pencil Annotations - 'Frame' -> Acts as storage for the 'image' formed by strokes </p>
  */
 
 @CMetaData(size32=24, size64=40)
@@ -26,7 +27,7 @@ public class bGPDframe extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 480;
+	public static final int __DNA__SDNA_INDEX = 491;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -70,6 +71,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strokes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +94,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number of this frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +117,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +140,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'key_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -222,6 +235,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Get method for struct member 'strokes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
 	 * @see #__DNA__FIELD__strokes
 	 */
 	
@@ -236,6 +252,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Set method for struct member 'strokes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
 	 * @see #__DNA__FIELD__strokes
 	 */
 	
@@ -258,6 +277,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Get method for struct member 'framenum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number of this frame </p>
 	 * @see #__DNA__FIELD__framenum
 	 */
 	
@@ -272,6 +294,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Set method for struct member 'framenum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number of this frame </p>
 	 * @see #__DNA__FIELD__framenum
 	 */
 	
@@ -286,6 +311,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -300,6 +328,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -314,6 +345,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Get method for struct member 'key_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
 	 * @see #__DNA__FIELD__key_type
 	 */
 	
@@ -328,6 +362,9 @@ public class bGPDframe extends CFacade {
 
 	/**
 	 * Set method for struct member 'key_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
 	 * @see #__DNA__FIELD__key_type
 	 */
 	

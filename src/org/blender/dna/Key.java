@@ -51,6 +51,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'refkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +163,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of {@link KeyBlock} 's </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +186,11 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +231,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (totkey == BLI_listbase_count(&key->block)) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +274,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> absolute or relative shape key </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +317,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +340,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uidgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -375,6 +407,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -392,6 +427,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -407,6 +445,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'refkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * @see #__DNA__FIELD__refkey
 	 */
 	
@@ -424,6 +465,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'refkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  'key->block.first', perhaps later on it could be defined as some other {@link KeyBlock}  - campbell </p>
 	 * @see #__DNA__FIELD__refkey
 	 */
 	
@@ -439,6 +483,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'elemstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
 	 * @see #__DNA__FIELD__elemstr
 	 */
 	
@@ -457,6 +504,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'elemstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
 	 * @see #__DNA__FIELD__elemstr
 	 */
 	
@@ -479,6 +529,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'elemsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
 	 * @see #__DNA__FIELD__elemsize
 	 */
 	
@@ -493,6 +546,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'elemsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
 	 * @see #__DNA__FIELD__elemsize
 	 */
 	
@@ -535,6 +591,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'block'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of {@link KeyBlock} 's </p>
 	 * @see #__DNA__FIELD__block
 	 */
 	
@@ -549,6 +608,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'block'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of {@link KeyBlock} 's </p>
 	 * @see #__DNA__FIELD__block
 	 */
 	
@@ -571,6 +633,11 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -588,6 +655,11 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -635,6 +707,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (totkey == BLI_listbase_count(&key->block)) </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -649,6 +724,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'totkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (totkey == BLI_listbase_count(&key->block)) </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -691,6 +769,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> absolute or relative shape key </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -705,6 +786,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> absolute or relative shape key </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -747,6 +831,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'ctime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	
@@ -761,6 +848,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'ctime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	
@@ -775,6 +865,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'uidgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	
@@ -789,6 +882,9 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'uidgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	

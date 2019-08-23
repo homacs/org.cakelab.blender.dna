@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'UnitSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Unit Settings </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -26,10 +28,14 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 193;
+	public static final int __DNA__SDNA_INDEX = 197;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +56,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The unit system to use for button display<h4>Blender Source Code:</h4>
+	 * <p> imperial, metric etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +80,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'system_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <p> not implemented as a proper unit system yet </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -118,6 +132,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'scale_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -132,6 +150,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'scale_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -146,6 +168,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The unit system to use for button display<h4>Blender Source Code:</h4>
+	 * <p> imperial, metric etc </p>
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -160,6 +186,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'system'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The unit system to use for button display<h4>Blender Source Code:</h4>
+	 * <p> imperial, metric etc </p>
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -174,6 +204,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'system_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <p> not implemented as a proper unit system yet </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	
@@ -188,6 +222,10 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'system_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
+	 * <p> not implemented as a proper unit system yet </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	

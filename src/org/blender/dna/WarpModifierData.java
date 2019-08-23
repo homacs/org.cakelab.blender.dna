@@ -51,6 +51,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +94,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +220,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +283,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used yet </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -375,6 +390,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -392,6 +410,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> keep in sync with {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__texture
 	 */
 	
@@ -439,6 +460,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -457,6 +481,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -535,6 +562,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'object_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
 	
@@ -552,6 +582,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'object_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end {@link MappingInfoModifierData}  </p>
 	 * @see #__DNA__FIELD__object_from
 	 */
 	
@@ -631,6 +664,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -649,6 +685,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -727,6 +766,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used yet </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -741,6 +783,9 @@ public class WarpModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used yet </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeLensDist'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> qdn: lens distortion node </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -26,7 +27,7 @@ public class NodeLensDist extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 417;
+	public static final int __DNA__SDNA_INDEX = 424;
 
 	/**
 	 * Field descriptor (offset) for struct member 'jit'.

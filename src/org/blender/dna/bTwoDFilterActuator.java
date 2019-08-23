@@ -27,7 +27,7 @@ public class bTwoDFilterActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 322;
+	public static final int __DNA__SDNA_INDEX = 328;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -51,6 +51,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tells what type of 2D Filter </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (flag == 0) means 2D filter is activate and (flag != 0) means 2D filter is inactive </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +117,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'float_arg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> a float argument </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,6 +208,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tells what type of 2D Filter </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -213,6 +225,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tells what type of 2D Filter </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -227,6 +242,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (flag == 0) means 2D filter is activate and (flag != 0) means 2D filter is inactive </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -241,6 +259,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (flag == 0) means 2D filter is activate and (flag != 0) means 2D filter is inactive </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -283,6 +304,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'float_arg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> a float argument </p>
 	 * @see #__DNA__FIELD__float_arg
 	 */
 	
@@ -297,6 +321,9 @@ public class bTwoDFilterActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'float_arg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> a float argument </p>
 	 * @see #__DNA__FIELD__float_arg
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bAddObjectActuator'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ****************** ACTUATORS ********************* unused now, moved to editobjectactuator in 2.02. Still needed for dna </p>
  */
 
 @CMetaData(size32=12, size64=16)
@@ -26,7 +27,7 @@ public class bAddObjectActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 306;
+	public static final int __DNA__SDNA_INDEX = 312;
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.

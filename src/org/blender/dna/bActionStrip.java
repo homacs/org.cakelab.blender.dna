@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bActionStrip'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> #define ACTSTRIP_MOD_DEFORM 0 #define ACTSTRIP_MOD_NOISE 1 </p><p> NLA-Modifier Types (UNUSED) </p>
  */
 
 @CMetaData(size32=140, size64=168)
@@ -27,7 +28,7 @@ public class bActionStrip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 378;
+	public static final int __DNA__SDNA_INDEX = 385;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,6 +112,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stride_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis 0=x, 1=y, 2=z </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curmod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current modifier for buttons </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +158,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blending ipo - was used for some old NAN era experiments. Non-functional currently. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +181,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The action referenced by this strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +204,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For groups, the actual object being nla'ed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +247,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames covered by this strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +290,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames taken from the action </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +313,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actoffs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within action, for cycles and striding </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +336,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stridelen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The stridelength (considered when flag & ACT_USESTRIDE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +359,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +382,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +425,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames on either end of the strip's length to fade in/out </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +448,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stridechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Instead of stridelen, it uses an action channel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +471,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offs_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if repeat, use this bone/channel for defining offset </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +494,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modifier stack </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -599,6 +645,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'stride_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis 0=x, 1=y, 2=z </p>
 	 * @see #__DNA__FIELD__stride_axis
 	 */
 	
@@ -613,6 +662,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'stride_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis 0=x, 1=y, 2=z </p>
 	 * @see #__DNA__FIELD__stride_axis
 	 */
 	
@@ -627,6 +679,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'curmod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current modifier for buttons </p>
 	 * @see #__DNA__FIELD__curmod
 	 */
 	
@@ -641,6 +696,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'curmod'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current modifier for buttons </p>
 	 * @see #__DNA__FIELD__curmod
 	 */
 	
@@ -655,6 +713,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blending ipo - was used for some old NAN era experiments. Non-functional currently. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -672,6 +733,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blending ipo - was used for some old NAN era experiments. Non-functional currently. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -687,6 +751,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The action referenced by this strip </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -704,6 +771,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The action referenced by this strip </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -719,6 +789,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For groups, the actual object being nla'ed </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -736,6 +809,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For groups, the actual object being nla'ed </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -779,6 +855,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames covered by this strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -793,6 +872,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames covered by this strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -835,6 +917,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames taken from the action </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
@@ -849,6 +934,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The range of frames taken from the action </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
@@ -863,6 +951,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'actoffs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within action, for cycles and striding </p>
 	 * @see #__DNA__FIELD__actoffs
 	 */
 	
@@ -877,6 +968,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'actoffs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within action, for cycles and striding </p>
 	 * @see #__DNA__FIELD__actoffs
 	 */
 	
@@ -891,6 +985,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'stridelen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The stridelength (considered when flag & ACT_USESTRIDE) </p>
 	 * @see #__DNA__FIELD__stridelen
 	 */
 	
@@ -905,6 +1002,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'stridelen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The stridelength (considered when flag & ACT_USESTRIDE) </p>
 	 * @see #__DNA__FIELD__stridelen
 	 */
 	
@@ -919,6 +1019,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
@@ -933,6 +1036,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
@@ -947,6 +1053,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -961,6 +1070,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -1003,6 +1115,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames on either end of the strip's length to fade in/out </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
@@ -1017,6 +1132,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames on either end of the strip's length to fade in/out </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
@@ -1031,6 +1149,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'stridechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Instead of stridelen, it uses an action channel </p>
 	 * @see #__DNA__FIELD__stridechannel
 	 */
 	
@@ -1049,6 +1170,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'stridechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Instead of stridelen, it uses an action channel </p>
 	 * @see #__DNA__FIELD__stridechannel
 	 */
 	
@@ -1071,6 +1195,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'offs_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if repeat, use this bone/channel for defining offset </p>
 	 * @see #__DNA__FIELD__offs_bone
 	 */
 	
@@ -1089,6 +1216,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'offs_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if repeat, use this bone/channel for defining offset </p>
 	 * @see #__DNA__FIELD__offs_bone
 	 */
 	
@@ -1111,6 +1241,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modifier stack </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -1125,6 +1258,9 @@ public class bActionStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> modifier stack </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	

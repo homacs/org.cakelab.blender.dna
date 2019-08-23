@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileSelectParams'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> File Selector ========================================== Config and Input for File Selector </p>
  */
 
-@CMetaData(size32=2132, size64=2132)
+@CMetaData(size32=2324, size64=2324)
 public class FileSelectParams extends CFacade {
 
 	/**
@@ -27,10 +28,14 @@ public class FileSelectParams extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 211;
+	public static final int __DNA__SDNA_INDEX = 215;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <p> title, also used for the text of the execute button </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +99,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +142,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'renameedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annoying but the first is only used for initialization </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_glob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of filetypes to filter </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,14 +180,18 @@ public class FileSelectParams extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'filter_glob'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Signature: 'char[256]'</li>
+	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__filter_glob = new long[]{1956, 1956};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <p> text items' name must match to be shown. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -187,10 +208,14 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_search = new long[]{2020, 2020};
+	public static final long[] __DNA__FIELD__filter_search = new long[]{2212, 2212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -207,10 +232,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_id = new long[]{2084, 2084};
+	public static final long[] __DNA__FIELD__filter_id = new long[]{2276, 2276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active file used for keyboard navigation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -227,10 +255,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_file = new long[]{2088, 2088};
+	public static final long[] __DNA__FIELD__active_file = new long[]{2280, 2280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'highlight_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file under cursor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,7 +278,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__highlight_file = new long[]{2092, 2092};
+	public static final long[] __DNA__FIELD__highlight_file = new long[]{2284, 2284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sel_first'.
@@ -267,7 +298,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sel_first = new long[]{2096, 2096};
+	public static final long[] __DNA__FIELD__sel_first = new long[]{2288, 2288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sel_last'.
@@ -287,7 +318,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sel_last = new long[]{2100, 2100};
+	public static final long[] __DNA__FIELD__sel_last = new long[]{2292, 2292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thumbnail_size'.
@@ -307,7 +338,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thumbnail_size = new long[]{2104, 2104};
+	public static final long[] __DNA__FIELD__thumbnail_size = new long[]{2296, 2296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -327,10 +358,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{2106, 2106};
+	public static final long[] __DNA__FIELD__pad = new long[]{2298, 2298};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> short XXXXX for now store type here, should be moved to the operator </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,10 +381,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{2108, 2108};
+	public static final long[] __DNA__FIELD__type = new long[]{2300, 2300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filter, hiding dots files,... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,10 +404,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{2110, 2110};
+	public static final long[] __DNA__FIELD__flag = new long[]{2302, 2302};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sort'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sort order </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -387,10 +427,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sort = new long[]{2112, 2112};
+	public static final long[] __DNA__FIELD__sort = new long[]{2304, 2304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display mode flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -407,10 +450,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display = new long[]{2114, 2114};
+	public static final long[] __DNA__FIELD__display = new long[]{2306, 2306};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter when (flags & FILE_FILTER) is true </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,10 +473,14 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter = new long[]{2116, 2116};
+	public static final long[] __DNA__FIELD__filter = new long[]{2308, 2308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recursion_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <p> max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -447,10 +497,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recursion_level = new long[]{2120, 2120};
+	public static final long[] __DNA__FIELD__recursion_level = new long[]{2312, 2312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f_fp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX <mdash/>  still unused <ndash/>  show font preview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -467,10 +520,13 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_fp = new long[]{2122, 2122};
+	public static final long[] __DNA__FIELD__f_fp = new long[]{2314, 2314};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fp_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to use for font preview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,7 +543,7 @@ public class FileSelectParams extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fp_str = new long[]{2124, 2124};
+	public static final long[] __DNA__FIELD__fp_str = new long[]{2316, 2316};
 
 	public FileSelectParams(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -499,6 +555,10 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'title'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <p> title, also used for the text of the execute button </p>
 	 * @see #__DNA__FIELD__title
 	 */
 	
@@ -517,6 +577,10 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'title'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Title for the file browser<h4>Blender Source Code:</h4>
+	 * <p> title, also used for the text of the execute button </p>
 	 * @see #__DNA__FIELD__title
 	 */
 	
@@ -539,6 +603,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -557,6 +624,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> directory, FILE_MAX_LIBEXTRA, 1024 + 66, this is for extreme case when 1023 length path needs to be linked in, where foo.blend/Armature need adding </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -619,6 +689,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file </p>
 	 * @see #__DNA__FIELD__file
 	 */
 	
@@ -637,6 +710,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file </p>
 	 * @see #__DNA__FIELD__file
 	 */
 	
@@ -699,6 +775,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'renameedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annoying but the first is only used for initialization </p>
 	 * @see #__DNA__FIELD__renameedit
 	 */
 	
@@ -717,6 +796,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'renameedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annoying but the first is only used for initialization </p>
 	 * @see #__DNA__FIELD__renameedit
 	 */
 	
@@ -739,6 +821,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter_glob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of filetypes to filter </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
 	
@@ -746,7 +831,7 @@ public class FileSelectParams extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			64
+			256
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 1956, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -757,6 +842,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'filter_glob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> list of filetypes to filter </p>
 	 * @see #__DNA__FIELD__filter_glob
 	 */
 	
@@ -779,6 +867,10 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <p> text items' name must match to be shown. </p>
 	 * @see #__DNA__FIELD__filter_search
 	 */
 	
@@ -789,14 +881,18 @@ public class FileSelectParams extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2020, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2020, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'filter_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Filter by name, supports '*' wildcard<h4>Blender Source Code:</h4>
+	 * <p> text items' name must match to be shown. </p>
 	 * @see #__DNA__FIELD__filter_search
 	 */
 	
@@ -804,9 +900,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2020;
+			__dna__offset = 2212;
 		} else {
-			__dna__offset = 2020;
+			__dna__offset = 2212;
 		}
 		if (__io__equals(filter_search, __io__address + __dna__offset)) {
 			return;
@@ -819,85 +915,105 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
 	public int getFilter_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2084);
+			return __io__block.readInt(__io__address + 2276);
 		} else {
-			return __io__block.readInt(__io__address + 2084);
+			return __io__block.readInt(__io__address + 2276);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which ID types to show/hide, when browsing a library<h4>Blender Source Code:</h4>
+	 * <p> same as filter, but for {@link ID}  types (aka library groups). </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
 	public void setFilter_id(int filter_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2084, filter_id);
+			__io__block.writeInt(__io__address + 2276, filter_id);
 		} else {
-			__io__block.writeInt(__io__address + 2084, filter_id);
+			__io__block.writeInt(__io__address + 2276, filter_id);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'active_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active file used for keyboard navigation </p>
 	 * @see #__DNA__FIELD__active_file
 	 */
 	
 	public int getActive_file() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2088);
+			return __io__block.readInt(__io__address + 2280);
 		} else {
-			return __io__block.readInt(__io__address + 2088);
+			return __io__block.readInt(__io__address + 2280);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'active_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active file used for keyboard navigation </p>
 	 * @see #__DNA__FIELD__active_file
 	 */
 	
 	public void setActive_file(int active_file) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2088, active_file);
+			__io__block.writeInt(__io__address + 2280, active_file);
 		} else {
-			__io__block.writeInt(__io__address + 2088, active_file);
+			__io__block.writeInt(__io__address + 2280, active_file);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'highlight_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file under cursor </p>
 	 * @see #__DNA__FIELD__highlight_file
 	 */
 	
 	public int getHighlight_file() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2092);
+			return __io__block.readInt(__io__address + 2284);
 		} else {
-			return __io__block.readInt(__io__address + 2092);
+			return __io__block.readInt(__io__address + 2284);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'highlight_file'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file under cursor </p>
 	 * @see #__DNA__FIELD__highlight_file
 	 */
 	
 	public void setHighlight_file(int highlight_file) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2092, highlight_file);
+			__io__block.writeInt(__io__address + 2284, highlight_file);
 		} else {
-			__io__block.writeInt(__io__address + 2092, highlight_file);
+			__io__block.writeInt(__io__address + 2284, highlight_file);
 		}
 	}
 
@@ -909,9 +1025,9 @@ public class FileSelectParams extends CFacade {
 	public int getSel_first() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2096);
+			return __io__block.readInt(__io__address + 2288);
 		} else {
-			return __io__block.readInt(__io__address + 2096);
+			return __io__block.readInt(__io__address + 2288);
 		}
 	}
 
@@ -923,9 +1039,9 @@ public class FileSelectParams extends CFacade {
 	public void setSel_first(int sel_first) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2096, sel_first);
+			__io__block.writeInt(__io__address + 2288, sel_first);
 		} else {
-			__io__block.writeInt(__io__address + 2096, sel_first);
+			__io__block.writeInt(__io__address + 2288, sel_first);
 		}
 	}
 
@@ -937,9 +1053,9 @@ public class FileSelectParams extends CFacade {
 	public int getSel_last() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2100);
+			return __io__block.readInt(__io__address + 2292);
 		} else {
-			return __io__block.readInt(__io__address + 2100);
+			return __io__block.readInt(__io__address + 2292);
 		}
 	}
 
@@ -951,9 +1067,9 @@ public class FileSelectParams extends CFacade {
 	public void setSel_last(int sel_last) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2100, sel_last);
+			__io__block.writeInt(__io__address + 2292, sel_last);
 		} else {
-			__io__block.writeInt(__io__address + 2100, sel_last);
+			__io__block.writeInt(__io__address + 2292, sel_last);
 		}
 	}
 
@@ -965,9 +1081,9 @@ public class FileSelectParams extends CFacade {
 	public short getThumbnail_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2104);
+			return __io__block.readShort(__io__address + 2296);
 		} else {
-			return __io__block.readShort(__io__address + 2104);
+			return __io__block.readShort(__io__address + 2296);
 		}
 	}
 
@@ -979,9 +1095,9 @@ public class FileSelectParams extends CFacade {
 	public void setThumbnail_size(short thumbnail_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2104, thumbnail_size);
+			__io__block.writeShort(__io__address + 2296, thumbnail_size);
 		} else {
-			__io__block.writeShort(__io__address + 2104, thumbnail_size);
+			__io__block.writeShort(__io__address + 2296, thumbnail_size);
 		}
 	}
 
@@ -993,9 +1109,9 @@ public class FileSelectParams extends CFacade {
 	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2106);
+			return __io__block.readShort(__io__address + 2298);
 		} else {
-			return __io__block.readShort(__io__address + 2106);
+			return __io__block.readShort(__io__address + 2298);
 		}
 	}
 
@@ -1007,210 +1123,257 @@ public class FileSelectParams extends CFacade {
 	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2106, pad);
+			__io__block.writeShort(__io__address + 2298, pad);
 		} else {
-			__io__block.writeShort(__io__address + 2106, pad);
+			__io__block.writeShort(__io__address + 2298, pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> short XXXXX for now store type here, should be moved to the operator </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2108);
+			return __io__block.readShort(__io__address + 2300);
 		} else {
-			return __io__block.readShort(__io__address + 2108);
+			return __io__block.readShort(__io__address + 2300);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> short XXXXX for now store type here, should be moved to the operator </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2108, type);
+			__io__block.writeShort(__io__address + 2300, type);
 		} else {
-			__io__block.writeShort(__io__address + 2108, type);
+			__io__block.writeShort(__io__address + 2300, type);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filter, hiding dots files,... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2110);
+			return __io__block.readShort(__io__address + 2302);
 		} else {
-			return __io__block.readShort(__io__address + 2110);
+			return __io__block.readShort(__io__address + 2302);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filter, hiding dots files,... </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2110, flag);
+			__io__block.writeShort(__io__address + 2302, flag);
 		} else {
-			__io__block.writeShort(__io__address + 2110, flag);
+			__io__block.writeShort(__io__address + 2302, flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sort'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sort order </p>
 	 * @see #__DNA__FIELD__sort
 	 */
 	
 	public short getSort() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2112);
+			return __io__block.readShort(__io__address + 2304);
 		} else {
-			return __io__block.readShort(__io__address + 2112);
+			return __io__block.readShort(__io__address + 2304);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sort'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sort order </p>
 	 * @see #__DNA__FIELD__sort
 	 */
 	
 	public void setSort(short sort) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2112, sort);
+			__io__block.writeShort(__io__address + 2304, sort);
 		} else {
-			__io__block.writeShort(__io__address + 2112, sort);
+			__io__block.writeShort(__io__address + 2304, sort);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display mode flag </p>
 	 * @see #__DNA__FIELD__display
 	 */
 	
 	public short getDisplay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2114);
+			return __io__block.readShort(__io__address + 2306);
 		} else {
-			return __io__block.readShort(__io__address + 2114);
+			return __io__block.readShort(__io__address + 2306);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display mode flag </p>
 	 * @see #__DNA__FIELD__display
 	 */
 	
 	public void setDisplay(short display) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2114, display);
+			__io__block.writeShort(__io__address + 2306, display);
 		} else {
-			__io__block.writeShort(__io__address + 2114, display);
+			__io__block.writeShort(__io__address + 2306, display);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter when (flags & FILE_FILTER) is true </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	
 	public int getFilter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2116);
+			return __io__block.readInt(__io__address + 2308);
 		} else {
-			return __io__block.readInt(__io__address + 2116);
+			return __io__block.readInt(__io__address + 2308);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter when (flags & FILE_FILTER) is true </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	
 	public void setFilter(int filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2116, filter);
+			__io__block.writeInt(__io__address + 2308, filter);
 		} else {
-			__io__block.writeInt(__io__address + 2116, filter);
+			__io__block.writeInt(__io__address + 2308, filter);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'recursion_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <p> max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
 	
 	public short getRecursion_level() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2120);
+			return __io__block.readShort(__io__address + 2312);
 		} else {
-			return __io__block.readShort(__io__address + 2120);
+			return __io__block.readShort(__io__address + 2312);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'recursion_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Numbers of dirtree levels to show simultaneously<h4>Blender Source Code:</h4>
+	 * <p> max number of levels in dirtree to show at once, 0 to disable recursion. </p>
 	 * @see #__DNA__FIELD__recursion_level
 	 */
 	
 	public void setRecursion_level(short recursion_level) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2120, recursion_level);
+			__io__block.writeShort(__io__address + 2312, recursion_level);
 		} else {
-			__io__block.writeShort(__io__address + 2120, recursion_level);
+			__io__block.writeShort(__io__address + 2312, recursion_level);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'f_fp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX <mdash/>  still unused <ndash/>  show font preview </p>
 	 * @see #__DNA__FIELD__f_fp
 	 */
 	
 	public short getF_fp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2122);
+			return __io__block.readShort(__io__address + 2314);
 		} else {
-			return __io__block.readShort(__io__address + 2122);
+			return __io__block.readShort(__io__address + 2314);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'f_fp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX <mdash/>  still unused <ndash/>  show font preview </p>
 	 * @see #__DNA__FIELD__f_fp
 	 */
 	
 	public void setF_fp(short f_fp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2122, f_fp);
+			__io__block.writeShort(__io__address + 2314, f_fp);
 		} else {
-			__io__block.writeShort(__io__address + 2122, f_fp);
+			__io__block.writeShort(__io__address + 2314, f_fp);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'fp_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to use for font preview </p>
 	 * @see #__DNA__FIELD__fp_str
 	 */
 	
@@ -1221,14 +1384,17 @@ public class FileSelectParams extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'fp_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to use for font preview </p>
 	 * @see #__DNA__FIELD__fp_str
 	 */
 	
@@ -1236,9 +1402,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2124;
+			__dna__offset = 2316;
 		} else {
-			__dna__offset = 2124;
+			__dna__offset = 2316;
 		}
 		if (__io__equals(fp_str, __io__address + __dna__offset)) {
 			return;

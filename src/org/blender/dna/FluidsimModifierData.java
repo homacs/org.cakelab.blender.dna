@@ -50,6 +50,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +73,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,6 +140,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'fss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	
@@ -151,6 +160,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'fss'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	
@@ -166,6 +178,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -183,6 +198,9 @@ public class FluidsimModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	

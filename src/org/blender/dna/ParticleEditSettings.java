@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ParticleEditSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Particle}  Edit Mode Settings </p>
  */
 
 @CMetaData(size32=160, size64=176)
@@ -27,7 +28,7 @@ public class ParticleEditSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 184;
+	public static final int __DNA__SDNA_INDEX = 185;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -111,6 +112,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +458,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'brush'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -469,6 +479,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'brush'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -491,6 +504,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -508,6 +524,9 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	

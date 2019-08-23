@@ -27,10 +27,13 @@ public class MovieClipProxy extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 529;
+	public static final int __DNA__SDNA_INDEX = 540;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 768=FILE_MAXDIR custom directory for index and proxy files (defaults to BL_proxy) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,10 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * JPEG quality of proxy images<h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +101,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_size_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies to build </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +124,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_tc_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code flags (see below) of all tc indices to build </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,6 +155,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 768=FILE_MAXDIR custom directory for index and proxy files (defaults to BL_proxy) </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -157,6 +176,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 768=FILE_MAXDIR custom directory for index and proxy files (defaults to BL_proxy) </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -179,6 +201,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * @see #__DNA__FIELD__tc
 	 */
 	
@@ -193,6 +218,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * @see #__DNA__FIELD__tc
 	 */
 	
@@ -207,6 +235,10 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * JPEG quality of proxy images<h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -221,6 +253,10 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * JPEG quality of proxy images<h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -235,6 +271,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'build_size_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies to build </p>
 	 * @see #__DNA__FIELD__build_size_flag
 	 */
 	
@@ -249,6 +288,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'build_size_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies to build </p>
 	 * @see #__DNA__FIELD__build_size_flag
 	 */
 	
@@ -263,6 +305,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'build_tc_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code flags (see below) of all tc indices to build </p>
 	 * @see #__DNA__FIELD__build_tc_flag
 	 */
 	
@@ -277,6 +322,9 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'build_tc_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code flags (see below) of all tc indices to build </p>
 	 * @see #__DNA__FIELD__build_tc_flag
 	 */
 	

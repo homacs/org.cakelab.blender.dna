@@ -26,10 +26,13 @@ public class bVisibilityActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 321;
+	public static final int __DNA__SDNA_INDEX = 327;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 0: Is this object visible? bit 1: Apply recursively bit 2: Is this object an occluder? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,6 +61,9 @@ public class bVisibilityActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 0: Is this object visible? bit 1: Apply recursively bit 2: Is this object an occluder? </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -72,6 +78,9 @@ public class bVisibilityActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 0: Is this object visible? bit 1: Apply recursively bit 2: Is this object an occluder? </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

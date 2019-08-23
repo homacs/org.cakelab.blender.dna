@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'wmWindowManager'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> reports need to be before {@link wmWindowManager}  windowmanager is saved, tag WMAN </p>
  */
 
 @CMetaData(size32=232, size64=352)
@@ -27,7 +28,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 484;
+	public static final int __DNA__SDNA_INDEX = 495;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -71,6 +72,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> separate active from drawable </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'initialized'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on file read </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +138,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'file_saved'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator whether data was saved </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +161,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_undo_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator stack depth to avoid nested undo pushes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +184,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'operators'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator registry </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +207,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'queue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> refresh/redraw wmNotifier structs </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +230,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'reports'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information and error reports </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +253,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'jobs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threaded jobs manager </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +276,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extra overlay cursors to draw, like circles </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +299,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active dragged items </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +322,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyconfigs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> known key configurations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +345,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defaultconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default configuration </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +368,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'addonconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> addon configuration </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +391,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'userconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user configuration </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +414,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'timers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active timers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +437,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosavetimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> timer for auto save </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +460,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_interface_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicates whether interface is locked for user interaction </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -527,6 +579,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> separate active from drawable </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	
@@ -544,6 +599,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'winactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> separate active from drawable </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	
@@ -595,6 +653,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'initialized'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on file read </p>
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
@@ -609,6 +670,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'initialized'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on file read </p>
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
@@ -623,6 +687,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'file_saved'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator whether data was saved </p>
 	 * @see #__DNA__FIELD__file_saved
 	 */
 	
@@ -637,6 +704,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'file_saved'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator whether data was saved </p>
 	 * @see #__DNA__FIELD__file_saved
 	 */
 	
@@ -651,6 +721,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'op_undo_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator stack depth to avoid nested undo pushes </p>
 	 * @see #__DNA__FIELD__op_undo_depth
 	 */
 	
@@ -665,6 +738,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'op_undo_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator stack depth to avoid nested undo pushes </p>
 	 * @see #__DNA__FIELD__op_undo_depth
 	 */
 	
@@ -679,6 +755,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'operators'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator registry </p>
 	 * @see #__DNA__FIELD__operators
 	 */
 	
@@ -693,6 +772,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'operators'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> operator registry </p>
 	 * @see #__DNA__FIELD__operators
 	 */
 	
@@ -715,6 +797,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'queue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> refresh/redraw wmNotifier structs </p>
 	 * @see #__DNA__FIELD__queue
 	 */
 	
@@ -729,6 +814,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'queue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> refresh/redraw wmNotifier structs </p>
 	 * @see #__DNA__FIELD__queue
 	 */
 	
@@ -751,6 +839,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'reports'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information and error reports </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
@@ -765,6 +856,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'reports'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> information and error reports </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
@@ -787,6 +881,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'jobs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threaded jobs manager </p>
 	 * @see #__DNA__FIELD__jobs
 	 */
 	
@@ -801,6 +898,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'jobs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threaded jobs manager </p>
 	 * @see #__DNA__FIELD__jobs
 	 */
 	
@@ -823,6 +923,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'paintcursors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extra overlay cursors to draw, like circles </p>
 	 * @see #__DNA__FIELD__paintcursors
 	 */
 	
@@ -837,6 +940,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'paintcursors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extra overlay cursors to draw, like circles </p>
 	 * @see #__DNA__FIELD__paintcursors
 	 */
 	
@@ -859,6 +965,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'drags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active dragged items </p>
 	 * @see #__DNA__FIELD__drags
 	 */
 	
@@ -873,6 +982,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'drags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active dragged items </p>
 	 * @see #__DNA__FIELD__drags
 	 */
 	
@@ -895,6 +1007,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyconfigs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> known key configurations </p>
 	 * @see #__DNA__FIELD__keyconfigs
 	 */
 	
@@ -909,6 +1024,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyconfigs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> known key configurations </p>
 	 * @see #__DNA__FIELD__keyconfigs
 	 */
 	
@@ -931,6 +1049,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'defaultconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default configuration </p>
 	 * @see #__DNA__FIELD__defaultconf
 	 */
 	
@@ -948,6 +1069,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'defaultconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default configuration </p>
 	 * @see #__DNA__FIELD__defaultconf
 	 */
 	
@@ -963,6 +1087,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'addonconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> addon configuration </p>
 	 * @see #__DNA__FIELD__addonconf
 	 */
 	
@@ -980,6 +1107,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'addonconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> addon configuration </p>
 	 * @see #__DNA__FIELD__addonconf
 	 */
 	
@@ -995,6 +1125,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'userconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user configuration </p>
 	 * @see #__DNA__FIELD__userconf
 	 */
 	
@@ -1012,6 +1145,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'userconf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user configuration </p>
 	 * @see #__DNA__FIELD__userconf
 	 */
 	
@@ -1027,6 +1163,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'timers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active timers </p>
 	 * @see #__DNA__FIELD__timers
 	 */
 	
@@ -1041,6 +1180,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'timers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active timers </p>
 	 * @see #__DNA__FIELD__timers
 	 */
 	
@@ -1063,6 +1205,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'autosavetimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> timer for auto save </p>
 	 * @see #__DNA__FIELD__autosavetimer
 	 */
 	
@@ -1080,6 +1225,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'autosavetimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> timer for auto save </p>
 	 * @see #__DNA__FIELD__autosavetimer
 	 */
 	
@@ -1095,6 +1243,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'is_interface_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicates whether interface is locked for user interaction </p>
 	 * @see #__DNA__FIELD__is_interface_locked
 	 */
 	
@@ -1109,6 +1260,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'is_interface_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicates whether interface is locked for user interaction </p>
 	 * @see #__DNA__FIELD__is_interface_locked
 	 */
 	

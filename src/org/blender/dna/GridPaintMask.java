@@ -30,6 +30,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The data array contains gridsize*gridsize elements </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The maximum multires level associated with this grid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,6 +104,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The data array contains gridsize*gridsize elements </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -115,6 +124,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The data array contains gridsize*gridsize elements </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -130,6 +142,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Get method for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The maximum multires level associated with this grid </p>
 	 * @see #__DNA__FIELD__level
 	 */
 	
@@ -144,6 +159,9 @@ public class GridPaintMask extends CFacade {
 
 	/**
 	 * Set method for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The maximum multires level associated with this grid </p>
 	 * @see #__DNA__FIELD__level
 	 */
 	

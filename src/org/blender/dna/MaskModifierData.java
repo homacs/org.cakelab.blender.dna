@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MaskModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Mask}  Modifier </p>
  */
 
 @CMetaData(size32=172, size64=192)
@@ -51,6 +52,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_arm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> armature to use to in place of hardcoded vgroup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +98,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> using armature or hardcoded vgroup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +121,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for various things </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -175,6 +188,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob_arm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> armature to use to in place of hardcoded vgroup </p>
 	 * @see #__DNA__FIELD__ob_arm
 	 */
 	
@@ -192,6 +208,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob_arm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> armature to use to in place of hardcoded vgroup </p>
 	 * @see #__DNA__FIELD__ob_arm
 	 */
 	
@@ -207,6 +226,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	
@@ -225,6 +247,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	
@@ -247,6 +272,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> using armature or hardcoded vgroup </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -261,6 +289,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> using armature or hardcoded vgroup </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -275,6 +306,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for various things </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -289,6 +323,9 @@ public class MaskModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for various things </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

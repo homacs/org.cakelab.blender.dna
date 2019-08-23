@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileDirEntry'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Container for mere direntry, with additional asset-related data. </p>
  */
 
 @CMetaData(size32=84, size64=128)
@@ -27,7 +28,7 @@ public class FileDirEntry extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 218;
+	public static final int __DNA__SDNA_INDEX = 222;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -131,6 +132,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'entry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either point to active variant/revision if available, or own entry (in mere filebrowser case). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +155,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'typeflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eFileSel_File_Types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +178,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blentype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  type, in case typeflag has FILE_TYPE_BLENDERLIB set. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +221,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO: make this a real {@link ID}  pointer? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +264,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tags are for info only, most of filtering is done in asset engine. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,6 +583,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'entry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either point to active variant/revision if available, or own entry (in mere filebrowser case). </p>
 	 * @see #__DNA__FIELD__entry
 	 */
 	
@@ -584,6 +603,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'entry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either point to active variant/revision if available, or own entry (in mere filebrowser case). </p>
 	 * @see #__DNA__FIELD__entry
 	 */
 	
@@ -599,6 +621,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'typeflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eFileSel_File_Types </p>
 	 * @see #__DNA__FIELD__typeflag
 	 */
 	
@@ -613,6 +638,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'typeflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eFileSel_File_Types </p>
 	 * @see #__DNA__FIELD__typeflag
 	 */
 	
@@ -627,6 +655,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'blentype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  type, in case typeflag has FILE_TYPE_BLENDERLIB set. </p>
 	 * @see #__DNA__FIELD__blentype
 	 */
 	
@@ -641,6 +672,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'blentype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  type, in case typeflag has FILE_TYPE_BLENDERLIB set. </p>
 	 * @see #__DNA__FIELD__blentype
 	 */
 	
@@ -687,6 +721,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO: make this a real {@link ID}  pointer? </p>
 	 * @see #__DNA__FIELD__poin
 	 */
 	
@@ -704,6 +741,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO: make this a real {@link ID}  pointer? </p>
 	 * @see #__DNA__FIELD__poin
 	 */
 	
@@ -751,6 +791,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'tags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tags are for info only, most of filtering is done in asset engine. </p>
 	 * @see #__DNA__FIELD__tags
 	 */
 	
@@ -768,6 +811,9 @@ public class FileDirEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'tags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tags are for info only, most of filtering is done in asset engine. </p>
 	 * @see #__DNA__FIELD__tags
 	 */
 	

@@ -12,10 +12,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPDspoint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Grease-Pencil Annotations - 'Stroke Point' -> Coordinates may either be 2d or 3d depending on settings at the time -> Coordinates of point on stroke, in proportions of window size This assumes that the bottom-left corner is (0,0) </p>
  */
 
-@CMetaData(size32=24, size64=24)
+@CMetaData(size32=28, size64=28)
 public class bGPDspoint extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class bGPDspoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 478;
+	public static final int __DNA__SDNA_INDEX = 485;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
@@ -70,6 +71,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +94,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure of input device (from 0 to 1) at this point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -109,7 +116,33 @@ public class bGPDspoint extends CFacade {
 	public static final long[] __DNA__FIELD__pressure = new long[]{12, 12};
 
 	/**
+	 * Field descriptor (offset) for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color strength (used for alpha factor) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__strength);
+	 * CPointer&lt;Float&gt; p_strength = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'strength'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__strength = new long[]{16, 16};
+
+	/**
 	 * Field descriptor (offset) for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds since start of stroke </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -126,10 +159,13 @@ public class bGPDspoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__time = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -146,7 +182,7 @@ public class bGPDspoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__flag = new long[]{24, 24};
 
 	public bGPDspoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -214,6 +250,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -228,6 +267,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -242,6 +284,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure of input device (from 0 to 1) at this point </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	
@@ -256,6 +301,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure of input device (from 0 to 1) at this point </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	
@@ -269,58 +317,104 @@ public class bGPDspoint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color strength (used for alpha factor) </p>
+	 * @see #__DNA__FIELD__strength
+	 */
+	
+	public float getStrength() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 16);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'strength'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color strength (used for alpha factor) </p>
+	 * @see #__DNA__FIELD__strength
+	 */
+	
+	public void setStrength(float strength) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 16, strength);
+		} else {
+			__io__block.writeFloat(__io__address + 16, strength);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds since start of stroke </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
 	public float getTime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 20);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> seconds since start of stroke </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
 	public void setTime(float time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 16, time);
+			__io__block.writeFloat(__io__address + 20, time);
 		} else {
-			__io__block.writeFloat(__io__address + 16, time);
+			__io__block.writeFloat(__io__address + 20, time);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 24);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 24);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, flag);
+			__io__block.writeInt(__io__address + 24, flag);
 		} else {
-			__io__block.writeInt(__io__address + 20, flag);
+			__io__block.writeInt(__io__address + 24, flag);
 		}
 	}
 

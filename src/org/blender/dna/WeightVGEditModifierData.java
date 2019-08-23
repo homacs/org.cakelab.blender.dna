@@ -51,6 +51,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_EDIT_* flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_MAPPING_* defines. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for vertices not in vgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cmap_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mapping stuff. The custom mapping curve! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The add/remove vertices weight thresholds. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +209,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_constant'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +232,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +255,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_use_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +278,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The texture. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +301,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_obj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the map object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +324,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mapping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How to map the texture (using MOD_DISP_MAP_* enums). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +347,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +370,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad_i1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Padding... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -395,6 +437,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -413,6 +458,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of vertex group to edit. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -435,6 +483,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'edit_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_EDIT_* flags. </p>
 	 * @see #__DNA__FIELD__edit_flags
 	 */
 	
@@ -449,6 +500,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'edit_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_EDIT_* flags. </p>
 	 * @see #__DNA__FIELD__edit_flags
 	 */
 	
@@ -463,6 +517,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_MAPPING_* defines. </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -477,6 +534,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Using MOD_WVG_MAPPING_* defines. </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -491,6 +551,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'default_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for vertices not in vgroup. </p>
 	 * @see #__DNA__FIELD__default_weight
 	 */
 	
@@ -505,6 +568,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'default_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for vertices not in vgroup. </p>
 	 * @see #__DNA__FIELD__default_weight
 	 */
 	
@@ -519,6 +585,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cmap_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mapping stuff. The custom mapping curve! </p>
 	 * @see #__DNA__FIELD__cmap_curve
 	 */
 	
@@ -536,6 +605,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cmap_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mapping stuff. The custom mapping curve! </p>
 	 * @see #__DNA__FIELD__cmap_curve
 	 */
 	
@@ -551,6 +623,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'add_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The add/remove vertices weight thresholds. </p>
 	 * @see #__DNA__FIELD__add_threshold
 	 */
 	
@@ -565,6 +640,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'add_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The add/remove vertices weight thresholds. </p>
 	 * @see #__DNA__FIELD__add_threshold
 	 */
 	
@@ -607,6 +685,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_constant'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * @see #__DNA__FIELD__mask_constant
 	 */
 	
@@ -621,6 +702,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_constant'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Masking options. The global "influence", if no vgroup nor tex is used as mask. </p>
 	 * @see #__DNA__FIELD__mask_constant
 	 */
 	
@@ -635,6 +719,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	
@@ -653,6 +740,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	
@@ -675,6 +765,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_tex_use_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
 	
@@ -689,6 +782,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_tex_use_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture masking. Which channel to use as weightf. </p>
 	 * @see #__DNA__FIELD__mask_tex_use_channel
 	 */
 	
@@ -703,6 +799,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The texture. </p>
 	 * @see #__DNA__FIELD__mask_texture
 	 */
 	
@@ -720,6 +819,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_texture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The texture. </p>
 	 * @see #__DNA__FIELD__mask_texture
 	 */
 	
@@ -735,6 +837,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_tex_map_obj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the map object. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_obj
 	 */
 	
@@ -752,6 +857,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_tex_map_obj'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the map object. </p>
 	 * @see #__DNA__FIELD__mask_tex_map_obj
 	 */
 	
@@ -767,6 +875,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_tex_mapping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How to map the texture (using MOD_DISP_MAP_* enums). </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
 	
@@ -781,6 +892,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_tex_mapping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How to map the texture (using MOD_DISP_MAP_* enums). </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
 	
@@ -795,6 +909,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_tex_uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__mask_tex_uvlayer_name
 	 */
 	
@@ -813,6 +930,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_tex_uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the UV map. MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__mask_tex_uvlayer_name
 	 */
 	
@@ -835,6 +955,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad_i1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Padding... </p>
 	 * @see #__DNA__FIELD__pad_i1
 	 */
 	
@@ -849,6 +972,9 @@ public class WeightVGEditModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad_i1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Padding... </p>
 	 * @see #__DNA__FIELD__pad_i1
 	 */
 	

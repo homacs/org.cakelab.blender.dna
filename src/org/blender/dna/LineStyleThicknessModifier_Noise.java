@@ -26,7 +26,7 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 578;
+	public static final int __DNA__SDNA_INDEX = 589;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,6 +50,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'period'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Period of the noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +73,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amplitude of the noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +116,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Seed for the noise generation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,6 +183,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Get method for struct member 'period'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Period of the noise
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -188,6 +200,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Set method for struct member 'period'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Period of the noise
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -202,6 +217,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amplitude of the noise
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -216,6 +234,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amplitude of the noise
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -258,6 +279,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Get method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Seed for the noise generation
 	 * @see #__DNA__FIELD__seed
 	 */
 	
@@ -272,6 +296,9 @@ public class LineStyleThicknessModifier_Noise extends CFacade {
 
 	/**
 	 * Set method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Seed for the noise generation
 	 * @see #__DNA__FIELD__seed
 	 */
 	

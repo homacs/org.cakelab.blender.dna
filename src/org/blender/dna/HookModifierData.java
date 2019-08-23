@@ -71,6 +71,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use enums from WarpModifier (exact same functionality) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +180,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +203,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +246,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'indexar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if NULL, it's using vertexgroup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +309,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -387,6 +408,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -405,6 +429,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -455,6 +482,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use enums from WarpModifier (exact same functionality) </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -469,6 +499,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use enums from WarpModifier (exact same functionality) </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
@@ -523,6 +556,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -542,6 +578,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -564,6 +603,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -582,6 +624,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -604,6 +649,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
@@ -618,6 +666,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
@@ -664,6 +715,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'indexar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if NULL, it's using vertexgroup </p>
 	 * @see #__DNA__FIELD__indexar
 	 */
 	
@@ -681,6 +735,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'indexar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if NULL, it's using vertexgroup </p>
 	 * @see #__DNA__FIELD__indexar
 	 */
 	
@@ -752,6 +809,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -770,6 +830,9 @@ public class HookModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

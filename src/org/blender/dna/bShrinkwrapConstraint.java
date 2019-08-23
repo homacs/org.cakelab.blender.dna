@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bShrinkwrapConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ShrinkWrap Constraint </p>
  */
 
 @CMetaData(size32=20, size64=24)
@@ -27,7 +28,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 373;
+	public static final int __DNA__SDNA_INDEX = 379;
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
@@ -51,6 +52,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to kept from target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +98,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'projAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis to project/constrain </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +121,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'projAxisSpace'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space to project axis in </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +144,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'projLimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to search </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +227,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to kept from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -225,6 +244,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to kept from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -239,6 +261,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'shrinkType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
 	
@@ -253,6 +278,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'shrinkType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
 	
@@ -267,6 +295,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'projAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis to project/constrain </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
 	
@@ -281,6 +312,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'projAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis to project/constrain </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
 	
@@ -295,6 +329,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'projAxisSpace'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space to project axis in </p>
 	 * @see #__DNA__FIELD__projAxisSpace
 	 */
 	
@@ -309,6 +346,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'projAxisSpace'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space to project axis in </p>
 	 * @see #__DNA__FIELD__projAxisSpace
 	 */
 	
@@ -323,6 +363,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'projLimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to search </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
 	
@@ -337,6 +380,9 @@ public class bShrinkwrapConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'projLimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance to search </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
 	

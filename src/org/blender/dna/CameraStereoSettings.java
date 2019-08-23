@@ -12,10 +12,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'CameraStereoSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Stereo Settings </p>
  */
 
-@CMetaData(size32=16, size64=16)
+@CMetaData(size32=24, size64=24)
 public class CameraStereoSettings extends CFacade {
 
 	/**
@@ -109,6 +111,26 @@ public class CameraStereoSettings extends CFacade {
 	public static final long[] __DNA__FIELD__pivot = new long[]{10, 10};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CameraStereoSettings camerastereosettings = ...;
+	 * CPointer&lt;Object&gt; p = camerastereosettings.__dna__addressof(CameraStereoSettings.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{12, 12};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,27 +148,53 @@ public class CameraStereoSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__pad = new long[]{14, 14};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'pole_merge_angle_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CameraStereoSettings camerastereosettings = ...;
-	 * CPointer&lt;Object&gt; p = camerastereosettings.__dna__addressof(CameraStereoSettings.__DNA__FIELD__pad2);
-	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = camerastereosettings.__dna__addressof(CameraStereoSettings.__DNA__FIELD__pole_merge_angle_from);
+	 * CPointer&lt;Float&gt; p_pole_merge_angle_from = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'pole_merge_angle_from'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{14, 14};
+	public static final long[] __DNA__FIELD__pole_merge_angle_from = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pole_merge_angle_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CameraStereoSettings camerastereosettings = ...;
+	 * CPointer&lt;Object&gt; p = camerastereosettings.__dna__addressof(CameraStereoSettings.__DNA__FIELD__pole_merge_angle_to);
+	 * CPointer&lt;Float&gt; p_pole_merge_angle_to = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pole_merge_angle_to'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pole_merge_angle_to = new long[]{20, 20};
 
 	public CameraStereoSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -269,6 +317,34 @@ public class CameraStereoSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 12);
+		} else {
+			return __io__block.readShort(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 12, flag);
+		} else {
+			__io__block.writeShort(__io__address + 12, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
@@ -276,9 +352,9 @@ public class CameraStereoSettings extends CFacade {
 	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 14);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 14);
 		}
 	}
 
@@ -290,37 +366,77 @@ public class CameraStereoSettings extends CFacade {
 	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12, pad);
+			__io__block.writeShort(__io__address + 14, pad);
 		} else {
-			__io__block.writeShort(__io__address + 12, pad);
+			__io__block.writeShort(__io__address + 14, pad);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'pole_merge_angle_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
+	 * @see #__DNA__FIELD__pole_merge_angle_from
 	 */
 	
-	public short getPad2() throws IOException
+	public float getPole_merge_angle_from() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readFloat(__io__address + 16);
 		} else {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readFloat(__io__address + 16);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'pole_merge_angle_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance start to fade down. </p>
+	 * @see #__DNA__FIELD__pole_merge_angle_from
 	 */
 	
-	public void setPad2(short pad2) throws IOException
+	public void setPole_merge_angle_from(float pole_merge_angle_from) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 14, pad2);
+			__io__block.writeFloat(__io__address + 16, pole_merge_angle_from);
 		} else {
-			__io__block.writeShort(__io__address + 14, pad2);
+			__io__block.writeFloat(__io__address + 16, pole_merge_angle_from);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pole_merge_angle_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
+	 * @see #__DNA__FIELD__pole_merge_angle_to
+	 */
+	
+	public float getPole_merge_angle_to() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 20);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pole_merge_angle_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cut-off angle at which interocular distance stops to fade down. </p>
+	 * @see #__DNA__FIELD__pole_merge_angle_to
+	 */
+	
+	public void setPole_merge_angle_to(float pole_merge_angle_to) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 20, pole_merge_angle_to);
+		} else {
+			__io__block.writeFloat(__io__address + 20, pole_merge_angle_to);
 		}
 	}
 

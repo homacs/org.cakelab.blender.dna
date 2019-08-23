@@ -27,7 +27,7 @@ public class bSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 301;
+	public static final int __DNA__SDNA_INDEX = 307;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +71,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pulse and freq are the bool toggle and frame count for pulse mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +214,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> freq makes reference to skipped ticks between 2 active pulses </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +237,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +320,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'invert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> just add here, to avoid align errors... Whether or not to invert the output. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +343,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Whether the sensor is level base (edge by default) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -463,6 +478,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pulse and freq are the bool toggle and frame count for pulse mode </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -477,6 +495,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pulse and freq are the bool toggle and frame count for pulse mode </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -659,6 +680,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> freq makes reference to skipped ticks between 2 active pulses </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -673,6 +697,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> freq makes reference to skipped ticks between 2 active pulses </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -687,6 +714,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -705,6 +735,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -823,6 +856,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'invert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> just add here, to avoid align errors... Whether or not to invert the output. </p>
 	 * @see #__DNA__FIELD__invert
 	 */
 	
@@ -837,6 +873,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'invert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> just add here, to avoid align errors... Whether or not to invert the output. </p>
 	 * @see #__DNA__FIELD__invert
 	 */
 	
@@ -851,6 +890,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Whether the sensor is level base (edge by default) </p>
 	 * @see #__DNA__FIELD__level
 	 */
 	
@@ -865,6 +907,9 @@ public class bSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Whether the sensor is level base (edge by default) </p>
 	 * @see #__DNA__FIELD__level
 	 */
 	

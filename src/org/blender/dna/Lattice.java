@@ -27,7 +27,7 @@ public class Lattice extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 145;
+	public static final int __DNA__SDNA_INDEX = 146;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -311,6 +311,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actbp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active element index, unset with LT_ACTBP_NONE </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +474,11 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -531,6 +539,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiply the influence, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -983,6 +994,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Get method for struct member 'actbp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active element index, unset with LT_ACTBP_NONE </p>
 	 * @see #__DNA__FIELD__actbp
 	 */
 	
@@ -997,6 +1011,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Set method for struct member 'actbp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active element index, unset with LT_ACTBP_NONE </p>
 	 * @see #__DNA__FIELD__actbp
 	 */
 	
@@ -1211,6 +1228,11 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -1228,6 +1250,11 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -1307,6 +1334,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiply the influence, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	
@@ -1325,6 +1355,9 @@ public class Lattice extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiply the influence, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	

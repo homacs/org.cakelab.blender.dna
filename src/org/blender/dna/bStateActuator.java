@@ -26,10 +26,13 @@ public class bStateActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 324;
+	public static final int __DNA__SDNA_INDEX = 330;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Set, 1=Add, 2=Rem, 3=Chg </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class bStateActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the bits to change </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +84,9 @@ public class bStateActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Set, 1=Add, 2=Rem, 3=Chg </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -92,6 +101,9 @@ public class bStateActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Set, 1=Add, 2=Rem, 3=Chg </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -106,6 +118,9 @@ public class bStateActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the bits to change </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -120,6 +135,9 @@ public class bStateActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the bits to change </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	

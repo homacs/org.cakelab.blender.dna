@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=812, size64=944)
+@CMetaData(size32=1396, size64=1528)
 public class Material extends CFacade {
 
 	/**
@@ -51,6 +51,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> note, keep this below synced with render_types.h </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +377,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'emit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of light to emit
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +460,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Alpha transparency of the material
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +563,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'translucency'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of diffuse shading on the back side
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -571,6 +586,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end synced with render_types.h </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -691,6 +709,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter added, for raytrace transparency and transmissivity </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1031,6 +1052,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shade_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> like Cubic interpolation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1071,6 +1095,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode_l is the or-ed result of all layer modes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1111,6 +1138,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode2_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional mode flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1411,6 +1441,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strand_uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1431,6 +1464,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow bias to prevent terminator prob </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1451,6 +1487,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor to multiply lampbias with (0.0 = no mult) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1471,6 +1510,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shad_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in use for irregular shadowbuffer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1511,6 +1553,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rgbsel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons and render </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1571,6 +1616,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the material
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1631,6 +1679,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ml_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ml_flag is for disable base material </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1651,6 +1702,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mapflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mapping </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1691,6 +1745,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'diff_shader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shaders </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1731,6 +1788,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'roughness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Oren-Nayar Roughness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1771,6 +1831,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'param'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX param[4] needs review and improvement (shader system as whole anyway) This is nasty reused variable for different goals and not easy to RNAify nicely. -jesterKing size, smooth, size, smooth, for toonshader, 0 (fac) and 1 (fresnel) also for fresnel shader </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1811,6 +1874,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'darkness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minnaert darkness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1831,6 +1897,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime - OR'd from 'mtex' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1871,6 +1940,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ramp_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ramp colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2071,6 +2143,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2111,6 +2186,11 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2131,6 +2211,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> light group </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2151,6 +2234,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2171,6 +2257,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'friction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2311,6 +2400,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sss_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subsurface scattering </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2531,6 +2623,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mapto_textured'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render-time cache to optimize texture lookups </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2551,6 +2646,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowonly_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "shadowsonly" type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2571,6 +2669,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom index for render passes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2591,6 +2692,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2611,6 +2715,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The line color of a higher priority is used at material boundaries
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2651,6 +2758,10 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_active_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <p> texture painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2671,6 +2782,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_clone_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of clone texture paint slot
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2730,7 +2844,73 @@ public class Material extends CFacade {
 	public static final long[] __DNA__FIELD__pad4 = new long[]{794, 914};
 
 	/**
+	 * Field descriptor (offset) for struct member 'nmap_tangent_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiple tangent (Normal Map node) [MAX_MTFACE+1][MAX_NAME]; +1 for empty name </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Material material = ...;
+	 * CPointer&lt;Object&gt; p = material.__dna__addressof(Material.__DNA__FIELD__nmap_tangent_names);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Byte&gt;&gt;&gt; p_nmap_tangent_names = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nmap_tangent_names'</li>
+	 * <li>Signature: 'char[9][64]'</li>
+	 * <li>Actual Size (32bit/64bit): 576/576</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nmap_tangent_names = new long[]{800, 920};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nmap_tangent_names_count'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Material material = ...;
+	 * CPointer&lt;Object&gt; p = material.__dna__addressof(Material.__DNA__FIELD__nmap_tangent_names_count);
+	 * CPointer&lt;Integer&gt; p_nmap_tangent_names_count = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nmap_tangent_names_count'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nmap_tangent_names_count = new long[]{1376, 1496};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad5'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Material material = ...;
+	 * CPointer&lt;Object&gt; p = material.__dna__addressof(Material.__DNA__FIELD__pad5);
+	 * CPointer&lt;Integer&gt; p_pad5 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad5'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad5 = new long[]{1380, 1500};
+
+	/**
 	 * Field descriptor (offset) for struct member 'texpaintslot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cached slot for painting. Make sure to recalculate before use with refresh_texpaint_image_cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2747,10 +2927,13 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texpaintslot = new long[]{800, 920};
+	public static final long[] __DNA__FIELD__texpaintslot = new long[]{1384, 1504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2767,7 +2950,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpumaterial = new long[]{804, 928};
+	public static final long[] __DNA__FIELD__gpumaterial = new long[]{1388, 1512};
 
 	public Material(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2815,6 +2998,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -2832,6 +3018,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -2903,6 +3092,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> note, keep this below synced with render_types.h </p>
 	 * @see #__DNA__FIELD__r
 	 */
 	
@@ -2917,6 +3109,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> note, keep this below synced with render_types.h </p>
 	 * @see #__DNA__FIELD__r
 	 */
 	
@@ -3267,6 +3462,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'emit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of light to emit
 	 * @see #__DNA__FIELD__emit
 	 */
 	
@@ -3281,6 +3479,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'emit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of light to emit
 	 * @see #__DNA__FIELD__emit
 	 */
 	
@@ -3379,6 +3580,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Alpha transparency of the material
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -3393,6 +3597,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Alpha transparency of the material
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -3519,6 +3726,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'translucency'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of diffuse shading on the back side
 	 * @see #__DNA__FIELD__translucency
 	 */
 	
@@ -3533,6 +3743,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'translucency'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of diffuse shading on the back side
 	 * @see #__DNA__FIELD__translucency
 	 */
 	
@@ -3547,6 +3760,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'vol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end synced with render_types.h </p>
 	 * @see #__DNA__FIELD__vol
 	 */
 	
@@ -3561,6 +3777,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'vol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end synced with render_types.h </p>
 	 * @see #__DNA__FIELD__vol
 	 */
 	
@@ -3731,6 +3950,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter added, for raytrace transparency and transmissivity </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	
@@ -3745,6 +3967,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> filter added, for raytrace transparency and transmissivity </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	
@@ -4207,6 +4432,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'shade_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> like Cubic interpolation </p>
 	 * @see #__DNA__FIELD__shade_flag
 	 */
 	
@@ -4221,6 +4449,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'shade_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> like Cubic interpolation </p>
 	 * @see #__DNA__FIELD__shade_flag
 	 */
 	
@@ -4263,6 +4494,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode_l is the or-ed result of all layer modes </p>
 	 * @see #__DNA__FIELD__mode_l
 	 */
 	
@@ -4277,6 +4511,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode_l is the or-ed result of all layer modes </p>
 	 * @see #__DNA__FIELD__mode_l
 	 */
 	
@@ -4319,6 +4556,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode2_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional mode flags </p>
 	 * @see #__DNA__FIELD__mode2_l
 	 */
 	
@@ -4333,6 +4573,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode2_l'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional mode flags </p>
 	 * @see #__DNA__FIELD__mode2_l
 	 */
 	
@@ -4739,6 +4982,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'strand_uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__strand_uvname
 	 */
 	
@@ -4757,6 +5003,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'strand_uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__strand_uvname
 	 */
 	
@@ -4779,6 +5028,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'sbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow bias to prevent terminator prob </p>
 	 * @see #__DNA__FIELD__sbias
 	 */
 	
@@ -4793,6 +5045,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'sbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow bias to prevent terminator prob </p>
 	 * @see #__DNA__FIELD__sbias
 	 */
 	
@@ -4807,6 +5062,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'lbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor to multiply lampbias with (0.0 = no mult) </p>
 	 * @see #__DNA__FIELD__lbias
 	 */
 	
@@ -4821,6 +5079,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'lbias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor to multiply lampbias with (0.0 = no mult) </p>
 	 * @see #__DNA__FIELD__lbias
 	 */
 	
@@ -4835,6 +5096,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'shad_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in use for irregular shadowbuffer </p>
 	 * @see #__DNA__FIELD__shad_alpha
 	 */
 	
@@ -4849,6 +5113,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'shad_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in use for irregular shadowbuffer </p>
 	 * @see #__DNA__FIELD__shad_alpha
 	 */
 	
@@ -4891,6 +5158,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'rgbsel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons and render </p>
 	 * @see #__DNA__FIELD__rgbsel
 	 */
 	
@@ -4905,6 +5175,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'rgbsel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for buttons and render </p>
 	 * @see #__DNA__FIELD__rgbsel
 	 */
 	
@@ -4975,6 +5248,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the material
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -4989,6 +5265,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the material
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -5059,6 +5338,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'ml_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ml_flag is for disable base material </p>
 	 * @see #__DNA__FIELD__ml_flag
 	 */
 	
@@ -5073,6 +5355,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'ml_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ml_flag is for disable base material </p>
 	 * @see #__DNA__FIELD__ml_flag
 	 */
 	
@@ -5087,6 +5372,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'mapflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mapping </p>
 	 * @see #__DNA__FIELD__mapflag
 	 */
 	
@@ -5101,6 +5389,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'mapflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mapping </p>
 	 * @see #__DNA__FIELD__mapflag
 	 */
 	
@@ -5143,6 +5434,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'diff_shader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shaders </p>
 	 * @see #__DNA__FIELD__diff_shader
 	 */
 	
@@ -5157,6 +5451,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'diff_shader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shaders </p>
 	 * @see #__DNA__FIELD__diff_shader
 	 */
 	
@@ -5199,6 +5496,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'roughness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Oren-Nayar Roughness
 	 * @see #__DNA__FIELD__roughness
 	 */
 	
@@ -5213,6 +5513,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'roughness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Oren-Nayar Roughness
 	 * @see #__DNA__FIELD__roughness
 	 */
 	
@@ -5255,6 +5558,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'param'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX param[4] needs review and improvement (shader system as whole anyway) This is nasty reused variable for different goals and not easy to RNAify nicely. -jesterKing size, smooth, size, smooth, for toonshader, 0 (fac) and 1 (fresnel) also for fresnel shader </p>
 	 * @see #__DNA__FIELD__param
 	 */
 	
@@ -5273,6 +5579,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'param'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX param[4] needs review and improvement (shader system as whole anyway) This is nasty reused variable for different goals and not easy to RNAify nicely. -jesterKing size, smooth, size, smooth, for toonshader, 0 (fac) and 1 (fresnel) also for fresnel shader </p>
 	 * @see #__DNA__FIELD__param
 	 */
 	
@@ -5323,6 +5632,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'darkness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minnaert darkness
 	 * @see #__DNA__FIELD__darkness
 	 */
 	
@@ -5337,6 +5649,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'darkness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minnaert darkness
 	 * @see #__DNA__FIELD__darkness
 	 */
 	
@@ -5351,6 +5666,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'texco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime - OR'd from 'mtex' </p>
 	 * @see #__DNA__FIELD__texco
 	 */
 	
@@ -5365,6 +5683,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'texco'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime - OR'd from 'mtex' </p>
 	 * @see #__DNA__FIELD__texco
 	 */
 	
@@ -5407,6 +5728,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'ramp_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ramp colors </p>
 	 * @see #__DNA__FIELD__ramp_col
 	 */
 	
@@ -5424,6 +5748,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'ramp_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ramp colors </p>
 	 * @see #__DNA__FIELD__ramp_col
 	 */
 	
@@ -5695,6 +6022,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
 	
@@ -5713,6 +6043,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
 	
@@ -5767,6 +6100,11 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -5784,6 +6122,11 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -5799,6 +6142,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> light group </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -5816,6 +6162,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> light group </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -5831,6 +6180,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -5848,6 +6200,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -5863,6 +6218,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'friction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic properties </p>
 	 * @see #__DNA__FIELD__friction
 	 */
 	
@@ -5877,6 +6235,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'friction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic properties </p>
 	 * @see #__DNA__FIELD__friction
 	 */
 	
@@ -6059,6 +6420,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'sss_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subsurface scattering </p>
 	 * @see #__DNA__FIELD__sss_radius
 	 */
 	
@@ -6077,6 +6441,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'sss_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subsurface scattering </p>
 	 * @see #__DNA__FIELD__sss_radius
 	 */
 	
@@ -6391,6 +6758,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'mapto_textured'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render-time cache to optimize texture lookups </p>
 	 * @see #__DNA__FIELD__mapto_textured
 	 */
 	
@@ -6405,6 +6775,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'mapto_textured'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> render-time cache to optimize texture lookups </p>
 	 * @see #__DNA__FIELD__mapto_textured
 	 */
 	
@@ -6419,6 +6792,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'shadowonly_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "shadowsonly" type </p>
 	 * @see #__DNA__FIELD__shadowonly_flag
 	 */
 	
@@ -6433,6 +6809,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'shadowonly_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "shadowsonly" type </p>
 	 * @see #__DNA__FIELD__shadowonly_flag
 	 */
 	
@@ -6447,6 +6826,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom index for render passes </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -6461,6 +6843,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom index for render passes </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -6475,6 +6860,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'line_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line settings </p>
 	 * @see #__DNA__FIELD__line_col
 	 */
 	
@@ -6493,6 +6881,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'line_col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Freestyle line settings </p>
 	 * @see #__DNA__FIELD__line_col
 	 */
 	
@@ -6515,6 +6906,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'line_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The line color of a higher priority is used at material boundaries
 	 * @see #__DNA__FIELD__line_priority
 	 */
 	
@@ -6529,6 +6923,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'line_priority'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * The line color of a higher priority is used at material boundaries
 	 * @see #__DNA__FIELD__line_priority
 	 */
 	
@@ -6571,6 +6968,10 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'paint_active_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <p> texture painting </p>
 	 * @see #__DNA__FIELD__paint_active_slot
 	 */
 	
@@ -6585,6 +6986,10 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'paint_active_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of active texture paint slot<h4>Blender Source Code:</h4>
+	 * <p> texture painting </p>
 	 * @see #__DNA__FIELD__paint_active_slot
 	 */
 	
@@ -6599,6 +7004,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Get method for struct member 'paint_clone_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of clone texture paint slot
 	 * @see #__DNA__FIELD__paint_clone_slot
 	 */
 	
@@ -6613,6 +7021,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'paint_clone_slot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index of clone texture paint slot
 	 * @see #__DNA__FIELD__paint_clone_slot
 	 */
 	
@@ -6694,7 +7105,113 @@ public class Material extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'nmap_tangent_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiple tangent (Normal Map node) [MAX_MTFACE+1][MAX_NAME]; +1 for empty name </p>
+	 * @see #__DNA__FIELD__nmap_tangent_names
+	 */
+	
+	public CArrayFacade<CArrayFacade<Byte>> getNmap_tangent_names() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Byte.class};
+		int[] __dna__dimensions = new int[]{
+			9,
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 920, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 800, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nmap_tangent_names'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiple tangent (Normal Map node) [MAX_MTFACE+1][MAX_NAME]; +1 for empty name </p>
+	 * @see #__DNA__FIELD__nmap_tangent_names
+	 */
+	
+	public void setNmap_tangent_names(CArrayFacade<CArrayFacade<Byte>> nmap_tangent_names) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 920;
+		} else {
+			__dna__offset = 800;
+		}
+		if (__io__equals(nmap_tangent_names, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, nmap_tangent_names)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, nmap_tangent_names);
+		} else {
+			__io__generic__copy( getNmap_tangent_names(), nmap_tangent_names);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nmap_tangent_names_count'.
+	 * @see #__DNA__FIELD__nmap_tangent_names_count
+	 */
+	
+	public int getNmap_tangent_names_count() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1496);
+		} else {
+			return __io__block.readInt(__io__address + 1376);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nmap_tangent_names_count'.
+	 * @see #__DNA__FIELD__nmap_tangent_names_count
+	 */
+	
+	public void setNmap_tangent_names_count(int nmap_tangent_names_count) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1496, nmap_tangent_names_count);
+		} else {
+			__io__block.writeInt(__io__address + 1376, nmap_tangent_names_count);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad5'.
+	 * @see #__DNA__FIELD__pad5
+	 */
+	
+	public int getPad5() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1500);
+		} else {
+			return __io__block.readInt(__io__address + 1380);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad5'.
+	 * @see #__DNA__FIELD__pad5
+	 */
+	
+	public void setPad5(int pad5) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1500, pad5);
+		} else {
+			__io__block.writeInt(__io__address + 1380, pad5);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'texpaintslot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cached slot for painting. Make sure to recalculate before use with refresh_texpaint_image_cache </p>
 	 * @see #__DNA__FIELD__texpaintslot
 	 */
 	
@@ -6702,9 +7219,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 920);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1504);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 800);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1384);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TexPaintSlot.class};
 		return new CPointer<TexPaintSlot>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TexPaintSlot.__DNA__SDNA_INDEX), __io__blockTable);
@@ -6712,6 +7229,9 @@ public class Material extends CFacade {
 
 	/**
 	 * Set method for struct member 'texpaintslot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cached slot for painting. Make sure to recalculate before use with refresh_texpaint_image_cache </p>
 	 * @see #__DNA__FIELD__texpaintslot
 	 */
 	
@@ -6719,28 +7239,34 @@ public class Material extends CFacade {
 	{
 		long __address = ((texpaintslot == null) ? 0 : texpaintslot.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 920, __address);
+			__io__block.writeLong(__io__address + 1504, __address);
 		} else {
-			__io__block.writeLong(__io__address + 800, __address);
+			__io__block.writeLong(__io__address + 1384, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
 	
 	public ListBase getGpumaterial() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 928, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1512, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 804, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1388, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
 	
@@ -6748,9 +7274,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 928;
+			__dna__offset = 1512;
 		} else {
-			__dna__offset = 804;
+			__dna__offset = 1388;
 		}
 		if (__io__equals(gpumaterial, __io__address + __dna__offset)) {
 			return;

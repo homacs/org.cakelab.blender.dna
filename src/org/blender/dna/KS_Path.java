@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'KS_Path'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  {@link KeyingSet}  Datatypes {@link Path}  for use in {@link KeyingSet}  definitions (ksp)</p><p> Paths may be either specific (specifying the exact sub-ID dynamic data-block - such as PoseChannels - to act upon, ala Maya's 'Character Sets' and XSI's 'Marking Sets'), or they may be generic (using various placeholder template tags that will be replaced with appropriate information from the context). </p>
  */
 
 @CMetaData(size32=96, size64=112)
@@ -27,7 +29,7 @@ public class KS_Path extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 510;
+	public static final int __DNA__SDNA_INDEX = 521;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  block that keyframes are for </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +96,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the group to add to - MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +119,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> -type that path can be used on </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +142,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'groupmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group naming (eKSP_Grouping) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings, etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +188,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamically (or statically in the case of predefined sets) path </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +211,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index that path affects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +234,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyingflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) settings to supply insertkey() with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +257,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyingoverride'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,6 +352,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  block that keyframes are for </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -340,6 +372,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  block that keyframes are for </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -355,6 +390,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the group to add to - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -373,6 +411,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of the group to add to - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -395,6 +436,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> -type that path can be used on </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	
@@ -409,6 +453,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'idtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> -type that path can be used on </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	
@@ -423,6 +470,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'groupmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group naming (eKSP_Grouping) </p>
 	 * @see #__DNA__FIELD__groupmode
 	 */
 	
@@ -437,6 +487,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'groupmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group naming (eKSP_Grouping) </p>
 	 * @see #__DNA__FIELD__groupmode
 	 */
 	
@@ -451,6 +504,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings, etc. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -465,6 +521,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings, etc. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -479,6 +538,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamically (or statically in the case of predefined sets) path </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -496,6 +558,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamically (or statically in the case of predefined sets) path </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -511,6 +576,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index that path affects </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -525,6 +593,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index that path affects </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -539,6 +610,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyingflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) settings to supply insertkey() with </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
 	
@@ -553,6 +627,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyingflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) settings to supply insertkey() with </p>
 	 * @see #__DNA__FIELD__keyingflag
 	 */
 	
@@ -567,6 +644,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyingoverride'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */
 	
@@ -581,6 +661,9 @@ public class KS_Path extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyingoverride'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (eInsertKeyFlags) for each flag set, the relevant keyingflag bit overrides the default </p>
 	 * @see #__DNA__FIELD__keyingoverride
 	 */
 	

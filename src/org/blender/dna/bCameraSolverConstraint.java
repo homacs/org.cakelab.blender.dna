@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bCameraSolverConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Camera}  Solver constraints </p>
  */
 
 @CMetaData(size32=12, size64=16)
@@ -26,7 +27,7 @@ public class bCameraSolverConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 375;
+	public static final int __DNA__SDNA_INDEX = 381;
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.

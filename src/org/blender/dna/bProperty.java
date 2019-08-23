@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bProperty'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ********************* PROPERTY ************************ </p>
  */
 
 @CMetaData(size32=84, size64=96)
@@ -27,7 +28,7 @@ public class bProperty extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 287;
+	public static final int __DNA__SDNA_INDEX = 293;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data should be 4 bytes to store int,float stuff </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +158,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> references data unless its a string which is malloc'd </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,6 +253,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -261,6 +274,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -339,6 +355,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data should be 4 bytes to store int,float stuff </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -353,6 +372,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data should be 4 bytes to store int,float stuff </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -367,6 +389,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> references data unless its a string which is malloc'd </p>
 	 * @see #__DNA__FIELD__poin
 	 */
 	
@@ -384,6 +409,9 @@ public class bProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'poin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> references data unless its a string which is malloc'd </p>
 	 * @see #__DNA__FIELD__poin
 	 */
 	

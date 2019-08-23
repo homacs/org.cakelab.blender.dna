@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bRandomActuator'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> I added a few extra fields here, to facilitate conversions </p>
  */
 
 @CMetaData(size32=88, size64=88)
@@ -27,7 +28,7 @@ public class bRandomActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 318;
+	public static final int __DNA__SDNA_INDEX = 324;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
@@ -151,6 +152,9 @@ public class bRandomActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'propname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,6 +351,9 @@ public class bRandomActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'propname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__propname
 	 */
 	
@@ -365,6 +372,9 @@ public class bRandomActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'propname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__propname
 	 */
 	

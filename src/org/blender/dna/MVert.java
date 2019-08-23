@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MVert'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * A single vertex with coordinates and normal vector.
  */
 
 @CMetaData(size32=20, size64=20)
@@ -31,6 +32,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * XYZ coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'no'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Normal vector.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +78,16 @@ public class MVert extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * 	SELECT				= 1
+	 * 	ME_VERT_TMP_TAG     = (1 << 2),
+	 * 	ME_HIDE             = (1 << 4),
+	 * 	ME_VERT_MERGED      = (1 << 6),
+	 * 	ME_VERT_PBVH_UPDATE = (1 << 7),
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,6 +136,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -137,6 +157,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'co'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * XYZ coordinates.
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -159,6 +182,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'no'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Normal vector.
 	 * @see #__DNA__FIELD__no
 	 */
 	
@@ -177,6 +203,9 @@ public class MVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'no'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Normal vector.
 	 * @see #__DNA__FIELD__no
 	 */
 	
@@ -199,6 +228,16 @@ public class MVert extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * 	SELECT				= 1
+	 * 	ME_VERT_TMP_TAG     = (1 << 2),
+	 * 	ME_HIDE             = (1 << 4),
+	 * 	ME_VERT_MERGED      = (1 << 6),
+	 * 	ME_VERT_PBVH_UPDATE = (1 << 7),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -213,6 +252,16 @@ public class MVert extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * 	SELECT				= 1
+	 * 	ME_VERT_TMP_TAG     = (1 << 2),
+	 * 	ME_HIDE             = (1 << 4),
+	 * 	ME_VERT_MERGED      = (1 << 6),
+	 * 	ME_VERT_PBVH_UPDATE = (1 << 7),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

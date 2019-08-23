@@ -51,6 +51,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to control the origin of modifier space coordinates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factors to control simple deforms </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lower and upper limit </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deform function </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock axis (for taper and strech) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +188,26 @@ public class SimpleDeformModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__axis = new long[]{177, 197};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SimpleDeformModifierData simpledeformmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = simpledeformmodifierdata.__dna__addressof(SimpleDeformModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Byte&gt; p_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{178, 198};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -178,16 +216,16 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <pre>
 	 * SimpleDeformModifierData simpledeformmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = simpledeformmodifierdata.__dna__addressof(SimpleDeformModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{178, 198};
+	public static final long[] __DNA__FIELD__pad = new long[]{179, 199};
 
 	public SimpleDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -235,6 +273,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to control the origin of modifier space coordinates </p>
 	 * @see #__DNA__FIELD__origin
 	 */
 	
@@ -252,6 +293,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'origin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to control the origin of modifier space coordinates </p>
 	 * @see #__DNA__FIELD__origin
 	 */
 	
@@ -267,6 +311,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroup_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
 	
@@ -285,6 +332,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroup_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroup_name
 	 */
 	
@@ -307,6 +357,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factors to control simple deforms </p>
 	 * @see #__DNA__FIELD__factor
 	 */
 	
@@ -321,6 +374,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factors to control simple deforms </p>
 	 * @see #__DNA__FIELD__factor
 	 */
 	
@@ -335,6 +391,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lower and upper limit </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -353,6 +412,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lower and upper limit </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -375,6 +437,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deform function </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -389,6 +454,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deform function </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -403,6 +471,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock axis (for taper and strech) </p>
 	 * @see #__DNA__FIELD__axis
 	 */
 	
@@ -417,6 +488,9 @@ public class SimpleDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> lock axis (for taper and strech) </p>
 	 * @see #__DNA__FIELD__axis
 	 */
 	
@@ -430,20 +504,44 @@ public class SimpleDeformModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public byte getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 198);
+		} else {
+			return __io__block.readByte(__io__address + 178);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(byte flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 198, flag);
+		} else {
+			__io__block.writeByte(__io__address + 178, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public byte getPad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 199);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 179);
 		}
 	}
 
@@ -452,20 +550,12 @@ public class SimpleDeformModifierData extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setPad(byte pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 198;
+			__io__block.writeByte(__io__address + 199, pad);
 		} else {
-			__dna__offset = 178;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__block.writeByte(__io__address + 179, pad);
 		}
 	}
 

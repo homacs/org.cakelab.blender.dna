@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ObHook'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Warning, this is not used anymore because hooks are now modifiers </p>
  */
 
 @CMetaData(size32=240, size64=256)
@@ -27,7 +28,7 @@ public class ObHook extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 150;
+	public static final int __DNA__SDNA_INDEX = 151;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +92,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp matrix while hooking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +138,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +161,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +184,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +247,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curindex is cache for fast lookup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +290,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'active'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active is only first hook, for button menu </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -415,6 +437,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -434,6 +459,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'parentinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix making current transform unmodified </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -456,6 +484,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp matrix while hooking </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -475,6 +506,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp matrix while hooking </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -497,6 +531,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -515,6 +552,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'cent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> visualization of hook </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -537,6 +577,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
@@ -551,6 +594,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if not zero, falloff is distance where influence zero </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
@@ -565,6 +611,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -583,6 +632,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -665,6 +717,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'curindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curindex is cache for fast lookup </p>
 	 * @see #__DNA__FIELD__curindex
 	 */
 	
@@ -679,6 +734,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'curindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curindex is cache for fast lookup </p>
 	 * @see #__DNA__FIELD__curindex
 	 */
 	
@@ -721,6 +779,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Get method for struct member 'active'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active is only first hook, for button menu </p>
 	 * @see #__DNA__FIELD__active
 	 */
 	
@@ -735,6 +796,9 @@ public class ObHook extends CFacade {
 
 	/**
 	 * Set method for struct member 'active'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active is only first hook, for button menu </p>
 	 * @see #__DNA__FIELD__active
 	 */
 	

@@ -26,7 +26,7 @@ public class ScrArea extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 254;
+	public static final int __DNA__SDNA_INDEX = 258;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -130,6 +130,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ordered (bl, tl, tr, br) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +153,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'full'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if area==full, this is the parent </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +176,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totrct'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rect bound by v1 v2 v3 v4 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,6 +219,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'butspacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SPACE_..., butspacetype is button arg </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -250,6 +262,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'winy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,6 +285,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'headertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OLD! 0=no header, 1= down, 2= up </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -290,6 +308,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, for spacetype refresh callback </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -330,6 +351,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'region_active_win'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,6 +414,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> callbacks for this space type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -410,6 +437,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -430,6 +460,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -450,6 +483,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wmEventHandler </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -470,6 +506,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actionzones'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> AZone </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -658,6 +697,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'v4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ordered (bl, tl, tr, br) </p>
 	 * @see #__DNA__FIELD__v4
 	 */
 	
@@ -675,6 +717,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'v4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ordered (bl, tl, tr, br) </p>
 	 * @see #__DNA__FIELD__v4
 	 */
 	
@@ -690,6 +735,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'full'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if area==full, this is the parent </p>
 	 * @see #__DNA__FIELD__full
 	 */
 	
@@ -707,6 +755,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'full'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if area==full, this is the parent </p>
 	 * @see #__DNA__FIELD__full
 	 */
 	
@@ -722,6 +773,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'totrct'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rect bound by v1 v2 v3 v4 </p>
 	 * @see #__DNA__FIELD__totrct
 	 */
 	
@@ -736,6 +790,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'totrct'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rect bound by v1 v2 v3 v4 </p>
 	 * @see #__DNA__FIELD__totrct
 	 */
 	
@@ -786,6 +843,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'butspacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SPACE_..., butspacetype is button arg </p>
 	 * @see #__DNA__FIELD__butspacetype
 	 */
 	
@@ -800,6 +860,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'butspacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> SPACE_..., butspacetype is button arg </p>
 	 * @see #__DNA__FIELD__butspacetype
 	 */
 	
@@ -842,6 +905,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'winy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size </p>
 	 * @see #__DNA__FIELD__winy
 	 */
 	
@@ -856,6 +922,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'winy'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size </p>
 	 * @see #__DNA__FIELD__winy
 	 */
 	
@@ -870,6 +939,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'headertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OLD! 0=no header, 1= down, 2= up </p>
 	 * @see #__DNA__FIELD__headertype
 	 */
 	
@@ -884,6 +956,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'headertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OLD! 0=no header, 1= down, 2= up </p>
 	 * @see #__DNA__FIELD__headertype
 	 */
 	
@@ -898,6 +973,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, for spacetype refresh callback </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
@@ -912,6 +990,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> private, for spacetype refresh callback </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
@@ -954,6 +1035,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'region_active_win'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
 	 * @see #__DNA__FIELD__region_active_win
 	 */
 	
@@ -968,6 +1052,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'region_active_win'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
 	 * @see #__DNA__FIELD__region_active_win
 	 */
 	
@@ -1038,6 +1125,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> callbacks for this space type </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1055,6 +1145,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> callbacks for this space type </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1070,6 +1163,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'spacedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
@@ -1084,6 +1180,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'spacedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
@@ -1106,6 +1205,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1120,6 +1222,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1142,6 +1247,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'handlers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wmEventHandler </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
@@ -1156,6 +1264,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'handlers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wmEventHandler </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
@@ -1178,6 +1289,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'actionzones'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> AZone </p>
 	 * @see #__DNA__FIELD__actionzones
 	 */
 	
@@ -1192,6 +1306,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'actionzones'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> AZone </p>
 	 * @see #__DNA__FIELD__actionzones
 	 */
 	

@@ -31,6 +31,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ssao'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fx_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGPUFXFlags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,6 +128,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__dof
 	 */
 	
@@ -136,6 +148,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__dof
 	 */
 	
@@ -151,6 +166,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'ssao'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__ssao
 	 */
 	
@@ -168,6 +186,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'ssao'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__ssao
 	 */
 	
@@ -183,6 +204,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fx_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGPUFXFlags </p>
 	 * @see #__DNA__FIELD__fx_flag
 	 */
 	
@@ -197,6 +221,9 @@ public class GPUFXSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fx_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eGPUFXFlags </p>
 	 * @see #__DNA__FIELD__fx_flag
 	 */
 	

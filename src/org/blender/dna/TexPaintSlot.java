@@ -30,6 +30,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> image to be painted on </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> customdata index for uv layer, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +76,10 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Index of MTex slot in the material<h4>Blender Source Code:</h4>
+	 * <p> index for mtex slot in material for blender internal </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -118,6 +128,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Get method for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> image to be painted on </p>
 	 * @see #__DNA__FIELD__ima
 	 */
 	
@@ -135,6 +148,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Set method for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> image to be painted on </p>
 	 * @see #__DNA__FIELD__ima
 	 */
 	
@@ -150,6 +166,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Get method for struct member 'uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> customdata index for uv layer, MAX_NAME </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -167,6 +186,9 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Set method for struct member 'uvname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> customdata index for uv layer, MAX_NAME </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -182,6 +204,10 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Get method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Index of MTex slot in the material<h4>Blender Source Code:</h4>
+	 * <p> index for mtex slot in material for blender internal </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -196,6 +222,10 @@ public class TexPaintSlot extends CFacade {
 
 	/**
 	 * Set method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Index of MTex slot in the material<h4>Blender Source Code:</h4>
+	 * <p> index for mtex slot in material for blender internal </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	

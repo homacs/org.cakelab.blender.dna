@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNodeTreePath'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Nodes Editor =========================================== Node Editor </p>
  */
 
 @CMetaData(size32=92, size64=104)
@@ -27,7 +28,7 @@ public class bNodeTreePath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 224;
+	public static final int __DNA__SDNA_INDEX = 228;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +92,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent_key'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base key for nodes in this tree instance </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_center'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> v2d center point, so node trees can have different offsets in editors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +158,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'node_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -275,6 +285,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent_key'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base key for nodes in this tree instance </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
 	
@@ -289,6 +302,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent_key'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base key for nodes in this tree instance </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
 	
@@ -339,6 +355,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Get method for struct member 'view_center'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> v2d center point, so node trees can have different offsets in editors </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
 	
@@ -357,6 +376,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Set method for struct member 'view_center'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> v2d center point, so node trees can have different offsets in editors </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
 	
@@ -379,6 +401,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Get method for struct member 'node_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__node_name
 	 */
 	
@@ -397,6 +422,9 @@ public class bNodeTreePath extends CFacade {
 
 	/**
 	 * Set method for struct member 'node_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__node_name
 	 */
 	

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Envelope'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> envelope-like adjustment to values (for fade in/out) </p>
  */
 
 @CMetaData(size32=20, size64=24)
@@ -26,10 +27,13 @@ public class FMod_Envelope extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 495;
+	public static final int __DNA__SDNA_INDEX = 506;
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data-points defining envelope to apply (array) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of envelope points </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +77,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'midval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value that envelope's influence is centered around / based on </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +120,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distances from 'middle-value' for 1:1 envelope influence </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,6 +151,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data-points defining envelope to apply (array) </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -155,6 +171,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> data-points defining envelope to apply (array) </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -170,6 +189,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Get method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of envelope points </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -184,6 +206,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Set method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of envelope points </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -198,6 +223,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Get method for struct member 'midval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value that envelope's influence is centered around / based on </p>
 	 * @see #__DNA__FIELD__midval
 	 */
 	
@@ -212,6 +240,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Set method for struct member 'midval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value that envelope's influence is centered around / based on </p>
 	 * @see #__DNA__FIELD__midval
 	 */
 	
@@ -254,6 +285,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Get method for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distances from 'middle-value' for 1:1 envelope influence </p>
 	 * @see #__DNA__FIELD__max
 	 */
 	
@@ -268,6 +302,9 @@ public class FMod_Envelope extends CFacade {
 
 	/**
 	 * Set method for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distances from 'middle-value' for 1:1 envelope influence </p>
 	 * @see #__DNA__FIELD__max
 	 */
 	

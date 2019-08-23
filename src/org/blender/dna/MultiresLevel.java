@@ -210,6 +210,9 @@ public class MultiresLevel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'verts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kept for compatibility with even older files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,6 +513,9 @@ public class MultiresLevel extends CFacade {
 
 	/**
 	 * Get method for struct member 'verts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kept for compatibility with even older files </p>
 	 * @see #__DNA__FIELD__verts
 	 */
 	
@@ -527,6 +533,9 @@ public class MultiresLevel extends CFacade {
 
 	/**
 	 * Set method for struct member 'verts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Kept for compatibility with even older files </p>
 	 * @see #__DNA__FIELD__verts
 	 */
 	

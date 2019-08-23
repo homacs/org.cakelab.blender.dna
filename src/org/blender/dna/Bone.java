@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Bone'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> this system works on different transformation space levels;</p><p> 1) {@link Bone}  Space; with each {@link Bone}  having own (0,0,0) origin 2) Armature Space; the rest position, in {@link Object}  space, Bones Spaces are applied hierarchical 3) Pose Space; the animation position, in {@link Object}  space 4) {@link World}  Space; {@link Object}  matrix applied to Pose or Armature space </p>
  */
 
-@CMetaData(size32=304, size64=328)
+@CMetaData(size32=336, size64=360)
 public class Bone extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class Bone extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 332;
+	public static final int __DNA__SDNA_INDEX = 338;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -51,6 +52,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Next/prev elements within this list </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this {@link Bone}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +98,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <p> Parent (ik parent if appropriate flag is set </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +122,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'childbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Children </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +145,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +168,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll is input for editmode, length calculated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +191,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of head end of the bone relative to its parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +214,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * <p> head/tail and roll in {@link Bone}  Space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +238,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation derived from head/tail/roll </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +301,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> head/tail in Armature Space (rest pos) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +324,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix: (bonemat(b)+head(b))*arm_mat(b-1), rest pos </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +347,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll in Armature Space (rest pos) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +390,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dist, weight: for non-deformgroup deforms </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +453,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'zwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width: for block bones. keep in this order, transform! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +496,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ease2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> length of bezier handles </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +539,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius for head/tail sphere, defining deform as well, parent->rad_tip overrides rad_head </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,7 +561,173 @@ public class Bone extends CFacade {
 	public static final long[] __DNA__FIELD__rad_tail = new long[]{280, 304};
 
 	/**
+	 * Field descriptor (offset) for struct member 'roll1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__roll1);
+	 * CPointer&lt;Float&gt; p_roll1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'roll1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__roll1 = new long[]{284, 308};
+
+	/**
+	 * Field descriptor (offset) for struct member 'roll2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these define the "restpose" for a curved bone </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__roll2);
+	 * CPointer&lt;Float&gt; p_roll2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'roll2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__roll2 = new long[]{288, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveInX'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__curveInX);
+	 * CPointer&lt;Float&gt; p_curveInX = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveInX'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveInX = new long[]{292, 316};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveInY'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__curveInY);
+	 * CPointer&lt;Float&gt; p_curveInY = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveInY'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveInY = new long[]{296, 320};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveOutX'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__curveOutX);
+	 * CPointer&lt;Float&gt; p_curveOutX = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveOutX'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveOutX = new long[]{300, 324};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveOutY'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__curveOutY);
+	 * CPointer&lt;Float&gt; p_curveOutY = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveOutY'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveOutY = new long[]{304, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scaleIn'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__scaleIn);
+	 * CPointer&lt;Float&gt; p_scaleIn = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scaleIn'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scaleIn = new long[]{308, 332};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scaleOut'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__scaleOut);
+	 * CPointer&lt;Float&gt; p_scaleOut = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scaleOut'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scaleOut = new long[]{312, 336};
+
+	/**
 	 * Field descriptor (offset) for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patch for upward compat, UNUSED! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -527,10 +744,13 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{284, 308};
+	public static final long[] __DNA__FIELD__size = new long[]{316, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> layers that bone appears on </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,10 +767,13 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{296, 320};
+	public static final long[] __DNA__FIELD__layer = new long[]{328, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for B-bones </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,27 +790,27 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__segments = new long[]{300, 324};
+	public static final long[] __DNA__FIELD__segments = new long[]{332, 356};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Bone bone = ...;
-	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__pad1);
+	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[1]'</li>
+	 * <li>Field: 'pad1'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{302, 326};
+	public static final long[] __DNA__FIELD__pad1 = new long[]{334, 358};
 
 	public Bone(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -631,6 +854,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Next/prev elements within this list </p>
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -648,6 +874,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Next/prev elements within this list </p>
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -663,6 +892,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this {@link Bone}  </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -680,6 +912,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this {@link Bone}  </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -695,6 +930,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <p> Parent (ik parent if appropriate flag is set </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -712,6 +951,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Parent bone (in same Armature)<h4>Blender Source Code:</h4>
+	 * <p> Parent (ik parent if appropriate flag is set </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -727,6 +970,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'childbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Children </p>
 	 * @see #__DNA__FIELD__childbase
 	 */
 	
@@ -741,6 +987,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'childbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Children </p>
 	 * @see #__DNA__FIELD__childbase
 	 */
 	
@@ -763,6 +1012,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -781,6 +1033,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the bone - must be unique within the armature, MAXBONENAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -803,6 +1058,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll is input for editmode, length calculated </p>
 	 * @see #__DNA__FIELD__roll
 	 */
 	
@@ -817,6 +1075,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll is input for editmode, length calculated </p>
 	 * @see #__DNA__FIELD__roll
 	 */
 	
@@ -831,6 +1092,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -849,6 +1113,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -871,6 +1138,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * <p> head/tail and roll in {@link Bone}  Space </p>
 	 * @see #__DNA__FIELD__tail
 	 */
 	
@@ -889,6 +1160,10 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * <p> head/tail and roll in {@link Bone}  Space </p>
 	 * @see #__DNA__FIELD__tail
 	 */
 	
@@ -911,6 +1186,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'bone_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation derived from head/tail/roll </p>
 	 * @see #__DNA__FIELD__bone_mat
 	 */
 	
@@ -930,6 +1208,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'bone_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation derived from head/tail/roll </p>
 	 * @see #__DNA__FIELD__bone_mat
 	 */
 	
@@ -1020,6 +1301,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'arm_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> head/tail in Armature Space (rest pos) </p>
 	 * @see #__DNA__FIELD__arm_tail
 	 */
 	
@@ -1038,6 +1322,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'arm_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> head/tail in Armature Space (rest pos) </p>
 	 * @see #__DNA__FIELD__arm_tail
 	 */
 	
@@ -1060,6 +1347,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'arm_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix: (bonemat(b)+head(b))*arm_mat(b-1), rest pos </p>
 	 * @see #__DNA__FIELD__arm_mat
 	 */
 	
@@ -1079,6 +1369,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'arm_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix: (bonemat(b)+head(b))*arm_mat(b-1), rest pos </p>
 	 * @see #__DNA__FIELD__arm_mat
 	 */
 	
@@ -1101,6 +1394,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'arm_roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll in Armature Space (rest pos) </p>
 	 * @see #__DNA__FIELD__arm_roll
 	 */
 	
@@ -1115,6 +1411,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'arm_roll'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> roll in Armature Space (rest pos) </p>
 	 * @see #__DNA__FIELD__arm_roll
 	 */
 	
@@ -1157,6 +1456,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dist, weight: for non-deformgroup deforms </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -1171,6 +1473,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dist, weight: for non-deformgroup deforms </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -1241,6 +1546,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'zwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width: for block bones. keep in this order, transform! </p>
 	 * @see #__DNA__FIELD__zwidth
 	 */
 	
@@ -1255,6 +1563,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'zwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width: for block bones. keep in this order, transform! </p>
 	 * @see #__DNA__FIELD__zwidth
 	 */
 	
@@ -1297,6 +1608,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'ease2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> length of bezier handles </p>
 	 * @see #__DNA__FIELD__ease2
 	 */
 	
@@ -1311,6 +1625,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'ease2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> length of bezier handles </p>
 	 * @see #__DNA__FIELD__ease2
 	 */
 	
@@ -1353,6 +1670,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'rad_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius for head/tail sphere, defining deform as well, parent->rad_tip overrides rad_head </p>
 	 * @see #__DNA__FIELD__rad_tail
 	 */
 	
@@ -1367,6 +1687,9 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'rad_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius for head/tail sphere, defining deform as well, parent->rad_tip overrides rad_head </p>
 	 * @see #__DNA__FIELD__rad_tail
 	 */
 	
@@ -1380,7 +1703,240 @@ public class Bone extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'roll1'.
+	 * @see #__DNA__FIELD__roll1
+	 */
+	
+	public float getRoll1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 308);
+		} else {
+			return __io__block.readFloat(__io__address + 284);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'roll1'.
+	 * @see #__DNA__FIELD__roll1
+	 */
+	
+	public void setRoll1(float roll1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 308, roll1);
+		} else {
+			__io__block.writeFloat(__io__address + 284, roll1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'roll2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these define the "restpose" for a curved bone </p>
+	 * @see #__DNA__FIELD__roll2
+	 */
+	
+	public float getRoll2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 312);
+		} else {
+			return __io__block.readFloat(__io__address + 288);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'roll2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these define the "restpose" for a curved bone </p>
+	 * @see #__DNA__FIELD__roll2
+	 */
+	
+	public void setRoll2(float roll2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 312, roll2);
+		} else {
+			__io__block.writeFloat(__io__address + 288, roll2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveInX'.
+	 * @see #__DNA__FIELD__curveInX
+	 */
+	
+	public float getCurveInX() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 316);
+		} else {
+			return __io__block.readFloat(__io__address + 292);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveInX'.
+	 * @see #__DNA__FIELD__curveInX
+	 */
+	
+	public void setCurveInX(float curveInX) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 316, curveInX);
+		} else {
+			__io__block.writeFloat(__io__address + 292, curveInX);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveInY'.
+	 * @see #__DNA__FIELD__curveInY
+	 */
+	
+	public float getCurveInY() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 320);
+		} else {
+			return __io__block.readFloat(__io__address + 296);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveInY'.
+	 * @see #__DNA__FIELD__curveInY
+	 */
+	
+	public void setCurveInY(float curveInY) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 320, curveInY);
+		} else {
+			__io__block.writeFloat(__io__address + 296, curveInY);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveOutX'.
+	 * @see #__DNA__FIELD__curveOutX
+	 */
+	
+	public float getCurveOutX() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 324);
+		} else {
+			return __io__block.readFloat(__io__address + 300);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveOutX'.
+	 * @see #__DNA__FIELD__curveOutX
+	 */
+	
+	public void setCurveOutX(float curveOutX) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 324, curveOutX);
+		} else {
+			__io__block.writeFloat(__io__address + 300, curveOutX);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveOutY'.
+	 * @see #__DNA__FIELD__curveOutY
+	 */
+	
+	public float getCurveOutY() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 328);
+		} else {
+			return __io__block.readFloat(__io__address + 304);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveOutY'.
+	 * @see #__DNA__FIELD__curveOutY
+	 */
+	
+	public void setCurveOutY(float curveOutY) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 328, curveOutY);
+		} else {
+			__io__block.writeFloat(__io__address + 304, curveOutY);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scaleIn'.
+	 * @see #__DNA__FIELD__scaleIn
+	 */
+	
+	public float getScaleIn() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 332);
+		} else {
+			return __io__block.readFloat(__io__address + 308);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scaleIn'.
+	 * @see #__DNA__FIELD__scaleIn
+	 */
+	
+	public void setScaleIn(float scaleIn) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 332, scaleIn);
+		} else {
+			__io__block.writeFloat(__io__address + 308, scaleIn);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scaleOut'.
+	 * @see #__DNA__FIELD__scaleOut
+	 */
+	
+	public float getScaleOut() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 336);
+		} else {
+			return __io__block.readFloat(__io__address + 312);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scaleOut'.
+	 * @see #__DNA__FIELD__scaleOut
+	 */
+	
+	public void setScaleOut(float scaleOut) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 336, scaleOut);
+		} else {
+			__io__block.writeFloat(__io__address + 312, scaleOut);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patch for upward compat, UNUSED! </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -1391,14 +1947,17 @@ public class Bone extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patch for upward compat, UNUSED! </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -1406,9 +1965,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 308;
+			__dna__offset = 340;
 		} else {
-			__dna__offset = 284;
+			__dna__offset = 316;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -1421,97 +1980,97 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> layers that bone appears on </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
 	public int getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 352);
 		} else {
-			return __io__block.readInt(__io__address + 296);
+			return __io__block.readInt(__io__address + 328);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> layers that bone appears on </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
 	public void setLayer(int layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 320, layer);
+			__io__block.writeInt(__io__address + 352, layer);
 		} else {
-			__io__block.writeInt(__io__address + 296, layer);
+			__io__block.writeInt(__io__address + 328, layer);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'segments'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for B-bones </p>
 	 * @see #__DNA__FIELD__segments
 	 */
 	
 	public short getSegments() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 324);
+			return __io__block.readShort(__io__address + 356);
 		} else {
-			return __io__block.readShort(__io__address + 300);
+			return __io__block.readShort(__io__address + 332);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'segments'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for B-bones </p>
 	 * @see #__DNA__FIELD__segments
 	 */
 	
 	public void setSegments(short segments) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 324, segments);
+			__io__block.writeShort(__io__address + 356, segments);
 		} else {
-			__io__block.writeShort(__io__address + 300, segments);
+			__io__block.writeShort(__io__address + 332, segments);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public short getPad1() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
-		int[] __dna__dimensions = new int[]{
-			1
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 326, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 358);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 302, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 334);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void setPad1(short pad1) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 326;
+			__io__block.writeShort(__io__address + 358, pad1);
 		} else {
-			__dna__offset = 302;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__block.writeShort(__io__address + 334, pad1);
 		}
 	}
 

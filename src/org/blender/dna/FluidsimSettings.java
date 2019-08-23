@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1236, size64=1256)
+@CMetaData(size32=1228, size64=1240)
 public class FluidsimSettings extends CFacade {
 
 	/**
@@ -27,10 +27,13 @@ public class FluidsimSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 161;
+	public static final int __DNA__SDNA_INDEX = 162;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'threads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threadcont the calculation is done with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, fluid or obstacle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'show_advancedoptions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolutionxyz'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object settings resolutions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +186,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'realsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +209,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiDisplayMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show original meshes, preview or final sim </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +252,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'viscosityValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid properties </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +275,11 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'viscosityMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +320,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'grav'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> gravity strength </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +343,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'animStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> anim start end time (in seconds) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +386,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bakeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bake start end time (in blender frames) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +429,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameOffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for baked frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +472,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gstar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> g star param (LBM compressibility) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +495,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxRefine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> activate refinement? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +518,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'iniVelx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid object type settings gravity strength </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -530,47 +580,10 @@ public class FluidsimSettings extends CFacade {
 	public static final long[] __DNA__FIELD__iniVelz = new long[]{88, 92};
 
 	/**
-	 * Field descriptor (offset) for struct member 'orgMesh'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidsimSettings fluidsimsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluidsimsettings.__dna__addressof(FluidsimSettings.__DNA__FIELD__orgMesh);
-	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_orgMesh = p.cast(new Class[]{CPointer.class, Mesh.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'orgMesh'</li>
-	 * <li>Signature: 'Mesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__orgMesh = new long[]{92, 96};
-
-	/**
-	 * Field descriptor (offset) for struct member 'meshBB'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidsimSettings fluidsimsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluidsimsettings.__dna__addressof(FluidsimSettings.__DNA__FIELD__meshBB);
-	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_meshBB = p.cast(new Class[]{CPointer.class, Mesh.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'meshBB'</li>
-	 * <li>Signature: 'Mesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__meshBB = new long[]{96, 104};
-
-	/**
 	 * Field descriptor (offset) for struct member 'surfdataPath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -587,10 +600,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surfdataPath = new long[]{100, 112};
+	public static final long[] __DNA__FIELD__surfdataPath = new long[]{92, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -607,7 +623,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbStart = new long[]{1124, 1136};
+	public static final long[] __DNA__FIELD__bbStart = new long[]{1116, 1120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbSize'.
@@ -627,10 +643,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbSize = new long[]{1136, 1148};
+	public static final long[] __DNA__FIELD__bbSize = new long[]{1128, 1132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animated params </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -647,10 +666,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{1148, 1160};
+	public static final long[] __DNA__FIELD__ipo = new long[]{1140, 1144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'typeFlags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -667,10 +689,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__typeFlags = new long[]{1152, 1168};
+	public static final long[] __DNA__FIELD__typeFlags = new long[]{1144, 1152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'domainNovecgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> switch off velocity genration, volume init type for fluid/obstacles (volume=1, shell=2, both=3) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -687,7 +712,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domainNovecgen = new long[]{1154, 1170};
+	public static final long[] __DNA__FIELD__domainNovecgen = new long[]{1146, 1154};
 
 	/**
 	 * Field descriptor (offset) for struct member 'volumeInitType'.
@@ -707,10 +732,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volumeInitType = new long[]{1155, 1171};
+	public static final long[] __DNA__FIELD__volumeInitType = new long[]{1147, 1155};
 
 	/**
 	 * Field descriptor (offset) for struct member 'partSlipValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundary "stickiness" for part slip values </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -727,10 +755,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__partSlipValue = new long[]{1156, 1172};
+	public static final long[] __DNA__FIELD__partSlipValue = new long[]{1148, 1156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'generateTracers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of tracers to generate </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -747,10 +778,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__generateTracers = new long[]{1160, 1176};
+	public static final long[] __DNA__FIELD__generateTracers = new long[]{1152, 1160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'generateParticles'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -767,10 +801,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__generateParticles = new long[]{1164, 1180};
+	public static final long[] __DNA__FIELD__generateParticles = new long[]{1156, 1164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'surfaceSmoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> smooth fluid surface? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -787,10 +824,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surfaceSmoothing = new long[]{1168, 1184};
+	public static final long[] __DNA__FIELD__surfaceSmoothing = new long[]{1160, 1168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'surfaceSubdivs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of surface subdivisions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -807,10 +847,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surfaceSubdivs = new long[]{1172, 1188};
+	public static final long[] __DNA__FIELD__surfaceSubdivs = new long[]{1164, 1172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GUI flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -827,10 +870,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1176, 1192};
+	public static final long[] __DNA__FIELD__flag = new long[]{1168, 1176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particleInfSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle display - size scaling, and alpha influence </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -847,7 +893,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particleInfSize = new long[]{1180, 1196};
+	public static final long[] __DNA__FIELD__particleInfSize = new long[]{1172, 1180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particleInfAlpha'.
@@ -867,10 +913,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particleInfAlpha = new long[]{1184, 1200};
+	public static final long[] __DNA__FIELD__particleInfAlpha = new long[]{1176, 1184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'farFieldSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> testing vars </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -887,10 +936,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__farFieldSize = new long[]{1188, 1204};
+	public static final long[] __DNA__FIELD__farFieldSize = new long[]{1180, 1188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'meshVelocities'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex velocities of simulated fluid mesh </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -907,10 +959,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__meshVelocities = new long[]{1192, 1208};
+	public static final long[] __DNA__FIELD__meshVelocities = new long[]{1184, 1192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of vertices in simulated fluid mesh </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -927,10 +982,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totvert = new long[]{1196, 1216};
+	public static final long[] __DNA__FIELD__totvert = new long[]{1188, 1200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cpsTimeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Fluid control settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -947,7 +1005,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cpsTimeStart = new long[]{1200, 1220};
+	public static final long[] __DNA__FIELD__cpsTimeStart = new long[]{1192, 1204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cpsTimeEnd'.
@@ -967,7 +1025,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cpsTimeEnd = new long[]{1204, 1224};
+	public static final long[] __DNA__FIELD__cpsTimeEnd = new long[]{1196, 1208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cpsQuality'.
@@ -987,7 +1045,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cpsQuality = new long[]{1208, 1228};
+	public static final long[] __DNA__FIELD__cpsQuality = new long[]{1200, 1212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attractforceStrength'.
@@ -1007,7 +1065,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attractforceStrength = new long[]{1212, 1232};
+	public static final long[] __DNA__FIELD__attractforceStrength = new long[]{1204, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attractforceRadius'.
@@ -1027,7 +1085,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attractforceRadius = new long[]{1216, 1236};
+	public static final long[] __DNA__FIELD__attractforceRadius = new long[]{1208, 1220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'velocityforceStrength'.
@@ -1047,7 +1105,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__velocityforceStrength = new long[]{1220, 1240};
+	public static final long[] __DNA__FIELD__velocityforceStrength = new long[]{1212, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'velocityforceRadius'.
@@ -1067,7 +1125,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__velocityforceRadius = new long[]{1224, 1244};
+	public static final long[] __DNA__FIELD__velocityforceRadius = new long[]{1216, 1228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastgoodframe'.
@@ -1087,10 +1145,13 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastgoodframe = new long[]{1228, 1248};
+	public static final long[] __DNA__FIELD__lastgoodframe = new long[]{1220, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'animRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simulation/flow rate control (i.e. old "Fac-Time") </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1107,7 +1168,7 @@ public class FluidsimSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__animRate = new long[]{1232, 1252};
+	public static final long[] __DNA__FIELD__animRate = new long[]{1224, 1236};
 
 	public FluidsimSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1119,6 +1180,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
 	
@@ -1136,6 +1200,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__fmd
 	 */
 	
@@ -1151,6 +1218,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'threads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threadcont the calculation is done with </p>
 	 * @see #__DNA__FIELD__threads
 	 */
 	
@@ -1165,6 +1235,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'threads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> threadcont the calculation is done with </p>
 	 * @see #__DNA__FIELD__threads
 	 */
 	
@@ -1207,6 +1280,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, fluid or obstacle </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1221,6 +1297,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain, fluid or obstacle </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1235,6 +1314,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'show_advancedoptions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * @see #__DNA__FIELD__show_advancedoptions
 	 */
 	
@@ -1249,6 +1331,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'show_advancedoptions'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display advanced options in fluid sim tab (on=1, off=0) </p>
 	 * @see #__DNA__FIELD__show_advancedoptions
 	 */
 	
@@ -1263,6 +1348,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'resolutionxyz'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object settings resolutions </p>
 	 * @see #__DNA__FIELD__resolutionxyz
 	 */
 	
@@ -1277,6 +1365,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'resolutionxyz'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> domain object settings resolutions </p>
 	 * @see #__DNA__FIELD__resolutionxyz
 	 */
 	
@@ -1319,6 +1410,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'realsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * @see #__DNA__FIELD__realsize
 	 */
 	
@@ -1333,6 +1427,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'realsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the domain in real units (meters along largest resolution x, y, z extent) </p>
 	 * @see #__DNA__FIELD__realsize
 	 */
 	
@@ -1347,6 +1444,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'guiDisplayMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show original meshes, preview or final sim </p>
 	 * @see #__DNA__FIELD__guiDisplayMode
 	 */
 	
@@ -1361,6 +1461,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'guiDisplayMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> show original meshes, preview or final sim </p>
 	 * @see #__DNA__FIELD__guiDisplayMode
 	 */
 	
@@ -1403,6 +1506,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'viscosityValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid properties </p>
 	 * @see #__DNA__FIELD__viscosityValue
 	 */
 	
@@ -1417,6 +1523,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'viscosityValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid properties </p>
 	 * @see #__DNA__FIELD__viscosityValue
 	 */
 	
@@ -1431,6 +1540,11 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'viscosityMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__viscosityMode
 	 */
 	
@@ -1445,6 +1559,11 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'viscosityMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__viscosityMode
 	 */
 	
@@ -1487,6 +1606,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'grav'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> gravity strength </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -1505,6 +1627,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'grav'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> gravity strength </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -1527,6 +1652,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'animStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> anim start end time (in seconds) </p>
 	 * @see #__DNA__FIELD__animStart
 	 */
 	
@@ -1541,6 +1669,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'animStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> anim start end time (in seconds) </p>
 	 * @see #__DNA__FIELD__animStart
 	 */
 	
@@ -1583,6 +1714,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'bakeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bake start end time (in blender frames) </p>
 	 * @see #__DNA__FIELD__bakeStart
 	 */
 	
@@ -1597,6 +1731,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'bakeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bake start end time (in blender frames) </p>
 	 * @see #__DNA__FIELD__bakeStart
 	 */
 	
@@ -1639,6 +1776,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'frameOffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for baked frames </p>
 	 * @see #__DNA__FIELD__frameOffset
 	 */
 	
@@ -1653,6 +1793,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'frameOffset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for baked frames </p>
 	 * @see #__DNA__FIELD__frameOffset
 	 */
 	
@@ -1695,6 +1838,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'gstar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> g star param (LBM compressibility) </p>
 	 * @see #__DNA__FIELD__gstar
 	 */
 	
@@ -1709,6 +1855,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'gstar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> g star param (LBM compressibility) </p>
 	 * @see #__DNA__FIELD__gstar
 	 */
 	
@@ -1723,6 +1872,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'maxRefine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> activate refinement? </p>
 	 * @see #__DNA__FIELD__maxRefine
 	 */
 	
@@ -1737,6 +1889,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'maxRefine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> activate refinement? </p>
 	 * @see #__DNA__FIELD__maxRefine
 	 */
 	
@@ -1751,6 +1906,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'iniVelx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid object type settings gravity strength </p>
 	 * @see #__DNA__FIELD__iniVelx
 	 */
 	
@@ -1765,6 +1923,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'iniVelx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fluid object type settings gravity strength </p>
 	 * @see #__DNA__FIELD__iniVelx
 	 */
 	
@@ -1834,71 +1995,10 @@ public class FluidsimSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'orgMesh'.
-	 * @see #__DNA__FIELD__orgMesh
-	 */
-	
-	public CPointer<Mesh> getOrgMesh() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 92);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
-		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'orgMesh'.
-	 * @see #__DNA__FIELD__orgMesh
-	 */
-	
-	public void setOrgMesh(CPointer<Mesh> orgMesh) throws IOException
-	{
-		long __address = ((orgMesh == null) ? 0 : orgMesh.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
-		} else {
-			__io__block.writeLong(__io__address + 92, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'meshBB'.
-	 * @see #__DNA__FIELD__meshBB
-	 */
-	
-	public CPointer<Mesh> getMeshBB() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
-		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'meshBB'.
-	 * @see #__DNA__FIELD__meshBB
-	 */
-	
-	public void setMeshBB(CPointer<Mesh> meshBB) throws IOException
-	{
-		long __address = ((meshBB == null) ? 0 : meshBB.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
-		} else {
-			__io__block.writeLong(__io__address + 96, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'surfdataPath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__surfdataPath
 	 */
 	
@@ -1909,14 +2009,17 @@ public class FluidsimSettings extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'surfdataPath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store output path, and file prefix for baked fluid surface strlens; 256= FILE_MAXFILE, 768= FILE_MAXDIR </p>
 	 * @see #__DNA__FIELD__surfdataPath
 	 */
 	
@@ -1924,9 +2027,9 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 92;
 		}
 		if (__io__equals(surfdataPath, __io__address + __dna__offset)) {
 			return;
@@ -1939,6 +2042,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'bbStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * @see #__DNA__FIELD__bbStart
 	 */
 	
@@ -1949,14 +2055,17 @@ public class FluidsimSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'bbStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> store start coords of axis aligned bounding box together with size values are inited during derived mesh display </p>
 	 * @see #__DNA__FIELD__bbStart
 	 */
 	
@@ -1964,9 +2073,9 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1136;
+			__dna__offset = 1120;
 		} else {
-			__dna__offset = 1124;
+			__dna__offset = 1116;
 		}
 		if (__io__equals(bbStart, __io__address + __dna__offset)) {
 			return;
@@ -1989,9 +2098,9 @@ public class FluidsimSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2004,9 +2113,9 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1148;
+			__dna__offset = 1132;
 		} else {
-			__dna__offset = 1136;
+			__dna__offset = 1128;
 		}
 		if (__io__equals(bbSize, __io__address + __dna__offset)) {
 			return;
@@ -2019,6 +2128,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animated params </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -2026,9 +2138,9 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2036,6 +2148,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animated params </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -2043,65 +2158,77 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1160, __address);
+			__io__block.writeLong(__io__address + 1144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1148, __address);
+			__io__block.writeLong(__io__address + 1140, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'typeFlags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * @see #__DNA__FIELD__typeFlags
 	 */
 	
 	public short getTypeFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1168);
-		} else {
 			return __io__block.readShort(__io__address + 1152);
+		} else {
+			return __io__block.readShort(__io__address + 1144);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'typeFlags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> additional flags depending on the type, lower short contains flags to check validity, higher short additional flags </p>
 	 * @see #__DNA__FIELD__typeFlags
 	 */
 	
 	public void setTypeFlags(short typeFlags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1168, typeFlags);
-		} else {
 			__io__block.writeShort(__io__address + 1152, typeFlags);
+		} else {
+			__io__block.writeShort(__io__address + 1144, typeFlags);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'domainNovecgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> switch off velocity genration, volume init type for fluid/obstacles (volume=1, shell=2, both=3) </p>
 	 * @see #__DNA__FIELD__domainNovecgen
 	 */
 	
 	public byte getDomainNovecgen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1170);
-		} else {
 			return __io__block.readByte(__io__address + 1154);
+		} else {
+			return __io__block.readByte(__io__address + 1146);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'domainNovecgen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> switch off velocity genration, volume init type for fluid/obstacles (volume=1, shell=2, both=3) </p>
 	 * @see #__DNA__FIELD__domainNovecgen
 	 */
 	
 	public void setDomainNovecgen(byte domainNovecgen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1170, domainNovecgen);
-		} else {
 			__io__block.writeByte(__io__address + 1154, domainNovecgen);
+		} else {
+			__io__block.writeByte(__io__address + 1146, domainNovecgen);
 		}
 	}
 
@@ -2113,9 +2240,9 @@ public class FluidsimSettings extends CFacade {
 	public byte getVolumeInitType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1171);
-		} else {
 			return __io__block.readByte(__io__address + 1155);
+		} else {
+			return __io__block.readByte(__io__address + 1147);
 		}
 	}
 
@@ -2127,205 +2254,247 @@ public class FluidsimSettings extends CFacade {
 	public void setVolumeInitType(byte volumeInitType) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1171, volumeInitType);
-		} else {
 			__io__block.writeByte(__io__address + 1155, volumeInitType);
+		} else {
+			__io__block.writeByte(__io__address + 1147, volumeInitType);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'partSlipValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundary "stickiness" for part slip values </p>
 	 * @see #__DNA__FIELD__partSlipValue
 	 */
 	
 	public float getPartSlipValue() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1172);
-		} else {
 			return __io__block.readFloat(__io__address + 1156);
+		} else {
+			return __io__block.readFloat(__io__address + 1148);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'partSlipValue'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundary "stickiness" for part slip values </p>
 	 * @see #__DNA__FIELD__partSlipValue
 	 */
 	
 	public void setPartSlipValue(float partSlipValue) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1172, partSlipValue);
-		} else {
 			__io__block.writeFloat(__io__address + 1156, partSlipValue);
+		} else {
+			__io__block.writeFloat(__io__address + 1148, partSlipValue);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'generateTracers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of tracers to generate </p>
 	 * @see #__DNA__FIELD__generateTracers
 	 */
 	
 	public int getGenerateTracers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1176);
-		} else {
 			return __io__block.readInt(__io__address + 1160);
+		} else {
+			return __io__block.readInt(__io__address + 1152);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'generateTracers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of tracers to generate </p>
 	 * @see #__DNA__FIELD__generateTracers
 	 */
 	
 	public void setGenerateTracers(int generateTracers) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1176, generateTracers);
-		} else {
 			__io__block.writeInt(__io__address + 1160, generateTracers);
+		} else {
+			__io__block.writeInt(__io__address + 1152, generateTracers);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'generateParticles'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * @see #__DNA__FIELD__generateParticles
 	 */
 	
 	public float getGenerateParticles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1180);
-		} else {
 			return __io__block.readFloat(__io__address + 1164);
+		} else {
+			return __io__block.readFloat(__io__address + 1156);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'generateParticles'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle generation - on if >0, then determines amount (experimental...) </p>
 	 * @see #__DNA__FIELD__generateParticles
 	 */
 	
 	public void setGenerateParticles(float generateParticles) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1180, generateParticles);
-		} else {
 			__io__block.writeFloat(__io__address + 1164, generateParticles);
+		} else {
+			__io__block.writeFloat(__io__address + 1156, generateParticles);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'surfaceSmoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> smooth fluid surface? </p>
 	 * @see #__DNA__FIELD__surfaceSmoothing
 	 */
 	
 	public float getSurfaceSmoothing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1184);
-		} else {
 			return __io__block.readFloat(__io__address + 1168);
+		} else {
+			return __io__block.readFloat(__io__address + 1160);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'surfaceSmoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> smooth fluid surface? </p>
 	 * @see #__DNA__FIELD__surfaceSmoothing
 	 */
 	
 	public void setSurfaceSmoothing(float surfaceSmoothing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1184, surfaceSmoothing);
-		} else {
 			__io__block.writeFloat(__io__address + 1168, surfaceSmoothing);
+		} else {
+			__io__block.writeFloat(__io__address + 1160, surfaceSmoothing);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'surfaceSubdivs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of surface subdivisions </p>
 	 * @see #__DNA__FIELD__surfaceSubdivs
 	 */
 	
 	public int getSurfaceSubdivs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1188);
-		} else {
 			return __io__block.readInt(__io__address + 1172);
+		} else {
+			return __io__block.readInt(__io__address + 1164);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'surfaceSubdivs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of surface subdivisions </p>
 	 * @see #__DNA__FIELD__surfaceSubdivs
 	 */
 	
 	public void setSurfaceSubdivs(int surfaceSubdivs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1188, surfaceSubdivs);
-		} else {
 			__io__block.writeInt(__io__address + 1172, surfaceSubdivs);
+		} else {
+			__io__block.writeInt(__io__address + 1164, surfaceSubdivs);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GUI flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1192);
-		} else {
 			return __io__block.readInt(__io__address + 1176);
+		} else {
+			return __io__block.readInt(__io__address + 1168);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GUI flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1192, flag);
-		} else {
 			__io__block.writeInt(__io__address + 1176, flag);
+		} else {
+			__io__block.writeInt(__io__address + 1168, flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'particleInfSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle display - size scaling, and alpha influence </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	
 	public float getParticleInfSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1196);
-		} else {
 			return __io__block.readFloat(__io__address + 1180);
+		} else {
+			return __io__block.readFloat(__io__address + 1172);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'particleInfSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> particle display - size scaling, and alpha influence </p>
 	 * @see #__DNA__FIELD__particleInfSize
 	 */
 	
 	public void setParticleInfSize(float particleInfSize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1196, particleInfSize);
-		} else {
 			__io__block.writeFloat(__io__address + 1180, particleInfSize);
+		} else {
+			__io__block.writeFloat(__io__address + 1172, particleInfSize);
 		}
 	}
 
@@ -2337,9 +2506,9 @@ public class FluidsimSettings extends CFacade {
 	public float getParticleInfAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1200);
-		} else {
 			return __io__block.readFloat(__io__address + 1184);
+		} else {
+			return __io__block.readFloat(__io__address + 1176);
 		}
 	}
 
@@ -2351,42 +2520,51 @@ public class FluidsimSettings extends CFacade {
 	public void setParticleInfAlpha(float particleInfAlpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1200, particleInfAlpha);
-		} else {
 			__io__block.writeFloat(__io__address + 1184, particleInfAlpha);
+		} else {
+			__io__block.writeFloat(__io__address + 1176, particleInfAlpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'farFieldSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> testing vars </p>
 	 * @see #__DNA__FIELD__farFieldSize
 	 */
 	
 	public float getFarFieldSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1204);
-		} else {
 			return __io__block.readFloat(__io__address + 1188);
+		} else {
+			return __io__block.readFloat(__io__address + 1180);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'farFieldSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> testing vars </p>
 	 * @see #__DNA__FIELD__farFieldSize
 	 */
 	
 	public void setFarFieldSize(float farFieldSize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1204, farFieldSize);
-		} else {
 			__io__block.writeFloat(__io__address + 1188, farFieldSize);
+		} else {
+			__io__block.writeFloat(__io__address + 1180, farFieldSize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'meshVelocities'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex velocities of simulated fluid mesh </p>
 	 * @see #__DNA__FIELD__meshVelocities
 	 */
 	
@@ -2394,9 +2572,9 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
-		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 1192);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidVertexVelocity.class};
 		return new CPointer<FluidVertexVelocity>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidVertexVelocity.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2404,6 +2582,9 @@ public class FluidsimSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'meshVelocities'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex velocities of simulated fluid mesh </p>
 	 * @see #__DNA__FIELD__meshVelocities
 	 */
 	
@@ -2411,65 +2592,77 @@ public class FluidsimSettings extends CFacade {
 	{
 		long __address = ((meshVelocities == null) ? 0 : meshVelocities.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1208, __address);
-		} else {
 			__io__block.writeLong(__io__address + 1192, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1184, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of vertices in simulated fluid mesh </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
 	public int getTotvert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1216);
+			return __io__block.readInt(__io__address + 1200);
 		} else {
-			return __io__block.readInt(__io__address + 1196);
+			return __io__block.readInt(__io__address + 1188);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of vertices in simulated fluid mesh </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
 	public void setTotvert(int totvert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1216, totvert);
+			__io__block.writeInt(__io__address + 1200, totvert);
 		} else {
-			__io__block.writeInt(__io__address + 1196, totvert);
+			__io__block.writeInt(__io__address + 1188, totvert);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'cpsTimeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Fluid control settings </p>
 	 * @see #__DNA__FIELD__cpsTimeStart
 	 */
 	
 	public float getCpsTimeStart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1220);
+			return __io__block.readFloat(__io__address + 1204);
 		} else {
-			return __io__block.readFloat(__io__address + 1200);
+			return __io__block.readFloat(__io__address + 1192);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'cpsTimeStart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Fluid control settings </p>
 	 * @see #__DNA__FIELD__cpsTimeStart
 	 */
 	
 	public void setCpsTimeStart(float cpsTimeStart) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1220, cpsTimeStart);
+			__io__block.writeFloat(__io__address + 1204, cpsTimeStart);
 		} else {
-			__io__block.writeFloat(__io__address + 1200, cpsTimeStart);
+			__io__block.writeFloat(__io__address + 1192, cpsTimeStart);
 		}
 	}
 
@@ -2481,9 +2674,9 @@ public class FluidsimSettings extends CFacade {
 	public float getCpsTimeEnd() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1224);
+			return __io__block.readFloat(__io__address + 1208);
 		} else {
-			return __io__block.readFloat(__io__address + 1204);
+			return __io__block.readFloat(__io__address + 1196);
 		}
 	}
 
@@ -2495,9 +2688,9 @@ public class FluidsimSettings extends CFacade {
 	public void setCpsTimeEnd(float cpsTimeEnd) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1224, cpsTimeEnd);
+			__io__block.writeFloat(__io__address + 1208, cpsTimeEnd);
 		} else {
-			__io__block.writeFloat(__io__address + 1204, cpsTimeEnd);
+			__io__block.writeFloat(__io__address + 1196, cpsTimeEnd);
 		}
 	}
 
@@ -2509,9 +2702,9 @@ public class FluidsimSettings extends CFacade {
 	public float getCpsQuality() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1228);
+			return __io__block.readFloat(__io__address + 1212);
 		} else {
-			return __io__block.readFloat(__io__address + 1208);
+			return __io__block.readFloat(__io__address + 1200);
 		}
 	}
 
@@ -2523,9 +2716,9 @@ public class FluidsimSettings extends CFacade {
 	public void setCpsQuality(float cpsQuality) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1228, cpsQuality);
+			__io__block.writeFloat(__io__address + 1212, cpsQuality);
 		} else {
-			__io__block.writeFloat(__io__address + 1208, cpsQuality);
+			__io__block.writeFloat(__io__address + 1200, cpsQuality);
 		}
 	}
 
@@ -2537,9 +2730,9 @@ public class FluidsimSettings extends CFacade {
 	public float getAttractforceStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1232);
+			return __io__block.readFloat(__io__address + 1216);
 		} else {
-			return __io__block.readFloat(__io__address + 1212);
+			return __io__block.readFloat(__io__address + 1204);
 		}
 	}
 
@@ -2551,9 +2744,9 @@ public class FluidsimSettings extends CFacade {
 	public void setAttractforceStrength(float attractforceStrength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1232, attractforceStrength);
+			__io__block.writeFloat(__io__address + 1216, attractforceStrength);
 		} else {
-			__io__block.writeFloat(__io__address + 1212, attractforceStrength);
+			__io__block.writeFloat(__io__address + 1204, attractforceStrength);
 		}
 	}
 
@@ -2565,9 +2758,9 @@ public class FluidsimSettings extends CFacade {
 	public float getAttractforceRadius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1236);
+			return __io__block.readFloat(__io__address + 1220);
 		} else {
-			return __io__block.readFloat(__io__address + 1216);
+			return __io__block.readFloat(__io__address + 1208);
 		}
 	}
 
@@ -2579,9 +2772,9 @@ public class FluidsimSettings extends CFacade {
 	public void setAttractforceRadius(float attractforceRadius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1236, attractforceRadius);
+			__io__block.writeFloat(__io__address + 1220, attractforceRadius);
 		} else {
-			__io__block.writeFloat(__io__address + 1216, attractforceRadius);
+			__io__block.writeFloat(__io__address + 1208, attractforceRadius);
 		}
 	}
 
@@ -2593,9 +2786,9 @@ public class FluidsimSettings extends CFacade {
 	public float getVelocityforceStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1240);
+			return __io__block.readFloat(__io__address + 1224);
 		} else {
-			return __io__block.readFloat(__io__address + 1220);
+			return __io__block.readFloat(__io__address + 1212);
 		}
 	}
 
@@ -2607,9 +2800,9 @@ public class FluidsimSettings extends CFacade {
 	public void setVelocityforceStrength(float velocityforceStrength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1240, velocityforceStrength);
+			__io__block.writeFloat(__io__address + 1224, velocityforceStrength);
 		} else {
-			__io__block.writeFloat(__io__address + 1220, velocityforceStrength);
+			__io__block.writeFloat(__io__address + 1212, velocityforceStrength);
 		}
 	}
 
@@ -2621,9 +2814,9 @@ public class FluidsimSettings extends CFacade {
 	public float getVelocityforceRadius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1244);
+			return __io__block.readFloat(__io__address + 1228);
 		} else {
-			return __io__block.readFloat(__io__address + 1224);
+			return __io__block.readFloat(__io__address + 1216);
 		}
 	}
 
@@ -2635,9 +2828,9 @@ public class FluidsimSettings extends CFacade {
 	public void setVelocityforceRadius(float velocityforceRadius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1244, velocityforceRadius);
+			__io__block.writeFloat(__io__address + 1228, velocityforceRadius);
 		} else {
-			__io__block.writeFloat(__io__address + 1224, velocityforceRadius);
+			__io__block.writeFloat(__io__address + 1216, velocityforceRadius);
 		}
 	}
 
@@ -2649,9 +2842,9 @@ public class FluidsimSettings extends CFacade {
 	public int getLastgoodframe() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1248);
+			return __io__block.readInt(__io__address + 1232);
 		} else {
-			return __io__block.readInt(__io__address + 1228);
+			return __io__block.readInt(__io__address + 1220);
 		}
 	}
 
@@ -2663,37 +2856,43 @@ public class FluidsimSettings extends CFacade {
 	public void setLastgoodframe(int lastgoodframe) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1248, lastgoodframe);
+			__io__block.writeInt(__io__address + 1232, lastgoodframe);
 		} else {
-			__io__block.writeInt(__io__address + 1228, lastgoodframe);
+			__io__block.writeInt(__io__address + 1220, lastgoodframe);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'animRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simulation/flow rate control (i.e. old "Fac-Time") </p>
 	 * @see #__DNA__FIELD__animRate
 	 */
 	
 	public float getAnimRate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1252);
+			return __io__block.readFloat(__io__address + 1236);
 		} else {
-			return __io__block.readFloat(__io__address + 1232);
+			return __io__block.readFloat(__io__address + 1224);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'animRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simulation/flow rate control (i.e. old "Fac-Time") </p>
 	 * @see #__DNA__FIELD__animRate
 	 */
 	
 	public void setAnimRate(float animRate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1252, animRate);
+			__io__block.writeFloat(__io__address + 1236, animRate);
 		} else {
-			__io__block.writeFloat(__io__address + 1232, animRate);
+			__io__block.writeFloat(__io__address + 1224, animRate);
 		}
 	}
 

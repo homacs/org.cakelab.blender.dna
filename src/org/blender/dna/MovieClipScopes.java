@@ -27,10 +27,13 @@ public class MovieClipScopes extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 531;
+	public static final int __DNA__SDNA_INDEX = 542;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 means scopes are ok and recalculation is unneeded </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_track_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> whether track's mask should be applied on preview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_preview_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> height of track preview widget </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width and height of frame for which scopes are calculated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'undist_marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> undistorted position of marker used for pattern sampling </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search area of a track </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +189,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ImBuf displayed in track preview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +212,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sub-pizel position of marker in track ImBuf </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +235,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_disabled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is disabled, special notifier should be drawn </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +258,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is locked, no transformation should be allowed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +281,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number scopes are created for </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +304,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'track'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> track scopes are created for </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +327,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> marker scopes are created for </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +350,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'slide_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale used for sliding from previewe area </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -339,6 +381,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'ok'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 means scopes are ok and recalculation is unneeded </p>
 	 * @see #__DNA__FIELD__ok
 	 */
 	
@@ -353,6 +398,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'ok'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 means scopes are ok and recalculation is unneeded </p>
 	 * @see #__DNA__FIELD__ok
 	 */
 	
@@ -367,6 +415,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_track_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> whether track's mask should be applied on preview </p>
 	 * @see #__DNA__FIELD__use_track_mask
 	 */
 	
@@ -381,6 +432,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_track_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> whether track's mask should be applied on preview </p>
 	 * @see #__DNA__FIELD__use_track_mask
 	 */
 	
@@ -395,6 +449,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_preview_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> height of track preview widget </p>
 	 * @see #__DNA__FIELD__track_preview_height
 	 */
 	
@@ -409,6 +466,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_preview_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> height of track preview widget </p>
 	 * @see #__DNA__FIELD__track_preview_height
 	 */
 	
@@ -451,6 +511,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'frame_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width and height of frame for which scopes are calculated </p>
 	 * @see #__DNA__FIELD__frame_height
 	 */
 	
@@ -465,6 +528,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'frame_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width and height of frame for which scopes are calculated </p>
 	 * @see #__DNA__FIELD__frame_height
 	 */
 	
@@ -479,6 +545,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'undist_marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> undistorted position of marker used for pattern sampling </p>
 	 * @see #__DNA__FIELD__undist_marker
 	 */
 	
@@ -493,6 +562,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'undist_marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> undistorted position of marker used for pattern sampling </p>
 	 * @see #__DNA__FIELD__undist_marker
 	 */
 	
@@ -515,6 +587,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search area of a track </p>
 	 * @see #__DNA__FIELD__track_search
 	 */
 	
@@ -532,6 +607,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_search'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> search area of a track </p>
 	 * @see #__DNA__FIELD__track_search
 	 */
 	
@@ -547,6 +625,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ImBuf displayed in track preview </p>
 	 * @see #__DNA__FIELD__track_preview
 	 */
 	
@@ -564,6 +645,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ImBuf displayed in track preview </p>
 	 * @see #__DNA__FIELD__track_preview
 	 */
 	
@@ -579,6 +663,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sub-pizel position of marker in track ImBuf </p>
 	 * @see #__DNA__FIELD__track_pos
 	 */
 	
@@ -597,6 +684,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sub-pizel position of marker in track ImBuf </p>
 	 * @see #__DNA__FIELD__track_pos
 	 */
 	
@@ -619,6 +709,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_disabled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is disabled, special notifier should be drawn </p>
 	 * @see #__DNA__FIELD__track_disabled
 	 */
 	
@@ -633,6 +726,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_disabled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is disabled, special notifier should be drawn </p>
 	 * @see #__DNA__FIELD__track_disabled
 	 */
 	
@@ -647,6 +743,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is locked, no transformation should be allowed </p>
 	 * @see #__DNA__FIELD__track_locked
 	 */
 	
@@ -661,6 +760,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track_locked'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active track is locked, no transformation should be allowed </p>
 	 * @see #__DNA__FIELD__track_locked
 	 */
 	
@@ -675,6 +777,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number scopes are created for </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -689,6 +794,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame number scopes are created for </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -703,6 +811,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'track'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> track scopes are created for </p>
 	 * @see #__DNA__FIELD__track
 	 */
 	
@@ -720,6 +831,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'track'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> track scopes are created for </p>
 	 * @see #__DNA__FIELD__track
 	 */
 	
@@ -735,6 +849,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> marker scopes are created for </p>
 	 * @see #__DNA__FIELD__marker
 	 */
 	
@@ -752,6 +869,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'marker'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> marker scopes are created for </p>
 	 * @see #__DNA__FIELD__marker
 	 */
 	
@@ -767,6 +887,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Get method for struct member 'slide_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale used for sliding from previewe area </p>
 	 * @see #__DNA__FIELD__slide_scale
 	 */
 	
@@ -785,6 +908,9 @@ public class MovieClipScopes extends CFacade {
 
 	/**
 	 * Set method for struct member 'slide_scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scale used for sliding from previewe area </p>
 	 * @see #__DNA__FIELD__slide_scale
 	 */
 	

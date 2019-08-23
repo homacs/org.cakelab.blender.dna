@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bIpoActuator'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> deprecated, handled by {@link bActionActuator}  now </p>
  */
 
 @CMetaData(size32=148, size64=148)
@@ -27,7 +28,7 @@ public class bIpoActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 314;
+	public static final int __DNA__SDNA_INDEX = 320;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -111,6 +112,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +135,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +358,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -369,6 +379,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -391,6 +404,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * @see #__DNA__FIELD__frameProp
 	 */
 	
@@ -409,6 +425,9 @@ public class bIpoActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'frameProp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set this property to the actions current frame, MAX_NAME </p>
 	 * @see #__DNA__FIELD__frameProp
 	 */
 	

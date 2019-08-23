@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 156;
+	public static final int __DNA__SDNA_INDEX = 157;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +71,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> generic flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +94,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +117,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'startframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation start frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +163,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'endframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation end frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +186,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'editframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame being edited (runtime only) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +209,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_exact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last exact frame that's cached </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +232,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_valid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used for editing cache - what is the last baked frame </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +275,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for external cache files number of cached points </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +298,10 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index number of cache files<h4>Blender Source Code:</h4>
+	 * <p> modifier stack index </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +322,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'compression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Compression method to be used
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +365,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cache name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +408,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Info on current cache status
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +431,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path, 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +454,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cached_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +477,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mem_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can be later used for other per frame flags too if needed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -543,6 +592,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> generic flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -557,6 +609,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> generic flag </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -571,6 +626,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	
@@ -585,6 +643,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	
@@ -599,6 +660,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'simframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
 	 * @see #__DNA__FIELD__simframe
 	 */
 	
@@ -613,6 +677,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'simframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
 	 * @see #__DNA__FIELD__simframe
 	 */
 	
@@ -627,6 +694,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'startframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation start frame </p>
 	 * @see #__DNA__FIELD__startframe
 	 */
 	
@@ -641,6 +711,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'startframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation start frame </p>
 	 * @see #__DNA__FIELD__startframe
 	 */
 	
@@ -655,6 +728,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'endframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation end frame </p>
 	 * @see #__DNA__FIELD__endframe
 	 */
 	
@@ -669,6 +745,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'endframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> simulation end frame </p>
 	 * @see #__DNA__FIELD__endframe
 	 */
 	
@@ -683,6 +762,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'editframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame being edited (runtime only) </p>
 	 * @see #__DNA__FIELD__editframe
 	 */
 	
@@ -697,6 +779,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'editframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frame being edited (runtime only) </p>
 	 * @see #__DNA__FIELD__editframe
 	 */
 	
@@ -711,6 +796,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'last_exact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last exact frame that's cached </p>
 	 * @see #__DNA__FIELD__last_exact
 	 */
 	
@@ -725,6 +813,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'last_exact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> last exact frame that's cached </p>
 	 * @see #__DNA__FIELD__last_exact
 	 */
 	
@@ -739,6 +830,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'last_valid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used for editing cache - what is the last baked frame </p>
 	 * @see #__DNA__FIELD__last_valid
 	 */
 	
@@ -753,6 +847,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'last_valid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used for editing cache - what is the last baked frame </p>
 	 * @see #__DNA__FIELD__last_valid
 	 */
 	
@@ -795,6 +892,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'totpoint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for external cache files number of cached points </p>
 	 * @see #__DNA__FIELD__totpoint
 	 */
 	
@@ -809,6 +909,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'totpoint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for external cache files number of cached points </p>
 	 * @see #__DNA__FIELD__totpoint
 	 */
 	
@@ -823,6 +926,10 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index number of cache files<h4>Blender Source Code:</h4>
+	 * <p> modifier stack index </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -837,6 +944,10 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index number of cache files<h4>Blender Source Code:</h4>
+	 * <p> modifier stack index </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -851,6 +962,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'compression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Compression method to be used
 	 * @see #__DNA__FIELD__compression
 	 */
 	
@@ -865,6 +979,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'compression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Compression method to be used
 	 * @see #__DNA__FIELD__compression
 	 */
 	
@@ -907,6 +1024,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cache name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -925,6 +1045,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cache name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -987,6 +1110,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Info on current cache status
 	 * @see #__DNA__FIELD__info
 	 */
 	
@@ -1005,6 +1131,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Info on current cache status
 	 * @see #__DNA__FIELD__info
 	 */
 	
@@ -1027,6 +1156,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path, 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1045,6 +1177,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path, 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1067,6 +1202,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'cached_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
 	 * @see #__DNA__FIELD__cached_frames
 	 */
 	
@@ -1084,6 +1222,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'cached_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
 	 * @see #__DNA__FIELD__cached_frames
 	 */
 	
@@ -1099,6 +1240,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'mem_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can be later used for other per frame flags too if needed </p>
 	 * @see #__DNA__FIELD__mem_cache
 	 */
 	
@@ -1113,6 +1257,9 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'mem_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> can be later used for other per frame flags too if needed </p>
 	 * @see #__DNA__FIELD__mem_cache
 	 */
 	

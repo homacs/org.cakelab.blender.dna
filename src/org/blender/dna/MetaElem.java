@@ -71,6 +71,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bound Box of {@link MetaElem}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +214,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Position of center of {@link MetaElem}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +237,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +260,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'expx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dimension parameters, used for some types like cubes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +323,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius of the meta element </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +346,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp field, used only while processing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +369,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 's'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stiffness, how much of the element to fill </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +392,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> old, only used for backwards compat. use dimensions now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +435,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix and inverted matrix </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -503,6 +530,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'bb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bound Box of {@link MetaElem}  </p>
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -520,6 +550,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'bb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bound Box of {@link MetaElem}  </p>
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -703,6 +736,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Position of center of {@link MetaElem}  </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -717,6 +753,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'z'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Position of center of {@link MetaElem}  </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -731,6 +770,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized) </p>
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -749,6 +791,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of {@link MetaElem}  (MUST be kept normalized) </p>
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -771,6 +816,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'expx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dimension parameters, used for some types like cubes </p>
 	 * @see #__DNA__FIELD__expx
 	 */
 	
@@ -785,6 +833,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'expx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dimension parameters, used for some types like cubes </p>
 	 * @see #__DNA__FIELD__expx
 	 */
 	
@@ -855,6 +906,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'rad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius of the meta element </p>
 	 * @see #__DNA__FIELD__rad
 	 */
 	
@@ -869,6 +923,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'rad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> radius of the meta element </p>
 	 * @see #__DNA__FIELD__rad
 	 */
 	
@@ -883,6 +940,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'rad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp field, used only while processing </p>
 	 * @see #__DNA__FIELD__rad2
 	 */
 	
@@ -897,6 +957,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'rad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp field, used only while processing </p>
 	 * @see #__DNA__FIELD__rad2
 	 */
 	
@@ -911,6 +974,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 's'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stiffness, how much of the element to fill </p>
 	 * @see #__DNA__FIELD__s
 	 */
 	
@@ -925,6 +991,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 's'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stiffness, how much of the element to fill </p>
 	 * @see #__DNA__FIELD__s
 	 */
 	
@@ -939,6 +1008,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'len'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> old, only used for backwards compat. use dimensions now </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -953,6 +1025,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'len'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> old, only used for backwards compat. use dimensions now </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -999,6 +1074,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Get method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix and inverted matrix </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -1016,6 +1094,9 @@ public class MetaElem extends CFacade {
 
 	/**
 	 * Set method for struct member 'imat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix and inverted matrix </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	

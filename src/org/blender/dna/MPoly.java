@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MPoly'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * Defines a polygon based on a subset of the loop entries of the {@link Mesh}.<h4>Blender Source Code:</h4>
+ * <p> new face structure, replaces {@link MFace} , which is now only used for storing tessellations. </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -30,6 +32,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'loopstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <p> offset into loop array and number of loops in the face </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +56,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <p> keep signed since we need to subtract when getting the previous loop </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +100,14 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	ME_SMOOTH   = (1 << 0),
+	 * 	ME_FACE_SEL = (1 << 1),
+	 * //	ME_HIDE     = (1 << 4), 
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,6 +156,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Get method for struct member 'loopstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <p> offset into loop array and number of loops in the face </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
 	
@@ -152,6 +174,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Set method for struct member 'loopstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
+	 * <p> offset into loop array and number of loops in the face </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
 	
@@ -166,6 +192,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Get method for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <p> keep signed since we need to subtract when getting the previous loop </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -180,6 +210,10 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Set method for struct member 'totloop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
+	 * <p> keep signed since we need to subtract when getting the previous loop </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -222,6 +256,14 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	ME_SMOOTH   = (1 << 0),
+	 * 	ME_FACE_SEL = (1 << 1),
+	 * //	ME_HIDE     = (1 << 4), 
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -236,6 +278,14 @@ public class MPoly extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	ME_SMOOTH   = (1 << 0),
+	 * 	ME_FACE_SEL = (1 << 1),
+	 * //	ME_HIDE     = (1 << 4), 
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

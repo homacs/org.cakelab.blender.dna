@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MTexPoly'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * Assigns a texture to a polygon (face). If a {@link Mesh} has UV coordinates, each entry in mpoly (defining the face) has a corresponding mtexpoly entry to assign a texture to it.
  */
 
 @CMetaData(size32=12, size64=16)
@@ -30,6 +31,9 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tpage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Pointer on the assigned texture.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,17 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	// TF_SELECT = (1 << 0),  // use MFace hide flag (after 2.43), should be able to reuse after 2.44 
+	 * 	// TF_ACTIVE = (1 << 1),  // deprecated! 
+	 * 	TF_SEL1   = (1 << 2),
+	 * 	TF_SEL2   = (1 << 3),
+	 * 	TF_SEL3   = (1 << 4),
+	 * 	TF_SEL4   = (1 << 5),
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +173,9 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Get method for struct member 'tpage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Pointer on the assigned texture.
 	 * @see #__DNA__FIELD__tpage
 	 */
 	
@@ -175,6 +193,9 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Set method for struct member 'tpage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Pointer on the assigned texture.
 	 * @see #__DNA__FIELD__tpage
 	 */
 	
@@ -190,6 +211,17 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	// TF_SELECT = (1 << 0),  // use MFace hide flag (after 2.43), should be able to reuse after 2.44 
+	 * 	// TF_ACTIVE = (1 << 1),  // deprecated! 
+	 * 	TF_SEL1   = (1 << 2),
+	 * 	TF_SEL2   = (1 << 3),
+	 * 	TF_SEL3   = (1 << 4),
+	 * 	TF_SEL4   = (1 << 5),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -204,6 +236,17 @@ public class MTexPoly extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	// TF_SELECT = (1 << 0),  // use MFace hide flag (after 2.43), should be able to reuse after 2.44 
+	 * 	// TF_ACTIVE = (1 << 1),  // deprecated! 
+	 * 	TF_SEL1   = (1 << 2),
+	 * 	TF_SEL2   = (1 << 3),
+	 * 	TF_SEL3   = (1 << 4),
+	 * 	TF_SEL4   = (1 << 5),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

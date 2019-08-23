@@ -27,10 +27,13 @@ public class bCollisionSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 295;
+	public static final int __DNA__SDNA_INDEX = 301;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> property name. MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'materialName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'damptimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> struct {@link Material}  *ma; ////< XXX remove materialName </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +171,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> property name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -177,6 +192,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> property name. MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -199,6 +217,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'materialName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material </p>
 	 * @see #__DNA__FIELD__materialName
 	 */
 	
@@ -217,6 +238,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'materialName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material </p>
 	 * @see #__DNA__FIELD__materialName
 	 */
 	
@@ -239,6 +263,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'damptimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> struct {@link Material}  *ma; ////< XXX remove materialName </p>
 	 * @see #__DNA__FIELD__damptimer
 	 */
 	
@@ -253,6 +280,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'damptimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> struct {@link Material}  *ma; ////< XXX remove materialName </p>
 	 * @see #__DNA__FIELD__damptimer
 	 */
 	
@@ -295,6 +325,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -309,6 +342,9 @@ public class bCollisionSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	

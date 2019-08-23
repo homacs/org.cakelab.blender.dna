@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'VPaint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Vertex {@link Paint}  Vertex {@link Paint}  </p>
  */
 
 @CMetaData(size32=68, size64=96)
@@ -26,7 +28,7 @@ public class VPaint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 187;
+	public static final int __DNA__SDNA_INDEX = 188;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -90,6 +92,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocation size of prev buffers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +115,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous mesh colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +138,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous vertex weights </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +161,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,6 +284,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Get method for struct member 'tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocation size of prev buffers </p>
 	 * @see #__DNA__FIELD__tot
 	 */
 	
@@ -284,6 +301,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Set method for struct member 'tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocation size of prev buffers </p>
 	 * @see #__DNA__FIELD__tot
 	 */
 	
@@ -298,6 +318,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Get method for struct member 'vpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous mesh colors </p>
 	 * @see #__DNA__FIELD__vpaint_prev
 	 */
 	
@@ -315,6 +338,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Set method for struct member 'vpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous mesh colors </p>
 	 * @see #__DNA__FIELD__vpaint_prev
 	 */
 	
@@ -330,6 +356,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Get method for struct member 'wpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous vertex weights </p>
 	 * @see #__DNA__FIELD__wpaint_prev
 	 */
 	
@@ -347,6 +376,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Set method for struct member 'wpaint_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> previous vertex weights </p>
 	 * @see #__DNA__FIELD__wpaint_prev
 	 */
 	
@@ -362,6 +394,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Get method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -379,6 +414,9 @@ public class VPaint extends CFacade {
 
 	/**
 	 * Set method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	

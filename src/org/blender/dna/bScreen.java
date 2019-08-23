@@ -27,7 +27,7 @@ public class bScreen extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 247;
+	public static final int __DNA__SDNA_INDEX = 251;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -51,6 +51,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screens have vertices/edges to define areas </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screen level regions (menus), runtime only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'newscene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary when switching </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +180,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'winid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> winid from WM, starts with 1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +203,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'redraws_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-setting for which editors get redrawn during anim playback (used to be time->redraws) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +226,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen in a temp window, don't save (like user prefs) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +249,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen for image render display or fileselect </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +272,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for drawing edges </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +295,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for scale screen, changed screen, etc </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +318,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_gesture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for gesture draw. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +341,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for paint cursor draw. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +364,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_drag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for dragging draw. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +387,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'swap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator to survive swap-exchange systems </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +410,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'skip_handling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set to delay screen handling after switching back from maximized area </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +433,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scrubbing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set when scrubbing to avoid some costly updates </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +476,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainwin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screensize subwindow, for screenedges and global menus </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +499,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subwinactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active subwindow </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +522,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'animtimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if set, screen has timer handler added in window </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +545,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context callback </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -555,6 +612,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'vertbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screens have vertices/edges to define areas </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
 	
@@ -569,6 +629,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'vertbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screens have vertices/edges to define areas </p>
 	 * @see #__DNA__FIELD__vertbase
 	 */
 	
@@ -663,6 +726,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screen level regions (menus), runtime only </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -677,6 +743,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screen level regions (menus), runtime only </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -731,6 +800,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'newscene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary when switching </p>
 	 * @see #__DNA__FIELD__newscene
 	 */
 	
@@ -748,6 +820,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'newscene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary when switching </p>
 	 * @see #__DNA__FIELD__newscene
 	 */
 	
@@ -763,6 +838,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'winid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> winid from WM, starts with 1 </p>
 	 * @see #__DNA__FIELD__winid
 	 */
 	
@@ -777,6 +855,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'winid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> winid from WM, starts with 1 </p>
 	 * @see #__DNA__FIELD__winid
 	 */
 	
@@ -791,6 +872,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'redraws_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-setting for which editors get redrawn during anim playback (used to be time->redraws) </p>
 	 * @see #__DNA__FIELD__redraws_flag
 	 */
 	
@@ -805,6 +889,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'redraws_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-setting for which editors get redrawn during anim playback (used to be time->redraws) </p>
 	 * @see #__DNA__FIELD__redraws_flag
 	 */
 	
@@ -819,6 +906,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen in a temp window, don't save (like user prefs) </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -833,6 +923,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen in a temp window, don't save (like user prefs) </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -847,6 +940,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen for image render display or fileselect </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
@@ -861,6 +957,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'state'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temp screen for image render display or fileselect </p>
 	 * @see #__DNA__FIELD__state
 	 */
 	
@@ -875,6 +974,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_draw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for drawing edges </p>
 	 * @see #__DNA__FIELD__do_draw
 	 */
 	
@@ -889,6 +991,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_draw'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for drawing edges </p>
 	 * @see #__DNA__FIELD__do_draw
 	 */
 	
@@ -903,6 +1008,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for scale screen, changed screen, etc </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
@@ -917,6 +1025,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_refresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for scale screen, changed screen, etc </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
@@ -931,6 +1042,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_draw_gesture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for gesture draw. </p>
 	 * @see #__DNA__FIELD__do_draw_gesture
 	 */
 	
@@ -945,6 +1059,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_draw_gesture'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for gesture draw. </p>
 	 * @see #__DNA__FIELD__do_draw_gesture
 	 */
 	
@@ -959,6 +1076,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_draw_paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for paint cursor draw. </p>
 	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
 	
@@ -973,6 +1093,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_draw_paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for paint cursor draw. </p>
 	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
 	
@@ -987,6 +1110,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'do_draw_drag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for dragging draw. </p>
 	 * @see #__DNA__FIELD__do_draw_drag
 	 */
 	
@@ -1001,6 +1127,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'do_draw_drag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> notifier for dragging draw. </p>
 	 * @see #__DNA__FIELD__do_draw_drag
 	 */
 	
@@ -1015,6 +1144,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'swap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator to survive swap-exchange systems </p>
 	 * @see #__DNA__FIELD__swap
 	 */
 	
@@ -1029,6 +1161,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'swap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> indicator to survive swap-exchange systems </p>
 	 * @see #__DNA__FIELD__swap
 	 */
 	
@@ -1043,6 +1178,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'skip_handling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set to delay screen handling after switching back from maximized area </p>
 	 * @see #__DNA__FIELD__skip_handling
 	 */
 	
@@ -1057,6 +1195,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'skip_handling'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set to delay screen handling after switching back from maximized area </p>
 	 * @see #__DNA__FIELD__skip_handling
 	 */
 	
@@ -1071,6 +1212,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'scrubbing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set when scrubbing to avoid some costly updates </p>
 	 * @see #__DNA__FIELD__scrubbing
 	 */
 	
@@ -1085,6 +1229,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'scrubbing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set when scrubbing to avoid some costly updates </p>
 	 * @see #__DNA__FIELD__scrubbing
 	 */
 	
@@ -1139,6 +1286,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'mainwin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screensize subwindow, for screenedges and global menus </p>
 	 * @see #__DNA__FIELD__mainwin
 	 */
 	
@@ -1153,6 +1303,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'mainwin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> screensize subwindow, for screenedges and global menus </p>
 	 * @see #__DNA__FIELD__mainwin
 	 */
 	
@@ -1167,6 +1320,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'subwinactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active subwindow </p>
 	 * @see #__DNA__FIELD__subwinactive
 	 */
 	
@@ -1181,6 +1337,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'subwinactive'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active subwindow </p>
 	 * @see #__DNA__FIELD__subwinactive
 	 */
 	
@@ -1195,6 +1354,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'animtimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if set, screen has timer handler added in window </p>
 	 * @see #__DNA__FIELD__animtimer
 	 */
 	
@@ -1212,6 +1374,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'animtimer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if set, screen has timer handler added in window </p>
 	 * @see #__DNA__FIELD__animtimer
 	 */
 	
@@ -1227,6 +1392,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Get method for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context callback </p>
 	 * @see #__DNA__FIELD__context
 	 */
 	
@@ -1244,6 +1412,9 @@ public class bScreen extends CFacade {
 
 	/**
 	 * Set method for struct member 'context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context callback </p>
 	 * @see #__DNA__FIELD__context
 	 */
 	

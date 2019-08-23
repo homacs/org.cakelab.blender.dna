@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeImageMultiFile'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> XXX first struct fields should match {@link NodeImageFile}  to ensure forward compatibility </p>
  */
 
 @CMetaData(size32=1288, size64=1296)
@@ -27,10 +28,13 @@ public class NodeImageMultiFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 406;
+	public static final int __DNA__SDNA_INDEX = 413;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +100,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility </p>
+	 * @deprecated
+	 *  DeprecatedXXX old frame rand values from NodeImageFile for forward compatibility </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +125,9 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_input'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selected input in details view list </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +176,9 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'base_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__base_path
 	 */
 	
@@ -177,6 +197,9 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'base_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__base_path
 	 */
 	
@@ -235,6 +258,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -249,6 +277,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -263,6 +296,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility </p>
+	 * @deprecated
+	 *  DeprecatedXXX old frame rand values from NodeImageFile for forward compatibility </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -277,6 +315,11 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX old frame rand values from {@link NodeImageFile}  for forward compatibility </p>
+	 * @deprecated
+	 *  DeprecatedXXX old frame rand values from NodeImageFile for forward compatibility </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -291,6 +334,9 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'active_input'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selected input in details view list </p>
 	 * @see #__DNA__FIELD__active_input
 	 */
 	
@@ -305,6 +351,9 @@ public class NodeImageMultiFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'active_input'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selected input in details view list </p>
 	 * @see #__DNA__FIELD__active_input
 	 */
 	

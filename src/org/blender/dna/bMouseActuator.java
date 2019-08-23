@@ -27,10 +27,13 @@ public class bMouseActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 327;
+	public static final int __DNA__SDNA_INDEX = 333;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Visibility, 1=Look </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,6 +182,9 @@ public class bMouseActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Visibility, 1=Look </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -193,6 +199,9 @@ public class bMouseActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=Visibility, 1=Look </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

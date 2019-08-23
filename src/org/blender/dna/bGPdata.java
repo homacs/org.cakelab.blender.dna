@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -12,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bGPdata'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Grease-Pencil Annotations - 'DataBlock' </p>
  */
 
-@CMetaData(size32=124, size64=160)
+@CMetaData(size32=156, size64=200)
 public class bGPdata extends CFacade {
 
 	/**
@@ -26,10 +28,13 @@ public class bGPdata extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 482;
+	public static final int __DNA__SDNA_INDEX = 493;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil data is a datablock </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +55,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data - for animating draw settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +78,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved Grease-Pencil data bGPDlayers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +101,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for this datablock </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +124,11 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not-saved stroke buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +149,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for stroke that cache represents </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +172,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke buffer (can hold GP_STROKE_BUFFER_MAX) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -168,6 +193,98 @@ public class bGPdata extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__sbuffer = new long[]{120, 152};
 
+	/**
+	 * Field descriptor (offset) for struct member 'scolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> buffer color using palettes </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__scolor);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scolor = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scolor'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scolor = new long[]{124, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding for compiler alignment error </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{140, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for palette color </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__sflag);
+	 * CPointer&lt;Short&gt; p_sflag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sflag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sflag = new long[]{146, 182};
+
+	/**
+	 * Field descriptor (offset) for struct member 'palettes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved palettes </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__palettes);
+	 * CPointer&lt;ListBase&gt; p_palettes = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'palettes'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__palettes = new long[]{148, 184};
+
 	public bGPdata(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -178,6 +295,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil data is a datablock </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -192,6 +312,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil data is a datablock </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -214,6 +337,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data - for animating draw settings </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -231,6 +357,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data - for animating draw settings </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -246,6 +375,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved Grease-Pencil data bGPDlayers </p>
 	 * @see #__DNA__FIELD__layers
 	 */
 	
@@ -260,6 +392,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved Grease-Pencil data bGPDlayers </p>
 	 * @see #__DNA__FIELD__layers
 	 */
 	
@@ -282,6 +417,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for this datablock </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -296,6 +434,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for this datablock </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -310,6 +451,11 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not-saved stroke buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache 
+	 * </p>
 	 * @see #__DNA__FIELD__sbuffer_size
 	 */
 	
@@ -324,6 +470,11 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not-saved stroke buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overnumber of elements currently in cache 
+	 * </p>
 	 * @see #__DNA__FIELD__sbuffer_size
 	 */
 	
@@ -338,6 +489,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'sbuffer_sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for stroke that cache represents </p>
 	 * @see #__DNA__FIELD__sbuffer_sflag
 	 */
 	
@@ -352,6 +506,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'sbuffer_sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags for stroke that cache represents </p>
 	 * @see #__DNA__FIELD__sbuffer_sflag
 	 */
 	
@@ -366,6 +523,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Get method for struct member 'sbuffer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke buffer (can hold GP_STROKE_BUFFER_MAX) </p>
 	 * @see #__DNA__FIELD__sbuffer
 	 */
 	
@@ -383,6 +543,9 @@ public class bGPdata extends CFacade {
 
 	/**
 	 * Set method for struct member 'sbuffer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke buffer (can hold GP_STROKE_BUFFER_MAX) </p>
 	 * @see #__DNA__FIELD__sbuffer
 	 */
 	
@@ -393,6 +556,174 @@ public class bGPdata extends CFacade {
 			__io__block.writeLong(__io__address + 152, __address);
 		} else {
 			__io__block.writeLong(__io__address + 120, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> buffer color using palettes </p>
+	 * @see #__DNA__FIELD__scolor
+	 */
+	
+	public CArrayFacade<Float> getScolor() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> buffer color using palettes </p>
+	 * @see #__DNA__FIELD__scolor
+	 */
+	
+	public void setScolor(CArrayFacade<Float> scolor) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 160;
+		} else {
+			__dna__offset = 124;
+		}
+		if (__io__equals(scolor, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scolor)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scolor);
+		} else {
+			__io__generic__copy( getScolor(), scolor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding for compiler alignment error </p>
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding for compiler alignment error </p>
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 140;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for palette color </p>
+	 * @see #__DNA__FIELD__sflag
+	 */
+	
+	public short getSflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 182);
+		} else {
+			return __io__block.readShort(__io__address + 146);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for palette color </p>
+	 * @see #__DNA__FIELD__sflag
+	 */
+	
+	public void setSflag(short sflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 182, sflag);
+		} else {
+			__io__block.writeShort(__io__address + 146, sflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'palettes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved palettes </p>
+	 * @see #__DNA__FIELD__palettes
+	 */
+	
+	public ListBase getPalettes() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 148, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'palettes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved palettes </p>
+	 * @see #__DNA__FIELD__palettes
+	 */
+	
+	public void setPalettes(ListBase palettes) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 184;
+		} else {
+			__dna__offset = 148;
+		}
+		if (__io__equals(palettes, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, palettes)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, palettes);
+		} else {
+			__io__generic__copy( getPalettes(), palettes);
 		}
 	}
 

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileDirEntryRevision'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Container for a revision, only relevant in asset context. </p>
  */
 
 @CMetaData(size32=88, size64=104)
@@ -27,7 +28,7 @@ public class FileDirEntryRevision extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 216;
+	public static final int __DNA__SDNA_INDEX = 220;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -171,6 +172,9 @@ public class FileDirEntryRevision extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'size_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp caching of UI-generated strings... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -463,6 +467,9 @@ public class FileDirEntryRevision extends CFacade {
 
 	/**
 	 * Get method for struct member 'size_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp caching of UI-generated strings... </p>
 	 * @see #__DNA__FIELD__size_str
 	 */
 	
@@ -481,6 +488,9 @@ public class FileDirEntryRevision extends CFacade {
 
 	/**
 	 * Set method for struct member 'size_str'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temp caching of UI-generated strings... </p>
 	 * @see #__DNA__FIELD__size_str
 	 */
 	

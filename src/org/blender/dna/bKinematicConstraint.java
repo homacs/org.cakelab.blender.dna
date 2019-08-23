@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bKinematicConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Inverse-Kinematics (IK) constraint This constraint supports a variety of mode determine by the type field according to B_CONSTRAINT_IK_TYPE. Some fields are used by all types, some are specific to some types This is indicated in the comments for each field </p>
  */
 
 @CMetaData(size32=176, size64=184)
@@ -27,10 +28,13 @@ public class bKinematicConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 350;
+	public static final int __DNA__SDNA_INDEX = 356;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: target object in case constraint needs a target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Maximum number of iterations to try </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +78,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All & CopyPose: some options Like CONSTRAINT_IK_TIP </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +101,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: index to rootbone, if zero go all the way to mother bone </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +124,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for auto-ik, maximum length of chain </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +147,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: String to specify sub-object target, MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +170,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'poletar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +193,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'polesubtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector sub-object target, MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +216,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'poleangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector rest angle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +239,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Weight of constraint in IK tree </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +262,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'orientweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: Amount of rotation a target applies on chain </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +285,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'grabtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for target-less IK </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +308,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtype of IK constraint: B_CONSTRAINT_IK_TYPE </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +331,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: how to limit in relation to clamping sphere: LIMITDIST_.. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +354,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: distance (radius of clamping sphere) from target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -339,6 +385,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: target object in case constraint needs a target </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -356,6 +405,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: target object in case constraint needs a target </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -371,6 +423,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Maximum number of iterations to try </p>
 	 * @see #__DNA__FIELD__iterations
 	 */
 	
@@ -385,6 +440,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Maximum number of iterations to try </p>
 	 * @see #__DNA__FIELD__iterations
 	 */
 	
@@ -399,6 +457,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All & CopyPose: some options Like CONSTRAINT_IK_TIP </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -413,6 +474,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All & CopyPose: some options Like CONSTRAINT_IK_TIP </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -427,6 +491,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: index to rootbone, if zero go all the way to mother bone </p>
 	 * @see #__DNA__FIELD__rootbone
 	 */
 	
@@ -441,6 +508,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: index to rootbone, if zero go all the way to mother bone </p>
 	 * @see #__DNA__FIELD__rootbone
 	 */
 	
@@ -455,6 +525,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'max_rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for auto-ik, maximum length of chain </p>
 	 * @see #__DNA__FIELD__max_rootbone
 	 */
 	
@@ -469,6 +542,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'max_rootbone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for auto-ik, maximum length of chain </p>
 	 * @see #__DNA__FIELD__max_rootbone
 	 */
 	
@@ -483,6 +559,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: String to specify sub-object target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -501,6 +580,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: String to specify sub-object target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -523,6 +605,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'poletar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector target </p>
 	 * @see #__DNA__FIELD__poletar
 	 */
 	
@@ -540,6 +625,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'poletar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector target </p>
 	 * @see #__DNA__FIELD__poletar
 	 */
 	
@@ -555,6 +643,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'polesubtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector sub-object target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__polesubtarget
 	 */
 	
@@ -573,6 +664,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'polesubtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector sub-object target, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__polesubtarget
 	 */
 	
@@ -595,6 +689,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'poleangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector rest angle </p>
 	 * @see #__DNA__FIELD__poleangle
 	 */
 	
@@ -609,6 +706,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'poleangle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Pole vector rest angle </p>
 	 * @see #__DNA__FIELD__poleangle
 	 */
 	
@@ -623,6 +723,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Weight of constraint in IK tree </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -637,6 +740,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All: Weight of constraint in IK tree </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -651,6 +757,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'orientweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: Amount of rotation a target applies on chain </p>
 	 * @see #__DNA__FIELD__orientweight
 	 */
 	
@@ -665,6 +774,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'orientweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: Amount of rotation a target applies on chain </p>
 	 * @see #__DNA__FIELD__orientweight
 	 */
 	
@@ -679,6 +791,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'grabtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for target-less IK </p>
 	 * @see #__DNA__FIELD__grabtarget
 	 */
 	
@@ -697,6 +812,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'grabtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> CopyPose: for target-less IK </p>
 	 * @see #__DNA__FIELD__grabtarget
 	 */
 	
@@ -719,6 +837,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtype of IK constraint: B_CONSTRAINT_IK_TYPE </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -733,6 +854,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtype of IK constraint: B_CONSTRAINT_IK_TYPE </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -747,6 +871,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: how to limit in relation to clamping sphere: LIMITDIST_.. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -761,6 +888,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: how to limit in relation to clamping sphere: LIMITDIST_.. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -775,6 +905,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: distance (radius of clamping sphere) from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -789,6 +922,9 @@ public class bKinematicConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distance: distance (radius of clamping sphere) from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	

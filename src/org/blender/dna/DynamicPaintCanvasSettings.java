@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'DynamicPaintCanvasSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Canvas settings </p>
  */
 
 @CMetaData(size32=88, size64=104)
@@ -27,10 +28,13 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 548;
+	public static final int __DNA__SDNA_INDEX = 559;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +155,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake error description </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,6 +186,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -196,6 +206,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'pmd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for fast RNA access </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -363,6 +376,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'error'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake error description </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -381,6 +397,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'error'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bake error description </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	

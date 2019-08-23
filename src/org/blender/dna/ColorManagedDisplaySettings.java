@@ -27,10 +27,13 @@ public class ColorManagedDisplaySettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 454;
+	public static final int __DNA__SDNA_INDEX = 461;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_device'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display device name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,6 +62,9 @@ public class ColorManagedDisplaySettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'display_device'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */
 	
@@ -77,6 +83,9 @@ public class ColorManagedDisplaySettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'display_device'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display device name
 	 * @see #__DNA__FIELD__display_device
 	 */
 	

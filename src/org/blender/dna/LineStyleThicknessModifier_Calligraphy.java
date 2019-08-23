@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'LineStyleThicknessModifier_Calligraphy'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Calligraphic thickness modifier </p>
  */
 
 @CMetaData(size32=104, size64=112)
@@ -26,7 +27,7 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 602;
+	public static final int __DNA__SDNA_INDEX = 613;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -90,6 +91,10 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'orientation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -230,6 +235,10 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 
 	/**
 	 * Get method for struct member 'orientation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * @see #__DNA__FIELD__orientation
 	 */
 	
@@ -244,6 +253,10 @@ public class LineStyleThicknessModifier_Calligraphy extends CFacade {
 
 	/**
 	 * Set method for struct member 'orientation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Angle of the main direction<h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * @see #__DNA__FIELD__orientation
 	 */
 	

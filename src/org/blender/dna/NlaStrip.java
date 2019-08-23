@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NlaStrip'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  NLA - Non-Linear Animation NLA Strips -------------------------------<mdash/><mdash/>  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
  */
 
 @CMetaData(size32=164, size64=208)
@@ -27,7 +29,7 @@ public class NlaStrip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 508;
+	public static final int __DNA__SDNA_INDEX = 519;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strips'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
+	 * <p> 'Child' strips (used for 'meta' strips) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'remap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fcurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
+	 * <p> F-Curves for controlling this strip's influence and timing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +167,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
+	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +191,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +214,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
+	 * <p> Influence of strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +238,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strip_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +282,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extents of the strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +325,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range of the action to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +348,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +372,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scaling factor for action<h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +416,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +439,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending mode (layer-based mixing) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +462,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'extendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip extrapolation mode (time-based mixing) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +505,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
+	 * <p> type of NLA strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +529,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'speaker_handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle for speaker objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +552,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -603,6 +667,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'strips'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
+	 * <p> 'Child' strips (used for 'meta' strips) </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -617,6 +685,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'strips'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
+	 * <p> 'Child' strips (used for 'meta' strips) </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -639,6 +711,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -656,6 +731,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -671,6 +749,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'remap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
 	 * @see #__DNA__FIELD__remap
 	 */
 	
@@ -688,6 +769,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'remap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
 	 * @see #__DNA__FIELD__remap
 	 */
 	
@@ -703,6 +787,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'fcurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
+	 * <p> F-Curves for controlling this strip's influence and timing </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	
@@ -717,6 +805,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'fcurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
+	 * <p> F-Curves for controlling this strip's influence and timing </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	
@@ -739,6 +831,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
+	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -753,6 +849,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
+	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -775,6 +875,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -793,6 +896,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -815,6 +921,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
+	 * <p> Influence of strip </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -829,6 +939,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
+	 * <p> Influence of strip </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -843,6 +957,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'strip_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
 	 * @see #__DNA__FIELD__strip_time
 	 */
 	
@@ -857,6 +975,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'strip_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
 	 * @see #__DNA__FIELD__strip_time
 	 */
 	
@@ -899,6 +1021,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extents of the strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -913,6 +1038,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> extents of the strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
@@ -955,6 +1083,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range of the action to use </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
@@ -969,6 +1100,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'actend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> range of the action to use </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
@@ -983,6 +1117,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
@@ -997,6 +1135,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'repeat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
+	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
@@ -1011,6 +1153,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scaling factor for action<h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -1025,6 +1171,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'scale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scaling factor for action<h4>Blender Source Code:</h4>
+	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -1067,6 +1217,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
@@ -1081,6 +1234,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
@@ -1095,6 +1251,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending mode (layer-based mixing) </p>
 	 * @see #__DNA__FIELD__blendmode
 	 */
 	
@@ -1109,6 +1268,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip blending mode (layer-based mixing) </p>
 	 * @see #__DNA__FIELD__blendmode
 	 */
 	
@@ -1123,6 +1285,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'extendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip extrapolation mode (time-based mixing) </p>
 	 * @see #__DNA__FIELD__extendmode
 	 */
 	
@@ -1137,6 +1302,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'extendmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> strip extrapolation mode (time-based mixing) </p>
 	 * @see #__DNA__FIELD__extendmode
 	 */
 	
@@ -1179,6 +1347,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
+	 * <p> type of NLA strip </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1193,6 +1365,10 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
+	 * <p> type of NLA strip </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1207,6 +1383,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'speaker_handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle for speaker objects </p>
 	 * @see #__DNA__FIELD__speaker_handle
 	 */
 	
@@ -1224,6 +1403,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'speaker_handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> handle for speaker objects </p>
 	 * @see #__DNA__FIELD__speaker_handle
 	 */
 	
@@ -1239,6 +1421,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1253,6 +1438,9 @@ public class NlaStrip extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

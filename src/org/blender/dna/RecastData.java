@@ -26,7 +26,7 @@ public class RecastData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 178;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cellsize'.
@@ -289,6 +289,26 @@ public class RecastData extends CFacade {
 	public static final long[] __DNA__FIELD__detailsamplemaxerror = new long[]{48, 48};
 
 	/**
+	 * Field descriptor (offset) for struct member 'partitioning'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RecastData recastdata = ...;
+	 * CPointer&lt;Object&gt; p = recastdata.__dna__addressof(RecastData.__DNA__FIELD__partitioning);
+	 * CPointer&lt;Byte&gt; p_partitioning = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'partitioning'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__partitioning = new long[]{52, 52};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,16 +317,16 @@ public class RecastData extends CFacade {
 	 * <pre>
 	 * RecastData recastdata = ...;
 	 * CPointer&lt;Object&gt; p = recastdata.__dna__addressof(RecastData.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_pad1 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__pad1 = new long[]{53, 53};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
@@ -701,16 +721,44 @@ public class RecastData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'partitioning'.
+	 * @see #__DNA__FIELD__partitioning
+	 */
+	
+	public byte getPartitioning() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 52);
+		} else {
+			return __io__block.readByte(__io__address + 52);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'partitioning'.
+	 * @see #__DNA__FIELD__partitioning
+	 */
+	
+	public void setPartitioning(byte partitioning) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 52, partitioning);
+		} else {
+			__io__block.writeByte(__io__address + 52, partitioning);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad1'.
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
-	public short getPad1() throws IOException
+	public byte getPad1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 52);
+			return __io__block.readByte(__io__address + 53);
 		} else {
-			return __io__block.readShort(__io__address + 52);
+			return __io__block.readByte(__io__address + 53);
 		}
 	}
 
@@ -719,12 +767,12 @@ public class RecastData extends CFacade {
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
-	public void setPad1(short pad1) throws IOException
+	public void setPad1(byte pad1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 52, pad1);
+			__io__block.writeByte(__io__address + 53, pad1);
 		} else {
-			__io__block.writeShort(__io__address + 52, pad1);
+			__io__block.writeByte(__io__address + 53, pad1);
 		}
 	}
 

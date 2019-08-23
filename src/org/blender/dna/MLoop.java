@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoop'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * A loop element defined by a vertex and an edge. A loop is a face of the 3D object in Blender. A full loop (face) is defined by a set of loop entries, where each entry references a vertex and the adjacent edge in clock order. Thus, for each loop entry the system knows which side is front facing<h4>Blender Source Code:</h4>
+ * <p> the e here is because we want to move away from relying on edge hashes. </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -30,6 +32,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> vertex index </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +56,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'e'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
+	 * <p> edge index </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +88,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Get method for struct member 'v'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> vertex index </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -92,6 +106,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Set method for struct member 'v'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> vertex index </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -106,6 +124,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Get method for struct member 'e'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
+	 * <p> edge index </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	
@@ -120,6 +142,10 @@ public class MLoop extends CFacade {
 
 	/**
 	 * Set method for struct member 'e'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
+	 * <p> edge index </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	

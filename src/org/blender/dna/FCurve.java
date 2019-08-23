@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FCurve'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> 'Function-Curve' - defines values over time for a given setting (fcu) </p>
  */
 
 @CMetaData(size32=76, size64=112)
@@ -27,7 +28,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 505;
+	public static final int __DNA__SDNA_INDEX = 516;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group group that F-Curve belongs to </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'driver'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +119,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion data user-editable keyframes (array) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 'baked/imported' motion samples (array) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +189,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +212,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +235,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-editable settings for this curve </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +258,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'extend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value-extending mode for this curve (does not cover </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +281,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +305,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA-path to resolve data-access </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +328,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +352,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> the last-color this curve took </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -443,6 +488,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group group that F-Curve belongs to </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -460,6 +508,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> group group that F-Curve belongs to </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -475,6 +526,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'driver'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -492,6 +547,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'driver'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
+	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -507,6 +566,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -521,6 +584,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
+	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -543,6 +610,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'bezt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion data user-editable keyframes (array) </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -560,6 +630,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'bezt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion data user-editable keyframes (array) </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -575,6 +648,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'fpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 'baked/imported' motion samples (array) </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
 	
@@ -592,6 +668,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'fpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 'baked/imported' motion samples (array) </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
 	
@@ -607,6 +686,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -621,6 +703,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'totvert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -635,6 +720,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -649,6 +737,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -663,6 +754,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-editable settings for this curve </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -677,6 +771,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-editable settings for this curve </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -691,6 +788,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'extend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value-extending mode for this curve (does not cover </p>
 	 * @see #__DNA__FIELD__extend
 	 */
 	
@@ -705,6 +805,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'extend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value-extending mode for this curve (does not cover </p>
 	 * @see #__DNA__FIELD__extend
 	 */
 	
@@ -719,6 +822,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -733,6 +840,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'array_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
+	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -747,6 +858,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA-path to resolve data-access </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -764,6 +878,9 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'rna_path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> RNA-path to resolve data-access </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -779,6 +896,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
@@ -793,6 +914,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
@@ -807,6 +932,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> the last-color this curve took </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -825,6 +954,10 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
+	 * <p> the last-color this curve took </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceNla'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> NLA Editor ============================================= NLA Editor </p>
  */
 
 @CMetaData(size32=200, size64=232)
@@ -27,7 +28,7 @@ public class SpaceNla extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 206;
+	public static final int __DNA__SDNA_INDEX = 210;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this uses the same settings as autosnap for Action Editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +248,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,6 +345,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -337,6 +362,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -387,6 +415,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -401,6 +434,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -415,6 +453,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -433,6 +476,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -455,6 +503,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Get method for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this uses the same settings as autosnap for Action Editor </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	
@@ -469,6 +520,9 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Set method for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this uses the same settings as autosnap for Action Editor </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	
@@ -571,6 +625,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -585,6 +644,11 @@ public class SpaceNla extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	

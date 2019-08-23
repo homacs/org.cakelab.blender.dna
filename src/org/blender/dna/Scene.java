@@ -13,10 +13,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Scene'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  {@link Scene}  ID-Block </p>
  */
 
-@CMetaData(size32=4872, size64=5072)
+@CMetaData(size32=5208, size64=5456)
 public class Scene extends CFacade {
 
 	/**
@@ -27,7 +29,7 @@ public class Scene extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 196;
+	public static final int __DNA__SDNA_INDEX = 200;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -51,6 +53,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +76,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'camera'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active camera, used for rendering the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +99,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * World used for rendering the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +162,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'basact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active base </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +185,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'obedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name replaces old G.obedit </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +208,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 3d cursor location </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +231,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'twcent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> center for transform widget </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +274,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'twmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundbox of selection for transform widget </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +297,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitflags for layer visibility </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +320,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active layer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +343,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_updated'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime flag, has layer ever been updated since load? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +366,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +389,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable the compositing node tree
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +452,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequence editor data is allocated here </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +475,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'toolsettings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +498,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stats'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,6 +521,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'safe_areas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +544,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -504,7 +560,7 @@ public class Scene extends CFacade {
 	 * <ul>
 	 * <li>Field: 'r'</li>
 	 * <li>Signature: 'RenderData'</li>
-	 * <li>Actual Size (32bit/64bit): 3984/4032</li>
+	 * <li>Actual Size (32bit/64bit): 4320/4416</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__r = new long[]{244, 312};
@@ -527,7 +583,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__audio = new long[]{4228, 4344};
+	public static final long[] __DNA__FIELD__audio = new long[]{4564, 4728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
@@ -547,7 +603,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__markers = new long[]{4260, 4376};
+	public static final long[] __DNA__FIELD__markers = new long[]{4596, 4760};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transform_spaces'.
@@ -567,7 +623,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transform_spaces = new long[]{4268, 4392};
+	public static final long[] __DNA__FIELD__transform_spaces = new long[]{4604, 4776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sound_scene'.
@@ -587,7 +643,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sound_scene = new long[]{4276, 4408};
+	public static final long[] __DNA__FIELD__sound_scene = new long[]{4612, 4792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'playback_handle'.
@@ -607,7 +663,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__playback_handle = new long[]{4280, 4416};
+	public static final long[] __DNA__FIELD__playback_handle = new long[]{4616, 4800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sound_scrub_handle'.
@@ -627,7 +683,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sound_scrub_handle = new long[]{4284, 4424};
+	public static final long[] __DNA__FIELD__sound_scrub_handle = new long[]{4620, 4808};
 
 	/**
 	 * Field descriptor (offset) for struct member 'speaker_handles'.
@@ -647,10 +703,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__speaker_handles = new long[]{4288, 4432};
+	public static final long[] __DNA__FIELD__speaker_handles = new long[]{4624, 4816};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fps_info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (runtime) info/cache used for presenting playback framerate info to the user </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -667,10 +726,14 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fps_info = new long[]{4292, 4440};
+	public static final long[] __DNA__FIELD__fps_info = new long[]{4628, 4824};
 
 	/**
 	 * Field descriptor (offset) for struct member 'depsgraph'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Dependencies in the scene data<h4>Blender Source Code:</h4>
+	 * <p> none of the dependency graph vars is mean to be saved </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -687,7 +750,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__depsgraph = new long[]{4296, 4448};
+	public static final long[] __DNA__FIELD__depsgraph = new long[]{4632, 4832};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad1'.
@@ -707,7 +770,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{4300, 4456};
+	public static final long[] __DNA__FIELD__pad1 = new long[]{4636, 4840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'theDag'.
@@ -727,7 +790,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__theDag = new long[]{4304, 4464};
+	public static final long[] __DNA__FIELD__theDag = new long[]{4640, 4848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dagflags'.
@@ -747,30 +810,33 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dagflags = new long[]{4308, 4472};
+	public static final long[] __DNA__FIELD__dagflags = new long[]{4644, 4856};
 
 	/**
-	 * Field descriptor (offset) for struct member 'recalc'.
+	 * Field descriptor (offset) for struct member 'pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Scene scene = ...;
-	 * CPointer&lt;Object&gt; p = scene.__dna__addressof(Scene.__DNA__FIELD__recalc);
-	 * CPointer&lt;Short&gt; p_recalc = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = scene.__dna__addressof(Scene.__DNA__FIELD__pad3);
+	 * CPointer&lt;Short&gt; p_pad3 = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'recalc'</li>
+	 * <li>Field: 'pad3'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{4310, 4474};
+	public static final long[] __DNA__FIELD__pad3 = new long[]{4646, 4858};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_keyingset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined KeyingSets index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -787,10 +853,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_keyingset = new long[]{4312, 4476};
+	public static final long[] __DNA__FIELD__active_keyingset = new long[]{4648, 4860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyingsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s for this scene </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -807,10 +876,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyingsets = new long[]{4316, 4480};
+	public static final long[] __DNA__FIELD__keyingsets = new long[]{4652, 4864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Game Settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -827,7 +899,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__framing = new long[]{4324, 4496};
+	public static final long[] __DNA__FIELD__framing = new long[]{4660, 4880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gm'.
@@ -847,10 +919,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 188/192</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gm = new long[]{4340, 4512};
+	public static final long[] __DNA__FIELD__gm = new long[]{4676, 4896};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Units </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -867,10 +942,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unit = new long[]{4528, 4704};
+	public static final long[] __DNA__FIELD__unit = new long[]{4864, 5088};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -887,10 +965,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{4536, 4712};
+	public static final long[] __DNA__FIELD__gpd = new long[]{4872, 5096};
 
 	/**
 	 * Field descriptor (offset) for struct member 'physics_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Physics simulation settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -907,10 +988,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__physics_settings = new long[]{4540, 4720};
+	public static final long[] __DNA__FIELD__physics_settings = new long[]{4876, 5104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Movie Tracking active movie clip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -927,10 +1011,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip = new long[]{4564, 4744};
+	public static final long[] __DNA__FIELD__clip = new long[]{4900, 5128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'customdata_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -947,10 +1034,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__customdata_mask = new long[]{4568, 4752};
+	public static final long[] __DNA__FIELD__customdata_mask = new long[]{4904, 5136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'customdata_mask_modal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -967,10 +1057,14 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__customdata_mask_modal = new long[]{4576, 4760};
+	public static final long[] __DNA__FIELD__customdata_mask_modal = new long[]{4912, 5144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <p> Color Management </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -987,10 +1081,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_settings = new long[]{4584, 4768};
+	public static final long[] __DNA__FIELD__view_settings = new long[]{4920, 5152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of device saved image would be displayed on
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1007,10 +1104,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display_settings = new long[]{4736, 4928};
+	public static final long[] __DNA__FIELD__display_settings = new long[]{5072, 5312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sequencer_colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of color space sequencer is working in
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1027,10 +1127,14 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sequencer_colorspace_settings = new long[]{4800, 4992};
+	public static final long[] __DNA__FIELD__sequencer_colorspace_settings = new long[]{5136, 5376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> RigidBody simulation world+settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1047,10 +1151,13 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rigidbody_world = new long[]{4864, 5056};
+	public static final long[] __DNA__FIELD__rigidbody_world = new long[]{5200, 5440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1067,7 +1174,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{4868, 5064};
+	public static final long[] __DNA__FIELD__preview = new long[]{5204, 5448};
 
 	public Scene(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1115,6 +1222,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -1132,6 +1242,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -1147,6 +1260,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'camera'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active camera, used for rendering the scene
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -1164,6 +1280,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'camera'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active camera, used for rendering the scene
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -1179,6 +1298,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * World used for rendering the scene
 	 * @see #__DNA__FIELD__world
 	 */
 	
@@ -1196,6 +1318,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * World used for rendering the scene
 	 * @see #__DNA__FIELD__world
 	 */
 	
@@ -1279,6 +1404,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'basact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active base </p>
 	 * @see #__DNA__FIELD__basact
 	 */
 	
@@ -1296,6 +1424,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'basact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active base </p>
 	 * @see #__DNA__FIELD__basact
 	 */
 	
@@ -1311,6 +1442,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'obedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name replaces old G.obedit </p>
 	 * @see #__DNA__FIELD__obedit
 	 */
 	
@@ -1328,6 +1462,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'obedit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name replaces old G.obedit </p>
 	 * @see #__DNA__FIELD__obedit
 	 */
 	
@@ -1343,6 +1480,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 3d cursor location </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -1361,6 +1501,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 3d cursor location </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -1383,6 +1526,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'twcent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> center for transform widget </p>
 	 * @see #__DNA__FIELD__twcent
 	 */
 	
@@ -1401,6 +1547,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'twcent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> center for transform widget </p>
 	 * @see #__DNA__FIELD__twcent
 	 */
 	
@@ -1463,6 +1612,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'twmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundbox of selection for transform widget </p>
 	 * @see #__DNA__FIELD__twmax
 	 */
 	
@@ -1481,6 +1633,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'twmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> boundbox of selection for transform widget </p>
 	 * @see #__DNA__FIELD__twmax
 	 */
 	
@@ -1503,6 +1658,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitflags for layer visibility </p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -1517,6 +1675,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitflags for layer visibility </p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -1531,6 +1692,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'layact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active layer </p>
 	 * @see #__DNA__FIELD__layact
 	 */
 	
@@ -1545,6 +1709,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'layact'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active layer </p>
 	 * @see #__DNA__FIELD__layact
 	 */
 	
@@ -1559,6 +1726,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay_updated'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime flag, has layer ever been updated since load? </p>
 	 * @see #__DNA__FIELD__lay_updated
 	 */
 	
@@ -1573,6 +1743,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay_updated'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime flag, has layer ever been updated since load? </p>
 	 * @see #__DNA__FIELD__lay_updated
 	 */
 	
@@ -1587,6 +1760,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1601,6 +1777,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1615,6 +1794,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable the compositing node tree
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -1629,6 +1811,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable the compositing node tree
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -1715,6 +1900,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'ed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequence editor data is allocated here </p>
 	 * @see #__DNA__FIELD__ed
 	 */
 	
@@ -1732,6 +1920,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'ed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sequence editor data is allocated here </p>
 	 * @see #__DNA__FIELD__ed
 	 */
 	
@@ -1747,6 +1938,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'toolsettings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * @see #__DNA__FIELD__toolsettings
 	 */
 	
@@ -1764,6 +1958,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'toolsettings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * @see #__DNA__FIELD__toolsettings
 	 */
 	
@@ -1779,6 +1976,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'stats'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * @see #__DNA__FIELD__stats
 	 */
 	
@@ -1796,6 +1996,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'stats'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> default allocated now </p>
 	 * @see #__DNA__FIELD__stats
 	 */
 	
@@ -1811,6 +2014,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'safe_areas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__safe_areas
 	 */
 	
@@ -1825,6 +2031,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'safe_areas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__safe_areas
 	 */
 	
@@ -1847,6 +2056,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * @see #__DNA__FIELD__r
 	 */
 	
@@ -1861,6 +2073,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'r'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> migrate or replace? depends on some internal things... no, is on the right place (ton) </p>
 	 * @see #__DNA__FIELD__r
 	 */
 	
@@ -1889,9 +2104,9 @@ public class Scene extends CFacade {
 	public AudioData getAudio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new AudioData(__io__address + 4344, __io__block, __io__blockTable);
+			return new AudioData(__io__address + 4728, __io__block, __io__blockTable);
 		} else {
-			return new AudioData(__io__address + 4228, __io__block, __io__blockTable);
+			return new AudioData(__io__address + 4564, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1904,9 +2119,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4344;
+			__dna__offset = 4728;
 		} else {
-			__dna__offset = 4228;
+			__dna__offset = 4564;
 		}
 		if (__io__equals(audio, __io__address + __dna__offset)) {
 			return;
@@ -1925,9 +2140,9 @@ public class Scene extends CFacade {
 	public ListBase getMarkers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 4376, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4760, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 4260, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4596, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1940,9 +2155,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4376;
+			__dna__offset = 4760;
 		} else {
-			__dna__offset = 4260;
+			__dna__offset = 4596;
 		}
 		if (__io__equals(markers, __io__address + __dna__offset)) {
 			return;
@@ -1961,9 +2176,9 @@ public class Scene extends CFacade {
 	public ListBase getTransform_spaces() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 4392, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4776, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 4268, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4604, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1976,9 +2191,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4392;
+			__dna__offset = 4776;
 		} else {
-			__dna__offset = 4268;
+			__dna__offset = 4604;
 		}
 		if (__io__equals(transform_spaces, __io__address + __dna__offset)) {
 			return;
@@ -1998,9 +2213,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4792);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4276);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4612);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2015,9 +2230,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((sound_scene == null) ? 0 : sound_scene.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4408, __address);
+			__io__block.writeLong(__io__address + 4792, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4276, __address);
+			__io__block.writeLong(__io__address + 4612, __address);
 		}
 	}
 
@@ -2030,9 +2245,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4800);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4616);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2047,9 +2262,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((playback_handle == null) ? 0 : playback_handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4416, __address);
+			__io__block.writeLong(__io__address + 4800, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4280, __address);
+			__io__block.writeLong(__io__address + 4616, __address);
 		}
 	}
 
@@ -2062,9 +2277,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4808);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4284);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4620);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2079,9 +2294,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((sound_scrub_handle == null) ? 0 : sound_scrub_handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4424, __address);
+			__io__block.writeLong(__io__address + 4808, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4284, __address);
+			__io__block.writeLong(__io__address + 4620, __address);
 		}
 	}
 
@@ -2094,9 +2309,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4432);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4816);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4624);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2111,14 +2326,17 @@ public class Scene extends CFacade {
 	{
 		long __address = ((speaker_handles == null) ? 0 : speaker_handles.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4432, __address);
+			__io__block.writeLong(__io__address + 4816, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4288, __address);
+			__io__block.writeLong(__io__address + 4624, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'fps_info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (runtime) info/cache used for presenting playback framerate info to the user </p>
 	 * @see #__DNA__FIELD__fps_info
 	 */
 	
@@ -2126,9 +2344,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4440);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4824);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4292);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4628);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2136,6 +2354,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'fps_info'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (runtime) info/cache used for presenting playback framerate info to the user </p>
 	 * @see #__DNA__FIELD__fps_info
 	 */
 	
@@ -2143,14 +2364,18 @@ public class Scene extends CFacade {
 	{
 		long __address = ((fps_info == null) ? 0 : fps_info.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4440, __address);
+			__io__block.writeLong(__io__address + 4824, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4292, __address);
+			__io__block.writeLong(__io__address + 4628, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'depsgraph'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Dependencies in the scene data<h4>Blender Source Code:</h4>
+	 * <p> none of the dependency graph vars is mean to be saved </p>
 	 * @see #__DNA__FIELD__depsgraph
 	 */
 	
@@ -2158,9 +2383,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4448);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4832);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4632);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2168,6 +2393,10 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'depsgraph'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Dependencies in the scene data<h4>Blender Source Code:</h4>
+	 * <p> none of the dependency graph vars is mean to be saved </p>
 	 * @see #__DNA__FIELD__depsgraph
 	 */
 	
@@ -2175,9 +2404,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((depsgraph == null) ? 0 : depsgraph.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4448, __address);
+			__io__block.writeLong(__io__address + 4832, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4296, __address);
+			__io__block.writeLong(__io__address + 4632, __address);
 		}
 	}
 
@@ -2190,9 +2419,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4456);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4840);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4300);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4636);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2207,9 +2436,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((pad1 == null) ? 0 : pad1.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4456, __address);
+			__io__block.writeLong(__io__address + 4840, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4300, __address);
+			__io__block.writeLong(__io__address + 4636, __address);
 		}
 	}
 
@@ -2222,9 +2451,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4464);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4848);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4640);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2239,9 +2468,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((theDag == null) ? 0 : theDag.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4464, __address);
+			__io__block.writeLong(__io__address + 4848, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4304, __address);
+			__io__block.writeLong(__io__address + 4640, __address);
 		}
 	}
 
@@ -2253,9 +2482,9 @@ public class Scene extends CFacade {
 	public short getDagflags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 4472);
+			return __io__block.readShort(__io__address + 4856);
 		} else {
-			return __io__block.readShort(__io__address + 4308);
+			return __io__block.readShort(__io__address + 4644);
 		}
 	}
 
@@ -2267,84 +2496,96 @@ public class Scene extends CFacade {
 	public void setDagflags(short dagflags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 4472, dagflags);
+			__io__block.writeShort(__io__address + 4856, dagflags);
 		} else {
-			__io__block.writeShort(__io__address + 4308, dagflags);
+			__io__block.writeShort(__io__address + 4644, dagflags);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'recalc'.
-	 * @see #__DNA__FIELD__recalc
+	 * Get method for struct member 'pad3'.
+	 * @see #__DNA__FIELD__pad3
 	 */
 	
-	public short getRecalc() throws IOException
+	public short getPad3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 4474);
+			return __io__block.readShort(__io__address + 4858);
 		} else {
-			return __io__block.readShort(__io__address + 4310);
+			return __io__block.readShort(__io__address + 4646);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'recalc'.
-	 * @see #__DNA__FIELD__recalc
+	 * Set method for struct member 'pad3'.
+	 * @see #__DNA__FIELD__pad3
 	 */
 	
-	public void setRecalc(short recalc) throws IOException
+	public void setPad3(short pad3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 4474, recalc);
+			__io__block.writeShort(__io__address + 4858, pad3);
 		} else {
-			__io__block.writeShort(__io__address + 4310, recalc);
+			__io__block.writeShort(__io__address + 4646, pad3);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'active_keyingset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined KeyingSets index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * @see #__DNA__FIELD__active_keyingset
 	 */
 	
 	public int getActive_keyingset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 4476);
+			return __io__block.readInt(__io__address + 4860);
 		} else {
-			return __io__block.readInt(__io__address + 4312);
+			return __io__block.readInt(__io__address + 4648);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'active_keyingset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined KeyingSets index of the active {@link KeyingSet} . first {@link KeyingSet}  has index 1, 'none' active is 0, 'add new' is -1 </p>
 	 * @see #__DNA__FIELD__active_keyingset
 	 */
 	
 	public void setActive_keyingset(int active_keyingset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 4476, active_keyingset);
+			__io__block.writeInt(__io__address + 4860, active_keyingset);
 		} else {
-			__io__block.writeInt(__io__address + 4312, active_keyingset);
+			__io__block.writeInt(__io__address + 4648, active_keyingset);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'keyingsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s for this scene </p>
 	 * @see #__DNA__FIELD__keyingsets
 	 */
 	
 	public ListBase getKeyingsets() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 4480, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4864, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 4316, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 4652, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'keyingsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s for this scene </p>
 	 * @see #__DNA__FIELD__keyingsets
 	 */
 	
@@ -2352,9 +2593,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4480;
+			__dna__offset = 4864;
 		} else {
-			__dna__offset = 4316;
+			__dna__offset = 4652;
 		}
 		if (__io__equals(keyingsets, __io__address + __dna__offset)) {
 			return;
@@ -2367,20 +2608,26 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Game Settings </p>
 	 * @see #__DNA__FIELD__framing
 	 */
 	
 	public GameFraming getFraming() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new GameFraming(__io__address + 4496, __io__block, __io__blockTable);
+			return new GameFraming(__io__address + 4880, __io__block, __io__blockTable);
 		} else {
-			return new GameFraming(__io__address + 4324, __io__block, __io__blockTable);
+			return new GameFraming(__io__address + 4660, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Game Settings </p>
 	 * @see #__DNA__FIELD__framing
 	 */
 	
@@ -2388,9 +2635,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4496;
+			__dna__offset = 4880;
 		} else {
-			__dna__offset = 4324;
+			__dna__offset = 4660;
 		}
 		if (__io__equals(framing, __io__address + __dna__offset)) {
 			return;
@@ -2409,9 +2656,9 @@ public class Scene extends CFacade {
 	public GameData getGm() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new GameData(__io__address + 4512, __io__block, __io__blockTable);
+			return new GameData(__io__address + 4896, __io__block, __io__blockTable);
 		} else {
-			return new GameData(__io__address + 4340, __io__block, __io__blockTable);
+			return new GameData(__io__address + 4676, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2424,9 +2671,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4512;
+			__dna__offset = 4896;
 		} else {
-			__dna__offset = 4340;
+			__dna__offset = 4676;
 		}
 		if (__io__equals(gm, __io__address + __dna__offset)) {
 			return;
@@ -2439,20 +2686,26 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Units </p>
 	 * @see #__DNA__FIELD__unit
 	 */
 	
 	public UnitSettings getUnit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new UnitSettings(__io__address + 4704, __io__block, __io__blockTable);
+			return new UnitSettings(__io__address + 5088, __io__block, __io__blockTable);
 		} else {
-			return new UnitSettings(__io__address + 4528, __io__block, __io__blockTable);
+			return new UnitSettings(__io__address + 4864, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Units </p>
 	 * @see #__DNA__FIELD__unit
 	 */
 	
@@ -2460,9 +2713,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4704;
+			__dna__offset = 5088;
 		} else {
-			__dna__offset = 4528;
+			__dna__offset = 4864;
 		}
 		if (__io__equals(unit, __io__address + __dna__offset)) {
 			return;
@@ -2475,6 +2728,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -2482,9 +2738,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4712);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5096);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4536);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4872);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2492,6 +2748,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -2499,28 +2758,34 @@ public class Scene extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4712, __address);
+			__io__block.writeLong(__io__address + 5096, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4536, __address);
+			__io__block.writeLong(__io__address + 4872, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'physics_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Physics simulation settings </p>
 	 * @see #__DNA__FIELD__physics_settings
 	 */
 	
 	public PhysicsSettings getPhysics_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new PhysicsSettings(__io__address + 4720, __io__block, __io__blockTable);
+			return new PhysicsSettings(__io__address + 5104, __io__block, __io__blockTable);
 		} else {
-			return new PhysicsSettings(__io__address + 4540, __io__block, __io__blockTable);
+			return new PhysicsSettings(__io__address + 4876, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'physics_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Physics simulation settings </p>
 	 * @see #__DNA__FIELD__physics_settings
 	 */
 	
@@ -2528,9 +2793,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4720;
+			__dna__offset = 5104;
 		} else {
-			__dna__offset = 4540;
+			__dna__offset = 4876;
 		}
 		if (__io__equals(physics_settings, __io__address + __dna__offset)) {
 			return;
@@ -2543,6 +2808,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'clip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Movie Tracking active movie clip </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -2550,9 +2818,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4744);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4564);
+			__dna__targetAddress = __io__block.readLong(__io__address + 4900);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MovieClip.class};
 		return new CPointer<MovieClip>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MovieClip.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2560,6 +2828,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'clip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Movie Tracking active movie clip </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -2567,84 +2838,104 @@ public class Scene extends CFacade {
 	{
 		long __address = ((clip == null) ? 0 : clip.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 4744, __address);
+			__io__block.writeLong(__io__address + 5128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4564, __address);
+			__io__block.writeLong(__io__address + 4900, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'customdata_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
 	
 	public long getCustomdata_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 4752);
+			return __io__block.readInt64(__io__address + 5136);
 		} else {
-			return __io__block.readInt64(__io__address + 4568);
+			return __io__block.readInt64(__io__address + 4904);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'customdata_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. runtime flag for drawing, actually belongs in the window, only used by BKE_object_handle_update() </p>
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
 	
 	public void setCustomdata_mask(long customdata_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 4752, customdata_mask);
+			__io__block.writeInt64(__io__address + 5136, customdata_mask);
 		} else {
-			__io__block.writeInt64(__io__address + 4568, customdata_mask);
+			__io__block.writeInt64(__io__address + 4904, customdata_mask);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'customdata_mask_modal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * @see #__DNA__FIELD__customdata_mask_modal
 	 */
 	
 	public long getCustomdata_mask_modal() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 4760);
+			return __io__block.readInt64(__io__address + 5144);
 		} else {
-			return __io__block.readInt64(__io__address + 4576);
+			return __io__block.readInt64(__io__address + 4912);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'customdata_mask_modal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX. same as above but for temp operator use (gl renders) </p>
 	 * @see #__DNA__FIELD__customdata_mask_modal
 	 */
 	
 	public void setCustomdata_mask_modal(long customdata_mask_modal) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 4760, customdata_mask_modal);
+			__io__block.writeInt64(__io__address + 5144, customdata_mask_modal);
 		} else {
-			__io__block.writeInt64(__io__address + 4576, customdata_mask_modal);
+			__io__block.writeInt64(__io__address + 4912, customdata_mask_modal);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'view_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <p> Color Management </p>
 	 * @see #__DNA__FIELD__view_settings
 	 */
 	
 	public ColorManagedViewSettings getView_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedViewSettings(__io__address + 4768, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 5152, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedViewSettings(__io__address + 4584, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 4920, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'view_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Color management settings applied on image before saving<h4>Blender Source Code:</h4>
+	 * <p> Color Management </p>
 	 * @see #__DNA__FIELD__view_settings
 	 */
 	
@@ -2652,9 +2943,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4768;
+			__dna__offset = 5152;
 		} else {
-			__dna__offset = 4584;
+			__dna__offset = 4920;
 		}
 		if (__io__equals(view_settings, __io__address + __dna__offset)) {
 			return;
@@ -2667,20 +2958,26 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'display_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of device saved image would be displayed on
 	 * @see #__DNA__FIELD__display_settings
 	 */
 	
 	public ColorManagedDisplaySettings getDisplay_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedDisplaySettings(__io__address + 4928, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 5312, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedDisplaySettings(__io__address + 4736, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 5072, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'display_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of device saved image would be displayed on
 	 * @see #__DNA__FIELD__display_settings
 	 */
 	
@@ -2688,9 +2985,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4928;
+			__dna__offset = 5312;
 		} else {
-			__dna__offset = 4736;
+			__dna__offset = 5072;
 		}
 		if (__io__equals(display_settings, __io__address + __dna__offset)) {
 			return;
@@ -2703,20 +3000,26 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'sequencer_colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of color space sequencer is working in
 	 * @see #__DNA__FIELD__sequencer_colorspace_settings
 	 */
 	
 	public ColorManagedColorspaceSettings getSequencer_colorspace_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedColorspaceSettings(__io__address + 4992, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 5376, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedColorspaceSettings(__io__address + 4800, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 5136, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sequencer_colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Settings of color space sequencer is working in
 	 * @see #__DNA__FIELD__sequencer_colorspace_settings
 	 */
 	
@@ -2724,9 +3027,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4992;
+			__dna__offset = 5376;
 		} else {
-			__dna__offset = 4800;
+			__dna__offset = 5136;
 		}
 		if (__io__equals(sequencer_colorspace_settings, __io__address + __dna__offset)) {
 			return;
@@ -2739,6 +3042,10 @@ public class Scene extends CFacade {
 
 	/**
 	 * Get method for struct member 'rigidbody_world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> RigidBody simulation world+settings </p>
 	 * @see #__DNA__FIELD__rigidbody_world
 	 */
 	
@@ -2746,9 +3053,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 5056);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5440);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4864);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyWorld.class};
 		return new CPointer<RigidBodyWorld>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyWorld.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2756,6 +3063,10 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'rigidbody_world'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> RigidBody simulation world+settings </p>
 	 * @see #__DNA__FIELD__rigidbody_world
 	 */
 	
@@ -2763,14 +3074,17 @@ public class Scene extends CFacade {
 	{
 		long __address = ((rigidbody_world == null) ? 0 : rigidbody_world.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 5056, __address);
+			__io__block.writeLong(__io__address + 5440, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4864, __address);
+			__io__block.writeLong(__io__address + 5200, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2778,9 +3092,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 5064);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5448);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4868);
+			__dna__targetAddress = __io__block.readLong(__io__address + 5204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2788,6 +3102,9 @@ public class Scene extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -2795,9 +3112,9 @@ public class Scene extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 5064, __address);
+			__io__block.writeLong(__io__address + 5448, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4868, __address);
+			__io__block.writeLong(__io__address + 5204, __address);
 		}
 	}
 

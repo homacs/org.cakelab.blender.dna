@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'WipeVars'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ************* {@link Effect}  Variable Structs ********* </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -26,7 +27,7 @@ public class WipeVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 267;
+	public static final int __DNA__SDNA_INDEX = 271;
 
 	/**
 	 * Field descriptor (offset) for struct member 'edgeWidth'.

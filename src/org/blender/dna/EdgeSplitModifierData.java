@@ -50,6 +50,9 @@ public class EdgeSplitModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angle above which edges should be split </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,6 +137,9 @@ public class EdgeSplitModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'split_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angle above which edges should be split </p>
 	 * @see #__DNA__FIELD__split_angle
 	 */
 	
@@ -148,6 +154,9 @@ public class EdgeSplitModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'split_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> angle above which edges should be split </p>
 	 * @see #__DNA__FIELD__split_angle
 	 */
 	

@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ParticleBrushData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  {@link Particle}  Edit Settings for a {@link Particle}  {@link Editing}  {@link Brush}  </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -26,10 +28,13 @@ public class ParticleBrushData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 183;
+	public static final int __DNA__SDNA_INDEX = 184;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> common setting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +95,9 @@ public class ParticleBrushData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for specific brushes only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +166,9 @@ public class ParticleBrushData extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> common setting </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -172,6 +183,9 @@ public class ParticleBrushData extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> common setting </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -242,6 +256,9 @@ public class ParticleBrushData extends CFacade {
 
 	/**
 	 * Get method for struct member 'count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for specific brushes only </p>
 	 * @see #__DNA__FIELD__count
 	 */
 	
@@ -256,6 +273,9 @@ public class ParticleBrushData extends CFacade {
 
 	/**
 	 * Set method for struct member 'count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for specific brushes only </p>
 	 * @see #__DNA__FIELD__count
 	 */
 	

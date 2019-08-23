@@ -27,7 +27,7 @@ public class Brush extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 457;
+	public static final int __DNA__SDNA_INDEX = 464;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -71,6 +71,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <p> falloff curve </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +175,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +198,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> color gradient </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +222,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active Paint Curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +245,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +269,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will pull vertexes out of surface during a grab
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,7 +291,35 @@ public class Brush extends CFacade {
 	public static final long[] __DNA__FIELD__normal_weight = new long[]{1792, 1856};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rake_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <p> rake actual data (not texture), used for sculpt </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__rake_factor);
+	 * CPointer&lt;Float&gt; p_rake_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rake_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rake_factor = new long[]{1796, 1860};
+
+	/**
 	 * Field descriptor (offset) for struct member 'blend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <p> blend mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,10 +336,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend = new long[]{1796, 1860};
+	public static final long[] __DNA__FIELD__blend = new long[]{1800, 1864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> & with ob->mode to see if the brush is compatible, use for display only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -307,10 +359,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_mode = new long[]{1798, 1862};
+	public static final long[] __DNA__FIELD__ob_mode = new long[]{1802, 1866};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <p> brush weight </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -327,10 +383,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weight = new long[]{1800, 1864};
+	public static final long[] __DNA__FIELD__weight = new long[]{1804, 1868};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <p> brush diameter </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,10 +407,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{1804, 1868};
+	public static final long[] __DNA__FIELD__size = new long[]{1808, 1872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general purpose flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,10 +430,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1808, 1872};
+	public static final long[] __DNA__FIELD__flag = new long[]{1812, 1876};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure influence for mask </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -387,10 +453,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_pressure = new long[]{1812, 1876};
+	public static final long[] __DNA__FIELD__mask_pressure = new long[]{1816, 1880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jitter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <p> jitter the position of the brush </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -407,10 +477,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jitter = new long[]{1816, 1880};
+	public static final long[] __DNA__FIELD__jitter = new long[]{1820, 1884};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jitter_absolute'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <p> absolute jitter in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,7 +501,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jitter_absolute = new long[]{1820, 1884};
+	public static final long[] __DNA__FIELD__jitter_absolute = new long[]{1824, 1888};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlay_flags'.
@@ -447,10 +521,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay_flags = new long[]{1824, 1888};
+	public static final long[] __DNA__FIELD__overlay_flags = new long[]{1828, 1892};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <p> spacing of paint operations </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -467,10 +545,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spacing = new long[]{1828, 1892};
+	public static final long[] __DNA__FIELD__spacing = new long[]{1832, 1896};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <p> turning radius (in pixels) for smooth stroke </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,10 +569,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_stroke_radius = new long[]{1832, 1896};
+	public static final long[] __DNA__FIELD__smooth_stroke_radius = new long[]{1836, 1900};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <p> higher values limit fast changes in the stroke direction </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -507,10 +593,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_stroke_factor = new long[]{1836, 1900};
+	public static final long[] __DNA__FIELD__smooth_stroke_factor = new long[]{1840, 1904};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <p> paint operations / second (airbrush) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -527,10 +617,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rate = new long[]{1840, 1904};
+	public static final long[] __DNA__FIELD__rate = new long[]{1844, 1908};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,10 +640,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rgb = new long[]{1844, 1908};
+	public static final long[] __DNA__FIELD__rgb = new long[]{1848, 1912};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,10 +663,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{1856, 1920};
+	public static final long[] __DNA__FIELD__alpha = new long[]{1860, 1924};
 
 	/**
 	 * Field descriptor (offset) for struct member 'secondary_rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> background color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -587,10 +686,13 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__secondary_rgb = new long[]{1860, 1924};
+	public static final long[] __DNA__FIELD__secondary_rgb = new long[]{1864, 1928};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_plane'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the direction of movement for sculpt vertices </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -607,10 +709,14 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_plane = new long[]{1872, 1936};
+	public static final long[] __DNA__FIELD__sculpt_plane = new long[]{1876, 1940};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <p> offset for plane brushes (clay, flatten, fill, scrape) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -627,27 +733,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plane_offset = new long[]{1876, 1940};
-
-	/**
-	 * Field descriptor (offset) for struct member 'flag2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Brush brush = ...;
-	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__flag2);
-	 * CPointer&lt;Integer&gt; p_flag2 = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flag2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__flag2 = new long[]{1880, 1944};
+	public static final long[] __DNA__FIELD__plane_offset = new long[]{1880, 1944};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_spacing'.
@@ -671,6 +757,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_stroke_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for stroke color gradient application </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -691,6 +780,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_fill_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for fill tool color gradient application </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -711,6 +803,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active sculpt tool </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -731,6 +826,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertexpaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active vertex/weight paint blend mode (poorly named) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -751,6 +849,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imagepaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active image paint tool </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -771,6 +872,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enum BrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -811,6 +915,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_pinch_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the crease brush pinches
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -831,6 +938,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_trim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -851,6 +961,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <p> affectable height of brush (layer height for layer tool, i.e.) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -871,6 +985,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_sample_bias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Value added to texture samples
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -891,6 +1008,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_overlay_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -951,6 +1071,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of brush in Blender units
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -971,6 +1094,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <p> soften/sharpen </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -991,6 +1118,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blur_kernel_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of kernel used for soften and sharpen in pixels
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1031,6 +1161,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fill_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <p> fill tool </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1091,6 +1225,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1111,6 +1248,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1131,6 +1271,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of mask stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1151,6 +1294,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of mask stencil in viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1251,6 +1397,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <p> falloff curve </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -1268,6 +1418,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Editable falloff curve<h4>Blender Source Code:</h4>
+	 * <p> falloff curve </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -1419,6 +1573,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1436,6 +1593,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -1451,6 +1611,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'gradient'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> color gradient </p>
 	 * @see #__DNA__FIELD__gradient
 	 */
 	
@@ -1468,6 +1632,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'gradient'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> color gradient </p>
 	 * @see #__DNA__FIELD__gradient
 	 */
 	
@@ -1483,6 +1651,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'paint_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active Paint Curve
 	 * @see #__DNA__FIELD__paint_curve
 	 */
 	
@@ -1500,6 +1671,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'paint_curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Active Paint Curve
 	 * @see #__DNA__FIELD__paint_curve
 	 */
 	
@@ -1515,6 +1689,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'icon_filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__icon_filepath
 	 */
 	
@@ -1533,6 +1711,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'icon_filepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * File path to brush icon<h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__icon_filepath
 	 */
 	
@@ -1555,6 +1737,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'normal_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will pull vertexes out of surface during a grab
 	 * @see #__DNA__FIELD__normal_weight
 	 */
 	
@@ -1569,6 +1754,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'normal_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will pull vertexes out of surface during a grab
 	 * @see #__DNA__FIELD__normal_weight
 	 */
 	
@@ -1582,123 +1770,157 @@ public class Brush extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rake_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <p> rake actual data (not texture), used for sculpt </p>
+	 * @see #__DNA__FIELD__rake_factor
+	 */
+	
+	public float getRake_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1860);
+		} else {
+			return __io__block.readFloat(__io__address + 1796);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rake_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much grab will follow cursor rotation<h4>Blender Source Code:</h4>
+	 * <p> rake actual data (not texture), used for sculpt </p>
+	 * @see #__DNA__FIELD__rake_factor
+	 */
+	
+	public void setRake_factor(float rake_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1860, rake_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 1796, rake_factor);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'blend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <p> blend mode </p>
 	 * @see #__DNA__FIELD__blend
 	 */
 	
 	public short getBlend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1860);
+			return __io__block.readShort(__io__address + 1864);
 		} else {
-			return __io__block.readShort(__io__address + 1796);
+			return __io__block.readShort(__io__address + 1800);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'blend'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Brush blending mode<h4>Blender Source Code:</h4>
+	 * <p> blend mode </p>
 	 * @see #__DNA__FIELD__blend
 	 */
 	
 	public void setBlend(short blend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1860, blend);
+			__io__block.writeShort(__io__address + 1864, blend);
 		} else {
-			__io__block.writeShort(__io__address + 1796, blend);
+			__io__block.writeShort(__io__address + 1800, blend);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'ob_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> & with ob->mode to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
 	
 	public short getOb_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1862);
+			return __io__block.readShort(__io__address + 1866);
 		} else {
-			return __io__block.readShort(__io__address + 1798);
+			return __io__block.readShort(__io__address + 1802);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ob_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> & with ob->mode to see if the brush is compatible, use for display only. </p>
 	 * @see #__DNA__FIELD__ob_mode
 	 */
 	
 	public void setOb_mode(short ob_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1862, ob_mode);
+			__io__block.writeShort(__io__address + 1866, ob_mode);
 		} else {
-			__io__block.writeShort(__io__address + 1798, ob_mode);
+			__io__block.writeShort(__io__address + 1802, ob_mode);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <p> brush weight </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
 	public float getWeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1864);
+			return __io__block.readFloat(__io__address + 1868);
 		} else {
-			return __io__block.readFloat(__io__address + 1800);
+			return __io__block.readFloat(__io__address + 1804);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex weight when brush is applied<h4>Blender Source Code:</h4>
+	 * <p> brush weight </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
 	public void setWeight(float weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1864, weight);
+			__io__block.writeFloat(__io__address + 1868, weight);
 		} else {
-			__io__block.writeFloat(__io__address + 1800, weight);
+			__io__block.writeFloat(__io__address + 1804, weight);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <p> brush diameter </p>
 	 * @see #__DNA__FIELD__size
 	 */
 	
 	public int getSize() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1868);
-		} else {
-			return __io__block.readInt(__io__address + 1804);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'size'.
-	 * @see #__DNA__FIELD__size
-	 */
-	
-	public void setSize(int size) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1868, size);
-		} else {
-			__io__block.writeInt(__io__address + 1804, size);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 1872);
@@ -1708,25 +1930,32 @@ public class Brush extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
+	 * Set method for struct member 'size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of the brush in pixels<h4>Blender Source Code:</h4>
+	 * <p> brush diameter </p>
+	 * @see #__DNA__FIELD__size
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setSize(int size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1872, flag);
+			__io__block.writeInt(__io__address + 1872, size);
 		} else {
-			__io__block.writeInt(__io__address + 1808, flag);
+			__io__block.writeInt(__io__address + 1808, size);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'mask_pressure'.
-	 * @see #__DNA__FIELD__mask_pressure
+	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general purpose flag </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getMask_pressure() throws IOException
+	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 1876);
@@ -1736,72 +1965,125 @@ public class Brush extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general purpose flag </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1876, flag);
+		} else {
+			__io__block.writeInt(__io__address + 1812, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mask_pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure influence for mask </p>
+	 * @see #__DNA__FIELD__mask_pressure
+	 */
+	
+	public int getMask_pressure() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1880);
+		} else {
+			return __io__block.readInt(__io__address + 1816);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'mask_pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure influence for mask </p>
 	 * @see #__DNA__FIELD__mask_pressure
 	 */
 	
 	public void setMask_pressure(int mask_pressure) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1876, mask_pressure);
+			__io__block.writeInt(__io__address + 1880, mask_pressure);
 		} else {
-			__io__block.writeInt(__io__address + 1812, mask_pressure);
+			__io__block.writeInt(__io__address + 1816, mask_pressure);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'jitter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <p> jitter the position of the brush </p>
 	 * @see #__DNA__FIELD__jitter
 	 */
 	
 	public float getJitter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1880);
+			return __io__block.readFloat(__io__address + 1884);
 		} else {
-			return __io__block.readFloat(__io__address + 1816);
+			return __io__block.readFloat(__io__address + 1820);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'jitter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush while painting<h4>Blender Source Code:</h4>
+	 * <p> jitter the position of the brush </p>
 	 * @see #__DNA__FIELD__jitter
 	 */
 	
 	public void setJitter(float jitter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1880, jitter);
+			__io__block.writeFloat(__io__address + 1884, jitter);
 		} else {
-			__io__block.writeFloat(__io__address + 1816, jitter);
+			__io__block.writeFloat(__io__address + 1820, jitter);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'jitter_absolute'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <p> absolute jitter in pixels </p>
 	 * @see #__DNA__FIELD__jitter_absolute
 	 */
 	
 	public int getJitter_absolute() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1884);
+			return __io__block.readInt(__io__address + 1888);
 		} else {
-			return __io__block.readInt(__io__address + 1820);
+			return __io__block.readInt(__io__address + 1824);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'jitter_absolute'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Jitter the position of the brush in pixels while painting<h4>Blender Source Code:</h4>
+	 * <p> absolute jitter in pixels </p>
 	 * @see #__DNA__FIELD__jitter_absolute
 	 */
 	
 	public void setJitter_absolute(int jitter_absolute) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1884, jitter_absolute);
+			__io__block.writeInt(__io__address + 1888, jitter_absolute);
 		} else {
-			__io__block.writeInt(__io__address + 1820, jitter_absolute);
+			__io__block.writeInt(__io__address + 1824, jitter_absolute);
 		}
 	}
 
@@ -1813,9 +2095,9 @@ public class Brush extends CFacade {
 	public int getOverlay_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1888);
+			return __io__block.readInt(__io__address + 1892);
 		} else {
-			return __io__block.readInt(__io__address + 1824);
+			return __io__block.readInt(__io__address + 1828);
 		}
 	}
 
@@ -1827,46 +2109,22 @@ public class Brush extends CFacade {
 	public void setOverlay_flags(int overlay_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1888, overlay_flags);
+			__io__block.writeInt(__io__address + 1892, overlay_flags);
 		} else {
-			__io__block.writeInt(__io__address + 1824, overlay_flags);
+			__io__block.writeInt(__io__address + 1828, overlay_flags);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'spacing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <p> spacing of paint operations </p>
 	 * @see #__DNA__FIELD__spacing
 	 */
 	
 	public int getSpacing() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1892);
-		} else {
-			return __io__block.readInt(__io__address + 1828);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'spacing'.
-	 * @see #__DNA__FIELD__spacing
-	 */
-	
-	public void setSpacing(int spacing) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1892, spacing);
-		} else {
-			__io__block.writeInt(__io__address + 1828, spacing);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'smooth_stroke_radius'.
-	 * @see #__DNA__FIELD__smooth_stroke_radius
-	 */
-	
-	public int getSmooth_stroke_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 1896);
@@ -1876,53 +2134,69 @@ public class Brush extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'spacing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Spacing between brush daubs as a percentage of brush diameter<h4>Blender Source Code:</h4>
+	 * <p> spacing of paint operations </p>
+	 * @see #__DNA__FIELD__spacing
+	 */
+	
+	public void setSpacing(int spacing) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1896, spacing);
+		} else {
+			__io__block.writeInt(__io__address + 1832, spacing);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'smooth_stroke_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <p> turning radius (in pixels) for smooth stroke </p>
+	 * @see #__DNA__FIELD__smooth_stroke_radius
+	 */
+	
+	public int getSmooth_stroke_radius() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1900);
+		} else {
+			return __io__block.readInt(__io__address + 1836);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'smooth_stroke_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Minimum distance from last point before stroke continues<h4>Blender Source Code:</h4>
+	 * <p> turning radius (in pixels) for smooth stroke </p>
 	 * @see #__DNA__FIELD__smooth_stroke_radius
 	 */
 	
 	public void setSmooth_stroke_radius(int smooth_stroke_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1896, smooth_stroke_radius);
+			__io__block.writeInt(__io__address + 1900, smooth_stroke_radius);
 		} else {
-			__io__block.writeInt(__io__address + 1832, smooth_stroke_radius);
+			__io__block.writeInt(__io__address + 1836, smooth_stroke_radius);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'smooth_stroke_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <p> higher values limit fast changes in the stroke direction </p>
 	 * @see #__DNA__FIELD__smooth_stroke_factor
 	 */
 	
 	public float getSmooth_stroke_factor() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1900);
-		} else {
-			return __io__block.readFloat(__io__address + 1836);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'smooth_stroke_factor'.
-	 * @see #__DNA__FIELD__smooth_stroke_factor
-	 */
-	
-	public void setSmooth_stroke_factor(float smooth_stroke_factor) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1900, smooth_stroke_factor);
-		} else {
-			__io__block.writeFloat(__io__address + 1836, smooth_stroke_factor);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'rate'.
-	 * @see #__DNA__FIELD__rate
-	 */
-	
-	public float getRate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 1904);
@@ -1932,21 +2206,64 @@ public class Brush extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'smooth_stroke_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Higher values give a smoother stroke<h4>Blender Source Code:</h4>
+	 * <p> higher values limit fast changes in the stroke direction </p>
+	 * @see #__DNA__FIELD__smooth_stroke_factor
+	 */
+	
+	public void setSmooth_stroke_factor(float smooth_stroke_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1904, smooth_stroke_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 1840, smooth_stroke_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <p> paint operations / second (airbrush) </p>
+	 * @see #__DNA__FIELD__rate
+	 */
+	
+	public float getRate() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1908);
+		} else {
+			return __io__block.readFloat(__io__address + 1844);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'rate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval between paints for Airbrush<h4>Blender Source Code:</h4>
+	 * <p> paint operations / second (airbrush) </p>
 	 * @see #__DNA__FIELD__rate
 	 */
 	
 	public void setRate(float rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1904, rate);
+			__io__block.writeFloat(__io__address + 1908, rate);
 		} else {
-			__io__block.writeFloat(__io__address + 1840, rate);
+			__io__block.writeFloat(__io__address + 1844, rate);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
 	
@@ -1957,14 +2274,17 @@ public class Brush extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1912, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1844, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1848, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color </p>
 	 * @see #__DNA__FIELD__rgb
 	 */
 	
@@ -1972,9 +2292,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1908;
+			__dna__offset = 1912;
 		} else {
-			__dna__offset = 1844;
+			__dna__offset = 1848;
 		}
 		if (__io__equals(rgb, __io__address + __dna__offset)) {
 			return;
@@ -1987,34 +2307,43 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1920);
+			return __io__block.readFloat(__io__address + 1924);
 		} else {
-			return __io__block.readFloat(__io__address + 1856);
+			return __io__block.readFloat(__io__address + 1860);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> opacity </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1920, alpha);
+			__io__block.writeFloat(__io__address + 1924, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 1856, alpha);
+			__io__block.writeFloat(__io__address + 1860, alpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'secondary_rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> background color </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
 	
@@ -2025,14 +2354,17 @@ public class Brush extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1928, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'secondary_rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> background color </p>
 	 * @see #__DNA__FIELD__secondary_rgb
 	 */
 	
@@ -2040,9 +2372,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1924;
+			__dna__offset = 1928;
 		} else {
-			__dna__offset = 1860;
+			__dna__offset = 1864;
 		}
 		if (__io__equals(secondary_rgb, __io__address + __dna__offset)) {
 			return;
@@ -2055,85 +2387,71 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'sculpt_plane'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the direction of movement for sculpt vertices </p>
 	 * @see #__DNA__FIELD__sculpt_plane
 	 */
 	
 	public int getSculpt_plane() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1936);
+			return __io__block.readInt(__io__address + 1940);
 		} else {
-			return __io__block.readInt(__io__address + 1872);
+			return __io__block.readInt(__io__address + 1876);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sculpt_plane'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the direction of movement for sculpt vertices </p>
 	 * @see #__DNA__FIELD__sculpt_plane
 	 */
 	
 	public void setSculpt_plane(int sculpt_plane) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1936, sculpt_plane);
+			__io__block.writeInt(__io__address + 1940, sculpt_plane);
 		} else {
-			__io__block.writeInt(__io__address + 1872, sculpt_plane);
+			__io__block.writeInt(__io__address + 1876, sculpt_plane);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'plane_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <p> offset for plane brushes (clay, flatten, fill, scrape) </p>
 	 * @see #__DNA__FIELD__plane_offset
 	 */
 	
 	public float getPlane_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1940);
+			return __io__block.readFloat(__io__address + 1944);
 		} else {
-			return __io__block.readFloat(__io__address + 1876);
+			return __io__block.readFloat(__io__address + 1880);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'plane_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Adjust plane on which the brush acts towards or away from the object surface<h4>Blender Source Code:</h4>
+	 * <p> offset for plane brushes (clay, flatten, fill, scrape) </p>
 	 * @see #__DNA__FIELD__plane_offset
 	 */
 	
 	public void setPlane_offset(float plane_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1940, plane_offset);
+			__io__block.writeFloat(__io__address + 1944, plane_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 1876, plane_offset);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'flag2'.
-	 * @see #__DNA__FIELD__flag2
-	 */
-	
-	public int getFlag2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1944);
-		} else {
-			return __io__block.readInt(__io__address + 1880);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag2'.
-	 * @see #__DNA__FIELD__flag2
-	 */
-	
-	public void setFlag2(int flag2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1944, flag2);
-		} else {
-			__io__block.writeInt(__io__address + 1880, flag2);
+			__io__block.writeFloat(__io__address + 1880, plane_offset);
 		}
 	}
 
@@ -2167,6 +2485,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'gradient_stroke_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for stroke color gradient application </p>
 	 * @see #__DNA__FIELD__gradient_stroke_mode
 	 */
 	
@@ -2181,6 +2502,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'gradient_stroke_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for stroke color gradient application </p>
 	 * @see #__DNA__FIELD__gradient_stroke_mode
 	 */
 	
@@ -2195,6 +2519,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'gradient_fill_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for fill tool color gradient application </p>
 	 * @see #__DNA__FIELD__gradient_fill_mode
 	 */
 	
@@ -2209,6 +2536,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'gradient_fill_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> source for fill tool color gradient application </p>
 	 * @see #__DNA__FIELD__gradient_fill_mode
 	 */
 	
@@ -2223,6 +2553,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active sculpt tool </p>
 	 * @see #__DNA__FIELD__sculpt_tool
 	 */
 	
@@ -2237,6 +2570,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active sculpt tool </p>
 	 * @see #__DNA__FIELD__sculpt_tool
 	 */
 	
@@ -2251,6 +2587,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'vertexpaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active vertex/weight paint blend mode (poorly named) </p>
 	 * @see #__DNA__FIELD__vertexpaint_tool
 	 */
 	
@@ -2265,6 +2604,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'vertexpaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active vertex/weight paint blend mode (poorly named) </p>
 	 * @see #__DNA__FIELD__vertexpaint_tool
 	 */
 	
@@ -2279,6 +2621,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'imagepaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active image paint tool </p>
 	 * @see #__DNA__FIELD__imagepaint_tool
 	 */
 	
@@ -2293,6 +2638,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'imagepaint_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> active image paint tool </p>
 	 * @see #__DNA__FIELD__imagepaint_tool
 	 */
 	
@@ -2307,6 +2655,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enum BrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK </p>
 	 * @see #__DNA__FIELD__mask_tool
 	 */
 	
@@ -2321,6 +2672,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enum BrushMaskTool, only used if sculpt_tool is SCULPT_TOOL_MASK </p>
 	 * @see #__DNA__FIELD__mask_tool
 	 */
 	
@@ -2363,6 +2717,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'crease_pinch_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the crease brush pinches
 	 * @see #__DNA__FIELD__crease_pinch_factor
 	 */
 	
@@ -2377,6 +2734,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'crease_pinch_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the crease brush pinches
 	 * @see #__DNA__FIELD__crease_pinch_factor
 	 */
 	
@@ -2391,6 +2751,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'plane_trim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * @see #__DNA__FIELD__plane_trim
 	 */
 	
@@ -2405,6 +2768,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'plane_trim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * If a vertex is further away from offset plane than this, then it is not affected
 	 * @see #__DNA__FIELD__plane_trim
 	 */
 	
@@ -2419,6 +2785,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <p> affectable height of brush (layer height for layer tool, i.e.) </p>
 	 * @see #__DNA__FIELD__height
 	 */
 	
@@ -2433,6 +2803,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Affectable height of brush (layer height for layer tool, i.e.)<h4>Blender Source Code:</h4>
+	 * <p> affectable height of brush (layer height for layer tool, i.e.) </p>
 	 * @see #__DNA__FIELD__height
 	 */
 	
@@ -2447,6 +2821,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture_sample_bias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Value added to texture samples
 	 * @see #__DNA__FIELD__texture_sample_bias
 	 */
 	
@@ -2461,6 +2838,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture_sample_bias'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Value added to texture samples
 	 * @see #__DNA__FIELD__texture_sample_bias
 	 */
 	
@@ -2475,6 +2855,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture_overlay_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay </p>
 	 * @see #__DNA__FIELD__texture_overlay_alpha
 	 */
 	
@@ -2489,6 +2872,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture_overlay_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay </p>
 	 * @see #__DNA__FIELD__texture_overlay_alpha
 	 */
 	
@@ -2559,6 +2945,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
 	
@@ -2573,6 +2962,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
 	
@@ -2587,6 +2979,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <p> soften/sharpen </p>
 	 * @see #__DNA__FIELD__sharp_threshold
 	 */
 	
@@ -2601,6 +2997,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'sharp_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold below which, no sharpening is done<h4>Blender Source Code:</h4>
+	 * <p> soften/sharpen </p>
 	 * @see #__DNA__FIELD__sharp_threshold
 	 */
 	
@@ -2615,6 +3015,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'blur_kernel_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of kernel used for soften and sharpen in pixels
 	 * @see #__DNA__FIELD__blur_kernel_radius
 	 */
 	
@@ -2629,6 +3032,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'blur_kernel_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Radius of kernel used for soften and sharpen in pixels
 	 * @see #__DNA__FIELD__blur_kernel_radius
 	 */
 	
@@ -2671,6 +3077,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'fill_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <p> fill tool </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
 	
@@ -2685,6 +3095,10 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'fill_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Threshold above which filling is not propagated<h4>Blender Source Code:</h4>
+	 * <p> fill tool </p>
 	 * @see #__DNA__FIELD__fill_threshold
 	 */
 	
@@ -2779,6 +3193,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_pos
 	 */
 	
@@ -2797,6 +3214,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_pos
 	 */
 	
@@ -2819,6 +3239,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_dimension
 	 */
 	
@@ -2837,6 +3260,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of stencil in viewport
 	 * @see #__DNA__FIELD__stencil_dimension
 	 */
 	
@@ -2859,6 +3285,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_pos
 	 */
 	
@@ -2877,6 +3306,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_stencil_pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_pos
 	 */
 	
@@ -2899,6 +3331,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Get method for struct member 'mask_stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_dimension
 	 */
 	
@@ -2917,6 +3352,9 @@ public class Brush extends CFacade {
 
 	/**
 	 * Set method for struct member 'mask_stencil_dimension'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Dimensions of mask stencil in viewport
 	 * @see #__DNA__FIELD__mask_stencil_dimension
 	 */
 	

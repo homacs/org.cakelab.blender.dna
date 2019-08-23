@@ -371,6 +371,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cachepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +394,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'foamlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1111,6 +1117,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cachepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__cachepath
 	 */
 	
@@ -1129,6 +1138,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cachepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__cachepath
 	 */
 	
@@ -1151,6 +1163,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'foamlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__foamlayername
 	 */
 	
@@ -1169,6 +1184,9 @@ public class OceanModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'foamlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__foamlayername
 	 */
 	

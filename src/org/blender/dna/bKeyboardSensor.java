@@ -27,7 +27,7 @@ public class bKeyboardSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 291;
+	public static final int __DNA__SDNA_INDEX = 297;
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
@@ -111,6 +111,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'targetName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the target propertyMAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +134,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'toggleName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the toggle propertyMAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +277,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'targetName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the target propertyMAX_NAME </p>
 	 * @see #__DNA__FIELD__targetName
 	 */
 	
@@ -289,6 +298,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'targetName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the target propertyMAX_NAME </p>
 	 * @see #__DNA__FIELD__targetName
 	 */
 	
@@ -311,6 +323,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'toggleName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the toggle propertyMAX_NAME </p>
 	 * @see #__DNA__FIELD__toggleName
 	 */
 	
@@ -329,6 +344,9 @@ public class bKeyboardSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'toggleName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the toggle propertyMAX_NAME </p>
 	 * @see #__DNA__FIELD__toggleName
 	 */
 	

@@ -26,7 +26,7 @@ public class CurveMapPoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 448;
+	public static final int __DNA__SDNA_INDEX = 455;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
@@ -90,6 +90,9 @@ public class CurveMapPoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shorty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shorty for result lookup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -202,6 +205,9 @@ public class CurveMapPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'shorty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shorty for result lookup </p>
 	 * @see #__DNA__FIELD__shorty
 	 */
 	
@@ -216,6 +222,9 @@ public class CurveMapPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'shorty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shorty for result lookup </p>
 	 * @see #__DNA__FIELD__shorty
 	 */
 	

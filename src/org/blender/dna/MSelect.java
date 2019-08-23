@@ -50,6 +50,9 @@ public class MSelect extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -106,6 +109,9 @@ public class MSelect extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -120,6 +126,9 @@ public class MSelect extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

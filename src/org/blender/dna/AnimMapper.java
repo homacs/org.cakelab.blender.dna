@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AnimMapper'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> FIXME: will this be too clumsy or slow? If we're using RNA paths anyway, we'll have to accept such consequences... </p><p> Retargetting Information for Actions</p><p> This should only be used if it is strictly necessary (i.e. user will need to explicitly add this when they find that some channels do not match, or motion is not going to right places). When executing an action, this will be checked to see if it provides any useful remaps for the given paths.</p><p> NOTE: we currently don't store this in the Action itself, as that causes too many problems. </p>
  */
 
 @CMetaData(size32=20, size64=40)
@@ -26,7 +27,7 @@ public class AnimMapper extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 507;
+	public static final int __DNA__SDNA_INDEX = 518;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -70,6 +71,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> target action </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +94,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mappings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remapping table (bAnimMapPair) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,6 +189,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Get method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> target action </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -199,6 +209,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Set method for struct member 'target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> target action </p>
 	 * @see #__DNA__FIELD__target
 	 */
 	
@@ -214,6 +227,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Get method for struct member 'mappings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remapping table (bAnimMapPair) </p>
 	 * @see #__DNA__FIELD__mappings
 	 */
 	
@@ -228,6 +244,9 @@ public class AnimMapper extends CFacade {
 
 	/**
 	 * Set method for struct member 'mappings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remapping table (bAnimMapPair) </p>
 	 * @see #__DNA__FIELD__mappings
 	 */
 	

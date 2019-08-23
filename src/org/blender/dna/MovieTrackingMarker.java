@@ -27,10 +27,13 @@ public class MovieTrackingMarker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 534;
+	public static final int __DNA__SDNA_INDEX = 545;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 2d position of marker on frame (in unified 0..1 space) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,26 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pattern_corners'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> corners of pattern in the following order: <pre> Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </pre>  Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </p><p> the coordinates are stored relative to pos. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +94,10 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Left-bottom corner of search area in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +118,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +141,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frame marker is associated with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +164,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Marker's flag (alive, ...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +195,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 2d position of marker on frame (in unified 0..1 space) </p>
 	 * @see #__DNA__FIELD__pos
 	 */
 	
@@ -177,6 +216,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'pos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 2d position of marker on frame (in unified 0..1 space) </p>
 	 * @see #__DNA__FIELD__pos
 	 */
 	
@@ -199,6 +241,26 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'pattern_corners'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> corners of pattern in the following order: <pre> Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </pre>  Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </p><p> the coordinates are stored relative to pos. </p>
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	
@@ -218,6 +280,26 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'pattern_corners'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> corners of pattern in the following order: <pre> Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </pre>  Y
+	 *  ^
+	 *  | (3) --- (2)
+	 *  |  |       |
+	 *  |  |       |
+	 *  |  |       |
+	 *  | (0) --- (1)
+	 *  +-------------> X
+	 * </p><p> the coordinates are stored relative to pos. </p>
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	
@@ -240,6 +322,10 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Left-bottom corner of search area in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos </p>
 	 * @see #__DNA__FIELD__search_min
 	 */
 	
@@ -258,6 +344,10 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Left-bottom corner of search area in normalized coordinates relative to marker position<h4>Blender Source Code:</h4>
+	 * <p> positions of left-bottom and right-top corners of search area (in unified 0..1 units, relative to marker->pos </p>
 	 * @see #__DNA__FIELD__search_min
 	 */
 	
@@ -280,6 +370,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_max
 	 */
 	
@@ -298,6 +391,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_max
 	 */
 	
@@ -320,6 +416,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frame marker is associated with </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -334,6 +433,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frame marker is associated with </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -348,6 +450,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Marker's flag (alive, ...) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -362,6 +467,9 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Marker's flag (alive, ...) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

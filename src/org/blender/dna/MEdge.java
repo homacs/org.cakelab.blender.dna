@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MEdge'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * An edge defined by two vertices v1 and v2. Vertex order does not tell which side is front facing. @see {@link MLoop}, {@link MVert}
  */
 
 @CMetaData(size32=12, size64=12)
@@ -30,6 +31,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * First vertex of the edge (index in vertex array).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Second vertex of the edge (index in vertex array).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +117,19 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * //	SELECT              = (1 << 0), 
+	 * 	ME_EDGEDRAW         = (1 << 1),
+	 * 	ME_SEAM             = (1 << 2),
+	 * //	ME_HIDE             = (1 << 4), 
+	 * 	ME_EDGERENDER       = (1 << 5),
+	 * 	ME_LOOSEEDGE        = (1 << 7),
+	 * 	ME_EDGE_TMP_TAG     = (1 << 8),
+	 * 	ME_SHARP            = (1 << 9),
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,6 +158,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Get method for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * First vertex of the edge (index in vertex array).
 	 * @see #__DNA__FIELD__v1
 	 */
 	
@@ -152,6 +175,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Set method for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * First vertex of the edge (index in vertex array).
 	 * @see #__DNA__FIELD__v1
 	 */
 	
@@ -166,6 +192,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Second vertex of the edge (index in vertex array).
 	 * @see #__DNA__FIELD__v2
 	 */
 	
@@ -180,6 +209,9 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Second vertex of the edge (index in vertex array).
 	 * @see #__DNA__FIELD__v2
 	 */
 	
@@ -250,6 +282,19 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * //	SELECT              = (1 << 0), 
+	 * 	ME_EDGEDRAW         = (1 << 1),
+	 * 	ME_SEAM             = (1 << 2),
+	 * //	ME_HIDE             = (1 << 4), 
+	 * 	ME_EDGERENDER       = (1 << 5),
+	 * 	ME_LOOSEEDGE        = (1 << 7),
+	 * 	ME_EDGE_TMP_TAG     = (1 << 8),
+	 * 	ME_SHARP            = (1 << 9),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -264,6 +309,19 @@ public class MEdge extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3>
+	 * 				<pre>
+	 * //	SELECT              = (1 << 0), 
+	 * 	ME_EDGEDRAW         = (1 << 1),
+	 * 	ME_SEAM             = (1 << 2),
+	 * //	ME_HIDE             = (1 << 4), 
+	 * 	ME_EDGERENDER       = (1 << 5),
+	 * 	ME_LOOSEEDGE        = (1 << 7),
+	 * 	ME_EDGE_TMP_TAG     = (1 << 8),
+	 * 	ME_SHARP            = (1 << 9),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

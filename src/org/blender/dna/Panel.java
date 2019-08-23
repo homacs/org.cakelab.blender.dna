@@ -27,10 +27,13 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 250;
+	public static final int __DNA__SDNA_INDEX = 254;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the part from uiBlock that needs saved in file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,10 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
+	 * <p> runtime for drawing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +141,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tabname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defined as UI_MAX_NAME_STR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +164,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panelname is identifier for restoring location </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +387,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sortorder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panels are aligned according to increasing sortorder </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +410,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paneltab'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this panel is tabbed in *paneltab </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +433,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'activedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime for panel manipulation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -439,6 +464,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the part from uiBlock that needs saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -456,6 +484,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the part from uiBlock that needs saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -503,6 +534,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -520,6 +554,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -535,6 +572,10 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'layout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
+	 * <p> runtime for drawing </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -552,6 +593,10 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'layout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
+	 * <p> runtime for drawing </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -607,6 +652,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'tabname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defined as UI_MAX_NAME_STR </p>
 	 * @see #__DNA__FIELD__tabname
 	 */
 	
@@ -625,6 +673,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'tabname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defined as UI_MAX_NAME_STR </p>
 	 * @see #__DNA__FIELD__tabname
 	 */
 	
@@ -647,6 +698,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'drawname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panelname is identifier for restoring location </p>
 	 * @see #__DNA__FIELD__drawname
 	 */
 	
@@ -665,6 +719,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'drawname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panelname is identifier for restoring location </p>
 	 * @see #__DNA__FIELD__drawname
 	 */
 	
@@ -967,6 +1024,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'sortorder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panels are aligned according to increasing sortorder </p>
 	 * @see #__DNA__FIELD__sortorder
 	 */
 	
@@ -981,6 +1041,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'sortorder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> panels are aligned according to increasing sortorder </p>
 	 * @see #__DNA__FIELD__sortorder
 	 */
 	
@@ -995,6 +1058,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'paneltab'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this panel is tabbed in *paneltab </p>
 	 * @see #__DNA__FIELD__paneltab
 	 */
 	
@@ -1012,6 +1078,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'paneltab'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> this panel is tabbed in *paneltab </p>
 	 * @see #__DNA__FIELD__paneltab
 	 */
 	
@@ -1027,6 +1096,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'activedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime for panel manipulation </p>
 	 * @see #__DNA__FIELD__activedata
 	 */
 	
@@ -1044,6 +1116,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'activedata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime for panel manipulation </p>
 	 * @see #__DNA__FIELD__activedata
 	 */
 	

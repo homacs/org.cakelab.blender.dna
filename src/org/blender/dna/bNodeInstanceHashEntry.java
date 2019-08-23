@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNodeInstanceHashEntry'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Base}  struct for entries in node instance hash. WARNING: pointers are cast to this struct internally, it must be first member in hash entry structs! </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -26,7 +27,7 @@ public class bNodeInstanceHashEntry extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 390;
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
@@ -50,6 +51,9 @@ public class bNodeInstanceHashEntry extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tags for cleaning the cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,6 +138,9 @@ public class bNodeInstanceHashEntry extends CFacade {
 
 	/**
 	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tags for cleaning the cache </p>
 	 * @see #__DNA__FIELD__tag
 	 */
 	
@@ -148,6 +155,9 @@ public class bNodeInstanceHashEntry extends CFacade {
 
 	/**
 	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tags for cleaning the cache </p>
 	 * @see #__DNA__FIELD__tag
 	 */
 	

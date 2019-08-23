@@ -26,7 +26,7 @@ public class FreestyleConfig extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 562;
+	public static final int __DNA__SDNA_INDEX = 573;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modules'.
@@ -50,6 +50,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scripting, editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +73,11 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'raycasting_algorithm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +98,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> suggestive contours, ridges/valleys, material boundaries </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +161,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,6 +248,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scripting, editor </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -248,6 +265,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scripting, editor </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -262,6 +282,11 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Get method for struct member 'raycasting_algorithm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__raycasting_algorithm
 	 */
 	
@@ -276,6 +301,11 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Set method for struct member 'raycasting_algorithm'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__raycasting_algorithm
 	 */
 	
@@ -290,6 +320,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Get method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> suggestive contours, ridges/valleys, material boundaries </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -304,6 +337,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Set method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> suggestive contours, ridges/valleys, material boundaries </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -374,6 +410,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Get method for struct member 'crease_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * @see #__DNA__FIELD__crease_angle
 	 */
 	
@@ -388,6 +427,9 @@ public class FreestyleConfig extends CFacade {
 
 	/**
 	 * Set method for struct member 'crease_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in radians! </p>
 	 * @see #__DNA__FIELD__crease_angle
 	 */
 	

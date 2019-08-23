@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMinMaxConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Floor Constraint </p>
  */
 
 @CMetaData(size32=100, size64=104)
@@ -27,7 +28,7 @@ public class bMinMaxConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 358;
+	public static final int __DNA__SDNA_INDEX = 364;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -171,6 +172,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for backward compatibility </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +215,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -439,6 +446,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for backward compatibility </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -453,6 +463,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for backward compatibility </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -507,6 +520,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -525,6 +541,9 @@ public class bMinMaxConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	

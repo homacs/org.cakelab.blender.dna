@@ -27,10 +27,13 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 266;
+	public static final int __DNA__SDNA_INDEX = 270;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the top-most seq's </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_seq'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Context vars, used to be static </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_imagedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_sounddir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,6 +297,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'seqbasep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
 	
@@ -296,6 +317,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'seqbasep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
 	
@@ -311,6 +335,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'seqbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the top-most seq's </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -325,6 +352,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'seqbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to the top-most seq's </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -383,6 +413,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'act_seq'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Context vars, used to be static </p>
 	 * @see #__DNA__FIELD__act_seq
 	 */
 	
@@ -400,6 +433,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'act_seq'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Context vars, used to be static </p>
 	 * @see #__DNA__FIELD__act_seq
 	 */
 	
@@ -415,6 +451,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'act_imagedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
 	
@@ -433,6 +472,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'act_imagedir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
 	
@@ -455,6 +497,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'act_sounddir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
 	
@@ -473,6 +518,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'act_sounddir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
 	
@@ -495,6 +543,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Get method for struct member 'proxy_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
 	
@@ -513,6 +564,9 @@ public class Editing extends CFacade {
 
 	/**
 	 * Set method for struct member 'proxy_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
 	

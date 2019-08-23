@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FModifier'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  F-Curve DataTypes Modifiers --------------------------------<mdash/><mdash/>  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
  */
 
 @CMetaData(size32=100, size64=112)
@@ -27,7 +29,7 @@ public class FModifier extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 491;
+	public static final int __DNA__SDNA_INDEX = 502;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to modifier data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +96,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +119,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
+	 * <p> type of f-curve modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for the modifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
+	 * <p> the amount that the modifier should influence the value </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +190,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of restricted frame-range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +213,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of restricted frame-range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +236,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from sfra before modifier takes full influence </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +259,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from efra before modifier fades out </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,6 +354,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to modifier data </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -340,6 +374,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pointer to modifier data </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -355,6 +392,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -373,6 +413,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -395,6 +438,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
+	 * <p> type of f-curve modifier </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -409,6 +456,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
+	 * <p> type of f-curve modifier </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -423,6 +474,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for the modifier </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -437,6 +491,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for the modifier </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -451,6 +508,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
+	 * <p> the amount that the modifier should influence the value </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -465,6 +526,10 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
+	 * <p> the amount that the modifier should influence the value </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -479,6 +544,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of restricted frame-range </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -493,6 +561,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of restricted frame-range </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -507,6 +578,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of restricted frame-range </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -521,6 +595,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of restricted frame-range </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -535,6 +612,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from sfra before modifier takes full influence </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
@@ -549,6 +629,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from sfra before modifier takes full influence </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
@@ -563,6 +646,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Get method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from efra before modifier fades out </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
@@ -577,6 +663,9 @@ public class FModifier extends CFacade {
 
 	/**
 	 * Set method for struct member 'blendout'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> number of frames from efra before modifier fades out </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	

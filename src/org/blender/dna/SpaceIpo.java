@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceIpo'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Graph Editor ========================================= 'Graph' Editor (formerly known as the IPO Editor) </p>
  */
 
-@CMetaData(size32=216, size64=256)
+@CMetaData(size32=224, size64=264)
 public class SpaceIpo extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class SpaceIpo extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 205;
+	public static final int __DNA__SDNA_INDEX = 209;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +190,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filtering animation data (NOTE: we use a pointer due to code-linking issues) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +213,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ghostCurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sampled snapshots of F-Curves used as in-session guides </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +236,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode for the Graph editor (eGraphEdit_Mode) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +259,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time-transform autosnapping settings for Graph editor (eAnimEdit_AutoSnap in {@link DNA_action_types.h} ) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +282,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for Graph editor (eGraphEdit_Flag) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,7 +304,33 @@ public class SpaceIpo extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{204, 244};
 
 	/**
+	 * Field descriptor (offset) for struct member 'cursorTime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time value for cursor (when in drivers mode; animation uses current frame) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceIpo spaceipo = ...;
+	 * CPointer&lt;Object&gt; p = spaceipo.__dna__addressof(SpaceIpo.__DNA__FIELD__cursorTime);
+	 * CPointer&lt;Float&gt; p_cursorTime = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cursorTime'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cursorTime = new long[]{208, 248};
+
+	/**
 	 * Field descriptor (offset) for struct member 'cursorVal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cursor value (y-value, x-value is current frame) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,10 +347,13 @@ public class SpaceIpo extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cursorVal = new long[]{208, 248};
+	public static final long[] __DNA__FIELD__cursorVal = new long[]{212, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'around'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pivot point for transforms </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -307,7 +370,27 @@ public class SpaceIpo extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__around = new long[]{212, 252};
+	public static final long[] __DNA__FIELD__around = new long[]{216, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceIpo spaceipo = ...;
+	 * CPointer&lt;Object&gt; p = spaceipo.__dna__addressof(SpaceIpo.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{220, 260};
 
 	public SpaceIpo(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -383,6 +466,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -397,6 +483,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -447,6 +536,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -461,6 +555,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -475,6 +574,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -493,6 +597,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -515,6 +624,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -529,6 +643,11 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -551,6 +670,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'ads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filtering animation data (NOTE: we use a pointer due to code-linking issues) </p>
 	 * @see #__DNA__FIELD__ads
 	 */
 	
@@ -568,6 +690,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'ads'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for filtering animation data (NOTE: we use a pointer due to code-linking issues) </p>
 	 * @see #__DNA__FIELD__ads
 	 */
 	
@@ -583,6 +708,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'ghostCurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sampled snapshots of F-Curves used as in-session guides </p>
 	 * @see #__DNA__FIELD__ghostCurves
 	 */
 	
@@ -597,6 +725,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'ghostCurves'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> sampled snapshots of F-Curves used as in-session guides </p>
 	 * @see #__DNA__FIELD__ghostCurves
 	 */
 	
@@ -619,6 +750,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode for the Graph editor (eGraphEdit_Mode) </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -633,6 +767,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode for the Graph editor (eGraphEdit_Mode) </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -647,6 +784,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time-transform autosnapping settings for Graph editor (eAnimEdit_AutoSnap in {@link DNA_action_types.h} ) </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	
@@ -661,6 +801,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'autosnap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time-transform autosnapping settings for Graph editor (eAnimEdit_AutoSnap in {@link DNA_action_types.h} ) </p>
 	 * @see #__DNA__FIELD__autosnap
 	 */
 	
@@ -675,6 +818,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for Graph editor (eGraphEdit_Flag) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -689,6 +835,9 @@ public class SpaceIpo extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for Graph editor (eGraphEdit_Flag) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -702,11 +851,14 @@ public class SpaceIpo extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'cursorVal'.
-	 * @see #__DNA__FIELD__cursorVal
+	 * Get method for struct member 'cursorTime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time value for cursor (when in drivers mode; animation uses current frame) </p>
+	 * @see #__DNA__FIELD__cursorTime
 	 */
 	
-	public float getCursorVal() throws IOException
+	public float getCursorTime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 248);
@@ -716,44 +868,115 @@ public class SpaceIpo extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'cursorTime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time value for cursor (when in drivers mode; animation uses current frame) </p>
+	 * @see #__DNA__FIELD__cursorTime
+	 */
+	
+	public void setCursorTime(float cursorTime) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 248, cursorTime);
+		} else {
+			__io__block.writeFloat(__io__address + 208, cursorTime);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cursorVal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cursor value (y-value, x-value is current frame) </p>
+	 * @see #__DNA__FIELD__cursorVal
+	 */
+	
+	public float getCursorVal() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 252);
+		} else {
+			return __io__block.readFloat(__io__address + 212);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'cursorVal'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cursor value (y-value, x-value is current frame) </p>
 	 * @see #__DNA__FIELD__cursorVal
 	 */
 	
 	public void setCursorVal(float cursorVal) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 248, cursorVal);
+			__io__block.writeFloat(__io__address + 252, cursorVal);
 		} else {
-			__io__block.writeFloat(__io__address + 208, cursorVal);
+			__io__block.writeFloat(__io__address + 212, cursorVal);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'around'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pivot point for transforms </p>
 	 * @see #__DNA__FIELD__around
 	 */
 	
 	public int getAround() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 256);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 216);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'around'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pivot point for transforms </p>
 	 * @see #__DNA__FIELD__around
 	 */
 	
 	public void setAround(int around) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, around);
+			__io__block.writeInt(__io__address + 256, around);
 		} else {
-			__io__block.writeInt(__io__address + 212, around);
+			__io__block.writeInt(__io__address + 216, around);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 260);
+		} else {
+			return __io__block.readInt(__io__address + 220);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 260, pad);
+		} else {
+			__io__block.writeInt(__io__address + 220, pad);
 		}
 	}
 

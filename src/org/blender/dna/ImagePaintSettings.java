@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ImagePaintSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  {@link Image}  {@link Paint}  Texture/Image Editor </p>
  */
 
 @CMetaData(size32=96, size64=128)
@@ -27,7 +29,7 @@ public class ImagePaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 182;
+	public static final int __DNA__SDNA_INDEX = 183;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -91,6 +93,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seam_bleed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for projection painting only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +136,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'screen_grab_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> capture size for re-projection </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +159,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode used for texture painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +182,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +205,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> workaround until we support true layer masks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +228,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'clone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clone layer for image mode for projective texture painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +251,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'canvas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> canvas when the explicit system is used for painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +294,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dither'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dither amount used when painting on byte images </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +417,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'seam_bleed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for projection painting only </p>
 	 * @see #__DNA__FIELD__seam_bleed
 	 */
 	
@@ -405,6 +434,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'seam_bleed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for projection painting only </p>
 	 * @see #__DNA__FIELD__seam_bleed
 	 */
 	
@@ -447,6 +479,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'screen_grab_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> capture size for re-projection </p>
 	 * @see #__DNA__FIELD__screen_grab_size
 	 */
 	
@@ -465,6 +500,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'screen_grab_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> capture size for re-projection </p>
 	 * @see #__DNA__FIELD__screen_grab_size
 	 */
 	
@@ -487,6 +525,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode used for texture painting </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -501,6 +542,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mode used for texture painting </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -515,6 +559,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -532,6 +579,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'paintcursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> wm handle </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -547,6 +597,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'stencil'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> workaround until we support true layer masks </p>
 	 * @see #__DNA__FIELD__stencil
 	 */
 	
@@ -564,6 +617,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'stencil'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> workaround until we support true layer masks </p>
 	 * @see #__DNA__FIELD__stencil
 	 */
 	
@@ -579,6 +635,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'clone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clone layer for image mode for projective texture painting </p>
 	 * @see #__DNA__FIELD__clone
 	 */
 	
@@ -596,6 +655,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'clone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clone layer for image mode for projective texture painting </p>
 	 * @see #__DNA__FIELD__clone
 	 */
 	
@@ -611,6 +673,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'canvas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> canvas when the explicit system is used for painting </p>
 	 * @see #__DNA__FIELD__canvas
 	 */
 	
@@ -628,6 +693,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'canvas'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> canvas when the explicit system is used for painting </p>
 	 * @see #__DNA__FIELD__canvas
 	 */
 	
@@ -683,6 +751,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'dither'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dither amount used when painting on byte images </p>
 	 * @see #__DNA__FIELD__dither
 	 */
 	
@@ -697,6 +768,9 @@ public class ImagePaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'dither'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dither amount used when painting on byte images </p>
 	 * @see #__DNA__FIELD__dither
 	 */
 	

@@ -27,7 +27,7 @@ public class FreestyleLineSet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 560;
+	public static final int __DNA__SDNA_INDEX = 571;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +71,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line set name<h4>Blender Source Code:</h4>
+	 * <p> line set name, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'selection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection criteria </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +138,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'qi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quantitative invisibility </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +181,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'qi_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First QI value of the QI range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +204,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'qi_end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Last QI value of the QI range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +247,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'exclude_edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> feature edge types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +290,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
+	 * <p> group of target objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +314,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'linestyle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line style settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -383,6 +409,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line set name<h4>Blender Source Code:</h4>
+	 * <p> line set name, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -401,6 +431,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line set name<h4>Blender Source Code:</h4>
+	 * <p> line set name, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -451,6 +485,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'selection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection criteria </p>
 	 * @see #__DNA__FIELD__selection
 	 */
 	
@@ -465,6 +502,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'selection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> selection criteria </p>
 	 * @see #__DNA__FIELD__selection
 	 */
 	
@@ -479,6 +519,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'qi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quantitative invisibility </p>
 	 * @see #__DNA__FIELD__qi
 	 */
 	
@@ -493,6 +536,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'qi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quantitative invisibility </p>
 	 * @see #__DNA__FIELD__qi
 	 */
 	
@@ -535,6 +581,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'qi_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First QI value of the QI range
 	 * @see #__DNA__FIELD__qi_start
 	 */
 	
@@ -549,6 +598,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'qi_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First QI value of the QI range
 	 * @see #__DNA__FIELD__qi_start
 	 */
 	
@@ -563,6 +615,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'qi_end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Last QI value of the QI range
 	 * @see #__DNA__FIELD__qi_end
 	 */
 	
@@ -577,6 +632,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'qi_end'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Last QI value of the QI range
 	 * @see #__DNA__FIELD__qi_end
 	 */
 	
@@ -619,6 +677,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'exclude_edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> feature edge types </p>
 	 * @see #__DNA__FIELD__exclude_edge_types
 	 */
 	
@@ -633,6 +694,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'exclude_edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> feature edge types </p>
 	 * @see #__DNA__FIELD__exclude_edge_types
 	 */
 	
@@ -675,6 +739,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
+	 * <p> group of target objects </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -692,6 +760,10 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
+	 * <p> group of target objects </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -707,6 +779,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'linestyle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line style settings
 	 * @see #__DNA__FIELD__linestyle
 	 */
 	
@@ -724,6 +799,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'linestyle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Line style settings
 	 * @see #__DNA__FIELD__linestyle
 	 */
 	

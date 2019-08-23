@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Stepped'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> stepped modifier data </p>
  */
 
 @CMetaData(size32=20, size64=20)
@@ -26,10 +27,13 @@ public class FMod_Stepped extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 500;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'step_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames each interpolated value should be held </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference frame number that stepping starts from </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +77,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of the frame range that modifier works in </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +100,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'end_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of the frame range that modifier works in </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +123,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,6 +154,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Get method for struct member 'step_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames each interpolated value should be held </p>
 	 * @see #__DNA__FIELD__step_size
 	 */
 	
@@ -152,6 +171,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Set method for struct member 'step_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames each interpolated value should be held </p>
 	 * @see #__DNA__FIELD__step_size
 	 */
 	
@@ -166,6 +188,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference frame number that stepping starts from </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -180,6 +205,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference frame number that stepping starts from </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -194,6 +222,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Get method for struct member 'start_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of the frame range that modifier works in </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
 	
@@ -208,6 +239,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Set method for struct member 'start_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> start frame of the frame range that modifier works in </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
 	
@@ -222,6 +256,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Get method for struct member 'end_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of the frame range that modifier works in </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
 	
@@ -236,6 +273,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Set method for struct member 'end_frame'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> end frame of the frame range that modifier works in </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
 	
@@ -250,6 +290,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -264,6 +307,9 @@ public class FMod_Stepped extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> various settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

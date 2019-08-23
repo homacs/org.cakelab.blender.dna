@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'World'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link World}  defines general modeling data such as a background fill, gravity, color model etc. It mixes game-data, rendering data and modeling data. </p>
  */
 
 @CMetaData(size32=420, size64=544)
@@ -27,7 +28,7 @@ public class World extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 162;
+	public static final int __DNA__SDNA_INDEX = 163;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -51,6 +52,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +335,10 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'exposure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
+	 * <p> Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +439,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gravitation constant for the game world </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +462,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +505,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -511,6 +528,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -531,6 +551,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'physicsEngine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p><p> here it's aligned </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +574,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ticrate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -711,6 +737,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -731,6 +762,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -751,6 +787,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -771,6 +812,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stark'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> Deprecated </p>
+	 * @deprecated
+	 *  DeprecatedDeprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -791,6 +837,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -811,6 +862,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starmindist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -831,6 +887,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stardist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -851,6 +912,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'starcolnoise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -871,6 +937,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dofsta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unused now: DOF </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -951,6 +1020,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'aodist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1351,6 +1423,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> assorted settings (in the middle of ambient occlusion settings for padding reasons) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1371,6 +1446,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'aosphere'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion (contd...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1411,6 +1489,11 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1431,6 +1514,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1471,6 +1557,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the world
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1511,6 +1600,10 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * <p> previews </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1531,6 +1624,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> nodes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1551,6 +1647,9 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1615,6 +1714,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -1632,6 +1734,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> animation data (must be immediately after id for utilities to use it) </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -2011,6 +2116,10 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'exposure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
+	 * <p> Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -2025,6 +2134,10 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'exposure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
+	 * <p> Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -2151,6 +2264,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gravitation constant for the game world </p>
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -2165,6 +2281,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gravitation constant for the game world </p>
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -2179,6 +2298,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -2193,6 +2315,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -2235,6 +2360,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -2249,6 +2377,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -2263,6 +2394,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * @see #__DNA__FIELD__occlusionRes
 	 */
 	
@@ -2277,6 +2411,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * @see #__DNA__FIELD__occlusionRes
 	 */
 	
@@ -2291,6 +2428,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'physicsEngine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p><p> here it's aligned </p>
 	 * @see #__DNA__FIELD__physicsEngine
 	 */
 	
@@ -2305,6 +2445,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'physicsEngine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p><p> here it's aligned </p>
 	 * @see #__DNA__FIELD__physicsEngine
 	 */
 	
@@ -2319,6 +2462,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'ticrate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p>
 	 * @see #__DNA__FIELD__ticrate
 	 */
 	
@@ -2333,6 +2479,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'ticrate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX moved to scene->gamedata in 2.5. </p>
 	 * @see #__DNA__FIELD__ticrate
 	 */
 	
@@ -2543,6 +2692,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starr
 	 */
 	
@@ -2557,6 +2711,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starr
 	 */
 	
@@ -2571,6 +2730,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starg
 	 */
 	
@@ -2585,6 +2749,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starg
 	 */
 	
@@ -2599,6 +2768,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starb
 	 */
 	
@@ -2613,6 +2787,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starb
 	 */
 	
@@ -2627,6 +2806,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'stark'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> Deprecated </p>
+	 * @deprecated
+	 *  DeprecatedDeprecated </p>
 	 * @see #__DNA__FIELD__stark
 	 */
 	
@@ -2641,6 +2825,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'stark'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> Deprecated </p>
+	 * @deprecated
+	 *  DeprecatedDeprecated </p>
 	 * @see #__DNA__FIELD__stark
 	 */
 	
@@ -2655,6 +2844,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starsize
 	 */
 	
@@ -2669,6 +2863,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starsize
 	 */
 	
@@ -2683,6 +2882,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starmindist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starmindist
 	 */
 	
@@ -2697,6 +2901,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starmindist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starmindist
 	 */
 	
@@ -2711,6 +2920,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'stardist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stardist
 	 */
 	
@@ -2725,6 +2939,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'stardist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stardist
 	 */
 	
@@ -2739,6 +2958,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'starcolnoise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starcolnoise
 	 */
 	
@@ -2753,6 +2977,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'starcolnoise'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__starcolnoise
 	 */
 	
@@ -2767,6 +2996,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'dofsta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unused now: DOF </p>
 	 * @see #__DNA__FIELD__dofsta
 	 */
 	
@@ -2781,6 +3013,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'dofsta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unused now: DOF </p>
 	 * @see #__DNA__FIELD__dofsta
 	 */
 	
@@ -2879,6 +3114,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'aodist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion </p>
 	 * @see #__DNA__FIELD__aodist
 	 */
 	
@@ -2893,6 +3131,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'aodist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion </p>
 	 * @see #__DNA__FIELD__aodist
 	 */
 	
@@ -3439,6 +3680,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> assorted settings (in the middle of ambient occlusion settings for padding reasons) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -3453,6 +3697,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> assorted settings (in the middle of ambient occlusion settings for padding reasons) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -3467,6 +3714,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'aosphere'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion (contd...) </p>
 	 * @see #__DNA__FIELD__aosphere
 	 */
 	
@@ -3484,6 +3734,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'aosphere'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ambient occlusion (contd...) </p>
 	 * @see #__DNA__FIELD__aosphere
 	 */
 	
@@ -3531,6 +3784,11 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -3548,6 +3806,11 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * @deprecated
+	 *  Deprecatedold animation system, deprecated for 2.5 </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -3563,6 +3826,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
 	
@@ -3581,6 +3847,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'mtex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_MTEX </p>
 	 * @see #__DNA__FIELD__mtex
 	 */
 	
@@ -3631,6 +3900,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the world
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -3645,6 +3917,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_nodes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Use shader nodes to render the world
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -3699,6 +3974,10 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * <p> previews </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -3716,6 +3995,10 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)<h4>Blender Source Code:</h4>
+	 * <p> previews </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -3731,6 +4014,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> nodes </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
 	
@@ -3748,6 +4034,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> nodes </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
 	
@@ -3763,6 +4052,9 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
 	
@@ -3777,6 +4069,9 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpumaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__gpumaterial
 	 */
 	

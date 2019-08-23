@@ -27,10 +27,13 @@ public class bMessageActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 319;
+	public static final int __DNA__SDNA_INDEX = 325;
 
 	/**
 	 * Field descriptor (offset) for struct member 'toPropName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Send to all objects with this propertyname. Empty to broadcast. MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'toObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single destination object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Message Subject to send. MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bodyType is either 'User defined text' or PropName </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +163,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either User Defined {@link Text}  or our PropName to send value of, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,6 +194,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'toPropName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Send to all objects with this propertyname. Empty to broadcast. MAX_NAME. </p>
 	 * @see #__DNA__FIELD__toPropName
 	 */
 	
@@ -197,6 +215,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'toPropName'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Send to all objects with this propertyname. Empty to broadcast. MAX_NAME. </p>
 	 * @see #__DNA__FIELD__toPropName
 	 */
 	
@@ -219,6 +240,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'toObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single destination object. </p>
 	 * @see #__DNA__FIELD__toObject
 	 */
 	
@@ -236,6 +260,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'toObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (Possible future use) pointer to a single destination object. </p>
 	 * @see #__DNA__FIELD__toObject
 	 */
 	
@@ -251,6 +278,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Message Subject to send. MAX_NAME. </p>
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -269,6 +299,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'subject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Message Subject to send. MAX_NAME. </p>
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -319,6 +352,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bodyType is either 'User defined text' or PropName </p>
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
@@ -333,6 +369,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bodyType is either 'User defined text' or PropName </p>
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
@@ -375,6 +414,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either User Defined {@link Text}  or our PropName to send value of, MAX_NAME </p>
 	 * @see #__DNA__FIELD__body
 	 */
 	
@@ -393,6 +435,9 @@ public class bMessageActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'body'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Either User Defined {@link Text}  or our PropName to send value of, MAX_NAME </p>
 	 * @see #__DNA__FIELD__body
 	 */
 	

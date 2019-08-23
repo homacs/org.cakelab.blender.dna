@@ -51,6 +51,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'percent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'iter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'delimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,27 +119,33 @@ public class DecimateModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__delimit = new long[]{102, 118};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'symmetry_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * DecimateModifierData decimatemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = decimatemodifierdata.__dna__addressof(DecimateModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = decimatemodifierdata.__dna__addressof(DecimateModifierData.__DNA__FIELD__symmetry_axis);
+	 * CPointer&lt;Byte&gt; p_symmetry_axis = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'symmetry_axis'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{103, 119};
+	public static final long[] __DNA__FIELD__symmetry_axis = new long[]{103, 119};
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +249,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,6 +316,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'percent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
 	 * @see #__DNA__FIELD__percent
 	 */
 	
@@ -309,6 +333,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'percent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
 	 * @see #__DNA__FIELD__percent
 	 */
 	
@@ -323,6 +350,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'iter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
 	 * @see #__DNA__FIELD__iter
 	 */
 	
@@ -337,6 +367,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'iter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
 	 * @see #__DNA__FIELD__iter
 	 */
 	
@@ -351,6 +384,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'delimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
 	
@@ -365,6 +401,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'delimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
 	
@@ -378,11 +417,14 @@ public class DecimateModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'symmetry_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * @see #__DNA__FIELD__symmetry_axis
 	 */
 	
-	public byte getPad() throws IOException
+	public byte getSymmetry_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 119);
@@ -392,21 +434,27 @@ public class DecimateModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'symmetry_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * @see #__DNA__FIELD__symmetry_axis
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void setSymmetry_axis(byte symmetry_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 119, pad);
+			__io__block.writeByte(__io__address + 119, symmetry_axis);
 		} else {
-			__io__block.writeByte(__io__address + 103, pad);
+			__io__block.writeByte(__io__address + 103, symmetry_axis);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -421,6 +469,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -435,6 +486,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -453,6 +507,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -559,6 +616,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'face_count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime only </p>
 	 * @see #__DNA__FIELD__face_count
 	 */
 	
@@ -573,6 +633,9 @@ public class DecimateModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'face_count'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime only </p>
 	 * @see #__DNA__FIELD__face_count
 	 */
 	

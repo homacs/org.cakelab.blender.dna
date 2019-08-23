@@ -31,6 +31,9 @@ public class MultiresColFace extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex colors </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,6 +62,9 @@ public class MultiresColFace extends CFacade {
 
 	/**
 	 * Get method for struct member 'col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex colors </p>
 	 * @see #__DNA__FIELD__col
 	 */
 	
@@ -77,6 +83,9 @@ public class MultiresColFace extends CFacade {
 
 	/**
 	 * Set method for struct member 'col'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex colors </p>
 	 * @see #__DNA__FIELD__col
 	 */
 	

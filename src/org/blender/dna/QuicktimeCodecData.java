@@ -27,10 +27,13 @@ public class QuicktimeCodecData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 165;
+	public static final int __DNA__SDNA_INDEX = 166;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cdParms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Old quicktime implementation compatibility fields, read only in 2.5 - deprecated codec/compressor options </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cdSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of cdParms buffer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +100,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,6 +151,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cdParms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Old quicktime implementation compatibility fields, read only in 2.5 - deprecated codec/compressor options </p>
 	 * @see #__DNA__FIELD__cdParms
 	 */
 	
@@ -156,6 +171,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cdParms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Old quicktime implementation compatibility fields, read only in 2.5 - deprecated codec/compressor options </p>
 	 * @see #__DNA__FIELD__cdParms
 	 */
 	
@@ -171,6 +189,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * @see #__DNA__FIELD__pad
 	 */
 	
@@ -188,6 +209,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * @see #__DNA__FIELD__pad
 	 */
 	
@@ -203,6 +227,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Get method for struct member 'cdSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of cdParms buffer </p>
 	 * @see #__DNA__FIELD__cdSize
 	 */
 	
@@ -217,6 +244,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Set method for struct member 'cdSize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of cdParms buffer </p>
 	 * @see #__DNA__FIELD__cdSize
 	 */
 	
@@ -231,6 +261,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -245,6 +278,9 @@ public class QuicktimeCodecData extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> padding </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	

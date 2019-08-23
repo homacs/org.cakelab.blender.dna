@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=72, size64=72)
+@CMetaData(size32=80, size64=80)
 public class NodeColorBalance extends CFacade {
 
 	/**
@@ -27,10 +27,13 @@ public class NodeColorBalance extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 418;
+	public static final int __DNA__SDNA_INDEX = 425;
 
 	/**
 	 * Field descriptor (offset) for struct member 'slope'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ASC CDL parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,7 +93,50 @@ public class NodeColorBalance extends CFacade {
 	public static final long[] __DNA__FIELD__power = new long[]{24, 24};
 
 	/**
+	 * Field descriptor (offset) for struct member 'offset_basis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeColorBalance nodecolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = nodecolorbalance.__dna__addressof(NodeColorBalance.__DNA__FIELD__offset_basis);
+	 * CPointer&lt;Float&gt; p_offset_basis = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'offset_basis'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__offset_basis = new long[]{36, 36};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeColorBalance nodecolorbalance = ...;
+	 * CPointer&lt;Object&gt; p = nodecolorbalance.__dna__addressof(NodeColorBalance.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 40};
+
+	/**
 	 * Field descriptor (offset) for struct member 'lift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> LGG parameters </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -107,7 +153,7 @@ public class NodeColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lift = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__lift = new long[]{44, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gamma'.
@@ -127,7 +173,7 @@ public class NodeColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gamma = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__gamma = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gain'.
@@ -147,7 +193,7 @@ public class NodeColorBalance extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gain = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__gain = new long[]{68, 68};
 
 	public NodeColorBalance(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -159,6 +205,9 @@ public class NodeColorBalance extends CFacade {
 
 	/**
 	 * Get method for struct member 'slope'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ASC CDL parameters </p>
 	 * @see #__DNA__FIELD__slope
 	 */
 	
@@ -177,6 +226,9 @@ public class NodeColorBalance extends CFacade {
 
 	/**
 	 * Set method for struct member 'slope'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ASC CDL parameters </p>
 	 * @see #__DNA__FIELD__slope
 	 */
 	
@@ -278,7 +330,78 @@ public class NodeColorBalance extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'offset_basis'.
+	 * @see #__DNA__FIELD__offset_basis
+	 */
+	
+	public float getOffset_basis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 36);
+		} else {
+			return __io__block.readFloat(__io__address + 36);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'offset_basis'.
+	 * @see #__DNA__FIELD__offset_basis
+	 */
+	
+	public void setOffset_basis(float offset_basis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 36, offset_basis);
+		} else {
+			__io__block.writeFloat(__io__address + 36, offset_basis);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 40;
+		} else {
+			__dna__offset = 40;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'lift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> LGG parameters </p>
 	 * @see #__DNA__FIELD__lift
 	 */
 	
@@ -289,14 +412,17 @@ public class NodeColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'lift'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> LGG parameters </p>
 	 * @see #__DNA__FIELD__lift
 	 */
 	
@@ -304,9 +430,9 @@ public class NodeColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__dna__offset = 44;
 		} else {
-			__dna__offset = 36;
+			__dna__offset = 44;
 		}
 		if (__io__equals(lift, __io__address + __dna__offset)) {
 			return;
@@ -329,9 +455,9 @@ public class NodeColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -344,9 +470,9 @@ public class NodeColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		}
 		if (__io__equals(gamma, __io__address + __dna__offset)) {
 			return;
@@ -369,9 +495,9 @@ public class NodeColorBalance extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -384,9 +510,9 @@ public class NodeColorBalance extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 68;
 		} else {
-			__dna__offset = 60;
+			__dna__offset = 68;
 		}
 		if (__io__equals(gain, __io__address + __dna__offset)) {
 			return;

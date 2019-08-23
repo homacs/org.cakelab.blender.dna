@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Link'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * generic - all structs which are put into linked lists begin with this.<h4>Blender Source Code:</h4>
+ * <p> generic - all structs which are put into linked lists begin with this </p>
  */
 
 @CMetaData(size32=8, size64=16)
@@ -30,6 +32,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +55,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +86,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -95,6 +106,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -110,6 +124,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -127,6 +144,9 @@ public class Link extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	

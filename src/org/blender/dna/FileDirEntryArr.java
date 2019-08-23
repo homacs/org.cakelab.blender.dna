@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileDirEntryArr'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Array of direntries. This struct is used in various, different contexts. In Filebrowser UI, it stores the total number of available entries, the number of visible (filtered) entries, and a subset of those in 'entries' {@link ListBase} , from idx_start (included) to idx_end (excluded). In AssetEngine context (i.e. outside of 'browsing' context), entries contain all needed data, there is no filtering, so nbr_entries_filtered, entry_idx_start and entry_idx_end should all be set to -1. </p>
  */
 
 @CMetaData(size32=1048, size64=1056)
@@ -27,7 +28,7 @@ public class FileDirEntryArr extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 219;
+	public static final int __DNA__SDNA_INDEX = 223;
 
 	/**
 	 * Field descriptor (offset) for struct member 'entries'.
@@ -131,6 +132,9 @@ public class FileDirEntryArr extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -307,6 +311,9 @@ public class FileDirEntryArr extends CFacade {
 
 	/**
 	 * Get method for struct member 'root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__root
 	 */
 	
@@ -325,6 +332,9 @@ public class FileDirEntryArr extends CFacade {
 
 	/**
 	 * Set method for struct member 'root'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FILE_MAX </p>
 	 * @see #__DNA__FIELD__root
 	 */
 	

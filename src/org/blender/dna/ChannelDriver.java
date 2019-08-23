@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ChannelDriver'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Channel Driver (i.e. Drivers / Expressions) (driver)</p><p> Channel Drivers are part of the dependency system, and are executed in addition to normal user-defined animation. They take the animation result of some channel(s), and use that (optionally combined with its own F-Curve for modification of results) to define the value of some setting semi-procedurally.</p><p> Drivers are stored as part of F-Curve data, so that the F-Curve's RNA-path settings (for storing what setting the driver will affect). The order in which they are stored defines the order that they're evaluated in. This order is set by the Depsgraph's sorting stuff. </p>
  */
 
 @CMetaData(size32=284, size64=296)
@@ -27,10 +29,13 @@ public class ChannelDriver extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 503;
+	public static final int __DNA__SDNA_INDEX = 514;
 
 	/**
 	 * Field descriptor (offset) for struct member 'variables'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'expression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +79,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'expr_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> PyObject - compiled expression, don't save this </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +102,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +125,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> influence of driver on result </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +148,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +171,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings of driver </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,6 +202,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'variables'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
 	 * @see #__DNA__FIELD__variables
 	 */
 	
@@ -193,6 +219,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'variables'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
 	 * @see #__DNA__FIELD__variables
 	 */
 	
@@ -215,6 +244,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'expression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	
@@ -233,6 +265,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'expression'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	
@@ -255,6 +290,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'expr_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> PyObject - compiled expression, don't save this </p>
 	 * @see #__DNA__FIELD__expr_comp
 	 */
 	
@@ -272,6 +310,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'expr_comp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> PyObject - compiled expression, don't save this </p>
 	 * @see #__DNA__FIELD__expr_comp
 	 */
 	
@@ -287,6 +328,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -301,6 +345,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'curval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of previous evaluation </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -315,6 +362,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> influence of driver on result </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -329,6 +379,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'influence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> influence of driver on result </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -343,6 +396,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -357,6 +413,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -371,6 +430,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings of driver </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -385,6 +447,9 @@ public class ChannelDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings of driver </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

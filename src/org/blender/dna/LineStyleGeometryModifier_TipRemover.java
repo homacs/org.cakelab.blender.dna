@@ -26,7 +26,7 @@ public class LineStyleGeometryModifier_TipRemover extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 595;
+	public static final int __DNA__SDNA_INDEX = 606;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,6 +50,9 @@ public class LineStyleGeometryModifier_TipRemover extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tip_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Length of tips to be removed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,6 +137,9 @@ public class LineStyleGeometryModifier_TipRemover extends CFacade {
 
 	/**
 	 * Get method for struct member 'tip_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Length of tips to be removed
 	 * @see #__DNA__FIELD__tip_length
 	 */
 	
@@ -148,6 +154,9 @@ public class LineStyleGeometryModifier_TipRemover extends CFacade {
 
 	/**
 	 * Set method for struct member 'tip_length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Length of tips to be removed
 	 * @see #__DNA__FIELD__tip_length
 	 */
 	

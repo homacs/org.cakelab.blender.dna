@@ -13,10 +13,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ToolSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Tool Settings </p>
  */
 
-@CMetaData(size32=624, size64=696)
+@CMetaData(size32=788, size64=872)
 public class ToolSettings extends CFacade {
 
 	/**
@@ -27,10 +29,13 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 191;
+	public static final int __DNA__SDNA_INDEX = 195;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex paint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight paint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +79,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +102,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvsculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> uv smooth </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +125,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +148,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'doublimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remove doubles limit </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +171,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'normalsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of normals </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +214,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'selectmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +237,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'unwrapper'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV Calculation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +340,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'autoik_chainlen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-IK runtime only </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +363,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil flags/options for how the tool works </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +386,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_src'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for main 3D view Grease Pencil, where data comes from </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -370,27 +408,148 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__gpencil_src = new long[]{43, 59};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'gpencil_v3d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke placement settings: 3D View </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_v3d_align);
+	 * CPointer&lt;Byte&gt; p_gpencil_v3d_align = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'gpencil_v3d_align'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{44, 60};
+	public static final long[] __DNA__FIELD__gpencil_v3d_align = new long[]{44, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_v2d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : General 2D Editor </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_v2d_align);
+	 * CPointer&lt;Byte&gt; p_gpencil_v2d_align = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_v2d_align'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_v2d_align = new long[]{45, 61};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_seq_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : Sequencer Preview </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_seq_align);
+	 * CPointer&lt;Byte&gt; p_gpencil_seq_align = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_seq_align'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_seq_align = new long[]{46, 62};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_ima_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : {@link Image}  Editor </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_ima_align);
+	 * CPointer&lt;Byte&gt; p_gpencil_ima_align = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_ima_align'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_ima_align = new long[]{47, 63};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gp_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil {@link Sculpt}  </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gp_sculpt);
+	 * CPointer&lt;GP_BrushEdit_Settings&gt; p_gp_sculpt = p.cast(new Class[]{GP_BrushEdit_Settings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gp_sculpt'</li>
+	 * <li>Signature: 'GP_BrushEdit_Settings'</li>
+	 * <li>Actual Size (32bit/64bit): 108/112</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gp_sculpt = new long[]{48, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gp_brushes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil Drawing Brushes ({@link bGPDbrush} ) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gp_brushes);
+	 * CPointer&lt;ListBase&gt; p_gp_brushes = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gp_brushes'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gp_brushes = new long[]{156, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imapaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  {@link Paint}  (8 byttse aligned please!) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -407,10 +566,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 96/128</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imapaint = new long[]{48, 64};
+	public static final long[] __DNA__FIELD__imapaint = new long[]{164, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Particle}  {@link Editing}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,10 +589,14 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 160/176</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__particle = new long[]{260, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -447,10 +613,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_size = new long[]{304, 368};
+	public static final long[] __DNA__FIELD__proportional_size = new long[]{420, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'select_thresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Select {@link Group}  Threshold </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -467,10 +636,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__select_thresh = new long[]{308, 372};
+	public static final long[] __DNA__FIELD__select_thresh = new long[]{424, 500};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-Keying Mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,10 +659,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_mode = new long[]{312, 376};
+	public static final long[] __DNA__FIELD__autokey_mode = new long[]{428, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defines in {@link DNA_userdef_types.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -507,10 +682,37 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_flag = new long[]{314, 378};
+	public static final long[] __DNA__FIELD__autokey_flag = new long[]{430, 506};
+
+	/**
+	 * Field descriptor (offset) for struct member 'keyframe_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <p> keyframe type (see {@link DNA_curve_types.h} ) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__keyframe_type);
+	 * CPointer&lt;Byte&gt; p_keyframe_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'keyframe_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__keyframe_type = new long[]{432, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multires_subdiv_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Multires}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -527,30 +729,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multires_subdiv_type = new long[]{316, 380};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad3'</li>
-	 * <li>Signature: 'char[1]'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{317, 381};
+	public static final long[] __DNA__FIELD__multires_subdiv_type = new long[]{433, 509};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_resolution'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton generation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,7 +752,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_resolution = new long[]{318, 382};
+	public static final long[] __DNA__FIELD__skgen_resolution = new long[]{434, 510};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_threshold_internal'.
@@ -587,7 +772,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_threshold_internal = new long[]{320, 384};
+	public static final long[] __DNA__FIELD__skgen_threshold_internal = new long[]{436, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_threshold_external'.
@@ -607,7 +792,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_threshold_external = new long[]{324, 388};
+	public static final long[] __DNA__FIELD__skgen_threshold_external = new long[]{440, 516};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_length_ratio'.
@@ -627,7 +812,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_length_ratio = new long[]{328, 392};
+	public static final long[] __DNA__FIELD__skgen_length_ratio = new long[]{444, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_length_limit'.
@@ -647,7 +832,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_length_limit = new long[]{332, 396};
+	public static final long[] __DNA__FIELD__skgen_length_limit = new long[]{448, 524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_angle_limit'.
@@ -667,7 +852,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_angle_limit = new long[]{336, 400};
+	public static final long[] __DNA__FIELD__skgen_angle_limit = new long[]{452, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_correlation_limit'.
@@ -687,7 +872,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_correlation_limit = new long[]{340, 404};
+	public static final long[] __DNA__FIELD__skgen_correlation_limit = new long[]{456, 532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_symmetry_limit'.
@@ -707,7 +892,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_symmetry_limit = new long[]{344, 408};
+	public static final long[] __DNA__FIELD__skgen_symmetry_limit = new long[]{460, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_angle_weight'.
@@ -727,7 +912,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_angle_weight = new long[]{348, 412};
+	public static final long[] __DNA__FIELD__skgen_retarget_angle_weight = new long[]{464, 540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_length_weight'.
@@ -747,7 +932,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_length_weight = new long[]{352, 416};
+	public static final long[] __DNA__FIELD__skgen_retarget_length_weight = new long[]{468, 544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_distance_weight'.
@@ -767,7 +952,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_distance_weight = new long[]{356, 420};
+	public static final long[] __DNA__FIELD__skgen_retarget_distance_weight = new long[]{472, 548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_options'.
@@ -787,7 +972,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_options = new long[]{360, 424};
+	public static final long[] __DNA__FIELD__skgen_options = new long[]{476, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_postpro'.
@@ -807,7 +992,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_postpro = new long[]{362, 426};
+	public static final long[] __DNA__FIELD__skgen_postpro = new long[]{478, 554};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_postpro_passes'.
@@ -827,7 +1012,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_postpro_passes = new long[]{363, 427};
+	public static final long[] __DNA__FIELD__skgen_postpro_passes = new long[]{479, 555};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_subdivisions'.
@@ -847,7 +1032,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_subdivisions = new long[]{364, 428};
+	public static final long[] __DNA__FIELD__skgen_subdivisions = new long[]{480, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_multi_level'.
@@ -867,10 +1052,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_multi_level = new long[]{367, 431};
+	public static final long[] __DNA__FIELD__skgen_multi_level = new long[]{483, 559};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton Sketching </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -887,7 +1075,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_template = new long[]{368, 432};
+	public static final long[] __DNA__FIELD__skgen_template = new long[]{484, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone_sketching'.
@@ -907,7 +1095,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bone_sketching = new long[]{372, 440};
+	public static final long[] __DNA__FIELD__bone_sketching = new long[]{488, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone_sketching_convert'.
@@ -927,7 +1115,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bone_sketching_convert = new long[]{373, 441};
+	public static final long[] __DNA__FIELD__bone_sketching_convert = new long[]{489, 569};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_subdivision_number'.
@@ -947,7 +1135,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_subdivision_number = new long[]{374, 442};
+	public static final long[] __DNA__FIELD__skgen_subdivision_number = new long[]{490, 570};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_options'.
@@ -967,7 +1155,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_options = new long[]{375, 443};
+	public static final long[] __DNA__FIELD__skgen_retarget_options = new long[]{491, 571};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_roll'.
@@ -987,7 +1175,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_roll = new long[]{376, 444};
+	public static final long[] __DNA__FIELD__skgen_retarget_roll = new long[]{492, 572};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_side_string'.
@@ -1007,7 +1195,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_side_string = new long[]{377, 445};
+	public static final long[] __DNA__FIELD__skgen_side_string = new long[]{493, 573};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_num_string'.
@@ -1027,10 +1215,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_num_string = new long[]{385, 453};
+	public static final long[] __DNA__FIELD__skgen_num_string = new long[]{501, 581};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Alt+RMB option </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1047,7 +1238,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_mode = new long[]{393, 461};
+	public static final long[] __DNA__FIELD__edge_mode = new long[]{509, 589};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_mode_live_unwrap'.
@@ -1067,10 +1258,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_mode_live_unwrap = new long[]{394, 462};
+	public static final long[] __DNA__FIELD__edge_mode_live_unwrap = new long[]{510, 590};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transform </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1087,7 +1281,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_mode = new long[]{395, 463};
+	public static final long[] __DNA__FIELD__snap_mode = new long[]{511, 591};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_node_mode'.
@@ -1107,7 +1301,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{396, 464};
+	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{512, 592};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_uv_mode'.
@@ -1127,7 +1321,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{397, 465};
+	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{513, 593};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_flag'.
@@ -1147,10 +1341,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_flag = new long[]{398, 466};
+	public static final long[] __DNA__FIELD__snap_flag = new long[]{514, 594};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which part to snap onto the target
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1167,7 +1364,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_target = new long[]{400, 468};
+	public static final long[] __DNA__FIELD__snap_target = new long[]{516, 596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional'.
@@ -1187,7 +1384,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional = new long[]{402, 470};
+	public static final long[] __DNA__FIELD__proportional = new long[]{518, 598};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop_mode'.
@@ -1207,10 +1404,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop_mode = new long[]{404, 472};
+	public static final long[] __DNA__FIELD__prop_mode = new long[]{520, 600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_objects'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, object mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1227,10 +1427,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_objects = new long[]{406, 474};
+	public static final long[] __DNA__FIELD__proportional_objects = new long[]{522, 602};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, mask editing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1247,10 +1450,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_mask = new long[]{407, 475};
+	public static final long[] __DNA__FIELD__proportional_mask = new long[]{523, 603};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_action'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, action editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1267,10 +1473,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_action = new long[]{408, 476};
+	public static final long[] __DNA__FIELD__proportional_action = new long[]{524, 604};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_fcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, graph editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1287,10 +1496,14 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_fcurve = new long[]{409, 477};
+	public static final long[] __DNA__FIELD__proportional_fcurve = new long[]{525, 605};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lock_markers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <p> lock marker editing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1307,7 +1520,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lock_markers = new long[]{410, 478};
+	public static final long[] __DNA__FIELD__lock_markers = new long[]{526, 606};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad4'.
@@ -1327,10 +1540,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad4 = new long[]{411, 479};
+	public static final long[] __DNA__FIELD__pad4 = new long[]{527, 607};
 
 	/**
 	 * Field descriptor (offset) for struct member 'auto_normalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> auto normalizing mode in wpaint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1347,10 +1563,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__auto_normalize = new long[]{416, 484};
+	public static final long[] __DNA__FIELD__auto_normalize = new long[]{532, 612};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multipaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> paint multiple bones in wpaint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1367,7 +1586,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multipaint = new long[]{417, 485};
+	public static final long[] __DNA__FIELD__multipaint = new long[]{533, 613};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weightuser'.
@@ -1387,10 +1606,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weightuser = new long[]{418, 486};
+	public static final long[] __DNA__FIELD__weightuser = new long[]{534, 614};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupsubset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subset selection filter in wpaint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1407,10 +1629,14 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroupsubset = new long[]{419, 487};
+	public static final long[] __DNA__FIELD__vgroupsubset = new long[]{535, 615};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_uv_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable brush for UV sculpting<h4>Blender Source Code:</h4>
+	 * <p> UV painting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1427,7 +1653,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_uv_sculpt = new long[]{420, 488};
+	public static final long[] __DNA__FIELD__use_uv_sculpt = new long[]{536, 616};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_settings'.
@@ -1447,10 +1673,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_sculpt_settings = new long[]{424, 492};
+	public static final long[] __DNA__FIELD__uv_sculpt_settings = new long[]{540, 620};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select Tools for the UV sculpt brushes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1467,10 +1696,13 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{428, 496};
+	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{544, 624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_relax_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used for UV relaxation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1487,10 +1719,15 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_relax_method = new long[]{432, 500};
+	public static final long[] __DNA__FIELD__uv_relax_method = new long[]{548, 628};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1507,7 +1744,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_settings = new long[]{436, 504};
+	public static final long[] __DNA__FIELD__sculpt_paint_settings = new long[]{552, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad5'.
@@ -1527,10 +1764,15 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad5 = new long[]{438, 506};
+	public static final long[] __DNA__FIELD__pad5 = new long[]{554, 634};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1547,10 +1789,15 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_size = new long[]{440, 508};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_size = new long[]{556, 636};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1567,10 +1814,15 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_unprojected_radius = new long[]{444, 512};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_unprojected_radius = new long[]{560, 640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1587,10 +1839,14 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_alpha = new long[]{448, 516};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_alpha = new long[]{564, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unified_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Unified {@link Paint}  Settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1604,13 +1860,39 @@ public class ToolSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'unified_paint_settings'</li>
 	 * <li>Signature: 'UnifiedPaintSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 132/136</li>
+	 * <li>Actual Size (32bit/64bit): 148/152</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unified_paint_settings = new long[]{452, 520};
+	public static final long[] __DNA__FIELD__unified_paint_settings = new long[]{568, 648};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curve_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__curve_paint_settings);
+	 * CPointer&lt;CurvePaintSettings&gt; p_curve_paint_settings = p.cast(new Class[]{CurvePaintSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_paint_settings'</li>
+	 * <li>Signature: 'CurvePaintSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_paint_settings = new long[]{716, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'statvis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1627,7 +1909,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__statvis = new long[]{584, 656};
+	public static final long[] __DNA__FIELD__statvis = new long[]{748, 832};
 
 	public ToolSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1639,6 +1921,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'vpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex paint </p>
 	 * @see #__DNA__FIELD__vpaint
 	 */
 	
@@ -1656,6 +1941,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'vpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex paint </p>
 	 * @see #__DNA__FIELD__vpaint
 	 */
 	
@@ -1671,6 +1959,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'wpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight paint </p>
 	 * @see #__DNA__FIELD__wpaint
 	 */
 	
@@ -1688,6 +1979,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'wpaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight paint </p>
 	 * @see #__DNA__FIELD__wpaint
 	 */
 	
@@ -1703,6 +1997,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
 	
@@ -1720,6 +2017,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
 	
@@ -1735,6 +2035,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'uvsculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> uv smooth </p>
 	 * @see #__DNA__FIELD__uvsculpt
 	 */
 	
@@ -1752,6 +2055,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'uvsculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> uv smooth </p>
 	 * @see #__DNA__FIELD__uvsculpt
 	 */
 	
@@ -1767,6 +2073,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroup_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * @see #__DNA__FIELD__vgroup_weight
 	 */
 	
@@ -1781,6 +2090,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroup_weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group weight - used only for editmode, not weight paint </p>
 	 * @see #__DNA__FIELD__vgroup_weight
 	 */
 	
@@ -1795,6 +2107,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'doublimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remove doubles limit </p>
 	 * @see #__DNA__FIELD__doublimit
 	 */
 	
@@ -1809,6 +2124,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'doublimit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> remove doubles limit </p>
 	 * @see #__DNA__FIELD__doublimit
 	 */
 	
@@ -1823,6 +2141,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'normalsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of normals </p>
 	 * @see #__DNA__FIELD__normalsize
 	 */
 	
@@ -1837,6 +2158,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'normalsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of normals </p>
 	 * @see #__DNA__FIELD__normalsize
 	 */
 	
@@ -1879,6 +2203,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'selectmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * @see #__DNA__FIELD__selectmode
 	 */
 	
@@ -1893,6 +2220,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'selectmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Selection Mode for {@link Mesh}  </p>
 	 * @see #__DNA__FIELD__selectmode
 	 */
 	
@@ -1907,6 +2237,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'unwrapper'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV Calculation </p>
 	 * @see #__DNA__FIELD__unwrapper
 	 */
 	
@@ -1921,6 +2254,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'unwrapper'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV Calculation </p>
 	 * @see #__DNA__FIELD__unwrapper
 	 */
 	
@@ -2047,6 +2383,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'autoik_chainlen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-IK runtime only </p>
 	 * @see #__DNA__FIELD__autoik_chainlen
 	 */
 	
@@ -2061,6 +2400,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'autoik_chainlen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-IK runtime only </p>
 	 * @see #__DNA__FIELD__autoik_chainlen
 	 */
 	
@@ -2075,6 +2417,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpencil_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil flags/options for how the tool works </p>
 	 * @see #__DNA__FIELD__gpencil_flags
 	 */
 	
@@ -2089,6 +2434,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpencil_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil flags/options for how the tool works </p>
 	 * @see #__DNA__FIELD__gpencil_flags
 	 */
 	
@@ -2103,6 +2451,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpencil_src'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for main 3D view Grease Pencil, where data comes from </p>
 	 * @see #__DNA__FIELD__gpencil_src
 	 */
 	
@@ -2117,6 +2468,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpencil_src'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for main 3D view Grease Pencil, where data comes from </p>
 	 * @see #__DNA__FIELD__gpencil_src
 	 */
 	
@@ -2130,61 +2484,247 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'gpencil_v3d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke placement settings: 3D View </p>
+	 * @see #__DNA__FIELD__gpencil_v3d_align
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public byte getGpencil_v3d_align() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 60);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 44);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'gpencil_v3d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stroke placement settings: 3D View </p>
+	 * @see #__DNA__FIELD__gpencil_v3d_align
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setGpencil_v3d_align(byte gpencil_v3d_align) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 60, gpencil_v3d_align);
+		} else {
+			__io__block.writeByte(__io__address + 44, gpencil_v3d_align);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_v2d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : General 2D Editor </p>
+	 * @see #__DNA__FIELD__gpencil_v2d_align
+	 */
+	
+	public byte getGpencil_v2d_align() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 61);
+		} else {
+			return __io__block.readByte(__io__address + 45);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_v2d_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : General 2D Editor </p>
+	 * @see #__DNA__FIELD__gpencil_v2d_align
+	 */
+	
+	public void setGpencil_v2d_align(byte gpencil_v2d_align) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 61, gpencil_v2d_align);
+		} else {
+			__io__block.writeByte(__io__address + 45, gpencil_v2d_align);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_seq_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : Sequencer Preview </p>
+	 * @see #__DNA__FIELD__gpencil_seq_align
+	 */
+	
+	public byte getGpencil_seq_align() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 62);
+		} else {
+			return __io__block.readByte(__io__address + 46);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_seq_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : Sequencer Preview </p>
+	 * @see #__DNA__FIELD__gpencil_seq_align
+	 */
+	
+	public void setGpencil_seq_align(byte gpencil_seq_align) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 62, gpencil_seq_align);
+		} else {
+			__io__block.writeByte(__io__address + 46, gpencil_seq_align);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_ima_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : {@link Image}  Editor </p>
+	 * @see #__DNA__FIELD__gpencil_ima_align
+	 */
+	
+	public byte getGpencil_ima_align() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 63);
+		} else {
+			return __io__block.readByte(__io__address + 47);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_ima_align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> : {@link Image}  Editor </p>
+	 * @see #__DNA__FIELD__gpencil_ima_align
+	 */
+	
+	public void setGpencil_ima_align(byte gpencil_ima_align) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 63, gpencil_ima_align);
+		} else {
+			__io__block.writeByte(__io__address + 47, gpencil_ima_align);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gp_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil {@link Sculpt}  </p>
+	 * @see #__DNA__FIELD__gp_sculpt
+	 */
+	
+	public GP_BrushEdit_Settings getGp_sculpt() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new GP_BrushEdit_Settings(__io__address + 64, __io__block, __io__blockTable);
+		} else {
+			return new GP_BrushEdit_Settings(__io__address + 48, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gp_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil {@link Sculpt}  </p>
+	 * @see #__DNA__FIELD__gp_sculpt
+	 */
+	
+	public void setGp_sculpt(GP_BrushEdit_Settings gp_sculpt) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 48;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(gp_sculpt, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, gp_sculpt)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gp_sculpt);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( getGp_sculpt(), gp_sculpt);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gp_brushes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil Drawing Brushes ({@link bGPDbrush} ) </p>
+	 * @see #__DNA__FIELD__gp_brushes
+	 */
+	
+	public ListBase getGp_brushes() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gp_brushes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Grease Pencil Drawing Brushes ({@link bGPDbrush} ) </p>
+	 * @see #__DNA__FIELD__gp_brushes
+	 */
+	
+	public void setGp_brushes(ListBase gp_brushes) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(gp_brushes, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gp_brushes)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gp_brushes);
+		} else {
+			__io__generic__copy( getGp_brushes(), gp_brushes);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'imapaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  {@link Paint}  (8 byttse aligned please!) </p>
 	 * @see #__DNA__FIELD__imapaint
 	 */
 	
 	public ImagePaintSettings getImapaint() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ImagePaintSettings(__io__address + 64, __io__block, __io__blockTable);
+			return new ImagePaintSettings(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ImagePaintSettings(__io__address + 48, __io__block, __io__blockTable);
+			return new ImagePaintSettings(__io__address + 164, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'imapaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Image}  {@link Paint}  (8 byttse aligned please!) </p>
 	 * @see #__DNA__FIELD__imapaint
 	 */
 	
@@ -2192,9 +2732,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 48;
+			__dna__offset = 164;
 		}
 		if (__io__equals(imapaint, __io__address + __dna__offset)) {
 			return;
@@ -2207,20 +2747,26 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'particle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Particle}  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
 	
 	public ParticleEditSettings getParticle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ParticleEditSettings(__io__address + 192, __io__block, __io__blockTable);
+			return new ParticleEditSettings(__io__address + 320, __io__block, __io__blockTable);
 		} else {
-			return new ParticleEditSettings(__io__address + 144, __io__block, __io__blockTable);
+			return new ParticleEditSettings(__io__address + 260, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'particle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Particle}  {@link Editing}  </p>
 	 * @see #__DNA__FIELD__particle
 	 */
 	
@@ -2228,9 +2774,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 260;
 		}
 		if (__io__equals(particle, __io__address + __dna__offset)) {
 			return;
@@ -2243,209 +2789,243 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'proportional_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * @see #__DNA__FIELD__proportional_size
 	 */
 	
 	public float getProportional_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 368);
+			return __io__block.readFloat(__io__address + 496);
 		} else {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 420);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Display size for proportional editing circle<h4>Blender Source Code:</h4>
+	 * <p> Transform Proportional Area of {@link Effect}  </p>
 	 * @see #__DNA__FIELD__proportional_size
 	 */
 	
 	public void setProportional_size(float proportional_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 368, proportional_size);
+			__io__block.writeFloat(__io__address + 496, proportional_size);
 		} else {
-			__io__block.writeFloat(__io__address + 304, proportional_size);
+			__io__block.writeFloat(__io__address + 420, proportional_size);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'select_thresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Select {@link Group}  Threshold </p>
 	 * @see #__DNA__FIELD__select_thresh
 	 */
 	
 	public float getSelect_thresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 372);
+			return __io__block.readFloat(__io__address + 500);
 		} else {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 424);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'select_thresh'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Select {@link Group}  Threshold </p>
 	 * @see #__DNA__FIELD__select_thresh
 	 */
 	
 	public void setSelect_thresh(float select_thresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 372, select_thresh);
+			__io__block.writeFloat(__io__address + 500, select_thresh);
 		} else {
-			__io__block.writeFloat(__io__address + 308, select_thresh);
+			__io__block.writeFloat(__io__address + 424, select_thresh);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-Keying Mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
 	public short getAutokey_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 376);
+			return __io__block.readShort(__io__address + 504);
 		} else {
-			return __io__block.readShort(__io__address + 312);
+			return __io__block.readShort(__io__address + 428);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'autokey_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Auto-Keying Mode </p>
 	 * @see #__DNA__FIELD__autokey_mode
 	 */
 	
 	public void setAutokey_mode(short autokey_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 376, autokey_mode);
+			__io__block.writeShort(__io__address + 504, autokey_mode);
 		} else {
-			__io__block.writeShort(__io__address + 312, autokey_mode);
+			__io__block.writeShort(__io__address + 428, autokey_mode);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defines in {@link DNA_userdef_types.h}  </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
 	public short getAutokey_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 378);
+			return __io__block.readShort(__io__address + 506);
 		} else {
-			return __io__block.readShort(__io__address + 314);
+			return __io__block.readShort(__io__address + 430);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'autokey_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> defines in {@link DNA_userdef_types.h}  </p>
 	 * @see #__DNA__FIELD__autokey_flag
 	 */
 	
 	public void setAutokey_flag(short autokey_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 378, autokey_flag);
+			__io__block.writeShort(__io__address + 506, autokey_flag);
 		} else {
-			__io__block.writeShort(__io__address + 314, autokey_flag);
+			__io__block.writeShort(__io__address + 430, autokey_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'keyframe_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <p> keyframe type (see {@link DNA_curve_types.h} ) </p>
+	 * @see #__DNA__FIELD__keyframe_type
+	 */
+	
+	public byte getKeyframe_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 508);
+		} else {
+			return __io__block.readByte(__io__address + 432);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keyframe_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Type of keyframes to create when inserting keyframes<h4>Blender Source Code:</h4>
+	 * <p> keyframe type (see {@link DNA_curve_types.h} ) </p>
+	 * @see #__DNA__FIELD__keyframe_type
+	 */
+	
+	public void setKeyframe_type(byte keyframe_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 508, keyframe_type);
+		} else {
+			__io__block.writeByte(__io__address + 432, keyframe_type);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'multires_subdiv_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Multires}  </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
 	
 	public byte getMultires_subdiv_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 380);
+			return __io__block.readByte(__io__address + 509);
 		} else {
-			return __io__block.readByte(__io__address + 316);
+			return __io__block.readByte(__io__address + 433);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'multires_subdiv_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Multires}  </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
 	
 	public void setMultires_subdiv_type(byte multires_subdiv_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 380, multires_subdiv_type);
+			__io__block.writeByte(__io__address + 509, multires_subdiv_type);
 		} else {
-			__io__block.writeByte(__io__address + 316, multires_subdiv_type);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad3'.
-	 * @see #__DNA__FIELD__pad3
-	 */
-	
-	public CArrayFacade<Byte> getPad3() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			1
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 381, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 317, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad3'.
-	 * @see #__DNA__FIELD__pad3
-	 */
-	
-	public void setPad3(CArrayFacade<Byte> pad3) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 381;
-		} else {
-			__dna__offset = 317;
-		}
-		if (__io__equals(pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad3);
-		} else {
-			__io__generic__copy( getPad3(), pad3);
+			__io__block.writeByte(__io__address + 433, multires_subdiv_type);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'skgen_resolution'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton generation </p>
 	 * @see #__DNA__FIELD__skgen_resolution
 	 */
 	
 	public short getSkgen_resolution() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 382);
+			return __io__block.readShort(__io__address + 510);
 		} else {
-			return __io__block.readShort(__io__address + 318);
+			return __io__block.readShort(__io__address + 434);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'skgen_resolution'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton generation </p>
 	 * @see #__DNA__FIELD__skgen_resolution
 	 */
 	
 	public void setSkgen_resolution(short skgen_resolution) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 382, skgen_resolution);
+			__io__block.writeShort(__io__address + 510, skgen_resolution);
 		} else {
-			__io__block.writeShort(__io__address + 318, skgen_resolution);
+			__io__block.writeShort(__io__address + 434, skgen_resolution);
 		}
 	}
 
@@ -2457,9 +3037,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_threshold_internal() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 512);
 		} else {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 436);
 		}
 	}
 
@@ -2471,9 +3051,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_threshold_internal(float skgen_threshold_internal) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, skgen_threshold_internal);
+			__io__block.writeFloat(__io__address + 512, skgen_threshold_internal);
 		} else {
-			__io__block.writeFloat(__io__address + 320, skgen_threshold_internal);
+			__io__block.writeFloat(__io__address + 436, skgen_threshold_internal);
 		}
 	}
 
@@ -2485,9 +3065,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_threshold_external() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 516);
 		} else {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 440);
 		}
 	}
 
@@ -2499,9 +3079,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_threshold_external(float skgen_threshold_external) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, skgen_threshold_external);
+			__io__block.writeFloat(__io__address + 516, skgen_threshold_external);
 		} else {
-			__io__block.writeFloat(__io__address + 324, skgen_threshold_external);
+			__io__block.writeFloat(__io__address + 440, skgen_threshold_external);
 		}
 	}
 
@@ -2513,9 +3093,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_length_ratio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 392);
+			return __io__block.readFloat(__io__address + 520);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 444);
 		}
 	}
 
@@ -2527,9 +3107,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_length_ratio(float skgen_length_ratio) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 392, skgen_length_ratio);
+			__io__block.writeFloat(__io__address + 520, skgen_length_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 328, skgen_length_ratio);
+			__io__block.writeFloat(__io__address + 444, skgen_length_ratio);
 		}
 	}
 
@@ -2541,9 +3121,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_length_limit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 396);
+			return __io__block.readFloat(__io__address + 524);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 448);
 		}
 	}
 
@@ -2555,9 +3135,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_length_limit(float skgen_length_limit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 396, skgen_length_limit);
+			__io__block.writeFloat(__io__address + 524, skgen_length_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 332, skgen_length_limit);
+			__io__block.writeFloat(__io__address + 448, skgen_length_limit);
 		}
 	}
 
@@ -2569,9 +3149,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_angle_limit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 400);
+			return __io__block.readFloat(__io__address + 528);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 452);
 		}
 	}
 
@@ -2583,9 +3163,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_angle_limit(float skgen_angle_limit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 400, skgen_angle_limit);
+			__io__block.writeFloat(__io__address + 528, skgen_angle_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 336, skgen_angle_limit);
+			__io__block.writeFloat(__io__address + 452, skgen_angle_limit);
 		}
 	}
 
@@ -2597,9 +3177,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_correlation_limit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 404);
+			return __io__block.readFloat(__io__address + 532);
 		} else {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 456);
 		}
 	}
 
@@ -2611,9 +3191,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_correlation_limit(float skgen_correlation_limit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 404, skgen_correlation_limit);
+			__io__block.writeFloat(__io__address + 532, skgen_correlation_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 340, skgen_correlation_limit);
+			__io__block.writeFloat(__io__address + 456, skgen_correlation_limit);
 		}
 	}
 
@@ -2625,9 +3205,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_symmetry_limit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 408);
+			return __io__block.readFloat(__io__address + 536);
 		} else {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 460);
 		}
 	}
 
@@ -2639,9 +3219,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_symmetry_limit(float skgen_symmetry_limit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 408, skgen_symmetry_limit);
+			__io__block.writeFloat(__io__address + 536, skgen_symmetry_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 344, skgen_symmetry_limit);
+			__io__block.writeFloat(__io__address + 460, skgen_symmetry_limit);
 		}
 	}
 
@@ -2653,9 +3233,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_retarget_angle_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 412);
+			return __io__block.readFloat(__io__address + 540);
 		} else {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 464);
 		}
 	}
 
@@ -2667,9 +3247,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_retarget_angle_weight(float skgen_retarget_angle_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 412, skgen_retarget_angle_weight);
+			__io__block.writeFloat(__io__address + 540, skgen_retarget_angle_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 348, skgen_retarget_angle_weight);
+			__io__block.writeFloat(__io__address + 464, skgen_retarget_angle_weight);
 		}
 	}
 
@@ -2681,9 +3261,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_retarget_length_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 416);
+			return __io__block.readFloat(__io__address + 544);
 		} else {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 468);
 		}
 	}
 
@@ -2695,9 +3275,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_retarget_length_weight(float skgen_retarget_length_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 416, skgen_retarget_length_weight);
+			__io__block.writeFloat(__io__address + 544, skgen_retarget_length_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 352, skgen_retarget_length_weight);
+			__io__block.writeFloat(__io__address + 468, skgen_retarget_length_weight);
 		}
 	}
 
@@ -2709,9 +3289,9 @@ public class ToolSettings extends CFacade {
 	public float getSkgen_retarget_distance_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 420);
+			return __io__block.readFloat(__io__address + 548);
 		} else {
-			return __io__block.readFloat(__io__address + 356);
+			return __io__block.readFloat(__io__address + 472);
 		}
 	}
 
@@ -2723,9 +3303,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_retarget_distance_weight(float skgen_retarget_distance_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 420, skgen_retarget_distance_weight);
+			__io__block.writeFloat(__io__address + 548, skgen_retarget_distance_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 356, skgen_retarget_distance_weight);
+			__io__block.writeFloat(__io__address + 472, skgen_retarget_distance_weight);
 		}
 	}
 
@@ -2737,9 +3317,9 @@ public class ToolSettings extends CFacade {
 	public short getSkgen_options() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 424);
+			return __io__block.readShort(__io__address + 552);
 		} else {
-			return __io__block.readShort(__io__address + 360);
+			return __io__block.readShort(__io__address + 476);
 		}
 	}
 
@@ -2751,9 +3331,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_options(short skgen_options) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 424, skgen_options);
+			__io__block.writeShort(__io__address + 552, skgen_options);
 		} else {
-			__io__block.writeShort(__io__address + 360, skgen_options);
+			__io__block.writeShort(__io__address + 476, skgen_options);
 		}
 	}
 
@@ -2765,9 +3345,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_postpro() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 426);
+			return __io__block.readByte(__io__address + 554);
 		} else {
-			return __io__block.readByte(__io__address + 362);
+			return __io__block.readByte(__io__address + 478);
 		}
 	}
 
@@ -2779,9 +3359,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_postpro(byte skgen_postpro) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 426, skgen_postpro);
+			__io__block.writeByte(__io__address + 554, skgen_postpro);
 		} else {
-			__io__block.writeByte(__io__address + 362, skgen_postpro);
+			__io__block.writeByte(__io__address + 478, skgen_postpro);
 		}
 	}
 
@@ -2793,9 +3373,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_postpro_passes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 427);
+			return __io__block.readByte(__io__address + 555);
 		} else {
-			return __io__block.readByte(__io__address + 363);
+			return __io__block.readByte(__io__address + 479);
 		}
 	}
 
@@ -2807,9 +3387,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_postpro_passes(byte skgen_postpro_passes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 427, skgen_postpro_passes);
+			__io__block.writeByte(__io__address + 555, skgen_postpro_passes);
 		} else {
-			__io__block.writeByte(__io__address + 363, skgen_postpro_passes);
+			__io__block.writeByte(__io__address + 479, skgen_postpro_passes);
 		}
 	}
 
@@ -2825,9 +3405,9 @@ public class ToolSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2840,9 +3420,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 428;
+			__dna__offset = 556;
 		} else {
-			__dna__offset = 364;
+			__dna__offset = 480;
 		}
 		if (__io__equals(skgen_subdivisions, __io__address + __dna__offset)) {
 			return;
@@ -2861,9 +3441,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_multi_level() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 431);
+			return __io__block.readByte(__io__address + 559);
 		} else {
-			return __io__block.readByte(__io__address + 367);
+			return __io__block.readByte(__io__address + 483);
 		}
 	}
 
@@ -2875,14 +3455,17 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_multi_level(byte skgen_multi_level) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 431, skgen_multi_level);
+			__io__block.writeByte(__io__address + 559, skgen_multi_level);
 		} else {
-			__io__block.writeByte(__io__address + 367, skgen_multi_level);
+			__io__block.writeByte(__io__address + 483, skgen_multi_level);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'skgen_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton Sketching </p>
 	 * @see #__DNA__FIELD__skgen_template
 	 */
 	
@@ -2890,9 +3473,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 432);
+			__dna__targetAddress = __io__block.readLong(__io__address + 560);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 484);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2900,6 +3483,9 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'skgen_template'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Skeleton Sketching </p>
 	 * @see #__DNA__FIELD__skgen_template
 	 */
 	
@@ -2907,9 +3493,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __address = ((skgen_template == null) ? 0 : skgen_template.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 432, __address);
+			__io__block.writeLong(__io__address + 560, __address);
 		} else {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 484, __address);
 		}
 	}
 
@@ -2921,9 +3507,9 @@ public class ToolSettings extends CFacade {
 	public byte getBone_sketching() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 440);
+			return __io__block.readByte(__io__address + 568);
 		} else {
-			return __io__block.readByte(__io__address + 372);
+			return __io__block.readByte(__io__address + 488);
 		}
 	}
 
@@ -2935,9 +3521,9 @@ public class ToolSettings extends CFacade {
 	public void setBone_sketching(byte bone_sketching) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 440, bone_sketching);
+			__io__block.writeByte(__io__address + 568, bone_sketching);
 		} else {
-			__io__block.writeByte(__io__address + 372, bone_sketching);
+			__io__block.writeByte(__io__address + 488, bone_sketching);
 		}
 	}
 
@@ -2949,9 +3535,9 @@ public class ToolSettings extends CFacade {
 	public byte getBone_sketching_convert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 441);
+			return __io__block.readByte(__io__address + 569);
 		} else {
-			return __io__block.readByte(__io__address + 373);
+			return __io__block.readByte(__io__address + 489);
 		}
 	}
 
@@ -2963,9 +3549,9 @@ public class ToolSettings extends CFacade {
 	public void setBone_sketching_convert(byte bone_sketching_convert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 441, bone_sketching_convert);
+			__io__block.writeByte(__io__address + 569, bone_sketching_convert);
 		} else {
-			__io__block.writeByte(__io__address + 373, bone_sketching_convert);
+			__io__block.writeByte(__io__address + 489, bone_sketching_convert);
 		}
 	}
 
@@ -2977,9 +3563,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_subdivision_number() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 442);
+			return __io__block.readByte(__io__address + 570);
 		} else {
-			return __io__block.readByte(__io__address + 374);
+			return __io__block.readByte(__io__address + 490);
 		}
 	}
 
@@ -2991,9 +3577,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_subdivision_number(byte skgen_subdivision_number) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 442, skgen_subdivision_number);
+			__io__block.writeByte(__io__address + 570, skgen_subdivision_number);
 		} else {
-			__io__block.writeByte(__io__address + 374, skgen_subdivision_number);
+			__io__block.writeByte(__io__address + 490, skgen_subdivision_number);
 		}
 	}
 
@@ -3005,9 +3591,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_retarget_options() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 443);
+			return __io__block.readByte(__io__address + 571);
 		} else {
-			return __io__block.readByte(__io__address + 375);
+			return __io__block.readByte(__io__address + 491);
 		}
 	}
 
@@ -3019,9 +3605,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_retarget_options(byte skgen_retarget_options) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 443, skgen_retarget_options);
+			__io__block.writeByte(__io__address + 571, skgen_retarget_options);
 		} else {
-			__io__block.writeByte(__io__address + 375, skgen_retarget_options);
+			__io__block.writeByte(__io__address + 491, skgen_retarget_options);
 		}
 	}
 
@@ -3033,9 +3619,9 @@ public class ToolSettings extends CFacade {
 	public byte getSkgen_retarget_roll() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 444);
+			return __io__block.readByte(__io__address + 572);
 		} else {
-			return __io__block.readByte(__io__address + 376);
+			return __io__block.readByte(__io__address + 492);
 		}
 	}
 
@@ -3047,9 +3633,9 @@ public class ToolSettings extends CFacade {
 	public void setSkgen_retarget_roll(byte skgen_retarget_roll) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 444, skgen_retarget_roll);
+			__io__block.writeByte(__io__address + 572, skgen_retarget_roll);
 		} else {
-			__io__block.writeByte(__io__address + 376, skgen_retarget_roll);
+			__io__block.writeByte(__io__address + 492, skgen_retarget_roll);
 		}
 	}
 
@@ -3065,9 +3651,9 @@ public class ToolSettings extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 445, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 573, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 377, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 493, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3080,9 +3666,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 445;
+			__dna__offset = 573;
 		} else {
-			__dna__offset = 377;
+			__dna__offset = 493;
 		}
 		if (__io__equals(skgen_side_string, __io__address + __dna__offset)) {
 			return;
@@ -3105,9 +3691,9 @@ public class ToolSettings extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 453, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 581, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 385, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 501, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3120,9 +3706,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 453;
+			__dna__offset = 581;
 		} else {
-			__dna__offset = 385;
+			__dna__offset = 501;
 		}
 		if (__io__equals(skgen_num_string, __io__address + __dna__offset)) {
 			return;
@@ -3135,29 +3721,35 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'edge_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Alt+RMB option </p>
 	 * @see #__DNA__FIELD__edge_mode
 	 */
 	
 	public byte getEdge_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 461);
+			return __io__block.readByte(__io__address + 589);
 		} else {
-			return __io__block.readByte(__io__address + 393);
+			return __io__block.readByte(__io__address + 509);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'edge_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Alt+RMB option </p>
 	 * @see #__DNA__FIELD__edge_mode
 	 */
 	
 	public void setEdge_mode(byte edge_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 461, edge_mode);
+			__io__block.writeByte(__io__address + 589, edge_mode);
 		} else {
-			__io__block.writeByte(__io__address + 393, edge_mode);
+			__io__block.writeByte(__io__address + 509, edge_mode);
 		}
 	}
 
@@ -3169,9 +3761,9 @@ public class ToolSettings extends CFacade {
 	public byte getEdge_mode_live_unwrap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 462);
+			return __io__block.readByte(__io__address + 590);
 		} else {
-			return __io__block.readByte(__io__address + 394);
+			return __io__block.readByte(__io__address + 510);
 		}
 	}
 
@@ -3183,37 +3775,43 @@ public class ToolSettings extends CFacade {
 	public void setEdge_mode_live_unwrap(byte edge_mode_live_unwrap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 462, edge_mode_live_unwrap);
+			__io__block.writeByte(__io__address + 590, edge_mode_live_unwrap);
 		} else {
-			__io__block.writeByte(__io__address + 394, edge_mode_live_unwrap);
+			__io__block.writeByte(__io__address + 510, edge_mode_live_unwrap);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'snap_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transform </p>
 	 * @see #__DNA__FIELD__snap_mode
 	 */
 	
 	public byte getSnap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 463);
+			return __io__block.readByte(__io__address + 591);
 		} else {
-			return __io__block.readByte(__io__address + 395);
+			return __io__block.readByte(__io__address + 511);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'snap_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transform </p>
 	 * @see #__DNA__FIELD__snap_mode
 	 */
 	
 	public void setSnap_mode(byte snap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 463, snap_mode);
+			__io__block.writeByte(__io__address + 591, snap_mode);
 		} else {
-			__io__block.writeByte(__io__address + 395, snap_mode);
+			__io__block.writeByte(__io__address + 511, snap_mode);
 		}
 	}
 
@@ -3225,9 +3823,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_node_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 464);
+			return __io__block.readByte(__io__address + 592);
 		} else {
-			return __io__block.readByte(__io__address + 396);
+			return __io__block.readByte(__io__address + 512);
 		}
 	}
 
@@ -3239,9 +3837,9 @@ public class ToolSettings extends CFacade {
 	public void setSnap_node_mode(byte snap_node_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 464, snap_node_mode);
+			__io__block.writeByte(__io__address + 592, snap_node_mode);
 		} else {
-			__io__block.writeByte(__io__address + 396, snap_node_mode);
+			__io__block.writeByte(__io__address + 512, snap_node_mode);
 		}
 	}
 
@@ -3253,9 +3851,9 @@ public class ToolSettings extends CFacade {
 	public byte getSnap_uv_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 465);
+			return __io__block.readByte(__io__address + 593);
 		} else {
-			return __io__block.readByte(__io__address + 397);
+			return __io__block.readByte(__io__address + 513);
 		}
 	}
 
@@ -3267,9 +3865,9 @@ public class ToolSettings extends CFacade {
 	public void setSnap_uv_mode(byte snap_uv_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 465, snap_uv_mode);
+			__io__block.writeByte(__io__address + 593, snap_uv_mode);
 		} else {
-			__io__block.writeByte(__io__address + 397, snap_uv_mode);
+			__io__block.writeByte(__io__address + 513, snap_uv_mode);
 		}
 	}
 
@@ -3281,9 +3879,9 @@ public class ToolSettings extends CFacade {
 	public short getSnap_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 466);
+			return __io__block.readShort(__io__address + 594);
 		} else {
-			return __io__block.readShort(__io__address + 398);
+			return __io__block.readShort(__io__address + 514);
 		}
 	}
 
@@ -3295,37 +3893,43 @@ public class ToolSettings extends CFacade {
 	public void setSnap_flag(short snap_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 466, snap_flag);
+			__io__block.writeShort(__io__address + 594, snap_flag);
 		} else {
-			__io__block.writeShort(__io__address + 398, snap_flag);
+			__io__block.writeShort(__io__address + 514, snap_flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'snap_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
 	
 	public short getSnap_target() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 468);
+			return __io__block.readShort(__io__address + 596);
 		} else {
-			return __io__block.readShort(__io__address + 400);
+			return __io__block.readShort(__io__address + 516);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'snap_target'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
 	
 	public void setSnap_target(short snap_target) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 468, snap_target);
+			__io__block.writeShort(__io__address + 596, snap_target);
 		} else {
-			__io__block.writeShort(__io__address + 400, snap_target);
+			__io__block.writeShort(__io__address + 516, snap_target);
 		}
 	}
 
@@ -3337,9 +3941,9 @@ public class ToolSettings extends CFacade {
 	public short getProportional() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 470);
+			return __io__block.readShort(__io__address + 598);
 		} else {
-			return __io__block.readShort(__io__address + 402);
+			return __io__block.readShort(__io__address + 518);
 		}
 	}
 
@@ -3351,9 +3955,9 @@ public class ToolSettings extends CFacade {
 	public void setProportional(short proportional) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 470, proportional);
+			__io__block.writeShort(__io__address + 598, proportional);
 		} else {
-			__io__block.writeShort(__io__address + 402, proportional);
+			__io__block.writeShort(__io__address + 518, proportional);
 		}
 	}
 
@@ -3365,9 +3969,9 @@ public class ToolSettings extends CFacade {
 	public short getProp_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 472);
+			return __io__block.readShort(__io__address + 600);
 		} else {
-			return __io__block.readShort(__io__address + 404);
+			return __io__block.readShort(__io__address + 520);
 		}
 	}
 
@@ -3379,149 +3983,181 @@ public class ToolSettings extends CFacade {
 	public void setProp_mode(short prop_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 472, prop_mode);
+			__io__block.writeShort(__io__address + 600, prop_mode);
 		} else {
-			__io__block.writeShort(__io__address + 404, prop_mode);
+			__io__block.writeShort(__io__address + 520, prop_mode);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'proportional_objects'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, object mode </p>
 	 * @see #__DNA__FIELD__proportional_objects
 	 */
 	
 	public byte getProportional_objects() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 474);
+			return __io__block.readByte(__io__address + 602);
 		} else {
-			return __io__block.readByte(__io__address + 406);
+			return __io__block.readByte(__io__address + 522);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_objects'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, object mode </p>
 	 * @see #__DNA__FIELD__proportional_objects
 	 */
 	
 	public void setProportional_objects(byte proportional_objects) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 474, proportional_objects);
+			__io__block.writeByte(__io__address + 602, proportional_objects);
 		} else {
-			__io__block.writeByte(__io__address + 406, proportional_objects);
+			__io__block.writeByte(__io__address + 522, proportional_objects);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'proportional_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, mask editing </p>
 	 * @see #__DNA__FIELD__proportional_mask
 	 */
 	
 	public byte getProportional_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 475);
+			return __io__block.readByte(__io__address + 603);
 		} else {
-			return __io__block.readByte(__io__address + 407);
+			return __io__block.readByte(__io__address + 523);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, mask editing </p>
 	 * @see #__DNA__FIELD__proportional_mask
 	 */
 	
 	public void setProportional_mask(byte proportional_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 475, proportional_mask);
+			__io__block.writeByte(__io__address + 603, proportional_mask);
 		} else {
-			__io__block.writeByte(__io__address + 407, proportional_mask);
+			__io__block.writeByte(__io__address + 523, proportional_mask);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'proportional_action'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, action editor </p>
 	 * @see #__DNA__FIELD__proportional_action
 	 */
 	
 	public byte getProportional_action() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 476);
+			return __io__block.readByte(__io__address + 604);
 		} else {
-			return __io__block.readByte(__io__address + 408);
+			return __io__block.readByte(__io__address + 524);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_action'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, action editor </p>
 	 * @see #__DNA__FIELD__proportional_action
 	 */
 	
 	public void setProportional_action(byte proportional_action) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 476, proportional_action);
+			__io__block.writeByte(__io__address + 604, proportional_action);
 		} else {
-			__io__block.writeByte(__io__address + 408, proportional_action);
+			__io__block.writeByte(__io__address + 524, proportional_action);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'proportional_fcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, graph editor </p>
 	 * @see #__DNA__FIELD__proportional_fcurve
 	 */
 	
 	public byte getProportional_fcurve() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 477);
+			return __io__block.readByte(__io__address + 605);
 		} else {
-			return __io__block.readByte(__io__address + 409);
+			return __io__block.readByte(__io__address + 525);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_fcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proportional edit, graph editor </p>
 	 * @see #__DNA__FIELD__proportional_fcurve
 	 */
 	
 	public void setProportional_fcurve(byte proportional_fcurve) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 477, proportional_fcurve);
+			__io__block.writeByte(__io__address + 605, proportional_fcurve);
 		} else {
-			__io__block.writeByte(__io__address + 409, proportional_fcurve);
+			__io__block.writeByte(__io__address + 525, proportional_fcurve);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'lock_markers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <p> lock marker editing </p>
 	 * @see #__DNA__FIELD__lock_markers
 	 */
 	
 	public byte getLock_markers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 478);
+			return __io__block.readByte(__io__address + 606);
 		} else {
-			return __io__block.readByte(__io__address + 410);
+			return __io__block.readByte(__io__address + 526);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'lock_markers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Prevent marker editing<h4>Blender Source Code:</h4>
+	 * <p> lock marker editing </p>
 	 * @see #__DNA__FIELD__lock_markers
 	 */
 	
 	public void setLock_markers(byte lock_markers) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 478, lock_markers);
+			__io__block.writeByte(__io__address + 606, lock_markers);
 		} else {
-			__io__block.writeByte(__io__address + 410, lock_markers);
+			__io__block.writeByte(__io__address + 526, lock_markers);
 		}
 	}
 
@@ -3537,9 +4173,9 @@ public class ToolSettings extends CFacade {
 			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 479, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 607, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 411, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 527, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3552,9 +4188,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 479;
+			__dna__offset = 607;
 		} else {
-			__dna__offset = 411;
+			__dna__offset = 527;
 		}
 		if (__io__equals(pad4, __io__address + __dna__offset)) {
 			return;
@@ -3567,57 +4203,69 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'auto_normalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> auto normalizing mode in wpaint </p>
 	 * @see #__DNA__FIELD__auto_normalize
 	 */
 	
 	public byte getAuto_normalize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 484);
+			return __io__block.readByte(__io__address + 612);
 		} else {
-			return __io__block.readByte(__io__address + 416);
+			return __io__block.readByte(__io__address + 532);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'auto_normalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> auto normalizing mode in wpaint </p>
 	 * @see #__DNA__FIELD__auto_normalize
 	 */
 	
 	public void setAuto_normalize(byte auto_normalize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 484, auto_normalize);
+			__io__block.writeByte(__io__address + 612, auto_normalize);
 		} else {
-			__io__block.writeByte(__io__address + 416, auto_normalize);
+			__io__block.writeByte(__io__address + 532, auto_normalize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'multipaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> paint multiple bones in wpaint </p>
 	 * @see #__DNA__FIELD__multipaint
 	 */
 	
 	public byte getMultipaint() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 485);
+			return __io__block.readByte(__io__address + 613);
 		} else {
-			return __io__block.readByte(__io__address + 417);
+			return __io__block.readByte(__io__address + 533);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'multipaint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> paint multiple bones in wpaint </p>
 	 * @see #__DNA__FIELD__multipaint
 	 */
 	
 	public void setMultipaint(byte multipaint) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 485, multipaint);
+			__io__block.writeByte(__io__address + 613, multipaint);
 		} else {
-			__io__block.writeByte(__io__address + 417, multipaint);
+			__io__block.writeByte(__io__address + 533, multipaint);
 		}
 	}
 
@@ -3629,9 +4277,9 @@ public class ToolSettings extends CFacade {
 	public byte getWeightuser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 486);
+			return __io__block.readByte(__io__address + 614);
 		} else {
-			return __io__block.readByte(__io__address + 418);
+			return __io__block.readByte(__io__address + 534);
 		}
 	}
 
@@ -3643,65 +4291,79 @@ public class ToolSettings extends CFacade {
 	public void setWeightuser(byte weightuser) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 486, weightuser);
+			__io__block.writeByte(__io__address + 614, weightuser);
 		} else {
-			__io__block.writeByte(__io__address + 418, weightuser);
+			__io__block.writeByte(__io__address + 534, weightuser);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'vgroupsubset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subset selection filter in wpaint </p>
 	 * @see #__DNA__FIELD__vgroupsubset
 	 */
 	
 	public byte getVgroupsubset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 487);
+			return __io__block.readByte(__io__address + 615);
 		} else {
-			return __io__block.readByte(__io__address + 419);
+			return __io__block.readByte(__io__address + 535);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'vgroupsubset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subset selection filter in wpaint </p>
 	 * @see #__DNA__FIELD__vgroupsubset
 	 */
 	
 	public void setVgroupsubset(byte vgroupsubset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 487, vgroupsubset);
+			__io__block.writeByte(__io__address + 615, vgroupsubset);
 		} else {
-			__io__block.writeByte(__io__address + 419, vgroupsubset);
+			__io__block.writeByte(__io__address + 535, vgroupsubset);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'use_uv_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable brush for UV sculpting<h4>Blender Source Code:</h4>
+	 * <p> UV painting </p>
 	 * @see #__DNA__FIELD__use_uv_sculpt
 	 */
 	
 	public int getUse_uv_sculpt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 488);
+			return __io__block.readInt(__io__address + 616);
 		} else {
-			return __io__block.readInt(__io__address + 420);
+			return __io__block.readInt(__io__address + 536);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'use_uv_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Enable brush for UV sculpting<h4>Blender Source Code:</h4>
+	 * <p> UV painting </p>
 	 * @see #__DNA__FIELD__use_uv_sculpt
 	 */
 	
 	public void setUse_uv_sculpt(int use_uv_sculpt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 488, use_uv_sculpt);
+			__io__block.writeInt(__io__address + 616, use_uv_sculpt);
 		} else {
-			__io__block.writeInt(__io__address + 420, use_uv_sculpt);
+			__io__block.writeInt(__io__address + 536, use_uv_sculpt);
 		}
 	}
 
@@ -3713,9 +4375,9 @@ public class ToolSettings extends CFacade {
 	public int getUv_sculpt_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 492);
+			return __io__block.readInt(__io__address + 620);
 		} else {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 540);
 		}
 	}
 
@@ -3727,93 +4389,115 @@ public class ToolSettings extends CFacade {
 	public void setUv_sculpt_settings(int uv_sculpt_settings) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 492, uv_sculpt_settings);
+			__io__block.writeInt(__io__address + 620, uv_sculpt_settings);
 		} else {
-			__io__block.writeInt(__io__address + 424, uv_sculpt_settings);
+			__io__block.writeInt(__io__address + 540, uv_sculpt_settings);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'uv_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select Tools for the UV sculpt brushes
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
 	
 	public int getUv_sculpt_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 496);
+			return __io__block.readInt(__io__address + 624);
 		} else {
-			return __io__block.readInt(__io__address + 428);
+			return __io__block.readInt(__io__address + 544);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'uv_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Select Tools for the UV sculpt brushes
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
 	
 	public void setUv_sculpt_tool(int uv_sculpt_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 496, uv_sculpt_tool);
+			__io__block.writeInt(__io__address + 624, uv_sculpt_tool);
 		} else {
-			__io__block.writeInt(__io__address + 428, uv_sculpt_tool);
+			__io__block.writeInt(__io__address + 544, uv_sculpt_tool);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'uv_relax_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
 	
 	public int getUv_relax_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 500);
+			return __io__block.readInt(__io__address + 628);
 		} else {
-			return __io__block.readInt(__io__address + 432);
+			return __io__block.readInt(__io__address + 548);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'uv_relax_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
 	
 	public void setUv_relax_method(int uv_relax_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 500, uv_relax_method);
+			__io__block.writeInt(__io__address + 628, uv_relax_method);
 		} else {
-			__io__block.writeInt(__io__address + 432, uv_relax_method);
+			__io__block.writeInt(__io__address + 548, uv_relax_method);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sculpt_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_settings
 	 */
 	
 	public short getSculpt_paint_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 504);
+			return __io__block.readShort(__io__address + 632);
 		} else {
-			return __io__block.readShort(__io__address + 436);
+			return __io__block.readShort(__io__address + 552);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sculpt_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX: these sculpt_paint_* fields are deprecated, use the unified_paint_settings field instead! 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_settings
 	 */
 	
 	public void setSculpt_paint_settings(short sculpt_paint_settings) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 504, sculpt_paint_settings);
+			__io__block.writeShort(__io__address + 632, sculpt_paint_settings);
 		} else {
-			__io__block.writeShort(__io__address + 436, sculpt_paint_settings);
+			__io__block.writeShort(__io__address + 552, sculpt_paint_settings);
 		}
 	}
 
@@ -3825,9 +4509,9 @@ public class ToolSettings extends CFacade {
 	public short getPad5() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 506);
+			return __io__block.readShort(__io__address + 634);
 		} else {
-			return __io__block.readShort(__io__address + 438);
+			return __io__block.readShort(__io__address + 554);
 		}
 	}
 
@@ -3839,112 +4523,150 @@ public class ToolSettings extends CFacade {
 	public void setPad5(short pad5) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 506, pad5);
+			__io__block.writeShort(__io__address + 634, pad5);
 		} else {
-			__io__block.writeShort(__io__address + 438, pad5);
+			__io__block.writeShort(__io__address + 554, pad5);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_size
 	 */
 	
 	public int getSculpt_paint_unified_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 508);
+			return __io__block.readInt(__io__address + 636);
 		} else {
-			return __io__block.readInt(__io__address + 440);
+			return __io__block.readInt(__io__address + 556);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_size
 	 */
 	
 	public void setSculpt_paint_unified_size(int sculpt_paint_unified_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 508, sculpt_paint_unified_size);
+			__io__block.writeInt(__io__address + 636, sculpt_paint_unified_size);
 		} else {
-			__io__block.writeInt(__io__address + 440, sculpt_paint_unified_size);
+			__io__block.writeInt(__io__address + 556, sculpt_paint_unified_size);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_unprojected_radius
 	 */
 	
 	public float getSculpt_paint_unified_unprojected_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 512);
+			return __io__block.readFloat(__io__address + 640);
 		} else {
-			return __io__block.readFloat(__io__address + 444);
+			return __io__block.readFloat(__io__address + 560);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_unprojected_radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_unprojected_radius
 	 */
 	
 	public void setSculpt_paint_unified_unprojected_radius(float sculpt_paint_unified_unprojected_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 512, sculpt_paint_unified_unprojected_radius);
+			__io__block.writeFloat(__io__address + 640, sculpt_paint_unified_unprojected_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 444, sculpt_paint_unified_unprojected_radius);
+			__io__block.writeFloat(__io__address + 560, sculpt_paint_unified_unprojected_radius);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sculpt_paint_unified_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_alpha
 	 */
 	
 	public float getSculpt_paint_unified_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 516);
+			return __io__block.readFloat(__io__address + 644);
 		} else {
-			return __io__block.readFloat(__io__address + 448);
+			return __io__block.readFloat(__io__address + 564);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sculpt_paint_unified_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sculpt_paint_unified_alpha
 	 */
 	
 	public void setSculpt_paint_unified_alpha(float sculpt_paint_unified_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 516, sculpt_paint_unified_alpha);
+			__io__block.writeFloat(__io__address + 644, sculpt_paint_unified_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 448, sculpt_paint_unified_alpha);
+			__io__block.writeFloat(__io__address + 564, sculpt_paint_unified_alpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'unified_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Unified {@link Paint}  Settings </p>
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
 	
 	public UnifiedPaintSettings getUnified_paint_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new UnifiedPaintSettings(__io__address + 520, __io__block, __io__blockTable);
+			return new UnifiedPaintSettings(__io__address + 648, __io__block, __io__blockTable);
 		} else {
-			return new UnifiedPaintSettings(__io__address + 452, __io__block, __io__blockTable);
+			return new UnifiedPaintSettings(__io__address + 568, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'unified_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p> Unified {@link Paint}  Settings </p>
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
 	
@@ -3952,9 +4674,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 520;
+			__dna__offset = 648;
 		} else {
-			__dna__offset = 452;
+			__dna__offset = 568;
 		}
 		if (__io__equals(unified_paint_settings, __io__address + __dna__offset)) {
 			return;
@@ -3966,21 +4688,69 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'curve_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__curve_paint_settings
+	 */
+	
+	public CurvePaintSettings getCurve_paint_settings() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new CurvePaintSettings(__io__address + 800, __io__block, __io__blockTable);
+		} else {
+			return new CurvePaintSettings(__io__address + 716, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curve_paint_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__curve_paint_settings
+	 */
+	
+	public void setCurve_paint_settings(CurvePaintSettings curve_paint_settings) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 800;
+		} else {
+			__dna__offset = 716;
+		}
+		if (__io__equals(curve_paint_settings, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, curve_paint_settings)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, curve_paint_settings);
+		} else {
+			__io__generic__copy( getCurve_paint_settings(), curve_paint_settings);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'statvis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
 	
 	public MeshStatVis getStatvis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MeshStatVis(__io__address + 656, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 832, __io__block, __io__blockTable);
 		} else {
-			return new MeshStatVis(__io__address + 584, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 748, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'statvis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
 	
@@ -3988,9 +4758,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 656;
+			__dna__offset = 832;
 		} else {
-			__dna__offset = 584;
+			__dna__offset = 748;
 		}
 		if (__io__equals(statvis, __io__address + __dna__offset)) {
 			return;

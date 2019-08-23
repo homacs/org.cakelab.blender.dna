@@ -26,10 +26,13 @@ public class PaintCurvePoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 460;
+	public static final int __DNA__SDNA_INDEX = 467;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bez'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bezier handle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class PaintCurvePoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure on that point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +84,9 @@ public class PaintCurvePoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'bez'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bezier handle </p>
 	 * @see #__DNA__FIELD__bez
 	 */
 	
@@ -92,6 +101,9 @@ public class PaintCurvePoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'bez'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bezier handle </p>
 	 * @see #__DNA__FIELD__bez
 	 */
 	
@@ -114,6 +126,9 @@ public class PaintCurvePoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure on that point </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	
@@ -128,6 +143,9 @@ public class PaintCurvePoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'pressure'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pressure on that point </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	

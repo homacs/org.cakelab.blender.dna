@@ -27,10 +27,13 @@ public class GameData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 179;
+	public static final int __DNA__SDNA_INDEX = 180;
 
 	/**
 	 * Field descriptor (offset) for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standalone player </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +254,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dome'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stereo/dome mode </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +357,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> physics (it was in world) Gravitation constant for the game world </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +380,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +403,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 3: (gameengine): Activity culling is enabled. bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +466,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -511,6 +529,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vsync'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Controls vsync: off, on, or adaptive (if supported) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -731,6 +752,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lodflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Scene}  LoD </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -819,6 +843,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standalone player </p>
 	 * @see #__DNA__FIELD__framing
 	 */
 	
@@ -833,6 +860,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'framing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standalone player </p>
 	 * @see #__DNA__FIELD__framing
 	 */
 	
@@ -1147,6 +1177,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dome'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stereo/dome mode </p>
 	 * @see #__DNA__FIELD__dome
 	 */
 	
@@ -1161,6 +1194,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dome'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> stereo/dome mode </p>
 	 * @see #__DNA__FIELD__dome
 	 */
 	
@@ -1303,6 +1339,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> physics (it was in world) Gravitation constant for the game world </p>
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -1317,6 +1356,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'gravity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> physics (it was in world) Gravitation constant for the game world </p>
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -1331,6 +1373,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -1345,6 +1390,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'activityBoxRadius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled. </p>
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -1359,6 +1407,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 3: (gameengine): Activity culling is enabled. bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1373,6 +1424,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bit 3: (gameengine): Activity culling is enabled. bit 5: (gameengine) : enable Bullet DBVT tree for view frustum culling </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1443,6 +1497,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * @see #__DNA__FIELD__occlusionRes
 	 */
 	
@@ -1457,6 +1514,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'occlusionRes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> resolution of occlusion Z buffer in pixel </p>
 	 * @see #__DNA__FIELD__occlusionRes
 	 */
 	
@@ -1527,6 +1587,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'vsync'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Controls vsync: off, on, or adaptive (if supported) </p>
 	 * @see #__DNA__FIELD__vsync
 	 */
 	
@@ -1541,6 +1604,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'vsync'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Controls vsync: off, on, or adaptive (if supported) </p>
 	 * @see #__DNA__FIELD__vsync
 	 */
 	
@@ -1835,6 +1901,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Get method for struct member 'lodflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Scene}  LoD </p>
 	 * @see #__DNA__FIELD__lodflag
 	 */
 	
@@ -1849,6 +1918,9 @@ public class GameData extends CFacade {
 
 	/**
 	 * Set method for struct member 'lodflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Scene}  LoD </p>
 	 * @see #__DNA__FIELD__lodflag
 	 */
 	

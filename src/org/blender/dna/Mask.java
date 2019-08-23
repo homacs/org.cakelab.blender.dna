@@ -26,7 +26,7 @@ public class Mask extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 550;
+	public static final int __DNA__SDNA_INDEX = 561;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -70,6 +70,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklayers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mask layers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +93,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of active mask layer (-1 == None) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +116,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'masklay_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of mask layers </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +159,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames, used by the sequencer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +182,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for anim info </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -286,6 +301,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Get method for struct member 'masklayers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mask layers </p>
 	 * @see #__DNA__FIELD__masklayers
 	 */
 	
@@ -300,6 +318,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Set method for struct member 'masklayers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mask layers </p>
 	 * @see #__DNA__FIELD__masklayers
 	 */
 	
@@ -322,6 +343,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Get method for struct member 'masklay_act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of active mask layer (-1 == None) </p>
 	 * @see #__DNA__FIELD__masklay_act
 	 */
 	
@@ -336,6 +360,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Set method for struct member 'masklay_act'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of active mask layer (-1 == None) </p>
 	 * @see #__DNA__FIELD__masklay_act
 	 */
 	
@@ -350,6 +377,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Get method for struct member 'masklay_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of mask layers </p>
 	 * @see #__DNA__FIELD__masklay_tot
 	 */
 	
@@ -364,6 +394,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Set method for struct member 'masklay_tot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of mask layers </p>
 	 * @see #__DNA__FIELD__masklay_tot
 	 */
 	
@@ -406,6 +439,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Get method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames, used by the sequencer </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -420,6 +456,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Set method for struct member 'efra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> frames, used by the sequencer </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
@@ -434,6 +473,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for anim info </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -448,6 +490,9 @@ public class Mask extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for anim info </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

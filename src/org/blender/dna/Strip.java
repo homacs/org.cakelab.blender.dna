@@ -27,7 +27,7 @@ public class Strip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 263;
+	public static final int __DNA__SDNA_INDEX = 267;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -151,6 +151,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stripdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used as an array in IMAGE sequences(!), and as a 1-element array in MOVIE sequences, NULL for all other strip-types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +254,11 @@ public class Strip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_balance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +279,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -475,6 +486,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Get method for struct member 'stripdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used as an array in IMAGE sequences(!), and as a 1-element array in MOVIE sequences, NULL for all other strip-types </p>
 	 * @see #__DNA__FIELD__stripdata
 	 */
 	
@@ -492,6 +506,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Set method for struct member 'stripdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> only used as an array in IMAGE sequences(!), and as a 1-element array in MOVIE sequences, NULL for all other strip-types </p>
 	 * @see #__DNA__FIELD__stripdata
 	 */
 	
@@ -643,6 +660,11 @@ public class Strip extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_balance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__color_balance
 	 */
 	
@@ -660,6 +682,11 @@ public class Strip extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_balance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__color_balance
 	 */
 	
@@ -675,6 +702,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Get method for struct member 'colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
 	
@@ -689,6 +719,9 @@ public class Strip extends CFacade {
 
 	/**
 	 * Set method for struct member 'colorspace_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> color management </p>
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
 	

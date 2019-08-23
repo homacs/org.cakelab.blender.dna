@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=988, size64=992)
+@CMetaData(size32=1200, size64=1224)
 public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 436;
+	public static final int __DNA__SDNA_INDEX = 443;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -209,24 +210,67 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public static final long[] __DNA__FIELD__color_source = new long[]{984, 988};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'ob_color_source'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
-	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__pad2);
-	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__ob_color_source);
+	 * CPointer&lt;Short&gt; p_ob_color_source = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: 'ob_color_source'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{986, 990};
+	public static final long[] __DNA__FIELD__ob_color_source = new long[]{986, 990};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vertex_attribute_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__vertex_attribute_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_vertex_attribute_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vertex_attribute_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vertex_attribute_name = new long[]{988, 992};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pd'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__pd);
+	 * CPointer&lt;PointDensity&gt; p_pd = p.cast(new Class[]{PointDensity.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pd'</li>
+	 * <li>Signature: 'PointDensity'</li>
+	 * <li>Actual Size (32bit/64bit): 148/168</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pd = new long[]{1052, 1056};
 
 	public NodeShaderTexPointDensity(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -497,11 +541,11 @@ public class NodeShaderTexPointDensity extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'ob_color_source'.
+	 * @see #__DNA__FIELD__ob_color_source
 	 */
 	
-	public short getPad2() throws IOException
+	public short getOb_color_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 990);
@@ -511,16 +555,98 @@ public class NodeShaderTexPointDensity extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'ob_color_source'.
+	 * @see #__DNA__FIELD__ob_color_source
 	 */
 	
-	public void setPad2(short pad2) throws IOException
+	public void setOb_color_source(short ob_color_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 990, pad2);
+			__io__block.writeShort(__io__address + 990, ob_color_source);
 		} else {
-			__io__block.writeShort(__io__address + 986, pad2);
+			__io__block.writeShort(__io__address + 986, ob_color_source);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vertex_attribute_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * @see #__DNA__FIELD__vertex_attribute_name
+	 */
+	
+	public CArrayFacade<Byte> getVertex_attribute_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 992, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 988, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vertex_attribute_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * @see #__DNA__FIELD__vertex_attribute_name
+	 */
+	
+	public void setVertex_attribute_name(CArrayFacade<Byte> vertex_attribute_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 992;
+		} else {
+			__dna__offset = 988;
+		}
+		if (__io__equals(vertex_attribute_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vertex_attribute_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vertex_attribute_name);
+		} else {
+			__io__generic__copy( getVertex_attribute_name(), vertex_attribute_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pd'.
+	 * @see #__DNA__FIELD__pd
+	 */
+	
+	public PointDensity getPd() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new PointDensity(__io__address + 1056, __io__block, __io__blockTable);
+		} else {
+			return new PointDensity(__io__address + 1052, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pd'.
+	 * @see #__DNA__FIELD__pd
+	 */
+	
+	public void setPd(PointDensity pd) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1056;
+		} else {
+			__dna__offset = 1052;
+		}
+		if (__io__equals(pd, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pd)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pd);
+		} else {
+			__io__generic__copy( getPd(), pd);
 		}
 	}
 

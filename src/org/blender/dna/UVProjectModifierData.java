@@ -51,6 +51,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'projectors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the image to project </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +217,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -315,6 +324,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'projectors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	
@@ -333,6 +345,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'projectors'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	
@@ -355,6 +370,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'image'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the image to project </p>
 	 * @see #__DNA__FIELD__image
 	 */
 	
@@ -372,6 +390,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'image'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the image to project </p>
 	 * @see #__DNA__FIELD__image
 	 */
 	
@@ -555,6 +576,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -573,6 +597,9 @@ public class UVProjectModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'uvlayer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	

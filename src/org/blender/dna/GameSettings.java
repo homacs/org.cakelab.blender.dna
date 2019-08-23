@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'GameSettings'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Game Engine Options (old Texface mode, transp and flag) </p>
  */
 
 @CMetaData(size32=16, size64=16)

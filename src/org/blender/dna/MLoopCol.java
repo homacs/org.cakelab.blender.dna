@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopCol'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><em></em>  be initialized to 255 Mostly its not used for transparency... (except for blender-internal rendering, see [#34096]).</p><p><h2>Note</h2><p><em></em>  swapped, as they are with {@link MCol}  </p> red and blue are not swapped, as they are with MCol 
+ * </p>
  */
 
 @CMetaData(size32=4, size64=4)

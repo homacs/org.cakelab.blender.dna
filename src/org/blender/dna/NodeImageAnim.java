@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'NodeImageAnim'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> this one has been replaced with {@link ImageUser} , keep it for do_versions() </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -26,10 +27,15 @@ public class NodeImageAnim extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 394;
+	public static final int __DNA__SDNA_INDEX = 401;
 
 	/**
 	 * Field descriptor (offset) for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +56,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +81,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'nr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +106,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cyclic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +131,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -158,6 +184,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Get method for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -172,6 +203,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Set method for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -186,6 +222,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Get method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -200,6 +241,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Set method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -214,6 +260,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Get method for struct member 'nr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__nr
 	 */
 	
@@ -228,6 +279,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Set method for struct member 'nr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__nr
 	 */
 	
@@ -242,6 +298,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Get method for struct member 'cyclic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__cyclic
 	 */
 	
@@ -256,6 +317,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Set method for struct member 'cyclic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__cyclic
 	 */
 	
@@ -270,6 +336,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Get method for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__movie
 	 */
 	
@@ -284,6 +355,11 @@ public class NodeImageAnim extends CFacade {
 
 	/**
 	 * Set method for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__movie
 	 */
 	

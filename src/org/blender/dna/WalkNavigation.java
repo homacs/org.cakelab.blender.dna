@@ -27,10 +27,14 @@ public class WalkNavigation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 245;
+	public static final int __DNA__SDNA_INDEX = 249;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mouse_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed factor for when looking around, high values mean faster mouse movement<h4>Blender Source Code:</h4>
+	 * <p> speed factor for look around </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'walk_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Base speed for walking and flying
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +78,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'walk_speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplication factor when using the fast or slow modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +101,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * View distance from the floor when walking
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +124,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'jump_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum height of a jump
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +147,10 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'teleport_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval of time warp when teleporting in navigation mode<h4>Blender Source Code:</h4>
+	 * <p> duration to use for teleporting </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,6 +219,10 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'mouse_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed factor for when looking around, high values mean faster mouse movement<h4>Blender Source Code:</h4>
+	 * <p> speed factor for look around </p>
 	 * @see #__DNA__FIELD__mouse_speed
 	 */
 	
@@ -213,6 +237,10 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'mouse_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Speed factor for when looking around, high values mean faster mouse movement<h4>Blender Source Code:</h4>
+	 * <p> speed factor for look around </p>
 	 * @see #__DNA__FIELD__mouse_speed
 	 */
 	
@@ -227,6 +255,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'walk_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Base speed for walking and flying
 	 * @see #__DNA__FIELD__walk_speed
 	 */
 	
@@ -241,6 +272,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'walk_speed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Base speed for walking and flying
 	 * @see #__DNA__FIELD__walk_speed
 	 */
 	
@@ -255,6 +289,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'walk_speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplication factor when using the fast or slow modifiers
 	 * @see #__DNA__FIELD__walk_speed_factor
 	 */
 	
@@ -269,6 +306,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'walk_speed_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Multiplication factor when using the fast or slow modifiers
 	 * @see #__DNA__FIELD__walk_speed_factor
 	 */
 	
@@ -283,6 +323,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'view_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * View distance from the floor when walking
 	 * @see #__DNA__FIELD__view_height
 	 */
 	
@@ -297,6 +340,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'view_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * View distance from the floor when walking
 	 * @see #__DNA__FIELD__view_height
 	 */
 	
@@ -311,6 +357,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'jump_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum height of a jump
 	 * @see #__DNA__FIELD__jump_height
 	 */
 	
@@ -325,6 +374,9 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'jump_height'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum height of a jump
 	 * @see #__DNA__FIELD__jump_height
 	 */
 	
@@ -339,6 +391,10 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Get method for struct member 'teleport_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval of time warp when teleporting in navigation mode<h4>Blender Source Code:</h4>
+	 * <p> duration to use for teleporting </p>
 	 * @see #__DNA__FIELD__teleport_time
 	 */
 	
@@ -353,6 +409,10 @@ public class WalkNavigation extends CFacade {
 
 	/**
 	 * Set method for struct member 'teleport_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interval of time warp when teleporting in navigation mode<h4>Blender Source Code:</h4>
+	 * <p> duration to use for teleporting </p>
 	 * @see #__DNA__FIELD__teleport_time
 	 */
 	

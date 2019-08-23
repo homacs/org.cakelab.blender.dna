@@ -27,7 +27,7 @@ public class Group extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 331;
+	public static final int __DNA__SDNA_INDEX = 337;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -51,6 +51,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gobject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link GroupObject}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bad design, since layers stored in the scenes '{@link Base} ' the objects that show in the group can change depending on the last used scene </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -175,6 +184,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Get method for struct member 'gobject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link GroupObject}  </p>
 	 * @see #__DNA__FIELD__gobject
 	 */
 	
@@ -189,6 +201,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Set method for struct member 'gobject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link GroupObject}  </p>
 	 * @see #__DNA__FIELD__gobject
 	 */
 	
@@ -211,6 +226,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -228,6 +246,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Preview image and icon of this data-block (None if not supported for this type of data)
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -243,6 +264,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bad design, since layers stored in the scenes '{@link Base} ' the objects that show in the group can change depending on the last used scene </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
@@ -257,6 +281,9 @@ public class Group extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Bad design, since layers stored in the scenes '{@link Base} ' the objects that show in the group can change depending on the last used scene </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	

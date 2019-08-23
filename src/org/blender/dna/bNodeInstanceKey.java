@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNodeInstanceKey'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Unique hash key for identifying node instances Defined as a struct because DNA does not support other typedefs. </p>
  */
 
 @CMetaData(size32=4, size64=4)
@@ -26,7 +27,7 @@ public class bNodeInstanceKey extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 382;
+	public static final int __DNA__SDNA_INDEX = 389;
 
 	/**
 	 * Field descriptor (offset) for struct member 'value'.

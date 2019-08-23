@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceSeq'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Sequence}  Editor ======================================= Sequencer </p>
  */
 
 @CMetaData(size32=264, size64=320)
@@ -27,7 +28,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 209;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +190,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +215,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * @deprecated
+	 *  Deprecateddeprecated: offset for drawing the image preview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +240,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +263,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceSeq_Proxy_RenderSize </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +346,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, handled by View2D now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +371,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see SEQ_VIEW_* below </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +414,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay an image of the editing on below the strips </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +457,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +480,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> different scoped displayed in space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +503,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -563,6 +618,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -577,6 +635,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -627,6 +688,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -641,6 +707,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -655,6 +726,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -673,6 +749,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -695,6 +776,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -709,6 +795,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -731,6 +822,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'xof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xof
 	 */
 	
@@ -745,6 +841,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'xof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xof
 	 */
 	
@@ -759,6 +860,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * @deprecated
+	 *  Deprecateddeprecated: offset for drawing the image preview </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
@@ -773,6 +879,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * @deprecated
+	 *  Deprecateddeprecated: offset for drawing the image preview </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
@@ -787,6 +898,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'mainb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
 	
@@ -801,6 +915,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'mainb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
 	
@@ -815,6 +932,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceSeq_Proxy_RenderSize </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
@@ -829,6 +949,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpaceSeq_Proxy_RenderSize </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
@@ -927,6 +1050,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, handled by View2D now </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
@@ -941,6 +1069,11 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, handled by View2D now </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
@@ -955,6 +1088,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see SEQ_VIEW_* below </p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
@@ -969,6 +1105,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> see SEQ_VIEW_* below </p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
@@ -1011,6 +1150,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay an image of the editing on below the strips </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	
@@ -1025,6 +1167,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'draw_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> overlay an image of the editing on below the strips </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	
@@ -1067,6 +1212,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1084,6 +1232,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1099,6 +1250,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> different scoped displayed in space </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
@@ -1113,6 +1267,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'scopes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> different scoped displayed in space </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
@@ -1135,6 +1292,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Get method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -1149,6 +1309,9 @@ public class SpaceSeq extends CFacade {
 
 	/**
 	 * Set method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	

@@ -26,10 +26,13 @@ public class NodeScriptDict extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 414;
+	public static final int __DNA__SDNA_INDEX = 421;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dict'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for PyObject *dict </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class NodeScriptDict extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'node'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for BPy_Node *node </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +84,9 @@ public class NodeScriptDict extends CFacade {
 
 	/**
 	 * Get method for struct member 'dict'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for PyObject *dict </p>
 	 * @see #__DNA__FIELD__dict
 	 */
 	
@@ -95,6 +104,9 @@ public class NodeScriptDict extends CFacade {
 
 	/**
 	 * Set method for struct member 'dict'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for PyObject *dict </p>
 	 * @see #__DNA__FIELD__dict
 	 */
 	
@@ -110,6 +122,9 @@ public class NodeScriptDict extends CFacade {
 
 	/**
 	 * Get method for struct member 'node'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for BPy_Node *node </p>
 	 * @see #__DNA__FIELD__node
 	 */
 	
@@ -127,6 +142,9 @@ public class NodeScriptDict extends CFacade {
 
 	/**
 	 * Set method for struct member 'node'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for BPy_Node *node </p>
 	 * @see #__DNA__FIELD__node
 	 */
 	

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bConstraintTarget'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Multiple-target constraints ---------------<mdash/><mdash/>  This struct defines a constraint target. It is used during constraint solving regardless of how many targets the constraint has. </p>
  */
 
 @CMetaData(size32=148, size64=160)
@@ -27,7 +28,7 @@ public class bConstraintTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 348;
+	public static final int __DNA__SDNA_INDEX = 354;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to use as target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +118,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'matrix'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix used during constraint solving - should be cleared before each use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +141,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +164,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime settings (for editor, etc.) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +187,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +210,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotOrder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation order for target (as defined in BLI_math.h) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -283,6 +305,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to use as target </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -300,6 +325,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'tar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> object to use as target </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -315,6 +343,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -333,6 +364,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -355,6 +389,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'matrix'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix used during constraint solving - should be cleared before each use </p>
 	 * @see #__DNA__FIELD__matrix
 	 */
 	
@@ -374,6 +411,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'matrix'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix used during constraint solving - should be cleared before each use </p>
 	 * @see #__DNA__FIELD__matrix
 	 */
 	
@@ -396,6 +436,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
 	 * @see #__DNA__FIELD__space
 	 */
 	
@@ -410,6 +453,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
 	 * @see #__DNA__FIELD__space
 	 */
 	
@@ -424,6 +470,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime settings (for editor, etc.) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -438,6 +487,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime settings (for editor, etc.) </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -452,6 +504,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -466,6 +521,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -480,6 +538,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Get method for struct member 'rotOrder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation order for target (as defined in BLI_math.h) </p>
 	 * @see #__DNA__FIELD__rotOrder
 	 */
 	
@@ -494,6 +555,9 @@ public class bConstraintTarget extends CFacade {
 
 	/**
 	 * Set method for struct member 'rotOrder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotation order for target (as defined in BLI_math.h) </p>
 	 * @see #__DNA__FIELD__rotOrder
 	 */
 	

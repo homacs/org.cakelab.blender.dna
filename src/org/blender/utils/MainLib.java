@@ -31,7 +31,7 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 276;
+	public static final short BLENDER_VERSION = 278;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
@@ -49,7 +49,7 @@ public class MainLib extends MainLibBase {
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINSUBVERSION = 5;
+	public static final short BLENDER_MINSUBVERSION = 6;
 
 	/**Linkage between main libraries.
 	 */
@@ -237,6 +237,11 @@ public class MainLib extends MainLibBase {
 	 * See {@link FreestyleLineStyle} for documentation.
 	 */
 	private FreestyleLineStyle freestyleLineStyle;
+
+	/**
+	 * See {@link CacheFile} for documentation.
+	 */
+	private CacheFile cacheFile;
 
 
 	public MainLib(BlenderFile blendFile) throws IOException{
@@ -797,6 +802,20 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setFreestyleLineStyle(FreestyleLineStyle freestyleLineStyle) {
 		this.freestyleLineStyle = freestyleLineStyle;
+	}
+
+	/**
+	 * See {@link CacheFile} for documentation.
+	 */
+	public CacheFile getCacheFile(){
+		return cacheFile;
+	}
+
+	/**
+	 * See {@link CacheFile} for documentation.
+	 */
+	public void setCacheFile(CacheFile cacheFile) {
+		this.cacheFile = cacheFile;
 	}
 
 }

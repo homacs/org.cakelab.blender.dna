@@ -27,10 +27,14 @@ public class EffectorWeights extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 153;
+	public static final int __DNA__SDNA_INDEX = 154;
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
+	 * <p> only use effectors from this group of objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class EffectorWeights extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> effector type specific weights </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +166,10 @@ public class EffectorWeights extends CFacade {
 
 	/**
 	 * Get method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
+	 * <p> only use effectors from this group of objects </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -176,6 +187,10 @@ public class EffectorWeights extends CFacade {
 
 	/**
 	 * Set method for struct member 'group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
+	 * <p> only use effectors from this group of objects </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -191,6 +206,9 @@ public class EffectorWeights extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> effector type specific weights </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -209,6 +227,9 @@ public class EffectorWeights extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> effector type specific weights </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	

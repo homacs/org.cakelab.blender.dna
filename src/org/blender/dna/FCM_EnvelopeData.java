@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FCM_EnvelopeData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> envelope modifier - envelope data </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -26,7 +27,7 @@ public class FCM_EnvelopeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 494;
+	public static final int __DNA__SDNA_INDEX = 505;
 
 	/**
 	 * Field descriptor (offset) for struct member 'min'.
@@ -50,6 +51,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max values for envelope at this point (absolute values) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +74,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time for that this sample-point occurs </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +97,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'min' control point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +120,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'f2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'max' control point </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,6 +179,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max values for envelope at this point (absolute values) </p>
 	 * @see #__DNA__FIELD__max
 	 */
 	
@@ -180,6 +196,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max values for envelope at this point (absolute values) </p>
 	 * @see #__DNA__FIELD__max
 	 */
 	
@@ -194,6 +213,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time for that this sample-point occurs </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -208,6 +230,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time for that this sample-point occurs </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -222,6 +247,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'min' control point </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -236,6 +264,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'min' control point </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -250,6 +281,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Get method for struct member 'f2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'max' control point </p>
 	 * @see #__DNA__FIELD__f2
 	 */
 	
@@ -264,6 +298,9 @@ public class FCM_EnvelopeData extends CFacade {
 
 	/**
 	 * Set method for struct member 'f2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for 'max' control point </p>
 	 * @see #__DNA__FIELD__f2
 	 */
 	

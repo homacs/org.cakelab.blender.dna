@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'View3D'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> 3D ViewPort Struct </p>
  */
 
-@CMetaData(size32=332, size64=416)
+@CMetaData(size32=340, size64=424)
 public class View3D extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 199;
+	public static final int __DNA__SDNA_INDEX = 203;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +155,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewquat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +180,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +205,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bundle_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of bundles in reconstructed data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +228,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bundle_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display style for bundle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +271,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for active layer toggle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +294,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while drawing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +317,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'persp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +342,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +447,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bgpic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use bgpicbase, only kept for do_versions(...) </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use bgpicbase, only kept for do_versions(...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +472,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'localvd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocated backup of its self while in localview </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +495,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_centre_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional string for armature bone to define center, MAXBONENAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -511,6 +558,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -531,6 +581,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_centre_cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional bool for 3d cursor to define center </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -711,6 +764,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -751,6 +809,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'matcap_icon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> icon id </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -791,6 +852,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gridsubdiv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of subdivisions in the grid between each highlighted grid line </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -831,6 +895,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'twtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform widget info </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -911,6 +978,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'afterdraw_transp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> afterdraw, for xray & transparent </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -971,6 +1041,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'zbuf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> drawflags, denoting state </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1031,6 +1104,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1051,6 +1127,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> built-in shader effects (eGPUFXFlags) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1071,6 +1150,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fx_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1091,6 +1173,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Nkey panel stores stuff here (runtime only!) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1111,6 +1196,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defmaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used by matcap now </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1131,6 +1219,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated? <p> Grease-Pencil Data (annotation layers) </p>
+	 * @deprecated
+	 *  DeprecatedGrease-Pencil Data (annotation layers) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1151,6 +1244,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview - stereo 3d </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1269,6 +1365,69 @@ public class View3D extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__stereo3d_convergence_alpha = new long[]{328, 412};
 
+	/**
+	 * Field descriptor (offset) for struct member 'prev_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Previous viewport draw type. Runtime-only, set in the rendered viewport toggle operator. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__prev_drawtype);
+	 * CPointer&lt;Short&gt; p_prev_drawtype = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prev_drawtype'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prev_drawtype = new long[]{332, 416};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__pad1);
+	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad1'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad1 = new long[]{334, 418};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__pad2);
+	 * CPointer&lt;Float&gt; p_pad2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{336, 420};
+
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -1343,6 +1502,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1357,6 +1519,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1475,6 +1640,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'viewquat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
 	
@@ -1493,6 +1663,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'viewquat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
 	
@@ -1515,6 +1690,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -1529,6 +1709,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -1543,6 +1728,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'bundle_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of bundles in reconstructed data </p>
 	 * @see #__DNA__FIELD__bundle_size
 	 */
 	
@@ -1557,6 +1745,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'bundle_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of bundles in reconstructed data </p>
 	 * @see #__DNA__FIELD__bundle_size
 	 */
 	
@@ -1571,6 +1762,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'bundle_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display style for bundle </p>
 	 * @see #__DNA__FIELD__bundle_drawtype
 	 */
 	
@@ -1585,6 +1779,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'bundle_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display style for bundle </p>
 	 * @see #__DNA__FIELD__bundle_drawtype
 	 */
 	
@@ -1639,6 +1836,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for active layer toggle </p>
 	 * @see #__DNA__FIELD__lay_prev
 	 */
 	
@@ -1653,6 +1853,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for active layer toggle </p>
 	 * @see #__DNA__FIELD__lay_prev
 	 */
 	
@@ -1667,6 +1870,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while drawing </p>
 	 * @see #__DNA__FIELD__lay_used
 	 */
 	
@@ -1681,6 +1887,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay_used'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while drawing </p>
 	 * @see #__DNA__FIELD__lay_used
 	 */
 	
@@ -1695,6 +1904,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'persp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__persp
 	 */
 	
@@ -1709,6 +1923,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'persp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__persp
 	 */
 	
@@ -1723,6 +1942,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
@@ -1737,6 +1961,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'view'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
@@ -1887,6 +2116,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'bgpic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use bgpicbase, only kept for do_versions(...) </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use bgpicbase, only kept for do_versions(...) </p>
 	 * @see #__DNA__FIELD__bgpic
 	 */
 	
@@ -1904,6 +2138,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'bgpic'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, use bgpicbase, only kept for do_versions(...) </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, use bgpicbase, only kept for do_versions(...) </p>
 	 * @see #__DNA__FIELD__bgpic
 	 */
 	
@@ -1919,6 +2158,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'localvd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocated backup of its self while in localview </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1936,6 +2178,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'localvd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> allocated backup of its self while in localview </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1951,6 +2196,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob_centre_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional string for armature bone to define center, MAXBONENAME </p>
 	 * @see #__DNA__FIELD__ob_centre_bone
 	 */
 	
@@ -1969,6 +2217,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob_centre_bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional string for armature bone to define center, MAXBONENAME </p>
 	 * @see #__DNA__FIELD__ob_centre_bone
 	 */
 	
@@ -2047,6 +2298,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER </p>
 	 * @see #__DNA__FIELD__drawtype
 	 */
 	
@@ -2061,6 +2315,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER </p>
 	 * @see #__DNA__FIELD__drawtype
 	 */
 	
@@ -2075,6 +2332,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob_centre_cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional bool for 3d cursor to define center </p>
 	 * @see #__DNA__FIELD__ob_centre_cursor
 	 */
 	
@@ -2089,6 +2349,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob_centre_cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional bool for 3d cursor to define center </p>
 	 * @see #__DNA__FIELD__ob_centre_cursor
 	 */
 	
@@ -2327,6 +2590,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'ofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	
@@ -2345,6 +2613,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'ofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	
@@ -2407,6 +2680,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'matcap_icon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> icon id </p>
 	 * @see #__DNA__FIELD__matcap_icon
 	 */
 	
@@ -2421,6 +2697,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'matcap_icon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> icon id </p>
 	 * @see #__DNA__FIELD__matcap_icon
 	 */
 	
@@ -2463,6 +2742,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'gridsubdiv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of subdivisions in the grid between each highlighted grid line </p>
 	 * @see #__DNA__FIELD__gridsubdiv
 	 */
 	
@@ -2477,6 +2759,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'gridsubdiv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of subdivisions in the grid between each highlighted grid line </p>
 	 * @see #__DNA__FIELD__gridsubdiv
 	 */
 	
@@ -2519,6 +2804,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'twtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform widget info </p>
 	 * @see #__DNA__FIELD__twtype
 	 */
 	
@@ -2533,6 +2821,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'twtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transform widget info </p>
 	 * @see #__DNA__FIELD__twtype
 	 */
 	
@@ -2631,6 +2922,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'afterdraw_transp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> afterdraw, for xray & transparent </p>
 	 * @see #__DNA__FIELD__afterdraw_transp
 	 */
 	
@@ -2645,6 +2939,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'afterdraw_transp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> afterdraw, for xray & transparent </p>
 	 * @see #__DNA__FIELD__afterdraw_transp
 	 */
 	
@@ -2739,6 +3036,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'zbuf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> drawflags, denoting state </p>
 	 * @see #__DNA__FIELD__zbuf
 	 */
 	
@@ -2753,6 +3053,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'zbuf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> drawflags, denoting state </p>
 	 * @see #__DNA__FIELD__zbuf
 	 */
 	
@@ -2823,6 +3126,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -2837,6 +3143,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -2851,6 +3160,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> built-in shader effects (eGPUFXFlags) </p>
 	 * @see #__DNA__FIELD__pad3
 	 */
 	
@@ -2869,6 +3181,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> built-in shader effects (eGPUFXFlags) </p>
 	 * @see #__DNA__FIELD__pad3
 	 */
 	
@@ -2891,6 +3206,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'fx_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
 	 * @see #__DNA__FIELD__fx_settings
 	 */
 	
@@ -2905,6 +3223,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'fx_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
 	 * @see #__DNA__FIELD__fx_settings
 	 */
 	
@@ -2927,6 +3248,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'properties_storage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Nkey panel stores stuff here (runtime only!) </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
 	
@@ -2944,6 +3268,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'properties_storage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Nkey panel stores stuff here (runtime only!) </p>
 	 * @see #__DNA__FIELD__properties_storage
 	 */
 	
@@ -2959,6 +3286,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'defmaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used by matcap now </p>
 	 * @see #__DNA__FIELD__defmaterial
 	 */
 	
@@ -2976,6 +3306,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'defmaterial'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used by matcap now </p>
 	 * @see #__DNA__FIELD__defmaterial
 	 */
 	
@@ -2991,6 +3324,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated? <p> Grease-Pencil Data (annotation layers) </p>
+	 * @deprecated
+	 *  DeprecatedGrease-Pencil Data (annotation layers) </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -3008,6 +3346,11 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX deprecated? <p> Grease-Pencil Data (annotation layers) </p>
+	 * @deprecated
+	 *  DeprecatedGrease-Pencil Data (annotation layers) </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -3023,6 +3366,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'stereo3d_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview - stereo 3d </p>
 	 * @see #__DNA__FIELD__stereo3d_flag
 	 */
 	
@@ -3037,6 +3383,9 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'stereo3d_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview - stereo 3d </p>
 	 * @see #__DNA__FIELD__stereo3d_flag
 	 */
 	
@@ -3186,6 +3535,96 @@ public class View3D extends CFacade {
 			__io__block.writeFloat(__io__address + 412, stereo3d_convergence_alpha);
 		} else {
 			__io__block.writeFloat(__io__address + 328, stereo3d_convergence_alpha);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prev_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Previous viewport draw type. Runtime-only, set in the rendered viewport toggle operator. </p>
+	 * @see #__DNA__FIELD__prev_drawtype
+	 */
+	
+	public short getPrev_drawtype() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 416);
+		} else {
+			return __io__block.readShort(__io__address + 332);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'prev_drawtype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Previous viewport draw type. Runtime-only, set in the rendered viewport toggle operator. </p>
+	 * @see #__DNA__FIELD__prev_drawtype
+	 */
+	
+	public void setPrev_drawtype(short prev_drawtype) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 416, prev_drawtype);
+		} else {
+			__io__block.writeShort(__io__address + 332, prev_drawtype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public short getPad1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 418);
+		} else {
+			return __io__block.readShort(__io__address + 334);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public void setPad1(short pad1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 418, pad1);
+		} else {
+			__io__block.writeShort(__io__address + 334, pad1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public float getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 420);
+		} else {
+			return __io__block.readFloat(__io__address + 336);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(float pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 420, pad2);
+		} else {
+			__io__block.writeFloat(__io__address + 336, pad2);
 		}
 	}
 

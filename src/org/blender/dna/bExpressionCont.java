@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bExpressionCont'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> ****************** CONTROLLERS ********************* </p>
  */
 
 @CMetaData(size32=128, size64=128)
@@ -27,7 +28,7 @@ public class bExpressionCont extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 303;
+	public static final int __DNA__SDNA_INDEX = 309;
 
 	/**
 	 * Field descriptor (offset) for struct member 'str'.

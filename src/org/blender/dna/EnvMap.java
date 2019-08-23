@@ -51,6 +51,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type ENV_LOAD </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cube'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> these images are dynamic, not part of the main struct </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +217,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> viewscale is for planar envmaps to zoom in or out </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +420,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type ENV_LOAD </p>
 	 * @see #__DNA__FIELD__ima
 	 */
 	
@@ -428,6 +440,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'ima'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> type ENV_LOAD </p>
 	 * @see #__DNA__FIELD__ima
 	 */
 	
@@ -443,6 +458,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'cube'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> these images are dynamic, not part of the main struct </p>
 	 * @see #__DNA__FIELD__cube
 	 */
 	
@@ -461,6 +479,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'cube'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> these images are dynamic, not part of the main struct </p>
 	 * @see #__DNA__FIELD__cube
 	 */
 	
@@ -677,6 +698,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'viewscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> viewscale is for planar envmaps to zoom in or out </p>
 	 * @see #__DNA__FIELD__viewscale
 	 */
 	
@@ -691,6 +715,9 @@ public class EnvMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'viewscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> viewscale is for planar envmaps to zoom in or out </p>
 	 * @see #__DNA__FIELD__viewscale
 	 */
 	

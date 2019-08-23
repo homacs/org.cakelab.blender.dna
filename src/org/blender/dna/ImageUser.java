@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ImageUser'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link ImageUser}  is in Texture, in Nodes, Background {@link Image} , {@link Image}  Window, .... should be used in conjunction with an {@link ID}  * to {@link Image} . </p>
  */
 
 @CMetaData(size32=36, size64=40)
@@ -30,6 +31,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> to retrieve render result </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> movies, sequences: current to display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +77,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total amount of frames to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +120,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset within movie, start frame in global time </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +163,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cycl'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fields/image in movie, cyclic flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,6 +206,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use of drawing routines </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -290,6 +309,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -338,6 +360,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> to retrieve render result </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -355,6 +380,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> to retrieve render result </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -370,6 +398,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> movies, sequences: current to display </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -384,6 +415,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'framenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> movies, sequences: current to display </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -398,6 +432,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total amount of frames to use </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -412,6 +449,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total amount of frames to use </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -454,6 +494,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset within movie, start frame in global time </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -468,6 +511,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'sfra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset within movie, start frame in global time </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -510,6 +556,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'cycl'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fields/image in movie, cyclic flag </p>
 	 * @see #__DNA__FIELD__cycl
 	 */
 	
@@ -524,6 +573,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'cycl'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> fields/image in movie, cyclic flag </p>
 	 * @see #__DNA__FIELD__cycl
 	 */
 	
@@ -566,6 +618,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use of drawing routines </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -580,6 +635,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'multiview_eye'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> multiview current eye - for internal use of drawing routines </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -706,6 +764,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
@@ -720,6 +781,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	

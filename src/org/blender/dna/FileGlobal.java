@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FileGlobal'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * FileGlobal stores a part of the current user-interface settings at the moment of saving, and the file-specific settings.<h4>Blender Source Code:</h4>
+ * <p>{@link FileGlobal}  stores a part of the current user-interface settings at the moment of saving, and the file-specific settings. </p>
  */
 
 @CMetaData(size32=1080, size64=1088)
@@ -27,10 +29,13 @@ public class FileGlobal extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 256;
+	public static final int __DNA__SDNA_INDEX = 260;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> needs to be here, for human fileformat recognition </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +176,33 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fileflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3><ul>
+	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
+	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
+	 * 				           <li> G_FILE_AUTOPLAY          (1 << 2)</li>
+	 * 				           <li> G_FILE_ENABLE_ALL_FRAMES (1 << 3): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_DEBUG_PROPS  (1 << 4): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_FRAMERATE    (1 << 5): deprecated</li>
+	 * 				           <li> G_FILE_USERPREFS         (1 << 9)</li>
+	 * 				           <li> G_FILE_NO_UI             (1 << 10)</li>
+	 * 				           <li> G_FILE_GAME_MAT          (1 << 12): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_PHYSICS      (1 << 14): deprecated</li>
+	 * 				           <li> G_FILE_GAME_MAT_GLSL     (1 << 15): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADERS   (1 << 17): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADOWS   (1 << 18): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_RAMPS     (1 << 19): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_NODES     (1 << 20): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_EXTRA_TEX (1 << 21): deprecated</li>
+	 * 				           <li> G_FILE_IGNORE_DEPRECATION_WARNINGS  (1 << 22): deprecated</li>
+	 * 				           <li> G_FILE_RECOVER           (1 << 23)</li>
+	 * 				           <li> G_FILE_RELATIVE_REMAP    (1 << 24)</li>
+	 * 				           <li> G_FILE_HISTORY           (1 << 25)</li>
+	 * 				           <li> G_FILE_MESH_COMPAT       (1 << 26)</li>
+	 * 				           <li> G_FILE_SAVE_COPY         (1 << 27)</li>
+	 * 				           <li> G_FILE_GLSL_NO_ENV_LIGHTING (1 << 28)</li>
+	 * 				</ul>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +243,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_commit_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <p> commit timestamp from buildinfo </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +267,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <p> hash from buildinfo </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +291,9 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,6 +322,9 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'subvstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> needs to be here, for human fileformat recognition </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	
@@ -297,6 +343,9 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'subvstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> needs to be here, for human fileformat recognition </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	
@@ -507,6 +556,33 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'fileflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3><ul>
+	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
+	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
+	 * 				           <li> G_FILE_AUTOPLAY          (1 << 2)</li>
+	 * 				           <li> G_FILE_ENABLE_ALL_FRAMES (1 << 3): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_DEBUG_PROPS  (1 << 4): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_FRAMERATE    (1 << 5): deprecated</li>
+	 * 				           <li> G_FILE_USERPREFS         (1 << 9)</li>
+	 * 				           <li> G_FILE_NO_UI             (1 << 10)</li>
+	 * 				           <li> G_FILE_GAME_MAT          (1 << 12): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_PHYSICS      (1 << 14): deprecated</li>
+	 * 				           <li> G_FILE_GAME_MAT_GLSL     (1 << 15): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADERS   (1 << 17): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADOWS   (1 << 18): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_RAMPS     (1 << 19): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_NODES     (1 << 20): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_EXTRA_TEX (1 << 21): deprecated</li>
+	 * 				           <li> G_FILE_IGNORE_DEPRECATION_WARNINGS  (1 << 22): deprecated</li>
+	 * 				           <li> G_FILE_RECOVER           (1 << 23)</li>
+	 * 				           <li> G_FILE_RELATIVE_REMAP    (1 << 24)</li>
+	 * 				           <li> G_FILE_HISTORY           (1 << 25)</li>
+	 * 				           <li> G_FILE_MESH_COMPAT       (1 << 26)</li>
+	 * 				           <li> G_FILE_SAVE_COPY         (1 << 27)</li>
+	 * 				           <li> G_FILE_GLSL_NO_ENV_LIGHTING (1 << 28)</li>
+	 * 				</ul>
 	 * @see #__DNA__FIELD__fileflags
 	 */
 	
@@ -521,6 +597,33 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'fileflags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values</h3><ul>
+	 * 				           <li> G_AUTOPACK               (1 << 0)</li>
+	 * 				           <li> G_FILE_COMPRESS          (1 << 1)</li>
+	 * 				           <li> G_FILE_AUTOPLAY          (1 << 2)</li>
+	 * 				           <li> G_FILE_ENABLE_ALL_FRAMES (1 << 3): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_DEBUG_PROPS  (1 << 4): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_FRAMERATE    (1 << 5): deprecated</li>
+	 * 				           <li> G_FILE_USERPREFS         (1 << 9)</li>
+	 * 				           <li> G_FILE_NO_UI             (1 << 10)</li>
+	 * 				           <li> G_FILE_GAME_MAT          (1 << 12): deprecated</li>
+	 * 				           <li> G_FILE_SHOW_PHYSICS      (1 << 14): deprecated</li>
+	 * 				           <li> G_FILE_GAME_MAT_GLSL     (1 << 15): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADERS   (1 << 17): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_SHADOWS   (1 << 18): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_RAMPS     (1 << 19): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_NODES     (1 << 20): deprecated</li>
+	 * 				           <li> G_FILE_GLSL_NO_EXTRA_TEX (1 << 21): deprecated</li>
+	 * 				           <li> G_FILE_IGNORE_DEPRECATION_WARNINGS  (1 << 22): deprecated</li>
+	 * 				           <li> G_FILE_RECOVER           (1 << 23)</li>
+	 * 				           <li> G_FILE_RELATIVE_REMAP    (1 << 24)</li>
+	 * 				           <li> G_FILE_HISTORY           (1 << 25)</li>
+	 * 				           <li> G_FILE_MESH_COMPAT       (1 << 26)</li>
+	 * 				           <li> G_FILE_SAVE_COPY         (1 << 27)</li>
+	 * 				           <li> G_FILE_GLSL_NO_ENV_LIGHTING (1 << 28)</li>
+	 * 				</ul>
 	 * @see #__DNA__FIELD__fileflags
 	 */
 	
@@ -563,6 +666,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'build_commit_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <p> commit timestamp from buildinfo </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
@@ -577,6 +684,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'build_commit_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
+	 * <p> commit timestamp from buildinfo </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
@@ -591,6 +702,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'build_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <p> hash from buildinfo </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	
@@ -609,6 +724,10 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'build_hash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * unique identifier from build info<h4>Blender Source Code:</h4>
+	 * <p> hash from buildinfo </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	
@@ -631,6 +750,9 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Get method for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -649,6 +771,9 @@ public class FileGlobal extends CFacade {
 
 	/**
 	 * Set method for struct member 'filename'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	

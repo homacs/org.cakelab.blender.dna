@@ -13,10 +13,12 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bPoseChannel'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Poses PoseChannel ------------------------------<mdash/><mdash/>  PoseChannel</p><p> A PoseChannel stores the results of Actions and transform information with respect to the restposition of Armature bones </p>
  */
 
-@CMetaData(size32=480, size64=544)
+@CMetaData(size32=528, size64=600)
 public class bPoseChannel extends CFacade {
 
 	/**
@@ -27,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 337;
+	public static final int __DNA__SDNA_INDEX = 343;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this PoseChannel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +96,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraints that act on this PoseChannel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +119,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> need to match bone name length: MAXBONENAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +142,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic, for detecting transform changes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for IK bones </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +188,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'protectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> protect channels from being transformed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +211,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'agrp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of action-group this bone belongs to (0 = default/no group) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +234,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for quick detecting which constraints affect this channel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +257,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'selectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of bone flag, so you can work with library armatures, not for runtime use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -250,6 +279,46 @@ public class bPoseChannel extends CFacade {
 	public static final long[] __DNA__FIELD__selectflag = new long[]{93, 113};
 
 	/**
+	 * Field descriptor (offset) for struct member 'drawflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__drawflag);
+	 * CPointer&lt;Byte&gt; p_drawflag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'drawflag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__drawflag = new long[]{94, 114};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bboneflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__bboneflag);
+	 * CPointer&lt;Byte&gt; p_bboneflag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bboneflag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bboneflag = new long[]{95, 115};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -263,14 +332,17 @@ public class bPoseChannel extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad0'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad0 = new long[]{94, 114};
+	public static final long[] __DNA__FIELD__pad0 = new long[]{96, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +363,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +386,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'child'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose, the 'ik' child, for b-bones </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +409,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'iktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "IK trees" - only while evaluating pose </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +432,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'siktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spline-IK "trees" - only while evaluating pose </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +455,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mpath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion path cache for this bone </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +478,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'custom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draws custom object instead of default bone shape </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +501,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'custom_tx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -430,7 +523,50 @@ public class bPoseChannel extends CFacade {
 	public static final long[] __DNA__FIELD__custom_tx = new long[]{136, 192};
 
 	/**
+	 * Field descriptor (offset) for struct member 'custom_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__custom_scale);
+	 * CPointer&lt;Float&gt; p_custom_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'custom_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__custom_scale = new long[]{140, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad1 = new long[]{144, 204};
+
+	/**
 	 * Field descriptor (offset) for struct member 'loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transforms - written in by actions or transform </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -447,7 +583,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{140, 200};
+	public static final long[] __DNA__FIELD__loc = new long[]{148, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -467,10 +603,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{152, 212};
+	public static final long[] __DNA__FIELD__size = new long[]{160, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotations - written in by actions or transform (but only one representation gets used at any time) euler rotation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,10 +626,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eul = new long[]{164, 224};
+	public static final long[] __DNA__FIELD__eul = new long[]{172, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quaternion rotation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -507,7 +649,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quat = new long[]{176, 236};
+	public static final long[] __DNA__FIELD__quat = new long[]{184, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
@@ -527,10 +669,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAxis = new long[]{192, 252};
+	public static final long[] __DNA__FIELD__rotAxis = new long[]{200, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAngle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis-angle rotation </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,10 +692,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotAngle = new long[]{204, 264};
+	public static final long[] __DNA__FIELD__rotAngle = new long[]{212, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eRotationModes - rotation representation to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -567,7 +715,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotmode = new long[]{208, 268};
+	public static final long[] __DNA__FIELD__rotmode = new long[]{216, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -587,10 +735,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{210, 270};
+	public static final long[] __DNA__FIELD__pad = new long[]{218, 278};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chan_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix result of loc/quat/size, and where we put deform in, see next line </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -607,10 +758,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chan_mat = new long[]{212, 272};
+	public static final long[] __DNA__FIELD__chan_mat = new long[]{220, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -627,10 +781,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_mat = new long[]{276, 336};
+	public static final long[] __DNA__FIELD__pose_mat = new long[]{284, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inverse result of constraints. doesn't include effect of restposition, parent, and local transform </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -647,10 +804,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constinv = new long[]{340, 400};
+	public static final long[] __DNA__FIELD__constinv = new long[]{348, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actually pose_mat[3] </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -667,10 +827,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_head = new long[]{404, 464};
+	public static final long[] __DNA__FIELD__pose_head = new long[]{412, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> also used for drawing help lines... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -687,7 +850,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_tail = new long[]{416, 476};
+	public static final long[] __DNA__FIELD__pose_tail = new long[]{424, 484};
 
 	/**
 	 * Field descriptor (offset) for struct member 'limitmin'.
@@ -707,10 +870,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__limitmin = new long[]{428, 488};
+	public static final long[] __DNA__FIELD__limitmin = new long[]{436, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'limitmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF constraint, note! - these are stored in degrees, not radians </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -727,10 +893,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__limitmax = new long[]{440, 500};
+	public static final long[] __DNA__FIELD__limitmax = new long[]{448, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stiffness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF stiffness </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -747,7 +916,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stiffness = new long[]{452, 512};
+	public static final long[] __DNA__FIELD__stiffness = new long[]{460, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikstretch'.
@@ -767,10 +936,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikstretch = new long[]{464, 524};
+	public static final long[] __DNA__FIELD__ikstretch = new long[]{472, 532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ikrotweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint rotation constraint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -787,10 +959,13 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ikrotweight = new long[]{468, 528};
+	public static final long[] __DNA__FIELD__ikrotweight = new long[]{476, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iklinweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint stretch constraint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -807,10 +982,219 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iklinweight = new long[]{472, 532};
+	public static final long[] __DNA__FIELD__iklinweight = new long[]{480, 540};
+
+	/**
+	 * Field descriptor (offset) for struct member 'roll1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__roll1);
+	 * CPointer&lt;Float&gt; p_roll1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'roll1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__roll1 = new long[]{484, 544};
+
+	/**
+	 * Field descriptor (offset) for struct member 'roll2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__roll2);
+	 * CPointer&lt;Float&gt; p_roll2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'roll2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__roll2 = new long[]{488, 548};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveInX'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__curveInX);
+	 * CPointer&lt;Float&gt; p_curveInX = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveInX'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveInX = new long[]{492, 552};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveInY'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__curveInY);
+	 * CPointer&lt;Float&gt; p_curveInY = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveInY'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveInY = new long[]{496, 556};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveOutX'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__curveOutX);
+	 * CPointer&lt;Float&gt; p_curveOutX = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveOutX'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveOutX = new long[]{500, 560};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curveOutY'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__curveOutY);
+	 * CPointer&lt;Float&gt; p_curveOutY = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curveOutY'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curveOutY = new long[]{504, 564};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scaleIn'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__scaleIn);
+	 * CPointer&lt;Float&gt; p_scaleIn = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scaleIn'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scaleIn = new long[]{508, 568};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scaleOut'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__scaleOut);
+	 * CPointer&lt;Float&gt; p_scaleOut = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scaleOut'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scaleOut = new long[]{512, 572};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bbone_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> next/prev bones to use as handle references when calculating bbones (optional) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__bbone_prev);
+	 * CPointer&lt;CPointer&lt;bPoseChannel&gt;&gt; p_bbone_prev = p.cast(new Class[]{CPointer.class, bPoseChannel.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bbone_prev'</li>
+	 * <li>Signature: 'bPoseChannel*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bbone_prev = new long[]{516, 576};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bbone_next'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel bposechannel = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel.__dna__addressof(bPoseChannel.__DNA__FIELD__bbone_next);
+	 * CPointer&lt;CPointer&lt;bPoseChannel&gt;&gt; p_bbone_next = p.cast(new Class[]{CPointer.class, bPoseChannel.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bbone_next'</li>
+	 * <li>Signature: 'bPoseChannel*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bbone_next = new long[]{520, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use for outliner </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -827,7 +1211,7 @@ public class bPoseChannel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp = new long[]{476, 536};
+	public static final long[] __DNA__FIELD__temp = new long[]{524, 592};
 
 	public bPoseChannel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -903,6 +1287,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this PoseChannel </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -920,6 +1307,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-Defined Properties on this PoseChannel </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -935,6 +1325,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraints'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraints that act on this PoseChannel </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -949,6 +1342,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'constraints'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraints that act on this PoseChannel </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -971,6 +1367,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> need to match bone name length: MAXBONENAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -989,6 +1388,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> need to match bone name length: MAXBONENAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1011,6 +1413,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic, for detecting transform changes </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1025,6 +1430,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic, for detecting transform changes </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1039,6 +1447,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'ikflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for IK bones </p>
 	 * @see #__DNA__FIELD__ikflag
 	 */
 	
@@ -1053,6 +1464,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'ikflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings for IK bones </p>
 	 * @see #__DNA__FIELD__ikflag
 	 */
 	
@@ -1067,6 +1481,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'protectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> protect channels from being transformed </p>
 	 * @see #__DNA__FIELD__protectflag
 	 */
 	
@@ -1081,6 +1498,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'protectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> protect channels from being transformed </p>
 	 * @see #__DNA__FIELD__protectflag
 	 */
 	
@@ -1095,6 +1515,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'agrp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of action-group this bone belongs to (0 = default/no group) </p>
 	 * @see #__DNA__FIELD__agrp_index
 	 */
 	
@@ -1109,6 +1532,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'agrp_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index of action-group this bone belongs to (0 = default/no group) </p>
 	 * @see #__DNA__FIELD__agrp_index
 	 */
 	
@@ -1123,6 +1549,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'constflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for quick detecting which constraints affect this channel </p>
 	 * @see #__DNA__FIELD__constflag
 	 */
 	
@@ -1137,6 +1566,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'constflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for quick detecting which constraints affect this channel </p>
 	 * @see #__DNA__FIELD__constflag
 	 */
 	
@@ -1151,6 +1583,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'selectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of bone flag, so you can work with library armatures, not for runtime use </p>
 	 * @see #__DNA__FIELD__selectflag
 	 */
 	
@@ -1165,6 +1600,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'selectflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of bone flag, so you can work with library armatures, not for runtime use </p>
 	 * @see #__DNA__FIELD__selectflag
 	 */
 	
@@ -1178,6 +1616,62 @@ public class bPoseChannel extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'drawflag'.
+	 * @see #__DNA__FIELD__drawflag
+	 */
+	
+	public byte getDrawflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 114);
+		} else {
+			return __io__block.readByte(__io__address + 94);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'drawflag'.
+	 * @see #__DNA__FIELD__drawflag
+	 */
+	
+	public void setDrawflag(byte drawflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 114, drawflag);
+		} else {
+			__io__block.writeByte(__io__address + 94, drawflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bboneflag'.
+	 * @see #__DNA__FIELD__bboneflag
+	 */
+	
+	public byte getBboneflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 115);
+		} else {
+			return __io__block.readByte(__io__address + 95);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bboneflag'.
+	 * @see #__DNA__FIELD__bboneflag
+	 */
+	
+	public void setBboneflag(byte bboneflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 115, bboneflag);
+		} else {
+			__io__block.writeByte(__io__address + 95, bboneflag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad0'.
 	 * @see #__DNA__FIELD__pad0
 	 */
@@ -1186,12 +1680,12 @@ public class bPoseChannel extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 114, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 94, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1204,9 +1698,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 114;
+			__dna__offset = 116;
 		} else {
-			__dna__offset = 94;
+			__dna__offset = 96;
 		}
 		if (__io__equals(pad0, __io__address + __dna__offset)) {
 			return;
@@ -1219,6 +1713,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * @see #__DNA__FIELD__bone
 	 */
 	
@@ -1236,6 +1733,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'bone'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * @see #__DNA__FIELD__bone
 	 */
 	
@@ -1251,6 +1751,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -1268,6 +1771,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -1283,6 +1789,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'child'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose, the 'ik' child, for b-bones </p>
 	 * @see #__DNA__FIELD__child
 	 */
 	
@@ -1300,6 +1809,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'child'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> set on read file or rebuild pose, the 'ik' child, for b-bones </p>
 	 * @see #__DNA__FIELD__child
 	 */
 	
@@ -1315,6 +1827,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'iktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "IK trees" - only while evaluating pose </p>
 	 * @see #__DNA__FIELD__iktree
 	 */
 	
@@ -1329,6 +1844,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'iktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> "IK trees" - only while evaluating pose </p>
 	 * @see #__DNA__FIELD__iktree
 	 */
 	
@@ -1351,6 +1869,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'siktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spline-IK "trees" - only while evaluating pose </p>
 	 * @see #__DNA__FIELD__siktree
 	 */
 	
@@ -1365,6 +1886,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'siktree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spline-IK "trees" - only while evaluating pose </p>
 	 * @see #__DNA__FIELD__siktree
 	 */
 	
@@ -1387,6 +1911,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'mpath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion path cache for this bone </p>
 	 * @see #__DNA__FIELD__mpath
 	 */
 	
@@ -1404,6 +1931,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'mpath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> motion path cache for this bone </p>
 	 * @see #__DNA__FIELD__mpath
 	 */
 	
@@ -1419,6 +1949,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'custom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draws custom object instead of default bone shape </p>
 	 * @see #__DNA__FIELD__custom
 	 */
 	
@@ -1436,6 +1969,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'custom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> draws custom object instead of default bone shape </p>
 	 * @see #__DNA__FIELD__custom
 	 */
 	
@@ -1451,6 +1987,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'custom_tx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
 	
@@ -1468,6 +2007,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'custom_tx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> odd feature, display with another bones transform. needed in rare cases for advanced rigs, since the alternative is highly complicated - campbell </p>
 	 * @see #__DNA__FIELD__custom_tx
 	 */
 	
@@ -1482,7 +2024,78 @@ public class bPoseChannel extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'custom_scale'.
+	 * @see #__DNA__FIELD__custom_scale
+	 */
+	
+	public float getCustom_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 200);
+		} else {
+			return __io__block.readFloat(__io__address + 140);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'custom_scale'.
+	 * @see #__DNA__FIELD__custom_scale
+	 */
+	
+	public void setCustom_scale(float custom_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 200, custom_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 140, custom_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public CArrayFacade<Byte> getPad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public void setPad1(CArrayFacade<Byte> pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 204;
+		} else {
+			__dna__offset = 144;
+		}
+		if (__io__equals(pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad1);
+		} else {
+			__io__generic__copy( getPad1(), pad1);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transforms - written in by actions or transform </p>
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -1493,14 +2106,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> transforms - written in by actions or transform </p>
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -1508,9 +2124,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -1533,9 +2149,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1548,9 +2164,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -1563,6 +2179,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'eul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotations - written in by actions or transform (but only one representation gets used at any time) euler rotation </p>
 	 * @see #__DNA__FIELD__eul
 	 */
 	
@@ -1573,14 +2192,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'eul'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> rotations - written in by actions or transform (but only one representation gets used at any time) euler rotation </p>
 	 * @see #__DNA__FIELD__eul
 	 */
 	
@@ -1588,9 +2210,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		}
 		if (__io__equals(eul, __io__address + __dna__offset)) {
 			return;
@@ -1603,6 +2225,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quaternion rotation </p>
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -1613,14 +2238,17 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'quat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quaternion rotation </p>
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -1628,9 +2256,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 236;
+			__dna__offset = 244;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		}
 		if (__io__equals(quat, __io__address + __dna__offset)) {
 			return;
@@ -1653,9 +2281,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1668,9 +2296,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 252;
+			__dna__offset = 260;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		}
 		if (__io__equals(rotAxis, __io__address + __dna__offset)) {
 			return;
@@ -1683,57 +2311,69 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'rotAngle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis-angle rotation </p>
 	 * @see #__DNA__FIELD__rotAngle
 	 */
 	
 	public float getRotAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 272);
 		} else {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'rotAngle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> axis-angle rotation </p>
 	 * @see #__DNA__FIELD__rotAngle
 	 */
 	
 	public void setRotAngle(float rotAngle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 264, rotAngle);
+			__io__block.writeFloat(__io__address + 272, rotAngle);
 		} else {
-			__io__block.writeFloat(__io__address + 204, rotAngle);
+			__io__block.writeFloat(__io__address + 212, rotAngle);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rotmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eRotationModes - rotation representation to use </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
 	public short getRotmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 268);
+			return __io__block.readShort(__io__address + 276);
 		} else {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 216);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'rotmode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eRotationModes - rotation representation to use </p>
 	 * @see #__DNA__FIELD__rotmode
 	 */
 	
 	public void setRotmode(short rotmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 268, rotmode);
+			__io__block.writeShort(__io__address + 276, rotmode);
 		} else {
-			__io__block.writeShort(__io__address + 208, rotmode);
+			__io__block.writeShort(__io__address + 216, rotmode);
 		}
 	}
 
@@ -1745,9 +2385,9 @@ public class bPoseChannel extends CFacade {
 	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 270);
+			return __io__block.readShort(__io__address + 278);
 		} else {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 218);
 		}
 	}
 
@@ -1759,14 +2399,17 @@ public class bPoseChannel extends CFacade {
 	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 270, pad);
+			__io__block.writeShort(__io__address + 278, pad);
 		} else {
-			__io__block.writeShort(__io__address + 210, pad);
+			__io__block.writeShort(__io__address + 218, pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'chan_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix result of loc/quat/size, and where we put deform in, see next line </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -1778,14 +2421,17 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'chan_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix result of loc/quat/size, and where we put deform in, see next line </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -1793,9 +2439,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		}
 		if (__io__equals(chan_mat, __io__address + __dna__offset)) {
 			return;
@@ -1808,6 +2454,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'pose_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
 	
@@ -1819,14 +2468,17 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pose_mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
 	
@@ -1834,9 +2486,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 344;
 		} else {
-			__dna__offset = 276;
+			__dna__offset = 284;
 		}
 		if (__io__equals(pose_mat, __io__address + __dna__offset)) {
 			return;
@@ -1849,6 +2501,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'constinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inverse result of constraints. doesn't include effect of restposition, parent, and local transform </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
 	
@@ -1860,14 +2515,17 @@ public class bPoseChannel extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'constinv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> inverse result of constraints. doesn't include effect of restposition, parent, and local transform </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
 	
@@ -1875,9 +2533,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 400;
+			__dna__offset = 408;
 		} else {
-			__dna__offset = 340;
+			__dna__offset = 348;
 		}
 		if (__io__equals(constinv, __io__address + __dna__offset)) {
 			return;
@@ -1890,6 +2548,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'pose_head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actually pose_mat[3] </p>
 	 * @see #__DNA__FIELD__pose_head
 	 */
 	
@@ -1900,14 +2561,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pose_head'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actually pose_mat[3] </p>
 	 * @see #__DNA__FIELD__pose_head
 	 */
 	
@@ -1915,9 +2579,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 464;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 404;
+			__dna__offset = 412;
 		}
 		if (__io__equals(pose_head, __io__address + __dna__offset)) {
 			return;
@@ -1930,6 +2594,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'pose_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> also used for drawing help lines... </p>
 	 * @see #__DNA__FIELD__pose_tail
 	 */
 	
@@ -1940,14 +2607,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pose_tail'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> also used for drawing help lines... </p>
 	 * @see #__DNA__FIELD__pose_tail
 	 */
 	
@@ -1955,9 +2625,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 476;
+			__dna__offset = 484;
 		} else {
-			__dna__offset = 416;
+			__dna__offset = 424;
 		}
 		if (__io__equals(pose_tail, __io__address + __dna__offset)) {
 			return;
@@ -1980,9 +2650,9 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1995,9 +2665,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 488;
+			__dna__offset = 496;
 		} else {
-			__dna__offset = 428;
+			__dna__offset = 436;
 		}
 		if (__io__equals(limitmin, __io__address + __dna__offset)) {
 			return;
@@ -2010,6 +2680,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'limitmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF constraint, note! - these are stored in degrees, not radians </p>
 	 * @see #__DNA__FIELD__limitmax
 	 */
 	
@@ -2020,14 +2693,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'limitmax'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF constraint, note! - these are stored in degrees, not radians </p>
 	 * @see #__DNA__FIELD__limitmax
 	 */
 	
@@ -2035,9 +2711,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 500;
+			__dna__offset = 508;
 		} else {
-			__dna__offset = 440;
+			__dna__offset = 448;
 		}
 		if (__io__equals(limitmax, __io__address + __dna__offset)) {
 			return;
@@ -2050,6 +2726,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'stiffness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF stiffness </p>
 	 * @see #__DNA__FIELD__stiffness
 	 */
 	
@@ -2060,14 +2739,17 @@ public class bPoseChannel extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'stiffness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> DOF stiffness </p>
 	 * @see #__DNA__FIELD__stiffness
 	 */
 	
@@ -2075,9 +2757,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 512;
+			__dna__offset = 520;
 		} else {
-			__dna__offset = 452;
+			__dna__offset = 460;
 		}
 		if (__io__equals(stiffness, __io__address + __dna__offset)) {
 			return;
@@ -2096,9 +2778,9 @@ public class bPoseChannel extends CFacade {
 	public float getIkstretch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 524);
+			return __io__block.readFloat(__io__address + 532);
 		} else {
-			return __io__block.readFloat(__io__address + 464);
+			return __io__block.readFloat(__io__address + 472);
 		}
 	}
 
@@ -2110,70 +2792,385 @@ public class bPoseChannel extends CFacade {
 	public void setIkstretch(float ikstretch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 524, ikstretch);
+			__io__block.writeFloat(__io__address + 532, ikstretch);
 		} else {
-			__io__block.writeFloat(__io__address + 464, ikstretch);
+			__io__block.writeFloat(__io__address + 472, ikstretch);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'ikrotweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint rotation constraint </p>
 	 * @see #__DNA__FIELD__ikrotweight
 	 */
 	
 	public float getIkrotweight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 528);
+			return __io__block.readFloat(__io__address + 536);
 		} else {
-			return __io__block.readFloat(__io__address + 468);
+			return __io__block.readFloat(__io__address + 476);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ikrotweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint rotation constraint </p>
 	 * @see #__DNA__FIELD__ikrotweight
 	 */
 	
 	public void setIkrotweight(float ikrotweight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 528, ikrotweight);
+			__io__block.writeFloat(__io__address + 536, ikrotweight);
 		} else {
-			__io__block.writeFloat(__io__address + 468, ikrotweight);
+			__io__block.writeFloat(__io__address + 476, ikrotweight);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'iklinweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint stretch constraint </p>
 	 * @see #__DNA__FIELD__iklinweight
 	 */
 	
 	public float getIklinweight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 532);
+			return __io__block.readFloat(__io__address + 540);
 		} else {
-			return __io__block.readFloat(__io__address + 472);
+			return __io__block.readFloat(__io__address + 480);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'iklinweight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> weight of joint stretch constraint </p>
 	 * @see #__DNA__FIELD__iklinweight
 	 */
 	
 	public void setIklinweight(float iklinweight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 532, iklinweight);
+			__io__block.writeFloat(__io__address + 540, iklinweight);
 		} else {
-			__io__block.writeFloat(__io__address + 472, iklinweight);
+			__io__block.writeFloat(__io__address + 480, iklinweight);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'roll1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
+	 * @see #__DNA__FIELD__roll1
+	 */
+	
+	public float getRoll1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 544);
+		} else {
+			return __io__block.readFloat(__io__address + 484);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'roll1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> curved bones settings - these are for animating, and are applied on top of the copies in pchan->bone </p>
+	 * @see #__DNA__FIELD__roll1
+	 */
+	
+	public void setRoll1(float roll1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 544, roll1);
+		} else {
+			__io__block.writeFloat(__io__address + 484, roll1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'roll2'.
+	 * @see #__DNA__FIELD__roll2
+	 */
+	
+	public float getRoll2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 548);
+		} else {
+			return __io__block.readFloat(__io__address + 488);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'roll2'.
+	 * @see #__DNA__FIELD__roll2
+	 */
+	
+	public void setRoll2(float roll2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 548, roll2);
+		} else {
+			__io__block.writeFloat(__io__address + 488, roll2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveInX'.
+	 * @see #__DNA__FIELD__curveInX
+	 */
+	
+	public float getCurveInX() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 552);
+		} else {
+			return __io__block.readFloat(__io__address + 492);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveInX'.
+	 * @see #__DNA__FIELD__curveInX
+	 */
+	
+	public void setCurveInX(float curveInX) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 552, curveInX);
+		} else {
+			__io__block.writeFloat(__io__address + 492, curveInX);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveInY'.
+	 * @see #__DNA__FIELD__curveInY
+	 */
+	
+	public float getCurveInY() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 556);
+		} else {
+			return __io__block.readFloat(__io__address + 496);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveInY'.
+	 * @see #__DNA__FIELD__curveInY
+	 */
+	
+	public void setCurveInY(float curveInY) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 556, curveInY);
+		} else {
+			__io__block.writeFloat(__io__address + 496, curveInY);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveOutX'.
+	 * @see #__DNA__FIELD__curveOutX
+	 */
+	
+	public float getCurveOutX() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 560);
+		} else {
+			return __io__block.readFloat(__io__address + 500);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveOutX'.
+	 * @see #__DNA__FIELD__curveOutX
+	 */
+	
+	public void setCurveOutX(float curveOutX) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 560, curveOutX);
+		} else {
+			__io__block.writeFloat(__io__address + 500, curveOutX);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curveOutY'.
+	 * @see #__DNA__FIELD__curveOutY
+	 */
+	
+	public float getCurveOutY() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 564);
+		} else {
+			return __io__block.readFloat(__io__address + 504);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'curveOutY'.
+	 * @see #__DNA__FIELD__curveOutY
+	 */
+	
+	public void setCurveOutY(float curveOutY) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 564, curveOutY);
+		} else {
+			__io__block.writeFloat(__io__address + 504, curveOutY);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scaleIn'.
+	 * @see #__DNA__FIELD__scaleIn
+	 */
+	
+	public float getScaleIn() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 568);
+		} else {
+			return __io__block.readFloat(__io__address + 508);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scaleIn'.
+	 * @see #__DNA__FIELD__scaleIn
+	 */
+	
+	public void setScaleIn(float scaleIn) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 568, scaleIn);
+		} else {
+			__io__block.writeFloat(__io__address + 508, scaleIn);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scaleOut'.
+	 * @see #__DNA__FIELD__scaleOut
+	 */
+	
+	public float getScaleOut() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 572);
+		} else {
+			return __io__block.readFloat(__io__address + 512);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scaleOut'.
+	 * @see #__DNA__FIELD__scaleOut
+	 */
+	
+	public void setScaleOut(float scaleOut) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 572, scaleOut);
+		} else {
+			__io__block.writeFloat(__io__address + 512, scaleOut);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bbone_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> next/prev bones to use as handle references when calculating bbones (optional) </p>
+	 * @see #__DNA__FIELD__bbone_prev
+	 */
+	
+	public CPointer<bPoseChannel> getBbone_prev() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 576);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 516);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bPoseChannel.class};
+		return new CPointer<bPoseChannel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPoseChannel.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'bbone_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> next/prev bones to use as handle references when calculating bbones (optional) </p>
+	 * @see #__DNA__FIELD__bbone_prev
+	 */
+	
+	public void setBbone_prev(CPointer<bPoseChannel> bbone_prev) throws IOException
+	{
+		long __address = ((bbone_prev == null) ? 0 : bbone_prev.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 576, __address);
+		} else {
+			__io__block.writeLong(__io__address + 516, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bbone_next'.
+	 * @see #__DNA__FIELD__bbone_next
+	 */
+	
+	public CPointer<bPoseChannel> getBbone_next() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 584);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 520);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bPoseChannel.class};
+		return new CPointer<bPoseChannel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bPoseChannel.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'bbone_next'.
+	 * @see #__DNA__FIELD__bbone_next
+	 */
+	
+	public void setBbone_next(CPointer<bPoseChannel> bbone_next) throws IOException
+	{
+		long __address = ((bbone_next == null) ? 0 : bbone_next.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 584, __address);
+		} else {
+			__io__block.writeLong(__io__address + 520, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use for outliner </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -2181,9 +3178,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 536);
+			__dna__targetAddress = __io__block.readLong(__io__address + 592);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 476);
+			__dna__targetAddress = __io__block.readLong(__io__address + 524);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2191,6 +3188,9 @@ public class bPoseChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> use for outliner </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -2198,9 +3198,9 @@ public class bPoseChannel extends CFacade {
 	{
 		long __address = ((temp == null) ? 0 : temp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 536, __address);
+			__io__block.writeLong(__io__address + 592, __address);
 		} else {
-			__io__block.writeLong(__io__address + 476, __address);
+			__io__block.writeLong(__io__address + 524, __address);
 		}
 	}
 

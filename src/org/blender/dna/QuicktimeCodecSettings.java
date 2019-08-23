@@ -26,10 +26,13 @@ public class QuicktimeCodecSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 166;
+	public static final int __DNA__SDNA_INDEX = 167;
 
 	/**
 	 * Field descriptor (offset) for struct member 'codecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Codec settings detailed for 2.5 implementation Types defined in quicktime_export.h </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +53,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'codecSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +76,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'codec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings not available in current QTKit API </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,6 +139,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'codecTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +162,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'minSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,6 +185,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'minTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,6 +228,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bitRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitrate in bps </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -230,6 +251,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'audiocodecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Audio Codec settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -378,6 +402,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'codecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Codec settings detailed for 2.5 implementation Types defined in quicktime_export.h </p>
 	 * @see #__DNA__FIELD__codecType
 	 */
 	
@@ -392,6 +419,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'codecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Codec settings detailed for 2.5 implementation Types defined in quicktime_export.h </p>
 	 * @see #__DNA__FIELD__codecType
 	 */
 	
@@ -406,6 +436,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'codecSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__codecSpatialQuality
 	 */
 	
@@ -420,6 +453,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'codecSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__codecSpatialQuality
 	 */
 	
@@ -434,6 +470,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'codec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings not available in current QTKit API </p>
 	 * @see #__DNA__FIELD__codec
 	 */
 	
@@ -448,6 +487,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'codec'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Settings not available in current QTKit API </p>
 	 * @see #__DNA__FIELD__codec
 	 */
 	
@@ -518,6 +560,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'codecTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__codecTemporalQuality
 	 */
 	
@@ -532,6 +577,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'codecTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__codecTemporalQuality
 	 */
 	
@@ -546,6 +594,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'minSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__minSpatialQuality
 	 */
 	
@@ -560,6 +611,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'minSpatialQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__minSpatialQuality
 	 */
 	
@@ -574,6 +628,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'minTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__minTemporalQuality
 	 */
 	
@@ -588,6 +645,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'minTemporalQuality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> in 0-100 scale, to be translated in 0-1024 for qt use </p>
 	 * @see #__DNA__FIELD__minTemporalQuality
 	 */
 	
@@ -630,6 +690,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'bitRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitrate in bps </p>
 	 * @see #__DNA__FIELD__bitRate
 	 */
 	
@@ -644,6 +707,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'bitRate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> bitrate in bps </p>
 	 * @see #__DNA__FIELD__bitRate
 	 */
 	
@@ -658,6 +724,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'audiocodecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Audio Codec settings </p>
 	 * @see #__DNA__FIELD__audiocodecType
 	 */
 	
@@ -672,6 +741,9 @@ public class QuicktimeCodecSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'audiocodecType'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Audio Codec settings </p>
 	 * @see #__DNA__FIELD__audiocodecType
 	 */
 	

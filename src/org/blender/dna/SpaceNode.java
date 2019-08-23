@@ -27,7 +27,7 @@ public class SpaceNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 229;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +71,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +139,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +164,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +209,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context, no need to save in file? well... pinning... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +252,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> menunr: browse id block in header </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +295,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> internal state variables </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +338,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for drawing the backdrop </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +361,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> zoom for backdrop </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +384,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mouse pos for drawing socketless link and adding nodes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +407,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'treepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +470,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tree_idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tree type for the current node tree </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -451,6 +493,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'treetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> treetype: as same nodetree->type </p>
+	 * @deprecated
+	 *  Deprecatedtreetype: as same nodetree->type </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,6 +538,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texfrom object, world or brush </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -511,6 +561,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shader from object or world </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -531,6 +584,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently on 0/1, for auto compo </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -551,6 +607,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction for offsetting nodes on insertion </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -591,6 +650,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'linkdrag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data for modal linking operator </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -611,6 +673,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'iofsd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op temporary data for node insert offset (in UI called Auto-offset) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -631,6 +696,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -723,6 +791,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -737,6 +808,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -787,6 +861,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -801,6 +880,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -815,6 +899,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -833,6 +922,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -855,6 +949,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -869,6 +968,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -923,6 +1027,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context, no need to save in file? well... pinning... </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -940,6 +1047,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context, no need to save in file? well... pinning... </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -983,6 +1093,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> menunr: browse id block in header </p>
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
@@ -997,6 +1110,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> menunr: browse id block in header </p>
 	 * @see #__DNA__FIELD__pad1
 	 */
 	
@@ -1039,6 +1155,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> internal state variables </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -1053,6 +1172,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> internal state variables </p>
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -1095,6 +1217,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for drawing the backdrop </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
@@ -1109,6 +1234,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'yof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset for drawing the backdrop </p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
@@ -1123,6 +1251,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> zoom for backdrop </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
@@ -1137,6 +1268,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'zoom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> zoom for backdrop </p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
@@ -1151,6 +1285,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mouse pos for drawing socketless link and adding nodes </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -1169,6 +1306,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'cursor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mouse pos for drawing socketless link and adding nodes </p>
 	 * @see #__DNA__FIELD__cursor
 	 */
 	
@@ -1191,6 +1331,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'treepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * @see #__DNA__FIELD__treepath
 	 */
 	
@@ -1205,6 +1348,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'treepath'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nodetree pointer info is all in the path stack now, remove later on and use {@link bNodeTreePath}  instead. For now these variables are set when pushing/popping from path stack, to avoid having to update all the functions and operators. Can be done when design is accepted and everything is properly tested. </p>
 	 * @see #__DNA__FIELD__treepath
 	 */
 	
@@ -1291,6 +1437,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'tree_idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tree type for the current node tree </p>
 	 * @see #__DNA__FIELD__tree_idname
 	 */
 	
@@ -1309,6 +1458,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'tree_idname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> tree type for the current node tree </p>
 	 * @see #__DNA__FIELD__tree_idname
 	 */
 	
@@ -1331,6 +1483,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'treetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> treetype: as same nodetree->type </p>
+	 * @deprecated
+	 *  Deprecatedtreetype: as same nodetree->type </p>
 	 * @see #__DNA__FIELD__treetype
 	 */
 	
@@ -1345,6 +1502,11 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'treetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> treetype: as same nodetree->type </p>
+	 * @deprecated
+	 *  Deprecatedtreetype: as same nodetree->type </p>
 	 * @see #__DNA__FIELD__treetype
 	 */
 	
@@ -1387,6 +1549,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'texfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texfrom object, world or brush </p>
 	 * @see #__DNA__FIELD__texfrom
 	 */
 	
@@ -1401,6 +1566,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'texfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texfrom object, world or brush </p>
 	 * @see #__DNA__FIELD__texfrom
 	 */
 	
@@ -1415,6 +1583,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'shaderfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shader from object or world </p>
 	 * @see #__DNA__FIELD__shaderfrom
 	 */
 	
@@ -1429,6 +1600,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'shaderfrom'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shader from object or world </p>
 	 * @see #__DNA__FIELD__shaderfrom
 	 */
 	
@@ -1443,6 +1617,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently on 0/1, for auto compo </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -1457,6 +1634,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently on 0/1, for auto compo </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -1471,6 +1651,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction for offsetting nodes on insertion </p>
 	 * @see #__DNA__FIELD__insert_ofs_dir
 	 */
 	
@@ -1485,6 +1668,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> direction for offsetting nodes on insertion </p>
 	 * @see #__DNA__FIELD__insert_ofs_dir
 	 */
 	
@@ -1527,6 +1713,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'linkdrag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data for modal linking operator </p>
 	 * @see #__DNA__FIELD__linkdrag
 	 */
 	
@@ -1541,6 +1730,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'linkdrag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary data for modal linking operator </p>
 	 * @see #__DNA__FIELD__linkdrag
 	 */
 	
@@ -1563,6 +1755,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'iofsd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op temporary data for node insert offset (in UI called Auto-offset) </p>
 	 * @see #__DNA__FIELD__iofsd
 	 */
 	
@@ -1580,6 +1775,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'iofsd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op temporary data for node insert offset (in UI called Auto-offset) </p>
 	 * @see #__DNA__FIELD__iofsd
 	 */
 	
@@ -1595,6 +1793,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1612,6 +1813,9 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grease-pencil data </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	

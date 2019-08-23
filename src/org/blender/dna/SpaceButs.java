@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceButs'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Properties Editor ==================================== Properties Editor </p>
  */
 
 @CMetaData(size32=232, size64=272)
@@ -27,7 +28,7 @@ public class SpaceButs extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 203;
+	public static final int __DNA__SDNA_INDEX = 207;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +230,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainbuser'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context tabs </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +273,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> align for panels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +296,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> preview is signal to refresh </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +319,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texture context selector (material, lamp, particles, world, other) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +402,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +445,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dataicon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -543,6 +580,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -557,6 +597,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -607,6 +650,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -621,6 +669,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -635,6 +688,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -653,6 +711,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -675,6 +738,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -689,6 +757,11 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'v2d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated, copied to region </p>
+	 * @deprecated
+	 *  Deprecateddeprecated, copied to region </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -767,6 +840,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'mainbuser'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context tabs </p>
 	 * @see #__DNA__FIELD__mainbuser
 	 */
 	
@@ -781,6 +857,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'mainbuser'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> context tabs </p>
 	 * @see #__DNA__FIELD__mainbuser
 	 */
 	
@@ -823,6 +902,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> align for panels </p>
 	 * @see #__DNA__FIELD__align
 	 */
 	
@@ -837,6 +919,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> align for panels </p>
 	 * @see #__DNA__FIELD__align
 	 */
 	
@@ -851,6 +936,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> preview is signal to refresh </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -865,6 +953,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'preview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> preview is signal to refresh </p>
 	 * @see #__DNA__FIELD__preview
 	 */
 	
@@ -879,6 +970,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture_context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texture context selector (material, lamp, particles, world, other) </p>
 	 * @see #__DNA__FIELD__texture_context
 	 */
 	
@@ -893,6 +987,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture_context'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> texture context selector (material, lamp, particles, world, other) </p>
 	 * @see #__DNA__FIELD__texture_context
 	 */
 	
@@ -1003,6 +1100,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1020,6 +1120,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'path'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1063,6 +1166,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Get method for struct member 'dataicon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__dataicon
 	 */
 	
@@ -1077,6 +1183,9 @@ public class SpaceButs extends CFacade {
 
 	/**
 	 * Set method for struct member 'dataicon'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime </p>
 	 * @see #__DNA__FIELD__dataicon
 	 */
 	

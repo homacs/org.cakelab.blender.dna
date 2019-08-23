@@ -27,10 +27,13 @@ public class bArmatureActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 325;
+	public static final int __DNA__SDNA_INDEX = 331;
 
 	/**
 	 * Field descriptor (offset) for struct member 'posechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=run, 1=enable, 2=disable, 3=set target, 4=set weight </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,6 +208,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'posechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__posechannel
 	 */
 	
@@ -217,6 +229,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'posechannel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__posechannel
 	 */
 	
@@ -239,6 +254,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__constraint
 	 */
 	
@@ -257,6 +275,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'constraint'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__constraint
 	 */
 	
@@ -279,6 +300,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=run, 1=enable, 2=disable, 3=set target, 4=set weight </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -293,6 +317,9 @@ public class bArmatureActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 0=run, 1=enable, 2=disable, 3=set target, 4=set weight </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

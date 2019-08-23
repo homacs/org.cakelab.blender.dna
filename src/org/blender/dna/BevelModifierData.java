@@ -51,6 +51,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'value'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general option flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'val_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used to interpret the bevel value </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lim_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to tell the tool how to limit the bevel </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +166,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'e_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to direct how edge weights are applied to verts </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +189,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +252,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> controls profile shape (0->1, .5 is round) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +275,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_ANGLE is set, this will be how "sharp" an edge must be before it gets beveled </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +298,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -335,6 +365,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'value'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	
@@ -349,6 +382,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'value'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	
@@ -363,6 +399,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
@@ -377,6 +416,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'res'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
@@ -391,6 +433,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general option flags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -405,6 +450,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> general option flags </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -419,6 +467,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'val_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used to interpret the bevel value </p>
 	 * @see #__DNA__FIELD__val_flags
 	 */
 	
@@ -433,6 +484,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'val_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used to interpret the bevel value </p>
 	 * @see #__DNA__FIELD__val_flags
 	 */
 	
@@ -447,6 +501,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'lim_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to tell the tool how to limit the bevel </p>
 	 * @see #__DNA__FIELD__lim_flags
 	 */
 	
@@ -461,6 +518,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'lim_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to tell the tool how to limit the bevel </p>
 	 * @see #__DNA__FIELD__lim_flags
 	 */
 	
@@ -475,6 +535,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'e_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to direct how edge weights are applied to verts </p>
 	 * @see #__DNA__FIELD__e_flags
 	 */
 	
@@ -489,6 +552,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'e_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to direct how edge weights are applied to verts </p>
 	 * @see #__DNA__FIELD__e_flags
 	 */
 	
@@ -503,6 +569,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -517,6 +586,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -587,6 +659,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> controls profile shape (0->1, .5 is round) </p>
 	 * @see #__DNA__FIELD__profile
 	 */
 	
@@ -601,6 +676,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> controls profile shape (0->1, .5 is round) </p>
 	 * @see #__DNA__FIELD__profile
 	 */
 	
@@ -615,6 +693,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bevel_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_ANGLE is set, this will be how "sharp" an edge must be before it gets beveled </p>
 	 * @see #__DNA__FIELD__bevel_angle
 	 */
 	
@@ -629,6 +710,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bevel_angle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_ANGLE is set, this will be how "sharp" an edge must be before it gets beveled </p>
 	 * @see #__DNA__FIELD__bevel_angle
 	 */
 	
@@ -643,6 +727,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -661,6 +748,9 @@ public class BevelModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> if the MOD_BEVEL_VWEIGHT option is set, this will be the name of the vert group, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	

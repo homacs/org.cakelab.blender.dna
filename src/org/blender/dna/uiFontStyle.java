@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiFontStyle'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> this state defines appearance of text </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -27,10 +28,13 @@ public class uiFontStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 232;
+	public static final int __DNA__SDNA_INDEX = 236;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved in file, 0 is default </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual size depends on 'global' dpi </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +78,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kerning'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unfitted or default kerning value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +100,29 @@ public class uiFontStyle extends CFacade {
 	public static final long[] __DNA__FIELD__kerning = new long[]{4, 4};
 
 	/**
+	 * Field descriptor (offset) for struct member 'word_wrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enable word-wrap when drawing </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiFontStyle uifontstyle = ...;
+	 * CPointer&lt;Object&gt; p = uifontstyle.__dna__addressof(uiFontStyle.__DNA__FIELD__word_wrap);
+	 * CPointer&lt;Byte&gt; p_word_wrap = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'word_wrap'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__word_wrap = new long[]{6, 6};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,11 +136,11 @@ public class uiFontStyle extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__pad = new long[]{7, 7};
 
 	/**
 	 * Field descriptor (offset) for struct member 'italic'.
@@ -131,6 +164,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style hint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +187,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value is amount of pixels blur </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +230,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shady'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow offset in pixels </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +253,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text align hint </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +276,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowalpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total alpha </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +299,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowcolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 value, typically white or black anyway </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,6 +330,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved in file, 0 is default </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -293,6 +347,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'uifont_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> saved in file, 0 is default </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -307,6 +364,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual size depends on 'global' dpi </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -321,6 +381,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'points'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual size depends on 'global' dpi </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -335,6 +398,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'kerning'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unfitted or default kerning value. </p>
 	 * @see #__DNA__FIELD__kerning
 	 */
 	
@@ -349,6 +415,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'kerning'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> unfitted or default kerning value. </p>
 	 * @see #__DNA__FIELD__kerning
 	 */
 	
@@ -362,6 +431,40 @@ public class uiFontStyle extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'word_wrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enable word-wrap when drawing </p>
+	 * @see #__DNA__FIELD__word_wrap
+	 */
+	
+	public byte getWord_wrap() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 6);
+		} else {
+			return __io__block.readByte(__io__address + 6);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'word_wrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> enable word-wrap when drawing </p>
+	 * @see #__DNA__FIELD__word_wrap
+	 */
+	
+	public void setWord_wrap(byte word_wrap) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 6, word_wrap);
+		} else {
+			__io__block.writeByte(__io__address + 6, word_wrap);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
@@ -370,12 +473,12 @@ public class uiFontStyle extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 7, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 7, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -388,9 +491,9 @@ public class uiFontStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6;
+			__dna__offset = 7;
 		} else {
-			__dna__offset = 6;
+			__dna__offset = 7;
 		}
 		if (__io__equals(pad, __io__address + __dna__offset)) {
 			return;
@@ -431,6 +534,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'bold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style hint </p>
 	 * @see #__DNA__FIELD__bold
 	 */
 	
@@ -445,6 +551,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'bold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> style hint </p>
 	 * @see #__DNA__FIELD__bold
 	 */
 	
@@ -459,6 +568,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'shadow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value is amount of pixels blur </p>
 	 * @see #__DNA__FIELD__shadow
 	 */
 	
@@ -473,6 +585,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'shadow'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> value is amount of pixels blur </p>
 	 * @see #__DNA__FIELD__shadow
 	 */
 	
@@ -515,6 +630,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'shady'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow offset in pixels </p>
 	 * @see #__DNA__FIELD__shady
 	 */
 	
@@ -529,6 +647,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'shady'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shadow offset in pixels </p>
 	 * @see #__DNA__FIELD__shady
 	 */
 	
@@ -543,6 +664,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text align hint </p>
 	 * @see #__DNA__FIELD__align
 	 */
 	
@@ -557,6 +681,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'align'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text align hint </p>
 	 * @see #__DNA__FIELD__align
 	 */
 	
@@ -571,6 +698,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'shadowalpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total alpha </p>
 	 * @see #__DNA__FIELD__shadowalpha
 	 */
 	
@@ -585,6 +715,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'shadowalpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total alpha </p>
 	 * @see #__DNA__FIELD__shadowalpha
 	 */
 	
@@ -599,6 +732,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'shadowcolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 value, typically white or black anyway </p>
 	 * @see #__DNA__FIELD__shadowcolor
 	 */
 	
@@ -613,6 +749,9 @@ public class uiFontStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'shadowcolor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> 1 value, typically white or black anyway </p>
 	 * @see #__DNA__FIELD__shadowcolor
 	 */
 	

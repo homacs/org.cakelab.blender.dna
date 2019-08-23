@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MLoopUV'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Java .Blend:</h4>
+ * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.
  */
 
 @CMetaData(size32=12, size64=12)
@@ -31,6 +32,9 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * The 2D UV coordinates.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +55,14 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	MLOOPUV_EDGESEL = (1 << 0),
+	 * 	MLOOPUV_VERTSEL = (1 << 1),
+	 * 	MLOOPUV_PINNED  = (1 << 2),
+	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,6 +91,9 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Get method for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -97,6 +112,9 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Set method for struct member 'uv'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * The 2D UV coordinates.
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -119,6 +137,14 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	MLOOPUV_EDGESEL = (1 << 0),
+	 * 	MLOOPUV_VERTSEL = (1 << 1),
+	 * 	MLOOPUV_PINNED  = (1 << 2),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -133,6 +159,14 @@ public class MLoopUV extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * <h3>Values:</h3>
+	 * 				<pre>
+	 * 	MLOOPUV_EDGESEL = (1 << 0),
+	 * 	MLOOPUV_VERTSEL = (1 << 1),
+	 * 	MLOOPUV_PINNED  = (1 << 2),
+	 * 				</pre>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

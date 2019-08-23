@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bObjectSolverConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link Camera}  Solver constraints </p>
  */
 
 @CMetaData(size32=144, size64=152)
@@ -27,7 +28,7 @@ public class bObjectSolverConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 376;
+	public static final int __DNA__SDNA_INDEX = 382;
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
@@ -91,6 +92,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'invmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> parent-inverse matrix to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,6 +254,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -265,6 +275,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -287,6 +300,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'invmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> parent-inverse matrix to use </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
 	
@@ -306,6 +322,9 @@ public class bObjectSolverConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'invmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> parent-inverse matrix to use </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
 	

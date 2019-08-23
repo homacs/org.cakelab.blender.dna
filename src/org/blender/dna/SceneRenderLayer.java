@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SceneRenderLayer'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Render Layers Render Layer </p>
  */
 
 @CMetaData(size32=152, size64=184)
@@ -27,7 +29,7 @@ public class SceneRenderLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 169;
+	public static final int __DNA__SDNA_INDEX = 170;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,10 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render layer name<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +117,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Group to override all other lights in this render layer
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene->lay itself has priority over this </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +163,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_zmask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> has to be after lay, this is for Z-masking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +186,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_exclude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used by internal, exclude </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +229,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'passflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pass_xor has to be after passflag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +272,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +295,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_alpha_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -383,6 +410,10 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render layer name<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -401,6 +432,10 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render layer name<h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -455,6 +490,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'light_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Group to override all other lights in this render layer
 	 * @see #__DNA__FIELD__light_override
 	 */
 	
@@ -472,6 +510,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'light_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Group to override all other lights in this render layer
 	 * @see #__DNA__FIELD__light_override
 	 */
 	
@@ -487,6 +528,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene->lay itself has priority over this </p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -501,6 +545,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> scene->lay itself has priority over this </p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -515,6 +562,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay_zmask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> has to be after lay, this is for Z-masking </p>
 	 * @see #__DNA__FIELD__lay_zmask
 	 */
 	
@@ -529,6 +579,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay_zmask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> has to be after lay, this is for Z-masking </p>
 	 * @see #__DNA__FIELD__lay_zmask
 	 */
 	
@@ -543,6 +596,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay_exclude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used by internal, exclude </p>
 	 * @see #__DNA__FIELD__lay_exclude
 	 */
 	
@@ -557,6 +613,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay_exclude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> not used by internal, exclude </p>
 	 * @see #__DNA__FIELD__lay_exclude
 	 */
 	
@@ -599,6 +658,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'passflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pass_xor has to be after passflag </p>
 	 * @see #__DNA__FIELD__passflag
 	 */
 	
@@ -613,6 +675,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'passflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> pass_xor has to be after passflag </p>
 	 * @see #__DNA__FIELD__passflag
 	 */
 	
@@ -655,6 +720,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
 	
@@ -669,6 +737,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'samples'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
 	
@@ -683,6 +754,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'pass_alpha_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	
@@ -697,6 +771,9 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'pass_alpha_threshold'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	

@@ -51,6 +51,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> new surface offset level </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> midpoint of the offset </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac_vg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor for the minimum weight to use when vgroups are used, avoids 0.0 weights giving duplicate geometry </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clamp offset based on surrounding geometry </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -335,6 +350,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -353,6 +371,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -375,6 +396,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> new surface offset level </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -389,6 +413,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> new surface offset level </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -403,6 +430,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> midpoint of the offset </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	
@@ -417,6 +447,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> midpoint of the offset </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	
@@ -431,6 +464,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset_fac_vg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor for the minimum weight to use when vgroups are used, avoids 0.0 weights giving duplicate geometry </p>
 	 * @see #__DNA__FIELD__offset_fac_vg
 	 */
 	
@@ -445,6 +481,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset_fac_vg'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> factor for the minimum weight to use when vgroups are used, avoids 0.0 weights giving duplicate geometry </p>
 	 * @see #__DNA__FIELD__offset_fac_vg
 	 */
 	
@@ -459,6 +498,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clamp offset based on surrounding geometry </p>
 	 * @see #__DNA__FIELD__offset_clamp
 	 */
 	
@@ -473,6 +515,9 @@ public class SolidifyModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> clamp offset based on surrounding geometry </p>
 	 * @see #__DNA__FIELD__offset_clamp
 	 */
 	

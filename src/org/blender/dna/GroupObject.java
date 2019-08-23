@@ -27,7 +27,7 @@ public class GroupObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 336;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +91,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lampren'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while render </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of ob->recalc, used to set animated groups OK </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -255,6 +261,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'lampren'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while render </p>
 	 * @see #__DNA__FIELD__lampren
 	 */
 	
@@ -272,6 +281,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'lampren'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> used while render </p>
 	 * @see #__DNA__FIELD__lampren
 	 */
 	
@@ -287,6 +299,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of ob->recalc, used to set animated groups OK </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
@@ -301,6 +316,9 @@ public class GroupObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'recalc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> copy of ob->recalc, used to set animated groups OK </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	

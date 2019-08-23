@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMouseSensor'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Defines the settings of a mouse sensor. </p>
  */
 
 @CMetaData(size32=136, size64=136)
@@ -27,10 +28,13 @@ public class bMouseSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 289;
+	public static final int __DNA__SDNA_INDEX = 295;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The type of key this sensor listens to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +95,9 @@ public class bMouseSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +166,9 @@ public class bMouseSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The type of key this sensor listens to. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -173,6 +183,9 @@ public class bMouseSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The type of key this sensor listens to. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -243,6 +256,9 @@ public class bMouseSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -257,6 +273,9 @@ public class bMouseSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flag to choose material or property </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	

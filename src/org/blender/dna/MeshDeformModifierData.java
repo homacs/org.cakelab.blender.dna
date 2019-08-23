@@ -51,6 +51,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mesh object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindinfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of static binding influences </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +180,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindoffsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offsets into influences array </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +203,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindcagecos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates that cage was bound with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +246,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcagevert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total vertices in mesh and cage </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,6 +269,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyngrid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of dynamic binding grid with dynamic binding cell points </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,6 +292,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyninfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic binding vertex influences </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,6 +315,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dynverts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> is this vertex bound or not? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,6 +338,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyngridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the dynamic bind grid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -331,6 +361,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totinfluence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of vertex influences </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,6 +384,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyncellmin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset of the dynamic bind grid </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -371,6 +407,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dyncellwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width of dynamic bind cell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,6 +430,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix of cage at binding time </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,6 +453,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindweights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage deprecated inefficient storage </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,6 +476,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bindcos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage of cage coords </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -495,6 +543,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mesh object </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -512,6 +563,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> mesh object </p>
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -527,6 +581,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -545,6 +602,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'defgrp_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -663,6 +723,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindinfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of static binding influences </p>
 	 * @see #__DNA__FIELD__bindinfluences
 	 */
 	
@@ -680,6 +743,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindinfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of static binding influences </p>
 	 * @see #__DNA__FIELD__bindinfluences
 	 */
 	
@@ -695,6 +761,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindoffsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offsets into influences array </p>
 	 * @see #__DNA__FIELD__bindoffsets
 	 */
 	
@@ -712,6 +781,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindoffsets'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offsets into influences array </p>
 	 * @see #__DNA__FIELD__bindoffsets
 	 */
 	
@@ -727,6 +799,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindcagecos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates that cage was bound with </p>
 	 * @see #__DNA__FIELD__bindcagecos
 	 */
 	
@@ -744,6 +819,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindcagecos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> coordinates that cage was bound with </p>
 	 * @see #__DNA__FIELD__bindcagecos
 	 */
 	
@@ -787,6 +865,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'totcagevert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total vertices in mesh and cage </p>
 	 * @see #__DNA__FIELD__totcagevert
 	 */
 	
@@ -801,6 +882,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'totcagevert'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total vertices in mesh and cage </p>
 	 * @see #__DNA__FIELD__totcagevert
 	 */
 	
@@ -815,6 +899,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dyngrid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of dynamic binding grid with dynamic binding cell points </p>
 	 * @see #__DNA__FIELD__dyngrid
 	 */
 	
@@ -832,6 +919,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dyngrid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> result of dynamic binding grid with dynamic binding cell points </p>
 	 * @see #__DNA__FIELD__dyngrid
 	 */
 	
@@ -847,6 +937,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dyninfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic binding vertex influences </p>
 	 * @see #__DNA__FIELD__dyninfluences
 	 */
 	
@@ -864,6 +957,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dyninfluences'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> dynamic binding vertex influences </p>
 	 * @see #__DNA__FIELD__dyninfluences
 	 */
 	
@@ -879,6 +975,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dynverts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> is this vertex bound or not? </p>
 	 * @see #__DNA__FIELD__dynverts
 	 */
 	
@@ -896,6 +995,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dynverts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> is this vertex bound or not? </p>
 	 * @see #__DNA__FIELD__dynverts
 	 */
 	
@@ -911,6 +1013,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dyngridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the dynamic bind grid </p>
 	 * @see #__DNA__FIELD__dyngridsize
 	 */
 	
@@ -925,6 +1030,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dyngridsize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size of the dynamic bind grid </p>
 	 * @see #__DNA__FIELD__dyngridsize
 	 */
 	
@@ -939,6 +1047,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'totinfluence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of vertex influences </p>
 	 * @see #__DNA__FIELD__totinfluence
 	 */
 	
@@ -953,6 +1064,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'totinfluence'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> total number of vertex influences </p>
 	 * @see #__DNA__FIELD__totinfluence
 	 */
 	
@@ -967,6 +1081,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dyncellmin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset of the dynamic bind grid </p>
 	 * @see #__DNA__FIELD__dyncellmin
 	 */
 	
@@ -985,6 +1102,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dyncellmin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> offset of the dynamic bind grid </p>
 	 * @see #__DNA__FIELD__dyncellmin
 	 */
 	
@@ -1007,6 +1127,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'dyncellwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width of dynamic bind cell </p>
 	 * @see #__DNA__FIELD__dyncellwidth
 	 */
 	
@@ -1021,6 +1144,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'dyncellwidth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> width of dynamic bind cell </p>
 	 * @see #__DNA__FIELD__dyncellwidth
 	 */
 	
@@ -1035,6 +1161,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix of cage at binding time </p>
 	 * @see #__DNA__FIELD__bindmat
 	 */
 	
@@ -1054,6 +1183,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindmat'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> matrix of cage at binding time </p>
 	 * @see #__DNA__FIELD__bindmat
 	 */
 	
@@ -1076,6 +1208,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindweights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage deprecated inefficient storage </p>
 	 * @see #__DNA__FIELD__bindweights
 	 */
 	
@@ -1093,6 +1228,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindweights'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage deprecated inefficient storage </p>
 	 * @see #__DNA__FIELD__bindweights
 	 */
 	
@@ -1108,6 +1246,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'bindcos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage of cage coords </p>
 	 * @see #__DNA__FIELD__bindcos
 	 */
 	
@@ -1125,6 +1266,9 @@ public class MeshDeformModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'bindcos'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> deprecated storage of cage coords </p>
 	 * @see #__DNA__FIELD__bindcos
 	 */
 	

@@ -27,7 +27,7 @@ public class CurveMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 449;
+	public static final int __DNA__SDNA_INDEX = 456;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -71,6 +71,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick multiply value for reading table </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +114,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxtable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the x-axis range for the table </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +157,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ext_out'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for extrapolated curves, the direction vector </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +180,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual curve </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +203,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'table'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display and evaluate table </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +226,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'premultable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled table </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,6 +249,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'premul_ext_in'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled extrapolation vector </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -335,6 +356,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick multiply value for reading table </p>
 	 * @see #__DNA__FIELD__range
 	 */
 	
@@ -349,6 +373,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> quick multiply value for reading table </p>
 	 * @see #__DNA__FIELD__range
 	 */
 	
@@ -391,6 +418,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'maxtable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the x-axis range for the table </p>
 	 * @see #__DNA__FIELD__maxtable
 	 */
 	
@@ -405,6 +435,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'maxtable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the x-axis range for the table </p>
 	 * @see #__DNA__FIELD__maxtable
 	 */
 	
@@ -459,6 +492,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'ext_out'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for extrapolated curves, the direction vector </p>
 	 * @see #__DNA__FIELD__ext_out
 	 */
 	
@@ -477,6 +513,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'ext_out'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for extrapolated curves, the direction vector </p>
 	 * @see #__DNA__FIELD__ext_out
 	 */
 	
@@ -499,6 +538,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual curve </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -516,6 +558,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> actual curve </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -531,6 +576,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'table'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display and evaluate table </p>
 	 * @see #__DNA__FIELD__table
 	 */
 	
@@ -548,6 +596,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'table'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> display and evaluate table </p>
 	 * @see #__DNA__FIELD__table
 	 */
 	
@@ -563,6 +614,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'premultable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled table </p>
 	 * @see #__DNA__FIELD__premultable
 	 */
 	
@@ -580,6 +634,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'premultable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled table </p>
 	 * @see #__DNA__FIELD__premultable
 	 */
 	
@@ -595,6 +652,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Get method for struct member 'premul_ext_in'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled extrapolation vector </p>
 	 * @see #__DNA__FIELD__premul_ext_in
 	 */
 	
@@ -613,6 +673,9 @@ public class CurveMap extends CFacade {
 
 	/**
 	 * Set method for struct member 'premul_ext_in'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> for RGB curves, premulled extrapolation vector </p>
 	 * @see #__DNA__FIELD__premul_ext_in
 	 */
 	

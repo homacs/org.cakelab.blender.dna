@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bActionChannel'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Legacy Data WARNING: Action Channels are now deprecated... they were part of the old animation system! (ONLY USED FOR DO_VERSIONS...)</p><p> Action Channels belong to Actions. They are linked with an IPO block, and can also own Constraint Channels in certain situations.</p><p> Action-Channels can only belong to one group at a time, but they still live the Action's list of achans (to preserve backwards compatibility, and also minimize the code that would need to be recoded). Grouped achans are stored at the start of the list, according to the position of the group in the list, and their position within the group. </p>
  */
 
 @CMetaData(size32=96, size64=120)
@@ -27,7 +29,7 @@ public class bActionChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 345;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +73,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action {@link Group}  this Action Channel belongs to </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +96,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> IPO block this action channel references </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +119,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraintChannels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraint Channels (when Action Channel represents an {@link Object}  or {@link Bone} ) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +142,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings accessed via bitmapping </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +165,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> channel name, MAX_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +188,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary setting - may be used to indicate group that channel belongs to during syncing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,6 +283,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action {@link Group}  this Action Channel belongs to </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -280,6 +303,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Action {@link Group}  this Action Channel belongs to </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -295,6 +321,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> IPO block this action channel references </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -312,6 +341,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> IPO block this action channel references </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -327,6 +359,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraintChannels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraint Channels (when Action Channel represents an {@link Object}  or {@link Bone} ) </p>
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -341,6 +376,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'constraintChannels'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Constraint Channels (when Action Channel represents an {@link Object}  or {@link Bone} ) </p>
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -363,6 +401,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings accessed via bitmapping </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -377,6 +418,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings accessed via bitmapping </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -391,6 +435,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> channel name, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -409,6 +456,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> channel name, MAX_NAME </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -431,6 +481,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary setting - may be used to indicate group that channel belongs to during syncing </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -445,6 +498,9 @@ public class bActionChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'temp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> temporary setting - may be used to indicate group that channel belongs to during syncing </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	

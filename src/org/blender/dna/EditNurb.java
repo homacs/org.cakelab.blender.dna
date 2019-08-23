@@ -31,6 +31,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'nurbs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base of nurbs' list (old Curve->editnurb) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +54,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index data for shape keys </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +77,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shapenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shape key being edited </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,6 +128,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'nurbs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base of nurbs' list (old Curve->editnurb) </p>
 	 * @see #__DNA__FIELD__nurbs
 	 */
 	
@@ -133,6 +145,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'nurbs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> base of nurbs' list (old Curve->editnurb) </p>
 	 * @see #__DNA__FIELD__nurbs
 	 */
 	
@@ -155,6 +170,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index data for shape keys </p>
 	 * @see #__DNA__FIELD__keyindex
 	 */
 	
@@ -172,6 +190,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyindex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index data for shape keys </p>
 	 * @see #__DNA__FIELD__keyindex
 	 */
 	
@@ -187,6 +208,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'shapenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shape key being edited </p>
 	 * @see #__DNA__FIELD__shapenr
 	 */
 	
@@ -201,6 +225,9 @@ public class EditNurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'shapenr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> shape key being edited </p>
 	 * @see #__DNA__FIELD__shapenr
 	 */
 	

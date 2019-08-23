@@ -12,7 +12,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AudioData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Audio </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -26,7 +28,7 @@ public class AudioData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 168;
+	public static final int __DNA__SDNA_INDEX = 169;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mixrate'.

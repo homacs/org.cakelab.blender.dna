@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bDistLimitConstraint'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Limit Distance Constraint </p>
  */
 
 @CMetaData(size32=84, size64=88)
@@ -27,7 +28,7 @@ public class bDistLimitConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 372;
+	public static final int __DNA__SDNA_INDEX = 378;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -51,6 +52,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +75,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance (radius of clamping sphere) from target </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +98,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'soft'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance from clamping-sphere to start applying 'fade' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +121,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +144,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how to limit in relation to clamping sphere </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,6 +227,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -229,6 +248,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_ID_NAME-2 </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -251,6 +273,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance (radius of clamping sphere) from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -265,6 +290,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance (radius of clamping sphere) from target </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -279,6 +307,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'soft'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance from clamping-sphere to start applying 'fade' </p>
 	 * @see #__DNA__FIELD__soft
 	 */
 	
@@ -293,6 +324,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'soft'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> distance from clamping-sphere to start applying 'fade' </p>
 	 * @see #__DNA__FIELD__soft
 	 */
 	
@@ -307,6 +341,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -321,6 +358,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -335,6 +375,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how to limit in relation to clamping sphere </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -349,6 +392,9 @@ public class bDistLimitConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> how to limit in relation to clamping sphere </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	

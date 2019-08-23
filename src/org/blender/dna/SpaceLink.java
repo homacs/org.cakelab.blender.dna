@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceLink'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p>{@link SpaceLink}  ({@link Base} ) ==================================== The base structure all the other spaces are derived (implicitly) from. Would be good to make this explicit. </p>
  */
 
 @CMetaData(size32=40, size64=56)
@@ -27,7 +28,7 @@ public class SpaceLink extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 201;
+	public static final int __DNA__SDNA_INDEX = 205;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,6 +72,9 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +115,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +140,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -223,6 +237,9 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Get method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -237,6 +254,9 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Set method for struct member 'regionbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> storage of regions for inactive spaces </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -287,6 +307,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -301,6 +326,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockscale'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * @see #__DNA__FIELD__blockscale
 	 */
 	
@@ -315,6 +345,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Get method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	
@@ -333,6 +368,11 @@ public class SpaceLink extends CFacade {
 
 	/**
 	 * Set method for struct member 'blockhandler'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> XXX make deprecated </p>
+	 * @deprecated
+	 *  DeprecatedXXX make deprecated </p>
 	 * @see #__DNA__FIELD__blockhandler
 	 */
 	

@@ -51,6 +51,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the context, time etc is here </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +74,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'clothObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The internal data structure for cloth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +97,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sim_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +120,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'coll_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +143,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,6 +186,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'hairdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,6 +209,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_grid_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grid geometry values of hair continuum </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -335,6 +356,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the context, time etc is here </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -352,6 +376,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> the context, time etc is here </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -367,6 +394,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'clothObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The internal data structure for cloth. </p>
 	 * @see #__DNA__FIELD__clothObject
 	 */
 	
@@ -384,6 +414,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'clothObject'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The internal data structure for cloth. </p>
 	 * @see #__DNA__FIELD__clothObject
 	 */
 	
@@ -399,6 +432,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'sim_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * @see #__DNA__FIELD__sim_parms
 	 */
 	
@@ -416,6 +452,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'sim_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * @see #__DNA__FIELD__sim_parms
 	 */
 	
@@ -431,6 +470,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'coll_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * @see #__DNA__FIELD__coll_parms
 	 */
 	
@@ -448,6 +490,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'coll_parms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
 	 * @see #__DNA__FIELD__coll_parms
 	 */
 	
@@ -463,6 +508,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -480,6 +528,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'point_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> definition is in {@link DNA_object_force.h}  </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -531,6 +582,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'hairdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
 	 * @see #__DNA__FIELD__hairdata
 	 */
 	
@@ -548,6 +602,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'hairdata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX nasty hack, remove once hair can be separated from cloth modifier data </p>
 	 * @see #__DNA__FIELD__hairdata
 	 */
 	
@@ -563,6 +620,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'hair_grid_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grid geometry values of hair continuum </p>
 	 * @see #__DNA__FIELD__hair_grid_min
 	 */
 	
@@ -581,6 +641,9 @@ public class ClothModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'hair_grid_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> grid geometry values of hair continuum </p>
 	 * @see #__DNA__FIELD__hair_grid_min
 	 */
 	

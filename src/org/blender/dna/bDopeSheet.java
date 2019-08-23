@@ -13,7 +13,9 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bDopeSheet'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  Action/Dopesheet Editor Storage for Dopesheet/Grease-Pencil Editor data </p>
  */
 
 @CMetaData(size32=96, size64=112)
@@ -27,10 +29,13 @@ public class bDopeSheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 343;
+	public static final int __DNA__SDNA_INDEX = 349;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +56,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for channels (only initialized when pinned) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,6 +79,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,6 +102,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'searchstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,6 +125,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filterflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to use for filtering data </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,6 +148,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standard flags </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,6 +171,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'renameIndex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,6 +222,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'source'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -216,6 +242,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'source'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -231,6 +260,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'chanbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for channels (only initialized when pinned) </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	
@@ -245,6 +277,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'chanbase'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> cache for channels (only initialized when pinned) </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	
@@ -267,6 +302,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter_grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
 	
@@ -284,6 +322,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'filter_grp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
 	
@@ -299,6 +340,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'searchstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
 	
@@ -317,6 +361,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'searchstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
 	
@@ -339,6 +386,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'filterflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to use for filtering data </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -353,6 +403,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'filterflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> flags to use for filtering data </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -367,6 +420,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standard flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -381,6 +437,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> standard flags </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -395,6 +454,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'renameIndex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
 	 * @see #__DNA__FIELD__renameIndex
 	 */
 	
@@ -409,6 +471,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'renameIndex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
 	 * @see #__DNA__FIELD__renameIndex
 	 */
 	

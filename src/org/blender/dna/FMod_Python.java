@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FMod_Python'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Python-script modifier data </p>
  */
 
 @CMetaData(size32=8, size64=16)
@@ -26,10 +27,13 @@ public class FMod_Python extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 497;
+	public static final int __DNA__SDNA_INDEX = 508;
 
 	/**
 	 * Field descriptor (offset) for struct member 'script'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text buffer containing script to execute </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -50,6 +54,9 @@ public class FMod_Python extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ID-properties to provide 'custom' settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +85,9 @@ public class FMod_Python extends CFacade {
 
 	/**
 	 * Get method for struct member 'script'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text buffer containing script to execute </p>
 	 * @see #__DNA__FIELD__script
 	 */
 	
@@ -95,6 +105,9 @@ public class FMod_Python extends CFacade {
 
 	/**
 	 * Set method for struct member 'script'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> text buffer containing script to execute </p>
 	 * @see #__DNA__FIELD__script
 	 */
 	
@@ -110,6 +123,9 @@ public class FMod_Python extends CFacade {
 
 	/**
 	 * Get method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ID-properties to provide 'custom' settings </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -127,6 +143,9 @@ public class FMod_Python extends CFacade {
 
 	/**
 	 * Set method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> ID-properties to provide 'custom' settings </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	

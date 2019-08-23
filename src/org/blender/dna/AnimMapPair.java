@@ -13,7 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'AnimMapPair'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><hr/> 
+ *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see {@link DNA_action_types.h}  instead************************************************ Animation Reuse - i.e. users of Actions Retargetting -----------------------------<mdash/><mdash/>  Retargetting Pair</p><p> Defines what parts of the paths should be remapped from 'abc' to 'xyz'. TODO:<ul><li><p> Regrex (possibly provided through PY, though having our own module might be faster) would be important to have at some point. Current replacements are just simple string matches... </p></li></ul> 
+ * Regrex (possibly provided through PY, though having our own module might be faster) would be important to have at some point. Current replacements are just simple string matches... 
+ * </p>
  */
 
 @CMetaData(size32=256, size64=256)
@@ -27,10 +31,13 @@ public class AnimMapPair extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 506;
+	public static final int __DNA__SDNA_INDEX = 517;
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to bed replaced </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -51,6 +58,9 @@ public class AnimMapPair extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to replace with </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,6 +89,9 @@ public class AnimMapPair extends CFacade {
 
 	/**
 	 * Get method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to bed replaced </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -97,6 +110,9 @@ public class AnimMapPair extends CFacade {
 
 	/**
 	 * Set method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to bed replaced </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -119,6 +135,9 @@ public class AnimMapPair extends CFacade {
 
 	/**
 	 * Get method for struct member 'to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to replace with </p>
 	 * @see #__DNA__FIELD__to
 	 */
 	
@@ -137,6 +156,9 @@ public class AnimMapPair extends CFacade {
 
 	/**
 	 * Set method for struct member 'to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> part of path to replace with </p>
 	 * @see #__DNA__FIELD__to
 	 */
 	

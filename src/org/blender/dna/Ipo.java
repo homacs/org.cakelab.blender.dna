@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Ipo'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p><mdash/>  ID-Datablock <mdash/>  IPO Data-Block </p>
  */
 
 @CMetaData(size32=132, size64=160)
@@ -50,6 +51,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,6 +74,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rect defining extents of keyframes? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -110,6 +117,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'showkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,6 +160,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> muteipo: either 0 or 1 (whether ipo block is muted) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -214,6 +227,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Get method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -228,6 +244,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Set method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A list of {@link IpoCurve}  structs in a linked list. </p>
 	 * @see #__DNA__FIELD__curve
 	 */
 	
@@ -250,6 +269,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Get method for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rect defining extents of keyframes? </p>
 	 * @see #__DNA__FIELD__cur
 	 */
 	
@@ -264,6 +286,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Set method for struct member 'cur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rect defining extents of keyframes? </p>
 	 * @see #__DNA__FIELD__cur
 	 */
 	
@@ -314,6 +339,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Get method for struct member 'showkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing) </p>
 	 * @see #__DNA__FIELD__showkey
 	 */
 	
@@ -328,6 +356,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Set method for struct member 'showkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> blocktype: self-explanatory; showkey: either 0 or 1 (show vertical yellow lines for editing) </p>
 	 * @see #__DNA__FIELD__showkey
 	 */
 	
@@ -370,6 +401,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> muteipo: either 0 or 1 (whether ipo block is muted) </p>
 	 * @see #__DNA__FIELD__pad
 	 */
 	
@@ -384,6 +418,9 @@ public class Ipo extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> muteipo: either 0 or 1 (whether ipo block is muted) </p>
 	 * @see #__DNA__FIELD__pad
 	 */
 	
