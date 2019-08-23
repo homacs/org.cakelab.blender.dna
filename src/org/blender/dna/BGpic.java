@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=84, size64=104)
+@CMetaData(size32=92, size64=112)
 public class BGpic extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class BGpic extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 184;
+	public static final int __DNA__SDNA_INDEX = 197;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -229,6 +230,26 @@ public class BGpic extends CFacade {
 	public static final long[] __DNA__FIELD__blend = new long[]{72, 92};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BGpic bgpic = ...;
+	 * CPointer&lt;Object&gt; p = bgpic.__dna__addressof(BGpic.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{76, 96};
+
+	/**
 	 * Field descriptor (offset) for struct member 'view'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -246,7 +267,7 @@ public class BGpic extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{76, 96};
+	public static final long[] __DNA__FIELD__view = new long[]{80, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -266,7 +287,7 @@ public class BGpic extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{78, 98};
+	public static final long[] __DNA__FIELD__flag = new long[]{82, 102};
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
@@ -286,7 +307,7 @@ public class BGpic extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__source = new long[]{80, 100};
+	public static final long[] __DNA__FIELD__source = new long[]{84, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -297,16 +318,16 @@ public class BGpic extends CFacade {
 	 * <pre>
 	 * BGpic bgpic = ...;
 	 * CPointer&lt;Object&gt; p = bgpic.__dna__addressof(BGpic.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{82, 102};
+	public static final long[] __DNA__FIELD__pad = new long[]{86, 106};
 
 	public BGpic(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -629,6 +650,34 @@ public class BGpic extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public float getRotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 96);
+		} else {
+			return __io__block.readFloat(__io__address + 76);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(float rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 96, rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 76, rotation);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'view'.
 	 * @see #__DNA__FIELD__view
 	 */
@@ -636,9 +685,9 @@ public class BGpic extends CFacade {
 	public short getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 96);
+			return __io__block.readShort(__io__address + 100);
 		} else {
-			return __io__block.readShort(__io__address + 76);
+			return __io__block.readShort(__io__address + 80);
 		}
 	}
 
@@ -650,9 +699,9 @@ public class BGpic extends CFacade {
 	public void setView(short view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 96, view);
+			__io__block.writeShort(__io__address + 100, view);
 		} else {
-			__io__block.writeShort(__io__address + 76, view);
+			__io__block.writeShort(__io__address + 80, view);
 		}
 	}
 
@@ -664,9 +713,9 @@ public class BGpic extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 98);
+			return __io__block.readShort(__io__address + 102);
 		} else {
-			return __io__block.readShort(__io__address + 78);
+			return __io__block.readShort(__io__address + 82);
 		}
 	}
 
@@ -678,9 +727,9 @@ public class BGpic extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 98, flag);
+			__io__block.writeShort(__io__address + 102, flag);
 		} else {
-			__io__block.writeShort(__io__address + 78, flag);
+			__io__block.writeShort(__io__address + 82, flag);
 		}
 	}
 
@@ -692,9 +741,9 @@ public class BGpic extends CFacade {
 	public short getSource() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 104);
 		} else {
-			return __io__block.readShort(__io__address + 80);
+			return __io__block.readShort(__io__address + 84);
 		}
 	}
 
@@ -706,9 +755,9 @@ public class BGpic extends CFacade {
 	public void setSource(short source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, source);
+			__io__block.writeShort(__io__address + 104, source);
 		} else {
-			__io__block.writeShort(__io__address + 80, source);
+			__io__block.writeShort(__io__address + 84, source);
 		}
 	}
 
@@ -717,12 +766,16 @@ public class BGpic extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> getPad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
+			return new CArrayFacade<Byte>(__io__address + 106, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 82);
+			return new CArrayFacade<Byte>(__io__address + 86, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -731,12 +784,20 @@ public class BGpic extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, pad);
+			__dna__offset = 106;
 		} else {
-			__io__block.writeShort(__io__address + 82, pad);
+			__dna__offset = 86;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

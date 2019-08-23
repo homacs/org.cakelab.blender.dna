@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=40, size64=56)
+@CMetaData(size32=48, size64=64)
 public class PreviewImage extends CFacade {
 
 	/**
@@ -70,24 +70,24 @@ public class PreviewImage extends CFacade {
 	public static final long[] __DNA__FIELD__h = new long[]{8, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'changed'.
+	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PreviewImage previewimage = ...;
-	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__changed);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_changed = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__flag);
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_flag = p.cast(new Class[]{CArrayFacade.class, Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'changed'</li>
+	 * <li>Field: 'flag'</li>
 	 * <li>Signature: 'short[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__changed = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__flag = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'changed_timestamp'.
@@ -148,6 +148,66 @@ public class PreviewImage extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gputexture = new long[]{32, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_id'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PreviewImage previewimage = ...;
+	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__icon_id);
+	 * CPointer&lt;Integer&gt; p_icon_id = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_id'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_id = new long[]{40, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PreviewImage previewimage = ...;
+	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{44, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'use_deferred'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PreviewImage previewimage = ...;
+	 * CPointer&lt;Object&gt; p = previewimage.__dna__addressof(PreviewImage.__DNA__FIELD__use_deferred);
+	 * CPointer&lt;Byte&gt; p_use_deferred = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_deferred'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_deferred = new long[]{47, 63};
 
 	public PreviewImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -238,11 +298,11 @@ public class PreviewImage extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'changed'.
-	 * @see #__DNA__FIELD__changed
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public CArrayFacade<Short> getChanged() throws IOException
+	public CArrayFacade<Short> getFlag() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
 		int[] __dna__dimensions = new int[]{
@@ -256,11 +316,11 @@ public class PreviewImage extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'changed'.
-	 * @see #__DNA__FIELD__changed
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setChanged(CArrayFacade<Short> changed) throws IOException
+	public void setFlag(CArrayFacade<Short> flag) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -268,12 +328,12 @@ public class PreviewImage extends CFacade {
 		} else {
 			__dna__offset = 16;
 		}
-		if (__io__equals(changed, __io__address + __dna__offset)) {
+		if (__io__equals(flag, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, changed)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, changed);
+		} else if (__io__same__encoding(this, flag)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, flag);
 		} else {
-			__io__generic__copy( getChanged(), changed);
+			__io__generic__copy( getFlag(), flag);
 		}
 	}
 
@@ -394,6 +454,102 @@ public class PreviewImage extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, gputexture);
 		} else {
 			__io__generic__copy( getGputexture(), gputexture);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_id'.
+	 * @see #__DNA__FIELD__icon_id
+	 */
+	
+	public int getIcon_id() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 56);
+		} else {
+			return __io__block.readInt(__io__address + 40);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_id'.
+	 * @see #__DNA__FIELD__icon_id
+	 */
+	
+	public void setIcon_id(int icon_id) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 56, icon_id);
+		} else {
+			__io__block.writeInt(__io__address + 40, icon_id);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 60;
+		} else {
+			__dna__offset = 44;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'use_deferred'.
+	 * @see #__DNA__FIELD__use_deferred
+	 */
+	
+	public byte getUse_deferred() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 63);
+		} else {
+			return __io__block.readByte(__io__address + 47);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_deferred'.
+	 * @see #__DNA__FIELD__use_deferred
+	 */
+	
+	public void setUse_deferred(byte use_deferred) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 63, use_deferred);
+		} else {
+			__io__block.writeByte(__io__address + 47, use_deferred);
 		}
 	}
 

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=56, size64=96)
+@CMetaData(size32=60, size64=104)
 public class AnimData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 490;
+	public static final int __DNA__SDNA_INDEX = 513;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
@@ -109,6 +109,26 @@ public class AnimData extends CFacade {
 	public static final long[] __DNA__FIELD__nla_tracks = new long[]{12, 24};
 
 	/**
+	 * Field descriptor (offset) for struct member 'act_track'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * AnimData animdata = ...;
+	 * CPointer&lt;Object&gt; p = animdata.__dna__addressof(AnimData.__DNA__FIELD__act_track);
+	 * CPointer&lt;CPointer&lt;NlaTrack&gt;&gt; p_act_track = p.cast(new Class[]{CPointer.class, NlaTrack.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'act_track'</li>
+	 * <li>Signature: 'NlaTrack*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__act_track = new long[]{20, 40};
+
+	/**
 	 * Field descriptor (offset) for struct member 'actstrip'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +146,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actstrip = new long[]{20, 40};
+	public static final long[] __DNA__FIELD__actstrip = new long[]{24, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drivers'.
@@ -146,7 +166,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drivers = new long[]{24, 48};
+	public static final long[] __DNA__FIELD__drivers = new long[]{28, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overrides'.
@@ -166,7 +186,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overrides = new long[]{32, 64};
+	public static final long[] __DNA__FIELD__overrides = new long[]{36, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -186,7 +206,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{40, 80};
+	public static final long[] __DNA__FIELD__flag = new long[]{44, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
@@ -206,7 +226,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{44, 84};
+	public static final long[] __DNA__FIELD__recalc = new long[]{48, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_blendmode'.
@@ -226,7 +246,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_blendmode = new long[]{48, 88};
+	public static final long[] __DNA__FIELD__act_blendmode = new long[]{52, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_extendmode'.
@@ -246,7 +266,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_extendmode = new long[]{50, 90};
+	public static final long[] __DNA__FIELD__act_extendmode = new long[]{54, 98};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_influence'.
@@ -266,7 +286,7 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_influence = new long[]{52, 92};
+	public static final long[] __DNA__FIELD__act_influence = new long[]{56, 100};
 
 	public AnimData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -409,6 +429,38 @@ public class AnimData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'act_track'.
+	 * @see #__DNA__FIELD__act_track
+	 */
+	
+	public CPointer<NlaTrack> getAct_track() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{NlaTrack.class};
+		return new CPointer<NlaTrack>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, NlaTrack.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'act_track'.
+	 * @see #__DNA__FIELD__act_track
+	 */
+	
+	public void setAct_track(CPointer<NlaTrack> act_track) throws IOException
+	{
+		long __address = ((act_track == null) ? 0 : act_track.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 20, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'actstrip'.
 	 * @see #__DNA__FIELD__actstrip
 	 */
@@ -417,9 +469,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 20);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{NlaStrip.class};
 		return new CPointer<NlaStrip>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, NlaStrip.__DNA__SDNA_INDEX), __io__blockTable);
@@ -434,9 +486,9 @@ public class AnimData extends CFacade {
 	{
 		long __address = ((actstrip == null) ? 0 : actstrip.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		} else {
-			__io__block.writeLong(__io__address + 20, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		}
 	}
 
@@ -448,9 +500,9 @@ public class AnimData extends CFacade {
 	public ListBase getDrivers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 24, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
 		}
 	}
 
@@ -463,9 +515,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 28;
 		}
 		if (__io__equals(drivers, __io__address + __dna__offset)) {
 			return;
@@ -484,9 +536,9 @@ public class AnimData extends CFacade {
 	public ListBase getOverrides() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 64, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 36, __io__block, __io__blockTable);
 		}
 	}
 
@@ -499,9 +551,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 36;
 		}
 		if (__io__equals(overrides, __io__address + __dna__offset)) {
 			return;
@@ -520,9 +572,9 @@ public class AnimData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 80);
+			return __io__block.readInt(__io__address + 88);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 44);
 		}
 	}
 
@@ -534,9 +586,9 @@ public class AnimData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 80, flag);
+			__io__block.writeInt(__io__address + 88, flag);
 		} else {
-			__io__block.writeInt(__io__address + 40, flag);
+			__io__block.writeInt(__io__address + 44, flag);
 		}
 	}
 
@@ -548,9 +600,9 @@ public class AnimData extends CFacade {
 	public int getRecalc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 84);
+			return __io__block.readInt(__io__address + 92);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 48);
 		}
 	}
 
@@ -562,9 +614,9 @@ public class AnimData extends CFacade {
 	public void setRecalc(int recalc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 84, recalc);
+			__io__block.writeInt(__io__address + 92, recalc);
 		} else {
-			__io__block.writeInt(__io__address + 44, recalc);
+			__io__block.writeInt(__io__address + 48, recalc);
 		}
 	}
 
@@ -576,9 +628,9 @@ public class AnimData extends CFacade {
 	public short getAct_blendmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 88);
+			return __io__block.readShort(__io__address + 96);
 		} else {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 52);
 		}
 	}
 
@@ -590,9 +642,9 @@ public class AnimData extends CFacade {
 	public void setAct_blendmode(short act_blendmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 88, act_blendmode);
+			__io__block.writeShort(__io__address + 96, act_blendmode);
 		} else {
-			__io__block.writeShort(__io__address + 48, act_blendmode);
+			__io__block.writeShort(__io__address + 52, act_blendmode);
 		}
 	}
 
@@ -604,9 +656,9 @@ public class AnimData extends CFacade {
 	public short getAct_extendmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 90);
+			return __io__block.readShort(__io__address + 98);
 		} else {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readShort(__io__address + 54);
 		}
 	}
 
@@ -618,9 +670,9 @@ public class AnimData extends CFacade {
 	public void setAct_extendmode(short act_extendmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 90, act_extendmode);
+			__io__block.writeShort(__io__address + 98, act_extendmode);
 		} else {
-			__io__block.writeShort(__io__address + 50, act_extendmode);
+			__io__block.writeShort(__io__address + 54, act_extendmode);
 		}
 	}
 
@@ -632,9 +684,9 @@ public class AnimData extends CFacade {
 	public float getAct_influence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		} else {
-			return __io__block.readFloat(__io__address + 52);
+			return __io__block.readFloat(__io__address + 56);
 		}
 	}
 
@@ -646,9 +698,9 @@ public class AnimData extends CFacade {
 	public void setAct_influence(float act_influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 92, act_influence);
+			__io__block.writeFloat(__io__address + 100, act_influence);
 		} else {
-			__io__block.writeFloat(__io__address + 52, act_influence);
+			__io__block.writeFloat(__io__address + 56, act_influence);
 		}
 	}
 

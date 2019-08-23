@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1036, size64=1040)
+@CMetaData(size32=1044, size64=1048)
 public class StripProxy extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class StripProxy extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 241;
+	public static final int __DNA__SDNA_INDEX = 262;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
@@ -168,6 +168,66 @@ public class StripProxy extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__build_tc_flags = new long[]{1034, 1038};
+
+	/**
+	 * Field descriptor (offset) for struct member 'build_flags'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripProxy stripproxy = ...;
+	 * CPointer&lt;Object&gt; p = stripproxy.__dna__addressof(StripProxy.__DNA__FIELD__build_flags);
+	 * CPointer&lt;Short&gt; p_build_flags = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'build_flags'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__build_flags = new long[]{1036, 1040};
+
+	/**
+	 * Field descriptor (offset) for struct member 'storage'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripProxy stripproxy = ...;
+	 * CPointer&lt;Object&gt; p = stripproxy.__dna__addressof(StripProxy.__DNA__FIELD__storage);
+	 * CPointer&lt;Byte&gt; p_storage = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'storage'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__storage = new long[]{1038, 1042};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripProxy stripproxy = ...;
+	 * CPointer&lt;Object&gt; p = stripproxy.__dna__addressof(StripProxy.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{1039, 1043};
 
 	public StripProxy(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -398,6 +458,102 @@ public class StripProxy extends CFacade {
 			__io__block.writeShort(__io__address + 1038, build_tc_flags);
 		} else {
 			__io__block.writeShort(__io__address + 1034, build_tc_flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'build_flags'.
+	 * @see #__DNA__FIELD__build_flags
+	 */
+	
+	public short getBuild_flags() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 1040);
+		} else {
+			return __io__block.readShort(__io__address + 1036);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'build_flags'.
+	 * @see #__DNA__FIELD__build_flags
+	 */
+	
+	public void setBuild_flags(short build_flags) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 1040, build_flags);
+		} else {
+			__io__block.writeShort(__io__address + 1036, build_flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'storage'.
+	 * @see #__DNA__FIELD__storage
+	 */
+	
+	public byte getStorage() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1042);
+		} else {
+			return __io__block.readByte(__io__address + 1038);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'storage'.
+	 * @see #__DNA__FIELD__storage
+	 */
+	
+	public void setStorage(byte storage) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1042, storage);
+		} else {
+			__io__block.writeByte(__io__address + 1038, storage);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			5
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1043, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1039, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1043;
+		} else {
+			__dna__offset = 1039;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

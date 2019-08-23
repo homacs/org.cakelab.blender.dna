@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=48, size64=56)
+@CMetaData(size32=56, size64=64)
 public class ClothCollSettings extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class ClothCollSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 454;
+	public static final int __DNA__SDNA_INDEX = 477;
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_list'.
@@ -109,6 +110,26 @@ public class ClothCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__friction = new long[]{12, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member 'damping'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothCollSettings clothcollsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__damping);
+	 * CPointer&lt;Float&gt; p_damping = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'damping'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__damping = new long[]{16, 20};
+
+	/**
 	 * Field descriptor (offset) for struct member 'selfepsilon'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,7 +147,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selfepsilon = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__selfepsilon = new long[]{20, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repel_force'.
@@ -146,7 +167,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repel_force = new long[]{20, 24};
+	public static final long[] __DNA__FIELD__repel_force = new long[]{24, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance_repel'.
@@ -166,7 +187,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distance_repel = new long[]{24, 28};
+	public static final long[] __DNA__FIELD__distance_repel = new long[]{28, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -186,7 +207,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__flags = new long[]{32, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'self_loop_count'.
@@ -206,7 +227,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__self_loop_count = new long[]{32, 36};
+	public static final long[] __DNA__FIELD__self_loop_count = new long[]{36, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loop_count'.
@@ -226,7 +247,27 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loop_count = new long[]{34, 38};
+	public static final long[] __DNA__FIELD__loop_count = new long[]{38, 42};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothCollSettings clothcollsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{40, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
@@ -246,7 +287,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__group = new long[]{36, 40};
+	public static final long[] __DNA__FIELD__group = new long[]{44, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_selfcol'.
@@ -266,27 +307,7 @@ public class ClothCollSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup_selfcol = new long[]{40, 48};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ClothCollSettings clothcollsettings = ...;
-	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{42, 50};
+	public static final long[] __DNA__FIELD__vgroup_selfcol = new long[]{48, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
@@ -297,16 +318,16 @@ public class ClothCollSettings extends CFacade {
 	 * <pre>
 	 * ClothCollSettings clothcollsettings = ...;
 	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{44, 52};
+	public static final long[] __DNA__FIELD__pad2 = new long[]{50, 58};
 
 	public ClothCollSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -433,6 +454,34 @@ public class ClothCollSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'damping'.
+	 * @see #__DNA__FIELD__damping
+	 */
+	
+	public float getDamping() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 20);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'damping'.
+	 * @see #__DNA__FIELD__damping
+	 */
+	
+	public void setDamping(float damping) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 20, damping);
+		} else {
+			__io__block.writeFloat(__io__address + 16, damping);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'selfepsilon'.
 	 * @see #__DNA__FIELD__selfepsilon
 	 */
@@ -440,9 +489,9 @@ public class ClothCollSettings extends CFacade {
 	public float getSelfepsilon() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readFloat(__io__address + 24);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -454,9 +503,9 @@ public class ClothCollSettings extends CFacade {
 	public void setSelfepsilon(float selfepsilon) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 20, selfepsilon);
+			__io__block.writeFloat(__io__address + 24, selfepsilon);
 		} else {
-			__io__block.writeFloat(__io__address + 16, selfepsilon);
+			__io__block.writeFloat(__io__address + 20, selfepsilon);
 		}
 	}
 
@@ -468,9 +517,9 @@ public class ClothCollSettings extends CFacade {
 	public float getRepel_force() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 28);
 		} else {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readFloat(__io__address + 24);
 		}
 	}
 
@@ -482,9 +531,9 @@ public class ClothCollSettings extends CFacade {
 	public void setRepel_force(float repel_force) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 24, repel_force);
+			__io__block.writeFloat(__io__address + 28, repel_force);
 		} else {
-			__io__block.writeFloat(__io__address + 20, repel_force);
+			__io__block.writeFloat(__io__address + 24, repel_force);
 		}
 	}
 
@@ -496,9 +545,9 @@ public class ClothCollSettings extends CFacade {
 	public float getDistance_repel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 28);
+			return __io__block.readFloat(__io__address + 32);
 		} else {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 28);
 		}
 	}
 
@@ -510,9 +559,9 @@ public class ClothCollSettings extends CFacade {
 	public void setDistance_repel(float distance_repel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 28, distance_repel);
+			__io__block.writeFloat(__io__address + 32, distance_repel);
 		} else {
-			__io__block.writeFloat(__io__address + 24, distance_repel);
+			__io__block.writeFloat(__io__address + 28, distance_repel);
 		}
 	}
 
@@ -524,9 +573,9 @@ public class ClothCollSettings extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 32);
 		}
 	}
 
@@ -538,9 +587,9 @@ public class ClothCollSettings extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, flags);
+			__io__block.writeInt(__io__address + 36, flags);
 		} else {
-			__io__block.writeInt(__io__address + 28, flags);
+			__io__block.writeInt(__io__address + 32, flags);
 		}
 	}
 
@@ -552,9 +601,9 @@ public class ClothCollSettings extends CFacade {
 	public short getSelf_loop_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 36);
+			return __io__block.readShort(__io__address + 40);
 		} else {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 36);
 		}
 	}
 
@@ -566,9 +615,9 @@ public class ClothCollSettings extends CFacade {
 	public void setSelf_loop_count(short self_loop_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 36, self_loop_count);
+			__io__block.writeShort(__io__address + 40, self_loop_count);
 		} else {
-			__io__block.writeShort(__io__address + 32, self_loop_count);
+			__io__block.writeShort(__io__address + 36, self_loop_count);
 		}
 	}
 
@@ -580,9 +629,9 @@ public class ClothCollSettings extends CFacade {
 	public short getLoop_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 38);
+			return __io__block.readShort(__io__address + 42);
 		} else {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 38);
 		}
 	}
 
@@ -594,9 +643,37 @@ public class ClothCollSettings extends CFacade {
 	public void setLoop_count(short loop_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 38, loop_count);
+			__io__block.writeShort(__io__address + 42, loop_count);
 		} else {
-			__io__block.writeShort(__io__address + 34, loop_count);
+			__io__block.writeShort(__io__address + 38, loop_count);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 44);
+		} else {
+			return __io__block.readInt(__io__address + 40);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 44, pad);
+		} else {
+			__io__block.writeInt(__io__address + 40, pad);
 		}
 	}
 
@@ -609,9 +686,9 @@ public class ClothCollSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+			__dna__targetAddress = __io__block.readLong(__io__address + 44);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
 		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
@@ -626,9 +703,9 @@ public class ClothCollSettings extends CFacade {
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		} else {
-			__io__block.writeLong(__io__address + 36, __address);
+			__io__block.writeLong(__io__address + 44, __address);
 		}
 	}
 
@@ -640,9 +717,9 @@ public class ClothCollSettings extends CFacade {
 	public short getVgroup_selfcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 56);
 		} else {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 48);
 		}
 	}
 
@@ -654,37 +731,9 @@ public class ClothCollSettings extends CFacade {
 	public void setVgroup_selfcol(short vgroup_selfcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 56, vgroup_selfcol);
+		} else {
 			__io__block.writeShort(__io__address + 48, vgroup_selfcol);
-		} else {
-			__io__block.writeShort(__io__address + 40, vgroup_selfcol);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public short getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 50);
-		} else {
-			return __io__block.readShort(__io__address + 42);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(short pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 50, pad);
-		} else {
-			__io__block.writeShort(__io__address + 42, pad);
 		}
 	}
 
@@ -693,12 +742,16 @@ public class ClothCollSettings extends CFacade {
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
-	public int getPad2() throws IOException
+	public CArrayFacade<Short> getPad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return new CArrayFacade<Short>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return new CArrayFacade<Short>(__io__address + 50, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -707,12 +760,20 @@ public class ClothCollSettings extends CFacade {
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void setPad2(CArrayFacade<Short> pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, pad2);
+			__dna__offset = 58;
 		} else {
-			__io__block.writeInt(__io__address + 44, pad2);
+			__dna__offset = 50;
+		}
+		if (__io__equals(pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
+		} else {
+			__io__generic__copy( getPad2(), pad2);
 		}
 	}
 

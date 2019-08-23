@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=24, size64=24)
+@CMetaData(size32=36, size64=36)
 public class HairKey extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class HairKey extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 442;
+	public static final int __DNA__SDNA_INDEX = 465;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
@@ -128,6 +128,26 @@ public class HairKey extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pad = new long[]{22, 22};
+
+	/**
+	 * Field descriptor (offset) for struct member 'world_co'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * HairKey hairkey = ...;
+	 * CPointer&lt;Object&gt; p = hairkey.__dna__addressof(HairKey.__DNA__FIELD__world_co);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_world_co = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'world_co'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__world_co = new long[]{24, 24};
 
 	public HairKey(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -286,6 +306,46 @@ public class HairKey extends CFacade {
 			__io__block.writeShort(__io__address + 22, pad);
 		} else {
 			__io__block.writeShort(__io__address + 22, pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'world_co'.
+	 * @see #__DNA__FIELD__world_co
+	 */
+	
+	public CArrayFacade<Float> getWorld_co() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'world_co'.
+	 * @see #__DNA__FIELD__world_co
+	 */
+	
+	public void setWorld_co(CArrayFacade<Float> world_co) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 24;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(world_co, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, world_co)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, world_co);
+		} else {
+			__io__generic__copy( getWorld_co(), world_co);
 		}
 	}
 

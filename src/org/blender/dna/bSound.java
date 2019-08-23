@@ -27,7 +27,7 @@ public class bSound extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 307;
+	public static final int __DNA__SDNA_INDEX = 329;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -370,24 +370,24 @@ public class bSound extends CFacade {
 	public static final long[] __DNA__FIELD__playback_handle = new long[]{1180, 1224};
 
 	/**
-	 * Field descriptor (offset) for struct member 'mutex'.
+	 * Field descriptor (offset) for struct member 'spinlock'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bSound bsound = ...;
-	 * CPointer&lt;Object&gt; p = bsound.__dna__addressof(bSound.__DNA__FIELD__mutex);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_mutex = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = bsound.__dna__addressof(bSound.__DNA__FIELD__spinlock);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_spinlock = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'mutex'</li>
+	 * <li>Field: 'spinlock'</li>
 	 * <li>Signature: 'void*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mutex = new long[]{1184, 1232};
+	public static final long[] __DNA__FIELD__spinlock = new long[]{1184, 1232};
 
 	public bSound(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -922,11 +922,11 @@ public class bSound extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'mutex'.
-	 * @see #__DNA__FIELD__mutex
+	 * Get method for struct member 'spinlock'.
+	 * @see #__DNA__FIELD__spinlock
 	 */
 	
-	public CPointer<Object> getMutex() throws IOException
+	public CPointer<Object> getSpinlock() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -939,13 +939,13 @@ public class bSound extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'mutex'.
-	 * @see #__DNA__FIELD__mutex
+	 * Set method for struct member 'spinlock'.
+	 * @see #__DNA__FIELD__spinlock
 	 */
 	
-	public void setMutex(CPointer<Object> mutex) throws IOException
+	public void setSpinlock(CPointer<Object> spinlock) throws IOException
 	{
-		long __address = ((mutex == null) ? 0 : mutex.getAddress());
+		long __address = ((spinlock == null) ? 0 : spinlock.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 1232, __address);
 		} else {

@@ -27,7 +27,7 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 218;
+	public static final int __DNA__SDNA_INDEX = 238;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
@@ -430,24 +430,24 @@ public class ThemeUI extends CFacade {
 	public static final long[] __DNA__FIELD__panel = new long[]{608, 608};
 
 	/**
-	 * Field descriptor (offset) for struct member 'emboss'.
+	 * Field descriptor (offset) for struct member 'widget_emboss'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ThemeUI themeui = ...;
-	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__emboss);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_emboss = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__widget_emboss);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_widget_emboss = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'emboss'</li>
+	 * <li>Field: 'widget_emboss'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__emboss = new long[]{624, 624};
+	public static final long[] __DNA__FIELD__widget_emboss = new long[]{624, 624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'menu_shadow_fac'.
@@ -1338,11 +1338,11 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'emboss'.
-	 * @see #__DNA__FIELD__emboss
+	 * Get method for struct member 'widget_emboss'.
+	 * @see #__DNA__FIELD__widget_emboss
 	 */
 	
-	public CArrayFacade<Byte> getEmboss() throws IOException
+	public CArrayFacade<Byte> getWidget_emboss() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -1356,11 +1356,11 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'emboss'.
-	 * @see #__DNA__FIELD__emboss
+	 * Set method for struct member 'widget_emboss'.
+	 * @see #__DNA__FIELD__widget_emboss
 	 */
 	
-	public void setEmboss(CArrayFacade<Byte> emboss) throws IOException
+	public void setWidget_emboss(CArrayFacade<Byte> widget_emboss) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -1368,12 +1368,12 @@ public class ThemeUI extends CFacade {
 		} else {
 			__dna__offset = 624;
 		}
-		if (__io__equals(emboss, __io__address + __dna__offset)) {
+		if (__io__equals(widget_emboss, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, emboss)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, emboss);
+		} else if (__io__same__encoding(this, widget_emboss)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, widget_emboss);
 		} else {
-			__io__generic__copy( getEmboss(), emboss);
+			__io__generic__copy( getWidget_emboss(), widget_emboss);
 		}
 	}
 

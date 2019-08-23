@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=336, size64=400)
+@CMetaData(size32=340, size64=408)
 public class SpaceNode extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 205;
+	public static final int __DNA__SDNA_INDEX = 225;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -550,6 +550,26 @@ public class SpaceNode extends CFacade {
 	public static final long[] __DNA__FIELD__recalc = new long[]{320, 372};
 
 	/**
+	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceNode spacenode = ...;
+	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__insert_ofs_dir);
+	 * CPointer&lt;Byte&gt; p_insert_ofs_dir = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'insert_ofs_dir'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__insert_ofs_dir = new long[]{322, 374};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad4'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -558,16 +578,16 @@ public class SpaceNode extends CFacade {
 	 * <pre>
 	 * SpaceNode spacenode = ...;
 	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__pad4);
-	 * CPointer&lt;Short&gt; p_pad4 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_pad4 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad4'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad4 = new long[]{322, 374};
+	public static final long[] __DNA__FIELD__pad4 = new long[]{323, 375};
 
 	/**
 	 * Field descriptor (offset) for struct member 'linkdrag'.
@@ -590,6 +610,26 @@ public class SpaceNode extends CFacade {
 	public static final long[] __DNA__FIELD__linkdrag = new long[]{324, 376};
 
 	/**
+	 * Field descriptor (offset) for struct member 'iofsd'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceNode spacenode = ...;
+	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__iofsd);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_iofsd = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'iofsd'</li>
+	 * <li>Signature: 'NodeInsertOfsData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__iofsd = new long[]{332, 392};
+
+	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -607,7 +647,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{332, 392};
+	public static final long[] __DNA__FIELD__gpd = new long[]{336, 400};
 
 	public SpaceNode(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1430,16 +1470,44 @@ public class SpaceNode extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'insert_ofs_dir'.
+	 * @see #__DNA__FIELD__insert_ofs_dir
+	 */
+	
+	public byte getInsert_ofs_dir() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 374);
+		} else {
+			return __io__block.readByte(__io__address + 322);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'insert_ofs_dir'.
+	 * @see #__DNA__FIELD__insert_ofs_dir
+	 */
+	
+	public void setInsert_ofs_dir(byte insert_ofs_dir) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 374, insert_ofs_dir);
+		} else {
+			__io__block.writeByte(__io__address + 322, insert_ofs_dir);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad4'.
 	 * @see #__DNA__FIELD__pad4
 	 */
 	
-	public short getPad4() throws IOException
+	public byte getPad4() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 374);
+			return __io__block.readByte(__io__address + 375);
 		} else {
-			return __io__block.readShort(__io__address + 322);
+			return __io__block.readByte(__io__address + 323);
 		}
 	}
 
@@ -1448,12 +1516,12 @@ public class SpaceNode extends CFacade {
 	 * @see #__DNA__FIELD__pad4
 	 */
 	
-	public void setPad4(short pad4) throws IOException
+	public void setPad4(byte pad4) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 374, pad4);
+			__io__block.writeByte(__io__address + 375, pad4);
 		} else {
-			__io__block.writeShort(__io__address + 322, pad4);
+			__io__block.writeByte(__io__address + 323, pad4);
 		}
 	}
 
@@ -1494,6 +1562,38 @@ public class SpaceNode extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'iofsd'.
+	 * @see #__DNA__FIELD__iofsd
+	 */
+	
+	public CPointer<Object> getIofsd() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'iofsd'.
+	 * @see #__DNA__FIELD__iofsd
+	 */
+	
+	public void setIofsd(CPointer<Object> iofsd) throws IOException
+	{
+		long __address = ((iofsd == null) ? 0 : iofsd.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 392, __address);
+		} else {
+			__io__block.writeLong(__io__address + 332, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'gpd'.
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -1502,9 +1602,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1519,9 +1619,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 332, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		}
 	}
 

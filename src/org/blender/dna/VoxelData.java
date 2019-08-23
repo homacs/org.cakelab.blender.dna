@@ -27,7 +27,7 @@ public class VoxelData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 30;
+	public static final int __DNA__SDNA_INDEX = 37;
 
 	/**
 	 * Field descriptor (offset) for struct member 'resol'.
@@ -150,6 +150,26 @@ public class VoxelData extends CFacade {
 	public static final long[] __DNA__FIELD__smoked_type = new long[]{22, 22};
 
 	/**
+	 * Field descriptor (offset) for struct member 'hair_type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * VoxelData voxeldata = ...;
+	 * CPointer&lt;Object&gt; p = voxeldata.__dna__addressof(VoxelData.__DNA__FIELD__hair_type);
+	 * CPointer&lt;Short&gt; p_hair_type = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hair_type'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hair_type = new long[]{24, 24};
+
+	/**
 	 * Field descriptor (offset) for struct member 'data_type'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,27 +187,7 @@ public class VoxelData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__data_type = new long[]{24, 24};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * VoxelData voxeldata = ...;
-	 * CPointer&lt;Object&gt; p = voxeldata.__dna__addressof(VoxelData.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{26, 26};
+	public static final long[] __DNA__FIELD__data_type = new long[]{26, 26};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -538,6 +538,34 @@ public class VoxelData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'hair_type'.
+	 * @see #__DNA__FIELD__hair_type
+	 */
+	
+	public short getHair_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 24);
+		} else {
+			return __io__block.readShort(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hair_type'.
+	 * @see #__DNA__FIELD__hair_type
+	 */
+	
+	public void setHair_type(short hair_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 24, hair_type);
+		} else {
+			__io__block.writeShort(__io__address + 24, hair_type);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'data_type'.
 	 * @see #__DNA__FIELD__data_type
 	 */
@@ -545,9 +573,9 @@ public class VoxelData extends CFacade {
 	public short getData_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 26);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 26);
 		}
 	}
 
@@ -559,37 +587,9 @@ public class VoxelData extends CFacade {
 	public void setData_type(short data_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, data_type);
+			__io__block.writeShort(__io__address + 26, data_type);
 		} else {
-			__io__block.writeShort(__io__address + 24, data_type);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public short getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
-		} else {
-			return __io__block.readShort(__io__address + 26);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(short pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, pad);
-		} else {
-			__io__block.writeShort(__io__address + 26, pad);
+			__io__block.writeShort(__io__address + 26, data_type);
 		}
 	}
 

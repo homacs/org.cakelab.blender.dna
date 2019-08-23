@@ -27,7 +27,7 @@ public class FileGlobal extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 236;
+	public static final int __DNA__SDNA_INDEX = 256;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
@@ -70,26 +70,6 @@ public class FileGlobal extends CFacade {
 	public static final long[] __DNA__FIELD__subversion = new long[]{4, 4};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pads'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__pads);
-	 * CPointer&lt;Short&gt; p_pads = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pads'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pads = new long[]{6, 6};
-
-	/**
 	 * Field descriptor (offset) for struct member 'minversion'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +87,7 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minversion = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__minversion = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minsubversion'.
@@ -127,47 +107,27 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minsubversion = new long[]{10, 10};
+	public static final long[] __DNA__FIELD__minsubversion = new long[]{8, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'displaymode'.
+	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__displaymode);
-	 * CPointer&lt;Short&gt; p_displaymode = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'displaymode'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__displaymode = new long[]{12, 12};
-
-	/**
-	 * Field descriptor (offset) for struct member 'winpos'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__winpos);
-	 * CPointer&lt;Short&gt; p_winpos = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'winpos'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__winpos = new long[]{14, 14};
+	public static final long[] __DNA__FIELD__pad = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curscreen'.
@@ -386,34 +346,6 @@ public class FileGlobal extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pads'.
-	 * @see #__DNA__FIELD__pads
-	 */
-	
-	public short getPads() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 6);
-		} else {
-			return __io__block.readShort(__io__address + 6);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pads'.
-	 * @see #__DNA__FIELD__pads
-	 */
-	
-	public void setPads(short pads) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 6, pads);
-		} else {
-			__io__block.writeShort(__io__address + 6, pads);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'minversion'.
 	 * @see #__DNA__FIELD__minversion
 	 */
@@ -421,9 +353,9 @@ public class FileGlobal extends CFacade {
 	public short getMinversion() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 6);
 		} else {
-			return __io__block.readShort(__io__address + 8);
+			return __io__block.readShort(__io__address + 6);
 		}
 	}
 
@@ -435,9 +367,9 @@ public class FileGlobal extends CFacade {
 	public void setMinversion(short minversion) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8, minversion);
+			__io__block.writeShort(__io__address + 6, minversion);
 		} else {
-			__io__block.writeShort(__io__address + 8, minversion);
+			__io__block.writeShort(__io__address + 6, minversion);
 		}
 	}
 
@@ -449,9 +381,9 @@ public class FileGlobal extends CFacade {
 	public short getMinsubversion() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10);
+			return __io__block.readShort(__io__address + 8);
 		} else {
-			return __io__block.readShort(__io__address + 10);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
@@ -463,65 +395,49 @@ public class FileGlobal extends CFacade {
 	public void setMinsubversion(short minsubversion) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10, minsubversion);
+			__io__block.writeShort(__io__address + 8, minsubversion);
 		} else {
-			__io__block.writeShort(__io__address + 10, minsubversion);
+			__io__block.writeShort(__io__address + 8, minsubversion);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'displaymode'.
-	 * @see #__DNA__FIELD__displaymode
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public short getDisplaymode() throws IOException
+	public CArrayFacade<Byte> getPad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'displaymode'.
-	 * @see #__DNA__FIELD__displaymode
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setDisplaymode(short displaymode) throws IOException
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12, displaymode);
+			__dna__offset = 10;
 		} else {
-			__io__block.writeShort(__io__address + 12, displaymode);
+			__dna__offset = 10;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'winpos'.
-	 * @see #__DNA__FIELD__winpos
-	 */
-	
-	public short getWinpos() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 14);
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
 		} else {
-			return __io__block.readShort(__io__address + 14);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'winpos'.
-	 * @see #__DNA__FIELD__winpos
-	 */
-	
-	public void setWinpos(short winpos) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 14, winpos);
-		} else {
-			__io__block.writeShort(__io__address + 14, winpos);
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

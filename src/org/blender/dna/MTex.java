@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=304, size64=312)
+@CMetaData(size32=312, size64=320)
 public class MTex extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MTex extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 25;
+	public static final int __DNA__SDNA_INDEX = 32;
 
 	/**
 	 * Field descriptor (offset) for struct member 'texco'.
@@ -250,6 +250,66 @@ public class MTex extends CFacade {
 	public static final long[] __DNA__FIELD__mapping = new long[]{83, 91};
 
 	/**
+	 * Field descriptor (offset) for struct member 'brush_map_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__brush_map_mode);
+	 * CPointer&lt;Byte&gt; p_brush_map_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brush_map_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brush_map_mode = new long[]{84, 92};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brush_angle_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__brush_angle_mode);
+	 * CPointer&lt;Byte&gt; p_brush_angle_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brush_angle_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brush_angle_mode = new long[]{85, 93};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{86, 94};
+
+	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -267,7 +327,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofs = new long[]{84, 92};
+	public static final long[] __DNA__FIELD__ofs = new long[]{88, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -287,7 +347,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{96, 104};
+	public static final long[] __DNA__FIELD__size = new long[]{100, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
@@ -307,7 +367,27 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot = new long[]{108, 116};
+	public static final long[] __DNA__FIELD__rot = new long[]{112, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'random_angle'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__random_angle);
+	 * CPointer&lt;Float&gt; p_random_angle = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'random_angle'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__random_angle = new long[]{116, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
@@ -327,7 +407,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{112, 120};
+	public static final long[] __DNA__FIELD__texflag = new long[]{120, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colormodel'.
@@ -347,7 +427,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colormodel = new long[]{114, 122};
+	public static final long[] __DNA__FIELD__colormodel = new long[]{122, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmapto'.
@@ -367,7 +447,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pmapto = new long[]{116, 124};
+	public static final long[] __DNA__FIELD__pmapto = new long[]{124, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmaptoneg'.
@@ -387,7 +467,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pmaptoneg = new long[]{118, 126};
+	public static final long[] __DNA__FIELD__pmaptoneg = new long[]{126, 134};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normapspace'.
@@ -407,7 +487,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normapspace = new long[]{120, 128};
+	public static final long[] __DNA__FIELD__normapspace = new long[]{128, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'which_output'.
@@ -427,47 +507,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__which_output = new long[]{122, 130};
-
-	/**
-	 * Field descriptor (offset) for struct member 'brush_map_mode'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MTex mtex = ...;
-	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__brush_map_mode);
-	 * CPointer&lt;Byte&gt; p_brush_map_mode = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'brush_map_mode'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__brush_map_mode = new long[]{124, 132};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MTex mtex = ...;
-	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{125, 133};
+	public static final long[] __DNA__FIELD__which_output = new long[]{130, 138};
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
@@ -1110,6 +1150,26 @@ public class MTex extends CFacade {
 	public static final long[] __DNA__FIELD__kinkfac = new long[]{256, 264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'kinkampfac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__kinkampfac);
+	 * CPointer&lt;Float&gt; p_kinkampfac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'kinkampfac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__kinkampfac = new long[]{260, 268};
+
+	/**
 	 * Field descriptor (offset) for struct member 'roughfac'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1127,7 +1187,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roughfac = new long[]{260, 268};
+	public static final long[] __DNA__FIELD__roughfac = new long[]{264, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'padensfac'.
@@ -1147,7 +1207,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__padensfac = new long[]{264, 272};
+	public static final long[] __DNA__FIELD__padensfac = new long[]{268, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravityfac'.
@@ -1167,7 +1227,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravityfac = new long[]{268, 276};
+	public static final long[] __DNA__FIELD__gravityfac = new long[]{272, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lifefac'.
@@ -1187,7 +1247,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lifefac = new long[]{272, 280};
+	public static final long[] __DNA__FIELD__lifefac = new long[]{276, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizefac'.
@@ -1207,7 +1267,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizefac = new long[]{276, 284};
+	public static final long[] __DNA__FIELD__sizefac = new long[]{280, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ivelfac'.
@@ -1227,7 +1287,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ivelfac = new long[]{280, 288};
+	public static final long[] __DNA__FIELD__ivelfac = new long[]{284, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fieldfac'.
@@ -1247,7 +1307,27 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fieldfac = new long[]{284, 292};
+	public static final long[] __DNA__FIELD__fieldfac = new long[]{288, 296};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MTex mtex = ...;
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__pad2);
+	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{292, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowfac'.
@@ -1267,7 +1347,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadowfac = new long[]{288, 296};
+	public static final long[] __DNA__FIELD__shadowfac = new long[]{296, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zenupfac'.
@@ -1287,7 +1367,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zenupfac = new long[]{292, 300};
+	public static final long[] __DNA__FIELD__zenupfac = new long[]{300, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zendownfac'.
@@ -1307,7 +1387,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zendownfac = new long[]{296, 304};
+	public static final long[] __DNA__FIELD__zendownfac = new long[]{304, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendfac'.
@@ -1327,7 +1407,7 @@ public class MTex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendfac = new long[]{300, 308};
+	public static final long[] __DNA__FIELD__blendfac = new long[]{308, 316};
 
 	public MTex(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1666,6 +1746,102 @@ public class MTex extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'brush_map_mode'.
+	 * @see #__DNA__FIELD__brush_map_mode
+	 */
+	
+	public byte getBrush_map_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 92);
+		} else {
+			return __io__block.readByte(__io__address + 84);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brush_map_mode'.
+	 * @see #__DNA__FIELD__brush_map_mode
+	 */
+	
+	public void setBrush_map_mode(byte brush_map_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 92, brush_map_mode);
+		} else {
+			__io__block.writeByte(__io__address + 84, brush_map_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brush_angle_mode'.
+	 * @see #__DNA__FIELD__brush_angle_mode
+	 */
+	
+	public byte getBrush_angle_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 93);
+		} else {
+			return __io__block.readByte(__io__address + 85);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brush_angle_mode'.
+	 * @see #__DNA__FIELD__brush_angle_mode
+	 */
+	
+	public void setBrush_angle_mode(byte brush_angle_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 93, brush_angle_mode);
+		} else {
+			__io__block.writeByte(__io__address + 85, brush_angle_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 94, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 86, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 94;
+		} else {
+			__dna__offset = 86;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'ofs'.
 	 * @see #__DNA__FIELD__ofs
 	 */
@@ -1677,9 +1853,9 @@ public class MTex extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1692,9 +1868,9 @@ public class MTex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 92;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 84;
+			__dna__offset = 88;
 		}
 		if (__io__equals(ofs, __io__address + __dna__offset)) {
 			return;
@@ -1717,9 +1893,9 @@ public class MTex extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1732,9 +1908,9 @@ public class MTex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 108;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -1753,9 +1929,9 @@ public class MTex extends CFacade {
 	public float getRot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -1767,9 +1943,37 @@ public class MTex extends CFacade {
 	public void setRot(float rot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, rot);
+			__io__block.writeFloat(__io__address + 120, rot);
 		} else {
-			__io__block.writeFloat(__io__address + 108, rot);
+			__io__block.writeFloat(__io__address + 112, rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'random_angle'.
+	 * @see #__DNA__FIELD__random_angle
+	 */
+	
+	public float getRandom_angle() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 124);
+		} else {
+			return __io__block.readFloat(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'random_angle'.
+	 * @see #__DNA__FIELD__random_angle
+	 */
+	
+	public void setRandom_angle(float random_angle) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 124, random_angle);
+		} else {
+			__io__block.writeFloat(__io__address + 116, random_angle);
 		}
 	}
 
@@ -1781,9 +1985,9 @@ public class MTex extends CFacade {
 	public short getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 120);
 		}
 	}
 
@@ -1795,9 +1999,9 @@ public class MTex extends CFacade {
 	public void setTexflag(short texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, texflag);
+			__io__block.writeShort(__io__address + 128, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 112, texflag);
+			__io__block.writeShort(__io__address + 120, texflag);
 		}
 	}
 
@@ -1809,9 +2013,9 @@ public class MTex extends CFacade {
 	public short getColormodel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 114);
+			return __io__block.readShort(__io__address + 122);
 		}
 	}
 
@@ -1823,9 +2027,9 @@ public class MTex extends CFacade {
 	public void setColormodel(short colormodel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 122, colormodel);
+			__io__block.writeShort(__io__address + 130, colormodel);
 		} else {
-			__io__block.writeShort(__io__address + 114, colormodel);
+			__io__block.writeShort(__io__address + 122, colormodel);
 		}
 	}
 
@@ -1837,9 +2041,9 @@ public class MTex extends CFacade {
 	public short getPmapto() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 124);
+			return __io__block.readShort(__io__address + 132);
 		} else {
-			return __io__block.readShort(__io__address + 116);
+			return __io__block.readShort(__io__address + 124);
 		}
 	}
 
@@ -1851,9 +2055,9 @@ public class MTex extends CFacade {
 	public void setPmapto(short pmapto) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 124, pmapto);
+			__io__block.writeShort(__io__address + 132, pmapto);
 		} else {
-			__io__block.writeShort(__io__address + 116, pmapto);
+			__io__block.writeShort(__io__address + 124, pmapto);
 		}
 	}
 
@@ -1865,9 +2069,9 @@ public class MTex extends CFacade {
 	public short getPmaptoneg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 126);
+			return __io__block.readShort(__io__address + 134);
 		} else {
-			return __io__block.readShort(__io__address + 118);
+			return __io__block.readShort(__io__address + 126);
 		}
 	}
 
@@ -1879,9 +2083,9 @@ public class MTex extends CFacade {
 	public void setPmaptoneg(short pmaptoneg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 126, pmaptoneg);
+			__io__block.writeShort(__io__address + 134, pmaptoneg);
 		} else {
-			__io__block.writeShort(__io__address + 118, pmaptoneg);
+			__io__block.writeShort(__io__address + 126, pmaptoneg);
 		}
 	}
 
@@ -1893,9 +2097,9 @@ public class MTex extends CFacade {
 	public short getNormapspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 128);
+			return __io__block.readShort(__io__address + 136);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		}
 	}
 
@@ -1907,9 +2111,9 @@ public class MTex extends CFacade {
 	public void setNormapspace(short normapspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 128, normapspace);
+			__io__block.writeShort(__io__address + 136, normapspace);
 		} else {
-			__io__block.writeShort(__io__address + 120, normapspace);
+			__io__block.writeShort(__io__address + 128, normapspace);
 		}
 	}
 
@@ -1921,9 +2125,9 @@ public class MTex extends CFacade {
 	public short getWhich_output() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 130);
+			return __io__block.readShort(__io__address + 138);
 		} else {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		}
 	}
 
@@ -1935,77 +2139,9 @@ public class MTex extends CFacade {
 	public void setWhich_output(short which_output) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 138, which_output);
+		} else {
 			__io__block.writeShort(__io__address + 130, which_output);
-		} else {
-			__io__block.writeShort(__io__address + 122, which_output);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'brush_map_mode'.
-	 * @see #__DNA__FIELD__brush_map_mode
-	 */
-	
-	public byte getBrush_map_mode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 132);
-		} else {
-			return __io__block.readByte(__io__address + 124);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'brush_map_mode'.
-	 * @see #__DNA__FIELD__brush_map_mode
-	 */
-	
-	public void setBrush_map_mode(byte brush_map_mode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 132, brush_map_mode);
-		} else {
-			__io__block.writeByte(__io__address + 124, brush_map_mode);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public CArrayFacade<Byte> getPad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			7
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 133, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 125, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 133;
-		} else {
-			__dna__offset = 125;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
 		}
 	}
 
@@ -2906,6 +3042,34 @@ public class MTex extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'kinkampfac'.
+	 * @see #__DNA__FIELD__kinkampfac
+	 */
+	
+	public float getKinkampfac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 268);
+		} else {
+			return __io__block.readFloat(__io__address + 260);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'kinkampfac'.
+	 * @see #__DNA__FIELD__kinkampfac
+	 */
+	
+	public void setKinkampfac(float kinkampfac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 268, kinkampfac);
+		} else {
+			__io__block.writeFloat(__io__address + 260, kinkampfac);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'roughfac'.
 	 * @see #__DNA__FIELD__roughfac
 	 */
@@ -2913,9 +3077,9 @@ public class MTex extends CFacade {
 	public float getRoughfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 272);
 		} else {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 264);
 		}
 	}
 
@@ -2927,9 +3091,9 @@ public class MTex extends CFacade {
 	public void setRoughfac(float roughfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 268, roughfac);
+			__io__block.writeFloat(__io__address + 272, roughfac);
 		} else {
-			__io__block.writeFloat(__io__address + 260, roughfac);
+			__io__block.writeFloat(__io__address + 264, roughfac);
 		}
 	}
 
@@ -2941,9 +3105,9 @@ public class MTex extends CFacade {
 	public float getPadensfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 276);
 		} else {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 268);
 		}
 	}
 
@@ -2955,9 +3119,9 @@ public class MTex extends CFacade {
 	public void setPadensfac(float padensfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, padensfac);
+			__io__block.writeFloat(__io__address + 276, padensfac);
 		} else {
-			__io__block.writeFloat(__io__address + 264, padensfac);
+			__io__block.writeFloat(__io__address + 268, padensfac);
 		}
 	}
 
@@ -2969,9 +3133,9 @@ public class MTex extends CFacade {
 	public float getGravityfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 272);
 		}
 	}
 
@@ -2983,9 +3147,9 @@ public class MTex extends CFacade {
 	public void setGravityfac(float gravityfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 276, gravityfac);
+			__io__block.writeFloat(__io__address + 280, gravityfac);
 		} else {
-			__io__block.writeFloat(__io__address + 268, gravityfac);
+			__io__block.writeFloat(__io__address + 272, gravityfac);
 		}
 	}
 
@@ -2997,9 +3161,9 @@ public class MTex extends CFacade {
 	public float getLifefac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 284);
 		} else {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -3011,9 +3175,9 @@ public class MTex extends CFacade {
 	public void setLifefac(float lifefac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, lifefac);
+			__io__block.writeFloat(__io__address + 284, lifefac);
 		} else {
-			__io__block.writeFloat(__io__address + 272, lifefac);
+			__io__block.writeFloat(__io__address + 276, lifefac);
 		}
 	}
 
@@ -3025,9 +3189,9 @@ public class MTex extends CFacade {
 	public float getSizefac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 280);
 		}
 	}
 
@@ -3039,9 +3203,9 @@ public class MTex extends CFacade {
 	public void setSizefac(float sizefac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, sizefac);
+			__io__block.writeFloat(__io__address + 288, sizefac);
 		} else {
-			__io__block.writeFloat(__io__address + 276, sizefac);
+			__io__block.writeFloat(__io__address + 280, sizefac);
 		}
 	}
 
@@ -3053,9 +3217,9 @@ public class MTex extends CFacade {
 	public float getIvelfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 292);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 284);
 		}
 	}
 
@@ -3067,9 +3231,9 @@ public class MTex extends CFacade {
 	public void setIvelfac(float ivelfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 288, ivelfac);
+			__io__block.writeFloat(__io__address + 292, ivelfac);
 		} else {
-			__io__block.writeFloat(__io__address + 280, ivelfac);
+			__io__block.writeFloat(__io__address + 284, ivelfac);
 		}
 	}
 
@@ -3081,9 +3245,9 @@ public class MTex extends CFacade {
 	public float getFieldfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 296);
 		} else {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -3095,9 +3259,37 @@ public class MTex extends CFacade {
 	public void setFieldfac(float fieldfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, fieldfac);
+			__io__block.writeFloat(__io__address + 296, fieldfac);
 		} else {
-			__io__block.writeFloat(__io__address + 284, fieldfac);
+			__io__block.writeFloat(__io__address + 288, fieldfac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public int getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 300);
+		} else {
+			return __io__block.readInt(__io__address + 292);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(int pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 300, pad2);
+		} else {
+			__io__block.writeInt(__io__address + 292, pad2);
 		}
 	}
 
@@ -3109,9 +3301,9 @@ public class MTex extends CFacade {
 	public float getShadowfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -3123,9 +3315,9 @@ public class MTex extends CFacade {
 	public void setShadowfac(float shadowfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 296, shadowfac);
+			__io__block.writeFloat(__io__address + 304, shadowfac);
 		} else {
-			__io__block.writeFloat(__io__address + 288, shadowfac);
+			__io__block.writeFloat(__io__address + 296, shadowfac);
 		}
 	}
 
@@ -3137,9 +3329,9 @@ public class MTex extends CFacade {
 	public float getZenupfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 300);
 		}
 	}
 
@@ -3151,9 +3343,9 @@ public class MTex extends CFacade {
 	public void setZenupfac(float zenupfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, zenupfac);
+			__io__block.writeFloat(__io__address + 308, zenupfac);
 		} else {
-			__io__block.writeFloat(__io__address + 292, zenupfac);
+			__io__block.writeFloat(__io__address + 300, zenupfac);
 		}
 	}
 
@@ -3165,9 +3357,9 @@ public class MTex extends CFacade {
 	public float getZendownfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 312);
 		} else {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
@@ -3179,9 +3371,9 @@ public class MTex extends CFacade {
 	public void setZendownfac(float zendownfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 304, zendownfac);
+			__io__block.writeFloat(__io__address + 312, zendownfac);
 		} else {
-			__io__block.writeFloat(__io__address + 296, zendownfac);
+			__io__block.writeFloat(__io__address + 304, zendownfac);
 		}
 	}
 
@@ -3193,9 +3385,9 @@ public class MTex extends CFacade {
 	public float getBlendfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 316);
 		} else {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 308);
 		}
 	}
 
@@ -3207,9 +3399,9 @@ public class MTex extends CFacade {
 	public void setBlendfac(float blendfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 308, blendfac);
+			__io__block.writeFloat(__io__address + 316, blendfac);
 		} else {
-			__io__block.writeFloat(__io__address + 300, blendfac);
+			__io__block.writeFloat(__io__address + 308, blendfac);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=168, size64=200)
+@CMetaData(size32=208, size64=240)
 public class Camera extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Camera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 21;
+	public static final int __DNA__SDNA_INDEX = 25;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -390,6 +390,26 @@ public class Camera extends CFacade {
 	public static final long[] __DNA__FIELD__dof_ob = new long[]{156, 184};
 
 	/**
+	 * Field descriptor (offset) for struct member 'gpu_dof'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Camera camera = ...;
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__gpu_dof);
+	 * CPointer&lt;GPUDOFSettings&gt; p_gpu_dof = p.cast(new Class[]{GPUDOFSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpu_dof'</li>
+	 * <li>Signature: 'GPUDOFSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpu_dof = new long[]{160, 192};
+
+	/**
 	 * Field descriptor (offset) for struct member 'sensor_fit'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -407,7 +427,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sensor_fit = new long[]{160, 192};
+	public static final long[] __DNA__FIELD__sensor_fit = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -427,7 +447,27 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{161, 193};
+	public static final long[] __DNA__FIELD__pad = new long[]{185, 217};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Camera camera = ...;
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__stereo);
+	 * CPointer&lt;CameraStereoSettings&gt; p_stereo = p.cast(new Class[]{CameraStereoSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo'</li>
+	 * <li>Signature: 'CameraStereoSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo = new long[]{192, 224};
 
 	public Camera(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -962,6 +1002,42 @@ public class Camera extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'gpu_dof'.
+	 * @see #__DNA__FIELD__gpu_dof
+	 */
+	
+	public GPUDOFSettings getGpu_dof() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new GPUDOFSettings(__io__address + 192, __io__block, __io__blockTable);
+		} else {
+			return new GPUDOFSettings(__io__address + 160, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpu_dof'.
+	 * @see #__DNA__FIELD__gpu_dof
+	 */
+	
+	public void setGpu_dof(GPUDOFSettings gpu_dof) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 192;
+		} else {
+			__dna__offset = 160;
+		}
+		if (__io__equals(gpu_dof, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gpu_dof)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gpu_dof);
+		} else {
+			__io__generic__copy( getGpu_dof(), gpu_dof);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'sensor_fit'.
 	 * @see #__DNA__FIELD__sensor_fit
 	 */
@@ -969,9 +1045,9 @@ public class Camera extends CFacade {
 	public byte getSensor_fit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 192);
+			return __io__block.readByte(__io__address + 216);
 		} else {
-			return __io__block.readByte(__io__address + 160);
+			return __io__block.readByte(__io__address + 184);
 		}
 	}
 
@@ -983,9 +1059,9 @@ public class Camera extends CFacade {
 	public void setSensor_fit(byte sensor_fit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 192, sensor_fit);
+			__io__block.writeByte(__io__address + 216, sensor_fit);
 		} else {
-			__io__block.writeByte(__io__address + 160, sensor_fit);
+			__io__block.writeByte(__io__address + 184, sensor_fit);
 		}
 	}
 
@@ -1001,9 +1077,9 @@ public class Camera extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 193, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 217, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 161, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 185, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1016,9 +1092,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 193;
+			__dna__offset = 217;
 		} else {
-			__dna__offset = 161;
+			__dna__offset = 185;
 		}
 		if (__io__equals(pad, __io__address + __dna__offset)) {
 			return;
@@ -1026,6 +1102,42 @@ public class Camera extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
 		} else {
 			__io__generic__copy( getPad(), pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo'.
+	 * @see #__DNA__FIELD__stereo
+	 */
+	
+	public CameraStereoSettings getStereo() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new CameraStereoSettings(__io__address + 224, __io__block, __io__blockTable);
+		} else {
+			return new CameraStereoSettings(__io__address + 192, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo'.
+	 * @see #__DNA__FIELD__stereo
+	 */
+	
+	public void setStereo(CameraStereoSettings stereo) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 224;
+		} else {
+			__dna__offset = 192;
+		}
+		if (__io__equals(stereo, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, stereo)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, stereo);
+		} else {
+			__io__generic__copy( getStereo(), stereo);
 		}
 	}
 

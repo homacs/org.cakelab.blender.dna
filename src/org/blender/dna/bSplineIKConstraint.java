@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=16, size64=24)
+@CMetaData(size32=32, size64=40)
 public class bSplineIKConstraint extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 329;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -147,6 +147,86 @@ public class bSplineIKConstraint extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__xzScaleMode = new long[]{14, 22};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD__bulge);
+	 * CPointer&lt;Float&gt; p_bulge = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge = new long[]{16, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_min'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD__bulge_min);
+	 * CPointer&lt;Float&gt; p_bulge_min = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_min'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_min = new long[]{20, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_max'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD__bulge_max);
+	 * CPointer&lt;Float&gt; p_bulge_max = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_max'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_max = new long[]{24, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_smooth'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD__bulge_smooth);
+	 * CPointer&lt;Float&gt; p_bulge_smooth = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_smooth'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_smooth = new long[]{28, 36};
 
 	public bSplineIKConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -329,6 +409,118 @@ public class bSplineIKConstraint extends CFacade {
 			__io__block.writeShort(__io__address + 22, xzScaleMode);
 		} else {
 			__io__block.writeShort(__io__address + 14, xzScaleMode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge'.
+	 * @see #__DNA__FIELD__bulge
+	 */
+	
+	public float getBulge() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 24);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge'.
+	 * @see #__DNA__FIELD__bulge
+	 */
+	
+	public void setBulge(float bulge) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 24, bulge);
+		} else {
+			__io__block.writeFloat(__io__address + 16, bulge);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_min'.
+	 * @see #__DNA__FIELD__bulge_min
+	 */
+	
+	public float getBulge_min() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_min'.
+	 * @see #__DNA__FIELD__bulge_min
+	 */
+	
+	public void setBulge_min(float bulge_min) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 28, bulge_min);
+		} else {
+			__io__block.writeFloat(__io__address + 20, bulge_min);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_max'.
+	 * @see #__DNA__FIELD__bulge_max
+	 */
+	
+	public float getBulge_max() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_max'.
+	 * @see #__DNA__FIELD__bulge_max
+	 */
+	
+	public void setBulge_max(float bulge_max) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 32, bulge_max);
+		} else {
+			__io__block.writeFloat(__io__address + 24, bulge_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_smooth'.
+	 * @see #__DNA__FIELD__bulge_smooth
+	 */
+	
+	public float getBulge_smooth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 36);
+		} else {
+			return __io__block.readFloat(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_smooth'.
+	 * @see #__DNA__FIELD__bulge_smooth
+	 */
+	
+	public void setBulge_smooth(float bulge_smooth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 36, bulge_smooth);
+		} else {
+			__io__block.writeFloat(__io__address + 28, bulge_smooth);
 		}
 	}
 

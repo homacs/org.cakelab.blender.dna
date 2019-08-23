@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=324, size64=432)
+@CMetaData(size32=328, size64=440)
 public class bNodeTree extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bNodeTree extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 364;
+	public static final int __DNA__SDNA_INDEX = 386;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -668,6 +668,26 @@ public class bNodeTree extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__udh = new long[]{320, 424};
+
+	/**
+	 * Field descriptor (offset) for struct member 'duplilock'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeTree bnodetree = ...;
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__duplilock);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_duplilock = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'duplilock'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__duplilock = new long[]{324, 432};
 
 	public bNodeTree(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1690,6 +1710,38 @@ public class bNodeTree extends CFacade {
 			__io__block.writeLong(__io__address + 424, __address);
 		} else {
 			__io__block.writeLong(__io__address + 320, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'duplilock'.
+	 * @see #__DNA__FIELD__duplilock
+	 */
+	
+	public CPointer<Object> getDuplilock() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 432);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 324);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'duplilock'.
+	 * @see #__DNA__FIELD__duplilock
+	 */
+	
+	public void setDuplilock(CPointer<Object> duplilock) throws IOException
+	{
+		long __address = ((duplilock == null) ? 0 : duplilock.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 432, __address);
+		} else {
+			__io__block.writeLong(__io__address + 324, __address);
 		}
 	}
 

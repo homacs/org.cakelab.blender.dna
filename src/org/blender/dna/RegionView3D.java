@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=852, size64=880)
+@CMetaData(size32=872, size64=904)
 public class RegionView3D extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class RegionView3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 185;
+	public static final int __DNA__SDNA_INDEX = 198;
 
 	/**
 	 * Field descriptor (offset) for struct member 'winmat'.
@@ -130,6 +130,26 @@ public class RegionView3D extends CFacade {
 	public static final long[] __DNA__FIELD__persinv = new long[]{256, 256};
 
 	/**
+	 * Field descriptor (offset) for struct member 'viewcamtexcofac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__viewcamtexcofac);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_viewcamtexcofac = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'viewcamtexcofac'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__viewcamtexcofac = new long[]{320, 320};
+
+	/**
 	 * Field descriptor (offset) for struct member 'viewmatob'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,7 +167,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewmatob = new long[]{320, 320};
+	public static final long[] __DNA__FIELD__viewmatob = new long[]{336, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'persmatob'.
@@ -167,7 +187,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__persmatob = new long[]{384, 384};
+	public static final long[] __DNA__FIELD__persmatob = new long[]{400, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip'.
@@ -187,7 +207,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 96/96</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip = new long[]{448, 448};
+	public static final long[] __DNA__FIELD__clip = new long[]{464, 464};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip_local'.
@@ -207,7 +227,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 96/96</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip_local = new long[]{544, 544};
+	public static final long[] __DNA__FIELD__clip_local = new long[]{560, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipbb'.
@@ -227,7 +247,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipbb = new long[]{640, 640};
+	public static final long[] __DNA__FIELD__clipbb = new long[]{656, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'localvd'.
@@ -247,7 +267,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__localvd = new long[]{644, 648};
+	public static final long[] __DNA__FIELD__localvd = new long[]{660, 664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_engine'.
@@ -267,7 +287,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_engine = new long[]{648, 656};
+	public static final long[] __DNA__FIELD__render_engine = new long[]{664, 672};
 
 	/**
 	 * Field descriptor (offset) for struct member 'depths'.
@@ -287,7 +307,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__depths = new long[]{652, 664};
+	public static final long[] __DNA__FIELD__depths = new long[]{668, 680};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpuoffscreen'.
@@ -307,7 +327,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpuoffscreen = new long[]{656, 672};
+	public static final long[] __DNA__FIELD__gpuoffscreen = new long[]{672, 688};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sms'.
@@ -327,7 +347,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sms = new long[]{660, 680};
+	public static final long[] __DNA__FIELD__sms = new long[]{676, 696};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_timer'.
@@ -347,7 +367,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_timer = new long[]{664, 688};
+	public static final long[] __DNA__FIELD__smooth_timer = new long[]{680, 704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twmat'.
@@ -367,7 +387,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twmat = new long[]{668, 696};
+	public static final long[] __DNA__FIELD__twmat = new long[]{684, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewquat'.
@@ -387,7 +407,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewquat = new long[]{732, 760};
+	public static final long[] __DNA__FIELD__viewquat = new long[]{748, 776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
@@ -407,7 +427,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dist = new long[]{748, 776};
+	public static final long[] __DNA__FIELD__dist = new long[]{764, 792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camdx'.
@@ -427,7 +447,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camdx = new long[]{752, 780};
+	public static final long[] __DNA__FIELD__camdx = new long[]{768, 796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camdy'.
@@ -447,7 +467,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camdy = new long[]{756, 784};
+	public static final long[] __DNA__FIELD__camdy = new long[]{772, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pixsize'.
@@ -467,7 +487,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixsize = new long[]{760, 788};
+	public static final long[] __DNA__FIELD__pixsize = new long[]{776, 804};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
@@ -487,7 +507,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofs = new long[]{764, 792};
+	public static final long[] __DNA__FIELD__ofs = new long[]{780, 808};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camzoom'.
@@ -507,7 +527,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camzoom = new long[]{776, 804};
+	public static final long[] __DNA__FIELD__camzoom = new long[]{792, 820};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_persp'.
@@ -527,7 +547,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_persp = new long[]{780, 808};
+	public static final long[] __DNA__FIELD__is_persp = new long[]{796, 824};
 
 	/**
 	 * Field descriptor (offset) for struct member 'persp'.
@@ -547,7 +567,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__persp = new long[]{781, 809};
+	public static final long[] __DNA__FIELD__persp = new long[]{797, 825};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
@@ -567,7 +587,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{782, 810};
+	public static final long[] __DNA__FIELD__view = new long[]{798, 826};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock'.
@@ -587,7 +607,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock = new long[]{783, 811};
+	public static final long[] __DNA__FIELD__viewlock = new long[]{799, 827};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock_quad'.
@@ -607,7 +627,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{784, 812};
+	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{800, 828};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -627,7 +647,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{785, 813};
+	public static final long[] __DNA__FIELD__pad = new long[]{801, 829};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs_lock'.
@@ -647,7 +667,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofs_lock = new long[]{788, 816};
+	public static final long[] __DNA__FIELD__ofs_lock = new long[]{804, 832};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twdrawflag'.
@@ -667,7 +687,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twdrawflag = new long[]{796, 824};
+	public static final long[] __DNA__FIELD__twdrawflag = new long[]{812, 840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rflag'.
@@ -687,7 +707,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rflag = new long[]{798, 826};
+	public static final long[] __DNA__FIELD__rflag = new long[]{814, 842};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lviewquat'.
@@ -707,7 +727,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lviewquat = new long[]{800, 828};
+	public static final long[] __DNA__FIELD__lviewquat = new long[]{816, 844};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lpersp'.
@@ -727,7 +747,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lpersp = new long[]{816, 844};
+	public static final long[] __DNA__FIELD__lpersp = new long[]{832, 860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lview'.
@@ -747,7 +767,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lview = new long[]{818, 846};
+	public static final long[] __DNA__FIELD__lview = new long[]{834, 862};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gridview'.
@@ -767,7 +787,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gridview = new long[]{820, 848};
+	public static final long[] __DNA__FIELD__gridview = new long[]{836, 864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tw_idot'.
@@ -787,7 +807,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tw_idot = new long[]{824, 852};
+	public static final long[] __DNA__FIELD__tw_idot = new long[]{840, 868};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_angle'.
@@ -807,7 +827,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot_angle = new long[]{836, 864};
+	public static final long[] __DNA__FIELD__rot_angle = new long[]{852, 880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_axis'.
@@ -827,7 +847,27 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot_axis = new long[]{840, 868};
+	public static final long[] __DNA__FIELD__rot_axis = new long[]{856, 884};
+
+	/**
+	 * Field descriptor (offset) for struct member 'compositor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__compositor);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compositor = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'compositor'</li>
+	 * <li>Signature: 'GPUFX*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__compositor = new long[]{868, 896};
 
 	public RegionView3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1043,6 +1083,46 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'viewcamtexcofac'.
+	 * @see #__DNA__FIELD__viewcamtexcofac
+	 */
+	
+	public CArrayFacade<Float> getViewcamtexcofac() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'viewcamtexcofac'.
+	 * @see #__DNA__FIELD__viewcamtexcofac
+	 */
+	
+	public void setViewcamtexcofac(CArrayFacade<Float> viewcamtexcofac) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 320;
+		} else {
+			__dna__offset = 320;
+		}
+		if (__io__equals(viewcamtexcofac, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, viewcamtexcofac)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, viewcamtexcofac);
+		} else {
+			__io__generic__copy( getViewcamtexcofac(), viewcamtexcofac);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'viewmatob'.
 	 * @see #__DNA__FIELD__viewmatob
 	 */
@@ -1055,9 +1135,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1070,9 +1150,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 320;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 336;
 		}
 		if (__io__equals(viewmatob, __io__address + __dna__offset)) {
 			return;
@@ -1096,9 +1176,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1111,9 +1191,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 384;
+			__dna__offset = 400;
 		} else {
-			__dna__offset = 384;
+			__dna__offset = 400;
 		}
 		if (__io__equals(persmatob, __io__address + __dna__offset)) {
 			return;
@@ -1137,9 +1217,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1152,9 +1232,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 448;
+			__dna__offset = 464;
 		} else {
-			__dna__offset = 448;
+			__dna__offset = 464;
 		}
 		if (__io__equals(clip, __io__address + __dna__offset)) {
 			return;
@@ -1178,9 +1258,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1193,9 +1273,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		}
 		if (__io__equals(clip_local, __io__address + __dna__offset)) {
 			return;
@@ -1215,9 +1295,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 640);
+			__dna__targetAddress = __io__block.readLong(__io__address + 656);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 640);
+			__dna__targetAddress = __io__block.readLong(__io__address + 656);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BoundBox.class};
 		return new CPointer<BoundBox>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BoundBox.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1232,9 +1312,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((clipbb == null) ? 0 : clipbb.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 640, __address);
+			__io__block.writeLong(__io__address + 656, __address);
 		} else {
-			__io__block.writeLong(__io__address + 640, __address);
+			__io__block.writeLong(__io__address + 656, __address);
 		}
 	}
 
@@ -1247,9 +1327,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 648);
+			__dna__targetAddress = __io__block.readLong(__io__address + 664);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 644);
+			__dna__targetAddress = __io__block.readLong(__io__address + 660);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RegionView3D.class};
 		return new CPointer<RegionView3D>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RegionView3D.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1264,9 +1344,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((localvd == null) ? 0 : localvd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 648, __address);
+			__io__block.writeLong(__io__address + 664, __address);
 		} else {
-			__io__block.writeLong(__io__address + 644, __address);
+			__io__block.writeLong(__io__address + 660, __address);
 		}
 	}
 
@@ -1279,9 +1359,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 656);
+			__dna__targetAddress = __io__block.readLong(__io__address + 672);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 648);
+			__dna__targetAddress = __io__block.readLong(__io__address + 664);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1296,9 +1376,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((render_engine == null) ? 0 : render_engine.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 656, __address);
+			__io__block.writeLong(__io__address + 672, __address);
 		} else {
-			__io__block.writeLong(__io__address + 648, __address);
+			__io__block.writeLong(__io__address + 664, __address);
 		}
 	}
 
@@ -1311,9 +1391,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 664);
+			__dna__targetAddress = __io__block.readLong(__io__address + 680);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 652);
+			__dna__targetAddress = __io__block.readLong(__io__address + 668);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1328,9 +1408,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((depths == null) ? 0 : depths.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 664, __address);
+			__io__block.writeLong(__io__address + 680, __address);
 		} else {
-			__io__block.writeLong(__io__address + 652, __address);
+			__io__block.writeLong(__io__address + 668, __address);
 		}
 	}
 
@@ -1343,9 +1423,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 672);
+			__dna__targetAddress = __io__block.readLong(__io__address + 688);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 656);
+			__dna__targetAddress = __io__block.readLong(__io__address + 672);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1360,9 +1440,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((gpuoffscreen == null) ? 0 : gpuoffscreen.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 672, __address);
+			__io__block.writeLong(__io__address + 688, __address);
 		} else {
-			__io__block.writeLong(__io__address + 656, __address);
+			__io__block.writeLong(__io__address + 672, __address);
 		}
 	}
 
@@ -1375,9 +1455,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 680);
+			__dna__targetAddress = __io__block.readLong(__io__address + 696);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 660);
+			__dna__targetAddress = __io__block.readLong(__io__address + 676);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1392,9 +1472,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((sms == null) ? 0 : sms.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 680, __address);
+			__io__block.writeLong(__io__address + 696, __address);
 		} else {
-			__io__block.writeLong(__io__address + 660, __address);
+			__io__block.writeLong(__io__address + 676, __address);
 		}
 	}
 
@@ -1407,9 +1487,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 688);
+			__dna__targetAddress = __io__block.readLong(__io__address + 704);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 664);
+			__dna__targetAddress = __io__block.readLong(__io__address + 680);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1424,9 +1504,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((smooth_timer == null) ? 0 : smooth_timer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 688, __address);
+			__io__block.writeLong(__io__address + 704, __address);
 		} else {
-			__io__block.writeLong(__io__address + 664, __address);
+			__io__block.writeLong(__io__address + 680, __address);
 		}
 	}
 
@@ -1443,9 +1523,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1458,9 +1538,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 696;
+			__dna__offset = 712;
 		} else {
-			__dna__offset = 668;
+			__dna__offset = 684;
 		}
 		if (__io__equals(twmat, __io__address + __dna__offset)) {
 			return;
@@ -1483,9 +1563,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 760, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 776, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1498,9 +1578,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 760;
+			__dna__offset = 776;
 		} else {
-			__dna__offset = 732;
+			__dna__offset = 748;
 		}
 		if (__io__equals(viewquat, __io__address + __dna__offset)) {
 			return;
@@ -1519,9 +1599,9 @@ public class RegionView3D extends CFacade {
 	public float getDist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 776);
+			return __io__block.readFloat(__io__address + 792);
 		} else {
-			return __io__block.readFloat(__io__address + 748);
+			return __io__block.readFloat(__io__address + 764);
 		}
 	}
 
@@ -1533,9 +1613,9 @@ public class RegionView3D extends CFacade {
 	public void setDist(float dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 776, dist);
+			__io__block.writeFloat(__io__address + 792, dist);
 		} else {
-			__io__block.writeFloat(__io__address + 748, dist);
+			__io__block.writeFloat(__io__address + 764, dist);
 		}
 	}
 
@@ -1547,9 +1627,9 @@ public class RegionView3D extends CFacade {
 	public float getCamdx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 780);
+			return __io__block.readFloat(__io__address + 796);
 		} else {
-			return __io__block.readFloat(__io__address + 752);
+			return __io__block.readFloat(__io__address + 768);
 		}
 	}
 
@@ -1561,9 +1641,9 @@ public class RegionView3D extends CFacade {
 	public void setCamdx(float camdx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 780, camdx);
+			__io__block.writeFloat(__io__address + 796, camdx);
 		} else {
-			__io__block.writeFloat(__io__address + 752, camdx);
+			__io__block.writeFloat(__io__address + 768, camdx);
 		}
 	}
 
@@ -1575,9 +1655,9 @@ public class RegionView3D extends CFacade {
 	public float getCamdy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 784);
+			return __io__block.readFloat(__io__address + 800);
 		} else {
-			return __io__block.readFloat(__io__address + 756);
+			return __io__block.readFloat(__io__address + 772);
 		}
 	}
 
@@ -1589,9 +1669,9 @@ public class RegionView3D extends CFacade {
 	public void setCamdy(float camdy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 784, camdy);
+			__io__block.writeFloat(__io__address + 800, camdy);
 		} else {
-			__io__block.writeFloat(__io__address + 756, camdy);
+			__io__block.writeFloat(__io__address + 772, camdy);
 		}
 	}
 
@@ -1603,9 +1683,9 @@ public class RegionView3D extends CFacade {
 	public float getPixsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 788);
+			return __io__block.readFloat(__io__address + 804);
 		} else {
-			return __io__block.readFloat(__io__address + 760);
+			return __io__block.readFloat(__io__address + 776);
 		}
 	}
 
@@ -1617,9 +1697,9 @@ public class RegionView3D extends CFacade {
 	public void setPixsize(float pixsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 788, pixsize);
+			__io__block.writeFloat(__io__address + 804, pixsize);
 		} else {
-			__io__block.writeFloat(__io__address + 760, pixsize);
+			__io__block.writeFloat(__io__address + 776, pixsize);
 		}
 	}
 
@@ -1635,9 +1715,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 792, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 808, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 764, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1650,9 +1730,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 792;
+			__dna__offset = 808;
 		} else {
-			__dna__offset = 764;
+			__dna__offset = 780;
 		}
 		if (__io__equals(ofs, __io__address + __dna__offset)) {
 			return;
@@ -1671,9 +1751,9 @@ public class RegionView3D extends CFacade {
 	public float getCamzoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 804);
+			return __io__block.readFloat(__io__address + 820);
 		} else {
-			return __io__block.readFloat(__io__address + 776);
+			return __io__block.readFloat(__io__address + 792);
 		}
 	}
 
@@ -1685,9 +1765,9 @@ public class RegionView3D extends CFacade {
 	public void setCamzoom(float camzoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 804, camzoom);
+			__io__block.writeFloat(__io__address + 820, camzoom);
 		} else {
-			__io__block.writeFloat(__io__address + 776, camzoom);
+			__io__block.writeFloat(__io__address + 792, camzoom);
 		}
 	}
 
@@ -1699,9 +1779,9 @@ public class RegionView3D extends CFacade {
 	public byte getIs_persp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 808);
+			return __io__block.readByte(__io__address + 824);
 		} else {
-			return __io__block.readByte(__io__address + 780);
+			return __io__block.readByte(__io__address + 796);
 		}
 	}
 
@@ -1713,9 +1793,9 @@ public class RegionView3D extends CFacade {
 	public void setIs_persp(byte is_persp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 808, is_persp);
+			__io__block.writeByte(__io__address + 824, is_persp);
 		} else {
-			__io__block.writeByte(__io__address + 780, is_persp);
+			__io__block.writeByte(__io__address + 796, is_persp);
 		}
 	}
 
@@ -1727,9 +1807,9 @@ public class RegionView3D extends CFacade {
 	public byte getPersp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 809);
+			return __io__block.readByte(__io__address + 825);
 		} else {
-			return __io__block.readByte(__io__address + 781);
+			return __io__block.readByte(__io__address + 797);
 		}
 	}
 
@@ -1741,9 +1821,9 @@ public class RegionView3D extends CFacade {
 	public void setPersp(byte persp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 809, persp);
+			__io__block.writeByte(__io__address + 825, persp);
 		} else {
-			__io__block.writeByte(__io__address + 781, persp);
+			__io__block.writeByte(__io__address + 797, persp);
 		}
 	}
 
@@ -1755,9 +1835,9 @@ public class RegionView3D extends CFacade {
 	public byte getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 810);
+			return __io__block.readByte(__io__address + 826);
 		} else {
-			return __io__block.readByte(__io__address + 782);
+			return __io__block.readByte(__io__address + 798);
 		}
 	}
 
@@ -1769,9 +1849,9 @@ public class RegionView3D extends CFacade {
 	public void setView(byte view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 810, view);
+			__io__block.writeByte(__io__address + 826, view);
 		} else {
-			__io__block.writeByte(__io__address + 782, view);
+			__io__block.writeByte(__io__address + 798, view);
 		}
 	}
 
@@ -1783,9 +1863,9 @@ public class RegionView3D extends CFacade {
 	public byte getViewlock() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 811);
+			return __io__block.readByte(__io__address + 827);
 		} else {
-			return __io__block.readByte(__io__address + 783);
+			return __io__block.readByte(__io__address + 799);
 		}
 	}
 
@@ -1797,9 +1877,9 @@ public class RegionView3D extends CFacade {
 	public void setViewlock(byte viewlock) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 811, viewlock);
+			__io__block.writeByte(__io__address + 827, viewlock);
 		} else {
-			__io__block.writeByte(__io__address + 783, viewlock);
+			__io__block.writeByte(__io__address + 799, viewlock);
 		}
 	}
 
@@ -1811,9 +1891,9 @@ public class RegionView3D extends CFacade {
 	public byte getViewlock_quad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 812);
+			return __io__block.readByte(__io__address + 828);
 		} else {
-			return __io__block.readByte(__io__address + 784);
+			return __io__block.readByte(__io__address + 800);
 		}
 	}
 
@@ -1825,9 +1905,9 @@ public class RegionView3D extends CFacade {
 	public void setViewlock_quad(byte viewlock_quad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 812, viewlock_quad);
+			__io__block.writeByte(__io__address + 828, viewlock_quad);
 		} else {
-			__io__block.writeByte(__io__address + 784, viewlock_quad);
+			__io__block.writeByte(__io__address + 800, viewlock_quad);
 		}
 	}
 
@@ -1843,9 +1923,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 813, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 829, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 785, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 801, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1858,9 +1938,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 813;
+			__dna__offset = 829;
 		} else {
-			__dna__offset = 785;
+			__dna__offset = 801;
 		}
 		if (__io__equals(pad, __io__address + __dna__offset)) {
 			return;
@@ -1883,9 +1963,9 @@ public class RegionView3D extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 816, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 832, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 804, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1898,9 +1978,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 816;
+			__dna__offset = 832;
 		} else {
-			__dna__offset = 788;
+			__dna__offset = 804;
 		}
 		if (__io__equals(ofs_lock, __io__address + __dna__offset)) {
 			return;
@@ -1919,9 +1999,9 @@ public class RegionView3D extends CFacade {
 	public short getTwdrawflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 824);
+			return __io__block.readShort(__io__address + 840);
 		} else {
-			return __io__block.readShort(__io__address + 796);
+			return __io__block.readShort(__io__address + 812);
 		}
 	}
 
@@ -1933,9 +2013,9 @@ public class RegionView3D extends CFacade {
 	public void setTwdrawflag(short twdrawflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 824, twdrawflag);
+			__io__block.writeShort(__io__address + 840, twdrawflag);
 		} else {
-			__io__block.writeShort(__io__address + 796, twdrawflag);
+			__io__block.writeShort(__io__address + 812, twdrawflag);
 		}
 	}
 
@@ -1947,9 +2027,9 @@ public class RegionView3D extends CFacade {
 	public short getRflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 826);
+			return __io__block.readShort(__io__address + 842);
 		} else {
-			return __io__block.readShort(__io__address + 798);
+			return __io__block.readShort(__io__address + 814);
 		}
 	}
 
@@ -1961,9 +2041,9 @@ public class RegionView3D extends CFacade {
 	public void setRflag(short rflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 826, rflag);
+			__io__block.writeShort(__io__address + 842, rflag);
 		} else {
-			__io__block.writeShort(__io__address + 798, rflag);
+			__io__block.writeShort(__io__address + 814, rflag);
 		}
 	}
 
@@ -1979,9 +2059,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 828, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 844, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 800, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 816, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1994,9 +2074,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 828;
+			__dna__offset = 844;
 		} else {
-			__dna__offset = 800;
+			__dna__offset = 816;
 		}
 		if (__io__equals(lviewquat, __io__address + __dna__offset)) {
 			return;
@@ -2015,9 +2095,9 @@ public class RegionView3D extends CFacade {
 	public short getLpersp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 844);
+			return __io__block.readShort(__io__address + 860);
 		} else {
-			return __io__block.readShort(__io__address + 816);
+			return __io__block.readShort(__io__address + 832);
 		}
 	}
 
@@ -2029,9 +2109,9 @@ public class RegionView3D extends CFacade {
 	public void setLpersp(short lpersp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 844, lpersp);
+			__io__block.writeShort(__io__address + 860, lpersp);
 		} else {
-			__io__block.writeShort(__io__address + 816, lpersp);
+			__io__block.writeShort(__io__address + 832, lpersp);
 		}
 	}
 
@@ -2043,9 +2123,9 @@ public class RegionView3D extends CFacade {
 	public short getLview() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 846);
+			return __io__block.readShort(__io__address + 862);
 		} else {
-			return __io__block.readShort(__io__address + 818);
+			return __io__block.readShort(__io__address + 834);
 		}
 	}
 
@@ -2057,9 +2137,9 @@ public class RegionView3D extends CFacade {
 	public void setLview(short lview) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 846, lview);
+			__io__block.writeShort(__io__address + 862, lview);
 		} else {
-			__io__block.writeShort(__io__address + 818, lview);
+			__io__block.writeShort(__io__address + 834, lview);
 		}
 	}
 
@@ -2071,9 +2151,9 @@ public class RegionView3D extends CFacade {
 	public float getGridview() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 848);
+			return __io__block.readFloat(__io__address + 864);
 		} else {
-			return __io__block.readFloat(__io__address + 820);
+			return __io__block.readFloat(__io__address + 836);
 		}
 	}
 
@@ -2085,9 +2165,9 @@ public class RegionView3D extends CFacade {
 	public void setGridview(float gridview) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 848, gridview);
+			__io__block.writeFloat(__io__address + 864, gridview);
 		} else {
-			__io__block.writeFloat(__io__address + 820, gridview);
+			__io__block.writeFloat(__io__address + 836, gridview);
 		}
 	}
 
@@ -2103,9 +2183,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 852, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 868, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 824, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 840, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2118,9 +2198,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 852;
+			__dna__offset = 868;
 		} else {
-			__dna__offset = 824;
+			__dna__offset = 840;
 		}
 		if (__io__equals(tw_idot, __io__address + __dna__offset)) {
 			return;
@@ -2139,9 +2219,9 @@ public class RegionView3D extends CFacade {
 	public float getRot_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 864);
+			return __io__block.readFloat(__io__address + 880);
 		} else {
-			return __io__block.readFloat(__io__address + 836);
+			return __io__block.readFloat(__io__address + 852);
 		}
 	}
 
@@ -2153,9 +2233,9 @@ public class RegionView3D extends CFacade {
 	public void setRot_angle(float rot_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 864, rot_angle);
+			__io__block.writeFloat(__io__address + 880, rot_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 836, rot_angle);
+			__io__block.writeFloat(__io__address + 852, rot_angle);
 		}
 	}
 
@@ -2171,9 +2251,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 868, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 840, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 856, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2186,9 +2266,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 868;
+			__dna__offset = 884;
 		} else {
-			__dna__offset = 840;
+			__dna__offset = 856;
 		}
 		if (__io__equals(rot_axis, __io__address + __dna__offset)) {
 			return;
@@ -2196,6 +2276,38 @@ public class RegionView3D extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, rot_axis);
 		} else {
 			__io__generic__copy( getRot_axis(), rot_axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'compositor'.
+	 * @see #__DNA__FIELD__compositor
+	 */
+	
+	public CPointer<Object> getCompositor() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 896);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 868);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'compositor'.
+	 * @see #__DNA__FIELD__compositor
+	 */
+	
+	public void setCompositor(CPointer<Object> compositor) throws IOException
+	{
+		long __address = ((compositor == null) ? 0 : compositor.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 896, __address);
+		} else {
+			__io__block.writeLong(__io__address + 868, __address);
 		}
 	}
 

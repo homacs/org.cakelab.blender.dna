@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=184)
+@CMetaData(size32=188, size64=192)
 public class GameData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class GameData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'framing'.
@@ -730,6 +730,26 @@ public class GameData extends CFacade {
 	public static final long[] __DNA__FIELD__angulardeactthreshold = new long[]{172, 176};
 
 	/**
+	 * Field descriptor (offset) for struct member 'lodflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GameData gamedata = ...;
+	 * CPointer&lt;Object&gt; p = gamedata.__dna__addressof(GameData.__DNA__FIELD__lodflag);
+	 * CPointer&lt;Short&gt; p_lodflag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lodflag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lodflag = new long[]{176, 180};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -738,16 +758,56 @@ public class GameData extends CFacade {
 	 * <pre>
 	 * GameData gamedata = ...;
 	 * CPointer&lt;Object&gt; p = gamedata.__dna__addressof(GameData.__DNA__FIELD__pad2);
-	 * CPointer&lt;Float&gt; p_pad2 = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{178, 182};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scehysteresis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GameData gamedata = ...;
+	 * CPointer&lt;Object&gt; p = gamedata.__dna__addressof(GameData.__DNA__FIELD__scehysteresis);
+	 * CPointer&lt;Integer&gt; p_scehysteresis = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scehysteresis'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{176, 180};
+	public static final long[] __DNA__FIELD__scehysteresis = new long[]{180, 184};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad5'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GameData gamedata = ...;
+	 * CPointer&lt;Object&gt; p = gamedata.__dna__addressof(GameData.__DNA__FIELD__pad5);
+	 * CPointer&lt;Integer&gt; p_pad5 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad5'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad5 = new long[]{184, 188};
 
 	public GameData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1774,16 +1834,44 @@ public class GameData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'lodflag'.
+	 * @see #__DNA__FIELD__lodflag
+	 */
+	
+	public short getLodflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 180);
+		} else {
+			return __io__block.readShort(__io__address + 176);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lodflag'.
+	 * @see #__DNA__FIELD__lodflag
+	 */
+	
+	public void setLodflag(short lodflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 180, lodflag);
+		} else {
+			__io__block.writeShort(__io__address + 176, lodflag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad2'.
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
-	public float getPad2() throws IOException
+	public short getPad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readShort(__io__address + 182);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -1792,12 +1880,68 @@ public class GameData extends CFacade {
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
-	public void setPad2(float pad2) throws IOException
+	public void setPad2(short pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, pad2);
+			__io__block.writeShort(__io__address + 182, pad2);
 		} else {
-			__io__block.writeFloat(__io__address + 176, pad2);
+			__io__block.writeShort(__io__address + 178, pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scehysteresis'.
+	 * @see #__DNA__FIELD__scehysteresis
+	 */
+	
+	public int getScehysteresis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 184);
+		} else {
+			return __io__block.readInt(__io__address + 180);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scehysteresis'.
+	 * @see #__DNA__FIELD__scehysteresis
+	 */
+	
+	public void setScehysteresis(int scehysteresis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 184, scehysteresis);
+		} else {
+			__io__block.writeInt(__io__address + 180, scehysteresis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad5'.
+	 * @see #__DNA__FIELD__pad5
+	 */
+	
+	public int getPad5() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 188);
+		} else {
+			return __io__block.readInt(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad5'.
+	 * @see #__DNA__FIELD__pad5
+	 */
+	
+	public void setPad5(int pad5) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 188, pad5);
+		} else {
+			__io__block.writeInt(__io__address + 184, pad5);
 		}
 	}
 

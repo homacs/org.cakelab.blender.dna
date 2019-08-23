@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=160)
+@CMetaData(size32=116, size64=144)
 public class Palette extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class Palette extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 436;
+	public static final int __DNA__SDNA_INDEX = 459;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -69,26 +69,6 @@ public class Palette extends CFacade {
 	public static final long[] __DNA__FIELD__colors = new long[]{100, 120};
 
 	/**
-	 * Field descriptor (offset) for struct member 'deleted'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Palette palette = ...;
-	 * CPointer&lt;Object&gt; p = palette.__dna__addressof(Palette.__DNA__FIELD__deleted);
-	 * CPointer&lt;ListBase&gt; p_deleted = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'deleted'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__deleted = new long[]{108, 136};
-
-	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -106,7 +86,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_color = new long[]{116, 152};
+	public static final long[] __DNA__FIELD__active_color = new long[]{108, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -126,7 +106,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{120, 156};
+	public static final long[] __DNA__FIELD__pad = new long[]{112, 140};
 
 	public Palette(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -209,42 +189,6 @@ public class Palette extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'deleted'.
-	 * @see #__DNA__FIELD__deleted
-	 */
-	
-	public ListBase getDeleted() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 108, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'deleted'.
-	 * @see #__DNA__FIELD__deleted
-	 */
-	
-	public void setDeleted(ListBase deleted) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
-		} else {
-			__dna__offset = 108;
-		}
-		if (__io__equals(deleted, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, deleted)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, deleted);
-		} else {
-			__io__generic__copy( getDeleted(), deleted);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'active_color'.
 	 * @see #__DNA__FIELD__active_color
 	 */
@@ -252,9 +196,9 @@ public class Palette extends CFacade {
 	public int getActive_color() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -266,9 +210,9 @@ public class Palette extends CFacade {
 	public void setActive_color(int active_color) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, active_color);
+			__io__block.writeInt(__io__address + 136, active_color);
 		} else {
-			__io__block.writeInt(__io__address + 116, active_color);
+			__io__block.writeInt(__io__address + 108, active_color);
 		}
 	}
 
@@ -280,9 +224,9 @@ public class Palette extends CFacade {
 	public int getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -294,9 +238,9 @@ public class Palette extends CFacade {
 	public void setPad(int pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, pad);
+			__io__block.writeInt(__io__address + 140, pad);
 		} else {
-			__io__block.writeInt(__io__address + 120, pad);
+			__io__block.writeInt(__io__address + 112, pad);
 		}
 	}
 

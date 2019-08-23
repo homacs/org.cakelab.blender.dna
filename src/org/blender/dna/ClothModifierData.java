@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=168)
+@CMetaData(size32=172, size64=224)
 public class ClothModifierData extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class ClothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 103;
+	public static final int __DNA__SDNA_INDEX = 110;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -167,6 +168,126 @@ public class ClothModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__ptcaches = new long[]{116, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hairdata'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__hairdata);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_hairdata = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hairdata'</li>
+	 * <li>Signature: 'ClothHairData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hairdata = new long[]{124, 168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hair_grid_min'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__hair_grid_min);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_hair_grid_min = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hair_grid_min'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hair_grid_min = new long[]{128, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hair_grid_max'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__hair_grid_max);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_hair_grid_max = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hair_grid_max'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hair_grid_max = new long[]{140, 188};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hair_grid_res'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__hair_grid_res);
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_hair_grid_res = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hair_grid_res'</li>
+	 * <li>Signature: 'int[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hair_grid_res = new long[]{152, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hair_grid_cellsize'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__hair_grid_cellsize);
+	 * CPointer&lt;Float&gt; p_hair_grid_cellsize = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hair_grid_cellsize'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hair_grid_cellsize = new long[]{164, 212};
+
+	/**
+	 * Field descriptor (offset) for struct member 'solver_result'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothModifierData clothmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__solver_result);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_solver_result = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'solver_result'</li>
+	 * <li>Signature: 'ClothSolverResult*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__solver_result = new long[]{168, 216};
 
 	public ClothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -405,6 +526,218 @@ public class ClothModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, ptcaches);
 		} else {
 			__io__generic__copy( getPtcaches(), ptcaches);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hairdata'.
+	 * @see #__DNA__FIELD__hairdata
+	 */
+	
+	public CPointer<Object> getHairdata() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'hairdata'.
+	 * @see #__DNA__FIELD__hairdata
+	 */
+	
+	public void setHairdata(CPointer<Object> hairdata) throws IOException
+	{
+		long __address = ((hairdata == null) ? 0 : hairdata.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 124, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hair_grid_min'.
+	 * @see #__DNA__FIELD__hair_grid_min
+	 */
+	
+	public CArrayFacade<Float> getHair_grid_min() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hair_grid_min'.
+	 * @see #__DNA__FIELD__hair_grid_min
+	 */
+	
+	public void setHair_grid_min(CArrayFacade<Float> hair_grid_min) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 128;
+		}
+		if (__io__equals(hair_grid_min, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, hair_grid_min)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, hair_grid_min);
+		} else {
+			__io__generic__copy( getHair_grid_min(), hair_grid_min);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hair_grid_max'.
+	 * @see #__DNA__FIELD__hair_grid_max
+	 */
+	
+	public CArrayFacade<Float> getHair_grid_max() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hair_grid_max'.
+	 * @see #__DNA__FIELD__hair_grid_max
+	 */
+	
+	public void setHair_grid_max(CArrayFacade<Float> hair_grid_max) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 188;
+		} else {
+			__dna__offset = 140;
+		}
+		if (__io__equals(hair_grid_max, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, hair_grid_max)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, hair_grid_max);
+		} else {
+			__io__generic__copy( getHair_grid_max(), hair_grid_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hair_grid_res'.
+	 * @see #__DNA__FIELD__hair_grid_res
+	 */
+	
+	public CArrayFacade<Integer> getHair_grid_res() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Integer>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Integer>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hair_grid_res'.
+	 * @see #__DNA__FIELD__hair_grid_res
+	 */
+	
+	public void setHair_grid_res(CArrayFacade<Integer> hair_grid_res) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 200;
+		} else {
+			__dna__offset = 152;
+		}
+		if (__io__equals(hair_grid_res, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, hair_grid_res)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, hair_grid_res);
+		} else {
+			__io__generic__copy( getHair_grid_res(), hair_grid_res);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hair_grid_cellsize'.
+	 * @see #__DNA__FIELD__hair_grid_cellsize
+	 */
+	
+	public float getHair_grid_cellsize() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 212);
+		} else {
+			return __io__block.readFloat(__io__address + 164);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hair_grid_cellsize'.
+	 * @see #__DNA__FIELD__hair_grid_cellsize
+	 */
+	
+	public void setHair_grid_cellsize(float hair_grid_cellsize) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 212, hair_grid_cellsize);
+		} else {
+			__io__block.writeFloat(__io__address + 164, hair_grid_cellsize);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'solver_result'.
+	 * @see #__DNA__FIELD__solver_result
+	 */
+	
+	public CPointer<Object> getSolver_result() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'solver_result'.
+	 * @see #__DNA__FIELD__solver_result
+	 */
+	
+	public void setSolver_result(CPointer<Object> solver_result) throws IOException
+	{
+		long __address = ((solver_result == null) ? 0 : solver_result.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 216, __address);
+		} else {
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 

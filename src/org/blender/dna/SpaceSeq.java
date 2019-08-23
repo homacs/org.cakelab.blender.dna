@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=256, size64=312)
+@CMetaData(size32=264, size64=320)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 196;
+	public static final int __DNA__SDNA_INDEX = 209;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -448,6 +448,46 @@ public class SpaceSeq extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__scopes = new long[]{232, 264};
+
+	/**
+	 * Field descriptor (offset) for struct member 'multiview_eye'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__multiview_eye);
+	 * CPointer&lt;Byte&gt; p_multiview_eye = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'multiview_eye'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__multiview_eye = new long[]{256, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{257, 313};
 
 	public SpaceSeq(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1090,6 +1130,74 @@ public class SpaceSeq extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, scopes);
 		} else {
 			__io__generic__copy( getScopes(), scopes);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
+	 */
+	
+	public byte getMultiview_eye() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 312);
+		} else {
+			return __io__block.readByte(__io__address + 256);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
+	 */
+	
+	public void setMultiview_eye(byte multiview_eye) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 312, multiview_eye);
+		} else {
+			__io__block.writeByte(__io__address + 256, multiview_eye);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public CArrayFacade<Byte> getPad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 313, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 257, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(CArrayFacade<Byte> pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 313;
+		} else {
+			__dna__offset = 257;
+		}
+		if (__io__equals(pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
+		} else {
+			__io__generic__copy( getPad2(), pad2);
 		}
 	}
 

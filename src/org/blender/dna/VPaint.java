@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=48, size64=72)
+@CMetaData(size32=68, size64=96)
 public class VPaint extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class VPaint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 175;
+	public static final int __DNA__SDNA_INDEX = 187;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -43,7 +43,7 @@ public class VPaint extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paint'</li>
 	 * <li>Signature: 'Paint'</li>
-	 * <li>Actual Size (32bit/64bit): 28/40</li>
+	 * <li>Actual Size (32bit/64bit): 48/64</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paint = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{28, 40};
+	public static final long[] __DNA__FIELD__flag = new long[]{48, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -86,7 +86,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{30, 42};
+	public static final long[] __DNA__FIELD__pad = new long[]{50, 66};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
@@ -106,7 +106,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot = new long[]{32, 44};
+	public static final long[] __DNA__FIELD__tot = new long[]{52, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint_prev'.
@@ -126,7 +126,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vpaint_prev = new long[]{36, 48};
+	public static final long[] __DNA__FIELD__vpaint_prev = new long[]{56, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wpaint_prev'.
@@ -146,7 +146,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wpaint_prev = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__wpaint_prev = new long[]{60, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
@@ -166,7 +166,7 @@ public class VPaint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paintcursor = new long[]{44, 64};
+	public static final long[] __DNA__FIELD__paintcursor = new long[]{64, 88};
 
 	public VPaint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -220,9 +220,9 @@ public class VPaint extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 64);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 48);
 		}
 	}
 
@@ -234,9 +234,9 @@ public class VPaint extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 40, flag);
+			__io__block.writeShort(__io__address + 64, flag);
 		} else {
-			__io__block.writeShort(__io__address + 28, flag);
+			__io__block.writeShort(__io__address + 48, flag);
 		}
 	}
 
@@ -248,9 +248,9 @@ public class VPaint extends CFacade {
 	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 42);
+			return __io__block.readShort(__io__address + 66);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 50);
 		}
 	}
 
@@ -262,9 +262,9 @@ public class VPaint extends CFacade {
 	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 42, pad);
+			__io__block.writeShort(__io__address + 66, pad);
 		} else {
-			__io__block.writeShort(__io__address + 30, pad);
+			__io__block.writeShort(__io__address + 50, pad);
 		}
 	}
 
@@ -276,9 +276,9 @@ public class VPaint extends CFacade {
 	public int getTot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 68);
 		} else {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 52);
 		}
 	}
 
@@ -290,9 +290,9 @@ public class VPaint extends CFacade {
 	public void setTot(int tot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, tot);
+			__io__block.writeInt(__io__address + 68, tot);
 		} else {
-			__io__block.writeInt(__io__address + 32, tot);
+			__io__block.writeInt(__io__address + 52, tot);
 		}
 	}
 
@@ -305,9 +305,9 @@ public class VPaint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -322,9 +322,9 @@ public class VPaint extends CFacade {
 	{
 		long __address = ((vpaint_prev == null) ? 0 : vpaint_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 72, __address);
 		} else {
-			__io__block.writeLong(__io__address + 36, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		}
 	}
 
@@ -337,9 +337,9 @@ public class VPaint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 60);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
 		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -354,9 +354,9 @@ public class VPaint extends CFacade {
 	{
 		long __address = ((wpaint_prev == null) ? 0 : wpaint_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 56, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		} else {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 60, __address);
 		}
 	}
 
@@ -369,9 +369,9 @@ public class VPaint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 44);
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -386,9 +386,9 @@ public class VPaint extends CFacade {
 	{
 		long __address = ((paintcursor == null) ? 0 : paintcursor.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		} else {
-			__io__block.writeLong(__io__address + 44, __address);
+			__io__block.writeLong(__io__address + 64, __address);
 		}
 	}
 

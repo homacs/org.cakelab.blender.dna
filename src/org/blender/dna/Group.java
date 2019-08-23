@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=152)
+@CMetaData(size32=128, size64=160)
 public class Group extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Group extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 309;
+	public static final int __DNA__SDNA_INDEX = 331;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -70,6 +70,26 @@ public class Group extends CFacade {
 	public static final long[] __DNA__FIELD__gobject = new long[]{100, 120};
 
 	/**
+	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Group group = ...;
+	 * CPointer&lt;Object&gt; p = group.__dna__addressof(Group.__DNA__FIELD__preview);
+	 * CPointer&lt;CPointer&lt;PreviewImage&gt;&gt; p_preview = p.cast(new Class[]{CPointer.class, PreviewImage.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'preview'</li>
+	 * <li>Signature: 'PreviewImage*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__preview = new long[]{108, 136};
+
+	/**
 	 * Field descriptor (offset) for struct member 'layer'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -87,7 +107,7 @@ public class Group extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__layer = new long[]{112, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupli_ofs'.
@@ -107,7 +127,7 @@ public class Group extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupli_ofs = new long[]{112, 140};
+	public static final long[] __DNA__FIELD__dupli_ofs = new long[]{116, 148};
 
 	public Group(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -190,6 +210,38 @@ public class Group extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public CPointer<PreviewImage> getPreview() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
+		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public void setPreview(CPointer<PreviewImage> preview) throws IOException
+	{
+		long __address = ((preview == null) ? 0 : preview.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 136, __address);
+		} else {
+			__io__block.writeLong(__io__address + 108, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'layer'.
 	 * @see #__DNA__FIELD__layer
 	 */
@@ -197,9 +249,9 @@ public class Group extends CFacade {
 	public int getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 144);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -211,9 +263,9 @@ public class Group extends CFacade {
 	public void setLayer(int layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, layer);
+			__io__block.writeInt(__io__address + 144, layer);
 		} else {
-			__io__block.writeInt(__io__address + 108, layer);
+			__io__block.writeInt(__io__address + 112, layer);
 		}
 	}
 
@@ -229,9 +281,9 @@ public class Group extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -244,9 +296,9 @@ public class Group extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 116;
 		}
 		if (__io__equals(dupli_ofs, __io__address + __dna__offset)) {
 			return;

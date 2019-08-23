@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=256)
+@CMetaData(size32=192, size64=280)
 public class wmWindow extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class wmWindow extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 462;
+	public static final int __DNA__SDNA_INDEX = 485;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -510,6 +510,26 @@ public class wmWindow extends CFacade {
 	public static final long[] __DNA__FIELD__tweak = new long[]{124, 152};
 
 	/**
+	 * Field descriptor (offset) for struct member 'ime_data'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindow wmwindow = ...;
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__ime_data);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_ime_data = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ime_data'</li>
+	 * <li>Signature: 'wmIMEData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ime_data = new long[]{128, 160};
+
+	/**
 	 * Field descriptor (offset) for struct member 'drawmethod'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -527,7 +547,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawmethod = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__drawmethod = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawfail'.
@@ -547,7 +567,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawfail = new long[]{132, 164};
+	public static final long[] __DNA__FIELD__drawfail = new long[]{136, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
@@ -558,16 +578,16 @@ public class wmWindow extends CFacade {
 	 * <pre>
 	 * wmWindow wmwindow = ...;
 	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__drawdata);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_drawdata = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;ListBase&gt; p_drawdata = p.cast(new Class[]{ListBase.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'drawdata'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawdata = new long[]{136, 168};
+	public static final long[] __DNA__FIELD__drawdata = new long[]{140, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'queue'.
@@ -587,7 +607,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__queue = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__queue = new long[]{148, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
@@ -607,7 +627,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handlers = new long[]{148, 192};
+	public static final long[] __DNA__FIELD__handlers = new long[]{156, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'modalhandlers'.
@@ -627,7 +647,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__modalhandlers = new long[]{156, 208};
+	public static final long[] __DNA__FIELD__modalhandlers = new long[]{164, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subwindows'.
@@ -647,7 +667,7 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subwindows = new long[]{164, 224};
+	public static final long[] __DNA__FIELD__subwindows = new long[]{172, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gesture'.
@@ -667,7 +687,27 @@ public class wmWindow extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gesture = new long[]{172, 240};
+	public static final long[] __DNA__FIELD__gesture = new long[]{180, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_format'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindow wmwindow = ...;
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__stereo3d_format);
+	 * CPointer&lt;CPointer&lt;Stereo3dFormat&gt;&gt; p_stereo3d_format = p.cast(new Class[]{CPointer.class, Stereo3dFormat.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_format'</li>
+	 * <li>Signature: 'Stereo3dFormat*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_format = new long[]{188, 272};
 
 	public wmWindow(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1394,6 +1434,38 @@ public class wmWindow extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ime_data'.
+	 * @see #__DNA__FIELD__ime_data
+	 */
+	
+	public CPointer<Object> getIme_data() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'ime_data'.
+	 * @see #__DNA__FIELD__ime_data
+	 */
+	
+	public void setIme_data(CPointer<Object> ime_data) throws IOException
+	{
+		long __address = ((ime_data == null) ? 0 : ime_data.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 160, __address);
+		} else {
+			__io__block.writeLong(__io__address + 128, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'drawmethod'.
 	 * @see #__DNA__FIELD__drawmethod
 	 */
@@ -1401,9 +1473,9 @@ public class wmWindow extends CFacade {
 	public int getDrawmethod() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 132);
 		}
 	}
 
@@ -1415,9 +1487,9 @@ public class wmWindow extends CFacade {
 	public void setDrawmethod(int drawmethod) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 160, drawmethod);
+			__io__block.writeInt(__io__address + 168, drawmethod);
 		} else {
-			__io__block.writeInt(__io__address + 128, drawmethod);
+			__io__block.writeInt(__io__address + 132, drawmethod);
 		}
 	}
 
@@ -1429,9 +1501,9 @@ public class wmWindow extends CFacade {
 	public int getDrawfail() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 172);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 136);
 		}
 	}
 
@@ -1443,9 +1515,9 @@ public class wmWindow extends CFacade {
 	public void setDrawfail(int drawfail) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, drawfail);
+			__io__block.writeInt(__io__address + 172, drawfail);
 		} else {
-			__io__block.writeInt(__io__address + 132, drawfail);
+			__io__block.writeInt(__io__address + 136, drawfail);
 		}
 	}
 
@@ -1454,16 +1526,13 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__drawdata
 	 */
 	
-	public CPointer<Object> getDrawdata() throws IOException
+	public ListBase getDrawdata() throws IOException
 	{
-		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			return new ListBase(__io__address + 140, __io__block, __io__blockTable);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
@@ -1471,13 +1540,20 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__drawdata
 	 */
 	
-	public void setDrawdata(CPointer<Object> drawdata) throws IOException
+	public void setDrawdata(ListBase drawdata) throws IOException
 	{
-		long __address = ((drawdata == null) ? 0 : drawdata.getAddress());
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__dna__offset = 176;
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__dna__offset = 140;
+		}
+		if (__io__equals(drawdata, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, drawdata)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, drawdata);
+		} else {
+			__io__generic__copy( getDrawdata(), drawdata);
 		}
 	}
 
@@ -1489,9 +1565,9 @@ public class wmWindow extends CFacade {
 	public ListBase getQueue() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 140, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 148, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1504,9 +1580,9 @@ public class wmWindow extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		}
 		if (__io__equals(queue, __io__address + __dna__offset)) {
 			return;
@@ -1525,9 +1601,9 @@ public class wmWindow extends CFacade {
 	public ListBase getHandlers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 148, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1540,9 +1616,9 @@ public class wmWindow extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 156;
 		}
 		if (__io__equals(handlers, __io__address + __dna__offset)) {
 			return;
@@ -1561,9 +1637,9 @@ public class wmWindow extends CFacade {
 	public ListBase getModalhandlers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 156, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 164, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1576,9 +1652,9 @@ public class wmWindow extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		}
 		if (__io__equals(modalhandlers, __io__address + __dna__offset)) {
 			return;
@@ -1597,9 +1673,9 @@ public class wmWindow extends CFacade {
 	public ListBase getSubwindows() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 164, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 172, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1612,9 +1688,9 @@ public class wmWindow extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		}
 		if (__io__equals(subwindows, __io__address + __dna__offset)) {
 			return;
@@ -1633,9 +1709,9 @@ public class wmWindow extends CFacade {
 	public ListBase getGesture() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 172, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 180, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1648,9 +1724,9 @@ public class wmWindow extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(gesture, __io__address + __dna__offset)) {
 			return;
@@ -1658,6 +1734,38 @@ public class wmWindow extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, gesture);
 		} else {
 			__io__generic__copy( getGesture(), gesture);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_format'.
+	 * @see #__DNA__FIELD__stereo3d_format
+	 */
+	
+	public CPointer<Stereo3dFormat> getStereo3d_format() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Stereo3dFormat.class};
+		return new CPointer<Stereo3dFormat>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Stereo3dFormat.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_format'.
+	 * @see #__DNA__FIELD__stereo3d_format
+	 */
+	
+	public void setStereo3d_format(CPointer<Stereo3dFormat> stereo3d_format) throws IOException
+	{
+		long __address = ((stereo3d_format == null) ? 0 : stereo3d_format.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 272, __address);
+		} else {
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 

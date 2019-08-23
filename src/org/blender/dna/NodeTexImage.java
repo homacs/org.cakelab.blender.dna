@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1016, size64=1024)
+@CMetaData(size32=1024, size64=1032)
 public class NodeTexImage extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 402;
+	public static final int __DNA__SDNA_INDEX = 424;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -147,6 +147,46 @@ public class NodeTexImage extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__interpolation = new long[]{1012, 1020};
+
+	/**
+	 * Field descriptor (offset) for struct member 'extension'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexImage nodeteximage = ...;
+	 * CPointer&lt;Object&gt; p = nodeteximage.__dna__addressof(NodeTexImage.__DNA__FIELD__extension);
+	 * CPointer&lt;Integer&gt; p_extension = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'extension'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__extension = new long[]{1016, 1024};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexImage nodeteximage = ...;
+	 * CPointer&lt;Object&gt; p = nodeteximage.__dna__addressof(NodeTexImage.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{1020, 1028};
 
 	public NodeTexImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -337,6 +377,62 @@ public class NodeTexImage extends CFacade {
 			__io__block.writeInt(__io__address + 1020, interpolation);
 		} else {
 			__io__block.writeInt(__io__address + 1012, interpolation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'extension'.
+	 * @see #__DNA__FIELD__extension
+	 */
+	
+	public int getExtension() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1024);
+		} else {
+			return __io__block.readInt(__io__address + 1016);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'extension'.
+	 * @see #__DNA__FIELD__extension
+	 */
+	
+	public void setExtension(int extension) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1024, extension);
+		} else {
+			__io__block.writeInt(__io__address + 1016, extension);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1028);
+		} else {
+			return __io__block.readInt(__io__address + 1020);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1028, pad);
+		} else {
+			__io__block.writeInt(__io__address + 1020, pad);
 		}
 	}
 

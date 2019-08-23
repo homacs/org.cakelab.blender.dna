@@ -210,26 +210,6 @@ public class Key extends CFacade {
 	public static final long[] __DNA__FIELD__from = new long[]{160, 200};
 
 	/**
-	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Key key = ...;
-	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__type);
-	 * CPointer&lt;Short&gt; p_type = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'type'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__type = new long[]{164, 208};
-
-	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -238,36 +218,16 @@ public class Key extends CFacade {
 	 * <pre>
 	 * Key key = ...;
 	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__totkey);
-	 * CPointer&lt;Short&gt; p_totkey = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_totkey = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'totkey'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totkey = new long[]{166, 210};
-
-	/**
-	 * Field descriptor (offset) for struct member 'slurph'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Key key = ...;
-	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__slurph);
-	 * CPointer&lt;Short&gt; p_slurph = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'slurph'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__slurph = new long[]{168, 212};
+	public static final long[] __DNA__FIELD__totkey = new long[]{164, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -287,7 +247,47 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{170, 214};
+	public static final long[] __DNA__FIELD__flag = new long[]{168, 212};
+
+	/**
+	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Key key = ...;
+	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__type);
+	 * CPointer&lt;Byte&gt; p_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{170, 214};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Key key = ...;
+	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__pad2);
+	 * CPointer&lt;Byte&gt; p_pad2 = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{171, 215};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
@@ -634,44 +634,16 @@ public class Key extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'type'.
-	 * @see #__DNA__FIELD__type
-	 */
-	
-	public short getType() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
-		} else {
-			return __io__block.readShort(__io__address + 164);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'type'.
-	 * @see #__DNA__FIELD__type
-	 */
-	
-	public void setType(short type) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, type);
-		} else {
-			__io__block.writeShort(__io__address + 164, type);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'totkey'.
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
-	public short getTotkey() throws IOException
+	public int getTotkey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readInt(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 166);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -680,40 +652,12 @@ public class Key extends CFacade {
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
-	public void setTotkey(short totkey) throws IOException
+	public void setTotkey(int totkey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, totkey);
+			__io__block.writeInt(__io__address + 208, totkey);
 		} else {
-			__io__block.writeShort(__io__address + 166, totkey);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'slurph'.
-	 * @see #__DNA__FIELD__slurph
-	 */
-	
-	public short getSlurph() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
-		} else {
-			return __io__block.readShort(__io__address + 168);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'slurph'.
-	 * @see #__DNA__FIELD__slurph
-	 */
-	
-	public void setSlurph(short slurph) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, slurph);
-		} else {
-			__io__block.writeShort(__io__address + 168, slurph);
+			__io__block.writeInt(__io__address + 164, totkey);
 		}
 	}
 
@@ -725,9 +669,9 @@ public class Key extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 212);
 		} else {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -739,9 +683,65 @@ public class Key extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, flag);
+			__io__block.writeShort(__io__address + 212, flag);
 		} else {
-			__io__block.writeShort(__io__address + 170, flag);
+			__io__block.writeShort(__io__address + 168, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'type'.
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public byte getType() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 214);
+		} else {
+			return __io__block.readByte(__io__address + 170);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'type'.
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public void setType(byte type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 214, type);
+		} else {
+			__io__block.writeByte(__io__address + 170, type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public byte getPad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 215);
+		} else {
+			return __io__block.readByte(__io__address + 171);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(byte pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 215, pad2);
+		} else {
+			__io__block.writeByte(__io__address + 171, pad2);
 		}
 	}
 

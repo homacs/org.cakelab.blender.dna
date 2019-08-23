@@ -27,7 +27,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 482;
+	public static final int __DNA__SDNA_INDEX = 505;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -350,24 +350,24 @@ public class FCurve extends CFacade {
 	public static final long[] __DNA__FIELD__prev_norm_factor = new long[]{68, 104};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'prev_offset'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FCurve fcurve = ...;
-	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__prev_offset);
+	 * CPointer&lt;Float&gt; p_prev_offset = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'prev_offset'</li>
 	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{72, 108};
+	public static final long[] __DNA__FIELD__prev_offset = new long[]{72, 108};
 
 	public FCurve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -874,11 +874,11 @@ public class FCurve extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'prev_offset'.
+	 * @see #__DNA__FIELD__prev_offset
 	 */
 	
-	public float getPad() throws IOException
+	public float getPrev_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 108);
@@ -888,16 +888,16 @@ public class FCurve extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'prev_offset'.
+	 * @see #__DNA__FIELD__prev_offset
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void setPrev_offset(float prev_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, pad);
+			__io__block.writeFloat(__io__address + 108, prev_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 72, pad);
+			__io__block.writeFloat(__io__address + 72, prev_offset);
 		}
 	}
 

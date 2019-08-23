@@ -26,7 +26,7 @@ public class CollisionModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 104;
+	public static final int __DNA__SDNA_INDEX = 111;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -169,64 +169,64 @@ public class CollisionModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__current_v = new long[]{116, 152};
 
 	/**
-	 * Field descriptor (offset) for struct member 'mfaces'.
+	 * Field descriptor (offset) for struct member 'tri'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CollisionModifierData collisionmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__mfaces);
-	 * CPointer&lt;CPointer&lt;MFace&gt;&gt; p_mfaces = p.cast(new Class[]{CPointer.class, MFace.class});
+	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__tri);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_tri = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'mfaces'</li>
-	 * <li>Signature: 'MFace*'</li>
+	 * <li>Field: 'tri'</li>
+	 * <li>Signature: 'MVertTri*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mfaces = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__tri = new long[]{120, 160};
 
 	/**
-	 * Field descriptor (offset) for struct member 'numverts'.
+	 * Field descriptor (offset) for struct member 'mvert_num'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CollisionModifierData collisionmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__numverts);
-	 * CPointer&lt;Integer&gt; p_numverts = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__mvert_num);
+	 * CPointer&lt;Integer&gt; p_mvert_num = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'numverts'</li>
+	 * <li>Field: 'mvert_num'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numverts = new long[]{124, 168};
+	public static final long[] __DNA__FIELD__mvert_num = new long[]{124, 168};
 
 	/**
-	 * Field descriptor (offset) for struct member 'numfaces'.
+	 * Field descriptor (offset) for struct member 'tri_num'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CollisionModifierData collisionmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__numfaces);
-	 * CPointer&lt;Integer&gt; p_numfaces = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = collisionmodifierdata.__dna__addressof(CollisionModifierData.__DNA__FIELD__tri_num);
+	 * CPointer&lt;Integer&gt; p_tri_num = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'numfaces'</li>
+	 * <li>Field: 'tri_num'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numfaces = new long[]{128, 172};
+	public static final long[] __DNA__FIELD__tri_num = new long[]{128, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_x'.
@@ -525,11 +525,11 @@ public class CollisionModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'mfaces'.
-	 * @see #__DNA__FIELD__mfaces
+	 * Get method for struct member 'tri'.
+	 * @see #__DNA__FIELD__tri
 	 */
 	
-	public CPointer<MFace> getMfaces() throws IOException
+	public CPointer<Object> getTri() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -537,18 +537,18 @@ public class CollisionModifierData extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{MFace.class};
-		return new CPointer<MFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MFace.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'mfaces'.
-	 * @see #__DNA__FIELD__mfaces
+	 * Set method for struct member 'tri'.
+	 * @see #__DNA__FIELD__tri
 	 */
 	
-	public void setMfaces(CPointer<MFace> mfaces) throws IOException
+	public void setTri(CPointer<Object> tri) throws IOException
 	{
-		long __address = ((mfaces == null) ? 0 : mfaces.getAddress());
+		long __address = ((tri == null) ? 0 : tri.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 160, __address);
 		} else {
@@ -557,11 +557,11 @@ public class CollisionModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'numverts'.
-	 * @see #__DNA__FIELD__numverts
+	 * Get method for struct member 'mvert_num'.
+	 * @see #__DNA__FIELD__mvert_num
 	 */
 	
-	public int getNumverts() throws IOException
+	public int getMvert_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 168);
@@ -571,25 +571,25 @@ public class CollisionModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'numverts'.
-	 * @see #__DNA__FIELD__numverts
+	 * Set method for struct member 'mvert_num'.
+	 * @see #__DNA__FIELD__mvert_num
 	 */
 	
-	public void setNumverts(int numverts) throws IOException
+	public void setMvert_num(int mvert_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, numverts);
+			__io__block.writeInt(__io__address + 168, mvert_num);
 		} else {
-			__io__block.writeInt(__io__address + 124, numverts);
+			__io__block.writeInt(__io__address + 124, mvert_num);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'numfaces'.
-	 * @see #__DNA__FIELD__numfaces
+	 * Get method for struct member 'tri_num'.
+	 * @see #__DNA__FIELD__tri_num
 	 */
 	
-	public int getNumfaces() throws IOException
+	public int getTri_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 172);
@@ -599,16 +599,16 @@ public class CollisionModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'numfaces'.
-	 * @see #__DNA__FIELD__numfaces
+	 * Set method for struct member 'tri_num'.
+	 * @see #__DNA__FIELD__tri_num
 	 */
 	
-	public void setNumfaces(int numfaces) throws IOException
+	public void setTri_num(int tri_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, numfaces);
+			__io__block.writeInt(__io__address + 172, tri_num);
 		} else {
-			__io__block.writeInt(__io__address + 128, numfaces);
+			__io__block.writeInt(__io__address + 128, tri_num);
 		}
 	}
 

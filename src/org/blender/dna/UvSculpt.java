@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=28, size64=40)
+@CMetaData(size32=48, size64=64)
 public class UvSculpt extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class UvSculpt extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 174;
+	public static final int __DNA__SDNA_INDEX = 186;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -43,7 +43,7 @@ public class UvSculpt extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paint'</li>
 	 * <li>Signature: 'Paint'</li>
-	 * <li>Actual Size (32bit/64bit): 28/40</li>
+	 * <li>Actual Size (32bit/64bit): 48/64</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paint = new long[]{0, 0};

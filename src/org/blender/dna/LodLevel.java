@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=32)
+@CMetaData(size32=28, size64=40)
 public class LodLevel extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class LodLevel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 138;
+	public static final int __DNA__SDNA_INDEX = 148;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -127,6 +127,46 @@ public class LodLevel extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__distance = new long[]{16, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LodLevel lodlevel = ...;
+	 * CPointer&lt;Object&gt; p = lodlevel.__dna__addressof(LodLevel.__DNA__FIELD__pad);
+	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{20, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'obhysteresis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LodLevel lodlevel = ...;
+	 * CPointer&lt;Object&gt; p = lodlevel.__dna__addressof(LodLevel.__DNA__FIELD__obhysteresis);
+	 * CPointer&lt;Integer&gt; p_obhysteresis = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'obhysteresis'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__obhysteresis = new long[]{24, 36};
 
 	public LodLevel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -285,6 +325,62 @@ public class LodLevel extends CFacade {
 			__io__block.writeFloat(__io__address + 28, distance);
 		} else {
 			__io__block.writeFloat(__io__address + 16, distance);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public float getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(float pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 32, pad);
+		} else {
+			__io__block.writeFloat(__io__address + 20, pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'obhysteresis'.
+	 * @see #__DNA__FIELD__obhysteresis
+	 */
+	
+	public int getObhysteresis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 36);
+		} else {
+			return __io__block.readInt(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'obhysteresis'.
+	 * @see #__DNA__FIELD__obhysteresis
+	 */
+	
+	public void setObhysteresis(int obhysteresis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 36, obhysteresis);
+		} else {
+			__io__block.writeInt(__io__address + 24, obhysteresis);
 		}
 	}
 

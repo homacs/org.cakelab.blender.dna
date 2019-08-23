@@ -26,7 +26,7 @@ public class ImageUser extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 22;
+	public static final int __DNA__SDNA_INDEX = 26;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
@@ -189,64 +189,24 @@ public class ImageUser extends CFacade {
 	public static final long[] __DNA__FIELD__ok = new long[]{22, 26};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'multiview_eye'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__multiview_eye);
+	 * CPointer&lt;Byte&gt; p_multiview_eye = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'multiview_eye'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{23, 27};
-
-	/**
-	 * Field descriptor (offset) for struct member 'multi_index'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__multi_index);
-	 * CPointer&lt;Short&gt; p_multi_index = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'multi_index'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__multi_index = new long[]{24, 28};
-
-	/**
-	 * Field descriptor (offset) for struct member 'layer'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__layer);
-	 * CPointer&lt;Short&gt; p_layer = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'layer'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{26, 30};
+	public static final long[] __DNA__FIELD__multiview_eye = new long[]{23, 27};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass'.
@@ -266,7 +226,87 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__pass = new long[]{24, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__pad);
+	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{26, 30};
+
+	/**
+	 * Field descriptor (offset) for struct member 'multi_index'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__multi_index);
+	 * CPointer&lt;Short&gt; p_multi_index = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'multi_index'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__multi_index = new long[]{28, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'view'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__view);
+	 * CPointer&lt;Short&gt; p_view = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'view'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__view = new long[]{30, 34};
+
+	/**
+	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__layer);
+	 * CPointer&lt;Short&gt; p_layer = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'layer'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__layer = new long[]{32, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -286,27 +326,7 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{30, 34};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{32, 36};
+	public static final long[] __DNA__FIELD__flag = new long[]{34, 38};
 
 	public ImageUser(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -545,11 +565,11 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
-	public byte getPad() throws IOException
+	public byte getMultiview_eye() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 27);
@@ -559,72 +579,16 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void setMultiview_eye(byte multiview_eye) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 27, pad);
+			__io__block.writeByte(__io__address + 27, multiview_eye);
 		} else {
-			__io__block.writeByte(__io__address + 23, pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'multi_index'.
-	 * @see #__DNA__FIELD__multi_index
-	 */
-	
-	public short getMulti_index() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
-		} else {
-			return __io__block.readShort(__io__address + 24);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'multi_index'.
-	 * @see #__DNA__FIELD__multi_index
-	 */
-	
-	public void setMulti_index(short multi_index) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, multi_index);
-		} else {
-			__io__block.writeShort(__io__address + 24, multi_index);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'layer'.
-	 * @see #__DNA__FIELD__layer
-	 */
-	
-	public short getLayer() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
-		} else {
-			return __io__block.readShort(__io__address + 26);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'layer'.
-	 * @see #__DNA__FIELD__layer
-	 */
-	
-	public void setLayer(short layer) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, layer);
-		} else {
-			__io__block.writeShort(__io__address + 26, layer);
+			__io__block.writeByte(__io__address + 23, multiview_eye);
 		}
 	}
 
@@ -636,9 +600,9 @@ public class ImageUser extends CFacade {
 	public short getPass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 32);
-		} else {
 			return __io__block.readShort(__io__address + 28);
+		} else {
+			return __io__block.readShort(__io__address + 24);
 		}
 	}
 
@@ -650,9 +614,121 @@ public class ImageUser extends CFacade {
 	public void setPass(short pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 32, pass);
-		} else {
 			__io__block.writeShort(__io__address + 28, pass);
+		} else {
+			__io__block.writeShort(__io__address + 24, pass);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public short getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 30);
+		} else {
+			return __io__block.readShort(__io__address + 26);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(short pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 30, pad);
+		} else {
+			__io__block.writeShort(__io__address + 26, pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'multi_index'.
+	 * @see #__DNA__FIELD__multi_index
+	 */
+	
+	public short getMulti_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 32);
+		} else {
+			return __io__block.readShort(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'multi_index'.
+	 * @see #__DNA__FIELD__multi_index
+	 */
+	
+	public void setMulti_index(short multi_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 32, multi_index);
+		} else {
+			__io__block.writeShort(__io__address + 28, multi_index);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'view'.
+	 * @see #__DNA__FIELD__view
+	 */
+	
+	public short getView() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 34);
+		} else {
+			return __io__block.readShort(__io__address + 30);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'view'.
+	 * @see #__DNA__FIELD__view
+	 */
+	
+	public void setView(short view) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 34, view);
+		} else {
+			__io__block.writeShort(__io__address + 30, view);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'layer'.
+	 * @see #__DNA__FIELD__layer
+	 */
+	
+	public short getLayer() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 36);
+		} else {
+			return __io__block.readShort(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'layer'.
+	 * @see #__DNA__FIELD__layer
+	 */
+	
+	public void setLayer(short layer) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 36, layer);
+		} else {
+			__io__block.writeShort(__io__address + 32, layer);
 		}
 	}
 
@@ -664,9 +740,9 @@ public class ImageUser extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 38);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 34);
 		}
 	}
 
@@ -678,37 +754,9 @@ public class ImageUser extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 38, flag);
+		} else {
 			__io__block.writeShort(__io__address + 34, flag);
-		} else {
-			__io__block.writeShort(__io__address + 30, flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public int getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
-		} else {
-			return __io__block.readInt(__io__address + 32);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(int pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, pad2);
-		} else {
-			__io__block.writeInt(__io__address + 32, pad2);
 		}
 	}
 

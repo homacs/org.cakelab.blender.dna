@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1272, size64=1280)
+@CMetaData(size32=1280, size64=1288)
 public class NodeImageFile extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeImageFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 405;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -64,7 +64,7 @@ public class NodeImageFile extends CFacade {
 	 * <ul>
 	 * <li>Field: 'im_format'</li>
 	 * <li>Signature: 'ImageFormatData'</li>
-	 * <li>Actual Size (32bit/64bit): 240/248</li>
+	 * <li>Actual Size (32bit/64bit): 248/256</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__im_format = new long[]{1024, 1024};
@@ -87,7 +87,7 @@ public class NodeImageFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{1264, 1272};
+	public static final long[] __DNA__FIELD__sfra = new long[]{1272, 1280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
@@ -107,7 +107,7 @@ public class NodeImageFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{1268, 1276};
+	public static final long[] __DNA__FIELD__efra = new long[]{1276, 1284};
 
 	public NodeImageFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -201,9 +201,9 @@ public class NodeImageFile extends CFacade {
 	public int getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1272);
+			return __io__block.readInt(__io__address + 1280);
 		} else {
-			return __io__block.readInt(__io__address + 1264);
+			return __io__block.readInt(__io__address + 1272);
 		}
 	}
 
@@ -215,9 +215,9 @@ public class NodeImageFile extends CFacade {
 	public void setSfra(int sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1272, sfra);
+			__io__block.writeInt(__io__address + 1280, sfra);
 		} else {
-			__io__block.writeInt(__io__address + 1264, sfra);
+			__io__block.writeInt(__io__address + 1272, sfra);
 		}
 	}
 
@@ -229,9 +229,9 @@ public class NodeImageFile extends CFacade {
 	public int getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1276);
+			return __io__block.readInt(__io__address + 1284);
 		} else {
-			return __io__block.readInt(__io__address + 1268);
+			return __io__block.readInt(__io__address + 1276);
 		}
 	}
 
@@ -243,9 +243,9 @@ public class NodeImageFile extends CFacade {
 	public void setEfra(int efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1276, efra);
+			__io__block.writeInt(__io__address + 1284, efra);
 		} else {
-			__io__block.writeInt(__io__address + 1268, efra);
+			__io__block.writeInt(__io__address + 1276, efra);
 		}
 	}
 

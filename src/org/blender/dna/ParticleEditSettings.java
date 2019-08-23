@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=156, size64=168)
+@CMetaData(size32=160, size64=176)
 public class ParticleEditSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ParticleEditSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 172;
+	public static final int __DNA__SDNA_INDEX = 184;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -308,6 +308,26 @@ public class ParticleEditSettings extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__object = new long[]{152, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shape_object'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleEditSettings particleeditsettings = ...;
+	 * CPointer&lt;Object&gt; p = particleeditsettings.__dna__addressof(ParticleEditSettings.__DNA__FIELD__shape_object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_shape_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shape_object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shape_object = new long[]{156, 168};
 
 	public ParticleEditSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -730,6 +750,38 @@ public class ParticleEditSettings extends CFacade {
 			__io__block.writeLong(__io__address + 160, __address);
 		} else {
 			__io__block.writeLong(__io__address + 152, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shape_object'.
+	 * @see #__DNA__FIELD__shape_object
+	 */
+	
+	public CPointer<BlenderObject> getShape_object() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'shape_object'.
+	 * @see #__DNA__FIELD__shape_object
+	 */
+	
+	public void setShape_object(CPointer<BlenderObject> shape_object) throws IOException
+	{
+		long __address = ((shape_object == null) ? 0 : shape_object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 

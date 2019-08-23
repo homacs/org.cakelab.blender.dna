@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=456, size64=472)
+@CMetaData(size32=464, size64=480)
 public class KeyingSet extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class KeyingSet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -170,6 +170,26 @@ public class KeyingSet extends CFacade {
 	public static final long[] __DNA__FIELD__typeinfo = new long[]{384, 400};
 
 	/**
+	 * Field descriptor (offset) for struct member 'active_path'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * KeyingSet keyingset = ...;
+	 * CPointer&lt;Object&gt; p = keyingset.__dna__addressof(KeyingSet.__DNA__FIELD__active_path);
+	 * CPointer&lt;Integer&gt; p_active_path = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'active_path'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__active_path = new long[]{448, 464};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +207,7 @@ public class KeyingSet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{448, 464};
+	public static final long[] __DNA__FIELD__flag = new long[]{452, 468};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyingflag'.
@@ -207,27 +227,47 @@ public class KeyingSet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyingflag = new long[]{450, 466};
+	public static final long[] __DNA__FIELD__keyingflag = new long[]{454, 470};
 
 	/**
-	 * Field descriptor (offset) for struct member 'active_path'.
+	 * Field descriptor (offset) for struct member 'keyingoverride'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * KeyingSet keyingset = ...;
-	 * CPointer&lt;Object&gt; p = keyingset.__dna__addressof(KeyingSet.__DNA__FIELD__active_path);
-	 * CPointer&lt;Integer&gt; p_active_path = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = keyingset.__dna__addressof(KeyingSet.__DNA__FIELD__keyingoverride);
+	 * CPointer&lt;Short&gt; p_keyingoverride = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'active_path'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'keyingoverride'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_path = new long[]{452, 468};
+	public static final long[] __DNA__FIELD__keyingoverride = new long[]{456, 472};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * KeyingSet keyingset = ...;
+	 * CPointer&lt;Object&gt; p = keyingset.__dna__addressof(KeyingSet.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{458, 474};
 
 	public KeyingSet(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -498,62 +538,6 @@ public class KeyingSet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public short getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 464);
-		} else {
-			return __io__block.readShort(__io__address + 448);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(short flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 464, flag);
-		} else {
-			__io__block.writeShort(__io__address + 448, flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'keyingflag'.
-	 * @see #__DNA__FIELD__keyingflag
-	 */
-	
-	public short getKeyingflag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 466);
-		} else {
-			return __io__block.readShort(__io__address + 450);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'keyingflag'.
-	 * @see #__DNA__FIELD__keyingflag
-	 */
-	
-	public void setKeyingflag(short keyingflag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 466, keyingflag);
-		} else {
-			__io__block.writeShort(__io__address + 450, keyingflag);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'active_path'.
 	 * @see #__DNA__FIELD__active_path
 	 */
@@ -561,9 +545,9 @@ public class KeyingSet extends CFacade {
 	public int getActive_path() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 468);
+			return __io__block.readInt(__io__address + 464);
 		} else {
-			return __io__block.readInt(__io__address + 452);
+			return __io__block.readInt(__io__address + 448);
 		}
 	}
 
@@ -575,9 +559,133 @@ public class KeyingSet extends CFacade {
 	public void setActive_path(int active_path) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 468, active_path);
+			__io__block.writeInt(__io__address + 464, active_path);
 		} else {
-			__io__block.writeInt(__io__address + 452, active_path);
+			__io__block.writeInt(__io__address + 448, active_path);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 468);
+		} else {
+			return __io__block.readShort(__io__address + 452);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 468, flag);
+		} else {
+			__io__block.writeShort(__io__address + 452, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'keyingflag'.
+	 * @see #__DNA__FIELD__keyingflag
+	 */
+	
+	public short getKeyingflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 470);
+		} else {
+			return __io__block.readShort(__io__address + 454);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keyingflag'.
+	 * @see #__DNA__FIELD__keyingflag
+	 */
+	
+	public void setKeyingflag(short keyingflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 470, keyingflag);
+		} else {
+			__io__block.writeShort(__io__address + 454, keyingflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'keyingoverride'.
+	 * @see #__DNA__FIELD__keyingoverride
+	 */
+	
+	public short getKeyingoverride() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 472);
+		} else {
+			return __io__block.readShort(__io__address + 456);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keyingoverride'.
+	 * @see #__DNA__FIELD__keyingoverride
+	 */
+	
+	public void setKeyingoverride(short keyingoverride) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 472, keyingoverride);
+		} else {
+			__io__block.writeShort(__io__address + 456, keyingoverride);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 474, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 458, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 474;
+		} else {
+			__dna__offset = 458;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

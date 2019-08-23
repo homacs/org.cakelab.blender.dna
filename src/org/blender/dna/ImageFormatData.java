@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=240, size64=248)
+@CMetaData(size32=248, size64=256)
 public class ImageFormatData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ImageFormatData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 160;
+	public static final int __DNA__SDNA_INDEX = 172;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
@@ -303,11 +303,51 @@ public class ImageFormatData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pad = new long[]{18, 18};
+
+	/**
+	 * Field descriptor (offset) for struct member 'views_format'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageFormatData imageformatdata = ...;
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD__views_format);
+	 * CPointer&lt;Byte&gt; p_views_format = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'views_format'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__views_format = new long[]{23, 23};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_format'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageFormatData imageformatdata = ...;
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD__stereo3d_format);
+	 * CPointer&lt;Stereo3dFormat&gt; p_stereo3d_format = p.cast(new Class[]{Stereo3dFormat.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_format'</li>
+	 * <li>Signature: 'Stereo3dFormat'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_format = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_settings'.
@@ -327,7 +367,7 @@ public class ImageFormatData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_settings = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__view_settings = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_settings'.
@@ -347,7 +387,7 @@ public class ImageFormatData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display_settings = new long[]{176, 184};
+	public static final long[] __DNA__FIELD__display_settings = new long[]{184, 192};
 
 	public ImageFormatData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -730,7 +770,7 @@ public class ImageFormatData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			5
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -762,6 +802,70 @@ public class ImageFormatData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'views_format'.
+	 * @see #__DNA__FIELD__views_format
+	 */
+	
+	public byte getViews_format() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 23);
+		} else {
+			return __io__block.readByte(__io__address + 23);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'views_format'.
+	 * @see #__DNA__FIELD__views_format
+	 */
+	
+	public void setViews_format(byte views_format) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 23, views_format);
+		} else {
+			__io__block.writeByte(__io__address + 23, views_format);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_format'.
+	 * @see #__DNA__FIELD__stereo3d_format
+	 */
+	
+	public Stereo3dFormat getStereo3d_format() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new Stereo3dFormat(__io__address + 24, __io__block, __io__blockTable);
+		} else {
+			return new Stereo3dFormat(__io__address + 24, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_format'.
+	 * @see #__DNA__FIELD__stereo3d_format
+	 */
+	
+	public void setStereo3d_format(Stereo3dFormat stereo3d_format) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 24;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(stereo3d_format, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, stereo3d_format)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, stereo3d_format);
+		} else {
+			__io__generic__copy( getStereo3d_format(), stereo3d_format);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'view_settings'.
 	 * @see #__DNA__FIELD__view_settings
 	 */
@@ -769,9 +873,9 @@ public class ImageFormatData extends CFacade {
 	public ColorManagedViewSettings getView_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedViewSettings(__io__address + 24, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 32, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedViewSettings(__io__address + 24, __io__block, __io__blockTable);
+			return new ColorManagedViewSettings(__io__address + 32, __io__block, __io__blockTable);
 		}
 	}
 
@@ -784,9 +888,9 @@ public class ImageFormatData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		}
 		if (__io__equals(view_settings, __io__address + __dna__offset)) {
 			return;
@@ -805,9 +909,9 @@ public class ImageFormatData extends CFacade {
 	public ColorManagedDisplaySettings getDisplay_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedDisplaySettings(__io__address + 184, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedDisplaySettings(__io__address + 176, __io__block, __io__blockTable);
+			return new ColorManagedDisplaySettings(__io__address + 184, __io__block, __io__blockTable);
 		}
 	}
 
@@ -820,9 +924,9 @@ public class ImageFormatData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		}
 		if (__io__equals(display_settings, __io__address + __dna__offset)) {
 			return;

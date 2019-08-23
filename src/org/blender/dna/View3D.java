@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=300, size64=376)
+@CMetaData(size32=332, size64=416)
 public class View3D extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 186;
+	public static final int __DNA__SDNA_INDEX = 199;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1030,6 +1030,26 @@ public class View3D extends CFacade {
 	public static final long[] __DNA__FIELD__xray = new long[]{282, 346};
 
 	/**
+	 * Field descriptor (offset) for struct member 'multiview_eye'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__multiview_eye);
+	 * CPointer&lt;Byte&gt; p_multiview_eye = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'multiview_eye'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__multiview_eye = new long[]{283, 347};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1043,11 +1063,31 @@ public class View3D extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad3'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{283, 347};
+	public static final long[] __DNA__FIELD__pad3 = new long[]{284, 348};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fx_settings'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__fx_settings);
+	 * CPointer&lt;GPUFXSettings&gt; p_fx_settings = p.cast(new Class[]{GPUFXSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fx_settings'</li>
+	 * <li>Signature: 'GPUFXSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 16/24</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fx_settings = new long[]{288, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.
@@ -1067,7 +1107,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties_storage = new long[]{288, 352};
+	public static final long[] __DNA__FIELD__properties_storage = new long[]{304, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defmaterial'.
@@ -1087,7 +1127,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defmaterial = new long[]{292, 360};
+	public static final long[] __DNA__FIELD__defmaterial = new long[]{308, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -1107,7 +1147,127 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{296, 368};
+	public static final long[] __DNA__FIELD__gpd = new long[]{312, 392};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__stereo3d_flag);
+	 * CPointer&lt;Short&gt; p_stereo3d_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_flag = new long[]{316, 400};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_camera'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__stereo3d_camera);
+	 * CPointer&lt;Byte&gt; p_stereo3d_camera = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_camera'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_camera = new long[]{318, 402};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__pad4);
+	 * CPointer&lt;Byte&gt; p_pad4 = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad4'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad4 = new long[]{319, 403};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_convergence_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__stereo3d_convergence_factor);
+	 * CPointer&lt;Float&gt; p_stereo3d_convergence_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_convergence_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_convergence_factor = new long[]{320, 404};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_volume_alpha'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__stereo3d_volume_alpha);
+	 * CPointer&lt;Float&gt; p_stereo3d_volume_alpha = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_volume_alpha'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_volume_alpha = new long[]{324, 408};
+
+	/**
+	 * Field descriptor (offset) for struct member 'stereo3d_convergence_alpha'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D view3d = ...;
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__stereo3d_convergence_alpha);
+	 * CPointer&lt;Float&gt; p_stereo3d_convergence_alpha = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'stereo3d_convergence_alpha'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__stereo3d_convergence_alpha = new long[]{328, 412};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2662,6 +2822,34 @@ public class View3D extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
+	 */
+	
+	public byte getMultiview_eye() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 347);
+		} else {
+			return __io__block.readByte(__io__address + 283);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'multiview_eye'.
+	 * @see #__DNA__FIELD__multiview_eye
+	 */
+	
+	public void setMultiview_eye(byte multiview_eye) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 347, multiview_eye);
+		} else {
+			__io__block.writeByte(__io__address + 283, multiview_eye);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad3'.
 	 * @see #__DNA__FIELD__pad3
 	 */
@@ -2670,12 +2858,12 @@ public class View3D extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 347, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 283, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2688,9 +2876,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 347;
+			__dna__offset = 348;
 		} else {
-			__dna__offset = 283;
+			__dna__offset = 284;
 		}
 		if (__io__equals(pad3, __io__address + __dna__offset)) {
 			return;
@@ -2698,6 +2886,42 @@ public class View3D extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, pad3);
 		} else {
 			__io__generic__copy( getPad3(), pad3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fx_settings'.
+	 * @see #__DNA__FIELD__fx_settings
+	 */
+	
+	public GPUFXSettings getFx_settings() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new GPUFXSettings(__io__address + 352, __io__block, __io__blockTable);
+		} else {
+			return new GPUFXSettings(__io__address + 288, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fx_settings'.
+	 * @see #__DNA__FIELD__fx_settings
+	 */
+	
+	public void setFx_settings(GPUFXSettings fx_settings) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 352;
+		} else {
+			__dna__offset = 288;
+		}
+		if (__io__equals(fx_settings, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, fx_settings)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, fx_settings);
+		} else {
+			__io__generic__copy( getFx_settings(), fx_settings);
 		}
 	}
 
@@ -2710,9 +2934,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2727,9 +2951,9 @@ public class View3D extends CFacade {
 	{
 		long __address = ((properties_storage == null) ? 0 : properties_storage.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		}
 	}
 
@@ -2742,9 +2966,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 292);
+			__dna__targetAddress = __io__block.readLong(__io__address + 308);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
 		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2759,9 +2983,9 @@ public class View3D extends CFacade {
 	{
 		long __address = ((defmaterial == null) ? 0 : defmaterial.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 292, __address);
+			__io__block.writeLong(__io__address + 308, __address);
 		}
 	}
 
@@ -2774,9 +2998,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2791,9 +3015,177 @@ public class View3D extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_flag'.
+	 * @see #__DNA__FIELD__stereo3d_flag
+	 */
+	
+	public short getStereo3d_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 400);
+		} else {
+			return __io__block.readShort(__io__address + 316);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_flag'.
+	 * @see #__DNA__FIELD__stereo3d_flag
+	 */
+	
+	public void setStereo3d_flag(short stereo3d_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 400, stereo3d_flag);
+		} else {
+			__io__block.writeShort(__io__address + 316, stereo3d_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_camera'.
+	 * @see #__DNA__FIELD__stereo3d_camera
+	 */
+	
+	public byte getStereo3d_camera() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 402);
+		} else {
+			return __io__block.readByte(__io__address + 318);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_camera'.
+	 * @see #__DNA__FIELD__stereo3d_camera
+	 */
+	
+	public void setStereo3d_camera(byte stereo3d_camera) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 402, stereo3d_camera);
+		} else {
+			__io__block.writeByte(__io__address + 318, stereo3d_camera);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public byte getPad4() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 403);
+		} else {
+			return __io__block.readByte(__io__address + 319);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public void setPad4(byte pad4) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 403, pad4);
+		} else {
+			__io__block.writeByte(__io__address + 319, pad4);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_convergence_factor'.
+	 * @see #__DNA__FIELD__stereo3d_convergence_factor
+	 */
+	
+	public float getStereo3d_convergence_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 404);
+		} else {
+			return __io__block.readFloat(__io__address + 320);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_convergence_factor'.
+	 * @see #__DNA__FIELD__stereo3d_convergence_factor
+	 */
+	
+	public void setStereo3d_convergence_factor(float stereo3d_convergence_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 404, stereo3d_convergence_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 320, stereo3d_convergence_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_volume_alpha'.
+	 * @see #__DNA__FIELD__stereo3d_volume_alpha
+	 */
+	
+	public float getStereo3d_volume_alpha() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 408);
+		} else {
+			return __io__block.readFloat(__io__address + 324);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_volume_alpha'.
+	 * @see #__DNA__FIELD__stereo3d_volume_alpha
+	 */
+	
+	public void setStereo3d_volume_alpha(float stereo3d_volume_alpha) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 408, stereo3d_volume_alpha);
+		} else {
+			__io__block.writeFloat(__io__address + 324, stereo3d_volume_alpha);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'stereo3d_convergence_alpha'.
+	 * @see #__DNA__FIELD__stereo3d_convergence_alpha
+	 */
+	
+	public float getStereo3d_convergence_alpha() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 412);
+		} else {
+			return __io__block.readFloat(__io__address + 328);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'stereo3d_convergence_alpha'.
+	 * @see #__DNA__FIELD__stereo3d_convergence_alpha
+	 */
+	
+	public void setStereo3d_convergence_alpha(float stereo3d_convergence_alpha) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 412, stereo3d_convergence_alpha);
+		} else {
+			__io__block.writeFloat(__io__address + 328, stereo3d_convergence_alpha);
 		}
 	}
 

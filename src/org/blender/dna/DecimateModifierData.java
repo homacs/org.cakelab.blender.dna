@@ -27,7 +27,7 @@ public class DecimateModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 96;
+	public static final int __DNA__SDNA_INDEX = 103;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -170,6 +170,26 @@ public class DecimateModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__defgrp_name = new long[]{108, 124};
 
 	/**
+	 * Field descriptor (offset) for struct member 'defgrp_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DecimateModifierData decimatemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = decimatemodifierdata.__dna__addressof(DecimateModifierData.__DNA__FIELD__defgrp_factor);
+	 * CPointer&lt;Float&gt; p_defgrp_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'defgrp_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__defgrp_factor = new long[]{172, 188};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -187,7 +207,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{172, 188};
+	public static final long[] __DNA__FIELD__flag = new long[]{176, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -207,7 +227,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{174, 190};
+	public static final long[] __DNA__FIELD__mode = new long[]{178, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_count'.
@@ -227,27 +247,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_count = new long[]{176, 192};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DecimateModifierData decimatemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = decimatemodifierdata.__dna__addressof(DecimateModifierData.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{180, 196};
+	public static final long[] __DNA__FIELD__face_count = new long[]{180, 196};
 
 	public DecimateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -474,6 +474,34 @@ public class DecimateModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'defgrp_factor'.
+	 * @see #__DNA__FIELD__defgrp_factor
+	 */
+	
+	public float getDefgrp_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 188);
+		} else {
+			return __io__block.readFloat(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'defgrp_factor'.
+	 * @see #__DNA__FIELD__defgrp_factor
+	 */
+	
+	public void setDefgrp_factor(float defgrp_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 188, defgrp_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 172, defgrp_factor);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -481,9 +509,9 @@ public class DecimateModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -495,9 +523,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 192, flag);
 		} else {
-			__io__block.writeShort(__io__address + 172, flag);
+			__io__block.writeShort(__io__address + 176, flag);
 		}
 	}
 
@@ -509,9 +537,9 @@ public class DecimateModifierData extends CFacade {
 	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -523,9 +551,9 @@ public class DecimateModifierData extends CFacade {
 	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, mode);
+			__io__block.writeShort(__io__address + 194, mode);
 		} else {
-			__io__block.writeShort(__io__address + 174, mode);
+			__io__block.writeShort(__io__address + 178, mode);
 		}
 	}
 
@@ -537,9 +565,9 @@ public class DecimateModifierData extends CFacade {
 	public int getFace_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -551,37 +579,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFace_count(int face_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, face_count);
+			__io__block.writeInt(__io__address + 196, face_count);
 		} else {
-			__io__block.writeInt(__io__address + 176, face_count);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public int getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
-		} else {
-			return __io__block.readInt(__io__address + 180);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(int pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, pad2);
-		} else {
-			__io__block.writeInt(__io__address + 180, pad2);
+			__io__block.writeInt(__io__address + 180, face_count);
 		}
 	}
 

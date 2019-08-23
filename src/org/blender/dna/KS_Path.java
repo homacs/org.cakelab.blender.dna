@@ -27,7 +27,7 @@ public class KS_Path extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 487;
+	public static final int __DNA__SDNA_INDEX = 510;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -150,24 +150,24 @@ public class KS_Path extends CFacade {
 	public static final long[] __DNA__FIELD__groupmode = new long[]{80, 92};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * KS_Path ks_path = ...;
-	 * CPointer&lt;Object&gt; p = ks_path.__dna__addressof(KS_Path.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = ks_path.__dna__addressof(KS_Path.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'flag'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{82, 94};
+	public static final long[] __DNA__FIELD__flag = new long[]{82, 94};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
@@ -210,26 +210,6 @@ public class KS_Path extends CFacade {
 	public static final long[] __DNA__FIELD__array_index = new long[]{88, 104};
 
 	/**
-	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * KS_Path ks_path = ...;
-	 * CPointer&lt;Object&gt; p = ks_path.__dna__addressof(KS_Path.__DNA__FIELD__flag);
-	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{92, 108};
-
-	/**
 	 * Field descriptor (offset) for struct member 'keyingflag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,7 +227,27 @@ public class KS_Path extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyingflag = new long[]{94, 110};
+	public static final long[] __DNA__FIELD__keyingflag = new long[]{92, 108};
+
+	/**
+	 * Field descriptor (offset) for struct member 'keyingoverride'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * KS_Path ks_path = ...;
+	 * CPointer&lt;Object&gt; p = ks_path.__dna__addressof(KS_Path.__DNA__FIELD__keyingoverride);
+	 * CPointer&lt;Short&gt; p_keyingoverride = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'keyingoverride'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__keyingoverride = new long[]{94, 110};
 
 	public KS_Path(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -450,11 +450,11 @@ public class KS_Path extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public short getPad() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 94);
@@ -464,16 +464,16 @@ public class KS_Path extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 94, pad);
+			__io__block.writeShort(__io__address + 94, flag);
 		} else {
-			__io__block.writeShort(__io__address + 82, pad);
+			__io__block.writeShort(__io__address + 82, flag);
 		}
 	}
 
@@ -538,34 +538,6 @@ public class KS_Path extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public short getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 108);
-		} else {
-			return __io__block.readShort(__io__address + 92);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(short flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 108, flag);
-		} else {
-			__io__block.writeShort(__io__address + 92, flag);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'keyingflag'.
 	 * @see #__DNA__FIELD__keyingflag
 	 */
@@ -573,9 +545,9 @@ public class KS_Path extends CFacade {
 	public short getKeyingflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 110);
+			return __io__block.readShort(__io__address + 108);
 		} else {
-			return __io__block.readShort(__io__address + 94);
+			return __io__block.readShort(__io__address + 92);
 		}
 	}
 
@@ -587,9 +559,37 @@ public class KS_Path extends CFacade {
 	public void setKeyingflag(short keyingflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 110, keyingflag);
+			__io__block.writeShort(__io__address + 108, keyingflag);
 		} else {
-			__io__block.writeShort(__io__address + 94, keyingflag);
+			__io__block.writeShort(__io__address + 92, keyingflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'keyingoverride'.
+	 * @see #__DNA__FIELD__keyingoverride
+	 */
+	
+	public short getKeyingoverride() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 110);
+		} else {
+			return __io__block.readShort(__io__address + 94);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keyingoverride'.
+	 * @see #__DNA__FIELD__keyingoverride
+	 */
+	
+	public void setKeyingoverride(short keyingoverride) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 110, keyingoverride);
+		} else {
+			__io__block.writeShort(__io__address + 94, keyingoverride);
 		}
 	}
 
