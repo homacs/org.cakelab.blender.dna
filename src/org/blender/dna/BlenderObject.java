@@ -13,33 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Object'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * An instance of BlenderObject represents an element of a scene
- * 			such as a graphical object, camera, source of sound or light etc..
- * 			<p>
- * 			There are the following types of objects:
- * 			</p>
- * 			<table border="1">
- * 				<tr><th>Name</th><th>type id<br/>(see {@link #getType()})</th><th>Data type<br/>(see {@link #getData()})</th><tr>
- * 				<tr><td>OB_EMPTY</td><td>0</td><td>--</td></tr>
- * 				<tr><td>OB_MESH</td><td>1</td><td>{@link Mesh}</td></tr>
- * 				<tr><td>OB_CURVE</td><td>2</td><td>{@link Curve}</td></tr>
- * 				<tr><td>OB_SURF</td><td>3</td><td>{@link Curve}</td></tr>
- * 				<tr><td>OB_FONT</td><td>4</td><td>{@link Curve}</td></tr>
- * 				<tr><td>OB_MBALL</td><td>5</td><td>{@link MetaBall}</td></tr>
- * 				<tr><td>OB_LAMP</td><td>10</td><td>{@link Lamp}</td></tr>
- * 				<tr><td>OB_CAMERA</td><td>11</td><td>{@link Camera}</td></tr>
- * 				<tr><td>OB_SPEAKER</td><td>12</td><td>{@link Speaker}</td></tr>
- * 				<tr><td>OB_WAVE</td><td>21</td><td>deprecated?</td></tr>
- * 				<tr><td>OB_LATTICE</td><td>22</td><td>{@link Lattice}</td></tr>
- * 				<tr><td>OB_ARMATURE</td><td>25</td><td>{@link bArmature}</td></tr>
- * 			</table>
- * 			<p>
- * 			The type of an object defines what type of data is to be retrieved from {@link #getData()}.			
- * 			</p>
+ * 
  */
 
-@CMetaData(size32=1168, size64=1416)
+@CMetaData(size32=1164, size64=1424)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -50,7 +27,7 @@ public class BlenderObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 134;
+	public static final int __DNA__SDNA_INDEX = 139;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -74,9 +51,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * animation data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,9 +91,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of Object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,20 +111,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'partype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * parent type: first 4 bits: type.
-	 * 				<pre>
-	 * 					PARTYPE       = (1 << 4) - 1,
-	 * 					PAROBJECT     = 0,
-	 * 					PARCURVE      = 1,
-	 * 					PARKEY        = 2,
-	 * 					PARSKEL       = 4,
-	 * 					PARVERT1      = 5,
-	 * 					PARVERT3      = 6,
-	 * 					PARBONE       = 7,
-	 * 					PARSLOW       = 16,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,9 +131,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'par1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -197,9 +151,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'par2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -220,9 +171,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'par3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,9 +191,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parsubstr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * String describing subobject info, MAX_ID_NAME-2
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -266,9 +211,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -309,10 +251,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -333,10 +271,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library group duplicator object this proxy object controls
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -357,9 +291,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy_from'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * proxy_from is set in target back to the proxy.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -380,9 +311,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -403,9 +331,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Bounding box of the associated mesh/curve/etc. Cache value not necessarily stored in file.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -426,9 +351,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system. @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -469,10 +391,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pose data, armature objects only<h4>Blender Python API:</h4>
-	 * (read-only)    Current pose for armatures
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -493,10 +411,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pointer to objects data - an 'ID' or NULL<h4>Blender Python API:</h4>
-	 * Object data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -517,9 +431,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Grease Pencil data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -540,9 +451,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'avs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for visualization of object-transform animation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -563,9 +471,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mpath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * motion path cache for this object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -586,9 +491,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraintChannels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -609,9 +511,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -632,9 +531,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'defbase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of bDeformGroup (vertex groups) names and flag only
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -655,10 +551,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of ModifierData structures<h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the geometric data of the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -679,20 +571,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Local object mode. On of:
-	 * 				<pre>
-	 * 					OB_MODE_OBJECT        = 0,
-	 * 					OB_MODE_EDIT          = 1 << 0,
-	 * 					OB_MODE_SCULPT        = 1 << 1,
-	 * 					OB_MODE_VERTEX_PAINT  = 1 << 2,
-	 * 					OB_MODE_WEIGHT_PAINT  = 1 << 3,
-	 * 					OB_MODE_TEXTURE_PAINT = 1 << 4,
-	 * 					OB_MODE_PARTICLE_EDIT = 1 << 5,
-	 * 					OB_MODE_POSE          = 1 << 6
-	 * 				</pre><h4>Blender Python API:</h4>
-	 * (read-only)    Object interaction mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -713,9 +591,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'restore_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Keep track of what mode to return to after toggling a mode
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -736,9 +611,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -759,9 +631,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'matbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * a boolean field, with each byte 1 if corresponding material is linked to object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -782,9 +651,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -805,9 +671,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'actcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * currently selected material slot in the UI
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -828,9 +691,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * location of the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -871,9 +731,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'orig'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * origin of the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -894,9 +751,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * size/scale of the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -917,9 +771,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -960,9 +811,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -983,9 +831,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1006,9 +851,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1029,9 +871,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dquat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1052,9 +891,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1075,9 +911,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1098,9 +931,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1121,9 +951,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1144,9 +971,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'obmat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * final worldspace matrix with constraints & animsys applied
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1167,9 +991,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of parent, so that object doesn't 'stick' to parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1190,9 +1011,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of constraints. doesn't include effect of parent or object local transform
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1213,12 +1031,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1239,11 +1051,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat_ren'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Previously 'imat' was used at render time, but as other places use it too
-	 * 	 							the interactive ui of 2.5 creates problems. So now only 'imat_ren' should
-	 * 								be used when ever the inverse of ob->obmat * re->viewmat is needed!
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1264,9 +1071,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base's layer in the scene
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1286,33 +1090,7 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD__lay = new long[]{824, 944};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * sf is time-offset
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__sf);
-	 * CPointer&lt;Float&gt; p_sf = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sf'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sf = new long[]{828, 948};
-
-	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1329,13 +1107,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{832, 952};
+	public static final long[] __DNA__FIELD__flag = new long[]{828, 948};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1352,29 +1127,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colbits = new long[]{834, 954};
+	public static final long[] __DNA__FIELD__colbits = new long[]{830, 950};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				Flags 1 and 2 were unused or relics from past features.
-	 * 				<pre>
-	 * 					OB_NEG_SCALE        = 1 << 2,
-	 * 					OB_DUPLIFRAMES      = 1 << 3,
-	 * 					OB_DUPLIVERTS       = 1 << 4,
-	 * 					OB_DUPLIROT         = 1 << 5,
-	 * 					OB_DUPLINOSPEED     = 1 << 6,
-	 * 					OB_DUPLIGROUP       = 1 << 8,
-	 * 					OB_DUPLIFACES       = 1 << 9,
-	 * 					OB_DUPLIFACES_SCALE = 1 << 10,
-	 * 					OB_DUPLIPARTS       = 1 << 11,
-	 * 					OB_RENDER_DUPLI     = 1 << 12,
-	 * 					OB_NO_CONSTRAINTS   = 1 << 13,  --> runtime constraints disable
-	 * 					OB_NO_PSYS_UPDATE   = 1 << 14,  --> hack to work around particle issue
-	 * 					OB_DUPLI            = OB_DUPLIFRAMES | OB_DUPLIVERTS | OB_DUPLIGROUP | OB_DUPLIFACES | OB_DUPLIPARTS,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1391,13 +1147,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transflag = new long[]{836, 956};
+	public static final long[] __DNA__FIELD__transflag = new long[]{832, 952};
 
 	/**
 	 * Field descriptor (offset) for struct member 'protectflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1414,21 +1167,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__protectflag = new long[]{838, 958};
+	public static final long[] __DNA__FIELD__protectflag = new long[]{834, 954};
 
 	/**
 	 * Field descriptor (offset) for struct member 'trackflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1445,21 +1187,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__trackflag = new long[]{840, 960};
+	public static final long[] __DNA__FIELD__trackflag = new long[]{836, 956};
 
 	/**
 	 * Field descriptor (offset) for struct member 'upflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1476,25 +1207,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__upflag = new long[]{842, 962};
+	public static final long[] __DNA__FIELD__upflag = new long[]{838, 958};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * used for DopeSheet filtering settings (expanded/collapsed).
-	 * 				<pre>
-	 * 					-- object-channel expanded status --
-	 * 					OB_ADS_COLLAPSED    = 1 << 10,
-	 * 					-- object's ipo-block --
-	 * 					OB_ADS_SHOWIPO      = 1 << 11,
-	 * 					-- object's constraint channels --
-	 * 					OB_ADS_SHOWCONS     = 1 << 12,
-	 * 					-- object's material channels --
-	 * 					OB_ADS_SHOWMATS     = 1 << 13,
-	 * 					-- object's marticle channels --
-	 * 					OB_ADS_SHOWPARTS    = 1 << 14,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1511,13 +1227,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlaflag = new long[]{844, 964};
+	public static final long[] __DNA__FIELD__nlaflag = new long[]{840, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipoflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1534,13 +1247,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipoflag = new long[]{846, 966};
+	public static final long[] __DNA__FIELD__ipoflag = new long[]{842, 962};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * ui state for game logic
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1557,13 +1267,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scaflag = new long[]{848, 968};
+	public static final long[] __DNA__FIELD__scaflag = new long[]{844, 964};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scavisflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * more display settings for game logic
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1580,7 +1287,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scavisflag = new long[]{850, 970};
+	public static final long[] __DNA__FIELD__scavisflag = new long[]{846, 966};
 
 	/**
 	 * Field descriptor (offset) for struct member 'depsflag'.
@@ -1600,7 +1307,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__depsflag = new long[]{851, 971};
+	public static final long[] __DNA__FIELD__depsflag = new long[]{847, 967};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupon'.
@@ -1620,7 +1327,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupon = new long[]{852, 972};
+	public static final long[] __DNA__FIELD__dupon = new long[]{848, 968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupoff'.
@@ -1640,7 +1347,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupoff = new long[]{856, 976};
+	public static final long[] __DNA__FIELD__dupoff = new long[]{852, 972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupsta'.
@@ -1660,7 +1367,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupsta = new long[]{860, 980};
+	public static final long[] __DNA__FIELD__dupsta = new long[]{856, 976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupend'.
@@ -1680,13 +1387,30 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupend = new long[]{864, 984};
+	public static final long[] __DNA__FIELD__dupend = new long[]{860, 980};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{864, 984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1707,9 +1431,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1730,11 +1451,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'inertia'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime. note that inertia is only called inertia for historical reasons
-	 * 	 				and is not changed to avoid DNA surgery. It actually reflects the 
-	 * 	 				Size value in the GameButtons (= radius).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1755,14 +1471,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'formfactor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The form factor k is introduced to give the user more control
-	 * 					and to fix incompatibility problems.
-	 * 					For rotational symmetric objects, the inertia value can be
-	 * 					expressed as: Theta = k * m * r^2
-	 * 					where m = Mass, r = Radius
-	 * 					For a Sphere, the form factor is by default = 0.4
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1802,26 +1510,6 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD__rdamping = new long[]{884, 1004};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sizefac'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__sizefac);
-	 * CPointer&lt;Float&gt; p_sizefac = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sizefac'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sizefac = new long[]{888, 1008};
-
-	/**
 	 * Field descriptor (offset) for struct member 'margin'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1839,13 +1527,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__margin = new long[]{892, 1012};
+	public static final long[] __DNA__FIELD__margin = new long[]{888, 1008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the maximum velocity 0.0 is disabled
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1862,13 +1547,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_vel = new long[]{896, 1016};
+	public static final long[] __DNA__FIELD__max_vel = new long[]{892, 1012};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the minimum velocity 0.0 is disabled
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1885,27 +1567,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_vel = new long[]{900, 1020};
-
-	/**
-	 * Field descriptor (offset) for struct member 'm_contactProcessingThreshold'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__m_contactProcessingThreshold);
-	 * CPointer&lt;Float&gt; p_m_contactProcessingThreshold = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'm_contactProcessingThreshold'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__m_contactProcessingThreshold = new long[]{904, 1024};
+	public static final long[] __DNA__FIELD__min_vel = new long[]{896, 1016};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obstacleRad'.
@@ -1925,13 +1587,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obstacleRad = new long[]{908, 1028};
+	public static final long[] __DNA__FIELD__obstacleRad = new long[]{900, 1020};
 
 	/**
 	 * Field descriptor (offset) for struct member 'step_height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1948,13 +1607,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__step_height = new long[]{912, 1032};
+	public static final long[] __DNA__FIELD__step_height = new long[]{904, 1024};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1971,13 +1627,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jump_speed = new long[]{916, 1036};
+	public static final long[] __DNA__FIELD__jump_speed = new long[]{908, 1028};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fall_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1994,14 +1647,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fall_speed = new long[]{920, 1040};
+	public static final long[] __DNA__FIELD__fall_speed = new long[]{912, 1032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings<h4>Blender Source Code:</h4>
-	 * Collision mask settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2018,13 +1667,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col_group = new long[]{924, 1044};
+	public static final long[] __DNA__FIELD__col_group = new long[]{916, 1036};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2041,13 +1687,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col_mask = new long[]{926, 1046};
+	public static final long[] __DNA__FIELD__col_mask = new long[]{918, 1038};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2064,13 +1707,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotmode = new long[]{928, 1048};
+	public static final long[] __DNA__FIELD__rotmode = new long[]{920, 1040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box use for drawing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2087,22 +1727,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boundtype = new long[]{930, 1050};
+	public static final long[] __DNA__FIELD__boundtype = new long[]{922, 1042};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box type used for collision.
-	 * 				<pre>
-	 * 					OB_BOUND_BOX           = 0,
-	 * 					OB_BOUND_SPHERE        = 1,
-	 * 					OB_BOUND_CYLINDER      = 2,
-	 * 					OB_BOUND_CONE          = 3,
-	 * 					OB_BOUND_TRIANGLE_MESH = 4,
-	 * 					OB_BOUND_CONVEX_HULL   = 5,
-	 * 					OB_BOUND_CAPSULE       = 7,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2119,27 +1747,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision_boundtype = new long[]{931, 1051};
+	public static final long[] __DNA__FIELD__collision_boundtype = new long[]{923, 1043};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dtx'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw extra settings. Flags:
-	 * 				<pre>
-	 * 					OB_DRAWBOUNDOX    = 1 << 0,
-	 * 					OB_AXIS           = 1 << 1,
-	 * 					OB_TEXSPACE       = 1 << 2,
-	 * 					OB_DRAWNAME       = 1 << 3,
-	 * 					OB_DRAWIMAGE      = 1 << 4,
-	 * 					-- for solid+wire display --
-	 * 					OB_DRAWWIRE       = 1 << 5,
-	 * 					-- for overdraw s --
-	 * 					OB_DRAWXRAY       = 1 << 6,
-	 * 					-- enable transparent draw --
-	 * 					OB_DRAWTRANSP     = 1 << 7,
-	 * 					OB_DRAW_ALL_EDGES = 1 << 8,  --> only for meshes currently
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2156,22 +1767,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dtx = new long[]{932, 1052};
+	public static final long[] __DNA__FIELD__dtx = new long[]{924, 1044};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw type.
-	 * 				<pre>
-	 * 					OB_BOUNDBOX  = 1,
-	 * 					OB_WIRE      = 2,
-	 * 					OB_SOLID     = 3,
-	 * 					OB_MATERIAL  = 4,
-	 * 					OB_TEXTURE   = 5,
-	 * 					OB_RENDER    = 6,
-	 * 					OB_PAINT     = 100,  --> temporary used in draw code 
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2188,23 +1787,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt = new long[]{934, 1054};
+	public static final long[] __DNA__FIELD__dt = new long[]{926, 1046};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing.
-	 * 				<pre>
-	 * 					OB_ARROWS        = 1,
-	 * 					OB_PLAINAXES     = 2,
-	 * 					OB_CIRCLE        = 3,
-	 * 					OB_SINGLE_ARROW  = 4,
-	 * 					OB_CUBE          = 5,
-	 * 					OB_EMPTY_SPHERE  = 6,
-	 * 					OB_EMPTY_CONE    = 7,
-	 * 					OB_EMPTY_IMAGE   = 8,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2221,13 +1807,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_drawtype = new long[]{935, 1055};
+	public static final long[] __DNA__FIELD__empty_drawtype = new long[]{927, 1047};
 
 	/**
 	 * Field descriptor (offset) for struct member 'empty_drawsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2244,13 +1827,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__empty_drawsize = new long[]{936, 1056};
+	public static final long[] __DNA__FIELD__empty_drawsize = new long[]{928, 1048};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupfacesca'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dupliface scale
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2267,13 +1847,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupfacesca = new long[]{940, 1060};
+	public static final long[] __DNA__FIELD__dupfacesca = new long[]{932, 1052};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic property list (not to be confused with IDProperties)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2290,13 +1867,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop = new long[]{944, 1064};
+	public static final long[] __DNA__FIELD__prop = new long[]{936, 1056};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensors'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic sensors
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2313,13 +1887,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sensors = new long[]{952, 1080};
+	public static final long[] __DNA__FIELD__sensors = new long[]{944, 1072};
 
 	/**
 	 * Field descriptor (offset) for struct member 'controllers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic controllers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2336,13 +1907,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__controllers = new long[]{960, 1096};
+	public static final long[] __DNA__FIELD__controllers = new long[]{952, 1088};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actuators'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic actuators
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2359,36 +1927,30 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actuators = new long[]{968, 1112};
+	public static final long[] __DNA__FIELD__actuators = new long[]{960, 1104};
 
 	/**
-	 * Field descriptor (offset) for struct member 'bbsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * Field descriptor (offset) for struct member 'sf'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__bbsize);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_bbsize = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__sf);
+	 * CPointer&lt;Float&gt; p_sf = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'bbsize'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * <li>Field: 'sf'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbsize = new long[]{976, 1128};
+	public static final long[] __DNA__FIELD__sf = new long[]{968, 1120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * custom index, for renderpasses
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2405,13 +1967,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__index = new long[]{988, 1140};
+	public static final long[] __DNA__FIELD__index = new long[]{972, 1124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actdef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current deformation group, note: index starts at 1
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2428,13 +1987,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actdef = new long[]{990, 1142};
+	public static final long[] __DNA__FIELD__actdef = new long[]{974, 1126};
 
 	/**
 	 * Field descriptor (offset) for struct member 'col'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2451,7 +2007,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__col = new long[]{992, 1144};
+	public static final long[] __DNA__FIELD__col = new long[]{976, 1128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gameflag'.
@@ -2471,7 +2027,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gameflag = new long[]{1008, 1160};
+	public static final long[] __DNA__FIELD__gameflag = new long[]{992, 1144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gameflag2'.
@@ -2491,13 +2047,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gameflag2 = new long[]{1012, 1164};
+	public static final long[] __DNA__FIELD__gameflag2 = new long[]{996, 1148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bsoft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for game engine bullet soft body
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2514,13 +2067,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bsoft = new long[]{1016, 1168};
+	public static final long[] __DNA__FIELD__bsoft = new long[]{1000, 1152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'restrictflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for restricting view, select, render etc. accessible in outliner
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2537,13 +2087,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__restrictflag = new long[]{1020, 1176};
+	public static final long[] __DNA__FIELD__restrictflag = new long[]{1004, 1160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dependency flag
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2560,13 +2107,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{1021, 1177};
+	public static final long[] __DNA__FIELD__recalc = new long[]{1005, 1161};
 
 	/**
 	 * Field descriptor (offset) for struct member 'softflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * softbody settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2583,7 +2127,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__softflag = new long[]{1022, 1178};
+	public static final long[] __DNA__FIELD__softflag = new long[]{1006, 1162};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anisotropicFriction'.
@@ -2603,14 +2147,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anisotropicFriction = new long[]{1024, 1180};
+	public static final long[] __DNA__FIELD__anisotropicFriction = new long[]{1008, 1164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object constraints<h4>Blender Python API:</h4>
-	 * (read-only)    Constraints affecting the transformation of the object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2627,13 +2167,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__constraints = new long[]{1036, 1192};
+	public static final long[] __DNA__FIELD__constraints = new long[]{1020, 1176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlastrips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2650,13 +2187,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlastrips = new long[]{1044, 1208};
+	public static final long[] __DNA__FIELD__nlastrips = new long[]{1028, 1192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hooks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2673,13 +2207,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hooks = new long[]{1052, 1224};
+	public static final long[] __DNA__FIELD__hooks = new long[]{1036, 1208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particlesystem'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle systems
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2696,13 +2227,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particlesystem = new long[]{1060, 1240};
+	public static final long[] __DNA__FIELD__particlesystem = new long[]{1044, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle deflector/attractor/collision data
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2719,13 +2247,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pd = new long[]{1068, 1256};
+	public static final long[] __DNA__FIELD__pd = new long[]{1052, 1240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'soft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if exists, saved in file
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2742,13 +2267,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__soft = new long[]{1072, 1264};
+	public static final long[] __DNA__FIELD__soft = new long[]{1056, 1248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dup_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object duplicator for group
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2765,24 +2287,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dup_group = new long[]{1076, 1272};
+	public static final long[] __DNA__FIELD__dup_group = new long[]{1060, 1256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'body_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for now used to temporarily holds the type of collision object.
-	 * 				<pre>
-	 * 	OB_BODY_TYPE_NO_COLLISION   = 0,
-	 * 	OB_BODY_TYPE_STATIC         = 1,
-	 * 	OB_BODY_TYPE_DYNAMIC        = 2,
-	 * 	OB_BODY_TYPE_RIGID          = 3,
-	 * 	OB_BODY_TYPE_SOFT           = 4,
-	 * 	OB_BODY_TYPE_OCCLUDER       = 5,
-	 * 	OB_BODY_TYPE_SENSOR         = 6,
-	 * 	OB_BODY_TYPE_NAVMESH        = 7,
-	 * 	OB_BODY_TYPE_CHARACTER      = 8,
-	 * 				</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2799,13 +2307,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__body_type = new long[]{1080, 1280};
+	public static final long[] __DNA__FIELD__body_type = new long[]{1064, 1264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shapeflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * flag for pinning
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2822,13 +2327,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shapeflag = new long[]{1081, 1281};
+	public static final long[] __DNA__FIELD__shapeflag = new long[]{1065, 1265};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shapenr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current shape key for menu or pinned
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2845,13 +2347,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shapenr = new long[]{1082, 1282};
+	public static final long[] __DNA__FIELD__shapenr = new long[]{1066, 1266};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smoothresh'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * smoothresh is phong interpolation ray_shadow correction in render
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2868,13 +2367,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smoothresh = new long[]{1084, 1284};
+	public static final long[] __DNA__FIELD__smoothresh = new long[]{1068, 1268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluidsimSettings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if fluidsim enabled, store additional settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2891,13 +2387,30 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fluidsimSettings = new long[]{1088, 1288};
+	public static final long[] __DNA__FIELD__fluidsimSettings = new long[]{1072, 1272};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curve_cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__curve_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_curve_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_cache'</li>
+	 * <li>Signature: 'CurveCache*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_cache = new long[]{1076, 1280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'derivedDeform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2914,13 +2427,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__derivedDeform = new long[]{1092, 1296};
+	public static final long[] __DNA__FIELD__derivedDeform = new long[]{1080, 1288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'derivedFinal'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2937,36 +2447,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__derivedFinal = new long[]{1096, 1304};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding. Ignore it.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__pad);
-	 * CPointer&lt;CPointer&lt;Integer&gt;&gt; p_pad = p.cast(new Class[]{CPointer.class, Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1100, 1312};
+	public static final long[] __DNA__FIELD__derivedFinal = new long[]{1084, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastDataMask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * the custom data layer mask that was last used to calculate derivedDeform and derivedFinal
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2983,13 +2467,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastDataMask = new long[]{1104, 1320};
+	public static final long[] __DNA__FIELD__lastDataMask = new long[]{1088, 1304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'customdata_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * (extra) custom data layer mask to use for creating derivedmesh, set by depsgraph. <b>See Also:</n> {@link #getLastDataMask()}
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3006,13 +2487,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__customdata_mask = new long[]{1112, 1328};
+	public static final long[] __DNA__FIELD__customdata_mask = new long[]{1096, 1312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of game controllers that are active
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3029,13 +2507,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__state = new long[]{1120, 1336};
+	public static final long[] __DNA__FIELD__state = new long[]{1104, 1320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'init_state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of initial state as recorded by the users
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3052,13 +2527,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__init_state = new long[]{1124, 1340};
+	public static final long[] __DNA__FIELD__init_state = new long[]{1108, 1324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpulamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * runtime, for glsl lamp display only
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3075,7 +2547,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpulamp = new long[]{1128, 1344};
+	public static final long[] __DNA__FIELD__gpulamp = new long[]{1112, 1328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pc_ids'.
@@ -3095,13 +2567,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pc_ids = new long[]{1136, 1360};
+	public static final long[] __DNA__FIELD__pc_ids = new long[]{1120, 1344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'duplilist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for temporary dupli list storage, only for use by RNA API
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3118,13 +2587,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__duplilist = new long[]{1144, 1376};
+	public static final long[] __DNA__FIELD__duplilist = new long[]{1128, 1360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet rigid body
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3141,13 +2607,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rigidbody_object = new long[]{1148, 1384};
+	public static final long[] __DNA__FIELD__rigidbody_object = new long[]{1132, 1368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rigidbody_constraint'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet constraint
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3164,13 +2627,10 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rigidbody_constraint = new long[]{1152, 1392};
+	public static final long[] __DNA__FIELD__rigidbody_constraint = new long[]{1136, 1376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima_ofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset for image empties
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3187,30 +2647,67 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ima_ofs = new long[]{1156, 1400};
+	public static final long[] __DNA__FIELD__ima_ofs = new long[]{1140, 1384};
 
 	/**
-	 * Field descriptor (offset) for struct member 'curve_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Runtime valuated curve-specific data, not stored in the file
+	 * Field descriptor (offset) for struct member 'iuser'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__curve_cache);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_curve_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__iuser);
+	 * CPointer&lt;CPointer&lt;ImageUser&gt;&gt; p_iuser = p.cast(new Class[]{CPointer.class, ImageUser.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'curve_cache'</li>
-	 * <li>Signature: 'CurveCache*'</li>
+	 * <li>Field: 'iuser'</li>
+	 * <li>Signature: 'ImageUser*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_cache = new long[]{1164, 1408};
+	public static final long[] __DNA__FIELD__iuser = new long[]{1148, 1392};
+
+	/**
+	 * Field descriptor (offset) for struct member 'lodlevels'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__lodlevels);
+	 * CPointer&lt;ListBase&gt; p_lodlevels = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lodlevels'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lodlevels = new long[]{1152, 1400};
+
+	/**
+	 * Field descriptor (offset) for struct member 'currentlod'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__currentlod);
+	 * CPointer&lt;CPointer&lt;LodLevel&gt;&gt; p_currentlod = p.cast(new Class[]{CPointer.class, LodLevel.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'currentlod'</li>
+	 * <li>Signature: 'LodLevel*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__currentlod = new long[]{1160, 1416};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3258,9 +2755,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'adt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * animation data
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -3278,9 +2772,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'adt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * animation data
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -3328,9 +2819,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of Object
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -3345,9 +2833,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Type of Object
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -3362,20 +2847,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'partype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * parent type: first 4 bits: type.
-	 * 				<pre>
-	 * 					PARTYPE       = (1 << 4) - 1,
-	 * 					PAROBJECT     = 0,
-	 * 					PARCURVE      = 1,
-	 * 					PARKEY        = 2,
-	 * 					PARSKEL       = 4,
-	 * 					PARVERT1      = 5,
-	 * 					PARVERT3      = 6,
-	 * 					PARBONE       = 7,
-	 * 					PARSLOW       = 16,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__partype
 	 */
 	
@@ -3390,20 +2861,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'partype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * parent type: first 4 bits: type.
-	 * 				<pre>
-	 * 					PARTYPE       = (1 << 4) - 1,
-	 * 					PAROBJECT     = 0,
-	 * 					PARCURVE      = 1,
-	 * 					PARKEY        = 2,
-	 * 					PARSKEL       = 4,
-	 * 					PARVERT1      = 5,
-	 * 					PARVERT3      = 6,
-	 * 					PARBONE       = 7,
-	 * 					PARSLOW       = 16,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__partype
 	 */
 	
@@ -3418,9 +2875,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'par1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par1
 	 */
 	
@@ -3435,9 +2889,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'par1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par1
 	 */
 	
@@ -3452,9 +2903,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'par2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par2
 	 */
 	
@@ -3469,9 +2917,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'par2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par2
 	 */
 	
@@ -3486,9 +2931,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'par3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par3
 	 */
 	
@@ -3503,9 +2945,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'par3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * can be a vertexnr
 	 * @see #__DNA__FIELD__par3
 	 */
 	
@@ -3520,9 +2959,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'parsubstr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * String describing subobject info, MAX_ID_NAME-2
 	 * @see #__DNA__FIELD__parsubstr
 	 */
 	
@@ -3541,9 +2977,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'parsubstr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * String describing subobject info, MAX_ID_NAME-2
 	 * @see #__DNA__FIELD__parsubstr
 	 */
 	
@@ -3566,9 +2999,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Object
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -3586,9 +3016,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Parent Object
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -3636,10 +3063,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -3657,10 +3080,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library object this proxy object controls
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -3676,10 +3095,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'proxy_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library group duplicator object this proxy object controls
 	 * @see #__DNA__FIELD__proxy_group
 	 */
 	
@@ -3697,10 +3112,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'proxy_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if ob->proxy (or proxy_group), this object is proxy for object ob->proxy<h4>Blender Python API:</h4>
-	 * (read-only)    Library group duplicator object this proxy object controls
 	 * @see #__DNA__FIELD__proxy_group
 	 */
 	
@@ -3716,9 +3127,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'proxy_from'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * proxy_from is set in target back to the proxy.
 	 * @see #__DNA__FIELD__proxy_from
 	 */
 	
@@ -3736,9 +3144,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'proxy_from'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * proxy_from is set in target back to the proxy.
 	 * @see #__DNA__FIELD__proxy_from
 	 */
 	
@@ -3754,9 +3159,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'ipo'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@depricated
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -3774,9 +3176,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'ipo'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system, deprecated for 2.5.<br/>@depricated
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -3792,9 +3191,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'bb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Bounding box of the associated mesh/curve/etc. Cache value not necessarily stored in file.
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -3812,9 +3208,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'bb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Bounding box of the associated mesh/curve/etc. Cache value not necessarily stored in file.
 	 * @see #__DNA__FIELD__bb
 	 */
 	
@@ -3830,9 +3223,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system. @depricated
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -3850,9 +3240,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system. @depricated
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -3900,10 +3287,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'pose'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pose data, armature objects only<h4>Blender Python API:</h4>
-	 * (read-only)    Current pose for armatures
 	 * @see #__DNA__FIELD__pose
 	 */
 	
@@ -3921,10 +3304,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'pose'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pose data, armature objects only<h4>Blender Python API:</h4>
-	 * (read-only)    Current pose for armatures
 	 * @see #__DNA__FIELD__pose
 	 */
 	
@@ -3940,10 +3319,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pointer to objects data - an 'ID' or NULL<h4>Blender Python API:</h4>
-	 * Object data
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -3961,10 +3336,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * pointer to objects data - an 'ID' or NULL<h4>Blender Python API:</h4>
-	 * Object data
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -3980,9 +3351,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'gpd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Grease Pencil data
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -4000,9 +3368,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'gpd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Grease Pencil data
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -4018,9 +3383,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'avs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for visualization of object-transform animation
 	 * @see #__DNA__FIELD__avs
 	 */
 	
@@ -4035,9 +3397,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'avs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for visualization of object-transform animation
 	 * @see #__DNA__FIELD__avs
 	 */
 	
@@ -4060,9 +3419,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'mpath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * motion path cache for this object
 	 * @see #__DNA__FIELD__mpath
 	 */
 	
@@ -4080,9 +3436,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'mpath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * motion path cache for this object
 	 * @see #__DNA__FIELD__mpath
 	 */
 	
@@ -4098,9 +3451,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraintChannels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -4115,9 +3465,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'constraintChannels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -4140,9 +3487,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'effect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
 	 * @see #__DNA__FIELD__effect
 	 */
 	
@@ -4157,9 +3501,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'effect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
 	 * @see #__DNA__FIELD__effect
 	 */
 	
@@ -4182,9 +3523,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'defbase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of bDeformGroup (vertex groups) names and flag only
 	 * @see #__DNA__FIELD__defbase
 	 */
 	
@@ -4199,9 +3537,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'defbase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of bDeformGroup (vertex groups) names and flag only
 	 * @see #__DNA__FIELD__defbase
 	 */
 	
@@ -4224,10 +3559,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of ModifierData structures<h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the geometric data of the object
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -4242,10 +3573,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * list of ModifierData structures<h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the geometric data of the object
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -4268,20 +3595,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Local object mode. On of:
-	 * 				<pre>
-	 * 					OB_MODE_OBJECT        = 0,
-	 * 					OB_MODE_EDIT          = 1 << 0,
-	 * 					OB_MODE_SCULPT        = 1 << 1,
-	 * 					OB_MODE_VERTEX_PAINT  = 1 << 2,
-	 * 					OB_MODE_WEIGHT_PAINT  = 1 << 3,
-	 * 					OB_MODE_TEXTURE_PAINT = 1 << 4,
-	 * 					OB_MODE_PARTICLE_EDIT = 1 << 5,
-	 * 					OB_MODE_POSE          = 1 << 6
-	 * 				</pre><h4>Blender Python API:</h4>
-	 * (read-only)    Object interaction mode
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -4296,20 +3609,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Local object mode. On of:
-	 * 				<pre>
-	 * 					OB_MODE_OBJECT        = 0,
-	 * 					OB_MODE_EDIT          = 1 << 0,
-	 * 					OB_MODE_SCULPT        = 1 << 1,
-	 * 					OB_MODE_VERTEX_PAINT  = 1 << 2,
-	 * 					OB_MODE_WEIGHT_PAINT  = 1 << 3,
-	 * 					OB_MODE_TEXTURE_PAINT = 1 << 4,
-	 * 					OB_MODE_PARTICLE_EDIT = 1 << 5,
-	 * 					OB_MODE_POSE          = 1 << 6
-	 * 				</pre><h4>Blender Python API:</h4>
-	 * (read-only)    Object interaction mode
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -4324,9 +3623,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'restore_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Keep track of what mode to return to after toggling a mode
 	 * @see #__DNA__FIELD__restore_mode
 	 */
 	
@@ -4341,9 +3637,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'restore_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Keep track of what mode to return to after toggling a mode
 	 * @see #__DNA__FIELD__restore_mode
 	 */
 	
@@ -4358,9 +3651,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'mat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -4378,9 +3668,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'mat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Material slots. Pointer on a list of pointers on instances of {@link Material}.<br/><b>see</b> {@link #getTotcol()}
 	 * @see #__DNA__FIELD__mat
 	 */
 	
@@ -4396,9 +3683,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'matbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * a boolean field, with each byte 1 if corresponding material is linked to object
 	 * @see #__DNA__FIELD__matbits
 	 */
 	
@@ -4416,9 +3700,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'matbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * a boolean field, with each byte 1 if corresponding material is linked to object
 	 * @see #__DNA__FIELD__matbits
 	 */
 	
@@ -4434,9 +3715,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'totcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).
 	 * @see #__DNA__FIELD__totcol
 	 */
 	
@@ -4451,9 +3729,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'totcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Number of available material slots (see {@link #getMat()}). Copy of {@link Mesh#getTotcol()}, {@link Curve#getTotcol()} and meta struct member of same name (keep in sync).
 	 * @see #__DNA__FIELD__totcol
 	 */
 	
@@ -4468,9 +3743,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'actcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * currently selected material slot in the UI
 	 * @see #__DNA__FIELD__actcol
 	 */
 	
@@ -4485,9 +3757,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'actcol'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * currently selected material slot in the UI
 	 * @see #__DNA__FIELD__actcol
 	 */
 	
@@ -4502,9 +3771,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'loc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * location of the object
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -4523,9 +3789,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'loc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * location of the object
 	 * @see #__DNA__FIELD__loc
 	 */
 	
@@ -4588,9 +3851,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'orig'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * origin of the object
 	 * @see #__DNA__FIELD__orig
 	 */
 	
@@ -4609,9 +3869,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'orig'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * origin of the object
 	 * @see #__DNA__FIELD__orig
 	 */
 	
@@ -4634,9 +3891,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * size/scale of the object
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -4655,9 +3909,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * size/scale of the object
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -4680,9 +3931,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'dsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__dsize
 	 */
 	
@@ -4701,9 +3949,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'dsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__dsize
 	 */
 	
@@ -4766,9 +4011,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'rot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * @see #__DNA__FIELD__rot
 	 */
 	
@@ -4787,9 +4029,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'rot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * @see #__DNA__FIELD__rot
 	 */
 	
@@ -4812,9 +4051,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'drot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * @see #__DNA__FIELD__drot
 	 */
 	
@@ -4833,9 +4069,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'drot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * euler rotation
 	 * @see #__DNA__FIELD__drot
 	 */
 	
@@ -4858,9 +4091,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'quat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -4879,9 +4109,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'quat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * @see #__DNA__FIELD__quat
 	 */
 	
@@ -4904,9 +4131,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'dquat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * @see #__DNA__FIELD__dquat
 	 */
 	
@@ -4925,9 +4149,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'dquat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * quaternion rotation
 	 * @see #__DNA__FIELD__dquat
 	 */
 	
@@ -4950,9 +4171,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'rotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	
@@ -4971,9 +4189,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'rotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	
@@ -4996,9 +4211,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'drotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * @see #__DNA__FIELD__drotAxis
 	 */
 	
@@ -5017,9 +4229,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'drotAxis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - axis part
 	 * @see #__DNA__FIELD__drotAxis
 	 */
 	
@@ -5042,9 +4251,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'rotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * @see #__DNA__FIELD__rotAngle
 	 */
 	
@@ -5059,9 +4265,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'rotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * @see #__DNA__FIELD__rotAngle
 	 */
 	
@@ -5076,9 +4279,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'drotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * @see #__DNA__FIELD__drotAngle
 	 */
 	
@@ -5093,9 +4293,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'drotAngle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * axis angle rotation - angle part
 	 * @see #__DNA__FIELD__drotAngle
 	 */
 	
@@ -5110,9 +4307,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'obmat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * final worldspace matrix with constraints & animsys applied
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -5132,9 +4326,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'obmat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * final worldspace matrix with constraints & animsys applied
 	 * @see #__DNA__FIELD__obmat
 	 */
 	
@@ -5157,9 +4348,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'parentinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of parent, so that object doesn't 'stick' to parent
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -5179,9 +4367,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'parentinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of parent, so that object doesn't 'stick' to parent
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -5204,9 +4389,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'constinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of constraints. doesn't include effect of parent or object local transform
 	 * @see #__DNA__FIELD__constinv
 	 */
 	
@@ -5226,9 +4408,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'constinv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse result of constraints. doesn't include effect of parent or object local transform
 	 * @see #__DNA__FIELD__constinv
 	 */
 	
@@ -5251,12 +4430,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -5276,12 +4449,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'imat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * inverse matrix of 'obmat' for any other use than rendering! 
-	 * 							note: this isn't assured to be valid as with 'obmat',
-	 * 	                     	before using this value you should do...
-	 * 	                    	invert_m4_m4(ob->imat, ob->obmat);
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -5304,11 +4471,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'imat_ren'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Previously 'imat' was used at render time, but as other places use it too
-	 * 	 							the interactive ui of 2.5 creates problems. So now only 'imat_ren' should
-	 * 								be used when ever the inverse of ob->obmat * re->viewmat is needed!
 	 * @see #__DNA__FIELD__imat_ren
 	 */
 	
@@ -5328,11 +4490,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'imat_ren'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Previously 'imat' was used at render time, but as other places use it too
-	 * 	 							the interactive ui of 2.5 creates problems. So now only 'imat_ren' should
-	 * 								be used when ever the inverse of ob->obmat * re->viewmat is needed!
 	 * @see #__DNA__FIELD__imat_ren
 	 */
 	
@@ -5355,9 +4512,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'lay'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base's layer in the scene
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -5372,9 +4526,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'lay'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base's layer in the scene
 	 * @see #__DNA__FIELD__lay
 	 */
 	
@@ -5388,48 +4539,67 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * sf is time-offset
-	 * @see #__DNA__FIELD__sf
-	 */
-	
-	public float getSf() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 948);
-		} else {
-			return __io__block.readFloat(__io__address + 828);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * sf is time-offset
-	 * @see #__DNA__FIELD__sf
-	 */
-	
-	public void setSf(float sf) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 948, sf);
-		} else {
-			__io__block.writeFloat(__io__address + 828, sf);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 948);
+		} else {
+			return __io__block.readShort(__io__address + 828);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 948, flag);
+		} else {
+			__io__block.writeShort(__io__address + 828, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'colbits'.
+	 * @see #__DNA__FIELD__colbits
+	 */
+	
+	public short getColbits() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 950);
+		} else {
+			return __io__block.readShort(__io__address + 830);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'colbits'.
+	 * @see #__DNA__FIELD__colbits
+	 */
+	
+	public void setColbits(short colbits) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 950, colbits);
+		} else {
+			__io__block.writeShort(__io__address + 830, colbits);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'transflag'.
+	 * @see #__DNA__FIELD__transflag
+	 */
+	
+	public short getTransflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 952);
@@ -5439,31 +4609,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * copy of Base
-	 * @see #__DNA__FIELD__flag
+	 * Set method for struct member 'transflag'.
+	 * @see #__DNA__FIELD__transflag
 	 */
 	
-	public void setFlag(short flag) throws IOException
+	public void setTransflag(short transflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 952, flag);
+			__io__block.writeShort(__io__address + 952, transflag);
 		} else {
-			__io__block.writeShort(__io__address + 832, flag);
+			__io__block.writeShort(__io__address + 832, transflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'colbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__colbits
+	 * Get method for struct member 'protectflag'.
+	 * @see #__DNA__FIELD__protectflag
 	 */
 	
-	public short getColbits() throws IOException
+	public short getProtectflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 954);
@@ -5473,47 +4637,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'colbits'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__colbits
+	 * Set method for struct member 'protectflag'.
+	 * @see #__DNA__FIELD__protectflag
 	 */
 	
-	public void setColbits(short colbits) throws IOException
+	public void setProtectflag(short protectflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 954, colbits);
+			__io__block.writeShort(__io__address + 954, protectflag);
 		} else {
-			__io__block.writeShort(__io__address + 834, colbits);
+			__io__block.writeShort(__io__address + 834, protectflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'transflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				Flags 1 and 2 were unused or relics from past features.
-	 * 				<pre>
-	 * 					OB_NEG_SCALE        = 1 << 2,
-	 * 					OB_DUPLIFRAMES      = 1 << 3,
-	 * 					OB_DUPLIVERTS       = 1 << 4,
-	 * 					OB_DUPLIROT         = 1 << 5,
-	 * 					OB_DUPLINOSPEED     = 1 << 6,
-	 * 					OB_DUPLIGROUP       = 1 << 8,
-	 * 					OB_DUPLIFACES       = 1 << 9,
-	 * 					OB_DUPLIFACES_SCALE = 1 << 10,
-	 * 					OB_DUPLIPARTS       = 1 << 11,
-	 * 					OB_RENDER_DUPLI     = 1 << 12,
-	 * 					OB_NO_CONSTRAINTS   = 1 << 13,  --> runtime constraints disable
-	 * 					OB_NO_PSYS_UPDATE   = 1 << 14,  --> hack to work around particle issue
-	 * 					OB_DUPLI            = OB_DUPLIFRAMES | OB_DUPLIVERTS | OB_DUPLIGROUP | OB_DUPLIFACES | OB_DUPLIPARTS,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__transflag
+	 * Get method for struct member 'trackflag'.
+	 * @see #__DNA__FIELD__trackflag
 	 */
 	
-	public short getTransflag() throws IOException
+	public short getTrackflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 956);
@@ -5523,47 +4665,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'transflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				Flags 1 and 2 were unused or relics from past features.
-	 * 				<pre>
-	 * 					OB_NEG_SCALE        = 1 << 2,
-	 * 					OB_DUPLIFRAMES      = 1 << 3,
-	 * 					OB_DUPLIVERTS       = 1 << 4,
-	 * 					OB_DUPLIROT         = 1 << 5,
-	 * 					OB_DUPLINOSPEED     = 1 << 6,
-	 * 					OB_DUPLIGROUP       = 1 << 8,
-	 * 					OB_DUPLIFACES       = 1 << 9,
-	 * 					OB_DUPLIFACES_SCALE = 1 << 10,
-	 * 					OB_DUPLIPARTS       = 1 << 11,
-	 * 					OB_RENDER_DUPLI     = 1 << 12,
-	 * 					OB_NO_CONSTRAINTS   = 1 << 13,  --> runtime constraints disable
-	 * 					OB_NO_PSYS_UPDATE   = 1 << 14,  --> hack to work around particle issue
-	 * 					OB_DUPLI            = OB_DUPLIFRAMES | OB_DUPLIVERTS | OB_DUPLIGROUP | OB_DUPLIFACES | OB_DUPLIPARTS,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__transflag
+	 * Set method for struct member 'trackflag'.
+	 * @see #__DNA__FIELD__trackflag
 	 */
 	
-	public void setTransflag(short transflag) throws IOException
+	public void setTrackflag(short trackflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 956, transflag);
+			__io__block.writeShort(__io__address + 956, trackflag);
 		} else {
-			__io__block.writeShort(__io__address + 836, transflag);
+			__io__block.writeShort(__io__address + 836, trackflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'protectflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks
-	 * @see #__DNA__FIELD__protectflag
+	 * Get method for struct member 'upflag'.
+	 * @see #__DNA__FIELD__upflag
 	 */
 	
-	public short getProtectflag() throws IOException
+	public short getUpflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 958);
@@ -5573,39 +4693,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'protectflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks
-	 * @see #__DNA__FIELD__protectflag
+	 * Set method for struct member 'upflag'.
+	 * @see #__DNA__FIELD__upflag
 	 */
 	
-	public void setProtectflag(short protectflag) throws IOException
+	public void setUpflag(short upflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 958, protectflag);
+			__io__block.writeShort(__io__address + 958, upflag);
 		} else {
-			__io__block.writeShort(__io__address + 838, protectflag);
+			__io__block.writeShort(__io__address + 838, upflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'trackflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__trackflag
+	 * Get method for struct member 'nlaflag'.
+	 * @see #__DNA__FIELD__nlaflag
 	 */
 	
-	public short getTrackflag() throws IOException
+	public short getNlaflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 960);
@@ -5615,47 +4721,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'trackflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__trackflag
+	 * Set method for struct member 'nlaflag'.
+	 * @see #__DNA__FIELD__nlaflag
 	 */
 	
-	public void setTrackflag(short trackflag) throws IOException
+	public void setNlaflag(short nlaflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 960, trackflag);
+			__io__block.writeShort(__io__address + 960, nlaflag);
 		} else {
-			__io__block.writeShort(__io__address + 840, trackflag);
+			__io__block.writeShort(__io__address + 840, nlaflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'upflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__upflag
+	 * Get method for struct member 'ipoflag'.
+	 * @see #__DNA__FIELD__ipoflag
 	 */
 	
-	public short getUpflag() throws IOException
+	public short getIpoflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 962);
@@ -5665,51 +4749,25 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'upflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * transformation settings and transform locks.
-	 * 				<pre>
-	 * 					OB_POSX = 0,
-	 * 					OB_POSY = 1,
-	 * 					OB_POSZ = 2,
-	 * 					OB_NEGX = 3,
-	 * 					OB_NEGY = 4,
-	 * 					OB_NEGZ = 5,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__upflag
+	 * Set method for struct member 'ipoflag'.
+	 * @see #__DNA__FIELD__ipoflag
 	 */
 	
-	public void setUpflag(short upflag) throws IOException
+	public void setIpoflag(short ipoflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 962, upflag);
+			__io__block.writeShort(__io__address + 962, ipoflag);
 		} else {
-			__io__block.writeShort(__io__address + 842, upflag);
+			__io__block.writeShort(__io__address + 842, ipoflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'nlaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * used for DopeSheet filtering settings (expanded/collapsed).
-	 * 				<pre>
-	 * 					-- object-channel expanded status --
-	 * 					OB_ADS_COLLAPSED    = 1 << 10,
-	 * 					-- object's ipo-block --
-	 * 					OB_ADS_SHOWIPO      = 1 << 11,
-	 * 					-- object's constraint channels --
-	 * 					OB_ADS_SHOWCONS     = 1 << 12,
-	 * 					-- object's material channels --
-	 * 					OB_ADS_SHOWMATS     = 1 << 13,
-	 * 					-- object's marticle channels --
-	 * 					OB_ADS_SHOWPARTS    = 1 << 14,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__nlaflag
+	 * Get method for struct member 'scaflag'.
+	 * @see #__DNA__FIELD__scaflag
 	 */
 	
-	public short getNlaflag() throws IOException
+	public short getScaflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 964);
@@ -5719,133 +4777,44 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'nlaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * used for DopeSheet filtering settings (expanded/collapsed).
-	 * 				<pre>
-	 * 					-- object-channel expanded status --
-	 * 					OB_ADS_COLLAPSED    = 1 << 10,
-	 * 					-- object's ipo-block --
-	 * 					OB_ADS_SHOWIPO      = 1 << 11,
-	 * 					-- object's constraint channels --
-	 * 					OB_ADS_SHOWCONS     = 1 << 12,
-	 * 					-- object's material channels --
-	 * 					OB_ADS_SHOWMATS     = 1 << 13,
-	 * 					-- object's marticle channels --
-	 * 					OB_ADS_SHOWPARTS    = 1 << 14,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__nlaflag
-	 */
-	
-	public void setNlaflag(short nlaflag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 964, nlaflag);
-		} else {
-			__io__block.writeShort(__io__address + 844, nlaflag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ipoflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__ipoflag
-	 */
-	
-	public short getIpoflag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 966);
-		} else {
-			return __io__block.readShort(__io__address + 846);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ipoflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__ipoflag
-	 */
-	
-	public void setIpoflag(short ipoflag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 966, ipoflag);
-		} else {
-			__io__block.writeShort(__io__address + 846, ipoflag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'scaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * ui state for game logic
-	 * @see #__DNA__FIELD__scaflag
-	 */
-	
-	public short getScaflag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 968);
-		} else {
-			return __io__block.readShort(__io__address + 848);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'scaflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * ui state for game logic
 	 * @see #__DNA__FIELD__scaflag
 	 */
 	
 	public void setScaflag(short scaflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 968, scaflag);
+			__io__block.writeShort(__io__address + 964, scaflag);
 		} else {
-			__io__block.writeShort(__io__address + 848, scaflag);
+			__io__block.writeShort(__io__address + 844, scaflag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'scavisflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * more display settings for game logic
 	 * @see #__DNA__FIELD__scavisflag
 	 */
 	
 	public byte getScavisflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 970);
+			return __io__block.readByte(__io__address + 966);
 		} else {
-			return __io__block.readByte(__io__address + 850);
+			return __io__block.readByte(__io__address + 846);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'scavisflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * more display settings for game logic
 	 * @see #__DNA__FIELD__scavisflag
 	 */
 	
 	public void setScavisflag(byte scavisflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 970, scavisflag);
+			__io__block.writeByte(__io__address + 966, scavisflag);
 		} else {
-			__io__block.writeByte(__io__address + 850, scavisflag);
+			__io__block.writeByte(__io__address + 846, scavisflag);
 		}
 	}
 
@@ -5857,9 +4826,9 @@ public class BlenderObject extends CFacade {
 	public byte getDepsflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 971);
+			return __io__block.readByte(__io__address + 967);
 		} else {
-			return __io__block.readByte(__io__address + 851);
+			return __io__block.readByte(__io__address + 847);
 		}
 	}
 
@@ -5871,9 +4840,9 @@ public class BlenderObject extends CFacade {
 	public void setDepsflag(byte depsflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 971, depsflag);
+			__io__block.writeByte(__io__address + 967, depsflag);
 		} else {
-			__io__block.writeByte(__io__address + 851, depsflag);
+			__io__block.writeByte(__io__address + 847, depsflag);
 		}
 	}
 
@@ -5885,9 +4854,9 @@ public class BlenderObject extends CFacade {
 	public int getDupon() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 968);
 		} else {
-			return __io__block.readInt(__io__address + 852);
+			return __io__block.readInt(__io__address + 848);
 		}
 	}
 
@@ -5899,9 +4868,9 @@ public class BlenderObject extends CFacade {
 	public void setDupon(int dupon) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, dupon);
+			__io__block.writeInt(__io__address + 968, dupon);
 		} else {
-			__io__block.writeInt(__io__address + 852, dupon);
+			__io__block.writeInt(__io__address + 848, dupon);
 		}
 	}
 
@@ -5913,9 +4882,9 @@ public class BlenderObject extends CFacade {
 	public int getDupoff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 976);
+			return __io__block.readInt(__io__address + 972);
 		} else {
-			return __io__block.readInt(__io__address + 856);
+			return __io__block.readInt(__io__address + 852);
 		}
 	}
 
@@ -5927,9 +4896,9 @@ public class BlenderObject extends CFacade {
 	public void setDupoff(int dupoff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 976, dupoff);
+			__io__block.writeInt(__io__address + 972, dupoff);
 		} else {
-			__io__block.writeInt(__io__address + 856, dupoff);
+			__io__block.writeInt(__io__address + 852, dupoff);
 		}
 	}
 
@@ -5941,9 +4910,9 @@ public class BlenderObject extends CFacade {
 	public int getDupsta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 980);
+			return __io__block.readInt(__io__address + 976);
 		} else {
-			return __io__block.readInt(__io__address + 860);
+			return __io__block.readInt(__io__address + 856);
 		}
 	}
 
@@ -5955,9 +4924,9 @@ public class BlenderObject extends CFacade {
 	public void setDupsta(int dupsta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 980, dupsta);
+			__io__block.writeInt(__io__address + 976, dupsta);
 		} else {
-			__io__block.writeInt(__io__address + 860, dupsta);
+			__io__block.writeInt(__io__address + 856, dupsta);
 		}
 	}
 
@@ -5969,9 +4938,9 @@ public class BlenderObject extends CFacade {
 	public int getDupend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 984);
+			return __io__block.readInt(__io__address + 980);
 		} else {
-			return __io__block.readInt(__io__address + 864);
+			return __io__block.readInt(__io__address + 860);
 		}
 	}
 
@@ -5983,17 +4952,42 @@ public class BlenderObject extends CFacade {
 	public void setDupend(int dupend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 984, dupend);
+			__io__block.writeInt(__io__address + 980, dupend);
 		} else {
-			__io__block.writeInt(__io__address + 864, dupend);
+			__io__block.writeInt(__io__address + 860, dupend);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 984);
+		} else {
+			return __io__block.readInt(__io__address + 864);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 984, pad);
+		} else {
+			__io__block.writeInt(__io__address + 864, pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * @see #__DNA__FIELD__mass
 	 */
 	
@@ -6008,9 +5002,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * @see #__DNA__FIELD__mass
 	 */
 	
@@ -6025,9 +5016,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * @see #__DNA__FIELD__damping
 	 */
 	
@@ -6042,9 +5030,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime.
 	 * @see #__DNA__FIELD__damping
 	 */
 	
@@ -6059,11 +5044,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'inertia'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime. note that inertia is only called inertia for historical reasons
-	 * 	 				and is not changed to avoid DNA surgery. It actually reflects the 
-	 * 	 				Size value in the GameButtons (= radius).
 	 * @see #__DNA__FIELD__inertia
 	 */
 	
@@ -6078,11 +5058,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'inertia'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * during realtime. note that inertia is only called inertia for historical reasons
-	 * 	 				and is not changed to avoid DNA surgery. It actually reflects the 
-	 * 	 				Size value in the GameButtons (= radius).
 	 * @see #__DNA__FIELD__inertia
 	 */
 	
@@ -6097,14 +5072,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'formfactor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The form factor k is introduced to give the user more control
-	 * 					and to fix incompatibility problems.
-	 * 					For rotational symmetric objects, the inertia value can be
-	 * 					expressed as: Theta = k * m * r^2
-	 * 					where m = Mass, r = Radius
-	 * 					For a Sphere, the form factor is by default = 0.4
 	 * @see #__DNA__FIELD__formfactor
 	 */
 	
@@ -6119,14 +5086,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'formfactor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The form factor k is introduced to give the user more control
-	 * 					and to fix incompatibility problems.
-	 * 					For rotational symmetric objects, the inertia value can be
-	 * 					expressed as: Theta = k * m * r^2
-	 * 					where m = Mass, r = Radius
-	 * 					For a Sphere, the form factor is by default = 0.4
 	 * @see #__DNA__FIELD__formfactor
 	 */
 	
@@ -6168,34 +5127,6 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sizefac'.
-	 * @see #__DNA__FIELD__sizefac
-	 */
-	
-	public float getSizefac() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1008);
-		} else {
-			return __io__block.readFloat(__io__address + 888);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'sizefac'.
-	 * @see #__DNA__FIELD__sizefac
-	 */
-	
-	public void setSizefac(float sizefac) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1008, sizefac);
-		} else {
-			__io__block.writeFloat(__io__address + 888, sizefac);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'margin'.
 	 * @see #__DNA__FIELD__margin
 	 */
@@ -6203,9 +5134,9 @@ public class BlenderObject extends CFacade {
 	public float getMargin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1012);
+			return __io__block.readFloat(__io__address + 1008);
 		} else {
-			return __io__block.readFloat(__io__address + 892);
+			return __io__block.readFloat(__io__address + 888);
 		}
 	}
 
@@ -6217,21 +5148,46 @@ public class BlenderObject extends CFacade {
 	public void setMargin(float margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1012, margin);
+			__io__block.writeFloat(__io__address + 1008, margin);
 		} else {
-			__io__block.writeFloat(__io__address + 892, margin);
+			__io__block.writeFloat(__io__address + 888, margin);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'max_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the maximum velocity 0.0 is disabled
 	 * @see #__DNA__FIELD__max_vel
 	 */
 	
 	public float getMax_vel() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1012);
+		} else {
+			return __io__block.readFloat(__io__address + 892);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_vel'.
+	 * @see #__DNA__FIELD__max_vel
+	 */
+	
+	public void setMax_vel(float max_vel) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1012, max_vel);
+		} else {
+			__io__block.writeFloat(__io__address + 892, max_vel);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'min_vel'.
+	 * @see #__DNA__FIELD__min_vel
+	 */
+	
+	public float getMin_vel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 1016);
@@ -6241,81 +5197,16 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'max_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the maximum velocity 0.0 is disabled
-	 * @see #__DNA__FIELD__max_vel
-	 */
-	
-	public void setMax_vel(float max_vel) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1016, max_vel);
-		} else {
-			__io__block.writeFloat(__io__address + 896, max_vel);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'min_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the minimum velocity 0.0 is disabled
-	 * @see #__DNA__FIELD__min_vel
-	 */
-	
-	public float getMin_vel() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1020);
-		} else {
-			return __io__block.readFloat(__io__address + 900);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'min_vel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * clamp the minimum velocity 0.0 is disabled
 	 * @see #__DNA__FIELD__min_vel
 	 */
 	
 	public void setMin_vel(float min_vel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1020, min_vel);
+			__io__block.writeFloat(__io__address + 1016, min_vel);
 		} else {
-			__io__block.writeFloat(__io__address + 900, min_vel);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'm_contactProcessingThreshold'.
-	 * @see #__DNA__FIELD__m_contactProcessingThreshold
-	 */
-	
-	public float getM_contactProcessingThreshold() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1024);
-		} else {
-			return __io__block.readFloat(__io__address + 904);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'm_contactProcessingThreshold'.
-	 * @see #__DNA__FIELD__m_contactProcessingThreshold
-	 */
-	
-	public void setM_contactProcessingThreshold(float m_contactProcessingThreshold) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1024, m_contactProcessingThreshold);
-		} else {
-			__io__block.writeFloat(__io__address + 904, m_contactProcessingThreshold);
+			__io__block.writeFloat(__io__address + 896, min_vel);
 		}
 	}
 
@@ -6327,9 +5218,9 @@ public class BlenderObject extends CFacade {
 	public float getObstacleRad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1028);
+			return __io__block.readFloat(__io__address + 1020);
 		} else {
-			return __io__block.readFloat(__io__address + 908);
+			return __io__block.readFloat(__io__address + 900);
 		}
 	}
 
@@ -6341,21 +5232,74 @@ public class BlenderObject extends CFacade {
 	public void setObstacleRad(float obstacleRad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1028, obstacleRad);
+			__io__block.writeFloat(__io__address + 1020, obstacleRad);
 		} else {
-			__io__block.writeFloat(__io__address + 908, obstacleRad);
+			__io__block.writeFloat(__io__address + 900, obstacleRad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'step_height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
 	 * @see #__DNA__FIELD__step_height
 	 */
 	
 	public float getStep_height() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1024);
+		} else {
+			return __io__block.readFloat(__io__address + 904);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'step_height'.
+	 * @see #__DNA__FIELD__step_height
+	 */
+	
+	public void setStep_height(float step_height) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1024, step_height);
+		} else {
+			__io__block.writeFloat(__io__address + 904, step_height);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'jump_speed'.
+	 * @see #__DNA__FIELD__jump_speed
+	 */
+	
+	public float getJump_speed() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1028);
+		} else {
+			return __io__block.readFloat(__io__address + 908);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'jump_speed'.
+	 * @see #__DNA__FIELD__jump_speed
+	 */
+	
+	public void setJump_speed(float jump_speed) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1028, jump_speed);
+		} else {
+			__io__block.writeFloat(__io__address + 908, jump_speed);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fall_speed'.
+	 * @see #__DNA__FIELD__fall_speed
+	 */
+	
+	public float getFall_speed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 1032);
@@ -6365,100 +5309,165 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'step_height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
-	 * @see #__DNA__FIELD__step_height
-	 */
-	
-	public void setStep_height(float step_height) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1032, step_height);
-		} else {
-			__io__block.writeFloat(__io__address + 912, step_height);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
-	 * @see #__DNA__FIELD__jump_speed
-	 */
-	
-	public float getJump_speed() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1036);
-		} else {
-			return __io__block.readFloat(__io__address + 916);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
-	 * @see #__DNA__FIELD__jump_speed
-	 */
-	
-	public void setJump_speed(float jump_speed) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1036, jump_speed);
-		} else {
-			__io__block.writeFloat(__io__address + 916, jump_speed);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'fall_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
-	 * @see #__DNA__FIELD__fall_speed
-	 */
-	
-	public float getFall_speed() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1040);
-		} else {
-			return __io__block.readFloat(__io__address + 920);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'fall_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * "Character" physics properties
 	 * @see #__DNA__FIELD__fall_speed
 	 */
 	
 	public void setFall_speed(float fall_speed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1040, fall_speed);
+			__io__block.writeFloat(__io__address + 1032, fall_speed);
 		} else {
-			__io__block.writeFloat(__io__address + 920, fall_speed);
+			__io__block.writeFloat(__io__address + 912, fall_speed);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'col_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings<h4>Blender Source Code:</h4>
-	 * Collision mask settings
 	 * @see #__DNA__FIELD__col_group
 	 */
 	
 	public short getCol_group() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 1036);
+		} else {
+			return __io__block.readShort(__io__address + 916);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'col_group'.
+	 * @see #__DNA__FIELD__col_group
+	 */
+	
+	public void setCol_group(short col_group) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 1036, col_group);
+		} else {
+			__io__block.writeShort(__io__address + 916, col_group);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'col_mask'.
+	 * @see #__DNA__FIELD__col_mask
+	 */
+	
+	public short getCol_mask() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 1038);
+		} else {
+			return __io__block.readShort(__io__address + 918);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'col_mask'.
+	 * @see #__DNA__FIELD__col_mask
+	 */
+	
+	public void setCol_mask(short col_mask) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 1038, col_mask);
+		} else {
+			__io__block.writeShort(__io__address + 918, col_mask);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rotmode'.
+	 * @see #__DNA__FIELD__rotmode
+	 */
+	
+	public short getRotmode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 1040);
+		} else {
+			return __io__block.readShort(__io__address + 920);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotmode'.
+	 * @see #__DNA__FIELD__rotmode
+	 */
+	
+	public void setRotmode(short rotmode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 1040, rotmode);
+		} else {
+			__io__block.writeShort(__io__address + 920, rotmode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'boundtype'.
+	 * @see #__DNA__FIELD__boundtype
+	 */
+	
+	public byte getBoundtype() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1042);
+		} else {
+			return __io__block.readByte(__io__address + 922);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'boundtype'.
+	 * @see #__DNA__FIELD__boundtype
+	 */
+	
+	public void setBoundtype(byte boundtype) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1042, boundtype);
+		} else {
+			__io__block.writeByte(__io__address + 922, boundtype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'collision_boundtype'.
+	 * @see #__DNA__FIELD__collision_boundtype
+	 */
+	
+	public byte getCollision_boundtype() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1043);
+		} else {
+			return __io__block.readByte(__io__address + 923);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'collision_boundtype'.
+	 * @see #__DNA__FIELD__collision_boundtype
+	 */
+	
+	public void setCollision_boundtype(byte collision_boundtype) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1043, collision_boundtype);
+		} else {
+			__io__block.writeByte(__io__address + 923, collision_boundtype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'dtx'.
+	 * @see #__DNA__FIELD__dtx
+	 */
+	
+	public short getDtx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 1044);
@@ -6468,435 +5477,147 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'col_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings<h4>Blender Source Code:</h4>
-	 * Collision mask settings
-	 * @see #__DNA__FIELD__col_group
-	 */
-	
-	public void setCol_group(short col_group) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1044, col_group);
-		} else {
-			__io__block.writeShort(__io__address + 924, col_group);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'col_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings
-	 * @see #__DNA__FIELD__col_mask
-	 */
-	
-	public short getCol_mask() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1046);
-		} else {
-			return __io__block.readShort(__io__address + 926);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'col_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Collision mask settings
-	 * @see #__DNA__FIELD__col_mask
-	 */
-	
-	public void setCol_mask(short col_mask) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1046, col_mask);
-		} else {
-			__io__block.writeShort(__io__address + 926, col_mask);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'rotmode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...
-	 * @see #__DNA__FIELD__rotmode
-	 */
-	
-	public short getRotmode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1048);
-		} else {
-			return __io__block.readShort(__io__address + 928);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'rotmode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * rotation mode - uses defines set out in DNA_action_types.h for PoseChannel rotations...
-	 * @see #__DNA__FIELD__rotmode
-	 */
-	
-	public void setRotmode(short rotmode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1048, rotmode);
-		} else {
-			__io__block.writeShort(__io__address + 928, rotmode);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box use for drawing
-	 * @see #__DNA__FIELD__boundtype
-	 */
-	
-	public byte getBoundtype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1050);
-		} else {
-			return __io__block.readByte(__io__address + 930);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box use for drawing
-	 * @see #__DNA__FIELD__boundtype
-	 */
-	
-	public void setBoundtype(byte boundtype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1050, boundtype);
-		} else {
-			__io__block.writeByte(__io__address + 930, boundtype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'collision_boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box type used for collision.
-	 * 				<pre>
-	 * 					OB_BOUND_BOX           = 0,
-	 * 					OB_BOUND_SPHERE        = 1,
-	 * 					OB_BOUND_CYLINDER      = 2,
-	 * 					OB_BOUND_CONE          = 3,
-	 * 					OB_BOUND_TRIANGLE_MESH = 4,
-	 * 					OB_BOUND_CONVEX_HULL   = 5,
-	 * 					OB_BOUND_CAPSULE       = 7,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__collision_boundtype
-	 */
-	
-	public byte getCollision_boundtype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1051);
-		} else {
-			return __io__block.readByte(__io__address + 931);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'collision_boundtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bounding box type used for collision.
-	 * 				<pre>
-	 * 					OB_BOUND_BOX           = 0,
-	 * 					OB_BOUND_SPHERE        = 1,
-	 * 					OB_BOUND_CYLINDER      = 2,
-	 * 					OB_BOUND_CONE          = 3,
-	 * 					OB_BOUND_TRIANGLE_MESH = 4,
-	 * 					OB_BOUND_CONVEX_HULL   = 5,
-	 * 					OB_BOUND_CAPSULE       = 7,
-	 * 				</pre>
-	 * @see #__DNA__FIELD__collision_boundtype
-	 */
-	
-	public void setCollision_boundtype(byte collision_boundtype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1051, collision_boundtype);
-		} else {
-			__io__block.writeByte(__io__address + 931, collision_boundtype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'dtx'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw extra settings. Flags:
-	 * 				<pre>
-	 * 					OB_DRAWBOUNDOX    = 1 << 0,
-	 * 					OB_AXIS           = 1 << 1,
-	 * 					OB_TEXSPACE       = 1 << 2,
-	 * 					OB_DRAWNAME       = 1 << 3,
-	 * 					OB_DRAWIMAGE      = 1 << 4,
-	 * 					-- for solid+wire display --
-	 * 					OB_DRAWWIRE       = 1 << 5,
-	 * 					-- for overdraw s --
-	 * 					OB_DRAWXRAY       = 1 << 6,
-	 * 					-- enable transparent draw --
-	 * 					OB_DRAWTRANSP     = 1 << 7,
-	 * 					OB_DRAW_ALL_EDGES = 1 << 8,  --> only for meshes currently
-	 * 				</pre>
-	 * @see #__DNA__FIELD__dtx
-	 */
-	
-	public short getDtx() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1052);
-		} else {
-			return __io__block.readShort(__io__address + 932);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'dtx'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw extra settings. Flags:
-	 * 				<pre>
-	 * 					OB_DRAWBOUNDOX    = 1 << 0,
-	 * 					OB_AXIS           = 1 << 1,
-	 * 					OB_TEXSPACE       = 1 << 2,
-	 * 					OB_DRAWNAME       = 1 << 3,
-	 * 					OB_DRAWIMAGE      = 1 << 4,
-	 * 					-- for solid+wire display --
-	 * 					OB_DRAWWIRE       = 1 << 5,
-	 * 					-- for overdraw s --
-	 * 					OB_DRAWXRAY       = 1 << 6,
-	 * 					-- enable transparent draw --
-	 * 					OB_DRAWTRANSP     = 1 << 7,
-	 * 					OB_DRAW_ALL_EDGES = 1 << 8,  --> only for meshes currently
-	 * 				</pre>
 	 * @see #__DNA__FIELD__dtx
 	 */
 	
 	public void setDtx(short dtx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1052, dtx);
+			__io__block.writeShort(__io__address + 1044, dtx);
 		} else {
-			__io__block.writeShort(__io__address + 932, dtx);
+			__io__block.writeShort(__io__address + 924, dtx);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw type.
-	 * 				<pre>
-	 * 					OB_BOUNDBOX  = 1,
-	 * 					OB_WIRE      = 2,
-	 * 					OB_SOLID     = 3,
-	 * 					OB_MATERIAL  = 4,
-	 * 					OB_TEXTURE   = 5,
-	 * 					OB_RENDER    = 6,
-	 * 					OB_PAINT     = 100,  --> temporary used in draw code 
-	 * 				</pre>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
 	public byte getDt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1054);
+			return __io__block.readByte(__io__address + 1046);
 		} else {
-			return __io__block.readByte(__io__address + 934);
+			return __io__block.readByte(__io__address + 926);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * viewport draw type.
-	 * 				<pre>
-	 * 					OB_BOUNDBOX  = 1,
-	 * 					OB_WIRE      = 2,
-	 * 					OB_SOLID     = 3,
-	 * 					OB_MATERIAL  = 4,
-	 * 					OB_TEXTURE   = 5,
-	 * 					OB_RENDER    = 6,
-	 * 					OB_PAINT     = 100,  --> temporary used in draw code 
-	 * 				</pre>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
 	public void setDt(byte dt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1054, dt);
+			__io__block.writeByte(__io__address + 1046, dt);
 		} else {
-			__io__block.writeByte(__io__address + 934, dt);
+			__io__block.writeByte(__io__address + 926, dt);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'empty_drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing.
-	 * 				<pre>
-	 * 					OB_ARROWS        = 1,
-	 * 					OB_PLAINAXES     = 2,
-	 * 					OB_CIRCLE        = 3,
-	 * 					OB_SINGLE_ARROW  = 4,
-	 * 					OB_CUBE          = 5,
-	 * 					OB_EMPTY_SPHERE  = 6,
-	 * 					OB_EMPTY_CONE    = 7,
-	 * 					OB_EMPTY_IMAGE   = 8,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__empty_drawtype
 	 */
 	
 	public byte getEmpty_drawtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1055);
+			return __io__block.readByte(__io__address + 1047);
 		} else {
-			return __io__block.readByte(__io__address + 935);
+			return __io__block.readByte(__io__address + 927);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'empty_drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing.
-	 * 				<pre>
-	 * 					OB_ARROWS        = 1,
-	 * 					OB_PLAINAXES     = 2,
-	 * 					OB_CIRCLE        = 3,
-	 * 					OB_SINGLE_ARROW  = 4,
-	 * 					OB_CUBE          = 5,
-	 * 					OB_EMPTY_SPHERE  = 6,
-	 * 					OB_EMPTY_CONE    = 7,
-	 * 					OB_EMPTY_IMAGE   = 8,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__empty_drawtype
 	 */
 	
 	public void setEmpty_drawtype(byte empty_drawtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1055, empty_drawtype);
+			__io__block.writeByte(__io__address + 1047, empty_drawtype);
 		} else {
-			__io__block.writeByte(__io__address + 935, empty_drawtype);
+			__io__block.writeByte(__io__address + 927, empty_drawtype);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'empty_drawsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing
 	 * @see #__DNA__FIELD__empty_drawsize
 	 */
 	
 	public float getEmpty_drawsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1056);
+			return __io__block.readFloat(__io__address + 1048);
 		} else {
-			return __io__block.readFloat(__io__address + 936);
+			return __io__block.readFloat(__io__address + 928);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'empty_drawsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * related to viewport drawing
 	 * @see #__DNA__FIELD__empty_drawsize
 	 */
 	
 	public void setEmpty_drawsize(float empty_drawsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1056, empty_drawsize);
+			__io__block.writeFloat(__io__address + 1048, empty_drawsize);
 		} else {
-			__io__block.writeFloat(__io__address + 936, empty_drawsize);
+			__io__block.writeFloat(__io__address + 928, empty_drawsize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dupfacesca'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dupliface scale
 	 * @see #__DNA__FIELD__dupfacesca
 	 */
 	
 	public float getDupfacesca() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1060);
+			return __io__block.readFloat(__io__address + 1052);
 		} else {
-			return __io__block.readFloat(__io__address + 940);
+			return __io__block.readFloat(__io__address + 932);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dupfacesca'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dupliface scale
 	 * @see #__DNA__FIELD__dupfacesca
 	 */
 	
 	public void setDupfacesca(float dupfacesca) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1060, dupfacesca);
+			__io__block.writeFloat(__io__address + 1052, dupfacesca);
 		} else {
-			__io__block.writeFloat(__io__address + 940, dupfacesca);
+			__io__block.writeFloat(__io__address + 932, dupfacesca);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'prop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic property list (not to be confused with IDProperties)
 	 * @see #__DNA__FIELD__prop
 	 */
 	
 	public ListBase getProp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1064, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1056, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 944, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 936, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'prop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic property list (not to be confused with IDProperties)
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -6904,9 +5625,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1064;
+			__dna__offset = 1056;
 		} else {
-			__dna__offset = 944;
+			__dna__offset = 936;
 		}
 		if (__io__equals(prop, __io__address + __dna__offset)) {
 			return;
@@ -6919,26 +5640,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'sensors'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic sensors
 	 * @see #__DNA__FIELD__sensors
 	 */
 	
 	public ListBase getSensors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1080, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1072, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 952, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 944, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sensors'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic sensors
 	 * @see #__DNA__FIELD__sensors
 	 */
 	
@@ -6946,9 +5661,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1080;
+			__dna__offset = 1072;
 		} else {
-			__dna__offset = 952;
+			__dna__offset = 944;
 		}
 		if (__io__equals(sensors, __io__address + __dna__offset)) {
 			return;
@@ -6961,26 +5676,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'controllers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic controllers
 	 * @see #__DNA__FIELD__controllers
 	 */
 	
 	public ListBase getControllers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1096, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1088, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 960, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 952, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'controllers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic controllers
 	 * @see #__DNA__FIELD__controllers
 	 */
 	
@@ -6988,9 +5697,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1096;
+			__dna__offset = 1088;
 		} else {
-			__dna__offset = 960;
+			__dna__offset = 952;
 		}
 		if (__io__equals(controllers, __io__address + __dna__offset)) {
 			return;
@@ -7003,26 +5712,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'actuators'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic actuators
 	 * @see #__DNA__FIELD__actuators
 	 */
 	
 	public ListBase getActuators() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1112, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1104, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 968, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 960, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'actuators'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * game logic actuators
 	 * @see #__DNA__FIELD__actuators
 	 */
 	
@@ -7030,9 +5733,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1112;
+			__dna__offset = 1104;
 		} else {
-			__dna__offset = 968;
+			__dna__offset = 960;
 		}
 		if (__io__equals(actuators, __io__address + __dna__offset)) {
 			return;
@@ -7044,124 +5747,91 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'bbsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__bbsize
+	 * Get method for struct member 'sf'.
+	 * @see #__DNA__FIELD__sf
 	 */
 	
-	public CArrayFacade<Float> getBbsize() throws IOException
+	public float getSf() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 1120);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 976, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 968);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'bbsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
-	 * @see #__DNA__FIELD__bbsize
+	 * Set method for struct member 'sf'.
+	 * @see #__DNA__FIELD__sf
 	 */
 	
-	public void setBbsize(CArrayFacade<Float> bbsize) throws IOException
+	public void setSf(float sf) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1128;
+			__io__block.writeFloat(__io__address + 1120, sf);
 		} else {
-			__dna__offset = 976;
-		}
-		if (__io__equals(bbsize, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, bbsize)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, bbsize);
-		} else {
-			__io__generic__copy( getBbsize(), bbsize);
+			__io__block.writeFloat(__io__address + 968, sf);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * custom index, for renderpasses
 	 * @see #__DNA__FIELD__index
 	 */
 	
 	public short getIndex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1140);
+			return __io__block.readShort(__io__address + 1124);
 		} else {
-			return __io__block.readShort(__io__address + 988);
+			return __io__block.readShort(__io__address + 972);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * custom index, for renderpasses
 	 * @see #__DNA__FIELD__index
 	 */
 	
 	public void setIndex(short index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1140, index);
+			__io__block.writeShort(__io__address + 1124, index);
 		} else {
-			__io__block.writeShort(__io__address + 988, index);
+			__io__block.writeShort(__io__address + 972, index);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'actdef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current deformation group, note: index starts at 1
 	 * @see #__DNA__FIELD__actdef
 	 */
 	
 	public short getActdef() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1142);
+			return __io__block.readShort(__io__address + 1126);
 		} else {
-			return __io__block.readShort(__io__address + 990);
+			return __io__block.readShort(__io__address + 974);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'actdef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current deformation group, note: index starts at 1
 	 * @see #__DNA__FIELD__actdef
 	 */
 	
 	public void setActdef(short actdef) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1142, actdef);
+			__io__block.writeShort(__io__address + 1126, actdef);
 		} else {
-			__io__block.writeShort(__io__address + 990, actdef);
+			__io__block.writeShort(__io__address + 974, actdef);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'col'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object color
 	 * @see #__DNA__FIELD__col
 	 */
 	
@@ -7172,17 +5842,14 @@ public class BlenderObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 992, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 976, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'col'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object color
 	 * @see #__DNA__FIELD__col
 	 */
 	
@@ -7190,9 +5857,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1144;
+			__dna__offset = 1128;
 		} else {
-			__dna__offset = 992;
+			__dna__offset = 976;
 		}
 		if (__io__equals(col, __io__address + __dna__offset)) {
 			return;
@@ -7211,9 +5878,9 @@ public class BlenderObject extends CFacade {
 	public int getGameflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1160);
+			return __io__block.readInt(__io__address + 1144);
 		} else {
-			return __io__block.readInt(__io__address + 1008);
+			return __io__block.readInt(__io__address + 992);
 		}
 	}
 
@@ -7225,9 +5892,9 @@ public class BlenderObject extends CFacade {
 	public void setGameflag(int gameflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1160, gameflag);
+			__io__block.writeInt(__io__address + 1144, gameflag);
 		} else {
-			__io__block.writeInt(__io__address + 1008, gameflag);
+			__io__block.writeInt(__io__address + 992, gameflag);
 		}
 	}
 
@@ -7239,9 +5906,9 @@ public class BlenderObject extends CFacade {
 	public int getGameflag2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1164);
+			return __io__block.readInt(__io__address + 1148);
 		} else {
-			return __io__block.readInt(__io__address + 1012);
+			return __io__block.readInt(__io__address + 996);
 		}
 	}
 
@@ -7253,17 +5920,14 @@ public class BlenderObject extends CFacade {
 	public void setGameflag2(int gameflag2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1164, gameflag2);
+			__io__block.writeInt(__io__address + 1148, gameflag2);
 		} else {
-			__io__block.writeInt(__io__address + 1012, gameflag2);
+			__io__block.writeInt(__io__address + 996, gameflag2);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'bsoft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for game engine bullet soft body
 	 * @see #__DNA__FIELD__bsoft
 	 */
 	
@@ -7271,9 +5935,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1016);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1000);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BulletSoftBody.class};
 		return new CPointer<BulletSoftBody>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BulletSoftBody.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7281,9 +5945,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'bsoft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for game engine bullet soft body
 	 * @see #__DNA__FIELD__bsoft
 	 */
 	
@@ -7291,111 +5952,93 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((bsoft == null) ? 0 : bsoft.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1168, __address);
+			__io__block.writeLong(__io__address + 1152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1016, __address);
+			__io__block.writeLong(__io__address + 1000, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'restrictflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for restricting view, select, render etc. accessible in outliner
 	 * @see #__DNA__FIELD__restrictflag
 	 */
 	
 	public byte getRestrictflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1176);
+			return __io__block.readByte(__io__address + 1160);
 		} else {
-			return __io__block.readByte(__io__address + 1020);
+			return __io__block.readByte(__io__address + 1004);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'restrictflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for restricting view, select, render etc. accessible in outliner
 	 * @see #__DNA__FIELD__restrictflag
 	 */
 	
 	public void setRestrictflag(byte restrictflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1176, restrictflag);
+			__io__block.writeByte(__io__address + 1160, restrictflag);
 		} else {
-			__io__block.writeByte(__io__address + 1020, restrictflag);
+			__io__block.writeByte(__io__address + 1004, restrictflag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dependency flag
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
 	public byte getRecalc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1177);
+			return __io__block.readByte(__io__address + 1161);
 		} else {
-			return __io__block.readByte(__io__address + 1021);
+			return __io__block.readByte(__io__address + 1005);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * dependency flag
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
 	public void setRecalc(byte recalc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1177, recalc);
+			__io__block.writeByte(__io__address + 1161, recalc);
 		} else {
-			__io__block.writeByte(__io__address + 1021, recalc);
+			__io__block.writeByte(__io__address + 1005, recalc);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'softflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * softbody settings
 	 * @see #__DNA__FIELD__softflag
 	 */
 	
 	public short getSoftflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1178);
+			return __io__block.readShort(__io__address + 1162);
 		} else {
-			return __io__block.readShort(__io__address + 1022);
+			return __io__block.readShort(__io__address + 1006);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'softflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * softbody settings
 	 * @see #__DNA__FIELD__softflag
 	 */
 	
 	public void setSoftflag(short softflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1178, softflag);
+			__io__block.writeShort(__io__address + 1162, softflag);
 		} else {
-			__io__block.writeShort(__io__address + 1022, softflag);
+			__io__block.writeShort(__io__address + 1006, softflag);
 		}
 	}
 
@@ -7411,9 +6054,9 @@ public class BlenderObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1024, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1008, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7426,9 +6069,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1180;
+			__dna__offset = 1164;
 		} else {
-			__dna__offset = 1024;
+			__dna__offset = 1008;
 		}
 		if (__io__equals(anisotropicFriction, __io__address + __dna__offset)) {
 			return;
@@ -7441,28 +6084,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object constraints<h4>Blender Python API:</h4>
-	 * (read-only)    Constraints affecting the transformation of the object
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
 	public ListBase getConstraints() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1192, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1176, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1036, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1020, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object constraints<h4>Blender Python API:</h4>
-	 * (read-only)    Constraints affecting the transformation of the object
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -7470,9 +6105,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1192;
+			__dna__offset = 1176;
 		} else {
-			__dna__offset = 1036;
+			__dna__offset = 1020;
 		}
 		if (__io__equals(constraints, __io__address + __dna__offset)) {
 			return;
@@ -7485,26 +6120,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'nlastrips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__nlastrips
 	 */
 	
 	public ListBase getNlastrips() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1044, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1028, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nlastrips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__nlastrips
 	 */
 	
@@ -7512,9 +6141,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1208;
+			__dna__offset = 1192;
 		} else {
-			__dna__offset = 1044;
+			__dna__offset = 1028;
 		}
 		if (__io__equals(nlastrips, __io__address + __dna__offset)) {
 			return;
@@ -7527,26 +6156,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'hooks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__hooks
 	 */
 	
 	public ListBase getHooks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1052, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1036, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'hooks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * @depricated
 	 * @see #__DNA__FIELD__hooks
 	 */
 	
@@ -7554,9 +6177,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1224;
+			__dna__offset = 1208;
 		} else {
-			__dna__offset = 1052;
+			__dna__offset = 1036;
 		}
 		if (__io__equals(hooks, __io__address + __dna__offset)) {
 			return;
@@ -7569,26 +6192,20 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'particlesystem'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle systems
 	 * @see #__DNA__FIELD__particlesystem
 	 */
 	
 	public ListBase getParticlesystem() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1224, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1060, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1044, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'particlesystem'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle systems
 	 * @see #__DNA__FIELD__particlesystem
 	 */
 	
@@ -7596,9 +6213,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1240;
+			__dna__offset = 1224;
 		} else {
-			__dna__offset = 1060;
+			__dna__offset = 1044;
 		}
 		if (__io__equals(particlesystem, __io__address + __dna__offset)) {
 			return;
@@ -7611,9 +6228,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'pd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle deflector/attractor/collision data
 	 * @see #__DNA__FIELD__pd
 	 */
 	
@@ -7621,9 +6235,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1068);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1052);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PartDeflect.class};
 		return new CPointer<PartDeflect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PartDeflect.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7631,9 +6245,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'pd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * particle deflector/attractor/collision data
 	 * @see #__DNA__FIELD__pd
 	 */
 	
@@ -7641,17 +6252,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((pd == null) ? 0 : pd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1256, __address);
+			__io__block.writeLong(__io__address + 1240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1068, __address);
+			__io__block.writeLong(__io__address + 1052, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'soft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if exists, saved in file
 	 * @see #__DNA__FIELD__soft
 	 */
 	
@@ -7659,9 +6267,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1072);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1056);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SoftBody.class};
 		return new CPointer<SoftBody>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SoftBody.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7669,9 +6277,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'soft'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if exists, saved in file
 	 * @see #__DNA__FIELD__soft
 	 */
 	
@@ -7679,17 +6284,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((soft == null) ? 0 : soft.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1264, __address);
+			__io__block.writeLong(__io__address + 1248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1072, __address);
+			__io__block.writeLong(__io__address + 1056, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dup_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object duplicator for group
 	 * @see #__DNA__FIELD__dup_group
 	 */
 	
@@ -7697,9 +6299,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1076);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1060);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
 		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7707,9 +6309,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'dup_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * object duplicator for group
 	 * @see #__DNA__FIELD__dup_group
 	 */
 	
@@ -7717,175 +6316,126 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((dup_group == null) ? 0 : dup_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1076, __address);
+			__io__block.writeLong(__io__address + 1060, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'body_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for now used to temporarily holds the type of collision object.
-	 * 				<pre>
-	 * 	OB_BODY_TYPE_NO_COLLISION   = 0,
-	 * 	OB_BODY_TYPE_STATIC         = 1,
-	 * 	OB_BODY_TYPE_DYNAMIC        = 2,
-	 * 	OB_BODY_TYPE_RIGID          = 3,
-	 * 	OB_BODY_TYPE_SOFT           = 4,
-	 * 	OB_BODY_TYPE_OCCLUDER       = 5,
-	 * 	OB_BODY_TYPE_SENSOR         = 6,
-	 * 	OB_BODY_TYPE_NAVMESH        = 7,
-	 * 	OB_BODY_TYPE_CHARACTER      = 8,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__body_type
 	 */
 	
 	public byte getBody_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1280);
+			return __io__block.readByte(__io__address + 1264);
 		} else {
-			return __io__block.readByte(__io__address + 1080);
+			return __io__block.readByte(__io__address + 1064);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'body_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for now used to temporarily holds the type of collision object.
-	 * 				<pre>
-	 * 	OB_BODY_TYPE_NO_COLLISION   = 0,
-	 * 	OB_BODY_TYPE_STATIC         = 1,
-	 * 	OB_BODY_TYPE_DYNAMIC        = 2,
-	 * 	OB_BODY_TYPE_RIGID          = 3,
-	 * 	OB_BODY_TYPE_SOFT           = 4,
-	 * 	OB_BODY_TYPE_OCCLUDER       = 5,
-	 * 	OB_BODY_TYPE_SENSOR         = 6,
-	 * 	OB_BODY_TYPE_NAVMESH        = 7,
-	 * 	OB_BODY_TYPE_CHARACTER      = 8,
-	 * 				</pre>
 	 * @see #__DNA__FIELD__body_type
 	 */
 	
 	public void setBody_type(byte body_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1280, body_type);
+			__io__block.writeByte(__io__address + 1264, body_type);
 		} else {
-			__io__block.writeByte(__io__address + 1080, body_type);
+			__io__block.writeByte(__io__address + 1064, body_type);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'shapeflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * flag for pinning
 	 * @see #__DNA__FIELD__shapeflag
 	 */
 	
 	public byte getShapeflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1281);
+			return __io__block.readByte(__io__address + 1265);
 		} else {
-			return __io__block.readByte(__io__address + 1081);
+			return __io__block.readByte(__io__address + 1065);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'shapeflag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * flag for pinning
 	 * @see #__DNA__FIELD__shapeflag
 	 */
 	
 	public void setShapeflag(byte shapeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1281, shapeflag);
+			__io__block.writeByte(__io__address + 1265, shapeflag);
 		} else {
-			__io__block.writeByte(__io__address + 1081, shapeflag);
+			__io__block.writeByte(__io__address + 1065, shapeflag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'shapenr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current shape key for menu or pinned
 	 * @see #__DNA__FIELD__shapenr
 	 */
 	
 	public short getShapenr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1282);
+			return __io__block.readShort(__io__address + 1266);
 		} else {
-			return __io__block.readShort(__io__address + 1082);
+			return __io__block.readShort(__io__address + 1066);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'shapenr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * current shape key for menu or pinned
 	 * @see #__DNA__FIELD__shapenr
 	 */
 	
 	public void setShapenr(short shapenr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1282, shapenr);
+			__io__block.writeShort(__io__address + 1266, shapenr);
 		} else {
-			__io__block.writeShort(__io__address + 1082, shapenr);
+			__io__block.writeShort(__io__address + 1066, shapenr);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'smoothresh'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * smoothresh is phong interpolation ray_shadow correction in render
 	 * @see #__DNA__FIELD__smoothresh
 	 */
 	
 	public float getSmoothresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1284);
+			return __io__block.readFloat(__io__address + 1268);
 		} else {
-			return __io__block.readFloat(__io__address + 1084);
+			return __io__block.readFloat(__io__address + 1068);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'smoothresh'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * smoothresh is phong interpolation ray_shadow correction in render
 	 * @see #__DNA__FIELD__smoothresh
 	 */
 	
 	public void setSmoothresh(float smoothresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1284, smoothresh);
+			__io__block.writeFloat(__io__address + 1268, smoothresh);
 		} else {
-			__io__block.writeFloat(__io__address + 1084, smoothresh);
+			__io__block.writeFloat(__io__address + 1068, smoothresh);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'fluidsimSettings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if fluidsim enabled, store additional settings
 	 * @see #__DNA__FIELD__fluidsimSettings
 	 */
 	
@@ -7893,9 +6443,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1088);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1072);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidsimSettings.class};
 		return new CPointer<FluidsimSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidsimSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7903,9 +6453,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'fluidsimSettings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * if fluidsim enabled, store additional settings
 	 * @see #__DNA__FIELD__fluidsimSettings
 	 */
 	
@@ -7913,17 +6460,46 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((fluidsimSettings == null) ? 0 : fluidsimSettings.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1288, __address);
+			__io__block.writeLong(__io__address + 1272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1088, __address);
+			__io__block.writeLong(__io__address + 1072, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curve_cache'.
+	 * @see #__DNA__FIELD__curve_cache
+	 */
+	
+	public CPointer<Object> getCurve_cache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1076);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve_cache'.
+	 * @see #__DNA__FIELD__curve_cache
+	 */
+	
+	public void setCurve_cache(CPointer<Object> curve_cache) throws IOException
+	{
+		long __address = ((curve_cache == null) ? 0 : curve_cache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1076, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'derivedDeform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * @see #__DNA__FIELD__derivedDeform
 	 */
 	
@@ -7931,9 +6507,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1092);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1080);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -7941,9 +6517,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'derivedDeform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * @see #__DNA__FIELD__derivedDeform
 	 */
 	
@@ -7951,17 +6524,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((derivedDeform == null) ? 0 : derivedDeform.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1296, __address);
+			__io__block.writeLong(__io__address + 1288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1092, __address);
+			__io__block.writeLong(__io__address + 1080, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'derivedFinal'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * @see #__DNA__FIELD__derivedFinal
 	 */
 	
@@ -7969,9 +6539,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1096);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1084);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -7979,9 +6549,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'derivedFinal'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * this is just a cache which gets initialised by blender on demand
 	 * @see #__DNA__FIELD__derivedFinal
 	 */
 	
@@ -7989,208 +6556,140 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((derivedFinal == null) ? 0 : derivedFinal.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1304, __address);
+			__io__block.writeLong(__io__address + 1296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1096, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding. Ignore it.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public CPointer<Integer> getPad() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1312);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1100);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
-		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding. Ignore it.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(CPointer<Integer> pad) throws IOException
-	{
-		long __address = ((pad == null) ? 0 : pad.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1312, __address);
-		} else {
-			__io__block.writeLong(__io__address + 1100, __address);
+			__io__block.writeLong(__io__address + 1084, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'lastDataMask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * the custom data layer mask that was last used to calculate derivedDeform and derivedFinal
 	 * @see #__DNA__FIELD__lastDataMask
 	 */
 	
 	public long getLastDataMask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 1320);
+			return __io__block.readInt64(__io__address + 1304);
 		} else {
-			return __io__block.readInt64(__io__address + 1104);
+			return __io__block.readInt64(__io__address + 1088);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'lastDataMask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * the custom data layer mask that was last used to calculate derivedDeform and derivedFinal
 	 * @see #__DNA__FIELD__lastDataMask
 	 */
 	
 	public void setLastDataMask(long lastDataMask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 1320, lastDataMask);
+			__io__block.writeInt64(__io__address + 1304, lastDataMask);
 		} else {
-			__io__block.writeInt64(__io__address + 1104, lastDataMask);
+			__io__block.writeInt64(__io__address + 1088, lastDataMask);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'customdata_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * (extra) custom data layer mask to use for creating derivedmesh, set by depsgraph. <b>See Also:</n> {@link #getLastDataMask()}
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
 	
 	public long getCustomdata_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 1328);
+			return __io__block.readInt64(__io__address + 1312);
 		} else {
-			return __io__block.readInt64(__io__address + 1112);
+			return __io__block.readInt64(__io__address + 1096);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'customdata_mask'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * (extra) custom data layer mask to use for creating derivedmesh, set by depsgraph. <b>See Also:</n> {@link #getLastDataMask()}
 	 * @see #__DNA__FIELD__customdata_mask
 	 */
 	
 	public void setCustomdata_mask(long customdata_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 1328, customdata_mask);
+			__io__block.writeInt64(__io__address + 1312, customdata_mask);
 		} else {
-			__io__block.writeInt64(__io__address + 1112, customdata_mask);
+			__io__block.writeInt64(__io__address + 1096, customdata_mask);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of game controllers that are active
 	 * @see #__DNA__FIELD__state
 	 */
 	
 	public int getState() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1336);
+			return __io__block.readInt(__io__address + 1320);
 		} else {
-			return __io__block.readInt(__io__address + 1120);
+			return __io__block.readInt(__io__address + 1104);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of game controllers that are active
 	 * @see #__DNA__FIELD__state
 	 */
 	
 	public void setState(int state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1336, state);
+			__io__block.writeInt(__io__address + 1320, state);
 		} else {
-			__io__block.writeInt(__io__address + 1120, state);
+			__io__block.writeInt(__io__address + 1104, state);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'init_state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of initial state as recorded by the users
 	 * @see #__DNA__FIELD__init_state
 	 */
 	
 	public int getInit_state() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1340);
+			return __io__block.readInt(__io__address + 1324);
 		} else {
-			return __io__block.readInt(__io__address + 1124);
+			return __io__block.readInt(__io__address + 1108);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'init_state'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * bit masks of initial state as recorded by the users
 	 * @see #__DNA__FIELD__init_state
 	 */
 	
 	public void setInit_state(int init_state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1340, init_state);
+			__io__block.writeInt(__io__address + 1324, init_state);
 		} else {
-			__io__block.writeInt(__io__address + 1124, init_state);
+			__io__block.writeInt(__io__address + 1108, init_state);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gpulamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * runtime, for glsl lamp display only
 	 * @see #__DNA__FIELD__gpulamp
 	 */
 	
 	public ListBase getGpulamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1344, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1328, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1112, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gpulamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * runtime, for glsl lamp display only
 	 * @see #__DNA__FIELD__gpulamp
 	 */
 	
@@ -8198,9 +6697,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1344;
+			__dna__offset = 1328;
 		} else {
-			__dna__offset = 1128;
+			__dna__offset = 1112;
 		}
 		if (__io__equals(gpulamp, __io__address + __dna__offset)) {
 			return;
@@ -8219,9 +6718,9 @@ public class BlenderObject extends CFacade {
 	public ListBase getPc_ids() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1360, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1344, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8234,9 +6733,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1360;
+			__dna__offset = 1344;
 		} else {
-			__dna__offset = 1136;
+			__dna__offset = 1120;
 		}
 		if (__io__equals(pc_ids, __io__address + __dna__offset)) {
 			return;
@@ -8249,9 +6748,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'duplilist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for temporary dupli list storage, only for use by RNA API
 	 * @see #__DNA__FIELD__duplilist
 	 */
 	
@@ -8259,9 +6755,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -8269,9 +6765,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'duplilist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * for temporary dupli list storage, only for use by RNA API
 	 * @see #__DNA__FIELD__duplilist
 	 */
 	
@@ -8279,17 +6772,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((duplilist == null) ? 0 : duplilist.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1376, __address);
+			__io__block.writeLong(__io__address + 1360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1144, __address);
+			__io__block.writeLong(__io__address + 1128, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rigidbody_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet rigid body
 	 * @see #__DNA__FIELD__rigidbody_object
 	 */
 	
@@ -8297,9 +6787,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1132);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyOb.class};
 		return new CPointer<RigidBodyOb>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyOb.__DNA__SDNA_INDEX), __io__blockTable);
@@ -8307,9 +6797,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'rigidbody_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet rigid body
 	 * @see #__DNA__FIELD__rigidbody_object
 	 */
 	
@@ -8317,17 +6804,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((rigidbody_object == null) ? 0 : rigidbody_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1384, __address);
+			__io__block.writeLong(__io__address + 1368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1148, __address);
+			__io__block.writeLong(__io__address + 1132, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rigidbody_constraint'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet constraint
 	 * @see #__DNA__FIELD__rigidbody_constraint
 	 */
 	
@@ -8335,9 +6819,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyCon.class};
 		return new CPointer<RigidBodyCon>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyCon.__DNA__SDNA_INDEX), __io__blockTable);
@@ -8345,9 +6829,6 @@ public class BlenderObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'rigidbody_constraint'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * settings for Bullet constraint
 	 * @see #__DNA__FIELD__rigidbody_constraint
 	 */
 	
@@ -8355,17 +6836,14 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((rigidbody_constraint == null) ? 0 : rigidbody_constraint.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1392, __address);
+			__io__block.writeLong(__io__address + 1376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1152, __address);
+			__io__block.writeLong(__io__address + 1136, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'ima_ofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset for image empties
 	 * @see #__DNA__FIELD__ima_ofs
 	 */
 	
@@ -8376,17 +6854,14 @@ public class BlenderObject extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ima_ofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * offset for image empties
 	 * @see #__DNA__FIELD__ima_ofs
 	 */
 	
@@ -8394,9 +6869,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1400;
+			__dna__offset = 1384;
 		} else {
-			__dna__offset = 1156;
+			__dna__offset = 1140;
 		}
 		if (__io__equals(ima_ofs, __io__address + __dna__offset)) {
 			return;
@@ -8408,40 +6883,102 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'curve_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Runtime valuated curve-specific data, not stored in the file
-	 * @see #__DNA__FIELD__curve_cache
+	 * Get method for struct member 'iuser'.
+	 * @see #__DNA__FIELD__iuser
 	 */
 	
-	public CPointer<Object> getCurve_cache() throws IOException
+	public CPointer<ImageUser> getIuser() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1148);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{ImageUser.class};
+		return new CPointer<ImageUser>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ImageUser.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'curve_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Runtime valuated curve-specific data, not stored in the file
-	 * @see #__DNA__FIELD__curve_cache
+	 * Set method for struct member 'iuser'.
+	 * @see #__DNA__FIELD__iuser
 	 */
 	
-	public void setCurve_cache(CPointer<Object> curve_cache) throws IOException
+	public void setIuser(CPointer<ImageUser> iuser) throws IOException
 	{
-		long __address = ((curve_cache == null) ? 0 : curve_cache.getAddress());
+		long __address = ((iuser == null) ? 0 : iuser.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1408, __address);
+			__io__block.writeLong(__io__address + 1392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1164, __address);
+			__io__block.writeLong(__io__address + 1148, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'lodlevels'.
+	 * @see #__DNA__FIELD__lodlevels
+	 */
+	
+	public ListBase getLodlevels() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 1400, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 1152, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lodlevels'.
+	 * @see #__DNA__FIELD__lodlevels
+	 */
+	
+	public void setLodlevels(ListBase lodlevels) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1400;
+		} else {
+			__dna__offset = 1152;
+		}
+		if (__io__equals(lodlevels, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, lodlevels)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, lodlevels);
+		} else {
+			__io__generic__copy( getLodlevels(), lodlevels);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'currentlod'.
+	 * @see #__DNA__FIELD__currentlod
+	 */
+	
+	public CPointer<LodLevel> getCurrentlod() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1416);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{LodLevel.class};
+		return new CPointer<LodLevel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LodLevel.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'currentlod'.
+	 * @see #__DNA__FIELD__currentlod
+	 */
+	
+	public void setCurrentlod(CPointer<LodLevel> currentlod) throws IOException
+	{
+		long __address = ((currentlod == null) ? 0 : currentlod.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1416, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1160, __address);
 		}
 	}
 

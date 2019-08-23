@@ -27,7 +27,7 @@ public class SmokeDomainSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 484;
+	public static final int __DNA__SDNA_INDEX = 501;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
@@ -91,9 +91,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluid_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit fluid objects to this group
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -334,9 +331,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cell_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -637,9 +631,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -680,9 +671,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -703,9 +691,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -726,9 +711,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'beta'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -749,9 +731,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplify'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enhance the resolution of smoke by this factor using noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -892,9 +871,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -995,9 +971,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1038,9 +1011,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1081,9 +1051,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust simulation speed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1104,9 +1071,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of turbulence/rotation in fluid
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1167,9 +1131,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'highres_sampling'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method for sampling the high resolution flow
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1190,9 +1151,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'burning_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (use larger values for smaller flame)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1213,9 +1171,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of smoke created by burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1236,9 +1191,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional vorticity for the flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1259,9 +1211,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_ignition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum temperature of flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1282,9 +1231,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_max_temp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum temperature of flames
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1305,9 +1251,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of smoke emitted from burning fuel
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1432,9 +1375,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fluid_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit fluid objects to this group
 	 * @see #__DNA__FIELD__fluid_group
 	 */
 	
@@ -1452,9 +1392,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fluid_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit fluid objects to this group
 	 * @see #__DNA__FIELD__fluid_group
 	 */
 	
@@ -1846,9 +1783,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'cell_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size
 	 * @see #__DNA__FIELD__cell_size
 	 */
 	
@@ -1867,9 +1801,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'cell_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Cell Size
 	 * @see #__DNA__FIELD__cell_size
 	 */
 	
@@ -2418,9 +2349,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'adapt_margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
 	
@@ -2435,9 +2363,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'adapt_margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Margin added around fluid to minimize boundary interference
 	 * @see #__DNA__FIELD__adapt_margin
 	 */
 	
@@ -2480,9 +2405,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'adapt_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
 	
@@ -2497,9 +2419,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'adapt_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum amount of fluid cell can contain before it is considered empty
 	 * @see #__DNA__FIELD__adapt_threshold
 	 */
 	
@@ -2514,9 +2433,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -2531,9 +2447,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much density affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -2548,9 +2461,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'beta'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
 	
@@ -2565,9 +2475,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'beta'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much heat affects smoke motion (higher value results in faster rising smoke)
 	 * @see #__DNA__FIELD__beta
 	 */
 	
@@ -2582,9 +2489,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplify'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enhance the resolution of smoke by this factor using noise
 	 * @see #__DNA__FIELD__amplify
 	 */
 	
@@ -2599,9 +2503,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplify'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enhance the resolution of smoke by this factor using noise
 	 * @see #__DNA__FIELD__amplify
 	 */
 	
@@ -2784,9 +2685,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -2801,9 +2699,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Strength of noise
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -2942,9 +2837,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -2963,9 +2855,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -3028,9 +2917,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -3048,9 +2934,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -3094,9 +2977,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
@@ -3111,9 +2991,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust simulation speed
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
@@ -3128,9 +3005,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of turbulence/rotation in fluid
 	 * @see #__DNA__FIELD__vorticity
 	 */
 	
@@ -3145,9 +3019,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of turbulence/rotation in fluid
 	 * @see #__DNA__FIELD__vorticity
 	 */
 	
@@ -3230,9 +3101,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'highres_sampling'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
 	
@@ -3247,9 +3115,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'highres_sampling'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method for sampling the high resolution flow
 	 * @see #__DNA__FIELD__highres_sampling
 	 */
 	
@@ -3264,9 +3129,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'burning_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (use larger values for smaller flame)
 	 * @see #__DNA__FIELD__burning_rate
 	 */
 	
@@ -3281,9 +3143,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'burning_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of the burning reaction (use larger values for smaller flame)
 	 * @see #__DNA__FIELD__burning_rate
 	 */
 	
@@ -3298,9 +3157,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'flame_smoke'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
 	
@@ -3315,9 +3171,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'flame_smoke'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of smoke created by burning fuel
 	 * @see #__DNA__FIELD__flame_smoke
 	 */
 	
@@ -3332,9 +3185,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'flame_vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
 	
@@ -3349,9 +3199,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'flame_vorticity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Additional vorticity for the flames
 	 * @see #__DNA__FIELD__flame_vorticity
 	 */
 	
@@ -3366,9 +3213,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'flame_ignition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum temperature of flames
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
 	
@@ -3383,9 +3227,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'flame_ignition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum temperature of flames
 	 * @see #__DNA__FIELD__flame_ignition
 	 */
 	
@@ -3400,9 +3241,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'flame_max_temp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum temperature of flames
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
 	
@@ -3417,9 +3255,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'flame_max_temp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum temperature of flames
 	 * @see #__DNA__FIELD__flame_max_temp
 	 */
 	
@@ -3434,9 +3269,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'flame_smoke_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
 	
@@ -3455,9 +3287,6 @@ public class SmokeDomainSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'flame_smoke_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of smoke emitted from burning fuel
 	 * @see #__DNA__FIELD__flame_smoke_color
 	 */
 	

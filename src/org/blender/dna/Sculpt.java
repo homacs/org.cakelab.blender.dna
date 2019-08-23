@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=48, size64=56)
+@CMetaData(size32=68, size64=88)
 public class Sculpt extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Sculpt extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 173;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -44,7 +44,7 @@ public class Sculpt extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paint'</li>
 	 * <li>Signature: 'Paint'</li>
-	 * <li>Actual Size (32bit/64bit): 24/32</li>
+	 * <li>Actual Size (32bit/64bit): 28/40</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paint = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{24, 32};
+	public static final long[] __DNA__FIELD__flags = new long[]{28, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radial_symm'.
@@ -87,13 +87,10 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radial_symm = new long[]{28, 36};
+	public static final long[] __DNA__FIELD__radial_symm = new long[]{32, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'detail_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,22 +98,19 @@ public class Sculpt extends CFacade {
 	 * <pre>
 	 * Sculpt sculpt = ...;
 	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__detail_size);
-	 * CPointer&lt;Integer&gt; p_detail_size = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Float&gt; p_detail_size = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'detail_size'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__detail_size = new long[]{40, 48};
+	public static final long[] __DNA__FIELD__detail_size = new long[]{44, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetrize_direction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,7 +127,87 @@ public class Sculpt extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetrize_direction = new long[]{44, 52};
+	public static final long[] __DNA__FIELD__symmetrize_direction = new long[]{48, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gravity_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__gravity_factor);
+	 * CPointer&lt;Float&gt; p_gravity_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gravity_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gravity_factor = new long[]{52, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'constant_detail'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__constant_detail);
+	 * CPointer&lt;Float&gt; p_constant_detail = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'constant_detail'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__constant_detail = new long[]{56, 68};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gravity_object'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__gravity_object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_gravity_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gravity_object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gravity_object = new long[]{60, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sculpt sculpt = ...;
+	 * CPointer&lt;Object&gt; p = sculpt.__dna__addressof(Sculpt.__DNA__FIELD__pad2);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad2'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad2 = new long[]{64, 80};
 
 	public Sculpt(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -187,9 +261,9 @@ public class Sculpt extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
@@ -201,9 +275,9 @@ public class Sculpt extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, flags);
+			__io__block.writeInt(__io__address + 40, flags);
 		} else {
-			__io__block.writeInt(__io__address + 24, flags);
+			__io__block.writeInt(__io__address + 28, flags);
 		}
 	}
 
@@ -219,9 +293,9 @@ public class Sculpt extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -234,9 +308,9 @@ public class Sculpt extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__dna__offset = 44;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 32;
 		}
 		if (__io__equals(radial_symm, __io__address + __dna__offset)) {
 			return;
@@ -249,69 +323,177 @@ public class Sculpt extends CFacade {
 
 	/**
 	 * Get method for struct member 'detail_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)
 	 * @see #__DNA__FIELD__detail_size
 	 */
 	
-	public int getDetail_size() throws IOException
+	public float getDetail_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 48);
+			return __io__block.readFloat(__io__address + 56);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readFloat(__io__address + 44);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'detail_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum edge length for dynamic topology sculpting (in pixels)
 	 * @see #__DNA__FIELD__detail_size
 	 */
 	
-	public void setDetail_size(int detail_size) throws IOException
+	public void setDetail_size(float detail_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 48, detail_size);
+			__io__block.writeFloat(__io__address + 56, detail_size);
 		} else {
-			__io__block.writeInt(__io__address + 40, detail_size);
+			__io__block.writeFloat(__io__address + 44, detail_size);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'symmetrize_direction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator
 	 * @see #__DNA__FIELD__symmetrize_direction
 	 */
 	
 	public int getSymmetrize_direction() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 60);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 48);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'symmetrize_direction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Source and destination for symmetrize operator
 	 * @see #__DNA__FIELD__symmetrize_direction
 	 */
 	
 	public void setSymmetrize_direction(int symmetrize_direction) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, symmetrize_direction);
+			__io__block.writeInt(__io__address + 60, symmetrize_direction);
 		} else {
-			__io__block.writeInt(__io__address + 44, symmetrize_direction);
+			__io__block.writeInt(__io__address + 48, symmetrize_direction);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gravity_factor'.
+	 * @see #__DNA__FIELD__gravity_factor
+	 */
+	
+	public float getGravity_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 64);
+		} else {
+			return __io__block.readFloat(__io__address + 52);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gravity_factor'.
+	 * @see #__DNA__FIELD__gravity_factor
+	 */
+	
+	public void setGravity_factor(float gravity_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 64, gravity_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 52, gravity_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'constant_detail'.
+	 * @see #__DNA__FIELD__constant_detail
+	 */
+	
+	public float getConstant_detail() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 68);
+		} else {
+			return __io__block.readFloat(__io__address + 56);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'constant_detail'.
+	 * @see #__DNA__FIELD__constant_detail
+	 */
+	
+	public void setConstant_detail(float constant_detail) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 68, constant_detail);
+		} else {
+			__io__block.writeFloat(__io__address + 56, constant_detail);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gravity_object'.
+	 * @see #__DNA__FIELD__gravity_object
+	 */
+	
+	public CPointer<BlenderObject> getGravity_object() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 60);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'gravity_object'.
+	 * @see #__DNA__FIELD__gravity_object
+	 */
+	
+	public void setGravity_object(CPointer<BlenderObject> gravity_object) throws IOException
+	{
+		long __address = ((gravity_object == null) ? 0 : gravity_object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 72, __address);
+		} else {
+			__io__block.writeLong(__io__address + 60, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public CPointer<Object> getPad2() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'pad2'.
+	 * @see #__DNA__FIELD__pad2
+	 */
+	
+	public void setPad2(CPointer<Object> pad2) throws IOException
+	{
+		long __address = ((pad2 == null) ? 0 : pad2.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 80, __address);
+		} else {
+			__io__block.writeLong(__io__address + 64, __address);
 		}
 	}
 

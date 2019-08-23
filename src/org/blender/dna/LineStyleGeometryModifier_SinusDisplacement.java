@@ -26,7 +26,7 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 538;
+	public static final int __DNA__SDNA_INDEX = 555;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,9 +50,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wavelength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wavelength of the sinus displacement
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -73,9 +70,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the sinus displacement
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,9 +90,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'phase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Phase of the sinus displacement
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,9 +174,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Get method for struct member 'wavelength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wavelength of the sinus displacement
 	 * @see #__DNA__FIELD__wavelength
 	 */
 	
@@ -200,9 +188,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Set method for struct member 'wavelength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wavelength of the sinus displacement
 	 * @see #__DNA__FIELD__wavelength
 	 */
 	
@@ -217,9 +202,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the sinus displacement
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -234,9 +216,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the sinus displacement
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -251,9 +230,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Get method for struct member 'phase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Phase of the sinus displacement
 	 * @see #__DNA__FIELD__phase
 	 */
 	
@@ -268,9 +244,6 @@ public class LineStyleGeometryModifier_SinusDisplacement extends CFacade {
 
 	/**
 	 * Set method for struct member 'phase'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Phase of the sinus displacement
 	 * @see #__DNA__FIELD__phase
 	 */
 	

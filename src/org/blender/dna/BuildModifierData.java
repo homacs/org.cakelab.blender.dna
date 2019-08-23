@@ -26,7 +26,7 @@ public class BuildModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 85;
+	public static final int __DNA__SDNA_INDEX = 87;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -89,6 +89,26 @@ public class BuildModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__length = new long[]{100, 116};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BuildModifierData buildmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = buildmodifierdata.__dna__addressof(BuildModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{104, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'randomize'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -97,16 +117,16 @@ public class BuildModifierData extends CFacade {
 	 * <pre>
 	 * BuildModifierData buildmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = buildmodifierdata.__dna__addressof(BuildModifierData.__DNA__FIELD__randomize);
-	 * CPointer&lt;Integer&gt; p_randomize = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_randomize = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'randomize'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randomize = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__randomize = new long[]{106, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
@@ -229,16 +249,44 @@ public class BuildModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 120);
+		} else {
+			return __io__block.readShort(__io__address + 104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 120, flag);
+		} else {
+			__io__block.writeShort(__io__address + 104, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'randomize'.
 	 * @see #__DNA__FIELD__randomize
 	 */
 	
-	public int getRandomize() throws IOException
+	public short getRandomize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readShort(__io__address + 122);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -247,12 +295,12 @@ public class BuildModifierData extends CFacade {
 	 * @see #__DNA__FIELD__randomize
 	 */
 	
-	public void setRandomize(int randomize) throws IOException
+	public void setRandomize(short randomize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, randomize);
+			__io__block.writeShort(__io__address + 122, randomize);
 		} else {
-			__io__block.writeInt(__io__address + 104, randomize);
+			__io__block.writeShort(__io__address + 106, randomize);
 		}
 	}
 

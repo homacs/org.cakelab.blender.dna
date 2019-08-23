@@ -91,9 +91,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,9 +111,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,9 +131,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -288,9 +279,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -309,9 +297,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -334,9 +319,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'filepath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -355,9 +337,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'filepath'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -380,9 +359,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -400,9 +376,6 @@ public class Library extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__parent
 	 */
 	

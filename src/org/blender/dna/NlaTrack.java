@@ -27,7 +27,7 @@ public class NlaTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 469;
+	public static final int __DNA__SDNA_INDEX = 486;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class NlaTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Strips on this NLA-track
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -226,9 +223,6 @@ public class NlaTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'strips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Strips on this NLA-track
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -243,9 +237,6 @@ public class NlaTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'strips'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Strips on this NLA-track
 	 * @see #__DNA__FIELD__strips
 	 */
 	

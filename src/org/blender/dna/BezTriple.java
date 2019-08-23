@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=56, size64=56)
+@CMetaData(size32=72, size64=72)
 public class BezTriple extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BezTriple extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 41;
+	public static final int __DNA__SDNA_INDEX = 43;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
@@ -118,13 +118,13 @@ public class BezTriple extends CFacade {
 	 * <pre>
 	 * BezTriple beztriple = ...;
 	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__ipo);
-	 * CPointer&lt;Short&gt; p_ipo = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_ipo = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'ipo'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__ipo = new long[]{48, 48};
@@ -147,7 +147,7 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__h1 = new long[]{50, 50};
+	public static final long[] __DNA__FIELD__h1 = new long[]{49, 49};
 
 	/**
 	 * Field descriptor (offset) for struct member 'h2'.
@@ -167,7 +167,7 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__h2 = new long[]{51, 51};
+	public static final long[] __DNA__FIELD__h2 = new long[]{50, 50};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
@@ -187,7 +187,7 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f1 = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__f1 = new long[]{51, 51};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f2'.
@@ -207,7 +207,7 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f2 = new long[]{53, 53};
+	public static final long[] __DNA__FIELD__f2 = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f3'.
@@ -227,7 +227,7 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f3 = new long[]{54, 54};
+	public static final long[] __DNA__FIELD__f3 = new long[]{53, 53};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hide'.
@@ -247,7 +247,107 @@ public class BezTriple extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hide = new long[]{55, 55};
+	public static final long[] __DNA__FIELD__hide = new long[]{54, 54};
+
+	/**
+	 * Field descriptor (offset) for struct member 'easing'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__easing);
+	 * CPointer&lt;Byte&gt; p_easing = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'easing'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__easing = new long[]{55, 55};
+
+	/**
+	 * Field descriptor (offset) for struct member 'back'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__back);
+	 * CPointer&lt;Float&gt; p_back = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'back'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__back = new long[]{56, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member 'amplitude'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__amplitude);
+	 * CPointer&lt;Float&gt; p_amplitude = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'amplitude'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__amplitude = new long[]{60, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'period'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__period);
+	 * CPointer&lt;Float&gt; p_period = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'period'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__period = new long[]{64, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{68, 68};
 
 	public BezTriple(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -387,12 +487,12 @@ public class BezTriple extends CFacade {
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
-	public short getIpo() throws IOException
+	public byte getIpo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readByte(__io__address + 48);
 		} else {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readByte(__io__address + 48);
 		}
 	}
 
@@ -401,12 +501,12 @@ public class BezTriple extends CFacade {
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
-	public void setIpo(short ipo) throws IOException
+	public void setIpo(byte ipo) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 48, ipo);
+			__io__block.writeByte(__io__address + 48, ipo);
 		} else {
-			__io__block.writeShort(__io__address + 48, ipo);
+			__io__block.writeByte(__io__address + 48, ipo);
 		}
 	}
 
@@ -418,9 +518,9 @@ public class BezTriple extends CFacade {
 	public byte getH1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 50);
+			return __io__block.readByte(__io__address + 49);
 		} else {
-			return __io__block.readByte(__io__address + 50);
+			return __io__block.readByte(__io__address + 49);
 		}
 	}
 
@@ -432,9 +532,9 @@ public class BezTriple extends CFacade {
 	public void setH1(byte h1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 50, h1);
+			__io__block.writeByte(__io__address + 49, h1);
 		} else {
-			__io__block.writeByte(__io__address + 50, h1);
+			__io__block.writeByte(__io__address + 49, h1);
 		}
 	}
 
@@ -446,9 +546,9 @@ public class BezTriple extends CFacade {
 	public byte getH2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 51);
+			return __io__block.readByte(__io__address + 50);
 		} else {
-			return __io__block.readByte(__io__address + 51);
+			return __io__block.readByte(__io__address + 50);
 		}
 	}
 
@@ -460,9 +560,9 @@ public class BezTriple extends CFacade {
 	public void setH2(byte h2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 51, h2);
+			__io__block.writeByte(__io__address + 50, h2);
 		} else {
-			__io__block.writeByte(__io__address + 51, h2);
+			__io__block.writeByte(__io__address + 50, h2);
 		}
 	}
 
@@ -474,9 +574,9 @@ public class BezTriple extends CFacade {
 	public byte getF1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 52);
+			return __io__block.readByte(__io__address + 51);
 		} else {
-			return __io__block.readByte(__io__address + 52);
+			return __io__block.readByte(__io__address + 51);
 		}
 	}
 
@@ -488,9 +588,9 @@ public class BezTriple extends CFacade {
 	public void setF1(byte f1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 52, f1);
+			__io__block.writeByte(__io__address + 51, f1);
 		} else {
-			__io__block.writeByte(__io__address + 52, f1);
+			__io__block.writeByte(__io__address + 51, f1);
 		}
 	}
 
@@ -502,9 +602,9 @@ public class BezTriple extends CFacade {
 	public byte getF2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 53);
+			return __io__block.readByte(__io__address + 52);
 		} else {
-			return __io__block.readByte(__io__address + 53);
+			return __io__block.readByte(__io__address + 52);
 		}
 	}
 
@@ -516,9 +616,9 @@ public class BezTriple extends CFacade {
 	public void setF2(byte f2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 53, f2);
+			__io__block.writeByte(__io__address + 52, f2);
 		} else {
-			__io__block.writeByte(__io__address + 53, f2);
+			__io__block.writeByte(__io__address + 52, f2);
 		}
 	}
 
@@ -530,9 +630,9 @@ public class BezTriple extends CFacade {
 	public byte getF3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 54);
+			return __io__block.readByte(__io__address + 53);
 		} else {
-			return __io__block.readByte(__io__address + 54);
+			return __io__block.readByte(__io__address + 53);
 		}
 	}
 
@@ -544,9 +644,9 @@ public class BezTriple extends CFacade {
 	public void setF3(byte f3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 54, f3);
+			__io__block.writeByte(__io__address + 53, f3);
 		} else {
-			__io__block.writeByte(__io__address + 54, f3);
+			__io__block.writeByte(__io__address + 53, f3);
 		}
 	}
 
@@ -558,9 +658,9 @@ public class BezTriple extends CFacade {
 	public byte getHide() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 55);
+			return __io__block.readByte(__io__address + 54);
 		} else {
-			return __io__block.readByte(__io__address + 55);
+			return __io__block.readByte(__io__address + 54);
 		}
 	}
 
@@ -572,9 +672,161 @@ public class BezTriple extends CFacade {
 	public void setHide(byte hide) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 55, hide);
+			__io__block.writeByte(__io__address + 54, hide);
 		} else {
-			__io__block.writeByte(__io__address + 55, hide);
+			__io__block.writeByte(__io__address + 54, hide);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'easing'.
+	 * @see #__DNA__FIELD__easing
+	 */
+	
+	public byte getEasing() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 55);
+		} else {
+			return __io__block.readByte(__io__address + 55);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'easing'.
+	 * @see #__DNA__FIELD__easing
+	 */
+	
+	public void setEasing(byte easing) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 55, easing);
+		} else {
+			__io__block.writeByte(__io__address + 55, easing);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'back'.
+	 * @see #__DNA__FIELD__back
+	 */
+	
+	public float getBack() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 56);
+		} else {
+			return __io__block.readFloat(__io__address + 56);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'back'.
+	 * @see #__DNA__FIELD__back
+	 */
+	
+	public void setBack(float back) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 56, back);
+		} else {
+			__io__block.writeFloat(__io__address + 56, back);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'amplitude'.
+	 * @see #__DNA__FIELD__amplitude
+	 */
+	
+	public float getAmplitude() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 60);
+		} else {
+			return __io__block.readFloat(__io__address + 60);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'amplitude'.
+	 * @see #__DNA__FIELD__amplitude
+	 */
+	
+	public void setAmplitude(float amplitude) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 60, amplitude);
+		} else {
+			__io__block.writeFloat(__io__address + 60, amplitude);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'period'.
+	 * @see #__DNA__FIELD__period
+	 */
+	
+	public float getPeriod() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 64);
+		} else {
+			return __io__block.readFloat(__io__address + 64);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'period'.
+	 * @see #__DNA__FIELD__period
+	 */
+	
+	public void setPeriod(float period) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 64, period);
+		} else {
+			__io__block.writeFloat(__io__address + 64, period);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 68;
+		} else {
+			__dna__offset = 68;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

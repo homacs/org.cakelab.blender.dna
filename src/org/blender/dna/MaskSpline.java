@@ -26,7 +26,7 @@ public class MaskSpline extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 514;
+	public static final int __DNA__SDNA_INDEX = 531;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -90,9 +90,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The method used for calculating the feather offset
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -153,9 +150,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of points
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -316,9 +310,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The method used for calculating the feather offset
 	 * @see #__DNA__FIELD__offset_mode
 	 */
 	
@@ -333,9 +324,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The method used for calculating the feather offset
 	 * @see #__DNA__FIELD__offset_mode
 	 */
 	
@@ -406,9 +394,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Get method for struct member 'points'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of points
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -426,9 +411,6 @@ public class MaskSpline extends CFacade {
 
 	/**
 	 * Set method for struct member 'points'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of points
 	 * @see #__DNA__FIELD__points
 	 */
 	

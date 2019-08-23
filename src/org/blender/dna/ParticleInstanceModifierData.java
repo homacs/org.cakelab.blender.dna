@@ -26,7 +26,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 109;
+	public static final int __DNA__SDNA_INDEX = 111;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -129,24 +129,24 @@ public class ParticleInstanceModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__axis = new long[]{104, 124};
 
 	/**
-	 * Field descriptor (offset) for struct member 'rt'.
+	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__rt);
-	 * CPointer&lt;Short&gt; p_rt = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__pad);
+	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'rt'</li>
+	 * <li>Field: 'pad'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{106, 126};
+	public static final long[] __DNA__FIELD__pad = new long[]{106, 126};
 
 	/**
 	 * Field descriptor (offset) for struct member 'position'.
@@ -349,11 +349,11 @@ public class ParticleInstanceModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public short getRt() throws IOException
+	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 126);
@@ -363,16 +363,16 @@ public class ParticleInstanceModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'rt'.
-	 * @see #__DNA__FIELD__rt
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setRt(short rt) throws IOException
+	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 126, rt);
+			__io__block.writeShort(__io__address + 126, pad);
 		} else {
-			__io__block.writeShort(__io__address + 106, rt);
+			__io__block.writeShort(__io__address + 106, pad);
 		}
 	}
 

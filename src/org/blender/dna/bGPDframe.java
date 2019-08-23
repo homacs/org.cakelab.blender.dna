@@ -26,7 +26,7 @@ public class bGPDframe extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 440;
+	public static final int __DNA__SDNA_INDEX = 457;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -117,16 +117,36 @@ public class bGPDframe extends CFacade {
 	 * <pre>
 	 * bGPDframe bgpdframe = ...;
 	 * CPointer&lt;Object&gt; p = bgpdframe.__dna__addressof(bGPDframe.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{20, 36};
+
+	/**
+	 * Field descriptor (offset) for struct member 'key_type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDframe bgpdframe = ...;
+	 * CPointer&lt;Object&gt; p = bgpdframe.__dna__addressof(bGPDframe.__DNA__FIELD__key_type);
+	 * CPointer&lt;Short&gt; p_key_type = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'key_type'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__key_type = new long[]{22, 38};
 
 	public bGPDframe(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -269,12 +289,12 @@ public class bGPDframe extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getFlag() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readShort(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readShort(__io__address + 20);
 		}
 	}
 
@@ -283,12 +303,40 @@ public class bGPDframe extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, flag);
+			__io__block.writeShort(__io__address + 36, flag);
 		} else {
-			__io__block.writeInt(__io__address + 20, flag);
+			__io__block.writeShort(__io__address + 20, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'key_type'.
+	 * @see #__DNA__FIELD__key_type
+	 */
+	
+	public short getKey_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 38);
+		} else {
+			return __io__block.readShort(__io__address + 22);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'key_type'.
+	 * @see #__DNA__FIELD__key_type
+	 */
+	
+	public void setKey_type(short key_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 38, key_type);
+		} else {
+			__io__block.writeShort(__io__address + 22, key_type);
 		}
 	}
 

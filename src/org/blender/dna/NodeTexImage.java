@@ -26,7 +26,7 @@ public class NodeTexImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 391;
+	public static final int __DNA__SDNA_INDEX = 402;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -129,24 +129,24 @@ public class NodeTexImage extends CFacade {
 	public static final long[] __DNA__FIELD__projection_blend = new long[]{1008, 1016};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'interpolation'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexImage nodeteximage = ...;
-	 * CPointer&lt;Object&gt; p = nodeteximage.__dna__addressof(NodeTexImage.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nodeteximage.__dna__addressof(NodeTexImage.__DNA__FIELD__interpolation);
+	 * CPointer&lt;Integer&gt; p_interpolation = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'interpolation'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1012, 1020};
+	public static final long[] __DNA__FIELD__interpolation = new long[]{1012, 1020};
 
 	public NodeTexImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -313,11 +313,11 @@ public class NodeTexImage extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'interpolation'.
+	 * @see #__DNA__FIELD__interpolation
 	 */
 	
-	public int getPad() throws IOException
+	public int getInterpolation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 1020);
@@ -327,16 +327,16 @@ public class NodeTexImage extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'interpolation'.
+	 * @see #__DNA__FIELD__interpolation
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setInterpolation(int interpolation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1020, pad);
+			__io__block.writeInt(__io__address + 1020, interpolation);
 		} else {
-			__io__block.writeInt(__io__address + 1012, pad);
+			__io__block.writeInt(__io__address + 1012, interpolation);
 		}
 	}
 

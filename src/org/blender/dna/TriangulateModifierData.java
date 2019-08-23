@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=112, size64=128)
 public class TriangulateModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class TriangulateModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 126;
+	public static final int __DNA__SDNA_INDEX = 128;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -69,6 +69,46 @@ public class TriangulateModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{96, 112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'quad_method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TriangulateModifierData triangulatemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = triangulatemodifierdata.__dna__addressof(TriangulateModifierData.__DNA__FIELD__quad_method);
+	 * CPointer&lt;Integer&gt; p_quad_method = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'quad_method'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__quad_method = new long[]{100, 116};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ngon_method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TriangulateModifierData triangulatemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = triangulatemodifierdata.__dna__addressof(TriangulateModifierData.__DNA__FIELD__ngon_method);
+	 * CPointer&lt;Integer&gt; p_ngon_method = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ngon_method'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ngon_method = new long[]{104, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +126,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__pad = new long[]{108, 124};
 
 	public TriangulateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -161,6 +201,62 @@ public class TriangulateModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'quad_method'.
+	 * @see #__DNA__FIELD__quad_method
+	 */
+	
+	public int getQuad_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 116);
+		} else {
+			return __io__block.readInt(__io__address + 100);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'quad_method'.
+	 * @see #__DNA__FIELD__quad_method
+	 */
+	
+	public void setQuad_method(int quad_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 116, quad_method);
+		} else {
+			__io__block.writeInt(__io__address + 100, quad_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ngon_method'.
+	 * @see #__DNA__FIELD__ngon_method
+	 */
+	
+	public int getNgon_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 120);
+		} else {
+			return __io__block.readInt(__io__address + 104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ngon_method'.
+	 * @see #__DNA__FIELD__ngon_method
+	 */
+	
+	public void setNgon_method(int ngon_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 120, ngon_method);
+		} else {
+			__io__block.writeInt(__io__address + 104, ngon_method);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
@@ -168,9 +264,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -182,9 +278,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setPad(int pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, pad);
+			__io__block.writeInt(__io__address + 124, pad);
 		} else {
-			__io__block.writeInt(__io__address + 100, pad);
+			__io__block.writeInt(__io__address + 108, pad);
 		}
 	}
 

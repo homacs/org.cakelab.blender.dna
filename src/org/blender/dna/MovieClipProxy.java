@@ -27,7 +27,7 @@ public class MovieClipProxy extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 489;
+	public static final int __DNA__SDNA_INDEX = 506;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
@@ -71,9 +71,6 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * JPEG quality of proxy images
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,9 +207,6 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'quality'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * JPEG quality of proxy images
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -227,9 +221,6 @@ public class MovieClipProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'quality'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * JPEG quality of proxy images
 	 * @see #__DNA__FIELD__quality
 	 */
 	

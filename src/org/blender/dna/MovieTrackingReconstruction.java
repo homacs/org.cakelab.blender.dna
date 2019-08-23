@@ -26,7 +26,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 500;
+	public static final int __DNA__SDNA_INDEX = 517;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,9 +110,6 @@ public class MovieTrackingReconstruction extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cameras'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of solved cameras
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -253,9 +250,6 @@ public class MovieTrackingReconstruction extends CFacade {
 
 	/**
 	 * Get method for struct member 'cameras'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of solved cameras
 	 * @see #__DNA__FIELD__cameras
 	 */
 	
@@ -273,9 +267,6 @@ public class MovieTrackingReconstruction extends CFacade {
 
 	/**
 	 * Set method for struct member 'cameras'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of solved cameras
 	 * @see #__DNA__FIELD__cameras
 	 */
 	

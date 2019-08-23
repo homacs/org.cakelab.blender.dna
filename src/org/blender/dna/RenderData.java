@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2576, size64=2608)
+@CMetaData(size32=3944, size64=3984)
 public class RenderData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class RenderData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 156;
+	public static final int __DNA__SDNA_INDEX = 162;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -371,9 +371,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edgeR'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For UR edge rendering: give the edges this color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -694,9 +691,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xsch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the x direction
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -717,9 +711,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ysch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the y direction
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -780,9 +771,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tilex'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * render tile dimensions
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -903,9 +891,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Render to image editor, fullscreen or to new window.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -925,6 +910,26 @@ public class RenderData extends CFacade {
 	public static final long[] __DNA__FIELD__displaymode = new long[]{492, 512};
 
 	/**
+	 * Field descriptor (offset) for struct member 'use_lock_interface'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__use_lock_interface);
+	 * CPointer&lt;Byte&gt; p_use_lock_interface = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_lock_interface'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_lock_interface = new long[]{494, 514};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad7'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -933,22 +938,19 @@ public class RenderData extends CFacade {
 	 * <pre>
 	 * RenderData renderdata = ...;
 	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__pad7);
-	 * CPointer&lt;Short&gt; p_pad7 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_pad7 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad7'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad7 = new long[]{494, 514};
+	public static final long[] __DNA__FIELD__pad7 = new long[]{495, 515};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scemode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -969,9 +971,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -992,9 +991,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'raytrace_options'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for raytrace settings. Use bit-masking to access the settings.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1015,9 +1011,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'raytrace_structure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Raytrace acceleration structure
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1098,9 +1091,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alphamode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * What to do with the sky/background. Picks sky/premul/key blending for the background
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1121,9 +1111,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'osa'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The number of samples to use per pixel.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1304,9 +1291,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'xasp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Adjustment factors for the aspect ratio in the x direction, was a short in 2.45
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1367,9 +1351,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gauss'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Value used to define filter size for all filter options
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1410,9 +1391,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'postgamma'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * post-production settings. deprecated, but here for upwards compat (initialized to 1)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1692,6 +1670,46 @@ public class RenderData extends CFacade {
 	public static final long[] __DNA__FIELD__bake_pad = new long[]{642, 670};
 
 	/**
+	 * Field descriptor (offset) for struct member 'bake_user_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__bake_user_scale);
+	 * CPointer&lt;Float&gt; p_bake_user_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bake_user_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bake_user_scale = new long[]{644, 672};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bake_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__bake_pad1);
+	 * CPointer&lt;Float&gt; p_bake_pad1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bake_pad1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bake_pad1 = new long[]{648, 676};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pic'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1709,7 +1727,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pic = new long[]{644, 672};
+	public static final long[] __DNA__FIELD__pic = new long[]{652, 680};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stamp'.
@@ -1729,7 +1747,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stamp = new long[]{1668, 1696};
+	public static final long[] __DNA__FIELD__stamp = new long[]{1676, 1704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stamp_font_id'.
@@ -1749,7 +1767,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stamp_font_id = new long[]{1672, 1700};
+	public static final long[] __DNA__FIELD__stamp_font_id = new long[]{1680, 1708};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
@@ -1769,7 +1787,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{1674, 1702};
+	public static final long[] __DNA__FIELD__pad3 = new long[]{1682, 1710};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stamp_udata'.
@@ -1789,7 +1807,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 768/768</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stamp_udata = new long[]{1676, 1704};
+	public static final long[] __DNA__FIELD__stamp_udata = new long[]{1684, 1712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fg_stamp'.
@@ -1809,7 +1827,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fg_stamp = new long[]{2444, 2472};
+	public static final long[] __DNA__FIELD__fg_stamp = new long[]{2452, 2480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bg_stamp'.
@@ -1829,7 +1847,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bg_stamp = new long[]{2460, 2488};
+	public static final long[] __DNA__FIELD__bg_stamp = new long[]{2468, 2496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seq_prev_type'.
@@ -1849,7 +1867,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seq_prev_type = new long[]{2476, 2504};
+	public static final long[] __DNA__FIELD__seq_prev_type = new long[]{2484, 2512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seq_rend_type'.
@@ -1869,7 +1887,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seq_rend_type = new long[]{2477, 2505};
+	public static final long[] __DNA__FIELD__seq_rend_type = new long[]{2485, 2513};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seq_flag'.
@@ -1889,7 +1907,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seq_flag = new long[]{2478, 2506};
+	public static final long[] __DNA__FIELD__seq_flag = new long[]{2486, 2514};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad5'.
@@ -1909,7 +1927,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad5 = new long[]{2479, 2507};
+	public static final long[] __DNA__FIELD__pad5 = new long[]{2487, 2515};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_flag'.
@@ -1929,7 +1947,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_flag = new long[]{2484, 2512};
+	public static final long[] __DNA__FIELD__simplify_flag = new long[]{2492, 2520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_subsurf'.
@@ -1949,7 +1967,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2488, 2516};
+	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2496, 2524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_shadowsamples'.
@@ -1969,7 +1987,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_shadowsamples = new long[]{2490, 2518};
+	public static final long[] __DNA__FIELD__simplify_shadowsamples = new long[]{2498, 2526};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_particles'.
@@ -1989,7 +2007,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_particles = new long[]{2492, 2520};
+	public static final long[] __DNA__FIELD__simplify_particles = new long[]{2500, 2528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_aosss'.
@@ -2009,7 +2027,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_aosss = new long[]{2496, 2524};
+	public static final long[] __DNA__FIELD__simplify_aosss = new long[]{2504, 2532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cineonwhite'.
@@ -2029,7 +2047,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cineonwhite = new long[]{2500, 2528};
+	public static final long[] __DNA__FIELD__cineonwhite = new long[]{2508, 2536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cineonblack'.
@@ -2049,7 +2067,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cineonblack = new long[]{2502, 2530};
+	public static final long[] __DNA__FIELD__cineonblack = new long[]{2510, 2538};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cineongamma'.
@@ -2069,7 +2087,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cineongamma = new long[]{2504, 2532};
+	public static final long[] __DNA__FIELD__cineongamma = new long[]{2512, 2540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jp2_preset'.
@@ -2089,7 +2107,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jp2_preset = new long[]{2508, 2536};
+	public static final long[] __DNA__FIELD__jp2_preset = new long[]{2516, 2544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jp2_depth'.
@@ -2109,7 +2127,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jp2_depth = new long[]{2510, 2538};
+	public static final long[] __DNA__FIELD__jp2_depth = new long[]{2518, 2546};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rpad3'.
@@ -2129,7 +2147,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rpad3 = new long[]{2512, 2540};
+	public static final long[] __DNA__FIELD__rpad3 = new long[]{2520, 2548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'domeres'.
@@ -2149,7 +2167,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domeres = new long[]{2516, 2544};
+	public static final long[] __DNA__FIELD__domeres = new long[]{2524, 2552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'domemode'.
@@ -2169,7 +2187,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domemode = new long[]{2518, 2546};
+	public static final long[] __DNA__FIELD__domemode = new long[]{2526, 2554};
 
 	/**
 	 * Field descriptor (offset) for struct member 'domeangle'.
@@ -2189,7 +2207,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domeangle = new long[]{2520, 2548};
+	public static final long[] __DNA__FIELD__domeangle = new long[]{2528, 2556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dometilt'.
@@ -2209,7 +2227,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dometilt = new long[]{2522, 2550};
+	public static final long[] __DNA__FIELD__dometilt = new long[]{2530, 2558};
 
 	/**
 	 * Field descriptor (offset) for struct member 'domeresbuf'.
@@ -2229,7 +2247,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domeresbuf = new long[]{2524, 2552};
+	public static final long[] __DNA__FIELD__domeresbuf = new long[]{2532, 2560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
@@ -2249,7 +2267,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{2528, 2556};
+	public static final long[] __DNA__FIELD__pad2 = new long[]{2536, 2564};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dometext'.
@@ -2269,7 +2287,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dometext = new long[]{2532, 2560};
+	public static final long[] __DNA__FIELD__dometext = new long[]{2540, 2568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_thickness_mode'.
@@ -2289,7 +2307,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__line_thickness_mode = new long[]{2536, 2568};
+	public static final long[] __DNA__FIELD__line_thickness_mode = new long[]{2544, 2576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unit_line_thickness'.
@@ -2309,7 +2327,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unit_line_thickness = new long[]{2540, 2572};
+	public static final long[] __DNA__FIELD__unit_line_thickness = new long[]{2548, 2580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'engine'.
@@ -2329,7 +2347,67 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__engine = new long[]{2544, 2576};
+	public static final long[] __DNA__FIELD__engine = new long[]{2552, 2584};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bake'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__bake);
+	 * CPointer&lt;BakeData&gt; p_bake = p.cast(new Class[]{BakeData.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bake'</li>
+	 * <li>Signature: 'BakeData'</li>
+	 * <li>Actual Size (32bit/64bit): 1352/1360</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bake = new long[]{2584, 2616};
+
+	/**
+	 * Field descriptor (offset) for struct member 'preview_start_resolution'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__preview_start_resolution);
+	 * CPointer&lt;Integer&gt; p_preview_start_resolution = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'preview_start_resolution'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__preview_start_resolution = new long[]{3936, 3976};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{3940, 3980};
 
 	public RenderData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2849,9 +2927,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'edgeR'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For UR edge rendering: give the edges this color
 	 * @see #__DNA__FIELD__edgeR
 	 */
 	
@@ -2866,9 +2941,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'edgeR'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For UR edge rendering: give the edges this color
 	 * @see #__DNA__FIELD__edgeR
 	 */
 	
@@ -3303,9 +3375,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xsch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the x direction
 	 * @see #__DNA__FIELD__xsch
 	 */
 	
@@ -3320,9 +3389,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xsch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the x direction
 	 * @see #__DNA__FIELD__xsch
 	 */
 	
@@ -3337,9 +3403,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'ysch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the y direction
 	 * @see #__DNA__FIELD__ysch
 	 */
 	
@@ -3354,9 +3417,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'ysch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The desired number of pixels in the y direction
 	 * @see #__DNA__FIELD__ysch
 	 */
 	
@@ -3427,9 +3487,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'tilex'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * render tile dimensions
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -3444,9 +3501,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'tilex'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * render tile dimensions
 	 * @see #__DNA__FIELD__tilex
 	 */
 	
@@ -3601,9 +3655,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Render to image editor, fullscreen or to new window.
 	 * @see #__DNA__FIELD__displaymode
 	 */
 	
@@ -3618,9 +3669,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Render to image editor, fullscreen or to new window.
 	 * @see #__DNA__FIELD__displaymode
 	 */
 	
@@ -3634,16 +3682,44 @@ public class RenderData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'use_lock_interface'.
+	 * @see #__DNA__FIELD__use_lock_interface
+	 */
+	
+	public byte getUse_lock_interface() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 514);
+		} else {
+			return __io__block.readByte(__io__address + 494);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_lock_interface'.
+	 * @see #__DNA__FIELD__use_lock_interface
+	 */
+	
+	public void setUse_lock_interface(byte use_lock_interface) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 514, use_lock_interface);
+		} else {
+			__io__block.writeByte(__io__address + 494, use_lock_interface);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad7'.
 	 * @see #__DNA__FIELD__pad7
 	 */
 	
-	public short getPad7() throws IOException
+	public byte getPad7() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 514);
+			return __io__block.readByte(__io__address + 515);
 		} else {
-			return __io__block.readShort(__io__address + 494);
+			return __io__block.readByte(__io__address + 495);
 		}
 	}
 
@@ -3652,20 +3728,17 @@ public class RenderData extends CFacade {
 	 * @see #__DNA__FIELD__pad7
 	 */
 	
-	public void setPad7(short pad7) throws IOException
+	public void setPad7(byte pad7) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 514, pad7);
+			__io__block.writeByte(__io__address + 515, pad7);
 		} else {
-			__io__block.writeShort(__io__address + 494, pad7);
+			__io__block.writeByte(__io__address + 495, pad7);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'scemode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__scemode
 	 */
 	
@@ -3680,9 +3753,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'scemode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__scemode
 	 */
 	
@@ -3697,9 +3767,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -3714,9 +3781,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for render settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -3731,9 +3795,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'raytrace_options'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for raytrace settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__raytrace_options
 	 */
 	
@@ -3748,9 +3809,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'raytrace_options'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Flags for raytrace settings. Use bit-masking to access the settings.
 	 * @see #__DNA__FIELD__raytrace_options
 	 */
 	
@@ -3765,9 +3823,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'raytrace_structure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Raytrace acceleration structure
 	 * @see #__DNA__FIELD__raytrace_structure
 	 */
 	
@@ -3782,9 +3837,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'raytrace_structure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Raytrace acceleration structure
 	 * @see #__DNA__FIELD__raytrace_structure
 	 */
 	
@@ -3883,9 +3935,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'alphamode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * What to do with the sky/background. Picks sky/premul/key blending for the background
 	 * @see #__DNA__FIELD__alphamode
 	 */
 	
@@ -3900,9 +3949,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'alphamode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * What to do with the sky/background. Picks sky/premul/key blending for the background
 	 * @see #__DNA__FIELD__alphamode
 	 */
 	
@@ -3917,9 +3963,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'osa'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The number of samples to use per pixel.
 	 * @see #__DNA__FIELD__osa
 	 */
 	
@@ -3934,9 +3977,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'osa'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The number of samples to use per pixel.
 	 * @see #__DNA__FIELD__osa
 	 */
 	
@@ -4207,9 +4247,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'xasp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Adjustment factors for the aspect ratio in the x direction, was a short in 2.45
 	 * @see #__DNA__FIELD__xasp
 	 */
 	
@@ -4224,9 +4261,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'xasp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Adjustment factors for the aspect ratio in the x direction, was a short in 2.45
 	 * @see #__DNA__FIELD__xasp
 	 */
 	
@@ -4297,9 +4331,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'gauss'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Value used to define filter size for all filter options
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -4314,9 +4345,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'gauss'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Value used to define filter size for all filter options
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -4359,9 +4387,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Get method for struct member 'postgamma'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * post-production settings. deprecated, but here for upwards compat (initialized to 1)
 	 * @see #__DNA__FIELD__postgamma
 	 */
 	
@@ -4376,9 +4401,6 @@ public class RenderData extends CFacade {
 
 	/**
 	 * Set method for struct member 'postgamma'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * post-production settings. deprecated, but here for upwards compat (initialized to 1)
 	 * @see #__DNA__FIELD__postgamma
 	 */
 	
@@ -4756,6 +4778,62 @@ public class RenderData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'bake_user_scale'.
+	 * @see #__DNA__FIELD__bake_user_scale
+	 */
+	
+	public float getBake_user_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 672);
+		} else {
+			return __io__block.readFloat(__io__address + 644);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bake_user_scale'.
+	 * @see #__DNA__FIELD__bake_user_scale
+	 */
+	
+	public void setBake_user_scale(float bake_user_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 672, bake_user_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 644, bake_user_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bake_pad1'.
+	 * @see #__DNA__FIELD__bake_pad1
+	 */
+	
+	public float getBake_pad1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 676);
+		} else {
+			return __io__block.readFloat(__io__address + 648);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bake_pad1'.
+	 * @see #__DNA__FIELD__bake_pad1
+	 */
+	
+	public void setBake_pad1(float bake_pad1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 676, bake_pad1);
+		} else {
+			__io__block.writeFloat(__io__address + 648, bake_pad1);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pic'.
 	 * @see #__DNA__FIELD__pic
 	 */
@@ -4767,9 +4845,9 @@ public class RenderData extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4782,9 +4860,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 672;
+			__dna__offset = 680;
 		} else {
-			__dna__offset = 644;
+			__dna__offset = 652;
 		}
 		if (__io__equals(pic, __io__address + __dna__offset)) {
 			return;
@@ -4803,9 +4881,9 @@ public class RenderData extends CFacade {
 	public int getStamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1696);
+			return __io__block.readInt(__io__address + 1704);
 		} else {
-			return __io__block.readInt(__io__address + 1668);
+			return __io__block.readInt(__io__address + 1676);
 		}
 	}
 
@@ -4817,9 +4895,9 @@ public class RenderData extends CFacade {
 	public void setStamp(int stamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1696, stamp);
+			__io__block.writeInt(__io__address + 1704, stamp);
 		} else {
-			__io__block.writeInt(__io__address + 1668, stamp);
+			__io__block.writeInt(__io__address + 1676, stamp);
 		}
 	}
 
@@ -4831,9 +4909,9 @@ public class RenderData extends CFacade {
 	public short getStamp_font_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1700);
+			return __io__block.readShort(__io__address + 1708);
 		} else {
-			return __io__block.readShort(__io__address + 1672);
+			return __io__block.readShort(__io__address + 1680);
 		}
 	}
 
@@ -4845,9 +4923,9 @@ public class RenderData extends CFacade {
 	public void setStamp_font_id(short stamp_font_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1700, stamp_font_id);
+			__io__block.writeShort(__io__address + 1708, stamp_font_id);
 		} else {
-			__io__block.writeShort(__io__address + 1672, stamp_font_id);
+			__io__block.writeShort(__io__address + 1680, stamp_font_id);
 		}
 	}
 
@@ -4859,9 +4937,9 @@ public class RenderData extends CFacade {
 	public short getPad3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1702);
+			return __io__block.readShort(__io__address + 1710);
 		} else {
-			return __io__block.readShort(__io__address + 1674);
+			return __io__block.readShort(__io__address + 1682);
 		}
 	}
 
@@ -4873,9 +4951,9 @@ public class RenderData extends CFacade {
 	public void setPad3(short pad3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1702, pad3);
+			__io__block.writeShort(__io__address + 1710, pad3);
 		} else {
-			__io__block.writeShort(__io__address + 1674, pad3);
+			__io__block.writeShort(__io__address + 1682, pad3);
 		}
 	}
 
@@ -4891,9 +4969,9 @@ public class RenderData extends CFacade {
 			768
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4906,9 +4984,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1704;
+			__dna__offset = 1712;
 		} else {
-			__dna__offset = 1676;
+			__dna__offset = 1684;
 		}
 		if (__io__equals(stamp_udata, __io__address + __dna__offset)) {
 			return;
@@ -4931,9 +5009,9 @@ public class RenderData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4946,9 +5024,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2472;
+			__dna__offset = 2480;
 		} else {
-			__dna__offset = 2444;
+			__dna__offset = 2452;
 		}
 		if (__io__equals(fg_stamp, __io__address + __dna__offset)) {
 			return;
@@ -4971,9 +5049,9 @@ public class RenderData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4986,9 +5064,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2488;
+			__dna__offset = 2496;
 		} else {
-			__dna__offset = 2460;
+			__dna__offset = 2468;
 		}
 		if (__io__equals(bg_stamp, __io__address + __dna__offset)) {
 			return;
@@ -5007,9 +5085,9 @@ public class RenderData extends CFacade {
 	public byte getSeq_prev_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2504);
+			return __io__block.readByte(__io__address + 2512);
 		} else {
-			return __io__block.readByte(__io__address + 2476);
+			return __io__block.readByte(__io__address + 2484);
 		}
 	}
 
@@ -5021,9 +5099,9 @@ public class RenderData extends CFacade {
 	public void setSeq_prev_type(byte seq_prev_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2504, seq_prev_type);
+			__io__block.writeByte(__io__address + 2512, seq_prev_type);
 		} else {
-			__io__block.writeByte(__io__address + 2476, seq_prev_type);
+			__io__block.writeByte(__io__address + 2484, seq_prev_type);
 		}
 	}
 
@@ -5035,9 +5113,9 @@ public class RenderData extends CFacade {
 	public byte getSeq_rend_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2505);
+			return __io__block.readByte(__io__address + 2513);
 		} else {
-			return __io__block.readByte(__io__address + 2477);
+			return __io__block.readByte(__io__address + 2485);
 		}
 	}
 
@@ -5049,9 +5127,9 @@ public class RenderData extends CFacade {
 	public void setSeq_rend_type(byte seq_rend_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2505, seq_rend_type);
+			__io__block.writeByte(__io__address + 2513, seq_rend_type);
 		} else {
-			__io__block.writeByte(__io__address + 2477, seq_rend_type);
+			__io__block.writeByte(__io__address + 2485, seq_rend_type);
 		}
 	}
 
@@ -5063,9 +5141,9 @@ public class RenderData extends CFacade {
 	public byte getSeq_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2506);
+			return __io__block.readByte(__io__address + 2514);
 		} else {
-			return __io__block.readByte(__io__address + 2478);
+			return __io__block.readByte(__io__address + 2486);
 		}
 	}
 
@@ -5077,9 +5155,9 @@ public class RenderData extends CFacade {
 	public void setSeq_flag(byte seq_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2506, seq_flag);
+			__io__block.writeByte(__io__address + 2514, seq_flag);
 		} else {
-			__io__block.writeByte(__io__address + 2478, seq_flag);
+			__io__block.writeByte(__io__address + 2486, seq_flag);
 		}
 	}
 
@@ -5095,9 +5173,9 @@ public class RenderData extends CFacade {
 			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2507, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2515, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2479, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2487, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5110,9 +5188,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2507;
+			__dna__offset = 2515;
 		} else {
-			__dna__offset = 2479;
+			__dna__offset = 2487;
 		}
 		if (__io__equals(pad5, __io__address + __dna__offset)) {
 			return;
@@ -5131,9 +5209,9 @@ public class RenderData extends CFacade {
 	public int getSimplify_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2512);
+			return __io__block.readInt(__io__address + 2520);
 		} else {
-			return __io__block.readInt(__io__address + 2484);
+			return __io__block.readInt(__io__address + 2492);
 		}
 	}
 
@@ -5145,9 +5223,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_flag(int simplify_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2512, simplify_flag);
+			__io__block.writeInt(__io__address + 2520, simplify_flag);
 		} else {
-			__io__block.writeInt(__io__address + 2484, simplify_flag);
+			__io__block.writeInt(__io__address + 2492, simplify_flag);
 		}
 	}
 
@@ -5159,9 +5237,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_subsurf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2516);
+			return __io__block.readShort(__io__address + 2524);
 		} else {
-			return __io__block.readShort(__io__address + 2488);
+			return __io__block.readShort(__io__address + 2496);
 		}
 	}
 
@@ -5173,9 +5251,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_subsurf(short simplify_subsurf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2516, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2524, simplify_subsurf);
 		} else {
-			__io__block.writeShort(__io__address + 2488, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2496, simplify_subsurf);
 		}
 	}
 
@@ -5187,9 +5265,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_shadowsamples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2518);
+			return __io__block.readShort(__io__address + 2526);
 		} else {
-			return __io__block.readShort(__io__address + 2490);
+			return __io__block.readShort(__io__address + 2498);
 		}
 	}
 
@@ -5201,9 +5279,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_shadowsamples(short simplify_shadowsamples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2518, simplify_shadowsamples);
+			__io__block.writeShort(__io__address + 2526, simplify_shadowsamples);
 		} else {
-			__io__block.writeShort(__io__address + 2490, simplify_shadowsamples);
+			__io__block.writeShort(__io__address + 2498, simplify_shadowsamples);
 		}
 	}
 
@@ -5215,9 +5293,9 @@ public class RenderData extends CFacade {
 	public float getSimplify_particles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2520);
+			return __io__block.readFloat(__io__address + 2528);
 		} else {
-			return __io__block.readFloat(__io__address + 2492);
+			return __io__block.readFloat(__io__address + 2500);
 		}
 	}
 
@@ -5229,9 +5307,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_particles(float simplify_particles) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2520, simplify_particles);
+			__io__block.writeFloat(__io__address + 2528, simplify_particles);
 		} else {
-			__io__block.writeFloat(__io__address + 2492, simplify_particles);
+			__io__block.writeFloat(__io__address + 2500, simplify_particles);
 		}
 	}
 
@@ -5243,9 +5321,9 @@ public class RenderData extends CFacade {
 	public float getSimplify_aosss() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2524);
+			return __io__block.readFloat(__io__address + 2532);
 		} else {
-			return __io__block.readFloat(__io__address + 2496);
+			return __io__block.readFloat(__io__address + 2504);
 		}
 	}
 
@@ -5257,9 +5335,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_aosss(float simplify_aosss) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2524, simplify_aosss);
+			__io__block.writeFloat(__io__address + 2532, simplify_aosss);
 		} else {
-			__io__block.writeFloat(__io__address + 2496, simplify_aosss);
+			__io__block.writeFloat(__io__address + 2504, simplify_aosss);
 		}
 	}
 
@@ -5271,9 +5349,9 @@ public class RenderData extends CFacade {
 	public short getCineonwhite() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2528);
+			return __io__block.readShort(__io__address + 2536);
 		} else {
-			return __io__block.readShort(__io__address + 2500);
+			return __io__block.readShort(__io__address + 2508);
 		}
 	}
 
@@ -5285,9 +5363,9 @@ public class RenderData extends CFacade {
 	public void setCineonwhite(short cineonwhite) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2528, cineonwhite);
+			__io__block.writeShort(__io__address + 2536, cineonwhite);
 		} else {
-			__io__block.writeShort(__io__address + 2500, cineonwhite);
+			__io__block.writeShort(__io__address + 2508, cineonwhite);
 		}
 	}
 
@@ -5299,9 +5377,9 @@ public class RenderData extends CFacade {
 	public short getCineonblack() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2530);
+			return __io__block.readShort(__io__address + 2538);
 		} else {
-			return __io__block.readShort(__io__address + 2502);
+			return __io__block.readShort(__io__address + 2510);
 		}
 	}
 
@@ -5313,9 +5391,9 @@ public class RenderData extends CFacade {
 	public void setCineonblack(short cineonblack) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2530, cineonblack);
+			__io__block.writeShort(__io__address + 2538, cineonblack);
 		} else {
-			__io__block.writeShort(__io__address + 2502, cineonblack);
+			__io__block.writeShort(__io__address + 2510, cineonblack);
 		}
 	}
 
@@ -5327,9 +5405,9 @@ public class RenderData extends CFacade {
 	public float getCineongamma() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2532);
+			return __io__block.readFloat(__io__address + 2540);
 		} else {
-			return __io__block.readFloat(__io__address + 2504);
+			return __io__block.readFloat(__io__address + 2512);
 		}
 	}
 
@@ -5341,9 +5419,9 @@ public class RenderData extends CFacade {
 	public void setCineongamma(float cineongamma) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2532, cineongamma);
+			__io__block.writeFloat(__io__address + 2540, cineongamma);
 		} else {
-			__io__block.writeFloat(__io__address + 2504, cineongamma);
+			__io__block.writeFloat(__io__address + 2512, cineongamma);
 		}
 	}
 
@@ -5355,9 +5433,9 @@ public class RenderData extends CFacade {
 	public short getJp2_preset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2536);
+			return __io__block.readShort(__io__address + 2544);
 		} else {
-			return __io__block.readShort(__io__address + 2508);
+			return __io__block.readShort(__io__address + 2516);
 		}
 	}
 
@@ -5369,9 +5447,9 @@ public class RenderData extends CFacade {
 	public void setJp2_preset(short jp2_preset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2536, jp2_preset);
+			__io__block.writeShort(__io__address + 2544, jp2_preset);
 		} else {
-			__io__block.writeShort(__io__address + 2508, jp2_preset);
+			__io__block.writeShort(__io__address + 2516, jp2_preset);
 		}
 	}
 
@@ -5383,9 +5461,9 @@ public class RenderData extends CFacade {
 	public short getJp2_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2538);
+			return __io__block.readShort(__io__address + 2546);
 		} else {
-			return __io__block.readShort(__io__address + 2510);
+			return __io__block.readShort(__io__address + 2518);
 		}
 	}
 
@@ -5397,9 +5475,9 @@ public class RenderData extends CFacade {
 	public void setJp2_depth(short jp2_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2538, jp2_depth);
+			__io__block.writeShort(__io__address + 2546, jp2_depth);
 		} else {
-			__io__block.writeShort(__io__address + 2510, jp2_depth);
+			__io__block.writeShort(__io__address + 2518, jp2_depth);
 		}
 	}
 
@@ -5411,9 +5489,9 @@ public class RenderData extends CFacade {
 	public int getRpad3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2540);
+			return __io__block.readInt(__io__address + 2548);
 		} else {
-			return __io__block.readInt(__io__address + 2512);
+			return __io__block.readInt(__io__address + 2520);
 		}
 	}
 
@@ -5425,9 +5503,9 @@ public class RenderData extends CFacade {
 	public void setRpad3(int rpad3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2540, rpad3);
+			__io__block.writeInt(__io__address + 2548, rpad3);
 		} else {
-			__io__block.writeInt(__io__address + 2512, rpad3);
+			__io__block.writeInt(__io__address + 2520, rpad3);
 		}
 	}
 
@@ -5439,9 +5517,9 @@ public class RenderData extends CFacade {
 	public short getDomeres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2544);
+			return __io__block.readShort(__io__address + 2552);
 		} else {
-			return __io__block.readShort(__io__address + 2516);
+			return __io__block.readShort(__io__address + 2524);
 		}
 	}
 
@@ -5453,9 +5531,9 @@ public class RenderData extends CFacade {
 	public void setDomeres(short domeres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2544, domeres);
+			__io__block.writeShort(__io__address + 2552, domeres);
 		} else {
-			__io__block.writeShort(__io__address + 2516, domeres);
+			__io__block.writeShort(__io__address + 2524, domeres);
 		}
 	}
 
@@ -5467,9 +5545,9 @@ public class RenderData extends CFacade {
 	public short getDomemode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2546);
+			return __io__block.readShort(__io__address + 2554);
 		} else {
-			return __io__block.readShort(__io__address + 2518);
+			return __io__block.readShort(__io__address + 2526);
 		}
 	}
 
@@ -5481,9 +5559,9 @@ public class RenderData extends CFacade {
 	public void setDomemode(short domemode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2546, domemode);
+			__io__block.writeShort(__io__address + 2554, domemode);
 		} else {
-			__io__block.writeShort(__io__address + 2518, domemode);
+			__io__block.writeShort(__io__address + 2526, domemode);
 		}
 	}
 
@@ -5495,9 +5573,9 @@ public class RenderData extends CFacade {
 	public short getDomeangle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2548);
+			return __io__block.readShort(__io__address + 2556);
 		} else {
-			return __io__block.readShort(__io__address + 2520);
+			return __io__block.readShort(__io__address + 2528);
 		}
 	}
 
@@ -5509,9 +5587,9 @@ public class RenderData extends CFacade {
 	public void setDomeangle(short domeangle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2548, domeangle);
+			__io__block.writeShort(__io__address + 2556, domeangle);
 		} else {
-			__io__block.writeShort(__io__address + 2520, domeangle);
+			__io__block.writeShort(__io__address + 2528, domeangle);
 		}
 	}
 
@@ -5523,9 +5601,9 @@ public class RenderData extends CFacade {
 	public short getDometilt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2550);
+			return __io__block.readShort(__io__address + 2558);
 		} else {
-			return __io__block.readShort(__io__address + 2522);
+			return __io__block.readShort(__io__address + 2530);
 		}
 	}
 
@@ -5537,9 +5615,9 @@ public class RenderData extends CFacade {
 	public void setDometilt(short dometilt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2550, dometilt);
+			__io__block.writeShort(__io__address + 2558, dometilt);
 		} else {
-			__io__block.writeShort(__io__address + 2522, dometilt);
+			__io__block.writeShort(__io__address + 2530, dometilt);
 		}
 	}
 
@@ -5551,9 +5629,9 @@ public class RenderData extends CFacade {
 	public float getDomeresbuf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2552);
+			return __io__block.readFloat(__io__address + 2560);
 		} else {
-			return __io__block.readFloat(__io__address + 2524);
+			return __io__block.readFloat(__io__address + 2532);
 		}
 	}
 
@@ -5565,9 +5643,9 @@ public class RenderData extends CFacade {
 	public void setDomeresbuf(float domeresbuf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2552, domeresbuf);
+			__io__block.writeFloat(__io__address + 2560, domeresbuf);
 		} else {
-			__io__block.writeFloat(__io__address + 2524, domeresbuf);
+			__io__block.writeFloat(__io__address + 2532, domeresbuf);
 		}
 	}
 
@@ -5579,9 +5657,9 @@ public class RenderData extends CFacade {
 	public float getPad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2556);
+			return __io__block.readFloat(__io__address + 2564);
 		} else {
-			return __io__block.readFloat(__io__address + 2528);
+			return __io__block.readFloat(__io__address + 2536);
 		}
 	}
 
@@ -5593,9 +5671,9 @@ public class RenderData extends CFacade {
 	public void setPad2(float pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2556, pad2);
+			__io__block.writeFloat(__io__address + 2564, pad2);
 		} else {
-			__io__block.writeFloat(__io__address + 2528, pad2);
+			__io__block.writeFloat(__io__address + 2536, pad2);
 		}
 	}
 
@@ -5608,9 +5686,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2560);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2568);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2532);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2540);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Text.class};
 		return new CPointer<Text>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Text.__DNA__SDNA_INDEX), __io__blockTable);
@@ -5625,9 +5703,9 @@ public class RenderData extends CFacade {
 	{
 		long __address = ((dometext == null) ? 0 : dometext.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2560, __address);
+			__io__block.writeLong(__io__address + 2568, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2532, __address);
+			__io__block.writeLong(__io__address + 2540, __address);
 		}
 	}
 
@@ -5639,9 +5717,9 @@ public class RenderData extends CFacade {
 	public int getLine_thickness_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2568);
+			return __io__block.readInt(__io__address + 2576);
 		} else {
-			return __io__block.readInt(__io__address + 2536);
+			return __io__block.readInt(__io__address + 2544);
 		}
 	}
 
@@ -5653,9 +5731,9 @@ public class RenderData extends CFacade {
 	public void setLine_thickness_mode(int line_thickness_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2568, line_thickness_mode);
+			__io__block.writeInt(__io__address + 2576, line_thickness_mode);
 		} else {
-			__io__block.writeInt(__io__address + 2536, line_thickness_mode);
+			__io__block.writeInt(__io__address + 2544, line_thickness_mode);
 		}
 	}
 
@@ -5667,9 +5745,9 @@ public class RenderData extends CFacade {
 	public float getUnit_line_thickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2572);
+			return __io__block.readFloat(__io__address + 2580);
 		} else {
-			return __io__block.readFloat(__io__address + 2540);
+			return __io__block.readFloat(__io__address + 2548);
 		}
 	}
 
@@ -5681,9 +5759,9 @@ public class RenderData extends CFacade {
 	public void setUnit_line_thickness(float unit_line_thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2572, unit_line_thickness);
+			__io__block.writeFloat(__io__address + 2580, unit_line_thickness);
 		} else {
-			__io__block.writeFloat(__io__address + 2540, unit_line_thickness);
+			__io__block.writeFloat(__io__address + 2548, unit_line_thickness);
 		}
 	}
 
@@ -5699,9 +5777,9 @@ public class RenderData extends CFacade {
 			32
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2584, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5714,9 +5792,9 @@ public class RenderData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2576;
+			__dna__offset = 2584;
 		} else {
-			__dna__offset = 2544;
+			__dna__offset = 2552;
 		}
 		if (__io__equals(engine, __io__address + __dna__offset)) {
 			return;
@@ -5724,6 +5802,98 @@ public class RenderData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, engine);
 		} else {
 			__io__generic__copy( getEngine(), engine);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bake'.
+	 * @see #__DNA__FIELD__bake
+	 */
+	
+	public BakeData getBake() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new BakeData(__io__address + 2616, __io__block, __io__blockTable);
+		} else {
+			return new BakeData(__io__address + 2584, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bake'.
+	 * @see #__DNA__FIELD__bake
+	 */
+	
+	public void setBake(BakeData bake) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2616;
+		} else {
+			__dna__offset = 2584;
+		}
+		if (__io__equals(bake, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, bake)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, bake);
+		} else {
+			__io__generic__copy( getBake(), bake);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'preview_start_resolution'.
+	 * @see #__DNA__FIELD__preview_start_resolution
+	 */
+	
+	public int getPreview_start_resolution() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3976);
+		} else {
+			return __io__block.readInt(__io__address + 3936);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'preview_start_resolution'.
+	 * @see #__DNA__FIELD__preview_start_resolution
+	 */
+	
+	public void setPreview_start_resolution(int preview_start_resolution) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3976, preview_start_resolution);
+		} else {
+			__io__block.writeInt(__io__address + 3936, preview_start_resolution);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3980);
+		} else {
+			return __io__block.readInt(__io__address + 3940);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3980, pad);
+		} else {
+			__io__block.writeInt(__io__address + 3940, pad);
 		}
 	}
 

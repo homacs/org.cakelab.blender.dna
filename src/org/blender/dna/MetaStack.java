@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=16, size64=32)
+@CMetaData(size32=24, size64=40)
 public class MetaStack extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class MetaStack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 235;
+	public static final int __DNA__SDNA_INDEX = 244;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -107,6 +108,26 @@ public class MetaStack extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__parseq = new long[]{12, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'disp_range'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MetaStack metastack = ...;
+	 * CPointer&lt;Object&gt; p = metastack.__dna__addressof(MetaStack.__DNA__FIELD__disp_range);
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_disp_range = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'disp_range'</li>
+	 * <li>Signature: 'int[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__disp_range = new long[]{16, 32};
 
 	public MetaStack(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -241,6 +262,46 @@ public class MetaStack extends CFacade {
 			__io__block.writeLong(__io__address + 24, __address);
 		} else {
 			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'disp_range'.
+	 * @see #__DNA__FIELD__disp_range
+	 */
+	
+	public CArrayFacade<Integer> getDisp_range() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Integer>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Integer>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'disp_range'.
+	 * @see #__DNA__FIELD__disp_range
+	 */
+	
+	public void setDisp_range(CArrayFacade<Integer> disp_range) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 32;
+		} else {
+			__dna__offset = 16;
+		}
+		if (__io__equals(disp_range, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, disp_range)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, disp_range);
+		} else {
+			__io__generic__copy( getDisp_range(), disp_range);
 		}
 	}
 

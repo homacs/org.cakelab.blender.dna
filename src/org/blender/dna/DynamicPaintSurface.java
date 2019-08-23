@@ -27,7 +27,7 @@ public class DynamicPaintSurface extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 507;
+	public static final int __DNA__SDNA_INDEX = 524;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,9 +111,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Only use brush objects from this group
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,9 +131,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -217,9 +211,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -440,9 +431,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'image_resolution'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Output image resolution
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -543,9 +531,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'init_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial color of the surface
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -606,9 +591,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'dry_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Approximately in how many frames should drying happen
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -649,9 +631,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_dry_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The wetness level when colors start to shift to the background
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -672,9 +651,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'depth_clamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum level of depth intersection in object space (use 0.0 to disable)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -715,9 +691,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast spread effect moves on the canvas surface
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -738,9 +711,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast colors get mixed within wet paint
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -761,9 +731,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrink_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast shrink effect moves on the canvas surface
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -864,9 +831,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave damping factor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -887,9 +851,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave propagation speed
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -910,9 +871,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_timescale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave time scaling factor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -933,9 +891,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_spring'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring force that pulls water level back to zero
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -956,9 +911,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_smoothness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit maximum steepness of wave slope between simulation points (use higher values for smoother waves at expense of reduced detail)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1019,9 +971,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'image_output_path'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Directory to save the textures
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1218,9 +1167,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'brush_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Only use brush objects from this group
 	 * @see #__DNA__FIELD__brush_group
 	 */
 	
@@ -1238,9 +1184,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'brush_group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Only use brush objects from this group
 	 * @see #__DNA__FIELD__brush_group
 	 */
 	
@@ -1256,9 +1199,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -1276,9 +1216,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -1390,9 +1327,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1411,9 +1345,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Surface name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1716,9 +1647,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'image_resolution'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Output image resolution
 	 * @see #__DNA__FIELD__image_resolution
 	 */
 	
@@ -1733,9 +1661,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'image_resolution'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Output image resolution
 	 * @see #__DNA__FIELD__image_resolution
 	 */
 	
@@ -1862,9 +1787,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'init_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial color of the surface
 	 * @see #__DNA__FIELD__init_color
 	 */
 	
@@ -1883,9 +1805,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'init_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial color of the surface
 	 * @see #__DNA__FIELD__init_color
 	 */
 	
@@ -1980,9 +1899,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'dry_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Approximately in how many frames should drying happen
 	 * @see #__DNA__FIELD__dry_speed
 	 */
 	
@@ -1997,9 +1913,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'dry_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Approximately in how many frames should drying happen
 	 * @see #__DNA__FIELD__dry_speed
 	 */
 	
@@ -2042,9 +1955,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_dry_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The wetness level when colors start to shift to the background
 	 * @see #__DNA__FIELD__color_dry_threshold
 	 */
 	
@@ -2059,9 +1969,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_dry_threshold'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The wetness level when colors start to shift to the background
 	 * @see #__DNA__FIELD__color_dry_threshold
 	 */
 	
@@ -2076,9 +1983,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'depth_clamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum level of depth intersection in object space (use 0.0 to disable)
 	 * @see #__DNA__FIELD__depth_clamp
 	 */
 	
@@ -2093,9 +1997,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'depth_clamp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum level of depth intersection in object space (use 0.0 to disable)
 	 * @see #__DNA__FIELD__depth_clamp
 	 */
 	
@@ -2138,9 +2039,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast spread effect moves on the canvas surface
 	 * @see #__DNA__FIELD__spread_speed
 	 */
 	
@@ -2155,9 +2053,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast spread effect moves on the canvas surface
 	 * @see #__DNA__FIELD__spread_speed
 	 */
 	
@@ -2172,9 +2067,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast colors get mixed within wet paint
 	 * @see #__DNA__FIELD__color_spread_speed
 	 */
 	
@@ -2189,9 +2081,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_spread_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast colors get mixed within wet paint
 	 * @see #__DNA__FIELD__color_spread_speed
 	 */
 	
@@ -2206,9 +2095,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'shrink_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast shrink effect moves on the canvas surface
 	 * @see #__DNA__FIELD__shrink_speed
 	 */
 	
@@ -2223,9 +2109,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'shrink_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How fast shrink effect moves on the canvas surface
 	 * @see #__DNA__FIELD__shrink_speed
 	 */
 	
@@ -2352,9 +2235,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave damping factor
 	 * @see #__DNA__FIELD__wave_damping
 	 */
 	
@@ -2369,9 +2249,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_damping'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave damping factor
 	 * @see #__DNA__FIELD__wave_damping
 	 */
 	
@@ -2386,9 +2263,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave propagation speed
 	 * @see #__DNA__FIELD__wave_speed
 	 */
 	
@@ -2403,9 +2277,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave propagation speed
 	 * @see #__DNA__FIELD__wave_speed
 	 */
 	
@@ -2420,9 +2291,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_timescale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave time scaling factor
 	 * @see #__DNA__FIELD__wave_timescale
 	 */
 	
@@ -2437,9 +2305,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_timescale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Wave time scaling factor
 	 * @see #__DNA__FIELD__wave_timescale
 	 */
 	
@@ -2454,9 +2319,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_spring'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring force that pulls water level back to zero
 	 * @see #__DNA__FIELD__wave_spring
 	 */
 	
@@ -2471,9 +2333,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_spring'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring force that pulls water level back to zero
 	 * @see #__DNA__FIELD__wave_spring
 	 */
 	
@@ -2488,9 +2347,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'wave_smoothness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit maximum steepness of wave slope between simulation points (use higher values for smoother waves at expense of reduced detail)
 	 * @see #__DNA__FIELD__wave_smoothness
 	 */
 	
@@ -2505,9 +2361,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'wave_smoothness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit maximum steepness of wave slope between simulation points (use higher values for smoother waves at expense of reduced detail)
 	 * @see #__DNA__FIELD__wave_smoothness
 	 */
 	
@@ -2590,9 +2443,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Get method for struct member 'image_output_path'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Directory to save the textures
 	 * @see #__DNA__FIELD__image_output_path
 	 */
 	
@@ -2611,9 +2461,6 @@ public class DynamicPaintSurface extends CFacade {
 
 	/**
 	 * Set method for struct member 'image_output_path'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Directory to save the textures
 	 * @see #__DNA__FIELD__image_output_path
 	 */
 	

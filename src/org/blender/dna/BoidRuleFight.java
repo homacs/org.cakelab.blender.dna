@@ -26,7 +26,7 @@ public class BoidRuleFight extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 480;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.
@@ -50,9 +50,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attack boids at max this distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -73,9 +70,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flee_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Flee to this distance
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,9 +134,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Get method for struct member 'distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attack boids at max this distance
 	 * @see #__DNA__FIELD__distance
 	 */
 	
@@ -157,9 +148,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Set method for struct member 'distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Attack boids at max this distance
 	 * @see #__DNA__FIELD__distance
 	 */
 	
@@ -174,9 +162,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Get method for struct member 'flee_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Flee to this distance
 	 * @see #__DNA__FIELD__flee_distance
 	 */
 	
@@ -191,9 +176,6 @@ public class BoidRuleFight extends CFacade {
 
 	/**
 	 * Set method for struct member 'flee_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Flee to this distance
 	 * @see #__DNA__FIELD__flee_distance
 	 */
 	

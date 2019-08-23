@@ -26,13 +26,10 @@ public class RigidBodyWorld extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 517;
+	public static final int __DNA__SDNA_INDEX = 534;
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,9 +50,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,9 +90,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -219,9 +210,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'steps_per_second'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of simulation steps taken per second (higher values are more accurate but slower)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -282,9 +270,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -333,9 +318,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -353,9 +335,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -371,9 +350,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Get method for struct member 'group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -391,9 +367,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Set method for struct member 'group'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation
 	 * @see #__DNA__FIELD__group
 	 */
 	
@@ -441,9 +414,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Get method for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -461,9 +431,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Set method for struct member 'constraints'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -631,9 +598,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Get method for struct member 'steps_per_second'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of simulation steps taken per second (higher values are more accurate but slower)
 	 * @see #__DNA__FIELD__steps_per_second
 	 */
 	
@@ -648,9 +612,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Set method for struct member 'steps_per_second'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of simulation steps taken per second (higher values are more accurate but slower)
 	 * @see #__DNA__FIELD__steps_per_second
 	 */
 	
@@ -721,9 +682,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Get method for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
@@ -738,9 +696,6 @@ public class RigidBodyWorld extends CFacade {
 
 	/**
 	 * Set method for struct member 'time_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Change the speed of the simulation
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	

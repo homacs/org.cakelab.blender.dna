@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=20)
+@CMetaData(size32=24, size64=24)
 public class bGPDspoint extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class bGPDspoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 438;
+	public static final int __DNA__SDNA_INDEX = 455;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
@@ -127,6 +127,26 @@ public class bGPDspoint extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__time = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{20, 20};
 
 	public bGPDspoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -273,6 +293,34 @@ public class bGPDspoint extends CFacade {
 			__io__block.writeFloat(__io__address + 16, time);
 		} else {
 			__io__block.writeFloat(__io__address + 16, time);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public int getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 20);
+		} else {
+			return __io__block.readInt(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 20, flag);
+		} else {
+			__io__block.writeInt(__io__address + 20, flag);
 		}
 	}
 

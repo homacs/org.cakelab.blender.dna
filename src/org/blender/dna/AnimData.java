@@ -26,13 +26,10 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 473;
+	public static final int __DNA__SDNA_INDEX = 490;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this datablock
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,9 +90,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -136,9 +130,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drivers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this datablock
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,9 +278,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Get method for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this datablock
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -307,9 +295,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Set method for struct member 'action'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Action for this datablock
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -389,9 +374,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)
 	 * @see #__DNA__FIELD__nla_tracks
 	 */
 	
@@ -406,9 +388,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Set method for struct member 'nla_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    NLA Tracks (i.e. Animation Layers)
 	 * @see #__DNA__FIELD__nla_tracks
 	 */
 	
@@ -463,9 +442,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Get method for struct member 'drivers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this datablock
 	 * @see #__DNA__FIELD__drivers
 	 */
 	
@@ -480,9 +456,6 @@ public class AnimData extends CFacade {
 
 	/**
 	 * Set method for struct member 'drivers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    The Drivers/Expressions for this datablock
 	 * @see #__DNA__FIELD__drivers
 	 */
 	

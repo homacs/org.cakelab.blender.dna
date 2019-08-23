@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=556, size64=600)
+@CMetaData(size32=584, size64=648)
 public class ToolSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -71,9 +71,6 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,146 +130,6 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__vgroup_weight = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'cornertype'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__cornertype);
-	 * CPointer&lt;Short&gt; p_cornertype = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cornertype'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cornertype = new long[]{20, 36};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{22, 38};
-
-	/**
-	 * Field descriptor (offset) for struct member 'jointrilimit'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__jointrilimit);
-	 * CPointer&lt;Float&gt; p_jointrilimit = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'jointrilimit'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__jointrilimit = new long[]{24, 40};
-
-	/**
-	 * Field descriptor (offset) for struct member 'degr'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__degr);
-	 * CPointer&lt;Float&gt; p_degr = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'degr'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__degr = new long[]{28, 44};
-
-	/**
-	 * Field descriptor (offset) for struct member 'step'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__step);
-	 * CPointer&lt;Short&gt; p_step = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'step'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__step = new long[]{32, 48};
-
-	/**
-	 * Field descriptor (offset) for struct member 'turn'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__turn);
-	 * CPointer&lt;Short&gt; p_turn = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'turn'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__turn = new long[]{34, 50};
-
-	/**
-	 * Field descriptor (offset) for struct member 'extr_offs'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__extr_offs);
-	 * CPointer&lt;Float&gt; p_extr_offs = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'extr_offs'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__extr_offs = new long[]{36, 52};
-
-	/**
 	 * Field descriptor (offset) for struct member 'doublimit'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -290,7 +147,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__doublimit = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__doublimit = new long[]{20, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normalsize'.
@@ -310,7 +167,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normalsize = new long[]{44, 60};
+	public static final long[] __DNA__FIELD__normalsize = new long[]{24, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'automerge'.
@@ -330,7 +187,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__automerge = new long[]{48, 64};
+	public static final long[] __DNA__FIELD__automerge = new long[]{28, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selectmode'.
@@ -350,67 +207,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selectmode = new long[]{50, 66};
-
-	/**
-	 * Field descriptor (offset) for struct member 'segments'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__segments);
-	 * CPointer&lt;Short&gt; p_segments = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'segments'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__segments = new long[]{52, 68};
-
-	/**
-	 * Field descriptor (offset) for struct member 'rings'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__rings);
-	 * CPointer&lt;Short&gt; p_rings = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'rings'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__rings = new long[]{54, 70};
-
-	/**
-	 * Field descriptor (offset) for struct member 'vertices'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__vertices);
-	 * CPointer&lt;Short&gt; p_vertices = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'vertices'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__vertices = new long[]{56, 72};
+	public static final long[] __DNA__FIELD__selectmode = new long[]{30, 46};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unwrapper'.
@@ -421,56 +218,76 @@ public class ToolSettings extends CFacade {
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
 	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__unwrapper);
-	 * CPointer&lt;Short&gt; p_unwrapper = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_unwrapper = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'unwrapper'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unwrapper = new long[]{58, 74};
+	public static final long[] __DNA__FIELD__unwrapper = new long[]{32, 48};
 
 	/**
-	 * Field descriptor (offset) for struct member 'uvcalc_radius'.
+	 * Field descriptor (offset) for struct member 'uvcalc_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_radius);
-	 * CPointer&lt;Float&gt; p_uvcalc_radius = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_flag);
+	 * CPointer&lt;Byte&gt; p_uvcalc_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'uvcalc_radius'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'uvcalc_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvcalc_radius = new long[]{60, 76};
+	public static final long[] __DNA__FIELD__uvcalc_flag = new long[]{33, 49};
 
 	/**
-	 * Field descriptor (offset) for struct member 'uvcalc_cubesize'.
+	 * Field descriptor (offset) for struct member 'uv_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_cubesize);
-	 * CPointer&lt;Float&gt; p_uvcalc_cubesize = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uv_flag);
+	 * CPointer&lt;Byte&gt; p_uv_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'uvcalc_cubesize'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'uv_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvcalc_cubesize = new long[]{64, 80};
+	public static final long[] __DNA__FIELD__uv_flag = new long[]{34, 50};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_selectmode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uv_selectmode);
+	 * CPointer&lt;Byte&gt; p_uv_selectmode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_selectmode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_selectmode = new long[]{35, 51};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvcalc_margin'.
@@ -490,147 +307,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvcalc_margin = new long[]{68, 84};
-
-	/**
-	 * Field descriptor (offset) for struct member 'uvcalc_mapdir'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_mapdir);
-	 * CPointer&lt;Short&gt; p_uvcalc_mapdir = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'uvcalc_mapdir'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__uvcalc_mapdir = new long[]{72, 88};
-
-	/**
-	 * Field descriptor (offset) for struct member 'uvcalc_mapalign'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_mapalign);
-	 * CPointer&lt;Short&gt; p_uvcalc_mapalign = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'uvcalc_mapalign'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__uvcalc_mapalign = new long[]{74, 90};
-
-	/**
-	 * Field descriptor (offset) for struct member 'uvcalc_flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uvcalc_flag);
-	 * CPointer&lt;Short&gt; p_uvcalc_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'uvcalc_flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__uvcalc_flag = new long[]{76, 92};
-
-	/**
-	 * Field descriptor (offset) for struct member 'uv_flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uv_flag);
-	 * CPointer&lt;Short&gt; p_uv_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'uv_flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__uv_flag = new long[]{78, 94};
-
-	/**
-	 * Field descriptor (offset) for struct member 'uv_selectmode'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__uv_selectmode);
-	 * CPointer&lt;Short&gt; p_uv_selectmode = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'uv_selectmode'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__uv_selectmode = new long[]{80, 96};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__pad2);
-	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{82, 98};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gpencil_flags'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_flags);
-	 * CPointer&lt;Short&gt; p_gpencil_flags = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gpencil_flags'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gpencil_flags = new long[]{84, 100};
+	public static final long[] __DNA__FIELD__uvcalc_margin = new long[]{36, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autoik_chainlen'.
@@ -650,7 +327,47 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autoik_chainlen = new long[]{86, 102};
+	public static final long[] __DNA__FIELD__autoik_chainlen = new long[]{40, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_flags'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_flags);
+	 * CPointer&lt;Byte&gt; p_gpencil_flags = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_flags'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_flags = new long[]{42, 58};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{43, 59};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imapaint'.
@@ -667,10 +384,10 @@ public class ToolSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'imapaint'</li>
 	 * <li>Signature: 'ImagePaintSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 44/56</li>
+	 * <li>Actual Size (32bit/64bit): 76/104</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imapaint = new long[]{88, 104};
+	public static final long[] __DNA__FIELD__imapaint = new long[]{48, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle'.
@@ -690,13 +407,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 156/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__particle = new long[]{124, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -713,7 +427,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_size = new long[]{288, 328};
+	public static final long[] __DNA__FIELD__proportional_size = new long[]{280, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'select_thresh'.
@@ -733,27 +447,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__select_thresh = new long[]{292, 332};
-
-	/**
-	 * Field descriptor (offset) for struct member 'clean_thresh'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__clean_thresh);
-	 * CPointer&lt;Float&gt; p_clean_thresh = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'clean_thresh'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__clean_thresh = new long[]{296, 336};
+	public static final long[] __DNA__FIELD__select_thresh = new long[]{284, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_mode'.
@@ -773,7 +467,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_mode = new long[]{300, 340};
+	public static final long[] __DNA__FIELD__autokey_mode = new long[]{288, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autokey_flag'.
@@ -793,7 +487,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autokey_flag = new long[]{302, 342};
+	public static final long[] __DNA__FIELD__autokey_flag = new long[]{290, 346};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multires_subdiv_type'.
@@ -813,7 +507,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multires_subdiv_type = new long[]{304, 344};
+	public static final long[] __DNA__FIELD__multires_subdiv_type = new long[]{292, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
@@ -829,11 +523,11 @@ public class ToolSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad3'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{305, 345};
+	public static final long[] __DNA__FIELD__pad3 = new long[]{293, 349};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_resolution'.
@@ -853,7 +547,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_resolution = new long[]{310, 350};
+	public static final long[] __DNA__FIELD__skgen_resolution = new long[]{294, 350};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_threshold_internal'.
@@ -873,7 +567,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_threshold_internal = new long[]{312, 352};
+	public static final long[] __DNA__FIELD__skgen_threshold_internal = new long[]{296, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_threshold_external'.
@@ -893,7 +587,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_threshold_external = new long[]{316, 356};
+	public static final long[] __DNA__FIELD__skgen_threshold_external = new long[]{300, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_length_ratio'.
@@ -913,7 +607,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_length_ratio = new long[]{320, 360};
+	public static final long[] __DNA__FIELD__skgen_length_ratio = new long[]{304, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_length_limit'.
@@ -933,7 +627,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_length_limit = new long[]{324, 364};
+	public static final long[] __DNA__FIELD__skgen_length_limit = new long[]{308, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_angle_limit'.
@@ -953,7 +647,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_angle_limit = new long[]{328, 368};
+	public static final long[] __DNA__FIELD__skgen_angle_limit = new long[]{312, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_correlation_limit'.
@@ -973,7 +667,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_correlation_limit = new long[]{332, 372};
+	public static final long[] __DNA__FIELD__skgen_correlation_limit = new long[]{316, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_symmetry_limit'.
@@ -993,7 +687,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_symmetry_limit = new long[]{336, 376};
+	public static final long[] __DNA__FIELD__skgen_symmetry_limit = new long[]{320, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_angle_weight'.
@@ -1013,7 +707,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_angle_weight = new long[]{340, 380};
+	public static final long[] __DNA__FIELD__skgen_retarget_angle_weight = new long[]{324, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_length_weight'.
@@ -1033,7 +727,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_length_weight = new long[]{344, 384};
+	public static final long[] __DNA__FIELD__skgen_retarget_length_weight = new long[]{328, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_distance_weight'.
@@ -1053,7 +747,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_distance_weight = new long[]{348, 388};
+	public static final long[] __DNA__FIELD__skgen_retarget_distance_weight = new long[]{332, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_options'.
@@ -1073,7 +767,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_options = new long[]{352, 392};
+	public static final long[] __DNA__FIELD__skgen_options = new long[]{336, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_postpro'.
@@ -1093,7 +787,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_postpro = new long[]{354, 394};
+	public static final long[] __DNA__FIELD__skgen_postpro = new long[]{338, 394};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_postpro_passes'.
@@ -1113,7 +807,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_postpro_passes = new long[]{355, 395};
+	public static final long[] __DNA__FIELD__skgen_postpro_passes = new long[]{339, 395};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_subdivisions'.
@@ -1133,7 +827,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_subdivisions = new long[]{356, 396};
+	public static final long[] __DNA__FIELD__skgen_subdivisions = new long[]{340, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_multi_level'.
@@ -1153,7 +847,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_multi_level = new long[]{359, 399};
+	public static final long[] __DNA__FIELD__skgen_multi_level = new long[]{343, 399};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_template'.
@@ -1173,7 +867,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_template = new long[]{360, 400};
+	public static final long[] __DNA__FIELD__skgen_template = new long[]{344, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone_sketching'.
@@ -1193,7 +887,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bone_sketching = new long[]{364, 408};
+	public static final long[] __DNA__FIELD__bone_sketching = new long[]{348, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bone_sketching_convert'.
@@ -1213,7 +907,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bone_sketching_convert = new long[]{365, 409};
+	public static final long[] __DNA__FIELD__bone_sketching_convert = new long[]{349, 409};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_subdivision_number'.
@@ -1233,7 +927,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_subdivision_number = new long[]{366, 410};
+	public static final long[] __DNA__FIELD__skgen_subdivision_number = new long[]{350, 410};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_options'.
@@ -1253,7 +947,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_options = new long[]{367, 411};
+	public static final long[] __DNA__FIELD__skgen_retarget_options = new long[]{351, 411};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_retarget_roll'.
@@ -1273,7 +967,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_retarget_roll = new long[]{368, 412};
+	public static final long[] __DNA__FIELD__skgen_retarget_roll = new long[]{352, 412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_side_string'.
@@ -1293,7 +987,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_side_string = new long[]{369, 413};
+	public static final long[] __DNA__FIELD__skgen_side_string = new long[]{353, 413};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skgen_num_string'.
@@ -1313,7 +1007,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skgen_num_string = new long[]{377, 421};
+	public static final long[] __DNA__FIELD__skgen_num_string = new long[]{361, 421};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_mode'.
@@ -1333,7 +1027,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_mode = new long[]{385, 429};
+	public static final long[] __DNA__FIELD__edge_mode = new long[]{369, 429};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_mode_live_unwrap'.
@@ -1353,7 +1047,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_mode_live_unwrap = new long[]{386, 430};
+	public static final long[] __DNA__FIELD__edge_mode_live_unwrap = new long[]{370, 430};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_mode'.
@@ -1373,7 +1067,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_mode = new long[]{387, 431};
+	public static final long[] __DNA__FIELD__snap_mode = new long[]{371, 431};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_node_mode'.
@@ -1393,7 +1087,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{388, 432};
+	public static final long[] __DNA__FIELD__snap_node_mode = new long[]{372, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_uv_mode'.
@@ -1413,7 +1107,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{389, 433};
+	public static final long[] __DNA__FIELD__snap_uv_mode = new long[]{373, 433};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_flag'.
@@ -1433,13 +1127,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_flag = new long[]{390, 434};
+	public static final long[] __DNA__FIELD__snap_flag = new long[]{374, 434};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which part to snap onto the target
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1456,7 +1147,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap_target = new long[]{392, 436};
+	public static final long[] __DNA__FIELD__snap_target = new long[]{376, 436};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional'.
@@ -1476,7 +1167,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional = new long[]{394, 438};
+	public static final long[] __DNA__FIELD__proportional = new long[]{378, 438};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop_mode'.
@@ -1496,7 +1187,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop_mode = new long[]{396, 440};
+	public static final long[] __DNA__FIELD__prop_mode = new long[]{380, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_objects'.
@@ -1516,7 +1207,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_objects = new long[]{398, 442};
+	public static final long[] __DNA__FIELD__proportional_objects = new long[]{382, 442};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proportional_mask'.
@@ -1536,7 +1227,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proportional_mask = new long[]{399, 443};
+	public static final long[] __DNA__FIELD__proportional_mask = new long[]{383, 443};
 
 	/**
 	 * Field descriptor (offset) for struct member 'auto_normalize'.
@@ -1556,7 +1247,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__auto_normalize = new long[]{400, 444};
+	public static final long[] __DNA__FIELD__auto_normalize = new long[]{384, 444};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multipaint'.
@@ -1576,7 +1267,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multipaint = new long[]{401, 445};
+	public static final long[] __DNA__FIELD__multipaint = new long[]{385, 445};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weightuser'.
@@ -1596,7 +1287,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weightuser = new long[]{402, 446};
+	public static final long[] __DNA__FIELD__weightuser = new long[]{386, 446};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupsubset'.
@@ -1616,13 +1307,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroupsubset = new long[]{403, 447};
+	public static final long[] __DNA__FIELD__vgroupsubset = new long[]{387, 447};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_uv_sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enable brush for UV sculpting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1639,7 +1327,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_uv_sculpt = new long[]{404, 448};
+	public static final long[] __DNA__FIELD__use_uv_sculpt = new long[]{388, 448};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_settings'.
@@ -1659,13 +1347,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_sculpt_settings = new long[]{408, 452};
+	public static final long[] __DNA__FIELD__uv_sculpt_settings = new long[]{392, 452};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_tool'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select Tools for the UV sculpt brushes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1682,13 +1367,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{412, 456};
+	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{396, 456};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_relax_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used for UV relaxation
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1705,7 +1387,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_relax_method = new long[]{416, 460};
+	public static final long[] __DNA__FIELD__uv_relax_method = new long[]{400, 460};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_settings'.
@@ -1725,7 +1407,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_settings = new long[]{420, 464};
+	public static final long[] __DNA__FIELD__sculpt_paint_settings = new long[]{404, 464};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad5'.
@@ -1745,7 +1427,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad5 = new long[]{422, 466};
+	public static final long[] __DNA__FIELD__pad5 = new long[]{406, 466};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_size'.
@@ -1765,7 +1447,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_size = new long[]{424, 468};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_size = new long[]{408, 468};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_unprojected_radius'.
@@ -1785,7 +1467,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_unprojected_radius = new long[]{428, 472};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_unprojected_radius = new long[]{412, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_alpha'.
@@ -1805,13 +1487,10 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_paint_unified_alpha = new long[]{432, 476};
+	public static final long[] __DNA__FIELD__sculpt_paint_unified_alpha = new long[]{416, 476};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unified_paint_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1825,16 +1504,13 @@ public class ToolSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'unified_paint_settings'</li>
 	 * <li>Signature: 'UnifiedPaintSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 80/80</li>
+	 * <li>Actual Size (32bit/64bit): 124/128</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unified_paint_settings = new long[]{436, 480};
+	public static final long[] __DNA__FIELD__unified_paint_settings = new long[]{420, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'statvis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1851,7 +1527,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__statvis = new long[]{516, 560};
+	public static final long[] __DNA__FIELD__statvis = new long[]{544, 608};
 
 	public ToolSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1927,9 +1603,6 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
 	
@@ -1947,9 +1620,6 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__sculpt
 	 */
 	
@@ -2024,202 +1694,6 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'cornertype'.
-	 * @see #__DNA__FIELD__cornertype
-	 */
-	
-	public short getCornertype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 36);
-		} else {
-			return __io__block.readShort(__io__address + 20);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cornertype'.
-	 * @see #__DNA__FIELD__cornertype
-	 */
-	
-	public void setCornertype(short cornertype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 36, cornertype);
-		} else {
-			__io__block.writeShort(__io__address + 20, cornertype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public short getPad1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 38);
-		} else {
-			return __io__block.readShort(__io__address + 22);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public void setPad1(short pad1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 38, pad1);
-		} else {
-			__io__block.writeShort(__io__address + 22, pad1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'jointrilimit'.
-	 * @see #__DNA__FIELD__jointrilimit
-	 */
-	
-	public float getJointrilimit() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 40);
-		} else {
-			return __io__block.readFloat(__io__address + 24);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'jointrilimit'.
-	 * @see #__DNA__FIELD__jointrilimit
-	 */
-	
-	public void setJointrilimit(float jointrilimit) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 40, jointrilimit);
-		} else {
-			__io__block.writeFloat(__io__address + 24, jointrilimit);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'degr'.
-	 * @see #__DNA__FIELD__degr
-	 */
-	
-	public float getDegr() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 44);
-		} else {
-			return __io__block.readFloat(__io__address + 28);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'degr'.
-	 * @see #__DNA__FIELD__degr
-	 */
-	
-	public void setDegr(float degr) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 44, degr);
-		} else {
-			__io__block.writeFloat(__io__address + 28, degr);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'step'.
-	 * @see #__DNA__FIELD__step
-	 */
-	
-	public short getStep() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 48);
-		} else {
-			return __io__block.readShort(__io__address + 32);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'step'.
-	 * @see #__DNA__FIELD__step
-	 */
-	
-	public void setStep(short step) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 48, step);
-		} else {
-			__io__block.writeShort(__io__address + 32, step);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'turn'.
-	 * @see #__DNA__FIELD__turn
-	 */
-	
-	public short getTurn() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 50);
-		} else {
-			return __io__block.readShort(__io__address + 34);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'turn'.
-	 * @see #__DNA__FIELD__turn
-	 */
-	
-	public void setTurn(short turn) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 50, turn);
-		} else {
-			__io__block.writeShort(__io__address + 34, turn);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'extr_offs'.
-	 * @see #__DNA__FIELD__extr_offs
-	 */
-	
-	public float getExtr_offs() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 52);
-		} else {
-			return __io__block.readFloat(__io__address + 36);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'extr_offs'.
-	 * @see #__DNA__FIELD__extr_offs
-	 */
-	
-	public void setExtr_offs(float extr_offs) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 52, extr_offs);
-		} else {
-			__io__block.writeFloat(__io__address + 36, extr_offs);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'doublimit'.
 	 * @see #__DNA__FIELD__doublimit
 	 */
@@ -2227,9 +1701,9 @@ public class ToolSettings extends CFacade {
 	public float getDoublimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 36);
 		} else {
-			return __io__block.readFloat(__io__address + 40);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -2241,9 +1715,9 @@ public class ToolSettings extends CFacade {
 	public void setDoublimit(float doublimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 56, doublimit);
+			__io__block.writeFloat(__io__address + 36, doublimit);
 		} else {
-			__io__block.writeFloat(__io__address + 40, doublimit);
+			__io__block.writeFloat(__io__address + 20, doublimit);
 		}
 	}
 
@@ -2255,9 +1729,9 @@ public class ToolSettings extends CFacade {
 	public float getNormalsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 40);
 		} else {
-			return __io__block.readFloat(__io__address + 44);
+			return __io__block.readFloat(__io__address + 24);
 		}
 	}
 
@@ -2269,9 +1743,9 @@ public class ToolSettings extends CFacade {
 	public void setNormalsize(float normalsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, normalsize);
+			__io__block.writeFloat(__io__address + 40, normalsize);
 		} else {
-			__io__block.writeFloat(__io__address + 44, normalsize);
+			__io__block.writeFloat(__io__address + 24, normalsize);
 		}
 	}
 
@@ -2283,9 +1757,9 @@ public class ToolSettings extends CFacade {
 	public short getAutomerge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 64);
+			return __io__block.readShort(__io__address + 44);
 		} else {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 28);
 		}
 	}
 
@@ -2297,9 +1771,9 @@ public class ToolSettings extends CFacade {
 	public void setAutomerge(short automerge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 64, automerge);
+			__io__block.writeShort(__io__address + 44, automerge);
 		} else {
-			__io__block.writeShort(__io__address + 48, automerge);
+			__io__block.writeShort(__io__address + 28, automerge);
 		}
 	}
 
@@ -2311,9 +1785,9 @@ public class ToolSettings extends CFacade {
 	public short getSelectmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 66);
+			return __io__block.readShort(__io__address + 46);
 		} else {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readShort(__io__address + 30);
 		}
 	}
 
@@ -2325,93 +1799,9 @@ public class ToolSettings extends CFacade {
 	public void setSelectmode(short selectmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 66, selectmode);
+			__io__block.writeShort(__io__address + 46, selectmode);
 		} else {
-			__io__block.writeShort(__io__address + 50, selectmode);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'segments'.
-	 * @see #__DNA__FIELD__segments
-	 */
-	
-	public short getSegments() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 68);
-		} else {
-			return __io__block.readShort(__io__address + 52);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'segments'.
-	 * @see #__DNA__FIELD__segments
-	 */
-	
-	public void setSegments(short segments) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 68, segments);
-		} else {
-			__io__block.writeShort(__io__address + 52, segments);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'rings'.
-	 * @see #__DNA__FIELD__rings
-	 */
-	
-	public short getRings() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 70);
-		} else {
-			return __io__block.readShort(__io__address + 54);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'rings'.
-	 * @see #__DNA__FIELD__rings
-	 */
-	
-	public void setRings(short rings) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 70, rings);
-		} else {
-			__io__block.writeShort(__io__address + 54, rings);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'vertices'.
-	 * @see #__DNA__FIELD__vertices
-	 */
-	
-	public short getVertices() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 72);
-		} else {
-			return __io__block.readShort(__io__address + 56);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'vertices'.
-	 * @see #__DNA__FIELD__vertices
-	 */
-	
-	public void setVertices(short vertices) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 72, vertices);
-		} else {
-			__io__block.writeShort(__io__address + 56, vertices);
+			__io__block.writeShort(__io__address + 30, selectmode);
 		}
 	}
 
@@ -2420,12 +1810,12 @@ public class ToolSettings extends CFacade {
 	 * @see #__DNA__FIELD__unwrapper
 	 */
 	
-	public short getUnwrapper() throws IOException
+	public byte getUnwrapper() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 74);
+			return __io__block.readByte(__io__address + 48);
 		} else {
-			return __io__block.readShort(__io__address + 58);
+			return __io__block.readByte(__io__address + 32);
 		}
 	}
 
@@ -2434,68 +1824,96 @@ public class ToolSettings extends CFacade {
 	 * @see #__DNA__FIELD__unwrapper
 	 */
 	
-	public void setUnwrapper(short unwrapper) throws IOException
+	public void setUnwrapper(byte unwrapper) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 74, unwrapper);
+			__io__block.writeByte(__io__address + 48, unwrapper);
 		} else {
-			__io__block.writeShort(__io__address + 58, unwrapper);
+			__io__block.writeByte(__io__address + 32, unwrapper);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'uvcalc_radius'.
-	 * @see #__DNA__FIELD__uvcalc_radius
+	 * Get method for struct member 'uvcalc_flag'.
+	 * @see #__DNA__FIELD__uvcalc_flag
 	 */
 	
-	public float getUvcalc_radius() throws IOException
+	public byte getUvcalc_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readByte(__io__address + 49);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readByte(__io__address + 33);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'uvcalc_radius'.
-	 * @see #__DNA__FIELD__uvcalc_radius
+	 * Set method for struct member 'uvcalc_flag'.
+	 * @see #__DNA__FIELD__uvcalc_flag
 	 */
 	
-	public void setUvcalc_radius(float uvcalc_radius) throws IOException
+	public void setUvcalc_flag(byte uvcalc_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 76, uvcalc_radius);
+			__io__block.writeByte(__io__address + 49, uvcalc_flag);
 		} else {
-			__io__block.writeFloat(__io__address + 60, uvcalc_radius);
+			__io__block.writeByte(__io__address + 33, uvcalc_flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'uvcalc_cubesize'.
-	 * @see #__DNA__FIELD__uvcalc_cubesize
+	 * Get method for struct member 'uv_flag'.
+	 * @see #__DNA__FIELD__uv_flag
 	 */
 	
-	public float getUvcalc_cubesize() throws IOException
+	public byte getUv_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 80);
+			return __io__block.readByte(__io__address + 50);
 		} else {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readByte(__io__address + 34);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'uvcalc_cubesize'.
-	 * @see #__DNA__FIELD__uvcalc_cubesize
+	 * Set method for struct member 'uv_flag'.
+	 * @see #__DNA__FIELD__uv_flag
 	 */
 	
-	public void setUvcalc_cubesize(float uvcalc_cubesize) throws IOException
+	public void setUv_flag(byte uv_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 80, uvcalc_cubesize);
+			__io__block.writeByte(__io__address + 50, uv_flag);
 		} else {
-			__io__block.writeFloat(__io__address + 64, uvcalc_cubesize);
+			__io__block.writeByte(__io__address + 34, uv_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_selectmode'.
+	 * @see #__DNA__FIELD__uv_selectmode
+	 */
+	
+	public byte getUv_selectmode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 51);
+		} else {
+			return __io__block.readByte(__io__address + 35);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_selectmode'.
+	 * @see #__DNA__FIELD__uv_selectmode
+	 */
+	
+	public void setUv_selectmode(byte uv_selectmode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 51, uv_selectmode);
+		} else {
+			__io__block.writeByte(__io__address + 35, uv_selectmode);
 		}
 	}
 
@@ -2507,9 +1925,9 @@ public class ToolSettings extends CFacade {
 	public float getUvcalc_margin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 52);
 		} else {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 36);
 		}
 	}
 
@@ -2521,205 +1939,9 @@ public class ToolSettings extends CFacade {
 	public void setUvcalc_margin(float uvcalc_margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 84, uvcalc_margin);
+			__io__block.writeFloat(__io__address + 52, uvcalc_margin);
 		} else {
-			__io__block.writeFloat(__io__address + 68, uvcalc_margin);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'uvcalc_mapdir'.
-	 * @see #__DNA__FIELD__uvcalc_mapdir
-	 */
-	
-	public short getUvcalc_mapdir() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 88);
-		} else {
-			return __io__block.readShort(__io__address + 72);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'uvcalc_mapdir'.
-	 * @see #__DNA__FIELD__uvcalc_mapdir
-	 */
-	
-	public void setUvcalc_mapdir(short uvcalc_mapdir) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 88, uvcalc_mapdir);
-		} else {
-			__io__block.writeShort(__io__address + 72, uvcalc_mapdir);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'uvcalc_mapalign'.
-	 * @see #__DNA__FIELD__uvcalc_mapalign
-	 */
-	
-	public short getUvcalc_mapalign() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 90);
-		} else {
-			return __io__block.readShort(__io__address + 74);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'uvcalc_mapalign'.
-	 * @see #__DNA__FIELD__uvcalc_mapalign
-	 */
-	
-	public void setUvcalc_mapalign(short uvcalc_mapalign) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 90, uvcalc_mapalign);
-		} else {
-			__io__block.writeShort(__io__address + 74, uvcalc_mapalign);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'uvcalc_flag'.
-	 * @see #__DNA__FIELD__uvcalc_flag
-	 */
-	
-	public short getUvcalc_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 92);
-		} else {
-			return __io__block.readShort(__io__address + 76);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'uvcalc_flag'.
-	 * @see #__DNA__FIELD__uvcalc_flag
-	 */
-	
-	public void setUvcalc_flag(short uvcalc_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 92, uvcalc_flag);
-		} else {
-			__io__block.writeShort(__io__address + 76, uvcalc_flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'uv_flag'.
-	 * @see #__DNA__FIELD__uv_flag
-	 */
-	
-	public short getUv_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 94);
-		} else {
-			return __io__block.readShort(__io__address + 78);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'uv_flag'.
-	 * @see #__DNA__FIELD__uv_flag
-	 */
-	
-	public void setUv_flag(short uv_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 94, uv_flag);
-		} else {
-			__io__block.writeShort(__io__address + 78, uv_flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'uv_selectmode'.
-	 * @see #__DNA__FIELD__uv_selectmode
-	 */
-	
-	public short getUv_selectmode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 96);
-		} else {
-			return __io__block.readShort(__io__address + 80);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'uv_selectmode'.
-	 * @see #__DNA__FIELD__uv_selectmode
-	 */
-	
-	public void setUv_selectmode(short uv_selectmode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 96, uv_selectmode);
-		} else {
-			__io__block.writeShort(__io__address + 80, uv_selectmode);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public short getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 98);
-		} else {
-			return __io__block.readShort(__io__address + 82);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(short pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 98, pad2);
-		} else {
-			__io__block.writeShort(__io__address + 82, pad2);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gpencil_flags'.
-	 * @see #__DNA__FIELD__gpencil_flags
-	 */
-	
-	public short getGpencil_flags() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
-		} else {
-			return __io__block.readShort(__io__address + 84);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gpencil_flags'.
-	 * @see #__DNA__FIELD__gpencil_flags
-	 */
-	
-	public void setGpencil_flags(short gpencil_flags) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, gpencil_flags);
-		} else {
-			__io__block.writeShort(__io__address + 84, gpencil_flags);
+			__io__block.writeFloat(__io__address + 36, uvcalc_margin);
 		}
 	}
 
@@ -2731,9 +1953,9 @@ public class ToolSettings extends CFacade {
 	public short getAutoik_chainlen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
+			return __io__block.readShort(__io__address + 56);
 		} else {
-			return __io__block.readShort(__io__address + 86);
+			return __io__block.readShort(__io__address + 40);
 		}
 	}
 
@@ -2745,9 +1967,77 @@ public class ToolSettings extends CFacade {
 	public void setAutoik_chainlen(short autoik_chainlen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, autoik_chainlen);
+			__io__block.writeShort(__io__address + 56, autoik_chainlen);
 		} else {
-			__io__block.writeShort(__io__address + 86, autoik_chainlen);
+			__io__block.writeShort(__io__address + 40, autoik_chainlen);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_flags'.
+	 * @see #__DNA__FIELD__gpencil_flags
+	 */
+	
+	public byte getGpencil_flags() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 58);
+		} else {
+			return __io__block.readByte(__io__address + 42);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_flags'.
+	 * @see #__DNA__FIELD__gpencil_flags
+	 */
+	
+	public void setGpencil_flags(byte gpencil_flags) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 58, gpencil_flags);
+		} else {
+			__io__block.writeByte(__io__address + 42, gpencil_flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			5
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 59, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 43, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 59;
+		} else {
+			__dna__offset = 43;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 
@@ -2759,9 +2049,9 @@ public class ToolSettings extends CFacade {
 	public ImagePaintSettings getImapaint() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ImagePaintSettings(__io__address + 104, __io__block, __io__blockTable);
+			return new ImagePaintSettings(__io__address + 64, __io__block, __io__blockTable);
 		} else {
-			return new ImagePaintSettings(__io__address + 88, __io__block, __io__blockTable);
+			return new ImagePaintSettings(__io__address + 48, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2774,9 +2064,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 88;
+			__dna__offset = 48;
 		}
 		if (__io__equals(imapaint, __io__address + __dna__offset)) {
 			return;
@@ -2795,9 +2085,9 @@ public class ToolSettings extends CFacade {
 	public ParticleEditSettings getParticle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ParticleEditSettings(__io__address + 160, __io__block, __io__blockTable);
+			return new ParticleEditSettings(__io__address + 168, __io__block, __io__blockTable);
 		} else {
-			return new ParticleEditSettings(__io__address + 132, __io__block, __io__blockTable);
+			return new ParticleEditSettings(__io__address + 124, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2810,9 +2100,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 132;
+			__dna__offset = 124;
 		}
 		if (__io__equals(particle, __io__address + __dna__offset)) {
 			return;
@@ -2825,35 +2115,29 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'proportional_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle
 	 * @see #__DNA__FIELD__proportional_size
 	 */
 	
 	public float getProportional_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 336);
 		} else {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 280);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proportional_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Display size for proportional editing circle
 	 * @see #__DNA__FIELD__proportional_size
 	 */
 	
 	public void setProportional_size(float proportional_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 328, proportional_size);
+			__io__block.writeFloat(__io__address + 336, proportional_size);
 		} else {
-			__io__block.writeFloat(__io__address + 288, proportional_size);
+			__io__block.writeFloat(__io__address + 280, proportional_size);
 		}
 	}
 
@@ -2865,9 +2149,9 @@ public class ToolSettings extends CFacade {
 	public float getSelect_thresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 340);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 284);
 		}
 	}
 
@@ -2879,37 +2163,9 @@ public class ToolSettings extends CFacade {
 	public void setSelect_thresh(float select_thresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 332, select_thresh);
+			__io__block.writeFloat(__io__address + 340, select_thresh);
 		} else {
-			__io__block.writeFloat(__io__address + 292, select_thresh);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'clean_thresh'.
-	 * @see #__DNA__FIELD__clean_thresh
-	 */
-	
-	public float getClean_thresh() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 336);
-		} else {
-			return __io__block.readFloat(__io__address + 296);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'clean_thresh'.
-	 * @see #__DNA__FIELD__clean_thresh
-	 */
-	
-	public void setClean_thresh(float clean_thresh) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 336, clean_thresh);
-		} else {
-			__io__block.writeFloat(__io__address + 296, clean_thresh);
+			__io__block.writeFloat(__io__address + 284, select_thresh);
 		}
 	}
 
@@ -2921,9 +2177,9 @@ public class ToolSettings extends CFacade {
 	public short getAutokey_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 340);
+			return __io__block.readShort(__io__address + 344);
 		} else {
-			return __io__block.readShort(__io__address + 300);
+			return __io__block.readShort(__io__address + 288);
 		}
 	}
 
@@ -2935,9 +2191,9 @@ public class ToolSettings extends CFacade {
 	public void setAutokey_mode(short autokey_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 340, autokey_mode);
+			__io__block.writeShort(__io__address + 344, autokey_mode);
 		} else {
-			__io__block.writeShort(__io__address + 300, autokey_mode);
+			__io__block.writeShort(__io__address + 288, autokey_mode);
 		}
 	}
 
@@ -2949,9 +2205,9 @@ public class ToolSettings extends CFacade {
 	public short getAutokey_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 342);
+			return __io__block.readShort(__io__address + 346);
 		} else {
-			return __io__block.readShort(__io__address + 302);
+			return __io__block.readShort(__io__address + 290);
 		}
 	}
 
@@ -2963,9 +2219,9 @@ public class ToolSettings extends CFacade {
 	public void setAutokey_flag(short autokey_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 342, autokey_flag);
+			__io__block.writeShort(__io__address + 346, autokey_flag);
 		} else {
-			__io__block.writeShort(__io__address + 302, autokey_flag);
+			__io__block.writeShort(__io__address + 290, autokey_flag);
 		}
 	}
 
@@ -2977,9 +2233,9 @@ public class ToolSettings extends CFacade {
 	public byte getMultires_subdiv_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 344);
+			return __io__block.readByte(__io__address + 348);
 		} else {
-			return __io__block.readByte(__io__address + 304);
+			return __io__block.readByte(__io__address + 292);
 		}
 	}
 
@@ -2991,9 +2247,9 @@ public class ToolSettings extends CFacade {
 	public void setMultires_subdiv_type(byte multires_subdiv_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 344, multires_subdiv_type);
+			__io__block.writeByte(__io__address + 348, multires_subdiv_type);
 		} else {
-			__io__block.writeByte(__io__address + 304, multires_subdiv_type);
+			__io__block.writeByte(__io__address + 292, multires_subdiv_type);
 		}
 	}
 
@@ -3006,12 +2262,12 @@ public class ToolSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 345, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 349, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 293, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3024,9 +2280,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 345;
+			__dna__offset = 349;
 		} else {
-			__dna__offset = 305;
+			__dna__offset = 293;
 		}
 		if (__io__equals(pad3, __io__address + __dna__offset)) {
 			return;
@@ -3047,7 +2303,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 350);
 		} else {
-			return __io__block.readShort(__io__address + 310);
+			return __io__block.readShort(__io__address + 294);
 		}
 	}
 
@@ -3061,7 +2317,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 350, skgen_resolution);
 		} else {
-			__io__block.writeShort(__io__address + 310, skgen_resolution);
+			__io__block.writeShort(__io__address + 294, skgen_resolution);
 		}
 	}
 
@@ -3075,7 +2331,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -3089,7 +2345,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 352, skgen_threshold_internal);
 		} else {
-			__io__block.writeFloat(__io__address + 312, skgen_threshold_internal);
+			__io__block.writeFloat(__io__address + 296, skgen_threshold_internal);
 		}
 	}
 
@@ -3103,7 +2359,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 356);
 		} else {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 300);
 		}
 	}
 
@@ -3117,7 +2373,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 356, skgen_threshold_external);
 		} else {
-			__io__block.writeFloat(__io__address + 316, skgen_threshold_external);
+			__io__block.writeFloat(__io__address + 300, skgen_threshold_external);
 		}
 	}
 
@@ -3131,7 +2387,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 360);
 		} else {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
@@ -3145,7 +2401,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 360, skgen_length_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 320, skgen_length_ratio);
+			__io__block.writeFloat(__io__address + 304, skgen_length_ratio);
 		}
 	}
 
@@ -3159,7 +2415,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 364);
 		} else {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 308);
 		}
 	}
 
@@ -3173,7 +2429,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 364, skgen_length_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 324, skgen_length_limit);
+			__io__block.writeFloat(__io__address + 308, skgen_length_limit);
 		}
 	}
 
@@ -3187,7 +2443,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 368);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 312);
 		}
 	}
 
@@ -3201,7 +2457,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 368, skgen_angle_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 328, skgen_angle_limit);
+			__io__block.writeFloat(__io__address + 312, skgen_angle_limit);
 		}
 	}
 
@@ -3215,7 +2471,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 372);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 316);
 		}
 	}
 
@@ -3229,7 +2485,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 372, skgen_correlation_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 332, skgen_correlation_limit);
+			__io__block.writeFloat(__io__address + 316, skgen_correlation_limit);
 		}
 	}
 
@@ -3243,7 +2499,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 376);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 320);
 		}
 	}
 
@@ -3257,7 +2513,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 376, skgen_symmetry_limit);
 		} else {
-			__io__block.writeFloat(__io__address + 336, skgen_symmetry_limit);
+			__io__block.writeFloat(__io__address + 320, skgen_symmetry_limit);
 		}
 	}
 
@@ -3271,7 +2527,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 380);
 		} else {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -3285,7 +2541,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 380, skgen_retarget_angle_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 340, skgen_retarget_angle_weight);
+			__io__block.writeFloat(__io__address + 324, skgen_retarget_angle_weight);
 		}
 	}
 
@@ -3299,7 +2555,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 384);
 		} else {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 328);
 		}
 	}
 
@@ -3313,7 +2569,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 384, skgen_retarget_length_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 344, skgen_retarget_length_weight);
+			__io__block.writeFloat(__io__address + 328, skgen_retarget_length_weight);
 		}
 	}
 
@@ -3327,7 +2583,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 388);
 		} else {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 332);
 		}
 	}
 
@@ -3341,7 +2597,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 388, skgen_retarget_distance_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 348, skgen_retarget_distance_weight);
+			__io__block.writeFloat(__io__address + 332, skgen_retarget_distance_weight);
 		}
 	}
 
@@ -3355,7 +2611,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 392);
 		} else {
-			return __io__block.readShort(__io__address + 352);
+			return __io__block.readShort(__io__address + 336);
 		}
 	}
 
@@ -3369,7 +2625,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 392, skgen_options);
 		} else {
-			__io__block.writeShort(__io__address + 352, skgen_options);
+			__io__block.writeShort(__io__address + 336, skgen_options);
 		}
 	}
 
@@ -3383,7 +2639,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 394);
 		} else {
-			return __io__block.readByte(__io__address + 354);
+			return __io__block.readByte(__io__address + 338);
 		}
 	}
 
@@ -3397,7 +2653,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 394, skgen_postpro);
 		} else {
-			__io__block.writeByte(__io__address + 354, skgen_postpro);
+			__io__block.writeByte(__io__address + 338, skgen_postpro);
 		}
 	}
 
@@ -3411,7 +2667,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 395);
 		} else {
-			return __io__block.readByte(__io__address + 355);
+			return __io__block.readByte(__io__address + 339);
 		}
 	}
 
@@ -3425,7 +2681,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 395, skgen_postpro_passes);
 		} else {
-			__io__block.writeByte(__io__address + 355, skgen_postpro_passes);
+			__io__block.writeByte(__io__address + 339, skgen_postpro_passes);
 		}
 	}
 
@@ -3443,7 +2699,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3458,7 +2714,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__dna__offset = 396;
 		} else {
-			__dna__offset = 356;
+			__dna__offset = 340;
 		}
 		if (__io__equals(skgen_subdivisions, __io__address + __dna__offset)) {
 			return;
@@ -3479,7 +2735,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 399);
 		} else {
-			return __io__block.readByte(__io__address + 359);
+			return __io__block.readByte(__io__address + 343);
 		}
 	}
 
@@ -3493,7 +2749,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 399, skgen_multi_level);
 		} else {
-			__io__block.writeByte(__io__address + 359, skgen_multi_level);
+			__io__block.writeByte(__io__address + 343, skgen_multi_level);
 		}
 	}
 
@@ -3508,7 +2764,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3525,7 +2781,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		}
 	}
 
@@ -3539,7 +2795,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 408);
 		} else {
-			return __io__block.readByte(__io__address + 364);
+			return __io__block.readByte(__io__address + 348);
 		}
 	}
 
@@ -3553,7 +2809,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 408, bone_sketching);
 		} else {
-			__io__block.writeByte(__io__address + 364, bone_sketching);
+			__io__block.writeByte(__io__address + 348, bone_sketching);
 		}
 	}
 
@@ -3567,7 +2823,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 409);
 		} else {
-			return __io__block.readByte(__io__address + 365);
+			return __io__block.readByte(__io__address + 349);
 		}
 	}
 
@@ -3581,7 +2837,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 409, bone_sketching_convert);
 		} else {
-			__io__block.writeByte(__io__address + 365, bone_sketching_convert);
+			__io__block.writeByte(__io__address + 349, bone_sketching_convert);
 		}
 	}
 
@@ -3595,7 +2851,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 410);
 		} else {
-			return __io__block.readByte(__io__address + 366);
+			return __io__block.readByte(__io__address + 350);
 		}
 	}
 
@@ -3609,7 +2865,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 410, skgen_subdivision_number);
 		} else {
-			__io__block.writeByte(__io__address + 366, skgen_subdivision_number);
+			__io__block.writeByte(__io__address + 350, skgen_subdivision_number);
 		}
 	}
 
@@ -3623,7 +2879,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 411);
 		} else {
-			return __io__block.readByte(__io__address + 367);
+			return __io__block.readByte(__io__address + 351);
 		}
 	}
 
@@ -3637,7 +2893,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 411, skgen_retarget_options);
 		} else {
-			__io__block.writeByte(__io__address + 367, skgen_retarget_options);
+			__io__block.writeByte(__io__address + 351, skgen_retarget_options);
 		}
 	}
 
@@ -3651,7 +2907,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 412);
 		} else {
-			return __io__block.readByte(__io__address + 368);
+			return __io__block.readByte(__io__address + 352);
 		}
 	}
 
@@ -3665,7 +2921,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 412, skgen_retarget_roll);
 		} else {
-			__io__block.writeByte(__io__address + 368, skgen_retarget_roll);
+			__io__block.writeByte(__io__address + 352, skgen_retarget_roll);
 		}
 	}
 
@@ -3683,7 +2939,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 413, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 369, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 353, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3698,7 +2954,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__dna__offset = 413;
 		} else {
-			__dna__offset = 369;
+			__dna__offset = 353;
 		}
 		if (__io__equals(skgen_side_string, __io__address + __dna__offset)) {
 			return;
@@ -3723,7 +2979,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 421, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 377, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 361, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3738,7 +2994,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__dna__offset = 421;
 		} else {
-			__dna__offset = 377;
+			__dna__offset = 361;
 		}
 		if (__io__equals(skgen_num_string, __io__address + __dna__offset)) {
 			return;
@@ -3759,7 +3015,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 429);
 		} else {
-			return __io__block.readByte(__io__address + 385);
+			return __io__block.readByte(__io__address + 369);
 		}
 	}
 
@@ -3773,7 +3029,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 429, edge_mode);
 		} else {
-			__io__block.writeByte(__io__address + 385, edge_mode);
+			__io__block.writeByte(__io__address + 369, edge_mode);
 		}
 	}
 
@@ -3787,7 +3043,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 430);
 		} else {
-			return __io__block.readByte(__io__address + 386);
+			return __io__block.readByte(__io__address + 370);
 		}
 	}
 
@@ -3801,7 +3057,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 430, edge_mode_live_unwrap);
 		} else {
-			__io__block.writeByte(__io__address + 386, edge_mode_live_unwrap);
+			__io__block.writeByte(__io__address + 370, edge_mode_live_unwrap);
 		}
 	}
 
@@ -3815,7 +3071,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 431);
 		} else {
-			return __io__block.readByte(__io__address + 387);
+			return __io__block.readByte(__io__address + 371);
 		}
 	}
 
@@ -3829,7 +3085,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 431, snap_mode);
 		} else {
-			__io__block.writeByte(__io__address + 387, snap_mode);
+			__io__block.writeByte(__io__address + 371, snap_mode);
 		}
 	}
 
@@ -3843,7 +3099,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 432);
 		} else {
-			return __io__block.readByte(__io__address + 388);
+			return __io__block.readByte(__io__address + 372);
 		}
 	}
 
@@ -3857,7 +3113,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 432, snap_node_mode);
 		} else {
-			__io__block.writeByte(__io__address + 388, snap_node_mode);
+			__io__block.writeByte(__io__address + 372, snap_node_mode);
 		}
 	}
 
@@ -3871,7 +3127,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 433);
 		} else {
-			return __io__block.readByte(__io__address + 389);
+			return __io__block.readByte(__io__address + 373);
 		}
 	}
 
@@ -3885,7 +3141,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 433, snap_uv_mode);
 		} else {
-			__io__block.writeByte(__io__address + 389, snap_uv_mode);
+			__io__block.writeByte(__io__address + 373, snap_uv_mode);
 		}
 	}
 
@@ -3899,7 +3155,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 434);
 		} else {
-			return __io__block.readShort(__io__address + 390);
+			return __io__block.readShort(__io__address + 374);
 		}
 	}
 
@@ -3913,15 +3169,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 434, snap_flag);
 		} else {
-			__io__block.writeShort(__io__address + 390, snap_flag);
+			__io__block.writeShort(__io__address + 374, snap_flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'snap_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
 	
@@ -3930,15 +3183,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 436);
 		} else {
-			return __io__block.readShort(__io__address + 392);
+			return __io__block.readShort(__io__address + 376);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'snap_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which part to snap onto the target
 	 * @see #__DNA__FIELD__snap_target
 	 */
 	
@@ -3947,7 +3197,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 436, snap_target);
 		} else {
-			__io__block.writeShort(__io__address + 392, snap_target);
+			__io__block.writeShort(__io__address + 376, snap_target);
 		}
 	}
 
@@ -3961,7 +3211,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 438);
 		} else {
-			return __io__block.readShort(__io__address + 394);
+			return __io__block.readShort(__io__address + 378);
 		}
 	}
 
@@ -3975,7 +3225,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 438, proportional);
 		} else {
-			__io__block.writeShort(__io__address + 394, proportional);
+			__io__block.writeShort(__io__address + 378, proportional);
 		}
 	}
 
@@ -3989,7 +3239,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 440);
 		} else {
-			return __io__block.readShort(__io__address + 396);
+			return __io__block.readShort(__io__address + 380);
 		}
 	}
 
@@ -4003,7 +3253,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 440, prop_mode);
 		} else {
-			__io__block.writeShort(__io__address + 396, prop_mode);
+			__io__block.writeShort(__io__address + 380, prop_mode);
 		}
 	}
 
@@ -4017,7 +3267,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 442);
 		} else {
-			return __io__block.readByte(__io__address + 398);
+			return __io__block.readByte(__io__address + 382);
 		}
 	}
 
@@ -4031,7 +3281,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 442, proportional_objects);
 		} else {
-			__io__block.writeByte(__io__address + 398, proportional_objects);
+			__io__block.writeByte(__io__address + 382, proportional_objects);
 		}
 	}
 
@@ -4045,7 +3295,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 443);
 		} else {
-			return __io__block.readByte(__io__address + 399);
+			return __io__block.readByte(__io__address + 383);
 		}
 	}
 
@@ -4059,7 +3309,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 443, proportional_mask);
 		} else {
-			__io__block.writeByte(__io__address + 399, proportional_mask);
+			__io__block.writeByte(__io__address + 383, proportional_mask);
 		}
 	}
 
@@ -4073,7 +3323,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 444);
 		} else {
-			return __io__block.readByte(__io__address + 400);
+			return __io__block.readByte(__io__address + 384);
 		}
 	}
 
@@ -4087,7 +3337,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 444, auto_normalize);
 		} else {
-			__io__block.writeByte(__io__address + 400, auto_normalize);
+			__io__block.writeByte(__io__address + 384, auto_normalize);
 		}
 	}
 
@@ -4101,7 +3351,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 445);
 		} else {
-			return __io__block.readByte(__io__address + 401);
+			return __io__block.readByte(__io__address + 385);
 		}
 	}
 
@@ -4115,7 +3365,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 445, multipaint);
 		} else {
-			__io__block.writeByte(__io__address + 401, multipaint);
+			__io__block.writeByte(__io__address + 385, multipaint);
 		}
 	}
 
@@ -4129,7 +3379,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 446);
 		} else {
-			return __io__block.readByte(__io__address + 402);
+			return __io__block.readByte(__io__address + 386);
 		}
 	}
 
@@ -4143,7 +3393,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 446, weightuser);
 		} else {
-			__io__block.writeByte(__io__address + 402, weightuser);
+			__io__block.writeByte(__io__address + 386, weightuser);
 		}
 	}
 
@@ -4157,7 +3407,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 447);
 		} else {
-			return __io__block.readByte(__io__address + 403);
+			return __io__block.readByte(__io__address + 387);
 		}
 	}
 
@@ -4171,15 +3421,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeByte(__io__address + 447, vgroupsubset);
 		} else {
-			__io__block.writeByte(__io__address + 403, vgroupsubset);
+			__io__block.writeByte(__io__address + 387, vgroupsubset);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'use_uv_sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enable brush for UV sculpting
 	 * @see #__DNA__FIELD__use_uv_sculpt
 	 */
 	
@@ -4188,15 +3435,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 448);
 		} else {
-			return __io__block.readInt(__io__address + 404);
+			return __io__block.readInt(__io__address + 388);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'use_uv_sculpt'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Enable brush for UV sculpting
 	 * @see #__DNA__FIELD__use_uv_sculpt
 	 */
 	
@@ -4205,7 +3449,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeInt(__io__address + 448, use_uv_sculpt);
 		} else {
-			__io__block.writeInt(__io__address + 404, use_uv_sculpt);
+			__io__block.writeInt(__io__address + 388, use_uv_sculpt);
 		}
 	}
 
@@ -4219,7 +3463,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 452);
 		} else {
-			return __io__block.readInt(__io__address + 408);
+			return __io__block.readInt(__io__address + 392);
 		}
 	}
 
@@ -4233,15 +3477,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeInt(__io__address + 452, uv_sculpt_settings);
 		} else {
-			__io__block.writeInt(__io__address + 408, uv_sculpt_settings);
+			__io__block.writeInt(__io__address + 392, uv_sculpt_settings);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'uv_sculpt_tool'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select Tools for the UV sculpt brushes
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
 	
@@ -4250,15 +3491,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 456);
 		} else {
-			return __io__block.readInt(__io__address + 412);
+			return __io__block.readInt(__io__address + 396);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'uv_sculpt_tool'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select Tools for the UV sculpt brushes
 	 * @see #__DNA__FIELD__uv_sculpt_tool
 	 */
 	
@@ -4267,15 +3505,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeInt(__io__address + 456, uv_sculpt_tool);
 		} else {
-			__io__block.writeInt(__io__address + 412, uv_sculpt_tool);
+			__io__block.writeInt(__io__address + 396, uv_sculpt_tool);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'uv_relax_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
 	
@@ -4284,15 +3519,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 460);
 		} else {
-			return __io__block.readInt(__io__address + 416);
+			return __io__block.readInt(__io__address + 400);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'uv_relax_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used for UV relaxation
 	 * @see #__DNA__FIELD__uv_relax_method
 	 */
 	
@@ -4301,7 +3533,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeInt(__io__address + 460, uv_relax_method);
 		} else {
-			__io__block.writeInt(__io__address + 416, uv_relax_method);
+			__io__block.writeInt(__io__address + 400, uv_relax_method);
 		}
 	}
 
@@ -4315,7 +3547,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 464);
 		} else {
-			return __io__block.readShort(__io__address + 420);
+			return __io__block.readShort(__io__address + 404);
 		}
 	}
 
@@ -4329,7 +3561,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 464, sculpt_paint_settings);
 		} else {
-			__io__block.writeShort(__io__address + 420, sculpt_paint_settings);
+			__io__block.writeShort(__io__address + 404, sculpt_paint_settings);
 		}
 	}
 
@@ -4343,7 +3575,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 466);
 		} else {
-			return __io__block.readShort(__io__address + 422);
+			return __io__block.readShort(__io__address + 406);
 		}
 	}
 
@@ -4357,7 +3589,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeShort(__io__address + 466, pad5);
 		} else {
-			__io__block.writeShort(__io__address + 422, pad5);
+			__io__block.writeShort(__io__address + 406, pad5);
 		}
 	}
 
@@ -4371,7 +3603,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 468);
 		} else {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 408);
 		}
 	}
 
@@ -4385,7 +3617,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeInt(__io__address + 468, sculpt_paint_unified_size);
 		} else {
-			__io__block.writeInt(__io__address + 424, sculpt_paint_unified_size);
+			__io__block.writeInt(__io__address + 408, sculpt_paint_unified_size);
 		}
 	}
 
@@ -4399,7 +3631,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 472);
 		} else {
-			return __io__block.readFloat(__io__address + 428);
+			return __io__block.readFloat(__io__address + 412);
 		}
 	}
 
@@ -4413,7 +3645,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 472, sculpt_paint_unified_unprojected_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 428, sculpt_paint_unified_unprojected_radius);
+			__io__block.writeFloat(__io__address + 412, sculpt_paint_unified_unprojected_radius);
 		}
 	}
 
@@ -4427,7 +3659,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 476);
 		} else {
-			return __io__block.readFloat(__io__address + 432);
+			return __io__block.readFloat(__io__address + 416);
 		}
 	}
 
@@ -4441,15 +3673,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__io__block.writeFloat(__io__address + 476, sculpt_paint_unified_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 432, sculpt_paint_unified_alpha);
+			__io__block.writeFloat(__io__address + 416, sculpt_paint_unified_alpha);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'unified_paint_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
 	
@@ -4458,15 +3687,12 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			return new UnifiedPaintSettings(__io__address + 480, __io__block, __io__blockTable);
 		} else {
-			return new UnifiedPaintSettings(__io__address + 436, __io__block, __io__blockTable);
+			return new UnifiedPaintSettings(__io__address + 420, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'unified_paint_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__unified_paint_settings
 	 */
 	
@@ -4476,7 +3702,7 @@ public class ToolSettings extends CFacade {
 		if ((__io__pointersize == 8)) {
 			__dna__offset = 480;
 		} else {
-			__dna__offset = 436;
+			__dna__offset = 420;
 		}
 		if (__io__equals(unified_paint_settings, __io__address + __dna__offset)) {
 			return;
@@ -4489,26 +3715,20 @@ public class ToolSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'statvis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
 	
 	public MeshStatVis getStatvis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MeshStatVis(__io__address + 560, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 608, __io__block, __io__blockTable);
 		} else {
-			return new MeshStatVis(__io__address + 516, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 544, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'statvis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__statvis
 	 */
 	
@@ -4516,9 +3736,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 560;
+			__dna__offset = 608;
 		} else {
-			__dna__offset = 516;
+			__dna__offset = 544;
 		}
 		if (__io__equals(statvis, __io__address + __dna__offset)) {
 			return;

@@ -26,7 +26,7 @@ public class ScrewModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 117;
+	public static final int __DNA__SDNA_INDEX = 119;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -177,16 +177,36 @@ public class ScrewModifierData extends CFacade {
 	 * <pre>
 	 * ScrewModifierData screwmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__axis);
-	 * CPointer&lt;Short&gt; p_axis = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_axis = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'axis'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__axis = new long[]{120, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrewModifierData screwmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = screwmodifierdata.__dna__addressof(ScrewModifierData.__DNA__FIELD__pad);
+	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{121, 141};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -429,12 +449,12 @@ public class ScrewModifierData extends CFacade {
 	 * @see #__DNA__FIELD__axis
 	 */
 	
-	public short getAxis() throws IOException
+	public byte getAxis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 140);
+			return __io__block.readByte(__io__address + 140);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readByte(__io__address + 120);
 		}
 	}
 
@@ -443,12 +463,40 @@ public class ScrewModifierData extends CFacade {
 	 * @see #__DNA__FIELD__axis
 	 */
 	
-	public void setAxis(short axis) throws IOException
+	public void setAxis(byte axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 140, axis);
+			__io__block.writeByte(__io__address + 140, axis);
 		} else {
-			__io__block.writeShort(__io__address + 120, axis);
+			__io__block.writeByte(__io__address + 120, axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public byte getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 141);
+		} else {
+			return __io__block.readByte(__io__address + 121);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(byte pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 141, pad);
+		} else {
+			__io__block.writeByte(__io__address + 121, pad);
 		}
 	}
 

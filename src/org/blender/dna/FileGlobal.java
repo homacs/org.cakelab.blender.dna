@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1064, size64=1072)
+@CMetaData(size32=1080, size64=1088)
 public class FileGlobal extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class FileGlobal extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 227;
+	public static final int __DNA__SDNA_INDEX = 236;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
@@ -250,44 +250,44 @@ public class FileGlobal extends CFacade {
 	public static final long[] __DNA__FIELD__globalf = new long[]{28, 36};
 
 	/**
-	 * Field descriptor (offset) for struct member 'revision'.
+	 * Field descriptor (offset) for struct member 'build_commit_timestamp'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__revision);
-	 * CPointer&lt;Integer&gt; p_revision = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__build_commit_timestamp);
+	 * CPointer&lt;int64&gt; p_build_commit_timestamp = p.cast(new Class[]{int64.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'revision'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'build_commit_timestamp'</li>
+	 * <li>Signature: 'uint64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__revision = new long[]{32, 40};
+	public static final long[] __DNA__FIELD__build_commit_timestamp = new long[]{32, 40};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'build_hash'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__build_hash);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_build_hash = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'build_hash'</li>
+	 * <li>Signature: 'char[16]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{36, 44};
+	public static final long[] __DNA__FIELD__build_hash = new long[]{40, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
@@ -307,7 +307,7 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filename = new long[]{40, 48};
+	public static final long[] __DNA__FIELD__filename = new long[]{56, 64};
 
 	public FileGlobal(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -646,58 +646,70 @@ public class FileGlobal extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'revision'.
-	 * @see #__DNA__FIELD__revision
+	 * Get method for struct member 'build_commit_timestamp'.
+	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
-	public int getRevision() throws IOException
+	public long getBuild_commit_timestamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt64(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt64(__io__address + 32);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'revision'.
-	 * @see #__DNA__FIELD__revision
+	 * Set method for struct member 'build_commit_timestamp'.
+	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
-	public void setRevision(int revision) throws IOException
+	public void setBuild_commit_timestamp(long build_commit_timestamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, revision);
+			__io__block.writeInt64(__io__address + 40, build_commit_timestamp);
 		} else {
-			__io__block.writeInt(__io__address + 32, revision);
+			__io__block.writeInt64(__io__address + 32, build_commit_timestamp);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'build_hash'.
+	 * @see #__DNA__FIELD__build_hash
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> getBuild_hash() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			16
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'build_hash'.
+	 * @see #__DNA__FIELD__build_hash
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setBuild_hash(CArrayFacade<Byte> build_hash) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, pad);
+			__dna__offset = 48;
 		} else {
-			__io__block.writeInt(__io__address + 36, pad);
+			__dna__offset = 40;
+		}
+		if (__io__equals(build_hash, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, build_hash)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, build_hash);
+		} else {
+			__io__generic__copy( getBuild_hash(), build_hash);
 		}
 	}
 
@@ -713,9 +725,9 @@ public class FileGlobal extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -728,9 +740,9 @@ public class FileGlobal extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 56;
 		}
 		if (__io__equals(filename, __io__address + __dna__offset)) {
 			return;

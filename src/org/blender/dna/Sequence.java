@@ -27,7 +27,7 @@ public class Sequence extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 234;
+	public static final int __DNA__SDNA_INDEX = 243;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -151,9 +151,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1054,9 +1051,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting this strip
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1281,9 +1275,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1298,9 +1289,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -2619,9 +2607,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting this strip
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -2636,9 +2621,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting this strip
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	

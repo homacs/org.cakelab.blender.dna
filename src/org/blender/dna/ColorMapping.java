@@ -27,7 +27,7 @@ public class ColorMapping extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 33;
+	public static final int __DNA__SDNA_INDEX = 34;
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
@@ -71,9 +71,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'contrast'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the contrast of the texture
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,9 +91,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'saturation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the saturation of colors in the texture
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,9 +131,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Blend color to mix with texture output color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -180,9 +171,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode used to mix with texture output color
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,9 +283,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'contrast'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the contrast of the texture
 	 * @see #__DNA__FIELD__contrast
 	 */
 	
@@ -312,9 +297,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'contrast'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the contrast of the texture
 	 * @see #__DNA__FIELD__contrast
 	 */
 	
@@ -329,9 +311,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'saturation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the saturation of colors in the texture
 	 * @see #__DNA__FIELD__saturation
 	 */
 	
@@ -346,9 +325,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'saturation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the saturation of colors in the texture
 	 * @see #__DNA__FIELD__saturation
 	 */
 	
@@ -391,9 +367,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'blend_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Blend color to mix with texture output color
 	 * @see #__DNA__FIELD__blend_color
 	 */
 	
@@ -412,9 +385,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'blend_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Blend color to mix with texture output color
 	 * @see #__DNA__FIELD__blend_color
 	 */
 	
@@ -465,9 +435,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'blend_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode used to mix with texture output color
 	 * @see #__DNA__FIELD__blend_type
 	 */
 	
@@ -482,9 +449,6 @@ public class ColorMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'blend_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mode used to mix with texture output color
 	 * @see #__DNA__FIELD__blend_type
 	 */
 	

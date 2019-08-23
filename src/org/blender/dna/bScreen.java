@@ -26,7 +26,7 @@ public class bScreen extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -209,24 +209,24 @@ public class bScreen extends CFacade {
 	public static final long[] __DNA__FIELD__pad1 = new long[]{144, 204};
 
 	/**
-	 * Field descriptor (offset) for struct member 'full'.
+	 * Field descriptor (offset) for struct member 'state'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bScreen bscreen = ...;
-	 * CPointer&lt;Object&gt; p = bscreen.__dna__addressof(bScreen.__DNA__FIELD__full);
-	 * CPointer&lt;Short&gt; p_full = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = bscreen.__dna__addressof(bScreen.__DNA__FIELD__state);
+	 * CPointer&lt;Short&gt; p_state = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'full'</li>
+	 * <li>Field: 'state'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__full = new long[]{148, 208};
+	public static final long[] __DNA__FIELD__state = new long[]{148, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp'.
@@ -797,11 +797,11 @@ public class bScreen extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'full'.
-	 * @see #__DNA__FIELD__full
+	 * Get method for struct member 'state'.
+	 * @see #__DNA__FIELD__state
 	 */
 	
-	public short getFull() throws IOException
+	public short getState() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 208);
@@ -811,16 +811,16 @@ public class bScreen extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'full'.
-	 * @see #__DNA__FIELD__full
+	 * Set method for struct member 'state'.
+	 * @see #__DNA__FIELD__state
 	 */
 	
-	public void setFull(short full) throws IOException
+	public void setState(short state) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, full);
+			__io__block.writeShort(__io__address + 208, state);
 		} else {
-			__io__block.writeShort(__io__address + 148, full);
+			__io__block.writeShort(__io__address + 148, state);
 		}
 	}
 

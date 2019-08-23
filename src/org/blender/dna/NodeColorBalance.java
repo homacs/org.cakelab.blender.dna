@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=96, size64=96)
+@CMetaData(size32=72, size64=72)
 public class NodeColorBalance extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeColorBalance extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 385;
+	public static final int __DNA__SDNA_INDEX = 396;
 
 	/**
 	 * Field descriptor (offset) for struct member 'slope'.
@@ -148,46 +148,6 @@ public class NodeColorBalance extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gain = new long[]{60, 60};
-
-	/**
-	 * Field descriptor (offset) for struct member 'lift_lgg'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeColorBalance nodecolorbalance = ...;
-	 * CPointer&lt;Object&gt; p = nodecolorbalance.__dna__addressof(NodeColorBalance.__DNA__FIELD__lift_lgg);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_lift_lgg = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'lift_lgg'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__lift_lgg = new long[]{72, 72};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gamma_inv'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeColorBalance nodecolorbalance = ...;
-	 * CPointer&lt;Object&gt; p = nodecolorbalance.__dna__addressof(NodeColorBalance.__DNA__FIELD__gamma_inv);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gamma_inv = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gamma_inv'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gamma_inv = new long[]{84, 84};
 
 	public NodeColorBalance(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -434,86 +394,6 @@ public class NodeColorBalance extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, gain);
 		} else {
 			__io__generic__copy( getGain(), gain);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'lift_lgg'.
-	 * @see #__DNA__FIELD__lift_lgg
-	 */
-	
-	public CArrayFacade<Float> getLift_lgg() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'lift_lgg'.
-	 * @see #__DNA__FIELD__lift_lgg
-	 */
-	
-	public void setLift_lgg(CArrayFacade<Float> lift_lgg) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
-		} else {
-			__dna__offset = 72;
-		}
-		if (__io__equals(lift_lgg, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, lift_lgg)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, lift_lgg);
-		} else {
-			__io__generic__copy( getLift_lgg(), lift_lgg);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gamma_inv'.
-	 * @see #__DNA__FIELD__gamma_inv
-	 */
-	
-	public CArrayFacade<Float> getGamma_inv() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gamma_inv'.
-	 * @see #__DNA__FIELD__gamma_inv
-	 */
-	
-	public void setGamma_inv(CArrayFacade<Float> gamma_inv) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 84;
-		} else {
-			__dna__offset = 84;
-		}
-		if (__io__equals(gamma_inv, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, gamma_inv)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, gamma_inv);
-		} else {
-			__io__generic__copy( getGamma_inv(), gamma_inv);
 		}
 	}
 

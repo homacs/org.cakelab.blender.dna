@@ -30,9 +30,6 @@ public class PackedFile extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Size of packed file in bytes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,9 +98,6 @@ public class PackedFile extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Size of packed file in bytes
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -118,9 +112,6 @@ public class PackedFile extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Size of packed file in bytes
 	 * @see #__DNA__FIELD__size
 	 */
 	

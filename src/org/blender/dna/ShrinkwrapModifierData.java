@@ -27,7 +27,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 113;
+	public static final int __DNA__SDNA_INDEX = 115;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -158,16 +158,36 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <pre>
 	 * ShrinkwrapModifierData shrinkwrapmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = shrinkwrapmodifierdata.__dna__addressof(ShrinkwrapModifierData.__DNA__FIELD__shrinkOpts);
-	 * CPointer&lt;Short&gt; p_shrinkOpts = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_shrinkOpts = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'shrinkOpts'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shrinkOpts = new long[]{174, 198};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ShrinkwrapModifierData shrinkwrapmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = shrinkwrapmodifierdata.__dna__addressof(ShrinkwrapModifierData.__DNA__FIELD__pad1);
+	 * CPointer&lt;Byte&gt; p_pad1 = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad1'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad1 = new long[]{175, 199};
 
 	/**
 	 * Field descriptor (offset) for struct member 'projLimit'.
@@ -458,12 +478,12 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * @see #__DNA__FIELD__shrinkOpts
 	 */
 	
-	public short getShrinkOpts() throws IOException
+	public byte getShrinkOpts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readByte(__io__address + 198);
 		} else {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readByte(__io__address + 174);
 		}
 	}
 
@@ -472,12 +492,40 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * @see #__DNA__FIELD__shrinkOpts
 	 */
 	
-	public void setShrinkOpts(short shrinkOpts) throws IOException
+	public void setShrinkOpts(byte shrinkOpts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 198, shrinkOpts);
+			__io__block.writeByte(__io__address + 198, shrinkOpts);
 		} else {
-			__io__block.writeShort(__io__address + 174, shrinkOpts);
+			__io__block.writeByte(__io__address + 174, shrinkOpts);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public byte getPad1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 199);
+		} else {
+			return __io__block.readByte(__io__address + 175);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad1'.
+	 * @see #__DNA__FIELD__pad1
+	 */
+	
+	public void setPad1(byte pad1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 199, pad1);
+		} else {
+			__io__block.writeByte(__io__address + 175, pad1);
 		}
 	}
 

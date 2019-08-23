@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=44, size64=56)
+@CMetaData(size32=60, size64=72)
 public class CurveMap extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CurveMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 413;
+	public static final int __DNA__SDNA_INDEX = 426;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -228,6 +228,46 @@ public class CurveMap extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__premultable = new long[]{40, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'premul_ext_in'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CurveMap curvemap = ...;
+	 * CPointer&lt;Object&gt; p = curvemap.__dna__addressof(CurveMap.__DNA__FIELD__premul_ext_in);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_premul_ext_in = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'premul_ext_in'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__premul_ext_in = new long[]{44, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member 'premul_ext_out'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CurveMap curvemap = ...;
+	 * CPointer&lt;Object&gt; p = curvemap.__dna__addressof(CurveMap.__DNA__FIELD__premul_ext_out);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_premul_ext_out = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'premul_ext_out'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__premul_ext_out = new long[]{52, 64};
 
 	public CurveMap(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -550,6 +590,86 @@ public class CurveMap extends CFacade {
 			__io__block.writeLong(__io__address + 48, __address);
 		} else {
 			__io__block.writeLong(__io__address + 40, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'premul_ext_in'.
+	 * @see #__DNA__FIELD__premul_ext_in
+	 */
+	
+	public CArrayFacade<Float> getPremul_ext_in() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'premul_ext_in'.
+	 * @see #__DNA__FIELD__premul_ext_in
+	 */
+	
+	public void setPremul_ext_in(CArrayFacade<Float> premul_ext_in) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 56;
+		} else {
+			__dna__offset = 44;
+		}
+		if (__io__equals(premul_ext_in, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, premul_ext_in)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, premul_ext_in);
+		} else {
+			__io__generic__copy( getPremul_ext_in(), premul_ext_in);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'premul_ext_out'.
+	 * @see #__DNA__FIELD__premul_ext_out
+	 */
+	
+	public CArrayFacade<Float> getPremul_ext_out() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'premul_ext_out'.
+	 * @see #__DNA__FIELD__premul_ext_out
+	 */
+	
+	public void setPremul_ext_out(CArrayFacade<Float> premul_ext_out) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 64;
+		} else {
+			__dna__offset = 52;
+		}
+		if (__io__equals(premul_ext_out, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, premul_ext_out)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, premul_ext_out);
+		} else {
+			__io__generic__copy( getPremul_ext_out(), premul_ext_out);
 		}
 	}
 

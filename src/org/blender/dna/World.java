@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=412, size64=528)
+@CMetaData(size32=420, size64=544)
 public class World extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class World extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 147;
+	public static final int __DNA__SDNA_INDEX = 152;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -331,10 +331,6 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'exposure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
-	 * Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -435,9 +431,6 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Gravitation constant for the game world
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -458,9 +451,6 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'activityBoxRadius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -501,9 +491,6 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustrum culling
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1484,9 +1471,6 @@ public class World extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the world
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1564,6 +1548,26 @@ public class World extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__nodetree = new long[]{408, 520};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpumaterial'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * World world = ...;
+	 * CPointer&lt;Object&gt; p = world.__dna__addressof(World.__DNA__FIELD__gpumaterial);
+	 * CPointer&lt;ListBase&gt; p_gpumaterial = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpumaterial'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpumaterial = new long[]{412, 528};
 
 	public World(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2007,10 +2011,6 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'exposure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
-	 * Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either.
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -2025,10 +2025,6 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'exposure'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of exponential color correction for light<h4>Blender Source Code:</h4>
-	 * Exposure= mult factor. unused now, but maybe back later. Kept in to be upward compat. New is exp/range control. linfac & logfac are constants... don't belong in file, but allocating 8 bytes for temp mem isn't useful either.
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -2155,9 +2151,6 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'gravity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Gravitation constant for the game world
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -2172,9 +2165,6 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'gravity'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Gravitation constant for the game world
 	 * @see #__DNA__FIELD__gravity
 	 */
 	
@@ -2189,9 +2179,6 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'activityBoxRadius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled.
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -2206,9 +2193,6 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'activityBoxRadius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Radius of the activity bubble, in Manhattan length. Objects outside the box are activity-culled.
 	 * @see #__DNA__FIELD__activityBoxRadius
 	 */
 	
@@ -2251,9 +2235,6 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustrum culling
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -2268,9 +2249,6 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Some world modes bit 0: Do mist bit 1: Do stars bit 2: (reserved) depth of field bit 3: (gameengine): Activity culling is enabled. bit 4: ambient occlusion bit 5: (gameengine) : enable Bullet DBVT tree for view frustrum culling
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -3653,9 +3631,6 @@ public class World extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_nodes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the world
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -3670,9 +3645,6 @@ public class World extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_nodes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Use shader nodes to render the world
 	 * @see #__DNA__FIELD__use_nodes
 	 */
 	
@@ -3786,6 +3758,42 @@ public class World extends CFacade {
 			__io__block.writeLong(__io__address + 520, __address);
 		} else {
 			__io__block.writeLong(__io__address + 408, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpumaterial'.
+	 * @see #__DNA__FIELD__gpumaterial
+	 */
+	
+	public ListBase getGpumaterial() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 528, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 412, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpumaterial'.
+	 * @see #__DNA__FIELD__gpumaterial
+	 */
+	
+	public void setGpumaterial(ListBase gpumaterial) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 528;
+		} else {
+			__dna__offset = 412;
+		}
+		if (__io__equals(gpumaterial, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gpumaterial)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gpumaterial);
+		} else {
+			__io__generic__copy( getGpumaterial(), gpumaterial);
 		}
 	}
 

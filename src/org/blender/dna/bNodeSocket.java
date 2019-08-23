@@ -27,7 +27,7 @@ public class bNodeSocket extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 347;
+	public static final int __DNA__SDNA_INDEX = 358;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -390,24 +390,24 @@ public class bNodeSocket extends CFacade {
 	public static final long[] __DNA__FIELD__stack_type = new long[]{238, 266};
 
 	/**
-	 * Field descriptor (offset) for struct member 'resizemode'.
+	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeSocket bnodesocket = ...;
-	 * CPointer&lt;Object&gt; p = bnodesocket.__dna__addressof(bNodeSocket.__DNA__FIELD__resizemode);
-	 * CPointer&lt;Integer&gt; p_resizemode = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bnodesocket.__dna__addressof(bNodeSocket.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'resizemode'</li>
+	 * <li>Field: 'pad'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resizemode = new long[]{240, 268};
+	public static final long[] __DNA__FIELD__pad = new long[]{240, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
@@ -1106,11 +1106,11 @@ public class bNodeSocket extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'resizemode'.
-	 * @see #__DNA__FIELD__resizemode
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public int getResizemode() throws IOException
+	public int getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 268);
@@ -1120,16 +1120,16 @@ public class bNodeSocket extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'resizemode'.
-	 * @see #__DNA__FIELD__resizemode
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setResizemode(int resizemode) throws IOException
+	public void setPad(int pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, resizemode);
+			__io__block.writeInt(__io__address + 268, pad);
 		} else {
-			__io__block.writeInt(__io__address + 240, resizemode);
+			__io__block.writeInt(__io__address + 240, pad);
 		}
 	}
 

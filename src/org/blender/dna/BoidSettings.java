@@ -26,7 +26,7 @@ public class BoidSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 483;
+	public static final int __DNA__SDNA_INDEX = 500;
 
 	/**
 	 * Field descriptor (offset) for struct member 'options'.
@@ -90,9 +90,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid height relative to particle size
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,9 +130,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pitch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of rotation around side vector
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -156,9 +150,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'health'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial boid health when born
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,9 +170,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'aggression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid will fight this times stronger enemy
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -202,9 +190,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum caused damage on attack per second
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -225,9 +210,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'accuracy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Accuracy of attack
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,9 +230,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'range'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from which a boid can attack
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -351,9 +330,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'air_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space in air (% of particle size)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -374,9 +350,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'land_jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum speed for jumping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -457,9 +430,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'land_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space on land (% of particle size)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -480,9 +450,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'land_stick_force'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How strong a force must be to start effecting a boid on land
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -503,9 +470,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -618,9 +582,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid height relative to particle size
 	 * @see #__DNA__FIELD__height
 	 */
 	
@@ -635,9 +596,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'height'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid height relative to particle size
 	 * @see #__DNA__FIELD__height
 	 */
 	
@@ -680,9 +638,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'pitch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of rotation around side vector
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -697,9 +652,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'pitch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amount of rotation around side vector
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -714,9 +666,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'health'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial boid health when born
 	 * @see #__DNA__FIELD__health
 	 */
 	
@@ -731,9 +680,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'health'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Initial boid health when born
 	 * @see #__DNA__FIELD__health
 	 */
 	
@@ -748,9 +694,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'aggression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid will fight this times stronger enemy
 	 * @see #__DNA__FIELD__aggression
 	 */
 	
@@ -765,9 +708,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'aggression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid will fight this times stronger enemy
 	 * @see #__DNA__FIELD__aggression
 	 */
 	
@@ -782,9 +722,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum caused damage on attack per second
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -799,9 +736,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'strength'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum caused damage on attack per second
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -816,9 +750,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'accuracy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Accuracy of attack
 	 * @see #__DNA__FIELD__accuracy
 	 */
 	
@@ -833,9 +764,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'accuracy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Accuracy of attack
 	 * @see #__DNA__FIELD__accuracy
 	 */
 	
@@ -850,9 +778,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'range'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from which a boid can attack
 	 * @see #__DNA__FIELD__range
 	 */
 	
@@ -867,9 +792,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'range'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from which a boid can attack
 	 * @see #__DNA__FIELD__range
 	 */
 	
@@ -996,9 +918,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'air_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space in air (% of particle size)
 	 * @see #__DNA__FIELD__air_personal_space
 	 */
 	
@@ -1013,9 +932,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'air_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space in air (% of particle size)
 	 * @see #__DNA__FIELD__air_personal_space
 	 */
 	
@@ -1030,9 +946,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'land_jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum speed for jumping
 	 * @see #__DNA__FIELD__land_jump_speed
 	 */
 	
@@ -1047,9 +960,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'land_jump_speed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum speed for jumping
 	 * @see #__DNA__FIELD__land_jump_speed
 	 */
 	
@@ -1148,9 +1058,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'land_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space on land (% of particle size)
 	 * @see #__DNA__FIELD__land_personal_space
 	 */
 	
@@ -1165,9 +1072,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'land_personal_space'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of boids personal space on land (% of particle size)
 	 * @see #__DNA__FIELD__land_personal_space
 	 */
 	
@@ -1182,9 +1086,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'land_stick_force'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How strong a force must be to start effecting a boid on land
 	 * @see #__DNA__FIELD__land_stick_force
 	 */
 	
@@ -1199,9 +1100,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'land_stick_force'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How strong a force must be to start effecting a boid on land
 	 * @see #__DNA__FIELD__land_stick_force
 	 */
 	
@@ -1216,9 +1114,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__states
 	 */
 	
@@ -1233,9 +1128,6 @@ public class BoidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__states
 	 */
 	

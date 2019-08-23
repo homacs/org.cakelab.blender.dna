@@ -27,13 +27,10 @@ public class MeshStatVis extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 172;
+	public static final int __DNA__SDNA_INDEX = 178;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * XXX
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,9 +91,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'overhang_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,9 +111,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'overhang_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,9 +131,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum for measuring thickness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,9 +151,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum for measuring thickness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -186,9 +171,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of samples to test per face
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,9 +211,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'distort_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -252,9 +231,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'distort_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -275,9 +251,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sharp_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -298,9 +271,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sharp_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -329,9 +299,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * XXX
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -346,9 +313,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * XXX
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -431,9 +395,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'overhang_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__overhang_min
 	 */
 	
@@ -448,9 +409,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'overhang_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__overhang_min
 	 */
 	
@@ -465,9 +423,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'overhang_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__overhang_max
 	 */
 	
@@ -482,9 +437,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'overhang_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__overhang_max
 	 */
 	
@@ -499,9 +451,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum for measuring thickness
 	 * @see #__DNA__FIELD__thickness_min
 	 */
 	
@@ -516,9 +465,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum for measuring thickness
 	 * @see #__DNA__FIELD__thickness_min
 	 */
 	
@@ -533,9 +479,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum for measuring thickness
 	 * @see #__DNA__FIELD__thickness_max
 	 */
 	
@@ -550,9 +493,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum for measuring thickness
 	 * @see #__DNA__FIELD__thickness_max
 	 */
 	
@@ -567,9 +507,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of samples to test per face
 	 * @see #__DNA__FIELD__thickness_samples
 	 */
 	
@@ -584,9 +521,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness_samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of samples to test per face
 	 * @see #__DNA__FIELD__thickness_samples
 	 */
 	
@@ -641,9 +575,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'distort_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__distort_min
 	 */
 	
@@ -658,9 +589,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'distort_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__distort_min
 	 */
 	
@@ -675,9 +603,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'distort_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__distort_max
 	 */
 	
@@ -692,9 +617,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'distort_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__distort_max
 	 */
 	
@@ -709,9 +631,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'sharp_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__sharp_min
 	 */
 	
@@ -726,9 +645,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'sharp_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum angle to display
 	 * @see #__DNA__FIELD__sharp_min
 	 */
 	
@@ -743,9 +659,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Get method for struct member 'sharp_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__sharp_max
 	 */
 	
@@ -760,9 +673,6 @@ public class MeshStatVis extends CFacade {
 
 	/**
 	 * Set method for struct member 'sharp_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum angle to display
 	 * @see #__DNA__FIELD__sharp_max
 	 */
 	

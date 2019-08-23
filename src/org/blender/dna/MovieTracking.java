@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=256, size64=320)
+@CMetaData(size32=264, size64=328)
 public class MovieTracking extends CFacade {
 
 	/**
@@ -26,13 +26,10 @@ public class MovieTracking extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 506;
+	public static final int __DNA__SDNA_INDEX = 523;
 
 	/**
 	 * Field descriptor (offset) for struct member 'settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,9 +50,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'camera'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -69,16 +63,13 @@ public class MovieTracking extends CFacade {
 	 * <ul>
 	 * <li>Field: 'camera'</li>
 	 * <li>Signature: 'MovieTrackingCamera'</li>
-	 * <li>Actual Size (32bit/64bit): 44/48</li>
+	 * <li>Actual Size (32bit/64bit): 52/56</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__camera = new long[]{72, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -95,13 +86,10 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tracks = new long[]{116, 120};
+	public static final long[] __DNA__FIELD__tracks = new long[]{124, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -118,13 +106,10 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plane_tracks = new long[]{124, 136};
+	public static final long[] __DNA__FIELD__plane_tracks = new long[]{132, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -141,13 +126,10 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 20/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reconstruction = new long[]{132, 152};
+	public static final long[] __DNA__FIELD__reconstruction = new long[]{140, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stabilization'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,7 +146,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 44/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stabilization = new long[]{152, 176};
+	public static final long[] __DNA__FIELD__stabilization = new long[]{160, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_track'.
@@ -184,7 +166,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_track = new long[]{196, 224};
+	public static final long[] __DNA__FIELD__act_track = new long[]{204, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_plane_track'.
@@ -204,13 +186,10 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_plane_track = new long[]{200, 232};
+	public static final long[] __DNA__FIELD__act_plane_track = new long[]{208, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'objects'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of objects in this tracking data object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -227,7 +206,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__objects = new long[]{204, 240};
+	public static final long[] __DNA__FIELD__objects = new long[]{212, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'objectnr'.
@@ -247,7 +226,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__objectnr = new long[]{212, 256};
+	public static final long[] __DNA__FIELD__objectnr = new long[]{220, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_object'.
@@ -267,7 +246,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot_object = new long[]{216, 260};
+	public static final long[] __DNA__FIELD__tot_object = new long[]{224, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stats'.
@@ -287,13 +266,10 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stats = new long[]{220, 264};
+	public static final long[] __DNA__FIELD__stats = new long[]{228, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dopesheet'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,7 +286,7 @@ public class MovieTracking extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dopesheet = new long[]{224, 272};
+	public static final long[] __DNA__FIELD__dopesheet = new long[]{232, 280};
 
 	public MovieTracking(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -322,9 +298,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__settings
 	 */
 	
@@ -339,9 +312,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Set method for struct member 'settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__settings
 	 */
 	
@@ -364,9 +334,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'camera'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -381,9 +348,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Set method for struct member 'camera'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -406,26 +370,20 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
 	public ListBase getTracks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 116, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
@@ -433,9 +391,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 124;
 		}
 		if (__io__equals(tracks, __io__address + __dna__offset)) {
 			return;
@@ -448,26 +406,20 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
 	public ListBase getPlane_tracks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 132, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
@@ -475,9 +427,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 132;
 		}
 		if (__io__equals(plane_tracks, __io__address + __dna__offset)) {
 			return;
@@ -490,26 +442,20 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	
 	public MovieTrackingReconstruction getReconstruction() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieTrackingReconstruction(__io__address + 152, __io__block, __io__blockTable);
+			return new MovieTrackingReconstruction(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new MovieTrackingReconstruction(__io__address + 132, __io__block, __io__blockTable);
+			return new MovieTrackingReconstruction(__io__address + 140, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	
@@ -517,9 +463,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		}
 		if (__io__equals(reconstruction, __io__address + __dna__offset)) {
 			return;
@@ -532,26 +478,20 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'stabilization'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__stabilization
 	 */
 	
 	public MovieTrackingStabilization getStabilization() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieTrackingStabilization(__io__address + 176, __io__block, __io__blockTable);
+			return new MovieTrackingStabilization(__io__address + 184, __io__block, __io__blockTable);
 		} else {
-			return new MovieTrackingStabilization(__io__address + 152, __io__block, __io__blockTable);
+			return new MovieTrackingStabilization(__io__address + 160, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'stabilization'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__stabilization
 	 */
 	
@@ -559,9 +499,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		}
 		if (__io__equals(stabilization, __io__address + __dna__offset)) {
 			return;
@@ -581,9 +521,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MovieTrackingTrack.class};
 		return new CPointer<MovieTrackingTrack>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MovieTrackingTrack.__DNA__SDNA_INDEX), __io__blockTable);
@@ -598,9 +538,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __address = ((act_track == null) ? 0 : act_track.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -613,9 +553,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MovieTrackingPlaneTrack.class};
 		return new CPointer<MovieTrackingPlaneTrack>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MovieTrackingPlaneTrack.__DNA__SDNA_INDEX), __io__blockTable);
@@ -630,34 +570,28 @@ public class MovieTracking extends CFacade {
 	{
 		long __address = ((act_plane_track == null) ? 0 : act_plane_track.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'objects'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of objects in this tracking data object
 	 * @see #__DNA__FIELD__objects
 	 */
 	
 	public ListBase getObjects() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 204, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 212, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'objects'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of objects in this tracking data object
 	 * @see #__DNA__FIELD__objects
 	 */
 	
@@ -665,9 +599,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 204;
+			__dna__offset = 212;
 		}
 		if (__io__equals(objects, __io__address + __dna__offset)) {
 			return;
@@ -686,9 +620,9 @@ public class MovieTracking extends CFacade {
 	public int getObjectnr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 220);
 		}
 	}
 
@@ -700,9 +634,9 @@ public class MovieTracking extends CFacade {
 	public void setObjectnr(int objectnr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 256, objectnr);
+			__io__block.writeInt(__io__address + 264, objectnr);
 		} else {
-			__io__block.writeInt(__io__address + 212, objectnr);
+			__io__block.writeInt(__io__address + 220, objectnr);
 		}
 	}
 
@@ -714,9 +648,9 @@ public class MovieTracking extends CFacade {
 	public int getTot_object() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 224);
 		}
 	}
 
@@ -728,9 +662,9 @@ public class MovieTracking extends CFacade {
 	public void setTot_object(int tot_object) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 260, tot_object);
+			__io__block.writeInt(__io__address + 268, tot_object);
 		} else {
-			__io__block.writeInt(__io__address + 216, tot_object);
+			__io__block.writeInt(__io__address + 224, tot_object);
 		}
 	}
 
@@ -743,9 +677,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 228);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MovieTrackingStats.class};
 		return new CPointer<MovieTrackingStats>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MovieTrackingStats.__DNA__SDNA_INDEX), __io__blockTable);
@@ -760,34 +694,28 @@ public class MovieTracking extends CFacade {
 	{
 		long __address = ((stats == null) ? 0 : stats.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 228, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dopesheet'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__dopesheet
 	 */
 	
 	public MovieTrackingDopesheet getDopesheet() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieTrackingDopesheet(__io__address + 272, __io__block, __io__blockTable);
+			return new MovieTrackingDopesheet(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new MovieTrackingDopesheet(__io__address + 224, __io__block, __io__blockTable);
+			return new MovieTrackingDopesheet(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dopesheet'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__dopesheet
 	 */
 	
@@ -795,9 +723,9 @@ public class MovieTracking extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 232;
 		}
 		if (__io__equals(dopesheet, __io__address + __dna__offset)) {
 			return;

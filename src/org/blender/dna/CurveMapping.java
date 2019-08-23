@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=272, size64=320)
+@CMetaData(size32=336, size64=384)
 public class CurveMapping extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CurveMapping extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 414;
+	public static final int __DNA__SDNA_INDEX = 427;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -164,7 +164,7 @@ public class CurveMapping extends CFacade {
 	 * <ul>
 	 * <li>Field: 'cm'</li>
 	 * <li>Signature: 'CurveMap[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 176/224</li>
+	 * <li>Actual Size (32bit/64bit): 240/288</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__cm = new long[]{48, 48};
@@ -187,7 +187,7 @@ public class CurveMapping extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__black = new long[]{224, 272};
+	public static final long[] __DNA__FIELD__black = new long[]{288, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'white'.
@@ -207,7 +207,7 @@ public class CurveMapping extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__white = new long[]{236, 284};
+	public static final long[] __DNA__FIELD__white = new long[]{300, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bwmul'.
@@ -227,7 +227,7 @@ public class CurveMapping extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bwmul = new long[]{248, 296};
+	public static final long[] __DNA__FIELD__bwmul = new long[]{312, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sample'.
@@ -247,7 +247,7 @@ public class CurveMapping extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sample = new long[]{260, 308};
+	public static final long[] __DNA__FIELD__sample = new long[]{324, 372};
 
 	public CurveMapping(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -493,9 +493,9 @@ public class CurveMapping extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -508,9 +508,9 @@ public class CurveMapping extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 288;
 		}
 		if (__io__equals(black, __io__address + __dna__offset)) {
 			return;
@@ -533,9 +533,9 @@ public class CurveMapping extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 300, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -548,9 +548,9 @@ public class CurveMapping extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 284;
+			__dna__offset = 348;
 		} else {
-			__dna__offset = 236;
+			__dna__offset = 300;
 		}
 		if (__io__equals(white, __io__address + __dna__offset)) {
 			return;
@@ -573,9 +573,9 @@ public class CurveMapping extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class CurveMapping extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 360;
 		} else {
-			__dna__offset = 248;
+			__dna__offset = 312;
 		}
 		if (__io__equals(bwmul, __io__address + __dna__offset)) {
 			return;
@@ -613,9 +613,9 @@ public class CurveMapping extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -628,9 +628,9 @@ public class CurveMapping extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 308;
+			__dna__offset = 372;
 		} else {
-			__dna__offset = 260;
+			__dna__offset = 324;
 		}
 		if (__io__equals(sample, __io__address + __dna__offset)) {
 			return;

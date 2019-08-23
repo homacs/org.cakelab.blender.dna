@@ -71,9 +71,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -194,9 +191,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lens'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Perspective Camera lens value in millimeters
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -217,9 +211,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ortho_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Orthographic Camera scale (similar to zoom)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -400,9 +391,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_fit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to fit image and field of view angle inside the sensor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -519,9 +507,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -536,9 +521,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Camera types
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -693,9 +675,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Get method for struct member 'lens'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Perspective Camera lens value in millimeters
 	 * @see #__DNA__FIELD__lens
 	 */
 	
@@ -710,9 +689,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Set method for struct member 'lens'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Perspective Camera lens value in millimeters
 	 * @see #__DNA__FIELD__lens
 	 */
 	
@@ -727,9 +703,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Get method for struct member 'ortho_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Orthographic Camera scale (similar to zoom)
 	 * @see #__DNA__FIELD__ortho_scale
 	 */
 	
@@ -744,9 +717,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Set method for struct member 'ortho_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Orthographic Camera scale (similar to zoom)
 	 * @see #__DNA__FIELD__ortho_scale
 	 */
 	
@@ -993,9 +963,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Get method for struct member 'sensor_fit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to fit image and field of view angle inside the sensor
 	 * @see #__DNA__FIELD__sensor_fit
 	 */
 	
@@ -1010,9 +977,6 @@ public class Camera extends CFacade {
 
 	/**
 	 * Set method for struct member 'sensor_fit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method to fit image and field of view angle inside the sensor
 	 * @see #__DNA__FIELD__sensor_fit
 	 */
 	

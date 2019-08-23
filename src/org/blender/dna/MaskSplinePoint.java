@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=248, size64=256)
+@CMetaData(size32=264, size64=272)
 public class MaskSplinePoint extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class MaskSplinePoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 513;
+	public static final int __DNA__SDNA_INDEX = 530;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
@@ -43,7 +43,7 @@ public class MaskSplinePoint extends CFacade {
 	 * <ul>
 	 * <li>Field: 'bezt'</li>
 	 * <li>Signature: 'BezTriple'</li>
-	 * <li>Actual Size (32bit/64bit): 56/56</li>
+	 * <li>Actual Size (32bit/64bit): 72/72</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__bezt = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class MaskSplinePoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__pad = new long[]{72, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_uw'.
@@ -86,7 +86,7 @@ public class MaskSplinePoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot_uw = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__tot_uw = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uw'.
@@ -106,13 +106,10 @@ public class MaskSplinePoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uw = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__uw = new long[]{80, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -129,7 +126,7 @@ public class MaskSplinePoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 180/184</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parent = new long[]{68, 72};
+	public static final long[] __DNA__FIELD__parent = new long[]{84, 88};
 
 	public MaskSplinePoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -183,9 +180,9 @@ public class MaskSplinePoint extends CFacade {
 	public int getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 72);
 		} else {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 72);
 		}
 	}
 
@@ -197,9 +194,9 @@ public class MaskSplinePoint extends CFacade {
 	public void setPad(int pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 56, pad);
+			__io__block.writeInt(__io__address + 72, pad);
 		} else {
-			__io__block.writeInt(__io__address + 56, pad);
+			__io__block.writeInt(__io__address + 72, pad);
 		}
 	}
 
@@ -211,9 +208,9 @@ public class MaskSplinePoint extends CFacade {
 	public int getTot_uw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 76);
 		} else {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 76);
 		}
 	}
 
@@ -225,9 +222,9 @@ public class MaskSplinePoint extends CFacade {
 	public void setTot_uw(int tot_uw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 60, tot_uw);
+			__io__block.writeInt(__io__address + 76, tot_uw);
 		} else {
-			__io__block.writeInt(__io__address + 60, tot_uw);
+			__io__block.writeInt(__io__address + 76, tot_uw);
 		}
 	}
 
@@ -240,9 +237,9 @@ public class MaskSplinePoint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MaskSplinePointUW.class};
 		return new CPointer<MaskSplinePointUW>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MaskSplinePointUW.__DNA__SDNA_INDEX), __io__blockTable);
@@ -257,34 +254,28 @@ public class MaskSplinePoint extends CFacade {
 	{
 		long __address = ((uw == null) ? 0 : uw.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		} else {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__parent
 	 */
 	
 	public MaskParent getParent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MaskParent(__io__address + 72, __io__block, __io__blockTable);
+			return new MaskParent(__io__address + 88, __io__block, __io__blockTable);
 		} else {
-			return new MaskParent(__io__address + 68, __io__block, __io__blockTable);
+			return new MaskParent(__io__address + 84, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -292,9 +283,9 @@ public class MaskSplinePoint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 84;
 		}
 		if (__io__equals(parent, __io__address + __dna__offset)) {
 			return;

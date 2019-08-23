@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 434;
+	public static final int __DNA__SDNA_INDEX = 451;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -71,9 +71,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'boids'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,9 +91,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluid'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,9 +111,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -180,9 +171,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle Type
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -403,9 +391,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of particles on viewport in pixels (0=default)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -486,9 +471,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -529,9 +511,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many steps paths are drawn with (power of 2)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -572,9 +551,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of hair segments
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -715,9 +691,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'integrator'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -758,9 +731,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of periodic offset on the path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -781,9 +751,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_axis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which axis to use for offset
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1044,9 +1011,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_refsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference size in pixels, after which simplification begins
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1067,9 +1031,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of simplification
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1090,9 +1051,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_transition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Transition period for fading out strands
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1113,9 +1071,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_viewport'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of Simplification
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1176,9 +1131,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lifetime'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Life span of the particles
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1239,9 +1191,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'courant_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1362,9 +1311,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'userjit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1405,9 +1351,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_amount'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many particles are effectors (0 is all particles)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1708,9 +1651,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mass of the particles
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1871,9 +1811,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'child_nbr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2094,9 +2031,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_shape'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the offset to the beginning/end
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2117,9 +2051,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_flat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How flat the hairs are
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2440,9 +2371,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_start'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2463,9 +2391,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2486,9 +2411,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'trail_count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of trail particles
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2509,9 +2431,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyed_loops'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of times the keys are looped
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2712,9 +2631,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_modifier_stack'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2831,9 +2747,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'boids'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__boids
 	 */
 	
@@ -2851,9 +2764,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'boids'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__boids
 	 */
 	
@@ -2869,9 +2779,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fluid'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__fluid
 	 */
 	
@@ -2889,9 +2796,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fluid'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__fluid
 	 */
 	
@@ -2907,9 +2811,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -2927,9 +2828,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_weights'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -3001,9 +2899,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle Type
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -3018,9 +2913,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle Type
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -3315,9 +3207,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'draw_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of particles on viewport in pixels (0=default)
 	 * @see #__DNA__FIELD__draw_size
 	 */
 	
@@ -3332,9 +3221,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'draw_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of particles on viewport in pixels (0=default)
 	 * @see #__DNA__FIELD__draw_size
 	 */
 	
@@ -3433,9 +3319,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))
 	 * @see #__DNA__FIELD__subframes
 	 */
 	
@@ -3450,9 +3333,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))
 	 * @see #__DNA__FIELD__subframes
 	 */
 	
@@ -3495,9 +3375,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'draw_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many steps paths are drawn with (power of 2)
 	 * @see #__DNA__FIELD__draw_step
 	 */
 	
@@ -3512,9 +3389,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'draw_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many steps paths are drawn with (power of 2)
 	 * @see #__DNA__FIELD__draw_step
 	 */
 	
@@ -3557,9 +3431,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'hair_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of hair segments
 	 * @see #__DNA__FIELD__hair_step
 	 */
 	
@@ -3574,9 +3445,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'hair_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of hair segments
 	 * @see #__DNA__FIELD__hair_step
 	 */
 	
@@ -3759,9 +3627,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'integrator'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
 	 * @see #__DNA__FIELD__integrator
 	 */
 	
@@ -3776,9 +3641,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'integrator'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
 	 * @see #__DNA__FIELD__integrator
 	 */
 	
@@ -3821,9 +3683,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'kink'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of periodic offset on the path
 	 * @see #__DNA__FIELD__kink
 	 */
 	
@@ -3838,9 +3697,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'kink'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Type of periodic offset on the path
 	 * @see #__DNA__FIELD__kink
 	 */
 	
@@ -3855,9 +3711,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'kink_axis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which axis to use for offset
 	 * @see #__DNA__FIELD__kink_axis
 	 */
 	
@@ -3872,9 +3725,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'kink_axis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Which axis to use for offset
 	 * @see #__DNA__FIELD__kink_axis
 	 */
 	
@@ -4249,9 +4099,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'simplify_refsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference size in pixels, after which simplification begins
 	 * @see #__DNA__FIELD__simplify_refsize
 	 */
 	
@@ -4266,9 +4113,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'simplify_refsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Reference size in pixels, after which simplification begins
 	 * @see #__DNA__FIELD__simplify_refsize
 	 */
 	
@@ -4283,9 +4127,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'simplify_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of simplification
 	 * @see #__DNA__FIELD__simplify_rate
 	 */
 	
@@ -4300,9 +4141,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'simplify_rate'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of simplification
 	 * @see #__DNA__FIELD__simplify_rate
 	 */
 	
@@ -4317,9 +4155,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'simplify_transition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Transition period for fading out strands
 	 * @see #__DNA__FIELD__simplify_transition
 	 */
 	
@@ -4334,9 +4169,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'simplify_transition'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Transition period for fading out strands
 	 * @see #__DNA__FIELD__simplify_transition
 	 */
 	
@@ -4351,9 +4183,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'simplify_viewport'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of Simplification
 	 * @see #__DNA__FIELD__simplify_viewport
 	 */
 	
@@ -4368,9 +4197,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'simplify_viewport'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Speed of Simplification
 	 * @see #__DNA__FIELD__simplify_viewport
 	 */
 	
@@ -4441,9 +4267,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'lifetime'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Life span of the particles
 	 * @see #__DNA__FIELD__lifetime
 	 */
 	
@@ -4458,9 +4281,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'lifetime'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Life span of the particles
 	 * @see #__DNA__FIELD__lifetime
 	 */
 	
@@ -4531,9 +4351,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'courant_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
 	 * @see #__DNA__FIELD__courant_target
 	 */
 	
@@ -4548,9 +4365,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'courant_target'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
 	 * @see #__DNA__FIELD__courant_target
 	 */
 	
@@ -4717,9 +4531,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'userjit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
 	 * @see #__DNA__FIELD__userjit
 	 */
 	
@@ -4734,9 +4545,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'userjit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
 	 * @see #__DNA__FIELD__userjit
 	 */
 	
@@ -4779,9 +4587,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'effector_amount'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many particles are effectors (0 is all particles)
 	 * @see #__DNA__FIELD__effector_amount
 	 */
 	
@@ -4796,9 +4601,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'effector_amount'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How many particles are effectors (0 is all particles)
 	 * @see #__DNA__FIELD__effector_amount
 	 */
 	
@@ -5229,9 +5031,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mass of the particles
 	 * @see #__DNA__FIELD__mass
 	 */
 	
@@ -5246,9 +5045,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'mass'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Mass of the particles
 	 * @see #__DNA__FIELD__mass
 	 */
 	
@@ -5471,9 +5267,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'child_nbr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
 	 * @see #__DNA__FIELD__child_nbr
 	 */
 	
@@ -5488,9 +5281,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'child_nbr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
 	 * @see #__DNA__FIELD__child_nbr
 	 */
 	
@@ -5785,9 +5575,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'kink_shape'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the offset to the beginning/end
 	 * @see #__DNA__FIELD__kink_shape
 	 */
 	
@@ -5802,9 +5589,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'kink_shape'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Adjust the offset to the beginning/end
 	 * @see #__DNA__FIELD__kink_shape
 	 */
 	
@@ -5819,9 +5603,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'kink_flat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How flat the hairs are
 	 * @see #__DNA__FIELD__kink_flat
 	 */
 	
@@ -5836,9 +5617,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'kink_flat'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How flat the hairs are
 	 * @see #__DNA__FIELD__kink_flat
 	 */
 	
@@ -6285,9 +6063,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'path_start'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
 	 * @see #__DNA__FIELD__path_start
 	 */
 	
@@ -6302,9 +6077,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'path_start'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
 	 * @see #__DNA__FIELD__path_start
 	 */
 	
@@ -6319,9 +6091,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'path_end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
 	 * @see #__DNA__FIELD__path_end
 	 */
 	
@@ -6336,9 +6105,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'path_end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
 	 * @see #__DNA__FIELD__path_end
 	 */
 	
@@ -6353,9 +6119,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'trail_count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of trail particles
 	 * @see #__DNA__FIELD__trail_count
 	 */
 	
@@ -6370,9 +6133,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'trail_count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of trail particles
 	 * @see #__DNA__FIELD__trail_count
 	 */
 	
@@ -6387,9 +6147,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'keyed_loops'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of times the keys are looped
 	 * @see #__DNA__FIELD__keyed_loops
 	 */
 	
@@ -6404,9 +6161,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'keyed_loops'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of times the keys are looped
 	 * @see #__DNA__FIELD__keyed_loops
 	 */
 	
@@ -6721,9 +6475,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'use_modifier_stack'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */
 	
@@ -6738,9 +6489,6 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'use_modifier_stack'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */
 	

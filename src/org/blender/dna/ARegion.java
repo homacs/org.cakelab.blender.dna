@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=268, size64=336)
+@CMetaData(size32=292, size64=384)
 public class ARegion extends CFacade {
 
 	/**
@@ -27,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 226;
+	public static final int __DNA__SDNA_INDEX = 235;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -390,6 +389,26 @@ public class ARegion extends CFacade {
 	public static final long[] __DNA__FIELD__overlap = new long[]{214, 234};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flagfullscreen'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__flagfullscreen);
+	 * CPointer&lt;Short&gt; p_flagfullscreen = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flagfullscreen'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flagfullscreen = new long[]{216, 236};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -398,16 +417,16 @@ public class ARegion extends CFacade {
 	 * <pre>
 	 * ARegion aregion = ...;
 	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{216, 236};
+	public static final long[] __DNA__FIELD__pad = new long[]{218, 238};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -470,6 +489,26 @@ public class ARegion extends CFacade {
 	public static final long[] __DNA__FIELD__panels = new long[]{232, 264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'panels_category_active'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__panels_category_active);
+	 * CPointer&lt;ListBase&gt; p_panels_category_active = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'panels_category_active'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__panels_category_active = new long[]{240, 280};
+
+	/**
 	 * Field descriptor (offset) for struct member 'ui_lists'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -487,7 +526,27 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ui_lists = new long[]{240, 280};
+	public static final long[] __DNA__FIELD__ui_lists = new long[]{248, 296};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ui_previews'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__ui_previews);
+	 * CPointer&lt;ListBase&gt; p_ui_previews = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_previews'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_previews = new long[]{256, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
@@ -507,7 +566,27 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handlers = new long[]{248, 296};
+	public static final long[] __DNA__FIELD__handlers = new long[]{264, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member 'panels_category'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__panels_category);
+	 * CPointer&lt;ListBase&gt; p_panels_category = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'panels_category'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__panels_category = new long[]{272, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiontimer'.
@@ -527,7 +606,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiontimer = new long[]{256, 312};
+	public static final long[] __DNA__FIELD__regiontimer = new long[]{280, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'headerstr'.
@@ -547,7 +626,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__headerstr = new long[]{260, 320};
+	public static final long[] __DNA__FIELD__headerstr = new long[]{284, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiondata'.
@@ -567,7 +646,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiondata = new long[]{264, 328};
+	public static final long[] __DNA__FIELD__regiondata = new long[]{288, 376};
 
 	public ARegion(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1114,20 +1193,44 @@ public class ARegion extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flagfullscreen'.
+	 * @see #__DNA__FIELD__flagfullscreen
+	 */
+	
+	public short getFlagfullscreen() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 236);
+		} else {
+			return __io__block.readShort(__io__address + 216);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flagfullscreen'.
+	 * @see #__DNA__FIELD__flagfullscreen
+	 */
+	
+	public void setFlagfullscreen(short flagfullscreen) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 236, flagfullscreen);
+		} else {
+			__io__block.writeShort(__io__address + 216, flagfullscreen);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public short getPad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 238);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 218);
 		}
 	}
 
@@ -1136,20 +1239,12 @@ public class ARegion extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void setPad(short pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 236;
+			__io__block.writeShort(__io__address + 238, pad);
 		} else {
-			__dna__offset = 216;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__block.writeShort(__io__address + 218, pad);
 		}
 	}
 
@@ -1258,6 +1353,42 @@ public class ARegion extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'panels_category_active'.
+	 * @see #__DNA__FIELD__panels_category_active
+	 */
+	
+	public ListBase getPanels_category_active() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'panels_category_active'.
+	 * @see #__DNA__FIELD__panels_category_active
+	 */
+	
+	public void setPanels_category_active(ListBase panels_category_active) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 280;
+		} else {
+			__dna__offset = 240;
+		}
+		if (__io__equals(panels_category_active, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, panels_category_active)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, panels_category_active);
+		} else {
+			__io__generic__copy( getPanels_category_active(), panels_category_active);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'ui_lists'.
 	 * @see #__DNA__FIELD__ui_lists
 	 */
@@ -1265,9 +1396,9 @@ public class ARegion extends CFacade {
 	public ListBase getUi_lists() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1280,9 +1411,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		}
 		if (__io__equals(ui_lists, __io__address + __dna__offset)) {
 			return;
@@ -1294,6 +1425,42 @@ public class ARegion extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ui_previews'.
+	 * @see #__DNA__FIELD__ui_previews
+	 */
+	
+	public ListBase getUi_previews() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ui_previews'.
+	 * @see #__DNA__FIELD__ui_previews
+	 */
+	
+	public void setUi_previews(ListBase ui_previews) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 312;
+		} else {
+			__dna__offset = 256;
+		}
+		if (__io__equals(ui_previews, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, ui_previews)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, ui_previews);
+		} else {
+			__io__generic__copy( getUi_previews(), ui_previews);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'handlers'.
 	 * @see #__DNA__FIELD__handlers
 	 */
@@ -1301,9 +1468,9 @@ public class ARegion extends CFacade {
 	public ListBase getHandlers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1316,9 +1483,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 248;
+			__dna__offset = 264;
 		}
 		if (__io__equals(handlers, __io__address + __dna__offset)) {
 			return;
@@ -1326,6 +1493,42 @@ public class ARegion extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, handlers);
 		} else {
 			__io__generic__copy( getHandlers(), handlers);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'panels_category'.
+	 * @see #__DNA__FIELD__panels_category
+	 */
+	
+	public ListBase getPanels_category() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'panels_category'.
+	 * @see #__DNA__FIELD__panels_category
+	 */
+	
+	public void setPanels_category(ListBase panels_category) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 344;
+		} else {
+			__dna__offset = 272;
+		}
+		if (__io__equals(panels_category, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, panels_category)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, panels_category);
+		} else {
+			__io__generic__copy( getPanels_category(), panels_category);
 		}
 	}
 
@@ -1338,9 +1541,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1355,9 +1558,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((regiontimer == null) ? 0 : regiontimer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		}
 	}
 
@@ -1370,9 +1573,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1387,9 +1590,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((headerstr == null) ? 0 : headerstr.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 
@@ -1402,9 +1605,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1419,9 +1622,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((regiondata == null) ? 0 : regiondata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=80, size64=80)
+@CMetaData(size32=124, size64=128)
 public class UnifiedPaintSettings extends CFacade {
 
 	/**
@@ -27,13 +27,10 @@ public class UnifiedPaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 171;
+	public static final int __DNA__SDNA_INDEX = 177;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -54,9 +51,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'unprojected_radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,9 +91,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,6 +110,46 @@ public class UnifiedPaintSettings extends CFacade {
 	public static final long[] __DNA__FIELD__weight = new long[]{12, 12};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rgb'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__rgb);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rgb = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rgb'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rgb = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'secondary_rgb'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__secondary_rgb);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_secondary_rgb = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'secondary_rgb'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__secondary_rgb = new long[]{28, 28};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -136,7 +167,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__flag = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_rake'.
@@ -156,27 +187,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__last_rake = new long[]{20, 20};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UnifiedPaintSettings unifiedpaintsettings = ...;
-	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__last_rake = new long[]{44, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush_rotation'.
@@ -196,7 +207,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__brush_rotation = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__brush_rotation = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_anchored'.
@@ -216,7 +227,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_anchored = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__draw_anchored = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anchored_size'.
@@ -236,7 +247,67 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anchored_size = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__anchored_size = new long[]{60, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'draw_inverted'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__draw_inverted);
+	 * CPointer&lt;Byte&gt; p_draw_inverted = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'draw_inverted'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__draw_inverted = new long[]{64, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad3'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad3 = new long[]{65, 65};
+
+	/**
+	 * Field descriptor (offset) for struct member 'overlap_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__overlap_factor);
+	 * CPointer&lt;Float&gt; p_overlap_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'overlap_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__overlap_factor = new long[]{72, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anchored_initial_mouse'.
@@ -256,47 +327,47 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anchored_initial_mouse = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__anchored_initial_mouse = new long[]{76, 76};
 
 	/**
-	 * Field descriptor (offset) for struct member 'draw_pressure'.
+	 * Field descriptor (offset) for struct member 'stroke_active'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UnifiedPaintSettings unifiedpaintsettings = ...;
-	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__draw_pressure);
-	 * CPointer&lt;Integer&gt; p_draw_pressure = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__stroke_active);
+	 * CPointer&lt;Integer&gt; p_stroke_active = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'draw_pressure'</li>
+	 * <li>Field: 'stroke_active'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_pressure = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__stroke_active = new long[]{84, 84};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pressure_value'.
+	 * Field descriptor (offset) for struct member 'size_pressure_value'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UnifiedPaintSettings unifiedpaintsettings = ...;
-	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__pressure_value);
-	 * CPointer&lt;Float&gt; p_pressure_value = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__size_pressure_value);
+	 * CPointer&lt;Float&gt; p_size_pressure_value = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pressure_value'</li>
+	 * <li>Field: 'size_pressure_value'</li>
 	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pressure_value = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__size_pressure_value = new long[]{88, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mouse'.
@@ -316,7 +387,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tex_mouse = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__tex_mouse = new long[]{92, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mouse'.
@@ -336,7 +407,47 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_mouse = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__mask_tex_mouse = new long[]{100, 100};
+
+	/**
+	 * Field descriptor (offset) for struct member 'do_linear_conversion'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__do_linear_conversion);
+	 * CPointer&lt;Integer&gt; p_do_linear_conversion = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'do_linear_conversion'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__do_linear_conversion = new long[]{108, 108};
+
+	/**
+	 * Field descriptor (offset) for struct member 'colorspace'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__colorspace);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_colorspace = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'colorspace'</li>
+	 * <li>Signature: 'ColorSpace*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__colorspace = new long[]{112, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pixel_radius'.
@@ -356,7 +467,27 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixel_radius = new long[]{76, 76};
+	public static final long[] __DNA__FIELD__pixel_radius = new long[]{116, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__pad4);
+	 * CPointer&lt;Integer&gt; p_pad4 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad4'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad4 = new long[]{120, 124};
 
 	public UnifiedPaintSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -368,9 +499,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -385,9 +513,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of the brush in pixels
 	 * @see #__DNA__FIELD__size
 	 */
 	
@@ -402,9 +527,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'unprojected_radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
 	
@@ -419,9 +541,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'unprojected_radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius of brush in Blender units
 	 * @see #__DNA__FIELD__unprojected_radius
 	 */
 	
@@ -464,9 +583,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -481,9 +597,6 @@ public class UnifiedPaintSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Weight to assign in vertex groups
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -497,6 +610,86 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rgb'.
+	 * @see #__DNA__FIELD__rgb
+	 */
+	
+	public CArrayFacade<Float> getRgb() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rgb'.
+	 * @see #__DNA__FIELD__rgb
+	 */
+	
+	public void setRgb(CArrayFacade<Float> rgb) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 16;
+		} else {
+			__dna__offset = 16;
+		}
+		if (__io__equals(rgb, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, rgb)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rgb);
+		} else {
+			__io__generic__copy( getRgb(), rgb);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'secondary_rgb'.
+	 * @see #__DNA__FIELD__secondary_rgb
+	 */
+	
+	public CArrayFacade<Float> getSecondary_rgb() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'secondary_rgb'.
+	 * @see #__DNA__FIELD__secondary_rgb
+	 */
+	
+	public void setSecondary_rgb(CArrayFacade<Float> secondary_rgb) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 28;
+		} else {
+			__dna__offset = 28;
+		}
+		if (__io__equals(secondary_rgb, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, secondary_rgb)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, secondary_rgb);
+		} else {
+			__io__generic__copy( getSecondary_rgb(), secondary_rgb);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -504,9 +697,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 40);
 		}
 	}
 
@@ -518,9 +711,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16, flag);
+			__io__block.writeInt(__io__address + 40, flag);
 		} else {
-			__io__block.writeInt(__io__address + 16, flag);
+			__io__block.writeInt(__io__address + 40, flag);
 		}
 	}
 
@@ -536,9 +729,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -551,9 +744,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 20;
+			__dna__offset = 44;
 		} else {
-			__dna__offset = 20;
+			__dna__offset = 44;
 		}
 		if (__io__equals(last_rake, __io__address + __dna__offset)) {
 			return;
@@ -565,34 +758,6 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public int getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
-		} else {
-			return __io__block.readInt(__io__address + 28);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(int pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
-		} else {
-			__io__block.writeInt(__io__address + 28, pad);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'brush_rotation'.
 	 * @see #__DNA__FIELD__brush_rotation
 	 */
@@ -600,9 +765,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public float getBrush_rotation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 32);
+			return __io__block.readFloat(__io__address + 52);
 		} else {
-			return __io__block.readFloat(__io__address + 32);
+			return __io__block.readFloat(__io__address + 52);
 		}
 	}
 
@@ -614,9 +779,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setBrush_rotation(float brush_rotation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 32, brush_rotation);
+			__io__block.writeFloat(__io__address + 52, brush_rotation);
 		} else {
-			__io__block.writeFloat(__io__address + 32, brush_rotation);
+			__io__block.writeFloat(__io__address + 52, brush_rotation);
 		}
 	}
 
@@ -628,9 +793,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public int getDraw_anchored() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 56);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 56);
 		}
 	}
 
@@ -642,9 +807,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setDraw_anchored(int draw_anchored) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, draw_anchored);
+			__io__block.writeInt(__io__address + 56, draw_anchored);
 		} else {
-			__io__block.writeInt(__io__address + 36, draw_anchored);
+			__io__block.writeInt(__io__address + 56, draw_anchored);
 		}
 	}
 
@@ -656,9 +821,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public int getAnchored_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 60);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -670,9 +835,105 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setAnchored_size(int anchored_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, anchored_size);
+			__io__block.writeInt(__io__address + 60, anchored_size);
 		} else {
-			__io__block.writeInt(__io__address + 40, anchored_size);
+			__io__block.writeInt(__io__address + 60, anchored_size);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'draw_inverted'.
+	 * @see #__DNA__FIELD__draw_inverted
+	 */
+	
+	public byte getDraw_inverted() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 64);
+		} else {
+			return __io__block.readByte(__io__address + 64);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'draw_inverted'.
+	 * @see #__DNA__FIELD__draw_inverted
+	 */
+	
+	public void setDraw_inverted(byte draw_inverted) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 64, draw_inverted);
+		} else {
+			__io__block.writeByte(__io__address + 64, draw_inverted);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad3'.
+	 * @see #__DNA__FIELD__pad3
+	 */
+	
+	public CArrayFacade<Byte> getPad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 65, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 65, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad3'.
+	 * @see #__DNA__FIELD__pad3
+	 */
+	
+	public void setPad3(CArrayFacade<Byte> pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 65;
+		} else {
+			__dna__offset = 65;
+		}
+		if (__io__equals(pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad3);
+		} else {
+			__io__generic__copy( getPad3(), pad3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'overlap_factor'.
+	 * @see #__DNA__FIELD__overlap_factor
+	 */
+	
+	public float getOverlap_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 72);
+		} else {
+			return __io__block.readFloat(__io__address + 72);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'overlap_factor'.
+	 * @see #__DNA__FIELD__overlap_factor
+	 */
+	
+	public void setOverlap_factor(float overlap_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 72, overlap_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 72, overlap_factor);
 		}
 	}
 
@@ -688,9 +949,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -703,9 +964,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 44;
+			__dna__offset = 76;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 76;
 		}
 		if (__io__equals(anchored_initial_mouse, __io__address + __dna__offset)) {
 			return;
@@ -717,58 +978,58 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'draw_pressure'.
-	 * @see #__DNA__FIELD__draw_pressure
+	 * Get method for struct member 'stroke_active'.
+	 * @see #__DNA__FIELD__stroke_active
 	 */
 	
-	public int getDraw_pressure() throws IOException
+	public int getStroke_active() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 84);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 84);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'draw_pressure'.
-	 * @see #__DNA__FIELD__draw_pressure
+	 * Set method for struct member 'stroke_active'.
+	 * @see #__DNA__FIELD__stroke_active
 	 */
 	
-	public void setDraw_pressure(int draw_pressure) throws IOException
+	public void setStroke_active(int stroke_active) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, draw_pressure);
+			__io__block.writeInt(__io__address + 84, stroke_active);
 		} else {
-			__io__block.writeInt(__io__address + 52, draw_pressure);
+			__io__block.writeInt(__io__address + 84, stroke_active);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pressure_value'.
-	 * @see #__DNA__FIELD__pressure_value
+	 * Get method for struct member 'size_pressure_value'.
+	 * @see #__DNA__FIELD__size_pressure_value
 	 */
 	
-	public float getPressure_value() throws IOException
+	public float getSize_pressure_value() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 88);
 		} else {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 88);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pressure_value'.
-	 * @see #__DNA__FIELD__pressure_value
+	 * Set method for struct member 'size_pressure_value'.
+	 * @see #__DNA__FIELD__size_pressure_value
 	 */
 	
-	public void setPressure_value(float pressure_value) throws IOException
+	public void setSize_pressure_value(float size_pressure_value) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 56, pressure_value);
+			__io__block.writeFloat(__io__address + 88, size_pressure_value);
 		} else {
-			__io__block.writeFloat(__io__address + 56, pressure_value);
+			__io__block.writeFloat(__io__address + 88, size_pressure_value);
 		}
 	}
 
@@ -784,9 +1045,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -799,9 +1060,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 92;
 		} else {
-			__dna__offset = 60;
+			__dna__offset = 92;
 		}
 		if (__io__equals(tex_mouse, __io__address + __dna__offset)) {
 			return;
@@ -824,9 +1085,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -839,9 +1100,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 68;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 100;
 		}
 		if (__io__equals(mask_tex_mouse, __io__address + __dna__offset)) {
 			return;
@@ -853,6 +1114,66 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'do_linear_conversion'.
+	 * @see #__DNA__FIELD__do_linear_conversion
+	 */
+	
+	public int getDo_linear_conversion() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 108);
+		} else {
+			return __io__block.readInt(__io__address + 108);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'do_linear_conversion'.
+	 * @see #__DNA__FIELD__do_linear_conversion
+	 */
+	
+	public void setDo_linear_conversion(int do_linear_conversion) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 108, do_linear_conversion);
+		} else {
+			__io__block.writeInt(__io__address + 108, do_linear_conversion);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'colorspace'.
+	 * @see #__DNA__FIELD__colorspace
+	 */
+	
+	public CPointer<Object> getColorspace() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'colorspace'.
+	 * @see #__DNA__FIELD__colorspace
+	 */
+	
+	public void setColorspace(CPointer<Object> colorspace) throws IOException
+	{
+		long __address = ((colorspace == null) ? 0 : colorspace.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 112, __address);
+		} else {
+			__io__block.writeLong(__io__address + 112, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pixel_radius'.
 	 * @see #__DNA__FIELD__pixel_radius
 	 */
@@ -860,9 +1181,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public float getPixel_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -874,9 +1195,37 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setPixel_radius(float pixel_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 76, pixel_radius);
+			__io__block.writeFloat(__io__address + 120, pixel_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 76, pixel_radius);
+			__io__block.writeFloat(__io__address + 116, pixel_radius);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public int getPad4() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 124);
+		} else {
+			return __io__block.readInt(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad4'.
+	 * @see #__DNA__FIELD__pad4
+	 */
+	
+	public void setPad4(int pad4) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 124, pad4);
+		} else {
+			__io__block.writeInt(__io__address + 120, pad4);
 		}
 	}
 

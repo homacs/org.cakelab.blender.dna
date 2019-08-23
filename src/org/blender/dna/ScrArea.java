@@ -26,7 +26,7 @@ public class ScrArea extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 234;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -349,6 +349,26 @@ public class ScrArea extends CFacade {
 	public static final long[] __DNA__FIELD__region_active_win = new long[]{56, 84};
 
 	/**
+	 * Field descriptor (offset) for struct member 'temp'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrArea scrarea = ...;
+	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__temp);
+	 * CPointer&lt;Byte&gt; p_temp = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'temp'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__temp = new long[]{58, 86};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -357,16 +377,16 @@ public class ScrArea extends CFacade {
 	 * <pre>
 	 * ScrArea scrarea = ...;
 	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{58, 86};
+	public static final long[] __DNA__FIELD__pad = new long[]{59, 87};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -961,16 +981,44 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'temp'.
+	 * @see #__DNA__FIELD__temp
+	 */
+	
+	public byte getTemp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 86);
+		} else {
+			return __io__block.readByte(__io__address + 58);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'temp'.
+	 * @see #__DNA__FIELD__temp
+	 */
+	
+	public void setTemp(byte temp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 86, temp);
+		} else {
+			__io__block.writeByte(__io__address + 58, temp);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public short getPad() throws IOException
+	public byte getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 86);
+			return __io__block.readByte(__io__address + 87);
 		} else {
-			return __io__block.readShort(__io__address + 58);
+			return __io__block.readByte(__io__address + 59);
 		}
 	}
 
@@ -979,12 +1027,12 @@ public class ScrArea extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setPad(byte pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 86, pad);
+			__io__block.writeByte(__io__address + 87, pad);
 		} else {
-			__io__block.writeShort(__io__address + 58, pad);
+			__io__block.writeByte(__io__address + 59, pad);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=208, size64=224)
+@CMetaData(size32=136, size64=152)
 public class DupliObject extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class DupliObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 136;
+	public static final int __DNA__SDNA_INDEX = 141;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -90,46 +90,6 @@ public class DupliObject extends CFacade {
 	public static final long[] __DNA__FIELD__ob = new long[]{8, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'origlay'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DupliObject dupliobject = ...;
-	 * CPointer&lt;Object&gt; p = dupliobject.__dna__addressof(DupliObject.__DNA__FIELD__origlay);
-	 * CPointer&lt;Integer&gt; p_origlay = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'origlay'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__origlay = new long[]{12, 24};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DupliObject dupliobject = ...;
-	 * CPointer&lt;Object&gt; p = dupliobject.__dna__addressof(DupliObject.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 28};
-
-	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -147,33 +107,10 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{20, 32};
-
-	/**
-	 * Field descriptor (offset) for struct member 'omat'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DupliObject dupliobject = ...;
-	 * CPointer&lt;Object&gt; p = dupliobject.__dna__addressof(DupliObject.__DNA__FIELD__omat);
-	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_omat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'omat'</li>
-	 * <li>Signature: 'float[4][4]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__omat = new long[]{84, 96};
+	public static final long[] __DNA__FIELD__mat = new long[]{12, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orco'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Generated coordinates in parent object space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,13 +127,10 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orco = new long[]{148, 160};
+	public static final long[] __DNA__FIELD__orco = new long[]{76, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    UV coordinates in parent object space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -213,13 +147,10 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv = new long[]{160, 172};
+	public static final long[] __DNA__FIELD__uv = new long[]{88, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Duplicator type that generated this dupli object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -236,7 +167,7 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{168, 180};
+	public static final long[] __DNA__FIELD__type = new long[]{96, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'no_draw'.
@@ -256,7 +187,7 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__no_draw = new long[]{170, 182};
+	public static final long[] __DNA__FIELD__no_draw = new long[]{98, 110};
 
 	/**
 	 * Field descriptor (offset) for struct member 'animated'.
@@ -276,13 +207,10 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__animated = new long[]{171, 183};
+	public static final long[] __DNA__FIELD__animated = new long[]{99, 111};
 
 	/**
 	 * Field descriptor (offset) for struct member 'persistent_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -299,13 +227,10 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__persistent_id = new long[]{172, 184};
+	public static final long[] __DNA__FIELD__persistent_id = new long[]{100, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Particle system that this dupli object was instanced from
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -322,7 +247,7 @@ public class DupliObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_system = new long[]{204, 216};
+	public static final long[] __DNA__FIELD__particle_system = new long[]{132, 144};
 
 	public DupliObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -429,62 +354,6 @@ public class DupliObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'origlay'.
-	 * @see #__DNA__FIELD__origlay
-	 */
-	
-	public int getOriglay() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
-		} else {
-			return __io__block.readInt(__io__address + 12);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'origlay'.
-	 * @see #__DNA__FIELD__origlay
-	 */
-	
-	public void setOriglay(int origlay) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, origlay);
-		} else {
-			__io__block.writeInt(__io__address + 12, origlay);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public int getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
-		} else {
-			return __io__block.readInt(__io__address + 16);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(int pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
-		} else {
-			__io__block.writeInt(__io__address + 16, pad);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'mat'.
 	 * @see #__DNA__FIELD__mat
 	 */
@@ -497,9 +366,9 @@ public class DupliObject extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -512,9 +381,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 24;
 		} else {
-			__dna__offset = 20;
+			__dna__offset = 12;
 		}
 		if (__io__equals(mat, __io__address + __dna__offset)) {
 			return;
@@ -526,51 +395,7 @@ public class DupliObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'omat'.
-	 * @see #__DNA__FIELD__omat
-	 */
-	
-	public CArrayFacade<CArrayFacade<Float>> getOmat() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
-		int[] __dna__dimensions = new int[]{
-			4,
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'omat'.
-	 * @see #__DNA__FIELD__omat
-	 */
-	
-	public void setOmat(CArrayFacade<CArrayFacade<Float>> omat) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
-		} else {
-			__dna__offset = 84;
-		}
-		if (__io__equals(omat, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, omat)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, omat);
-		} else {
-			__io__generic__copy( getOmat(), omat);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'orco'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Generated coordinates in parent object space
 	 * @see #__DNA__FIELD__orco
 	 */
 	
@@ -581,17 +406,14 @@ public class DupliObject extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'orco'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Generated coordinates in parent object space
 	 * @see #__DNA__FIELD__orco
 	 */
 	
@@ -599,9 +421,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 76;
 		}
 		if (__io__equals(orco, __io__address + __dna__offset)) {
 			return;
@@ -614,9 +436,6 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'uv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    UV coordinates in parent object space
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -627,17 +446,14 @@ public class DupliObject extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'uv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    UV coordinates in parent object space
 	 * @see #__DNA__FIELD__uv
 	 */
 	
@@ -645,9 +461,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 172;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 88;
 		}
 		if (__io__equals(uv, __io__address + __dna__offset)) {
 			return;
@@ -660,35 +476,29 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Duplicator type that generated this dupli object
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 108);
 		} else {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 96);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Duplicator type that generated this dupli object
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 180, type);
+			__io__block.writeShort(__io__address + 108, type);
 		} else {
-			__io__block.writeShort(__io__address + 168, type);
+			__io__block.writeShort(__io__address + 96, type);
 		}
 	}
 
@@ -700,9 +510,9 @@ public class DupliObject extends CFacade {
 	public byte getNo_draw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 182);
+			return __io__block.readByte(__io__address + 110);
 		} else {
-			return __io__block.readByte(__io__address + 170);
+			return __io__block.readByte(__io__address + 98);
 		}
 	}
 
@@ -714,9 +524,9 @@ public class DupliObject extends CFacade {
 	public void setNo_draw(byte no_draw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 182, no_draw);
+			__io__block.writeByte(__io__address + 110, no_draw);
 		} else {
-			__io__block.writeByte(__io__address + 170, no_draw);
+			__io__block.writeByte(__io__address + 98, no_draw);
 		}
 	}
 
@@ -728,9 +538,9 @@ public class DupliObject extends CFacade {
 	public byte getAnimated() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 183);
+			return __io__block.readByte(__io__address + 111);
 		} else {
-			return __io__block.readByte(__io__address + 171);
+			return __io__block.readByte(__io__address + 99);
 		}
 	}
 
@@ -742,17 +552,14 @@ public class DupliObject extends CFacade {
 	public void setAnimated(byte animated) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 183, animated);
+			__io__block.writeByte(__io__address + 111, animated);
 		} else {
-			__io__block.writeByte(__io__address + 171, animated);
+			__io__block.writeByte(__io__address + 99, animated);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'persistent_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur
 	 * @see #__DNA__FIELD__persistent_id
 	 */
 	
@@ -763,17 +570,14 @@ public class DupliObject extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'persistent_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Persistent identifier for inter-frame matching of objects with motion blur
 	 * @see #__DNA__FIELD__persistent_id
 	 */
 	
@@ -781,9 +585,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 112;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 100;
 		}
 		if (__io__equals(persistent_id, __io__address + __dna__offset)) {
 			return;
@@ -796,9 +600,6 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'particle_system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Particle system that this dupli object was instanced from
 	 * @see #__DNA__FIELD__particle_system
 	 */
 	
@@ -806,9 +607,9 @@ public class DupliObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ParticleSystem.class};
 		return new CPointer<ParticleSystem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ParticleSystem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -816,9 +617,6 @@ public class DupliObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'particle_system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Particle system that this dupli object was instanced from
 	 * @see #__DNA__FIELD__particle_system
 	 */
 	
@@ -826,9 +624,9 @@ public class DupliObject extends CFacade {
 	{
 		long __address = ((particle_system == null) ? 0 : particle_system.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 141;
+	public static final int __DNA__SDNA_INDEX = 146;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -271,9 +271,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index number of cache files
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -294,9 +291,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'compression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Compression method to be used
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -337,9 +331,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Cache name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -380,9 +371,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Info on current cache status
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -835,9 +823,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index number of cache files
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -852,9 +837,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index number of cache files
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -869,9 +851,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'compression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Compression method to be used
 	 * @see #__DNA__FIELD__compression
 	 */
 	
@@ -886,9 +865,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'compression'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Compression method to be used
 	 * @see #__DNA__FIELD__compression
 	 */
 	
@@ -931,9 +907,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Cache name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -952,9 +925,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Cache name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1017,9 +987,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Get method for struct member 'info'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Info on current cache status
 	 * @see #__DNA__FIELD__info
 	 */
 	
@@ -1038,9 +1005,6 @@ public class PointCache extends CFacade {
 
 	/**
 	 * Set method for struct member 'info'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Info on current cache status
 	 * @see #__DNA__FIELD__info
 	 */
 	

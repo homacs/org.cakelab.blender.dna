@@ -251,9 +251,6 @@ public class Key extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'slurph'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create a delay (in frames) in applying key positions, first vertex goes first
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -694,9 +691,6 @@ public class Key extends CFacade {
 
 	/**
 	 * Get method for struct member 'slurph'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create a delay (in frames) in applying key positions, first vertex goes first
 	 * @see #__DNA__FIELD__slurph
 	 */
 	
@@ -711,9 +705,6 @@ public class Key extends CFacade {
 
 	/**
 	 * Set method for struct member 'slurph'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create a delay (in frames) in applying key positions, first vertex goes first
 	 * @see #__DNA__FIELD__slurph
 	 */
 	

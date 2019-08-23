@@ -27,7 +27,7 @@ public class VoxelData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 29;
+	public static final int __DNA__SDNA_INDEX = 30;
 
 	/**
 	 * Field descriptor (offset) for struct member 'resol'.
@@ -71,9 +71,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'file_format'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Format of the source data set to render
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -254,9 +251,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'still_frame'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The frame number to always use
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -433,9 +427,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'file_format'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Format of the source data set to render
 	 * @see #__DNA__FIELD__file_format
 	 */
 	
@@ -450,9 +441,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'file_format'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Format of the source data set to render
 	 * @see #__DNA__FIELD__file_format
 	 */
 	
@@ -695,9 +683,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Get method for struct member 'still_frame'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The frame number to always use
 	 * @see #__DNA__FIELD__still_frame
 	 */
 	
@@ -712,9 +697,6 @@ public class VoxelData extends CFacade {
 
 	/**
 	 * Set method for struct member 'still_frame'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The frame number to always use
 	 * @see #__DNA__FIELD__still_frame
 	 */
 	

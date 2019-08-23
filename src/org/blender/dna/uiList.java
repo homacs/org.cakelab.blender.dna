@@ -27,7 +27,7 @@ public class uiList extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 224;
+	public static final int __DNA__SDNA_INDEX = 232;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -210,24 +210,24 @@ public class uiList extends CFacade {
 	public static final long[] __DNA__FIELD__list_last_len = new long[]{92, 104};
 
 	/**
-	 * Field descriptor (offset) for struct member 'padi1'.
+	 * Field descriptor (offset) for struct member 'list_last_activei'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiList uilist = ...;
-	 * CPointer&lt;Object&gt; p = uilist.__dna__addressof(uiList.__DNA__FIELD__padi1);
-	 * CPointer&lt;Integer&gt; p_padi1 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = uilist.__dna__addressof(uiList.__DNA__FIELD__list_last_activei);
+	 * CPointer&lt;Integer&gt; p_list_last_activei = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'padi1'</li>
+	 * <li>Field: 'list_last_activei'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__padi1 = new long[]{96, 108};
+	public static final long[] __DNA__FIELD__list_last_activei = new long[]{96, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter_byname'.
@@ -614,11 +614,11 @@ public class uiList extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'padi1'.
-	 * @see #__DNA__FIELD__padi1
+	 * Get method for struct member 'list_last_activei'.
+	 * @see #__DNA__FIELD__list_last_activei
 	 */
 	
-	public int getPadi1() throws IOException
+	public int getList_last_activei() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 108);
@@ -628,16 +628,16 @@ public class uiList extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'padi1'.
-	 * @see #__DNA__FIELD__padi1
+	 * Set method for struct member 'list_last_activei'.
+	 * @see #__DNA__FIELD__list_last_activei
 	 */
 	
-	public void setPadi1(int padi1) throws IOException
+	public void setList_last_activei(int list_last_activei) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, padi1);
+			__io__block.writeInt(__io__address + 108, list_last_activei);
 		} else {
-			__io__block.writeInt(__io__address + 96, padi1);
+			__io__block.writeInt(__io__address + 96, list_last_activei);
 		}
 	}
 

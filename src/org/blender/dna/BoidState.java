@@ -27,7 +27,7 @@ public class BoidState extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 482;
+	public static final int __DNA__SDNA_INDEX = 499;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rules'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,9 +131,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid state name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -197,9 +191,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ruleset_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How the rules in the list are evaluated
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -392,9 +383,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Get method for struct member 'rules'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__rules
 	 */
 	
@@ -409,9 +397,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Set method for struct member 'rules'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__rules
 	 */
 	
@@ -506,9 +491,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid state name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -527,9 +509,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Boid state name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -608,9 +587,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Get method for struct member 'ruleset_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How the rules in the list are evaluated
 	 * @see #__DNA__FIELD__ruleset_type
 	 */
 	
@@ -625,9 +601,6 @@ public class BoidState extends CFacade {
 
 	/**
 	 * Set method for struct member 'ruleset_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How the rules in the list are evaluated
 	 * @see #__DNA__FIELD__ruleset_type
 	 */
 	

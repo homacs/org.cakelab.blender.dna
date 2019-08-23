@@ -27,7 +27,7 @@ public class RigidBodyOb extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 518;
+	public static final int __DNA__SDNA_INDEX = 535;
 
 	/**
 	 * Field descriptor (offset) for struct member 'physics_object'.
@@ -150,6 +150,26 @@ public class RigidBodyOb extends CFacade {
 	public static final long[] __DNA__FIELD__col_groups = new long[]{16, 24};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mesh_source'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyOb rigidbodyob = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodyob.__dna__addressof(RigidBodyOb.__DNA__FIELD__mesh_source);
+	 * CPointer&lt;Short&gt; p_mesh_source = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mesh_source'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mesh_source = new long[]{20, 28};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -158,16 +178,16 @@ public class RigidBodyOb extends CFacade {
 	 * <pre>
 	 * RigidBodyOb rigidbodyob = ...;
 	 * CPointer&lt;Object&gt; p = rigidbodyob.__dna__addressof(RigidBodyOb.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__pad = new long[]{22, 30};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mass'.
@@ -574,16 +594,44 @@ public class RigidBodyOb extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mesh_source'.
+	 * @see #__DNA__FIELD__mesh_source
+	 */
+	
+	public short getMesh_source() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 28);
+		} else {
+			return __io__block.readShort(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mesh_source'.
+	 * @see #__DNA__FIELD__mesh_source
+	 */
+	
+	public void setMesh_source(short mesh_source) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 28, mesh_source);
+		} else {
+			__io__block.writeShort(__io__address + 20, mesh_source);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad'.
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public int getPad() throws IOException
+	public short getPad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readShort(__io__address + 30);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readShort(__io__address + 22);
 		}
 	}
 
@@ -592,12 +640,12 @@ public class RigidBodyOb extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setPad(short pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
+			__io__block.writeShort(__io__address + 30, pad);
 		} else {
-			__io__block.writeInt(__io__address + 20, pad);
+			__io__block.writeShort(__io__address + 22, pad);
 		}
 	}
 

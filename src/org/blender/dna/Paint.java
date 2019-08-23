@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=24, size64=32)
+@CMetaData(size32=28, size64=40)
 public class Paint extends CFacade {
 
 	/**
@@ -27,13 +27,10 @@ public class Paint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 169;
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Brush
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,6 +50,26 @@ public class Paint extends CFacade {
 	public static final long[] __DNA__FIELD__brush = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'palette'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Paint paint = ...;
+	 * CPointer&lt;Object&gt; p = paint.__dna__addressof(Paint.__DNA__FIELD__palette);
+	 * CPointer&lt;CPointer&lt;Palette&gt;&gt; p_palette = p.cast(new Class[]{CPointer.class, Palette.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'palette'</li>
+	 * <li>Signature: 'Palette*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__palette = new long[]{4, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'paint_cursor'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -70,7 +87,7 @@ public class Paint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_cursor = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__paint_cursor = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_cursor_col'.
@@ -90,7 +107,7 @@ public class Paint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_cursor_col = new long[]{8, 16};
+	public static final long[] __DNA__FIELD__paint_cursor_col = new long[]{12, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -110,7 +127,7 @@ public class Paint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{12, 20};
+	public static final long[] __DNA__FIELD__flags = new long[]{16, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_input_samples'.
@@ -130,27 +147,27 @@ public class Paint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_input_samples = new long[]{16, 24};
+	public static final long[] __DNA__FIELD__num_input_samples = new long[]{20, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'symmetry_flags'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Paint paint = ...;
-	 * CPointer&lt;Object&gt; p = paint.__dna__addressof(Paint.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = paint.__dna__addressof(Paint.__DNA__FIELD__symmetry_flags);
+	 * CPointer&lt;Integer&gt; p_symmetry_flags = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'symmetry_flags'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__symmetry_flags = new long[]{24, 36};
 
 	public Paint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -162,9 +179,6 @@ public class Paint extends CFacade {
 
 	/**
 	 * Get method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Brush
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -182,9 +196,6 @@ public class Paint extends CFacade {
 
 	/**
 	 * Set method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Active Brush
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -199,6 +210,38 @@ public class Paint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'palette'.
+	 * @see #__DNA__FIELD__palette
+	 */
+	
+	public CPointer<Palette> getPalette() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 4);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Palette.class};
+		return new CPointer<Palette>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Palette.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'palette'.
+	 * @see #__DNA__FIELD__palette
+	 */
+	
+	public void setPalette(CPointer<Palette> palette) throws IOException
+	{
+		long __address = ((palette == null) ? 0 : palette.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 8, __address);
+		} else {
+			__io__block.writeLong(__io__address + 4, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'paint_cursor'.
 	 * @see #__DNA__FIELD__paint_cursor
 	 */
@@ -207,9 +250,9 @@ public class Paint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4);
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -224,9 +267,9 @@ public class Paint extends CFacade {
 	{
 		long __address = ((paint_cursor == null) ? 0 : paint_cursor.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 8, __address);
+			__io__block.writeLong(__io__address + 16, __address);
 		} else {
-			__io__block.writeLong(__io__address + 4, __address);
+			__io__block.writeLong(__io__address + 8, __address);
 		}
 	}
 
@@ -242,9 +285,9 @@ public class Paint extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -257,9 +300,9 @@ public class Paint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16;
+			__dna__offset = 24;
 		} else {
-			__dna__offset = 8;
+			__dna__offset = 12;
 		}
 		if (__io__equals(paint_cursor_col, __io__address + __dna__offset)) {
 			return;
@@ -278,9 +321,9 @@ public class Paint extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readInt(__io__address + 16);
 		}
 	}
 
@@ -292,9 +335,9 @@ public class Paint extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, flags);
+			__io__block.writeInt(__io__address + 28, flags);
 		} else {
-			__io__block.writeInt(__io__address + 12, flags);
+			__io__block.writeInt(__io__address + 16, flags);
 		}
 	}
 
@@ -306,9 +349,9 @@ public class Paint extends CFacade {
 	public int getNum_input_samples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 20);
 		}
 	}
 
@@ -320,37 +363,37 @@ public class Paint extends CFacade {
 	public void setNum_input_samples(int num_input_samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, num_input_samples);
+			__io__block.writeInt(__io__address + 32, num_input_samples);
 		} else {
-			__io__block.writeInt(__io__address + 16, num_input_samples);
+			__io__block.writeInt(__io__address + 20, num_input_samples);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'symmetry_flags'.
+	 * @see #__DNA__FIELD__symmetry_flags
 	 */
 	
-	public int getPad() throws IOException
+	public int getSymmetry_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 24);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'symmetry_flags'.
+	 * @see #__DNA__FIELD__symmetry_flags
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setSymmetry_flags(int symmetry_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
+			__io__block.writeInt(__io__address + 36, symmetry_flags);
 		} else {
-			__io__block.writeInt(__io__address + 20, pad);
+			__io__block.writeInt(__io__address + 24, symmetry_flags);
 		}
 	}
 

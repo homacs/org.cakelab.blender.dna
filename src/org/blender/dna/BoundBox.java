@@ -13,30 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'BoundBox'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
  * 
- * 			 The following illustrates the orientation of the
- * 			 bounding box in local space.
- * 			 
- * 			 <pre>
- * 			 
- * 			 Z  Y
- * 			 | /
- * 			 |/
- * 			 .-----X
- * 			 
- * 			 
- * 			     2----------6
- * 			    /|         /|
- * 			   / |        / |
- * 			  1----------5  |
- * 			  |  |       |  |
- * 			  |  3-------|--7
- * 			  | /        | /
- * 			  |/         |/
- * 			  0----------4
- * 			 </pre>
- * 			
  */
 
 @CMetaData(size32=104, size64=104)
@@ -50,13 +27,10 @@ public class BoundBox extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 133;
+	public static final int __DNA__SDNA_INDEX = 137;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,12 +51,6 @@ public class BoundBox extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * One of: 	
-	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
-	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>
-	 * 				</ul>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,9 +99,6 @@ public class BoundBox extends CFacade {
 
 	/**
 	 * Get method for struct member 'vec'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -153,9 +118,6 @@ public class BoundBox extends CFacade {
 
 	/**
 	 * Set method for struct member 'vec'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The 8 vectors with 3 components (xyz) (see class documentation).
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -178,12 +140,6 @@ public class BoundBox extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * One of: 	
-	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
-	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>
-	 * 				</ul>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -198,12 +154,6 @@ public class BoundBox extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * One of: 	
-	 * 				<ul><li>BOUNDBOX_DISABLED</td><td>(1 << 0)</li>
-	 * 				<li>BOUNDBOX_DIRTY </td><td>(1 << 1)</li>
-	 * 				</ul>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1184, size64=1232)
+@CMetaData(size32=1188, size64=1240)
 public class bSound extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bSound extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 296;
+	public static final int __DNA__SDNA_INDEX = 307;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -51,9 +51,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The path to the sound file.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -74,9 +71,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The packed file.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,9 +91,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The handle for audaspace.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,9 +111,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'newpackedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Deprecated; used for loading pre 2.5 files.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,9 +311,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle for cache.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -346,9 +331,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'waveform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Waveform display data.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -369,9 +351,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'playback_handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -389,6 +368,26 @@ public class bSound extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__playback_handle = new long[]{1180, 1224};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mutex'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSound bsound = ...;
+	 * CPointer&lt;Object&gt; p = bsound.__dna__addressof(bSound.__DNA__FIELD__mutex);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_mutex = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mutex'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mutex = new long[]{1184, 1232};
 
 	public bSound(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -436,9 +435,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The path to the sound file.
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -457,9 +453,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The path to the sound file.
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -482,9 +475,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'packedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The packed file.
 	 * @see #__DNA__FIELD__packedfile
 	 */
 	
@@ -502,9 +492,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'packedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The packed file.
 	 * @see #__DNA__FIELD__packedfile
 	 */
 	
@@ -520,9 +507,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The handle for audaspace.
 	 * @see #__DNA__FIELD__handle
 	 */
 	
@@ -540,9 +524,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The handle for audaspace.
 	 * @see #__DNA__FIELD__handle
 	 */
 	
@@ -558,9 +539,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'newpackedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Deprecated; used for loading pre 2.5 files.
 	 * @see #__DNA__FIELD__newpackedfile
 	 */
 	
@@ -578,9 +556,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'newpackedfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Deprecated; used for loading pre 2.5 files.
 	 * @see #__DNA__FIELD__newpackedfile
 	 */
 	
@@ -852,9 +827,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle for cache.
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -872,9 +844,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle for cache.
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -890,9 +859,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'waveform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Waveform display data.
 	 * @see #__DNA__FIELD__waveform
 	 */
 	
@@ -910,9 +876,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'waveform'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Waveform display data.
 	 * @see #__DNA__FIELD__waveform
 	 */
 	
@@ -928,9 +891,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Get method for struct member 'playback_handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle
 	 * @see #__DNA__FIELD__playback_handle
 	 */
 	
@@ -948,9 +908,6 @@ public class bSound extends CFacade {
 
 	/**
 	 * Set method for struct member 'playback_handle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle
 	 * @see #__DNA__FIELD__playback_handle
 	 */
 	
@@ -961,6 +918,38 @@ public class bSound extends CFacade {
 			__io__block.writeLong(__io__address + 1224, __address);
 		} else {
 			__io__block.writeLong(__io__address + 1180, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mutex'.
+	 * @see #__DNA__FIELD__mutex
+	 */
+	
+	public CPointer<Object> getMutex() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1184);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mutex'.
+	 * @see #__DNA__FIELD__mutex
+	 */
+	
+	public void setMutex(CPointer<Object> mutex) throws IOException
+	{
+		long __address = ((mutex == null) ? 0 : mutex.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1232, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1184, __address);
 		}
 	}
 

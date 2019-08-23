@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=108, size64=128)
 public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 497;
+	public static final int __DNA__SDNA_INDEX = 514;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -154,9 +151,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -216,6 +210,46 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{92, 108};
 
 	/**
+	 * Field descriptor (offset) for struct member 'image'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingPlaneTrack movietrackingplanetrack = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingplanetrack.__dna__addressof(MovieTrackingPlaneTrack.__DNA__FIELD__image);
+	 * CPointer&lt;CPointer&lt;Image&gt;&gt; p_image = p.cast(new Class[]{CPointer.class, Image.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'image'</li>
+	 * <li>Signature: 'Image*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__image = new long[]{96, 112};
+
+	/**
+	 * Field descriptor (offset) for struct member 'image_opacity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingPlaneTrack movietrackingplanetrack = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingplanetrack.__dna__addressof(MovieTrackingPlaneTrack.__DNA__FIELD__image_opacity);
+	 * CPointer&lt;Float&gt; p_image_opacity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'image_opacity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__image_opacity = new long[]{100, 120};
+
+	/**
 	 * Field descriptor (offset) for struct member 'last_marker'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -233,27 +267,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__last_marker = new long[]{96, 112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MovieTrackingPlaneTrack movietrackingplanetrack = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingplanetrack.__dna__addressof(MovieTrackingPlaneTrack.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__last_marker = new long[]{104, 124};
 
 	public MovieTrackingPlaneTrack(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -329,9 +343,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -350,9 +361,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -463,9 +471,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -483,9 +488,6 @@ public class MovieTrackingPlaneTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -556,6 +558,66 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'image'.
+	 * @see #__DNA__FIELD__image
+	 */
+	
+	public CPointer<Image> getImage() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
+		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'image'.
+	 * @see #__DNA__FIELD__image
+	 */
+	
+	public void setImage(CPointer<Image> image) throws IOException
+	{
+		long __address = ((image == null) ? 0 : image.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 112, __address);
+		} else {
+			__io__block.writeLong(__io__address + 96, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'image_opacity'.
+	 * @see #__DNA__FIELD__image_opacity
+	 */
+	
+	public float getImage_opacity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 120);
+		} else {
+			return __io__block.readFloat(__io__address + 100);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'image_opacity'.
+	 * @see #__DNA__FIELD__image_opacity
+	 */
+	
+	public void setImage_opacity(float image_opacity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 120, image_opacity);
+		} else {
+			__io__block.writeFloat(__io__address + 100, image_opacity);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'last_marker'.
 	 * @see #__DNA__FIELD__last_marker
 	 */
@@ -563,9 +625,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	public int getLast_marker() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -577,37 +639,9 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	public void setLast_marker(int last_marker) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, last_marker);
+			__io__block.writeInt(__io__address + 124, last_marker);
 		} else {
-			__io__block.writeInt(__io__address + 96, last_marker);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public int getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
-		} else {
-			return __io__block.readInt(__io__address + 100);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(int pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, pad2);
-		} else {
-			__io__block.writeInt(__io__address + 100, pad2);
+			__io__block.writeInt(__io__address + 104, last_marker);
 		}
 	}
 

@@ -27,27 +27,7 @@ public class ColorBand extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 26;
-
-	/**
-	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ColorBand colorband = ...;
-	 * CPointer&lt;Object&gt; p = colorband.__dna__addressof(ColorBand.__DNA__FIELD__flag);
-	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{0, 0};
+	public static final int __DNA__SDNA_INDEX = 27;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
@@ -67,7 +47,7 @@ public class ColorBand extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot = new long[]{2, 2};
+	public static final long[] __DNA__FIELD__tot = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur'.
@@ -87,7 +67,7 @@ public class ColorBand extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cur = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__cur = new long[]{2, 2};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipotype'.
@@ -98,16 +78,76 @@ public class ColorBand extends CFacade {
 	 * <pre>
 	 * ColorBand colorband = ...;
 	 * CPointer&lt;Object&gt; p = colorband.__dna__addressof(ColorBand.__DNA__FIELD__ipotype);
-	 * CPointer&lt;Short&gt; p_ipotype = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_ipotype = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'ipotype'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipotype = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__ipotype = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ipotype_hue'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ColorBand colorband = ...;
+	 * CPointer&lt;Object&gt; p = colorband.__dna__addressof(ColorBand.__DNA__FIELD__ipotype_hue);
+	 * CPointer&lt;Byte&gt; p_ipotype_hue = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ipotype_hue'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ipotype_hue = new long[]{5, 5};
+
+	/**
+	 * Field descriptor (offset) for struct member 'color_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ColorBand colorband = ...;
+	 * CPointer&lt;Object&gt; p = colorband.__dna__addressof(ColorBand.__DNA__FIELD__color_mode);
+	 * CPointer&lt;Byte&gt; p_color_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'color_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__color_mode = new long[]{6, 6};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ColorBand colorband = ...;
+	 * CPointer&lt;Object&gt; p = colorband.__dna__addressof(ColorBand.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{7, 7};
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
@@ -138,34 +178,6 @@ public class ColorBand extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public short getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 0);
-		} else {
-			return __io__block.readShort(__io__address + 0);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(short flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 0, flag);
-		} else {
-			__io__block.writeShort(__io__address + 0, flag);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'tot'.
 	 * @see #__DNA__FIELD__tot
 	 */
@@ -173,9 +185,9 @@ public class ColorBand extends CFacade {
 	public short getTot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2);
+			return __io__block.readShort(__io__address + 0);
 		} else {
-			return __io__block.readShort(__io__address + 2);
+			return __io__block.readShort(__io__address + 0);
 		}
 	}
 
@@ -187,9 +199,9 @@ public class ColorBand extends CFacade {
 	public void setTot(short tot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2, tot);
+			__io__block.writeShort(__io__address + 0, tot);
 		} else {
-			__io__block.writeShort(__io__address + 2, tot);
+			__io__block.writeShort(__io__address + 0, tot);
 		}
 	}
 
@@ -201,9 +213,9 @@ public class ColorBand extends CFacade {
 	public short getCur() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 4);
+			return __io__block.readShort(__io__address + 2);
 		} else {
-			return __io__block.readShort(__io__address + 4);
+			return __io__block.readShort(__io__address + 2);
 		}
 	}
 
@@ -215,9 +227,9 @@ public class ColorBand extends CFacade {
 	public void setCur(short cur) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 4, cur);
+			__io__block.writeShort(__io__address + 2, cur);
 		} else {
-			__io__block.writeShort(__io__address + 4, cur);
+			__io__block.writeShort(__io__address + 2, cur);
 		}
 	}
 
@@ -226,12 +238,12 @@ public class ColorBand extends CFacade {
 	 * @see #__DNA__FIELD__ipotype
 	 */
 	
-	public short getIpotype() throws IOException
+	public byte getIpotype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readByte(__io__address + 4);
 		} else {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readByte(__io__address + 4);
 		}
 	}
 
@@ -240,12 +252,108 @@ public class ColorBand extends CFacade {
 	 * @see #__DNA__FIELD__ipotype
 	 */
 	
-	public void setIpotype(short ipotype) throws IOException
+	public void setIpotype(byte ipotype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 6, ipotype);
+			__io__block.writeByte(__io__address + 4, ipotype);
 		} else {
-			__io__block.writeShort(__io__address + 6, ipotype);
+			__io__block.writeByte(__io__address + 4, ipotype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ipotype_hue'.
+	 * @see #__DNA__FIELD__ipotype_hue
+	 */
+	
+	public byte getIpotype_hue() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 5);
+		} else {
+			return __io__block.readByte(__io__address + 5);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ipotype_hue'.
+	 * @see #__DNA__FIELD__ipotype_hue
+	 */
+	
+	public void setIpotype_hue(byte ipotype_hue) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 5, ipotype_hue);
+		} else {
+			__io__block.writeByte(__io__address + 5, ipotype_hue);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'color_mode'.
+	 * @see #__DNA__FIELD__color_mode
+	 */
+	
+	public byte getColor_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 6);
+		} else {
+			return __io__block.readByte(__io__address + 6);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'color_mode'.
+	 * @see #__DNA__FIELD__color_mode
+	 */
+	
+	public void setColor_mode(byte color_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 6, color_mode);
+		} else {
+			__io__block.writeByte(__io__address + 6, color_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Byte> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 7, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 7, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 7;
+		} else {
+			__dna__offset = 7;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 

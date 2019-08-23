@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=200)
+@CMetaData(size32=192, size64=208)
 public class MovieTrackingTrack extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 495;
+	public static final int __DNA__SDNA_INDEX = 512;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,9 +231,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -357,9 +351,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -380,9 +371,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frames_limit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -403,9 +391,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance from image boundary at which marker stops tracking
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -426,9 +411,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pattern_match'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -449,9 +431,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_model'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -530,6 +509,46 @@ public class MovieTrackingTrack extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__gpd = new long[]{180, 192};
 
+	/**
+	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingTrack movietrackingtrack = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingtrack.__dna__addressof(MovieTrackingTrack.__DNA__FIELD__weight);
+	 * CPointer&lt;Float&gt; p_weight = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'weight'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__weight = new long[]{184, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingTrack movietrackingtrack = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingtrack.__dna__addressof(MovieTrackingTrack.__DNA__FIELD__pad);
+	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{188, 204};
+
 	public MovieTrackingTrack(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -604,9 +623,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -625,9 +641,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of track
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -906,9 +919,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -926,9 +936,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'markers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of markers in track
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -1096,9 +1103,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -1117,9 +1121,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -1142,9 +1143,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'frames_limit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked
 	 * @see #__DNA__FIELD__frames_limit
 	 */
 	
@@ -1159,9 +1157,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'frames_limit'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Every tracking cycle, this number of frames are tracked
 	 * @see #__DNA__FIELD__frames_limit
 	 */
 	
@@ -1176,9 +1171,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance from image boundary at which marker stops tracking
 	 * @see #__DNA__FIELD__margin
 	 */
 	
@@ -1193,9 +1185,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'margin'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Distance from image boundary at which marker stops tracking
 	 * @see #__DNA__FIELD__margin
 	 */
 	
@@ -1210,9 +1199,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'pattern_match'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame
 	 * @see #__DNA__FIELD__pattern_match
 	 */
 	
@@ -1227,9 +1213,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'pattern_match'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Track pattern from given frame when tracking marker to next frame
 	 * @see #__DNA__FIELD__pattern_match
 	 */
 	
@@ -1244,9 +1227,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'motion_model'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking
 	 * @see #__DNA__FIELD__motion_model
 	 */
 	
@@ -1261,9 +1241,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'motion_model'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Default motion model to use for tracking
 	 * @see #__DNA__FIELD__motion_model
 	 */
 	
@@ -1361,6 +1338,62 @@ public class MovieTrackingTrack extends CFacade {
 			__io__block.writeLong(__io__address + 192, __address);
 		} else {
 			__io__block.writeLong(__io__address + 180, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'weight'.
+	 * @see #__DNA__FIELD__weight
+	 */
+	
+	public float getWeight() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 200);
+		} else {
+			return __io__block.readFloat(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'weight'.
+	 * @see #__DNA__FIELD__weight
+	 */
+	
+	public void setWeight(float weight) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 200, weight);
+		} else {
+			__io__block.writeFloat(__io__address + 184, weight);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public float getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 204);
+		} else {
+			return __io__block.readFloat(__io__address + 188);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(float pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 204, pad);
+		} else {
+			__io__block.writeFloat(__io__address + 188, pad);
 		}
 	}
 

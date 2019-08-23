@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=368, size64=432)
+@CMetaData(size32=432, size64=496)
 public class CurvesModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class CurvesModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 254;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -63,7 +63,7 @@ public class CurvesModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'curve_mapping'</li>
 	 * <li>Signature: 'CurveMapping'</li>
-	 * <li>Actual Size (32bit/64bit): 272/320</li>
+	 * <li>Actual Size (32bit/64bit): 336/384</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__curve_mapping = new long[]{96, 112};

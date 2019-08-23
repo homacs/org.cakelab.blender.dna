@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=112, size64=120)
+@CMetaData(size32=120, size64=128)
 public class bEditObjectActuator extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bEditObjectActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 278;
+	public static final int __DNA__SDNA_INDEX = 288;
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
@@ -248,6 +248,66 @@ public class bEditObjectActuator extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__dyn_operation = new long[]{110, 118};
+
+	/**
+	 * Field descriptor (offset) for struct member 'upflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bEditObjectActuator beditobjectactuator = ...;
+	 * CPointer&lt;Object&gt; p = beditobjectactuator.__dna__addressof(bEditObjectActuator.__DNA__FIELD__upflag);
+	 * CPointer&lt;Short&gt; p_upflag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'upflag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__upflag = new long[]{112, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'trackflag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bEditObjectActuator beditobjectactuator = ...;
+	 * CPointer&lt;Object&gt; p = beditobjectactuator.__dna__addressof(bEditObjectActuator.__DNA__FIELD__trackflag);
+	 * CPointer&lt;Short&gt; p_trackflag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'trackflag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__trackflag = new long[]{114, 122};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bEditObjectActuator beditobjectactuator = ...;
+	 * CPointer&lt;Object&gt; p = beditobjectactuator.__dna__addressof(bEditObjectActuator.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{116, 124};
 
 	public bEditObjectActuator(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -606,6 +666,90 @@ public class bEditObjectActuator extends CFacade {
 			__io__block.writeShort(__io__address + 118, dyn_operation);
 		} else {
 			__io__block.writeShort(__io__address + 110, dyn_operation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'upflag'.
+	 * @see #__DNA__FIELD__upflag
+	 */
+	
+	public short getUpflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 120);
+		} else {
+			return __io__block.readShort(__io__address + 112);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'upflag'.
+	 * @see #__DNA__FIELD__upflag
+	 */
+	
+	public void setUpflag(short upflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 120, upflag);
+		} else {
+			__io__block.writeShort(__io__address + 112, upflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'trackflag'.
+	 * @see #__DNA__FIELD__trackflag
+	 */
+	
+	public short getTrackflag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 122);
+		} else {
+			return __io__block.readShort(__io__address + 114);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'trackflag'.
+	 * @see #__DNA__FIELD__trackflag
+	 */
+	
+	public void setTrackflag(short trackflag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 122, trackflag);
+		} else {
+			__io__block.writeShort(__io__address + 114, trackflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 124);
+		} else {
+			return __io__block.readInt(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 124, pad);
+		} else {
+			__io__block.writeInt(__io__address + 116, pad);
 		}
 	}
 

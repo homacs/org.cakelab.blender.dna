@@ -13,12 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ID'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * Represents the ID of any element in DNA which 
- * 					 is stored in a library (see {@link Library}). Those 
- * 					 elements are instances of structs which contain an 
- * 					 embedded member of type ID as their first element.<br/>
- * 					 IDs of the same element type are linked in linked list (see {@link Link})
+ * 
  */
 
 @CMetaData(size32=100, size64=120)
@@ -36,9 +31,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,9 +51,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,9 +91,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lib'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference on the library this library element belongs to.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -125,26 +111,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The name of the element. Names follow a certain convention. 
-	 * 				    <p>
-	 * 				    Names of library elements which have an specific block code, such as 
-	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
-	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
-	 * 				    </p>
-	 * 				    <b>A few examples of names:</b>
-	 * 					<table border="1">
-	 * 					<tr><th>Element type</th><th>Name prefix</th><tr>
-	 * 					<tr><td>{@link BlenderObject}</td><td>"OB"</td></tr>
-	 * 					<tr><td>{@link Mesh}</td><td>"ME"</td></tr>
-	 * 					<tr><td>{@link Material}</td><td>"MA"</td></tr>
-	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,73 +130,7 @@ public class ID extends CFacade {
 	public static final long[] __DNA__FIELD__name = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ID id = ...;
-	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{82, 98};
-
-	/**
-	 * Field descriptor (offset) for struct member 'us'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ID id = ...;
-	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__us);
-	 * CPointer&lt;Short&gt; p_us = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'us'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__us = new long[]{84, 100};
-
-	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * In files usually 1024. One of: <table border="1">
-	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
-	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
-	 * 					<tr><td>LIB_INDIRECT</td><td>2</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_EXPAND</td><td>8</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTEXT</td><td>(LIB_NEED_EXPAND | LIB_EXTERN)</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTIND</td><td>(LIB_NEED_EXPAND | LIB_INDIRECT)</td><td></td><tr>
-	 * 					<tr><td>LIB_READ</td><td>16</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_LINK</td><td>32</td><td></td><tr>
-	 * 					<tr><td>LIB_NEW</td><td>256</td><td></td><tr>
-	 * 					<tr><td>LIB_FAKEUSER</td><td>512</td><td></td><tr>
-	 * 					<tr><td>LIB_DOIT</td><td>1024</td><td>free test flag</td><tr>
-	 * 					<tr><td>LIB_PRE_EXISTING</td><td>2048</td><td>tag existing data before linking so we know what is new</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
-	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
-	 * LIB_... flags report on status of the datablock this ID belongs to.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,13 +147,30 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{86, 102};
+	public static final long[] __DNA__FIELD__flag = new long[]{82, 98};
+
+	/**
+	 * Field descriptor (offset) for struct member 'us'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__us);
+	 * CPointer&lt;Integer&gt; p_us = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'us'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__us = new long[]{84, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,9 +191,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -297,9 +211,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * List of associated properties.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -328,9 +239,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -348,9 +256,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -366,9 +271,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -386,9 +288,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -436,9 +335,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'lib'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference on the library this library element belongs to.
 	 * @see #__DNA__FIELD__lib
 	 */
 	
@@ -456,9 +352,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'lib'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference on the library this library element belongs to.
 	 * @see #__DNA__FIELD__lib
 	 */
 	
@@ -474,26 +367,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The name of the element. Names follow a certain convention. 
-	 * 				    <p>
-	 * 				    Names of library elements which have an specific block code, such as 
-	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
-	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
-	 * 				    </p>
-	 * 				    <b>A few examples of names:</b>
-	 * 					<table border="1">
-	 * 					<tr><th>Element type</th><th>Name prefix</th><tr>
-	 * 					<tr><td>{@link BlenderObject}</td><td>"OB"</td></tr>
-	 * 					<tr><td>{@link Mesh}</td><td>"ME"</td></tr>
-	 * 					<tr><td>{@link Material}</td><td>"MA"</td></tr>
-	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -512,26 +385,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * The name of the element. Names follow a certain convention. 
-	 * 				    <p>
-	 * 				    Names of library elements which have an specific block code, such as 
-	 * 				    Mesh (ME) and Tex (ME), always have the first two ASCII characters of
-	 * 				    the block code as its prefix. Data of blocks with unspecified block 
-	 * 				    code (i.e. {@link BlockCodes#ID_DATA}) have other names.
-	 * 				    </p>
-	 * 				    <b>A few examples of names:</b>
-	 * 					<table border="1">
-	 * 					<tr><th>Element type</th><th>Name prefix</th><tr>
-	 * 					<tr><td>{@link BlenderObject}</td><td>"OB"</td></tr>
-	 * 					<tr><td>{@link Mesh}</td><td>"ME"</td></tr>
-	 * 					<tr><td>{@link Material}</td><td>"MA"</td></tr>
-	 * 					<tr><td>{@link Tex}</td><td>"TE"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MPoly}</td><td>"NGon Face"</td></tr>
-	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
-	 * 					</table><h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -553,14 +406,11 @@ public class ID extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public short getPad() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 98);
@@ -570,129 +420,49 @@ public class ID extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(short pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 98, pad);
-		} else {
-			__io__block.writeShort(__io__address + 82, pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'us'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
-	 * @see #__DNA__FIELD__us
-	 */
-	
-	public short getUs() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
-		} else {
-			return __io__block.readShort(__io__address + 84);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'us'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Reference counter, counts number of references on the corresponding element. If 0, the element will not be stored in a file.
-	 * @see #__DNA__FIELD__us
-	 */
-	
-	public void setUs(short us) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, us);
-		} else {
-			__io__block.writeShort(__io__address + 84, us);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * In files usually 1024. One of: <table border="1">
-	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
-	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
-	 * 					<tr><td>LIB_INDIRECT</td><td>2</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_EXPAND</td><td>8</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTEXT</td><td>(LIB_NEED_EXPAND | LIB_EXTERN)</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTIND</td><td>(LIB_NEED_EXPAND | LIB_INDIRECT)</td><td></td><tr>
-	 * 					<tr><td>LIB_READ</td><td>16</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_LINK</td><td>32</td><td></td><tr>
-	 * 					<tr><td>LIB_NEW</td><td>256</td><td></td><tr>
-	 * 					<tr><td>LIB_FAKEUSER</td><td>512</td><td></td><tr>
-	 * 					<tr><td>LIB_DOIT</td><td>1024</td><td>free test flag</td><tr>
-	 * 					<tr><td>LIB_PRE_EXISTING</td><td>2048</td><td>tag existing data before linking so we know what is new</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
-	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
-	 * LIB_... flags report on status of the datablock this ID belongs to.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public short getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
-		} else {
-			return __io__block.readShort(__io__address + 86);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * In files usually 1024. One of: <table border="1">
-	 * 					<tr><td>LIB_LOCAL</td><td>0</td><td></td><tr>
-	 * 					<tr><td>LIB_EXTERN</td><td>1</td><td></td><tr>
-	 * 					<tr><td>LIB_INDIRECT</td><td>2</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_EXPAND</td><td>8</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTEXT</td><td>(LIB_NEED_EXPAND | LIB_EXTERN)</td><td></td><tr>
-	 * 					<tr><td>LIB_TESTIND</td><td>(LIB_NEED_EXPAND | LIB_INDIRECT)</td><td></td><tr>
-	 * 					<tr><td>LIB_READ</td><td>16</td><td></td><tr>
-	 * 					<tr><td>LIB_NEED_LINK</td><td>32</td><td></td><tr>
-	 * 					<tr><td>LIB_NEW</td><td>256</td><td></td><tr>
-	 * 					<tr><td>LIB_FAKEUSER</td><td>512</td><td></td><tr>
-	 * 					<tr><td>LIB_DOIT</td><td>1024</td><td>free test flag</td><tr>
-	 * 					<tr><td>LIB_PRE_EXISTING</td><td>2048</td><td>tag existing data before linking so we know what is new</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC</td><td>4096</td><td>runtime</td><tr>
-	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
-	 * 					</table>
-	 * 				<h4>Blender Source Code:</h4>
-	 * LIB_... flags report on status of the datablock this ID belongs to.
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, flag);
+			__io__block.writeShort(__io__address + 98, flag);
 		} else {
-			__io__block.writeShort(__io__address + 86, flag);
+			__io__block.writeShort(__io__address + 82, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'us'.
+	 * @see #__DNA__FIELD__us
+	 */
+	
+	public int getUs() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 100);
+		} else {
+			return __io__block.readInt(__io__address + 84);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'us'.
+	 * @see #__DNA__FIELD__us
+	 */
+	
+	public void setUs(int us) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 100, us);
+		} else {
+			__io__block.writeInt(__io__address + 84, us);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'icon_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * @see #__DNA__FIELD__icon_id
 	 */
 	
@@ -707,9 +477,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'icon_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Always 0 in files. Will be recalculated base on the library element type when loaded.
 	 * @see #__DNA__FIELD__icon_id
 	 */
 	
@@ -724,9 +491,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -741,9 +505,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * padding for alignment
 	 * @see #__DNA__FIELD__pad2
 	 */
 	
@@ -758,9 +519,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Get method for struct member 'properties'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * List of associated properties.
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -778,9 +536,6 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'properties'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * List of associated properties.
 	 * @see #__DNA__FIELD__properties
 	 */
 	

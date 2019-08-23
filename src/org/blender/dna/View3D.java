@@ -27,7 +27,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 180;
+	public static final int __DNA__SDNA_INDEX = 186;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -511,9 +511,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -893,24 +890,24 @@ public class View3D extends CFacade {
 	public static final long[] __DNA__FIELD__twflag = new long[]{253, 293};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'flag3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * View3D view3d = ...;
-	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__flag3);
+	 * CPointer&lt;Short&gt; p_flag3 = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'char[2]'</li>
+	 * <li>Field: 'flag3'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{254, 294};
+	public static final long[] __DNA__FIELD__flag3 = new long[]{254, 294};
 
 	/**
 	 * Field descriptor (offset) for struct member 'afterdraw_transp'.
@@ -1890,9 +1887,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER
 	 * @see #__DNA__FIELD__drawtype
 	 */
 	
@@ -1907,9 +1901,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'drawtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * The drawing mode for the 3d display. Set to OB_BOUNDBOX, OB_WIRE, OB_SOLID, OB_TEXTURE, OB_MATERIAL or OB_RENDER
 	 * @see #__DNA__FIELD__drawtype
 	 */
 	
@@ -2451,42 +2442,30 @@ public class View3D extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'flag3'.
+	 * @see #__DNA__FIELD__flag3
 	 */
 	
-	public CArrayFacade<Byte> getPad2() throws IOException
+	public short getFlag3() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 294, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 294);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 254, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 254);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'flag3'.
+	 * @see #__DNA__FIELD__flag3
 	 */
 	
-	public void setPad2(CArrayFacade<Byte> pad2) throws IOException
+	public void setFlag3(short flag3) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 294;
+			__io__block.writeShort(__io__address + 294, flag3);
 		} else {
-			__dna__offset = 254;
-		}
-		if (__io__equals(pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
-		} else {
-			__io__generic__copy( getPad2(), pad2);
+			__io__block.writeShort(__io__address + 254, flag3);
 		}
 	}
 

@@ -13,9 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'IDProperty'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * ID properties are a generic method to store a linked 
- * 					list of additional information at IDs (see {@link ID}.
+ * 
  */
 
 @CMetaData(size32=108, size64=128)
@@ -33,9 +31,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,9 +51,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,20 +71,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Type of the property data. One of
-	 * 						<pre>
-	 * 								IDP_STRING		0
-	 * 								IDP_INT			1
-	 * 								IDP_FLOAT		2
-	 * 								IDP_ARRAY		5
-	 * 								IDP_GROUP		6
-	 * 								IDP_ID			7
-	 * 								IDP_DOUBLE		8
-	 * 								IDP_IDPARRAY	9
-	 * 								IDP_NUMTYPES	10
-	 * 						</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -113,13 +91,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Subtype of the property data. One of
-	 * 						<pre>
-	 * 							IDP_STRING_SUB_UTF8  0 ( default )
-	 * 							IDP_STRING_SUB_BYTE  1 ( arbitrary byte array, _not_ null terminated )
-	 * 						</pre>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,9 +131,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,9 +151,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'saved'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -206,9 +171,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,10 +191,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -253,12 +211,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totallen'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * totallen is total length of allocated array/string, including a buffer.
-	 * 	 							Note that the buffering is mild; the code comes from python's list 
-	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,9 +239,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -307,9 +256,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on the next element in linked list
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -325,9 +271,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -345,9 +288,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * reference on previous element in linked list
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -363,20 +303,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Type of the property data. One of
-	 * 						<pre>
-	 * 								IDP_STRING		0
-	 * 								IDP_INT			1
-	 * 								IDP_FLOAT		2
-	 * 								IDP_ARRAY		5
-	 * 								IDP_GROUP		6
-	 * 								IDP_ID			7
-	 * 								IDP_DOUBLE		8
-	 * 								IDP_IDPARRAY	9
-	 * 								IDP_NUMTYPES	10
-	 * 						</pre>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -391,20 +317,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Type of the property data. One of
-	 * 						<pre>
-	 * 								IDP_STRING		0
-	 * 								IDP_INT			1
-	 * 								IDP_FLOAT		2
-	 * 								IDP_ARRAY		5
-	 * 								IDP_GROUP		6
-	 * 								IDP_ID			7
-	 * 								IDP_DOUBLE		8
-	 * 								IDP_IDPARRAY	9
-	 * 								IDP_NUMTYPES	10
-	 * 						</pre>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -419,13 +331,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'subtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Subtype of the property data. One of
-	 * 						<pre>
-	 * 							IDP_STRING_SUB_UTF8  0 ( default )
-	 * 							IDP_STRING_SUB_BYTE  1 ( arbitrary byte array, _not_ null terminated )
-	 * 						</pre>
 	 * @see #__DNA__FIELD__subtype
 	 */
 	
@@ -440,13 +345,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'subtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Subtype of the property data. One of
-	 * 						<pre>
-	 * 							IDP_STRING_SUB_UTF8  0 ( default )
-	 * 							IDP_STRING_SUB_BYTE  1 ( arbitrary byte array, _not_ null terminated )
-	 * 						</pre>
 	 * @see #__DNA__FIELD__subtype
 	 */
 	
@@ -489,9 +387,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -510,9 +405,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -535,9 +427,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'saved'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.
 	 * @see #__DNA__FIELD__saved
 	 */
 	
@@ -552,9 +441,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'saved'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * saved is used to indicate if this struct has been saved yet.
 	 * @see #__DNA__FIELD__saved
 	 */
 	
@@ -569,9 +455,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -586,9 +469,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * properties' data. note, alignment for 64 bits
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -611,10 +491,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'len'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -629,10 +505,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'len'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * array length, also (this is important!) string length + 1.
-	 * 	          			the idea is to be able to reuse array realloc functions on strings.
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -647,12 +519,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Get method for struct member 'totallen'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * totallen is total length of allocated array/string, including a buffer.
-	 * 	 							Note that the buffering is mild; the code comes from python's list 
-	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.
 	 * @see #__DNA__FIELD__totallen
 	 */
 	
@@ -667,12 +533,6 @@ public class IDProperty extends CFacade {
 
 	/**
 	 * Set method for struct member 'totallen'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * totallen is total length of allocated array/string, including a buffer.
-	 * 	 							Note that the buffering is mild; the code comes from python's list 
-	 * 	 							implementation. Strings and arrays are both buffered, though the buffer
-	 * 								isn't saved.
 	 * @see #__DNA__FIELD__totallen
 	 */
 	

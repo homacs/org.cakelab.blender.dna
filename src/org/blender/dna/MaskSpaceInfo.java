@@ -27,7 +27,7 @@ public class MaskSpaceInfo extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 191;
+	public static final int __DNA__SDNA_INDEX = 197;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
@@ -90,6 +90,26 @@ public class MaskSpaceInfo extends CFacade {
 	public static final long[] __DNA__FIELD__draw_type = new long[]{5, 9};
 
 	/**
+	 * Field descriptor (offset) for struct member 'overlay_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MaskSpaceInfo maskspaceinfo = ...;
+	 * CPointer&lt;Object&gt; p = maskspaceinfo.__dna__addressof(MaskSpaceInfo.__DNA__FIELD__overlay_mode);
+	 * CPointer&lt;Byte&gt; p_overlay_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'overlay_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__overlay_mode = new long[]{6, 10};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -103,11 +123,11 @@ public class MaskSpaceInfo extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad3'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{6, 10};
+	public static final long[] __DNA__FIELD__pad3 = new long[]{7, 11};
 
 	public MaskSpaceInfo(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -206,6 +226,34 @@ public class MaskSpaceInfo extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'overlay_mode'.
+	 * @see #__DNA__FIELD__overlay_mode
+	 */
+	
+	public byte getOverlay_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 10);
+		} else {
+			return __io__block.readByte(__io__address + 6);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'overlay_mode'.
+	 * @see #__DNA__FIELD__overlay_mode
+	 */
+	
+	public void setOverlay_mode(byte overlay_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 10, overlay_mode);
+		} else {
+			__io__block.writeByte(__io__address + 6, overlay_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pad3'.
 	 * @see #__DNA__FIELD__pad3
 	 */
@@ -214,12 +262,12 @@ public class MaskSpaceInfo extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 7, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -232,9 +280,9 @@ public class MaskSpaceInfo extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10;
+			__dna__offset = 11;
 		} else {
-			__dna__offset = 6;
+			__dna__offset = 7;
 		}
 		if (__io__equals(pad3, __io__address + __dna__offset)) {
 			return;

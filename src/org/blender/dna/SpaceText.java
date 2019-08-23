@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=648, size64=672)
+@CMetaData(size32=656, size64=680)
 public class SpaceText extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceText extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 195;
+	public static final int __DNA__SDNA_INDEX = 201;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -668,6 +668,26 @@ public class SpaceText extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__drawcache = new long[]{644, 664};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scroll_accum'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceText spacetext = ...;
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__scroll_accum);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scroll_accum = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scroll_accum'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scroll_accum = new long[]{648, 672};
 
 	public SpaceText(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1658,6 +1678,46 @@ public class SpaceText extends CFacade {
 			__io__block.writeLong(__io__address + 664, __address);
 		} else {
 			__io__block.writeLong(__io__address + 644, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scroll_accum'.
+	 * @see #__DNA__FIELD__scroll_accum
+	 */
+	
+	public CArrayFacade<Float> getScroll_accum() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scroll_accum'.
+	 * @see #__DNA__FIELD__scroll_accum
+	 */
+	
+	public void setScroll_accum(CArrayFacade<Float> scroll_accum) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 672;
+		} else {
+			__dna__offset = 648;
+		}
+		if (__io__equals(scroll_accum, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scroll_accum)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scroll_accum);
+		} else {
+			__io__generic__copy( getScroll_accum(), scroll_accum);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=172, size64=192)
+@CMetaData(size32=212, size64=232)
 public class bGPDlayer extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bGPDlayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 441;
+	public static final int __DNA__SDNA_INDEX = 458;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -118,13 +118,13 @@ public class bGPDlayer extends CFacade {
 	 * <pre>
 	 * bGPDlayer bgpdlayer = ...;
 	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{20, 40};
@@ -147,7 +147,7 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness = new long[]{24, 44};
+	public static final long[] __DNA__FIELD__thickness = new long[]{22, 42};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gstep'.
@@ -167,7 +167,67 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gstep = new long[]{26, 46};
+	public static final long[] __DNA__FIELD__gstep = new long[]{24, 44};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gstep_next'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gstep_next);
+	 * CPointer&lt;Short&gt; p_gstep_next = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gstep_next'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gstep_next = new long[]{26, 46};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gcolor_prev'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_prev);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_prev = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gcolor_prev'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gcolor_prev = new long[]{28, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gcolor_next'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_next);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_next = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gcolor_next'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gcolor_next = new long[]{40, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
@@ -187,7 +247,27 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color = new long[]{28, 48};
+	public static final long[] __DNA__FIELD__color = new long[]{52, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fill'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__fill);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_fill = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fill'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fill = new long[]{68, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
@@ -207,7 +287,7 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 128/128</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info = new long[]{44, 64};
+	public static final long[] __DNA__FIELD__info = new long[]{84, 104};
 
 	public bGPDlayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -354,12 +434,12 @@ public class bGPDlayer extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getFlag() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readShort(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readShort(__io__address + 20);
 		}
 	}
 
@@ -368,12 +448,12 @@ public class bGPDlayer extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, flag);
+			__io__block.writeShort(__io__address + 40, flag);
 		} else {
-			__io__block.writeInt(__io__address + 20, flag);
+			__io__block.writeShort(__io__address + 20, flag);
 		}
 	}
 
@@ -385,9 +465,9 @@ public class bGPDlayer extends CFacade {
 	public short getThickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 44);
+			return __io__block.readShort(__io__address + 42);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 22);
 		}
 	}
 
@@ -399,9 +479,9 @@ public class bGPDlayer extends CFacade {
 	public void setThickness(short thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 44, thickness);
+			__io__block.writeShort(__io__address + 42, thickness);
 		} else {
-			__io__block.writeShort(__io__address + 24, thickness);
+			__io__block.writeShort(__io__address + 22, thickness);
 		}
 	}
 
@@ -413,9 +493,9 @@ public class bGPDlayer extends CFacade {
 	public short getGstep() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 46);
+			return __io__block.readShort(__io__address + 44);
 		} else {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 24);
 		}
 	}
 
@@ -427,9 +507,117 @@ public class bGPDlayer extends CFacade {
 	public void setGstep(short gstep) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 46, gstep);
+			__io__block.writeShort(__io__address + 44, gstep);
 		} else {
-			__io__block.writeShort(__io__address + 26, gstep);
+			__io__block.writeShort(__io__address + 24, gstep);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gstep_next'.
+	 * @see #__DNA__FIELD__gstep_next
+	 */
+	
+	public short getGstep_next() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 46);
+		} else {
+			return __io__block.readShort(__io__address + 26);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gstep_next'.
+	 * @see #__DNA__FIELD__gstep_next
+	 */
+	
+	public void setGstep_next(short gstep_next) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 46, gstep_next);
+		} else {
+			__io__block.writeShort(__io__address + 26, gstep_next);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gcolor_prev'.
+	 * @see #__DNA__FIELD__gcolor_prev
+	 */
+	
+	public CArrayFacade<Float> getGcolor_prev() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gcolor_prev'.
+	 * @see #__DNA__FIELD__gcolor_prev
+	 */
+	
+	public void setGcolor_prev(CArrayFacade<Float> gcolor_prev) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 48;
+		} else {
+			__dna__offset = 28;
+		}
+		if (__io__equals(gcolor_prev, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gcolor_prev)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_prev);
+		} else {
+			__io__generic__copy( getGcolor_prev(), gcolor_prev);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gcolor_next'.
+	 * @see #__DNA__FIELD__gcolor_next
+	 */
+	
+	public CArrayFacade<Float> getGcolor_next() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gcolor_next'.
+	 * @see #__DNA__FIELD__gcolor_next
+	 */
+	
+	public void setGcolor_next(CArrayFacade<Float> gcolor_next) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 60;
+		} else {
+			__dna__offset = 40;
+		}
+		if (__io__equals(gcolor_next, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gcolor_next)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_next);
+		} else {
+			__io__generic__copy( getGcolor_next(), gcolor_next);
 		}
 	}
 
@@ -445,9 +633,9 @@ public class bGPDlayer extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -460,9 +648,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 52;
 		}
 		if (__io__equals(color, __io__address + __dna__offset)) {
 			return;
@@ -470,6 +658,46 @@ public class bGPDlayer extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, color);
 		} else {
 			__io__generic__copy( getColor(), color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fill'.
+	 * @see #__DNA__FIELD__fill
+	 */
+	
+	public CArrayFacade<Float> getFill() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fill'.
+	 * @see #__DNA__FIELD__fill
+	 */
+	
+	public void setFill(CArrayFacade<Float> fill) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 88;
+		} else {
+			__dna__offset = 68;
+		}
+		if (__io__equals(fill, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, fill)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, fill);
+		} else {
+			__io__generic__copy( getFill(), fill);
 		}
 	}
 
@@ -485,9 +713,9 @@ public class bGPDlayer extends CFacade {
 			128
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -500,9 +728,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 104;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 84;
 		}
 		if (__io__equals(info, __io__address + __dna__offset)) {
 			return;

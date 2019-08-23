@@ -26,7 +26,7 @@ public class FMod_Noise extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 459;
+	public static final int __DNA__SDNA_INDEX = 476;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -89,24 +89,24 @@ public class FMod_Noise extends CFacade {
 	public static final long[] __DNA__FIELD__phase = new long[]{8, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FMod_Noise fmod_noise = ...;
-	 * CPointer&lt;Object&gt; p = fmod_noise.__dna__addressof(FMod_Noise.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = fmod_noise.__dna__addressof(FMod_Noise.__DNA__FIELD__offset);
+	 * CPointer&lt;Float&gt; p_offset = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'offset'</li>
 	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__offset = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'depth'.
@@ -241,11 +241,11 @@ public class FMod_Noise extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'offset'.
+	 * @see #__DNA__FIELD__offset
 	 */
 	
-	public float getPad() throws IOException
+	public float getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 12);
@@ -255,16 +255,16 @@ public class FMod_Noise extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'offset'.
+	 * @see #__DNA__FIELD__offset
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void setOffset(float offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 12, pad);
+			__io__block.writeFloat(__io__address + 12, offset);
 		} else {
-			__io__block.writeFloat(__io__address + 12, pad);
+			__io__block.writeFloat(__io__address + 12, offset);
 		}
 	}
 

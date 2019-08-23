@@ -27,7 +27,7 @@ public class MovieTrackingMarker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 494;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pos'.
@@ -51,9 +51,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pattern_corners'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -74,9 +71,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Left-bottom corner of search area in normalized coordinates relative to marker position
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,9 +91,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,9 +199,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'pattern_corners'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	
@@ -230,9 +218,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'pattern_corners'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Array of coordinates which represents pattern's corners in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__pattern_corners
 	 */
 	
@@ -255,9 +240,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Left-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_min
 	 */
 	
@@ -276,9 +258,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Left-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_min
 	 */
 	
@@ -301,9 +280,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_max
 	 */
 	
@@ -322,9 +298,6 @@ public class MovieTrackingMarker extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Right-bottom corner of search area in normalized coordinates relative to marker position
 	 * @see #__DNA__FIELD__search_max
 	 */
 	

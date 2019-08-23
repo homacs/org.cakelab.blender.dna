@@ -27,7 +27,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 485;
+	public static final int __DNA__SDNA_INDEX = 502;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
@@ -91,9 +91,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_texture'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture that controls emission strength
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -294,9 +291,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for smoke emitted from inside the mesh volume
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -317,9 +311,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'surface_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from mesh surface to emit smoke
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -340,9 +331,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle size in simulation cells
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -363,9 +351,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -386,9 +371,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -409,9 +391,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z-offset of texture mapping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -676,9 +655,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'noise_texture'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture that controls emission strength
 	 * @see #__DNA__FIELD__noise_texture
 	 */
 	
@@ -696,9 +672,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'noise_texture'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture that controls emission strength
 	 * @see #__DNA__FIELD__noise_texture
 	 */
 	
@@ -982,9 +955,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'volume_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for smoke emitted from inside the mesh volume
 	 * @see #__DNA__FIELD__volume_density
 	 */
 	
@@ -999,9 +969,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'volume_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Factor for smoke emitted from inside the mesh volume
 	 * @see #__DNA__FIELD__volume_density
 	 */
 	
@@ -1016,9 +983,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'surface_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from mesh surface to emit smoke
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	
@@ -1033,9 +997,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'surface_distance'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum distance from mesh surface to emit smoke
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	
@@ -1050,9 +1011,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'particle_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle size in simulation cells
 	 * @see #__DNA__FIELD__particle_size
 	 */
 	
@@ -1067,9 +1025,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'particle_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Particle size in simulation cells
 	 * @see #__DNA__FIELD__particle_size
 	 */
 	
@@ -1084,9 +1039,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * @see #__DNA__FIELD__subframes
 	 */
 	
@@ -1101,9 +1053,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'subframes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of additional samples to take between frames to improve quality of fast moving flows
 	 * @see #__DNA__FIELD__subframes
 	 */
 	
@@ -1118,9 +1067,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping
 	 * @see #__DNA__FIELD__texture_size
 	 */
 	
@@ -1135,9 +1081,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture_size'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of texture mapping
 	 * @see #__DNA__FIELD__texture_size
 	 */
 	
@@ -1152,9 +1095,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'texture_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z-offset of texture mapping
 	 * @see #__DNA__FIELD__texture_offset
 	 */
 	
@@ -1169,9 +1109,6 @@ public class SmokeFlowSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'texture_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z-offset of texture mapping
 	 * @see #__DNA__FIELD__texture_offset
 	 */
 	

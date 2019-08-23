@@ -31,25 +31,25 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 269;
+	public static final short BLENDER_VERSION = 272;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 0;
+	public static final short BLENDER_SUBVERSION = 2;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINVERSION = 262;
+	public static final short BLENDER_MINVERSION = 270;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINSUBVERSION = 0;
+	public static final short BLENDER_MINSUBVERSION = 5;
 
 	/**Linkage between main libraries.
 	 */
@@ -187,6 +187,16 @@ public class MainLib extends MainLibBase {
 	 * See {@link Brush} for documentation.
 	 */
 	private Brush brush;
+
+	/**
+	 * See {@link Palette} for documentation.
+	 */
+	private Palette palette;
+
+	/**
+	 * See {@link PaintCurve} for documentation.
+	 */
+	private PaintCurve paintCurve;
 
 	/**
 	 * See {@link ParticleSettings} for documentation.
@@ -647,6 +657,34 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setBrush(Brush brush) {
 		this.brush = brush;
+	}
+
+	/**
+	 * See {@link Palette} for documentation.
+	 */
+	public Palette getPalette(){
+		return palette;
+	}
+
+	/**
+	 * See {@link Palette} for documentation.
+	 */
+	public void setPalette(Palette palette) {
+		this.palette = palette;
+	}
+
+	/**
+	 * See {@link PaintCurve} for documentation.
+	 */
+	public PaintCurve getPaintCurve(){
+		return paintCurve;
+	}
+
+	/**
+	 * See {@link PaintCurve} for documentation.
+	 */
+	public void setPaintCurve(PaintCurve paintCurve) {
+		this.paintCurve = paintCurve;
 	}
 
 	/**

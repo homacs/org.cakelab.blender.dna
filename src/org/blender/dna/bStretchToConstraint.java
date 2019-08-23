@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=84, size64=88)
+@CMetaData(size32=100, size64=104)
 public class bStretchToConstraint extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bStretchToConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 341;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -50,6 +50,26 @@ public class bStretchToConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__tar = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bStretchToConstraint bstretchtoconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bstretchtoconstraint.__dna__addressof(bStretchToConstraint.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'volmode'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -67,7 +87,7 @@ public class bStretchToConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volmode = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__volmode = new long[]{8, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane'.
@@ -87,7 +107,7 @@ public class bStretchToConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plane = new long[]{8, 12};
+	public static final long[] __DNA__FIELD__plane = new long[]{12, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orglength'.
@@ -107,7 +127,7 @@ public class bStretchToConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orglength = new long[]{12, 16};
+	public static final long[] __DNA__FIELD__orglength = new long[]{16, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bulge'.
@@ -127,7 +147,67 @@ public class bStretchToConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bulge = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__bulge = new long[]{20, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_min'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bStretchToConstraint bstretchtoconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bstretchtoconstraint.__dna__addressof(bStretchToConstraint.__DNA__FIELD__bulge_min);
+	 * CPointer&lt;Float&gt; p_bulge_min = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_min'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_min = new long[]{24, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_max'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bStretchToConstraint bstretchtoconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bstretchtoconstraint.__dna__addressof(bStretchToConstraint.__DNA__FIELD__bulge_max);
+	 * CPointer&lt;Float&gt; p_bulge_max = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_max'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_max = new long[]{28, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bulge_smooth'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bStretchToConstraint bstretchtoconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bstretchtoconstraint.__dna__addressof(bStretchToConstraint.__DNA__FIELD__bulge_smooth);
+	 * CPointer&lt;Float&gt; p_bulge_smooth = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bulge_smooth'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bulge_smooth = new long[]{32, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
@@ -147,7 +227,7 @@ public class bStretchToConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{20, 24};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{36, 40};
 
 	public bStretchToConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -190,6 +270,34 @@ public class bStretchToConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public int getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 8);
+		} else {
+			return __io__block.readInt(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 8, flag);
+		} else {
+			__io__block.writeInt(__io__address + 4, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'volmode'.
 	 * @see #__DNA__FIELD__volmode
 	 */
@@ -197,9 +305,9 @@ public class bStretchToConstraint extends CFacade {
 	public int getVolmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readInt(__io__address + 12);
 		} else {
-			return __io__block.readInt(__io__address + 4);
+			return __io__block.readInt(__io__address + 8);
 		}
 	}
 
@@ -211,9 +319,9 @@ public class bStretchToConstraint extends CFacade {
 	public void setVolmode(int volmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8, volmode);
+			__io__block.writeInt(__io__address + 12, volmode);
 		} else {
-			__io__block.writeInt(__io__address + 4, volmode);
+			__io__block.writeInt(__io__address + 8, volmode);
 		}
 	}
 
@@ -225,9 +333,9 @@ public class bStretchToConstraint extends CFacade {
 	public int getPlane() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readInt(__io__address + 16);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readInt(__io__address + 12);
 		}
 	}
 
@@ -239,9 +347,9 @@ public class bStretchToConstraint extends CFacade {
 	public void setPlane(int plane) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, plane);
+			__io__block.writeInt(__io__address + 16, plane);
 		} else {
-			__io__block.writeInt(__io__address + 8, plane);
+			__io__block.writeInt(__io__address + 12, plane);
 		}
 	}
 
@@ -253,9 +361,9 @@ public class bStretchToConstraint extends CFacade {
 	public float getOrglength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 20);
 		} else {
-			return __io__block.readFloat(__io__address + 12);
+			return __io__block.readFloat(__io__address + 16);
 		}
 	}
 
@@ -267,9 +375,9 @@ public class bStretchToConstraint extends CFacade {
 	public void setOrglength(float orglength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 16, orglength);
+			__io__block.writeFloat(__io__address + 20, orglength);
 		} else {
-			__io__block.writeFloat(__io__address + 12, orglength);
+			__io__block.writeFloat(__io__address + 16, orglength);
 		}
 	}
 
@@ -281,9 +389,9 @@ public class bStretchToConstraint extends CFacade {
 	public float getBulge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readFloat(__io__address + 24);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -295,9 +403,93 @@ public class bStretchToConstraint extends CFacade {
 	public void setBulge(float bulge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 20, bulge);
+			__io__block.writeFloat(__io__address + 24, bulge);
 		} else {
-			__io__block.writeFloat(__io__address + 16, bulge);
+			__io__block.writeFloat(__io__address + 20, bulge);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_min'.
+	 * @see #__DNA__FIELD__bulge_min
+	 */
+	
+	public float getBulge_min() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_min'.
+	 * @see #__DNA__FIELD__bulge_min
+	 */
+	
+	public void setBulge_min(float bulge_min) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 28, bulge_min);
+		} else {
+			__io__block.writeFloat(__io__address + 24, bulge_min);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_max'.
+	 * @see #__DNA__FIELD__bulge_max
+	 */
+	
+	public float getBulge_max() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_max'.
+	 * @see #__DNA__FIELD__bulge_max
+	 */
+	
+	public void setBulge_max(float bulge_max) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 32, bulge_max);
+		} else {
+			__io__block.writeFloat(__io__address + 28, bulge_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bulge_smooth'.
+	 * @see #__DNA__FIELD__bulge_smooth
+	 */
+	
+	public float getBulge_smooth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 36);
+		} else {
+			return __io__block.readFloat(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bulge_smooth'.
+	 * @see #__DNA__FIELD__bulge_smooth
+	 */
+	
+	public void setBulge_smooth(float bulge_smooth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 36, bulge_smooth);
+		} else {
+			__io__block.writeFloat(__io__address + 32, bulge_smooth);
 		}
 	}
 
@@ -313,9 +505,9 @@ public class bStretchToConstraint extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -328,9 +520,9 @@ public class bStretchToConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 20;
+			__dna__offset = 36;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;

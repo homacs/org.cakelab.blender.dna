@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=248, size64=304)
+@CMetaData(size32=256, size64=312)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 190;
+	public static final int __DNA__SDNA_INDEX = 196;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -370,6 +370,46 @@ public class SpaceSeq extends CFacade {
 	public static final long[] __DNA__FIELD__overlay_type = new long[]{216, 244};
 
 	/**
+	 * Field descriptor (offset) for struct member 'draw_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__draw_flag);
+	 * CPointer&lt;Integer&gt; p_draw_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'draw_flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__draw_flag = new long[]{220, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__pad);
+	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{224, 252};
+
+	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -387,7 +427,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{220, 248};
+	public static final long[] __DNA__FIELD__gpd = new long[]{228, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
@@ -407,7 +447,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scopes = new long[]{224, 256};
+	public static final long[] __DNA__FIELD__scopes = new long[]{232, 264};
 
 	public SpaceSeq(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -930,6 +970,62 @@ public class SpaceSeq extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'draw_flag'.
+	 * @see #__DNA__FIELD__draw_flag
+	 */
+	
+	public int getDraw_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 248);
+		} else {
+			return __io__block.readInt(__io__address + 220);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'draw_flag'.
+	 * @see #__DNA__FIELD__draw_flag
+	 */
+	
+	public void setDraw_flag(int draw_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 248, draw_flag);
+		} else {
+			__io__block.writeInt(__io__address + 220, draw_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public int getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 252);
+		} else {
+			return __io__block.readInt(__io__address + 224);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(int pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 252, pad);
+		} else {
+			__io__block.writeInt(__io__address + 224, pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'gpd'.
 	 * @see #__DNA__FIELD__gpd
 	 */
@@ -938,9 +1034,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 228);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -955,9 +1051,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 228, __address);
 		}
 	}
 
@@ -969,9 +1065,9 @@ public class SpaceSeq extends CFacade {
 	public SequencerScopes getScopes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SequencerScopes(__io__address + 256, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 264, __io__block, __io__blockTable);
 		} else {
-			return new SequencerScopes(__io__address + 224, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
@@ -984,9 +1080,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 232;
 		}
 		if (__io__equals(scopes, __io__address + __dna__offset)) {
 			return;

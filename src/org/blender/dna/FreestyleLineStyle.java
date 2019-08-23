@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=232, size64=288)
+@CMetaData(size32=332, size64=464)
 public class FreestyleLineStyle extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 550;
+	public static final int __DNA__SDNA_INDEX = 567;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -130,9 +131,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -153,9 +151,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base line thickness, possibly modified by line thickness modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -176,9 +171,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_position'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the position of stroke thickness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,9 +191,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -242,9 +231,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'caps'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the shape of both ends of strokes
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -265,9 +251,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'chaining'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the way how feature edges are jointed to form chains
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -288,9 +271,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rounds'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of rounds in a sketchy multiple touch
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,9 +291,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Curvilinear 2D length for chain splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -413,10 +390,27 @@ public class FreestyleLineStyle extends CFacade {
 	public static final long[] __DNA__FIELD__max_length = new long[]{164, 188};
 
 	/**
+	 * Field descriptor (offset) for struct member 'chain_count'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__chain_count);
+	 * CPointer&lt;Integer&gt; p_chain_count = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'chain_count'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__chain_count = new long[]{168, 192};
+
+	/**
 	 * Field descriptor (offset) for struct member 'split_dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -433,13 +427,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash1 = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__split_dash1 = new long[]{172, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -456,13 +447,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap1 = new long[]{170, 194};
+	public static final long[] __DNA__FIELD__split_gap1 = new long[]{174, 198};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -479,13 +467,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash2 = new long[]{172, 196};
+	public static final long[] __DNA__FIELD__split_dash2 = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -502,13 +487,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap2 = new long[]{174, 198};
+	public static final long[] __DNA__FIELD__split_gap2 = new long[]{178, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -525,13 +507,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_dash3 = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__split_dash3 = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'split_gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for splitting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -548,7 +527,127 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__split_gap3 = new long[]{178, 202};
+	public static final long[] __DNA__FIELD__split_gap3 = new long[]{182, 206};
+
+	/**
+	 * Field descriptor (offset) for struct member 'sort_key'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__sort_key);
+	 * CPointer&lt;Integer&gt; p_sort_key = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sort_key'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sort_key = new long[]{184, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'integration_type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__integration_type);
+	 * CPointer&lt;Integer&gt; p_integration_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'integration_type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__integration_type = new long[]{188, 212};
+
+	/**
+	 * Field descriptor (offset) for struct member 'texstep'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__texstep);
+	 * CPointer&lt;Float&gt; p_texstep = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'texstep'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__texstep = new long[]{192, 216};
+
+	/**
+	 * Field descriptor (offset) for struct member 'texact'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__texact);
+	 * CPointer&lt;Short&gt; p_texact = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'texact'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__texact = new long[]{196, 220};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pr_texture'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__pr_texture);
+	 * CPointer&lt;Short&gt; p_pr_texture = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pr_texture'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pr_texture = new long[]{198, 222};
+
+	/**
+	 * Field descriptor (offset) for struct member 'use_nodes'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__use_nodes);
+	 * CPointer&lt;Short&gt; p_use_nodes = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_nodes'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_nodes = new long[]{200, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pad'.
@@ -559,22 +658,19 @@ public class FreestyleLineStyle extends CFacade {
 	 * <pre>
 	 * FreestyleLineStyle freestylelinestyle = ...;
 	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__pad = new long[]{202, 226};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -591,13 +687,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash1 = new long[]{184, 208};
+	public static final long[] __DNA__FIELD__dash1 = new long[]{208, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -614,13 +707,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap1 = new long[]{186, 210};
+	public static final long[] __DNA__FIELD__gap1 = new long[]{210, 234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -637,13 +727,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash2 = new long[]{188, 212};
+	public static final long[] __DNA__FIELD__dash2 = new long[]{212, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -660,13 +747,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap2 = new long[]{190, 214};
+	public static final long[] __DNA__FIELD__gap2 = new long[]{214, 238};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -683,13 +767,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash3 = new long[]{192, 216};
+	public static final long[] __DNA__FIELD__dash3 = new long[]{216, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for dashed lines
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -706,13 +787,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gap3 = new long[]{194, 218};
+	public static final long[] __DNA__FIELD__gap3 = new long[]{218, 242};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -729,13 +807,50 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panel = new long[]{196, 220};
+	public static final long[] __DNA__FIELD__panel = new long[]{220, 244};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mtex'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__mtex);
+	 * CPointer&lt;CArrayFacade&lt;CPointer&lt;MTex&gt;&gt;&gt; p_mtex = p.cast(new Class[]{CArrayFacade.class, CPointer.class, MTex.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mtex'</li>
+	 * <li>Signature: 'MTex*[18]'</li>
+	 * <li>Actual Size (32bit/64bit): 72/144</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mtex = new long[]{224, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nodetree'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FreestyleLineStyle freestylelinestyle = ...;
+	 * CPointer&lt;Object&gt; p = freestylelinestyle.__dna__addressof(FreestyleLineStyle.__DNA__FIELD__nodetree);
+	 * CPointer&lt;CPointer&lt;bNodeTree&gt;&gt; p_nodetree = p.cast(new Class[]{CPointer.class, bNodeTree.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nodetree'</li>
+	 * <li>Signature: 'bNodeTree*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nodetree = new long[]{296, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line color modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -752,13 +867,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_modifiers = new long[]{200, 224};
+	public static final long[] __DNA__FIELD__color_modifiers = new long[]{300, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of alpha transparency modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -775,13 +887,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_modifiers = new long[]{208, 240};
+	public static final long[] __DNA__FIELD__alpha_modifiers = new long[]{308, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thickness_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line thickness modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -798,13 +907,10 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness_modifiers = new long[]{216, 256};
+	public static final long[] __DNA__FIELD__thickness_modifiers = new long[]{316, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of stroke geometry modifiers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -821,7 +927,7 @@ public class FreestyleLineStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__geometry_modifiers = new long[]{224, 272};
+	public static final long[] __DNA__FIELD__geometry_modifiers = new long[]{324, 448};
 
 	public FreestyleLineStyle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -985,9 +1091,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -1002,9 +1105,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base alpha transparency, possibly modified by alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -1019,9 +1119,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base line thickness, possibly modified by line thickness modifiers
 	 * @see #__DNA__FIELD__thickness
 	 */
 	
@@ -1036,9 +1133,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Base line thickness, possibly modified by line thickness modifiers
 	 * @see #__DNA__FIELD__thickness
 	 */
 	
@@ -1053,9 +1147,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_position'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_position
 	 */
 	
@@ -1070,9 +1161,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness_position'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_position
 	 */
 	
@@ -1087,9 +1175,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_ratio
 	 */
 	
@@ -1104,9 +1189,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'thickness_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A number between 0 (inside) and 1 (outside) specifying the relative position of stroke thickness
 	 * @see #__DNA__FIELD__thickness_ratio
 	 */
 	
@@ -1149,9 +1231,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'caps'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the shape of both ends of strokes
 	 * @see #__DNA__FIELD__caps
 	 */
 	
@@ -1166,9 +1245,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'caps'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the shape of both ends of strokes
 	 * @see #__DNA__FIELD__caps
 	 */
 	
@@ -1183,9 +1259,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'chaining'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the way how feature edges are jointed to form chains
 	 * @see #__DNA__FIELD__chaining
 	 */
 	
@@ -1200,9 +1273,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'chaining'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the way how feature edges are jointed to form chains
 	 * @see #__DNA__FIELD__chaining
 	 */
 	
@@ -1217,9 +1287,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'rounds'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of rounds in a sketchy multiple touch
 	 * @see #__DNA__FIELD__rounds
 	 */
 	
@@ -1234,9 +1301,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'rounds'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of rounds in a sketchy multiple touch
 	 * @see #__DNA__FIELD__rounds
 	 */
 	
@@ -1251,9 +1315,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'split_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Curvilinear 2D length for chain splitting
 	 * @see #__DNA__FIELD__split_length
 	 */
 	
@@ -1268,9 +1329,6 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Set method for struct member 'split_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Curvilinear 2D length for chain splitting
 	 * @see #__DNA__FIELD__split_length
 	 */
 	
@@ -1396,82 +1454,39 @@ public class FreestyleLineStyle extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'chain_count'.
+	 * @see #__DNA__FIELD__chain_count
+	 */
+	
+	public int getChain_count() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 192);
+		} else {
+			return __io__block.readInt(__io__address + 168);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'chain_count'.
+	 * @see #__DNA__FIELD__chain_count
+	 */
+	
+	public void setChain_count(int chain_count) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 192, chain_count);
+		} else {
+			__io__block.writeInt(__io__address + 168, chain_count);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'split_dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for splitting
 	 * @see #__DNA__FIELD__split_dash1
 	 */
 	
 	public short getSplit_dash1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
-		} else {
-			return __io__block.readShort(__io__address + 168);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'split_dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for splitting
-	 * @see #__DNA__FIELD__split_dash1
-	 */
-	
-	public void setSplit_dash1(short split_dash1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, split_dash1);
-		} else {
-			__io__block.writeShort(__io__address + 168, split_dash1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'split_gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for splitting
-	 * @see #__DNA__FIELD__split_gap1
-	 */
-	
-	public short getSplit_gap1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
-		} else {
-			return __io__block.readShort(__io__address + 170);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'split_gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for splitting
-	 * @see #__DNA__FIELD__split_gap1
-	 */
-	
-	public void setSplit_gap1(short split_gap1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, split_gap1);
-		} else {
-			__io__block.writeShort(__io__address + 170, split_gap1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'split_dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for splitting
-	 * @see #__DNA__FIELD__split_dash2
-	 */
-	
-	public short getSplit_dash2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 196);
@@ -1481,31 +1496,25 @@ public class FreestyleLineStyle extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'split_dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for splitting
-	 * @see #__DNA__FIELD__split_dash2
+	 * Set method for struct member 'split_dash1'.
+	 * @see #__DNA__FIELD__split_dash1
 	 */
 	
-	public void setSplit_dash2(short split_dash2) throws IOException
+	public void setSplit_dash1(short split_dash1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 196, split_dash2);
+			__io__block.writeShort(__io__address + 196, split_dash1);
 		} else {
-			__io__block.writeShort(__io__address + 172, split_dash2);
+			__io__block.writeShort(__io__address + 172, split_dash1);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'split_gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for splitting
-	 * @see #__DNA__FIELD__split_gap2
+	 * Get method for struct member 'split_gap1'.
+	 * @see #__DNA__FIELD__split_gap1
 	 */
 	
-	public short getSplit_gap2() throws IOException
+	public short getSplit_gap1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 198);
@@ -1515,31 +1524,25 @@ public class FreestyleLineStyle extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'split_gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for splitting
-	 * @see #__DNA__FIELD__split_gap2
+	 * Set method for struct member 'split_gap1'.
+	 * @see #__DNA__FIELD__split_gap1
 	 */
 	
-	public void setSplit_gap2(short split_gap2) throws IOException
+	public void setSplit_gap1(short split_gap1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 198, split_gap2);
+			__io__block.writeShort(__io__address + 198, split_gap1);
 		} else {
-			__io__block.writeShort(__io__address + 174, split_gap2);
+			__io__block.writeShort(__io__address + 174, split_gap1);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'split_dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for splitting
-	 * @see #__DNA__FIELD__split_dash3
+	 * Get method for struct member 'split_dash2'.
+	 * @see #__DNA__FIELD__split_dash2
 	 */
 	
-	public short getSplit_dash3() throws IOException
+	public short getSplit_dash2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 200);
@@ -1549,31 +1552,25 @@ public class FreestyleLineStyle extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'split_dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for splitting
-	 * @see #__DNA__FIELD__split_dash3
+	 * Set method for struct member 'split_dash2'.
+	 * @see #__DNA__FIELD__split_dash2
 	 */
 	
-	public void setSplit_dash3(short split_dash3) throws IOException
+	public void setSplit_dash2(short split_dash2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 200, split_dash3);
+			__io__block.writeShort(__io__address + 200, split_dash2);
 		} else {
-			__io__block.writeShort(__io__address + 176, split_dash3);
+			__io__block.writeShort(__io__address + 176, split_dash2);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'split_gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for splitting
-	 * @see #__DNA__FIELD__split_gap3
+	 * Get method for struct member 'split_gap2'.
+	 * @see #__DNA__FIELD__split_gap2
 	 */
 	
-	public short getSplit_gap3() throws IOException
+	public short getSplit_gap2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 202);
@@ -1583,19 +1580,240 @@ public class FreestyleLineStyle extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'split_gap2'.
+	 * @see #__DNA__FIELD__split_gap2
+	 */
+	
+	public void setSplit_gap2(short split_gap2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 202, split_gap2);
+		} else {
+			__io__block.writeShort(__io__address + 178, split_gap2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'split_dash3'.
+	 * @see #__DNA__FIELD__split_dash3
+	 */
+	
+	public short getSplit_dash3() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 204);
+		} else {
+			return __io__block.readShort(__io__address + 180);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'split_dash3'.
+	 * @see #__DNA__FIELD__split_dash3
+	 */
+	
+	public void setSplit_dash3(short split_dash3) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 204, split_dash3);
+		} else {
+			__io__block.writeShort(__io__address + 180, split_dash3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'split_gap3'.
+	 * @see #__DNA__FIELD__split_gap3
+	 */
+	
+	public short getSplit_gap3() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 206);
+		} else {
+			return __io__block.readShort(__io__address + 182);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'split_gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for splitting
 	 * @see #__DNA__FIELD__split_gap3
 	 */
 	
 	public void setSplit_gap3(short split_gap3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 202, split_gap3);
+			__io__block.writeShort(__io__address + 206, split_gap3);
 		} else {
-			__io__block.writeShort(__io__address + 178, split_gap3);
+			__io__block.writeShort(__io__address + 182, split_gap3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'sort_key'.
+	 * @see #__DNA__FIELD__sort_key
+	 */
+	
+	public int getSort_key() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 208);
+		} else {
+			return __io__block.readInt(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sort_key'.
+	 * @see #__DNA__FIELD__sort_key
+	 */
+	
+	public void setSort_key(int sort_key) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 208, sort_key);
+		} else {
+			__io__block.writeInt(__io__address + 184, sort_key);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'integration_type'.
+	 * @see #__DNA__FIELD__integration_type
+	 */
+	
+	public int getIntegration_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 212);
+		} else {
+			return __io__block.readInt(__io__address + 188);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'integration_type'.
+	 * @see #__DNA__FIELD__integration_type
+	 */
+	
+	public void setIntegration_type(int integration_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 212, integration_type);
+		} else {
+			__io__block.writeInt(__io__address + 188, integration_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'texstep'.
+	 * @see #__DNA__FIELD__texstep
+	 */
+	
+	public float getTexstep() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 216);
+		} else {
+			return __io__block.readFloat(__io__address + 192);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'texstep'.
+	 * @see #__DNA__FIELD__texstep
+	 */
+	
+	public void setTexstep(float texstep) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 216, texstep);
+		} else {
+			__io__block.writeFloat(__io__address + 192, texstep);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'texact'.
+	 * @see #__DNA__FIELD__texact
+	 */
+	
+	public short getTexact() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 220);
+		} else {
+			return __io__block.readShort(__io__address + 196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'texact'.
+	 * @see #__DNA__FIELD__texact
+	 */
+	
+	public void setTexact(short texact) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 220, texact);
+		} else {
+			__io__block.writeShort(__io__address + 196, texact);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pr_texture'.
+	 * @see #__DNA__FIELD__pr_texture
+	 */
+	
+	public short getPr_texture() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 222);
+		} else {
+			return __io__block.readShort(__io__address + 198);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pr_texture'.
+	 * @see #__DNA__FIELD__pr_texture
+	 */
+	
+	public void setPr_texture(short pr_texture) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 222, pr_texture);
+		} else {
+			__io__block.writeShort(__io__address + 198, pr_texture);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'use_nodes'.
+	 * @see #__DNA__FIELD__use_nodes
+	 */
+	
+	public short getUse_nodes() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 224);
+		} else {
+			return __io__block.readShort(__io__address + 200);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_nodes'.
+	 * @see #__DNA__FIELD__use_nodes
+	 */
+	
+	public void setUse_nodes(short use_nodes) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 224, use_nodes);
+		} else {
+			__io__block.writeShort(__io__address + 200, use_nodes);
 		}
 	}
 
@@ -1604,12 +1822,16 @@ public class FreestyleLineStyle extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Short> getPad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return new CArrayFacade<Short>(__io__address + 226, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return new CArrayFacade<Short>(__io__address + 202, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1618,275 +1840,307 @@ public class FreestyleLineStyle extends CFacade {
 	 * @see #__DNA__FIELD__pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setPad(CArrayFacade<Short> pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, pad);
+			__dna__offset = 226;
 		} else {
-			__io__block.writeInt(__io__address + 180, pad);
+			__dna__offset = 202;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for dashed lines
 	 * @see #__DNA__FIELD__dash1
 	 */
 	
 	public short getDash1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 232);
 		} else {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 208);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dash1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st dash for dashed lines
 	 * @see #__DNA__FIELD__dash1
 	 */
 	
 	public void setDash1(short dash1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, dash1);
+			__io__block.writeShort(__io__address + 232, dash1);
 		} else {
-			__io__block.writeShort(__io__address + 184, dash1);
+			__io__block.writeShort(__io__address + 208, dash1);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for dashed lines
 	 * @see #__DNA__FIELD__gap1
 	 */
 	
 	public short getGap1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 234);
 		} else {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 210);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gap1'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 1st gap for dashed lines
 	 * @see #__DNA__FIELD__gap1
 	 */
 	
 	public void setGap1(short gap1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, gap1);
+			__io__block.writeShort(__io__address + 234, gap1);
 		} else {
-			__io__block.writeShort(__io__address + 186, gap1);
+			__io__block.writeShort(__io__address + 210, gap1);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for dashed lines
 	 * @see #__DNA__FIELD__dash2
 	 */
 	
 	public short getDash2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 236);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 212);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dash2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd dash for dashed lines
 	 * @see #__DNA__FIELD__dash2
 	 */
 	
 	public void setDash2(short dash2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, dash2);
+			__io__block.writeShort(__io__address + 236, dash2);
 		} else {
-			__io__block.writeShort(__io__address + 188, dash2);
+			__io__block.writeShort(__io__address + 212, dash2);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for dashed lines
 	 * @see #__DNA__FIELD__gap2
 	 */
 	
 	public short getGap2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 238);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 214);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gap2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 2nd gap for dashed lines
 	 * @see #__DNA__FIELD__gap2
 	 */
 	
 	public void setGap2(short gap2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, gap2);
+			__io__block.writeShort(__io__address + 238, gap2);
 		} else {
-			__io__block.writeShort(__io__address + 190, gap2);
+			__io__block.writeShort(__io__address + 214, gap2);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for dashed lines
 	 * @see #__DNA__FIELD__dash3
 	 */
 	
 	public short getDash3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 240);
 		} else {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 216);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'dash3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd dash for dashed lines
 	 * @see #__DNA__FIELD__dash3
 	 */
 	
 	public void setDash3(short dash3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, dash3);
+			__io__block.writeShort(__io__address + 240, dash3);
 		} else {
-			__io__block.writeShort(__io__address + 192, dash3);
+			__io__block.writeShort(__io__address + 216, dash3);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for dashed lines
 	 * @see #__DNA__FIELD__gap3
 	 */
 	
 	public short getGap3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 242);
 		} else {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 218);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gap3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Length of the 3rd gap for dashed lines
 	 * @see #__DNA__FIELD__gap3
 	 */
 	
 	public void setGap3(short gap3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, gap3);
+			__io__block.writeShort(__io__address + 242, gap3);
 		} else {
-			__io__block.writeShort(__io__address + 194, gap3);
+			__io__block.writeShort(__io__address + 218, gap3);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown
 	 * @see #__DNA__FIELD__panel
 	 */
 	
 	public int getPanel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 244);
 		} else {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 220);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Select the property panel to be shown
 	 * @see #__DNA__FIELD__panel
 	 */
 	
 	public void setPanel(int panel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, panel);
+			__io__block.writeInt(__io__address + 244, panel);
 		} else {
-			__io__block.writeInt(__io__address + 196, panel);
+			__io__block.writeInt(__io__address + 220, panel);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mtex'.
+	 * @see #__DNA__FIELD__mtex
+	 */
+	
+	public CArrayFacade<CPointer<MTex>> getMtex() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, MTex.class};
+		int[] __dna__dimensions = new int[]{
+			18
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mtex'.
+	 * @see #__DNA__FIELD__mtex
+	 */
+	
+	public void setMtex(CArrayFacade<CPointer<MTex>> mtex) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 248;
+		} else {
+			__dna__offset = 224;
+		}
+		if (__io__equals(mtex, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, mtex)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, mtex);
+		} else {
+			__io__generic__copy( getMtex(), mtex);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nodetree'.
+	 * @see #__DNA__FIELD__nodetree
+	 */
+	
+	public CPointer<bNodeTree> getNodetree() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
+		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'nodetree'.
+	 * @see #__DNA__FIELD__nodetree
+	 */
+	
+	public void setNodetree(CPointer<bNodeTree> nodetree) throws IOException
+	{
+		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 392, __address);
+		} else {
+			__io__block.writeLong(__io__address + 296, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'color_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line color modifiers
 	 * @see #__DNA__FIELD__color_modifiers
 	 */
 	
 	public ListBase getColor_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 400, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 300, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'color_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line color modifiers
 	 * @see #__DNA__FIELD__color_modifiers
 	 */
 	
@@ -1894,9 +2148,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 400;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 300;
 		}
 		if (__io__equals(color_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -1909,26 +2163,20 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha_modifiers
 	 */
 	
 	public ListBase getAlpha_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 416, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 308, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'alpha_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of alpha transparency modifiers
 	 * @see #__DNA__FIELD__alpha_modifiers
 	 */
 	
@@ -1936,9 +2184,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 416;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 308;
 		}
 		if (__io__equals(alpha_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -1951,26 +2199,20 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'thickness_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line thickness modifiers
 	 * @see #__DNA__FIELD__thickness_modifiers
 	 */
 	
 	public ListBase getThickness_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 432, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 216, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 316, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'thickness_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of line thickness modifiers
 	 * @see #__DNA__FIELD__thickness_modifiers
 	 */
 	
@@ -1978,9 +2220,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 432;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 316;
 		}
 		if (__io__equals(thickness_modifiers, __io__address + __dna__offset)) {
 			return;
@@ -1993,26 +2235,20 @@ public class FreestyleLineStyle extends CFacade {
 
 	/**
 	 * Get method for struct member 'geometry_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of stroke geometry modifiers
 	 * @see #__DNA__FIELD__geometry_modifiers
 	 */
 	
 	public ListBase getGeometry_modifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 448, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 324, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'geometry_modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    List of stroke geometry modifiers
 	 * @see #__DNA__FIELD__geometry_modifiers
 	 */
 	
@@ -2020,9 +2256,9 @@ public class FreestyleLineStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 448;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 324;
 		}
 		if (__io__equals(geometry_modifiers, __io__address + __dna__offset)) {
 			return;

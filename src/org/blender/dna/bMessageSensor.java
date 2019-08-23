@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bMessageSensor'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * (Possible future use) pointer to a single sender object
+ * 
  */
 
 @CMetaData(size32=132, size64=136)
@@ -28,13 +27,10 @@ public class bMessageSensor extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 278;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fromObject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) pointer to a single sender object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -55,9 +51,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'subject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Can be used to filter on subjects like this
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,9 +71,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'body'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) body to filter on
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -109,9 +99,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'fromObject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) pointer to a single sender object
 	 * @see #__DNA__FIELD__fromObject
 	 */
 	
@@ -129,9 +116,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'fromObject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) pointer to a single sender object
 	 * @see #__DNA__FIELD__fromObject
 	 */
 	
@@ -147,9 +131,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'subject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Can be used to filter on subjects like this
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -168,9 +149,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'subject'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Can be used to filter on subjects like this
 	 * @see #__DNA__FIELD__subject
 	 */
 	
@@ -193,9 +171,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Get method for struct member 'body'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) body to filter on
 	 * @see #__DNA__FIELD__body
 	 */
 	
@@ -214,9 +189,6 @@ public class bMessageSensor extends CFacade {
 
 	/**
 	 * Set method for struct member 'body'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * (Possible future use) body to filter on
 	 * @see #__DNA__FIELD__body
 	 */
 	

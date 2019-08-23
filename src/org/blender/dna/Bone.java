@@ -27,7 +27,7 @@ public class Bone extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 299;
+	public static final int __DNA__SDNA_INDEX = 310;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,9 +91,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,9 +171,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'head'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -197,9 +191,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tail'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -704,9 +695,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -724,9 +712,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'parent'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Parent bone (in same Armature)
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -846,9 +831,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'head'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -867,9 +849,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'head'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -892,9 +871,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Get method for struct member 'tail'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone
 	 * @see #__DNA__FIELD__tail
 	 */
 	
@@ -913,9 +889,6 @@ public class Bone extends CFacade {
 
 	/**
 	 * Set method for struct member 'tail'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone
 	 * @see #__DNA__FIELD__tail
 	 */
 	

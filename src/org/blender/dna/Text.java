@@ -50,9 +50,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -113,9 +110,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Lines of text
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -360,9 +354,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -380,9 +371,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -454,9 +442,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Get method for struct member 'lines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Lines of text
 	 * @see #__DNA__FIELD__lines
 	 */
 	
@@ -471,9 +456,6 @@ public class Text extends CFacade {
 
 	/**
 	 * Set method for struct member 'lines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Lines of text
 	 * @see #__DNA__FIELD__lines
 	 */
 	

@@ -26,7 +26,7 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 540;
+	public static final int __DNA__SDNA_INDEX = 557;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,9 +50,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'frequency'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frequency of the Perlin noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -73,9 +70,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the Perlin noise
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,9 +90,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Displacement direction
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,9 +110,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'octaves'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of octaves (i.e., the amount of detail of the Perlin noise)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,9 +130,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Seed for random number generation (if negative, time is used as a seed instead)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,9 +214,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Get method for struct member 'frequency'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frequency of the Perlin noise
 	 * @see #__DNA__FIELD__frequency
 	 */
 	
@@ -246,9 +228,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Set method for struct member 'frequency'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Frequency of the Perlin noise
 	 * @see #__DNA__FIELD__frequency
 	 */
 	
@@ -263,9 +242,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the Perlin noise
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -280,9 +256,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplitude'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Amplitude of the Perlin noise
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -297,9 +270,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Get method for struct member 'angle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Displacement direction
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -314,9 +284,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Set method for struct member 'angle'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Displacement direction
 	 * @see #__DNA__FIELD__angle
 	 */
 	
@@ -331,9 +298,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Get method for struct member 'octaves'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of octaves (i.e., the amount of detail of the Perlin noise)
 	 * @see #__DNA__FIELD__octaves
 	 */
 	
@@ -348,9 +312,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Set method for struct member 'octaves'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Number of octaves (i.e., the amount of detail of the Perlin noise)
 	 * @see #__DNA__FIELD__octaves
 	 */
 	
@@ -365,9 +326,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Get method for struct member 'seed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Seed for random number generation (if negative, time is used as a seed instead)
 	 * @see #__DNA__FIELD__seed
 	 */
 	
@@ -382,9 +340,6 @@ public class LineStyleGeometryModifier_PerlinNoise1D extends CFacade {
 
 	/**
 	 * Set method for struct member 'seed'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Seed for random number generation (if negative, time is used as a seed instead)
 	 * @see #__DNA__FIELD__seed
 	 */
 	

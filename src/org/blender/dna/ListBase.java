@@ -12,10 +12,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ListBase'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Java .Blend:</h4>
- * This is the entry point to work with linked lists. It is for 
- * 			example used in libraries {@link Library}, to provide a reference 
- * 			to the first and the last element of a linked list of library objects.
+ * 
  */
 
 @CMetaData(size32=8, size64=16)
@@ -33,9 +30,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'first'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * first element in the list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,9 +50,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'last'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * last element in the list
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -87,9 +78,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Get method for struct member 'first'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * first element in the list
 	 * @see #__DNA__FIELD__first
 	 */
 	
@@ -107,9 +95,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Set method for struct member 'first'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * first element in the list
 	 * @see #__DNA__FIELD__first
 	 */
 	
@@ -125,9 +110,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Get method for struct member 'last'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * last element in the list
 	 * @see #__DNA__FIELD__last
 	 */
 	
@@ -145,9 +127,6 @@ public class ListBase extends CFacade {
 
 	/**
 	 * Set method for struct member 'last'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * last element in the list
 	 * @see #__DNA__FIELD__last
 	 */
 	

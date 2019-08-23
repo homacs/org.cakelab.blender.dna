@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=68, size64=104)
+@CMetaData(size32=76, size64=112)
 public class FCurve extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 465;
+	public static final int __DNA__SDNA_INDEX = 482;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,9 +91,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'driver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,9 +111,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,9 +251,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'array_index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -300,9 +291,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,9 +311,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -343,6 +328,46 @@ public class FCurve extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__color = new long[]{56, 92};
+
+	/**
+	 * Field descriptor (offset) for struct member 'prev_norm_factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__prev_norm_factor);
+	 * CPointer&lt;Float&gt; p_prev_norm_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prev_norm_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prev_norm_factor = new long[]{68, 104};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__pad);
+	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{72, 108};
 
 	public FCurve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -450,9 +475,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'driver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -470,9 +492,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'driver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Channel Driver (only set for Driver F-Curves)
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -488,9 +507,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -505,9 +521,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'modifiers'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Modifiers affecting the shape of the F-Curve
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -706,9 +719,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'array_index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -723,9 +733,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'array_index'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Index to the specific property affected by F-Curve if applicable
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -772,9 +779,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
@@ -789,9 +793,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method used to determine color of F-Curve in Graph Editor
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
@@ -806,9 +807,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Get method for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -827,9 +825,6 @@ public class FCurve extends CFacade {
 
 	/**
 	 * Set method for struct member 'color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Color of the F-Curve in the Graph Editor
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -847,6 +842,62 @@ public class FCurve extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, color);
 		} else {
 			__io__generic__copy( getColor(), color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prev_norm_factor'.
+	 * @see #__DNA__FIELD__prev_norm_factor
+	 */
+	
+	public float getPrev_norm_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 104);
+		} else {
+			return __io__block.readFloat(__io__address + 68);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'prev_norm_factor'.
+	 * @see #__DNA__FIELD__prev_norm_factor
+	 */
+	
+	public void setPrev_norm_factor(float prev_norm_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 104, prev_norm_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 68, prev_norm_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public float getPad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 108);
+		} else {
+			return __io__block.readFloat(__io__address + 72);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(float pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 108, pad);
+		} else {
+			__io__block.writeFloat(__io__address + 72, pad);
 		}
 	}
 

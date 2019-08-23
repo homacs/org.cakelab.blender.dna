@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2280, size64=2384)
+@CMetaData(size32=2288, size64=2392)
 public class MovieClip extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieClip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 490;
+	public static final int __DNA__SDNA_INDEX = 507;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -71,9 +71,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,9 +91,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,9 +251,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tracking'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -273,7 +264,7 @@ public class MovieClip extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tracking'</li>
 	 * <li>Signature: 'MovieTracking'</li>
-	 * <li>Actual Size (32bit/64bit): 256/320</li>
+	 * <li>Actual Size (32bit/64bit): 264/328</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__tracking = new long[]{1164, 1200};
@@ -296,13 +287,10 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tracking_context = new long[]{1420, 1520};
+	public static final long[] __DNA__FIELD__tracking_context = new long[]{1428, 1528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -319,7 +307,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 776/776</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proxy = new long[]{1424, 1528};
+	public static final long[] __DNA__FIELD__proxy = new long[]{1432, 1536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -339,7 +327,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{2200, 2304};
+	public static final long[] __DNA__FIELD__flag = new long[]{2208, 2312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
@@ -359,7 +347,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__len = new long[]{2204, 2308};
+	public static final long[] __DNA__FIELD__len = new long[]{2212, 2316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
@@ -379,13 +367,10 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start_frame = new long[]{2208, 2312};
+	public static final long[] __DNA__FIELD__start_frame = new long[]{2216, 2320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -402,13 +387,10 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_offset = new long[]{2212, 2316};
+	public static final long[] __DNA__FIELD__frame_offset = new long[]{2220, 2324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -425,7 +407,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{2216, 2320};
+	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{2224, 2328};
 
 	public MovieClip(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -505,9 +487,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -526,9 +505,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique datablock ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -551,9 +527,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Get method for struct member 'source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -568,9 +541,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Set method for struct member 'source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Where the clip comes from
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -805,9 +775,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Get method for struct member 'tracking'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__tracking
 	 */
 	
@@ -822,9 +789,6 @@ public class MovieClip extends CFacade {
 
 	/**
 	 * Set method for struct member 'tracking'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__tracking
 	 */
 	
@@ -854,9 +818,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1520);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1528);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1420);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1428);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -871,34 +835,28 @@ public class MovieClip extends CFacade {
 	{
 		long __address = ((tracking_context == null) ? 0 : tracking_context.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1520, __address);
+			__io__block.writeLong(__io__address + 1528, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1420, __address);
+			__io__block.writeLong(__io__address + 1428, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
 	public MovieClipProxy getProxy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieClipProxy(__io__address + 1528, __io__block, __io__blockTable);
+			return new MovieClipProxy(__io__address + 1536, __io__block, __io__blockTable);
 		} else {
-			return new MovieClipProxy(__io__address + 1424, __io__block, __io__blockTable);
+			return new MovieClipProxy(__io__address + 1432, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'proxy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__proxy
 	 */
 	
@@ -906,9 +864,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1528;
+			__dna__offset = 1536;
 		} else {
-			__dna__offset = 1424;
+			__dna__offset = 1432;
 		}
 		if (__io__equals(proxy, __io__address + __dna__offset)) {
 			return;
@@ -927,9 +885,9 @@ public class MovieClip extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2304);
+			return __io__block.readInt(__io__address + 2312);
 		} else {
-			return __io__block.readInt(__io__address + 2200);
+			return __io__block.readInt(__io__address + 2208);
 		}
 	}
 
@@ -941,9 +899,9 @@ public class MovieClip extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2304, flag);
+			__io__block.writeInt(__io__address + 2312, flag);
 		} else {
-			__io__block.writeInt(__io__address + 2200, flag);
+			__io__block.writeInt(__io__address + 2208, flag);
 		}
 	}
 
@@ -955,9 +913,9 @@ public class MovieClip extends CFacade {
 	public int getLen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2308);
+			return __io__block.readInt(__io__address + 2316);
 		} else {
-			return __io__block.readInt(__io__address + 2204);
+			return __io__block.readInt(__io__address + 2212);
 		}
 	}
 
@@ -969,9 +927,9 @@ public class MovieClip extends CFacade {
 	public void setLen(int len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2308, len);
+			__io__block.writeInt(__io__address + 2316, len);
 		} else {
-			__io__block.writeInt(__io__address + 2204, len);
+			__io__block.writeInt(__io__address + 2212, len);
 		}
 	}
 
@@ -983,9 +941,9 @@ public class MovieClip extends CFacade {
 	public int getStart_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2312);
+			return __io__block.readInt(__io__address + 2320);
 		} else {
-			return __io__block.readInt(__io__address + 2208);
+			return __io__block.readInt(__io__address + 2216);
 		}
 	}
 
@@ -997,68 +955,56 @@ public class MovieClip extends CFacade {
 	public void setStart_frame(int start_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2312, start_frame);
+			__io__block.writeInt(__io__address + 2320, start_frame);
 		} else {
-			__io__block.writeInt(__io__address + 2208, start_frame);
+			__io__block.writeInt(__io__address + 2216, start_frame);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'frame_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)
 	 * @see #__DNA__FIELD__frame_offset
 	 */
 	
 	public int getFrame_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2316);
+			return __io__block.readInt(__io__address + 2324);
 		} else {
-			return __io__block.readInt(__io__address + 2212);
+			return __io__block.readInt(__io__address + 2220);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'frame_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)
 	 * @see #__DNA__FIELD__frame_offset
 	 */
 	
 	public void setFrame_offset(int frame_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2316, frame_offset);
+			__io__block.writeInt(__io__address + 2324, frame_offset);
 		} else {
-			__io__block.writeInt(__io__address + 2212, frame_offset);
+			__io__block.writeInt(__io__address + 2220, frame_offset);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'colorspace_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
 	
 	public ColorManagedColorspaceSettings getColorspace_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedColorspaceSettings(__io__address + 2320, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 2328, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedColorspaceSettings(__io__address + 2216, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 2224, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'colorspace_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Input color space settings
 	 * @see #__DNA__FIELD__colorspace_settings
 	 */
 	
@@ -1066,9 +1012,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2320;
+			__dna__offset = 2328;
 		} else {
-			__dna__offset = 2216;
+			__dna__offset = 2224;
 		}
 		if (__io__equals(colorspace_settings, __io__address + __dna__offset)) {
 			return;

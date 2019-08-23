@@ -27,7 +27,7 @@ public class MovieTrackingObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 501;
+	public static final int __DNA__SDNA_INDEX = 518;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,9 +111,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale of object solution in camera space
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,9 +131,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,9 +151,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,9 +171,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -318,9 +303,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of object
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -339,9 +321,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of object
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -392,9 +371,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale of object solution in camera space
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -409,9 +385,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale of object solution in camera space
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -426,9 +399,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
@@ -443,9 +413,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of tracks in this tracking data object
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
@@ -468,9 +435,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
@@ -485,9 +449,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'plane_tracks'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of plane tracks in this tracking data object
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
@@ -510,9 +471,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Get method for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	
@@ -527,9 +485,6 @@ public class MovieTrackingObject extends CFacade {
 
 	/**
 	 * Set method for struct member 'reconstruction'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	

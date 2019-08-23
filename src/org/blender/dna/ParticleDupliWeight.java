@@ -26,7 +26,7 @@ public class ParticleDupliWeight extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 431;
+	public static final int __DNA__SDNA_INDEX = 448;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -90,9 +90,6 @@ public class ParticleDupliWeight extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The number of times this object is repeated with respect to other objects
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -277,9 +274,6 @@ public class ParticleDupliWeight extends CFacade {
 
 	/**
 	 * Get method for struct member 'count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
 	
@@ -294,9 +288,6 @@ public class ParticleDupliWeight extends CFacade {
 
 	/**
 	 * Set method for struct member 'count'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The number of times this object is repeated with respect to other objects
 	 * @see #__DNA__FIELD__count
 	 */
 	

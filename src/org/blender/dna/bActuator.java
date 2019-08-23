@@ -27,7 +27,7 @@ public class bActuator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 295;
+	public static final int __DNA__SDNA_INDEX = 306;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,9 +111,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Tells what type of actuator data data holds.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -194,9 +191,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * data must point to an object actuator type struct.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -217,9 +211,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For ipo's and props: to find out which object the actuator belongs to
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -372,9 +363,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Tells what type of actuator data data holds.
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -389,9 +377,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * Tells what type of actuator data data holds.
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -502,9 +487,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * data must point to an object actuator type struct.
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -522,9 +504,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'data'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * data must point to an object actuator type struct.
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -540,9 +519,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For ipo's and props: to find out which object the actuator belongs to
 	 * @see #__DNA__FIELD__ob
 	 */
 	
@@ -560,9 +536,6 @@ public class bActuator extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * For ipo's and props: to find out which object the actuator belongs to
 	 * @see #__DNA__FIELD__ob
 	 */
 	

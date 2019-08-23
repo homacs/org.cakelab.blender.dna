@@ -26,13 +26,10 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 175;
+	public static final int __DNA__SDNA_INDEX = 181;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,9 +50,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -76,9 +70,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'system_rotation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,9 +118,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'scale_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -144,9 +132,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'scale_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -161,9 +146,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -178,9 +160,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'system'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -195,9 +174,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'system_rotation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	
@@ -212,9 +188,6 @@ public class UnitSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'system_rotation'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unit to use for displaying/editing rotation values
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	

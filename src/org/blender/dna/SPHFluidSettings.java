@@ -27,7 +27,7 @@ public class SPHFluidSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 433;
+	public static final int __DNA__SDNA_INDEX = 450;
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
@@ -71,9 +71,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring rest length (factor of particle radius)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,9 +111,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'yield_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much the spring has to be stretched/compressed in order to change it's rest length
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,9 +251,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fluid rest density
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -280,9 +271,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'buoyancy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -323,9 +311,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'spring_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create springs for this number of frames since particles birth (0 is always)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -346,9 +331,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'solver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The code used to calculate internal forces on particles
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -453,9 +435,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'rest_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring rest length (factor of particle radius)
 	 * @see #__DNA__FIELD__rest_length
 	 */
 	
@@ -470,9 +449,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'rest_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Spring rest length (factor of particle radius)
 	 * @see #__DNA__FIELD__rest_length
 	 */
 	
@@ -515,9 +491,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'yield_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much the spring has to be stretched/compressed in order to change it's rest length
 	 * @see #__DNA__FIELD__yield_ratio
 	 */
 	
@@ -532,9 +505,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'yield_ratio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How much the spring has to be stretched/compressed in order to change it's rest length
 	 * @see #__DNA__FIELD__yield_ratio
 	 */
 	
@@ -717,9 +687,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'rest_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fluid rest density
 	 * @see #__DNA__FIELD__rest_density
 	 */
 	
@@ -734,9 +701,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'rest_density'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fluid rest density
 	 * @see #__DNA__FIELD__rest_density
 	 */
 	
@@ -751,9 +715,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'buoyancy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid
 	 * @see #__DNA__FIELD__buoyancy
 	 */
 	
@@ -768,9 +729,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'buoyancy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid
 	 * @see #__DNA__FIELD__buoyancy
 	 */
 	
@@ -813,9 +771,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'spring_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create springs for this number of frames since particles birth (0 is always)
 	 * @see #__DNA__FIELD__spring_frames
 	 */
 	
@@ -830,9 +785,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'spring_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Create springs for this number of frames since particles birth (0 is always)
 	 * @see #__DNA__FIELD__spring_frames
 	 */
 	
@@ -847,9 +799,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'solver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The code used to calculate internal forces on particles
 	 * @see #__DNA__FIELD__solver
 	 */
 	
@@ -864,9 +813,6 @@ public class SPHFluidSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'solver'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * The code used to calculate internal forces on particles
 	 * @see #__DNA__FIELD__solver
 	 */
 	

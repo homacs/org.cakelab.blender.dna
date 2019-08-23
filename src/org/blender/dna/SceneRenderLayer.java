@@ -27,7 +27,7 @@ public class SceneRenderLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 154;
+	public static final int __DNA__SDNA_INDEX = 159;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,9 +111,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -257,9 +251,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,24 +270,24 @@ public class SceneRenderLayer extends CFacade {
 	public static final long[] __DNA__FIELD__samples = new long[]{104, 120};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'pass_alpha_threshold'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SceneRenderLayer scenerenderlayer = ...;
-	 * CPointer&lt;Object&gt; p = scenerenderlayer.__dna__addressof(SceneRenderLayer.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = scenerenderlayer.__dna__addressof(SceneRenderLayer.__DNA__FIELD__pass_alpha_threshold);
+	 * CPointer&lt;Float&gt; p_pass_alpha_threshold = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'pass_alpha_threshold'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__pass_alpha_threshold = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'freestyleConfig'.
@@ -392,9 +383,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -413,9 +401,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -470,9 +455,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
 	 * @see #__DNA__FIELD__light_override
 	 */
 	
@@ -490,9 +472,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
 	 * @see #__DNA__FIELD__light_override
 	 */
 	
@@ -676,9 +655,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
 	
@@ -693,9 +669,6 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'samples'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
 	 * @see #__DNA__FIELD__samples
 	 */
 	
@@ -709,30 +682,30 @@ public class SceneRenderLayer extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'pass_alpha_threshold'.
+	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	
-	public int getPad() throws IOException
+	public float getPass_alpha_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'pass_alpha_threshold'.
+	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setPass_alpha_threshold(float pass_alpha_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, pad);
+			__io__block.writeFloat(__io__address + 124, pass_alpha_threshold);
 		} else {
-			__io__block.writeInt(__io__address + 108, pad);
+			__io__block.writeFloat(__io__address + 108, pass_alpha_threshold);
 		}
 	}
 

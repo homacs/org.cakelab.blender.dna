@@ -27,7 +27,7 @@ public class MaskLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 516;
+	public static final int __DNA__SDNA_INDEX = 533;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -71,9 +71,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of layer
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,9 +91,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'splines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of splines which defines this layer
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -177,9 +171,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Opacity
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -200,9 +191,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of blending mask layers
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,9 +231,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Falloff type the feather
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -398,9 +383,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of layer
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -419,9 +401,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'name'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Unique name of layer
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -444,9 +423,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'splines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of splines which defines this layer
 	 * @see #__DNA__FIELD__splines
 	 */
 	
@@ -461,9 +437,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'splines'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)    Collection of splines which defines this layer
 	 * @see #__DNA__FIELD__splines
 	 */
 	
@@ -586,9 +559,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Opacity
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -603,9 +573,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'alpha'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render Opacity
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -620,9 +587,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'blend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of blending mask layers
 	 * @see #__DNA__FIELD__blend
 	 */
 	
@@ -637,9 +601,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'blend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Method of blending mask layers
 	 * @see #__DNA__FIELD__blend
 	 */
 	
@@ -682,9 +643,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Falloff type the feather
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
@@ -699,9 +657,6 @@ public class MaskLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Falloff type the feather
 	 * @see #__DNA__FIELD__falloff
 	 */
 	

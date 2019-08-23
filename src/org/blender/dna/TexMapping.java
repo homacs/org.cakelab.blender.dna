@@ -27,7 +27,7 @@ public class TexMapping extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 32;
+	public static final int __DNA__SDNA_INDEX = 33;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -231,9 +231,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum value for clipping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -254,9 +251,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum value for clipping
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -634,9 +628,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum value for clipping
 	 * @see #__DNA__FIELD__min
 	 */
 	
@@ -655,9 +646,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'min'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Minimum value for clipping
 	 * @see #__DNA__FIELD__min
 	 */
 	
@@ -680,9 +668,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Get method for struct member 'max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum value for clipping
 	 * @see #__DNA__FIELD__max
 	 */
 	
@@ -701,9 +686,6 @@ public class TexMapping extends CFacade {
 
 	/**
 	 * Set method for struct member 'max'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Maximum value for clipping
 	 * @see #__DNA__FIELD__max
 	 */
 	

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=56, size64=80)
+@CMetaData(size32=64, size64=88)
 public class Nurb extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class Nurb extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 43;
+	public static final int __DNA__SDNA_INDEX = 45;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -157,13 +158,13 @@ public class Nurb extends CFacade {
 	 * <pre>
 	 * Nurb nurb = ...;
 	 * CPointer&lt;Object&gt; p = nurb.__dna__addressof(Nurb.__DNA__FIELD__pntsu);
-	 * CPointer&lt;Short&gt; p_pntsu = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_pntsu = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pntsu'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pntsu = new long[]{16, 24};
@@ -177,16 +178,36 @@ public class Nurb extends CFacade {
 	 * <pre>
 	 * Nurb nurb = ...;
 	 * CPointer&lt;Object&gt; p = nurb.__dna__addressof(Nurb.__DNA__FIELD__pntsv);
-	 * CPointer&lt;Short&gt; p_pntsv = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_pntsv = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'pntsv'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pntsv = new long[]{18, 26};
+	public static final long[] __DNA__FIELD__pntsv = new long[]{20, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Nurb nurb = ...;
+	 * CPointer&lt;Object&gt; p = nurb.__dna__addressof(Nurb.__DNA__FIELD__pad);
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pad'</li>
+	 * <li>Signature: 'short[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pad = new long[]{24, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolu'.
@@ -206,7 +227,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolu = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__resolu = new long[]{28, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolv'.
@@ -226,7 +247,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolv = new long[]{22, 30};
+	public static final long[] __DNA__FIELD__resolv = new long[]{30, 38};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orderu'.
@@ -246,7 +267,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orderu = new long[]{24, 32};
+	public static final long[] __DNA__FIELD__orderu = new long[]{32, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orderv'.
@@ -266,7 +287,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orderv = new long[]{26, 34};
+	public static final long[] __DNA__FIELD__orderv = new long[]{34, 42};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flagu'.
@@ -286,7 +307,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flagu = new long[]{28, 36};
+	public static final long[] __DNA__FIELD__flagu = new long[]{36, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flagv'.
@@ -306,7 +327,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flagv = new long[]{30, 38};
+	public static final long[] __DNA__FIELD__flagv = new long[]{38, 46};
 
 	/**
 	 * Field descriptor (offset) for struct member 'knotsu'.
@@ -326,7 +347,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__knotsu = new long[]{32, 40};
+	public static final long[] __DNA__FIELD__knotsu = new long[]{40, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'knotsv'.
@@ -346,7 +367,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__knotsv = new long[]{36, 48};
+	public static final long[] __DNA__FIELD__knotsv = new long[]{44, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bp'.
@@ -366,7 +387,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bp = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__bp = new long[]{48, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bezt'.
@@ -386,7 +407,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bezt = new long[]{44, 64};
+	public static final long[] __DNA__FIELD__bezt = new long[]{52, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tilt_interp'.
@@ -406,7 +427,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tilt_interp = new long[]{48, 72};
+	public static final long[] __DNA__FIELD__tilt_interp = new long[]{56, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius_interp'.
@@ -426,7 +447,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radius_interp = new long[]{50, 74};
+	public static final long[] __DNA__FIELD__radius_interp = new long[]{58, 82};
 
 	/**
 	 * Field descriptor (offset) for struct member 'charidx'.
@@ -446,7 +467,7 @@ public class Nurb extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__charidx = new long[]{52, 76};
+	public static final long[] __DNA__FIELD__charidx = new long[]{60, 84};
 
 	public Nurb(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -637,12 +658,12 @@ public class Nurb extends CFacade {
 	 * @see #__DNA__FIELD__pntsu
 	 */
 	
-	public short getPntsu() throws IOException
+	public int getPntsu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readInt(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 16);
+			return __io__block.readInt(__io__address + 16);
 		}
 	}
 
@@ -651,12 +672,12 @@ public class Nurb extends CFacade {
 	 * @see #__DNA__FIELD__pntsu
 	 */
 	
-	public void setPntsu(short pntsu) throws IOException
+	public void setPntsu(int pntsu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, pntsu);
+			__io__block.writeInt(__io__address + 24, pntsu);
 		} else {
-			__io__block.writeShort(__io__address + 16, pntsu);
+			__io__block.writeInt(__io__address + 16, pntsu);
 		}
 	}
 
@@ -665,12 +686,12 @@ public class Nurb extends CFacade {
 	 * @see #__DNA__FIELD__pntsv
 	 */
 	
-	public short getPntsv() throws IOException
+	public int getPntsv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readShort(__io__address + 18);
+			return __io__block.readInt(__io__address + 20);
 		}
 	}
 
@@ -679,12 +700,52 @@ public class Nurb extends CFacade {
 	 * @see #__DNA__FIELD__pntsv
 	 */
 	
-	public void setPntsv(short pntsv) throws IOException
+	public void setPntsv(int pntsv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, pntsv);
+			__io__block.writeInt(__io__address + 28, pntsv);
 		} else {
-			__io__block.writeShort(__io__address + 18, pntsv);
+			__io__block.writeInt(__io__address + 20, pntsv);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public CArrayFacade<Short> getPad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Short>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Short>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pad'.
+	 * @see #__DNA__FIELD__pad
+	 */
+	
+	public void setPad(CArrayFacade<Short> pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 32;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else {
+			__io__generic__copy( getPad(), pad);
 		}
 	}
 
@@ -696,9 +757,9 @@ public class Nurb extends CFacade {
 	public short getResolu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 36);
 		} else {
-			return __io__block.readShort(__io__address + 20);
+			return __io__block.readShort(__io__address + 28);
 		}
 	}
 
@@ -710,9 +771,9 @@ public class Nurb extends CFacade {
 	public void setResolu(short resolu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, resolu);
+			__io__block.writeShort(__io__address + 36, resolu);
 		} else {
-			__io__block.writeShort(__io__address + 20, resolu);
+			__io__block.writeShort(__io__address + 28, resolu);
 		}
 	}
 
@@ -724,9 +785,9 @@ public class Nurb extends CFacade {
 	public short getResolv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 38);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 30);
 		}
 	}
 
@@ -738,9 +799,9 @@ public class Nurb extends CFacade {
 	public void setResolv(short resolv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, resolv);
+			__io__block.writeShort(__io__address + 38, resolv);
 		} else {
-			__io__block.writeShort(__io__address + 22, resolv);
+			__io__block.writeShort(__io__address + 30, resolv);
 		}
 	}
 
@@ -752,9 +813,9 @@ public class Nurb extends CFacade {
 	public short getOrderu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 40);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 32);
 		}
 	}
 
@@ -766,9 +827,9 @@ public class Nurb extends CFacade {
 	public void setOrderu(short orderu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 32, orderu);
+			__io__block.writeShort(__io__address + 40, orderu);
 		} else {
-			__io__block.writeShort(__io__address + 24, orderu);
+			__io__block.writeShort(__io__address + 32, orderu);
 		}
 	}
 
@@ -780,9 +841,9 @@ public class Nurb extends CFacade {
 	public short getOrderv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 42);
 		} else {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 34);
 		}
 	}
 
@@ -794,9 +855,9 @@ public class Nurb extends CFacade {
 	public void setOrderv(short orderv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 34, orderv);
+			__io__block.writeShort(__io__address + 42, orderv);
 		} else {
-			__io__block.writeShort(__io__address + 26, orderv);
+			__io__block.writeShort(__io__address + 34, orderv);
 		}
 	}
 
@@ -808,9 +869,9 @@ public class Nurb extends CFacade {
 	public short getFlagu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 36);
+			return __io__block.readShort(__io__address + 44);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 36);
 		}
 	}
 
@@ -822,9 +883,9 @@ public class Nurb extends CFacade {
 	public void setFlagu(short flagu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 36, flagu);
+			__io__block.writeShort(__io__address + 44, flagu);
 		} else {
-			__io__block.writeShort(__io__address + 28, flagu);
+			__io__block.writeShort(__io__address + 36, flagu);
 		}
 	}
 
@@ -836,9 +897,9 @@ public class Nurb extends CFacade {
 	public short getFlagv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 38);
+			return __io__block.readShort(__io__address + 46);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 38);
 		}
 	}
 
@@ -850,9 +911,9 @@ public class Nurb extends CFacade {
 	public void setFlagv(short flagv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 38, flagv);
+			__io__block.writeShort(__io__address + 46, flagv);
 		} else {
-			__io__block.writeShort(__io__address + 30, flagv);
+			__io__block.writeShort(__io__address + 38, flagv);
 		}
 	}
 
@@ -865,9 +926,9 @@ public class Nurb extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -882,9 +943,9 @@ public class Nurb extends CFacade {
 	{
 		long __address = ((knotsu == null) ? 0 : knotsu.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		} else {
-			__io__block.writeLong(__io__address + 32, __address);
+			__io__block.writeLong(__io__address + 40, __address);
 		}
 	}
 
@@ -897,9 +958,9 @@ public class Nurb extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+			__dna__targetAddress = __io__block.readLong(__io__address + 44);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -914,9 +975,9 @@ public class Nurb extends CFacade {
 	{
 		long __address = ((knotsv == null) ? 0 : knotsv.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		} else {
-			__io__block.writeLong(__io__address + 36, __address);
+			__io__block.writeLong(__io__address + 44, __address);
 		}
 	}
 
@@ -929,9 +990,9 @@ public class Nurb extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BPoint.class};
 		return new CPointer<BPoint>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BPoint.__DNA__SDNA_INDEX), __io__blockTable);
@@ -946,9 +1007,9 @@ public class Nurb extends CFacade {
 	{
 		long __address = ((bp == null) ? 0 : bp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 56, __address);
+			__io__block.writeLong(__io__address + 64, __address);
 		} else {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		}
 	}
 
@@ -961,9 +1022,9 @@ public class Nurb extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 44);
+			__dna__targetAddress = __io__block.readLong(__io__address + 52);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BezTriple.class};
 		return new CPointer<BezTriple>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BezTriple.__DNA__SDNA_INDEX), __io__blockTable);
@@ -978,9 +1039,9 @@ public class Nurb extends CFacade {
 	{
 		long __address = ((bezt == null) ? 0 : bezt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 72, __address);
 		} else {
-			__io__block.writeLong(__io__address + 44, __address);
+			__io__block.writeLong(__io__address + 52, __address);
 		}
 	}
 
@@ -992,9 +1053,9 @@ public class Nurb extends CFacade {
 	public short getTilt_interp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 72);
+			return __io__block.readShort(__io__address + 80);
 		} else {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 56);
 		}
 	}
 
@@ -1006,9 +1067,9 @@ public class Nurb extends CFacade {
 	public void setTilt_interp(short tilt_interp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 72, tilt_interp);
+			__io__block.writeShort(__io__address + 80, tilt_interp);
 		} else {
-			__io__block.writeShort(__io__address + 48, tilt_interp);
+			__io__block.writeShort(__io__address + 56, tilt_interp);
 		}
 	}
 
@@ -1020,9 +1081,9 @@ public class Nurb extends CFacade {
 	public short getRadius_interp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 74);
+			return __io__block.readShort(__io__address + 82);
 		} else {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readShort(__io__address + 58);
 		}
 	}
 
@@ -1034,9 +1095,9 @@ public class Nurb extends CFacade {
 	public void setRadius_interp(short radius_interp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 74, radius_interp);
+			__io__block.writeShort(__io__address + 82, radius_interp);
 		} else {
-			__io__block.writeShort(__io__address + 50, radius_interp);
+			__io__block.writeShort(__io__address + 58, radius_interp);
 		}
 	}
 
@@ -1048,9 +1109,9 @@ public class Nurb extends CFacade {
 	public int getCharidx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 84);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -1062,9 +1123,9 @@ public class Nurb extends CFacade {
 	public void setCharidx(int charidx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, charidx);
+			__io__block.writeInt(__io__address + 84, charidx);
 		} else {
-			__io__block.writeInt(__io__address + 52, charidx);
+			__io__block.writeInt(__io__address + 60, charidx);
 		}
 	}
 

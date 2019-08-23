@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=128)
+@CMetaData(size32=220, size64=224)
 public class bTransformConstraint extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bTransformConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 334;
+	public static final int __DNA__SDNA_INDEX = 345;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -228,6 +228,166 @@ public class bTransformConstraint extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__to_max = new long[]{112, 116};
+
+	/**
+	 * Field descriptor (offset) for struct member 'from_min_rot'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__from_min_rot);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_from_min_rot = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'from_min_rot'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__from_min_rot = new long[]{124, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'from_max_rot'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__from_max_rot);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_from_max_rot = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'from_max_rot'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__from_max_rot = new long[]{136, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'to_min_rot'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__to_min_rot);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_to_min_rot = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'to_min_rot'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__to_min_rot = new long[]{148, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'to_max_rot'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__to_max_rot);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_to_max_rot = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'to_max_rot'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__to_max_rot = new long[]{160, 164};
+
+	/**
+	 * Field descriptor (offset) for struct member 'from_min_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__from_min_scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_from_min_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'from_min_scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__from_min_scale = new long[]{172, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'from_max_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__from_max_scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_from_max_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'from_max_scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__from_max_scale = new long[]{184, 188};
+
+	/**
+	 * Field descriptor (offset) for struct member 'to_min_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__to_min_scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_to_min_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'to_min_scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__to_min_scale = new long[]{196, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'to_max_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__to_max_scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_to_max_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'to_max_scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__to_max_scale = new long[]{208, 212};
 
 	public bTransformConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -590,6 +750,326 @@ public class bTransformConstraint extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, to_max);
 		} else {
 			__io__generic__copy( getTo_max(), to_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'from_min_rot'.
+	 * @see #__DNA__FIELD__from_min_rot
+	 */
+	
+	public CArrayFacade<Float> getFrom_min_rot() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'from_min_rot'.
+	 * @see #__DNA__FIELD__from_min_rot
+	 */
+	
+	public void setFrom_min_rot(CArrayFacade<Float> from_min_rot) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 128;
+		} else {
+			__dna__offset = 124;
+		}
+		if (__io__equals(from_min_rot, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, from_min_rot)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, from_min_rot);
+		} else {
+			__io__generic__copy( getFrom_min_rot(), from_min_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'from_max_rot'.
+	 * @see #__DNA__FIELD__from_max_rot
+	 */
+	
+	public CArrayFacade<Float> getFrom_max_rot() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'from_max_rot'.
+	 * @see #__DNA__FIELD__from_max_rot
+	 */
+	
+	public void setFrom_max_rot(CArrayFacade<Float> from_max_rot) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 140;
+		} else {
+			__dna__offset = 136;
+		}
+		if (__io__equals(from_max_rot, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, from_max_rot)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, from_max_rot);
+		} else {
+			__io__generic__copy( getFrom_max_rot(), from_max_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'to_min_rot'.
+	 * @see #__DNA__FIELD__to_min_rot
+	 */
+	
+	public CArrayFacade<Float> getTo_min_rot() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'to_min_rot'.
+	 * @see #__DNA__FIELD__to_min_rot
+	 */
+	
+	public void setTo_min_rot(CArrayFacade<Float> to_min_rot) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 152;
+		} else {
+			__dna__offset = 148;
+		}
+		if (__io__equals(to_min_rot, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, to_min_rot)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, to_min_rot);
+		} else {
+			__io__generic__copy( getTo_min_rot(), to_min_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'to_max_rot'.
+	 * @see #__DNA__FIELD__to_max_rot
+	 */
+	
+	public CArrayFacade<Float> getTo_max_rot() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'to_max_rot'.
+	 * @see #__DNA__FIELD__to_max_rot
+	 */
+	
+	public void setTo_max_rot(CArrayFacade<Float> to_max_rot) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 164;
+		} else {
+			__dna__offset = 160;
+		}
+		if (__io__equals(to_max_rot, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, to_max_rot)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, to_max_rot);
+		} else {
+			__io__generic__copy( getTo_max_rot(), to_max_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'from_min_scale'.
+	 * @see #__DNA__FIELD__from_min_scale
+	 */
+	
+	public CArrayFacade<Float> getFrom_min_scale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'from_min_scale'.
+	 * @see #__DNA__FIELD__from_min_scale
+	 */
+	
+	public void setFrom_min_scale(CArrayFacade<Float> from_min_scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 172;
+		}
+		if (__io__equals(from_min_scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, from_min_scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, from_min_scale);
+		} else {
+			__io__generic__copy( getFrom_min_scale(), from_min_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'from_max_scale'.
+	 * @see #__DNA__FIELD__from_max_scale
+	 */
+	
+	public CArrayFacade<Float> getFrom_max_scale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'from_max_scale'.
+	 * @see #__DNA__FIELD__from_max_scale
+	 */
+	
+	public void setFrom_max_scale(CArrayFacade<Float> from_max_scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 188;
+		} else {
+			__dna__offset = 184;
+		}
+		if (__io__equals(from_max_scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, from_max_scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, from_max_scale);
+		} else {
+			__io__generic__copy( getFrom_max_scale(), from_max_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'to_min_scale'.
+	 * @see #__DNA__FIELD__to_min_scale
+	 */
+	
+	public CArrayFacade<Float> getTo_min_scale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'to_min_scale'.
+	 * @see #__DNA__FIELD__to_min_scale
+	 */
+	
+	public void setTo_min_scale(CArrayFacade<Float> to_min_scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 200;
+		} else {
+			__dna__offset = 196;
+		}
+		if (__io__equals(to_min_scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, to_min_scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, to_min_scale);
+		} else {
+			__io__generic__copy( getTo_min_scale(), to_min_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'to_max_scale'.
+	 * @see #__DNA__FIELD__to_max_scale
+	 */
+	
+	public CArrayFacade<Float> getTo_max_scale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'to_max_scale'.
+	 * @see #__DNA__FIELD__to_max_scale
+	 */
+	
+	public void setTo_max_scale(CArrayFacade<Float> to_max_scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 212;
+		} else {
+			__dna__offset = 208;
+		}
+		if (__io__equals(to_max_scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, to_max_scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, to_max_scale);
+		} else {
+			__io__generic__copy( getTo_max_scale(), to_max_scale);
 		}
 	}
 

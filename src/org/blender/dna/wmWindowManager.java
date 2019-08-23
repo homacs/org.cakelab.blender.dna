@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=224, size64=344)
+@CMetaData(size32=232, size64=352)
 public class wmWindowManager extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 444;
+	public static final int __DNA__SDNA_INDEX = 461;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -407,6 +408,46 @@ public class wmWindowManager extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__autosavetimer = new long[]{220, 336};
+
+	/**
+	 * Field descriptor (offset) for struct member 'is_interface_locked'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__is_interface_locked);
+	 * CPointer&lt;Byte&gt; p_is_interface_locked = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'is_interface_locked'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{224, 344};
+
+	/**
+	 * Field descriptor (offset) for struct member 'par'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__par);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_par = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'par'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__par = new long[]{225, 345};
 
 	public wmWindowManager(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1049,6 +1090,74 @@ public class wmWindowManager extends CFacade {
 			__io__block.writeLong(__io__address + 336, __address);
 		} else {
 			__io__block.writeLong(__io__address + 220, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'is_interface_locked'.
+	 * @see #__DNA__FIELD__is_interface_locked
+	 */
+	
+	public byte getIs_interface_locked() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 344);
+		} else {
+			return __io__block.readByte(__io__address + 224);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'is_interface_locked'.
+	 * @see #__DNA__FIELD__is_interface_locked
+	 */
+	
+	public void setIs_interface_locked(byte is_interface_locked) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 344, is_interface_locked);
+		} else {
+			__io__block.writeByte(__io__address + 224, is_interface_locked);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'par'.
+	 * @see #__DNA__FIELD__par
+	 */
+	
+	public CArrayFacade<Byte> getPar() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 345, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 225, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'par'.
+	 * @see #__DNA__FIELD__par
+	 */
+	
+	public void setPar(CArrayFacade<Byte> par) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 345;
+		} else {
+			__dna__offset = 225;
+		}
+		if (__io__equals(par, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, par)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, par);
+		} else {
+			__io__generic__copy( getPar(), par);
 		}
 	}
 

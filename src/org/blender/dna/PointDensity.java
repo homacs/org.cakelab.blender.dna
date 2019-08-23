@@ -27,7 +27,7 @@ public class PointDensity extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 28;
+	public static final int __DNA__SDNA_INDEX = 29;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -91,9 +91,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,9 +131,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Data to derive color results from
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -197,9 +191,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -380,9 +371,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -443,9 +431,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -466,9 +451,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -529,9 +511,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_curve'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -644,9 +623,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -661,9 +637,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -706,9 +679,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Data to derive color results from
 	 * @see #__DNA__FIELD__color_source
 	 */
 	
@@ -723,9 +693,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'color_source'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Data to derive color results from
 	 * @see #__DNA__FIELD__color_source
 	 */
 	
@@ -796,9 +763,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -816,9 +780,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from
 	 * @see #__DNA__FIELD__object
 	 */
 	
@@ -1066,9 +1027,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * @see #__DNA__FIELD__noise_basis
 	 */
 	
@@ -1083,9 +1041,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * @see #__DNA__FIELD__noise_basis
 	 */
 	
@@ -1168,9 +1123,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__speed_scale
 	 */
 	
@@ -1185,9 +1137,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__speed_scale
 	 */
 	
@@ -1202,9 +1151,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__falloff_speed_scale
 	 */
 	
@@ -1219,9 +1165,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__falloff_speed_scale
 	 */
 	
@@ -1296,9 +1239,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff_curve'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__falloff_curve
 	 */
 	
@@ -1316,9 +1256,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff_curve'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
 	 * @see #__DNA__FIELD__falloff_curve
 	 */
 	
