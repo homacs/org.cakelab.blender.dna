@@ -27,7 +27,7 @@ public class MTex extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 32;
+	public static final int __DNA__SDNA_INDEX = 40;
 
 	/**
 	 * Field descriptor (offset) for struct member 'texco'.
@@ -153,7 +153,7 @@ public class MTex extends CFacade {
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -293,24 +293,24 @@ public class MTex extends CFacade {
 	public static final long[] __DNA__FIELD__brush_angle_mode = new long[]{85, 93};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MTex mtex = ...;
-	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{86, 94};
+	public static final long[] __DNA__FIELD___pad = new long[]{86, 94};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
@@ -393,24 +393,24 @@ public class MTex extends CFacade {
 	public static final long[] __DNA__FIELD__random_angle = new long[]{116, 124};
 
 	/**
-	 * Field descriptor (offset) for struct member 'texflag'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MTex mtex = ...;
-	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__texflag);
-	 * CPointer&lt;Short&gt; p_texflag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'texflag'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{120, 128};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{120, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colormodel'.
@@ -1322,30 +1322,30 @@ public class MTex extends CFacade {
 	public static final long[] __DNA__FIELD__fieldfac = new long[]{288, 296};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'twistfac'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MTex mtex = ...;
-	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = mtex.__dna__addressof(MTex.__DNA__FIELD__twistfac);
+	 * CPointer&lt;Float&gt; p_twistfac = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'twistfac'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{292, 300};
+	public static final long[] __DNA__FIELD__twistfac = new long[]{292, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> lamp </p>
+	 * <p> light </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1615,7 +1615,7 @@ public class MTex extends CFacade {
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -1636,7 +1636,7 @@ public class MTex extends CFacade {
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -1826,11 +1826,11 @@ public class MTex extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -1844,11 +1844,11 @@ public class MTex extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -1856,12 +1856,12 @@ public class MTex extends CFacade {
 		} else {
 			__dna__offset = 86;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -2002,30 +2002,42 @@ public class MTex extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'texflag'.
-	 * @see #__DNA__FIELD__texflag
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getTexflag() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 128);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'texflag'.
-	 * @see #__DNA__FIELD__texflag
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setTexflag(short texflag) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 128, texflag);
+			__dna__offset = 128;
 		} else {
-			__io__block.writeShort(__io__address + 120, texflag);
+			__dna__offset = 120;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -3308,30 +3320,30 @@ public class MTex extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'twistfac'.
+	 * @see #__DNA__FIELD__twistfac
 	 */
 	
-	public int getPad2() throws IOException
+	public float getTwistfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readInt(__io__address + 292);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'twistfac'.
+	 * @see #__DNA__FIELD__twistfac
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void setTwistfac(float twistfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 300, pad2);
+			__io__block.writeFloat(__io__address + 300, twistfac);
 		} else {
-			__io__block.writeInt(__io__address + 292, pad2);
+			__io__block.writeFloat(__io__address + 292, twistfac);
 		}
 	}
 
@@ -3339,7 +3351,7 @@ public class MTex extends CFacade {
 	 * Get method for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> lamp </p>
+	 * <p> light </p>
 	 * @see #__DNA__FIELD__shadowfac
 	 */
 	
@@ -3356,7 +3368,7 @@ public class MTex extends CFacade {
 	 * Set method for struct member 'shadowfac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> lamp </p>
+	 * <p> light </p>
 	 * @see #__DNA__FIELD__shadowfac
 	 */
 	

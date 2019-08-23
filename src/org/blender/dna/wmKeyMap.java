@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> stored in WM, the actively used keymaps </p>
  */
 
-@CMetaData(size32=104, size64=136)
+@CMetaData(size32=172, size64=208)
 public class wmKeyMap extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class wmKeyMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 503;
+	public static final int __DNA__SDNA_INDEX = 509;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -114,7 +114,7 @@ public class wmKeyMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> global editor keymaps, or for more per space/region </p>
+	 * <p> Global editor keymaps, or for more per space/region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,7 +137,7 @@ public class wmKeyMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
+	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,7 +160,7 @@ public class wmKeyMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see above </p>
+	 * <p> See above. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -180,10 +180,33 @@ public class wmKeyMap extends CFacade {
 	public static final long[] __DNA__FIELD__regionid = new long[]{90, 114};
 
 	/**
+	 * Field descriptor (offset) for struct member 'owner_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional, see: {@link wmOwnerID} . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmKeyMap wmkeymap = ...;
+	 * CPointer&lt;Object&gt; p = wmkeymap.__dna__addressof(wmKeyMap.__DNA__FIELD__owner_id);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_owner_id = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'owner_id'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__owner_id = new long[]{92, 116};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general flags </p>
+	 * <p> General flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -200,13 +223,13 @@ public class wmKeyMap extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{92, 116};
+	public static final long[] __DNA__FIELD__flag = new long[]{156, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kmi_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last kmi id </p>
+	 * <p> Last kmi id. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -223,13 +246,13 @@ public class wmKeyMap extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kmi_id = new long[]{94, 118};
+	public static final long[] __DNA__FIELD__kmi_id = new long[]{158, 182};
 
 	/**
 	 * Field descriptor (offset) for struct member 'modal_items'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for modal, EnumPropertyItem for now </p>
+	 * <p> For modal, #EnumPropertyItem for now. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -246,7 +269,7 @@ public class wmKeyMap extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__modal_items = new long[]{100, 128};
+	public static final long[] __DNA__FIELD__modal_items = new long[]{168, 200};
 
 	public wmKeyMap(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -396,7 +419,7 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> global editor keymaps, or for more per space/region </p>
+	 * <p> Global editor keymaps, or for more per space/region. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -417,7 +440,7 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> global editor keymaps, or for more per space/region </p>
+	 * <p> Global editor keymaps, or for more per space/region. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -442,7 +465,7 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
+	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	
@@ -459,7 +482,7 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'spaceid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> same IDs as in {@link DNA_space_types.h}  </p>
+	 * <p> Same IDs as in {@link DNA_space_types.h} . </p>
 	 * @see #__DNA__FIELD__spaceid
 	 */
 	
@@ -476,7 +499,7 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'regionid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see above </p>
+	 * <p> See above. </p>
 	 * @see #__DNA__FIELD__regionid
 	 */
 	
@@ -493,7 +516,7 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'regionid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see above </p>
+	 * <p> See above. </p>
 	 * @see #__DNA__FIELD__regionid
 	 */
 	
@@ -507,19 +530,65 @@ public class wmKeyMap extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'owner_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional, see: {@link wmOwnerID} . </p>
+	 * @see #__DNA__FIELD__owner_id
+	 */
+	
+	public CArrayFacade<Byte> getOwner_id() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'owner_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional, see: {@link wmOwnerID} . </p>
+	 * @see #__DNA__FIELD__owner_id
+	 */
+	
+	public void setOwner_id(CArrayFacade<Byte> owner_id) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 116;
+		} else {
+			__dna__offset = 92;
+		}
+		if (__io__equals(owner_id, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, owner_id)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, owner_id);
+		} else {
+			__io__generic__copy( getOwner_id(), owner_id);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general flags </p>
+	 * <p> General flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 116);
+			return __io__block.readShort(__io__address + 180);
 		} else {
-			return __io__block.readShort(__io__address + 92);
+			return __io__block.readShort(__io__address + 156);
 		}
 	}
 
@@ -527,16 +596,16 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general flags </p>
+	 * <p> General flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 116, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		} else {
-			__io__block.writeShort(__io__address + 92, flag);
+			__io__block.writeShort(__io__address + 156, flag);
 		}
 	}
 
@@ -544,16 +613,16 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'kmi_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last kmi id </p>
+	 * <p> Last kmi id. </p>
 	 * @see #__DNA__FIELD__kmi_id
 	 */
 	
 	public short getKmi_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 118);
+			return __io__block.readShort(__io__address + 182);
 		} else {
-			return __io__block.readShort(__io__address + 94);
+			return __io__block.readShort(__io__address + 158);
 		}
 	}
 
@@ -561,16 +630,16 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'kmi_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last kmi id </p>
+	 * <p> Last kmi id. </p>
 	 * @see #__DNA__FIELD__kmi_id
 	 */
 	
 	public void setKmi_id(short kmi_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 118, kmi_id);
+			__io__block.writeShort(__io__address + 182, kmi_id);
 		} else {
-			__io__block.writeShort(__io__address + 94, kmi_id);
+			__io__block.writeShort(__io__address + 158, kmi_id);
 		}
 	}
 
@@ -578,7 +647,7 @@ public class wmKeyMap extends CFacade {
 	 * Get method for struct member 'modal_items'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for modal, EnumPropertyItem for now </p>
+	 * <p> For modal, #EnumPropertyItem for now. </p>
 	 * @see #__DNA__FIELD__modal_items
 	 */
 	
@@ -586,9 +655,9 @@ public class wmKeyMap extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -598,7 +667,7 @@ public class wmKeyMap extends CFacade {
 	 * Set method for struct member 'modal_items'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for modal, EnumPropertyItem for now </p>
+	 * <p> For modal, #EnumPropertyItem for now. </p>
 	 * @see #__DNA__FIELD__modal_items
 	 */
 	
@@ -606,9 +675,9 @@ public class wmKeyMap extends CFacade {
 	{
 		long __address = ((modal_items == null) ? 0 : modal_items.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 

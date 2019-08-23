@@ -27,14 +27,13 @@ public class EffectorWeights extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 157;
+	public static final int __DNA__SDNA_INDEX = 164;
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
-	 * <p> only use effectors from this group of objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only use effectors from this group of objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -42,12 +41,12 @@ public class EffectorWeights extends CFacade {
 	 * <pre>
 	 * EffectorWeights effectorweights = ...;
 	 * CPointer&lt;Object&gt; p = effectorweights.__dna__addressof(EffectorWeights.__DNA__FIELD__group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -57,7 +56,7 @@ public class EffectorWeights extends CFacade {
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> effector type specific weights </p>
+	 * <p> Effector type specific weights. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,24 +136,24 @@ public class EffectorWeights extends CFacade {
 	public static final long[] __DNA__FIELD__rt = new long[]{66, 70};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * EffectorWeights effectorweights = ...;
-	 * CPointer&lt;Object&gt; p = effectorweights.__dna__addressof(EffectorWeights.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = effectorweights.__dna__addressof(EffectorWeights.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{72, 76};
+	public static final long[] __DNA__FIELD___pad = new long[]{72, 76};
 
 	public EffectorWeights(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -167,13 +166,12 @@ public class EffectorWeights extends CFacade {
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
-	 * <p> only use effectors from this group of objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only use effectors from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public CPointer<Group> getGroup() throws IOException
+	public CPointer<Collection> getGroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -181,20 +179,19 @@ public class EffectorWeights extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Limit effectors to this Group<h4>Blender Source Code:</h4>
-	 * <p> only use effectors from this group of objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only use effectors from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public void setGroup(CPointer<Group> group) throws IOException
+	public void setGroup(CPointer<Collection> group) throws IOException
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -208,7 +205,7 @@ public class EffectorWeights extends CFacade {
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> effector type specific weights </p>
+	 * <p> Effector type specific weights. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -229,7 +226,7 @@ public class EffectorWeights extends CFacade {
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> effector type specific weights </p>
+	 * <p> Effector type specific weights. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -347,30 +344,42 @@ public class EffectorWeights extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 72);
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, pad);
+			__dna__offset = 76;
 		} else {
-			__io__block.writeInt(__io__address + 72, pad);
+			__dna__offset = 72;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Render Layers Render Layer </p>
  */
 
-@CMetaData(size32=156, size64=192)
+@CMetaData(size32=152, size64=184)
 public class SceneRenderLayer extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class SceneRenderLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 173;
+	public static final int __DNA__SDNA_INDEX = 177;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,9 +74,10 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,6 +98,11 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,33 +122,12 @@ public class SceneRenderLayer extends CFacade {
 	public static final long[] __DNA__FIELD__mat_override = new long[]{72, 80};
 
 	/**
-	 * Field descriptor (offset) for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SceneRenderLayer scenerenderlayer = ...;
-	 * CPointer&lt;Object&gt; p = scenerenderlayer.__dna__addressof(SceneRenderLayer.__DNA__FIELD__light_override);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_light_override = p.cast(new Class[]{CPointer.class, Group.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'light_override'</li>
-	 * <li>Signature: 'Group*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__light_override = new long[]{76, 88};
-
-	/**
 	 * Field descriptor (offset) for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scene->lay itself has priority over this </p>
+	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,13 +144,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lay = new long[]{80, 96};
+	public static final long[] __DNA__FIELD__lay = new long[]{76, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> has to be after lay, this is for Z-masking </p>
+	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,13 +169,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lay_zmask = new long[]{84, 100};
+	public static final long[] __DNA__FIELD__lay_zmask = new long[]{80, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not used by internal, exclude </p>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -205,10 +194,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lay_exclude = new long[]{88, 104};
+	public static final long[] __DNA__FIELD__lay_exclude = new long[]{84, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -225,13 +219,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layflag = new long[]{92, 108};
+	public static final long[] __DNA__FIELD__layflag = new long[]{88, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pass_xor has to be after passflag </p>
+	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,10 +244,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__passflag = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__passflag = new long[]{92, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_xor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -268,13 +269,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_xor = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__pass_xor = new long[]{96, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,13 +294,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__samples = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__samples = new long[]{100, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -314,10 +319,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_alpha_threshold = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__pass_alpha_threshold = new long[]{104, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  id_properties. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -334,10 +344,15 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop = new long[]{112, 128};
+	public static final long[] __DNA__FIELD__prop = new long[]{108, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'freestyleConfig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -354,7 +369,7 @@ public class SceneRenderLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/56</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__freestyleConfig = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__freestyleConfig = new long[]{112, 128};
 
 	public SceneRenderLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -431,9 +446,10 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -453,9 +469,10 @@ public class SceneRenderLayer extends CFacade {
 	/**
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Render layer name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -478,6 +495,11 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Get method for struct member 'mat_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__mat_override
 	 */
 	
@@ -495,6 +517,11 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'mat_override'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__mat_override
 	 */
 	
@@ -509,57 +536,21 @@ public class SceneRenderLayer extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
-	 * @see #__DNA__FIELD__light_override
-	 */
-	
-	public CPointer<Group> getLight_override() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 76);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'light_override'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group to override all other lights in this render layer
-	 * @see #__DNA__FIELD__light_override
-	 */
-	
-	public void setLight_override(CPointer<Group> light_override) throws IOException
-	{
-		long __address = ((light_override == null) ? 0 : light_override.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
-		} else {
-			__io__block.writeLong(__io__address + 76, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scene->lay itself has priority over this </p>
+	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
 	public int getLay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readInt(__io__address + 88);
 		} else {
-			return __io__block.readInt(__io__address + 80);
+			return __io__block.readInt(__io__address + 76);
 		}
 	}
 
@@ -567,16 +558,18 @@ public class SceneRenderLayer extends CFacade {
 	 * Set method for struct member 'lay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scene->lay itself has priority over this </p>
+	 * <p> Converted to {@link LayerCollection}  cycles camera visibility override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay
 	 */
 	
 	public void setLay(int lay) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 96, lay);
+			__io__block.writeInt(__io__address + 88, lay);
 		} else {
-			__io__block.writeInt(__io__address + 80, lay);
+			__io__block.writeInt(__io__address + 76, lay);
 		}
 	}
 
@@ -584,16 +577,18 @@ public class SceneRenderLayer extends CFacade {
 	 * Get method for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> has to be after lay, this is for Z-masking </p>
+	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay_zmask
 	 */
 	
 	public int getLay_zmask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 92);
 		} else {
-			return __io__block.readInt(__io__address + 84);
+			return __io__block.readInt(__io__address + 80);
 		}
 	}
 
@@ -601,16 +596,18 @@ public class SceneRenderLayer extends CFacade {
 	 * Set method for struct member 'lay_zmask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> has to be after lay, this is for Z-masking </p>
+	 * <p> Converted to {@link LayerCollection}  cycles holdout override. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay_zmask
 	 */
 	
 	public void setLay_zmask(int lay_zmask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 100, lay_zmask);
+			__io__block.writeInt(__io__address + 92, lay_zmask);
 		} else {
-			__io__block.writeInt(__io__address + 84, lay_zmask);
+			__io__block.writeInt(__io__address + 80, lay_zmask);
 		}
 	}
 
@@ -618,16 +615,18 @@ public class SceneRenderLayer extends CFacade {
 	 * Get method for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not used by internal, exclude </p>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay_exclude
 	 */
 	
 	public int getLay_exclude() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 96);
 		} else {
-			return __io__block.readInt(__io__address + 88);
+			return __io__block.readInt(__io__address + 84);
 		}
 	}
 
@@ -635,44 +634,56 @@ public class SceneRenderLayer extends CFacade {
 	 * Set method for struct member 'lay_exclude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not used by internal, exclude </p>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__lay_exclude
 	 */
 	
 	public void setLay_exclude(int lay_exclude) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 104, lay_exclude);
+			__io__block.writeInt(__io__address + 96, lay_exclude);
 		} else {
-			__io__block.writeInt(__io__address + 88, lay_exclude);
+			__io__block.writeInt(__io__address + 84, lay_exclude);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'layflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__layflag
 	 */
 	
 	public int getLayflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 100);
 		} else {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readInt(__io__address + 88);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'layflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  layflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__layflag
 	 */
 	
 	public void setLayflag(int layflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, layflag);
+			__io__block.writeInt(__io__address + 100, layflag);
 		} else {
-			__io__block.writeInt(__io__address + 92, layflag);
+			__io__block.writeInt(__io__address + 88, layflag);
 		}
 	}
 
@@ -680,16 +691,18 @@ public class SceneRenderLayer extends CFacade {
 	 * Get method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pass_xor has to be after passflag </p>
+	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__passflag
 	 */
 	
 	public int getPassflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 104);
 		} else {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readInt(__io__address + 92);
 		}
 	}
 
@@ -697,117 +710,142 @@ public class SceneRenderLayer extends CFacade {
 	 * Set method for struct member 'passflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pass_xor has to be after passflag </p>
+	 * <p> pass_xor has to be after passflag Pass_xor has to be after passflag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__passflag
 	 */
 	
 	public void setPassflag(int passflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, passflag);
+			__io__block.writeInt(__io__address + 104, passflag);
 		} else {
-			__io__block.writeInt(__io__address + 96, passflag);
+			__io__block.writeInt(__io__address + 92, passflag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pass_xor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pass_xor
 	 */
 	
 	public int getPass_xor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 108);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 96);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pass_xor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  passflag and flag. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pass_xor
 	 */
 	
 	public void setPass_xor(int pass_xor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, pass_xor);
+			__io__block.writeInt(__io__address + 108, pass_xor);
 		} else {
-			__io__block.writeInt(__io__address + 100, pass_xor);
+			__io__block.writeInt(__io__address + 96, pass_xor);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__samples
 	 */
 	
 	public int getSamples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 112);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 100);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Override number of render samples for this render layer, 0 will use the scene setting
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  setting. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__samples
 	 */
 	
 	public void setSamples(int samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, samples);
+			__io__block.writeInt(__io__address + 112, samples);
 		} else {
-			__io__block.writeInt(__io__address + 104, samples);
+			__io__block.writeInt(__io__address + 100, samples);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	
 	public float getPass_alpha_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'pass_alpha_threshold'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Z, Index, normal, UV and vector passes are only affected by surfaces with alpha transparency equal to or higher than this threshold
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  pass_alpha_threshold. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pass_alpha_threshold
 	 */
 	
 	public void setPass_alpha_threshold(float pass_alpha_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, pass_alpha_threshold);
+			__io__block.writeFloat(__io__address + 116, pass_alpha_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 108, pass_alpha_threshold);
+			__io__block.writeFloat(__io__address + 104, pass_alpha_threshold);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  id_properties. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -815,9 +853,9 @@ public class SceneRenderLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -825,6 +863,11 @@ public class SceneRenderLayer extends CFacade {
 
 	/**
 	 * Set method for struct member 'prop'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  id_properties. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -832,28 +875,38 @@ public class SceneRenderLayer extends CFacade {
 	{
 		long __address = ((prop == null) ? 0 : prop.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'freestyleConfig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__freestyleConfig
 	 */
 	
 	public FreestyleConfig getFreestyleConfig() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new FreestyleConfig(__io__address + 136, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 128, __io__block, __io__blockTable);
 		} else {
-			return new FreestyleConfig(__io__address + 116, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 112, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'freestyleConfig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Converted to {@link ViewLayer}  freestyleConfig. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__freestyleConfig
 	 */
 	
@@ -861,9 +914,9 @@ public class SceneRenderLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 112;
 		}
 		if (__io__equals(freestyleConfig, __io__address + __dna__offset)) {
 			return;

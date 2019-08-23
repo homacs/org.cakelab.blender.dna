@@ -28,7 +28,7 @@ public class bActionConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 369;
+	public static final int __DNA__SDNA_INDEX = 340;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -54,7 +54,7 @@ public class bActionConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> what transform 'channel' drives the result </p>
+	 * <p> What transform 'channel' drives the result. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,7 +77,7 @@ public class bActionConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> was used in versions prior to the Constraints recode </p>
+	 * <p> Was used in versions prior to the Constraints recode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -220,7 +220,7 @@ public class bActionConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -283,7 +283,7 @@ public class bActionConstraint extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> what transform 'channel' drives the result </p>
+	 * <p> What transform 'channel' drives the result. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -300,7 +300,7 @@ public class bActionConstraint extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> what transform 'channel' drives the result </p>
+	 * <p> What transform 'channel' drives the result. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -317,7 +317,7 @@ public class bActionConstraint extends CFacade {
 	 * Get method for struct member 'local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> was used in versions prior to the Constraints recode </p>
+	 * <p> Was used in versions prior to the Constraints recode. </p>
 	 * @see #__DNA__FIELD__local
 	 */
 	
@@ -334,7 +334,7 @@ public class bActionConstraint extends CFacade {
 	 * Set method for struct member 'local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> was used in versions prior to the Constraints recode </p>
+	 * <p> Was used in versions prior to the Constraints recode. </p>
 	 * @see #__DNA__FIELD__local
 	 */
 	
@@ -523,7 +523,7 @@ public class bActionConstraint extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -544,7 +544,7 @@ public class bActionConstraint extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	

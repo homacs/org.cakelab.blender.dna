@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Script}  View (Obsolete) ================================== {@link Script}  Runtime Data - Obsolete (pre 2.5) </p>
+ * <p>{@link Script}  Runtime Data - Obsolete (pre 2.5) </p>
  */
 
-@CMetaData(size32=1408, size64=1448)
+@CMetaData(size32=1428, size64=1480)
 public class Script extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class Script extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_draw = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__py_draw = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_event'.
@@ -88,7 +88,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_event = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__py_event = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_button'.
@@ -108,7 +108,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_button = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__py_button = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_browsercallback'.
@@ -128,7 +128,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_browsercallback = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__py_browsercallback = new long[]{132, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_globaldict'.
@@ -148,7 +148,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_globaldict = new long[]{116, 152};
+	public static final long[] __DNA__FIELD__py_globaldict = new long[]{136, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -168,7 +168,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__flags = new long[]{140, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastspace'.
@@ -188,13 +188,13 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastspace = new long[]{124, 164};
+	public static final long[] __DNA__FIELD__lastspace = new long[]{144, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,13 +211,13 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scriptname = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__scriptname = new long[]{148, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,7 +234,7 @@ public class Script extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scriptarg = new long[]{1152, 1192};
+	public static final long[] __DNA__FIELD__scriptarg = new long[]{1172, 1224};
 
 	public Script(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -289,9 +289,9 @@ public class Script extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -306,9 +306,9 @@ public class Script extends CFacade {
 	{
 		long __address = ((py_draw == null) ? 0 : py_draw.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -321,9 +321,9 @@ public class Script extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -338,9 +338,9 @@ public class Script extends CFacade {
 	{
 		long __address = ((py_event == null) ? 0 : py_event.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -353,9 +353,9 @@ public class Script extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -370,9 +370,9 @@ public class Script extends CFacade {
 	{
 		long __address = ((py_button == null) ? 0 : py_button.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -385,9 +385,9 @@ public class Script extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -402,9 +402,9 @@ public class Script extends CFacade {
 	{
 		long __address = ((py_browsercallback == null) ? 0 : py_browsercallback.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 
@@ -417,9 +417,9 @@ public class Script extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -434,9 +434,9 @@ public class Script extends CFacade {
 	{
 		long __address = ((py_globaldict == null) ? 0 : py_globaldict.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -448,9 +448,9 @@ public class Script extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -462,9 +462,9 @@ public class Script extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 160, flags);
+			__io__block.writeInt(__io__address + 192, flags);
 		} else {
-			__io__block.writeInt(__io__address + 120, flags);
+			__io__block.writeInt(__io__address + 140, flags);
 		}
 	}
 
@@ -476,9 +476,9 @@ public class Script extends CFacade {
 	public int getLastspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 144);
 		}
 	}
 
@@ -490,9 +490,9 @@ public class Script extends CFacade {
 	public void setLastspace(int lastspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, lastspace);
+			__io__block.writeInt(__io__address + 196, lastspace);
 		} else {
-			__io__block.writeInt(__io__address + 124, lastspace);
+			__io__block.writeInt(__io__address + 144, lastspace);
 		}
 	}
 
@@ -500,7 +500,7 @@ public class Script extends CFacade {
 	 * Get method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
 	
@@ -511,9 +511,9 @@ public class Script extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -521,7 +521,7 @@ public class Script extends CFacade {
 	 * Set method for struct member 'scriptname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on 1024 = FILE_MAX </p>
+	 * <p> Store the script file here so we can re-run it on loading blender, if "Enable Scripts" is on1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptname
 	 */
 	
@@ -529,9 +529,9 @@ public class Script extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 148;
 		}
 		if (__io__equals(scriptname, __io__address + __dna__offset)) {
 			return;
@@ -546,7 +546,7 @@ public class Script extends CFacade {
 	 * Get method for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptarg
 	 */
 	
@@ -557,9 +557,9 @@ public class Script extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -567,7 +567,7 @@ public class Script extends CFacade {
 	 * Set method for struct member 'scriptarg'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__scriptarg
 	 */
 	
@@ -575,9 +575,9 @@ public class Script extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1192;
+			__dna__offset = 1224;
 		} else {
-			__dna__offset = 1152;
+			__dna__offset = 1172;
 		}
 		if (__io__equals(scriptarg, __io__address + __dna__offset)) {
 			return;

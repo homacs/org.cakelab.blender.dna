@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +28,7 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 528;
+	public static final int __DNA__SDNA_INDEX = 533;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
@@ -77,29 +78,6 @@ public class AnimData extends CFacade {
 	public static final long[] __DNA__FIELD__tmpact = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> remapping-info for active action - should only be used if needed (for 'foreign' actions that aren't working correctly) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * AnimData animdata = ...;
-	 * CPointer&lt;Object&gt; p = animdata.__dna__addressof(AnimData.__DNA__FIELD__remap);
-	 * CPointer&lt;CPointer&lt;AnimMapper&gt;&gt; p_remap = p.cast(new Class[]{CPointer.class, AnimMapper.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'remap'</li>
-	 * <li>Signature: 'AnimMapper*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__remap = new long[]{8, 16};
-
-	/**
 	 * Field descriptor (offset) for struct member 'nla_tracks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -121,13 +99,13 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_tracks = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__nla_tracks = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -144,13 +122,13 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_track = new long[]{20, 40};
+	public static final long[] __DNA__FIELD__act_track = new long[]{16, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -167,14 +145,14 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actstrip = new long[]{24, 48};
+	public static final long[] __DNA__FIELD__actstrip = new long[]{20, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drivers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation datastandard user-created Drivers/Expressions (used as part of a rig) </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,13 +169,13 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drivers = new long[]{28, 56};
+	public static final long[] __DNA__FIELD__drivers = new long[]{24, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed) </p>
+	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -214,13 +192,36 @@ public class AnimData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overrides = new long[]{36, 72};
+	public static final long[] __DNA__FIELD__overrides = new long[]{32, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'driver_array'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data, for depsgraph evaluation. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * AnimData animdata = ...;
+	 * CPointer&lt;Object&gt; p = animdata.__dna__addressof(AnimData.__DNA__FIELD__driver_array);
+	 * CPointer&lt;CPointer&lt;CPointer&lt;FCurve&gt;&gt;&gt; p_driver_array = p.cast(new Class[]{CPointer.class, CPointer.class, FCurve.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'driver_array'</li>
+	 * <li>Signature: 'FCurve**'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__driver_array = new long[]{40, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for animation evaluation user-defined settings </p>
+	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -240,33 +241,30 @@ public class AnimData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{44, 88};
 
 	/**
-	 * Field descriptor (offset) for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depsgraph recalculation flags </p>
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * AnimData animdata = ...;
-	 * CPointer&lt;Object&gt; p = animdata.__dna__addressof(AnimData.__DNA__FIELD__recalc);
-	 * CPointer&lt;Integer&gt; p_recalc = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = animdata.__dna__addressof(AnimData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'recalc'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{48, 92};
+	public static final long[] __DNA__FIELD___pad = new long[]{48, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for active action evaluation (based on NLA strip settings) accumulation mode for active action </p>
+	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -289,7 +287,7 @@ public class AnimData extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolation mode for active action </p>
+	 * <p> Extrapolation mode for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -312,7 +310,7 @@ public class AnimData extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence for active action </p>
+	 * <p> Influence for active action. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -418,44 +416,6 @@ public class AnimData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> remapping-info for active action - should only be used if needed (for 'foreign' actions that aren't working correctly) </p>
-	 * @see #__DNA__FIELD__remap
-	 */
-	
-	public CPointer<AnimMapper> getRemap() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{AnimMapper.class};
-		return new CPointer<AnimMapper>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimMapper.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> remapping-info for active action - should only be used if needed (for 'foreign' actions that aren't working correctly) </p>
-	 * @see #__DNA__FIELD__remap
-	 */
-	
-	public void setRemap(CPointer<AnimMapper> remap) throws IOException
-	{
-		long __address = ((remap == null) ? 0 : remap.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
-		} else {
-			__io__block.writeLong(__io__address + 8, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'nla_tracks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -467,9 +427,9 @@ public class AnimData extends CFacade {
 	public ListBase getNla_tracks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 24, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 16, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 12, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 8, __io__block, __io__blockTable);
 		}
 	}
 
@@ -486,9 +446,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 16;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 8;
 		}
 		if (__io__equals(nla_tracks, __io__address + __dna__offset)) {
 			return;
@@ -503,7 +463,7 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
 	
@@ -511,9 +471,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 20);
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{NlaTrack.class};
 		return new CPointer<NlaTrack>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, NlaTrack.__DNA__SDNA_INDEX), __io__blockTable);
@@ -523,7 +483,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-track (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
 	
@@ -531,9 +491,9 @@ public class AnimData extends CFacade {
 	{
 		long __address = ((act_track == null) ? 0 : act_track.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		} else {
-			__io__block.writeLong(__io__address + 20, __address);
+			__io__block.writeLong(__io__address + 16, __address);
 		}
 	}
 
@@ -541,7 +501,7 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__actstrip
 	 */
 	
@@ -549,9 +509,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{NlaStrip.class};
 		return new CPointer<NlaStrip>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, NlaStrip.__DNA__SDNA_INDEX), __io__blockTable);
@@ -561,7 +521,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'actstrip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers) </p>
+	 * <p> Active NLA-strip (only set/used during tweaking, so no need to worry about dangling pointers). </p>
 	 * @see #__DNA__FIELD__actstrip
 	 */
 	
@@ -569,9 +529,9 @@ public class AnimData extends CFacade {
 	{
 		long __address = ((actstrip == null) ? 0 : actstrip.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 40, __address);
 		} else {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 20, __address);
 		}
 	}
 
@@ -580,16 +540,16 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation datastandard user-created Drivers/Expressions (used as part of a rig) </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
 	
 	public ListBase getDrivers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 24, __io__block, __io__blockTable);
 		}
 	}
 
@@ -598,7 +558,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation datastandard user-created Drivers/Expressions (used as part of a rig) </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
 	
@@ -606,9 +566,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 56;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 24;
 		}
 		if (__io__equals(drivers, __io__address + __dna__offset)) {
 			return;
@@ -623,16 +583,16 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed) </p>
+	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * @see #__DNA__FIELD__overrides
 	 */
 	
 	public ListBase getOverrides() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 64, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 36, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
 		}
 	}
 
@@ -640,7 +600,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'overrides'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed) </p>
+	 * <p> Temp storage ({@link AnimOverride} ) of values for settings that are animated (but the value hasn't been keyframed). </p>
 	 * @see #__DNA__FIELD__overrides
 	 */
 	
@@ -648,9 +608,9 @@ public class AnimData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 36;
+			__dna__offset = 32;
 		}
 		if (__io__equals(overrides, __io__address + __dna__offset)) {
 			return;
@@ -662,10 +622,48 @@ public class AnimData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'driver_array'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data, for depsgraph evaluation. </p>
+	 * @see #__DNA__FIELD__driver_array
+	 */
+	
+	public CPointer<CPointer<FCurve>> getDriver_array() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, FCurve.class};
+		return new CPointer<CPointer<FCurve>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'driver_array'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data, for depsgraph evaluation. </p>
+	 * @see #__DNA__FIELD__driver_array
+	 */
+	
+	public void setDriver_array(CPointer<CPointer<FCurve>> driver_array) throws IOException
+	{
+		long __address = ((driver_array == null) ? 0 : driver_array.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 80, __address);
+		} else {
+			__io__block.writeLong(__io__address + 40, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for animation evaluation user-defined settings </p>
+	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -682,7 +680,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for animation evaluation user-defined settings </p>
+	 * <p> settings for animation evaluation User-defined settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -696,36 +694,42 @@ public class AnimData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depsgraph recalculation flags </p>
-	 * @see #__DNA__FIELD__recalc
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getRecalc() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 92);
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 48);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depsgraph recalculation flags </p>
-	 * @see #__DNA__FIELD__recalc
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setRecalc(int recalc) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 92, recalc);
+			__dna__offset = 92;
 		} else {
-			__io__block.writeInt(__io__address + 48, recalc);
+			__dna__offset = 48;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -733,7 +737,7 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for active action evaluation (based on NLA strip settings) accumulation mode for active action </p>
+	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_blendmode
 	 */
 	
@@ -750,7 +754,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'act_blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for active action evaluation (based on NLA strip settings) accumulation mode for active action </p>
+	 * <p> settings for active action evaluation (based on NLA strip settings) Accumulation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_blendmode
 	 */
 	
@@ -767,7 +771,7 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolation mode for active action </p>
+	 * <p> Extrapolation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_extendmode
 	 */
 	
@@ -784,7 +788,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'act_extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolation mode for active action </p>
+	 * <p> Extrapolation mode for active action. </p>
 	 * @see #__DNA__FIELD__act_extendmode
 	 */
 	
@@ -801,7 +805,7 @@ public class AnimData extends CFacade {
 	 * Get method for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence for active action </p>
+	 * <p> Influence for active action. </p>
 	 * @see #__DNA__FIELD__act_influence
 	 */
 	
@@ -818,7 +822,7 @@ public class AnimData extends CFacade {
 	 * Set method for struct member 'act_influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence for active action </p>
+	 * <p> Influence for active action. </p>
 	 * @see #__DNA__FIELD__act_influence
 	 */
 	

@@ -26,7 +26,7 @@ public class FluidsimModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 121;
+	public static final int __DNA__SDNA_INDEX = 127;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class FluidsimModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -52,7 +52,7 @@ public class FluidsimModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
+	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -69,30 +69,7 @@ public class FluidsimModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fss = new long[]{96, 112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidsimModifierData fluidsimmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = fluidsimmodifierdata.__dna__addressof(FluidsimModifierData.__DNA__FIELD__point_cache);
-	 * CPointer&lt;CPointer&lt;PointCache&gt;&gt; p_point_cache = p.cast(new Class[]{CPointer.class, PointCache.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'point_cache'</li>
-	 * <li>Signature: 'PointCache*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__point_cache = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__fss = new long[]{100, 120};
 
 	public FluidsimModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -142,7 +119,7 @@ public class FluidsimModifierData extends CFacade {
 	 * Get method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
+	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	
@@ -150,9 +127,9 @@ public class FluidsimModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidsimSettings.class};
 		return new CPointer<FluidsimSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidsimSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -162,51 +139,13 @@ public class FluidsimModifierData extends CFacade {
 	 * Set method for struct member 'fss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_fluidsim.h}  </p>
+	 * <p> Definition is in {@link DNA_object_fluidsim_types.h} . </p>
 	 * @see #__DNA__FIELD__fss
 	 */
 	
 	public void setFss(CPointer<FluidsimSettings> fss) throws IOException
 	{
 		long __address = ((fss == null) ? 0 : fss.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
-		} else {
-			__io__block.writeLong(__io__address + 96, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
-	 * @see #__DNA__FIELD__point_cache
-	 */
-	
-	public CPointer<PointCache> getPoint_cache() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
-		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'point_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
-	 * @see #__DNA__FIELD__point_cache
-	 */
-	
-	public void setPoint_cache(CPointer<PointCache> point_cache) throws IOException
-	{
-		long __address = ((point_cache == null) ? 0 : point_cache.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 120, __address);
 		} else {

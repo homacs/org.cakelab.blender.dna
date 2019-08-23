@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=912, size64=912)
+@CMetaData(size32=936, size64=936)
 public class ThemeUI extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 246;
+	public static final int __DNA__SDNA_INDEX = 244;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
@@ -47,7 +47,7 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_regular'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__wcol_regular = new long[]{0, 0};
@@ -67,10 +67,30 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_tool'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_tool = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__wcol_tool = new long[]{40, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wcol_toolbar_item'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__wcol_toolbar_item);
+	 * CPointer&lt;uiWidgetColors&gt; p_wcol_toolbar_item = p.cast(new Class[]{uiWidgetColors.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wcol_toolbar_item'</li>
+	 * <li>Signature: 'uiWidgetColors'</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wcol_toolbar_item = new long[]{80, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_text'.
@@ -87,10 +107,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_text'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_text = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__wcol_text = new long[]{120, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_radio'.
@@ -107,10 +127,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_radio'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_radio = new long[]{96, 96};
+	public static final long[] __DNA__FIELD__wcol_radio = new long[]{160, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_option'.
@@ -127,10 +147,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_option'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_option = new long[]{128, 128};
+	public static final long[] __DNA__FIELD__wcol_option = new long[]{200, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_toggle'.
@@ -147,10 +167,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_toggle'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_toggle = new long[]{160, 160};
+	public static final long[] __DNA__FIELD__wcol_toggle = new long[]{240, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_num'.
@@ -167,10 +187,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_num'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_num = new long[]{192, 192};
+	public static final long[] __DNA__FIELD__wcol_num = new long[]{280, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_numslider'.
@@ -187,10 +207,30 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_numslider'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_numslider = new long[]{224, 224};
+	public static final long[] __DNA__FIELD__wcol_numslider = new long[]{320, 320};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wcol_tab'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__wcol_tab);
+	 * CPointer&lt;uiWidgetColors&gt; p_wcol_tab = p.cast(new Class[]{uiWidgetColors.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wcol_tab'</li>
+	 * <li>Signature: 'uiWidgetColors'</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wcol_tab = new long[]{360, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_menu'.
@@ -207,10 +247,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_menu'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_menu = new long[]{256, 256};
+	public static final long[] __DNA__FIELD__wcol_menu = new long[]{400, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_pulldown'.
@@ -227,10 +267,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_pulldown'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_pulldown = new long[]{288, 288};
+	public static final long[] __DNA__FIELD__wcol_pulldown = new long[]{440, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_menu_back'.
@@ -247,10 +287,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_menu_back'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_menu_back = new long[]{320, 320};
+	public static final long[] __DNA__FIELD__wcol_menu_back = new long[]{480, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_menu_item'.
@@ -267,10 +307,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_menu_item'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_menu_item = new long[]{352, 352};
+	public static final long[] __DNA__FIELD__wcol_menu_item = new long[]{520, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_tooltip'.
@@ -287,10 +327,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_tooltip'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_tooltip = new long[]{384, 384};
+	public static final long[] __DNA__FIELD__wcol_tooltip = new long[]{560, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_box'.
@@ -307,10 +347,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_box'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_box = new long[]{416, 416};
+	public static final long[] __DNA__FIELD__wcol_box = new long[]{600, 600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_scroll'.
@@ -327,10 +367,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_scroll'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_scroll = new long[]{448, 448};
+	public static final long[] __DNA__FIELD__wcol_scroll = new long[]{640, 640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_progress'.
@@ -347,10 +387,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_progress'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_progress = new long[]{480, 480};
+	public static final long[] __DNA__FIELD__wcol_progress = new long[]{680, 680};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_list_item'.
@@ -367,10 +407,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_list_item'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_list_item = new long[]{512, 512};
+	public static final long[] __DNA__FIELD__wcol_list_item = new long[]{720, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_pie_menu'.
@@ -387,10 +427,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_pie_menu'</li>
 	 * <li>Signature: 'uiWidgetColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_pie_menu = new long[]{544, 544};
+	public static final long[] __DNA__FIELD__wcol_pie_menu = new long[]{760, 760};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_state'.
@@ -407,33 +447,10 @@ public class ThemeUI extends CFacade {
 	 * <ul>
 	 * <li>Field: 'wcol_state'</li>
 	 * <li>Signature: 'uiWidgetStateColors'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 48/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wcol_state = new long[]{576, 576};
-
-	/**
-	 * Field descriptor (offset) for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ThemeUI themeui = ...;
-	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__panel);
-	 * CPointer&lt;uiPanelColors&gt; p_panel = p.cast(new Class[]{uiPanelColors.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'panel'</li>
-	 * <li>Signature: 'uiPanelColors'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__panel = new long[]{608, 608};
+	public static final long[] __DNA__FIELD__wcol_state = new long[]{800, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widget_emboss'.
@@ -453,7 +470,7 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widget_emboss = new long[]{624, 624};
+	public static final long[] __DNA__FIELD__widget_emboss = new long[]{848, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'menu_shadow_fac'.
@@ -476,7 +493,7 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__menu_shadow_fac = new long[]{628, 628};
+	public static final long[] __DNA__FIELD__menu_shadow_fac = new long[]{852, 852};
 
 	/**
 	 * Field descriptor (offset) for struct member 'menu_shadow_width'.
@@ -496,47 +513,47 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__menu_shadow_width = new long[]{632, 632};
+	public static final long[] __DNA__FIELD__menu_shadow_width = new long[]{856, 856};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'editor_outline'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ThemeUI themeui = ...;
-	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__editor_outline);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_editor_outline = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Field: 'editor_outline'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{634, 634};
+	public static final long[] __DNA__FIELD__editor_outline = new long[]{858, 858};
 
 	/**
-	 * Field descriptor (offset) for struct member 'iconfile'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ThemeUI themeui = ...;
-	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__iconfile);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_iconfile = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'iconfile'</li>
-	 * <li>Signature: 'char[256]'</li>
-	 * <li>Actual Size (32bit/64bit): 256/256</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iconfile = new long[]{640, 640};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{862, 862};
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_alpha'.
@@ -556,7 +573,47 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__icon_alpha = new long[]{896, 896};
+	public static final long[] __DNA__FIELD__icon_alpha = new long[]{864, 864};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_saturation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_saturation);
+	 * CPointer&lt;Float&gt; p_icon_saturation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_saturation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_saturation = new long[]{868, 868};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{872, 872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xaxis'.
@@ -579,7 +636,7 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xaxis = new long[]{900, 900};
+	public static final long[] __DNA__FIELD__xaxis = new long[]{876, 876};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yaxis'.
@@ -599,7 +656,7 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yaxis = new long[]{904, 904};
+	public static final long[] __DNA__FIELD__yaxis = new long[]{880, 880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zaxis'.
@@ -619,7 +676,271 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zaxis = new long[]{908, 908};
+	public static final long[] __DNA__FIELD__zaxis = new long[]{884, 884};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_hi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gizmo Colors. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__gizmo_hi);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_gizmo_hi = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_hi'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_hi = new long[]{888, 888};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_primary'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__gizmo_primary);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_gizmo_primary = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_primary'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_primary = new long[]{892, 892};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_secondary'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__gizmo_secondary);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_gizmo_secondary = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_secondary'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_secondary = new long[]{896, 896};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_a'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__gizmo_a);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_gizmo_a = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_a'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_a = new long[]{900, 900};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_b'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__gizmo_b);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_gizmo_b = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_b'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_b = new long[]{904, 904};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Icon Colors. {@link Scene}  items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_scene);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_scene = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_scene'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_scene = new long[]{908, 908};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_collection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Collection}  items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_collection);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_collection = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_collection'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_collection = new long[]{912, 912};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_object);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_object = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_object'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_object = new long[]{916, 916};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_object_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  data items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_object_data);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_object_data = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_object_data'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_object_data = new long[]{920, 920};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_modifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Modifier and constraint items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_modifier);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_modifier = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_modifier'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_modifier = new long[]{924, 924};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_shading'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shading related items. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_shading);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_shading = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_shading'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_shading = new long[]{928, 928};
+
+	/**
+	 * Field descriptor (offset) for struct member 'icon_border_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_border_intensity);
+	 * CPointer&lt;Float&gt; p_icon_border_intensity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_border_intensity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_border_intensity = new long[]{932, 932};
 
 	public ThemeUI(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -679,9 +1000,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 32, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 32, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 40, __io__block, __io__blockTable);
 		}
 	}
 
@@ -694,9 +1015,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(wcol_tool, __io__address + __dna__offset)) {
 			return;
@@ -708,6 +1029,42 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'wcol_toolbar_item'.
+	 * @see #__DNA__FIELD__wcol_toolbar_item
+	 */
+	
+	public uiWidgetColors getWcol_toolbar_item() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new uiWidgetColors(__io__address + 80, __io__block, __io__blockTable);
+		} else {
+			return new uiWidgetColors(__io__address + 80, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wcol_toolbar_item'.
+	 * @see #__DNA__FIELD__wcol_toolbar_item
+	 */
+	
+	public void setWcol_toolbar_item(uiWidgetColors wcol_toolbar_item) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 80;
+		} else {
+			__dna__offset = 80;
+		}
+		if (__io__equals(wcol_toolbar_item, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, wcol_toolbar_item)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, wcol_toolbar_item);
+		} else {
+			__io__generic__copy( getWcol_toolbar_item(), wcol_toolbar_item);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'wcol_text'.
 	 * @see #__DNA__FIELD__wcol_text
 	 */
@@ -715,9 +1072,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_text() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 64, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 120, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 64, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -730,9 +1087,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 64;
+			__dna__offset = 120;
 		}
 		if (__io__equals(wcol_text, __io__address + __dna__offset)) {
 			return;
@@ -751,9 +1108,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_radio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 96, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 96, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 160, __io__block, __io__blockTable);
 		}
 	}
 
@@ -766,9 +1123,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 160;
 		}
 		if (__io__equals(wcol_radio, __io__address + __dna__offset)) {
 			return;
@@ -787,9 +1144,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_option() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 128, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 128, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 200, __io__block, __io__blockTable);
 		}
 	}
 
@@ -802,9 +1159,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 200;
 		}
 		if (__io__equals(wcol_option, __io__address + __dna__offset)) {
 			return;
@@ -823,9 +1180,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_toggle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 160, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 160, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 240, __io__block, __io__blockTable);
 		}
 	}
 
@@ -838,9 +1195,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 240;
 		}
 		if (__io__equals(wcol_toggle, __io__address + __dna__offset)) {
 			return;
@@ -859,9 +1216,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 192, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 192, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 280, __io__block, __io__blockTable);
 		}
 	}
 
@@ -874,9 +1231,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 280;
 		}
 		if (__io__equals(wcol_num, __io__address + __dna__offset)) {
 			return;
@@ -895,9 +1252,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_numslider() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 224, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 320, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 224, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 320, __io__block, __io__blockTable);
 		}
 	}
 
@@ -910,9 +1267,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 320;
 		}
 		if (__io__equals(wcol_numslider, __io__address + __dna__offset)) {
 			return;
@@ -924,6 +1281,42 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'wcol_tab'.
+	 * @see #__DNA__FIELD__wcol_tab
+	 */
+	
+	public uiWidgetColors getWcol_tab() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new uiWidgetColors(__io__address + 360, __io__block, __io__blockTable);
+		} else {
+			return new uiWidgetColors(__io__address + 360, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wcol_tab'.
+	 * @see #__DNA__FIELD__wcol_tab
+	 */
+	
+	public void setWcol_tab(uiWidgetColors wcol_tab) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 360;
+		} else {
+			__dna__offset = 360;
+		}
+		if (__io__equals(wcol_tab, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, wcol_tab)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, wcol_tab);
+		} else {
+			__io__generic__copy( getWcol_tab(), wcol_tab);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'wcol_menu'.
 	 * @see #__DNA__FIELD__wcol_menu
 	 */
@@ -931,9 +1324,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_menu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 256, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 400, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 256, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 400, __io__block, __io__blockTable);
 		}
 	}
 
@@ -946,9 +1339,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 400;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 400;
 		}
 		if (__io__equals(wcol_menu, __io__address + __dna__offset)) {
 			return;
@@ -967,9 +1360,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_pulldown() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 288, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 440, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 288, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 440, __io__block, __io__blockTable);
 		}
 	}
 
@@ -982,9 +1375,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 288;
+			__dna__offset = 440;
 		} else {
-			__dna__offset = 288;
+			__dna__offset = 440;
 		}
 		if (__io__equals(wcol_pulldown, __io__address + __dna__offset)) {
 			return;
@@ -1003,9 +1396,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_menu_back() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 320, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 480, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 320, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 480, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1018,9 +1411,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 320;
+			__dna__offset = 480;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 480;
 		}
 		if (__io__equals(wcol_menu_back, __io__address + __dna__offset)) {
 			return;
@@ -1039,9 +1432,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_menu_item() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 352, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 520, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 352, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 520, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1054,9 +1447,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
+			__dna__offset = 520;
 		} else {
-			__dna__offset = 352;
+			__dna__offset = 520;
 		}
 		if (__io__equals(wcol_menu_item, __io__address + __dna__offset)) {
 			return;
@@ -1075,9 +1468,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_tooltip() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 384, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 560, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 384, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 560, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1090,9 +1483,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 384;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 384;
+			__dna__offset = 560;
 		}
 		if (__io__equals(wcol_tooltip, __io__address + __dna__offset)) {
 			return;
@@ -1111,9 +1504,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_box() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 416, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 600, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 416, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 600, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1126,9 +1519,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 416;
+			__dna__offset = 600;
 		} else {
-			__dna__offset = 416;
+			__dna__offset = 600;
 		}
 		if (__io__equals(wcol_box, __io__address + __dna__offset)) {
 			return;
@@ -1147,9 +1540,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_scroll() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 448, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 640, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 448, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 640, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1162,9 +1555,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 448;
+			__dna__offset = 640;
 		} else {
-			__dna__offset = 448;
+			__dna__offset = 640;
 		}
 		if (__io__equals(wcol_scroll, __io__address + __dna__offset)) {
 			return;
@@ -1183,9 +1576,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_progress() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 480, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 680, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 480, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 680, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1198,9 +1591,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 480;
+			__dna__offset = 680;
 		} else {
-			__dna__offset = 480;
+			__dna__offset = 680;
 		}
 		if (__io__equals(wcol_progress, __io__address + __dna__offset)) {
 			return;
@@ -1219,9 +1612,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_list_item() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 512, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 720, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 512, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 720, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1234,9 +1627,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 512;
+			__dna__offset = 720;
 		} else {
-			__dna__offset = 512;
+			__dna__offset = 720;
 		}
 		if (__io__equals(wcol_list_item, __io__address + __dna__offset)) {
 			return;
@@ -1255,9 +1648,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetColors getWcol_pie_menu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetColors(__io__address + 544, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 760, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetColors(__io__address + 544, __io__block, __io__blockTable);
+			return new uiWidgetColors(__io__address + 760, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1270,9 +1663,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 544;
+			__dna__offset = 760;
 		} else {
-			__dna__offset = 544;
+			__dna__offset = 760;
 		}
 		if (__io__equals(wcol_pie_menu, __io__address + __dna__offset)) {
 			return;
@@ -1291,9 +1684,9 @@ public class ThemeUI extends CFacade {
 	public uiWidgetStateColors getWcol_state() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiWidgetStateColors(__io__address + 576, __io__block, __io__blockTable);
+			return new uiWidgetStateColors(__io__address + 800, __io__block, __io__blockTable);
 		} else {
-			return new uiWidgetStateColors(__io__address + 576, __io__block, __io__blockTable);
+			return new uiWidgetStateColors(__io__address + 800, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1306,9 +1699,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 576;
+			__dna__offset = 800;
 		} else {
-			__dna__offset = 576;
+			__dna__offset = 800;
 		}
 		if (__io__equals(wcol_state, __io__address + __dna__offset)) {
 			return;
@@ -1316,48 +1709,6 @@ public class ThemeUI extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, wcol_state);
 		} else {
 			__io__generic__copy( getWcol_state(), wcol_state);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
-	 * @see #__DNA__FIELD__panel
-	 */
-	
-	public uiPanelColors getPanel() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new uiPanelColors(__io__address + 608, __io__block, __io__blockTable);
-		} else {
-			return new uiPanelColors(__io__address + 608, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'panel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> depricated, but we keep it for do_versions (2.66.1) </p>
-	 * @see #__DNA__FIELD__panel
-	 */
-	
-	public void setPanel(uiPanelColors panel) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 608;
-		} else {
-			__dna__offset = 608;
-		}
-		if (__io__equals(panel, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, panel)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, panel);
-		} else {
-			__io__generic__copy( getPanel(), panel);
 		}
 	}
 
@@ -1373,9 +1724,9 @@ public class ThemeUI extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 848, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 848, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1388,9 +1739,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 624;
+			__dna__offset = 848;
 		} else {
-			__dna__offset = 624;
+			__dna__offset = 848;
 		}
 		if (__io__equals(widget_emboss, __io__address + __dna__offset)) {
 			return;
@@ -1412,9 +1763,9 @@ public class ThemeUI extends CFacade {
 	public float getMenu_shadow_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 628);
+			return __io__block.readFloat(__io__address + 852);
 		} else {
-			return __io__block.readFloat(__io__address + 628);
+			return __io__block.readFloat(__io__address + 852);
 		}
 	}
 
@@ -1429,9 +1780,9 @@ public class ThemeUI extends CFacade {
 	public void setMenu_shadow_fac(float menu_shadow_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 628, menu_shadow_fac);
+			__io__block.writeFloat(__io__address + 852, menu_shadow_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 628, menu_shadow_fac);
+			__io__block.writeFloat(__io__address + 852, menu_shadow_fac);
 		}
 	}
 
@@ -1443,9 +1794,9 @@ public class ThemeUI extends CFacade {
 	public short getMenu_shadow_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 632);
+			return __io__block.readShort(__io__address + 856);
 		} else {
-			return __io__block.readShort(__io__address + 632);
+			return __io__block.readShort(__io__address + 856);
 		}
 	}
 
@@ -1457,89 +1808,89 @@ public class ThemeUI extends CFacade {
 	public void setMenu_shadow_width(short menu_shadow_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 632, menu_shadow_width);
+			__io__block.writeShort(__io__address + 856, menu_shadow_width);
 		} else {
-			__io__block.writeShort(__io__address + 632, menu_shadow_width);
+			__io__block.writeShort(__io__address + 856, menu_shadow_width);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'editor_outline'.
+	 * @see #__DNA__FIELD__editor_outline
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 634, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Short>(__io__address + 634, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 634;
-		} else {
-			__dna__offset = 634;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
-		} else {
-			__io__generic__copy( getPad(), pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'iconfile'.
-	 * @see #__DNA__FIELD__iconfile
-	 */
-	
-	public CArrayFacade<Byte> getIconfile() throws IOException
+	public CArrayFacade<Byte> getEditor_outline() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			256
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 858, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 858, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'iconfile'.
-	 * @see #__DNA__FIELD__iconfile
+	 * Set method for struct member 'editor_outline'.
+	 * @see #__DNA__FIELD__editor_outline
 	 */
 	
-	public void setIconfile(CArrayFacade<Byte> iconfile) throws IOException
+	public void setEditor_outline(CArrayFacade<Byte> editor_outline) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 640;
+			__dna__offset = 858;
 		} else {
-			__dna__offset = 640;
+			__dna__offset = 858;
 		}
-		if (__io__equals(iconfile, __io__address + __dna__offset)) {
+		if (__io__equals(editor_outline, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, iconfile)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, iconfile);
+		} else if (__io__same__encoding(this, editor_outline)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, editor_outline);
 		} else {
-			__io__generic__copy( getIconfile(), iconfile);
+			__io__generic__copy( getEditor_outline(), editor_outline);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 862, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 862, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 862;
+		} else {
+			__dna__offset = 862;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -1551,9 +1902,9 @@ public class ThemeUI extends CFacade {
 	public float getIcon_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 896);
+			return __io__block.readFloat(__io__address + 864);
 		} else {
-			return __io__block.readFloat(__io__address + 896);
+			return __io__block.readFloat(__io__address + 864);
 		}
 	}
 
@@ -1565,9 +1916,77 @@ public class ThemeUI extends CFacade {
 	public void setIcon_alpha(float icon_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 896, icon_alpha);
+			__io__block.writeFloat(__io__address + 864, icon_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 896, icon_alpha);
+			__io__block.writeFloat(__io__address + 864, icon_alpha);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_saturation'.
+	 * @see #__DNA__FIELD__icon_saturation
+	 */
+	
+	public float getIcon_saturation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 868);
+		} else {
+			return __io__block.readFloat(__io__address + 868);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_saturation'.
+	 * @see #__DNA__FIELD__icon_saturation
+	 */
+	
+	public void setIcon_saturation(float icon_saturation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 868, icon_saturation);
+		} else {
+			__io__block.writeFloat(__io__address + 868, icon_saturation);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 872, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 872, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 872;
+		} else {
+			__dna__offset = 872;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1586,9 +2005,9 @@ public class ThemeUI extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 876, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 876, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1604,9 +2023,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 900;
+			__dna__offset = 876;
 		} else {
-			__dna__offset = 900;
+			__dna__offset = 876;
 		}
 		if (__io__equals(xaxis, __io__address + __dna__offset)) {
 			return;
@@ -1629,9 +2048,9 @@ public class ThemeUI extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 904, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 880, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 904, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 880, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1644,9 +2063,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 904;
+			__dna__offset = 880;
 		} else {
-			__dna__offset = 904;
+			__dna__offset = 880;
 		}
 		if (__io__equals(yaxis, __io__address + __dna__offset)) {
 			return;
@@ -1669,9 +2088,9 @@ public class ThemeUI extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1684,9 +2103,9 @@ public class ThemeUI extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 908;
+			__dna__offset = 884;
 		} else {
-			__dna__offset = 908;
+			__dna__offset = 884;
 		}
 		if (__io__equals(zaxis, __io__address + __dna__offset)) {
 			return;
@@ -1694,6 +2113,522 @@ public class ThemeUI extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, zaxis);
 		} else {
 			__io__generic__copy( getZaxis(), zaxis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_hi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gizmo Colors. </p>
+	 * @see #__DNA__FIELD__gizmo_hi
+	 */
+	
+	public CArrayFacade<Byte> getGizmo_hi() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 888, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 888, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_hi'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gizmo Colors. </p>
+	 * @see #__DNA__FIELD__gizmo_hi
+	 */
+	
+	public void setGizmo_hi(CArrayFacade<Byte> gizmo_hi) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 888;
+		} else {
+			__dna__offset = 888;
+		}
+		if (__io__equals(gizmo_hi, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gizmo_hi)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gizmo_hi);
+		} else {
+			__io__generic__copy( getGizmo_hi(), gizmo_hi);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_primary'.
+	 * @see #__DNA__FIELD__gizmo_primary
+	 */
+	
+	public CArrayFacade<Byte> getGizmo_primary() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 892, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 892, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_primary'.
+	 * @see #__DNA__FIELD__gizmo_primary
+	 */
+	
+	public void setGizmo_primary(CArrayFacade<Byte> gizmo_primary) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 892;
+		} else {
+			__dna__offset = 892;
+		}
+		if (__io__equals(gizmo_primary, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gizmo_primary)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gizmo_primary);
+		} else {
+			__io__generic__copy( getGizmo_primary(), gizmo_primary);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_secondary'.
+	 * @see #__DNA__FIELD__gizmo_secondary
+	 */
+	
+	public CArrayFacade<Byte> getGizmo_secondary() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 896, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 896, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_secondary'.
+	 * @see #__DNA__FIELD__gizmo_secondary
+	 */
+	
+	public void setGizmo_secondary(CArrayFacade<Byte> gizmo_secondary) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 896;
+		} else {
+			__dna__offset = 896;
+		}
+		if (__io__equals(gizmo_secondary, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gizmo_secondary)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gizmo_secondary);
+		} else {
+			__io__generic__copy( getGizmo_secondary(), gizmo_secondary);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_a'.
+	 * @see #__DNA__FIELD__gizmo_a
+	 */
+	
+	public CArrayFacade<Byte> getGizmo_a() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_a'.
+	 * @see #__DNA__FIELD__gizmo_a
+	 */
+	
+	public void setGizmo_a(CArrayFacade<Byte> gizmo_a) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 900;
+		} else {
+			__dna__offset = 900;
+		}
+		if (__io__equals(gizmo_a, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gizmo_a)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gizmo_a);
+		} else {
+			__io__generic__copy( getGizmo_a(), gizmo_a);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_b'.
+	 * @see #__DNA__FIELD__gizmo_b
+	 */
+	
+	public CArrayFacade<Byte> getGizmo_b() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 904, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 904, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_b'.
+	 * @see #__DNA__FIELD__gizmo_b
+	 */
+	
+	public void setGizmo_b(CArrayFacade<Byte> gizmo_b) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 904;
+		} else {
+			__dna__offset = 904;
+		}
+		if (__io__equals(gizmo_b, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gizmo_b)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gizmo_b);
+		} else {
+			__io__generic__copy( getGizmo_b(), gizmo_b);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Icon Colors. {@link Scene}  items. </p>
+	 * @see #__DNA__FIELD__icon_scene
+	 */
+	
+	public CArrayFacade<Byte> getIcon_scene() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 908, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_scene'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Icon Colors. {@link Scene}  items. </p>
+	 * @see #__DNA__FIELD__icon_scene
+	 */
+	
+	public void setIcon_scene(CArrayFacade<Byte> icon_scene) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 908;
+		} else {
+			__dna__offset = 908;
+		}
+		if (__io__equals(icon_scene, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_scene)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_scene);
+		} else {
+			__io__generic__copy( getIcon_scene(), icon_scene);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_collection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Collection}  items. </p>
+	 * @see #__DNA__FIELD__icon_collection
+	 */
+	
+	public CArrayFacade<Byte> getIcon_collection() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 912, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 912, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_collection'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Collection}  items. </p>
+	 * @see #__DNA__FIELD__icon_collection
+	 */
+	
+	public void setIcon_collection(CArrayFacade<Byte> icon_collection) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 912;
+		} else {
+			__dna__offset = 912;
+		}
+		if (__io__equals(icon_collection, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_collection)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_collection);
+		} else {
+			__io__generic__copy( getIcon_collection(), icon_collection);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  items. </p>
+	 * @see #__DNA__FIELD__icon_object
+	 */
+	
+	public CArrayFacade<Byte> getIcon_object() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 916, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 916, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  items. </p>
+	 * @see #__DNA__FIELD__icon_object
+	 */
+	
+	public void setIcon_object(CArrayFacade<Byte> icon_object) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 916;
+		} else {
+			__dna__offset = 916;
+		}
+		if (__io__equals(icon_object, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_object)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_object);
+		} else {
+			__io__generic__copy( getIcon_object(), icon_object);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_object_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  data items. </p>
+	 * @see #__DNA__FIELD__icon_object_data
+	 */
+	
+	public CArrayFacade<Byte> getIcon_object_data() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 920, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 920, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_object_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  data items. </p>
+	 * @see #__DNA__FIELD__icon_object_data
+	 */
+	
+	public void setIcon_object_data(CArrayFacade<Byte> icon_object_data) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 920;
+		} else {
+			__dna__offset = 920;
+		}
+		if (__io__equals(icon_object_data, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_object_data)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_object_data);
+		} else {
+			__io__generic__copy( getIcon_object_data(), icon_object_data);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_modifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Modifier and constraint items. </p>
+	 * @see #__DNA__FIELD__icon_modifier
+	 */
+	
+	public CArrayFacade<Byte> getIcon_modifier() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_modifier'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Modifier and constraint items. </p>
+	 * @see #__DNA__FIELD__icon_modifier
+	 */
+	
+	public void setIcon_modifier(CArrayFacade<Byte> icon_modifier) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 924;
+		} else {
+			__dna__offset = 924;
+		}
+		if (__io__equals(icon_modifier, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_modifier)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_modifier);
+		} else {
+			__io__generic__copy( getIcon_modifier(), icon_modifier);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_shading'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shading related items. </p>
+	 * @see #__DNA__FIELD__icon_shading
+	 */
+	
+	public CArrayFacade<Byte> getIcon_shading() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 928, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 928, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_shading'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Shading related items. </p>
+	 * @see #__DNA__FIELD__icon_shading
+	 */
+	
+	public void setIcon_shading(CArrayFacade<Byte> icon_shading) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 928;
+		} else {
+			__dna__offset = 928;
+		}
+		if (__io__equals(icon_shading, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_shading)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_shading);
+		} else {
+			__io__generic__copy( getIcon_shading(), icon_shading);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'icon_border_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
+	 * @see #__DNA__FIELD__icon_border_intensity
+	 */
+	
+	public float getIcon_border_intensity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 932);
+		} else {
+			return __io__block.readFloat(__io__address + 932);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_border_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Intensity of the border icons. >0 will render an border around themed icons. </p>
+	 * @see #__DNA__FIELD__icon_border_intensity
+	 */
+	
+	public void setIcon_border_intensity(float icon_border_intensity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 932, icon_border_intensity);
+		} else {
+			__io__block.writeFloat(__io__address + 932, icon_border_intensity);
 		}
 	}
 

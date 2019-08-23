@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * generic - all structs which are put into linked lists begin with this.<h4>Blender Source Code:</h4>
- * <p> generic - all structs which are put into linked lists begin with this </p>
+ * <p> Generic - all structs which are put into linked lists begin with this. </p>
  */
 
 @CMetaData(size32=8, size64=16)

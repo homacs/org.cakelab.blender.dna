@@ -27,7 +27,7 @@ public class UVProjectModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 102;
+	public static final int __DNA__SDNA_INDEX = 108;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class UVProjectModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,50 +70,27 @@ public class UVProjectModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/80</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__projectors = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__projectors = new long[]{100, 120};
 
 	/**
-	 * Field descriptor (offset) for struct member 'image'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the image to project </p>
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UVProjectModifierData uvprojectmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = uvprojectmodifierdata.__dna__addressof(UVProjectModifierData.__DNA__FIELD__image);
-	 * CPointer&lt;CPointer&lt;Image&gt;&gt; p_image = p.cast(new Class[]{CPointer.class, Image.class});
+	 * CPointer&lt;Object&gt; p = uvprojectmodifierdata.__dna__addressof(UVProjectModifierData.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'image'</li>
-	 * <li>Signature: 'Image*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__image = new long[]{136, 192};
-
-	/**
-	 * Field descriptor (offset) for struct member 'flags'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UVProjectModifierData uvprojectmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = uvprojectmodifierdata.__dna__addressof(UVProjectModifierData.__DNA__FIELD__flags);
-	 * CPointer&lt;Integer&gt; p_flags = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flags'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{140, 200};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{140, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_projectors'.
@@ -219,7 +196,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -259,24 +236,24 @@ public class UVProjectModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{228, 288};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UVProjectModifierData uvprojectmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = uvprojectmodifierdata.__dna__addressof(UVProjectModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = uvprojectmodifierdata.__dna__addressof(UVProjectModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{232, 292};
+	public static final long[] __DNA__FIELD___pad = new long[]{232, 292};
 
 	public UVProjectModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -326,7 +303,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Get method for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	
@@ -337,9 +314,9 @@ public class UVProjectModifierData extends CFacade {
 			10
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<BlenderObject>>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<BlenderObject>>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CPointer<BlenderObject>>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<BlenderObject>>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -347,7 +324,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Set method for struct member 'projectors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS </p>
+	 * <p> the objects which do the projecting MOD_UVPROJECT_MAXPROJECTORS. </p>
 	 * @see #__DNA__FIELD__projectors
 	 */
 	
@@ -355,9 +332,9 @@ public class UVProjectModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(projectors, __io__address + __dna__offset)) {
 			return;
@@ -369,68 +346,42 @@ public class UVProjectModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'image'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the image to project </p>
-	 * @see #__DNA__FIELD__image
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CPointer<Image> getImage() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
-		long __dna__targetAddress;
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
-		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'image'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the image to project </p>
-	 * @see #__DNA__FIELD__image
-	 */
-	
-	public void setImage(CPointer<Image> image) throws IOException
-	{
-		long __address = ((image == null) ? 0 : image.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
-		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'flags'.
-	 * @see #__DNA__FIELD__flags
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public int getFlags() throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			__dna__offset = 200;
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			__dna__offset = 140;
 		}
-	}
-
-	/**
-	 * Set method for struct member 'flags'.
-	 * @see #__DNA__FIELD__flags
-	 */
-	
-	public void setFlags(int flags) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, flags);
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__block.writeInt(__io__address + 140, flags);
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -578,7 +529,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -599,7 +550,7 @@ public class UVProjectModifierData extends CFacade {
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -649,30 +600,42 @@ public class UVProjectModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 292);
+			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 232);
+			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 292, pad);
+			__dna__offset = 292;
 		} else {
-			__io__block.writeInt(__io__address + 232, pad);
+			__dna__offset = 232;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

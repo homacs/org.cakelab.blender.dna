@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=964, size64=968)
+@CMetaData(size32=956, size64=960)
 public class NodeTexNoise extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexNoise extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 440;
+	public static final int __DNA__SDNA_INDEX = 408;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -43,7 +43,7 @@ public class NodeTexNoise extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};

@@ -26,7 +26,7 @@ public class NodeDBlurData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 413;
+	public static final int __DNA__SDNA_INDEX = 382;
 
 	/**
 	 * Field descriptor (offset) for struct member 'center_x'.
@@ -189,24 +189,24 @@ public class NodeDBlurData extends CFacade {
 	public static final long[] __DNA__FIELD__wrap = new long[]{26, 26};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeDBlurData nodedblurdata = ...;
-	 * CPointer&lt;Object&gt; p = nodedblurdata.__dna__addressof(NodeDBlurData.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = nodedblurdata.__dna__addressof(NodeDBlurData.__DNA__FIELD___pad);
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{27, 27};
+	public static final long[] __DNA__FIELD___pad = new long[]{27, 27};
 
 	public NodeDBlurData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -441,11 +441,11 @@ public class NodeDBlurData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public byte getPad() throws IOException
+	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 27);
@@ -455,16 +455,16 @@ public class NodeDBlurData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 27, pad);
+			__io__block.writeByte(__io__address + 27, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 27, pad);
+			__io__block.writeByte(__io__address + 27, _pad);
 		}
 	}
 

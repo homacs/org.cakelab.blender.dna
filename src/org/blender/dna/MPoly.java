@@ -28,7 +28,7 @@ public class MPoly extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 65;
+	public static final int __DNA__SDNA_INDEX = 71;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loopstart'.
@@ -59,7 +59,7 @@ public class MPoly extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
-	 * <p> keep signed since we need to subtract when getting the previous loop </p>
+	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,24 +127,24 @@ public class MPoly extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{10, 10};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MPoly mpoly = ...;
-	 * CPointer&lt;Object&gt; p = mpoly.__dna__addressof(MPoly.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = mpoly.__dna__addressof(MPoly.__DNA__FIELD___pad);
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{11, 11};
+	public static final long[] __DNA__FIELD___pad = new long[]{11, 11};
 
 	public MPoly(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -195,7 +195,7 @@ public class MPoly extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
-	 * <p> keep signed since we need to subtract when getting the previous loop </p>
+	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -213,7 +213,7 @@ public class MPoly extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Number of loop entries from loopstart<h4>Blender Source Code:</h4>
-	 * <p> keep signed since we need to subtract when getting the previous loop </p>
+	 * <p> Keep signed since we need to subtract when getting the previous loop. </p>
 	 * @see #__DNA__FIELD__totloop
 	 */
 	
@@ -299,11 +299,11 @@ public class MPoly extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public byte getPad() throws IOException
+	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 11);
@@ -313,16 +313,16 @@ public class MPoly extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 11, pad);
+			__io__block.writeByte(__io__address + 11, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 11, pad);
+			__io__block.writeByte(__io__address + 11, _pad);
 		}
 	}
 

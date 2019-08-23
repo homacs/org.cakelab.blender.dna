@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=156, size64=184)
+@CMetaData(size32=176, size64=216)
 public class Speaker extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Speaker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 542;
+	public static final int __DNA__SDNA_INDEX = 547;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Speaker extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class Speaker extends CFacade {
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,7 +70,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sound'.
@@ -93,7 +93,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sound = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__sound = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume_max'.
@@ -117,7 +117,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volume_max = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__volume_max = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume_min'.
@@ -140,7 +140,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volume_min = new long[]{112, 140};
+	public static final long[] __DNA__FIELD__volume_min = new long[]{132, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance_max'.
@@ -163,7 +163,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distance_max = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__distance_max = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance_reference'.
@@ -186,7 +186,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distance_reference = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__distance_reference = new long[]{140, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation'.
@@ -209,7 +209,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attenuation = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__attenuation = new long[]{144, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cone_angle_outer'.
@@ -232,7 +232,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cone_angle_outer = new long[]{128, 156};
+	public static final long[] __DNA__FIELD__cone_angle_outer = new long[]{148, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cone_angle_inner'.
@@ -255,7 +255,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cone_angle_inner = new long[]{132, 160};
+	public static final long[] __DNA__FIELD__cone_angle_inner = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cone_volume_outer'.
@@ -278,7 +278,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cone_volume_outer = new long[]{136, 164};
+	public static final long[] __DNA__FIELD__cone_volume_outer = new long[]{156, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'volume'.
@@ -302,7 +302,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__volume = new long[]{140, 168};
+	public static final long[] __DNA__FIELD__volume = new long[]{160, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pitch'.
@@ -325,7 +325,7 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pitch = new long[]{144, 172};
+	public static final long[] __DNA__FIELD__pitch = new long[]{164, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -348,27 +348,27 @@ public class Speaker extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{148, 176};
+	public static final long[] __DNA__FIELD__flag = new long[]{168, 208};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Speaker speaker = ...;
-	 * CPointer&lt;Object&gt; p = speaker.__dna__addressof(Speaker.__DNA__FIELD__pad1);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad1 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = speaker.__dna__addressof(Speaker.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{150, 178};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{170, 210};
 
 	public Speaker(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -418,7 +418,7 @@ public class Speaker extends CFacade {
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -426,9 +426,9 @@ public class Speaker extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -438,7 +438,7 @@ public class Speaker extends CFacade {
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -446,9 +446,9 @@ public class Speaker extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -464,9 +464,9 @@ public class Speaker extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bSound.class};
 		return new CPointer<bSound>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bSound.__DNA__SDNA_INDEX), __io__blockTable);
@@ -484,9 +484,9 @@ public class Speaker extends CFacade {
 	{
 		long __address = ((sound == null) ? 0 : sound.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -502,9 +502,9 @@ public class Speaker extends CFacade {
 	public float getVolume_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 168);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -520,9 +520,9 @@ public class Speaker extends CFacade {
 	public void setVolume_max(float volume_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, volume_max);
+			__io__block.writeFloat(__io__address + 168, volume_max);
 		} else {
-			__io__block.writeFloat(__io__address + 108, volume_max);
+			__io__block.writeFloat(__io__address + 128, volume_max);
 		}
 	}
 
@@ -537,9 +537,9 @@ public class Speaker extends CFacade {
 	public float getVolume_min() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -554,9 +554,9 @@ public class Speaker extends CFacade {
 	public void setVolume_min(float volume_min) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, volume_min);
+			__io__block.writeFloat(__io__address + 172, volume_min);
 		} else {
-			__io__block.writeFloat(__io__address + 112, volume_min);
+			__io__block.writeFloat(__io__address + 132, volume_min);
 		}
 	}
 
@@ -571,9 +571,9 @@ public class Speaker extends CFacade {
 	public float getDistance_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 176);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class Speaker extends CFacade {
 	public void setDistance_max(float distance_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, distance_max);
+			__io__block.writeFloat(__io__address + 176, distance_max);
 		} else {
-			__io__block.writeFloat(__io__address + 116, distance_max);
+			__io__block.writeFloat(__io__address + 136, distance_max);
 		}
 	}
 
@@ -605,9 +605,9 @@ public class Speaker extends CFacade {
 	public float getDistance_reference() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 180);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -622,9 +622,9 @@ public class Speaker extends CFacade {
 	public void setDistance_reference(float distance_reference) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, distance_reference);
+			__io__block.writeFloat(__io__address + 180, distance_reference);
 		} else {
-			__io__block.writeFloat(__io__address + 120, distance_reference);
+			__io__block.writeFloat(__io__address + 140, distance_reference);
 		}
 	}
 
@@ -639,9 +639,9 @@ public class Speaker extends CFacade {
 	public float getAttenuation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -656,9 +656,9 @@ public class Speaker extends CFacade {
 	public void setAttenuation(float attenuation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 152, attenuation);
+			__io__block.writeFloat(__io__address + 184, attenuation);
 		} else {
-			__io__block.writeFloat(__io__address + 124, attenuation);
+			__io__block.writeFloat(__io__address + 144, attenuation);
 		}
 	}
 
@@ -673,9 +673,9 @@ public class Speaker extends CFacade {
 	public float getCone_angle_outer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -690,9 +690,9 @@ public class Speaker extends CFacade {
 	public void setCone_angle_outer(float cone_angle_outer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, cone_angle_outer);
+			__io__block.writeFloat(__io__address + 188, cone_angle_outer);
 		} else {
-			__io__block.writeFloat(__io__address + 128, cone_angle_outer);
+			__io__block.writeFloat(__io__address + 148, cone_angle_outer);
 		}
 	}
 
@@ -707,9 +707,9 @@ public class Speaker extends CFacade {
 	public float getCone_angle_inner() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -724,9 +724,9 @@ public class Speaker extends CFacade {
 	public void setCone_angle_inner(float cone_angle_inner) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, cone_angle_inner);
+			__io__block.writeFloat(__io__address + 192, cone_angle_inner);
 		} else {
-			__io__block.writeFloat(__io__address + 132, cone_angle_inner);
+			__io__block.writeFloat(__io__address + 152, cone_angle_inner);
 		}
 	}
 
@@ -741,9 +741,9 @@ public class Speaker extends CFacade {
 	public float getCone_volume_outer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -758,9 +758,9 @@ public class Speaker extends CFacade {
 	public void setCone_volume_outer(float cone_volume_outer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, cone_volume_outer);
+			__io__block.writeFloat(__io__address + 196, cone_volume_outer);
 		} else {
-			__io__block.writeFloat(__io__address + 136, cone_volume_outer);
+			__io__block.writeFloat(__io__address + 156, cone_volume_outer);
 		}
 	}
 
@@ -776,9 +776,9 @@ public class Speaker extends CFacade {
 	public float getVolume() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -794,9 +794,9 @@ public class Speaker extends CFacade {
 	public void setVolume(float volume) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, volume);
+			__io__block.writeFloat(__io__address + 200, volume);
 		} else {
-			__io__block.writeFloat(__io__address + 140, volume);
+			__io__block.writeFloat(__io__address + 160, volume);
 		}
 	}
 
@@ -811,9 +811,9 @@ public class Speaker extends CFacade {
 	public float getPitch() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -828,9 +828,9 @@ public class Speaker extends CFacade {
 	public void setPitch(float pitch) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, pitch);
+			__io__block.writeFloat(__io__address + 204, pitch);
 		} else {
-			__io__block.writeFloat(__io__address + 144, pitch);
+			__io__block.writeFloat(__io__address + 164, pitch);
 		}
 	}
 
@@ -845,9 +845,9 @@ public class Speaker extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 148);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -862,49 +862,49 @@ public class Speaker extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeShort(__io__address + 208, flag);
 		} else {
-			__io__block.writeShort(__io__address + 148, flag);
+			__io__block.writeShort(__io__address + 168, flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Short> getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 150, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(CArrayFacade<Short> pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 178;
+			__dna__offset = 210;
 		} else {
-			__dna__offset = 150;
+			__dna__offset = 170;
 		}
-		if (__io__equals(pad1, __io__address + __dna__offset)) {
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad1);
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			__io__generic__copy( getPad1(), pad1);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

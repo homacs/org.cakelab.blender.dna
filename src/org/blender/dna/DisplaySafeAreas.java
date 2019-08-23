@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Safe Area options used in {@link Camera}  View & VSE </p>
+ *  Safe Area options used in {@link Camera}  View & Sequencer </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -29,14 +29,14 @@ public class DisplaySafeAreas extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 203;
+	public static final int __DNA__SDNA_INDEX = 205;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
-	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe </p>
+	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -60,7 +60,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for general elements<h4>Blender Source Code:</h4>
-	 * <p> Image/Graphics Safe </p>
+	 * <p> Image/Graphics Safe. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,7 +139,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
-	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe </p>
+	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * @see #__DNA__FIELD__title
 	 */
 	
@@ -161,7 +161,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for text and graphics<h4>Blender Source Code:</h4>
-	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe </p>
+	 * <p> each value represents the (x,y) margins as a multiplier. 'center' in this context is just the name for a different kind of safe-area Title Safe. </p>
 	 * @see #__DNA__FIELD__title
 	 */
 	
@@ -187,7 +187,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for general elements<h4>Blender Source Code:</h4>
-	 * <p> Image/Graphics Safe </p>
+	 * <p> Image/Graphics Safe. </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -209,7 +209,7 @@ public class DisplaySafeAreas extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Safe area for general elements<h4>Blender Source Code:</h4>
-	 * <p> Image/Graphics Safe </p>
+	 * <p> Image/Graphics Safe. </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	

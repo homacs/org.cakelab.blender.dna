@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=332, size64=360)
+@CMetaData(size32=336, size64=368)
 public class HookModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class HookModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 108;
+	public static final int __DNA__SDNA_INDEX = 114;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class HookModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,13 +67,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__object = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,7 +90,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,13 +110,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{164, 184};
+	public static final long[] __DNA__FIELD__flag = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use enums from WarpModifier (exact same functionality) </p>
+	 * <p> Use enums from WarpModifier (exact same functionality). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,33 +133,33 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_type = new long[]{165, 185};
+	public static final long[] __DNA__FIELD__falloff_type = new long[]{169, 193};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * HookModifierData hookmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = hookmodifierdata.__dna__addressof(HookModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = hookmodifierdata.__dna__addressof(HookModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{166, 186};
+	public static final long[] __DNA__FIELD___pad = new long[]{170, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix making current transform unmodified </p>
+	 * <p> Matrix making current transform unmodified. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -176,13 +176,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parentinv = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__parentinv = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> visualization of hook </p>
+	 * <p> Visualization of hook. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,13 +199,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cent = new long[]{236, 256};
+	public static final long[] __DNA__FIELD__cent = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if not zero, falloff is distance where influence zero </p>
+	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -222,7 +222,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{248, 268};
+	public static final long[] __DNA__FIELD__falloff = new long[]{252, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curfalloff'.
@@ -242,13 +242,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curfalloff = new long[]{252, 272};
+	public static final long[] __DNA__FIELD__curfalloff = new long[]{256, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'indexar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if NULL, it's using vertexgroup </p>
+	 * <p> If NULL, it's using vertexgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -265,7 +265,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__indexar = new long[]{256, 280};
+	public static final long[] __DNA__FIELD__indexar = new long[]{260, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totindex'.
@@ -285,7 +285,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totindex = new long[]{260, 288};
+	public static final long[] __DNA__FIELD__totindex = new long[]{264, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'force'.
@@ -305,13 +305,13 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__force = new long[]{264, 292};
+	public static final long[] __DNA__FIELD__force = new long[]{268, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -328,7 +328,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{268, 296};
+	public static final long[] __DNA__FIELD__name = new long[]{272, 304};
 
 	public HookModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -383,9 +383,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -400,9 +400,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -410,7 +410,7 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -421,9 +421,9 @@ public class HookModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -431,7 +431,7 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional name of bone target, MAX_ID_NAME-2 </p>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -439,9 +439,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 104;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;
@@ -460,9 +460,9 @@ public class HookModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 184);
+			return __io__block.readByte(__io__address + 192);
 		} else {
-			return __io__block.readByte(__io__address + 164);
+			return __io__block.readByte(__io__address + 168);
 		}
 	}
 
@@ -474,9 +474,9 @@ public class HookModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 184, flag);
+			__io__block.writeByte(__io__address + 192, flag);
 		} else {
-			__io__block.writeByte(__io__address + 164, flag);
+			__io__block.writeByte(__io__address + 168, flag);
 		}
 	}
 
@@ -484,16 +484,16 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use enums from WarpModifier (exact same functionality) </p>
+	 * <p> Use enums from WarpModifier (exact same functionality). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
 	public byte getFalloff_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 185);
+			return __io__block.readByte(__io__address + 193);
 		} else {
-			return __io__block.readByte(__io__address + 165);
+			return __io__block.readByte(__io__address + 169);
 		}
 	}
 
@@ -501,56 +501,56 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'falloff_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use enums from WarpModifier (exact same functionality) </p>
+	 * <p> Use enums from WarpModifier (exact same functionality). </p>
 	 * @see #__DNA__FIELD__falloff_type
 	 */
 	
 	public void setFalloff_type(byte falloff_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 185, falloff_type);
+			__io__block.writeByte(__io__address + 193, falloff_type);
 		} else {
-			__io__block.writeByte(__io__address + 165, falloff_type);
+			__io__block.writeByte(__io__address + 169, falloff_type);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 166, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 186;
+			__dna__offset = 194;
 		} else {
-			__dna__offset = 166;
+			__dna__offset = 170;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -558,7 +558,7 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix making current transform unmodified </p>
+	 * <p> Matrix making current transform unmodified. </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -570,9 +570,9 @@ public class HookModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -580,7 +580,7 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'parentinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix making current transform unmodified </p>
+	 * <p> Matrix making current transform unmodified. </p>
 	 * @see #__DNA__FIELD__parentinv
 	 */
 	
@@ -588,9 +588,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 176;
 		}
 		if (__io__equals(parentinv, __io__address + __dna__offset)) {
 			return;
@@ -605,7 +605,7 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> visualization of hook </p>
+	 * <p> Visualization of hook. </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -616,9 +616,9 @@ public class HookModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -626,7 +626,7 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'cent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> visualization of hook </p>
+	 * <p> Visualization of hook. </p>
 	 * @see #__DNA__FIELD__cent
 	 */
 	
@@ -634,9 +634,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 236;
+			__dna__offset = 240;
 		}
 		if (__io__equals(cent, __io__address + __dna__offset)) {
 			return;
@@ -651,16 +651,16 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if not zero, falloff is distance where influence zero </p>
+	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		} else {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -668,16 +668,16 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'falloff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if not zero, falloff is distance where influence zero </p>
+	 * <p> If not zero, falloff is distance where influence zero. </p>
 	 * @see #__DNA__FIELD__falloff
 	 */
 	
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 268, falloff);
+			__io__block.writeFloat(__io__address + 276, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 248, falloff);
+			__io__block.writeFloat(__io__address + 252, falloff);
 		}
 	}
 
@@ -690,9 +690,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -707,9 +707,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((curfalloff == null) ? 0 : curfalloff.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 
@@ -717,7 +717,7 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'indexar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if NULL, it's using vertexgroup </p>
+	 * <p> If NULL, it's using vertexgroup. </p>
 	 * @see #__DNA__FIELD__indexar
 	 */
 	
@@ -725,9 +725,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 260);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -737,7 +737,7 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'indexar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if NULL, it's using vertexgroup </p>
+	 * <p> If NULL, it's using vertexgroup. </p>
 	 * @see #__DNA__FIELD__indexar
 	 */
 	
@@ -745,9 +745,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((indexar == null) ? 0 : indexar.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 
@@ -759,9 +759,9 @@ public class HookModifierData extends CFacade {
 	public int getTotindex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 264);
 		}
 	}
 
@@ -773,9 +773,9 @@ public class HookModifierData extends CFacade {
 	public void setTotindex(int totindex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 288, totindex);
+			__io__block.writeInt(__io__address + 296, totindex);
 		} else {
-			__io__block.writeInt(__io__address + 260, totindex);
+			__io__block.writeInt(__io__address + 264, totindex);
 		}
 	}
 
@@ -787,9 +787,9 @@ public class HookModifierData extends CFacade {
 	public float getForce() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 268);
 		}
 	}
 
@@ -801,9 +801,9 @@ public class HookModifierData extends CFacade {
 	public void setForce(float force) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, force);
+			__io__block.writeFloat(__io__address + 300, force);
 		} else {
-			__io__block.writeFloat(__io__address + 264, force);
+			__io__block.writeFloat(__io__address + 268, force);
 		}
 	}
 
@@ -811,7 +811,7 @@ public class HookModifierData extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -822,9 +822,9 @@ public class HookModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -832,7 +832,7 @@ public class HookModifierData extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name, MAX_VGROUP_NAME </p>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -840,9 +840,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 304;
 		} else {
-			__dna__offset = 268;
+			__dna__offset = 272;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;

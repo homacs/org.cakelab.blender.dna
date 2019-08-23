@@ -27,7 +27,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 464;
+	public static final int __DNA__SDNA_INDEX = 434;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -50,31 +50,31 @@ public class ColorManagedViewSettings extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ColorManagedViewSettings colormanagedviewsettings = ...;
-	 * CPointer&lt;Object&gt; p = colormanagedviewsettings.__dna__addressof(ColorManagedViewSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = colormanagedviewsettings.__dna__addressof(ColorManagedViewSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{4, 4};
+	public static final long[] __DNA__FIELD___pad = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'look'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
-	 * <p> look which is being applied when displaying buffer on the screen (prior to view transform) </p>
+	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
-	 * <p> view transform which is being applied when displaying buffer on the screen </p>
+	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> fstop exposure </p>
+	 * <p> Fstop exposure. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -146,7 +146,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
-	 * <p> post-display gamma transform </p>
+	 * <p> Post-display gamma transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,7 +170,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> pre-display RGB curves transform </p>
+	 * <p> Pre-display RGB curves transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,24 +190,24 @@ public class ColorManagedViewSettings extends CFacade {
 	public static final long[] __DNA__FIELD__curve_mapping = new long[]{144, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ColorManagedViewSettings colormanagedviewsettings = ...;
-	 * CPointer&lt;Object&gt; p = colormanagedviewsettings.__dna__addressof(ColorManagedViewSettings.__DNA__FIELD__pad2);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = colormanagedviewsettings.__dna__addressof(ColorManagedViewSettings.__DNA__FIELD___pad2);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad2 = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: '_pad2'</li>
 	 * <li>Signature: 'void*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{148, 152};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{148, 152};
 
 	public ColorManagedViewSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -246,30 +246,42 @@ public class ColorManagedViewSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 4);
+			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 4);
+			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 4, pad);
+			__dna__offset = 4;
 		} else {
-			__io__block.writeInt(__io__address + 4, pad);
+			__dna__offset = 4;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -278,7 +290,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
-	 * <p> look which is being applied when displaying buffer on the screen (prior to view transform) </p>
+	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */
 	
@@ -300,7 +312,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
-	 * <p> look which is being applied when displaying buffer on the screen (prior to view transform) </p>
+	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */
 	
@@ -326,7 +338,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
-	 * <p> view transform which is being applied when displaying buffer on the screen </p>
+	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * @see #__DNA__FIELD__view_transform
 	 */
 	
@@ -348,7 +360,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * View used when converting image to a display space<h4>Blender Source Code:</h4>
-	 * <p> view transform which is being applied when displaying buffer on the screen </p>
+	 * <p> View transform which is being applied when displaying buffer on the screen. </p>
 	 * @see #__DNA__FIELD__view_transform
 	 */
 	
@@ -374,7 +386,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> fstop exposure </p>
+	 * <p> Fstop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -392,7 +404,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> fstop exposure </p>
+	 * <p> Fstop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -410,7 +422,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
-	 * <p> post-display gamma transform </p>
+	 * <p> Post-display gamma transform. </p>
 	 * @see #__DNA__FIELD__gamma
 	 */
 	
@@ -428,7 +440,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of gamma modification applied after display transform<h4>Blender Source Code:</h4>
-	 * <p> post-display gamma transform </p>
+	 * <p> Post-display gamma transform. </p>
 	 * @see #__DNA__FIELD__gamma
 	 */
 	
@@ -446,7 +458,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> pre-display RGB curves transform </p>
+	 * <p> Pre-display RGB curves transform. </p>
 	 * @see #__DNA__FIELD__curve_mapping
 	 */
 	
@@ -467,7 +479,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color curve mapping applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> pre-display RGB curves transform </p>
+	 * <p> Pre-display RGB curves transform. </p>
 	 * @see #__DNA__FIELD__curve_mapping
 	 */
 	
@@ -482,11 +494,11 @@ public class ColorManagedViewSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CPointer<Object> getPad2() throws IOException
+	public CPointer<Object> get_pad2() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -499,13 +511,13 @@ public class ColorManagedViewSettings extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(CPointer<Object> pad2) throws IOException
+	public void set_pad2(CPointer<Object> _pad2) throws IOException
 	{
-		long __address = ((pad2 == null) ? 0 : pad2.getAddress());
+		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 152, __address);
 		} else {

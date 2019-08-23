@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=56, size64=64)
+@CMetaData(size32=64, size64=72)
 public class ClothCollSettings extends CFacade {
 
 	/**
@@ -27,13 +27,13 @@ public class ClothCollSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 460;
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> e.g. pointer to temp memory for collisions </p>
+	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +56,7 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min distance for collisions. </p>
+	 * <p> Min distance for collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,7 +148,7 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for selfcollision </p>
+	 * <p> For selfcollision. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -169,6 +169,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'repel_force'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,6 +194,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'distance_repel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,7 +221,7 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision flags defined in BKE_cloth.h </p>
+	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,7 +244,9 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How many iterations for the selfcollision loop </p>
+	 * <p> How many iterations for the selfcollision loop. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -277,30 +289,30 @@ public class ClothCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__loop_count = new long[]{38, 42};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ClothCollSettings clothcollsettings = ...;
-	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{40, 44};
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only use colliders from this group of objects </p>
+	 * <p> Only use colliders from this group of objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -308,12 +320,12 @@ public class ClothCollSettings extends CFacade {
 	 * <pre>
 	 * ClothCollSettings clothcollsettings = ...;
 	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -323,7 +335,7 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vgroup to paint which vertices are used for self collisions </p>
+	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -343,24 +355,70 @@ public class ClothCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__vgroup_selfcol = new long[]{48, 56};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ClothCollSettings clothcollsettings = ...;
-	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__pad2);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{50, 58};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{50, 58};
+
+	/**
+	 * Field descriptor (offset) for struct member 'clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for object collisions. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothCollSettings clothcollsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__clamp);
+	 * CPointer&lt;Float&gt; p_clamp = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'clamp'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__clamp = new long[]{56, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'self_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for self collisions. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothCollSettings clothcollsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__self_clamp);
+	 * CPointer&lt;Float&gt; p_self_clamp = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'self_clamp'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__self_clamp = new long[]{60, 68};
 
 	public ClothCollSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -374,7 +432,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> e.g. pointer to temp memory for collisions </p>
+	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * @see #__DNA__FIELD__collision_list
 	 */
 	
@@ -394,7 +452,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'collision_list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> e.g. pointer to temp memory for collisions </p>
+	 * <p> E.g. pointer to temp memory for collisions. </p>
 	 * @see #__DNA__FIELD__collision_list
 	 */
 	
@@ -412,7 +470,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min distance for collisions. </p>
+	 * <p> Min distance for collisions. </p>
 	 * @see #__DNA__FIELD__epsilon
 	 */
 	
@@ -429,7 +487,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'epsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min distance for collisions. </p>
+	 * <p> Min distance for collisions. </p>
 	 * @see #__DNA__FIELD__epsilon
 	 */
 	
@@ -548,7 +606,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for selfcollision </p>
+	 * <p> For selfcollision. </p>
 	 * @see #__DNA__FIELD__selfepsilon
 	 */
 	
@@ -565,7 +623,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'selfepsilon'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for selfcollision </p>
+	 * <p> For selfcollision. </p>
 	 * @see #__DNA__FIELD__selfepsilon
 	 */
 	
@@ -580,6 +638,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'repel_force'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__repel_force
 	 */
 	
@@ -594,6 +657,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'repel_force'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__repel_force
 	 */
 	
@@ -608,6 +676,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'distance_repel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__distance_repel
 	 */
 	
@@ -622,6 +695,11 @@ public class ClothCollSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'distance_repel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__distance_repel
 	 */
 	
@@ -638,7 +716,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision flags defined in BKE_cloth.h </p>
+	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -655,7 +733,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision flags defined in BKE_cloth.h </p>
+	 * <p> Collision flags defined in BKE_cloth.h. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -672,7 +750,9 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How many iterations for the selfcollision loop </p>
+	 * <p> How many iterations for the selfcollision loop. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__self_loop_count
 	 */
 	
@@ -689,7 +769,9 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'self_loop_count'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How many iterations for the selfcollision loop </p>
+	 * <p> How many iterations for the selfcollision loop. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__self_loop_count
 	 */
 	
@@ -737,30 +819,42 @@ public class ClothCollSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, pad);
+			__dna__offset = 44;
 		} else {
-			__io__block.writeInt(__io__address + 40, pad);
+			__dna__offset = 40;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -768,11 +862,11 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only use colliders from this group of objects </p>
+	 * <p> Only use colliders from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public CPointer<Group> getGroup() throws IOException
+	public CPointer<Collection> getGroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -780,19 +874,19 @@ public class ClothCollSettings extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 44);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only use colliders from this group of objects </p>
+	 * <p> Only use colliders from this group of objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public void setGroup(CPointer<Group> group) throws IOException
+	public void setGroup(CPointer<Collection> group) throws IOException
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -806,7 +900,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vgroup to paint which vertices are used for self collisions </p>
+	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
 	
@@ -823,7 +917,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vgroup to paint which vertices are used for self collisions </p>
+	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
 	
@@ -837,29 +931,29 @@ public class ClothCollSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CArrayFacade<Short> getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 50, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 50, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(CArrayFacade<Short> pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -867,12 +961,80 @@ public class ClothCollSettings extends CFacade {
 		} else {
 			__dna__offset = 50;
 		}
-		if (__io__equals(pad2, __io__address + __dna__offset)) {
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__generic__copy( getPad2(), pad2);
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for object collisions. </p>
+	 * @see #__DNA__FIELD__clamp
+	 */
+	
+	public float getClamp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 64);
+		} else {
+			return __io__block.readFloat(__io__address + 56);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for object collisions. </p>
+	 * @see #__DNA__FIELD__clamp
+	 */
+	
+	public void setClamp(float clamp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 64, clamp);
+		} else {
+			__io__block.writeFloat(__io__address + 56, clamp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'self_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for self collisions. </p>
+	 * @see #__DNA__FIELD__self_clamp
+	 */
+	
+	public float getSelf_clamp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 68);
+		} else {
+			return __io__block.readFloat(__io__address + 60);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'self_clamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Impulse clamp for self collisions. </p>
+	 * @see #__DNA__FIELD__self_clamp
+	 */
+	
+	public void setSelf_clamp(float self_clamp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 68, self_clamp);
+		} else {
+			__io__block.writeFloat(__io__address + 60, self_clamp);
 		}
 	}
 

@@ -27,13 +27,13 @@ public class SmokeFlowSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 540;
+	public static final int __DNA__SDNA_INDEX = 545;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,24 +53,24 @@ public class SmokeFlowSettings extends CFacade {
 	public static final long[] __DNA__FIELD__smd = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dm'.
+	 * Field descriptor (offset) for struct member 'mesh'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SmokeFlowSettings smokeflowsettings = ...;
-	 * CPointer&lt;Object&gt; p = smokeflowsettings.__dna__addressof(SmokeFlowSettings.__DNA__FIELD__dm);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_dm = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = smokeflowsettings.__dna__addressof(SmokeFlowSettings.__DNA__FIELD__mesh);
+	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_mesh = p.cast(new Class[]{CPointer.class, Mesh.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'dm'</li>
-	 * <li>Signature: 'DerivedMesh*'</li>
+	 * <li>Field: 'mesh'</li>
+	 * <li>Signature: 'Mesh*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dm = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__mesh = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'psys'.
@@ -119,7 +119,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> initial velocity previous vertex positions in domain space </p>
+	 * <p> initial velocity Previous vertex positions in domain space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -285,7 +285,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> delta temperature (temp - ambient temp) </p>
+	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -309,7 +309,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Factor for smoke emitted from inside the mesh volume<h4>Blender Source Code:</h4>
-	 * <p> density emitted within mesh volume </p>
+	 * <p> Density emitted within mesh volume. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -333,7 +333,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance from mesh surface to emit smoke<h4>Blender Source Code:</h4>
-	 * <p> maximum emission distance from mesh surface </p>
+	 * <p> Maximum emission distance from mesh surface. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -446,30 +446,30 @@ public class SmokeFlowSettings extends CFacade {
 	public static final long[] __DNA__FIELD__texture_offset = new long[]{80, 100};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SmokeFlowSettings smokeflowsettings = ...;
-	 * CPointer&lt;Object&gt; p = smokeflowsettings.__dna__addressof(SmokeFlowSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = smokeflowsettings.__dna__addressof(SmokeFlowSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{84, 104};
+	public static final long[] __DNA__FIELD___pad = new long[]{84, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -512,7 +512,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoke, flames, both, outflow </p>
+	 * <p> Smoke, flames, both, outflow. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -575,7 +575,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> absolute emission etc </p>
+	 * <p> Absolute emission et.c </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -606,7 +606,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -626,7 +626,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -641,11 +641,11 @@ public class SmokeFlowSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Get method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
 	 */
 	
-	public CPointer<Object> getDm() throws IOException
+	public CPointer<Mesh> getMesh() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -653,18 +653,18 @@ public class SmokeFlowSettings extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
+		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Set method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
 	 */
 	
-	public void setDm(CPointer<Object> dm) throws IOException
+	public void setMesh(CPointer<Mesh> mesh) throws IOException
 	{
-		long __address = ((dm == null) ? 0 : dm.getAddress());
+		long __address = ((mesh == null) ? 0 : mesh.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 8, __address);
 		} else {
@@ -746,7 +746,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> initial velocity previous vertex positions in domain space </p>
+	 * <p> initial velocity Previous vertex positions in domain space. </p>
 	 * @see #__DNA__FIELD__verts_old
 	 */
 	
@@ -766,7 +766,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'verts_old'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> initial velocity previous vertex positions in domain space </p>
+	 * <p> initial velocity Previous vertex positions in domain space. </p>
 	 * @see #__DNA__FIELD__verts_old
 	 */
 	
@@ -998,7 +998,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> delta temperature (temp - ambient temp) </p>
+	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -1015,7 +1015,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'temp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> delta temperature (temp - ambient temp) </p>
+	 * <p> Delta temperature (temp - ambient temp). </p>
 	 * @see #__DNA__FIELD__temp
 	 */
 	
@@ -1033,7 +1033,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Factor for smoke emitted from inside the mesh volume<h4>Blender Source Code:</h4>
-	 * <p> density emitted within mesh volume </p>
+	 * <p> Density emitted within mesh volume. </p>
 	 * @see #__DNA__FIELD__volume_density
 	 */
 	
@@ -1051,7 +1051,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Factor for smoke emitted from inside the mesh volume<h4>Blender Source Code:</h4>
-	 * <p> density emitted within mesh volume </p>
+	 * <p> Density emitted within mesh volume. </p>
 	 * @see #__DNA__FIELD__volume_density
 	 */
 	
@@ -1069,7 +1069,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance from mesh surface to emit smoke<h4>Blender Source Code:</h4>
-	 * <p> maximum emission distance from mesh surface </p>
+	 * <p> Maximum emission distance from mesh surface. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	
@@ -1087,7 +1087,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance from mesh surface to emit smoke<h4>Blender Source Code:</h4>
-	 * <p> maximum emission distance from mesh surface </p>
+	 * <p> Maximum emission distance from mesh surface. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
 	
@@ -1239,30 +1239,42 @@ public class SmokeFlowSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 104);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 84);
+			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 104, pad);
+			__dna__offset = 104;
 		} else {
-			__io__block.writeInt(__io__address + 84, pad);
+			__dna__offset = 84;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1270,7 +1282,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -1291,7 +1303,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -1344,7 +1356,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoke, flames, both, outflow </p>
+	 * <p> Smoke, flames, both, outflow. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1361,7 +1373,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoke, flames, both, outflow </p>
+	 * <p> Smoke, flames, both, outflow. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1434,7 +1446,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> absolute emission etc </p>
+	 * <p> Absolute emission et.c </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -1451,7 +1463,7 @@ public class SmokeFlowSettings extends CFacade {
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> absolute emission etc </p>
+	 * <p> Absolute emission et.c </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	

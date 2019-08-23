@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=116, size64=144)
+@CMetaData(size32=120, size64=152)
 public class SmokeModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class SmokeModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 100;
+	public static final int __DNA__SDNA_INDEX = 106;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class SmokeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,13 +66,13 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__domain = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__domain = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inflow, outflow, smoke objects </p>
+	 * <p> Inflow, outflow, smoke objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -89,13 +89,13 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flow = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__flow = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision objects </p>
+	 * <p> Collision objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,7 +112,7 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coll = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__coll = new long[]{108, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time'.
@@ -132,13 +132,13 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__time = new long[]{112, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> domain, inflow, outflow, ... </p>
+	 * <p> Domain, inflow, outflow, .... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,7 +155,7 @@ public class SmokeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{112, 140};
+	public static final long[] __DNA__FIELD__type = new long[]{116, 148};
 
 	public SmokeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -210,9 +210,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SmokeDomainSettings.class};
 		return new CPointer<SmokeDomainSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SmokeDomainSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -227,9 +227,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __address = ((domain == null) ? 0 : domain.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -237,7 +237,7 @@ public class SmokeModifierData extends CFacade {
 	 * Get method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inflow, outflow, smoke objects </p>
+	 * <p> Inflow, outflow, smoke objects. </p>
 	 * @see #__DNA__FIELD__flow
 	 */
 	
@@ -245,9 +245,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SmokeFlowSettings.class};
 		return new CPointer<SmokeFlowSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SmokeFlowSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -257,7 +257,7 @@ public class SmokeModifierData extends CFacade {
 	 * Set method for struct member 'flow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inflow, outflow, smoke objects </p>
+	 * <p> Inflow, outflow, smoke objects. </p>
 	 * @see #__DNA__FIELD__flow
 	 */
 	
@@ -265,9 +265,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __address = ((flow == null) ? 0 : flow.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -275,7 +275,7 @@ public class SmokeModifierData extends CFacade {
 	 * Get method for struct member 'coll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision objects </p>
+	 * <p> Collision objects. </p>
 	 * @see #__DNA__FIELD__coll
 	 */
 	
@@ -283,9 +283,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SmokeCollSettings.class};
 		return new CPointer<SmokeCollSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SmokeCollSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -295,7 +295,7 @@ public class SmokeModifierData extends CFacade {
 	 * Set method for struct member 'coll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> collision objects </p>
+	 * <p> Collision objects. </p>
 	 * @see #__DNA__FIELD__coll
 	 */
 	
@@ -303,9 +303,9 @@ public class SmokeModifierData extends CFacade {
 	{
 		long __address = ((coll == null) ? 0 : coll.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -317,9 +317,9 @@ public class SmokeModifierData extends CFacade {
 	public float getTime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -331,9 +331,9 @@ public class SmokeModifierData extends CFacade {
 	public void setTime(float time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, time);
+			__io__block.writeFloat(__io__address + 144, time);
 		} else {
-			__io__block.writeFloat(__io__address + 108, time);
+			__io__block.writeFloat(__io__address + 112, time);
 		}
 	}
 
@@ -341,16 +341,16 @@ public class SmokeModifierData extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> domain, inflow, outflow, ... </p>
+	 * <p> Domain, inflow, outflow, .... </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -358,16 +358,16 @@ public class SmokeModifierData extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> domain, inflow, outflow, ... </p>
+	 * <p> Domain, inflow, outflow, .... </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, type);
+			__io__block.writeInt(__io__address + 148, type);
 		} else {
-			__io__block.writeInt(__io__address + 112, type);
+			__io__block.writeInt(__io__address + 116, type);
 		}
 	}
 

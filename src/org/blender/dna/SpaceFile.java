@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> File Browser </p>
  */
 
-@CMetaData(size32=64, size64=112)
+@CMetaData(size32=72, size64=120)
 public class SpaceFile extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class SpaceFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +74,7 @@ public class SpaceFile extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,16 +102,79 @@ public class SpaceFile extends CFacade {
 	 * <pre>
 	 * SpaceFile spacefile = ...;
 	 * CPointer&lt;Object&gt; p = spacefile.__dna__addressof(SpaceFile.__DNA__FIELD__spacetype);
-	 * CPointer&lt;Integer&gt; p_spacetype = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Byte&gt; p_spacetype = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'spacetype'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__spacetype = new long[]{16, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'link_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceFile spacefile = ...;
+	 * CPointer&lt;Object&gt; p = spacefile.__dna__addressof(SpaceFile.__DNA__FIELD__link_flag);
+	 * CPointer&lt;Byte&gt; p_link_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'link_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__link_flag = new long[]{17, 33};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceFile spacefile = ...;
+	 * CPointer&lt;Object&gt; p = spacefile.__dna__addressof(SpaceFile.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{18, 34};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceFile spacefile = ...;
+	 * CPointer&lt;Object&gt; p = spacefile.__dna__addressof(SpaceFile.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{24, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scroll_offset'.
@@ -130,13 +194,13 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scroll_offset = new long[]{20, 36};
+	public static final long[] __DNA__FIELD__scroll_offset = new long[]{28, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'params'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> config and input for file select </p>
+	 * <p> Config and input for file select. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -153,13 +217,13 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__params = new long[]{24, 40};
+	public static final long[] __DNA__FIELD__params = new long[]{32, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of files to show </p>
+	 * <p> Holds the list of files to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -176,13 +240,13 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__files = new long[]{28, 48};
+	public static final long[] __DNA__FIELD__files = new long[]{36, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of previous directories to show </p>
+	 * <p> Holds the list of previous directories to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,13 +263,13 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__folders_prev = new long[]{32, 56};
+	public static final long[] __DNA__FIELD__folders_prev = new long[]{40, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of next directories (pushed from previous) to show </p>
+	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -222,7 +286,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__folders_next = new long[]{36, 64};
+	public static final long[] __DNA__FIELD__folders_next = new long[]{44, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op'.
@@ -245,7 +309,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op = new long[]{40, 72};
+	public static final long[] __DNA__FIELD__op = new long[]{48, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smoothscroll_timer'.
@@ -265,7 +329,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smoothscroll_timer = new long[]{44, 80};
+	public static final long[] __DNA__FIELD__smoothscroll_timer = new long[]{52, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'previews_timer'.
@@ -285,7 +349,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__previews_timer = new long[]{48, 88};
+	public static final long[] __DNA__FIELD__previews_timer = new long[]{56, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layout'.
@@ -305,7 +369,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layout = new long[]{52, 96};
+	public static final long[] __DNA__FIELD__layout = new long[]{60, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recentnr'.
@@ -325,7 +389,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recentnr = new long[]{56, 104};
+	public static final long[] __DNA__FIELD__recentnr = new long[]{64, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bookmarknr'.
@@ -345,7 +409,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bookmarknr = new long[]{58, 106};
+	public static final long[] __DNA__FIELD__bookmarknr = new long[]{66, 114};
 
 	/**
 	 * Field descriptor (offset) for struct member 'systemnr'.
@@ -365,7 +429,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__systemnr = new long[]{60, 108};
+	public static final long[] __DNA__FIELD__systemnr = new long[]{68, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'system_bookmarknr'.
@@ -385,7 +449,7 @@ public class SpaceFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__system_bookmarknr = new long[]{62, 110};
+	public static final long[] __DNA__FIELD__system_bookmarknr = new long[]{70, 118};
 
 	public SpaceFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -463,7 +527,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -480,7 +544,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -506,12 +570,12 @@ public class SpaceFile extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public int getSpacetype() throws IOException
+	public byte getSpacetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readByte(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readByte(__io__address + 16);
 		}
 	}
 
@@ -520,12 +584,126 @@ public class SpaceFile extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public void setSpacetype(int spacetype) throws IOException
+	public void setSpacetype(byte spacetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, spacetype);
+			__io__block.writeByte(__io__address + 32, spacetype);
 		} else {
-			__io__block.writeInt(__io__address + 16, spacetype);
+			__io__block.writeByte(__io__address + 16, spacetype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
+	 */
+	
+	public byte getLink_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 33);
+		} else {
+			return __io__block.readByte(__io__address + 17);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
+	 */
+	
+	public void setLink_flag(byte link_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 33, link_flag);
+		} else {
+			__io__block.writeByte(__io__address + 17, link_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 34, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 34;
+		} else {
+			__dna__offset = 18;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 40;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -537,9 +715,9 @@ public class SpaceFile extends CFacade {
 	public int getScroll_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 44);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
@@ -551,9 +729,9 @@ public class SpaceFile extends CFacade {
 	public void setScroll_offset(int scroll_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, scroll_offset);
+			__io__block.writeInt(__io__address + 44, scroll_offset);
 		} else {
-			__io__block.writeInt(__io__address + 20, scroll_offset);
+			__io__block.writeInt(__io__address + 28, scroll_offset);
 		}
 	}
 
@@ -561,7 +739,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'params'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> config and input for file select </p>
+	 * <p> Config and input for file select. </p>
 	 * @see #__DNA__FIELD__params
 	 */
 	
@@ -569,9 +747,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FileSelectParams.class};
 		return new CPointer<FileSelectParams>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FileSelectParams.__DNA__SDNA_INDEX), __io__blockTable);
@@ -581,7 +759,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'params'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> config and input for file select </p>
+	 * <p> Config and input for file select. </p>
 	 * @see #__DNA__FIELD__params
 	 */
 	
@@ -589,9 +767,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((params == null) ? 0 : params.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		} else {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		}
 	}
 
@@ -599,7 +777,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of files to show </p>
+	 * <p> Holds the list of files to show. </p>
 	 * @see #__DNA__FIELD__files
 	 */
 	
@@ -607,9 +785,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 28);
+			__dna__targetAddress = __io__block.readLong(__io__address + 36);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -619,7 +797,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'files'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of files to show </p>
+	 * <p> Holds the list of files to show. </p>
 	 * @see #__DNA__FIELD__files
 	 */
 	
@@ -627,9 +805,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((files == null) ? 0 : files.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		} else {
-			__io__block.writeLong(__io__address + 28, __address);
+			__io__block.writeLong(__io__address + 36, __address);
 		}
 	}
 
@@ -637,7 +815,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of previous directories to show </p>
+	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
 	
@@ -645,9 +823,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -657,7 +835,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'folders_prev'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of previous directories to show </p>
+	 * <p> Holds the list of previous directories to show. </p>
 	 * @see #__DNA__FIELD__folders_prev
 	 */
 	
@@ -665,9 +843,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((folders_prev == null) ? 0 : folders_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 56, __address);
+			__io__block.writeLong(__io__address + 64, __address);
 		} else {
-			__io__block.writeLong(__io__address + 32, __address);
+			__io__block.writeLong(__io__address + 40, __address);
 		}
 	}
 
@@ -675,7 +853,7 @@ public class SpaceFile extends CFacade {
 	 * Get method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of next directories (pushed from previous) to show </p>
+	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
 	
@@ -683,9 +861,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+			__dna__targetAddress = __io__block.readLong(__io__address + 44);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -695,7 +873,7 @@ public class SpaceFile extends CFacade {
 	 * Set method for struct member 'folders_next'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> holds the list of next directories (pushed from previous) to show </p>
+	 * <p> Holds the list of next directories (pushed from previous) to show. </p>
 	 * @see #__DNA__FIELD__folders_next
 	 */
 	
@@ -703,9 +881,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((folders_next == null) ? 0 : folders_next.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 72, __address);
 		} else {
-			__io__block.writeLong(__io__address + 36, __address);
+			__io__block.writeLong(__io__address + 44, __address);
 		}
 	}
 
@@ -721,9 +899,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmOperator.class};
 		return new CPointer<wmOperator>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmOperator.__DNA__SDNA_INDEX), __io__blockTable);
@@ -741,9 +919,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((op == null) ? 0 : op.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 72, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		} else {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		}
 	}
 
@@ -756,9 +934,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 44);
+			__dna__targetAddress = __io__block.readLong(__io__address + 52);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -773,9 +951,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((smoothscroll_timer == null) ? 0 : smoothscroll_timer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		} else {
-			__io__block.writeLong(__io__address + 44, __address);
+			__io__block.writeLong(__io__address + 52, __address);
 		}
 	}
 
@@ -788,9 +966,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -805,9 +983,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((previews_timer == null) ? 0 : previews_timer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		} else {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		}
 	}
 
@@ -820,9 +998,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 52);
+			__dna__targetAddress = __io__block.readLong(__io__address + 60);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -837,9 +1015,9 @@ public class SpaceFile extends CFacade {
 	{
 		long __address = ((layout == null) ? 0 : layout.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		} else {
-			__io__block.writeLong(__io__address + 52, __address);
+			__io__block.writeLong(__io__address + 60, __address);
 		}
 	}
 
@@ -851,9 +1029,9 @@ public class SpaceFile extends CFacade {
 	public short getRecentnr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 104);
+			return __io__block.readShort(__io__address + 112);
 		} else {
-			return __io__block.readShort(__io__address + 56);
+			return __io__block.readShort(__io__address + 64);
 		}
 	}
 
@@ -865,9 +1043,9 @@ public class SpaceFile extends CFacade {
 	public void setRecentnr(short recentnr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 104, recentnr);
+			__io__block.writeShort(__io__address + 112, recentnr);
 		} else {
-			__io__block.writeShort(__io__address + 56, recentnr);
+			__io__block.writeShort(__io__address + 64, recentnr);
 		}
 	}
 
@@ -879,9 +1057,9 @@ public class SpaceFile extends CFacade {
 	public short getBookmarknr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 106);
+			return __io__block.readShort(__io__address + 114);
 		} else {
-			return __io__block.readShort(__io__address + 58);
+			return __io__block.readShort(__io__address + 66);
 		}
 	}
 
@@ -893,9 +1071,9 @@ public class SpaceFile extends CFacade {
 	public void setBookmarknr(short bookmarknr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 106, bookmarknr);
+			__io__block.writeShort(__io__address + 114, bookmarknr);
 		} else {
-			__io__block.writeShort(__io__address + 58, bookmarknr);
+			__io__block.writeShort(__io__address + 66, bookmarknr);
 		}
 	}
 
@@ -907,9 +1085,9 @@ public class SpaceFile extends CFacade {
 	public short getSystemnr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 108);
+			return __io__block.readShort(__io__address + 116);
 		} else {
-			return __io__block.readShort(__io__address + 60);
+			return __io__block.readShort(__io__address + 68);
 		}
 	}
 
@@ -921,9 +1099,9 @@ public class SpaceFile extends CFacade {
 	public void setSystemnr(short systemnr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 108, systemnr);
+			__io__block.writeShort(__io__address + 116, systemnr);
 		} else {
-			__io__block.writeShort(__io__address + 60, systemnr);
+			__io__block.writeShort(__io__address + 68, systemnr);
 		}
 	}
 
@@ -935,9 +1113,9 @@ public class SpaceFile extends CFacade {
 	public short getSystem_bookmarknr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 110);
+			return __io__block.readShort(__io__address + 118);
 		} else {
-			return __io__block.readShort(__io__address + 62);
+			return __io__block.readShort(__io__address + 70);
 		}
 	}
 
@@ -949,9 +1127,9 @@ public class SpaceFile extends CFacade {
 	public void setSystem_bookmarknr(short system_bookmarknr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 110, system_bookmarknr);
+			__io__block.writeShort(__io__address + 118, system_bookmarknr);
 		} else {
-			__io__block.writeShort(__io__address + 62, system_bookmarknr);
+			__io__block.writeShort(__io__address + 70, system_bookmarknr);
 		}
 	}
 

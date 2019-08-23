@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=200)
+@CMetaData(size32=188, size64=208)
 public class DecimateModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class DecimateModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 103;
+	public static final int __DNA__SDNA_INDEX = 109;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class DecimateModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class DecimateModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,13 +70,13 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__percent = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__percent = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,13 +93,13 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iter = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__iter = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,13 +116,13 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__delimit = new long[]{102, 118};
+	public static final long[] __DNA__FIELD__delimit = new long[]{106, 126};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,13 +139,13 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetry_axis = new long[]{103, 119};
+	public static final long[] __DNA__FIELD__symmetry_axis = new long[]{107, 127};
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -162,13 +162,13 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__angle = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__angle = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -185,7 +185,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_factor'.
@@ -205,7 +205,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_factor = new long[]{172, 188};
+	public static final long[] __DNA__FIELD__defgrp_factor = new long[]{176, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -225,7 +225,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{176, 192};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -245,7 +245,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{178, 194};
+	public static final long[] __DNA__FIELD__mode = new long[]{182, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_count'.
@@ -268,7 +268,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_count = new long[]{180, 196};
+	public static final long[] __DNA__FIELD__face_count = new long[]{184, 204};
 
 	public DecimateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -318,16 +318,16 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__percent
 	 */
 	
 	public float getPercent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -335,16 +335,16 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'percent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__percent
 	 */
 	
 	public void setPercent(float percent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, percent);
+			__io__block.writeFloat(__io__address + 120, percent);
 		} else {
-			__io__block.writeFloat(__io__address + 96, percent);
+			__io__block.writeFloat(__io__address + 100, percent);
 		}
 	}
 
@@ -352,16 +352,16 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * @see #__DNA__FIELD__iter
 	 */
 	
 	public short getIter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 116);
+			return __io__block.readShort(__io__address + 124);
 		} else {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -369,16 +369,16 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'iter'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV) </p>
+	 * <p> (mode == MOD_DECIM_MODE_UNSUBDIV). </p>
 	 * @see #__DNA__FIELD__iter
 	 */
 	
 	public void setIter(short iter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 116, iter);
+			__io__block.writeShort(__io__address + 124, iter);
 		} else {
-			__io__block.writeShort(__io__address + 100, iter);
+			__io__block.writeShort(__io__address + 104, iter);
 		}
 	}
 
@@ -386,16 +386,16 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
 	
 	public byte getDelimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 118);
+			return __io__block.readByte(__io__address + 126);
 		} else {
-			return __io__block.readByte(__io__address + 102);
+			return __io__block.readByte(__io__address + 106);
 		}
 	}
 
@@ -403,16 +403,16 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'delimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__delimit
 	 */
 	
 	public void setDelimit(byte delimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 118, delimit);
+			__io__block.writeByte(__io__address + 126, delimit);
 		} else {
-			__io__block.writeByte(__io__address + 102, delimit);
+			__io__block.writeByte(__io__address + 106, delimit);
 		}
 	}
 
@@ -420,16 +420,16 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__symmetry_axis
 	 */
 	
 	public byte getSymmetry_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 119);
+			return __io__block.readByte(__io__address + 127);
 		} else {
-			return __io__block.readByte(__io__address + 103);
+			return __io__block.readByte(__io__address + 107);
 		}
 	}
 
@@ -437,16 +437,16 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'symmetry_axis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_COLLAPSE). </p>
 	 * @see #__DNA__FIELD__symmetry_axis
 	 */
 	
 	public void setSymmetry_axis(byte symmetry_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 119, symmetry_axis);
+			__io__block.writeByte(__io__address + 127, symmetry_axis);
 		} else {
-			__io__block.writeByte(__io__address + 103, symmetry_axis);
+			__io__block.writeByte(__io__address + 107, symmetry_axis);
 		}
 	}
 
@@ -454,16 +454,16 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
 	public float getAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -471,16 +471,16 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE) </p>
+	 * <p> (mode == MOD_DECIM_MODE_DISSOLVE). </p>
 	 * @see #__DNA__FIELD__angle
 	 */
 	
 	public void setAngle(float angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 120, angle);
+			__io__block.writeFloat(__io__address + 128, angle);
 		} else {
-			__io__block.writeFloat(__io__address + 104, angle);
+			__io__block.writeFloat(__io__address + 108, angle);
 		}
 	}
 
@@ -488,7 +488,7 @@ public class DecimateModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -499,9 +499,9 @@ public class DecimateModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -509,7 +509,7 @@ public class DecimateModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -517,9 +517,9 @@ public class DecimateModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 124;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 112;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -538,9 +538,9 @@ public class DecimateModifierData extends CFacade {
 	public float getDefgrp_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -552,9 +552,9 @@ public class DecimateModifierData extends CFacade {
 	public void setDefgrp_factor(float defgrp_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, defgrp_factor);
+			__io__block.writeFloat(__io__address + 196, defgrp_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 172, defgrp_factor);
+			__io__block.writeFloat(__io__address + 176, defgrp_factor);
 		}
 	}
 
@@ -566,9 +566,9 @@ public class DecimateModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -580,9 +580,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, flag);
+			__io__block.writeShort(__io__address + 200, flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		}
 	}
 
@@ -594,9 +594,9 @@ public class DecimateModifierData extends CFacade {
 	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 202);
 		} else {
-			return __io__block.readShort(__io__address + 178);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -608,9 +608,9 @@ public class DecimateModifierData extends CFacade {
 	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, mode);
+			__io__block.writeShort(__io__address + 202, mode);
 		} else {
-			__io__block.writeShort(__io__address + 178, mode);
+			__io__block.writeShort(__io__address + 182, mode);
 		}
 	}
 
@@ -625,9 +625,9 @@ public class DecimateModifierData extends CFacade {
 	public int getFace_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -642,9 +642,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFace_count(int face_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, face_count);
+			__io__block.writeInt(__io__address + 204, face_count);
 		} else {
-			__io__block.writeInt(__io__address + 180, face_count);
+			__io__block.writeInt(__io__address + 184, face_count);
 		}
 	}
 

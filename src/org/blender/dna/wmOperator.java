@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> this one is the operator itself, stored in files for macros etc operator + operatortype should be able to redo entirely, but for different contextes </p>
+ * <p> This one is the operator itself, stored in files for macros etc. operator + operator-type should be able to redo entirely, but for different context's. </p>
  */
 
 @CMetaData(size32=120, size64=168)
@@ -28,7 +28,7 @@ public class wmOperator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 505;
+	public static final int __DNA__SDNA_INDEX = 512;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved used to retrieve type pointer </p>
+	 * <p> saved Used to retrieve type pointer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved, user-settable properties </p>
+	 * <p> Saved, user-settable properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +120,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime operator type definition from idname </p>
+	 * <p> runtime Operator type definition from idname. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,7 +143,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'customdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom storage, only while operator runs </p>
+	 * <p> Custom storage, only while operator runs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,7 +166,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python stores the class instance here </p>
+	 * <p> Python stores the class instance here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,7 +189,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rna pointer to access properties </p>
+	 * <p> Rna pointer to access properties. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -212,7 +212,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> errors and warnings storage </p>
+	 * <p> Errors and warnings storage. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -235,7 +235,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'macro'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of operators, can be a tree </p>
+	 * <p> List of operators, can be a tree. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -258,7 +258,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'opm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current running macro, not saved </p>
+	 * <p> Current running macro, not saved. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -281,7 +281,7 @@ public class wmOperator extends CFacade {
 	 * Field descriptor (offset) for struct member 'layout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -321,24 +321,24 @@ public class wmOperator extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{112, 160};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * wmOperator wmoperator = ...;
-	 * CPointer&lt;Object&gt; p = wmoperator.__dna__addressof(wmOperator.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = wmoperator.__dna__addressof(wmOperator.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{114, 162};
+	public static final long[] __DNA__FIELD___pad = new long[]{114, 162};
 
 	public wmOperator(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -416,7 +416,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved used to retrieve type pointer </p>
+	 * <p> saved Used to retrieve type pointer. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -437,7 +437,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved used to retrieve type pointer </p>
+	 * <p> saved Used to retrieve type pointer. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -462,7 +462,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved, user-settable properties </p>
+	 * <p> Saved, user-settable properties. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -482,7 +482,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved, user-settable properties </p>
+	 * <p> Saved, user-settable properties. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -500,7 +500,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime operator type definition from idname </p>
+	 * <p> runtime Operator type definition from idname. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -520,7 +520,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime operator type definition from idname </p>
+	 * <p> runtime Operator type definition from idname. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -538,7 +538,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'customdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom storage, only while operator runs </p>
+	 * <p> Custom storage, only while operator runs. </p>
 	 * @see #__DNA__FIELD__customdata
 	 */
 	
@@ -558,7 +558,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'customdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom storage, only while operator runs </p>
+	 * <p> Custom storage, only while operator runs. </p>
 	 * @see #__DNA__FIELD__customdata
 	 */
 	
@@ -576,7 +576,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python stores the class instance here </p>
+	 * <p> Python stores the class instance here. </p>
 	 * @see #__DNA__FIELD__py_instance
 	 */
 	
@@ -596,7 +596,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'py_instance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python stores the class instance here </p>
+	 * <p> Python stores the class instance here. </p>
 	 * @see #__DNA__FIELD__py_instance
 	 */
 	
@@ -614,7 +614,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rna pointer to access properties </p>
+	 * <p> Rna pointer to access properties. </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	
@@ -634,7 +634,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rna pointer to access properties </p>
+	 * <p> Rna pointer to access properties. </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	
@@ -652,7 +652,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> errors and warnings storage </p>
+	 * <p> Errors and warnings storage. </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
@@ -672,7 +672,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> errors and warnings storage </p>
+	 * <p> Errors and warnings storage. </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
@@ -690,7 +690,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'macro'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of operators, can be a tree </p>
+	 * <p> List of operators, can be a tree. </p>
 	 * @see #__DNA__FIELD__macro
 	 */
 	
@@ -707,7 +707,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'macro'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of operators, can be a tree </p>
+	 * <p> List of operators, can be a tree. </p>
 	 * @see #__DNA__FIELD__macro
 	 */
 	
@@ -732,7 +732,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'opm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current running macro, not saved </p>
+	 * <p> Current running macro, not saved. </p>
 	 * @see #__DNA__FIELD__opm
 	 */
 	
@@ -752,7 +752,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'opm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current running macro, not saved </p>
+	 * <p> Current running macro, not saved. </p>
 	 * @see #__DNA__FIELD__opm
 	 */
 	
@@ -770,7 +770,7 @@ public class wmOperator extends CFacade {
 	 * Get method for struct member 'layout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -790,7 +790,7 @@ public class wmOperator extends CFacade {
 	 * Set method for struct member 'layout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -833,29 +833,29 @@ public class wmOperator extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 162, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 162, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 114, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 114, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -863,12 +863,12 @@ public class wmOperator extends CFacade {
 		} else {
 			__dna__offset = 114;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link Brush}  settings </p>
  */
 
-@CMetaData(size32=88, size64=112)
+@CMetaData(size32=80, size64=96)
 public class DynamicPaintBrushSettings extends CFacade {
 
 	/**
@@ -27,13 +28,13 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 564;
+	public static final int __DNA__SDNA_INDEX = 571;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,26 +54,6 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public static final long[] __DNA__FIELD__pmd = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dm'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DynamicPaintBrushSettings dynamicpaintbrushsettings = ...;
-	 * CPointer&lt;Object&gt; p = dynamicpaintbrushsettings.__dna__addressof(DynamicPaintBrushSettings.__DNA__FIELD__dm);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_dm = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'dm'</li>
-	 * <li>Signature: 'DerivedMesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__dm = new long[]{4, 8};
-
-	/**
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -90,27 +71,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__psys = new long[]{8, 16};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mat'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DynamicPaintBrushSettings dynamicpaintbrushsettings = ...;
-	 * CPointer&lt;Object&gt; p = dynamicpaintbrushsettings.__dna__addressof(DynamicPaintBrushSettings.__DNA__FIELD__mat);
-	 * CPointer&lt;CPointer&lt;Material&gt;&gt; p_mat = p.cast(new Class[]{CPointer.class, Material.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mat'</li>
-	 * <li>Signature: 'Material*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__psys = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -130,7 +91,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{16, 32};
+	public static final long[] __DNA__FIELD__flags = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision'.
@@ -150,7 +111,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision = new long[]{20, 36};
+	public static final long[] __DNA__FIELD__collision = new long[]{12, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
@@ -170,7 +131,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__r = new long[]{24, 40};
+	public static final long[] __DNA__FIELD__r = new long[]{16, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'g'.
@@ -190,7 +151,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__g = new long[]{28, 44};
+	public static final long[] __DNA__FIELD__g = new long[]{20, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'b'.
@@ -210,7 +171,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__b = new long[]{32, 48};
+	public static final long[] __DNA__FIELD__b = new long[]{24, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -230,7 +191,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{36, 52};
+	public static final long[] __DNA__FIELD__alpha = new long[]{28, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wetness'.
@@ -250,7 +211,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wetness = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__wetness = new long[]{32, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_radius'.
@@ -270,7 +231,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_radius = new long[]{44, 60};
+	public static final long[] __DNA__FIELD__particle_radius = new long[]{36, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_smooth'.
@@ -290,7 +251,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_smooth = new long[]{48, 64};
+	public static final long[] __DNA__FIELD__particle_smooth = new long[]{40, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_distance'.
@@ -313,14 +274,14 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_distance = new long[]{52, 68};
+	public static final long[] __DNA__FIELD__paint_distance = new long[]{44, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_ramp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
-	 * <p> color ramps Proximity paint falloff </p>
+	 * <p> color ramps Proximity paint falloff. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -337,13 +298,13 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_ramp = new long[]{56, 72};
+	public static final long[] __DNA__FIELD__paint_ramp = new long[]{48, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vel_ramp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Velocity paint ramp </p>
+	 * <p> Velocity paint ramp. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -360,7 +321,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vel_ramp = new long[]{60, 80};
+	public static final long[] __DNA__FIELD__vel_ramp = new long[]{52, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_falloff'.
@@ -383,7 +344,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proximity_falloff = new long[]{64, 88};
+	public static final long[] __DNA__FIELD__proximity_falloff = new long[]{56, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_type'.
@@ -403,7 +364,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_type = new long[]{66, 90};
+	public static final long[] __DNA__FIELD__wave_type = new long[]{58, 74};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ray_dir'.
@@ -423,27 +384,27 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ray_dir = new long[]{68, 92};
+	public static final long[] __DNA__FIELD__ray_dir = new long[]{60, 76};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * DynamicPaintBrushSettings dynamicpaintbrushsettings = ...;
-	 * CPointer&lt;Object&gt; p = dynamicpaintbrushsettings.__dna__addressof(DynamicPaintBrushSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = dynamicpaintbrushsettings.__dna__addressof(DynamicPaintBrushSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{70, 94};
+	public static final long[] __DNA__FIELD___pad = new long[]{62, 78};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_factor'.
@@ -466,7 +427,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_factor = new long[]{72, 96};
+	public static final long[] __DNA__FIELD__wave_factor = new long[]{64, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_clamp'.
@@ -489,7 +450,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_clamp = new long[]{76, 100};
+	public static final long[] __DNA__FIELD__wave_clamp = new long[]{68, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_velocity'.
@@ -509,7 +470,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_velocity = new long[]{80, 104};
+	public static final long[] __DNA__FIELD__max_velocity = new long[]{72, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smudge_strength'.
@@ -532,7 +493,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smudge_strength = new long[]{84, 108};
+	public static final long[] __DNA__FIELD__smudge_strength = new long[]{76, 92};
 
 	public DynamicPaintBrushSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -546,7 +507,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Get method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -566,7 +527,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Set method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -581,38 +542,6 @@ public class DynamicPaintBrushSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
-	 */
-	
-	public CPointer<Object> getDm() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
-	 */
-	
-	public void setDm(CPointer<Object> dm) throws IOException
-	{
-		long __address = ((dm == null) ? 0 : dm.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 8, __address);
-		} else {
-			__io__block.writeLong(__io__address + 4, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'psys'.
 	 * @see #__DNA__FIELD__psys
 	 */
@@ -621,9 +550,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
-		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ParticleSystem.class};
 		return new CPointer<ParticleSystem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ParticleSystem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -638,41 +567,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __address = ((psys == null) ? 0 : psys.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
-		} else {
 			__io__block.writeLong(__io__address + 8, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mat'.
-	 * @see #__DNA__FIELD__mat
-	 */
-	
-	public CPointer<Material> getMat() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 12);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
-		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mat'.
-	 * @see #__DNA__FIELD__mat
-	 */
-	
-	public void setMat(CPointer<Material> mat) throws IOException
-	{
-		long __address = ((mat == null) ? 0 : mat.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
-		} else {
-			__io__block.writeLong(__io__address + 12, __address);
+			__io__block.writeLong(__io__address + 4, __address);
 		}
 	}
 
@@ -684,9 +581,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
-		} else {
 			return __io__block.readInt(__io__address + 16);
+		} else {
+			return __io__block.readInt(__io__address + 8);
 		}
 	}
 
@@ -698,9 +595,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, flags);
-		} else {
 			__io__block.writeInt(__io__address + 16, flags);
+		} else {
+			__io__block.writeInt(__io__address + 8, flags);
 		}
 	}
 
@@ -712,9 +609,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public int getCollision() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
-		} else {
 			return __io__block.readInt(__io__address + 20);
+		} else {
+			return __io__block.readInt(__io__address + 12);
 		}
 	}
 
@@ -726,9 +623,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setCollision(int collision) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, collision);
-		} else {
 			__io__block.writeInt(__io__address + 20, collision);
+		} else {
+			__io__block.writeInt(__io__address + 12, collision);
 		}
 	}
 
@@ -740,9 +637,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getR() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 40);
-		} else {
 			return __io__block.readFloat(__io__address + 24);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
 		}
 	}
 
@@ -754,9 +651,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setR(float r) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 40, r);
-		} else {
 			__io__block.writeFloat(__io__address + 24, r);
+		} else {
+			__io__block.writeFloat(__io__address + 16, r);
 		}
 	}
 
@@ -768,9 +665,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getG() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 44);
-		} else {
 			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -782,9 +679,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setG(float g) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 44, g);
-		} else {
 			__io__block.writeFloat(__io__address + 28, g);
+		} else {
+			__io__block.writeFloat(__io__address + 20, g);
 		}
 	}
 
@@ -796,9 +693,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getB() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 48);
-		} else {
 			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
 		}
 	}
 
@@ -810,9 +707,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setB(float b) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 48, b);
-		} else {
 			__io__block.writeFloat(__io__address + 32, b);
+		} else {
+			__io__block.writeFloat(__io__address + 24, b);
 		}
 	}
 
@@ -824,9 +721,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 52);
-		} else {
 			return __io__block.readFloat(__io__address + 36);
+		} else {
+			return __io__block.readFloat(__io__address + 28);
 		}
 	}
 
@@ -838,9 +735,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 52, alpha);
-		} else {
 			__io__block.writeFloat(__io__address + 36, alpha);
+		} else {
+			__io__block.writeFloat(__io__address + 28, alpha);
 		}
 	}
 
@@ -852,9 +749,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getWetness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 56);
-		} else {
 			return __io__block.readFloat(__io__address + 40);
+		} else {
+			return __io__block.readFloat(__io__address + 32);
 		}
 	}
 
@@ -866,9 +763,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setWetness(float wetness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 56, wetness);
-		} else {
 			__io__block.writeFloat(__io__address + 40, wetness);
+		} else {
+			__io__block.writeFloat(__io__address + 32, wetness);
 		}
 	}
 
@@ -880,9 +777,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getParticle_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
-		} else {
 			return __io__block.readFloat(__io__address + 44);
+		} else {
+			return __io__block.readFloat(__io__address + 36);
 		}
 	}
 
@@ -894,9 +791,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setParticle_radius(float particle_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, particle_radius);
-		} else {
 			__io__block.writeFloat(__io__address + 44, particle_radius);
+		} else {
+			__io__block.writeFloat(__io__address + 36, particle_radius);
 		}
 	}
 
@@ -908,9 +805,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getParticle_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 64);
-		} else {
 			return __io__block.readFloat(__io__address + 48);
+		} else {
+			return __io__block.readFloat(__io__address + 40);
 		}
 	}
 
@@ -922,9 +819,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setParticle_smooth(float particle_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 64, particle_smooth);
-		} else {
 			__io__block.writeFloat(__io__address + 48, particle_smooth);
+		} else {
+			__io__block.writeFloat(__io__address + 40, particle_smooth);
 		}
 	}
 
@@ -939,9 +836,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getPaint_distance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 68);
-		} else {
 			return __io__block.readFloat(__io__address + 52);
+		} else {
+			return __io__block.readFloat(__io__address + 44);
 		}
 	}
 
@@ -956,9 +853,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setPaint_distance(float paint_distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 68, paint_distance);
-		} else {
 			__io__block.writeFloat(__io__address + 52, paint_distance);
+		} else {
+			__io__block.writeFloat(__io__address + 44, paint_distance);
 		}
 	}
 
@@ -967,7 +864,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
-	 * <p> color ramps Proximity paint falloff </p>
+	 * <p> color ramps Proximity paint falloff. </p>
 	 * @see #__DNA__FIELD__paint_ramp
 	 */
 	
@@ -975,9 +872,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 72);
-		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -988,7 +885,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Color ramp used to define proximity falloff<h4>Blender Source Code:</h4>
-	 * <p> color ramps Proximity paint falloff </p>
+	 * <p> color ramps Proximity paint falloff. </p>
 	 * @see #__DNA__FIELD__paint_ramp
 	 */
 	
@@ -996,9 +893,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __address = ((paint_ramp == null) ? 0 : paint_ramp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 72, __address);
-		} else {
 			__io__block.writeLong(__io__address + 56, __address);
+		} else {
+			__io__block.writeLong(__io__address + 48, __address);
 		}
 	}
 
@@ -1006,7 +903,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Get method for struct member 'vel_ramp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Velocity paint ramp </p>
+	 * <p> Velocity paint ramp. </p>
 	 * @see #__DNA__FIELD__vel_ramp
 	 */
 	
@@ -1014,9 +911,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 60);
+			__dna__targetAddress = __io__block.readLong(__io__address + 52);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1026,7 +923,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Set method for struct member 'vel_ramp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Velocity paint ramp </p>
+	 * <p> Velocity paint ramp. </p>
 	 * @see #__DNA__FIELD__vel_ramp
 	 */
 	
@@ -1034,9 +931,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	{
 		long __address = ((vel_ramp == null) ? 0 : vel_ramp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 64, __address);
 		} else {
-			__io__block.writeLong(__io__address + 60, __address);
+			__io__block.writeLong(__io__address + 52, __address);
 		}
 	}
 
@@ -1051,9 +948,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public short getProximity_falloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 88);
+			return __io__block.readShort(__io__address + 72);
 		} else {
-			return __io__block.readShort(__io__address + 64);
+			return __io__block.readShort(__io__address + 56);
 		}
 	}
 
@@ -1068,9 +965,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setProximity_falloff(short proximity_falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 88, proximity_falloff);
+			__io__block.writeShort(__io__address + 72, proximity_falloff);
 		} else {
-			__io__block.writeShort(__io__address + 64, proximity_falloff);
+			__io__block.writeShort(__io__address + 56, proximity_falloff);
 		}
 	}
 
@@ -1082,9 +979,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public short getWave_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 90);
+			return __io__block.readShort(__io__address + 74);
 		} else {
-			return __io__block.readShort(__io__address + 66);
+			return __io__block.readShort(__io__address + 58);
 		}
 	}
 
@@ -1096,9 +993,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setWave_type(short wave_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 90, wave_type);
+			__io__block.writeShort(__io__address + 74, wave_type);
 		} else {
-			__io__block.writeShort(__io__address + 66, wave_type);
+			__io__block.writeShort(__io__address + 58, wave_type);
 		}
 	}
 
@@ -1110,9 +1007,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public short getRay_dir() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 92);
+			return __io__block.readShort(__io__address + 76);
 		} else {
-			return __io__block.readShort(__io__address + 68);
+			return __io__block.readShort(__io__address + 60);
 		}
 	}
 
@@ -1124,37 +1021,49 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setRay_dir(short ray_dir) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 92, ray_dir);
+			__io__block.writeShort(__io__address + 76, ray_dir);
 		} else {
-			__io__block.writeShort(__io__address + 68, ray_dir);
+			__io__block.writeShort(__io__address + 60, ray_dir);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 94);
+			return new CArrayFacade<Byte>(__io__address + 78, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 70);
+			return new CArrayFacade<Byte>(__io__address + 62, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 94, pad);
+			__dna__offset = 78;
 		} else {
-			__io__block.writeShort(__io__address + 70, pad);
+			__dna__offset = 62;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1169,9 +1078,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getWave_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 80);
 		} else {
-			return __io__block.readFloat(__io__address + 72);
+			return __io__block.readFloat(__io__address + 64);
 		}
 	}
 
@@ -1186,9 +1095,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setWave_factor(float wave_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, wave_factor);
+			__io__block.writeFloat(__io__address + 80, wave_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 72, wave_factor);
+			__io__block.writeFloat(__io__address + 64, wave_factor);
 		}
 	}
 
@@ -1203,9 +1112,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getWave_clamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 84);
 		} else {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 68);
 		}
 	}
 
@@ -1220,9 +1129,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setWave_clamp(float wave_clamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, wave_clamp);
+			__io__block.writeFloat(__io__address + 84, wave_clamp);
 		} else {
-			__io__block.writeFloat(__io__address + 76, wave_clamp);
+			__io__block.writeFloat(__io__address + 68, wave_clamp);
 		}
 	}
 
@@ -1234,9 +1143,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getMax_velocity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 88);
 		} else {
-			return __io__block.readFloat(__io__address + 80);
+			return __io__block.readFloat(__io__address + 72);
 		}
 	}
 
@@ -1248,9 +1157,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setMax_velocity(float max_velocity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, max_velocity);
+			__io__block.writeFloat(__io__address + 88, max_velocity);
 		} else {
-			__io__block.writeFloat(__io__address + 80, max_velocity);
+			__io__block.writeFloat(__io__address + 72, max_velocity);
 		}
 	}
 
@@ -1265,9 +1174,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public float getSmudge_strength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 92);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 76);
 		}
 	}
 
@@ -1282,9 +1191,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	public void setSmudge_strength(float smudge_strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, smudge_strength);
+			__io__block.writeFloat(__io__address + 92, smudge_strength);
 		} else {
-			__io__block.writeFloat(__io__address + 84, smudge_strength);
+			__io__block.writeFloat(__io__address + 76, smudge_strength);
 		}
 	}
 

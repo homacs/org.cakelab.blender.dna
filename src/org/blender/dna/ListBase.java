@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * This is the entry point to work with linked lists. It is for 
  * 			example used in libraries {@link Library}, to provide a reference 
  * 			to the first and the last element of a linked list of library objects.<h4>Blender Source Code:</h4>
- * <p> never change the size of this! genfile.c detects pointerlen with it </p>
+ * <p> Never change the size of this! dna_genfile.c detects pointer_size with it. </p>
  */
 
 @CMetaData(size32=8, size64=16)

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Console ================================================ Console content </p>
+ * <p> Console content </p>
  */
 
 @CMetaData(size32=28, size64=40)
@@ -27,7 +27,7 @@ public class ConsoleLine extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 235;
+	public static final int __DNA__SDNA_INDEX = 234;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class ConsoleLine extends CFacade {
 	 * Field descriptor (offset) for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs allocated length </p>
+	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class ConsoleLine extends CFacade {
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> real len - strlen() </p>
+	 * <p> Real len - strlen(). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,7 +160,7 @@ public class ConsoleLine extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Console line type when used in scrollback<h4>Blender Source Code:</h4>
-	 * <p> only for use when in the 'scrollback' listbase </p>
+	 * <p> Only for use when in the 'scrollback' listbase. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -255,7 +255,7 @@ public class ConsoleLine extends CFacade {
 	 * Get method for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs allocated length </p>
+	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
 	 * @see #__DNA__FIELD__len_alloc
 	 */
 	
@@ -272,7 +272,7 @@ public class ConsoleLine extends CFacade {
 	 * Set method for struct member 'len_alloc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keep these 3 vars so as to share free, realloc funcs allocated length </p>
+	 * <p> keep these 3 vars so as to share free, realloc funcs Allocated length. </p>
 	 * @see #__DNA__FIELD__len_alloc
 	 */
 	
@@ -289,7 +289,7 @@ public class ConsoleLine extends CFacade {
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> real len - strlen() </p>
+	 * <p> Real len - strlen(). </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -306,7 +306,7 @@ public class ConsoleLine extends CFacade {
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> real len - strlen() </p>
+	 * <p> Real len - strlen(). </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -384,7 +384,7 @@ public class ConsoleLine extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Console line type when used in scrollback<h4>Blender Source Code:</h4>
-	 * <p> only for use when in the 'scrollback' listbase </p>
+	 * <p> Only for use when in the 'scrollback' listbase. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -402,7 +402,7 @@ public class ConsoleLine extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Console line type when used in scrollback<h4>Blender Source Code:</h4>
-	 * <p> only for use when in the 'scrollback' listbase </p>
+	 * <p> Only for use when in the 'scrollback' listbase. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

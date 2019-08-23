@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1292, size64=1320)
+@CMetaData(size32=1300, size64=1328)
 public class PointCache extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 160;
+	public static final int __DNA__SDNA_INDEX = 167;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic flag </p>
+	 * <p> Generic flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,7 +119,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'simframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
+	 * <p> Current frame of simulation (only if SIMULATION_VALID). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,7 +142,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'startframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation start frame </p>
+	 * <p> Simulation start frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -165,7 +165,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'endframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation end frame </p>
+	 * <p> Simulation end frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -188,7 +188,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'editframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame being edited (runtime only) </p>
+	 * <p> Frame being edited (runtime only). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,7 +211,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'last_exact'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last exact frame that's cached </p>
+	 * <p> Last exact frame that's cached. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,7 +234,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'last_valid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for editing cache - what is the last baked frame </p>
+	 * <p> Used for editing cache - what is the last baked frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -254,30 +254,30 @@ public class PointCache extends CFacade {
 	public static final long[] __DNA__FIELD__last_valid = new long[]{36, 44};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PointCache pointcache = ...;
-	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{40, 48};
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for external cache files number of cached points </p>
+	 * <p> for external cache files Number of cached points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -301,7 +301,7 @@ public class PointCache extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index number of cache files<h4>Blender Source Code:</h4>
-	 * <p> modifier stack index </p>
+	 * <p> Modifier stack index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -433,7 +433,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path, 1024 = FILE_MAX </p>
+	 * <p> File path, 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -456,7 +456,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'cached_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
+	 * <p><code></code>  with flags to indicate cached frames. Can be later used for other per frame flags too if needed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -476,10 +476,47 @@ public class PointCache extends CFacade {
 	public static final long[] __DNA__FIELD__cached_frames = new long[]{1272, 1280};
 
 	/**
+	 * Field descriptor (offset) for struct member 'cached_frames_len'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PointCache pointcache = ...;
+	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD__cached_frames_len);
+	 * CPointer&lt;Integer&gt; p_cached_frames_len = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cached_frames_len'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cached_frames_len = new long[]{1276, 1288};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PointCache pointcache = ...;
+	 * CPointer&lt;Object&gt; p = pointcache.__dna__addressof(PointCache.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1280, 1292};
+
+	/**
 	 * Field descriptor (offset) for struct member 'mem_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be later used for other per frame flags too if needed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -496,7 +533,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mem_cache = new long[]{1276, 1288};
+	public static final long[] __DNA__FIELD__mem_cache = new long[]{1284, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit'.
@@ -516,7 +553,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edit = new long[]{1284, 1304};
+	public static final long[] __DNA__FIELD__edit = new long[]{1292, 1312};
 
 	public PointCache(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -594,7 +631,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic flag </p>
+	 * <p> Generic flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -611,7 +648,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic flag </p>
+	 * <p> Generic flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -662,7 +699,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'simframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
+	 * <p> Current frame of simulation (only if SIMULATION_VALID). </p>
 	 * @see #__DNA__FIELD__simframe
 	 */
 	
@@ -679,7 +716,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'simframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame of simulation (only if SIMULATION_VALID) </p>
+	 * <p> Current frame of simulation (only if SIMULATION_VALID). </p>
 	 * @see #__DNA__FIELD__simframe
 	 */
 	
@@ -696,7 +733,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'startframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation start frame </p>
+	 * <p> Simulation start frame. </p>
 	 * @see #__DNA__FIELD__startframe
 	 */
 	
@@ -713,7 +750,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'startframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation start frame </p>
+	 * <p> Simulation start frame. </p>
 	 * @see #__DNA__FIELD__startframe
 	 */
 	
@@ -730,7 +767,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'endframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation end frame </p>
+	 * <p> Simulation end frame. </p>
 	 * @see #__DNA__FIELD__endframe
 	 */
 	
@@ -747,7 +784,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'endframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> simulation end frame </p>
+	 * <p> Simulation end frame. </p>
 	 * @see #__DNA__FIELD__endframe
 	 */
 	
@@ -764,7 +801,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'editframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame being edited (runtime only) </p>
+	 * <p> Frame being edited (runtime only). </p>
 	 * @see #__DNA__FIELD__editframe
 	 */
 	
@@ -781,7 +818,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'editframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame being edited (runtime only) </p>
+	 * <p> Frame being edited (runtime only). </p>
 	 * @see #__DNA__FIELD__editframe
 	 */
 	
@@ -798,7 +835,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'last_exact'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last exact frame that's cached </p>
+	 * <p> Last exact frame that's cached. </p>
 	 * @see #__DNA__FIELD__last_exact
 	 */
 	
@@ -815,7 +852,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'last_exact'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last exact frame that's cached </p>
+	 * <p> Last exact frame that's cached. </p>
 	 * @see #__DNA__FIELD__last_exact
 	 */
 	
@@ -832,7 +869,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'last_valid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for editing cache - what is the last baked frame </p>
+	 * <p> Used for editing cache - what is the last baked frame. </p>
 	 * @see #__DNA__FIELD__last_valid
 	 */
 	
@@ -849,7 +886,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'last_valid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for editing cache - what is the last baked frame </p>
+	 * <p> Used for editing cache - what is the last baked frame. </p>
 	 * @see #__DNA__FIELD__last_valid
 	 */
 	
@@ -863,30 +900,42 @@ public class PointCache extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 48);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 48, pad);
+			__dna__offset = 48;
 		} else {
-			__io__block.writeInt(__io__address + 40, pad);
+			__dna__offset = 40;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -894,7 +943,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'totpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for external cache files number of cached points </p>
+	 * <p> for external cache files Number of cached points. </p>
 	 * @see #__DNA__FIELD__totpoint
 	 */
 	
@@ -911,7 +960,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'totpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for external cache files number of cached points </p>
+	 * <p> for external cache files Number of cached points. </p>
 	 * @see #__DNA__FIELD__totpoint
 	 */
 	
@@ -929,7 +978,7 @@ public class PointCache extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index number of cache files<h4>Blender Source Code:</h4>
-	 * <p> modifier stack index </p>
+	 * <p> Modifier stack index. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -947,7 +996,7 @@ public class PointCache extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index number of cache files<h4>Blender Source Code:</h4>
-	 * <p> modifier stack index </p>
+	 * <p> Modifier stack index. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -1158,7 +1207,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path, 1024 = FILE_MAX </p>
+	 * <p> File path, 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1179,7 +1228,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path, 1024 = FILE_MAX </p>
+	 * <p> File path, 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__path
 	 */
 	
@@ -1204,7 +1253,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'cached_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
+	 * <p><code></code>  with flags to indicate cached frames. Can be later used for other per frame flags too if needed. </p>
 	 * @see #__DNA__FIELD__cached_frames
 	 */
 	
@@ -1224,7 +1273,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'cached_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> array of length endframe-startframe+1 with flags to indicate cached frames </p>
+	 * <p><code></code>  with flags to indicate cached frames. Can be later used for other per frame flags too if needed. </p>
 	 * @see #__DNA__FIELD__cached_frames
 	 */
 	
@@ -1239,27 +1288,89 @@ public class PointCache extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'cached_frames_len'.
+	 * @see #__DNA__FIELD__cached_frames_len
+	 */
+	
+	public int getCached_frames_len() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 1288);
+		} else {
+			return __io__block.readInt(__io__address + 1276);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cached_frames_len'.
+	 * @see #__DNA__FIELD__cached_frames_len
+	 */
+	
+	public void setCached_frames_len(int cached_frames_len) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 1288, cached_frames_len);
+		} else {
+			__io__block.writeInt(__io__address + 1276, cached_frames_len);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1292;
+		} else {
+			__dna__offset = 1280;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'mem_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be later used for other per frame flags too if needed </p>
 	 * @see #__DNA__FIELD__mem_cache
 	 */
 	
 	public ListBase getMem_cache() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1288, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1276, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1284, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'mem_cache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be later used for other per frame flags too if needed </p>
 	 * @see #__DNA__FIELD__mem_cache
 	 */
 	
@@ -1267,9 +1378,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1288;
+			__dna__offset = 1296;
 		} else {
-			__dna__offset = 1276;
+			__dna__offset = 1284;
 		}
 		if (__io__equals(mem_cache, __io__address + __dna__offset)) {
 			return;
@@ -1289,9 +1400,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1284);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1292);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1306,9 +1417,9 @@ public class PointCache extends CFacade {
 	{
 		long __address = ((edit == null) ? 0 : edit.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1304, __address);
+			__io__block.writeLong(__io__address + 1312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1284, __address);
+			__io__block.writeLong(__io__address + 1292, __address);
 		}
 	}
 

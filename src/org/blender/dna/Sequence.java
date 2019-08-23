@@ -14,12 +14,12 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> The sequence structure is the basic struct used by any strip. each of the strips uses a different sequence structure.</p><p><h2>Warning</h2><p> The first part identical to {@link ID}  (for use in ipo's) the commend above is historic, probably we can drop the {@link ID}  compatibility, but take care making this change.</p> The first part identical to ID (for use in ipo's) the commend above is historic, probably we can drop the ID compatibility, but take care making this change.
+ * <p> The sequence structure is the basic struct used by any strip. each of the strips uses a different sequence structure.</p><p><h2>Warning</h2><p> The first part identical to {@link ID}  (for use in ipo's) the comment above is historic, probably we can drop the {@link ID}  compatibility, but take care making this change.</p> The first part identical to ID (for use in ipo's) the comment above is historic, probably we can drop the ID compatibility, but take care making this change.
  * <h2>Warning</h2><p> This is really a '{@link Strip} ' in the UI!, name is highly confusing. </p> This is really a 'Strip' in the UI!, name is highly confusing. 
  * </p>
  */
 
-@CMetaData(size32=280, size64=376)
+@CMetaData(size32=304, size64=408)
 public class Sequence extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class Sequence extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 272;
+	public static final int __DNA__SDNA_INDEX = 280;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +76,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tmp var for copying, and tagging for linked selection </p>
+	 * <p> Tmp var for copying, and tagging for linked selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,7 +99,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needed (to be like ipo), else it will raise libdata warnings, this should never be used </p>
+	 * <p> Needed (to be like ipo), else it will raise libdata warnings, this should never be used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths </p>
+	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,6 +143,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags bitmap (see below) and the type of sequence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -165,8 +168,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> flags bitmap (see below) and the type of sequence </p>
+	 * (read-only)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,7 +191,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the length of the contents of this strip - before handles are applied </p>
+	 * <p> The length of the contents of this strip - before handles are applied. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -212,7 +214,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp </p>
+	 * <p> Start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -233,6 +235,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'startofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames after the first frame where display starts, frames before the last frame where display ends. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -253,9 +258,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'endofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames after the first frame where display starts, frames before the last frame where display ends </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -276,6 +278,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'startstill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames that use the first frame before data begins, frames that use the last frame after data ends. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -296,9 +301,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'endstill'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames that use the first frame before data begins, frames that use the last frame after data ends </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -319,6 +321,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'machine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Machine: the strip channel, depth the depth in the sequence when dealing with metastrips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -339,9 +344,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'depth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> machine - the strip channel, depth - the depth in the sequence when dealing with metastrips </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -362,6 +364,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'startdisp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Starting and ending points of the strip in the sequence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -382,9 +387,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'enddisp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting and ending points of the strip in the sequence </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -487,7 +489,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'streamindex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> streamindex for movie or sound files with several streams </p>
+	 * <p> Streamindex for movie or sound files with several streams. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -510,7 +512,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'multicam_source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for multicam source selection </p>
+	 * <p> For multicam source selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -533,7 +535,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'clip_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MOVIECLIP render flags </p>
+	 * <p> MOVIECLIP render flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -576,9 +578,9 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -624,7 +626,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'scene_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> override scene camera </p>
+	 * <p> Override scene camera. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -647,7 +649,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIECLIP strips </p>
+	 * <p> For MOVIECLIP strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -670,7 +672,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MASK strips </p>
+	 * <p> For MASK strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -693,7 +695,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIE strips </p>
+	 * <p> For MOVIE strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -822,7 +824,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of strips for metastrips </p>
+	 * <p> List of strips for metastrips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -845,7 +847,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the linked "bSound" object </p>
+	 * <p> The linked "bSound" object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -906,6 +908,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pitch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pitch (-0.1..10), pan -2..2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -926,9 +931,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pan'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> pitch (-0.1..10), pan -2..2 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -971,7 +973,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'effectdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Struct pointer for effect settings </p>
+	 * <p> Struct pointer for effect settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -994,7 +996,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'anim_startofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only use part of animation file </p>
+	 * <p> Only use part of animation file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1017,7 +1019,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'anim_endofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is subtle different to startofs / endofs </p>
+	 * <p> Is subtle different to startofs / endofs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1080,7 +1082,7 @@ public class Sequence extends CFacade {
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is sfra needed anymore? - it looks like its only used in one place starting frame according to the timeline of the scene. </p>
+	 * <p> is sfra needed anymore? - it looks like its only used in one place Starting frame according to the timeline of the scene. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1120,24 +1122,24 @@ public class Sequence extends CFacade {
 	public static final long[] __DNA__FIELD__alpha_mode = new long[]{260, 340};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Sequence sequence = ...;
-	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{261, 341};
+	public static final long[] __DNA__FIELD___pad = new long[]{261, 341};
 
 	/**
 	 * Field descriptor (offset) for struct member 'views_format'.
@@ -1226,6 +1228,86 @@ public class Sequence extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__modifiers = new long[]{272, 360};
 
+	/**
+	 * Field descriptor (offset) for struct member 'cache_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__cache_flag);
+	 * CPointer&lt;Integer&gt; p_cache_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cache_flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cache_flag = new long[]{280, 376};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'int[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{284, 380};
+
+	/**
+	 * Field descriptor (offset) for struct member 'orig_sequence'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__orig_sequence);
+	 * CPointer&lt;CPointer&lt;Sequence&gt;&gt; p_orig_sequence = p.cast(new Class[]{CPointer.class, Sequence.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'orig_sequence'</li>
+	 * <li>Signature: 'Sequence*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__orig_sequence = new long[]{296, 392};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Sequence sequence = ...;
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD___pad3);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{300, 400};
+
 	public Sequence(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -1302,7 +1384,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tmp var for copying, and tagging for linked selection </p>
+	 * <p> Tmp var for copying, and tagging for linked selection. </p>
 	 * @see #__DNA__FIELD__tmp
 	 */
 	
@@ -1322,7 +1404,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'tmp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tmp var for copying, and tagging for linked selection </p>
+	 * <p> Tmp var for copying, and tagging for linked selection. </p>
 	 * @see #__DNA__FIELD__tmp
 	 */
 	
@@ -1340,7 +1422,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needed (to be like ipo), else it will raise libdata warnings, this should never be used </p>
+	 * <p> Needed (to be like ipo), else it will raise libdata warnings, this should never be used. </p>
 	 * @see #__DNA__FIELD__lib
 	 */
 	
@@ -1360,7 +1442,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'lib'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needed (to be like ipo), else it will raise libdata warnings, this should never be used </p>
+	 * <p> Needed (to be like ipo), else it will raise libdata warnings, this should never be used. </p>
 	 * @see #__DNA__FIELD__lib
 	 */
 	
@@ -1378,7 +1460,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths </p>
+	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1399,7 +1481,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths </p>
+	 * <p> SEQ_NAME_MAXSTR - name, set by default and needs to be unique, for RNA paths. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -1422,6 +1504,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags bitmap (see below) and the type of sequence. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1436,6 +1521,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags bitmap (see below) and the type of sequence. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1452,8 +1540,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> flags bitmap (see below) and the type of sequence </p>
+	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1470,8 +1557,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> flags bitmap (see below) and the type of sequence </p>
+	 * (read-only)
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1488,7 +1574,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the length of the contents of this strip - before handles are applied </p>
+	 * <p> The length of the contents of this strip - before handles are applied. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -1505,7 +1591,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the length of the contents of this strip - before handles are applied </p>
+	 * <p> The length of the contents of this strip - before handles are applied. </p>
 	 * @see #__DNA__FIELD__len
 	 */
 	
@@ -1522,7 +1608,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp </p>
+	 * <p> Start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp. </p>
 	 * @see #__DNA__FIELD__start
 	 */
 	
@@ -1539,7 +1625,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp </p>
+	 * <p> Start frame of contents of strip in absolute frame coordinates. For metastrips start of first strip startdisp. </p>
 	 * @see #__DNA__FIELD__start
 	 */
 	
@@ -1554,6 +1640,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'startofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames after the first frame where display starts, frames before the last frame where display ends. </p>
 	 * @see #__DNA__FIELD__startofs
 	 */
 	
@@ -1568,6 +1657,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'startofs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames after the first frame where display starts, frames before the last frame where display ends. </p>
 	 * @see #__DNA__FIELD__startofs
 	 */
 	
@@ -1582,9 +1674,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'endofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames after the first frame where display starts, frames before the last frame where display ends </p>
 	 * @see #__DNA__FIELD__endofs
 	 */
 	
@@ -1599,9 +1688,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'endofs'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames after the first frame where display starts, frames before the last frame where display ends </p>
 	 * @see #__DNA__FIELD__endofs
 	 */
 	
@@ -1616,6 +1702,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'startstill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames that use the first frame before data begins, frames that use the last frame after data ends. </p>
 	 * @see #__DNA__FIELD__startstill
 	 */
 	
@@ -1630,6 +1719,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'startstill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Frames that use the first frame before data begins, frames that use the last frame after data ends. </p>
 	 * @see #__DNA__FIELD__startstill
 	 */
 	
@@ -1644,9 +1736,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'endstill'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames that use the first frame before data begins, frames that use the last frame after data ends </p>
 	 * @see #__DNA__FIELD__endstill
 	 */
 	
@@ -1661,9 +1750,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'endstill'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> frames that use the first frame before data begins, frames that use the last frame after data ends </p>
 	 * @see #__DNA__FIELD__endstill
 	 */
 	
@@ -1678,6 +1764,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'machine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Machine: the strip channel, depth the depth in the sequence when dealing with metastrips. </p>
 	 * @see #__DNA__FIELD__machine
 	 */
 	
@@ -1692,6 +1781,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'machine'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Machine: the strip channel, depth the depth in the sequence when dealing with metastrips. </p>
 	 * @see #__DNA__FIELD__machine
 	 */
 	
@@ -1706,9 +1798,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'depth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> machine - the strip channel, depth - the depth in the sequence when dealing with metastrips </p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -1723,9 +1812,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'depth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> machine - the strip channel, depth - the depth in the sequence when dealing with metastrips </p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -1740,6 +1826,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'startdisp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Starting and ending points of the strip in the sequence. </p>
 	 * @see #__DNA__FIELD__startdisp
 	 */
 	
@@ -1754,6 +1843,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'startdisp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Starting and ending points of the strip in the sequence. </p>
 	 * @see #__DNA__FIELD__startdisp
 	 */
 	
@@ -1768,9 +1860,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'enddisp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting and ending points of the strip in the sequence </p>
 	 * @see #__DNA__FIELD__enddisp
 	 */
 	
@@ -1785,9 +1874,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'enddisp'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting and ending points of the strip in the sequence </p>
 	 * @see #__DNA__FIELD__enddisp
 	 */
 	
@@ -1916,7 +2002,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'streamindex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> streamindex for movie or sound files with several streams </p>
+	 * <p> Streamindex for movie or sound files with several streams. </p>
 	 * @see #__DNA__FIELD__streamindex
 	 */
 	
@@ -1933,7 +2019,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'streamindex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> streamindex for movie or sound files with several streams </p>
+	 * <p> Streamindex for movie or sound files with several streams. </p>
 	 * @see #__DNA__FIELD__streamindex
 	 */
 	
@@ -1950,7 +2036,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'multicam_source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for multicam source selection </p>
+	 * <p> For multicam source selection. </p>
 	 * @see #__DNA__FIELD__multicam_source
 	 */
 	
@@ -1967,7 +2053,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'multicam_source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for multicam source selection </p>
+	 * <p> For multicam source selection. </p>
 	 * @see #__DNA__FIELD__multicam_source
 	 */
 	
@@ -1984,7 +2070,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'clip_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MOVIECLIP render flags </p>
+	 * <p> MOVIECLIP render flags. </p>
 	 * @see #__DNA__FIELD__clip_flag
 	 */
 	
@@ -2001,7 +2087,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'clip_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MOVIECLIP render flags </p>
+	 * <p> MOVIECLIP render flags. </p>
 	 * @see #__DNA__FIELD__clip_flag
 	 */
 	
@@ -2050,9 +2136,9 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -2072,9 +2158,9 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -2130,7 +2216,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'scene_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> override scene camera </p>
+	 * <p> Override scene camera. </p>
 	 * @see #__DNA__FIELD__scene_camera
 	 */
 	
@@ -2150,7 +2236,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'scene_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> override scene camera </p>
+	 * <p> Override scene camera. </p>
 	 * @see #__DNA__FIELD__scene_camera
 	 */
 	
@@ -2168,7 +2254,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIECLIP strips </p>
+	 * <p> For MOVIECLIP strips. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -2188,7 +2274,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIECLIP strips </p>
+	 * <p> For MOVIECLIP strips. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -2206,7 +2292,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MASK strips </p>
+	 * <p> For MASK strips. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -2226,7 +2312,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MASK strips </p>
+	 * <p> For MASK strips. </p>
 	 * @see #__DNA__FIELD__mask
 	 */
 	
@@ -2244,7 +2330,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIE strips </p>
+	 * <p> For MOVIE strips. </p>
 	 * @see #__DNA__FIELD__anims
 	 */
 	
@@ -2261,7 +2347,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'anims'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for MOVIE strips </p>
+	 * <p> For MOVIE strips. </p>
 	 * @see #__DNA__FIELD__anims
 	 */
 	
@@ -2450,7 +2536,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of strips for metastrips </p>
+	 * <p> List of strips for metastrips. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -2467,7 +2553,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of strips for metastrips </p>
+	 * <p> List of strips for metastrips. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -2492,7 +2578,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the linked "bSound" object </p>
+	 * <p> The linked "bSound" object. </p>
 	 * @see #__DNA__FIELD__sound
 	 */
 	
@@ -2512,7 +2598,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'sound'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the linked "bSound" object </p>
+	 * <p> The linked "bSound" object. </p>
 	 * @see #__DNA__FIELD__sound
 	 */
 	
@@ -2588,6 +2674,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'pitch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pitch (-0.1..10), pan -2..2. </p>
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -2602,6 +2691,9 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'pitch'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pitch (-0.1..10), pan -2..2. </p>
 	 * @see #__DNA__FIELD__pitch
 	 */
 	
@@ -2616,9 +2708,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Get method for struct member 'pan'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> pitch (-0.1..10), pan -2..2 </p>
 	 * @see #__DNA__FIELD__pan
 	 */
 	
@@ -2633,9 +2722,6 @@ public class Sequence extends CFacade {
 
 	/**
 	 * Set method for struct member 'pan'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> pitch (-0.1..10), pan -2..2 </p>
 	 * @see #__DNA__FIELD__pan
 	 */
 	
@@ -2680,7 +2766,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'effectdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Struct pointer for effect settings </p>
+	 * <p> Struct pointer for effect settings. </p>
 	 * @see #__DNA__FIELD__effectdata
 	 */
 	
@@ -2700,7 +2786,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'effectdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Struct pointer for effect settings </p>
+	 * <p> Struct pointer for effect settings. </p>
 	 * @see #__DNA__FIELD__effectdata
 	 */
 	
@@ -2718,7 +2804,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'anim_startofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only use part of animation file </p>
+	 * <p> Only use part of animation file. </p>
 	 * @see #__DNA__FIELD__anim_startofs
 	 */
 	
@@ -2735,7 +2821,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'anim_startofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only use part of animation file </p>
+	 * <p> Only use part of animation file. </p>
 	 * @see #__DNA__FIELD__anim_startofs
 	 */
 	
@@ -2752,7 +2838,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'anim_endofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is subtle different to startofs / endofs </p>
+	 * <p> Is subtle different to startofs / endofs. </p>
 	 * @see #__DNA__FIELD__anim_endofs
 	 */
 	
@@ -2769,7 +2855,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'anim_endofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is subtle different to startofs / endofs </p>
+	 * <p> Is subtle different to startofs / endofs. </p>
 	 * @see #__DNA__FIELD__anim_endofs
 	 */
 	
@@ -2842,7 +2928,7 @@ public class Sequence extends CFacade {
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is sfra needed anymore? - it looks like its only used in one place starting frame according to the timeline of the scene. </p>
+	 * <p> is sfra needed anymore? - it looks like its only used in one place Starting frame according to the timeline of the scene. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -2859,7 +2945,7 @@ public class Sequence extends CFacade {
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> is sfra needed anymore? - it looks like its only used in one place starting frame according to the timeline of the scene. </p>
+	 * <p> is sfra needed anymore? - it looks like its only used in one place Starting frame according to the timeline of the scene. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -2901,11 +2987,11 @@ public class Sequence extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -2919,11 +3005,11 @@ public class Sequence extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -2931,12 +3017,12 @@ public class Sequence extends CFacade {
 		} else {
 			__dna__offset = 261;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -3079,6 +3165,138 @@ public class Sequence extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, modifiers);
 		} else {
 			__io__generic__copy( getModifiers(), modifiers);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cache_flag'.
+	 * @see #__DNA__FIELD__cache_flag
+	 */
+	
+	public int getCache_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 376);
+		} else {
+			return __io__block.readInt(__io__address + 280);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cache_flag'.
+	 * @see #__DNA__FIELD__cache_flag
+	 */
+	
+	public void setCache_flag(int cache_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 376, cache_flag);
+		} else {
+			__io__block.writeInt(__io__address + 280, cache_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Integer> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Integer>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Integer>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Integer> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 380;
+		} else {
+			__dna__offset = 284;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'orig_sequence'.
+	 * @see #__DNA__FIELD__orig_sequence
+	 */
+	
+	public CPointer<Sequence> getOrig_sequence() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Sequence.class};
+		return new CPointer<Sequence>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Sequence.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'orig_sequence'.
+	 * @see #__DNA__FIELD__orig_sequence
+	 */
+	
+	public void setOrig_sequence(CPointer<Sequence> orig_sequence) throws IOException
+	{
+		long __address = ((orig_sequence == null) ? 0 : orig_sequence.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 392, __address);
+		} else {
+			__io__block.writeLong(__io__address + 296, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CPointer<Object> get_pad3() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 300);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	{
+		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 400, __address);
+		} else {
+			__io__block.writeLong(__io__address + 300, __address);
 		}
 	}
 

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=96, size64=160)
+@CMetaData(size32=112, size64=184)
 public class ScrArea extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class ScrArea extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 262;
+	public static final int __DNA__SDNA_INDEX = 269;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -70,6 +71,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ordered (bl, tl, tr, br). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,9 +134,6 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'v4'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ordered (bl, tl, tr, br) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,7 +156,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'full'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if area==full, this is the parent </p>
+	 * <p> If area==full, this is the parent. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -178,7 +179,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'totrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rect bound by v1 v2 v3 v4 </p>
+	 * <p> Rect bound by v1 v2 v3 v4. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,6 +200,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpace_Type (SPACE_FOO).</p><p> Temporarily used while switching area type, otherwise this should be SPACE_EMPTY. Also, versioning uses it to nicely replace deprecated * editors. It's been there for ages, name doesn't fit any more. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -221,7 +225,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'butspacetype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SPACE_..., butspacetype is button arg </p>
+	 * <p>{@link eSpace_Type}  (SPACE_FOO). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -241,7 +245,30 @@ public class ScrArea extends CFacade {
 	public static final long[] __DNA__FIELD__butspacetype = new long[]{45, 73};
 
 	/**
+	 * Field descriptor (offset) for struct member 'butspacetype_subtype'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrArea scrarea = ...;
+	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__butspacetype_subtype);
+	 * CPointer&lt;Short&gt; p_butspacetype_subtype = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'butspacetype_subtype'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__butspacetype_subtype = new long[]{46, 74};
+
+	/**
 	 * Field descriptor (offset) for struct member 'winx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -258,13 +285,10 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winx = new long[]{46, 74};
+	public static final long[] __DNA__FIELD__winx = new long[]{48, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -281,13 +305,15 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winy = new long[]{48, 76};
+	public static final long[] __DNA__FIELD__winy = new long[]{50, 78};
 
 	/**
 	 * Field descriptor (offset) for struct member 'headertype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> OLD! 0=no header, 1= down, 2= up </p>
+	 * <p> OLD! 0=no header, 1= down, 2= up. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,22 +321,22 @@ public class ScrArea extends CFacade {
 	 * <pre>
 	 * ScrArea scrarea = ...;
 	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__headertype);
-	 * CPointer&lt;Short&gt; p_headertype = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_headertype = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'headertype'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__headertype = new long[]{50, 78};
+	public static final long[] __DNA__FIELD__headertype = new long[]{52, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_refresh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, for spacetype refresh callback </p>
+	 * <p> Private, for spacetype refresh callback. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -318,16 +344,16 @@ public class ScrArea extends CFacade {
 	 * <pre>
 	 * ScrArea scrarea = ...;
 	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__do_refresh);
-	 * CPointer&lt;Short&gt; p_do_refresh = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_do_refresh = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'do_refresh'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_refresh = new long[]{52, 80};
+	public static final long[] __DNA__FIELD__do_refresh = new long[]{53, 81};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -353,7 +379,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'region_active_win'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
+	 * <p> Index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -373,50 +399,30 @@ public class ScrArea extends CFacade {
 	public static final long[] __DNA__FIELD__region_active_win = new long[]{56, 84};
 
 	/**
-	 * Field descriptor (offset) for struct member 'temp'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ScrArea scrarea = ...;
-	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__temp);
-	 * CPointer&lt;Byte&gt; p_temp = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'temp'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp = new long[]{58, 86};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ScrArea scrarea = ...;
-	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{59, 87};
+	public static final long[] __DNA__FIELD___pad = new long[]{58, 86};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this space type </p>
+	 * <p> Callbacks for this space type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -436,10 +442,33 @@ public class ScrArea extends CFacade {
 	public static final long[] __DNA__FIELD__type = new long[]{60, 88};
 
 	/**
+	 * Field descriptor (offset) for struct member 'global'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-NULL if this area is global. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrArea scrarea = ...;
+	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__global);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_global = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'global'</li>
+	 * <li>Signature: 'ScrGlobalAreaData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__global = new long[]{64, 96};
+
+	/**
 	 * Field descriptor (offset) for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -456,13 +485,13 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spacedata = new long[]{64, 96};
+	public static final long[] __DNA__FIELD__spacedata = new long[]{68, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -479,13 +508,13 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regionbase = new long[]{72, 112};
+	public static final long[] __DNA__FIELD__regionbase = new long[]{76, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -502,13 +531,13 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handlers = new long[]{80, 128};
+	public static final long[] __DNA__FIELD__handlers = new long[]{84, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actionzones'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> AZone </p>
+	 * <p> #AZone. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -525,7 +554,27 @@ public class ScrArea extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actionzones = new long[]{88, 144};
+	public static final long[] __DNA__FIELD__actionzones = new long[]{92, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ScrArea scrarea = ...;
+	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__runtime);
+	 * CPointer&lt;ScrArea_Runtime&gt; p_runtime = p.cast(new Class[]{ScrArea_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'ScrArea_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 12/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{100, 168};
 
 	public ScrArea(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -601,6 +650,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ordered (bl, tl, tr, br). </p>
 	 * @see #__DNA__FIELD__v1
 	 */
 	
@@ -618,6 +670,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'v1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ordered (bl, tl, tr, br). </p>
 	 * @see #__DNA__FIELD__v1
 	 */
 	
@@ -697,9 +752,6 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'v4'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ordered (bl, tl, tr, br) </p>
 	 * @see #__DNA__FIELD__v4
 	 */
 	
@@ -717,9 +769,6 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'v4'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ordered (bl, tl, tr, br) </p>
 	 * @see #__DNA__FIELD__v4
 	 */
 	
@@ -737,7 +786,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'full'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if area==full, this is the parent </p>
+	 * <p> If area==full, this is the parent. </p>
 	 * @see #__DNA__FIELD__full
 	 */
 	
@@ -757,7 +806,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'full'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if area==full, this is the parent </p>
+	 * <p> If area==full, this is the parent. </p>
 	 * @see #__DNA__FIELD__full
 	 */
 	
@@ -775,7 +824,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'totrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rect bound by v1 v2 v3 v4 </p>
+	 * <p> Rect bound by v1 v2 v3 v4. </p>
 	 * @see #__DNA__FIELD__totrct
 	 */
 	
@@ -792,7 +841,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'totrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rect bound by v1 v2 v3 v4 </p>
+	 * <p> Rect bound by v1 v2 v3 v4. </p>
 	 * @see #__DNA__FIELD__totrct
 	 */
 	
@@ -815,6 +864,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Get method for struct member 'spacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpace_Type (SPACE_FOO).</p><p> Temporarily used while switching area type, otherwise this should be SPACE_EMPTY. Also, versioning uses it to nicely replace deprecated * editors. It's been there for ages, name doesn't fit any more. </p>
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
@@ -829,6 +881,9 @@ public class ScrArea extends CFacade {
 
 	/**
 	 * Set method for struct member 'spacetype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eSpace_Type (SPACE_FOO).</p><p> Temporarily used while switching area type, otherwise this should be SPACE_EMPTY. Also, versioning uses it to nicely replace deprecated * editors. It's been there for ages, name doesn't fit any more. </p>
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
@@ -845,7 +900,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'butspacetype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SPACE_..., butspacetype is button arg </p>
+	 * <p>{@link eSpace_Type}  (SPACE_FOO). </p>
 	 * @see #__DNA__FIELD__butspacetype
 	 */
 	
@@ -862,7 +917,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'butspacetype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> SPACE_..., butspacetype is button arg </p>
+	 * <p>{@link eSpace_Type}  (SPACE_FOO). </p>
 	 * @see #__DNA__FIELD__butspacetype
 	 */
 	
@@ -876,11 +931,11 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'winx'.
-	 * @see #__DNA__FIELD__winx
+	 * Get method for struct member 'butspacetype_subtype'.
+	 * @see #__DNA__FIELD__butspacetype_subtype
 	 */
 	
-	public short getWinx() throws IOException
+	public short getButspacetype_subtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 74);
@@ -890,28 +945,28 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'winx'.
-	 * @see #__DNA__FIELD__winx
+	 * Set method for struct member 'butspacetype_subtype'.
+	 * @see #__DNA__FIELD__butspacetype_subtype
 	 */
 	
-	public void setWinx(short winx) throws IOException
+	public void setButspacetype_subtype(short butspacetype_subtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 74, winx);
+			__io__block.writeShort(__io__address + 74, butspacetype_subtype);
 		} else {
-			__io__block.writeShort(__io__address + 46, winx);
+			__io__block.writeShort(__io__address + 46, butspacetype_subtype);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'winy'.
+	 * Get method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
-	 * @see #__DNA__FIELD__winy
+	 * <p> Size. </p>
+	 * @see #__DNA__FIELD__winx
 	 */
 	
-	public short getWiny() throws IOException
+	public short getWinx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 76);
@@ -921,31 +976,28 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'winy'.
+	 * Set method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
-	 * @see #__DNA__FIELD__winy
+	 * <p> Size. </p>
+	 * @see #__DNA__FIELD__winx
 	 */
 	
-	public void setWiny(short winy) throws IOException
+	public void setWinx(short winx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 76, winy);
+			__io__block.writeShort(__io__address + 76, winx);
 		} else {
-			__io__block.writeShort(__io__address + 48, winy);
+			__io__block.writeShort(__io__address + 48, winx);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'headertype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> OLD! 0=no header, 1= down, 2= up </p>
-	 * @see #__DNA__FIELD__headertype
+	 * Get method for struct member 'winy'.
+	 * @see #__DNA__FIELD__winy
 	 */
 	
-	public short getHeadertype() throws IOException
+	public short getWiny() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 78);
@@ -955,19 +1007,54 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'headertype'.
+	 * Set method for struct member 'winy'.
+	 * @see #__DNA__FIELD__winy
+	 */
+	
+	public void setWiny(short winy) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 78, winy);
+		} else {
+			__io__block.writeShort(__io__address + 50, winy);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'headertype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> OLD! 0=no header, 1= down, 2= up </p>
+	 * <p> OLD! 0=no header, 1= down, 2= up. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__headertype
 	 */
 	
-	public void setHeadertype(short headertype) throws IOException
+	public byte getHeadertype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 78, headertype);
+			return __io__block.readByte(__io__address + 80);
 		} else {
-			__io__block.writeShort(__io__address + 50, headertype);
+			return __io__block.readByte(__io__address + 52);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'headertype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OLD! 0=no header, 1= down, 2= up. 
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__headertype
+	 */
+	
+	public void setHeadertype(byte headertype) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 80, headertype);
+		} else {
+			__io__block.writeByte(__io__address + 52, headertype);
 		}
 	}
 
@@ -975,16 +1062,16 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'do_refresh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, for spacetype refresh callback </p>
+	 * <p> Private, for spacetype refresh callback. </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
-	public short getDo_refresh() throws IOException
+	public byte getDo_refresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 80);
+			return __io__block.readByte(__io__address + 81);
 		} else {
-			return __io__block.readShort(__io__address + 52);
+			return __io__block.readByte(__io__address + 53);
 		}
 	}
 
@@ -992,16 +1079,16 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'do_refresh'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, for spacetype refresh callback </p>
+	 * <p> Private, for spacetype refresh callback. </p>
 	 * @see #__DNA__FIELD__do_refresh
 	 */
 	
-	public void setDo_refresh(short do_refresh) throws IOException
+	public void setDo_refresh(byte do_refresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 80, do_refresh);
+			__io__block.writeByte(__io__address + 81, do_refresh);
 		} else {
-			__io__block.writeShort(__io__address + 52, do_refresh);
+			__io__block.writeByte(__io__address + 53, do_refresh);
 		}
 	}
 
@@ -1037,7 +1124,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'region_active_win'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
+	 * <p> Index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators. </p>
 	 * @see #__DNA__FIELD__region_active_win
 	 */
 	
@@ -1054,7 +1141,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'region_active_win'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators </p>
+	 * <p> Index of last used region of 'RGN_TYPE_WINDOW' runtime variable, updated by executing operators. </p>
 	 * @see #__DNA__FIELD__region_active_win
 	 */
 	
@@ -1068,58 +1155,42 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'temp'.
-	 * @see #__DNA__FIELD__temp
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public byte getTemp() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 86);
+			return new CArrayFacade<Byte>(__io__address + 86, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readByte(__io__address + 58);
+			return new CArrayFacade<Byte>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'temp'.
-	 * @see #__DNA__FIELD__temp
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setTemp(byte temp) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 86, temp);
+			__dna__offset = 86;
 		} else {
-			__io__block.writeByte(__io__address + 58, temp);
+			__dna__offset = 58;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public byte getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 87);
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			return __io__block.readByte(__io__address + 59);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(byte pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 87, pad);
-		} else {
-			__io__block.writeByte(__io__address + 59, pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1127,7 +1198,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this space type </p>
+	 * <p> Callbacks for this space type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1147,7 +1218,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this space type </p>
+	 * <p> Callbacks for this space type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1162,19 +1233,57 @@ public class ScrArea extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'global'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-NULL if this area is global. </p>
+	 * @see #__DNA__FIELD__global
+	 */
+	
+	public CPointer<Object> getGlobal() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'global'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Non-NULL if this area is global. </p>
+	 * @see #__DNA__FIELD__global
+	 */
+	
+	public void setGlobal(CPointer<Object> global) throws IOException
+	{
+		long __address = ((global == null) ? 0 : global.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 96, __address);
+		} else {
+			__io__block.writeLong(__io__address + 64, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
 	public ListBase getSpacedata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 96, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 104, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 64, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 68, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1182,7 +1291,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.SpaceLink </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
@@ -1190,9 +1299,9 @@ public class ScrArea extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
+			__dna__offset = 104;
 		} else {
-			__dna__offset = 64;
+			__dna__offset = 68;
 		}
 		if (__io__equals(spacedata, __io__address + __dna__offset)) {
 			return;
@@ -1207,16 +1316,16 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
 	public ListBase getRegionbase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 112, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 72, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 76, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1224,7 +1333,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!ARegion </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1232,9 +1341,9 @@ public class ScrArea extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 72;
+			__dna__offset = 76;
 		}
 		if (__io__equals(regionbase, __io__address + __dna__offset)) {
 			return;
@@ -1249,16 +1358,16 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
 	public ListBase getHandlers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 80, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 84, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1266,7 +1375,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
@@ -1274,9 +1383,9 @@ public class ScrArea extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 80;
+			__dna__offset = 84;
 		}
 		if (__io__equals(handlers, __io__address + __dna__offset)) {
 			return;
@@ -1291,16 +1400,16 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'actionzones'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> AZone </p>
+	 * <p> #AZone. </p>
 	 * @see #__DNA__FIELD__actionzones
 	 */
 	
 	public ListBase getActionzones() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 88, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 92, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1308,7 +1417,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'actionzones'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> AZone </p>
+	 * <p> #AZone. </p>
 	 * @see #__DNA__FIELD__actionzones
 	 */
 	
@@ -1316,9 +1425,9 @@ public class ScrArea extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 88;
+			__dna__offset = 92;
 		}
 		if (__io__equals(actionzones, __io__address + __dna__offset)) {
 			return;
@@ -1326,6 +1435,42 @@ public class ScrArea extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, actionzones);
 		} else {
 			__io__generic__copy( getActionzones(), actionzones);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public ScrArea_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ScrArea_Runtime(__io__address + 168, __io__block, __io__blockTable);
+		} else {
+			return new ScrArea_Runtime(__io__address + 100, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(ScrArea_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 168;
+		} else {
+			__dna__offset = 100;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

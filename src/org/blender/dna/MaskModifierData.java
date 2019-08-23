@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link Mask}  Modifier </p>
  */
 
-@CMetaData(size32=172, size64=192)
+@CMetaData(size32=176, size64=200)
 public class MaskModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class MaskModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 95;
+	public static final int __DNA__SDNA_INDEX = 101;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -45,7 +45,7 @@ public class MaskModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -54,7 +54,7 @@ public class MaskModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'ob_arm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> armature to use to in place of hardcoded vgroup </p>
+	 * <p> Armature to use to in place of hardcoded vgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,13 +71,13 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_arm = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__ob_arm = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use to mask, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,13 +94,13 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__vgroup = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> using armature or hardcoded vgroup </p>
+	 * <p> Using armature or hardcoded vgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -108,22 +108,22 @@ public class MaskModifierData extends CFacade {
 	 * <pre>
 	 * MaskModifierData maskmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = maskmodifierdata.__dna__addressof(MaskModifierData.__DNA__FIELD__mode);
-	 * CPointer&lt;Integer&gt; p_mode = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_mode = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'mode'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{164, 184};
+	public static final long[] __DNA__FIELD__mode = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for various things </p>
+	 * <p> Flags for various things. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -131,16 +131,36 @@ public class MaskModifierData extends CFacade {
 	 * <pre>
 	 * MaskModifierData maskmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = maskmodifierdata.__dna__addressof(MaskModifierData.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{170, 194};
+
+	/**
+	 * Field descriptor (offset) for struct member 'threshold'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MaskModifierData maskmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = maskmodifierdata.__dna__addressof(MaskModifierData.__DNA__FIELD__threshold);
+	 * CPointer&lt;Float&gt; p_threshold = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'threshold'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{168, 188};
+	public static final long[] __DNA__FIELD__threshold = new long[]{172, 196};
 
 	public MaskModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -190,7 +210,7 @@ public class MaskModifierData extends CFacade {
 	 * Get method for struct member 'ob_arm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> armature to use to in place of hardcoded vgroup </p>
+	 * <p> Armature to use to in place of hardcoded vgroup. </p>
 	 * @see #__DNA__FIELD__ob_arm
 	 */
 	
@@ -198,9 +218,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -210,7 +230,7 @@ public class MaskModifierData extends CFacade {
 	 * Set method for struct member 'ob_arm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> armature to use to in place of hardcoded vgroup </p>
+	 * <p> Armature to use to in place of hardcoded vgroup. </p>
 	 * @see #__DNA__FIELD__ob_arm
 	 */
 	
@@ -218,9 +238,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __address = ((ob_arm == null) ? 0 : ob_arm.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -228,7 +248,7 @@ public class MaskModifierData extends CFacade {
 	 * Get method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use to mask, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	
@@ -239,9 +259,9 @@ public class MaskModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -249,7 +269,7 @@ public class MaskModifierData extends CFacade {
 	 * Set method for struct member 'vgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use to mask, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use to mask, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroup
 	 */
 	
@@ -257,9 +277,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 104;
 		}
 		if (__io__equals(vgroup, __io__address + __dna__offset)) {
 			return;
@@ -274,16 +294,16 @@ public class MaskModifierData extends CFacade {
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> using armature or hardcoded vgroup </p>
+	 * <p> Using armature or hardcoded vgroup. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
-	public int getMode() throws IOException
+	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -291,16 +311,16 @@ public class MaskModifierData extends CFacade {
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> using armature or hardcoded vgroup </p>
+	 * <p> Using armature or hardcoded vgroup. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
-	public void setMode(int mode) throws IOException
+	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, mode);
+			__io__block.writeShort(__io__address + 192, mode);
 		} else {
-			__io__block.writeInt(__io__address + 164, mode);
+			__io__block.writeShort(__io__address + 168, mode);
 		}
 	}
 
@@ -308,16 +328,16 @@ public class MaskModifierData extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for various things </p>
+	 * <p> Flags for various things. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getFlag() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readShort(__io__address + 170);
 		}
 	}
 
@@ -325,16 +345,44 @@ public class MaskModifierData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for various things </p>
+	 * <p> Flags for various things. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 194, flag);
 		} else {
-			__io__block.writeInt(__io__address + 168, flag);
+			__io__block.writeShort(__io__address + 170, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'threshold'.
+	 * @see #__DNA__FIELD__threshold
+	 */
+	
+	public float getThreshold() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 196);
+		} else {
+			return __io__block.readFloat(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'threshold'.
+	 * @see #__DNA__FIELD__threshold
+	 */
+	
+	public void setThreshold(float threshold) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 196, threshold);
+		} else {
+			__io__block.writeFloat(__io__address + 172, threshold);
 		}
 	}
 

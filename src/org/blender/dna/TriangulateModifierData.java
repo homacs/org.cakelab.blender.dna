@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Triangulate modifier </p>
  */
 
-@CMetaData(size32=112, size64=128)
+@CMetaData(size32=116, size64=136)
 public class TriangulateModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class TriangulateModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 135;
+	public static final int __DNA__SDNA_INDEX = 141;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__flag = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quad_method'.
@@ -87,7 +87,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quad_method = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__quad_method = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ngon_method'.
@@ -107,27 +107,27 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ngon_method = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__ngon_method = new long[]{108, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'min_vertices'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * TriangulateModifierData triangulatemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = triangulatemodifierdata.__dna__addressof(TriangulateModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = triangulatemodifierdata.__dna__addressof(TriangulateModifierData.__DNA__FIELD__min_vertices);
+	 * CPointer&lt;Integer&gt; p_min_vertices = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'min_vertices'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__min_vertices = new long[]{112, 132};
 
 	public TriangulateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -181,9 +181,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 120);
 		} else {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readInt(__io__address + 100);
 		}
 	}
 
@@ -195,9 +195,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, flag);
+			__io__block.writeInt(__io__address + 120, flag);
 		} else {
-			__io__block.writeInt(__io__address + 96, flag);
+			__io__block.writeInt(__io__address + 100, flag);
 		}
 	}
 
@@ -209,9 +209,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getQuad_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -223,9 +223,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setQuad_method(int quad_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, quad_method);
+			__io__block.writeInt(__io__address + 124, quad_method);
 		} else {
-			__io__block.writeInt(__io__address + 100, quad_method);
+			__io__block.writeInt(__io__address + 104, quad_method);
 		}
 	}
 
@@ -237,9 +237,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getNgon_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -251,37 +251,37 @@ public class TriangulateModifierData extends CFacade {
 	public void setNgon_method(int ngon_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, ngon_method);
+			__io__block.writeInt(__io__address + 128, ngon_method);
 		} else {
-			__io__block.writeInt(__io__address + 104, ngon_method);
+			__io__block.writeInt(__io__address + 108, ngon_method);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'min_vertices'.
+	 * @see #__DNA__FIELD__min_vertices
 	 */
 	
-	public int getPad() throws IOException
+	public int getMin_vertices() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'min_vertices'.
+	 * @see #__DNA__FIELD__min_vertices
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setMin_vertices(int min_vertices) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, pad);
+			__io__block.writeInt(__io__address + 132, min_vertices);
 		} else {
-			__io__block.writeInt(__io__address + 108, pad);
+			__io__block.writeInt(__io__address + 112, min_vertices);
 		}
 	}
 

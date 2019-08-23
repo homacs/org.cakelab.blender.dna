@@ -27,7 +27,7 @@ public class Stereo3dFormat extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 175;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -53,7 +53,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Field descriptor (offset) for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> encoding mode </p>
+	 * <p> Encoding mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -76,7 +76,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Field descriptor (offset) for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> anaglyph scheme for the user display </p>
+	 * <p> Anaglyph scheme for the user display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,7 +99,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Field descriptor (offset) for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interlace type for the user display </p>
+	 * <p> Interlace type for the user display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,24 +119,24 @@ public class Stereo3dFormat extends CFacade {
 	public static final long[] __DNA__FIELD__interlace_type = new long[]{4, 4};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Stereo3dFormat stereo3dformat = ...;
-	 * CPointer&lt;Object&gt; p = stereo3dformat.__dna__addressof(Stereo3dFormat.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = stereo3dformat.__dna__addressof(Stereo3dFormat.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[3]'</li>
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{5, 5};
+	public static final long[] __DNA__FIELD___pad = new long[]{5, 5};
 
 	public Stereo3dFormat(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -178,7 +178,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Get method for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> encoding mode </p>
+	 * <p> Encoding mode. </p>
 	 * @see #__DNA__FIELD__display_mode
 	 */
 	
@@ -195,7 +195,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Set method for struct member 'display_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> encoding mode </p>
+	 * <p> Encoding mode. </p>
 	 * @see #__DNA__FIELD__display_mode
 	 */
 	
@@ -212,7 +212,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Get method for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> anaglyph scheme for the user display </p>
+	 * <p> Anaglyph scheme for the user display. </p>
 	 * @see #__DNA__FIELD__anaglyph_type
 	 */
 	
@@ -229,7 +229,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Set method for struct member 'anaglyph_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> anaglyph scheme for the user display </p>
+	 * <p> Anaglyph scheme for the user display. </p>
 	 * @see #__DNA__FIELD__anaglyph_type
 	 */
 	
@@ -246,7 +246,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Get method for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interlace type for the user display </p>
+	 * <p> Interlace type for the user display. </p>
 	 * @see #__DNA__FIELD__interlace_type
 	 */
 	
@@ -263,7 +263,7 @@ public class Stereo3dFormat extends CFacade {
 	 * Set method for struct member 'interlace_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> interlace type for the user display </p>
+	 * <p> Interlace type for the user display. </p>
 	 * @see #__DNA__FIELD__interlace_type
 	 */
 	
@@ -277,11 +277,11 @@ public class Stereo3dFormat extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -295,11 +295,11 @@ public class Stereo3dFormat extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -307,12 +307,12 @@ public class Stereo3dFormat extends CFacade {
 		} else {
 			__dna__offset = 5;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

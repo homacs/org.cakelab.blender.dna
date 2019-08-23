@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,13 +28,13 @@ public class SmokeCollSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 541;
+	public static final int __DNA__SDNA_INDEX = 546;
 
 	/**
 	 * Field descriptor (offset) for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,24 +54,24 @@ public class SmokeCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__smd = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dm'.
+	 * Field descriptor (offset) for struct member 'mesh'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SmokeCollSettings smokecollsettings = ...;
-	 * CPointer&lt;Object&gt; p = smokecollsettings.__dna__addressof(SmokeCollSettings.__DNA__FIELD__dm);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_dm = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = smokecollsettings.__dna__addressof(SmokeCollSettings.__DNA__FIELD__mesh);
+	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_mesh = p.cast(new Class[]{CPointer.class, Mesh.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'dm'</li>
-	 * <li>Signature: 'DerivedMesh*'</li>
+	 * <li>Field: 'mesh'</li>
+	 * <li>Signature: 'Mesh*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dm = new long[]{4, 8};
+	public static final long[] __DNA__FIELD__mesh = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'verts_old'.
@@ -133,24 +134,24 @@ public class SmokeCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__type = new long[]{16, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SmokeCollSettings smokecollsettings = ...;
-	 * CPointer&lt;Object&gt; p = smokecollsettings.__dna__addressof(SmokeCollSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = smokecollsettings.__dna__addressof(SmokeCollSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{18, 30};
+	public static final long[] __DNA__FIELD___pad = new long[]{18, 30};
 
 	public SmokeCollSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -164,7 +165,7 @@ public class SmokeCollSettings extends CFacade {
 	 * Get method for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -184,7 +185,7 @@ public class SmokeCollSettings extends CFacade {
 	 * Set method for struct member 'smd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__smd
 	 */
 	
@@ -199,11 +200,11 @@ public class SmokeCollSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Get method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
 	 */
 	
-	public CPointer<Object> getDm() throws IOException
+	public CPointer<Mesh> getMesh() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -211,18 +212,18 @@ public class SmokeCollSettings extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
+		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Set method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
 	 */
 	
-	public void setDm(CPointer<Object> dm) throws IOException
+	public void setMesh(CPointer<Mesh> mesh) throws IOException
 	{
-		long __address = ((dm == null) ? 0 : dm.getAddress());
+		long __address = ((mesh == null) ? 0 : mesh.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 8, __address);
 		} else {
@@ -319,30 +320,42 @@ public class SmokeCollSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 18);
+			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, pad);
+			__dna__offset = 30;
 		} else {
-			__io__block.writeShort(__io__address + 18, pad);
+			__dna__offset = 18;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

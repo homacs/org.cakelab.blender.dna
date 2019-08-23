@@ -28,7 +28,7 @@ public class bRigidBodyJointConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 374;
+	public static final int __DNA__SDNA_INDEX = 345;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -291,64 +291,24 @@ public class bRigidBodyJointConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{88, 96};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bRigidBodyJointConstraint brigidbodyjointconstraint = ...;
-	 * CPointer&lt;Object&gt; p = brigidbodyjointconstraint.__dna__addressof(bRigidBodyJointConstraint.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = brigidbodyjointconstraint.__dna__addressof(bRigidBodyJointConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{90, 98};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bRigidBodyJointConstraint brigidbodyjointconstraint = ...;
-	 * CPointer&lt;Object&gt; p = brigidbodyjointconstraint.__dna__addressof(bRigidBodyJointConstraint.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{92, 100};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bRigidBodyJointConstraint brigidbodyjointconstraint = ...;
-	 * CPointer&lt;Object&gt; p = brigidbodyjointconstraint.__dna__addressof(bRigidBodyJointConstraint.__DNA__FIELD__pad2);
-	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{94, 102};
+	public static final long[] __DNA__FIELD___pad = new long[]{90, 98};
 
 	public bRigidBodyJointConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -755,86 +715,42 @@ public class bRigidBodyJointConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 98);
+			return new CArrayFacade<Byte>(__io__address + 98, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 90);
+			return new CArrayFacade<Byte>(__io__address + 90, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 98, pad);
+			__dna__offset = 98;
 		} else {
-			__io__block.writeShort(__io__address + 90, pad);
+			__dna__offset = 90;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public short getPad1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			return __io__block.readShort(__io__address + 92);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public void setPad1(short pad1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, pad1);
-		} else {
-			__io__block.writeShort(__io__address + 92, pad1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public short getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
-		} else {
-			return __io__block.readShort(__io__address + 94);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(short pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, pad2);
-		} else {
-			__io__block.writeShort(__io__address + 94, pad2);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

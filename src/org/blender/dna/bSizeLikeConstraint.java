@@ -28,7 +28,7 @@ public class bSizeLikeConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 365;
+	public static final int __DNA__SDNA_INDEX = 336;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -71,30 +71,30 @@ public class bSizeLikeConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'reserved1'.
+	 * Field descriptor (offset) for struct member 'power'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bSizeLikeConstraint bsizelikeconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bsizelikeconstraint.__dna__addressof(bSizeLikeConstraint.__DNA__FIELD__reserved1);
-	 * CPointer&lt;Integer&gt; p_reserved1 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bsizelikeconstraint.__dna__addressof(bSizeLikeConstraint.__DNA__FIELD__power);
+	 * CPointer&lt;Float&gt; p_power = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'reserved1'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'power'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reserved1 = new long[]{8, 12};
+	public static final long[] __DNA__FIELD__power = new long[]{8, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,30 +182,30 @@ public class bSizeLikeConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'reserved1'.
-	 * @see #__DNA__FIELD__reserved1
+	 * Get method for struct member 'power'.
+	 * @see #__DNA__FIELD__power
 	 */
 	
-	public int getReserved1() throws IOException
+	public float getPower() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readFloat(__io__address + 12);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readFloat(__io__address + 8);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'reserved1'.
-	 * @see #__DNA__FIELD__reserved1
+	 * Set method for struct member 'power'.
+	 * @see #__DNA__FIELD__power
 	 */
 	
-	public void setReserved1(int reserved1) throws IOException
+	public void setPower(float power) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, reserved1);
+			__io__block.writeFloat(__io__address + 12, power);
 		} else {
-			__io__block.writeInt(__io__address + 8, reserved1);
+			__io__block.writeFloat(__io__address + 8, power);
 		}
 	}
 
@@ -213,7 +213,7 @@ public class bSizeLikeConstraint extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -234,7 +234,7 @@ public class bSizeLikeConstraint extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	

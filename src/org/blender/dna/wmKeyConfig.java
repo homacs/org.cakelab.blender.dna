@@ -27,7 +27,7 @@ public class wmKeyConfig extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 504;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class wmKeyConfig extends CFacade {
 	 * Field descriptor (offset) for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unique name </p>
+	 * <p> Unique name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class wmKeyConfig extends CFacade {
 	 * Field descriptor (offset) for struct member 'basename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> idname of configuration this is derives from, "" if none </p>
+	 * <p> Idname of configuration this is derives from, "" if none. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,16 +164,36 @@ public class wmKeyConfig extends CFacade {
 	 * <pre>
 	 * wmKeyConfig wmkeyconfig = ...;
 	 * CPointer&lt;Object&gt; p = wmkeyconfig.__dna__addressof(wmKeyConfig.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{148, 164};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmKeyConfig wmkeyconfig = ...;
+	 * CPointer&lt;Object&gt; p = wmkeyconfig.__dna__addressof(wmKeyConfig.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{150, 166};
 
 	public wmKeyConfig(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -251,7 +271,7 @@ public class wmKeyConfig extends CFacade {
 	 * Get method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unique name </p>
+	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -272,7 +292,7 @@ public class wmKeyConfig extends CFacade {
 	 * Set method for struct member 'idname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unique name </p>
+	 * <p> Unique name. </p>
 	 * @see #__DNA__FIELD__idname
 	 */
 	
@@ -297,7 +317,7 @@ public class wmKeyConfig extends CFacade {
 	 * Get method for struct member 'basename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> idname of configuration this is derives from, "" if none </p>
+	 * <p> Idname of configuration this is derives from, "" if none. </p>
 	 * @see #__DNA__FIELD__basename
 	 */
 	
@@ -318,7 +338,7 @@ public class wmKeyConfig extends CFacade {
 	 * Set method for struct member 'basename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> idname of configuration this is derives from, "" if none </p>
+	 * <p> Idname of configuration this is derives from, "" if none. </p>
 	 * @see #__DNA__FIELD__basename
 	 */
 	
@@ -408,12 +428,12 @@ public class wmKeyConfig extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getFlag() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readShort(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readShort(__io__address + 148);
 		}
 	}
 
@@ -422,12 +442,52 @@ public class wmKeyConfig extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, flag);
+			__io__block.writeShort(__io__address + 164, flag);
 		} else {
-			__io__block.writeInt(__io__address + 148, flag);
+			__io__block.writeShort(__io__address + 148, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 166, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 150, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 166;
+		} else {
+			__dna__offset = 150;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

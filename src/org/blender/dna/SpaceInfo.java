@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Space Info ========================================== Info Header </p>
+ * <p> Info Header </p>
  */
 
-@CMetaData(size32=48, size64=64)
+@CMetaData(size32=32, size64=48)
 public class SpaceInfo extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceInfo extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 218;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class SpaceInfo extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,69 +102,62 @@ public class SpaceInfo extends CFacade {
 	 * <pre>
 	 * SpaceInfo spaceinfo = ...;
 	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD__spacetype);
-	 * CPointer&lt;Integer&gt; p_spacetype = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Byte&gt; p_spacetype = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'spacetype'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__spacetype = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
+	 * Field descriptor (offset) for struct member 'link_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceInfo spaceinfo = ...;
-	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD__blockscale);
-	 * CPointer&lt;Float&gt; p_blockscale = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD__link_flag);
+	 * CPointer&lt;Byte&gt; p_link_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'blockscale'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'link_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blockscale = new long[]{20, 36};
+	public static final long[] __DNA__FIELD__link_flag = new long[]{17, 33};
 
 	/**
-	 * Field descriptor (offset) for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><p> XXX make deprecated </p>
-	 * @deprecated
-	 *  DeprecatedXXX make deprecated </p>
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceInfo spaceinfo = ...;
-	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD__blockhandler);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_blockhandler = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'blockhandler'</li>
-	 * <li>Signature: 'short[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blockhandler = new long[]{24, 40};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{18, 34};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rpt_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -181,27 +174,27 @@ public class SpaceInfo extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rpt_mask = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__rpt_mask = new long[]{24, 40};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceInfo spaceinfo = ...;
-	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = spaceinfo.__dna__addressof(SpaceInfo.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{41, 57};
+	public static final long[] __DNA__FIELD___pad = new long[]{25, 41};
 
 	public SpaceInfo(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -279,7 +272,7 @@ public class SpaceInfo extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -296,7 +289,7 @@ public class SpaceInfo extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -322,12 +315,12 @@ public class SpaceInfo extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public int getSpacetype() throws IOException
+	public byte getSpacetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readByte(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readByte(__io__address + 16);
 		}
 	}
 
@@ -336,168 +329,154 @@ public class SpaceInfo extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public void setSpacetype(int spacetype) throws IOException
+	public void setSpacetype(byte spacetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, spacetype);
+			__io__block.writeByte(__io__address + 32, spacetype);
 		} else {
-			__io__block.writeInt(__io__address + 16, spacetype);
+			__io__block.writeByte(__io__address + 16, spacetype);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockscale
+	 * Get method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
 	 */
 	
-	public float getBlockscale() throws IOException
+	public byte getLink_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readByte(__io__address + 33);
 		} else {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readByte(__io__address + 17);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockscale
+	 * Set method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
 	 */
 	
-	public void setBlockscale(float blockscale) throws IOException
+	public void setLink_flag(byte link_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 36, blockscale);
+			__io__block.writeByte(__io__address + 33, link_flag);
 		} else {
-			__io__block.writeFloat(__io__address + 20, blockscale);
+			__io__block.writeByte(__io__address + 17, link_flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><p> XXX make deprecated </p>
-	 * @deprecated
-	 *  DeprecatedXXX make deprecated </p>
-	 * @see #__DNA__FIELD__blockhandler
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public CArrayFacade<Short> getBlockhandler() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			8
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 34, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><p> XXX make deprecated </p>
-	 * @deprecated
-	 *  DeprecatedXXX make deprecated </p>
-	 * @see #__DNA__FIELD__blockhandler
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setBlockhandler(CArrayFacade<Short> blockhandler) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 34;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 18;
 		}
-		if (__io__equals(blockhandler, __io__address + __dna__offset)) {
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, blockhandler)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, blockhandler);
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
 		} else {
-			__io__generic__copy( getBlockhandler(), blockhandler);
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rpt_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__rpt_mask
 	 */
 	
 	public byte getRpt_mask() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 56);
-		} else {
 			return __io__block.readByte(__io__address + 40);
+		} else {
+			return __io__block.readByte(__io__address + 24);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'rpt_mask'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> End '{@link SpaceLink} ' header. </p>
 	 * @see #__DNA__FIELD__rpt_mask
 	 */
 	
 	public void setRpt_mask(byte rpt_mask) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 56, rpt_mask);
-		} else {
 			__io__block.writeByte(__io__address + 40, rpt_mask);
+		} else {
+			__io__block.writeByte(__io__address + 24, rpt_mask);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 57, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
 			return new CArrayFacade<Byte>(__io__address + 41, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 25, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 57;
-		} else {
 			__dna__offset = 41;
-		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__dna__offset = 25;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

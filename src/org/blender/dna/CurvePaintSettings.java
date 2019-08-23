@@ -26,7 +26,7 @@ public class CurvePaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 197;
+	public static final int __DNA__SDNA_INDEX = 200;
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_type'.
@@ -141,24 +141,24 @@ public class CurvePaintSettings extends CFacade {
 	public static final long[] __DNA__FIELD__fit_method = new long[]{4, 4};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CurvePaintSettings curvepaintsettings = ...;
-	 * CPointer&lt;Object&gt; p = curvepaintsettings.__dna__addressof(CurvePaintSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = curvepaintsettings.__dna__addressof(CurvePaintSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{5, 5};
+	public static final long[] __DNA__FIELD___pad = new long[]{5, 5};
 
 	/**
 	 * Field descriptor (offset) for struct member 'error_threshold'.
@@ -494,11 +494,11 @@ public class CurvePaintSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public byte getPad() throws IOException
+	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 5);
@@ -508,16 +508,16 @@ public class CurvePaintSettings extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 5, pad);
+			__io__block.writeByte(__io__address + 5, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 5, pad);
+			__io__block.writeByte(__io__address + 5, _pad);
 		}
 	}
 

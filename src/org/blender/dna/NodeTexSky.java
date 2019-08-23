@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=988, size64=992)
+@CMetaData(size32=980, size64=984)
 public class NodeTexSky extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeTexSky extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 434;
+	public static final int __DNA__SDNA_INDEX = 402;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -44,7 +44,7 @@ public class NodeTexSky extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class NodeTexSky extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sky_model = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__sky_model = new long[]{956, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sun_direction'.
@@ -87,7 +87,7 @@ public class NodeTexSky extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sun_direction = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__sun_direction = new long[]{960, 964};
 
 	/**
 	 * Field descriptor (offset) for struct member 'turbidity'.
@@ -107,7 +107,7 @@ public class NodeTexSky extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__turbidity = new long[]{980, 984};
+	public static final long[] __DNA__FIELD__turbidity = new long[]{972, 976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ground_albedo'.
@@ -127,7 +127,7 @@ public class NodeTexSky extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ground_albedo = new long[]{984, 988};
+	public static final long[] __DNA__FIELD__ground_albedo = new long[]{976, 980};
 
 	public NodeTexSky(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -181,9 +181,9 @@ public class NodeTexSky extends CFacade {
 	public int getSky_model() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		} else {
-			return __io__block.readInt(__io__address + 964);
+			return __io__block.readInt(__io__address + 956);
 		}
 	}
 
@@ -195,9 +195,9 @@ public class NodeTexSky extends CFacade {
 	public void setSky_model(int sky_model) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 968, sky_model);
+			__io__block.writeInt(__io__address + 960, sky_model);
 		} else {
-			__io__block.writeInt(__io__address + 964, sky_model);
+			__io__block.writeInt(__io__address + 956, sky_model);
 		}
 	}
 
@@ -213,9 +213,9 @@ public class NodeTexSky extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 972, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 964, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 968, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -228,9 +228,9 @@ public class NodeTexSky extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 972;
+			__dna__offset = 964;
 		} else {
-			__dna__offset = 968;
+			__dna__offset = 960;
 		}
 		if (__io__equals(sun_direction, __io__address + __dna__offset)) {
 			return;
@@ -249,9 +249,9 @@ public class NodeTexSky extends CFacade {
 	public float getTurbidity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 984);
+			return __io__block.readFloat(__io__address + 976);
 		} else {
-			return __io__block.readFloat(__io__address + 980);
+			return __io__block.readFloat(__io__address + 972);
 		}
 	}
 
@@ -263,9 +263,9 @@ public class NodeTexSky extends CFacade {
 	public void setTurbidity(float turbidity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 984, turbidity);
+			__io__block.writeFloat(__io__address + 976, turbidity);
 		} else {
-			__io__block.writeFloat(__io__address + 980, turbidity);
+			__io__block.writeFloat(__io__address + 972, turbidity);
 		}
 	}
 
@@ -277,9 +277,9 @@ public class NodeTexSky extends CFacade {
 	public float getGround_albedo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 988);
+			return __io__block.readFloat(__io__address + 980);
 		} else {
-			return __io__block.readFloat(__io__address + 984);
+			return __io__block.readFloat(__io__address + 976);
 		}
 	}
 
@@ -291,9 +291,9 @@ public class NodeTexSky extends CFacade {
 	public void setGround_albedo(float ground_albedo) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 988, ground_albedo);
+			__io__block.writeFloat(__io__address + 980, ground_albedo);
 		} else {
-			__io__block.writeFloat(__io__address + 984, ground_albedo);
+			__io__block.writeFloat(__io__address + 976, ground_albedo);
 		}
 	}
 

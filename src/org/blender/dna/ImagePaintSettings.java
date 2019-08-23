@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  {@link Image}  {@link Paint}  Texture/Image Editor </p>
  */
 
-@CMetaData(size32=96, size64=128)
+@CMetaData(size32=124, size64=160)
 public class ImagePaintSettings extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class ImagePaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 186;
+	public static final int __DNA__SDNA_INDEX = 188;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.
@@ -46,7 +46,7 @@ public class ImagePaintSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paint'</li>
 	 * <li>Signature: 'Paint'</li>
-	 * <li>Actual Size (32bit/64bit): 48/64</li>
+	 * <li>Actual Size (32bit/64bit): 68/88</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paint = new long[]{0, 0};
@@ -69,7 +69,7 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{48, 64};
+	public static final long[] __DNA__FIELD__flag = new long[]{68, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'missing_data'.
@@ -89,7 +89,7 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__missing_data = new long[]{50, 66};
+	public static final long[] __DNA__FIELD__missing_data = new long[]{70, 90};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seam_bleed'.
@@ -112,7 +112,7 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seam_bleed = new long[]{52, 68};
+	public static final long[] __DNA__FIELD__seam_bleed = new long[]{72, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_angle'.
@@ -132,13 +132,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_angle = new long[]{54, 70};
+	public static final long[] __DNA__FIELD__normal_angle = new long[]{74, 94};
 
 	/**
 	 * Field descriptor (offset) for struct member 'screen_grab_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> capture size for re-projection </p>
+	 * <p> Capture size for re-projection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,13 +155,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__screen_grab_size = new long[]{56, 72};
+	public static final long[] __DNA__FIELD__screen_grab_size = new long[]{76, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> mode used for texture painting </p>
+	 * <p> Mode used for texture painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -178,13 +178,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{60, 76};
+	public static final long[] __DNA__FIELD__mode = new long[]{80, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wm handle </p>
+	 * <p> Wm handle. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -201,13 +201,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paintcursor = new long[]{64, 80};
+	public static final long[] __DNA__FIELD__paintcursor = new long[]{84, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> workaround until we support true layer masks </p>
+	 * <p> Workaround until we support true layer masks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -224,13 +224,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stencil = new long[]{68, 88};
+	public static final long[] __DNA__FIELD__stencil = new long[]{88, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clone layer for image mode for projective texture painting </p>
+	 * <p> Clone layer for image mode for projective texture painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,13 +247,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clone = new long[]{72, 96};
+	public static final long[] __DNA__FIELD__clone = new long[]{92, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'canvas'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> canvas when the explicit system is used for painting </p>
+	 * <p> Canvas when the explicit system is used for painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -270,7 +270,7 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__canvas = new long[]{76, 104};
+	public static final long[] __DNA__FIELD__canvas = new long[]{96, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_col'.
@@ -290,13 +290,13 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stencil_col = new long[]{80, 112};
+	public static final long[] __DNA__FIELD__stencil_col = new long[]{100, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dither'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dither amount used when painting on byte images </p>
+	 * <p> Dither amount used when painting on byte images. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -313,7 +313,50 @@ public class ImagePaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dither = new long[]{92, 124};
+	public static final long[] __DNA__FIELD__dither = new long[]{112, 148};
+
+	/**
+	 * Field descriptor (offset) for struct member 'interp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display texture interpolation method. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImagePaintSettings imagepaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = imagepaintsettings.__dna__addressof(ImagePaintSettings.__DNA__FIELD__interp);
+	 * CPointer&lt;Integer&gt; p_interp = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'interp'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__interp = new long[]{116, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImagePaintSettings imagepaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = imagepaintsettings.__dna__addressof(ImagePaintSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{120, 156};
 
 	public ImagePaintSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -367,9 +410,9 @@ public class ImagePaintSettings extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 64);
+			return __io__block.readShort(__io__address + 88);
 		} else {
-			return __io__block.readShort(__io__address + 48);
+			return __io__block.readShort(__io__address + 68);
 		}
 	}
 
@@ -381,9 +424,9 @@ public class ImagePaintSettings extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 64, flag);
+			__io__block.writeShort(__io__address + 88, flag);
 		} else {
-			__io__block.writeShort(__io__address + 48, flag);
+			__io__block.writeShort(__io__address + 68, flag);
 		}
 	}
 
@@ -395,9 +438,9 @@ public class ImagePaintSettings extends CFacade {
 	public short getMissing_data() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 66);
+			return __io__block.readShort(__io__address + 90);
 		} else {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readShort(__io__address + 70);
 		}
 	}
 
@@ -409,9 +452,9 @@ public class ImagePaintSettings extends CFacade {
 	public void setMissing_data(short missing_data) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 66, missing_data);
+			__io__block.writeShort(__io__address + 90, missing_data);
 		} else {
-			__io__block.writeShort(__io__address + 50, missing_data);
+			__io__block.writeShort(__io__address + 70, missing_data);
 		}
 	}
 
@@ -426,9 +469,9 @@ public class ImagePaintSettings extends CFacade {
 	public short getSeam_bleed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 68);
+			return __io__block.readShort(__io__address + 92);
 		} else {
-			return __io__block.readShort(__io__address + 52);
+			return __io__block.readShort(__io__address + 72);
 		}
 	}
 
@@ -443,9 +486,9 @@ public class ImagePaintSettings extends CFacade {
 	public void setSeam_bleed(short seam_bleed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 68, seam_bleed);
+			__io__block.writeShort(__io__address + 92, seam_bleed);
 		} else {
-			__io__block.writeShort(__io__address + 52, seam_bleed);
+			__io__block.writeShort(__io__address + 72, seam_bleed);
 		}
 	}
 
@@ -457,9 +500,9 @@ public class ImagePaintSettings extends CFacade {
 	public short getNormal_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 70);
+			return __io__block.readShort(__io__address + 94);
 		} else {
-			return __io__block.readShort(__io__address + 54);
+			return __io__block.readShort(__io__address + 74);
 		}
 	}
 
@@ -471,9 +514,9 @@ public class ImagePaintSettings extends CFacade {
 	public void setNormal_angle(short normal_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 70, normal_angle);
+			__io__block.writeShort(__io__address + 94, normal_angle);
 		} else {
-			__io__block.writeShort(__io__address + 54, normal_angle);
+			__io__block.writeShort(__io__address + 74, normal_angle);
 		}
 	}
 
@@ -481,7 +524,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'screen_grab_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> capture size for re-projection </p>
+	 * <p> Capture size for re-projection. </p>
 	 * @see #__DNA__FIELD__screen_grab_size
 	 */
 	
@@ -492,9 +535,9 @@ public class ImagePaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -502,7 +545,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'screen_grab_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> capture size for re-projection </p>
+	 * <p> Capture size for re-projection. </p>
 	 * @see #__DNA__FIELD__screen_grab_size
 	 */
 	
@@ -510,9 +553,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 76;
 		}
 		if (__io__equals(screen_grab_size, __io__address + __dna__offset)) {
 			return;
@@ -527,16 +570,16 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> mode used for texture painting </p>
+	 * <p> Mode used for texture painting. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 100);
 		} else {
-			return __io__block.readInt(__io__address + 60);
+			return __io__block.readInt(__io__address + 80);
 		}
 	}
 
@@ -544,16 +587,16 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> mode used for texture painting </p>
+	 * <p> Mode used for texture painting. </p>
 	 * @see #__DNA__FIELD__mode
 	 */
 	
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, mode);
+			__io__block.writeInt(__io__address + 100, mode);
 		} else {
-			__io__block.writeInt(__io__address + 60, mode);
+			__io__block.writeInt(__io__address + 80, mode);
 		}
 	}
 
@@ -561,7 +604,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wm handle </p>
+	 * <p> Wm handle. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -569,9 +612,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 84);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -581,7 +624,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wm handle </p>
+	 * <p> Wm handle. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -589,9 +632,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __address = ((paintcursor == null) ? 0 : paintcursor.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		} else {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 84, __address);
 		}
 	}
 
@@ -599,7 +642,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'stencil'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> workaround until we support true layer masks </p>
+	 * <p> Workaround until we support true layer masks. </p>
 	 * @see #__DNA__FIELD__stencil
 	 */
 	
@@ -607,9 +650,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 68);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -619,7 +662,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'stencil'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> workaround until we support true layer masks </p>
+	 * <p> Workaround until we support true layer masks. </p>
 	 * @see #__DNA__FIELD__stencil
 	 */
 	
@@ -627,9 +670,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __address = ((stencil == null) ? 0 : stencil.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		} else {
-			__io__block.writeLong(__io__address + 68, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 
@@ -637,7 +680,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clone layer for image mode for projective texture painting </p>
+	 * <p> Clone layer for image mode for projective texture painting. </p>
 	 * @see #__DNA__FIELD__clone
 	 */
 	
@@ -645,9 +688,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -657,7 +700,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clone layer for image mode for projective texture painting </p>
+	 * <p> Clone layer for image mode for projective texture painting. </p>
 	 * @see #__DNA__FIELD__clone
 	 */
 	
@@ -665,9 +708,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __address = ((clone == null) ? 0 : clone.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 72, __address);
+			__io__block.writeLong(__io__address + 92, __address);
 		}
 	}
 
@@ -675,7 +718,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'canvas'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> canvas when the explicit system is used for painting </p>
+	 * <p> Canvas when the explicit system is used for painting. </p>
 	 * @see #__DNA__FIELD__canvas
 	 */
 	
@@ -683,9 +726,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -695,7 +738,7 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'canvas'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> canvas when the explicit system is used for painting </p>
+	 * <p> Canvas when the explicit system is used for painting. </p>
 	 * @see #__DNA__FIELD__canvas
 	 */
 	
@@ -703,9 +746,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __address = ((canvas == null) ? 0 : canvas.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 76, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		}
 	}
 
@@ -721,9 +764,9 @@ public class ImagePaintSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -736,9 +779,9 @@ public class ImagePaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 80;
+			__dna__offset = 100;
 		}
 		if (__io__equals(stencil_col, __io__address + __dna__offset)) {
 			return;
@@ -753,16 +796,16 @@ public class ImagePaintSettings extends CFacade {
 	 * Get method for struct member 'dither'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dither amount used when painting on byte images </p>
+	 * <p> Dither amount used when painting on byte images. </p>
 	 * @see #__DNA__FIELD__dither
 	 */
 	
 	public float getDither() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -770,16 +813,90 @@ public class ImagePaintSettings extends CFacade {
 	 * Set method for struct member 'dither'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dither amount used when painting on byte images </p>
+	 * <p> Dither amount used when painting on byte images. </p>
 	 * @see #__DNA__FIELD__dither
 	 */
 	
 	public void setDither(float dither) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, dither);
+			__io__block.writeFloat(__io__address + 148, dither);
 		} else {
-			__io__block.writeFloat(__io__address + 92, dither);
+			__io__block.writeFloat(__io__address + 112, dither);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'interp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display texture interpolation method. </p>
+	 * @see #__DNA__FIELD__interp
+	 */
+	
+	public int getInterp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 152);
+		} else {
+			return __io__block.readInt(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'interp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display texture interpolation method. </p>
+	 * @see #__DNA__FIELD__interp
+	 */
+	
+	public void setInterp(int interp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 152, interp);
+		} else {
+			__io__block.writeInt(__io__address + 116, interp);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 156;
+		} else {
+			__dna__offset = 120;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

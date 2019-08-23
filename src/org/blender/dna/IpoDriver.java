@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> -----------------------  Type Defines ------------------------  --  IPO {@link Curve}  Driver --  IPO {@link Curve}  Driver </p>
+ * <p> -----------------<mdash/><mdash/><mdash/>  Type Defines ------------------<mdash/><mdash/><mdash/>  <mdash/>  IPO {@link Curve}  Driver <mdash/>  IPO {@link Curve}  Driver </p>
  */
 
 @CMetaData(size32=140, size64=144)
@@ -28,13 +28,13 @@ public class IpoDriver extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 13;
+	public static final int __DNA__SDNA_INDEX = 18;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target/driver ob </p>
+	 * <p> Target/driver ob. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -55,6 +55,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'blocktype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub-channel to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -75,9 +78,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'adrcode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sub-channel to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,6 +98,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Driver settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -118,9 +121,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> driver settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,7 +143,7 @@ public class IpoDriver extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bone, or python expression here </p>
+	 * <p>{@link Bone} , or python expression here. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,7 +174,7 @@ public class IpoDriver extends CFacade {
 	 * Get method for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target/driver ob </p>
+	 * <p> Target/driver ob. </p>
 	 * @see #__DNA__FIELD__ob
 	 */
 	
@@ -194,7 +194,7 @@ public class IpoDriver extends CFacade {
 	 * Set method for struct member 'ob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target/driver ob </p>
+	 * <p> Target/driver ob. </p>
 	 * @see #__DNA__FIELD__ob
 	 */
 	
@@ -210,6 +210,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'blocktype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub-channel to use. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
 	
@@ -224,6 +227,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'blocktype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub-channel to use. </p>
 	 * @see #__DNA__FIELD__blocktype
 	 */
 	
@@ -238,9 +244,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'adrcode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sub-channel to use </p>
 	 * @see #__DNA__FIELD__adrcode
 	 */
 	
@@ -255,9 +258,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'adrcode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sub-channel to use </p>
 	 * @see #__DNA__FIELD__adrcode
 	 */
 	
@@ -272,6 +272,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Driver settings. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -286,6 +289,9 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Driver settings. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -300,9 +306,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> driver settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -317,9 +320,6 @@ public class IpoDriver extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> driver settings </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -336,7 +336,7 @@ public class IpoDriver extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bone, or python expression here </p>
+	 * <p>{@link Bone} , or python expression here. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -357,7 +357,7 @@ public class IpoDriver extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bone, or python expression here </p>
+	 * <p>{@link Bone} , or python expression here. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

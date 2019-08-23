@@ -27,13 +27,13 @@ public class BrushClone extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 467;
+	public static final int __DNA__SDNA_INDEX = 437;
 
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> image for clone tool </p>
+	 * <p>{@link Image}  for clone tool. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +56,7 @@ public class BrushClone extends CFacade {
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset of clone image from canvas </p>
+	 * <p> Offset of clone image from canvas. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,6 +77,9 @@ public class BrushClone extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transparency for drawing of clone image. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,27 +99,24 @@ public class BrushClone extends CFacade {
 	public static final long[] __DNA__FIELD__alpha = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> transparency for drawing of clone image </p>
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushClone brushclone = ...;
-	 * CPointer&lt;Object&gt; p = brushclone.__dna__addressof(BrushClone.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = brushclone.__dna__addressof(BrushClone.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 20};
+	public static final long[] __DNA__FIELD___pad = new long[]{16, 20};
 
 	public BrushClone(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -130,7 +130,7 @@ public class BrushClone extends CFacade {
 	 * Get method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> image for clone tool </p>
+	 * <p>{@link Image}  for clone tool. </p>
 	 * @see #__DNA__FIELD__image
 	 */
 	
@@ -150,7 +150,7 @@ public class BrushClone extends CFacade {
 	 * Set method for struct member 'image'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> image for clone tool </p>
+	 * <p>{@link Image}  for clone tool. </p>
 	 * @see #__DNA__FIELD__image
 	 */
 	
@@ -168,7 +168,7 @@ public class BrushClone extends CFacade {
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset of clone image from canvas </p>
+	 * <p> Offset of clone image from canvas. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -189,7 +189,7 @@ public class BrushClone extends CFacade {
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset of clone image from canvas </p>
+	 * <p> Offset of clone image from canvas. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -212,6 +212,9 @@ public class BrushClone extends CFacade {
 
 	/**
 	 * Get method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transparency for drawing of clone image. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -226,6 +229,9 @@ public class BrushClone extends CFacade {
 
 	/**
 	 * Set method for struct member 'alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Transparency for drawing of clone image. </p>
 	 * @see #__DNA__FIELD__alpha
 	 */
 	
@@ -239,36 +245,42 @@ public class BrushClone extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> transparency for drawing of clone image </p>
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public float getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 20);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> transparency for drawing of clone image </p>
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 20, pad);
+			__dna__offset = 20;
 		} else {
-			__io__block.writeFloat(__io__address + 16, pad);
+			__dna__offset = 16;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

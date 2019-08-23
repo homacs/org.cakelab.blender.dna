@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=116, size64=144)
+@CMetaData(size32=136, size64=176)
 public class Palette extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class Palette extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 470;
+	public static final int __DNA__SDNA_INDEX = 441;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -43,7 +44,7 @@ public class Palette extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -53,7 +54,7 @@ public class Palette extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> pointer to individual colours </p>
+	 * <p> Pointer to individual colors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,7 +71,7 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colors = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__colors = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
@@ -90,27 +91,27 @@ public class Palette extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_color = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__active_color = new long[]{128, 168};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Palette palette = ...;
-	 * CPointer&lt;Object&gt; p = palette.__dna__addressof(Palette.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = palette.__dna__addressof(Palette.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{112, 140};
+	public static final long[] __DNA__FIELD___pad = new long[]{132, 172};
 
 	public Palette(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -161,16 +162,16 @@ public class Palette extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> pointer to individual colours </p>
+	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */
 	
 	public ListBase getColors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 100, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -179,7 +180,7 @@ public class Palette extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> pointer to individual colours </p>
+	 * <p> Pointer to individual colors. </p>
 	 * @see #__DNA__FIELD__colors
 	 */
 	
@@ -187,9 +188,9 @@ public class Palette extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 120;
 		}
 		if (__io__equals(colors, __io__address + __dna__offset)) {
 			return;
@@ -208,9 +209,9 @@ public class Palette extends CFacade {
 	public int getActive_color() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -222,37 +223,49 @@ public class Palette extends CFacade {
 	public void setActive_color(int active_color) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, active_color);
+			__io__block.writeInt(__io__address + 168, active_color);
 		} else {
-			__io__block.writeInt(__io__address + 108, active_color);
+			__io__block.writeInt(__io__address + 128, active_color);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, pad);
+			__dna__offset = 172;
 		} else {
-			__io__block.writeInt(__io__address + 112, pad);
+			__dna__offset = 132;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

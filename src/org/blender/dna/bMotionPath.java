@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=36, size64=40)
+@CMetaData(size32=52, size64=72)
 public class bMotionPath extends CFacade {
 
 	/**
@@ -30,13 +30,13 @@ public class bMotionPath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 345;
+	public static final int __DNA__SDNA_INDEX = 313;
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> path samples </p>
+	 * <p>{@link Path}  samples. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,7 +59,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the number of cached verts </p>
+	 * <p> The number of cached verts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -82,7 +82,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the start frame number </p>
+	 * <p> For drawing paths, the start frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -105,7 +105,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the end frame number </p>
+	 * <p> For drawing paths, the end frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -128,7 +128,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional custom color </p>
+	 * <p> Optional custom color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,7 +151,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> line thickness </p>
+	 * <p> Line thickness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,7 +174,7 @@ public class bMotionPath extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> baking settings - eMotionPath_Flag </p>
+	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -193,6 +193,89 @@ public class bMotionPath extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{32, 36};
 
+	/**
+	 * Field descriptor (offset) for struct member 'points_vbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for drawing. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD__points_vbo);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_points_vbo = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'points_vbo'</li>
+	 * <li>Signature: 'GPUVertBuf*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__points_vbo = new long[]{36, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'batch_line'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD__batch_line);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_line = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'batch_line'</li>
+	 * <li>Signature: 'GPUBatch*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__batch_line = new long[]{40, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'batch_points'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD__batch_points);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_points = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'batch_points'</li>
+	 * <li>Signature: 'GPUBatch*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__batch_points = new long[]{44, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMotionPath bmotionpath = ...;
+	 * CPointer&lt;Object&gt; p = bmotionpath.__dna__addressof(bMotionPath.__DNA__FIELD___pad);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{48, 64};
+
 	public bMotionPath(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -205,7 +288,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> path samples </p>
+	 * <p>{@link Path}  samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -225,7 +308,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> path samples </p>
+	 * <p>{@link Path}  samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -243,7 +326,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the number of cached verts </p>
+	 * <p> The number of cached verts. </p>
 	 * @see #__DNA__FIELD__length
 	 */
 	
@@ -260,7 +343,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the number of cached verts </p>
+	 * <p> The number of cached verts. </p>
 	 * @see #__DNA__FIELD__length
 	 */
 	
@@ -277,7 +360,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the start frame number </p>
+	 * <p> For drawing paths, the start frame number. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
 	
@@ -294,7 +377,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'start_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the start frame number </p>
+	 * <p> For drawing paths, the start frame number. </p>
 	 * @see #__DNA__FIELD__start_frame
 	 */
 	
@@ -311,7 +394,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the end frame number </p>
+	 * <p> For drawing paths, the end frame number. </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
 	
@@ -328,7 +411,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'end_frame'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for drawing paths, the end frame number </p>
+	 * <p> For drawing paths, the end frame number. </p>
 	 * @see #__DNA__FIELD__end_frame
 	 */
 	
@@ -345,7 +428,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional custom color </p>
+	 * <p> Optional custom color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -366,7 +449,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional custom color </p>
+	 * <p> Optional custom color. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -391,7 +474,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> line thickness </p>
+	 * <p> Line thickness. </p>
 	 * @see #__DNA__FIELD__line_thickness
 	 */
 	
@@ -408,7 +491,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'line_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> line thickness </p>
+	 * <p> Line thickness. </p>
 	 * @see #__DNA__FIELD__line_thickness
 	 */
 	
@@ -425,7 +508,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> baking settings - eMotionPath_Flag </p>
+	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -442,7 +525,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> baking settings - eMotionPath_Flag </p>
+	 * <p> Baking settings - eMotionPath_Flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -452,6 +535,140 @@ public class bMotionPath extends CFacade {
 			__io__block.writeInt(__io__address + 36, flag);
 		} else {
 			__io__block.writeInt(__io__address + 32, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'points_vbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for drawing. </p>
+	 * @see #__DNA__FIELD__points_vbo
+	 */
+	
+	public CPointer<Object> getPoints_vbo() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'points_vbo'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for drawing. </p>
+	 * @see #__DNA__FIELD__points_vbo
+	 */
+	
+	public void setPoints_vbo(CPointer<Object> points_vbo) throws IOException
+	{
+		long __address = ((points_vbo == null) ? 0 : points_vbo.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 36, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'batch_line'.
+	 * @see #__DNA__FIELD__batch_line
+	 */
+	
+	public CPointer<Object> getBatch_line() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'batch_line'.
+	 * @see #__DNA__FIELD__batch_line
+	 */
+	
+	public void setBatch_line(CPointer<Object> batch_line) throws IOException
+	{
+		long __address = ((batch_line == null) ? 0 : batch_line.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 48, __address);
+		} else {
+			__io__block.writeLong(__io__address + 40, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'batch_points'.
+	 * @see #__DNA__FIELD__batch_points
+	 */
+	
+	public CPointer<Object> getBatch_points() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 44);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'batch_points'.
+	 * @see #__DNA__FIELD__batch_points
+	 */
+	
+	public void setBatch_points(CPointer<Object> batch_points) throws IOException
+	{
+		long __address = ((batch_points == null) ? 0 : batch_points.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 56, __address);
+		} else {
+			__io__block.writeLong(__io__address + 44, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CPointer<Object> get_pad() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CPointer<Object> _pad) throws IOException
+	{
+		long __address = ((_pad == null) ? 0 : _pad.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 64, __address);
+		} else {
+			__io__block.writeLong(__io__address + 48, __address);
 		}
 	}
 

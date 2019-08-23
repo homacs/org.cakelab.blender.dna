@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=248)
+@CMetaData(size32=496, size64=552)
 public class Camera extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Camera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 25;
+	public static final int __DNA__SDNA_INDEX = 33;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Camera extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class Camera extends CFacade {
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,14 +70,14 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Camera types<h4>Blender Source Code:</h4>
-	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO </p>
+	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,13 +94,13 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__type = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> draw type extra </p>
+	 * <p> Draw type extra. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,7 +117,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dtx = new long[]{105, 129};
+	public static final long[] __DNA__FIELD__dtx = new long[]{125, 161};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -137,7 +137,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{106, 130};
+	public static final long[] __DNA__FIELD__flag = new long[]{126, 162};
 
 	/**
 	 * Field descriptor (offset) for struct member 'passepartalpha'.
@@ -157,7 +157,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__passepartalpha = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__passepartalpha = new long[]{128, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipsta'.
@@ -177,7 +177,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipsta = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__clipsta = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipend'.
@@ -197,7 +197,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipend = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__clipend = new long[]{136, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lens'.
@@ -220,7 +220,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lens = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__lens = new long[]{140, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ortho_scale'.
@@ -243,7 +243,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ortho_scale = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__ortho_scale = new long[]{144, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawsize'.
@@ -263,7 +263,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawsize = new long[]{128, 152};
+	public static final long[] __DNA__FIELD__drawsize = new long[]{148, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_x'.
@@ -283,7 +283,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sensor_x = new long[]{132, 156};
+	public static final long[] __DNA__FIELD__sensor_x = new long[]{152, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_y'.
@@ -303,7 +303,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sensor_y = new long[]{136, 160};
+	public static final long[] __DNA__FIELD__sensor_y = new long[]{156, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shiftx'.
@@ -323,7 +323,7 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shiftx = new long[]{140, 164};
+	public static final long[] __DNA__FIELD__shiftx = new long[]{160, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shifty'.
@@ -343,13 +343,10 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shifty = new long[]{144, 168};
+	public static final long[] __DNA__FIELD__shifty = new long[]{164, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'YF_dofdist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> yafray: dof params qdn: yafray var 'YF_dofdist' now enabled for defocus composite node as well. The name was not changed so that no other files need to be modified </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -366,15 +363,15 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__YF_dofdist = new long[]{148, 172};
+	public static final long[] __DNA__FIELD__YF_dofdist = new long[]{168, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,10 +388,15 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{152, 176};
+	public static final long[] __DNA__FIELD__ipo = new long[]{172, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dof_ob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -411,13 +413,15 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dof_ob = new long[]{156, 184};
+	public static final long[] __DNA__FIELD__dof_ob = new long[]{176, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -431,10 +435,56 @@ public class Camera extends CFacade {
 	 * <ul>
 	 * <li>Field: 'gpu_dof'</li>
 	 * <li>Signature: 'GPUDOFSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 24/24</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpu_dof = new long[]{160, 192};
+	public static final long[] __DNA__FIELD__gpu_dof = new long[]{180, 224};
+
+	/**
+	 * Field descriptor (offset) for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Camera camera = ...;
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__dof);
+	 * CPointer&lt;CameraDOFSettings&gt; p_dof = p.cast(new Class[]{CameraDOFSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'dof'</li>
+	 * <li>Signature: 'CameraDOFSettings'</li>
+	 * <li>Actual Size (32bit/64bit): 28/32</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__dof = new long[]{212, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bg_images'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link CameraBGImage}  reference images </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Camera camera = ...;
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__bg_images);
+	 * CPointer&lt;ListBase&gt; p_bg_images = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bg_images'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bg_images = new long[]{240, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_fit'.
@@ -457,27 +507,27 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sensor_fit = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__sensor_fit = new long[]{248, 304};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Camera camera = ...;
-	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{185, 217};
+	public static final long[] __DNA__FIELD___pad = new long[]{249, 305};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo'.
@@ -501,7 +551,30 @@ public class Camera extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo = new long[]{192, 224};
+	public static final long[] __DNA__FIELD__stereo = new long[]{256, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data (keep last). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Camera camera = ...;
+	 * CPointer&lt;Object&gt; p = camera.__dna__addressof(Camera.__DNA__FIELD__runtime);
+	 * CPointer&lt;Camera_Runtime&gt; p_runtime = p.cast(new Class[]{Camera_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'Camera_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 216/216</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{280, 336};
 
 	public Camera(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -551,7 +624,7 @@ public class Camera extends CFacade {
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -559,9 +632,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -571,7 +644,7 @@ public class Camera extends CFacade {
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -579,9 +652,9 @@ public class Camera extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -590,16 +663,16 @@ public class Camera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Camera types<h4>Blender Source Code:</h4>
-	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO </p>
+	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 128);
+			return __io__block.readByte(__io__address + 160);
 		} else {
-			return __io__block.readByte(__io__address + 104);
+			return __io__block.readByte(__io__address + 124);
 		}
 	}
 
@@ -608,16 +681,16 @@ public class Camera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Camera types<h4>Blender Source Code:</h4>
-	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO </p>
+	 * <p> CAM_PERSP, CAM_ORTHO or CAM_PANO. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 128, type);
+			__io__block.writeByte(__io__address + 160, type);
 		} else {
-			__io__block.writeByte(__io__address + 104, type);
+			__io__block.writeByte(__io__address + 124, type);
 		}
 	}
 
@@ -625,16 +698,16 @@ public class Camera extends CFacade {
 	 * Get method for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> draw type extra </p>
+	 * <p> Draw type extra. </p>
 	 * @see #__DNA__FIELD__dtx
 	 */
 	
 	public byte getDtx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 129);
+			return __io__block.readByte(__io__address + 161);
 		} else {
-			return __io__block.readByte(__io__address + 105);
+			return __io__block.readByte(__io__address + 125);
 		}
 	}
 
@@ -642,16 +715,16 @@ public class Camera extends CFacade {
 	 * Set method for struct member 'dtx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> draw type extra </p>
+	 * <p> Draw type extra. </p>
 	 * @see #__DNA__FIELD__dtx
 	 */
 	
 	public void setDtx(byte dtx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 129, dtx);
+			__io__block.writeByte(__io__address + 161, dtx);
 		} else {
-			__io__block.writeByte(__io__address + 105, dtx);
+			__io__block.writeByte(__io__address + 125, dtx);
 		}
 	}
 
@@ -663,9 +736,9 @@ public class Camera extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 130);
+			return __io__block.readShort(__io__address + 162);
 		} else {
-			return __io__block.readShort(__io__address + 106);
+			return __io__block.readShort(__io__address + 126);
 		}
 	}
 
@@ -677,9 +750,9 @@ public class Camera extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 130, flag);
+			__io__block.writeShort(__io__address + 162, flag);
 		} else {
-			__io__block.writeShort(__io__address + 106, flag);
+			__io__block.writeShort(__io__address + 126, flag);
 		}
 	}
 
@@ -691,9 +764,9 @@ public class Camera extends CFacade {
 	public float getPassepartalpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 164);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -705,9 +778,9 @@ public class Camera extends CFacade {
 	public void setPassepartalpha(float passepartalpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 132, passepartalpha);
+			__io__block.writeFloat(__io__address + 164, passepartalpha);
 		} else {
-			__io__block.writeFloat(__io__address + 108, passepartalpha);
+			__io__block.writeFloat(__io__address + 128, passepartalpha);
 		}
 	}
 
@@ -719,9 +792,9 @@ public class Camera extends CFacade {
 	public float getClipsta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 168);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -733,9 +806,9 @@ public class Camera extends CFacade {
 	public void setClipsta(float clipsta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, clipsta);
+			__io__block.writeFloat(__io__address + 168, clipsta);
 		} else {
-			__io__block.writeFloat(__io__address + 112, clipsta);
+			__io__block.writeFloat(__io__address + 132, clipsta);
 		}
 	}
 
@@ -747,9 +820,9 @@ public class Camera extends CFacade {
 	public float getClipend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
@@ -761,9 +834,9 @@ public class Camera extends CFacade {
 	public void setClipend(float clipend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, clipend);
+			__io__block.writeFloat(__io__address + 172, clipend);
 		} else {
-			__io__block.writeFloat(__io__address + 116, clipend);
+			__io__block.writeFloat(__io__address + 136, clipend);
 		}
 	}
 
@@ -778,9 +851,9 @@ public class Camera extends CFacade {
 	public float getLens() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 176);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -795,9 +868,9 @@ public class Camera extends CFacade {
 	public void setLens(float lens) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, lens);
+			__io__block.writeFloat(__io__address + 176, lens);
 		} else {
-			__io__block.writeFloat(__io__address + 120, lens);
+			__io__block.writeFloat(__io__address + 140, lens);
 		}
 	}
 
@@ -812,9 +885,9 @@ public class Camera extends CFacade {
 	public float getOrtho_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 180);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -829,9 +902,9 @@ public class Camera extends CFacade {
 	public void setOrtho_scale(float ortho_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, ortho_scale);
+			__io__block.writeFloat(__io__address + 180, ortho_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 124, ortho_scale);
+			__io__block.writeFloat(__io__address + 144, ortho_scale);
 		}
 	}
 
@@ -843,9 +916,9 @@ public class Camera extends CFacade {
 	public float getDrawsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -857,9 +930,9 @@ public class Camera extends CFacade {
 	public void setDrawsize(float drawsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 152, drawsize);
+			__io__block.writeFloat(__io__address + 184, drawsize);
 		} else {
-			__io__block.writeFloat(__io__address + 128, drawsize);
+			__io__block.writeFloat(__io__address + 148, drawsize);
 		}
 	}
 
@@ -871,9 +944,9 @@ public class Camera extends CFacade {
 	public float getSensor_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -885,9 +958,9 @@ public class Camera extends CFacade {
 	public void setSensor_x(float sensor_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, sensor_x);
+			__io__block.writeFloat(__io__address + 188, sensor_x);
 		} else {
-			__io__block.writeFloat(__io__address + 132, sensor_x);
+			__io__block.writeFloat(__io__address + 152, sensor_x);
 		}
 	}
 
@@ -899,9 +972,9 @@ public class Camera extends CFacade {
 	public float getSensor_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -913,9 +986,9 @@ public class Camera extends CFacade {
 	public void setSensor_y(float sensor_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, sensor_y);
+			__io__block.writeFloat(__io__address + 192, sensor_y);
 		} else {
-			__io__block.writeFloat(__io__address + 136, sensor_y);
+			__io__block.writeFloat(__io__address + 156, sensor_y);
 		}
 	}
 
@@ -927,9 +1000,9 @@ public class Camera extends CFacade {
 	public float getShiftx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -941,9 +1014,9 @@ public class Camera extends CFacade {
 	public void setShiftx(float shiftx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, shiftx);
+			__io__block.writeFloat(__io__address + 196, shiftx);
 		} else {
-			__io__block.writeFloat(__io__address + 140, shiftx);
+			__io__block.writeFloat(__io__address + 160, shiftx);
 		}
 	}
 
@@ -955,9 +1028,9 @@ public class Camera extends CFacade {
 	public float getShifty() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -969,43 +1042,37 @@ public class Camera extends CFacade {
 	public void setShifty(float shifty) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, shifty);
+			__io__block.writeFloat(__io__address + 200, shifty);
 		} else {
-			__io__block.writeFloat(__io__address + 144, shifty);
+			__io__block.writeFloat(__io__address + 164, shifty);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'YF_dofdist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> yafray: dof params qdn: yafray var 'YF_dofdist' now enabled for defocus composite node as well. The name was not changed so that no other files need to be modified </p>
 	 * @see #__DNA__FIELD__YF_dofdist
 	 */
 	
 	public float getYF_dofdist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'YF_dofdist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> yafray: dof params qdn: yafray var 'YF_dofdist' now enabled for defocus composite node as well. The name was not changed so that no other files need to be modified </p>
 	 * @see #__DNA__FIELD__YF_dofdist
 	 */
 	
 	public void setYF_dofdist(float YF_dofdist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, YF_dofdist);
+			__io__block.writeFloat(__io__address + 204, YF_dofdist);
 		} else {
-			__io__block.writeFloat(__io__address + 148, YF_dofdist);
+			__io__block.writeFloat(__io__address + 168, YF_dofdist);
 		}
 	}
 
@@ -1013,9 +1080,9 @@ public class Camera extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -1023,9 +1090,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1035,9 +1102,9 @@ public class Camera extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -1045,14 +1112,19 @@ public class Camera extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'dof_ob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__dof_ob
 	 */
 	
@@ -1060,9 +1132,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1070,6 +1142,11 @@ public class Camera extends CFacade {
 
 	/**
 	 * Set method for struct member 'dof_ob'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__dof_ob
 	 */
 	
@@ -1077,34 +1154,38 @@ public class Camera extends CFacade {
 	{
 		long __address = ((dof_ob == null) ? 0 : dof_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gpu_dof
 	 */
 	
 	public GPUDOFSettings getGpu_dof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new GPUDOFSettings(__io__address + 192, __io__block, __io__blockTable);
+			return new GPUDOFSettings(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new GPUDOFSettings(__io__address + 160, __io__block, __io__blockTable);
+			return new GPUDOFSettings(__io__address + 180, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'gpu_dof'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gpu_dof
 	 */
 	
@@ -1112,9 +1193,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 180;
 		}
 		if (__io__equals(gpu_dof, __io__address + __dna__offset)) {
 			return;
@@ -1122,6 +1203,90 @@ public class Camera extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, gpu_dof);
 		} else {
 			__io__generic__copy( getGpu_dof(), gpu_dof);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__dof
+	 */
+	
+	public CameraDOFSettings getDof() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new CameraDOFSettings(__io__address + 256, __io__block, __io__blockTable);
+		} else {
+			return new CameraDOFSettings(__io__address + 212, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'dof'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__dof
+	 */
+	
+	public void setDof(CameraDOFSettings dof) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 256;
+		} else {
+			__dna__offset = 212;
+		}
+		if (__io__equals(dof, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, dof)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, dof);
+		} else {
+			__io__generic__copy( getDof(), dof);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bg_images'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link CameraBGImage}  reference images </p>
+	 * @see #__DNA__FIELD__bg_images
+	 */
+	
+	public ListBase getBg_images() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 288, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bg_images'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link CameraBGImage}  reference images </p>
+	 * @see #__DNA__FIELD__bg_images
+	 */
+	
+	public void setBg_images(ListBase bg_images) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 288;
+		} else {
+			__dna__offset = 240;
+		}
+		if (__io__equals(bg_images, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, bg_images)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, bg_images);
+		} else {
+			__io__generic__copy( getBg_images(), bg_images);
 		}
 	}
 
@@ -1136,9 +1301,9 @@ public class Camera extends CFacade {
 	public byte getSensor_fit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 216);
+			return __io__block.readByte(__io__address + 304);
 		} else {
-			return __io__block.readByte(__io__address + 184);
+			return __io__block.readByte(__io__address + 248);
 		}
 	}
 
@@ -1153,49 +1318,49 @@ public class Camera extends CFacade {
 	public void setSensor_fit(byte sensor_fit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 216, sensor_fit);
+			__io__block.writeByte(__io__address + 304, sensor_fit);
 		} else {
-			__io__block.writeByte(__io__address + 184, sensor_fit);
+			__io__block.writeByte(__io__address + 248, sensor_fit);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 217, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 185, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 249, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 217;
+			__dna__offset = 305;
 		} else {
-			__dna__offset = 185;
+			__dna__offset = 249;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1211,9 +1376,9 @@ public class Camera extends CFacade {
 	public CameraStereoSettings getStereo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CameraStereoSettings(__io__address + 224, __io__block, __io__blockTable);
+			return new CameraStereoSettings(__io__address + 312, __io__block, __io__blockTable);
 		} else {
-			return new CameraStereoSettings(__io__address + 192, __io__block, __io__blockTable);
+			return new CameraStereoSettings(__io__address + 256, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1230,9 +1395,9 @@ public class Camera extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 256;
 		}
 		if (__io__equals(stereo, __io__address + __dna__offset)) {
 			return;
@@ -1240,6 +1405,48 @@ public class Camera extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, stereo);
 		} else {
 			__io__generic__copy( getStereo(), stereo);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data (keep last). </p>
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public Camera_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new Camera_Runtime(__io__address + 336, __io__block, __io__blockTable);
+		} else {
+			return new Camera_Runtime(__io__address + 280, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime data (keep last). </p>
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(Camera_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 336;
+		} else {
+			__dna__offset = 280;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

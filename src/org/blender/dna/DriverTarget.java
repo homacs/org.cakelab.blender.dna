@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Drivers ------------------------------------  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
+ * <p> Drivers --------------------------------<mdash/><mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
 @CMetaData(size32=80, size64=88)
@@ -28,14 +28,14 @@ public class DriverTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 516;
+	public static final int __DNA__SDNA_INDEX = 523;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
-	 * <p> ID-block which owns the target, no user count </p>
+	 * <p> ID-block which owns the target, no user count. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +58,7 @@ public class DriverTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class DriverTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
+	 * <p> Name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -104,7 +104,7 @@ public class DriverTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
+	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN.) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,7 +127,7 @@ public class DriverTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
+	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,7 +150,7 @@ public class DriverTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of ID-block that this target can use </p>
+	 * <p> Type of ID-block that this target can use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,7 +182,7 @@ public class DriverTarget extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
-	 * <p> ID-block which owns the target, no user count </p>
+	 * <p> ID-block which owns the target, no user count. </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -203,7 +203,7 @@ public class DriverTarget extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * ID-block that the specific property used can be found from (id_type property must be set first)<h4>Blender Source Code:</h4>
-	 * <p> ID-block which owns the target, no user count </p>
+	 * <p> ID-block which owns the target, no user count. </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -221,7 +221,7 @@ public class DriverTarget extends CFacade {
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -241,7 +241,7 @@ public class DriverTarget extends CFacade {
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP) </p>
+	 * <p> RNA path defining the setting to use (for DVAR_TYPE_SINGLE_PROP). </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -259,7 +259,7 @@ public class DriverTarget extends CFacade {
 	 * Get method for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
+	 * <p> Name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
 	
@@ -280,7 +280,7 @@ public class DriverTarget extends CFacade {
 	 * Set method for struct member 'pchan_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2 </p>
+	 * <p> Name of the posebone to use (for vars where DTAR_FLAG_STRUCT_REF is used) - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__pchan_name
 	 */
 	
@@ -305,7 +305,7 @@ public class DriverTarget extends CFacade {
 	 * Get method for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
+	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN.) </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
 	
@@ -322,7 +322,7 @@ public class DriverTarget extends CFacade {
 	 * Set method for struct member 'transChan'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform channel index (for DVAR_TYPE_TRANSFORM_CHAN) </p>
+	 * <p> Transform channel index (for DVAR_TYPE_TRANSFORM_CHAN.) </p>
 	 * @see #__DNA__FIELD__transChan
 	 */
 	
@@ -339,7 +339,7 @@ public class DriverTarget extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
+	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -356,7 +356,7 @@ public class DriverTarget extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the validity of the target (NOTE: these get reset every time the types change) </p>
+	 * <p> Flags for the validity of the target (NOTE: these get reset every time the types change). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -373,7 +373,7 @@ public class DriverTarget extends CFacade {
 	 * Get method for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of ID-block that this target can use </p>
+	 * <p> Type of ID-block that this target can use. </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	
@@ -390,7 +390,7 @@ public class DriverTarget extends CFacade {
 	 * Set method for struct member 'idtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of ID-block that this target can use </p>
+	 * <p> Type of ID-block that this target can use. </p>
 	 * @see #__DNA__FIELD__idtype
 	 */
 	

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=980, size64=984)
+@CMetaData(size32=972, size64=976)
 public class NodeTexBrick extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexBrick extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 437;
+	public static final int __DNA__SDNA_INDEX = 405;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -43,7 +43,7 @@ public class NodeTexBrick extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class NodeTexBrick extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_freq = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__offset_freq = new long[]{956, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'squash_freq'.
@@ -86,7 +86,7 @@ public class NodeTexBrick extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__squash_freq = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__squash_freq = new long[]{960, 964};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -106,7 +106,7 @@ public class NodeTexBrick extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{972, 976};
+	public static final long[] __DNA__FIELD__offset = new long[]{964, 968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'squash'.
@@ -126,7 +126,7 @@ public class NodeTexBrick extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__squash = new long[]{976, 980};
+	public static final long[] __DNA__FIELD__squash = new long[]{968, 972};
 
 	public NodeTexBrick(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -180,9 +180,9 @@ public class NodeTexBrick extends CFacade {
 	public int getOffset_freq() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		} else {
-			return __io__block.readInt(__io__address + 964);
+			return __io__block.readInt(__io__address + 956);
 		}
 	}
 
@@ -194,9 +194,9 @@ public class NodeTexBrick extends CFacade {
 	public void setOffset_freq(int offset_freq) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 968, offset_freq);
+			__io__block.writeInt(__io__address + 960, offset_freq);
 		} else {
-			__io__block.writeInt(__io__address + 964, offset_freq);
+			__io__block.writeInt(__io__address + 956, offset_freq);
 		}
 	}
 
@@ -208,9 +208,9 @@ public class NodeTexBrick extends CFacade {
 	public int getSquash_freq() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 964);
 		} else {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		}
 	}
 
@@ -222,9 +222,9 @@ public class NodeTexBrick extends CFacade {
 	public void setSquash_freq(int squash_freq) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, squash_freq);
+			__io__block.writeInt(__io__address + 964, squash_freq);
 		} else {
-			__io__block.writeInt(__io__address + 968, squash_freq);
+			__io__block.writeInt(__io__address + 960, squash_freq);
 		}
 	}
 
@@ -236,9 +236,9 @@ public class NodeTexBrick extends CFacade {
 	public float getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 976);
+			return __io__block.readFloat(__io__address + 968);
 		} else {
-			return __io__block.readFloat(__io__address + 972);
+			return __io__block.readFloat(__io__address + 964);
 		}
 	}
 
@@ -250,9 +250,9 @@ public class NodeTexBrick extends CFacade {
 	public void setOffset(float offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 976, offset);
+			__io__block.writeFloat(__io__address + 968, offset);
 		} else {
-			__io__block.writeFloat(__io__address + 972, offset);
+			__io__block.writeFloat(__io__address + 964, offset);
 		}
 	}
 
@@ -264,9 +264,9 @@ public class NodeTexBrick extends CFacade {
 	public float getSquash() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 980);
+			return __io__block.readFloat(__io__address + 972);
 		} else {
-			return __io__block.readFloat(__io__address + 976);
+			return __io__block.readFloat(__io__address + 968);
 		}
 	}
 
@@ -278,9 +278,9 @@ public class NodeTexBrick extends CFacade {
 	public void setSquash(float squash) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 980, squash);
+			__io__block.writeFloat(__io__address + 972, squash);
 		} else {
-			__io__block.writeFloat(__io__address + 976, squash);
+			__io__block.writeFloat(__io__address + 968, squash);
 		}
 	}
 

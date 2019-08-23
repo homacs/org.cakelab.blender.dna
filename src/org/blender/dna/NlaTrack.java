@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> NLA Tracks -----------------------------------  NLA Track (nlt)</p><p> A track groups a bunch of 'strips', which should form a continuous set of motion, on top of which other such groups can be layered. This should allow for animators to work in a non-destructive manner, layering tweaks, etc. over 'rough' blocks of their work. </p>
+ * <p> NLA Tracks -------------------------------<mdash/><mdash/>  NLA Track (nlt)</p><p> A track groups a bunch of 'strips', which should form a continuous set of motion, on top of which other such groups can be layered. This should allow for animators to work in a non-destructive manner, layering tweaks, etc. over 'rough' blocks of their work. </p>
  */
 
 @CMetaData(size32=88, size64=104)
@@ -28,7 +28,7 @@ public class NlaTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 524;
+	public static final int __DNA__SDNA_INDEX = 529;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -75,7 +75,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips on this NLA-track<h4>Blender Source Code:</h4>
-	 * <p> bActionStrips in this track </p>
+	 * <p> BActionStrips in this track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class NlaTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for this track </p>
+	 * <p> Settings for this track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -121,7 +121,8 @@ public class NlaTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of the track in the stack (NOTE: not really useful, but we need a pad var anyways!) </p>
+	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -144,7 +145,7 @@ public class NlaTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short user-description of this track - MAX_ID_NAME-2 </p>
+	 * <p> Short user-description of this track - MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -240,7 +241,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips on this NLA-track<h4>Blender Source Code:</h4>
-	 * <p> bActionStrips in this track </p>
+	 * <p> BActionStrips in this track. </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -258,7 +259,7 @@ public class NlaTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips on this NLA-track<h4>Blender Source Code:</h4>
-	 * <p> bActionStrips in this track </p>
+	 * <p> BActionStrips in this track. </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -283,7 +284,7 @@ public class NlaTrack extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for this track </p>
+	 * <p> Settings for this track. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -300,7 +301,7 @@ public class NlaTrack extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for this track </p>
+	 * <p> Settings for this track. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -317,7 +318,8 @@ public class NlaTrack extends CFacade {
 	 * Get method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of the track in the stack (NOTE: not really useful, but we need a pad var anyways!) </p>
+	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -334,7 +336,8 @@ public class NlaTrack extends CFacade {
 	 * Set method for struct member 'index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index of the track in the stack (NOTE: not really useful, but we need a pad var anyways!) </p>
+	 * <p> Index of the track in the stack <h2>Note</h2><p> not really useful, but we need a '_pad' var anyways! </p> not really useful, but we need a '_pad' var anyways! 
+	 * </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -351,7 +354,7 @@ public class NlaTrack extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short user-description of this track - MAX_ID_NAME-2 </p>
+	 * <p> Short user-description of this track - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -372,7 +375,7 @@ public class NlaTrack extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short user-description of this track - MAX_ID_NAME-2 </p>
+	 * <p> Short user-description of this track - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

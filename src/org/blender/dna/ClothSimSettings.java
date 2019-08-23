@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> This struct contains all the global data required to run a simulation. At the time of this writing, this structure contains data appropriate to run a simulation as described in Deformation Constraints in a Mass-Spring Model to Describe Rigid Cloth Behavior by Xavier Provot.</p><p> I've tried to keep similar, if not exact names for the variables as are presented in the paper. Where I've changed the concept slightly, as in stepsPerFrame compared to the time step in the paper, I've used variables with different names to minimize confusion. </p>
  */
 
-@CMetaData(size32=184, size64=192)
+@CMetaData(size32=216, size64=224)
 public class ClothSimSettings extends CFacade {
 
 	/**
@@ -28,13 +28,13 @@ public class ClothSimSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 487;
+	public static final int __DNA__SDNA_INDEX = 459;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm </p>
+	 * <p> UNUSED atm. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -80,7 +80,9 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'Cdis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Mechanical damping of springs. </p>
+	 * <p> Mechanical damping of springs. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -149,7 +151,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed. </p>
+	 * <p> This is the duration of our time step, computed.. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -195,7 +197,9 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'structural'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Structural spring stiffness. </p>
+	 * <p> Structural spring stiffness. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -264,7 +268,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'max_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max bending scaling value, min is "bending" </p>
+	 * <p> Max bending scaling value, min is "bending". </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,7 +291,9 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'max_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max structural scaling value, min is "structural" </p>
+	 * <p> Max structural scaling value, min is "structural". 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,7 +316,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'max_shear'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max shear scaling value, UNUSED </p>
+	 * <p> Max shear scaling value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -333,7 +339,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'max_sewing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max sewing force </p>
+	 * <p> Max sewing force. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -356,7 +362,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'avg_spring_len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for normalized springs </p>
+	 * <p> Used for normalized springs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -379,7 +385,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'timescale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parameter how fast cloth runs </p>
+	 * <p> Parameter how fast cloth runs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -402,7 +408,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiplies cloth speed </p>
+	 * <p> Multiplies cloth speed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -425,7 +431,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'maxgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -448,7 +454,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,7 +477,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -574,7 +580,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'velocity_smooth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoothing of velocities for hair </p>
+	 * <p> Smoothing of velocities for hair. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -597,7 +603,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'density_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimum density for hair </p>
+	 * <p> Minimum density for hair. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -620,7 +626,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'density_strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of hair density </p>
+	 * <p> Influence of hair density. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -643,7 +649,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'collider_friction'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction with colliders </p>
+	 * <p> Friction with colliders. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -666,7 +672,9 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vel_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> damp the velocity to speed up getting to the resting position </p>
+	 * <p> Damp the velocity to speed up getting to the resting position. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -689,7 +697,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'shrink_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -712,7 +720,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'shrink_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -735,7 +743,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadydamping of bending springs </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -758,7 +766,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'voxel_cell_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of voxel grid cells for continuum dynamics </p>
+	 * <p> Size of voxel grid cells for continuum dynamics. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -778,24 +786,24 @@ public class ClothSimSettings extends CFacade {
 	public static final long[] __DNA__FIELD__voxel_cell_size = new long[]{136, 140};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ClothSimSettings clothsimsettings = ...;
-	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{140, 144};
+	public static final long[] __DNA__FIELD___pad = new long[]{140, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stepsPerFrame'.
@@ -824,7 +832,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags, see CSIMSETT_FLAGS enum above. </p>
+	 * <p> Flags, see CSIMSETT_FLAGS enum above. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -847,9 +855,9 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'preroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> How many frames of simulation to do before we start. </p>
+	 * <p> How many frames of simulation to do before we start. 
 	 * @deprecated
-	 *  DeprecatedHow many frames of simulation to do before we start. </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -872,7 +880,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'maxspringlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in percent!; if tearing enabled, a spring will get cut </p>
+	 * <p> In percent!; if tearing enabled, a spring will get cut. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -895,7 +903,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'solver_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> which solver should be used? txold </p>
+	 * <p> Which solver should be used? txold. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -918,7 +926,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling bending stiffness </p>
+	 * <p> Vertex group for scaling bending stiffness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -941,7 +949,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name for assigning weight. </p>
+	 * <p> Optional vertexgroup name for assigning weight.. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -964,7 +972,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -987,7 +995,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_shrink'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for shrinking cloth </p>
+	 * <p> Vertex group for shrinking cloth. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1010,7 +1018,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'shapekey_rest'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1033,7 +1041,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'presets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for presets on GUI </p>
+	 * <p> Used for presets on GUI. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1073,24 +1081,24 @@ public class ClothSimSettings extends CFacade {
 	public static final long[] __DNA__FIELD__reset = new long[]{174, 178};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad0'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ClothSimSettings clothsimsettings = ...;
-	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__pad0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad0'</li>
+	 * <li>Field: '_pad0'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad0 = new long[]{176, 180};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{176, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -1112,6 +1120,198 @@ public class ClothSimSettings extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__effector_weights = new long[]{180, 184};
 
+	/**
+	 * Field descriptor (offset) for struct member 'bending_model'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__bending_model);
+	 * CPointer&lt;Short&gt; p_bending_model = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bending_model'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bending_model = new long[]{184, 192};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vgroup_shear'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group for scaling structural stiffness. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__vgroup_shear);
+	 * CPointer&lt;Short&gt; p_vgroup_shear = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vgroup_shear'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vgroup_shear = new long[]{186, 194};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tension'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__tension);
+	 * CPointer&lt;Float&gt; p_tension = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tension'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tension = new long[]{188, 196};
+
+	/**
+	 * Field descriptor (offset) for struct member 'compression'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__compression);
+	 * CPointer&lt;Float&gt; p_compression = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'compression'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__compression = new long[]{192, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'max_tension'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__max_tension);
+	 * CPointer&lt;Float&gt; p_max_tension = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'max_tension'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__max_tension = new long[]{196, 204};
+
+	/**
+	 * Field descriptor (offset) for struct member 'max_compression'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__max_compression);
+	 * CPointer&lt;Float&gt; p_max_compression = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'max_compression'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__max_compression = new long[]{200, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tension_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of tension springs. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__tension_damp);
+	 * CPointer&lt;Float&gt; p_tension_damp = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tension_damp'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tension_damp = new long[]{204, 212};
+
+	/**
+	 * Field descriptor (offset) for struct member 'compression_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of compression springs. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__compression_damp);
+	 * CPointer&lt;Float&gt; p_compression_damp = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'compression_damp'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__compression_damp = new long[]{208, 216};
+
+	/**
+	 * Field descriptor (offset) for struct member 'shear_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of shear springs. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothSimSettings clothsimsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothsimsettings.__dna__addressof(ClothSimSettings.__DNA__FIELD__shear_damp);
+	 * CPointer&lt;Float&gt; p_shear_damp = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shear_damp'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shear_damp = new long[]{212, 220};
+
 	public ClothSimSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -1124,7 +1324,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm </p>
+	 * <p> UNUSED atm. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -1144,7 +1344,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> UNUSED atm </p>
+	 * <p> UNUSED atm. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -1162,7 +1362,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * @see #__DNA__FIELD__mingoal
 	 */
 	
@@ -1179,7 +1379,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * @see #__DNA__FIELD__mingoal
 	 */
 	
@@ -1196,7 +1396,9 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'Cdis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Mechanical damping of springs. </p>
+	 * <p> Mechanical damping of springs. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__Cdis
 	 */
 	
@@ -1213,7 +1415,9 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'Cdis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Mechanical damping of springs. </p>
+	 * <p> Mechanical damping of springs. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__Cdis
 	 */
 	
@@ -1310,7 +1514,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed. </p>
+	 * <p> This is the duration of our time step, computed.. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -1327,7 +1531,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed. </p>
+	 * <p> This is the duration of our time step, computed.. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -1378,7 +1582,9 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'structural'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Structural spring stiffness. </p>
+	 * <p> Structural spring stiffness. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__structural
 	 */
 	
@@ -1395,7 +1601,9 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'structural'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Structural spring stiffness. </p>
+	 * <p> Structural spring stiffness. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__structural
 	 */
 	
@@ -1480,7 +1688,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'max_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max bending scaling value, min is "bending" </p>
+	 * <p> Max bending scaling value, min is "bending". </p>
 	 * @see #__DNA__FIELD__max_bend
 	 */
 	
@@ -1497,7 +1705,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'max_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max bending scaling value, min is "bending" </p>
+	 * <p> Max bending scaling value, min is "bending". </p>
 	 * @see #__DNA__FIELD__max_bend
 	 */
 	
@@ -1514,7 +1722,9 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'max_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max structural scaling value, min is "structural" </p>
+	 * <p> Max structural scaling value, min is "structural". 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__max_struct
 	 */
 	
@@ -1531,7 +1741,9 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'max_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max structural scaling value, min is "structural" </p>
+	 * <p> Max structural scaling value, min is "structural". 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__max_struct
 	 */
 	
@@ -1548,7 +1760,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'max_shear'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max shear scaling value, UNUSED </p>
+	 * <p> Max shear scaling value. </p>
 	 * @see #__DNA__FIELD__max_shear
 	 */
 	
@@ -1565,7 +1777,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'max_shear'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max shear scaling value, UNUSED </p>
+	 * <p> Max shear scaling value. </p>
 	 * @see #__DNA__FIELD__max_shear
 	 */
 	
@@ -1582,7 +1794,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'max_sewing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max sewing force </p>
+	 * <p> Max sewing force. </p>
 	 * @see #__DNA__FIELD__max_sewing
 	 */
 	
@@ -1599,7 +1811,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'max_sewing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max sewing force </p>
+	 * <p> Max sewing force. </p>
 	 * @see #__DNA__FIELD__max_sewing
 	 */
 	
@@ -1616,7 +1828,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'avg_spring_len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for normalized springs </p>
+	 * <p> Used for normalized springs. </p>
 	 * @see #__DNA__FIELD__avg_spring_len
 	 */
 	
@@ -1633,7 +1845,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'avg_spring_len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for normalized springs </p>
+	 * <p> Used for normalized springs. </p>
 	 * @see #__DNA__FIELD__avg_spring_len
 	 */
 	
@@ -1650,7 +1862,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'timescale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parameter how fast cloth runs </p>
+	 * <p> Parameter how fast cloth runs. </p>
 	 * @see #__DNA__FIELD__timescale
 	 */
 	
@@ -1667,7 +1879,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'timescale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parameter how fast cloth runs </p>
+	 * <p> Parameter how fast cloth runs. </p>
 	 * @see #__DNA__FIELD__timescale
 	 */
 	
@@ -1684,7 +1896,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiplies cloth speed </p>
+	 * <p> Multiplies cloth speed. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
@@ -1701,7 +1913,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiplies cloth speed </p>
+	 * <p> Multiplies cloth speed. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
@@ -1718,7 +1930,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'maxgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * @see #__DNA__FIELD__maxgoal
 	 */
 	
@@ -1735,7 +1947,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'maxgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SB </p>
+	 * <p> See SB. </p>
 	 * @see #__DNA__FIELD__maxgoal
 	 */
 	
@@ -1752,7 +1964,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
 	 * @see #__DNA__FIELD__eff_force_scale
 	 */
 	
@@ -1769,7 +1981,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
 	 * @see #__DNA__FIELD__eff_force_scale
 	 */
 	
@@ -1786,7 +1998,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -1803,7 +2015,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces). </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -1932,7 +2144,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'velocity_smooth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoothing of velocities for hair </p>
+	 * <p> Smoothing of velocities for hair. </p>
 	 * @see #__DNA__FIELD__velocity_smooth
 	 */
 	
@@ -1949,7 +2161,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'velocity_smooth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> smoothing of velocities for hair </p>
+	 * <p> Smoothing of velocities for hair. </p>
 	 * @see #__DNA__FIELD__velocity_smooth
 	 */
 	
@@ -1966,7 +2178,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'density_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimum density for hair </p>
+	 * <p> Minimum density for hair. </p>
 	 * @see #__DNA__FIELD__density_target
 	 */
 	
@@ -1983,7 +2195,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'density_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimum density for hair </p>
+	 * <p> Minimum density for hair. </p>
 	 * @see #__DNA__FIELD__density_target
 	 */
 	
@@ -2000,7 +2212,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'density_strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of hair density </p>
+	 * <p> Influence of hair density. </p>
 	 * @see #__DNA__FIELD__density_strength
 	 */
 	
@@ -2017,7 +2229,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'density_strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of hair density </p>
+	 * <p> Influence of hair density. </p>
 	 * @see #__DNA__FIELD__density_strength
 	 */
 	
@@ -2034,7 +2246,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'collider_friction'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction with colliders </p>
+	 * <p> Friction with colliders. </p>
 	 * @see #__DNA__FIELD__collider_friction
 	 */
 	
@@ -2051,7 +2263,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'collider_friction'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction with colliders </p>
+	 * <p> Friction with colliders. </p>
 	 * @see #__DNA__FIELD__collider_friction
 	 */
 	
@@ -2068,7 +2280,9 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vel_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> damp the velocity to speed up getting to the resting position </p>
+	 * <p> Damp the velocity to speed up getting to the resting position. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__vel_damping
 	 */
 	
@@ -2085,7 +2299,9 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vel_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> damp the velocity to speed up getting to the resting position </p>
+	 * <p> Damp the velocity to speed up getting to the resting position. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__vel_damping
 	 */
 	
@@ -2102,7 +2318,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'shrink_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * @see #__DNA__FIELD__shrink_min
 	 */
 	
@@ -2119,7 +2335,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'shrink_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Min amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * @see #__DNA__FIELD__shrink_min
 	 */
 	
@@ -2136,7 +2352,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'shrink_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * @see #__DNA__FIELD__shrink_max
 	 */
 	
@@ -2153,7 +2369,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'shrink_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing) </p>
+	 * <p> Max amount to shrink cloth by 0.0f (no shrink) - 1.0f (shrink to nothing). </p>
 	 * @see #__DNA__FIELD__shrink_max
 	 */
 	
@@ -2170,7 +2386,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadydamping of bending springs </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
 	 * @see #__DNA__FIELD__bending_damping
 	 */
 	
@@ -2187,7 +2403,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadydamping of bending springs </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
 	 * @see #__DNA__FIELD__bending_damping
 	 */
 	
@@ -2204,7 +2420,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'voxel_cell_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of voxel grid cells for continuum dynamics </p>
+	 * <p> Size of voxel grid cells for continuum dynamics. </p>
 	 * @see #__DNA__FIELD__voxel_cell_size
 	 */
 	
@@ -2221,7 +2437,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'voxel_cell_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of voxel grid cells for continuum dynamics </p>
+	 * <p> Size of voxel grid cells for continuum dynamics. </p>
 	 * @see #__DNA__FIELD__voxel_cell_size
 	 */
 	
@@ -2235,30 +2451,42 @@ public class ClothSimSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, pad);
+			__dna__offset = 144;
 		} else {
-			__io__block.writeInt(__io__address + 140, pad);
+			__dna__offset = 140;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -2300,7 +2528,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags, see CSIMSETT_FLAGS enum above. </p>
+	 * <p> Flags, see CSIMSETT_FLAGS enum above. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -2317,7 +2545,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags, see CSIMSETT_FLAGS enum above. </p>
+	 * <p> Flags, see CSIMSETT_FLAGS enum above. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
@@ -2334,9 +2562,9 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'preroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> How many frames of simulation to do before we start. </p>
+	 * <p> How many frames of simulation to do before we start. 
 	 * @deprecated
-	 *  DeprecatedHow many frames of simulation to do before we start. </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__preroll
 	 */
 	
@@ -2353,9 +2581,9 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'preroll'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> How many frames of simulation to do before we start. </p>
+	 * <p> How many frames of simulation to do before we start. 
 	 * @deprecated
-	 *  DeprecatedHow many frames of simulation to do before we start. </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__preroll
 	 */
 	
@@ -2372,7 +2600,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'maxspringlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in percent!; if tearing enabled, a spring will get cut </p>
+	 * <p> In percent!; if tearing enabled, a spring will get cut. </p>
 	 * @see #__DNA__FIELD__maxspringlen
 	 */
 	
@@ -2389,7 +2617,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'maxspringlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in percent!; if tearing enabled, a spring will get cut </p>
+	 * <p> In percent!; if tearing enabled, a spring will get cut. </p>
 	 * @see #__DNA__FIELD__maxspringlen
 	 */
 	
@@ -2406,7 +2634,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'solver_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> which solver should be used? txold </p>
+	 * <p> Which solver should be used? txold. </p>
 	 * @see #__DNA__FIELD__solver_type
 	 */
 	
@@ -2423,7 +2651,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'solver_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> which solver should be used? txold </p>
+	 * <p> Which solver should be used? txold. </p>
 	 * @see #__DNA__FIELD__solver_type
 	 */
 	
@@ -2440,7 +2668,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vgroup_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling bending stiffness </p>
+	 * <p> Vertex group for scaling bending stiffness. </p>
 	 * @see #__DNA__FIELD__vgroup_bend
 	 */
 	
@@ -2457,7 +2685,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vgroup_bend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling bending stiffness </p>
+	 * <p> Vertex group for scaling bending stiffness. </p>
 	 * @see #__DNA__FIELD__vgroup_bend
 	 */
 	
@@ -2474,7 +2702,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name for assigning weight. </p>
+	 * <p> Optional vertexgroup name for assigning weight.. </p>
 	 * @see #__DNA__FIELD__vgroup_mass
 	 */
 	
@@ -2491,7 +2719,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vgroup_mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional vertexgroup name for assigning weight. </p>
+	 * <p> Optional vertexgroup name for assigning weight.. </p>
 	 * @see #__DNA__FIELD__vgroup_mass
 	 */
 	
@@ -2508,7 +2736,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vgroup_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * @see #__DNA__FIELD__vgroup_struct
 	 */
 	
@@ -2525,7 +2753,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vgroup_struct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * @see #__DNA__FIELD__vgroup_struct
 	 */
 	
@@ -2542,7 +2770,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'vgroup_shrink'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for shrinking cloth </p>
+	 * <p> Vertex group for shrinking cloth. </p>
 	 * @see #__DNA__FIELD__vgroup_shrink
 	 */
 	
@@ -2559,7 +2787,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'vgroup_shrink'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for shrinking cloth </p>
+	 * <p> Vertex group for shrinking cloth. </p>
 	 * @see #__DNA__FIELD__vgroup_shrink
 	 */
 	
@@ -2576,7 +2804,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'shapekey_rest'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * @see #__DNA__FIELD__shapekey_rest
 	 */
 	
@@ -2593,7 +2821,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'shapekey_rest'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex group for scaling structural stiffness </p>
+	 * <p> Vertex group for scaling structural stiffness. </p>
 	 * @see #__DNA__FIELD__shapekey_rest
 	 */
 	
@@ -2610,7 +2838,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'presets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for presets on GUI </p>
+	 * <p> Used for presets on GUI. </p>
 	 * @see #__DNA__FIELD__presets
 	 */
 	
@@ -2627,7 +2855,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'presets'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used for presets on GUI </p>
+	 * <p> Used for presets on GUI. </p>
 	 * @see #__DNA__FIELD__presets
 	 */
 	
@@ -2669,11 +2897,11 @@ public class ClothSimSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad0'.
-	 * @see #__DNA__FIELD__pad0
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public CArrayFacade<Byte> getPad0() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -2687,11 +2915,11 @@ public class ClothSimSettings extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad0'.
-	 * @see #__DNA__FIELD__pad0
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad0(CArrayFacade<Byte> pad0) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -2699,12 +2927,12 @@ public class ClothSimSettings extends CFacade {
 		} else {
 			__dna__offset = 176;
 		}
-		if (__io__equals(pad0, __io__address + __dna__offset)) {
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad0);
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
 		} else {
-			__io__generic__copy( getPad0(), pad0);
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -2737,6 +2965,282 @@ public class ClothSimSettings extends CFacade {
 			__io__block.writeLong(__io__address + 184, __address);
 		} else {
 			__io__block.writeLong(__io__address + 180, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bending_model'.
+	 * @see #__DNA__FIELD__bending_model
+	 */
+	
+	public short getBending_model() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 192);
+		} else {
+			return __io__block.readShort(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bending_model'.
+	 * @see #__DNA__FIELD__bending_model
+	 */
+	
+	public void setBending_model(short bending_model) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 192, bending_model);
+		} else {
+			__io__block.writeShort(__io__address + 184, bending_model);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vgroup_shear'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group for scaling structural stiffness. </p>
+	 * @see #__DNA__FIELD__vgroup_shear
+	 */
+	
+	public short getVgroup_shear() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 194);
+		} else {
+			return __io__block.readShort(__io__address + 186);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vgroup_shear'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex group for scaling structural stiffness. </p>
+	 * @see #__DNA__FIELD__vgroup_shear
+	 */
+	
+	public void setVgroup_shear(short vgroup_shear) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 194, vgroup_shear);
+		} else {
+			__io__block.writeShort(__io__address + 186, vgroup_shear);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tension'.
+	 * @see #__DNA__FIELD__tension
+	 */
+	
+	public float getTension() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 196);
+		} else {
+			return __io__block.readFloat(__io__address + 188);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tension'.
+	 * @see #__DNA__FIELD__tension
+	 */
+	
+	public void setTension(float tension) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 196, tension);
+		} else {
+			__io__block.writeFloat(__io__address + 188, tension);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'compression'.
+	 * @see #__DNA__FIELD__compression
+	 */
+	
+	public float getCompression() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 200);
+		} else {
+			return __io__block.readFloat(__io__address + 192);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'compression'.
+	 * @see #__DNA__FIELD__compression
+	 */
+	
+	public void setCompression(float compression) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 200, compression);
+		} else {
+			__io__block.writeFloat(__io__address + 192, compression);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'max_tension'.
+	 * @see #__DNA__FIELD__max_tension
+	 */
+	
+	public float getMax_tension() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 204);
+		} else {
+			return __io__block.readFloat(__io__address + 196);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_tension'.
+	 * @see #__DNA__FIELD__max_tension
+	 */
+	
+	public void setMax_tension(float max_tension) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 204, max_tension);
+		} else {
+			__io__block.writeFloat(__io__address + 196, max_tension);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'max_compression'.
+	 * @see #__DNA__FIELD__max_compression
+	 */
+	
+	public float getMax_compression() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 208);
+		} else {
+			return __io__block.readFloat(__io__address + 200);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_compression'.
+	 * @see #__DNA__FIELD__max_compression
+	 */
+	
+	public void setMax_compression(float max_compression) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 208, max_compression);
+		} else {
+			__io__block.writeFloat(__io__address + 200, max_compression);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tension_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of tension springs. </p>
+	 * @see #__DNA__FIELD__tension_damp
+	 */
+	
+	public float getTension_damp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 212);
+		} else {
+			return __io__block.readFloat(__io__address + 204);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tension_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of tension springs. </p>
+	 * @see #__DNA__FIELD__tension_damp
+	 */
+	
+	public void setTension_damp(float tension_damp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 212, tension_damp);
+		} else {
+			__io__block.writeFloat(__io__address + 204, tension_damp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'compression_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of compression springs. </p>
+	 * @see #__DNA__FIELD__compression_damp
+	 */
+	
+	public float getCompression_damp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 216);
+		} else {
+			return __io__block.readFloat(__io__address + 208);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'compression_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of compression springs. </p>
+	 * @see #__DNA__FIELD__compression_damp
+	 */
+	
+	public void setCompression_damp(float compression_damp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 216, compression_damp);
+		} else {
+			__io__block.writeFloat(__io__address + 208, compression_damp);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'shear_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of shear springs. </p>
+	 * @see #__DNA__FIELD__shear_damp
+	 */
+	
+	public float getShear_damp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 220);
+		} else {
+			return __io__block.readFloat(__io__address + 212);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'shear_damp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mechanical damping of shear springs. </p>
+	 * @see #__DNA__FIELD__shear_damp
+	 */
+	
+	public void setShear_damp(float shear_damp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 220, shear_damp);
+		} else {
+			__io__block.writeFloat(__io__address + 212, shear_damp);
 		}
 	}
 

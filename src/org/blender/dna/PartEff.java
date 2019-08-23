@@ -27,7 +27,7 @@ public class PartEff extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 293;
+	public static final int __DNA__SDNA_INDEX = 302;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -510,26 +510,6 @@ public class PartEff extends CFacade {
 	public static final long[] __DNA__FIELD__maxlen = new long[]{88, 96};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * PartEff parteff = ...;
-	 * CPointer&lt;Object&gt; p = parteff.__dna__addressof(PartEff.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{92, 100};
-
-	/**
 	 * Field descriptor (offset) for struct member 'defvec'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -547,7 +527,27 @@ public class PartEff extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defvec = new long[]{96, 104};
+	public static final long[] __DNA__FIELD__defvec = new long[]{92, 100};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PartEff parteff = ...;
+	 * CPointer&lt;Object&gt; p = parteff.__dna__addressof(PartEff.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{104, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mult'.
@@ -831,6 +831,9 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -851,9 +854,6 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroupname_v'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -876,7 +876,7 @@ public class PartEff extends CFacade {
 	 * Field descriptor (offset) for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix of parent {@link Object}  </p>
+	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -924,12 +924,12 @@ public class PartEff extends CFacade {
 	 * <pre>
 	 * PartEff parteff = ...;
 	 * CPointer&lt;Object&gt; p = parteff.__dna__addressof(PartEff.__DNA__FIELD__group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -1636,34 +1636,6 @@ public class PartEff extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public float getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
-		} else {
-			return __io__block.readFloat(__io__address + 92);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(float pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, pad);
-		} else {
-			__io__block.writeFloat(__io__address + 92, pad);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'defvec'.
 	 * @see #__DNA__FIELD__defvec
 	 */
@@ -1675,9 +1647,9 @@ public class PartEff extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1690,9 +1662,9 @@ public class PartEff extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 92;
 		}
 		if (__io__equals(defvec, __io__address + __dna__offset)) {
 			return;
@@ -1700,6 +1672,46 @@ public class PartEff extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, defvec);
 		} else {
 			__io__generic__copy( getDefvec(), defvec);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 112;
+		} else {
+			__dna__offset = 104;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -2145,6 +2157,9 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroupname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroupname
 	 */
 	
@@ -2163,6 +2178,9 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroupname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__vgroupname
 	 */
 	
@@ -2185,9 +2203,6 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Get method for struct member 'vgroupname_v'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroupname_v
 	 */
 	
@@ -2206,9 +2221,6 @@ public class PartEff extends CFacade {
 
 	/**
 	 * Set method for struct member 'vgroupname_v'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__vgroupname_v
 	 */
 	
@@ -2233,7 +2245,7 @@ public class PartEff extends CFacade {
 	 * Get method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix of parent {@link Object}  </p>
+	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -2255,7 +2267,7 @@ public class PartEff extends CFacade {
 	 * Set method for struct member 'imat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix of parent {@link Object}  </p>
+	 * <p> Inverse matrix of parent {@link Object} . </p>
 	 * @see #__DNA__FIELD__imat
 	 */
 	
@@ -2313,7 +2325,7 @@ public class PartEff extends CFacade {
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public CPointer<Group> getGroup() throws IOException
+	public CPointer<Collection> getGroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -2321,8 +2333,8 @@ public class PartEff extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 372);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -2330,7 +2342,7 @@ public class PartEff extends CFacade {
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public void setGroup(CPointer<Group> group) throws IOException
+	public void setGroup(CPointer<Collection> group) throws IOException
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {

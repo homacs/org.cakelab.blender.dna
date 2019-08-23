@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=972, size64=976)
+@CMetaData(size32=964, size64=968)
 public class NodeTexWave extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexWave extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 443;
+	public static final int __DNA__SDNA_INDEX = 411;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -43,7 +43,7 @@ public class NodeTexWave extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class NodeTexWave extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_type = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__wave_type = new long[]{956, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wave_profile'.
@@ -86,7 +86,7 @@ public class NodeTexWave extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_profile = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__wave_profile = new long[]{960, 964};
 
 	public NodeTexWave(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -140,9 +140,9 @@ public class NodeTexWave extends CFacade {
 	public int getWave_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		} else {
-			return __io__block.readInt(__io__address + 964);
+			return __io__block.readInt(__io__address + 956);
 		}
 	}
 
@@ -154,9 +154,9 @@ public class NodeTexWave extends CFacade {
 	public void setWave_type(int wave_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 968, wave_type);
+			__io__block.writeInt(__io__address + 960, wave_type);
 		} else {
-			__io__block.writeInt(__io__address + 964, wave_type);
+			__io__block.writeInt(__io__address + 956, wave_type);
 		}
 	}
 
@@ -168,9 +168,9 @@ public class NodeTexWave extends CFacade {
 	public int getWave_profile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 964);
 		} else {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		}
 	}
 
@@ -182,9 +182,9 @@ public class NodeTexWave extends CFacade {
 	public void setWave_profile(int wave_profile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, wave_profile);
+			__io__block.writeInt(__io__address + 964, wave_profile);
 		} else {
-			__io__block.writeInt(__io__address + 968, wave_profile);
+			__io__block.writeInt(__io__address + 960, wave_profile);
 		}
 	}
 

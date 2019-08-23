@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Spline IK Constraint Aligns 'n' bones to the curvature defined by the curve, with the chain ending on the bone that owns this constraint, and starting on the nth parent. </p>
  */
 
-@CMetaData(size32=32, size64=40)
+@CMetaData(size32=40, size64=48)
 public class bSplineIKConstraint extends CFacade {
 
 	/**
@@ -27,13 +28,13 @@ public class bSplineIKConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 361;
+	public static final int __DNA__SDNA_INDEX = 331;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target(s) curve object (with follow path enabled) which drives the bone chain </p>
+	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +57,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> binding details array of numpoints items, denoting parametric positions along curve that joints should follow </p>
+	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +80,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points to bound in points array </p>
+	 * <p> Number of points to bound in points array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,7 +103,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of bones ('n') that are in the chain </p>
+	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -125,7 +126,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings general settings for constraint </p>
+	 * <p> settings General settings for constraint. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,7 +149,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> method used for determining the x & z scaling of the bones </p>
+	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,6 +167,49 @@ public class bSplineIKConstraint extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__xzScaleMode = new long[]{14, 22};
+
+	/**
+	 * Field descriptor (offset) for struct member 'yScaleMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method used for determining the y scaling of the bones. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD__yScaleMode);
+	 * CPointer&lt;Short&gt; p_yScaleMode = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'yScaleMode'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__yScaleMode = new long[]{16, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bSplineIKConstraint bsplineikconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bsplineikconstraint.__dna__addressof(bSplineIKConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'short[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{18, 26};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bulge'.
@@ -188,7 +232,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bulge = new long[]{16, 24};
+	public static final long[] __DNA__FIELD__bulge = new long[]{24, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bulge_min'.
@@ -208,7 +252,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bulge_min = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__bulge_min = new long[]{28, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bulge_max'.
@@ -228,7 +272,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bulge_max = new long[]{24, 32};
+	public static final long[] __DNA__FIELD__bulge_max = new long[]{32, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bulge_smooth'.
@@ -248,7 +292,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bulge_smooth = new long[]{28, 36};
+	public static final long[] __DNA__FIELD__bulge_smooth = new long[]{36, 44};
 
 	public bSplineIKConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -262,7 +306,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target(s) curve object (with follow path enabled) which drives the bone chain </p>
+	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -282,7 +326,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target(s) curve object (with follow path enabled) which drives the bone chain </p>
+	 * <p> target(s) {@link Curve}  object (with follow path enabled) which drives the bone chain. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -300,7 +344,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> binding details array of numpoints items, denoting parametric positions along curve that joints should follow </p>
+	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -320,7 +364,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> binding details array of numpoints items, denoting parametric positions along curve that joints should follow </p>
+	 * <p> binding details Array of numpoints items, denoting parametric positions along curve that joints should follow. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -338,7 +382,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points to bound in points array </p>
+	 * <p> Number of points to bound in points array. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */
 	
@@ -355,7 +399,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'numpoints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points to bound in points array </p>
+	 * <p> Number of points to bound in points array. </p>
 	 * @see #__DNA__FIELD__numpoints
 	 */
 	
@@ -372,7 +416,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of bones ('n') that are in the chain </p>
+	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * @see #__DNA__FIELD__chainlen
 	 */
 	
@@ -389,7 +433,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'chainlen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of bones ('n') that are in the chain </p>
+	 * <p> Number of bones ('n') that are in the chain. </p>
 	 * @see #__DNA__FIELD__chainlen
 	 */
 	
@@ -406,7 +450,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings general settings for constraint </p>
+	 * <p> settings General settings for constraint. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -423,7 +467,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings general settings for constraint </p>
+	 * <p> settings General settings for constraint. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -440,7 +484,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Get method for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> method used for determining the x & z scaling of the bones </p>
+	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * @see #__DNA__FIELD__xzScaleMode
 	 */
 	
@@ -457,7 +501,7 @@ public class bSplineIKConstraint extends CFacade {
 	 * Set method for struct member 'xzScaleMode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> method used for determining the x & z scaling of the bones </p>
+	 * <p> Method used for determining the x & z scaling of the bones. </p>
 	 * @see #__DNA__FIELD__xzScaleMode
 	 */
 	
@@ -467,6 +511,80 @@ public class bSplineIKConstraint extends CFacade {
 			__io__block.writeShort(__io__address + 22, xzScaleMode);
 		} else {
 			__io__block.writeShort(__io__address + 14, xzScaleMode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'yScaleMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method used for determining the y scaling of the bones. </p>
+	 * @see #__DNA__FIELD__yScaleMode
+	 */
+	
+	public short getYScaleMode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 24);
+		} else {
+			return __io__block.readShort(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'yScaleMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Method used for determining the y scaling of the bones. </p>
+	 * @see #__DNA__FIELD__yScaleMode
+	 */
+	
+	public void setYScaleMode(short yScaleMode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 24, yScaleMode);
+		} else {
+			__io__block.writeShort(__io__address + 16, yScaleMode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Short> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Short>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Short>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Short> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 26;
+		} else {
+			__dna__offset = 18;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -481,9 +599,9 @@ public class bSplineIKConstraint extends CFacade {
 	public float getBulge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 32);
 		} else {
-			return __io__block.readFloat(__io__address + 16);
+			return __io__block.readFloat(__io__address + 24);
 		}
 	}
 
@@ -498,9 +616,9 @@ public class bSplineIKConstraint extends CFacade {
 	public void setBulge(float bulge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 24, bulge);
+			__io__block.writeFloat(__io__address + 32, bulge);
 		} else {
-			__io__block.writeFloat(__io__address + 16, bulge);
+			__io__block.writeFloat(__io__address + 24, bulge);
 		}
 	}
 
@@ -512,9 +630,9 @@ public class bSplineIKConstraint extends CFacade {
 	public float getBulge_min() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 28);
+			return __io__block.readFloat(__io__address + 36);
 		} else {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readFloat(__io__address + 28);
 		}
 	}
 
@@ -526,9 +644,9 @@ public class bSplineIKConstraint extends CFacade {
 	public void setBulge_min(float bulge_min) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 28, bulge_min);
+			__io__block.writeFloat(__io__address + 36, bulge_min);
 		} else {
-			__io__block.writeFloat(__io__address + 20, bulge_min);
+			__io__block.writeFloat(__io__address + 28, bulge_min);
 		}
 	}
 
@@ -540,9 +658,9 @@ public class bSplineIKConstraint extends CFacade {
 	public float getBulge_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 32);
+			return __io__block.readFloat(__io__address + 40);
 		} else {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 32);
 		}
 	}
 
@@ -554,9 +672,9 @@ public class bSplineIKConstraint extends CFacade {
 	public void setBulge_max(float bulge_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 32, bulge_max);
+			__io__block.writeFloat(__io__address + 40, bulge_max);
 		} else {
-			__io__block.writeFloat(__io__address + 24, bulge_max);
+			__io__block.writeFloat(__io__address + 32, bulge_max);
 		}
 	}
 
@@ -568,9 +686,9 @@ public class bSplineIKConstraint extends CFacade {
 	public float getBulge_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readFloat(__io__address + 44);
 		} else {
-			return __io__block.readFloat(__io__address + 28);
+			return __io__block.readFloat(__io__address + 36);
 		}
 	}
 
@@ -582,9 +700,9 @@ public class bSplineIKConstraint extends CFacade {
 	public void setBulge_smooth(float bulge_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 36, bulge_smooth);
+			__io__block.writeFloat(__io__address + 44, bulge_smooth);
 		} else {
-			__io__block.writeFloat(__io__address + 28, bulge_smooth);
+			__io__block.writeFloat(__io__address + 36, bulge_smooth);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=256, size64=280)
+@CMetaData(size32=260, size64=288)
 public class DisplaceModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class DisplaceModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 101;
+	public static final int __DNA__SDNA_INDEX = 107;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__texture = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_object'.
@@ -90,13 +90,13 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_object = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__map_object = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -113,7 +113,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{108, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -133,7 +133,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -153,7 +153,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{172, 196};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{176, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -176,7 +176,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__strength = new long[]{180, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'direction'.
@@ -196,13 +196,13 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__direction = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__direction = new long[]{184, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -219,7 +219,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{184, 208};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{188, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'midlevel'.
@@ -239,7 +239,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__midlevel = new long[]{248, 272};
+	public static final long[] __DNA__FIELD__midlevel = new long[]{252, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
@@ -259,7 +259,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space = new long[]{252, 276};
+	public static final long[] __DNA__FIELD__space = new long[]{256, 284};
 
 	public DisplaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -317,9 +317,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -337,9 +337,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __address = ((texture == null) ? 0 : texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -352,9 +352,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -369,9 +369,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __address = ((map_object == null) ? 0 : map_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -379,7 +379,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -390,9 +390,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -400,7 +400,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Set method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvlayer_name
 	 */
 	
@@ -408,9 +408,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 108;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -429,9 +429,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 200);
 		} else {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -443,9 +443,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 200, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 168, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 172, uvlayer_tmp);
 		}
 	}
 
@@ -457,9 +457,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -471,9 +471,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, texmapping);
+			__io__block.writeInt(__io__address + 204, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 172, texmapping);
+			__io__block.writeInt(__io__address + 176, texmapping);
 		}
 	}
 
@@ -488,9 +488,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -505,9 +505,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, strength);
+			__io__block.writeFloat(__io__address + 208, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 176, strength);
+			__io__block.writeFloat(__io__address + 180, strength);
 		}
 	}
 
@@ -519,9 +519,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getDirection() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 212);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -533,9 +533,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setDirection(int direction) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, direction);
+			__io__block.writeInt(__io__address + 212, direction);
 		} else {
-			__io__block.writeInt(__io__address + 180, direction);
+			__io__block.writeInt(__io__address + 184, direction);
 		}
 	}
 
@@ -543,7 +543,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -554,9 +554,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -564,7 +564,7 @@ public class DisplaceModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -572,9 +572,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 188;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -593,9 +593,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getMidlevel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -607,9 +607,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setMidlevel(float midlevel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, midlevel);
+			__io__block.writeFloat(__io__address + 280, midlevel);
 		} else {
-			__io__block.writeFloat(__io__address + 248, midlevel);
+			__io__block.writeFloat(__io__address + 252, midlevel);
 		}
 	}
 
@@ -621,9 +621,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 284);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 256);
 		}
 	}
 
@@ -635,9 +635,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setSpace(int space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 276, space);
+			__io__block.writeInt(__io__address + 284, space);
 		} else {
-			__io__block.writeInt(__io__address + 252, space);
+			__io__block.writeInt(__io__address + 256, space);
 		}
 	}
 

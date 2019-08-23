@@ -15,10 +15,10 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  F-Curve DataTypes Modifiers ------------------------------------  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
+ *  F-Curve DataTypes Modifiers --------------------------------<mdash/><mdash/>  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
  */
 
-@CMetaData(size32=100, size64=112)
+@CMetaData(size32=104, size64=120)
 public class FModifier extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class FModifier extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 506;
+	public static final int __DNA__SDNA_INDEX = 513;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -72,10 +72,33 @@ public class FModifier extends CFacade {
 	public static final long[] __DNA__FIELD__prev = new long[]{4, 8};
 
 	/**
+	 * Field descriptor (offset) for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Containing curve, only used for updates to CYCLES. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FModifier fmodifier = ...;
+	 * CPointer&lt;Object&gt; p = fmodifier.__dna__addressof(FModifier.__DNA__FIELD__curve);
+	 * CPointer&lt;CPointer&lt;FCurve&gt;&gt; p_curve = p.cast(new Class[]{CPointer.class, FCurve.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve'</li>
+	 * <li>Signature: 'FCurve*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve = new long[]{8, 16};
+
+	/**
 	 * Field descriptor (offset) for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to modifier data </p>
+	 * <p> Pointer to modifier data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -92,13 +115,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__data = new long[]{8, 16};
+	public static final long[] __DNA__FIELD__data = new long[]{12, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
+	 * <p> User-defined description for the modifier - MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -115,14 +138,14 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{12, 24};
+	public static final long[] __DNA__FIELD__name = new long[]{16, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
-	 * <p> type of f-curve modifier </p>
+	 * <p> Type of f-curve modifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,13 +162,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{76, 88};
+	public static final long[] __DNA__FIELD__type = new long[]{80, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for the modifier </p>
+	 * <p> Settings for the modifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -162,14 +185,14 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{78, 90};
+	public static final long[] __DNA__FIELD__flag = new long[]{82, 98};
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
-	 * <p> the amount that the modifier should influence the value </p>
+	 * <p> The amount that the modifier should influence the value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -186,13 +209,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__influence = new long[]{80, 92};
+	public static final long[] __DNA__FIELD__influence = new long[]{84, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of restricted frame-range </p>
+	 * <p> Start frame of restricted frame-range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -209,13 +232,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{84, 96};
+	public static final long[] __DNA__FIELD__sfra = new long[]{88, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end frame of restricted frame-range </p>
+	 * <p> End frame of restricted frame-range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -232,13 +255,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{88, 100};
+	public static final long[] __DNA__FIELD__efra = new long[]{92, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendin'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from sfra before modifier takes full influence </p>
+	 * <p> Number of frames from sfra before modifier takes full influence. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -255,13 +278,13 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendin = new long[]{92, 104};
+	public static final long[] __DNA__FIELD__blendin = new long[]{96, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from efra before modifier fades out </p>
+	 * <p> Number of frames from efra before modifier fades out. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -278,7 +301,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendout = new long[]{96, 108};
+	public static final long[] __DNA__FIELD__blendout = new long[]{100, 116};
 
 	public FModifier(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -353,10 +376,48 @@ public class FModifier extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Containing curve, only used for updates to CYCLES. </p>
+	 * @see #__DNA__FIELD__curve
+	 */
+	
+	public CPointer<FCurve> getCurve() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{FCurve.class};
+		return new CPointer<FCurve>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FCurve.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Containing curve, only used for updates to CYCLES. </p>
+	 * @see #__DNA__FIELD__curve
+	 */
+	
+	public void setCurve(CPointer<FCurve> curve) throws IOException
+	{
+		long __address = ((curve == null) ? 0 : curve.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 16, __address);
+		} else {
+			__io__block.writeLong(__io__address + 8, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to modifier data </p>
+	 * <p> Pointer to modifier data. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -364,9 +425,9 @@ public class FModifier extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+			__dna__targetAddress = __io__block.readLong(__io__address + 12);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -376,7 +437,7 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to modifier data </p>
+	 * <p> Pointer to modifier data. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -384,9 +445,9 @@ public class FModifier extends CFacade {
 	{
 		long __address = ((data == null) ? 0 : data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		} else {
-			__io__block.writeLong(__io__address + 8, __address);
+			__io__block.writeLong(__io__address + 12, __address);
 		}
 	}
 
@@ -394,7 +455,7 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
+	 * <p> User-defined description for the modifier - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -405,9 +466,9 @@ public class FModifier extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -415,7 +476,7 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-defined description for the modifier - MAX_ID_NAME-2 </p>
+	 * <p> User-defined description for the modifier - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -423,9 +484,9 @@ public class FModifier extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 16;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -441,16 +502,16 @@ public class FModifier extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
-	 * <p> type of f-curve modifier </p>
+	 * <p> Type of f-curve modifier. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 88);
+			return __io__block.readShort(__io__address + 96);
 		} else {
-			return __io__block.readShort(__io__address + 76);
+			return __io__block.readShort(__io__address + 80);
 		}
 	}
 
@@ -459,16 +520,16 @@ public class FModifier extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curve Modifier Type<h4>Blender Source Code:</h4>
-	 * <p> type of f-curve modifier </p>
+	 * <p> Type of f-curve modifier. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 88, type);
+			__io__block.writeShort(__io__address + 96, type);
 		} else {
-			__io__block.writeShort(__io__address + 76, type);
+			__io__block.writeShort(__io__address + 80, type);
 		}
 	}
 
@@ -476,16 +537,16 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for the modifier </p>
+	 * <p> Settings for the modifier. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 90);
+			return __io__block.readShort(__io__address + 98);
 		} else {
-			return __io__block.readShort(__io__address + 78);
+			return __io__block.readShort(__io__address + 82);
 		}
 	}
 
@@ -493,16 +554,16 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for the modifier </p>
+	 * <p> Settings for the modifier. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 90, flag);
+			__io__block.writeShort(__io__address + 98, flag);
 		} else {
-			__io__block.writeShort(__io__address + 78, flag);
+			__io__block.writeShort(__io__address + 82, flag);
 		}
 	}
 
@@ -511,16 +572,16 @@ public class FModifier extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
-	 * <p> the amount that the modifier should influence the value </p>
+	 * <p> The amount that the modifier should influence the value. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public float getInfluence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		} else {
-			return __io__block.readFloat(__io__address + 80);
+			return __io__block.readFloat(__io__address + 84);
 		}
 	}
 
@@ -529,16 +590,16 @@ public class FModifier extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount of influence F-Curve Modifier will have when not fading in/out<h4>Blender Source Code:</h4>
-	 * <p> the amount that the modifier should influence the value </p>
+	 * <p> The amount that the modifier should influence the value. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public void setInfluence(float influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 92, influence);
+			__io__block.writeFloat(__io__address + 100, influence);
 		} else {
-			__io__block.writeFloat(__io__address + 80, influence);
+			__io__block.writeFloat(__io__address + 84, influence);
 		}
 	}
 
@@ -546,16 +607,16 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of restricted frame-range </p>
+	 * <p> Start frame of restricted frame-range. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
 	public float getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 104);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 88);
 		}
 	}
 
@@ -563,16 +624,16 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> start frame of restricted frame-range </p>
+	 * <p> Start frame of restricted frame-range. </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
 	public void setSfra(float sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, sfra);
+			__io__block.writeFloat(__io__address + 104, sfra);
 		} else {
-			__io__block.writeFloat(__io__address + 84, sfra);
+			__io__block.writeFloat(__io__address + 88, sfra);
 		}
 	}
 
@@ -580,16 +641,16 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end frame of restricted frame-range </p>
+	 * <p> End frame of restricted frame-range. </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
 	public float getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 108);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 92);
 		}
 	}
 
@@ -597,16 +658,16 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'efra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> end frame of restricted frame-range </p>
+	 * <p> End frame of restricted frame-range. </p>
 	 * @see #__DNA__FIELD__efra
 	 */
 	
 	public void setEfra(float efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, efra);
+			__io__block.writeFloat(__io__address + 108, efra);
 		} else {
-			__io__block.writeFloat(__io__address + 88, efra);
+			__io__block.writeFloat(__io__address + 92, efra);
 		}
 	}
 
@@ -614,16 +675,16 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'blendin'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from sfra before modifier takes full influence </p>
+	 * <p> Number of frames from sfra before modifier takes full influence. </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
 	public float getBlendin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 96);
 		}
 	}
 
@@ -631,16 +692,16 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'blendin'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from sfra before modifier takes full influence </p>
+	 * <p> Number of frames from sfra before modifier takes full influence. </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
 	public void setBlendin(float blendin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, blendin);
+			__io__block.writeFloat(__io__address + 112, blendin);
 		} else {
-			__io__block.writeFloat(__io__address + 92, blendin);
+			__io__block.writeFloat(__io__address + 96, blendin);
 		}
 	}
 
@@ -648,16 +709,16 @@ public class FModifier extends CFacade {
 	 * Get method for struct member 'blendout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from efra before modifier fades out </p>
+	 * <p> Number of frames from efra before modifier fades out. </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
 	public float getBlendout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -665,16 +726,16 @@ public class FModifier extends CFacade {
 	 * Set method for struct member 'blendout'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames from efra before modifier fades out </p>
+	 * <p> Number of frames from efra before modifier fades out. </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
 	public void setBlendout(float blendout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, blendout);
+			__io__block.writeFloat(__io__address + 116, blendout);
 		} else {
-			__io__block.writeFloat(__io__address + 96, blendout);
+			__io__block.writeFloat(__io__address + 100, blendout);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 558;
+	public static final int __DNA__SDNA_INDEX = 565;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion track for which channel is created </p>
+	 * <p> Motion track for which channel is created. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,30 +93,30 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	public static final long[] __DNA__FIELD__track = new long[]{8, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MovieTrackingDopesheetChannel movietrackingdopesheetchannel = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingdopesheetchannel.__dna__addressof(MovieTrackingDopesheetChannel.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = movietrackingdopesheetchannel.__dna__addressof(MovieTrackingDopesheetChannel.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{12, 24};
+	public static final long[] __DNA__FIELD___pad = new long[]{12, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of channel </p>
+	 * <p> Name of channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,7 +139,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of segments </p>
+	 * <p> Total number of segments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -162,7 +162,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tracked segments </p>
+	 * <p> Tracked segments. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,6 +183,9 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_segment'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,9 +206,6 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'total_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> longest segment length and total number of tracked frames </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -300,7 +300,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Get method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion track for which channel is created </p>
+	 * <p> Motion track for which channel is created. </p>
 	 * @see #__DNA__FIELD__track
 	 */
 	
@@ -320,7 +320,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Set method for struct member 'track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion track for which channel is created </p>
+	 * <p> Motion track for which channel is created. </p>
 	 * @see #__DNA__FIELD__track
 	 */
 	
@@ -335,30 +335,42 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, pad);
+			__dna__offset = 24;
 		} else {
-			__io__block.writeInt(__io__address + 12, pad);
+			__dna__offset = 12;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -366,7 +378,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of channel </p>
+	 * <p> Name of channel. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -387,7 +399,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of channel </p>
+	 * <p> Name of channel. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -412,7 +424,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Get method for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of segments </p>
+	 * <p> Total number of segments. </p>
 	 * @see #__DNA__FIELD__tot_segment
 	 */
 	
@@ -429,7 +441,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Set method for struct member 'tot_segment'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of segments </p>
+	 * <p> Total number of segments. </p>
 	 * @see #__DNA__FIELD__tot_segment
 	 */
 	
@@ -446,7 +458,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Get method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tracked segments </p>
+	 * <p> Tracked segments. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
 	
@@ -466,7 +478,7 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 	 * Set method for struct member 'segments'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> tracked segments </p>
+	 * <p> Tracked segments. </p>
 	 * @see #__DNA__FIELD__segments
 	 */
 	
@@ -482,6 +494,9 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'max_segment'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * @see #__DNA__FIELD__max_segment
 	 */
 	
@@ -496,6 +511,9 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'max_segment'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Longest segment length and total number of tracked frames. </p>
 	 * @see #__DNA__FIELD__max_segment
 	 */
 	
@@ -510,9 +528,6 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Get method for struct member 'total_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> longest segment length and total number of tracked frames </p>
 	 * @see #__DNA__FIELD__total_frames
 	 */
 	
@@ -527,9 +542,6 @@ public class MovieTrackingDopesheetChannel extends CFacade {
 
 	/**
 	 * Set method for struct member 'total_frames'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> longest segment length and total number of tracked frames </p>
 	 * @see #__DNA__FIELD__total_frames
 	 */
 	

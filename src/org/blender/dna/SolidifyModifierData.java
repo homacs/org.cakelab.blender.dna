@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=200, size64=216)
+@CMetaData(size32=204, size64=224)
 public class SolidifyModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SolidifyModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 125;
+	public static final int __DNA__SDNA_INDEX = 131;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class SolidifyModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use, MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,13 +70,13 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> new surface offset level </p>
+	 * <p> New surface offset leve.l </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,13 +93,13 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__offset = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> midpoint of the offset </p>
+	 * <p> Midpoint of the offset . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,7 +116,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac = new long[]{164, 180};
+	public static final long[] __DNA__FIELD__offset_fac = new long[]{168, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac_vg'.
@@ -139,13 +139,13 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{168, 184};
+	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_clamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clamp offset based on surrounding geometry </p>
+	 * <p> Clamp offset based on surrounding geometry. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -162,27 +162,27 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_clamp = new long[]{172, 188};
+	public static final long[] __DNA__FIELD__offset_clamp = new long[]{176, 196};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SolidifyModifierData solidifymodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{176, 192};
+	public static final long[] __DNA__FIELD___pad = new long[]{180, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_inner'.
@@ -202,7 +202,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_inner = new long[]{180, 196};
+	public static final long[] __DNA__FIELD__crease_inner = new long[]{184, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_outer'.
@@ -222,7 +222,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_outer = new long[]{184, 200};
+	public static final long[] __DNA__FIELD__crease_outer = new long[]{188, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_rim'.
@@ -242,7 +242,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_rim = new long[]{188, 204};
+	public static final long[] __DNA__FIELD__crease_rim = new long[]{192, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -262,7 +262,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{192, 208};
+	public static final long[] __DNA__FIELD__flag = new long[]{196, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_ofs'.
@@ -282,7 +282,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat_ofs = new long[]{196, 212};
+	public static final long[] __DNA__FIELD__mat_ofs = new long[]{200, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_ofs_rim'.
@@ -302,7 +302,7 @@ public class SolidifyModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat_ofs_rim = new long[]{198, 214};
+	public static final long[] __DNA__FIELD__mat_ofs_rim = new long[]{202, 222};
 
 	public SolidifyModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -352,7 +352,7 @@ public class SolidifyModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -363,9 +363,9 @@ public class SolidifyModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -373,7 +373,7 @@ public class SolidifyModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> name of vertex group to use, MAX_VGROUP_NAME </p>
+	 * <p> Name of vertex group to use, MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -381,9 +381,9 @@ public class SolidifyModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -398,16 +398,16 @@ public class SolidifyModifierData extends CFacade {
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> new surface offset level </p>
+	 * <p> New surface offset leve.l </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
 	public float getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -415,16 +415,16 @@ public class SolidifyModifierData extends CFacade {
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> new surface offset level </p>
+	 * <p> New surface offset leve.l </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
 	public void setOffset(float offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, offset);
+			__io__block.writeFloat(__io__address + 184, offset);
 		} else {
-			__io__block.writeFloat(__io__address + 160, offset);
+			__io__block.writeFloat(__io__address + 164, offset);
 		}
 	}
 
@@ -432,16 +432,16 @@ public class SolidifyModifierData extends CFacade {
 	 * Get method for struct member 'offset_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> midpoint of the offset </p>
+	 * <p> Midpoint of the offset . </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	
 	public float getOffset_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -449,16 +449,16 @@ public class SolidifyModifierData extends CFacade {
 	 * Set method for struct member 'offset_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> midpoint of the offset </p>
+	 * <p> Midpoint of the offset . </p>
 	 * @see #__DNA__FIELD__offset_fac
 	 */
 	
 	public void setOffset_fac(float offset_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, offset_fac);
+			__io__block.writeFloat(__io__address + 188, offset_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 164, offset_fac);
+			__io__block.writeFloat(__io__address + 168, offset_fac);
 		}
 	}
 
@@ -473,9 +473,9 @@ public class SolidifyModifierData extends CFacade {
 	public float getOffset_fac_vg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -490,9 +490,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setOffset_fac_vg(float offset_fac_vg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 192, offset_fac_vg);
 		} else {
-			__io__block.writeFloat(__io__address + 168, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 172, offset_fac_vg);
 		}
 	}
 
@@ -500,16 +500,16 @@ public class SolidifyModifierData extends CFacade {
 	 * Get method for struct member 'offset_clamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clamp offset based on surrounding geometry </p>
+	 * <p> Clamp offset based on surrounding geometry. </p>
 	 * @see #__DNA__FIELD__offset_clamp
 	 */
 	
 	public float getOffset_clamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -517,44 +517,56 @@ public class SolidifyModifierData extends CFacade {
 	 * Set method for struct member 'offset_clamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clamp offset based on surrounding geometry </p>
+	 * <p> Clamp offset based on surrounding geometry. </p>
 	 * @see #__DNA__FIELD__offset_clamp
 	 */
 	
 	public void setOffset_clamp(float offset_clamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, offset_clamp);
+			__io__block.writeFloat(__io__address + 196, offset_clamp);
 		} else {
-			__io__block.writeFloat(__io__address + 172, offset_clamp);
+			__io__block.writeFloat(__io__address + 176, offset_clamp);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public float getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, pad);
+			__dna__offset = 200;
 		} else {
-			__io__block.writeFloat(__io__address + 176, pad);
+			__dna__offset = 180;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -566,9 +578,9 @@ public class SolidifyModifierData extends CFacade {
 	public float getCrease_inner() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -580,9 +592,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setCrease_inner(float crease_inner) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, crease_inner);
+			__io__block.writeFloat(__io__address + 204, crease_inner);
 		} else {
-			__io__block.writeFloat(__io__address + 180, crease_inner);
+			__io__block.writeFloat(__io__address + 184, crease_inner);
 		}
 	}
 
@@ -594,9 +606,9 @@ public class SolidifyModifierData extends CFacade {
 	public float getCrease_outer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -608,9 +620,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setCrease_outer(float crease_outer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, crease_outer);
+			__io__block.writeFloat(__io__address + 208, crease_outer);
 		} else {
-			__io__block.writeFloat(__io__address + 184, crease_outer);
+			__io__block.writeFloat(__io__address + 188, crease_outer);
 		}
 	}
 
@@ -622,9 +634,9 @@ public class SolidifyModifierData extends CFacade {
 	public float getCrease_rim() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -636,9 +648,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setCrease_rim(float crease_rim) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, crease_rim);
+			__io__block.writeFloat(__io__address + 212, crease_rim);
 		} else {
-			__io__block.writeFloat(__io__address + 188, crease_rim);
+			__io__block.writeFloat(__io__address + 192, crease_rim);
 		}
 	}
 
@@ -650,9 +662,9 @@ public class SolidifyModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -664,9 +676,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, flag);
+			__io__block.writeInt(__io__address + 216, flag);
 		} else {
-			__io__block.writeInt(__io__address + 192, flag);
+			__io__block.writeInt(__io__address + 196, flag);
 		}
 	}
 
@@ -678,9 +690,9 @@ public class SolidifyModifierData extends CFacade {
 	public short getMat_ofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 200);
 		}
 	}
 
@@ -692,9 +704,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setMat_ofs(short mat_ofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, mat_ofs);
+			__io__block.writeShort(__io__address + 220, mat_ofs);
 		} else {
-			__io__block.writeShort(__io__address + 196, mat_ofs);
+			__io__block.writeShort(__io__address + 200, mat_ofs);
 		}
 	}
 
@@ -706,9 +718,9 @@ public class SolidifyModifierData extends CFacade {
 	public short getMat_ofs_rim() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 222);
 		} else {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readShort(__io__address + 202);
 		}
 	}
 
@@ -720,9 +732,9 @@ public class SolidifyModifierData extends CFacade {
 	public void setMat_ofs_rim(short mat_ofs_rim) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, mat_ofs_rim);
+			__io__block.writeShort(__io__address + 222, mat_ofs_rim);
 		} else {
-			__io__block.writeShort(__io__address + 198, mat_ofs_rim);
+			__io__block.writeShort(__io__address + 202, mat_ofs_rim);
 		}
 	}
 

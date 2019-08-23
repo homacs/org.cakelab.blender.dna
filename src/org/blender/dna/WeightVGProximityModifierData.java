@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=332, size64=360)
+@CMetaData(size32=336, size64=368)
 public class WeightVGProximityModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 131;
+	public static final int __DNA__SDNA_INDEX = 137;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_mode'.
@@ -93,7 +93,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proximity_mode = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__proximity_mode = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_flags'.
@@ -113,7 +113,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proximity_flags = new long[]{164, 180};
+	public static final long[] __DNA__FIELD__proximity_flags = new long[]{168, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proximity_ob_target'.
@@ -136,7 +136,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proximity_ob_target = new long[]{168, 184};
+	public static final long[] __DNA__FIELD__proximity_ob_target = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_constant'.
@@ -159,13 +159,13 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_constant = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__mask_constant = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,7 +182,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_defgrp_name = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__mask_defgrp_name = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_use_channel'.
@@ -205,7 +205,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_use_channel = new long[]{240, 260};
+	public static final long[] __DNA__FIELD__mask_tex_use_channel = new long[]{244, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_texture'.
@@ -228,7 +228,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_texture = new long[]{244, 264};
+	public static final long[] __DNA__FIELD__mask_texture = new long[]{248, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_obj'.
@@ -251,13 +251,13 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_map_obj = new long[]{248, 272};
+	public static final long[] __DNA__FIELD__mask_tex_map_obj = new long[]{252, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How to map the texture! </p>
+	 * <p> How to map the texture!. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,7 +274,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_mapping = new long[]{252, 280};
+	public static final long[] __DNA__FIELD__mask_tex_mapping = new long[]{256, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_uvlayer_name'.
@@ -297,10 +297,13 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_uvlayer_name = new long[]{256, 284};
+	public static final long[] __DNA__FIELD__mask_tex_uvlayer_name = new long[]{260, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distances mapping to 0.0/1.0 weights. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -317,13 +320,10 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_dist = new long[]{320, 348};
+	public static final long[] __DNA__FIELD__min_dist = new long[]{324, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'max_dist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Distances mapping to 0.0/1.0 weights. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -340,7 +340,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__max_dist = new long[]{324, 352};
+	public static final long[] __DNA__FIELD__max_dist = new long[]{328, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
@@ -363,10 +363,10 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_type = new long[]{328, 356};
+	public static final long[] __DNA__FIELD__falloff_type = new long[]{332, 364};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad_s1'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Padding... </p>
@@ -376,17 +376,17 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * </p>
 	 * <pre>
 	 * WeightVGProximityModifierData weightvgproximitymodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = weightvgproximitymodifierdata.__dna__addressof(WeightVGProximityModifierData.__DNA__FIELD__pad_s1);
-	 * CPointer&lt;Short&gt; p_pad_s1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = weightvgproximitymodifierdata.__dna__addressof(WeightVGProximityModifierData.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad_s1'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad_s1 = new long[]{330, 358};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{334, 366};
 
 	public WeightVGProximityModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -447,9 +447,9 @@ public class WeightVGProximityModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -465,9 +465,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -489,9 +489,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public int getProximity_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -506,9 +506,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public void setProximity_mode(int proximity_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, proximity_mode);
+			__io__block.writeInt(__io__address + 184, proximity_mode);
 		} else {
-			__io__block.writeInt(__io__address + 160, proximity_mode);
+			__io__block.writeInt(__io__address + 164, proximity_mode);
 		}
 	}
 
@@ -520,9 +520,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public int getProximity_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -534,9 +534,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public void setProximity_flags(int proximity_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, proximity_flags);
+			__io__block.writeInt(__io__address + 188, proximity_flags);
 		} else {
-			__io__block.writeInt(__io__address + 164, proximity_flags);
+			__io__block.writeInt(__io__address + 168, proximity_flags);
 		}
 	}
 
@@ -552,9 +552,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -572,9 +572,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __address = ((proximity_ob_target == null) ? 0 : proximity_ob_target.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -589,9 +589,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public float getMask_constant() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -606,9 +606,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public void setMask_constant(float mask_constant) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, mask_constant);
+			__io__block.writeFloat(__io__address + 200, mask_constant);
 		} else {
-			__io__block.writeFloat(__io__address + 172, mask_constant);
+			__io__block.writeFloat(__io__address + 176, mask_constant);
 		}
 	}
 
@@ -616,7 +616,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	
@@ -627,9 +627,9 @@ public class WeightVGProximityModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -637,7 +637,7 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'mask_defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME </p>
+	 * <p> Name of mask vertex group from which to get weight factors. MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__mask_defgrp_name
 	 */
 	
@@ -645,9 +645,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 180;
 		}
 		if (__io__equals(mask_defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -669,9 +669,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public int getMask_tex_use_channel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 260);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 240);
+			return __io__block.readInt(__io__address + 244);
 		}
 	}
 
@@ -686,9 +686,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public void setMask_tex_use_channel(int mask_tex_use_channel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 260, mask_tex_use_channel);
+			__io__block.writeInt(__io__address + 268, mask_tex_use_channel);
 		} else {
-			__io__block.writeInt(__io__address + 240, mask_tex_use_channel);
+			__io__block.writeInt(__io__address + 244, mask_tex_use_channel);
 		}
 	}
 
@@ -704,9 +704,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -724,9 +724,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __address = ((mask_texture == null) ? 0 : mask_texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 244, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		}
 	}
 
@@ -742,9 +742,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 252);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -762,9 +762,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __address = ((mask_tex_map_obj == null) ? 0 : mask_tex_map_obj.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 252, __address);
 		}
 	}
 
@@ -772,16 +772,16 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Get method for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How to map the texture! </p>
+	 * <p> How to map the texture!. </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
 	
 	public int getMask_tex_mapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 288);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 256);
 		}
 	}
 
@@ -789,16 +789,16 @@ public class WeightVGProximityModifierData extends CFacade {
 	 * Set method for struct member 'mask_tex_mapping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How to map the texture! </p>
+	 * <p> How to map the texture!. </p>
 	 * @see #__DNA__FIELD__mask_tex_mapping
 	 */
 	
 	public void setMask_tex_mapping(int mask_tex_mapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 280, mask_tex_mapping);
+			__io__block.writeInt(__io__address + 288, mask_tex_mapping);
 		} else {
-			__io__block.writeInt(__io__address + 252, mask_tex_mapping);
+			__io__block.writeInt(__io__address + 256, mask_tex_mapping);
 		}
 	}
 
@@ -817,9 +817,9 @@ public class WeightVGProximityModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -835,9 +835,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 284;
+			__dna__offset = 292;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 260;
 		}
 		if (__io__equals(mask_tex_uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -850,63 +850,63 @@ public class WeightVGProximityModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'min_dist'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Distances mapping to 0.0/1.0 weights. </p>
 	 * @see #__DNA__FIELD__min_dist
 	 */
 	
 	public float getMin_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 348);
-		} else {
-			return __io__block.readFloat(__io__address + 320);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'min_dist'.
-	 * @see #__DNA__FIELD__min_dist
-	 */
-	
-	public void setMin_dist(float min_dist) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 348, min_dist);
-		} else {
-			__io__block.writeFloat(__io__address + 320, min_dist);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'max_dist'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Distances mapping to 0.0/1.0 weights. </p>
-	 * @see #__DNA__FIELD__max_dist
-	 */
-	
-	public float getMax_dist() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 356);
 		} else {
 			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'max_dist'.
+	 * Set method for struct member 'min_dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Distances mapping to 0.0/1.0 weights. </p>
+	 * @see #__DNA__FIELD__min_dist
+	 */
+	
+	public void setMin_dist(float min_dist) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 356, min_dist);
+		} else {
+			__io__block.writeFloat(__io__address + 324, min_dist);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'max_dist'.
+	 * @see #__DNA__FIELD__max_dist
+	 */
+	
+	public float getMax_dist() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 360);
+		} else {
+			return __io__block.readFloat(__io__address + 328);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_dist'.
 	 * @see #__DNA__FIELD__max_dist
 	 */
 	
 	public void setMax_dist(float max_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 352, max_dist);
+			__io__block.writeFloat(__io__address + 360, max_dist);
 		} else {
-			__io__block.writeFloat(__io__address + 324, max_dist);
+			__io__block.writeFloat(__io__address + 328, max_dist);
 		}
 	}
 
@@ -921,9 +921,9 @@ public class WeightVGProximityModifierData extends CFacade {
 	public short getFalloff_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 356);
+			return __io__block.readShort(__io__address + 364);
 		} else {
-			return __io__block.readShort(__io__address + 328);
+			return __io__block.readShort(__io__address + 332);
 		}
 	}
 
@@ -938,43 +938,55 @@ public class WeightVGProximityModifierData extends CFacade {
 	public void setFalloff_type(short falloff_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 356, falloff_type);
+			__io__block.writeShort(__io__address + 364, falloff_type);
 		} else {
-			__io__block.writeShort(__io__address + 328, falloff_type);
+			__io__block.writeShort(__io__address + 332, falloff_type);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad_s1'.
+	 * Get method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Padding... </p>
-	 * @see #__DNA__FIELD__pad_s1
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getPad_s1() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 358);
+			return new CArrayFacade<Byte>(__io__address + 366, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 330);
+			return new CArrayFacade<Byte>(__io__address + 334, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad_s1'.
+	 * Set method for struct member '_pad0'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Padding... </p>
-	 * @see #__DNA__FIELD__pad_s1
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad_s1(short pad_s1) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 358, pad_s1);
+			__dna__offset = 366;
 		} else {
-			__io__block.writeShort(__io__address + 330, pad_s1);
+			__dna__offset = 334;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

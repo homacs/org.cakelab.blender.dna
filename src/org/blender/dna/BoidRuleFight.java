@@ -26,7 +26,7 @@ public class BoidRuleFight extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 535;
+	public static final int __DNA__SDNA_INDEX = 540;
 
 	/**
 	 * Field descriptor (offset) for struct member 'rule'.

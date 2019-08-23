@@ -13,10 +13,11 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'Panel'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> The part from uiBlock that needs saved in file. </p>
  */
 
-@CMetaData(size32=248, size64=272)
+@CMetaData(size32=196, size64=224)
 public class Panel extends CFacade {
 
 	/**
@@ -27,13 +28,10 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 258;
+	public static final int __DNA__SDNA_INDEX = 263;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the part from uiBlock that needs saved in file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -76,7 +74,7 @@ public class Panel extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -100,7 +98,7 @@ public class Panel extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -121,6 +119,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,33 +141,10 @@ public class Panel extends CFacade {
 	public static final long[] __DNA__FIELD__panelname = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'tabname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__tabname);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_tabname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tabname'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tabname = new long[]{80, 96};
-
-	/**
 	 * Field descriptor (offset) for struct member 'drawname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panelname is identifier for restoring location </p>
+	 * <p>{@link Panel}  name is identifier for restoring location. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,10 +161,13 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawname = new long[]{144, 160};
+	public static final long[] __DNA__FIELD__drawname = new long[]{80, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofsx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within the region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,7 +184,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofsx = new long[]{208, 224};
+	public static final long[] __DNA__FIELD__ofsx = new long[]{144, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofsy'.
@@ -223,10 +204,13 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofsy = new long[]{212, 228};
+	public static final long[] __DNA__FIELD__ofsy = new long[]{148, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size including children. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,7 +227,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizex = new long[]{216, 232};
+	public static final long[] __DNA__FIELD__sizex = new long[]{152, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizey'.
@@ -263,7 +247,50 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizey = new long[]{220, 236};
+	public static final long[] __DNA__FIELD__sizey = new long[]{156, 172};
+
+	/**
+	 * Field descriptor (offset) for struct member 'blocksizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size excluding children. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Panel panel = ...;
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__blocksizex);
+	 * CPointer&lt;Integer&gt; p_blocksizex = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'blocksizex'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__blocksizex = new long[]{160, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'blocksizey'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Panel panel = ...;
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__blocksizey);
+	 * CPointer&lt;Integer&gt; p_blocksizey = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'blocksizey'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__blocksizey = new long[]{164, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'labelofs'.
@@ -283,27 +310,27 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__labelofs = new long[]{224, 240};
+	public static final long[] __DNA__FIELD__labelofs = new long[]{168, 184};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{226, 242};
+	public static final long[] __DNA__FIELD___pad = new long[]{170, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -323,7 +350,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{228, 244};
+	public static final long[] __DNA__FIELD__flag = new long[]{172, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_flag'.
@@ -343,7 +370,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime_flag = new long[]{230, 246};
+	public static final long[] __DNA__FIELD__runtime_flag = new long[]{174, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'control'.
@@ -363,7 +390,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__control = new long[]{232, 248};
+	public static final long[] __DNA__FIELD__control = new long[]{176, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap'.
@@ -383,13 +410,13 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap = new long[]{234, 250};
+	public static final long[] __DNA__FIELD__snap = new long[]{178, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sortorder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panels are aligned according to increasing sortorder </p>
+	 * <p> s are aligned according to increasing sort-order. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -406,36 +433,13 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sortorder = new long[]{236, 252};
-
-	/**
-	 * Field descriptor (offset) for struct member 'paneltab'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> this panel is tabbed in *paneltab </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__paneltab);
-	 * CPointer&lt;CPointer&lt;Panel&gt;&gt; p_paneltab = p.cast(new Class[]{CPointer.class, Panel.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'paneltab'</li>
-	 * <li>Signature: 'Panel*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__paneltab = new long[]{240, 256};
+	public static final long[] __DNA__FIELD__sortorder = new long[]{180, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'activedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for panel manipulation </p>
+	 * <p> Runtime for panel manipulation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -452,7 +456,30 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__activedata = new long[]{244, 264};
+	public static final long[] __DNA__FIELD__activedata = new long[]{184, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'children'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub panels. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Panel panel = ...;
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__children);
+	 * CPointer&lt;ListBase&gt; p_children = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'children'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__children = new long[]{188, 208};
 
 	public Panel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -464,9 +491,6 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the part from uiBlock that needs saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -484,9 +508,6 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the part from uiBlock that needs saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -536,7 +557,7 @@ public class Panel extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -556,7 +577,7 @@ public class Panel extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -575,7 +596,7 @@ public class Panel extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -596,7 +617,7 @@ public class Panel extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Defines the structure of the panel in the UI<h4>Blender Source Code:</h4>
-	 * <p> runtime for drawing </p>
+	 * <p> Runtime for drawing. </p>
 	 * @see #__DNA__FIELD__layout
 	 */
 	
@@ -612,6 +633,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'panelname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__panelname
 	 */
 	
@@ -630,6 +654,9 @@ public class Panel extends CFacade {
 
 	/**
 	 * Set method for struct member 'panelname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__panelname
 	 */
 	
@@ -651,14 +678,14 @@ public class Panel extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'tabname'.
+	 * Get method for struct member 'drawname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
-	 * @see #__DNA__FIELD__tabname
+	 * <p>{@link Panel}  name is identifier for restoring location. </p>
+	 * @see #__DNA__FIELD__drawname
 	 */
 	
-	public CArrayFacade<Byte> getTabname() throws IOException
+	public CArrayFacade<Byte> getDrawname() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -672,56 +699,10 @@ public class Panel extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'tabname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
-	 * @see #__DNA__FIELD__tabname
-	 */
-	
-	public void setTabname(CArrayFacade<Byte> tabname) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
-		} else {
-			__dna__offset = 80;
-		}
-		if (__io__equals(tabname, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, tabname)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, tabname);
-		} else {
-			__io__generic__copy( getTabname(), tabname);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'drawname'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> panelname is identifier for restoring location </p>
-	 * @see #__DNA__FIELD__drawname
-	 */
-	
-	public CArrayFacade<Byte> getDrawname() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			64
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
 	 * Set method for struct member 'drawname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panelname is identifier for restoring location </p>
+	 * <p>{@link Panel}  name is identifier for restoring location. </p>
 	 * @see #__DNA__FIELD__drawname
 	 */
 	
@@ -729,9 +710,9 @@ public class Panel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 80;
 		}
 		if (__io__equals(drawname, __io__address + __dna__offset)) {
 			return;
@@ -744,29 +725,35 @@ public class Panel extends CFacade {
 
 	/**
 	 * Get method for struct member 'ofsx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within the region. </p>
 	 * @see #__DNA__FIELD__ofsx
 	 */
 	
 	public int getOfsx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 160);
 		} else {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 144);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ofsx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within the region. </p>
 	 * @see #__DNA__FIELD__ofsx
 	 */
 	
 	public void setOfsx(int ofsx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, ofsx);
+			__io__block.writeInt(__io__address + 160, ofsx);
 		} else {
-			__io__block.writeInt(__io__address + 208, ofsx);
+			__io__block.writeInt(__io__address + 144, ofsx);
 		}
 	}
 
@@ -778,9 +765,9 @@ public class Panel extends CFacade {
 	public int getOfsy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 228);
+			return __io__block.readInt(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 148);
 		}
 	}
 
@@ -792,37 +779,43 @@ public class Panel extends CFacade {
 	public void setOfsy(int ofsy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 228, ofsy);
+			__io__block.writeInt(__io__address + 164, ofsy);
 		} else {
-			__io__block.writeInt(__io__address + 212, ofsy);
+			__io__block.writeInt(__io__address + 148, ofsy);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'sizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size including children. </p>
 	 * @see #__DNA__FIELD__sizex
 	 */
 	
 	public int getSizex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 152);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'sizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size including children. </p>
 	 * @see #__DNA__FIELD__sizex
 	 */
 	
 	public void setSizex(int sizex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, sizex);
+			__io__block.writeInt(__io__address + 168, sizex);
 		} else {
-			__io__block.writeInt(__io__address + 216, sizex);
+			__io__block.writeInt(__io__address + 152, sizex);
 		}
 	}
 
@@ -834,9 +827,9 @@ public class Panel extends CFacade {
 	public int getSizey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 172);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 156);
 		}
 	}
 
@@ -848,9 +841,71 @@ public class Panel extends CFacade {
 	public void setSizey(int sizey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, sizey);
+			__io__block.writeInt(__io__address + 172, sizey);
 		} else {
-			__io__block.writeInt(__io__address + 220, sizey);
+			__io__block.writeInt(__io__address + 156, sizey);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'blocksizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size excluding children. </p>
+	 * @see #__DNA__FIELD__blocksizex
+	 */
+	
+	public int getBlocksizex() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 176);
+		} else {
+			return __io__block.readInt(__io__address + 160);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'blocksizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  size excluding children. </p>
+	 * @see #__DNA__FIELD__blocksizex
+	 */
+	
+	public void setBlocksizex(int blocksizex) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 176, blocksizex);
+		} else {
+			__io__block.writeInt(__io__address + 160, blocksizex);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'blocksizey'.
+	 * @see #__DNA__FIELD__blocksizey
+	 */
+	
+	public int getBlocksizey() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 180);
+		} else {
+			return __io__block.readInt(__io__address + 164);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'blocksizey'.
+	 * @see #__DNA__FIELD__blocksizey
+	 */
+	
+	public void setBlocksizey(int blocksizey) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 180, blocksizey);
+		} else {
+			__io__block.writeInt(__io__address + 164, blocksizey);
 		}
 	}
 
@@ -862,9 +917,9 @@ public class Panel extends CFacade {
 	public short getLabelofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 240);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -876,37 +931,49 @@ public class Panel extends CFacade {
 	public void setLabelofs(short labelofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 240, labelofs);
+			__io__block.writeShort(__io__address + 184, labelofs);
 		} else {
-			__io__block.writeShort(__io__address + 224, labelofs);
+			__io__block.writeShort(__io__address + 168, labelofs);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 242);
+			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 226);
+			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 242, pad);
+			__dna__offset = 186;
 		} else {
-			__io__block.writeShort(__io__address + 226, pad);
+			__dna__offset = 170;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -918,9 +985,9 @@ public class Panel extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 172);
 		}
 	}
 
@@ -932,9 +999,9 @@ public class Panel extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 244, flag);
+			__io__block.writeShort(__io__address + 188, flag);
 		} else {
-			__io__block.writeShort(__io__address + 228, flag);
+			__io__block.writeShort(__io__address + 172, flag);
 		}
 	}
 
@@ -946,9 +1013,9 @@ public class Panel extends CFacade {
 	public short getRuntime_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 246);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -960,9 +1027,9 @@ public class Panel extends CFacade {
 	public void setRuntime_flag(short runtime_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 246, runtime_flag);
+			__io__block.writeShort(__io__address + 190, runtime_flag);
 		} else {
-			__io__block.writeShort(__io__address + 230, runtime_flag);
+			__io__block.writeShort(__io__address + 174, runtime_flag);
 		}
 	}
 
@@ -974,9 +1041,9 @@ public class Panel extends CFacade {
 	public short getControl() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 232);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -988,9 +1055,9 @@ public class Panel extends CFacade {
 	public void setControl(short control) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 248, control);
+			__io__block.writeShort(__io__address + 192, control);
 		} else {
-			__io__block.writeShort(__io__address + 232, control);
+			__io__block.writeShort(__io__address + 176, control);
 		}
 	}
 
@@ -1002,9 +1069,9 @@ public class Panel extends CFacade {
 	public short getSnap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 234);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -1016,9 +1083,9 @@ public class Panel extends CFacade {
 	public void setSnap(short snap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 250, snap);
+			__io__block.writeShort(__io__address + 194, snap);
 		} else {
-			__io__block.writeShort(__io__address + 234, snap);
+			__io__block.writeShort(__io__address + 178, snap);
 		}
 	}
 
@@ -1026,16 +1093,16 @@ public class Panel extends CFacade {
 	 * Get method for struct member 'sortorder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panels are aligned according to increasing sortorder </p>
+	 * <p> s are aligned according to increasing sort-order. </p>
 	 * @see #__DNA__FIELD__sortorder
 	 */
 	
 	public int getSortorder() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -1043,54 +1110,16 @@ public class Panel extends CFacade {
 	 * Set method for struct member 'sortorder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panels are aligned according to increasing sortorder </p>
+	 * <p> s are aligned according to increasing sort-order. </p>
 	 * @see #__DNA__FIELD__sortorder
 	 */
 	
 	public void setSortorder(int sortorder) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, sortorder);
+			__io__block.writeInt(__io__address + 196, sortorder);
 		} else {
-			__io__block.writeInt(__io__address + 236, sortorder);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'paneltab'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> this panel is tabbed in *paneltab </p>
-	 * @see #__DNA__FIELD__paneltab
-	 */
-	
-	public CPointer<Panel> getPaneltab() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Panel.class};
-		return new CPointer<Panel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Panel.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'paneltab'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> this panel is tabbed in *paneltab </p>
-	 * @see #__DNA__FIELD__paneltab
-	 */
-	
-	public void setPaneltab(CPointer<Panel> paneltab) throws IOException
-	{
-		long __address = ((paneltab == null) ? 0 : paneltab.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
-		} else {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeInt(__io__address + 180, sortorder);
 		}
 	}
 
@@ -1098,7 +1127,7 @@ public class Panel extends CFacade {
 	 * Get method for struct member 'activedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for panel manipulation </p>
+	 * <p> Runtime for panel manipulation. </p>
 	 * @see #__DNA__FIELD__activedata
 	 */
 	
@@ -1106,9 +1135,9 @@ public class Panel extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1118,7 +1147,7 @@ public class Panel extends CFacade {
 	 * Set method for struct member 'activedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for panel manipulation </p>
+	 * <p> Runtime for panel manipulation. </p>
 	 * @see #__DNA__FIELD__activedata
 	 */
 	
@@ -1126,9 +1155,51 @@ public class Panel extends CFacade {
 	{
 		long __address = ((activedata == null) ? 0 : activedata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 244, __address);
+			__io__block.writeLong(__io__address + 184, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'children'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub panels. </p>
+	 * @see #__DNA__FIELD__children
+	 */
+	
+	public ListBase getChildren() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 188, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'children'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sub panels. </p>
+	 * @see #__DNA__FIELD__children
+	 */
+	
+	public void setChildren(ListBase children) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 208;
+		} else {
+			__dna__offset = 188;
+		}
+		if (__io__equals(children, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, children)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, children);
+		} else {
+			__io__generic__copy( getChildren(), children);
 		}
 	}
 

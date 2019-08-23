@@ -27,7 +27,7 @@ public class LineStyleModifier extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 578;
+	public static final int __DNA__SDNA_INDEX = 586;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class LineStyleModifier extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,7 +248,7 @@ public class LineStyleModifier extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -269,7 +269,7 @@ public class LineStyleModifier extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	

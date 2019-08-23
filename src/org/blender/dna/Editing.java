@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=3128, size64=3152)
+@CMetaData(size32=3140, size64=3168)
 public class Editing extends CFacade {
 
 	/**
@@ -27,13 +27,13 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 274;
+	public static final int __DNA__SDNA_INDEX = 282;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
+	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +56,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the top-most seq's </p>
+	 * <p> Pointer to the top-most seq's. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -145,7 +145,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -168,7 +168,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,6 +287,69 @@ public class Editing extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__over_border = new long[]{3112, 3136};
 
+	/**
+	 * Field descriptor (offset) for struct member 'cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cache'</li>
+	 * <li>Signature: 'SeqCache*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cache = new long[]{3128, 3152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'recycle_max_cost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache control </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__recycle_max_cost);
+	 * CPointer&lt;Float&gt; p_recycle_max_cost = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'recycle_max_cost'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__recycle_max_cost = new long[]{3132, 3160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cache_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__cache_flag);
+	 * CPointer&lt;Integer&gt; p_cache_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cache_flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cache_flag = new long[]{3136, 3164};
+
 	public Editing(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -299,7 +362,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
+	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
 	
@@ -319,7 +382,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'seqbasep'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the current list of seq's being edited (can be within a meta strip) </p>
+	 * <p> Pointer to the current list of seq's being edited (can be within a meta strip). </p>
 	 * @see #__DNA__FIELD__seqbasep
 	 */
 	
@@ -337,7 +400,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the top-most seq's </p>
+	 * <p> Pointer to the top-most seq's. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -354,7 +417,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'seqbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pointer to the top-most seq's </p>
+	 * <p> Pointer to the top-most seq's. </p>
 	 * @see #__DNA__FIELD__seqbase
 	 */
 	
@@ -453,7 +516,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
 	
@@ -474,7 +537,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'act_imagedir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_imagedir
 	 */
 	
@@ -499,7 +562,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
 	
@@ -520,7 +583,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'act_sounddir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__act_sounddir
 	 */
 	
@@ -545,7 +608,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
 	
@@ -566,7 +629,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'proxy_dir'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__proxy_dir
 	 */
 	
@@ -732,6 +795,100 @@ public class Editing extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, over_border);
 		} else {
 			__io__generic__copy( getOver_border(), over_border);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cache'.
+	 * @see #__DNA__FIELD__cache
+	 */
+	
+	public CPointer<Object> getCache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3152);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3128);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'cache'.
+	 * @see #__DNA__FIELD__cache
+	 */
+	
+	public void setCache(CPointer<Object> cache) throws IOException
+	{
+		long __address = ((cache == null) ? 0 : cache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 3152, __address);
+		} else {
+			__io__block.writeLong(__io__address + 3128, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'recycle_max_cost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache control </p>
+	 * @see #__DNA__FIELD__recycle_max_cost
+	 */
+	
+	public float getRecycle_max_cost() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 3160);
+		} else {
+			return __io__block.readFloat(__io__address + 3132);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'recycle_max_cost'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cache control </p>
+	 * @see #__DNA__FIELD__recycle_max_cost
+	 */
+	
+	public void setRecycle_max_cost(float recycle_max_cost) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 3160, recycle_max_cost);
+		} else {
+			__io__block.writeFloat(__io__address + 3132, recycle_max_cost);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cache_flag'.
+	 * @see #__DNA__FIELD__cache_flag
+	 */
+	
+	public int getCache_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 3164);
+		} else {
+			return __io__block.readInt(__io__address + 3136);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cache_flag'.
+	 * @see #__DNA__FIELD__cache_flag
+	 */
+	
+	public void setCache_flag(int cache_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 3164, cache_flag);
+		} else {
+			__io__block.writeInt(__io__address + 3136, cache_flag);
 		}
 	}
 

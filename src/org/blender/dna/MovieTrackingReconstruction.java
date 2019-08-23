@@ -26,7 +26,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 555;
+	public static final int __DNA__SDNA_INDEX = 562;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -52,7 +52,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average error of reconstruction </p>
+	 * <p> Average error of reconstruction. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -75,7 +75,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Field descriptor (offset) for struct member 'last_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used camera </p>
+	 * <p> Most recently used camera. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Field descriptor (offset) for struct member 'camnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of reconstructed cameras </p>
+	 * <p> Number of reconstructed cameras. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of solved cameras<h4>Blender Source Code:</h4>
-	 * <p> reconstructed cameras </p>
+	 * <p> Reconstructed cameras. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -181,7 +181,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average error of reconstruction </p>
+	 * <p> Average error of reconstruction. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -198,7 +198,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average error of reconstruction </p>
+	 * <p> Average error of reconstruction. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -215,7 +215,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Get method for struct member 'last_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used camera </p>
+	 * <p> Most recently used camera. </p>
 	 * @see #__DNA__FIELD__last_camera
 	 */
 	
@@ -232,7 +232,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Set method for struct member 'last_camera'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used camera </p>
+	 * <p> Most recently used camera. </p>
 	 * @see #__DNA__FIELD__last_camera
 	 */
 	
@@ -249,7 +249,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Get method for struct member 'camnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of reconstructed cameras </p>
+	 * <p> Number of reconstructed cameras. </p>
 	 * @see #__DNA__FIELD__camnr
 	 */
 	
@@ -266,7 +266,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * Set method for struct member 'camnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of reconstructed cameras </p>
+	 * <p> Number of reconstructed cameras. </p>
 	 * @see #__DNA__FIELD__camnr
 	 */
 	
@@ -284,7 +284,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of solved cameras<h4>Blender Source Code:</h4>
-	 * <p> reconstructed cameras </p>
+	 * <p> Reconstructed cameras. </p>
 	 * @see #__DNA__FIELD__cameras
 	 */
 	
@@ -305,7 +305,7 @@ public class MovieTrackingReconstruction extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of solved cameras<h4>Blender Source Code:</h4>
-	 * <p> reconstructed cameras </p>
+	 * <p> Reconstructed cameras. </p>
 	 * @see #__DNA__FIELD__cameras
 	 */
 	

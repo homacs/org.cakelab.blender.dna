@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -13,12 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
- * Wrapper for referencing Objects in a Scene<h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  {@link Scene}  Data {@link Base}  - Wrapper for referencing Objects in a {@link Scene}  </p>
+ * Wrapper for referencing Objects in a Scene
  */
 
-@CMetaData(size32=28, size64=40)
+@CMetaData(size32=44, size64=64)
 public class Base extends CFacade {
 
 	/**
@@ -29,7 +28,7 @@ public class Base extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 629;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -78,47 +77,27 @@ public class Base extends CFacade {
 	public static final long[] __DNA__FIELD__prev = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'lay'.
+	 * Field descriptor (offset) for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Base base = ...;
-	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__lay);
-	 * CPointer&lt;Integer&gt; p_lay = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__flag_from_collection);
+	 * CPointer&lt;Short&gt; p_flag_from_collection = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'lay'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'flag_from_collection'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lay = new long[]{8, 16};
-
-	/**
-	 * Field descriptor (offset) for struct member 'selcol'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Base base = ...;
-	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__selcol);
-	 * CPointer&lt;Integer&gt; p_selcol = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'selcol'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__selcol = new long[]{12, 20};
+	public static final long[] __DNA__FIELD__flag_from_collection = new long[]{8, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -147,7 +126,8 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,16 +135,36 @@ public class Base extends CFacade {
 	 * <pre>
 	 * Base base = ...;
 	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{16, 24};
+	public static final long[] __DNA__FIELD__flag = new long[]{10, 18};
+
+	/**
+	 * Field descriptor (offset) for struct member 'local_view_bits'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__local_view_bits);
+	 * CPointer&lt;Short&gt; p_local_view_bits = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'local_view_bits'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__local_view_bits = new long[]{12, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sx'.
@@ -184,7 +184,7 @@ public class Base extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sx = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__sx = new long[]{14, 22};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sy'.
@@ -204,7 +204,27 @@ public class Base extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sy = new long[]{22, 30};
+	public static final long[] __DNA__FIELD__sy = new long[]{16, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{18, 26};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
@@ -228,6 +248,95 @@ public class Base extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__object = new long[]{24, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer<h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__lay);
+	 * CPointer&lt;Integer&gt; p_lay = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lay'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lay = new long[]{28, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag_legacy'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__flag_legacy);
+	 * CPointer&lt;Integer&gt; p_flag_legacy = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag_legacy'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag_legacy = new long[]{32, 44};
+
+	/**
+	 * Field descriptor (offset) for struct member 'base_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD__base_orig);
+	 * CPointer&lt;CPointer&lt;Base&gt;&gt; p_base_orig = p.cast(new Class[]{CPointer.class, Base.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'base_orig'</li>
+	 * <li>Signature: 'Base*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__base_orig = new long[]{36, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Base base = ...;
+	 * CPointer&lt;Object&gt; p = base.__dna__addressof(Base.__DNA__FIELD___pad);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 56};
 
 	public Base(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -314,64 +423,36 @@ public class Base extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'lay'.
+	 * Get method for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer
-	 * @see #__DNA__FIELD__lay
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
+	 * @see #__DNA__FIELD__flag_from_collection
 	 */
 	
-	public int getLay() throws IOException
+	public short getFlag_from_collection() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readShort(__io__address + 16);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'lay'.
+	 * Set method for struct member 'flag_from_collection'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Java .Blend:</h4>
-	 * Layer
-	 * @see #__DNA__FIELD__lay
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags which are based on the collections flags evaluation, does not include flags from object's restrictions. </p>
+	 * @see #__DNA__FIELD__flag_from_collection
 	 */
 	
-	public void setLay(int lay) throws IOException
+	public void setFlag_from_collection(short flag_from_collection) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16, lay);
+			__io__block.writeShort(__io__address + 16, flag_from_collection);
 		} else {
-			__io__block.writeInt(__io__address + 8, lay);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'selcol'.
-	 * @see #__DNA__FIELD__selcol
-	 */
-	
-	public int getSelcol() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
-		} else {
-			return __io__block.readInt(__io__address + 12);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'selcol'.
-	 * @see #__DNA__FIELD__selcol
-	 */
-	
-	public void setSelcol(int selcol) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, selcol);
-		} else {
-			__io__block.writeInt(__io__address + 12, selcol);
+			__io__block.writeShort(__io__address + 8, flag_from_collection);
 		}
 	}
 
@@ -402,16 +483,17 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getFlag() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readShort(__io__address + 18);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readShort(__io__address + 10);
 		}
 	}
 
@@ -442,16 +524,45 @@ public class Base extends CFacade {
 	 * 	OB_DONE             (1 << 10)  // unknown state, clear before use
 	 * 	// OB_RADIO            (1 << 11) // deprecated
 	 * 	OB_FROMGROUP        (1 << 12)
-	 * 				</pre>
+	 * 				</pre><h4>Blender Source Code:</h4>
+	 * <p> Final flags, including both accumulated collection flags and object's restriction flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, flag);
+			__io__block.writeShort(__io__address + 18, flag);
 		} else {
-			__io__block.writeInt(__io__address + 16, flag);
+			__io__block.writeShort(__io__address + 10, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'local_view_bits'.
+	 * @see #__DNA__FIELD__local_view_bits
+	 */
+	
+	public short getLocal_view_bits() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 20);
+		} else {
+			return __io__block.readShort(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'local_view_bits'.
+	 * @see #__DNA__FIELD__local_view_bits
+	 */
+	
+	public void setLocal_view_bits(short local_view_bits) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 20, local_view_bits);
+		} else {
+			__io__block.writeShort(__io__address + 12, local_view_bits);
 		}
 	}
 
@@ -463,9 +574,9 @@ public class Base extends CFacade {
 	public short getSx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 22);
 		} else {
-			return __io__block.readShort(__io__address + 20);
+			return __io__block.readShort(__io__address + 14);
 		}
 	}
 
@@ -477,9 +588,9 @@ public class Base extends CFacade {
 	public void setSx(short sx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, sx);
+			__io__block.writeShort(__io__address + 22, sx);
 		} else {
-			__io__block.writeShort(__io__address + 20, sx);
+			__io__block.writeShort(__io__address + 14, sx);
 		}
 	}
 
@@ -491,9 +602,9 @@ public class Base extends CFacade {
 	public short getSy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 16);
 		}
 	}
 
@@ -505,9 +616,49 @@ public class Base extends CFacade {
 	public void setSy(short sy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, sy);
+			__io__block.writeShort(__io__address + 24, sy);
 		} else {
-			__io__block.writeShort(__io__address + 22, sy);
+			__io__block.writeShort(__io__address + 16, sy);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 26;
+		} else {
+			__dna__offset = 18;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -546,6 +697,144 @@ public class Base extends CFacade {
 			__io__block.writeLong(__io__address + 32, __address);
 		} else {
 			__io__block.writeLong(__io__address + 24, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer<h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__lay
+	 */
+	
+	public int getLay() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 40);
+		} else {
+			return __io__block.readInt(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lay'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Java .Blend:</h4>
+	 * Layer<h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__lay
+	 */
+	
+	public void setLay(int lay) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 40, lay);
+		} else {
+			__io__block.writeInt(__io__address + 28, lay);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag_legacy'.
+	 * @see #__DNA__FIELD__flag_legacy
+	 */
+	
+	public int getFlag_legacy() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 44);
+		} else {
+			return __io__block.readInt(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag_legacy'.
+	 * @see #__DNA__FIELD__flag_legacy
+	 */
+	
+	public void setFlag_legacy(int flag_legacy) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 44, flag_legacy);
+		} else {
+			__io__block.writeInt(__io__address + 32, flag_legacy);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'base_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
+	 * @see #__DNA__FIELD__base_orig
+	 */
+	
+	public CPointer<Base> getBase_orig() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 36);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Base.class};
+		return new CPointer<Base>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Base.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'base_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original base. Is initialized for evaluated view layer. NOTE: Only allowed to be accessed from within active dependency graph. </p>
+	 * @see #__DNA__FIELD__base_orig
+	 */
+	
+	public void setBase_orig(CPointer<Base> base_orig) throws IOException
+	{
+		long __address = ((base_orig == null) ? 0 : base_orig.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 48, __address);
+		} else {
+			__io__block.writeLong(__io__address + 36, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CPointer<Object> get_pad() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CPointer<Object> _pad) throws IOException
+	{
+		long __address = ((_pad == null) ? 0 : _pad.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 56, __address);
+		} else {
+			__io__block.writeLong(__io__address + 40, __address);
 		}
 	}
 

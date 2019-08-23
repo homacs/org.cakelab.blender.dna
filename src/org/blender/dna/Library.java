@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> For each library file used, a {@link Library}  struct is added to Main WARNING: readfile.c, expand_doit() reads this struct without DNA check! </p>
  */
 
-@CMetaData(size32=2168, size64=2200)
+@CMetaData(size32=2188, size64=2232)
 public class Library extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Library extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 11;
+	public static final int __DNA__SDNA_INDEX = 16;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,7 +45,7 @@ public class Library extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,14 +68,14 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filedata = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__filedata = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> path name used for reading, can be relative and edited in the outliner </p>
+	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -92,14 +92,14 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__name = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
+	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,14 +116,14 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{1128, 1152};
+	public static final long[] __DNA__FIELD__filepath = new long[]{1148, 1184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> set for indirectly linked libs, used in the outliner and while reading </p>
+	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,7 +140,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parent = new long[]{2152, 2176};
+	public static final long[] __DNA__FIELD__parent = new long[]{2172, 2208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -160,7 +160,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{2156, 2184};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{2176, 2216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_index'.
@@ -183,10 +183,13 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_index = new long[]{2160, 2192};
+	public static final long[] __DNA__FIELD__temp_index = new long[]{2180, 2224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,13 +206,10 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__versionfile = new long[]{2164, 2196};
+	public static final long[] __DNA__FIELD__versionfile = new long[]{2184, 2228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subversionfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -226,7 +226,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subversionfile = new long[]{2166, 2198};
+	public static final long[] __DNA__FIELD__subversionfile = new long[]{2186, 2230};
 
 	public Library(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -281,9 +281,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -298,9 +298,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((filedata == null) ? 0 : filedata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -309,7 +309,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> path name used for reading, can be relative and edited in the outliner </p>
+	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -320,9 +320,9 @@ public class Library extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -331,7 +331,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> path name used for reading, can be relative and edited in the outliner </p>
+	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -339,9 +339,9 @@ public class Library extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 124;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -357,7 +357,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
+	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -368,9 +368,9 @@ public class Library extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -379,7 +379,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
+	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -387,9 +387,9 @@ public class Library extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1152;
+			__dna__offset = 1184;
 		} else {
-			__dna__offset = 1128;
+			__dna__offset = 1148;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;
@@ -405,7 +405,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> set for indirectly linked libs, used in the outliner and while reading </p>
+	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -413,9 +413,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Library.class};
 		return new CPointer<Library>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Library.__DNA__SDNA_INDEX), __io__blockTable);
@@ -426,7 +426,7 @@ public class Library extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> set for indirectly linked libs, used in the outliner and while reading </p>
+	 * <p> Set for indirectly linked libs, used in the outliner and while reading. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -434,9 +434,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((parent == null) ? 0 : parent.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2176, __address);
+			__io__block.writeLong(__io__address + 2208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2152, __address);
+			__io__block.writeLong(__io__address + 2172, __address);
 		}
 	}
 
@@ -449,9 +449,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -466,9 +466,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2184, __address);
+			__io__block.writeLong(__io__address + 2216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2156, __address);
+			__io__block.writeLong(__io__address + 2176, __address);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class Library extends CFacade {
 	public int getTemp_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2192);
+			return __io__block.readInt(__io__address + 2224);
 		} else {
-			return __io__block.readInt(__io__address + 2160);
+			return __io__block.readInt(__io__address + 2180);
 		}
 	}
 
@@ -500,71 +500,71 @@ public class Library extends CFacade {
 	public void setTemp_index(int temp_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2192, temp_index);
+			__io__block.writeInt(__io__address + 2224, temp_index);
 		} else {
-			__io__block.writeInt(__io__address + 2160, temp_index);
+			__io__block.writeInt(__io__address + 2180, temp_index);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
 	public short getVersionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2196);
+			return __io__block.readShort(__io__address + 2228);
 		} else {
-			return __io__block.readShort(__io__address + 2164);
+			return __io__block.readShort(__io__address + 2184);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'versionfile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
 	public void setVersionfile(short versionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2196, versionfile);
+			__io__block.writeShort(__io__address + 2228, versionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2164, versionfile);
+			__io__block.writeShort(__io__address + 2184, versionfile);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'subversionfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
 	 * @see #__DNA__FIELD__subversionfile
 	 */
 	
 	public short getSubversionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2198);
+			return __io__block.readShort(__io__address + 2230);
 		} else {
-			return __io__block.readShort(__io__address + 2166);
+			return __io__block.readShort(__io__address + 2186);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'subversionfile'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> see BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions </p>
 	 * @see #__DNA__FIELD__subversionfile
 	 */
 	
 	public void setSubversionfile(short subversionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2198, subversionfile);
+			__io__block.writeShort(__io__address + 2230, subversionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2166, subversionfile);
+			__io__block.writeShort(__io__address + 2186, subversionfile);
 		}
 	}
 

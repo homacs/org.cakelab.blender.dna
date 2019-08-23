@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1136, size64=1160)
+@CMetaData(size32=2164, size64=2192)
 public class MeshSeqCacheModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 144;
+	public static final int __DNA__SDNA_INDEX = 150;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,33 +67,13 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_file = new long[]{96, 112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'reader'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MeshSeqCacheModifierData meshseqcachemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD__reader);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_reader = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'reader'</li>
-	 * <li>Signature: 'CacheReader*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__reader = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__cache_file = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,24 +113,67 @@ public class MeshSeqCacheModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__read_flag = new long[]{1128, 1152};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MeshSeqCacheModifierData meshseqcachemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1129, 1153};
+	public static final long[] __DNA__FIELD___pad = new long[]{1129, 1153};
+
+	/**
+	 * Field descriptor (offset) for struct member 'reader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MeshSeqCacheModifierData meshseqcachemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD__reader);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_reader = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'reader'</li>
+	 * <li>Signature: 'CacheReader*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__reader = new long[]{1136, 1160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'reader_object_path'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MeshSeqCacheModifierData meshseqcachemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = meshseqcachemodifierdata.__dna__addressof(MeshSeqCacheModifierData.__DNA__FIELD__reader_object_path);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_reader_object_path = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'reader_object_path'</li>
+	 * <li>Signature: 'char[1024]'</li>
+	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__reader_object_path = new long[]{1140, 1168};
 
 	public MeshSeqCacheModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -205,9 +228,9 @@ public class MeshSeqCacheModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CacheFile.class};
 		return new CPointer<CacheFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CacheFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -222,38 +245,6 @@ public class MeshSeqCacheModifierData extends CFacade {
 	{
 		long __address = ((cache_file == null) ? 0 : cache_file.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
-		} else {
-			__io__block.writeLong(__io__address + 96, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'reader'.
-	 * @see #__DNA__FIELD__reader
-	 */
-	
-	public CPointer<Object> getReader() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'reader'.
-	 * @see #__DNA__FIELD__reader
-	 */
-	
-	public void setReader(CPointer<Object> reader) throws IOException
-	{
-		long __address = ((reader == null) ? 0 : reader.getAddress());
-		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 120, __address);
 		} else {
 			__io__block.writeLong(__io__address + 100, __address);
@@ -264,7 +255,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * Get method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__object_path
 	 */
 	
@@ -285,7 +276,7 @@ public class MeshSeqCacheModifierData extends CFacade {
 	 * Set method for struct member 'object_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__object_path
 	 */
 	
@@ -335,11 +326,11 @@ public class MeshSeqCacheModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -353,11 +344,11 @@ public class MeshSeqCacheModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -365,12 +356,90 @@ public class MeshSeqCacheModifierData extends CFacade {
 		} else {
 			__dna__offset = 1129;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'reader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime. </p>
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public CPointer<Object> getReader() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1160);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1136);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'reader'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime. </p>
+	 * @see #__DNA__FIELD__reader
+	 */
+	
+	public void setReader(CPointer<Object> reader) throws IOException
+	{
+		long __address = ((reader == null) ? 0 : reader.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1160, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1136, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'reader_object_path'.
+	 * @see #__DNA__FIELD__reader_object_path
+	 */
+	
+	public CArrayFacade<Byte> getReader_object_path() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1024
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'reader_object_path'.
+	 * @see #__DNA__FIELD__reader_object_path
+	 */
+	
+	public void setReader_object_path(CArrayFacade<Byte> reader_object_path) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1168;
+		} else {
+			__dna__offset = 1140;
+		}
+		if (__io__equals(reader_object_path, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, reader_object_path)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, reader_object_path);
+		} else {
+			__io__generic__copy( getReader_object_path(), reader_object_path);
 		}
 	}
 

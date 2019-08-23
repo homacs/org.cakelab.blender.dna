@@ -26,13 +26,13 @@ public class MovieClipUser extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 543;
+	public static final int __DNA__SDNA_INDEX = 548;
 
 	/**
 	 * Field descriptor (offset) for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame number </p>
+	 * <p> Current frame number. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,6 +53,9 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Proxy render size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -73,9 +76,6 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> proxy render size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -106,7 +106,7 @@ public class MovieClipUser extends CFacade {
 	 * Get method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame number </p>
+	 * <p> Current frame number. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -123,7 +123,7 @@ public class MovieClipUser extends CFacade {
 	 * Set method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current frame number </p>
+	 * <p> Current frame number. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -138,6 +138,9 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Proxy render size. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
@@ -152,6 +155,9 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'render_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Proxy render size. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
@@ -166,9 +172,6 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'render_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> proxy render size </p>
 	 * @see #__DNA__FIELD__render_flag
 	 */
 	
@@ -183,9 +186,6 @@ public class MovieClipUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'render_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> proxy render size </p>
 	 * @see #__DNA__FIELD__render_flag
 	 */
 	

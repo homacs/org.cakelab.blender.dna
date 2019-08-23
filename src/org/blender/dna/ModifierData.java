@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=96, size64=112)
+@CMetaData(size32=100, size64=120)
 public class ModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 89;
+	public static final int __DNA__SDNA_INDEX = 95;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -130,30 +130,50 @@ public class ModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__stackindex = new long[]{16, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ModifierData modifierdata = ...;
-	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{20, 28};
+	public static final long[] __DNA__FIELD__flag = new long[]{20, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ModifierData modifierdata = ...;
+	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{22, 30};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -173,29 +193,6 @@ public class ModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__name = new long[]{24, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ModifierData modifierdata = ...;
-	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD__scene);
-	 * CPointer&lt;CPointer&lt;Scene&gt;&gt; p_scene = p.cast(new Class[]{CPointer.class, Scene.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'scene'</li>
-	 * <li>Signature: 'Scene*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__scene = new long[]{88, 96};
-
-	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,7 +210,50 @@ public class ModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__error = new long[]{92, 104};
+	public static final long[] __DNA__FIELD__error = new long[]{88, 96};
+
+	/**
+	 * Field descriptor (offset) for struct member 'orig_modifier_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ModifierData modifierdata = ...;
+	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD__orig_modifier_data);
+	 * CPointer&lt;CPointer&lt;ModifierData&gt;&gt; p_orig_modifier_data = p.cast(new Class[]{CPointer.class, ModifierData.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'orig_modifier_data'</li>
+	 * <li>Signature: 'ModifierData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__orig_modifier_data = new long[]{92, 104};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ModifierData modifierdata = ...;
+	 * CPointer&lt;Object&gt; p = modifierdata.__dna__addressof(ModifierData.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{96, 112};
 
 	public ModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -372,30 +412,70 @@ public class ModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getPad() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readShort(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readShort(__io__address + 20);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
+			__io__block.writeShort(__io__address + 28, flag);
 		} else {
-			__io__block.writeInt(__io__address + 20, pad);
+			__io__block.writeShort(__io__address + 20, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 30;
+		} else {
+			__dna__offset = 22;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -403,7 +483,7 @@ public class ModifierData extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -424,7 +504,7 @@ public class ModifierData extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -446,44 +526,6 @@ public class ModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
-	 * @see #__DNA__FIELD__scene
-	 */
-	
-	public CPointer<Scene> getScene() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Scene.class};
-		return new CPointer<Scene>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Scene.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX for timing info set by caller... solve later? (ton) </p>
-	 * @see #__DNA__FIELD__scene
-	 */
-	
-	public void setScene(CPointer<Scene> scene) throws IOException
-	{
-		long __address = ((scene == null) ? 0 : scene.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
-		} else {
-			__io__block.writeLong(__io__address + 88, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'error'.
 	 * @see #__DNA__FIELD__error
 	 */
@@ -492,9 +534,9 @@ public class ModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -509,9 +551,79 @@ public class ModifierData extends CFacade {
 	{
 		long __address = ((error == null) ? 0 : error.getAddress());
 		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 96, __address);
+		} else {
+			__io__block.writeLong(__io__address + 88, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'orig_modifier_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
+	 * @see #__DNA__FIELD__orig_modifier_data
+	 */
+	
+	public CPointer<ModifierData> getOrig_modifier_data() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ModifierData.class};
+		return new CPointer<ModifierData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ModifierData.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'orig_modifier_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to a {@link ModifierData}  in the original domain. </p>
+	 * @see #__DNA__FIELD__orig_modifier_data
+	 */
+	
+	public void setOrig_modifier_data(CPointer<ModifierData> orig_modifier_data) throws IOException
+	{
+		long __address = ((orig_modifier_data == null) ? 0 : orig_modifier_data.getAddress());
+		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 104, __address);
 		} else {
 			__io__block.writeLong(__io__address + 92, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public CPointer<Object> getRuntime() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(CPointer<Object> runtime) throws IOException
+	{
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 112, __address);
+		} else {
+			__io__block.writeLong(__io__address + 96, __address);
 		}
 	}
 

@@ -26,14 +26,14 @@ public class MovieTracking extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 561;
+	public static final int __DNA__SDNA_INDEX = 568;
 
 	/**
 	 * Field descriptor (offset) for struct member 'settings'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> different tracking-related settings </p>
+	 * <p> Different tracking-related settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> camera intrinsics </p>
+	 * <p>{@link Camera}  intrinsics. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of tracks used for camera object </p>
+	 * <p> List of tracks used for camera object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -105,7 +105,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of plane tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of plane tracks used by camera object </p>
+	 * <p> List of plane tracks used by camera object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -129,7 +129,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> reconstruction data for camera object </p>
+	 * <p> Reconstruction data for camera object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -153,7 +153,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> stabilization data </p>
+	 * <p> Stabilization data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -176,7 +176,7 @@ public class MovieTracking extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active track </p>
+	 * <p> Active track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,7 +199,7 @@ public class MovieTracking extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_plane_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active plane track </p>
+	 * <p> Active plane track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -243,6 +243,9 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'objectnr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active object and total number of objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,9 +266,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> index of active object and total number of objects </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -288,7 +288,7 @@ public class MovieTracking extends CFacade {
 	 * Field descriptor (offset) for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> statistics displaying in clip editor </p>
+	 * <p> Statistics displaying in clip editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -312,7 +312,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> dopesheet data </p>
+	 * <p> Dopesheet data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -344,7 +344,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> different tracking-related settings </p>
+	 * <p> Different tracking-related settings. </p>
 	 * @see #__DNA__FIELD__settings
 	 */
 	
@@ -362,7 +362,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> different tracking-related settings </p>
+	 * <p> Different tracking-related settings. </p>
 	 * @see #__DNA__FIELD__settings
 	 */
 	
@@ -388,7 +388,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> camera intrinsics </p>
+	 * <p>{@link Camera}  intrinsics. </p>
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -406,7 +406,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> camera intrinsics </p>
+	 * <p>{@link Camera}  intrinsics. </p>
 	 * @see #__DNA__FIELD__camera
 	 */
 	
@@ -432,7 +432,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of tracks used for camera object </p>
+	 * <p> List of tracks used for camera object. </p>
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
@@ -450,7 +450,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of tracks used for camera object </p>
+	 * <p> List of tracks used for camera object. </p>
 	 * @see #__DNA__FIELD__tracks
 	 */
 	
@@ -476,7 +476,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of plane tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of plane tracks used by camera object </p>
+	 * <p> List of plane tracks used by camera object. </p>
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
@@ -494,7 +494,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of plane tracks in this tracking data object<h4>Blender Source Code:</h4>
-	 * <p> list of plane tracks used by camera object </p>
+	 * <p> List of plane tracks used by camera object. </p>
 	 * @see #__DNA__FIELD__plane_tracks
 	 */
 	
@@ -520,7 +520,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> reconstruction data for camera object </p>
+	 * <p> Reconstruction data for camera object. </p>
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	
@@ -538,7 +538,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> reconstruction data for camera object </p>
+	 * <p> Reconstruction data for camera object. </p>
 	 * @see #__DNA__FIELD__reconstruction
 	 */
 	
@@ -564,7 +564,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> stabilization data </p>
+	 * <p> Stabilization data. </p>
 	 * @see #__DNA__FIELD__stabilization
 	 */
 	
@@ -582,7 +582,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> stabilization data </p>
+	 * <p> Stabilization data. </p>
 	 * @see #__DNA__FIELD__stabilization
 	 */
 	
@@ -607,7 +607,7 @@ public class MovieTracking extends CFacade {
 	 * Get method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active track </p>
+	 * <p> Active track. </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
 	
@@ -627,7 +627,7 @@ public class MovieTracking extends CFacade {
 	 * Set method for struct member 'act_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active track </p>
+	 * <p> Active track. </p>
 	 * @see #__DNA__FIELD__act_track
 	 */
 	
@@ -645,7 +645,7 @@ public class MovieTracking extends CFacade {
 	 * Get method for struct member 'act_plane_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active plane track </p>
+	 * <p> Active plane track. </p>
 	 * @see #__DNA__FIELD__act_plane_track
 	 */
 	
@@ -665,7 +665,7 @@ public class MovieTracking extends CFacade {
 	 * Set method for struct member 'act_plane_track'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active plane track </p>
+	 * <p> Active plane track. </p>
 	 * @see #__DNA__FIELD__act_plane_track
 	 */
 	
@@ -723,6 +723,9 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'objectnr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active object and total number of objects. </p>
 	 * @see #__DNA__FIELD__objectnr
 	 */
 	
@@ -737,6 +740,9 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Set method for struct member 'objectnr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active object and total number of objects. </p>
 	 * @see #__DNA__FIELD__objectnr
 	 */
 	
@@ -751,9 +757,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Get method for struct member 'tot_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> index of active object and total number of objects </p>
 	 * @see #__DNA__FIELD__tot_object
 	 */
 	
@@ -768,9 +771,6 @@ public class MovieTracking extends CFacade {
 
 	/**
 	 * Set method for struct member 'tot_object'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> index of active object and total number of objects </p>
 	 * @see #__DNA__FIELD__tot_object
 	 */
 	
@@ -787,7 +787,7 @@ public class MovieTracking extends CFacade {
 	 * Get method for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> statistics displaying in clip editor </p>
+	 * <p> Statistics displaying in clip editor. </p>
 	 * @see #__DNA__FIELD__stats
 	 */
 	
@@ -807,7 +807,7 @@ public class MovieTracking extends CFacade {
 	 * Set method for struct member 'stats'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> statistics displaying in clip editor </p>
+	 * <p> Statistics displaying in clip editor. </p>
 	 * @see #__DNA__FIELD__stats
 	 */
 	
@@ -826,7 +826,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> dopesheet data </p>
+	 * <p> Dopesheet data. </p>
 	 * @see #__DNA__FIELD__dopesheet
 	 */
 	
@@ -844,7 +844,7 @@ public class MovieTracking extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> dopesheet data </p>
+	 * <p> Dopesheet data. </p>
 	 * @see #__DNA__FIELD__dopesheet
 	 */
 	

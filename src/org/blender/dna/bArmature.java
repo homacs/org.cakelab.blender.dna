@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=200, size64=256)
+@CMetaData(size32=184, size64=248)
 public class bArmature extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class bArmature extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 343;
+	public static final int __DNA__SDNA_INDEX = 311;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -43,7 +44,7 @@ public class bArmature extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -66,7 +67,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bonebase'.
@@ -86,33 +87,56 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bonebase = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__bonebase = new long[]{124, 160};
 
 	/**
-	 * Field descriptor (offset) for struct member 'chainbase'.
+	 * Field descriptor (offset) for struct member 'bonehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghash for quicker lookups of bones by name. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__chainbase);
-	 * CPointer&lt;ListBase&gt; p_chainbase = p.cast(new Class[]{ListBase.class});
+	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__bonehash);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_bonehash = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'chainbase'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * <li>Field: 'bonehash'</li>
+	 * <li>Signature: 'GHash*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chainbase = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__bonehash = new long[]{132, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bArmature barmature = ...;
+	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{136, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> editbone listbase, we use pointer so we can check state </p>
+	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -129,14 +153,14 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edbo = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__edbo = new long[]{140, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -154,13 +178,13 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_bone = new long[]{124, 168};
+	public static final long[] __DNA__FIELD__act_bone = new long[]{144, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active editbone (in editmode) </p>
+	 * <p> Active editbone (in editmode). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -177,30 +201,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_edbone = new long[]{128, 176};
-
-	/**
-	 * Field descriptor (offset) for struct member 'sketch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sketch struct for etch-a-ton </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__sketch);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_sketch = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sketch'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sketch = new long[]{132, 184};
+	public static final long[] __DNA__FIELD__act_edbone = new long[]{148, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -220,7 +221,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{136, 192};
+	public static final long[] __DNA__FIELD__flag = new long[]{152, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawtype'.
@@ -240,13 +241,13 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawtype = new long[]{140, 196};
+	public static final long[] __DNA__FIELD__drawtype = new long[]{156, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gevertdeformer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> how vertex deformation is handled in the ge </p>
+	 * <p> How vertex deformation is handled in the ge. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,27 +264,27 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gevertdeformer = new long[]{144, 200};
+	public static final long[] __DNA__FIELD__gevertdeformer = new long[]{160, 224};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{148, 204};
+	public static final long[] __DNA__FIELD___pad = new long[]{164, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'deformflag'.
@@ -303,7 +304,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__deformflag = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__deformflag = new long[]{168, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathflag'.
@@ -323,13 +324,13 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pathflag = new long[]{154, 210};
+	public static final long[] __DNA__FIELD__pathflag = new long[]{170, 234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for UI, to show which layers are there </p>
+	 * <p> For UI, to show which layers are there. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -346,10 +347,13 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_used = new long[]{156, 212};
+	public static final long[] __DNA__FIELD__layer_used = new long[]{172, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For buttons to work, both variables in this order together. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -366,13 +370,10 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{160, 216};
+	public static final long[] __DNA__FIELD__layer = new long[]{176, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_protected'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for buttons to work, both variables in this order together </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -389,225 +390,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_protected = new long[]{164, 220};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghostep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__ghostep);
-	 * CPointer&lt;Short&gt; p_ghostep = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghostep'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghostep = new long[]{168, 224};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghostsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames to ghosts to show, and step between them </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__ghostsize);
-	 * CPointer&lt;Short&gt; p_ghostsize = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghostsize'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghostsize = new long[]{170, 226};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghosttype'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__ghosttype);
-	 * CPointer&lt;Short&gt; p_ghosttype = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghosttype'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghosttype = new long[]{172, 228};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pathsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ghost drawing options and number of frames between points of path </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pathsize);
-	 * CPointer&lt;Short&gt; p_pathsize = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pathsize'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pathsize = new long[]{174, 230};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghostsf'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__ghostsf);
-	 * CPointer&lt;Integer&gt; p_ghostsf = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghostsf'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghostsf = new long[]{176, 232};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghostef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__ghostef);
-	 * CPointer&lt;Integer&gt; p_ghostef = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghostef'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghostef = new long[]{180, 236};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pathsf'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pathsf);
-	 * CPointer&lt;Integer&gt; p_pathsf = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pathsf'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pathsf = new long[]{184, 240};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pathef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range for all bones </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pathef);
-	 * CPointer&lt;Integer&gt; p_pathef = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pathef'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pathef = new long[]{188, 244};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pathbc'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pathbc);
-	 * CPointer&lt;Integer&gt; p_pathbc = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pathbc'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pathbc = new long[]{192, 248};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pathac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__pathac);
-	 * CPointer&lt;Integer&gt; p_pathac = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pathac'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pathac = new long[]{196, 252};
+	public static final long[] __DNA__FIELD__layer_protected = new long[]{180, 244};
 
 	public bArmature(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -662,9 +445,9 @@ public class bArmature extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -679,9 +462,9 @@ public class bArmature extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -693,9 +476,9 @@ public class bArmature extends CFacade {
 	public ListBase getBonebase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 104, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
 		}
 	}
 
@@ -708,9 +491,9 @@ public class bArmature extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 124;
 		}
 		if (__io__equals(bonebase, __io__address + __dna__offset)) {
 			return;
@@ -722,38 +505,72 @@ public class bArmature extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'chainbase'.
-	 * @see #__DNA__FIELD__chainbase
+	 * Get method for struct member 'bonehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghash for quicker lookups of bones by name. </p>
+	 * @see #__DNA__FIELD__bonehash
 	 */
 	
-	public ListBase getChainbase() throws IOException
+	public CPointer<Object> getBonehash() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			return new ListBase(__io__address + 112, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'bonehash'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghash for quicker lookups of bones by name. </p>
+	 * @see #__DNA__FIELD__bonehash
+	 */
+	
+	public void setBonehash(CPointer<Object> bonehash) throws IOException
+	{
+		long __address = ((bonehash == null) ? 0 : bonehash.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 176, __address);
+		} else {
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'chainbase'.
-	 * @see #__DNA__FIELD__chainbase
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setChainbase(ListBase chainbase) throws IOException
+	public CPointer<Object> get_pad1() throws IOException
 	{
-		long __dna__offset;
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__offset = 112;
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
-		if (__io__equals(chainbase, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, chainbase)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, chainbase);
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__generic__copy( getChainbase(), chainbase);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -761,7 +578,7 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> editbone listbase, we use pointer so we can check state </p>
+	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	
@@ -769,9 +586,9 @@ public class bArmature extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -781,7 +598,7 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'edbo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> editbone listbase, we use pointer so we can check state </p>
+	 * <p> Editbone listbase, we use pointer so we can check state. </p>
 	 * @see #__DNA__FIELD__edbo
 	 */
 	
@@ -789,9 +606,9 @@ public class bArmature extends CFacade {
 	{
 		long __address = ((edbo == null) ? 0 : edbo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 
@@ -799,8 +616,8 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
 	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */
@@ -809,9 +626,9 @@ public class bArmature extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Bone.class};
 		return new CPointer<Bone>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Bone.__DNA__SDNA_INDEX), __io__blockTable);
@@ -821,8 +638,8 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'act_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) active bone </p></li></ul> 
-	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) active bone 
+	 * <p> active bones should work like active object where possible<ul><li><p> active and selection are unrelated</p></li><li><p> active & hidden is not allowed</p></li><li><p> from the user perspective active == last selected</p></li><li><p> active should be ignored when not visible (hidden layer) Active bone. </p></li></ul> 
+	 * active and selection are unrelatedactive & hidden is not allowedfrom the user perspective active == last selectedactive should be ignored when not visible (hidden layer) Active bone. 
 	 * </p>
 	 * @see #__DNA__FIELD__act_bone
 	 */
@@ -831,9 +648,9 @@ public class bArmature extends CFacade {
 	{
 		long __address = ((act_bone == null) ? 0 : act_bone.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -841,7 +658,7 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active editbone (in editmode) </p>
+	 * <p> Active editbone (in editmode). </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
 	
@@ -849,9 +666,9 @@ public class bArmature extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -861,7 +678,7 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'act_edbone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active editbone (in editmode) </p>
+	 * <p> Active editbone (in editmode). </p>
 	 * @see #__DNA__FIELD__act_edbone
 	 */
 	
@@ -869,47 +686,9 @@ public class bArmature extends CFacade {
 	{
 		long __address = ((act_edbone == null) ? 0 : act_edbone.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'sketch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sketch struct for etch-a-ton </p>
-	 * @see #__DNA__FIELD__sketch
-	 */
-	
-	public CPointer<Object> getSketch() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'sketch'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> sketch struct for etch-a-ton </p>
-	 * @see #__DNA__FIELD__sketch
-	 */
-	
-	public void setSketch(CPointer<Object> sketch) throws IOException
-	{
-		long __address = ((sketch == null) ? 0 : sketch.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
-		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -921,9 +700,9 @@ public class bArmature extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 152);
 		}
 	}
 
@@ -935,9 +714,9 @@ public class bArmature extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 192, flag);
+			__io__block.writeInt(__io__address + 216, flag);
 		} else {
-			__io__block.writeInt(__io__address + 136, flag);
+			__io__block.writeInt(__io__address + 152, flag);
 		}
 	}
 
@@ -949,9 +728,9 @@ public class bArmature extends CFacade {
 	public int getDrawtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 156);
 		}
 	}
 
@@ -963,9 +742,9 @@ public class bArmature extends CFacade {
 	public void setDrawtype(int drawtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, drawtype);
+			__io__block.writeInt(__io__address + 220, drawtype);
 		} else {
-			__io__block.writeInt(__io__address + 140, drawtype);
+			__io__block.writeInt(__io__address + 156, drawtype);
 		}
 	}
 
@@ -973,16 +752,16 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'gevertdeformer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> how vertex deformation is handled in the ge </p>
+	 * <p> How vertex deformation is handled in the ge. </p>
 	 * @see #__DNA__FIELD__gevertdeformer
 	 */
 	
 	public int getGevertdeformer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -990,44 +769,56 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'gevertdeformer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> how vertex deformation is handled in the ge </p>
+	 * <p> How vertex deformation is handled in the ge. </p>
 	 * @see #__DNA__FIELD__gevertdeformer
 	 */
 	
 	public void setGevertdeformer(int gevertdeformer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, gevertdeformer);
+			__io__block.writeInt(__io__address + 224, gevertdeformer);
 		} else {
-			__io__block.writeInt(__io__address + 144, gevertdeformer);
+			__io__block.writeInt(__io__address + 160, gevertdeformer);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 148);
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, pad);
+			__dna__offset = 228;
 		} else {
-			__io__block.writeInt(__io__address + 148, pad);
+			__dna__offset = 164;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1039,9 +830,9 @@ public class bArmature extends CFacade {
 	public short getDeformflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 232);
 		} else {
-			return __io__block.readShort(__io__address + 152);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -1053,9 +844,9 @@ public class bArmature extends CFacade {
 	public void setDeformflag(short deformflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, deformflag);
+			__io__block.writeShort(__io__address + 232, deformflag);
 		} else {
-			__io__block.writeShort(__io__address + 152, deformflag);
+			__io__block.writeShort(__io__address + 168, deformflag);
 		}
 	}
 
@@ -1067,9 +858,9 @@ public class bArmature extends CFacade {
 	public short getPathflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 234);
 		} else {
-			return __io__block.readShort(__io__address + 154);
+			return __io__block.readShort(__io__address + 170);
 		}
 	}
 
@@ -1081,9 +872,9 @@ public class bArmature extends CFacade {
 	public void setPathflag(short pathflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, pathflag);
+			__io__block.writeShort(__io__address + 234, pathflag);
 		} else {
-			__io__block.writeShort(__io__address + 154, pathflag);
+			__io__block.writeShort(__io__address + 170, pathflag);
 		}
 	}
 
@@ -1091,16 +882,16 @@ public class bArmature extends CFacade {
 	 * Get method for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for UI, to show which layers are there </p>
+	 * <p> For UI, to show which layers are there. </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
 	
 	public int getLayer_used() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 236);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -1108,394 +899,78 @@ public class bArmature extends CFacade {
 	 * Set method for struct member 'layer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for UI, to show which layers are there </p>
+	 * <p> For UI, to show which layers are there. </p>
 	 * @see #__DNA__FIELD__layer_used
 	 */
 	
 	public void setLayer_used(int layer_used) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, layer_used);
+			__io__block.writeInt(__io__address + 236, layer_used);
 		} else {
-			__io__block.writeInt(__io__address + 156, layer_used);
+			__io__block.writeInt(__io__address + 172, layer_used);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For buttons to work, both variables in this order together. </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
 	public int getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
-		} else {
-			return __io__block.readInt(__io__address + 160);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'layer'.
-	 * @see #__DNA__FIELD__layer
-	 */
-	
-	public void setLayer(int layer) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, layer);
-		} else {
-			__io__block.writeInt(__io__address + 160, layer);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'layer_protected'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for buttons to work, both variables in this order together </p>
-	 * @see #__DNA__FIELD__layer_protected
-	 */
-	
-	public int getLayer_protected() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
-		} else {
-			return __io__block.readInt(__io__address + 164);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'layer_protected'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for buttons to work, both variables in this order together </p>
-	 * @see #__DNA__FIELD__layer_protected
-	 */
-	
-	public void setLayer_protected(int layer_protected) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, layer_protected);
-		} else {
-			__io__block.writeInt(__io__address + 164, layer_protected);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghostep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
-	 * @see #__DNA__FIELD__ghostep
-	 */
-	
-	public short getGhostep() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
-		} else {
-			return __io__block.readShort(__io__address + 168);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghostep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated... old animaton system (armature only viz) -- . </p>
-	 * @see #__DNA__FIELD__ghostep
-	 */
-	
-	public void setGhostep(short ghostep) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, ghostep);
-		} else {
-			__io__block.writeShort(__io__address + 168, ghostep);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghostsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames to ghosts to show, and step between them </p>
-	 * @see #__DNA__FIELD__ghostsize
-	 */
-	
-	public short getGhostsize() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 226);
-		} else {
-			return __io__block.readShort(__io__address + 170);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghostsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames to ghosts to show, and step between them </p>
-	 * @see #__DNA__FIELD__ghostsize
-	 */
-	
-	public void setGhostsize(short ghostsize) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, ghostsize);
-		} else {
-			__io__block.writeShort(__io__address + 170, ghostsize);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghosttype'.
-	 * @see #__DNA__FIELD__ghosttype
-	 */
-	
-	public short getGhosttype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 228);
-		} else {
-			return __io__block.readShort(__io__address + 172);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghosttype'.
-	 * @see #__DNA__FIELD__ghosttype
-	 */
-	
-	public void setGhosttype(short ghosttype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, ghosttype);
-		} else {
-			__io__block.writeShort(__io__address + 172, ghosttype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pathsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ghost drawing options and number of frames between points of path </p>
-	 * @see #__DNA__FIELD__pathsize
-	 */
-	
-	public short getPathsize() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 230);
-		} else {
-			return __io__block.readShort(__io__address + 174);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pathsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> ghost drawing options and number of frames between points of path </p>
-	 * @see #__DNA__FIELD__pathsize
-	 */
-	
-	public void setPathsize(short pathsize) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, pathsize);
-		} else {
-			__io__block.writeShort(__io__address + 174, pathsize);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghostsf'.
-	 * @see #__DNA__FIELD__ghostsf
-	 */
-	
-	public int getGhostsf() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 240);
 		} else {
 			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'ghostsf'.
-	 * @see #__DNA__FIELD__ghostsf
+	 * Set method for struct member 'layer'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For buttons to work, both variables in this order together. </p>
+	 * @see #__DNA__FIELD__layer
 	 */
 	
-	public void setGhostsf(int ghostsf) throws IOException
+	public void setLayer(int layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, ghostsf);
+			__io__block.writeInt(__io__address + 240, layer);
 		} else {
-			__io__block.writeInt(__io__address + 176, ghostsf);
+			__io__block.writeInt(__io__address + 176, layer);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'ghostef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range </p>
-	 * @see #__DNA__FIELD__ghostef
+	 * Get method for struct member 'layer_protected'.
+	 * @see #__DNA__FIELD__layer_protected
 	 */
 	
-	public int getGhostef() throws IOException
+	public int getLayer_protected() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 244);
 		} else {
 			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'ghostef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range </p>
-	 * @see #__DNA__FIELD__ghostef
+	 * Set method for struct member 'layer_protected'.
+	 * @see #__DNA__FIELD__layer_protected
 	 */
 	
-	public void setGhostef(int ghostef) throws IOException
+	public void setLayer_protected(int layer_protected) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, ghostef);
+			__io__block.writeInt(__io__address + 244, layer_protected);
 		} else {
-			__io__block.writeInt(__io__address + 180, ghostef);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pathsf'.
-	 * @see #__DNA__FIELD__pathsf
-	 */
-	
-	public int getPathsf() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 240);
-		} else {
-			return __io__block.readInt(__io__address + 184);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pathsf'.
-	 * @see #__DNA__FIELD__pathsf
-	 */
-	
-	public void setPathsf(int pathsf) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 240, pathsf);
-		} else {
-			__io__block.writeInt(__io__address + 184, pathsf);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pathef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range for all bones </p>
-	 * @see #__DNA__FIELD__pathef
-	 */
-	
-	public int getPathef() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 244);
-		} else {
-			return __io__block.readInt(__io__address + 188);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pathef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range for all bones </p>
-	 * @see #__DNA__FIELD__pathef
-	 */
-	
-	public void setPathef(int pathef) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 244, pathef);
-		} else {
-			__io__block.writeInt(__io__address + 188, pathef);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pathbc'.
-	 * @see #__DNA__FIELD__pathbc
-	 */
-	
-	public int getPathbc() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
-		} else {
-			return __io__block.readInt(__io__address + 192);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pathbc'.
-	 * @see #__DNA__FIELD__pathbc
-	 */
-	
-	public void setPathbc(int pathbc) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, pathbc);
-		} else {
-			__io__block.writeInt(__io__address + 192, pathbc);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pathac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
-	 * @see #__DNA__FIELD__pathac
-	 */
-	
-	public int getPathac() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
-		} else {
-			return __io__block.readInt(__io__address + 196);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pathac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame of path-calculation for all bones </p>
-	 * @see #__DNA__FIELD__pathac
-	 */
-	
-	public void setPathac(int pathac) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, pathac);
-		} else {
-			__io__block.writeInt(__io__address + 196, pathac);
+			__io__block.writeInt(__io__address + 180, layer_protected);
 		}
 	}
 

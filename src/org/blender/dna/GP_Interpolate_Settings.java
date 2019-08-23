@@ -27,13 +27,13 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 194;
+	public static final int __DNA__SDNA_INDEX = 198;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_SettingsFlag </p>
+	 * <p>{@link eGP_Interpolate_SettingsFlag} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +56,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_Type - Interpolation Mode </p>
+	 * <p>{@link eGP_Interpolate_Type}  - Interpolation Mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +79,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eBezTriple_Easing - Easing mode (if easing equation used) </p>
+	 * <p>{@link eBezTriple_Easing}  - Easing mode (if easing equation used). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,7 +102,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,6 +123,9 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,9 +146,6 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -168,7 +168,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Field descriptor (offset) for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom interpolation curve (for use with GP_IPO_CURVEMAP) </p>
+	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -199,7 +199,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_SettingsFlag </p>
+	 * <p>{@link eGP_Interpolate_SettingsFlag} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -216,7 +216,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_SettingsFlag </p>
+	 * <p>{@link eGP_Interpolate_SettingsFlag} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -233,7 +233,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_Type - Interpolation Mode </p>
+	 * <p>{@link eGP_Interpolate_Type}  - Interpolation Mode. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -250,7 +250,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eGP_Interpolate_Type - Interpolation Mode </p>
+	 * <p>{@link eGP_Interpolate_Type}  - Interpolation Mode. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -267,7 +267,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Get method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eBezTriple_Easing - Easing mode (if easing equation used) </p>
+	 * <p>{@link eBezTriple_Easing}  - Easing mode (if easing equation used). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
 	
@@ -284,7 +284,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Set method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eBezTriple_Easing - Easing mode (if easing equation used) </p>
+	 * <p>{@link eBezTriple_Easing}  - Easing mode (if easing equation used). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
 	
@@ -301,7 +301,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Get method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
 	
@@ -318,7 +318,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Set method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
 	
@@ -333,6 +333,9 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -347,6 +350,9 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -361,9 +367,6 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Get method for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -378,9 +381,6 @@ public class GP_Interpolate_Settings extends CFacade {
 
 	/**
 	 * Set method for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -397,7 +397,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Get method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom interpolation curve (for use with GP_IPO_CURVEMAP) </p>
+	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */
 	
@@ -417,7 +417,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * Set method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> custom interpolation curve (for use with GP_IPO_CURVEMAP) </p>
+	 * <p> Custom interpolation curve (for use with GP_IPO_CURVEMAP). </p>
 	 * @see #__DNA__FIELD__custom_ipo
 	 */
 	

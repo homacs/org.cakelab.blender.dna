@@ -29,13 +29,14 @@ public class ImageFormatData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 176;
+	public static final int __DNA__SDNA_INDEX = 180;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> R_IMF_IMTYPE_PNG, R_... </p>
+	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> , video types should only ever be set from this structure when used from {@link RenderData} . </p> , video types should only ever be set from this structure when used from RenderData. 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +59,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note, video types should only ever be set from this structure when used from {@link RenderData}  bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time </p>
+	 * <p> bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,9 +82,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'planes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ul><li><p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA </p></li></ul> 
-	 * R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA 
-	 * </p>
+	 * <p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -106,7 +105,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic options for all image types, alpha zbuffer </p>
+	 * <p> Generic options for all image types, alpha zbuffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -129,7 +128,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: jpeg quality </p>
+	 * <p> (0 - 100), eg: jpeg quality. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -152,7 +151,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: png compression </p>
+	 * <p> (0 - 100), eg: png compression. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -175,7 +174,7 @@ public class ImageFormatData extends CFacade {
 	 * Field descriptor (offset) for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>--  format specific --  OpenEXR </p>
+	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -344,24 +343,24 @@ public class ImageFormatData extends CFacade {
 	public static final long[] __DNA__FIELD__tiff_codec = new long[]{18, 18};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ImageFormatData imageformatdata = ...;
-	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = imageformatdata.__dna__addressof(ImageFormatData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{19, 19};
+	public static final long[] __DNA__FIELD___pad = new long[]{19, 19};
 
 	/**
 	 * Field descriptor (offset) for struct member 'views_format'.
@@ -461,7 +460,8 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'imtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> R_IMF_IMTYPE_PNG, R_... </p>
+	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> , video types should only ever be set from this structure when used from {@link RenderData} . </p> , video types should only ever be set from this structure when used from RenderData. 
+	 * </p>
 	 * @see #__DNA__FIELD__imtype
 	 */
 	
@@ -478,7 +478,8 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'imtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> R_IMF_IMTYPE_PNG, R_... </p>
+	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> , video types should only ever be set from this structure when used from {@link RenderData} . </p> , video types should only ever be set from this structure when used from RenderData. 
+	 * </p>
 	 * @see #__DNA__FIELD__imtype
 	 */
 	
@@ -495,7 +496,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note, video types should only ever be set from this structure when used from {@link RenderData}  bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time </p>
+	 * <p> bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time. </p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -512,7 +513,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> note, video types should only ever be set from this structure when used from {@link RenderData}  bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time </p>
+	 * <p> bits per channel, R_IMF_CHAN_DEPTH_8 -> 32, not a flag, only set 1 at a time. </p>
 	 * @see #__DNA__FIELD__depth
 	 */
 	
@@ -529,9 +530,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'planes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ul><li><p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA </p></li></ul> 
-	 * R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA 
-	 * </p>
+	 * <p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA. </p>
 	 * @see #__DNA__FIELD__planes
 	 */
 	
@@ -548,9 +547,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'planes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ul><li><p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA </p></li></ul> 
-	 * R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA 
-	 * </p>
+	 * <p> R_IMF_PLANES_BW, R_IMF_PLANES_RGB, R_IMF_PLANES_RGBA. </p>
 	 * @see #__DNA__FIELD__planes
 	 */
 	
@@ -567,7 +564,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic options for all image types, alpha zbuffer </p>
+	 * <p> Generic options for all image types, alpha zbuffer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -584,7 +581,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> generic options for all image types, alpha zbuffer </p>
+	 * <p> Generic options for all image types, alpha zbuffer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -601,7 +598,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: jpeg quality </p>
+	 * <p> (0 - 100), eg: jpeg quality. </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -618,7 +615,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'quality'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: jpeg quality </p>
+	 * <p> (0 - 100), eg: jpeg quality. </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -635,7 +632,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: png compression </p>
+	 * <p> (0 - 100), eg: png compression. </p>
 	 * @see #__DNA__FIELD__compress
 	 */
 	
@@ -652,7 +649,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'compress'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (0 - 100), eg: png compression </p>
+	 * <p> (0 - 100), eg: png compression. </p>
 	 * @see #__DNA__FIELD__compress
 	 */
 	
@@ -669,7 +666,7 @@ public class ImageFormatData extends CFacade {
 	 * Get method for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>--  format specific --  OpenEXR </p>
+	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
 	 * @see #__DNA__FIELD__exr_codec
 	 */
 	
@@ -686,7 +683,7 @@ public class ImageFormatData extends CFacade {
 	 * Set method for struct member 'exr_codec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>--  format specific --  OpenEXR </p>
+	 * <p><mdash/>  format specific <mdash/>  OpenEXR </p>
 	 * @see #__DNA__FIELD__exr_codec
 	 */
 	
@@ -914,11 +911,11 @@ public class ImageFormatData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -932,11 +929,11 @@ public class ImageFormatData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -944,12 +941,12 @@ public class ImageFormatData extends CFacade {
 		} else {
 			__dna__offset = 19;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

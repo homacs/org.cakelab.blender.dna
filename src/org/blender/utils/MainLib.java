@@ -31,25 +31,25 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 279;
+	public static final short BLENDER_VERSION = 280;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 0;
+	public static final short BLENDER_SUBVERSION = 75;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINVERSION = 270;
+	public static final short BLENDER_MINVERSION = 280;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINSUBVERSION = 6;
+	public static final short BLENDER_MINSUBVERSION = 0;
 
 	/**Linkage between main libraries.
 	 */
@@ -164,9 +164,9 @@ public class MainLib extends MainLibBase {
 	private bSound bSound;
 
 	/**
-	 * See {@link Group} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	private Group group;
+	private Collection collection;
 
 	/**
 	 * See {@link bArmature} for documentation.
@@ -242,6 +242,16 @@ public class MainLib extends MainLibBase {
 	 * See {@link CacheFile} for documentation.
 	 */
 	private CacheFile cacheFile;
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	private WorkSpace workSpace;
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	private LightProbe lightProbe;
 
 
 	public MainLib(BlenderFile blendFile) throws IOException{
@@ -595,17 +605,17 @@ public class MainLib extends MainLibBase {
 	}
 
 	/**
-	 * See {@link Group} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	public Group getGroup(){
-		return group;
+	public Collection getCollection(){
+		return collection;
 	}
 
 	/**
-	 * See {@link Group} for documentation.
+	 * See {@link Collection} for documentation.
 	 */
-	public void setGroup(Group group) {
-		this.group = group;
+	public void setCollection(Collection collection) {
+		this.collection = collection;
 	}
 
 	/**
@@ -816,6 +826,34 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setCacheFile(CacheFile cacheFile) {
 		this.cacheFile = cacheFile;
+	}
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	public WorkSpace getWorkSpace(){
+		return workSpace;
+	}
+
+	/**
+	 * See {@link WorkSpace} for documentation.
+	 */
+	public void setWorkSpace(WorkSpace workSpace) {
+		this.workSpace = workSpace;
+	}
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	public LightProbe getLightProbe(){
+		return lightProbe;
+	}
+
+	/**
+	 * See {@link LightProbe} for documentation.
+	 */
+	public void setLightProbe(LightProbe lightProbe) {
+		this.lightProbe = lightProbe;
 	}
 
 }

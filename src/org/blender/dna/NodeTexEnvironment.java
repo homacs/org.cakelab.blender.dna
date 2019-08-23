@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1016, size64=1024)
+@CMetaData(size32=1008, size64=1016)
 public class NodeTexEnvironment extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class NodeTexEnvironment extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 438;
+	public static final int __DNA__SDNA_INDEX = 406;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -43,7 +44,7 @@ public class NodeTexEnvironment extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
@@ -66,10 +67,15 @@ public class NodeTexEnvironment extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iuser = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__iuser = new long[]{956, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -86,7 +92,7 @@ public class NodeTexEnvironment extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_space = new long[]{1000, 1008};
+	public static final long[] __DNA__FIELD__color_space = new long[]{992, 1000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'projection'.
@@ -106,7 +112,7 @@ public class NodeTexEnvironment extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__projection = new long[]{1004, 1012};
+	public static final long[] __DNA__FIELD__projection = new long[]{996, 1004};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interpolation'.
@@ -126,27 +132,27 @@ public class NodeTexEnvironment extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interpolation = new long[]{1008, 1016};
+	public static final long[] __DNA__FIELD__interpolation = new long[]{1000, 1008};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexEnvironment nodetexenvironment = ...;
-	 * CPointer&lt;Object&gt; p = nodetexenvironment.__dna__addressof(NodeTexEnvironment.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nodetexenvironment.__dna__addressof(NodeTexEnvironment.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1012, 1020};
+	public static final long[] __DNA__FIELD___pad = new long[]{1004, 1012};
 
 	public NodeTexEnvironment(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -200,9 +206,9 @@ public class NodeTexEnvironment extends CFacade {
 	public ImageUser getIuser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ImageUser(__io__address + 968, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 960, __io__block, __io__blockTable);
 		} else {
-			return new ImageUser(__io__address + 964, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 956, __io__block, __io__blockTable);
 		}
 	}
 
@@ -215,9 +221,9 @@ public class NodeTexEnvironment extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 968;
+			__dna__offset = 960;
 		} else {
-			__dna__offset = 964;
+			__dna__offset = 956;
 		}
 		if (__io__equals(iuser, __io__address + __dna__offset)) {
 			return;
@@ -230,29 +236,39 @@ public class NodeTexEnvironment extends CFacade {
 
 	/**
 	 * Get method for struct member 'color_space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__color_space
 	 */
 	
 	public int getColor_space() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1008);
-		} else {
 			return __io__block.readInt(__io__address + 1000);
+		} else {
+			return __io__block.readInt(__io__address + 992);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'color_space'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__color_space
 	 */
 	
 	public void setColor_space(int color_space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1008, color_space);
-		} else {
 			__io__block.writeInt(__io__address + 1000, color_space);
+		} else {
+			__io__block.writeInt(__io__address + 992, color_space);
 		}
 	}
 
@@ -264,9 +280,9 @@ public class NodeTexEnvironment extends CFacade {
 	public int getProjection() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1012);
-		} else {
 			return __io__block.readInt(__io__address + 1004);
+		} else {
+			return __io__block.readInt(__io__address + 996);
 		}
 	}
 
@@ -278,9 +294,9 @@ public class NodeTexEnvironment extends CFacade {
 	public void setProjection(int projection) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1012, projection);
-		} else {
 			__io__block.writeInt(__io__address + 1004, projection);
+		} else {
+			__io__block.writeInt(__io__address + 996, projection);
 		}
 	}
 
@@ -292,9 +308,9 @@ public class NodeTexEnvironment extends CFacade {
 	public int getInterpolation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1016);
-		} else {
 			return __io__block.readInt(__io__address + 1008);
+		} else {
+			return __io__block.readInt(__io__address + 1000);
 		}
 	}
 
@@ -306,37 +322,49 @@ public class NodeTexEnvironment extends CFacade {
 	public void setInterpolation(int interpolation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1016, interpolation);
-		} else {
 			__io__block.writeInt(__io__address + 1008, interpolation);
+		} else {
+			__io__block.writeInt(__io__address + 1000, interpolation);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1020);
+			return new CArrayFacade<Byte>(__io__address + 1012, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 1012);
+			return new CArrayFacade<Byte>(__io__address + 1004, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1020, pad);
+			__dna__offset = 1012;
 		} else {
-			__io__block.writeInt(__io__address + 1012, pad);
+			__dna__offset = 1004;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

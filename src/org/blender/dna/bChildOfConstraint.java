@@ -28,13 +28,13 @@ public class bChildOfConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 376;
+	public static final int __DNA__SDNA_INDEX = 347;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object which will act as parent (or target comes from) </p>
+	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,30 +77,30 @@ public class bChildOfConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bChildOfConstraint bchildofconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bchildofconstraint.__dna__addressof(bChildOfConstraint.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bchildofconstraint.__dna__addressof(bChildOfConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{8, 12};
+	public static final long[] __DNA__FIELD___pad = new long[]{8, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent-inverse matrix to use </p>
+	 * <p> Parent-inverse matrix to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,7 +123,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to specify a subobject target, MAX_ID_NAME-2 </p>
+	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -154,7 +154,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object which will act as parent (or target comes from) </p>
+	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -174,7 +174,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object which will act as parent (or target comes from) </p>
+	 * <p>{@link Object}  which will act as parent (or target comes from). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -192,7 +192,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -209,7 +209,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -223,30 +223,42 @@ public class bChildOfConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, pad);
+			__dna__offset = 12;
 		} else {
-			__io__block.writeInt(__io__address + 8, pad);
+			__dna__offset = 8;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -254,7 +266,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Get method for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent-inverse matrix to use </p>
+	 * <p> Parent-inverse matrix to use. </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
 	
@@ -276,7 +288,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Set method for struct member 'invmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent-inverse matrix to use </p>
+	 * <p> Parent-inverse matrix to use. </p>
 	 * @see #__DNA__FIELD__invmat
 	 */
 	
@@ -301,7 +313,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to specify a subobject target, MAX_ID_NAME-2 </p>
+	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -322,7 +334,7 @@ public class bChildOfConstraint extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to specify a subobject target, MAX_ID_NAME-2 </p>
+	 * <p> String to specify a subobject target, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	

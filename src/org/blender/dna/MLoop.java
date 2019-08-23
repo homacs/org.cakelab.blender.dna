@@ -28,14 +28,14 @@ public class MLoop extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 66;
+	public static final int __DNA__SDNA_INDEX = 72;
 
 	/**
 	 * Field descriptor (offset) for struct member 'v'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> vertex index </p>
+	 * <p> Vertex index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -59,7 +59,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> edge index </p>
+	 * <p> Edge index. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,7 +91,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> vertex index </p>
+	 * <p> Vertex index. </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -109,7 +109,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated vertex (index in vertex array).<h4>Blender Source Code:</h4>
-	 * <p> vertex index </p>
+	 * <p> Vertex index. </p>
 	 * @see #__DNA__FIELD__v
 	 */
 	
@@ -127,7 +127,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> edge index </p>
+	 * <p> Edge index. </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	
@@ -145,7 +145,7 @@ public class MLoop extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
-	 * <p> edge index </p>
+	 * <p> Edge index. </p>
 	 * @see #__DNA__FIELD__e
 	 */
 	

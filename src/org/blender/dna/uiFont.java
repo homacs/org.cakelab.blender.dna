@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> default fonts to load/initalize first font is the default (index 0), others optional </p>
+ * <p> default fonts to load/initialize first font is the default (index 0), others optional </p>
  */
 
 @CMetaData(size32=1040, size64=1048)
@@ -28,7 +28,7 @@ public class uiFont extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 239;
+	public static final int __DNA__SDNA_INDEX = 238;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class uiFont extends CFacade {
 	 * Field descriptor (offset) for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class uiFont extends CFacade {
 	 * Field descriptor (offset) for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from blfont lib </p>
+	 * <p> From blfont lib. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +120,7 @@ public class uiFont extends CFacade {
 	 * Field descriptor (offset) for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> own id (eUIFont_ID) </p>
+	 * <p> Own id (eUIFont_ID). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,7 +143,7 @@ public class uiFont extends CFacade {
 	 * Field descriptor (offset) for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> fonts that read from left to right </p>
+	 * <p> Fonts that read from left to right. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,24 +163,24 @@ public class uiFont extends CFacade {
 	public static final long[] __DNA__FIELD__r_to_l = new long[]{1036, 1044};
 
 	/**
-	 * Field descriptor (offset) for struct member 'hinting'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiFont uifont = ...;
-	 * CPointer&lt;Object&gt; p = uifont.__dna__addressof(uiFont.__DNA__FIELD__hinting);
-	 * CPointer&lt;Short&gt; p_hinting = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = uifont.__dna__addressof(uiFont.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'hinting'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hinting = new long[]{1038, 1046};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{1038, 1046};
 
 	public uiFont(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -258,7 +258,7 @@ public class uiFont extends CFacade {
 	 * Get method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -279,7 +279,7 @@ public class uiFont extends CFacade {
 	 * Set method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -304,7 +304,7 @@ public class uiFont extends CFacade {
 	 * Get method for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from blfont lib </p>
+	 * <p> From blfont lib. </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
 	
@@ -321,7 +321,7 @@ public class uiFont extends CFacade {
 	 * Set method for struct member 'blf_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from blfont lib </p>
+	 * <p> From blfont lib. </p>
 	 * @see #__DNA__FIELD__blf_id
 	 */
 	
@@ -338,7 +338,7 @@ public class uiFont extends CFacade {
 	 * Get method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> own id (eUIFont_ID) </p>
+	 * <p> Own id (eUIFont_ID). </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -355,7 +355,7 @@ public class uiFont extends CFacade {
 	 * Set method for struct member 'uifont_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> own id (eUIFont_ID) </p>
+	 * <p> Own id (eUIFont_ID). </p>
 	 * @see #__DNA__FIELD__uifont_id
 	 */
 	
@@ -372,7 +372,7 @@ public class uiFont extends CFacade {
 	 * Get method for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> fonts that read from left to right </p>
+	 * <p> Fonts that read from left to right. </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */
 	
@@ -389,7 +389,7 @@ public class uiFont extends CFacade {
 	 * Set method for struct member 'r_to_l'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> fonts that read from left to right </p>
+	 * <p> Fonts that read from left to right. </p>
 	 * @see #__DNA__FIELD__r_to_l
 	 */
 	
@@ -403,30 +403,42 @@ public class uiFont extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'hinting'.
-	 * @see #__DNA__FIELD__hinting
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getHinting() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1046);
+			return new CArrayFacade<Byte>(__io__address + 1046, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 1038);
+			return new CArrayFacade<Byte>(__io__address + 1038, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'hinting'.
-	 * @see #__DNA__FIELD__hinting
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setHinting(short hinting) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1046, hinting);
+			__dna__offset = 1046;
 		} else {
-			__io__block.writeShort(__io__address + 1038, hinting);
+			__dna__offset = 1038;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

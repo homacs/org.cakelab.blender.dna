@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -28,7 +27,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 354;
 
 	/**
 	 * Field descriptor (offset) for struct member 'target'.
@@ -54,7 +53,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to kept from target </p>
+	 * <p> Distance to kept from target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,7 +76,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
+	 * <p> Shrink type (look on MOD shrinkwrap for values). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -100,7 +99,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> axis to project/constrain </p>
+	 * <p> Axis to project/constrain. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,7 +122,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'projAxisSpace'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space to project axis in </p>
+	 * <p> Space to project axis in. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -146,7 +145,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to search </p>
+	 * <p> Distance to search. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,24 +165,93 @@ public class bShrinkwrapConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__projLimit = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'shrinkMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Inside/outside/on surface (see MOD shrinkwrap). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bShrinkwrapConstraint bshrinkwrapconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bshrinkwrapconstraint.__dna__addressof(bShrinkwrapConstraint.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bshrinkwrapconstraint.__dna__addressof(bShrinkwrapConstraint.__DNA__FIELD__shrinkMode);
+	 * CPointer&lt;Byte&gt; p_shrinkMode = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'shrinkMode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__shrinkMode = new long[]{16, 20};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bShrinkwrapConstraint bshrinkwrapconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bshrinkwrapconstraint.__dna__addressof(bShrinkwrapConstraint.__DNA__FIELD__flag);
+	 * CPointer&lt;Byte&gt; p_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{17, 21};
+
+	/**
+	 * Field descriptor (offset) for struct member 'trackAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to align to normal. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bShrinkwrapConstraint bshrinkwrapconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bshrinkwrapconstraint.__dna__addressof(bShrinkwrapConstraint.__DNA__FIELD__trackAxis);
+	 * CPointer&lt;Byte&gt; p_trackAxis = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'trackAxis'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__trackAxis = new long[]{18, 22};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bShrinkwrapConstraint bshrinkwrapconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bshrinkwrapconstraint.__dna__addressof(bShrinkwrapConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{19, 23};
 
 	public bShrinkwrapConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -229,7 +297,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Get method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to kept from target </p>
+	 * <p> Distance to kept from target. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -246,7 +314,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Set method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to kept from target </p>
+	 * <p> Distance to kept from target. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
@@ -263,7 +331,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Get method for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
+	 * <p> Shrink type (look on MOD shrinkwrap for values). </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
 	
@@ -280,7 +348,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Set method for struct member 'shrinkType'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shrink type (look on MOD shrinkwrap for values) </p>
+	 * <p> Shrink type (look on MOD shrinkwrap for values). </p>
 	 * @see #__DNA__FIELD__shrinkType
 	 */
 	
@@ -297,7 +365,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Get method for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> axis to project/constrain </p>
+	 * <p> Axis to project/constrain. </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
 	
@@ -314,7 +382,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Set method for struct member 'projAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> axis to project/constrain </p>
+	 * <p> Axis to project/constrain. </p>
 	 * @see #__DNA__FIELD__projAxis
 	 */
 	
@@ -331,7 +399,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Get method for struct member 'projAxisSpace'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space to project axis in </p>
+	 * <p> Space to project axis in. </p>
 	 * @see #__DNA__FIELD__projAxisSpace
 	 */
 	
@@ -348,7 +416,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Set method for struct member 'projAxisSpace'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space to project axis in </p>
+	 * <p> Space to project axis in. </p>
 	 * @see #__DNA__FIELD__projAxisSpace
 	 */
 	
@@ -365,7 +433,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Get method for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to search </p>
+	 * <p> Distance to search. </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
 	
@@ -382,7 +450,7 @@ public class bShrinkwrapConstraint extends CFacade {
 	 * Set method for struct member 'projLimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance to search </p>
+	 * <p> Distance to search. </p>
 	 * @see #__DNA__FIELD__projLimit
 	 */
 	
@@ -396,42 +464,132 @@ public class bShrinkwrapConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'shrinkMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Inside/outside/on surface (see MOD shrinkwrap). </p>
+	 * @see #__DNA__FIELD__shrinkMode
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public byte getShrinkMode() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 20);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 16);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'shrinkMode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Inside/outside/on surface (see MOD shrinkwrap). </p>
+	 * @see #__DNA__FIELD__shrinkMode
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setShrinkMode(byte shrinkMode) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 20;
+			__io__block.writeByte(__io__address + 20, shrinkMode);
 		} else {
-			__dna__offset = 16;
+			__io__block.writeByte(__io__address + 16, shrinkMode);
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options. </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public byte getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 21);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			return __io__block.readByte(__io__address + 17);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options. </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(byte flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 21, flag);
+		} else {
+			__io__block.writeByte(__io__address + 17, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'trackAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to align to normal. </p>
+	 * @see #__DNA__FIELD__trackAxis
+	 */
+	
+	public byte getTrackAxis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 22);
+		} else {
+			return __io__block.readByte(__io__address + 18);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'trackAxis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Axis to align to normal. </p>
+	 * @see #__DNA__FIELD__trackAxis
+	 */
+	
+	public void setTrackAxis(byte trackAxis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 22, trackAxis);
+		} else {
+			__io__block.writeByte(__io__address + 18, trackAxis);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public byte get_pad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 23);
+		} else {
+			return __io__block.readByte(__io__address + 19);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(byte _pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 23, _pad);
+		} else {
+			__io__block.writeByte(__io__address + 19, _pad);
 		}
 	}
 

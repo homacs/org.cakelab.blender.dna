@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -13,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Visualization General ------------------------  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
+ * <p> Visualization General ------------------<mdash/><mdash/><mdash/>  for Objects or Poses (but NOT PoseChannels) Animation Visualization Settings (avs) </p>
  */
 
-@CMetaData(size32=48, size64=48)
+@CMetaData(size32=32, size64=32)
 public class bAnimVizSettings extends CFacade {
 
 	/**
@@ -27,171 +28,13 @@ public class bAnimVizSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 346;
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings ----------------  </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_sf);
-	 * CPointer&lt;Integer&gt; p_ghost_sf = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_sf'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_sf = new long[]{0, 0};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range (only used for GHOST_TYPE_RANGE) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_ef);
-	 * CPointer&lt;Integer&gt; p_ghost_ef = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_ef'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_ef = new long[]{4, 4};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_bc'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_bc);
-	 * CPointer&lt;Integer&gt; p_ghost_bc = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_bc'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_bc = new long[]{8, 8};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_ac);
-	 * CPointer&lt;Integer&gt; p_ghost_ac = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_ac'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_ac = new long[]{12, 12};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Types </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_type);
-	 * CPointer&lt;Short&gt; p_ghost_type = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_type'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_type = new long[]{16, 16};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between each ghost shown (not for GHOST_TYPE_KEYS) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_step);
-	 * CPointer&lt;Short&gt; p_ghost_step = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_step'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_step = new long[]{18, 18};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ghost_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Flag </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bAnimVizSettings banimvizsettings = ...;
-	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD__ghost_flag);
-	 * CPointer&lt;Short&gt; p_ghost_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ghost_flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ghost_flag = new long[]{20, 20};
+	public static final int __DNA__SDNA_INDEX = 314;
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,13 +51,13 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{22, 22};
+	public static final long[] __DNA__FIELD__recalc = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -231,13 +74,13 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_type = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__path_type = new long[]{2, 2};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between points indicated on the paths </p>
+	 * <p> Number of frames between points indicated on the paths. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -254,13 +97,13 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_step = new long[]{26, 26};
+	public static final long[] __DNA__FIELD__path_step = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_ViewFlag </p>
+	 * <p>{@link eMotionPaths_ViewFlag} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -277,13 +120,13 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_viewflag = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__path_viewflag = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_BakeFlag </p>
+	 * <p>{@link eMotionPaths_BakeFlag} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -300,10 +143,33 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_bakeflag = new long[]{30, 30};
+	public static final long[] __DNA__FIELD__path_bakeflag = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bAnimVizSettings banimvizsettings = ...;
+	 * CPointer&lt;Object&gt; p = banimvizsettings.__dna__addressof(bAnimVizSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_sf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start and end frames of path-calculation range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -320,13 +186,10 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_sf = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__path_sf = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -343,10 +206,13 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_ef = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__path_ef = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_bc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames before/after current frame to show. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -363,13 +229,10 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_bc = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__path_bc = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -386,7 +249,7 @@ public class bAnimVizSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_ac = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__path_ac = new long[]{28, 28};
 
 	public bAnimVizSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -397,251 +260,19 @@ public class bAnimVizSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'ghost_sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings ----------------  </p>
-	 * @see #__DNA__FIELD__ghost_sf
-	 */
-	
-	public int getGhost_sf() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 0);
-		} else {
-			return __io__block.readInt(__io__address + 0);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_sf'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Onion-Skinning Settings ----------------  </p>
-	 * @see #__DNA__FIELD__ghost_sf
-	 */
-	
-	public void setGhost_sf(int ghost_sf) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 0, ghost_sf);
-		} else {
-			__io__block.writeInt(__io__address + 0, ghost_sf);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range (only used for GHOST_TYPE_RANGE) </p>
-	 * @see #__DNA__FIELD__ghost_ef
-	 */
-	
-	public int getGhost_ef() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 4);
-		} else {
-			return __io__block.readInt(__io__address + 4);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of ghost-drawing range (only used for GHOST_TYPE_RANGE) </p>
-	 * @see #__DNA__FIELD__ghost_ef
-	 */
-	
-	public void setGhost_ef(int ghost_ef) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 4, ghost_ef);
-		} else {
-			__io__block.writeInt(__io__address + 4, ghost_ef);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_bc'.
-	 * @see #__DNA__FIELD__ghost_bc
-	 */
-	
-	public int getGhost_bc() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8);
-		} else {
-			return __io__block.readInt(__io__address + 8);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_bc'.
-	 * @see #__DNA__FIELD__ghost_bc
-	 */
-	
-	public void setGhost_bc(int ghost_bc) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8, ghost_bc);
-		} else {
-			__io__block.writeInt(__io__address + 8, ghost_bc);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
-	 * @see #__DNA__FIELD__ghost_ac
-	 */
-	
-	public int getGhost_ac() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
-		} else {
-			return __io__block.readInt(__io__address + 12);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
-	 * @see #__DNA__FIELD__ghost_ac
-	 */
-	
-	public void setGhost_ac(int ghost_ac) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, ghost_ac);
-		} else {
-			__io__block.writeInt(__io__address + 12, ghost_ac);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Types </p>
-	 * @see #__DNA__FIELD__ghost_type
-	 */
-	
-	public short getGhost_type() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 16);
-		} else {
-			return __io__block.readShort(__io__address + 16);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_type'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Types </p>
-	 * @see #__DNA__FIELD__ghost_type
-	 */
-	
-	public void setGhost_type(short ghost_type) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 16, ghost_type);
-		} else {
-			__io__block.writeShort(__io__address + 16, ghost_type);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between each ghost shown (not for GHOST_TYPE_KEYS) </p>
-	 * @see #__DNA__FIELD__ghost_step
-	 */
-	
-	public short getGhost_step() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 18);
-		} else {
-			return __io__block.readShort(__io__address + 18);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_step'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between each ghost shown (not for GHOST_TYPE_KEYS) </p>
-	 * @see #__DNA__FIELD__ghost_step
-	 */
-	
-	public void setGhost_step(short ghost_step) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 18, ghost_step);
-		} else {
-			__io__block.writeShort(__io__address + 18, ghost_step);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ghost_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Flag </p>
-	 * @see #__DNA__FIELD__ghost_flag
-	 */
-	
-	public short getGhost_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 20);
-		} else {
-			return __io__block.readShort(__io__address + 20);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ghost_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> eOnionSkin_Flag </p>
-	 * @see #__DNA__FIELD__ghost_flag
-	 */
-	
-	public void setGhost_flag(short ghost_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 20, ghost_flag);
-		} else {
-			__io__block.writeShort(__io__address + 20, ghost_flag);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
 	public short getRecalc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 0);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 0);
 		}
 	}
 
@@ -649,16 +280,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'recalc'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> General Settings ----------------------  eAnimViz_RecalcFlags </p>
+	 * <p> General Settings ------------------<mdash/><mdash/>  {@link eAnimViz_RecalcFlags} . </p>
 	 * @see #__DNA__FIELD__recalc
 	 */
 	
 	public void setRecalc(short recalc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 22, recalc);
+			__io__block.writeShort(__io__address + 0, recalc);
 		} else {
-			__io__block.writeShort(__io__address + 22, recalc);
+			__io__block.writeShort(__io__address + 0, recalc);
 		}
 	}
 
@@ -666,16 +297,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	
 	public short getPath_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 2);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 2);
 		}
 	}
 
@@ -683,16 +314,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings -----------------  eMotionPath_Types </p>
+	 * <p> Motion {@link Path}  Settings -------------<mdash/><mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	
 	public void setPath_type(short path_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, path_type);
+			__io__block.writeShort(__io__address + 2, path_type);
 		} else {
-			__io__block.writeShort(__io__address + 24, path_type);
+			__io__block.writeShort(__io__address + 2, path_type);
 		}
 	}
 
@@ -700,16 +331,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between points indicated on the paths </p>
+	 * <p> Number of frames between points indicated on the paths. </p>
 	 * @see #__DNA__FIELD__path_step
 	 */
 	
 	public short getPath_step() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 4);
 		} else {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 4);
 		}
 	}
 
@@ -717,16 +348,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames between points indicated on the paths </p>
+	 * <p> Number of frames between points indicated on the paths. </p>
 	 * @see #__DNA__FIELD__path_step
 	 */
 	
 	public void setPath_step(short path_step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, path_step);
+			__io__block.writeShort(__io__address + 4, path_step);
 		} else {
-			__io__block.writeShort(__io__address + 26, path_step);
+			__io__block.writeShort(__io__address + 4, path_step);
 		}
 	}
 
@@ -734,16 +365,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_ViewFlag </p>
+	 * <p>{@link eMotionPaths_ViewFlag} . </p>
 	 * @see #__DNA__FIELD__path_viewflag
 	 */
 	
 	public short getPath_viewflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 6);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 6);
 		}
 	}
 
@@ -751,16 +382,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_viewflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_ViewFlag </p>
+	 * <p>{@link eMotionPaths_ViewFlag} . </p>
 	 * @see #__DNA__FIELD__path_viewflag
 	 */
 	
 	public void setPath_viewflag(short path_viewflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, path_viewflag);
+			__io__block.writeShort(__io__address + 6, path_viewflag);
 		} else {
-			__io__block.writeShort(__io__address + 28, path_viewflag);
+			__io__block.writeShort(__io__address + 6, path_viewflag);
 		}
 	}
 
@@ -768,16 +399,16 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_BakeFlag </p>
+	 * <p>{@link eMotionPaths_BakeFlag} . </p>
 	 * @see #__DNA__FIELD__path_bakeflag
 	 */
 	
 	public short getPath_bakeflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 8);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
@@ -785,140 +416,180 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_bakeflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eMotionPaths_BakeFlag </p>
+	 * <p>{@link eMotionPaths_BakeFlag} . </p>
 	 * @see #__DNA__FIELD__path_bakeflag
 	 */
 	
 	public void setPath_bakeflag(short path_bakeflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, path_bakeflag);
+			__io__block.writeShort(__io__address + 8, path_bakeflag);
 		} else {
-			__io__block.writeShort(__io__address + 30, path_bakeflag);
+			__io__block.writeShort(__io__address + 8, path_bakeflag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 10;
+		} else {
+			__dna__offset = 10;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'path_sf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start and end frames of path-calculation range. </p>
 	 * @see #__DNA__FIELD__path_sf
 	 */
 	
 	public int getPath_sf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 16);
 		} else {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 16);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'path_sf'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Start and end frames of path-calculation range. </p>
 	 * @see #__DNA__FIELD__path_sf
 	 */
 	
 	public void setPath_sf(int path_sf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, path_sf);
+			__io__block.writeInt(__io__address + 16, path_sf);
 		} else {
-			__io__block.writeInt(__io__address + 32, path_sf);
+			__io__block.writeInt(__io__address + 16, path_sf);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'path_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range </p>
 	 * @see #__DNA__FIELD__path_ef
 	 */
 	
 	public int getPath_ef() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 20);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 20);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'path_ef'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> start and end frames of path-calculation range </p>
 	 * @see #__DNA__FIELD__path_ef
 	 */
 	
 	public void setPath_ef(int path_ef) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, path_ef);
+			__io__block.writeInt(__io__address + 20, path_ef);
 		} else {
-			__io__block.writeInt(__io__address + 36, path_ef);
+			__io__block.writeInt(__io__address + 20, path_ef);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'path_bc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames before/after current frame to show. </p>
 	 * @see #__DNA__FIELD__path_bc
 	 */
 	
 	public int getPath_bc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 24);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 24);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'path_bc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of frames before/after current frame to show. </p>
 	 * @see #__DNA__FIELD__path_bc
 	 */
 	
 	public void setPath_bc(int path_bc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, path_bc);
+			__io__block.writeInt(__io__address + 24, path_bc);
 		} else {
-			__io__block.writeInt(__io__address + 40, path_bc);
+			__io__block.writeInt(__io__address + 24, path_bc);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'path_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
 	 * @see #__DNA__FIELD__path_ac
 	 */
 	
 	public int getPath_ac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'path_ac'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of frames before/after current frame to show </p>
 	 * @see #__DNA__FIELD__path_ac
 	 */
 	
 	public void setPath_ac(int path_ac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, path_ac);
+			__io__block.writeInt(__io__address + 28, path_ac);
 		} else {
-			__io__block.writeInt(__io__address + 44, path_ac);
+			__io__block.writeInt(__io__address + 28, path_ac);
 		}
 	}
 

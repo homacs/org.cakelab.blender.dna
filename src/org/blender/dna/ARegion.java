@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=292, size64=384)
+@CMetaData(size32=304, size64=408)
 public class ARegion extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 263;
+	public static final int __DNA__SDNA_INDEX = 271;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -72,7 +72,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways) </p>
+	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -86,7 +86,7 @@ public class ARegion extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 148/160</li>
+	 * <li>Actual Size (32bit/64bit): 156/168</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{8, 16};
@@ -95,7 +95,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coordinates of region </p>
+	 * <p> Coordinates of region. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,13 +112,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winrct = new long[]{156, 176};
+	public static final long[] __DNA__FIELD__winrct = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for partial redraw, same or smaller than winrct </p>
+	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -135,10 +135,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawrct = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__drawrct = new long[]{180, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Size. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,13 +158,10 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winx = new long[]{188, 208};
+	public static final long[] __DNA__FIELD__winx = new long[]{196, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -178,33 +178,36 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winy = new long[]{190, 210};
+	public static final long[] __DNA__FIELD__winy = new long[]{198, 218};
 
 	/**
-	 * Field descriptor (offset) for struct member 'swinid'.
+	 * Field descriptor (offset) for struct member 'visible'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Region is currently visible on screen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ARegion aregion = ...;
-	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__swinid);
-	 * CPointer&lt;Short&gt; p_swinid = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__visible);
+	 * CPointer&lt;Short&gt; p_visible = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'swinid'</li>
+	 * <li>Field: 'visible'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__swinid = new long[]{192, 212};
+	public static final long[] __DNA__FIELD__visible = new long[]{200, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiontype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> window, header, etc. identifier for drawing </p>
+	 * <p> Window, header, etc. identifier for drawing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -221,13 +224,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiontype = new long[]{194, 214};
+	public static final long[] __DNA__FIELD__regiontype = new long[]{202, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alignment'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> how it should split </p>
+	 * <p> How it should split. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -244,13 +247,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alignment = new long[]{196, 216};
+	public static final long[] __DNA__FIELD__alignment = new long[]{204, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> hide, ... </p>
+	 * <p> Hide, .... </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -267,33 +270,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{198, 218};
-
-	/**
-	 * Field descriptor (offset) for struct member 'fsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in float (unused) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ARegion aregion = ...;
-	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__fsize);
-	 * CPointer&lt;Float&gt; p_fsize = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'fsize'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__fsize = new long[]{200, 220};
+	public static final long[] __DNA__FIELD__flag = new long[]{206, 226};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,13 +293,10 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizex = new long[]{204, 224};
+	public static final long[] __DNA__FIELD__sizex = new long[]{208, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizey'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in pixels (if zero it uses regiontype) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -333,13 +313,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizey = new long[]{206, 226};
+	public static final long[] __DNA__FIELD__sizey = new long[]{210, 230};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
+	 * <p> Private, cached notifier events. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -356,13 +336,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw = new long[]{208, 228};
+	public static final long[] __DNA__FIELD__do_draw = new long[]{212, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_overlay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
+	 * <p> Private, cached notifier events. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -379,36 +359,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_overlay = new long[]{210, 230};
-
-	/**
-	 * Field descriptor (offset) for struct member 'swap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> private, indicator to survive swap-exchange </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ARegion aregion = ...;
-	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__swap);
-	 * CPointer&lt;Short&gt; p_swap = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'swap'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__swap = new long[]{212, 232};
+	public static final long[] __DNA__FIELD__do_draw_overlay = new long[]{214, 234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, set for indicate drawing overlapped </p>
+	 * <p> Private, set for indicate drawing overlapped. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -425,13 +382,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlap = new long[]{214, 234};
+	public static final long[] __DNA__FIELD__overlap = new long[]{216, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flagfullscreen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temporary copy of flag settings for clean fullscreen </p>
+	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -448,33 +405,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flagfullscreen = new long[]{216, 236};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ARegion aregion = ...;
-	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{218, 238};
+	public static final long[] __DNA__FIELD__flagfullscreen = new long[]{218, 238};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this region type </p>
+	 * <p> Callbacks for this region type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -497,7 +434,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uiBlock </p>
+	 * <p> #uiBlock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -520,7 +457,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  </p>
+	 * <p>{@link Panel} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -543,7 +480,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stack of panel categories </p>
+	 * <p> Stack of panel categories. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -566,7 +503,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiList}  </p>
+	 * <p>{@link uiList} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -589,7 +526,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiPreview}  </p>
+	 * <p>{@link uiPreview} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -612,7 +549,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -635,7 +572,7 @@ public class ARegion extends CFacade {
 	 * Field descriptor (offset) for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  categories runtime </p>
+	 * <p>{@link Panel}  categories runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -655,10 +592,33 @@ public class ARegion extends CFacade {
 	public static final long[] __DNA__FIELD__panels_category = new long[]{272, 344};
 
 	/**
+	 * Field descriptor (offset) for struct member 'gizmo_map'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Gizmo-map of this region. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__gizmo_map);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_gizmo_map = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_map'</li>
+	 * <li>Signature: 'wmGizmoMap*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_map = new long[]{280, 360};
+
+	/**
 	 * Field descriptor (offset) for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> blend in/out </p>
+	 * <p> Blend in/out. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -675,13 +635,33 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiontimer = new long[]{280, 360};
+	public static final long[] __DNA__FIELD__regiontimer = new long[]{284, 368};
+
+	/**
+	 * Field descriptor (offset) for struct member 'draw_buffer'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__draw_buffer);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_draw_buffer = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'draw_buffer'</li>
+	 * <li>Signature: 'wmDrawBuffer*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__draw_buffer = new long[]{288, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'headerstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use this string to draw info </p>
+	 * <p> Use this string to draw info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -698,13 +678,13 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__headerstr = new long[]{284, 368};
+	public static final long[] __DNA__FIELD__headerstr = new long[]{292, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent? </p>
+	 * <p> XXX 2.50, need spacedata equivalent?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -721,7 +701,27 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiondata = new long[]{288, 376};
+	public static final long[] __DNA__FIELD__regiondata = new long[]{296, 392};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion aregion = ...;
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__runtime);
+	 * CPointer&lt;ARegion_Runtime&gt; p_runtime = p.cast(new Class[]{ARegion_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'ARegion_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{300, 400};
 
 	public ARegion(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -799,7 +799,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways) </p>
+	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -816,7 +816,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways) </p>
+	 * <p> 2D-View scrolling/zoom info (most regions are 2d anyways). </p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -841,16 +841,16 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coordinates of region </p>
+	 * <p> Coordinates of region. </p>
 	 * @see #__DNA__FIELD__winrct
 	 */
 	
 	public rcti getWinrct() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 176, __io__block, __io__blockTable);
+			return new rcti(__io__address + 184, __io__block, __io__blockTable);
 		} else {
-			return new rcti(__io__address + 156, __io__block, __io__blockTable);
+			return new rcti(__io__address + 164, __io__block, __io__blockTable);
 		}
 	}
 
@@ -858,7 +858,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'winrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coordinates of region </p>
+	 * <p> Coordinates of region. </p>
 	 * @see #__DNA__FIELD__winrct
 	 */
 	
@@ -866,9 +866,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		}
 		if (__io__equals(winrct, __io__address + __dna__offset)) {
 			return;
@@ -883,16 +883,16 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for partial redraw, same or smaller than winrct </p>
+	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * @see #__DNA__FIELD__drawrct
 	 */
 	
 	public rcti getDrawrct() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 192, __io__block, __io__blockTable);
+			return new rcti(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new rcti(__io__address + 172, __io__block, __io__blockTable);
+			return new rcti(__io__address + 180, __io__block, __io__blockTable);
 		}
 	}
 
@@ -900,7 +900,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'drawrct'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime for partial redraw, same or smaller than winrct </p>
+	 * <p> Runtime for partial redraw, same or smaller than winrct. </p>
 	 * @see #__DNA__FIELD__drawrct
 	 */
 	
@@ -908,9 +908,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(drawrct, __io__address + __dna__offset)) {
 			return;
@@ -923,137 +923,13 @@ public class ARegion extends CFacade {
 
 	/**
 	 * Get method for struct member 'winx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Size. </p>
 	 * @see #__DNA__FIELD__winx
 	 */
 	
 	public short getWinx() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
-		} else {
-			return __io__block.readShort(__io__address + 188);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'winx'.
-	 * @see #__DNA__FIELD__winx
-	 */
-	
-	public void setWinx(short winx) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, winx);
-		} else {
-			__io__block.writeShort(__io__address + 188, winx);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'winy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
-	 * @see #__DNA__FIELD__winy
-	 */
-	
-	public short getWiny() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
-		} else {
-			return __io__block.readShort(__io__address + 190);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'winy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> size </p>
-	 * @see #__DNA__FIELD__winy
-	 */
-	
-	public void setWiny(short winy) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, winy);
-		} else {
-			__io__block.writeShort(__io__address + 190, winy);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'swinid'.
-	 * @see #__DNA__FIELD__swinid
-	 */
-	
-	public short getSwinid() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
-		} else {
-			return __io__block.readShort(__io__address + 192);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'swinid'.
-	 * @see #__DNA__FIELD__swinid
-	 */
-	
-	public void setSwinid(short swinid) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, swinid);
-		} else {
-			__io__block.writeShort(__io__address + 192, swinid);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'regiontype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> window, header, etc. identifier for drawing </p>
-	 * @see #__DNA__FIELD__regiontype
-	 */
-	
-	public short getRegiontype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
-		} else {
-			return __io__block.readShort(__io__address + 194);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'regiontype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> window, header, etc. identifier for drawing </p>
-	 * @see #__DNA__FIELD__regiontype
-	 */
-	
-	public void setRegiontype(short regiontype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, regiontype);
-		} else {
-			__io__block.writeShort(__io__address + 194, regiontype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'alignment'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> how it should split </p>
-	 * @see #__DNA__FIELD__alignment
-	 */
-	
-	public short getAlignment() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 216);
@@ -1063,31 +939,28 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'alignment'.
+	 * Set method for struct member 'winx'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> how it should split </p>
-	 * @see #__DNA__FIELD__alignment
+	 * <p> Size. </p>
+	 * @see #__DNA__FIELD__winx
 	 */
 	
-	public void setAlignment(short alignment) throws IOException
+	public void setWinx(short winx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, alignment);
+			__io__block.writeShort(__io__address + 216, winx);
 		} else {
-			__io__block.writeShort(__io__address + 196, alignment);
+			__io__block.writeShort(__io__address + 196, winx);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> hide, ... </p>
-	 * @see #__DNA__FIELD__flag
+	 * Get method for struct member 'winy'.
+	 * @see #__DNA__FIELD__winy
 	 */
 	
-	public short getFlag() throws IOException
+	public short getWiny() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 218);
@@ -1097,62 +970,96 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> hide, ... </p>
-	 * @see #__DNA__FIELD__flag
+	 * Set method for struct member 'winy'.
+	 * @see #__DNA__FIELD__winy
 	 */
 	
-	public void setFlag(short flag) throws IOException
+	public void setWiny(short winy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, flag);
+			__io__block.writeShort(__io__address + 218, winy);
 		} else {
-			__io__block.writeShort(__io__address + 198, flag);
+			__io__block.writeShort(__io__address + 198, winy);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'fsize'.
+	 * Get method for struct member 'visible'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in float (unused) </p>
-	 * @see #__DNA__FIELD__fsize
+	 * <p> Region is currently visible on screen. </p>
+	 * @see #__DNA__FIELD__visible
 	 */
 	
-	public float getFsize() throws IOException
+	public short getVisible() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readShort(__io__address + 200);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'fsize'.
+	 * Set method for struct member 'visible'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in float (unused) </p>
-	 * @see #__DNA__FIELD__fsize
+	 * <p> Region is currently visible on screen. </p>
+	 * @see #__DNA__FIELD__visible
 	 */
 	
-	public void setFsize(float fsize) throws IOException
+	public void setVisible(short visible) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, fsize);
+			__io__block.writeShort(__io__address + 220, visible);
 		} else {
-			__io__block.writeFloat(__io__address + 200, fsize);
+			__io__block.writeShort(__io__address + 200, visible);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'sizex'.
-	 * @see #__DNA__FIELD__sizex
+	 * Get method for struct member 'regiontype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Window, header, etc. identifier for drawing. </p>
+	 * @see #__DNA__FIELD__regiontype
 	 */
 	
-	public short getSizex() throws IOException
+	public short getRegiontype() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 222);
+		} else {
+			return __io__block.readShort(__io__address + 202);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'regiontype'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Window, header, etc. identifier for drawing. </p>
+	 * @see #__DNA__FIELD__regiontype
+	 */
+	
+	public void setRegiontype(short regiontype) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 222, regiontype);
+		} else {
+			__io__block.writeShort(__io__address + 202, regiontype);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'alignment'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How it should split. </p>
+	 * @see #__DNA__FIELD__alignment
+	 */
+	
+	public short getAlignment() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 224);
@@ -1162,28 +1069,31 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'sizex'.
-	 * @see #__DNA__FIELD__sizex
+	 * Set method for struct member 'alignment'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How it should split. </p>
+	 * @see #__DNA__FIELD__alignment
 	 */
 	
-	public void setSizex(short sizex) throws IOException
+	public void setAlignment(short alignment) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, sizex);
+			__io__block.writeShort(__io__address + 224, alignment);
 		} else {
-			__io__block.writeShort(__io__address + 204, sizex);
+			__io__block.writeShort(__io__address + 204, alignment);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'sizey'.
+	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in pixels (if zero it uses regiontype) </p>
-	 * @see #__DNA__FIELD__sizey
+	 * <p> Hide, .... </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public short getSizey() throws IOException
+	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 226);
@@ -1193,31 +1103,31 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'sizey'.
+	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current split size in pixels (if zero it uses regiontype) </p>
-	 * @see #__DNA__FIELD__sizey
+	 * <p> Hide, .... </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setSizey(short sizey) throws IOException
+	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, sizey);
+			__io__block.writeShort(__io__address + 226, flag);
 		} else {
-			__io__block.writeShort(__io__address + 206, sizey);
+			__io__block.writeShort(__io__address + 206, flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'do_draw'.
+	 * Get method for struct member 'sizex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
-	 * @see #__DNA__FIELD__do_draw
+	 * <p><code></code> . </p>
+	 * @see #__DNA__FIELD__sizex
 	 */
 	
-	public short getDo_draw() throws IOException
+	public short getSizex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 228);
@@ -1227,31 +1137,28 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'do_draw'.
+	 * Set method for struct member 'sizex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
-	 * @see #__DNA__FIELD__do_draw
+	 * <p><code></code> . </p>
+	 * @see #__DNA__FIELD__sizex
 	 */
 	
-	public void setDo_draw(short do_draw) throws IOException
+	public void setSizex(short sizex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, do_draw);
+			__io__block.writeShort(__io__address + 228, sizex);
 		} else {
-			__io__block.writeShort(__io__address + 208, do_draw);
+			__io__block.writeShort(__io__address + 208, sizex);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'do_draw_overlay'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
-	 * @see #__DNA__FIELD__do_draw_overlay
+	 * Get method for struct member 'sizey'.
+	 * @see #__DNA__FIELD__sizey
 	 */
 	
-	public short getDo_draw_overlay() throws IOException
+	public short getSizey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 230);
@@ -1261,31 +1168,28 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'do_draw_overlay'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> private, cached notifier events </p>
-	 * @see #__DNA__FIELD__do_draw_overlay
+	 * Set method for struct member 'sizey'.
+	 * @see #__DNA__FIELD__sizey
 	 */
 	
-	public void setDo_draw_overlay(short do_draw_overlay) throws IOException
+	public void setSizey(short sizey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, do_draw_overlay);
+			__io__block.writeShort(__io__address + 230, sizey);
 		} else {
-			__io__block.writeShort(__io__address + 210, do_draw_overlay);
+			__io__block.writeShort(__io__address + 210, sizey);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'swap'.
+	 * Get method for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, indicator to survive swap-exchange </p>
-	 * @see #__DNA__FIELD__swap
+	 * <p> Private, cached notifier events. </p>
+	 * @see #__DNA__FIELD__do_draw
 	 */
 	
-	public short getSwap() throws IOException
+	public short getDo_draw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 232);
@@ -1295,31 +1199,31 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'swap'.
+	 * Set method for struct member 'do_draw'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, indicator to survive swap-exchange </p>
-	 * @see #__DNA__FIELD__swap
+	 * <p> Private, cached notifier events. </p>
+	 * @see #__DNA__FIELD__do_draw
 	 */
 	
-	public void setSwap(short swap) throws IOException
+	public void setDo_draw(short do_draw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 232, swap);
+			__io__block.writeShort(__io__address + 232, do_draw);
 		} else {
-			__io__block.writeShort(__io__address + 212, swap);
+			__io__block.writeShort(__io__address + 212, do_draw);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'overlap'.
+	 * Get method for struct member 'do_draw_overlay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, set for indicate drawing overlapped </p>
-	 * @see #__DNA__FIELD__overlap
+	 * <p> Private, cached notifier events. </p>
+	 * @see #__DNA__FIELD__do_draw_overlay
 	 */
 	
-	public short getOverlap() throws IOException
+	public short getDo_draw_overlay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 234);
@@ -1329,31 +1233,31 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'overlap'.
+	 * Set method for struct member 'do_draw_overlay'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> private, set for indicate drawing overlapped </p>
-	 * @see #__DNA__FIELD__overlap
+	 * <p> Private, cached notifier events. </p>
+	 * @see #__DNA__FIELD__do_draw_overlay
 	 */
 	
-	public void setOverlap(short overlap) throws IOException
+	public void setDo_draw_overlay(short do_draw_overlay) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 234, overlap);
+			__io__block.writeShort(__io__address + 234, do_draw_overlay);
 		} else {
-			__io__block.writeShort(__io__address + 214, overlap);
+			__io__block.writeShort(__io__address + 214, do_draw_overlay);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'flagfullscreen'.
+	 * Get method for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temporary copy of flag settings for clean fullscreen </p>
-	 * @see #__DNA__FIELD__flagfullscreen
+	 * <p> Private, set for indicate drawing overlapped. </p>
+	 * @see #__DNA__FIELD__overlap
 	 */
 	
-	public short getFlagfullscreen() throws IOException
+	public short getOverlap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 236);
@@ -1363,28 +1267,31 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'flagfullscreen'.
+	 * Set method for struct member 'overlap'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temporary copy of flag settings for clean fullscreen </p>
-	 * @see #__DNA__FIELD__flagfullscreen
+	 * <p> Private, set for indicate drawing overlapped. </p>
+	 * @see #__DNA__FIELD__overlap
 	 */
 	
-	public void setFlagfullscreen(short flagfullscreen) throws IOException
+	public void setOverlap(short overlap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 236, flagfullscreen);
+			__io__block.writeShort(__io__address + 236, overlap);
 		} else {
-			__io__block.writeShort(__io__address + 216, flagfullscreen);
+			__io__block.writeShort(__io__address + 216, overlap);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'flagfullscreen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
+	 * @see #__DNA__FIELD__flagfullscreen
 	 */
 	
-	public short getPad() throws IOException
+	public short getFlagfullscreen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 238);
@@ -1394,16 +1301,19 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'flagfullscreen'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Temporary copy of flag settings for clean fullscreen. </p>
+	 * @see #__DNA__FIELD__flagfullscreen
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setFlagfullscreen(short flagfullscreen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 238, pad);
+			__io__block.writeShort(__io__address + 238, flagfullscreen);
 		} else {
-			__io__block.writeShort(__io__address + 218, pad);
+			__io__block.writeShort(__io__address + 218, flagfullscreen);
 		}
 	}
 
@@ -1411,7 +1321,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this region type </p>
+	 * <p> Callbacks for this region type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1431,7 +1341,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> callbacks for this region type </p>
+	 * <p> Callbacks for this region type. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1449,7 +1359,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uiBlock </p>
+	 * <p> #uiBlock. </p>
 	 * @see #__DNA__FIELD__uiblocks
 	 */
 	
@@ -1466,7 +1376,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'uiblocks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uiBlock </p>
+	 * <p> #uiBlock. </p>
 	 * @see #__DNA__FIELD__uiblocks
 	 */
 	
@@ -1491,7 +1401,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  </p>
+	 * <p>{@link Panel} . </p>
 	 * @see #__DNA__FIELD__panels
 	 */
 	
@@ -1508,7 +1418,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'panels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  </p>
+	 * <p>{@link Panel} . </p>
 	 * @see #__DNA__FIELD__panels
 	 */
 	
@@ -1533,7 +1443,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stack of panel categories </p>
+	 * <p> Stack of panel categories. </p>
 	 * @see #__DNA__FIELD__panels_category_active
 	 */
 	
@@ -1550,7 +1460,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'panels_category_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stack of panel categories </p>
+	 * <p> Stack of panel categories. </p>
 	 * @see #__DNA__FIELD__panels_category_active
 	 */
 	
@@ -1575,7 +1485,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiList}  </p>
+	 * <p>{@link uiList} . </p>
 	 * @see #__DNA__FIELD__ui_lists
 	 */
 	
@@ -1592,7 +1502,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'ui_lists'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiList}  </p>
+	 * <p>{@link uiList} . </p>
 	 * @see #__DNA__FIELD__ui_lists
 	 */
 	
@@ -1617,7 +1527,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiPreview}  </p>
+	 * <p>{@link uiPreview} . </p>
 	 * @see #__DNA__FIELD__ui_previews
 	 */
 	
@@ -1634,7 +1544,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'ui_previews'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link uiPreview}  </p>
+	 * <p>{@link uiPreview} . </p>
 	 * @see #__DNA__FIELD__ui_previews
 	 */
 	
@@ -1659,7 +1569,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
@@ -1676,7 +1586,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'handlers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> wmEventHandler </p>
+	 * <p> #wmEventHandler. </p>
 	 * @see #__DNA__FIELD__handlers
 	 */
 	
@@ -1701,7 +1611,7 @@ public class ARegion extends CFacade {
 	 * Get method for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  categories runtime </p>
+	 * <p>{@link Panel}  categories runtime. </p>
 	 * @see #__DNA__FIELD__panels_category
 	 */
 	
@@ -1718,7 +1628,7 @@ public class ARegion extends CFacade {
 	 * Set method for struct member 'panels_category'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Panel}  categories runtime </p>
+	 * <p>{@link Panel}  categories runtime. </p>
 	 * @see #__DNA__FIELD__panels_category
 	 */
 	
@@ -1740,14 +1650,14 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'regiontimer'.
+	 * Get method for struct member 'gizmo_map'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> blend in/out </p>
-	 * @see #__DNA__FIELD__regiontimer
+	 * <p> Gizmo-map of this region. </p>
+	 * @see #__DNA__FIELD__gizmo_map
 	 */
 	
-	public CPointer<Object> getRegiontimer() throws IOException
+	public CPointer<Object> getGizmo_map() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1760,16 +1670,16 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'regiontimer'.
+	 * Set method for struct member 'gizmo_map'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> blend in/out </p>
-	 * @see #__DNA__FIELD__regiontimer
+	 * <p> Gizmo-map of this region. </p>
+	 * @see #__DNA__FIELD__gizmo_map
 	 */
 	
-	public void setRegiontimer(CPointer<Object> regiontimer) throws IOException
+	public void setGizmo_map(CPointer<Object> gizmo_map) throws IOException
 	{
-		long __address = ((regiontimer == null) ? 0 : regiontimer.getAddress());
+		long __address = ((gizmo_map == null) ? 0 : gizmo_map.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 360, __address);
 		} else {
@@ -1778,14 +1688,14 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'headerstr'.
+	 * Get method for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use this string to draw info </p>
-	 * @see #__DNA__FIELD__headerstr
+	 * <p> Blend in/out. </p>
+	 * @see #__DNA__FIELD__regiontimer
 	 */
 	
-	public CPointer<Byte> getHeaderstr() throws IOException
+	public CPointer<Object> getRegiontimer() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1793,21 +1703,21 @@ public class ARegion extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'headerstr'.
+	 * Set method for struct member 'regiontimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> use this string to draw info </p>
-	 * @see #__DNA__FIELD__headerstr
+	 * <p> Blend in/out. </p>
+	 * @see #__DNA__FIELD__regiontimer
 	 */
 	
-	public void setHeaderstr(CPointer<Byte> headerstr) throws IOException
+	public void setRegiontimer(CPointer<Object> regiontimer) throws IOException
 	{
-		long __address = ((headerstr == null) ? 0 : headerstr.getAddress());
+		long __address = ((regiontimer == null) ? 0 : regiontimer.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 368, __address);
 		} else {
@@ -1816,14 +1726,11 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'regiondata'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent? </p>
-	 * @see #__DNA__FIELD__regiondata
+	 * Get method for struct member 'draw_buffer'.
+	 * @see #__DNA__FIELD__draw_buffer
 	 */
 	
-	public CPointer<Object> getRegiondata() throws IOException
+	public CPointer<Object> getDraw_buffer() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1836,10 +1743,83 @@ public class ARegion extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'draw_buffer'.
+	 * @see #__DNA__FIELD__draw_buffer
+	 */
+	
+	public void setDraw_buffer(CPointer<Object> draw_buffer) throws IOException
+	{
+		long __address = ((draw_buffer == null) ? 0 : draw_buffer.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 376, __address);
+		} else {
+			__io__block.writeLong(__io__address + 288, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'headerstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Use this string to draw info. </p>
+	 * @see #__DNA__FIELD__headerstr
+	 */
+	
+	public CPointer<Byte> getHeaderstr() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 292);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'headerstr'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Use this string to draw info. </p>
+	 * @see #__DNA__FIELD__headerstr
+	 */
+	
+	public void setHeaderstr(CPointer<Byte> headerstr) throws IOException
+	{
+		long __address = ((headerstr == null) ? 0 : headerstr.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 384, __address);
+		} else {
+			__io__block.writeLong(__io__address + 292, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'regiondata'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX 2.50, need spacedata equivalent?. </p>
+	 * @see #__DNA__FIELD__regiondata
+	 */
+	
+	public CPointer<Object> getRegiondata() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
 	 * Set method for struct member 'regiondata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX 2.50, need spacedata equivalent? </p>
+	 * <p> XXX 2.50, need spacedata equivalent?. </p>
 	 * @see #__DNA__FIELD__regiondata
 	 */
 	
@@ -1847,9 +1827,45 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((regiondata == null) ? 0 : regiondata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 296, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public ARegion_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ARegion_Runtime(__io__address + 400, __io__block, __io__blockTable);
+		} else {
+			return new ARegion_Runtime(__io__address + 300, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(ARegion_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 400;
+		} else {
+			__dna__offset = 300;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

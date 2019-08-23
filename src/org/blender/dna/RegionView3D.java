@@ -13,12 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'RegionView3D'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  </p>
+ * 
  */
 
-@CMetaData(size32=872, size64=904)
+@CMetaData(size32=912, size64=936)
 public class RegionView3D extends CFacade {
 
 	/**
@@ -29,13 +27,13 @@ public class RegionView3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 206;
+	public static final int __DNA__SDNA_INDEX = 210;
 
 	/**
 	 * Field descriptor (offset) for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_PROJECTION matrix </p>
+	 * <p> GL_PROJECTION matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +56,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_MODELVIEW matrix </p>
+	 * <p> GL_MODELVIEW matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +79,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of viewmat </p>
+	 * <p> Inverse of viewmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -104,7 +102,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat*winmat </p>
+	 * <p> Viewmat*winmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,7 +125,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of persmat </p>
+	 * <p> Inverse of persmat. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,7 +148,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset/scale for camera glsl texcoords </p>
+	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -173,7 +171,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection </p>
+	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -216,7 +214,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user defined clipping planes </p>
+	 * <p> User defined clipping planes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -239,7 +237,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clip in object space, means we can test for clipping in editmode without first going into worldspace </p>
+	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -282,7 +280,7 @@ public class RegionView3D extends CFacade {
 	 * Field descriptor (offset) for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> allocated backup of its self while in localview </p>
+	 * <p> Allocated backup of its self while in localview. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -342,30 +340,10 @@ public class RegionView3D extends CFacade {
 	public static final long[] __DNA__FIELD__depths = new long[]{668, 680};
 
 	/**
-	 * Field descriptor (offset) for struct member 'gpuoffscreen'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RegionView3D regionview3d = ...;
-	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__gpuoffscreen);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_gpuoffscreen = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gpuoffscreen'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gpuoffscreen = new long[]{672, 688};
-
-	/**
 	 * Field descriptor (offset) for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animated smooth view </p>
+	 * <p> Animated smooth view. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -382,7 +360,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sms = new long[]{676, 696};
+	public static final long[] __DNA__FIELD__sms = new long[]{672, 688};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_timer'.
@@ -402,13 +380,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_timer = new long[]{680, 704};
+	public static final long[] __DNA__FIELD__smooth_timer = new long[]{676, 696};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform widget matrix </p>
+	 * <p> Transform gizmo matrix. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -425,13 +403,101 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twmat = new long[]{684, 712};
+	public static final long[] __DNA__FIELD__twmat = new long[]{680, 704};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tw_axis_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max dot product on twmat xyz axis. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__tw_axis_min);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_tw_axis_min = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tw_axis_min'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tw_axis_min = new long[]{744, 768};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tw_axis_max'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__tw_axis_max);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_tw_axis_max = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tw_axis_max'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tw_axis_max = new long[]{756, 780};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tw_axis_matrix'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__tw_axis_matrix);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_tw_axis_matrix = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tw_axis_matrix'</li>
+	 * <li>Signature: 'float[3][3]'</li>
+	 * <li>Actual Size (32bit/64bit): 36/36</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tw_axis_matrix = new long[]{768, 792};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__gridview);
+	 * CPointer&lt;Float&gt; p_gridview = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridview'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridview = new long[]{804, 828};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view rotation, must be kept normalized </p>
+	 * <p> View rotation, must be kept normalized. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -448,13 +514,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewquat = new long[]{748, 776};
+	public static final long[] __DNA__FIELD__viewquat = new long[]{808, 832};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs' </p>
+	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -471,10 +537,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dist = new long[]{764, 792};
+	public static final long[] __DNA__FIELD__dist = new long[]{824, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camdx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,13 +560,10 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camdx = new long[]{768, 796};
+	public static final long[] __DNA__FIELD__camdx = new long[]{828, 852};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camdy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> camera view offsets, 1.0 = viewplane moves entire width/height </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -514,13 +580,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camdy = new long[]{772, 800};
+	public static final long[] __DNA__FIELD__camdy = new long[]{832, 856};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -537,13 +603,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pixsize = new long[]{776, 804};
+	public static final long[] __DNA__FIELD__pixsize = new long[]{836, 860};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -560,13 +626,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofs = new long[]{780, 808};
+	public static final long[] __DNA__FIELD__ofs = new long[]{840, 864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac </p>
+	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -583,13 +649,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camzoom = new long[]{792, 820};
+	public static final long[] __DNA__FIELD__camzoom = new long[]{852, 876};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in view3d_winmatrix_set) </p>
+	 * <p> Check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -606,7 +672,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_persp = new long[]{796, 824};
+	public static final long[] __DNA__FIELD__is_persp = new long[]{856, 880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'persp'.
@@ -626,7 +692,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__persp = new long[]{797, 825};
+	public static final long[] __DNA__FIELD__persp = new long[]{857, 881};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
@@ -646,7 +712,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{798, 826};
+	public static final long[] __DNA__FIELD__view = new long[]{858, 882};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock'.
@@ -666,13 +732,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock = new long[]{799, 827};
+	public static final long[] __DNA__FIELD__viewlock = new long[]{859, 883};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> options for quadview (store while out of quad view) </p>
+	 * <p> Options for quadview (store while out of quad view). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -689,33 +755,33 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{800, 828};
+	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{860, 884};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * RegionView3D regionview3d = ...;
-	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[3]'</li>
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{801, 829};
+	public static final long[] __DNA__FIELD___pad = new long[]{861, 885};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right </p>
+	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -732,10 +798,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ofs_lock = new long[]{804, 832};
+	public static final long[] __DNA__FIELD__ofs_lock = new long[]{864, 888};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twdrawflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -752,7 +821,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twdrawflag = new long[]{812, 840};
+	public static final long[] __DNA__FIELD__twdrawflag = new long[]{872, 896};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rflag'.
@@ -772,13 +841,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rflag = new long[]{814, 842};
+	public static final long[] __DNA__FIELD__rflag = new long[]{874, 898};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last view (use when switching out of camera view) </p>
+	 * <p> Last view (use when switching out of camera view). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -795,10 +864,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lviewquat = new long[]{816, 844};
+	public static final long[] __DNA__FIELD__lviewquat = new long[]{876, 900};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lpersp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -815,13 +887,10 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lpersp = new long[]{832, 860};
+	public static final long[] __DNA__FIELD__lpersp = new long[]{892, 916};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> lpersp can never be set to 'RV3D_CAMOB' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -838,56 +907,13 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lview = new long[]{834, 862};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gridview'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RegionView3D regionview3d = ...;
-	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__gridview);
-	 * CPointer&lt;Float&gt; p_gridview = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gridview'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gridview = new long[]{836, 864};
-
-	/**
-	 * Field descriptor (offset) for struct member 'tw_idot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> manipulator runtime: (1 - dot) product with view vector (used to check view alignment) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RegionView3D regionview3d = ...;
-	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__tw_idot);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_tw_idot = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tw_idot'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tw_idot = new long[]{840, 868};
+	public static final long[] __DNA__FIELD__lview = new long[]{894, 918};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active rotation from NDOF or elsewhere </p>
+	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -904,7 +930,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot_angle = new long[]{852, 880};
+	public static final long[] __DNA__FIELD__rot_angle = new long[]{896, 920};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_axis'.
@@ -924,27 +950,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot_axis = new long[]{856, 884};
-
-	/**
-	 * Field descriptor (offset) for struct member 'compositor'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RegionView3D regionview3d = ...;
-	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__compositor);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compositor = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'compositor'</li>
-	 * <li>Signature: 'GPUFX*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__compositor = new long[]{868, 896};
+	public static final long[] __DNA__FIELD__rot_axis = new long[]{900, 924};
 
 	public RegionView3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -958,7 +964,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_PROJECTION matrix </p>
+	 * <p> GL_PROJECTION matrix. </p>
 	 * @see #__DNA__FIELD__winmat
 	 */
 	
@@ -980,7 +986,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'winmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_PROJECTION matrix </p>
+	 * <p> GL_PROJECTION matrix. </p>
 	 * @see #__DNA__FIELD__winmat
 	 */
 	
@@ -1005,7 +1011,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_MODELVIEW matrix </p>
+	 * <p> GL_MODELVIEW matrix. </p>
 	 * @see #__DNA__FIELD__viewmat
 	 */
 	
@@ -1027,7 +1033,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> GL_MODELVIEW matrix </p>
+	 * <p> GL_MODELVIEW matrix. </p>
 	 * @see #__DNA__FIELD__viewmat
 	 */
 	
@@ -1052,7 +1058,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of viewmat </p>
+	 * <p> Inverse of viewmat. </p>
 	 * @see #__DNA__FIELD__viewinv
 	 */
 	
@@ -1074,7 +1080,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of viewmat </p>
+	 * <p> Inverse of viewmat. </p>
 	 * @see #__DNA__FIELD__viewinv
 	 */
 	
@@ -1099,7 +1105,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat*winmat </p>
+	 * <p> Viewmat*winmat. </p>
 	 * @see #__DNA__FIELD__persmat
 	 */
 	
@@ -1121,7 +1127,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'persmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat*winmat </p>
+	 * <p> Viewmat*winmat. </p>
 	 * @see #__DNA__FIELD__persmat
 	 */
 	
@@ -1146,7 +1152,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of persmat </p>
+	 * <p> Inverse of persmat. </p>
 	 * @see #__DNA__FIELD__persinv
 	 */
 	
@@ -1168,7 +1174,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'persinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse of persmat </p>
+	 * <p> Inverse of persmat. </p>
 	 * @see #__DNA__FIELD__persinv
 	 */
 	
@@ -1193,7 +1199,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset/scale for camera glsl texcoords </p>
+	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * @see #__DNA__FIELD__viewcamtexcofac
 	 */
 	
@@ -1214,7 +1220,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewcamtexcofac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> offset/scale for camera glsl texcoords </p>
+	 * <p> Offset/scale for camera glsl texcoords. </p>
 	 * @see #__DNA__FIELD__viewcamtexcofac
 	 */
 	
@@ -1239,7 +1245,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection </p>
+	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * @see #__DNA__FIELD__viewmatob
 	 */
 	
@@ -1261,7 +1267,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewmatob'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection </p>
+	 * <p> viewmat/persmat multiplied with object matrix, while drawing and selection. </p>
 	 * @see #__DNA__FIELD__viewmatob
 	 */
 	
@@ -1327,7 +1333,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user defined clipping planes </p>
+	 * <p> User defined clipping planes. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -1349,7 +1355,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'clip'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user defined clipping planes </p>
+	 * <p> User defined clipping planes. </p>
 	 * @see #__DNA__FIELD__clip
 	 */
 	
@@ -1374,7 +1380,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clip in object space, means we can test for clipping in editmode without first going into worldspace </p>
+	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
 	
@@ -1396,7 +1402,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'clip_local'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> clip in object space, means we can test for clipping in editmode without first going into worldspace </p>
+	 * <p> Clip in object space, means we can test for clipping in editmode without first going into worldspace. </p>
 	 * @see #__DNA__FIELD__clip_local
 	 */
 	
@@ -1453,7 +1459,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> allocated backup of its self while in localview </p>
+	 * <p> Allocated backup of its self while in localview. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1473,7 +1479,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'localvd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> allocated backup of its self while in localview </p>
+	 * <p> Allocated backup of its self while in localview. </p>
 	 * @see #__DNA__FIELD__localvd
 	 */
 	
@@ -1552,11 +1558,14 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'gpuoffscreen'.
-	 * @see #__DNA__FIELD__gpuoffscreen
+	 * Get method for struct member 'sms'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Animated smooth view. </p>
+	 * @see #__DNA__FIELD__sms
 	 */
 	
-	public CPointer<Object> getGpuoffscreen() throws IOException
+	public CPointer<Object> getSms() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1569,45 +1578,10 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'gpuoffscreen'.
-	 * @see #__DNA__FIELD__gpuoffscreen
-	 */
-	
-	public void setGpuoffscreen(CPointer<Object> gpuoffscreen) throws IOException
-	{
-		long __address = ((gpuoffscreen == null) ? 0 : gpuoffscreen.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 688, __address);
-		} else {
-			__io__block.writeLong(__io__address + 672, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'sms'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> animated smooth view </p>
-	 * @see #__DNA__FIELD__sms
-	 */
-	
-	public CPointer<Object> getSms() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 696);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 676);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
 	 * Set method for struct member 'sms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animated smooth view </p>
+	 * <p> Animated smooth view. </p>
 	 * @see #__DNA__FIELD__sms
 	 */
 	
@@ -1615,9 +1589,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((sms == null) ? 0 : sms.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 696, __address);
+			__io__block.writeLong(__io__address + 688, __address);
 		} else {
-			__io__block.writeLong(__io__address + 676, __address);
+			__io__block.writeLong(__io__address + 672, __address);
 		}
 	}
 
@@ -1630,9 +1604,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 704);
+			__dna__targetAddress = __io__block.readLong(__io__address + 696);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 680);
+			__dna__targetAddress = __io__block.readLong(__io__address + 676);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1647,9 +1621,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __address = ((smooth_timer == null) ? 0 : smooth_timer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 704, __address);
+			__io__block.writeLong(__io__address + 696, __address);
 		} else {
-			__io__block.writeLong(__io__address + 680, __address);
+			__io__block.writeLong(__io__address + 676, __address);
 		}
 	}
 
@@ -1657,7 +1631,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform widget matrix </p>
+	 * <p> Transform gizmo matrix. </p>
 	 * @see #__DNA__FIELD__twmat
 	 */
 	
@@ -1669,9 +1643,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1679,7 +1653,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'twmat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> transform widget matrix </p>
+	 * <p> Transform gizmo matrix. </p>
 	 * @see #__DNA__FIELD__twmat
 	 */
 	
@@ -1687,9 +1661,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 712;
+			__dna__offset = 704;
 		} else {
-			__dna__offset = 684;
+			__dna__offset = 680;
 		}
 		if (__io__equals(twmat, __io__address + __dna__offset)) {
 			return;
@@ -1701,10 +1675,175 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tw_axis_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max dot product on twmat xyz axis. </p>
+	 * @see #__DNA__FIELD__tw_axis_min
+	 */
+	
+	public CArrayFacade<Float> getTw_axis_min() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 768, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tw_axis_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> min/max dot product on twmat xyz axis. </p>
+	 * @see #__DNA__FIELD__tw_axis_min
+	 */
+	
+	public void setTw_axis_min(CArrayFacade<Float> tw_axis_min) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 768;
+		} else {
+			__dna__offset = 744;
+		}
+		if (__io__equals(tw_axis_min, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, tw_axis_min)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, tw_axis_min);
+		} else {
+			__io__generic__copy( getTw_axis_min(), tw_axis_min);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tw_axis_max'.
+	 * @see #__DNA__FIELD__tw_axis_max
+	 */
+	
+	public CArrayFacade<Float> getTw_axis_max() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 756, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tw_axis_max'.
+	 * @see #__DNA__FIELD__tw_axis_max
+	 */
+	
+	public void setTw_axis_max(CArrayFacade<Float> tw_axis_max) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 780;
+		} else {
+			__dna__offset = 756;
+		}
+		if (__io__equals(tw_axis_max, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, tw_axis_max)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, tw_axis_max);
+		} else {
+			__io__generic__copy( getTw_axis_max(), tw_axis_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tw_axis_matrix'.
+	 * @see #__DNA__FIELD__tw_axis_matrix
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getTw_axis_matrix() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			3,
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 792, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 768, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tw_axis_matrix'.
+	 * @see #__DNA__FIELD__tw_axis_matrix
+	 */
+	
+	public void setTw_axis_matrix(CArrayFacade<CArrayFacade<Float>> tw_axis_matrix) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 792;
+		} else {
+			__dna__offset = 768;
+		}
+		if (__io__equals(tw_axis_matrix, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, tw_axis_matrix)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, tw_axis_matrix);
+		} else {
+			__io__generic__copy( getTw_axis_matrix(), tw_axis_matrix);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__gridview
+	 */
+	
+	public float getGridview() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 828);
+		} else {
+			return __io__block.readFloat(__io__address + 804);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridview'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__gridview
+	 */
+	
+	public void setGridview(float gridview) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 828, gridview);
+		} else {
+			__io__block.writeFloat(__io__address + 804, gridview);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view rotation, must be kept normalized </p>
+	 * <p> View rotation, must be kept normalized. </p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
 	
@@ -1715,9 +1854,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 776, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 832, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 808, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1725,7 +1864,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view rotation, must be kept normalized </p>
+	 * <p> View rotation, must be kept normalized. </p>
 	 * @see #__DNA__FIELD__viewquat
 	 */
 	
@@ -1733,9 +1872,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 776;
+			__dna__offset = 832;
 		} else {
-			__dna__offset = 748;
+			__dna__offset = 808;
 		}
 		if (__io__equals(viewquat, __io__address + __dna__offset)) {
 			return;
@@ -1750,16 +1889,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs' </p>
+	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
 	public float getDist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 792);
+			return __io__block.readFloat(__io__address + 848);
 		} else {
-			return __io__block.readFloat(__io__address + 764);
+			return __io__block.readFloat(__io__address + 824);
 		}
 	}
 
@@ -1767,78 +1906,78 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'dist'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs' </p>
+	 * <p> Distance from 'ofs' along -viewinv[2] vector, where result is negative as is 'ofs'. </p>
 	 * @see #__DNA__FIELD__dist
 	 */
 	
 	public void setDist(float dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 792, dist);
+			__io__block.writeFloat(__io__address + 848, dist);
 		} else {
-			__io__block.writeFloat(__io__address + 764, dist);
+			__io__block.writeFloat(__io__address + 824, dist);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'camdx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * @see #__DNA__FIELD__camdx
 	 */
 	
 	public float getCamdx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 796);
+			return __io__block.readFloat(__io__address + 852);
 		} else {
-			return __io__block.readFloat(__io__address + 768);
+			return __io__block.readFloat(__io__address + 828);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'camdx'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Camera}  view offsets, 1.0 = viewplane moves entire width/height. </p>
 	 * @see #__DNA__FIELD__camdx
 	 */
 	
 	public void setCamdx(float camdx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 796, camdx);
+			__io__block.writeFloat(__io__address + 852, camdx);
 		} else {
-			__io__block.writeFloat(__io__address + 768, camdx);
+			__io__block.writeFloat(__io__address + 828, camdx);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'camdy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> camera view offsets, 1.0 = viewplane moves entire width/height </p>
 	 * @see #__DNA__FIELD__camdy
 	 */
 	
 	public float getCamdy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 800);
+			return __io__block.readFloat(__io__address + 856);
 		} else {
-			return __io__block.readFloat(__io__address + 772);
+			return __io__block.readFloat(__io__address + 832);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'camdy'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> camera view offsets, 1.0 = viewplane moves entire width/height </p>
 	 * @see #__DNA__FIELD__camdy
 	 */
 	
 	public void setCamdy(float camdy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 800, camdy);
+			__io__block.writeFloat(__io__address + 856, camdy);
 		} else {
-			__io__block.writeFloat(__io__address + 772, camdy);
+			__io__block.writeFloat(__io__address + 832, camdy);
 		}
 	}
 
@@ -1846,16 +1985,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__pixsize
 	 */
 	
 	public float getPixsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 804);
+			return __io__block.readFloat(__io__address + 860);
 		} else {
-			return __io__block.readFloat(__io__address + 776);
+			return __io__block.readFloat(__io__address + 836);
 		}
 	}
 
@@ -1863,16 +2002,16 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'pixsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__pixsize
 	 */
 	
 	public void setPixsize(float pixsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 804, pixsize);
+			__io__block.writeFloat(__io__address + 860, pixsize);
 		} else {
-			__io__block.writeFloat(__io__address + 776, pixsize);
+			__io__block.writeFloat(__io__address + 836, pixsize);
 		}
 	}
 
@@ -1880,7 +2019,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	
@@ -1891,9 +2030,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 808, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 840, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1901,7 +2040,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'ofs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> view center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
+	 * <p> View center & orbit pivot, negative of worldspace location, also matches -viewinv[3][0:3] in ortho mode. </p>
 	 * @see #__DNA__FIELD__ofs
 	 */
 	
@@ -1909,9 +2048,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 808;
+			__dna__offset = 864;
 		} else {
-			__dna__offset = 780;
+			__dna__offset = 840;
 		}
 		if (__io__equals(ofs, __io__address + __dna__offset)) {
 			return;
@@ -1926,16 +2065,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac </p>
+	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * @see #__DNA__FIELD__camzoom
 	 */
 	
 	public float getCamzoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 820);
+			return __io__block.readFloat(__io__address + 876);
 		} else {
-			return __io__block.readFloat(__io__address + 792);
+			return __io__block.readFloat(__io__address + 852);
 		}
 	}
 
@@ -1943,16 +2082,16 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'camzoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac </p>
+	 * <p> Viewport zoom on the camera frame, see BKE_screen_view3d_zoom_to_fac. </p>
 	 * @see #__DNA__FIELD__camzoom
 	 */
 	
 	public void setCamzoom(float camzoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 820, camzoom);
+			__io__block.writeFloat(__io__address + 876, camzoom);
 		} else {
-			__io__block.writeFloat(__io__address + 792, camzoom);
+			__io__block.writeFloat(__io__address + 852, camzoom);
 		}
 	}
 
@@ -1960,16 +2099,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in view3d_winmatrix_set) </p>
+	 * <p> Check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * @see #__DNA__FIELD__is_persp
 	 */
 	
 	public byte getIs_persp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 824);
+			return __io__block.readByte(__io__address + 880);
 		} else {
-			return __io__block.readByte(__io__address + 796);
+			return __io__block.readByte(__io__address + 856);
 		}
 	}
 
@@ -1977,16 +2116,16 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'is_persp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in view3d_winmatrix_set) </p>
+	 * <p> Check if persp/ortho view, since 'persp' cant be used for this since it can have cameras assigned as well. (only set in #view3d_winmatrix_set) </p>
 	 * @see #__DNA__FIELD__is_persp
 	 */
 	
 	public void setIs_persp(byte is_persp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 824, is_persp);
+			__io__block.writeByte(__io__address + 880, is_persp);
 		} else {
-			__io__block.writeByte(__io__address + 796, is_persp);
+			__io__block.writeByte(__io__address + 856, is_persp);
 		}
 	}
 
@@ -1998,9 +2137,9 @@ public class RegionView3D extends CFacade {
 	public byte getPersp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 825);
+			return __io__block.readByte(__io__address + 881);
 		} else {
-			return __io__block.readByte(__io__address + 797);
+			return __io__block.readByte(__io__address + 857);
 		}
 	}
 
@@ -2012,9 +2151,9 @@ public class RegionView3D extends CFacade {
 	public void setPersp(byte persp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 825, persp);
+			__io__block.writeByte(__io__address + 881, persp);
 		} else {
-			__io__block.writeByte(__io__address + 797, persp);
+			__io__block.writeByte(__io__address + 857, persp);
 		}
 	}
 
@@ -2026,9 +2165,9 @@ public class RegionView3D extends CFacade {
 	public byte getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 826);
+			return __io__block.readByte(__io__address + 882);
 		} else {
-			return __io__block.readByte(__io__address + 798);
+			return __io__block.readByte(__io__address + 858);
 		}
 	}
 
@@ -2040,9 +2179,9 @@ public class RegionView3D extends CFacade {
 	public void setView(byte view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 826, view);
+			__io__block.writeByte(__io__address + 882, view);
 		} else {
-			__io__block.writeByte(__io__address + 798, view);
+			__io__block.writeByte(__io__address + 858, view);
 		}
 	}
 
@@ -2054,9 +2193,9 @@ public class RegionView3D extends CFacade {
 	public byte getViewlock() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 827);
+			return __io__block.readByte(__io__address + 883);
 		} else {
-			return __io__block.readByte(__io__address + 799);
+			return __io__block.readByte(__io__address + 859);
 		}
 	}
 
@@ -2068,9 +2207,9 @@ public class RegionView3D extends CFacade {
 	public void setViewlock(byte viewlock) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 827, viewlock);
+			__io__block.writeByte(__io__address + 883, viewlock);
 		} else {
-			__io__block.writeByte(__io__address + 799, viewlock);
+			__io__block.writeByte(__io__address + 859, viewlock);
 		}
 	}
 
@@ -2078,16 +2217,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> options for quadview (store while out of quad view) </p>
+	 * <p> Options for quadview (store while out of quad view). </p>
 	 * @see #__DNA__FIELD__viewlock_quad
 	 */
 	
 	public byte getViewlock_quad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 828);
+			return __io__block.readByte(__io__address + 884);
 		} else {
-			return __io__block.readByte(__io__address + 800);
+			return __io__block.readByte(__io__address + 860);
 		}
 	}
 
@@ -2095,56 +2234,56 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'viewlock_quad'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> options for quadview (store while out of quad view) </p>
+	 * <p> Options for quadview (store while out of quad view). </p>
 	 * @see #__DNA__FIELD__viewlock_quad
 	 */
 	
 	public void setViewlock_quad(byte viewlock_quad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 828, viewlock_quad);
+			__io__block.writeByte(__io__address + 884, viewlock_quad);
 		} else {
-			__io__block.writeByte(__io__address + 800, viewlock_quad);
+			__io__block.writeByte(__io__address + 860, viewlock_quad);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 829, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 885, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 801, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 861, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 829;
+			__dna__offset = 885;
 		} else {
-			__dna__offset = 801;
+			__dna__offset = 861;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -2152,7 +2291,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right </p>
+	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * @see #__DNA__FIELD__ofs_lock
 	 */
 	
@@ -2163,9 +2302,9 @@ public class RegionView3D extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 832, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 888, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 804, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2173,7 +2312,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'ofs_lock'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right </p>
+	 * <p> Normalized offset for locked view: (-1, -1) bottom left, (1, 1) upper right. </p>
 	 * @see #__DNA__FIELD__ofs_lock
 	 */
 	
@@ -2181,9 +2320,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 832;
+			__dna__offset = 888;
 		} else {
-			__dna__offset = 804;
+			__dna__offset = 864;
 		}
 		if (__io__equals(ofs_lock, __io__address + __dna__offset)) {
 			return;
@@ -2196,29 +2335,35 @@ public class RegionView3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'twdrawflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * @see #__DNA__FIELD__twdrawflag
 	 */
 	
 	public short getTwdrawflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 840);
+			return __io__block.readShort(__io__address + 896);
 		} else {
-			return __io__block.readShort(__io__address + 812);
+			return __io__block.readShort(__io__address + 872);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'twdrawflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> XXX can easily get rid of this (Julian). </p>
 	 * @see #__DNA__FIELD__twdrawflag
 	 */
 	
 	public void setTwdrawflag(short twdrawflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 840, twdrawflag);
+			__io__block.writeShort(__io__address + 896, twdrawflag);
 		} else {
-			__io__block.writeShort(__io__address + 812, twdrawflag);
+			__io__block.writeShort(__io__address + 872, twdrawflag);
 		}
 	}
 
@@ -2230,9 +2375,9 @@ public class RegionView3D extends CFacade {
 	public short getRflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 842);
+			return __io__block.readShort(__io__address + 898);
 		} else {
-			return __io__block.readShort(__io__address + 814);
+			return __io__block.readShort(__io__address + 874);
 		}
 	}
 
@@ -2244,9 +2389,9 @@ public class RegionView3D extends CFacade {
 	public void setRflag(short rflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 842, rflag);
+			__io__block.writeShort(__io__address + 898, rflag);
 		} else {
-			__io__block.writeShort(__io__address + 814, rflag);
+			__io__block.writeShort(__io__address + 874, rflag);
 		}
 	}
 
@@ -2254,7 +2399,7 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last view (use when switching out of camera view) </p>
+	 * <p> Last view (use when switching out of camera view). </p>
 	 * @see #__DNA__FIELD__lviewquat
 	 */
 	
@@ -2265,9 +2410,9 @@ public class RegionView3D extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 844, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 816, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 876, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2275,7 +2420,7 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'lviewquat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last view (use when switching out of camera view) </p>
+	 * <p> Last view (use when switching out of camera view). </p>
 	 * @see #__DNA__FIELD__lviewquat
 	 */
 	
@@ -2283,9 +2428,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 844;
+			__dna__offset = 900;
 		} else {
-			__dna__offset = 816;
+			__dna__offset = 876;
 		}
 		if (__io__equals(lviewquat, __io__address + __dna__offset)) {
 			return;
@@ -2298,137 +2443,63 @@ public class RegionView3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'lpersp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * @see #__DNA__FIELD__lpersp
 	 */
 	
 	public short getLpersp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 860);
+			return __io__block.readShort(__io__address + 916);
 		} else {
-			return __io__block.readShort(__io__address + 832);
+			return __io__block.readShort(__io__address + 892);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'lpersp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Lpersp can never be set to 'RV3D_CAMOB'. </p>
 	 * @see #__DNA__FIELD__lpersp
 	 */
 	
 	public void setLpersp(short lpersp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 860, lpersp);
+			__io__block.writeShort(__io__address + 916, lpersp);
 		} else {
-			__io__block.writeShort(__io__address + 832, lpersp);
+			__io__block.writeShort(__io__address + 892, lpersp);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'lview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> lpersp can never be set to 'RV3D_CAMOB' </p>
 	 * @see #__DNA__FIELD__lview
 	 */
 	
 	public short getLview() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 862);
+			return __io__block.readShort(__io__address + 918);
 		} else {
-			return __io__block.readShort(__io__address + 834);
+			return __io__block.readShort(__io__address + 894);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'lview'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> lpersp can never be set to 'RV3D_CAMOB' </p>
 	 * @see #__DNA__FIELD__lview
 	 */
 	
 	public void setLview(short lview) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 862, lview);
+			__io__block.writeShort(__io__address + 918, lview);
 		} else {
-			__io__block.writeShort(__io__address + 834, lview);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gridview'.
-	 * @see #__DNA__FIELD__gridview
-	 */
-	
-	public float getGridview() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 864);
-		} else {
-			return __io__block.readFloat(__io__address + 836);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gridview'.
-	 * @see #__DNA__FIELD__gridview
-	 */
-	
-	public void setGridview(float gridview) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 864, gridview);
-		} else {
-			__io__block.writeFloat(__io__address + 836, gridview);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'tw_idot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> manipulator runtime: (1 - dot) product with view vector (used to check view alignment) </p>
-	 * @see #__DNA__FIELD__tw_idot
-	 */
-	
-	public CArrayFacade<Float> getTw_idot() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 868, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 840, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'tw_idot'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> manipulator runtime: (1 - dot) product with view vector (used to check view alignment) </p>
-	 * @see #__DNA__FIELD__tw_idot
-	 */
-	
-	public void setTw_idot(CArrayFacade<Float> tw_idot) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 868;
-		} else {
-			__dna__offset = 840;
-		}
-		if (__io__equals(tw_idot, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, tw_idot)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, tw_idot);
-		} else {
-			__io__generic__copy( getTw_idot(), tw_idot);
+			__io__block.writeShort(__io__address + 894, lview);
 		}
 	}
 
@@ -2436,16 +2507,16 @@ public class RegionView3D extends CFacade {
 	 * Get method for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active rotation from NDOF or elsewhere </p>
+	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * @see #__DNA__FIELD__rot_angle
 	 */
 	
 	public float getRot_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 880);
+			return __io__block.readFloat(__io__address + 920);
 		} else {
-			return __io__block.readFloat(__io__address + 852);
+			return __io__block.readFloat(__io__address + 896);
 		}
 	}
 
@@ -2453,16 +2524,16 @@ public class RegionView3D extends CFacade {
 	 * Set method for struct member 'rot_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active rotation from NDOF or elsewhere </p>
+	 * <p> Active rotation from NDOF or elsewhere. </p>
 	 * @see #__DNA__FIELD__rot_angle
 	 */
 	
 	public void setRot_angle(float rot_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 880, rot_angle);
+			__io__block.writeFloat(__io__address + 920, rot_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 852, rot_angle);
+			__io__block.writeFloat(__io__address + 896, rot_angle);
 		}
 	}
 
@@ -2478,9 +2549,9 @@ public class RegionView3D extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 856, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2493,9 +2564,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 884;
+			__dna__offset = 924;
 		} else {
-			__dna__offset = 856;
+			__dna__offset = 900;
 		}
 		if (__io__equals(rot_axis, __io__address + __dna__offset)) {
 			return;
@@ -2503,38 +2574,6 @@ public class RegionView3D extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, rot_axis);
 		} else {
 			__io__generic__copy( getRot_axis(), rot_axis);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'compositor'.
-	 * @see #__DNA__FIELD__compositor
-	 */
-	
-	public CPointer<Object> getCompositor() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 896);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 868);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'compositor'.
-	 * @see #__DNA__FIELD__compositor
-	 */
-	
-	public void setCompositor(CPointer<Object> compositor) throws IOException
-	{
-		long __address = ((compositor == null) ? 0 : compositor.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 896, __address);
-		} else {
-			__io__block.writeLong(__io__address + 868, __address);
 		}
 	}
 

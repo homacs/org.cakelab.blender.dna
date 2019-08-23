@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> tessellation vertex color data. at the moment alpha is abused for vertex painting and not used for transparency, note that red and blue are swapped </p>
+ * <p> Tessellation vertex color data. at the moment alpha is abused for vertex painting and not used for transparency, note that red and blue are swapped </p>
  */
 
 @CMetaData(size32=4, size64=4)
@@ -27,7 +27,7 @@ public class MCol extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 64;
+	public static final int __DNA__SDNA_INDEX = 70;
 
 	/**
 	 * Field descriptor (offset) for struct member 'a'.

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=120, size64=144)
+@CMetaData(size32=124, size64=152)
 public class SubsurfModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SubsurfModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 91;
+	public static final int __DNA__SDNA_INDEX = 97;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdivType = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__subdivType = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'levels'.
@@ -87,7 +87,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__levels = new long[]{98, 114};
+	public static final long[] __DNA__FIELD__levels = new long[]{102, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member 'renderLevels'.
@@ -107,7 +107,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__renderLevels = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__renderLevels = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -127,50 +127,73 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{102, 118};
+	public static final long[] __DNA__FIELD__flags = new long[]{106, 126};
 
 	/**
-	 * Field descriptor (offset) for struct member 'use_opensubdiv'.
+	 * Field descriptor (offset) for struct member 'uv_smooth'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SubsurfModifierData subsurfmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = subsurfmodifierdata.__dna__addressof(SubsurfModifierData.__DNA__FIELD__use_opensubdiv);
-	 * CPointer&lt;Short&gt; p_use_opensubdiv = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = subsurfmodifierdata.__dna__addressof(SubsurfModifierData.__DNA__FIELD__uv_smooth);
+	 * CPointer&lt;Short&gt; p_uv_smooth = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'use_opensubdiv'</li>
+	 * <li>Field: 'uv_smooth'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_opensubdiv = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__uv_smooth = new long[]{108, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'quality'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SubsurfModifierData subsurfmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = subsurfmodifierdata.__dna__addressof(SubsurfModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = subsurfmodifierdata.__dna__addressof(SubsurfModifierData.__DNA__FIELD__quality);
+	 * CPointer&lt;Short&gt; p_quality = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Field: 'quality'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{106, 122};
+	public static final long[] __DNA__FIELD__quality = new long[]{110, 130};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SubsurfModifierData subsurfmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = subsurfmodifierdata.__dna__addressof(SubsurfModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'emCache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -187,7 +210,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__emCache = new long[]{112, 128};
+	public static final long[] __DNA__FIELD__emCache = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mCache'.
@@ -207,7 +230,7 @@ public class SubsurfModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mCache = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__mCache = new long[]{120, 144};
 
 	public SubsurfModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -261,9 +284,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getSubdivType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 120);
 		} else {
-			return __io__block.readShort(__io__address + 96);
+			return __io__block.readShort(__io__address + 100);
 		}
 	}
 
@@ -275,9 +298,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setSubdivType(short subdivType) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 112, subdivType);
+			__io__block.writeShort(__io__address + 120, subdivType);
 		} else {
-			__io__block.writeShort(__io__address + 96, subdivType);
+			__io__block.writeShort(__io__address + 100, subdivType);
 		}
 	}
 
@@ -289,9 +312,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getLevels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 114);
+			return __io__block.readShort(__io__address + 122);
 		} else {
-			return __io__block.readShort(__io__address + 98);
+			return __io__block.readShort(__io__address + 102);
 		}
 	}
 
@@ -303,9 +326,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setLevels(short levels) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 114, levels);
+			__io__block.writeShort(__io__address + 122, levels);
 		} else {
-			__io__block.writeShort(__io__address + 98, levels);
+			__io__block.writeShort(__io__address + 102, levels);
 		}
 	}
 
@@ -317,9 +340,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getRenderLevels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 116);
+			return __io__block.readShort(__io__address + 124);
 		} else {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -331,9 +354,9 @@ public class SubsurfModifierData extends CFacade {
 	public void setRenderLevels(short renderLevels) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 116, renderLevels);
+			__io__block.writeShort(__io__address + 124, renderLevels);
 		} else {
-			__io__block.writeShort(__io__address + 100, renderLevels);
+			__io__block.writeShort(__io__address + 104, renderLevels);
 		}
 	}
 
@@ -345,9 +368,9 @@ public class SubsurfModifierData extends CFacade {
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 118);
+			return __io__block.readShort(__io__address + 126);
 		} else {
-			return __io__block.readShort(__io__address + 102);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -359,82 +382,113 @@ public class SubsurfModifierData extends CFacade {
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 118, flags);
+			__io__block.writeShort(__io__address + 126, flags);
 		} else {
-			__io__block.writeShort(__io__address + 102, flags);
+			__io__block.writeShort(__io__address + 106, flags);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'use_opensubdiv'.
-	 * @see #__DNA__FIELD__use_opensubdiv
+	 * Get method for struct member 'uv_smooth'.
+	 * @see #__DNA__FIELD__uv_smooth
 	 */
 	
-	public short getUse_opensubdiv() throws IOException
+	public short getUv_smooth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 104);
+			return __io__block.readShort(__io__address + 108);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'use_opensubdiv'.
-	 * @see #__DNA__FIELD__use_opensubdiv
+	 * Set method for struct member 'uv_smooth'.
+	 * @see #__DNA__FIELD__uv_smooth
 	 */
 	
-	public void setUse_opensubdiv(short use_opensubdiv) throws IOException
+	public void setUv_smooth(short uv_smooth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, use_opensubdiv);
+			__io__block.writeShort(__io__address + 128, uv_smooth);
 		} else {
-			__io__block.writeShort(__io__address + 104, use_opensubdiv);
+			__io__block.writeShort(__io__address + 108, uv_smooth);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'quality'.
+	 * @see #__DNA__FIELD__quality
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public short getQuality() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 130);
+		} else {
+			return __io__block.readShort(__io__address + 110);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'quality'.
+	 * @see #__DNA__FIELD__quality
+	 */
+	
+	public void setQuality(short quality) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 130, quality);
+		} else {
+			__io__block.writeShort(__io__address + 110, quality);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 122, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 106, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 122;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 106;
+			__dna__offset = 112;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'emCache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * @see #__DNA__FIELD__emCache
 	 */
 	
@@ -442,9 +496,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -452,6 +506,9 @@ public class SubsurfModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'emCache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> TODO(sergey): Get rid of those with the old CCG subdivision code. </p>
 	 * @see #__DNA__FIELD__emCache
 	 */
 	
@@ -459,9 +516,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __address = ((emCache == null) ? 0 : emCache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -474,9 +531,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -491,9 +548,9 @@ public class SubsurfModifierData extends CFacade {
 	{
 		long __address = ((mCache == null) ? 0 : mCache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 

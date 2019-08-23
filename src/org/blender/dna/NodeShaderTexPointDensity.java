@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1208, size64=1232)
+@CMetaData(size32=1200, size64=1224)
 public class NodeShaderTexPointDensity extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 447;
+	public static final int __DNA__SDNA_INDEX = 415;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -44,7 +44,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <ul>
 	 * <li>Field: 'base'</li>
 	 * <li>Signature: 'NodeTexBase'</li>
-	 * <li>Actual Size (32bit/64bit): 964/968</li>
+	 * <li>Actual Size (32bit/64bit): 956/960</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
@@ -67,27 +67,27 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_source = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__point_source = new long[]{956, 960};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
-	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{966, 970};
+	public static final long[] __DNA__FIELD___pad = new long[]{958, 962};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_system'.
@@ -107,7 +107,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_system = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__particle_system = new long[]{960, 964};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
@@ -127,7 +127,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radius = new long[]{972, 976};
+	public static final long[] __DNA__FIELD__radius = new long[]{964, 968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolution'.
@@ -147,7 +147,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__resolution = new long[]{976, 980};
+	public static final long[] __DNA__FIELD__resolution = new long[]{968, 972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
@@ -167,7 +167,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space = new long[]{980, 984};
+	public static final long[] __DNA__FIELD__space = new long[]{972, 976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interpolation'.
@@ -187,7 +187,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interpolation = new long[]{982, 986};
+	public static final long[] __DNA__FIELD__interpolation = new long[]{974, 978};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_source'.
@@ -207,7 +207,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_source = new long[]{984, 988};
+	public static final long[] __DNA__FIELD__color_source = new long[]{976, 980};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_color_source'.
@@ -227,13 +227,13 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_color_source = new long[]{986, 990};
+	public static final long[] __DNA__FIELD__ob_color_source = new long[]{978, 982};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -250,7 +250,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertex_attribute_name = new long[]{988, 992};
+	public static final long[] __DNA__FIELD__vertex_attribute_name = new long[]{980, 984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd'.
@@ -273,7 +273,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 148/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pd = new long[]{1052, 1056};
+	public static final long[] __DNA__FIELD__pd = new long[]{1044, 1048};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cached_resolution'.
@@ -293,27 +293,27 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cached_resolution = new long[]{1200, 1224};
+	public static final long[] __DNA__FIELD__cached_resolution = new long[]{1192, 1216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeShaderTexPointDensity nodeshadertexpointdensity = ...;
-	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nodeshadertexpointdensity.__dna__addressof(NodeShaderTexPointDensity.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{1204, 1228};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1196, 1220};
 
 	public NodeShaderTexPointDensity(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -367,9 +367,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public short getPoint_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 968);
+			return __io__block.readShort(__io__address + 960);
 		} else {
-			return __io__block.readShort(__io__address + 964);
+			return __io__block.readShort(__io__address + 956);
 		}
 	}
 
@@ -381,37 +381,49 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setPoint_source(short point_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 968, point_source);
+			__io__block.writeShort(__io__address + 960, point_source);
 		} else {
-			__io__block.writeShort(__io__address + 964, point_source);
+			__io__block.writeShort(__io__address + 956, point_source);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 970);
+			return new CArrayFacade<Byte>(__io__address + 962, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 966);
+			return new CArrayFacade<Byte>(__io__address + 958, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 970, pad);
+			__dna__offset = 962;
 		} else {
-			__io__block.writeShort(__io__address + 966, pad);
+			__dna__offset = 958;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -423,9 +435,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public int getParticle_system() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 964);
 		} else {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 960);
 		}
 	}
 
@@ -437,9 +449,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setParticle_system(int particle_system) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, particle_system);
+			__io__block.writeInt(__io__address + 964, particle_system);
 		} else {
-			__io__block.writeInt(__io__address + 968, particle_system);
+			__io__block.writeInt(__io__address + 960, particle_system);
 		}
 	}
 
@@ -451,9 +463,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public float getRadius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 976);
+			return __io__block.readFloat(__io__address + 968);
 		} else {
-			return __io__block.readFloat(__io__address + 972);
+			return __io__block.readFloat(__io__address + 964);
 		}
 	}
 
@@ -465,9 +477,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setRadius(float radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 976, radius);
+			__io__block.writeFloat(__io__address + 968, radius);
 		} else {
-			__io__block.writeFloat(__io__address + 972, radius);
+			__io__block.writeFloat(__io__address + 964, radius);
 		}
 	}
 
@@ -479,9 +491,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public int getResolution() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 980);
+			return __io__block.readInt(__io__address + 972);
 		} else {
-			return __io__block.readInt(__io__address + 976);
+			return __io__block.readInt(__io__address + 968);
 		}
 	}
 
@@ -493,9 +505,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setResolution(int resolution) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 980, resolution);
+			__io__block.writeInt(__io__address + 972, resolution);
 		} else {
-			__io__block.writeInt(__io__address + 976, resolution);
+			__io__block.writeInt(__io__address + 968, resolution);
 		}
 	}
 
@@ -507,9 +519,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public short getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 984);
+			return __io__block.readShort(__io__address + 976);
 		} else {
-			return __io__block.readShort(__io__address + 980);
+			return __io__block.readShort(__io__address + 972);
 		}
 	}
 
@@ -521,9 +533,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setSpace(short space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 984, space);
+			__io__block.writeShort(__io__address + 976, space);
 		} else {
-			__io__block.writeShort(__io__address + 980, space);
+			__io__block.writeShort(__io__address + 972, space);
 		}
 	}
 
@@ -535,9 +547,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public short getInterpolation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 986);
+			return __io__block.readShort(__io__address + 978);
 		} else {
-			return __io__block.readShort(__io__address + 982);
+			return __io__block.readShort(__io__address + 974);
 		}
 	}
 
@@ -549,9 +561,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setInterpolation(short interpolation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 986, interpolation);
+			__io__block.writeShort(__io__address + 978, interpolation);
 		} else {
-			__io__block.writeShort(__io__address + 982, interpolation);
+			__io__block.writeShort(__io__address + 974, interpolation);
 		}
 	}
 
@@ -563,9 +575,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public short getColor_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 988);
+			return __io__block.readShort(__io__address + 980);
 		} else {
-			return __io__block.readShort(__io__address + 984);
+			return __io__block.readShort(__io__address + 976);
 		}
 	}
 
@@ -577,9 +589,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setColor_source(short color_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 988, color_source);
+			__io__block.writeShort(__io__address + 980, color_source);
 		} else {
-			__io__block.writeShort(__io__address + 984, color_source);
+			__io__block.writeShort(__io__address + 976, color_source);
 		}
 	}
 
@@ -591,9 +603,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public short getOb_color_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 990);
+			return __io__block.readShort(__io__address + 982);
 		} else {
-			return __io__block.readShort(__io__address + 986);
+			return __io__block.readShort(__io__address + 978);
 		}
 	}
 
@@ -605,9 +617,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setOb_color_source(short ob_color_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 990, ob_color_source);
+			__io__block.writeShort(__io__address + 982, ob_color_source);
 		} else {
-			__io__block.writeShort(__io__address + 986, ob_color_source);
+			__io__block.writeShort(__io__address + 978, ob_color_source);
 		}
 	}
 
@@ -615,7 +627,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * Get method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
 	
@@ -626,9 +638,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 992, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 984, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 988, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 980, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -636,7 +648,7 @@ public class NodeShaderTexPointDensity extends CFacade {
 	 * Set method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
 	
@@ -644,9 +656,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 992;
+			__dna__offset = 984;
 		} else {
-			__dna__offset = 988;
+			__dna__offset = 980;
 		}
 		if (__io__equals(vertex_attribute_name, __io__address + __dna__offset)) {
 			return;
@@ -668,9 +680,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public PointDensity getPd() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new PointDensity(__io__address + 1056, __io__block, __io__blockTable);
+			return new PointDensity(__io__address + 1048, __io__block, __io__blockTable);
 		} else {
-			return new PointDensity(__io__address + 1052, __io__block, __io__blockTable);
+			return new PointDensity(__io__address + 1044, __io__block, __io__blockTable);
 		}
 	}
 
@@ -686,9 +698,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1056;
+			__dna__offset = 1048;
 		} else {
-			__dna__offset = 1052;
+			__dna__offset = 1044;
 		}
 		if (__io__equals(pd, __io__address + __dna__offset)) {
 			return;
@@ -707,9 +719,9 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public int getCached_resolution() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1224);
+			return __io__block.readInt(__io__address + 1216);
 		} else {
-			return __io__block.readInt(__io__address + 1200);
+			return __io__block.readInt(__io__address + 1192);
 		}
 	}
 
@@ -721,37 +733,49 @@ public class NodeShaderTexPointDensity extends CFacade {
 	public void setCached_resolution(int cached_resolution) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1224, cached_resolution);
+			__io__block.writeInt(__io__address + 1216, cached_resolution);
 		} else {
-			__io__block.writeInt(__io__address + 1200, cached_resolution);
+			__io__block.writeInt(__io__address + 1192, cached_resolution);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public int getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1228);
+			return new CArrayFacade<Byte>(__io__address + 1220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 1204);
+			return new CArrayFacade<Byte>(__io__address + 1196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1228, pad2);
+			__dna__offset = 1220;
 		} else {
-			__io__block.writeInt(__io__address + 1204, pad2);
+			__dna__offset = 1196;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

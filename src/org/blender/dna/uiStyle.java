@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> this is fed to the layout engine and widget code </p>
  */
 
-@CMetaData(size32=224, size64=232)
+@CMetaData(size32=192, size64=200)
 public class uiStyle extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class uiStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 241;
+	public static final int __DNA__SDNA_INDEX = 240;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class uiStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_STYLE_NAME </p>
+	 * <p> MAX_STYLE_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -108,7 +108,7 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'paneltitle'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__paneltitle = new long[]{72, 80};
@@ -128,10 +128,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'grouplabel'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grouplabel = new long[]{104, 112};
+	public static final long[] __DNA__FIELD__grouplabel = new long[]{96, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widgetlabel'.
@@ -148,10 +148,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'widgetlabel'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widgetlabel = new long[]{136, 144};
+	public static final long[] __DNA__FIELD__widgetlabel = new long[]{120, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'widget'.
@@ -168,10 +168,10 @@ public class uiStyle extends CFacade {
 	 * <ul>
 	 * <li>Field: 'widget'</li>
 	 * <li>Signature: 'uiFontStyle'</li>
-	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * <li>Actual Size (32bit/64bit): 24/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__widget = new long[]{168, 176};
+	public static final long[] __DNA__FIELD__widget = new long[]{144, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelzoom'.
@@ -191,13 +191,13 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelzoom = new long[]{200, 208};
+	public static final long[] __DNA__FIELD__panelzoom = new long[]{168, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -214,13 +214,13 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minlabelchars = new long[]{204, 212};
+	public static final long[] __DNA__FIELD__minlabelchars = new long[]{172, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -237,7 +237,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minwidgetchars = new long[]{206, 214};
+	public static final long[] __DNA__FIELD__minwidgetchars = new long[]{174, 182};
 
 	/**
 	 * Field descriptor (offset) for struct member 'columnspace'.
@@ -257,7 +257,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__columnspace = new long[]{208, 216};
+	public static final long[] __DNA__FIELD__columnspace = new long[]{176, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'templatespace'.
@@ -277,7 +277,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__templatespace = new long[]{210, 218};
+	public static final long[] __DNA__FIELD__templatespace = new long[]{178, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boxspace'.
@@ -297,7 +297,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boxspace = new long[]{212, 220};
+	public static final long[] __DNA__FIELD__boxspace = new long[]{180, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'buttonspacex'.
@@ -317,7 +317,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__buttonspacex = new long[]{214, 222};
+	public static final long[] __DNA__FIELD__buttonspacex = new long[]{182, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'buttonspacey'.
@@ -337,7 +337,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__buttonspacey = new long[]{216, 224};
+	public static final long[] __DNA__FIELD__buttonspacey = new long[]{184, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelspace'.
@@ -357,7 +357,7 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelspace = new long[]{218, 226};
+	public static final long[] __DNA__FIELD__panelspace = new long[]{186, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelouter'.
@@ -377,27 +377,27 @@ public class uiStyle extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelouter = new long[]{220, 228};
+	public static final long[] __DNA__FIELD__panelouter = new long[]{188, 196};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiStyle uistyle = ...;
-	 * CPointer&lt;Object&gt; p = uistyle.__dna__addressof(uiStyle.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = uistyle.__dna__addressof(uiStyle.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{222, 230};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{190, 198};
 
 	public uiStyle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -475,7 +475,7 @@ public class uiStyle extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_STYLE_NAME </p>
+	 * <p> MAX_STYLE_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -496,7 +496,7 @@ public class uiStyle extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_STYLE_NAME </p>
+	 * <p> MAX_STYLE_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -561,9 +561,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getGrouplabel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 112, __io__block, __io__blockTable);
-		} else {
 			return new uiFontStyle(__io__address + 104, __io__block, __io__blockTable);
+		} else {
+			return new uiFontStyle(__io__address + 96, __io__block, __io__blockTable);
 		}
 	}
 
@@ -576,9 +576,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
-		} else {
 			__dna__offset = 104;
+		} else {
+			__dna__offset = 96;
 		}
 		if (__io__equals(grouplabel, __io__address + __dna__offset)) {
 			return;
@@ -597,9 +597,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getWidgetlabel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 144, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 128, __io__block, __io__blockTable);
 		} else {
-			return new uiFontStyle(__io__address + 136, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -612,9 +612,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 120;
 		}
 		if (__io__equals(widgetlabel, __io__address + __dna__offset)) {
 			return;
@@ -633,9 +633,9 @@ public class uiStyle extends CFacade {
 	public uiFontStyle getWidget() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiFontStyle(__io__address + 176, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 152, __io__block, __io__blockTable);
 		} else {
-			return new uiFontStyle(__io__address + 168, __io__block, __io__blockTable);
+			return new uiFontStyle(__io__address + 144, __io__block, __io__blockTable);
 		}
 	}
 
@@ -648,9 +648,9 @@ public class uiStyle extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 144;
 		}
 		if (__io__equals(widget, __io__address + __dna__offset)) {
 			return;
@@ -669,9 +669,9 @@ public class uiStyle extends CFacade {
 	public float getPanelzoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 176);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -683,9 +683,9 @@ public class uiStyle extends CFacade {
 	public void setPanelzoom(float panelzoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, panelzoom);
+			__io__block.writeFloat(__io__address + 176, panelzoom);
 		} else {
-			__io__block.writeFloat(__io__address + 200, panelzoom);
+			__io__block.writeFloat(__io__address + 168, panelzoom);
 		}
 	}
 
@@ -693,16 +693,16 @@ public class uiStyle extends CFacade {
 	 * Get method for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minlabelchars
 	 */
 	
 	public short getMinlabelchars() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 180);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 172);
 		}
 	}
 
@@ -710,16 +710,16 @@ public class uiStyle extends CFacade {
 	 * Set method for struct member 'minlabelchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minlabelchars
 	 */
 	
 	public void setMinlabelchars(short minlabelchars) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, minlabelchars);
+			__io__block.writeShort(__io__address + 180, minlabelchars);
 		} else {
-			__io__block.writeShort(__io__address + 204, minlabelchars);
+			__io__block.writeShort(__io__address + 172, minlabelchars);
 		}
 	}
 
@@ -727,16 +727,16 @@ public class uiStyle extends CFacade {
 	 * Get method for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minwidgetchars
 	 */
 	
 	public short getMinwidgetchars() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 182);
 		} else {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -744,16 +744,16 @@ public class uiStyle extends CFacade {
 	 * Set method for struct member 'minwidgetchars'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in characters </p>
+	 * <p> In characters. </p>
 	 * @see #__DNA__FIELD__minwidgetchars
 	 */
 	
 	public void setMinwidgetchars(short minwidgetchars) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, minwidgetchars);
+			__io__block.writeShort(__io__address + 182, minwidgetchars);
 		} else {
-			__io__block.writeShort(__io__address + 206, minwidgetchars);
+			__io__block.writeShort(__io__address + 174, minwidgetchars);
 		}
 	}
 
@@ -765,9 +765,9 @@ public class uiStyle extends CFacade {
 	public short getColumnspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -779,9 +779,9 @@ public class uiStyle extends CFacade {
 	public void setColumnspace(short columnspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, columnspace);
+			__io__block.writeShort(__io__address + 184, columnspace);
 		} else {
-			__io__block.writeShort(__io__address + 208, columnspace);
+			__io__block.writeShort(__io__address + 176, columnspace);
 		}
 	}
 
@@ -793,9 +793,9 @@ public class uiStyle extends CFacade {
 	public short getTemplatespace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 186);
 		} else {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -807,9 +807,9 @@ public class uiStyle extends CFacade {
 	public void setTemplatespace(short templatespace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, templatespace);
+			__io__block.writeShort(__io__address + 186, templatespace);
 		} else {
-			__io__block.writeShort(__io__address + 210, templatespace);
+			__io__block.writeShort(__io__address + 178, templatespace);
 		}
 	}
 
@@ -821,9 +821,9 @@ public class uiStyle extends CFacade {
 	public short getBoxspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -835,9 +835,9 @@ public class uiStyle extends CFacade {
 	public void setBoxspace(short boxspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 220, boxspace);
+			__io__block.writeShort(__io__address + 188, boxspace);
 		} else {
-			__io__block.writeShort(__io__address + 212, boxspace);
+			__io__block.writeShort(__io__address + 180, boxspace);
 		}
 	}
 
@@ -849,9 +849,9 @@ public class uiStyle extends CFacade {
 	public short getButtonspacex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -863,9 +863,9 @@ public class uiStyle extends CFacade {
 	public void setButtonspacex(short buttonspacex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 222, buttonspacex);
+			__io__block.writeShort(__io__address + 190, buttonspacex);
 		} else {
-			__io__block.writeShort(__io__address + 214, buttonspacex);
+			__io__block.writeShort(__io__address + 182, buttonspacex);
 		}
 	}
 
@@ -877,9 +877,9 @@ public class uiStyle extends CFacade {
 	public short getButtonspacey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 184);
 		}
 	}
 
@@ -891,9 +891,9 @@ public class uiStyle extends CFacade {
 	public void setButtonspacey(short buttonspacey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, buttonspacey);
+			__io__block.writeShort(__io__address + 192, buttonspacey);
 		} else {
-			__io__block.writeShort(__io__address + 216, buttonspacey);
+			__io__block.writeShort(__io__address + 184, buttonspacey);
 		}
 	}
 
@@ -905,9 +905,9 @@ public class uiStyle extends CFacade {
 	public short getPanelspace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 186);
 		}
 	}
 
@@ -919,9 +919,9 @@ public class uiStyle extends CFacade {
 	public void setPanelspace(short panelspace) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, panelspace);
+			__io__block.writeShort(__io__address + 194, panelspace);
 		} else {
-			__io__block.writeShort(__io__address + 218, panelspace);
+			__io__block.writeShort(__io__address + 186, panelspace);
 		}
 	}
 
@@ -933,9 +933,9 @@ public class uiStyle extends CFacade {
 	public short getPanelouter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 196);
 		} else {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -947,37 +947,49 @@ public class uiStyle extends CFacade {
 	public void setPanelouter(short panelouter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, panelouter);
+			__io__block.writeShort(__io__address + 196, panelouter);
 		} else {
-			__io__block.writeShort(__io__address + 220, panelouter);
+			__io__block.writeShort(__io__address + 188, panelouter);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 230);
+			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 222);
+			return new CArrayFacade<Byte>(__io__address + 190, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, pad);
+			__dna__offset = 198;
 		} else {
-			__io__block.writeShort(__io__address + 222, pad);
+			__dna__offset = 190;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

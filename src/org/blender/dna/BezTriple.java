@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Keyframes on F-Curves (allows code reuse of Bezier eval code) and Points on Bezier Curves/Paths are generally BezTriples</p><p><h2>Note</h2><p> alfa location in struct is abused by {@link Key}  system</p> alfa location in struct is abused by Key system
+ * <p> Keyframes on F-Curves (allows code reuse of Bezier eval code) and Points on Bezier Curves/Paths are generally BezTriples.</p><p><h2>Note</h2><p>{@link BezTriple.tilt}  location in struct is abused by {@link Key}  system.</p> BezTriple.tilt location in struct is abused by Key system.
  * <h2>Note</h2><p> vec in {@link BezTriple}  looks like this:<ul><li><p> vec[0][0] = x location of handle 1</p></li><li><p> vec[0][1] = y location of handle 1</p></li><li><p> vec[0][2] = z location of handle 1 (not used for {@link FCurve}  Points(2d))</p></li><li><p> vec[1][0] = x location of control point</p></li><li><p> vec[1][1] = y location of control point</p></li><li><p> vec[1][2] = z location of control point</p></li><li><p> vec[2][0] = x location of handle 2</p></li><li><p> vec[2][1] = y location of handle 2</p></li><li><p> vec[2][2] = z location of handle 2 (not used for {@link FCurve}  Points(2d)) </p></li></ul> 
  * vec[0][0] = x location of handle 1vec[0][1] = y location of handle 1vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))vec[1][0] = x location of control pointvec[1][1] = y location of control pointvec[1][2] = z location of control pointvec[2][0] = x location of handle 2vec[2][1] = y location of handle 2vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
  * </p> vec in BezTriple looks like this:
@@ -34,7 +34,7 @@ public class BezTriple extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 50;
+	public static final int __DNA__SDNA_INDEX = 54;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
@@ -78,6 +78,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for softbody goal weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -100,7 +103,7 @@ public class BezTriple extends CFacade {
 	 * Field descriptor (offset) for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight, radius: for bevel tapering </p>
+	 * <p> For bevel tapering & modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,7 +126,7 @@ public class BezTriple extends CFacade {
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ipo: interpolation mode for segment from this {@link BezTriple}  to the next </p>
+	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -144,6 +147,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'h1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,9 +170,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'h2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> h1, h2: the handle type of the two handles </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -187,6 +190,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1, f2, f3: used for selection status. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -227,9 +233,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'f3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1, f2, f3: used for selection status </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -252,7 +255,7 @@ public class BezTriple extends CFacade {
 	 * Field descriptor (offset) for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeTypes) </p>
+	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -275,7 +278,7 @@ public class BezTriple extends CFacade {
 	 * Field descriptor (offset) for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> easing: easing type for interpolation mode (eBezTriple_Easing) </p>
+	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -298,7 +301,7 @@ public class BezTriple extends CFacade {
 	 * Field descriptor (offset) for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -319,6 +322,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -339,9 +345,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -361,24 +364,47 @@ public class BezTriple extends CFacade {
 	public static final long[] __DNA__FIELD__period = new long[]{64, 64};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'f5'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BezTriple beztriple = ...;
-	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__f5);
+	 * CPointer&lt;Byte&gt; p_f5 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'f5'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__f5 = new long[]{68, 68};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BezTriple beztriple = ...;
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{69, 69};
 
 	public BezTriple(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -459,6 +485,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -473,6 +502,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -489,7 +521,7 @@ public class BezTriple extends CFacade {
 	 * Get method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight, radius: for bevel tapering </p>
+	 * <p> For bevel tapering & modifiers. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -506,7 +538,7 @@ public class BezTriple extends CFacade {
 	 * Set method for struct member 'radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight, radius: for bevel tapering </p>
+	 * <p> For bevel tapering & modifiers. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -523,7 +555,7 @@ public class BezTriple extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ipo: interpolation mode for segment from this {@link BezTriple}  to the next </p>
+	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -540,7 +572,7 @@ public class BezTriple extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ipo: interpolation mode for segment from this {@link BezTriple}  to the next </p>
+	 * <p>{@link Ipo} : interpolation mode for segment from this {@link BezTriple}  to the next. </p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -555,6 +587,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'h1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * @see #__DNA__FIELD__h1
 	 */
 	
@@ -569,6 +604,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'h1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> H1, h2: the handle type of the two handles. </p>
 	 * @see #__DNA__FIELD__h1
 	 */
 	
@@ -583,9 +621,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'h2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> h1, h2: the handle type of the two handles </p>
 	 * @see #__DNA__FIELD__h2
 	 */
 	
@@ -600,9 +635,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'h2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> h1, h2: the handle type of the two handles </p>
 	 * @see #__DNA__FIELD__h2
 	 */
 	
@@ -617,6 +649,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1, f2, f3: used for selection status. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -631,6 +666,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1, f2, f3: used for selection status. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -673,9 +711,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'f3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1, f2, f3: used for selection status </p>
 	 * @see #__DNA__FIELD__f3
 	 */
 	
@@ -690,9 +725,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'f3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1, f2, f3: used for selection status </p>
 	 * @see #__DNA__FIELD__f3
 	 */
 	
@@ -709,7 +741,7 @@ public class BezTriple extends CFacade {
 	 * Get method for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeTypes) </p>
+	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__hide
 	 */
 	
@@ -726,7 +758,7 @@ public class BezTriple extends CFacade {
 	 * Set method for struct member 'hide'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeTypes) </p>
+	 * <p> Hide: used to indicate whether {@link BezTriple}  is hidden (3D), type of keyframe (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__hide
 	 */
 	
@@ -743,7 +775,7 @@ public class BezTriple extends CFacade {
 	 * Get method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> easing: easing type for interpolation mode (eBezTriple_Easing) </p>
+	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
 	
@@ -760,7 +792,7 @@ public class BezTriple extends CFacade {
 	 * Set method for struct member 'easing'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> easing: easing type for interpolation mode (eBezTriple_Easing) </p>
+	 * <p> Easing: easing type for interpolation mode (eBezTriple_Easing). </p>
 	 * @see #__DNA__FIELD__easing
 	 */
 	
@@ -777,7 +809,7 @@ public class BezTriple extends CFacade {
 	 * Get method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
 	
@@ -794,7 +826,7 @@ public class BezTriple extends CFacade {
 	 * Set method for struct member 'back'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_BACK </p>
+	 * <p> BEZT_IPO_BACK. </p>
 	 * @see #__DNA__FIELD__back
 	 */
 	
@@ -809,6 +841,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -823,6 +858,9 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'amplitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> BEZT_IPO_ELASTIC. </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -837,9 +875,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Get method for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -854,9 +889,6 @@ public class BezTriple extends CFacade {
 
 	/**
 	 * Set method for struct member 'period'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BEZT_IPO_ELASTIC </p>
 	 * @see #__DNA__FIELD__period
 	 */
 	
@@ -870,42 +902,76 @@ public class BezTriple extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'f5'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
+	 * @see #__DNA__FIELD__f5
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public byte getF5() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 68);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 68);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'f5'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
+	 * @see #__DNA__FIELD__f5
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void setF5(byte f5) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 68, f5);
+		} else {
+			__io__block.writeByte(__io__address + 68, f5);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 69, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 69, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 68;
+			__dna__offset = 69;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 69;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> note, srl->passflag is treestore element 'nr' in outliner, short still... View - MultiView </p>
+ * <p> View - MultiView </p>
  */
 
-@CMetaData(size32=152, size64=160)
+@CMetaData(size32=144, size64=152)
 public class SceneRenderView extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SceneRenderView extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 174;
+	public static final int __DNA__SDNA_INDEX = 178;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -75,7 +75,7 @@ public class SceneRenderView extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Render view name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class SceneRenderView extends CFacade {
 	 * Field descriptor (offset) for struct member 'suffix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,44 +138,24 @@ public class SceneRenderView extends CFacade {
 	public static final long[] __DNA__FIELD__viewflag = new long[]{136, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SceneRenderView scenerenderview = ...;
-	 * CPointer&lt;Object&gt; p = scenerenderview.__dna__addressof(SceneRenderView.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * CPointer&lt;Object&gt; p = scenerenderview.__dna__addressof(SceneRenderView.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{140, 148};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SceneRenderView scenerenderview = ...;
-	 * CPointer&lt;Object&gt; p = scenerenderview.__dna__addressof(SceneRenderView.__DNA__FIELD__pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: '_pad2'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{148, 156};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{140, 148};
 
 	public SceneRenderView(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -254,7 +234,7 @@ public class SceneRenderView extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Render view name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -276,7 +256,7 @@ public class SceneRenderView extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Render view name<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -301,7 +281,7 @@ public class SceneRenderView extends CFacade {
 	 * Get method for struct member 'suffix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__suffix
 	 */
 	
@@ -322,7 +302,7 @@ public class SceneRenderView extends CFacade {
 	 * Set method for struct member 'suffix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__suffix
 	 */
 	
@@ -372,29 +352,29 @@ public class SceneRenderView extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CArrayFacade<Integer> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad(CArrayFacade<Integer> pad) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -402,52 +382,12 @@ public class SceneRenderView extends CFacade {
 		} else {
 			__dna__offset = 140;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__generic__copy( getPad(), pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public CArrayFacade<Byte> getPad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(CArrayFacade<Byte> pad2) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 156;
-		} else {
-			__dna__offset = 148;
-		}
-		if (__io__equals(pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
-		} else {
-			__io__generic__copy( getPad2(), pad2);
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

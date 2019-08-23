@@ -13,10 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> properties for dof effect </p>
+ * <p> Properties for dof effect. </p>
  */
 
-@CMetaData(size32=24, size64=24)
+@CMetaData(size32=32, size64=32)
 public class GPUDOFSettings extends CFacade {
 
 	/**
@@ -27,14 +27,13 @@ public class GPUDOFSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 21;
+	public static final int __DNA__SDNA_INDEX = 26;
 
 	/**
 	 * Field descriptor (offset) for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
-	 * <p> focal distance for depth of field </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Focal distance for depth of field. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -55,9 +54,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fstop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * F-stop for dof effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,9 +74,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'focal_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Focal length for dof effect
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,9 +94,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of sensor
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,6 +113,46 @@ public class GPUDOFSettings extends CFacade {
 	public static final long[] __DNA__FIELD__sensor = new long[]{12, 12};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GPUDOFSettings gpudofsettings = ...;
+	 * CPointer&lt;Object&gt; p = gpudofsettings.__dna__addressof(GPUDOFSettings.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ratio'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GPUDOFSettings gpudofsettings = ...;
+	 * CPointer&lt;Object&gt; p = gpudofsettings.__dna__addressof(GPUDOFSettings.__DNA__FIELD__ratio);
+	 * CPointer&lt;Float&gt; p_ratio = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ratio'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ratio = new long[]{20, 20};
+
+	/**
 	 * Field descriptor (offset) for struct member 'num_blades'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -140,7 +170,7 @@ public class GPUDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_blades = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__num_blades = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'high_quality'.
@@ -160,7 +190,7 @@ public class GPUDOFSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__high_quality = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__high_quality = new long[]{28, 28};
 
 	public GPUDOFSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -173,9 +203,8 @@ public class GPUDOFSettings extends CFacade {
 	/**
 	 * Get method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
-	 * <p> focal distance for depth of field </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */
 	
@@ -191,9 +220,8 @@ public class GPUDOFSettings extends CFacade {
 	/**
 	 * Set method for struct member 'focus_distance'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Viewport depth of field focus distance<h4>Blender Source Code:</h4>
-	 * <p> focal distance for depth of field </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Focal distance for depth of field. </p>
 	 * @see #__DNA__FIELD__focus_distance
 	 */
 	
@@ -208,9 +236,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'fstop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * F-stop for dof effect
 	 * @see #__DNA__FIELD__fstop
 	 */
 	
@@ -225,9 +250,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'fstop'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * F-stop for dof effect
 	 * @see #__DNA__FIELD__fstop
 	 */
 	
@@ -242,9 +264,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'focal_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Focal length for dof effect
 	 * @see #__DNA__FIELD__focal_length
 	 */
 	
@@ -259,9 +278,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'focal_length'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Focal length for dof effect
 	 * @see #__DNA__FIELD__focal_length
 	 */
 	
@@ -276,9 +292,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'sensor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of sensor
 	 * @see #__DNA__FIELD__sensor
 	 */
 	
@@ -293,9 +306,6 @@ public class GPUDOFSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'sensor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Size of sensor
 	 * @see #__DNA__FIELD__sensor
 	 */
 	
@@ -309,6 +319,62 @@ public class GPUDOFSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public float getRotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 16);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(float rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 16, rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 16, rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ratio'.
+	 * @see #__DNA__FIELD__ratio
+	 */
+	
+	public float getRatio() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 20);
+		} else {
+			return __io__block.readFloat(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ratio'.
+	 * @see #__DNA__FIELD__ratio
+	 */
+	
+	public void setRatio(float ratio) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 20, ratio);
+		} else {
+			__io__block.writeFloat(__io__address + 20, ratio);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'num_blades'.
 	 * @see #__DNA__FIELD__num_blades
 	 */
@@ -316,9 +382,9 @@ public class GPUDOFSettings extends CFacade {
 	public int getNum_blades() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 24);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 24);
 		}
 	}
 
@@ -330,9 +396,9 @@ public class GPUDOFSettings extends CFacade {
 	public void setNum_blades(int num_blades) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16, num_blades);
+			__io__block.writeInt(__io__address + 24, num_blades);
 		} else {
-			__io__block.writeInt(__io__address + 16, num_blades);
+			__io__block.writeInt(__io__address + 24, num_blades);
 		}
 	}
 
@@ -344,9 +410,9 @@ public class GPUDOFSettings extends CFacade {
 	public int getHigh_quality() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
@@ -358,9 +424,9 @@ public class GPUDOFSettings extends CFacade {
 	public void setHigh_quality(int high_quality) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, high_quality);
+			__io__block.writeInt(__io__address + 28, high_quality);
 		} else {
-			__io__block.writeInt(__io__address + 20, high_quality);
+			__io__block.writeInt(__io__address + 28, high_quality);
 		}
 	}
 

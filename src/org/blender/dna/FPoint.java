@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> F-Curves ------------------------------------  {@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
+ * <p> F-Curves --------------------------------<mdash/><mdash/>  {@link FPoint}  (fpt)</p><p> This is the bare-minimum data required storing motion samples. Should be more efficient than using BPoints, which contain a lot of other unnecessary data... </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -28,13 +28,13 @@ public class FPoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 519;
+	public static final int __DNA__SDNA_INDEX = 526;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time + value </p>
+	 * <p> Time + value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class FPoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection info </p>
+	 * <p> Selection info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -77,24 +77,24 @@ public class FPoint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{8, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FPoint fpoint = ...;
-	 * CPointer&lt;Object&gt; p = fpoint.__dna__addressof(FPoint.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = fpoint.__dna__addressof(FPoint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{12, 12};
+	public static final long[] __DNA__FIELD___pad = new long[]{12, 12};
 
 	public FPoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -108,7 +108,7 @@ public class FPoint extends CFacade {
 	 * Get method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time + value </p>
+	 * <p> Time + value. </p>
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -129,7 +129,7 @@ public class FPoint extends CFacade {
 	 * Set method for struct member 'vec'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time + value </p>
+	 * <p> Time + value. </p>
 	 * @see #__DNA__FIELD__vec
 	 */
 	
@@ -154,7 +154,7 @@ public class FPoint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection info </p>
+	 * <p> Selection info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -171,7 +171,7 @@ public class FPoint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection info </p>
+	 * <p> Selection info. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -185,30 +185,42 @@ public class FPoint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 12);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, pad);
+			__dna__offset = 12;
 		} else {
-			__io__block.writeInt(__io__address + 12, pad);
+			__dna__offset = 12;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

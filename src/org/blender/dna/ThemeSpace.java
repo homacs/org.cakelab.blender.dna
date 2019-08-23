@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> try to put them all in one, if needed a special struct can be created as well for example later on, when we introduce wire colors for ob types or so... </p>
  */
 
-@CMetaData(size32=760, size64=760)
+@CMetaData(size32=808, size64=808)
 public class ThemeSpace extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class ThemeSpace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 247;
+	public static final int __DNA__SDNA_INDEX = 245;
 
 	/**
 	 * Field descriptor (offset) for struct member 'back'.
@@ -54,10 +54,70 @@ public class ThemeSpace extends CFacade {
 	public static final long[] __DNA__FIELD__back = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'back_grad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__back_grad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_back_grad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'back_grad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__back_grad = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'show_back_grad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__show_back_grad);
+	 * CPointer&lt;Byte&gt; p_show_back_grad = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'show_back_grad'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__show_back_grad = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{9, 9};
+
+	/**
 	 * Field descriptor (offset) for struct member 'title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -74,7 +134,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__title = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__title = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
@@ -94,7 +154,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__text = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__text = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'text_hi'.
@@ -114,13 +174,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__text_hi = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__text_hi = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'header'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> header colors region background </p>
+	 * <p> header colors Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,13 +197,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__header = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__header = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused </p>
+	 * <p> Unused. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,7 +220,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__header_title = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__header_title = new long[]{28, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'header_text'.
@@ -180,7 +240,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__header_text = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__header_text = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'header_text_hi'.
@@ -200,7 +260,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__header_text_hi = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__header_text_hi = new long[]{36, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tab_active'.
@@ -223,7 +283,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tab_active = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__tab_active = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tab_inactive'.
@@ -243,7 +303,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tab_inactive = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__tab_inactive = new long[]{44, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tab_back'.
@@ -263,7 +323,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tab_back = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__tab_back = new long[]{48, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tab_outline'.
@@ -283,13 +343,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tab_outline = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__tab_outline = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'button'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> button/tool regions region background </p>
+	 * <p> button/tool regions Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -306,13 +366,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__button = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__button = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -329,7 +389,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__button_title = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__button_title = new long[]{60, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'button_text'.
@@ -349,7 +409,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__button_text = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__button_text = new long[]{64, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'button_text_hi'.
@@ -369,13 +429,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__button_text_hi = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__button_text_hi = new long[]{68, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> listview regions region background </p>
+	 * <p> listview regions Region background. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -392,13 +452,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__list = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__list = new long[]{72, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -415,7 +475,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__list_title = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__list_title = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'list_text'.
@@ -435,7 +495,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__list_text = new long[]{72, 72};
+	public static final long[] __DNA__FIELD__list_text = new long[]{80, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'list_text_hi'.
@@ -455,13 +515,59 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__list_text_hi = new long[]{76, 76};
+	public static final long[] __DNA__FIELD__list_text_hi = new long[]{84, 84};
+
+	/**
+	 * Field descriptor (offset) for struct member 'navigation_bar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> navigation bar regions Region background. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__navigation_bar);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_navigation_bar = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'navigation_bar'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__navigation_bar = new long[]{88, 88};
+
+	/**
+	 * Field descriptor (offset) for struct member 'execution_buts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Region background. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__execution_buts);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_execution_buts = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'execution_buts'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__execution_buts = new long[]{92, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> float panel char panel[4]; unused char panel_title[4]; unused char panel_text[4]; unused char panel_text_hi[4]; unused note, cannot use name 'panel' because of DNA mapping old files </p>
+	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -478,27 +584,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panelcolors = new long[]{80, 80};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gradients'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ThemeSpace themespace = ...;
-	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__gradients);
-	 * CPointer&lt;uiGradientColors&gt; p_gradients = p.cast(new Class[]{uiGradientColors.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gradients'</li>
-	 * <li>Signature: 'uiGradientColors'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gradients = new long[]{96, 96};
+	public static final long[] __DNA__FIELD__panelcolors = new long[]{96, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shade1'.
@@ -1042,6 +1128,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'face'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Solid faces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1062,9 +1151,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> solid faces </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1087,7 +1173,7 @@ public class ThemeSpace extends CFacade {
 	 * Field descriptor (offset) for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color </p>
+	 * <p> selected color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1447,6 +1533,46 @@ public class ThemeSpace extends CFacade {
 	public static final long[] __DNA__FIELD__freestyle_face_mark = new long[]{296, 296};
 
 	/**
+	 * Field descriptor (offset) for struct member 'scrubbing_background'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__scrubbing_background);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_scrubbing_background = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scrubbing_background'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scrubbing_background = new long[]{300, 300};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad5'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD___pad5);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad5 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad5'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad5 = new long[]{304, 304};
+
+	/**
 	 * Field descriptor (offset) for struct member 'nurb_uline'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1464,7 +1590,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nurb_uline = new long[]{300, 300};
+	public static final long[] __DNA__FIELD__nurb_uline = new long[]{308, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nurb_vline'.
@@ -1484,7 +1610,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nurb_vline = new long[]{304, 304};
+	public static final long[] __DNA__FIELD__nurb_vline = new long[]{312, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_spline'.
@@ -1504,7 +1630,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_spline = new long[]{308, 308};
+	public static final long[] __DNA__FIELD__act_spline = new long[]{316, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nurb_sel_uline'.
@@ -1524,7 +1650,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nurb_sel_uline = new long[]{312, 312};
+	public static final long[] __DNA__FIELD__nurb_sel_uline = new long[]{320, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nurb_sel_vline'.
@@ -1544,7 +1670,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nurb_sel_vline = new long[]{316, 316};
+	public static final long[] __DNA__FIELD__nurb_sel_vline = new long[]{324, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastsel_point'.
@@ -1564,7 +1690,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastsel_point = new long[]{320, 320};
+	public static final long[] __DNA__FIELD__lastsel_point = new long[]{328, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_free'.
@@ -1584,7 +1710,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_free = new long[]{324, 324};
+	public static final long[] __DNA__FIELD__handle_free = new long[]{332, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_auto'.
@@ -1604,7 +1730,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_auto = new long[]{328, 328};
+	public static final long[] __DNA__FIELD__handle_auto = new long[]{336, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_vect'.
@@ -1624,7 +1750,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_vect = new long[]{332, 332};
+	public static final long[] __DNA__FIELD__handle_vect = new long[]{340, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_align'.
@@ -1644,7 +1770,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_align = new long[]{336, 336};
+	public static final long[] __DNA__FIELD__handle_align = new long[]{344, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_auto_clamped'.
@@ -1664,7 +1790,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_auto_clamped = new long[]{340, 340};
+	public static final long[] __DNA__FIELD__handle_auto_clamped = new long[]{348, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_sel_free'.
@@ -1684,7 +1810,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_sel_free = new long[]{344, 344};
+	public static final long[] __DNA__FIELD__handle_sel_free = new long[]{352, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_sel_auto'.
@@ -1704,7 +1830,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_sel_auto = new long[]{348, 348};
+	public static final long[] __DNA__FIELD__handle_sel_auto = new long[]{356, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_sel_vect'.
@@ -1724,7 +1850,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_sel_vect = new long[]{352, 352};
+	public static final long[] __DNA__FIELD__handle_sel_vect = new long[]{360, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_sel_align'.
@@ -1744,7 +1870,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_sel_align = new long[]{356, 356};
+	public static final long[] __DNA__FIELD__handle_sel_align = new long[]{364, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_sel_auto_clamped'.
@@ -1764,10 +1890,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_sel_auto_clamped = new long[]{360, 360};
+	public static final long[] __DNA__FIELD__handle_sel_auto_clamped = new long[]{368, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ds_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dopesheet. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1784,13 +1913,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ds_channel = new long[]{364, 364};
+	public static final long[] __DNA__FIELD__ds_channel = new long[]{372, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ds_subchannel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1807,10 +1933,33 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ds_subchannel = new long[]{368, 368};
+	public static final long[] __DNA__FIELD__ds_subchannel = new long[]{376, 376};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ds_ipoline'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__ds_ipoline);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_ds_ipoline = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ds_ipoline'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ds_ipoline = new long[]{380, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_keyframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1827,7 +1976,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_keyframe = new long[]{372, 372};
+	public static final long[] __DNA__FIELD__keytype_keyframe = new long[]{384, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_extreme'.
@@ -1847,7 +1996,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_extreme = new long[]{376, 376};
+	public static final long[] __DNA__FIELD__keytype_extreme = new long[]{388, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_breakdown'.
@@ -1867,13 +2016,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_breakdown = new long[]{380, 380};
+	public static final long[] __DNA__FIELD__keytype_breakdown = new long[]{392, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_jitter'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1890,10 +2036,33 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_jitter = new long[]{384, 384};
+	public static final long[] __DNA__FIELD__keytype_jitter = new long[]{396, 396};
+
+	/**
+	 * Field descriptor (offset) for struct member 'keytype_movehold'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__keytype_movehold);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_keytype_movehold = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'keytype_movehold'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__keytype_movehold = new long[]{400, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_keyframe_select'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1910,7 +2079,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_keyframe_select = new long[]{388, 388};
+	public static final long[] __DNA__FIELD__keytype_keyframe_select = new long[]{404, 404};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_extreme_select'.
@@ -1930,7 +2099,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_extreme_select = new long[]{392, 392};
+	public static final long[] __DNA__FIELD__keytype_extreme_select = new long[]{408, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_breakdown_select'.
@@ -1950,13 +2119,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_breakdown_select = new long[]{396, 396};
+	public static final long[] __DNA__FIELD__keytype_breakdown_select = new long[]{412, 412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keytype_jitter_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1973,7 +2139,27 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keytype_jitter_select = new long[]{400, 400};
+	public static final long[] __DNA__FIELD__keytype_jitter_select = new long[]{416, 416};
+
+	/**
+	 * Field descriptor (offset) for struct member 'keytype_movehold_select'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__keytype_movehold_select);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_keytype_movehold_select = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'keytype_movehold_select'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__keytype_movehold_select = new long[]{420, 420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyborder'.
@@ -1993,7 +2179,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyborder = new long[]{404, 404};
+	public static final long[] __DNA__FIELD__keyborder = new long[]{424, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyborder_select'.
@@ -2013,7 +2199,27 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyborder_select = new long[]{408, 408};
+	public static final long[] __DNA__FIELD__keyborder_select = new long[]{428, 428};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD___pad4);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad4'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad4 = new long[]{432, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_output'.
@@ -2033,7 +2239,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_output = new long[]{412, 412};
+	public static final long[] __DNA__FIELD__console_output = new long[]{435, 435};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_input'.
@@ -2053,7 +2259,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_input = new long[]{416, 416};
+	public static final long[] __DNA__FIELD__console_input = new long[]{439, 439};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_info'.
@@ -2073,7 +2279,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_info = new long[]{420, 420};
+	public static final long[] __DNA__FIELD__console_info = new long[]{443, 443};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_error'.
@@ -2093,7 +2299,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_error = new long[]{424, 424};
+	public static final long[] __DNA__FIELD__console_error = new long[]{447, 447};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_cursor'.
@@ -2113,7 +2319,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_cursor = new long[]{428, 428};
+	public static final long[] __DNA__FIELD__console_cursor = new long[]{451, 451};
 
 	/**
 	 * Field descriptor (offset) for struct member 'console_select'.
@@ -2133,7 +2339,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__console_select = new long[]{432, 432};
+	public static final long[] __DNA__FIELD__console_select = new long[]{455, 455};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_size'.
@@ -2153,7 +2359,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertex_size = new long[]{436, 436};
+	public static final long[] __DNA__FIELD__vertex_size = new long[]{459, 459};
 
 	/**
 	 * Field descriptor (offset) for struct member 'outline_width'.
@@ -2173,7 +2379,27 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__outline_width = new long[]{437, 437};
+	public static final long[] __DNA__FIELD__outline_width = new long[]{460, 460};
+
+	/**
+	 * Field descriptor (offset) for struct member 'obcenter_dia'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__obcenter_dia);
+	 * CPointer&lt;Byte&gt; p_obcenter_dia = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'obcenter_dia'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__obcenter_dia = new long[]{461, 461};
 
 	/**
 	 * Field descriptor (offset) for struct member 'facedot_size'.
@@ -2193,7 +2419,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__facedot_size = new long[]{438, 438};
+	public static final long[] __DNA__FIELD__facedot_size = new long[]{462, 462};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noodle_curving'.
@@ -2213,7 +2439,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noodle_curving = new long[]{439, 439};
+	public static final long[] __DNA__FIELD__noodle_curving = new long[]{463, 463};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxl'.
@@ -2236,7 +2462,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxl = new long[]{440, 440};
+	public static final long[] __DNA__FIELD__syntaxl = new long[]{464, 464};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxs'.
@@ -2256,7 +2482,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxs = new long[]{444, 444};
+	public static final long[] __DNA__FIELD__syntaxs = new long[]{468, 468};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxb'.
@@ -2276,7 +2502,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxb = new long[]{448, 448};
+	public static final long[] __DNA__FIELD__syntaxb = new long[]{472, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxn'.
@@ -2296,7 +2522,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxn = new long[]{452, 452};
+	public static final long[] __DNA__FIELD__syntaxn = new long[]{476, 476};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxv'.
@@ -2316,7 +2542,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxv = new long[]{456, 456};
+	public static final long[] __DNA__FIELD__syntaxv = new long[]{480, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxc'.
@@ -2336,7 +2562,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxc = new long[]{460, 460};
+	public static final long[] __DNA__FIELD__syntaxc = new long[]{484, 484};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxd'.
@@ -2356,7 +2582,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxd = new long[]{464, 464};
+	public static final long[] __DNA__FIELD__syntaxd = new long[]{488, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'syntaxr'.
@@ -2376,7 +2602,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__syntaxr = new long[]{468, 468};
+	public static final long[] __DNA__FIELD__syntaxr = new long[]{492, 492};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_output'.
@@ -2396,7 +2622,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_output = new long[]{472, 472};
+	public static final long[] __DNA__FIELD__nodeclass_output = new long[]{496, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_filter'.
@@ -2416,7 +2642,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_filter = new long[]{476, 476};
+	public static final long[] __DNA__FIELD__nodeclass_filter = new long[]{500, 500};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_vector'.
@@ -2436,7 +2662,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_vector = new long[]{480, 480};
+	public static final long[] __DNA__FIELD__nodeclass_vector = new long[]{504, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_texture'.
@@ -2456,7 +2682,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_texture = new long[]{484, 484};
+	public static final long[] __DNA__FIELD__nodeclass_texture = new long[]{508, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_shader'.
@@ -2476,7 +2702,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_shader = new long[]{488, 488};
+	public static final long[] __DNA__FIELD__nodeclass_shader = new long[]{512, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_script'.
@@ -2496,7 +2722,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_script = new long[]{492, 492};
+	public static final long[] __DNA__FIELD__nodeclass_script = new long[]{516, 516};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_pattern'.
@@ -2516,7 +2742,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_pattern = new long[]{496, 496};
+	public static final long[] __DNA__FIELD__nodeclass_pattern = new long[]{520, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodeclass_layout'.
@@ -2536,10 +2762,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodeclass_layout = new long[]{500, 500};
+	public static final long[] __DNA__FIELD__nodeclass_layout = new long[]{524, 524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For sequence editor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2556,7 +2785,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__movie = new long[]{504, 504};
+	public static final long[] __DNA__FIELD__movie = new long[]{528, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'movieclip'.
@@ -2576,7 +2805,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__movieclip = new long[]{508, 508};
+	public static final long[] __DNA__FIELD__movieclip = new long[]{532, 532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
@@ -2596,7 +2825,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask = new long[]{512, 512};
+	public static final long[] __DNA__FIELD__mask = new long[]{536, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
@@ -2616,7 +2845,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__image = new long[]{516, 516};
+	public static final long[] __DNA__FIELD__image = new long[]{540, 540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
@@ -2636,13 +2865,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scene = new long[]{520, 520};
+	public static final long[] __DNA__FIELD__scene = new long[]{544, 544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'audio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for sequence editor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2659,7 +2885,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__audio = new long[]{524, 524};
+	public static final long[] __DNA__FIELD__audio = new long[]{548, 548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effect'.
@@ -2679,7 +2905,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effect = new long[]{528, 528};
+	public static final long[] __DNA__FIELD__effect = new long[]{552, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'transition'.
@@ -2699,7 +2925,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__transition = new long[]{532, 532};
+	public static final long[] __DNA__FIELD__transition = new long[]{556, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'meta'.
@@ -2719,7 +2945,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__meta = new long[]{536, 536};
+	public static final long[] __DNA__FIELD__meta = new long[]{560, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'text_strip'.
@@ -2739,13 +2965,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__text_strip = new long[]{540, 540};
+	public static final long[] __DNA__FIELD__text_strip = new long[]{564, 564};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for dopesheet - scale factor for size of keyframes (i.e. height of channels) </p>
+	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2762,7 +2988,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyframe_scale_fac = new long[]{544, 544};
+	public static final long[] __DNA__FIELD__keyframe_scale_fac = new long[]{568, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editmesh_active'.
@@ -2782,7 +3008,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editmesh_active = new long[]{548, 548};
+	public static final long[] __DNA__FIELD__editmesh_active = new long[]{572, 572};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_vertex'.
@@ -2802,7 +3028,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_vertex = new long[]{552, 552};
+	public static final long[] __DNA__FIELD__handle_vertex = new long[]{576, 576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_vertex_select'.
@@ -2822,7 +3048,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_vertex_select = new long[]{556, 556};
+	public static final long[] __DNA__FIELD__handle_vertex_select = new long[]{580, 580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_vertex_size'.
@@ -2842,7 +3068,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_vertex_size = new long[]{560, 560};
+	public static final long[] __DNA__FIELD__handle_vertex_size = new long[]{584, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipping_border_3d'.
@@ -2862,7 +3088,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipping_border_3d = new long[]{561, 561};
+	public static final long[] __DNA__FIELD__clipping_border_3d = new long[]{585, 585};
 
 	/**
 	 * Field descriptor (offset) for struct member 'marker_outline'.
@@ -2882,7 +3108,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__marker_outline = new long[]{565, 565};
+	public static final long[] __DNA__FIELD__marker_outline = new long[]{589, 589};
 
 	/**
 	 * Field descriptor (offset) for struct member 'marker'.
@@ -2902,7 +3128,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__marker = new long[]{569, 569};
+	public static final long[] __DNA__FIELD__marker = new long[]{593, 593};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_marker'.
@@ -2922,7 +3148,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_marker = new long[]{573, 573};
+	public static final long[] __DNA__FIELD__act_marker = new long[]{597, 597};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sel_marker'.
@@ -2942,7 +3168,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sel_marker = new long[]{577, 577};
+	public static final long[] __DNA__FIELD__sel_marker = new long[]{601, 601};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dis_marker'.
@@ -2962,7 +3188,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dis_marker = new long[]{581, 581};
+	public static final long[] __DNA__FIELD__dis_marker = new long[]{605, 605};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lock_marker'.
@@ -2982,7 +3208,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lock_marker = new long[]{585, 585};
+	public static final long[] __DNA__FIELD__lock_marker = new long[]{609, 609};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bundle_solid'.
@@ -3002,7 +3228,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bundle_solid = new long[]{589, 589};
+	public static final long[] __DNA__FIELD__bundle_solid = new long[]{613, 613};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_before'.
@@ -3022,7 +3248,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_before = new long[]{593, 593};
+	public static final long[] __DNA__FIELD__path_before = new long[]{617, 617};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_after'.
@@ -3042,7 +3268,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_after = new long[]{597, 597};
+	public static final long[] __DNA__FIELD__path_after = new long[]{621, 621};
 
 	/**
 	 * Field descriptor (offset) for struct member 'camera_path'.
@@ -3062,27 +3288,27 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__camera_path = new long[]{601, 601};
+	public static final long[] __DNA__FIELD__camera_path = new long[]{625, 625};
 
 	/**
-	 * Field descriptor (offset) for struct member 'hpad'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ThemeSpace themespace = ...;
-	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__hpad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_hpad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'hpad'</li>
+	 * <li>Field: '_pad1'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hpad = new long[]{605, 605};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{629, 629};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_vertex_size'.
@@ -3102,7 +3328,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_vertex_size = new long[]{607, 607};
+	public static final long[] __DNA__FIELD__gp_vertex_size = new long[]{631, 631};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_vertex'.
@@ -3122,7 +3348,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_vertex = new long[]{608, 608};
+	public static final long[] __DNA__FIELD__gp_vertex = new long[]{632, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_vertex_select'.
@@ -3142,7 +3368,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_vertex_select = new long[]{612, 612};
+	public static final long[] __DNA__FIELD__gp_vertex_select = new long[]{636, 636};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_back'.
@@ -3162,7 +3388,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_back = new long[]{616, 616};
+	public static final long[] __DNA__FIELD__preview_back = new long[]{640, 640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_face'.
@@ -3182,7 +3408,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_face = new long[]{620, 620};
+	public static final long[] __DNA__FIELD__preview_stitch_face = new long[]{644, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_edge'.
@@ -3202,7 +3428,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_edge = new long[]{624, 624};
+	public static final long[] __DNA__FIELD__preview_stitch_edge = new long[]{648, 648};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_vert'.
@@ -3222,7 +3448,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_vert = new long[]{628, 628};
+	public static final long[] __DNA__FIELD__preview_stitch_vert = new long[]{652, 652};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_stitchable'.
@@ -3242,7 +3468,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_stitchable = new long[]{632, 632};
+	public static final long[] __DNA__FIELD__preview_stitch_stitchable = new long[]{656, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_unstitchable'.
@@ -3262,7 +3488,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_unstitchable = new long[]{636, 636};
+	public static final long[] __DNA__FIELD__preview_stitch_unstitchable = new long[]{660, 660};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview_stitch_active'.
@@ -3282,13 +3508,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview_stitch_active = new long[]{640, 640};
+	public static final long[] __DNA__FIELD__preview_stitch_active = new long[]{664, 664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> two uses, for uvs with modifier applied on mesh and uvs during painting </p>
+	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3305,13 +3531,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_shadow = new long[]{644, 644};
+	public static final long[] __DNA__FIELD__uv_shadow = new long[]{668, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_others'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uvs of other objects </p>
+	 * <p> Uvs of other objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3328,13 +3554,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_others = new long[]{648, 648};
+	public static final long[] __DNA__FIELD__uv_others = new long[]{672, 672};
 
 	/**
 	 * Field descriptor (offset) for struct member 'match'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - filter match </p>
+	 * <p> Outliner - filter match. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3351,13 +3577,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__match = new long[]{652, 652};
+	public static final long[] __DNA__FIELD__match = new long[]{676, 676};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - selected item </p>
+	 * <p> Outliner - selected item. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3374,13 +3600,105 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selected_highlight = new long[]{656, 656};
+	public static final long[] __DNA__FIELD__selected_highlight = new long[]{680, 680};
+
+	/**
+	 * Field descriptor (offset) for struct member 'selected_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - selected object. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__selected_object);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_selected_object = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'selected_object'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__selected_object = new long[]{684, 684};
+
+	/**
+	 * Field descriptor (offset) for struct member 'active_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - active object. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__active_object);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_active_object = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'active_object'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__active_object = new long[]{688, 688};
+
+	/**
+	 * Field descriptor (offset) for struct member 'edited_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - edited object. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__edited_object);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_edited_object = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'edited_object'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__edited_object = new long[]{692, 692};
+
+	/**
+	 * Field descriptor (offset) for struct member 'row_alternate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - row color difference. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__row_alternate);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_row_alternate = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'row_alternate'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__row_alternate = new long[]{696, 696};
 
 	/**
 	 * Field descriptor (offset) for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Skin modifier root color </p>
+	 * <p> Skin modifier root color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3397,13 +3715,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__skin_root = new long[]{660, 660};
+	public static final long[] __DNA__FIELD__skin_root = new long[]{700, 700};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA Active Action + Summary Channel </p>
+	 * <p> NLA Active Action + Summary Channel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3420,13 +3738,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anim_active = new long[]{664, 664};
+	public static final long[] __DNA__FIELD__anim_active = new long[]{704, 704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Active Action = NULL </p>
+	 * <p> Active Action = NULL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3443,13 +3761,36 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anim_non_active = new long[]{668, 668};
+	public static final long[] __DNA__FIELD__anim_non_active = new long[]{708, 708};
+
+	/**
+	 * Field descriptor (offset) for struct member 'anim_preview_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Preview range overlay. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD__anim_preview_range);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_anim_preview_range = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'anim_preview_range'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__anim_preview_range = new long[]{712, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA 'Tweaking' action/strip </p>
+	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3466,13 +3807,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_tweaking = new long[]{672, 672};
+	public static final long[] __DNA__FIELD__nla_tweaking = new long[]{716, 716};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA - warning color for duplicate instances of tweaking strip </p>
+	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3489,10 +3830,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_tweakdupli = new long[]{676, 676};
+	public static final long[] __DNA__FIELD__nla_tweakdupli = new long[]{720, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_transition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Transition" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3509,13 +3853,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_transition = new long[]{680, 680};
+	public static final long[] __DNA__FIELD__nla_transition = new long[]{724, 724};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_transition_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Transition" strips </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3532,10 +3873,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_transition_sel = new long[]{684, 684};
+	public static final long[] __DNA__FIELD__nla_transition_sel = new long[]{728, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_meta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Meta" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3552,13 +3896,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_meta = new long[]{688, 688};
+	public static final long[] __DNA__FIELD__nla_meta = new long[]{732, 732};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_meta_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Meta" strips </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3575,10 +3916,13 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_meta_sel = new long[]{692, 692};
+	public static final long[] __DNA__FIELD__nla_meta_sel = new long[]{736, 736};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_sound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Sound" strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3595,13 +3939,10 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_sound = new long[]{696, 696};
+	public static final long[] __DNA__FIELD__nla_sound = new long[]{740, 740};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nla_sound_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Sound" strips </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3618,7 +3959,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nla_sound_sel = new long[]{700, 700};
+	public static final long[] __DNA__FIELD__nla_sound_sel = new long[]{744, 744};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_selected'.
@@ -3641,7 +3982,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_selected = new long[]{704, 704};
+	public static final long[] __DNA__FIELD__info_selected = new long[]{748, 748};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_selected_text'.
@@ -3661,7 +4002,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_selected_text = new long[]{708, 708};
+	public static final long[] __DNA__FIELD__info_selected_text = new long[]{752, 752};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_error'.
@@ -3681,7 +4022,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_error = new long[]{712, 712};
+	public static final long[] __DNA__FIELD__info_error = new long[]{756, 756};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_error_text'.
@@ -3701,7 +4042,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_error_text = new long[]{716, 716};
+	public static final long[] __DNA__FIELD__info_error_text = new long[]{760, 760};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_warning'.
@@ -3721,7 +4062,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_warning = new long[]{720, 720};
+	public static final long[] __DNA__FIELD__info_warning = new long[]{764, 764};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_warning_text'.
@@ -3741,7 +4082,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_warning_text = new long[]{724, 724};
+	public static final long[] __DNA__FIELD__info_warning_text = new long[]{768, 768};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_info'.
@@ -3761,7 +4102,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_info = new long[]{728, 728};
+	public static final long[] __DNA__FIELD__info_info = new long[]{772, 772};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_info_text'.
@@ -3781,7 +4122,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_info_text = new long[]{732, 732};
+	public static final long[] __DNA__FIELD__info_info_text = new long[]{776, 776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_debug'.
@@ -3801,7 +4142,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_debug = new long[]{736, 736};
+	public static final long[] __DNA__FIELD__info_debug = new long[]{780, 780};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info_debug_text'.
@@ -3821,7 +4162,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info_debug_text = new long[]{740, 740};
+	public static final long[] __DNA__FIELD__info_debug_text = new long[]{784, 784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_curve_pivot'.
@@ -3841,7 +4182,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_curve_pivot = new long[]{744, 744};
+	public static final long[] __DNA__FIELD__paint_curve_pivot = new long[]{788, 788};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_curve_handle'.
@@ -3861,7 +4202,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_curve_handle = new long[]{748, 748};
+	public static final long[] __DNA__FIELD__paint_curve_handle = new long[]{792, 792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'metadatabg'.
@@ -3881,7 +4222,7 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__metadatabg = new long[]{752, 752};
+	public static final long[] __DNA__FIELD__metadatabg = new long[]{796, 796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'metadatatext'.
@@ -3901,7 +4242,27 @@ public class ThemeSpace extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__metadatatext = new long[]{756, 756};
+	public static final long[] __DNA__FIELD__metadatatext = new long[]{800, 800};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeSpace themespace = ...;
+	 * CPointer&lt;Object&gt; p = themespace.__dna__addressof(ThemeSpace.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{804, 804};
 
 	public ThemeSpace(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3958,14 +4319,11 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'title'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
-	 * @see #__DNA__FIELD__title
+	 * Get method for struct member 'back_grad'.
+	 * @see #__DNA__FIELD__back_grad
 	 */
 	
-	public CArrayFacade<Byte> getTitle() throws IOException
+	public CArrayFacade<Byte> getBack_grad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -3979,10 +4337,121 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'back_grad'.
+	 * @see #__DNA__FIELD__back_grad
+	 */
+	
+	public void setBack_grad(CArrayFacade<Byte> back_grad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 4;
+		} else {
+			__dna__offset = 4;
+		}
+		if (__io__equals(back_grad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, back_grad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, back_grad);
+		} else {
+			__io__generic__copy( getBack_grad(), back_grad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'show_back_grad'.
+	 * @see #__DNA__FIELD__show_back_grad
+	 */
+	
+	public byte getShow_back_grad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 8);
+		} else {
+			return __io__block.readByte(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'show_back_grad'.
+	 * @see #__DNA__FIELD__show_back_grad
+	 */
+	
+	public void setShow_back_grad(byte show_back_grad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 8, show_back_grad);
+		} else {
+			__io__block.writeByte(__io__address + 8, show_back_grad);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 9;
+		} else {
+			__dna__offset = 9;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'title'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Panel}  title. </p>
+	 * @see #__DNA__FIELD__title
+	 */
+	
+	public CArrayFacade<Byte> getTitle() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__title
 	 */
 	
@@ -3990,9 +4459,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4;
+			__dna__offset = 12;
 		} else {
-			__dna__offset = 4;
+			__dna__offset = 12;
 		}
 		if (__io__equals(title, __io__address + __dna__offset)) {
 			return;
@@ -4015,9 +4484,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4030,9 +4499,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8;
+			__dna__offset = 16;
 		} else {
-			__dna__offset = 8;
+			__dna__offset = 16;
 		}
 		if (__io__equals(text, __io__address + __dna__offset)) {
 			return;
@@ -4055,9 +4524,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4070,9 +4539,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12;
+			__dna__offset = 20;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 20;
 		}
 		if (__io__equals(text_hi, __io__address + __dna__offset)) {
 			return;
@@ -4087,7 +4556,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'header'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> header colors region background </p>
+	 * <p> header colors Region background. </p>
 	 * @see #__DNA__FIELD__header
 	 */
 	
@@ -4098,9 +4567,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4108,7 +4577,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'header'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> header colors region background </p>
+	 * <p> header colors Region background. </p>
 	 * @see #__DNA__FIELD__header
 	 */
 	
@@ -4116,9 +4585,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16;
+			__dna__offset = 24;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 24;
 		}
 		if (__io__equals(header, __io__address + __dna__offset)) {
 			return;
@@ -4133,7 +4602,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused </p>
+	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__header_title
 	 */
 	
@@ -4144,9 +4613,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4154,7 +4623,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'header_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused </p>
+	 * <p> Unused. </p>
 	 * @see #__DNA__FIELD__header_title
 	 */
 	
@@ -4162,9 +4631,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 20;
+			__dna__offset = 28;
 		} else {
-			__dna__offset = 20;
+			__dna__offset = 28;
 		}
 		if (__io__equals(header_title, __io__address + __dna__offset)) {
 			return;
@@ -4187,9 +4656,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4202,9 +4671,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		}
 		if (__io__equals(header_text, __io__address + __dna__offset)) {
 			return;
@@ -4227,9 +4696,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4242,9 +4711,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 28;
+			__dna__offset = 36;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 36;
 		}
 		if (__io__equals(header_text_hi, __io__address + __dna__offset)) {
 			return;
@@ -4270,9 +4739,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4288,9 +4757,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(tab_active, __io__address + __dna__offset)) {
 			return;
@@ -4313,9 +4782,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4328,9 +4797,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__dna__offset = 44;
 		} else {
-			__dna__offset = 36;
+			__dna__offset = 44;
 		}
 		if (__io__equals(tab_inactive, __io__address + __dna__offset)) {
 			return;
@@ -4353,9 +4822,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4368,9 +4837,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 48;
 		}
 		if (__io__equals(tab_back, __io__address + __dna__offset)) {
 			return;
@@ -4393,9 +4862,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4408,9 +4877,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 44;
+			__dna__offset = 52;
 		} else {
-			__dna__offset = 44;
+			__dna__offset = 52;
 		}
 		if (__io__equals(tab_outline, __io__address + __dna__offset)) {
 			return;
@@ -4425,7 +4894,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'button'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> button/tool regions region background </p>
+	 * <p> button/tool regions Region background. </p>
 	 * @see #__DNA__FIELD__button
 	 */
 	
@@ -4436,9 +4905,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4446,7 +4915,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'button'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> button/tool regions region background </p>
+	 * <p> button/tool regions Region background. </p>
 	 * @see #__DNA__FIELD__button
 	 */
 	
@@ -4454,9 +4923,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		}
 		if (__io__equals(button, __io__address + __dna__offset)) {
 			return;
@@ -4471,7 +4940,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__button_title
 	 */
 	
@@ -4482,9 +4951,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4492,7 +4961,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'button_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__button_title
 	 */
 	
@@ -4500,9 +4969,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 52;
+			__dna__offset = 60;
 		} else {
-			__dna__offset = 52;
+			__dna__offset = 60;
 		}
 		if (__io__equals(button_title, __io__address + __dna__offset)) {
 			return;
@@ -4525,9 +4994,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4540,9 +5009,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 56;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 64;
 		}
 		if (__io__equals(button_text, __io__address + __dna__offset)) {
 			return;
@@ -4565,9 +5034,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4580,9 +5049,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
+			__dna__offset = 68;
 		} else {
-			__dna__offset = 60;
+			__dna__offset = 68;
 		}
 		if (__io__equals(button_text_hi, __io__address + __dna__offset)) {
 			return;
@@ -4597,7 +5066,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> listview regions region background </p>
+	 * <p> listview regions Region background. </p>
 	 * @see #__DNA__FIELD__list
 	 */
 	
@@ -4608,9 +5077,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4618,7 +5087,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'list'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> listview regions region background </p>
+	 * <p> listview regions Region background. </p>
 	 * @see #__DNA__FIELD__list
 	 */
 	
@@ -4626,9 +5095,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 64;
+			__dna__offset = 72;
 		}
 		if (__io__equals(list, __io__address + __dna__offset)) {
 			return;
@@ -4643,7 +5112,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__list_title
 	 */
 	
@@ -4654,9 +5123,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4664,7 +5133,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'list_title'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> panel title </p>
+	 * <p>{@link Panel}  title. </p>
 	 * @see #__DNA__FIELD__list_title
 	 */
 	
@@ -4672,9 +5141,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 68;
+			__dna__offset = 76;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 76;
 		}
 		if (__io__equals(list_title, __io__address + __dna__offset)) {
 			return;
@@ -4697,9 +5166,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4712,9 +5181,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 80;
 		} else {
-			__dna__offset = 72;
+			__dna__offset = 80;
 		}
 		if (__io__equals(list_text, __io__address + __dna__offset)) {
 			return;
@@ -4737,9 +5206,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4752,9 +5221,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 76;
+			__dna__offset = 84;
 		} else {
-			__dna__offset = 76;
+			__dna__offset = 84;
 		}
 		if (__io__equals(list_text_hi, __io__address + __dna__offset)) {
 			return;
@@ -4766,19 +5235,111 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'navigation_bar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> navigation bar regions Region background. </p>
+	 * @see #__DNA__FIELD__navigation_bar
+	 */
+	
+	public CArrayFacade<Byte> getNavigation_bar() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'navigation_bar'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> navigation bar regions Region background. </p>
+	 * @see #__DNA__FIELD__navigation_bar
+	 */
+	
+	public void setNavigation_bar(CArrayFacade<Byte> navigation_bar) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 88;
+		} else {
+			__dna__offset = 88;
+		}
+		if (__io__equals(navigation_bar, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, navigation_bar)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, navigation_bar);
+		} else {
+			__io__generic__copy( getNavigation_bar(), navigation_bar);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'execution_buts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Region background. </p>
+	 * @see #__DNA__FIELD__execution_buts
+	 */
+	
+	public CArrayFacade<Byte> getExecution_buts() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'execution_buts'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Region background. </p>
+	 * @see #__DNA__FIELD__execution_buts
+	 */
+	
+	public void setExecution_buts(CArrayFacade<Byte> execution_buts) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 92;
+		} else {
+			__dna__offset = 92;
+		}
+		if (__io__equals(execution_buts, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, execution_buts)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, execution_buts);
+		} else {
+			__io__generic__copy( getExecution_buts(), execution_buts);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> float panel char panel[4]; unused char panel_title[4]; unused char panel_text[4]; unused char panel_text_hi[4]; unused note, cannot use name 'panel' because of DNA mapping old files </p>
+	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * @see #__DNA__FIELD__panelcolors
 	 */
 	
 	public uiPanelColors getPanelcolors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new uiPanelColors(__io__address + 80, __io__block, __io__blockTable);
+			return new uiPanelColors(__io__address + 96, __io__block, __io__blockTable);
 		} else {
-			return new uiPanelColors(__io__address + 80, __io__block, __io__blockTable);
+			return new uiPanelColors(__io__address + 96, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4786,7 +5347,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'panelcolors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> float panel char panel[4]; unused char panel_title[4]; unused char panel_text[4]; unused char panel_text_hi[4]; unused note, cannot use name 'panel' because of DNA mapping old files </p>
+	 * <p> note, cannot use name 'panel' because of DNA mapping old files </p>
 	 * @see #__DNA__FIELD__panelcolors
 	 */
 	
@@ -4794,9 +5355,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 80;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 80;
+			__dna__offset = 96;
 		}
 		if (__io__equals(panelcolors, __io__address + __dna__offset)) {
 			return;
@@ -4804,42 +5365,6 @@ public class ThemeSpace extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, panelcolors);
 		} else {
 			__io__generic__copy( getPanelcolors(), panelcolors);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gradients'.
-	 * @see #__DNA__FIELD__gradients
-	 */
-	
-	public uiGradientColors getGradients() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new uiGradientColors(__io__address + 96, __io__block, __io__blockTable);
-		} else {
-			return new uiGradientColors(__io__address + 96, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gradients'.
-	 * @see #__DNA__FIELD__gradients
-	 */
-	
-	public void setGradients(uiGradientColors gradients) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
-		} else {
-			__dna__offset = 96;
-		}
-		if (__io__equals(gradients, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, gradients)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, gradients);
-		} else {
-			__io__generic__copy( getGradients(), gradients);
 		}
 	}
 
@@ -5925,6 +6450,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'face'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Solid faces. </p>
 	 * @see #__DNA__FIELD__face
 	 */
 	
@@ -5943,6 +6471,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Set method for struct member 'face'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Solid faces. </p>
 	 * @see #__DNA__FIELD__face
 	 */
 	
@@ -5965,9 +6496,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'face_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> solid faces </p>
 	 * @see #__DNA__FIELD__face_select
 	 */
 	
@@ -5986,9 +6514,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Set method for struct member 'face_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> solid faces </p>
 	 * @see #__DNA__FIELD__face_select
 	 */
 	
@@ -6013,7 +6538,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color </p>
+	 * <p> selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
 	
@@ -6034,7 +6559,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color </p>
+	 * <p> selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
 	
@@ -6736,11 +7261,11 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'nurb_uline'.
-	 * @see #__DNA__FIELD__nurb_uline
+	 * Get method for struct member 'scrubbing_background'.
+	 * @see #__DNA__FIELD__scrubbing_background
 	 */
 	
-	public CArrayFacade<Byte> getNurb_uline() throws IOException
+	public CArrayFacade<Byte> getScrubbing_background() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -6754,6 +7279,86 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'scrubbing_background'.
+	 * @see #__DNA__FIELD__scrubbing_background
+	 */
+	
+	public void setScrubbing_background(CArrayFacade<Byte> scrubbing_background) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 300;
+		} else {
+			__dna__offset = 300;
+		}
+		if (__io__equals(scrubbing_background, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scrubbing_background)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scrubbing_background);
+		} else {
+			__io__generic__copy( getScrubbing_background(), scrubbing_background);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad5'.
+	 * @see #__DNA__FIELD___pad5
+	 */
+	
+	public CArrayFacade<Byte> get_pad5() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad5'.
+	 * @see #__DNA__FIELD___pad5
+	 */
+	
+	public void set_pad5(CArrayFacade<Byte> _pad5) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 304;
+		} else {
+			__dna__offset = 304;
+		}
+		if (__io__equals(_pad5, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad5)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad5);
+		} else {
+			__io__generic__copy( get_pad5(), _pad5);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nurb_uline'.
+	 * @see #__DNA__FIELD__nurb_uline
+	 */
+	
+	public CArrayFacade<Byte> getNurb_uline() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'nurb_uline'.
 	 * @see #__DNA__FIELD__nurb_uline
 	 */
@@ -6762,9 +7367,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 300;
+			__dna__offset = 308;
 		} else {
-			__dna__offset = 300;
+			__dna__offset = 308;
 		}
 		if (__io__equals(nurb_uline, __io__address + __dna__offset)) {
 			return;
@@ -6787,9 +7392,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6802,9 +7407,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		}
 		if (__io__equals(nurb_vline, __io__address + __dna__offset)) {
 			return;
@@ -6827,9 +7432,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6842,9 +7447,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 308;
+			__dna__offset = 316;
 		} else {
-			__dna__offset = 308;
+			__dna__offset = 316;
 		}
 		if (__io__equals(act_spline, __io__address + __dna__offset)) {
 			return;
@@ -6867,9 +7472,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6882,9 +7487,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 312;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 312;
+			__dna__offset = 320;
 		}
 		if (__io__equals(nurb_sel_uline, __io__address + __dna__offset)) {
 			return;
@@ -6907,9 +7512,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6922,9 +7527,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 316;
+			__dna__offset = 324;
 		} else {
-			__dna__offset = 316;
+			__dna__offset = 324;
 		}
 		if (__io__equals(nurb_sel_vline, __io__address + __dna__offset)) {
 			return;
@@ -6947,9 +7552,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6962,9 +7567,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 320;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 328;
 		}
 		if (__io__equals(lastsel_point, __io__address + __dna__offset)) {
 			return;
@@ -6987,9 +7592,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7002,9 +7607,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 324;
+			__dna__offset = 332;
 		} else {
-			__dna__offset = 324;
+			__dna__offset = 332;
 		}
 		if (__io__equals(handle_free, __io__address + __dna__offset)) {
 			return;
@@ -7027,9 +7632,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7042,9 +7647,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 328;
+			__dna__offset = 336;
 		}
 		if (__io__equals(handle_auto, __io__address + __dna__offset)) {
 			return;
@@ -7067,9 +7672,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7082,9 +7687,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 332;
+			__dna__offset = 340;
 		} else {
-			__dna__offset = 332;
+			__dna__offset = 340;
 		}
 		if (__io__equals(handle_vect, __io__address + __dna__offset)) {
 			return;
@@ -7107,9 +7712,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7122,9 +7727,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 336;
+			__dna__offset = 344;
 		} else {
-			__dna__offset = 336;
+			__dna__offset = 344;
 		}
 		if (__io__equals(handle_align, __io__address + __dna__offset)) {
 			return;
@@ -7147,9 +7752,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7162,9 +7767,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 340;
+			__dna__offset = 348;
 		} else {
-			__dna__offset = 340;
+			__dna__offset = 348;
 		}
 		if (__io__equals(handle_auto_clamped, __io__address + __dna__offset)) {
 			return;
@@ -7187,9 +7792,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7202,9 +7807,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 344;
+			__dna__offset = 352;
 		} else {
-			__dna__offset = 344;
+			__dna__offset = 352;
 		}
 		if (__io__equals(handle_sel_free, __io__address + __dna__offset)) {
 			return;
@@ -7227,9 +7832,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7242,9 +7847,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 348;
+			__dna__offset = 356;
 		} else {
-			__dna__offset = 348;
+			__dna__offset = 356;
 		}
 		if (__io__equals(handle_sel_auto, __io__address + __dna__offset)) {
 			return;
@@ -7267,9 +7872,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7282,9 +7887,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
+			__dna__offset = 360;
 		} else {
-			__dna__offset = 352;
+			__dna__offset = 360;
 		}
 		if (__io__equals(handle_sel_vect, __io__address + __dna__offset)) {
 			return;
@@ -7307,9 +7912,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7322,9 +7927,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 356;
+			__dna__offset = 364;
 		} else {
-			__dna__offset = 356;
+			__dna__offset = 364;
 		}
 		if (__io__equals(handle_sel_align, __io__address + __dna__offset)) {
 			return;
@@ -7347,9 +7952,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7362,9 +7967,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 360;
+			__dna__offset = 368;
 		} else {
-			__dna__offset = 360;
+			__dna__offset = 368;
 		}
 		if (__io__equals(handle_sel_auto_clamped, __io__address + __dna__offset)) {
 			return;
@@ -7377,6 +7982,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'ds_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dopesheet. </p>
 	 * @see #__DNA__FIELD__ds_channel
 	 */
 	
@@ -7387,14 +7995,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ds_channel'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dopesheet. </p>
 	 * @see #__DNA__FIELD__ds_channel
 	 */
 	
@@ -7402,9 +8013,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 364;
+			__dna__offset = 372;
 		} else {
-			__dna__offset = 364;
+			__dna__offset = 372;
 		}
 		if (__io__equals(ds_channel, __io__address + __dna__offset)) {
 			return;
@@ -7417,9 +8028,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'ds_subchannel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet </p>
 	 * @see #__DNA__FIELD__ds_subchannel
 	 */
 	
@@ -7430,17 +8038,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ds_subchannel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet </p>
 	 * @see #__DNA__FIELD__ds_subchannel
 	 */
 	
@@ -7448,9 +8053,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 368;
+			__dna__offset = 376;
 		} else {
-			__dna__offset = 368;
+			__dna__offset = 376;
 		}
 		if (__io__equals(ds_subchannel, __io__address + __dna__offset)) {
 			return;
@@ -7462,7 +8067,50 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ds_ipoline'.
+	 * @see #__DNA__FIELD__ds_ipoline
+	 */
+	
+	public CArrayFacade<Byte> getDs_ipoline() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ds_ipoline'.
+	 * @see #__DNA__FIELD__ds_ipoline
+	 */
+	
+	public void setDs_ipoline(CArrayFacade<Byte> ds_ipoline) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 380;
+		} else {
+			__dna__offset = 380;
+		}
+		if (__io__equals(ds_ipoline, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, ds_ipoline)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, ds_ipoline);
+		} else {
+			__io__generic__copy( getDs_ipoline(), ds_ipoline);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'keytype_keyframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe
 	 */
 	
@@ -7473,14 +8121,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'keytype_keyframe'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe
 	 */
 	
@@ -7488,9 +8139,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 372;
+			__dna__offset = 384;
 		} else {
-			__dna__offset = 372;
+			__dna__offset = 384;
 		}
 		if (__io__equals(keytype_keyframe, __io__address + __dna__offset)) {
 			return;
@@ -7513,9 +8164,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7528,9 +8179,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 376;
+			__dna__offset = 388;
 		} else {
-			__dna__offset = 376;
+			__dna__offset = 388;
 		}
 		if (__io__equals(keytype_extreme, __io__address + __dna__offset)) {
 			return;
@@ -7553,9 +8204,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 380, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7568,9 +8219,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 380;
+			__dna__offset = 392;
 		} else {
-			__dna__offset = 380;
+			__dna__offset = 392;
 		}
 		if (__io__equals(keytype_breakdown, __io__address + __dna__offset)) {
 			return;
@@ -7583,9 +8234,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'keytype_jitter'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * @see #__DNA__FIELD__keytype_jitter
 	 */
 	
@@ -7596,17 +8244,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'keytype_jitter'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * @see #__DNA__FIELD__keytype_jitter
 	 */
 	
@@ -7614,9 +8259,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 384;
+			__dna__offset = 396;
 		} else {
-			__dna__offset = 384;
+			__dna__offset = 396;
 		}
 		if (__io__equals(keytype_jitter, __io__address + __dna__offset)) {
 			return;
@@ -7628,7 +8273,50 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'keytype_movehold'.
+	 * @see #__DNA__FIELD__keytype_movehold
+	 */
+	
+	public CArrayFacade<Byte> getKeytype_movehold() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keytype_movehold'.
+	 * @see #__DNA__FIELD__keytype_movehold
+	 */
+	
+	public void setKeytype_movehold(CArrayFacade<Byte> keytype_movehold) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 400;
+		} else {
+			__dna__offset = 400;
+		}
+		if (__io__equals(keytype_movehold, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, keytype_movehold)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, keytype_movehold);
+		} else {
+			__io__generic__copy( getKeytype_movehold(), keytype_movehold);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'keytype_keyframe_select'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe_select
 	 */
 	
@@ -7639,14 +8327,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'keytype_keyframe_select'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keytypes. </p>
 	 * @see #__DNA__FIELD__keytype_keyframe_select
 	 */
 	
@@ -7654,9 +8345,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 388;
+			__dna__offset = 404;
 		} else {
-			__dna__offset = 388;
+			__dna__offset = 404;
 		}
 		if (__io__equals(keytype_keyframe_select, __io__address + __dna__offset)) {
 			return;
@@ -7679,9 +8370,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7694,9 +8385,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 392;
+			__dna__offset = 408;
 		} else {
-			__dna__offset = 392;
+			__dna__offset = 408;
 		}
 		if (__io__equals(keytype_extreme_select, __io__address + __dna__offset)) {
 			return;
@@ -7719,9 +8410,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7734,9 +8425,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 396;
+			__dna__offset = 412;
 		} else {
-			__dna__offset = 396;
+			__dna__offset = 412;
 		}
 		if (__io__equals(keytype_breakdown_select, __io__address + __dna__offset)) {
 			return;
@@ -7749,9 +8440,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'keytype_jitter_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * @see #__DNA__FIELD__keytype_jitter_select
 	 */
 	
@@ -7762,17 +8450,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'keytype_jitter_select'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> keytypes </p>
 	 * @see #__DNA__FIELD__keytype_jitter_select
 	 */
 	
@@ -7780,9 +8465,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 400;
+			__dna__offset = 416;
 		} else {
-			__dna__offset = 400;
+			__dna__offset = 416;
 		}
 		if (__io__equals(keytype_jitter_select, __io__address + __dna__offset)) {
 			return;
@@ -7790,6 +8475,46 @@ public class ThemeSpace extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, keytype_jitter_select);
 		} else {
 			__io__generic__copy( getKeytype_jitter_select(), keytype_jitter_select);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'keytype_movehold_select'.
+	 * @see #__DNA__FIELD__keytype_movehold_select
+	 */
+	
+	public CArrayFacade<Byte> getKeytype_movehold_select() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'keytype_movehold_select'.
+	 * @see #__DNA__FIELD__keytype_movehold_select
+	 */
+	
+	public void setKeytype_movehold_select(CArrayFacade<Byte> keytype_movehold_select) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 420;
+		} else {
+			__dna__offset = 420;
+		}
+		if (__io__equals(keytype_movehold_select, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, keytype_movehold_select)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, keytype_movehold_select);
+		} else {
+			__io__generic__copy( getKeytype_movehold_select(), keytype_movehold_select);
 		}
 	}
 
@@ -7805,9 +8530,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7820,9 +8545,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 404;
+			__dna__offset = 424;
 		} else {
-			__dna__offset = 404;
+			__dna__offset = 424;
 		}
 		if (__io__equals(keyborder, __io__address + __dna__offset)) {
 			return;
@@ -7845,9 +8570,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7860,9 +8585,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 408;
+			__dna__offset = 428;
 		} else {
-			__dna__offset = 408;
+			__dna__offset = 428;
 		}
 		if (__io__equals(keyborder_select, __io__address + __dna__offset)) {
 			return;
@@ -7870,6 +8595,46 @@ public class ThemeSpace extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, keyborder_select);
 		} else {
 			__io__generic__copy( getKeyborder_select(), keyborder_select);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public CArrayFacade<Byte> get_pad4() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 432;
+		} else {
+			__dna__offset = 432;
+		}
+		if (__io__equals(_pad4, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad4)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
+		} else {
+			__io__generic__copy( get_pad4(), _pad4);
 		}
 	}
 
@@ -7885,9 +8650,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 435, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 435, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7900,9 +8665,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 412;
+			__dna__offset = 435;
 		} else {
-			__dna__offset = 412;
+			__dna__offset = 435;
 		}
 		if (__io__equals(console_output, __io__address + __dna__offset)) {
 			return;
@@ -7925,9 +8690,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 439, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 416, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 439, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7940,9 +8705,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 416;
+			__dna__offset = 439;
 		} else {
-			__dna__offset = 416;
+			__dna__offset = 439;
 		}
 		if (__io__equals(console_input, __io__address + __dna__offset)) {
 			return;
@@ -7965,9 +8730,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 443, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 443, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7980,9 +8745,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 420;
+			__dna__offset = 443;
 		} else {
-			__dna__offset = 420;
+			__dna__offset = 443;
 		}
 		if (__io__equals(console_info, __io__address + __dna__offset)) {
 			return;
@@ -8005,9 +8770,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 447, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 447, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8020,9 +8785,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 424;
+			__dna__offset = 447;
 		} else {
-			__dna__offset = 424;
+			__dna__offset = 447;
 		}
 		if (__io__equals(console_error, __io__address + __dna__offset)) {
 			return;
@@ -8045,9 +8810,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 451, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 451, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8060,9 +8825,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 428;
+			__dna__offset = 451;
 		} else {
-			__dna__offset = 428;
+			__dna__offset = 451;
 		}
 		if (__io__equals(console_cursor, __io__address + __dna__offset)) {
 			return;
@@ -8085,9 +8850,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 455, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 455, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8100,9 +8865,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 432;
+			__dna__offset = 455;
 		} else {
-			__dna__offset = 432;
+			__dna__offset = 455;
 		}
 		if (__io__equals(console_select, __io__address + __dna__offset)) {
 			return;
@@ -8121,9 +8886,9 @@ public class ThemeSpace extends CFacade {
 	public byte getVertex_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 436);
+			return __io__block.readByte(__io__address + 459);
 		} else {
-			return __io__block.readByte(__io__address + 436);
+			return __io__block.readByte(__io__address + 459);
 		}
 	}
 
@@ -8135,9 +8900,9 @@ public class ThemeSpace extends CFacade {
 	public void setVertex_size(byte vertex_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 436, vertex_size);
+			__io__block.writeByte(__io__address + 459, vertex_size);
 		} else {
-			__io__block.writeByte(__io__address + 436, vertex_size);
+			__io__block.writeByte(__io__address + 459, vertex_size);
 		}
 	}
 
@@ -8149,9 +8914,9 @@ public class ThemeSpace extends CFacade {
 	public byte getOutline_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 437);
+			return __io__block.readByte(__io__address + 460);
 		} else {
-			return __io__block.readByte(__io__address + 437);
+			return __io__block.readByte(__io__address + 460);
 		}
 	}
 
@@ -8163,9 +8928,37 @@ public class ThemeSpace extends CFacade {
 	public void setOutline_width(byte outline_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 437, outline_width);
+			__io__block.writeByte(__io__address + 460, outline_width);
 		} else {
-			__io__block.writeByte(__io__address + 437, outline_width);
+			__io__block.writeByte(__io__address + 460, outline_width);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'obcenter_dia'.
+	 * @see #__DNA__FIELD__obcenter_dia
+	 */
+	
+	public byte getObcenter_dia() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 461);
+		} else {
+			return __io__block.readByte(__io__address + 461);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'obcenter_dia'.
+	 * @see #__DNA__FIELD__obcenter_dia
+	 */
+	
+	public void setObcenter_dia(byte obcenter_dia) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 461, obcenter_dia);
+		} else {
+			__io__block.writeByte(__io__address + 461, obcenter_dia);
 		}
 	}
 
@@ -8177,9 +8970,9 @@ public class ThemeSpace extends CFacade {
 	public byte getFacedot_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 438);
+			return __io__block.readByte(__io__address + 462);
 		} else {
-			return __io__block.readByte(__io__address + 438);
+			return __io__block.readByte(__io__address + 462);
 		}
 	}
 
@@ -8191,9 +8984,9 @@ public class ThemeSpace extends CFacade {
 	public void setFacedot_size(byte facedot_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 438, facedot_size);
+			__io__block.writeByte(__io__address + 462, facedot_size);
 		} else {
-			__io__block.writeByte(__io__address + 438, facedot_size);
+			__io__block.writeByte(__io__address + 462, facedot_size);
 		}
 	}
 
@@ -8205,9 +8998,9 @@ public class ThemeSpace extends CFacade {
 	public byte getNoodle_curving() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 439);
+			return __io__block.readByte(__io__address + 463);
 		} else {
-			return __io__block.readByte(__io__address + 439);
+			return __io__block.readByte(__io__address + 463);
 		}
 	}
 
@@ -8219,9 +9012,9 @@ public class ThemeSpace extends CFacade {
 	public void setNoodle_curving(byte noodle_curving) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 439, noodle_curving);
+			__io__block.writeByte(__io__address + 463, noodle_curving);
 		} else {
-			__io__block.writeByte(__io__address + 439, noodle_curving);
+			__io__block.writeByte(__io__address + 463, noodle_curving);
 		}
 	}
 
@@ -8240,9 +9033,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8258,9 +9051,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 440;
+			__dna__offset = 464;
 		} else {
-			__dna__offset = 440;
+			__dna__offset = 464;
 		}
 		if (__io__equals(syntaxl, __io__address + __dna__offset)) {
 			return;
@@ -8283,9 +9076,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8298,9 +9091,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 444;
+			__dna__offset = 468;
 		} else {
-			__dna__offset = 444;
+			__dna__offset = 468;
 		}
 		if (__io__equals(syntaxs, __io__address + __dna__offset)) {
 			return;
@@ -8323,9 +9116,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8338,9 +9131,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 448;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 448;
+			__dna__offset = 472;
 		}
 		if (__io__equals(syntaxb, __io__address + __dna__offset)) {
 			return;
@@ -8363,9 +9156,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8378,9 +9171,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 452;
+			__dna__offset = 476;
 		} else {
-			__dna__offset = 452;
+			__dna__offset = 476;
 		}
 		if (__io__equals(syntaxn, __io__address + __dna__offset)) {
 			return;
@@ -8403,9 +9196,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 456, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 456, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8418,9 +9211,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 456;
+			__dna__offset = 480;
 		} else {
-			__dna__offset = 456;
+			__dna__offset = 480;
 		}
 		if (__io__equals(syntaxv, __io__address + __dna__offset)) {
 			return;
@@ -8443,9 +9236,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8458,9 +9251,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 460;
+			__dna__offset = 484;
 		} else {
-			__dna__offset = 460;
+			__dna__offset = 484;
 		}
 		if (__io__equals(syntaxc, __io__address + __dna__offset)) {
 			return;
@@ -8483,9 +9276,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8498,9 +9291,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 464;
+			__dna__offset = 488;
 		} else {
-			__dna__offset = 464;
+			__dna__offset = 488;
 		}
 		if (__io__equals(syntaxd, __io__address + __dna__offset)) {
 			return;
@@ -8523,9 +9316,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8538,9 +9331,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 468;
+			__dna__offset = 492;
 		} else {
-			__dna__offset = 468;
+			__dna__offset = 492;
 		}
 		if (__io__equals(syntaxr, __io__address + __dna__offset)) {
 			return;
@@ -8563,9 +9356,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8578,9 +9371,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 472;
+			__dna__offset = 496;
 		} else {
-			__dna__offset = 472;
+			__dna__offset = 496;
 		}
 		if (__io__equals(nodeclass_output, __io__address + __dna__offset)) {
 			return;
@@ -8603,9 +9396,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8618,9 +9411,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 476;
+			__dna__offset = 500;
 		} else {
-			__dna__offset = 476;
+			__dna__offset = 500;
 		}
 		if (__io__equals(nodeclass_filter, __io__address + __dna__offset)) {
 			return;
@@ -8643,9 +9436,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8658,9 +9451,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 480;
+			__dna__offset = 504;
 		} else {
-			__dna__offset = 480;
+			__dna__offset = 504;
 		}
 		if (__io__equals(nodeclass_vector, __io__address + __dna__offset)) {
 			return;
@@ -8683,9 +9476,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8698,9 +9491,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 484;
+			__dna__offset = 508;
 		} else {
-			__dna__offset = 484;
+			__dna__offset = 508;
 		}
 		if (__io__equals(nodeclass_texture, __io__address + __dna__offset)) {
 			return;
@@ -8723,9 +9516,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8738,9 +9531,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 488;
+			__dna__offset = 512;
 		} else {
-			__dna__offset = 488;
+			__dna__offset = 512;
 		}
 		if (__io__equals(nodeclass_shader, __io__address + __dna__offset)) {
 			return;
@@ -8763,9 +9556,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 516, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 516, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8778,9 +9571,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 492;
+			__dna__offset = 516;
 		} else {
-			__dna__offset = 492;
+			__dna__offset = 516;
 		}
 		if (__io__equals(nodeclass_script, __io__address + __dna__offset)) {
 			return;
@@ -8803,9 +9596,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8818,9 +9611,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 496;
+			__dna__offset = 520;
 		} else {
-			__dna__offset = 496;
+			__dna__offset = 520;
 		}
 		if (__io__equals(nodeclass_pattern, __io__address + __dna__offset)) {
 			return;
@@ -8843,9 +9636,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8858,9 +9651,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 500;
+			__dna__offset = 524;
 		} else {
-			__dna__offset = 500;
+			__dna__offset = 524;
 		}
 		if (__io__equals(nodeclass_layout, __io__address + __dna__offset)) {
 			return;
@@ -8873,6 +9666,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For sequence editor. </p>
 	 * @see #__DNA__FIELD__movie
 	 */
 	
@@ -8883,14 +9679,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'movie'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> For sequence editor. </p>
 	 * @see #__DNA__FIELD__movie
 	 */
 	
@@ -8898,9 +9697,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 504;
+			__dna__offset = 528;
 		} else {
-			__dna__offset = 504;
+			__dna__offset = 528;
 		}
 		if (__io__equals(movie, __io__address + __dna__offset)) {
 			return;
@@ -8923,9 +9722,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8938,9 +9737,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 508;
+			__dna__offset = 532;
 		} else {
-			__dna__offset = 508;
+			__dna__offset = 532;
 		}
 		if (__io__equals(movieclip, __io__address + __dna__offset)) {
 			return;
@@ -8963,9 +9762,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8978,9 +9777,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 512;
+			__dna__offset = 536;
 		} else {
-			__dna__offset = 512;
+			__dna__offset = 536;
 		}
 		if (__io__equals(mask, __io__address + __dna__offset)) {
 			return;
@@ -9003,9 +9802,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 516, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 516, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9018,9 +9817,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 516;
+			__dna__offset = 540;
 		} else {
-			__dna__offset = 516;
+			__dna__offset = 540;
 		}
 		if (__io__equals(image, __io__address + __dna__offset)) {
 			return;
@@ -9043,9 +9842,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9058,9 +9857,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 520;
+			__dna__offset = 544;
 		} else {
-			__dna__offset = 520;
+			__dna__offset = 544;
 		}
 		if (__io__equals(scene, __io__address + __dna__offset)) {
 			return;
@@ -9073,9 +9872,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'audio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for sequence editor </p>
 	 * @see #__DNA__FIELD__audio
 	 */
 	
@@ -9086,17 +9882,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 548, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 548, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'audio'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for sequence editor </p>
 	 * @see #__DNA__FIELD__audio
 	 */
 	
@@ -9104,9 +9897,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 524;
+			__dna__offset = 548;
 		} else {
-			__dna__offset = 524;
+			__dna__offset = 548;
 		}
 		if (__io__equals(audio, __io__address + __dna__offset)) {
 			return;
@@ -9129,9 +9922,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9144,9 +9937,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 528;
+			__dna__offset = 552;
 		} else {
-			__dna__offset = 528;
+			__dna__offset = 552;
 		}
 		if (__io__equals(effect, __io__address + __dna__offset)) {
 			return;
@@ -9169,9 +9962,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9184,9 +9977,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 532;
+			__dna__offset = 556;
 		} else {
-			__dna__offset = 532;
+			__dna__offset = 556;
 		}
 		if (__io__equals(transition, __io__address + __dna__offset)) {
 			return;
@@ -9209,9 +10002,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 536, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9224,9 +10017,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 536;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 536;
+			__dna__offset = 560;
 		}
 		if (__io__equals(meta, __io__address + __dna__offset)) {
 			return;
@@ -9249,9 +10042,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 564, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 564, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9264,9 +10057,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 540;
+			__dna__offset = 564;
 		} else {
-			__dna__offset = 540;
+			__dna__offset = 564;
 		}
 		if (__io__equals(text_strip, __io__address + __dna__offset)) {
 			return;
@@ -9281,16 +10074,16 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for dopesheet - scale factor for size of keyframes (i.e. height of channels) </p>
+	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * @see #__DNA__FIELD__keyframe_scale_fac
 	 */
 	
 	public float getKeyframe_scale_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 544);
+			return __io__block.readFloat(__io__address + 568);
 		} else {
-			return __io__block.readFloat(__io__address + 544);
+			return __io__block.readFloat(__io__address + 568);
 		}
 	}
 
@@ -9298,16 +10091,16 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'keyframe_scale_fac'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for dopesheet - scale factor for size of keyframes (i.e. height of channels) </p>
+	 * <p> For dopesheet - scale factor for size of keyframes (i.e. height of channels). </p>
 	 * @see #__DNA__FIELD__keyframe_scale_fac
 	 */
 	
 	public void setKeyframe_scale_fac(float keyframe_scale_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 544, keyframe_scale_fac);
+			__io__block.writeFloat(__io__address + 568, keyframe_scale_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 544, keyframe_scale_fac);
+			__io__block.writeFloat(__io__address + 568, keyframe_scale_fac);
 		}
 	}
 
@@ -9323,9 +10116,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 548, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 548, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9338,9 +10131,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 548;
+			__dna__offset = 572;
 		} else {
-			__dna__offset = 548;
+			__dna__offset = 572;
 		}
 		if (__io__equals(editmesh_active, __io__address + __dna__offset)) {
 			return;
@@ -9363,9 +10156,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9378,9 +10171,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 552;
+			__dna__offset = 576;
 		} else {
-			__dna__offset = 552;
+			__dna__offset = 576;
 		}
 		if (__io__equals(handle_vertex, __io__address + __dna__offset)) {
 			return;
@@ -9403,9 +10196,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 580, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 580, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9418,9 +10211,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 556;
+			__dna__offset = 580;
 		} else {
-			__dna__offset = 556;
+			__dna__offset = 580;
 		}
 		if (__io__equals(handle_vertex_select, __io__address + __dna__offset)) {
 			return;
@@ -9439,9 +10232,9 @@ public class ThemeSpace extends CFacade {
 	public byte getHandle_vertex_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 560);
+			return __io__block.readByte(__io__address + 584);
 		} else {
-			return __io__block.readByte(__io__address + 560);
+			return __io__block.readByte(__io__address + 584);
 		}
 	}
 
@@ -9453,9 +10246,9 @@ public class ThemeSpace extends CFacade {
 	public void setHandle_vertex_size(byte handle_vertex_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 560, handle_vertex_size);
+			__io__block.writeByte(__io__address + 584, handle_vertex_size);
 		} else {
-			__io__block.writeByte(__io__address + 560, handle_vertex_size);
+			__io__block.writeByte(__io__address + 584, handle_vertex_size);
 		}
 	}
 
@@ -9471,9 +10264,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 561, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 585, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 561, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 585, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9486,9 +10279,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 561;
+			__dna__offset = 585;
 		} else {
-			__dna__offset = 561;
+			__dna__offset = 585;
 		}
 		if (__io__equals(clipping_border_3d, __io__address + __dna__offset)) {
 			return;
@@ -9511,9 +10304,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 565, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 589, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 565, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 589, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9526,9 +10319,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 565;
+			__dna__offset = 589;
 		} else {
-			__dna__offset = 565;
+			__dna__offset = 589;
 		}
 		if (__io__equals(marker_outline, __io__address + __dna__offset)) {
 			return;
@@ -9551,9 +10344,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 569, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 593, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 569, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 593, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9566,9 +10359,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 569;
+			__dna__offset = 593;
 		} else {
-			__dna__offset = 569;
+			__dna__offset = 593;
 		}
 		if (__io__equals(marker, __io__address + __dna__offset)) {
 			return;
@@ -9591,9 +10384,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 573, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 597, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 573, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 597, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9606,9 +10399,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 573;
+			__dna__offset = 597;
 		} else {
-			__dna__offset = 573;
+			__dna__offset = 597;
 		}
 		if (__io__equals(act_marker, __io__address + __dna__offset)) {
 			return;
@@ -9631,9 +10424,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 577, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 601, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 577, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 601, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9646,9 +10439,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 577;
+			__dna__offset = 601;
 		} else {
-			__dna__offset = 577;
+			__dna__offset = 601;
 		}
 		if (__io__equals(sel_marker, __io__address + __dna__offset)) {
 			return;
@@ -9671,9 +10464,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 581, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 605, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 581, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 605, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9686,9 +10479,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 581;
+			__dna__offset = 605;
 		} else {
-			__dna__offset = 581;
+			__dna__offset = 605;
 		}
 		if (__io__equals(dis_marker, __io__address + __dna__offset)) {
 			return;
@@ -9711,9 +10504,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 585, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 609, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 585, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 609, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9726,9 +10519,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 585;
+			__dna__offset = 609;
 		} else {
-			__dna__offset = 585;
+			__dna__offset = 609;
 		}
 		if (__io__equals(lock_marker, __io__address + __dna__offset)) {
 			return;
@@ -9751,9 +10544,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 589, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 613, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 589, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 613, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9766,9 +10559,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 589;
+			__dna__offset = 613;
 		} else {
-			__dna__offset = 589;
+			__dna__offset = 613;
 		}
 		if (__io__equals(bundle_solid, __io__address + __dna__offset)) {
 			return;
@@ -9791,9 +10584,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 593, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 617, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 593, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 617, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9806,9 +10599,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 593;
+			__dna__offset = 617;
 		} else {
-			__dna__offset = 593;
+			__dna__offset = 617;
 		}
 		if (__io__equals(path_before, __io__address + __dna__offset)) {
 			return;
@@ -9831,9 +10624,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 597, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 621, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 597, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 621, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9846,9 +10639,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 597;
+			__dna__offset = 621;
 		} else {
-			__dna__offset = 597;
+			__dna__offset = 621;
 		}
 		if (__io__equals(path_after, __io__address + __dna__offset)) {
 			return;
@@ -9871,9 +10664,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 601, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 625, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 601, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 625, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9886,9 +10679,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 601;
+			__dna__offset = 625;
 		} else {
-			__dna__offset = 601;
+			__dna__offset = 625;
 		}
 		if (__io__equals(camera_path, __io__address + __dna__offset)) {
 			return;
@@ -9900,42 +10693,42 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'hpad'.
-	 * @see #__DNA__FIELD__hpad
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Byte> getHpad() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 605, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 629, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 605, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 629, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'hpad'.
-	 * @see #__DNA__FIELD__hpad
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setHpad(CArrayFacade<Byte> hpad) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 605;
+			__dna__offset = 629;
 		} else {
-			__dna__offset = 605;
+			__dna__offset = 629;
 		}
-		if (__io__equals(hpad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, hpad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, hpad);
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			__io__generic__copy( getHpad(), hpad);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -9947,9 +10740,9 @@ public class ThemeSpace extends CFacade {
 	public byte getGp_vertex_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 607);
+			return __io__block.readByte(__io__address + 631);
 		} else {
-			return __io__block.readByte(__io__address + 607);
+			return __io__block.readByte(__io__address + 631);
 		}
 	}
 
@@ -9961,9 +10754,9 @@ public class ThemeSpace extends CFacade {
 	public void setGp_vertex_size(byte gp_vertex_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 607, gp_vertex_size);
+			__io__block.writeByte(__io__address + 631, gp_vertex_size);
 		} else {
-			__io__block.writeByte(__io__address + 607, gp_vertex_size);
+			__io__block.writeByte(__io__address + 631, gp_vertex_size);
 		}
 	}
 
@@ -9979,9 +10772,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9994,9 +10787,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 608;
+			__dna__offset = 632;
 		} else {
-			__dna__offset = 608;
+			__dna__offset = 632;
 		}
 		if (__io__equals(gp_vertex, __io__address + __dna__offset)) {
 			return;
@@ -10019,9 +10812,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 612, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 612, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10034,9 +10827,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 612;
+			__dna__offset = 636;
 		} else {
-			__dna__offset = 612;
+			__dna__offset = 636;
 		}
 		if (__io__equals(gp_vertex_select, __io__address + __dna__offset)) {
 			return;
@@ -10059,9 +10852,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 616, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 616, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10074,9 +10867,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 616;
+			__dna__offset = 640;
 		} else {
-			__dna__offset = 616;
+			__dna__offset = 640;
 		}
 		if (__io__equals(preview_back, __io__address + __dna__offset)) {
 			return;
@@ -10099,9 +10892,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 620, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 620, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10114,9 +10907,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 620;
+			__dna__offset = 644;
 		} else {
-			__dna__offset = 620;
+			__dna__offset = 644;
 		}
 		if (__io__equals(preview_stitch_face, __io__address + __dna__offset)) {
 			return;
@@ -10139,9 +10932,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10154,9 +10947,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 624;
+			__dna__offset = 648;
 		} else {
-			__dna__offset = 624;
+			__dna__offset = 648;
 		}
 		if (__io__equals(preview_stitch_edge, __io__address + __dna__offset)) {
 			return;
@@ -10179,9 +10972,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 628, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 628, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10194,9 +10987,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 628;
+			__dna__offset = 652;
 		} else {
-			__dna__offset = 628;
+			__dna__offset = 652;
 		}
 		if (__io__equals(preview_stitch_vert, __io__address + __dna__offset)) {
 			return;
@@ -10219,9 +11012,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10234,9 +11027,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 632;
+			__dna__offset = 656;
 		} else {
-			__dna__offset = 632;
+			__dna__offset = 656;
 		}
 		if (__io__equals(preview_stitch_stitchable, __io__address + __dna__offset)) {
 			return;
@@ -10259,9 +11052,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10274,9 +11067,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 636;
+			__dna__offset = 660;
 		} else {
-			__dna__offset = 636;
+			__dna__offset = 660;
 		}
 		if (__io__equals(preview_stitch_unstitchable, __io__address + __dna__offset)) {
 			return;
@@ -10299,9 +11092,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 664, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 640, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 664, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10314,9 +11107,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 640;
+			__dna__offset = 664;
 		} else {
-			__dna__offset = 640;
+			__dna__offset = 664;
 		}
 		if (__io__equals(preview_stitch_active, __io__address + __dna__offset)) {
 			return;
@@ -10331,7 +11124,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> two uses, for uvs with modifier applied on mesh and uvs during painting </p>
+	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * @see #__DNA__FIELD__uv_shadow
 	 */
 	
@@ -10342,9 +11135,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10352,7 +11145,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'uv_shadow'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> two uses, for uvs with modifier applied on mesh and uvs during painting </p>
+	 * <p> Two uses, for uvs with modifier applied on mesh and uvs during painting. </p>
 	 * @see #__DNA__FIELD__uv_shadow
 	 */
 	
@@ -10360,9 +11153,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 644;
+			__dna__offset = 668;
 		} else {
-			__dna__offset = 644;
+			__dna__offset = 668;
 		}
 		if (__io__equals(uv_shadow, __io__address + __dna__offset)) {
 			return;
@@ -10377,7 +11170,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'uv_others'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uvs of other objects </p>
+	 * <p> Uvs of other objects. </p>
 	 * @see #__DNA__FIELD__uv_others
 	 */
 	
@@ -10388,9 +11181,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 648, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10398,7 +11191,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'uv_others'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> uvs of other objects </p>
+	 * <p> Uvs of other objects. </p>
 	 * @see #__DNA__FIELD__uv_others
 	 */
 	
@@ -10406,9 +11199,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 648;
+			__dna__offset = 672;
 		} else {
-			__dna__offset = 648;
+			__dna__offset = 672;
 		}
 		if (__io__equals(uv_others, __io__address + __dna__offset)) {
 			return;
@@ -10423,7 +11216,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'match'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - filter match </p>
+	 * <p> Outliner - filter match. </p>
 	 * @see #__DNA__FIELD__match
 	 */
 	
@@ -10434,9 +11227,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10444,7 +11237,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'match'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - filter match </p>
+	 * <p> Outliner - filter match. </p>
 	 * @see #__DNA__FIELD__match
 	 */
 	
@@ -10452,9 +11245,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 652;
+			__dna__offset = 676;
 		} else {
-			__dna__offset = 652;
+			__dna__offset = 676;
 		}
 		if (__io__equals(match, __io__address + __dna__offset)) {
 			return;
@@ -10469,7 +11262,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - selected item </p>
+	 * <p> Outliner - selected item. </p>
 	 * @see #__DNA__FIELD__selected_highlight
 	 */
 	
@@ -10480,9 +11273,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10490,7 +11283,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'selected_highlight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> outliner - selected item </p>
+	 * <p> Outliner - selected item. </p>
 	 * @see #__DNA__FIELD__selected_highlight
 	 */
 	
@@ -10498,9 +11291,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 656;
+			__dna__offset = 680;
 		} else {
-			__dna__offset = 656;
+			__dna__offset = 680;
 		}
 		if (__io__equals(selected_highlight, __io__address + __dna__offset)) {
 			return;
@@ -10512,10 +11305,194 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'selected_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - selected object. </p>
+	 * @see #__DNA__FIELD__selected_object
+	 */
+	
+	public CArrayFacade<Byte> getSelected_object() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'selected_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - selected object. </p>
+	 * @see #__DNA__FIELD__selected_object
+	 */
+	
+	public void setSelected_object(CArrayFacade<Byte> selected_object) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 684;
+		} else {
+			__dna__offset = 684;
+		}
+		if (__io__equals(selected_object, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, selected_object)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, selected_object);
+		} else {
+			__io__generic__copy( getSelected_object(), selected_object);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'active_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - active object. </p>
+	 * @see #__DNA__FIELD__active_object
+	 */
+	
+	public CArrayFacade<Byte> getActive_object() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'active_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - active object. </p>
+	 * @see #__DNA__FIELD__active_object
+	 */
+	
+	public void setActive_object(CArrayFacade<Byte> active_object) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 688;
+		} else {
+			__dna__offset = 688;
+		}
+		if (__io__equals(active_object, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, active_object)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, active_object);
+		} else {
+			__io__generic__copy( getActive_object(), active_object);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'edited_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - edited object. </p>
+	 * @see #__DNA__FIELD__edited_object
+	 */
+	
+	public CArrayFacade<Byte> getEdited_object() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'edited_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - edited object. </p>
+	 * @see #__DNA__FIELD__edited_object
+	 */
+	
+	public void setEdited_object(CArrayFacade<Byte> edited_object) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 692;
+		} else {
+			__dna__offset = 692;
+		}
+		if (__io__equals(edited_object, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, edited_object)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, edited_object);
+		} else {
+			__io__generic__copy( getEdited_object(), edited_object);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'row_alternate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - row color difference. </p>
+	 * @see #__DNA__FIELD__row_alternate
+	 */
+	
+	public CArrayFacade<Byte> getRow_alternate() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'row_alternate'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Outliner - row color difference. </p>
+	 * @see #__DNA__FIELD__row_alternate
+	 */
+	
+	public void setRow_alternate(CArrayFacade<Byte> row_alternate) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 696;
+		} else {
+			__dna__offset = 696;
+		}
+		if (__io__equals(row_alternate, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, row_alternate)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, row_alternate);
+		} else {
+			__io__generic__copy( getRow_alternate(), row_alternate);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Skin modifier root color </p>
+	 * <p> Skin modifier root color. </p>
 	 * @see #__DNA__FIELD__skin_root
 	 */
 	
@@ -10526,9 +11503,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10536,7 +11513,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'skin_root'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Skin modifier root color </p>
+	 * <p> Skin modifier root color. </p>
 	 * @see #__DNA__FIELD__skin_root
 	 */
 	
@@ -10544,9 +11521,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 660;
+			__dna__offset = 700;
 		} else {
-			__dna__offset = 660;
+			__dna__offset = 700;
 		}
 		if (__io__equals(skin_root, __io__address + __dna__offset)) {
 			return;
@@ -10561,7 +11538,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA Active Action + Summary Channel </p>
+	 * <p> NLA Active Action + Summary Channel. </p>
 	 * @see #__DNA__FIELD__anim_active
 	 */
 	
@@ -10572,9 +11549,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 664, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 664, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10582,7 +11559,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'anim_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA Active Action + Summary Channel </p>
+	 * <p> NLA Active Action + Summary Channel. </p>
 	 * @see #__DNA__FIELD__anim_active
 	 */
 	
@@ -10590,9 +11567,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 664;
+			__dna__offset = 704;
 		} else {
-			__dna__offset = 664;
+			__dna__offset = 704;
 		}
 		if (__io__equals(anim_active, __io__address + __dna__offset)) {
 			return;
@@ -10607,7 +11584,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Active Action = NULL </p>
+	 * <p> Active Action = NULL. </p>
 	 * @see #__DNA__FIELD__anim_non_active
 	 */
 	
@@ -10618,9 +11595,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 708, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 668, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 708, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10628,7 +11605,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'anim_non_active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Active Action = NULL </p>
+	 * <p> Active Action = NULL. </p>
 	 * @see #__DNA__FIELD__anim_non_active
 	 */
 	
@@ -10636,9 +11613,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 668;
+			__dna__offset = 708;
 		} else {
-			__dna__offset = 668;
+			__dna__offset = 708;
 		}
 		if (__io__equals(anim_non_active, __io__address + __dna__offset)) {
 			return;
@@ -10650,10 +11627,56 @@ public class ThemeSpace extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'anim_preview_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Preview range overlay. </p>
+	 * @see #__DNA__FIELD__anim_preview_range
+	 */
+	
+	public CArrayFacade<Byte> getAnim_preview_range() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'anim_preview_range'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Preview range overlay. </p>
+	 * @see #__DNA__FIELD__anim_preview_range
+	 */
+	
+	public void setAnim_preview_range(CArrayFacade<Byte> anim_preview_range) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 712;
+		} else {
+			__dna__offset = 712;
+		}
+		if (__io__equals(anim_preview_range, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, anim_preview_range)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, anim_preview_range);
+		} else {
+			__io__generic__copy( getAnim_preview_range(), anim_preview_range);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA 'Tweaking' action/strip </p>
+	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * @see #__DNA__FIELD__nla_tweaking
 	 */
 	
@@ -10664,9 +11687,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10674,7 +11697,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'nla_tweaking'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA 'Tweaking' action/strip </p>
+	 * <p> NLA 'Tweaking' action/strip. </p>
 	 * @see #__DNA__FIELD__nla_tweaking
 	 */
 	
@@ -10682,9 +11705,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 672;
+			__dna__offset = 716;
 		} else {
-			__dna__offset = 672;
+			__dna__offset = 716;
 		}
 		if (__io__equals(nla_tweaking, __io__address + __dna__offset)) {
 			return;
@@ -10699,7 +11722,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA - warning color for duplicate instances of tweaking strip </p>
+	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * @see #__DNA__FIELD__nla_tweakdupli
 	 */
 	
@@ -10710,9 +11733,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -10720,7 +11743,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'nla_tweakdupli'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA - warning color for duplicate instances of tweaking strip </p>
+	 * <p> NLA - warning color for duplicate instances of tweaking strip. </p>
 	 * @see #__DNA__FIELD__nla_tweakdupli
 	 */
 	
@@ -10728,9 +11751,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 676;
+			__dna__offset = 720;
 		} else {
-			__dna__offset = 676;
+			__dna__offset = 720;
 		}
 		if (__io__equals(nla_tweakdupli, __io__address + __dna__offset)) {
 			return;
@@ -10743,6 +11766,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_transition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Transition" strips. </p>
 	 * @see #__DNA__FIELD__nla_transition
 	 */
 	
@@ -10753,14 +11779,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 724, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 680, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 724, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_transition'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Transition" strips. </p>
 	 * @see #__DNA__FIELD__nla_transition
 	 */
 	
@@ -10768,9 +11797,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 680;
+			__dna__offset = 724;
 		} else {
-			__dna__offset = 680;
+			__dna__offset = 724;
 		}
 		if (__io__equals(nla_transition, __io__address + __dna__offset)) {
 			return;
@@ -10783,9 +11812,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_transition_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Transition" strips </p>
 	 * @see #__DNA__FIELD__nla_transition_sel
 	 */
 	
@@ -10796,17 +11822,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 684, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_transition_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Transition" strips </p>
 	 * @see #__DNA__FIELD__nla_transition_sel
 	 */
 	
@@ -10814,9 +11837,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 684;
+			__dna__offset = 728;
 		} else {
-			__dna__offset = 684;
+			__dna__offset = 728;
 		}
 		if (__io__equals(nla_transition_sel, __io__address + __dna__offset)) {
 			return;
@@ -10829,6 +11852,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_meta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Meta" strips. </p>
 	 * @see #__DNA__FIELD__nla_meta
 	 */
 	
@@ -10839,14 +11865,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 688, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_meta'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Meta" strips. </p>
 	 * @see #__DNA__FIELD__nla_meta
 	 */
 	
@@ -10854,9 +11883,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 688;
+			__dna__offset = 732;
 		} else {
-			__dna__offset = 688;
+			__dna__offset = 732;
 		}
 		if (__io__equals(nla_meta, __io__address + __dna__offset)) {
 			return;
@@ -10869,9 +11898,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_meta_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Meta" strips </p>
 	 * @see #__DNA__FIELD__nla_meta_sel
 	 */
 	
@@ -10882,17 +11908,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_meta_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Meta" strips </p>
 	 * @see #__DNA__FIELD__nla_meta_sel
 	 */
 	
@@ -10900,9 +11923,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 692;
+			__dna__offset = 736;
 		} else {
-			__dna__offset = 692;
+			__dna__offset = 736;
 		}
 		if (__io__equals(nla_meta_sel, __io__address + __dna__offset)) {
 			return;
@@ -10915,6 +11938,9 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_sound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Sound" strips. </p>
 	 * @see #__DNA__FIELD__nla_sound
 	 */
 	
@@ -10925,14 +11951,17 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 696, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_sound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> NLA "Sound" strips. </p>
 	 * @see #__DNA__FIELD__nla_sound
 	 */
 	
@@ -10940,9 +11969,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 696;
+			__dna__offset = 740;
 		} else {
-			__dna__offset = 696;
+			__dna__offset = 740;
 		}
 		if (__io__equals(nla_sound, __io__address + __dna__offset)) {
 			return;
@@ -10955,9 +11984,6 @@ public class ThemeSpace extends CFacade {
 
 	/**
 	 * Get method for struct member 'nla_sound_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Sound" strips </p>
 	 * @see #__DNA__FIELD__nla_sound_sel
 	 */
 	
@@ -10968,17 +11994,14 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 700, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'nla_sound_sel'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> NLA "Sound" strips </p>
 	 * @see #__DNA__FIELD__nla_sound_sel
 	 */
 	
@@ -10986,9 +12009,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 700;
+			__dna__offset = 744;
 		} else {
-			__dna__offset = 700;
+			__dna__offset = 744;
 		}
 		if (__io__equals(nla_sound_sel, __io__address + __dna__offset)) {
 			return;
@@ -11014,9 +12037,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 704, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11032,9 +12055,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 704;
+			__dna__offset = 748;
 		} else {
-			__dna__offset = 704;
+			__dna__offset = 748;
 		}
 		if (__io__equals(info_selected, __io__address + __dna__offset)) {
 			return;
@@ -11057,9 +12080,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 708, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 708, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11072,9 +12095,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 708;
+			__dna__offset = 752;
 		} else {
-			__dna__offset = 708;
+			__dna__offset = 752;
 		}
 		if (__io__equals(info_selected_text, __io__address + __dna__offset)) {
 			return;
@@ -11097,9 +12120,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 756, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 756, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11112,9 +12135,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 712;
+			__dna__offset = 756;
 		} else {
-			__dna__offset = 712;
+			__dna__offset = 756;
 		}
 		if (__io__equals(info_error, __io__address + __dna__offset)) {
 			return;
@@ -11137,9 +12160,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 760, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 760, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11152,9 +12175,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 716;
+			__dna__offset = 760;
 		} else {
-			__dna__offset = 716;
+			__dna__offset = 760;
 		}
 		if (__io__equals(info_error_text, __io__address + __dna__offset)) {
 			return;
@@ -11177,9 +12200,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 764, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 720, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 764, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11192,9 +12215,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 720;
+			__dna__offset = 764;
 		} else {
-			__dna__offset = 720;
+			__dna__offset = 764;
 		}
 		if (__io__equals(info_warning, __io__address + __dna__offset)) {
 			return;
@@ -11217,9 +12240,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 724, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 768, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 724, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 768, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11232,9 +12255,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 724;
+			__dna__offset = 768;
 		} else {
-			__dna__offset = 724;
+			__dna__offset = 768;
 		}
 		if (__io__equals(info_warning_text, __io__address + __dna__offset)) {
 			return;
@@ -11257,9 +12280,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 772, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 772, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11272,9 +12295,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 728;
+			__dna__offset = 772;
 		} else {
-			__dna__offset = 728;
+			__dna__offset = 772;
 		}
 		if (__io__equals(info_info, __io__address + __dna__offset)) {
 			return;
@@ -11297,9 +12320,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 776, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 732, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 776, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11312,9 +12335,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 732;
+			__dna__offset = 776;
 		} else {
-			__dna__offset = 732;
+			__dna__offset = 776;
 		}
 		if (__io__equals(info_info_text, __io__address + __dna__offset)) {
 			return;
@@ -11337,9 +12360,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 780, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11352,9 +12375,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 736;
+			__dna__offset = 780;
 		} else {
-			__dna__offset = 736;
+			__dna__offset = 780;
 		}
 		if (__io__equals(info_debug, __io__address + __dna__offset)) {
 			return;
@@ -11377,9 +12400,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 784, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 740, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 784, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11392,9 +12415,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 740;
+			__dna__offset = 784;
 		} else {
-			__dna__offset = 740;
+			__dna__offset = 784;
 		}
 		if (__io__equals(info_debug_text, __io__address + __dna__offset)) {
 			return;
@@ -11417,9 +12440,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 744, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11432,9 +12455,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 744;
+			__dna__offset = 788;
 		} else {
-			__dna__offset = 744;
+			__dna__offset = 788;
 		}
 		if (__io__equals(paint_curve_pivot, __io__address + __dna__offset)) {
 			return;
@@ -11457,9 +12480,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 792, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 748, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 792, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11472,9 +12495,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 748;
+			__dna__offset = 792;
 		} else {
-			__dna__offset = 748;
+			__dna__offset = 792;
 		}
 		if (__io__equals(paint_curve_handle, __io__address + __dna__offset)) {
 			return;
@@ -11497,9 +12520,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11512,9 +12535,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 752;
+			__dna__offset = 796;
 		} else {
-			__dna__offset = 752;
+			__dna__offset = 796;
 		}
 		if (__io__equals(metadatabg, __io__address + __dna__offset)) {
 			return;
@@ -11537,9 +12560,9 @@ public class ThemeSpace extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 756, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 800, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 756, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 800, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -11552,9 +12575,9 @@ public class ThemeSpace extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 756;
+			__dna__offset = 800;
 		} else {
-			__dna__offset = 756;
+			__dna__offset = 800;
 		}
 		if (__io__equals(metadatatext, __io__address + __dna__offset)) {
 			return;
@@ -11562,6 +12585,46 @@ public class ThemeSpace extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, metadatatext);
 		} else {
 			__io__generic__copy( getMetadatatext(), metadatatext);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 804, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 804, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 804;
+		} else {
+			__dna__offset = 804;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

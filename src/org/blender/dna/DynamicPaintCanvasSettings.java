@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Canvas settings </p>
  */
 
-@CMetaData(size32=88, size64=104)
+@CMetaData(size32=84, size64=96)
 public class DynamicPaintCanvasSettings extends CFacade {
 
 	/**
@@ -28,13 +28,13 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 563;
+	public static final int __DNA__SDNA_INDEX = 570;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -54,26 +54,6 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public static final long[] __DNA__FIELD__pmd = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dm'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * DynamicPaintCanvasSettings dynamicpaintcanvassettings = ...;
-	 * CPointer&lt;Object&gt; p = dynamicpaintcanvassettings.__dna__addressof(DynamicPaintCanvasSettings.__DNA__FIELD__dm);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_dm = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'dm'</li>
-	 * <li>Signature: 'DerivedMesh*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__dm = new long[]{4, 8};
-
-	/**
 	 * Field descriptor (offset) for struct member 'surfaces'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -91,7 +71,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surfaces = new long[]{8, 16};
+	public static final long[] __DNA__FIELD__surfaces = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_sur'.
@@ -111,7 +91,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_sur = new long[]{16, 32};
+	public static final long[] __DNA__FIELD__active_sur = new long[]{12, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -131,33 +111,33 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{18, 34};
+	public static final long[] __DNA__FIELD__flags = new long[]{14, 26};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * DynamicPaintCanvasSettings dynamicpaintcanvassettings = ...;
-	 * CPointer&lt;Object&gt; p = dynamicpaintcanvassettings.__dna__addressof(DynamicPaintCanvasSettings.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = dynamicpaintcanvassettings.__dna__addressof(DynamicPaintCanvasSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{20, 36};
+	public static final long[] __DNA__FIELD___pad = new long[]{16, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Bake error description </p>
+	 * <p> Bake error description. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -174,7 +154,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__error = new long[]{24, 40};
+	public static final long[] __DNA__FIELD__error = new long[]{20, 32};
 
 	public DynamicPaintCanvasSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -188,7 +168,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * Get method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -208,7 +188,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * Set method for struct member 'pmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for fast RNA access </p>
+	 * <p> For fast RNA access. </p>
 	 * @see #__DNA__FIELD__pmd
 	 */
 	
@@ -223,38 +203,6 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
-	 */
-	
-	public CPointer<Object> getDm() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 8);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 4);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
-	 */
-	
-	public void setDm(CPointer<Object> dm) throws IOException
-	{
-		long __address = ((dm == null) ? 0 : dm.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 8, __address);
-		} else {
-			__io__block.writeLong(__io__address + 4, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'surfaces'.
 	 * @see #__DNA__FIELD__surfaces
 	 */
@@ -262,9 +210,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public ListBase getSurfaces() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 16, __io__block, __io__blockTable);
-		} else {
 			return new ListBase(__io__address + 8, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 4, __io__block, __io__blockTable);
 		}
 	}
 
@@ -277,9 +225,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16;
-		} else {
 			__dna__offset = 8;
+		} else {
+			__dna__offset = 4;
 		}
 		if (__io__equals(surfaces, __io__address + __dna__offset)) {
 			return;
@@ -298,9 +246,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public short getActive_sur() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 16);
+			return __io__block.readShort(__io__address + 12);
 		}
 	}
 
@@ -312,9 +260,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public void setActive_sur(short active_sur) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 32, active_sur);
+			__io__block.writeShort(__io__address + 24, active_sur);
 		} else {
-			__io__block.writeShort(__io__address + 16, active_sur);
+			__io__block.writeShort(__io__address + 12, active_sur);
 		}
 	}
 
@@ -326,9 +274,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 26);
 		} else {
-			return __io__block.readShort(__io__address + 18);
+			return __io__block.readShort(__io__address + 14);
 		}
 	}
 
@@ -340,37 +288,49 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 34, flags);
+			__io__block.writeShort(__io__address + 26, flags);
 		} else {
-			__io__block.writeShort(__io__address + 18, flags);
+			__io__block.writeShort(__io__address + 14, flags);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, pad);
+			__dna__offset = 28;
 		} else {
-			__io__block.writeInt(__io__address + 20, pad);
+			__dna__offset = 16;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -378,7 +338,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Bake error description </p>
+	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -389,9 +349,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -399,7 +359,7 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Bake error description </p>
+	 * <p> Bake error description. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -407,9 +367,9 @@ public class DynamicPaintCanvasSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 20;
 		}
 		if (__io__equals(error, __io__address + __dna__offset)) {
 			return;

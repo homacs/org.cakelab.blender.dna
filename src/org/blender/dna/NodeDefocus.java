@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +28,7 @@ public class NodeDefocus extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 424;
+	public static final int __DNA__SDNA_INDEX = 392;
 
 	/**
 	 * Field descriptor (offset) for struct member 'bktype'.
@@ -50,24 +51,24 @@ public class NodeDefocus extends CFacade {
 	public static final long[] __DNA__FIELD__bktype = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad_c1'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeDefocus nodedefocus = ...;
-	 * CPointer&lt;Object&gt; p = nodedefocus.__dna__addressof(NodeDefocus.__DNA__FIELD__pad_c1);
-	 * CPointer&lt;Byte&gt; p_pad_c1 = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = nodedefocus.__dna__addressof(NodeDefocus.__DNA__FIELD___pad0);
+	 * CPointer&lt;Byte&gt; p__pad0 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad_c1'</li>
+	 * <li>Field: '_pad0'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad_c1 = new long[]{1, 1};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{1, 1};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -250,24 +251,24 @@ public class NodeDefocus extends CFacade {
 	public static final long[] __DNA__FIELD__rotation = new long[]{24, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad_f1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeDefocus nodedefocus = ...;
-	 * CPointer&lt;Object&gt; p = nodedefocus.__dna__addressof(NodeDefocus.__DNA__FIELD__pad_f1);
-	 * CPointer&lt;Float&gt; p_pad_f1 = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = nodedefocus.__dna__addressof(NodeDefocus.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad_f1'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad_f1 = new long[]{28, 28};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{28, 28};
 
 	public NodeDefocus(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -306,11 +307,11 @@ public class NodeDefocus extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad_c1'.
-	 * @see #__DNA__FIELD__pad_c1
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public byte getPad_c1() throws IOException
+	public byte get_pad0() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 1);
@@ -320,16 +321,16 @@ public class NodeDefocus extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad_c1'.
-	 * @see #__DNA__FIELD__pad_c1
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad_c1(byte pad_c1) throws IOException
+	public void set_pad0(byte _pad0) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1, pad_c1);
+			__io__block.writeByte(__io__address + 1, _pad0);
 		} else {
-			__io__block.writeByte(__io__address + 1, pad_c1);
+			__io__block.writeByte(__io__address + 1, _pad0);
 		}
 	}
 
@@ -586,30 +587,42 @@ public class NodeDefocus extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad_f1'.
-	 * @see #__DNA__FIELD__pad_f1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public float getPad_f1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad_f1'.
-	 * @see #__DNA__FIELD__pad_f1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad_f1(float pad_f1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 28, pad_f1);
+			__dna__offset = 28;
 		} else {
-			__io__block.writeFloat(__io__address + 28, pad_f1);
+			__dna__offset = 28;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

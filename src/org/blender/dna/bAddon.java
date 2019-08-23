@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bAddon'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> for the moment only the name. may want to store options with this later </p>
+ * 
  */
 
 @CMetaData(size32=76, size64=88)
@@ -28,7 +27,7 @@ public class bAddon extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 250;
+	public static final int __DNA__SDNA_INDEX = 248;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -94,7 +93,7 @@ public class bAddon extends CFacade {
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Defined Properties on this Addon (for storing preferences) </p>
+	 * <p> User-Defined Properties on this Addon (for storing preferences). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -229,7 +228,7 @@ public class bAddon extends CFacade {
 	 * Get method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Defined Properties on this Addon (for storing preferences) </p>
+	 * <p> User-Defined Properties on this Addon (for storing preferences). </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	
@@ -249,7 +248,7 @@ public class bAddon extends CFacade {
 	 * Set method for struct member 'prop'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Defined Properties on this Addon (for storing preferences) </p>
+	 * <p> User-Defined Properties on this Addon (for storing preferences). </p>
 	 * @see #__DNA__FIELD__prop
 	 */
 	

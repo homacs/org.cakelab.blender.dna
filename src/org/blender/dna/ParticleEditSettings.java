@@ -28,7 +28,7 @@ public class ParticleEditSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 188;
+	public static final int __DNA__SDNA_INDEX = 190;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -112,9 +112,6 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -137,7 +134,7 @@ public class ParticleEditSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -458,9 +455,6 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -479,9 +473,6 @@ public class ParticleEditSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> 7 = PE_TOT_BRUSH </p>
 	 * @see #__DNA__FIELD__brush
 	 */
 	
@@ -506,7 +497,7 @@ public class ParticleEditSettings extends CFacade {
 	 * Get method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	
@@ -526,7 +517,7 @@ public class ParticleEditSettings extends CFacade {
 	 * Set method for struct member 'paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__paintcursor
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1360, size64=1368)
+@CMetaData(size32=1300, size64=1312)
 public class BakeData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BakeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 177;
+	public static final int __DNA__SDNA_INDEX = 181;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -53,7 +53,7 @@ public class BakeData extends CFacade {
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FILE_MAX </p>
+	 * <p> FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -253,47 +253,44 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__save_mode = new long[]{1292, 1300};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BakeData bakedata = ...;
-	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[3]'</li>
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{1293, 1301};
+	public static final long[] __DNA__FIELD___pad = new long[]{1293, 1301};
 
 	/**
-	 * Field descriptor (offset) for struct member 'cage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * Field descriptor (offset) for struct member 'cage_object'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BakeData bakedata = ...;
-	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__cage);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_cage = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__cage_object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_cage_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'cage'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Field: 'cage_object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cage = new long[]{1296, 1304};
+	public static final long[] __DNA__FIELD__cage_object = new long[]{1296, 1304};
 
 	public BakeData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -343,7 +340,7 @@ public class BakeData extends CFacade {
 	 * Get method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FILE_MAX </p>
+	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -364,7 +361,7 @@ public class BakeData extends CFacade {
 	 * Set method for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> FILE_MAX </p>
+	 * <p> FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -650,11 +647,11 @@ public class BakeData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -668,11 +665,11 @@ public class BakeData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -680,58 +677,44 @@ public class BakeData extends CFacade {
 		} else {
 			__dna__offset = 1293;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'cage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
-	 * @see #__DNA__FIELD__cage
+	 * Get method for struct member 'cage_object'.
+	 * @see #__DNA__FIELD__cage_object
 	 */
 	
-	public CArrayFacade<Byte> getCage() throws IOException
+	public CPointer<BlenderObject> getCage_object() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			64
-		};
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
 		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'cage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
-	 * @see #__DNA__FIELD__cage
+	 * Set method for struct member 'cage_object'.
+	 * @see #__DNA__FIELD__cage_object
 	 */
 	
-	public void setCage(CArrayFacade<Byte> cage) throws IOException
+	public void setCage_object(CPointer<BlenderObject> cage_object) throws IOException
 	{
-		long __dna__offset;
+		long __address = ((cage_object == null) ? 0 : cage_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1304;
+			__io__block.writeLong(__io__address + 1304, __address);
 		} else {
-			__dna__offset = 1296;
-		}
-		if (__io__equals(cage, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, cage)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, cage);
-		} else {
-			__io__generic__copy( getCage(), cage);
+			__io__block.writeLong(__io__address + 1296, __address);
 		}
 	}
 

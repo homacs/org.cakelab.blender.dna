@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link FileGlobal}  stores a part of the current user-interface settings at the moment of saving, and the file-specific settings. </p>
  */
 
-@CMetaData(size32=1080, size64=1088)
+@CMetaData(size32=1088, size64=1104)
 public class FileGlobal extends CFacade {
 
 	/**
@@ -29,13 +29,13 @@ public class FileGlobal extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 264;
+	public static final int __DNA__SDNA_INDEX = 272;
 
 	/**
 	 * Field descriptor (offset) for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needs to be here, for human fileformat recognition </p>
+	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -115,24 +115,24 @@ public class FileGlobal extends CFacade {
 	public static final long[] __DNA__FIELD__minsubversion = new long[]{8, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileGlobal fileglobal = ...;
-	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{10, 10};
+	public static final long[] __DNA__FIELD___pad = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curscreen'.
@@ -173,6 +173,46 @@ public class FileGlobal extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__curscene = new long[]{20, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cur_view_layer'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FileGlobal fileglobal = ...;
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD__cur_view_layer);
+	 * CPointer&lt;CPointer&lt;ViewLayer&gt;&gt; p_cur_view_layer = p.cast(new Class[]{CPointer.class, ViewLayer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cur_view_layer'</li>
+	 * <li>Signature: 'ViewLayer*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cur_view_layer = new long[]{24, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FileGlobal fileglobal = ...;
+	 * CPointer&lt;Object&gt; p = fileglobal.__dna__addressof(FileGlobal.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{28, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fileflags'.
@@ -219,7 +259,7 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fileflags = new long[]{24, 32};
+	public static final long[] __DNA__FIELD__fileflags = new long[]{32, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'globalf'.
@@ -239,14 +279,14 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__globalf = new long[]{28, 36};
+	public static final long[] __DNA__FIELD__globalf = new long[]{36, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_commit_timestamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
-	 * <p> commit timestamp from buildinfo </p>
+	 * <p> Commit timestamp from buildinfo. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,14 +303,14 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__build_commit_timestamp = new long[]{32, 40};
+	public static final long[] __DNA__FIELD__build_commit_timestamp = new long[]{40, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_hash'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * unique identifier from build info<h4>Blender Source Code:</h4>
-	 * <p> hash from buildinfo </p>
+	 * <p> Hash from buildinfo. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,13 +327,13 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__build_hash = new long[]{40, 48};
+	public static final long[] __DNA__FIELD__build_hash = new long[]{48, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
+	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,7 +350,7 @@ public class FileGlobal extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filename = new long[]{56, 64};
+	public static final long[] __DNA__FIELD__filename = new long[]{64, 80};
 
 	public FileGlobal(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -324,7 +364,7 @@ public class FileGlobal extends CFacade {
 	 * Get method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needs to be here, for human fileformat recognition </p>
+	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	
@@ -345,7 +385,7 @@ public class FileGlobal extends CFacade {
 	 * Set method for struct member 'subvstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> needs to be here, for human fileformat recognition </p>
+	 * <p> Needs to be here, for human fileformat recognition (keep first!). </p>
 	 * @see #__DNA__FIELD__subvstr
 	 */
 	
@@ -451,11 +491,11 @@ public class FileGlobal extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -469,11 +509,11 @@ public class FileGlobal extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -481,12 +521,12 @@ public class FileGlobal extends CFacade {
 		} else {
 			__dna__offset = 10;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -555,6 +595,70 @@ public class FileGlobal extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'cur_view_layer'.
+	 * @see #__DNA__FIELD__cur_view_layer
+	 */
+	
+	public CPointer<ViewLayer> getCur_view_layer() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ViewLayer.class};
+		return new CPointer<ViewLayer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewLayer.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'cur_view_layer'.
+	 * @see #__DNA__FIELD__cur_view_layer
+	 */
+	
+	public void setCur_view_layer(CPointer<ViewLayer> cur_view_layer) throws IOException
+	{
+		long __address = ((cur_view_layer == null) ? 0 : cur_view_layer.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 32, __address);
+		} else {
+			__io__block.writeLong(__io__address + 24, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CPointer<Object> get_pad1() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 28);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 28, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'fileflags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -589,9 +693,9 @@ public class FileGlobal extends CFacade {
 	public int getFileflags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 48);
 		} else {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 32);
 		}
 	}
 
@@ -630,9 +734,9 @@ public class FileGlobal extends CFacade {
 	public void setFileflags(int fileflags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, fileflags);
+			__io__block.writeInt(__io__address + 48, fileflags);
 		} else {
-			__io__block.writeInt(__io__address + 24, fileflags);
+			__io__block.writeInt(__io__address + 32, fileflags);
 		}
 	}
 
@@ -644,9 +748,9 @@ public class FileGlobal extends CFacade {
 	public int getGlobalf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 52);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 36);
 		}
 	}
 
@@ -658,9 +762,9 @@ public class FileGlobal extends CFacade {
 	public void setGlobalf(int globalf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, globalf);
+			__io__block.writeInt(__io__address + 52, globalf);
 		} else {
-			__io__block.writeInt(__io__address + 28, globalf);
+			__io__block.writeInt(__io__address + 36, globalf);
 		}
 	}
 
@@ -669,16 +773,16 @@ public class FileGlobal extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
-	 * <p> commit timestamp from buildinfo </p>
+	 * <p> Commit timestamp from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
 	public long getBuild_commit_timestamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt64(__io__address + 40);
+			return __io__block.readInt64(__io__address + 56);
 		} else {
-			return __io__block.readInt64(__io__address + 32);
+			return __io__block.readInt64(__io__address + 40);
 		}
 	}
 
@@ -687,16 +791,16 @@ public class FileGlobal extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * time when code of the blender binary was commit. Provides more detail to version info.<h4>Blender Source Code:</h4>
-	 * <p> commit timestamp from buildinfo </p>
+	 * <p> Commit timestamp from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_commit_timestamp
 	 */
 	
 	public void setBuild_commit_timestamp(long build_commit_timestamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt64(__io__address + 40, build_commit_timestamp);
+			__io__block.writeInt64(__io__address + 56, build_commit_timestamp);
 		} else {
-			__io__block.writeInt64(__io__address + 32, build_commit_timestamp);
+			__io__block.writeInt64(__io__address + 40, build_commit_timestamp);
 		}
 	}
 
@@ -705,7 +809,7 @@ public class FileGlobal extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * unique identifier from build info<h4>Blender Source Code:</h4>
-	 * <p> hash from buildinfo </p>
+	 * <p> Hash from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	
@@ -716,9 +820,9 @@ public class FileGlobal extends CFacade {
 			16
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -727,7 +831,7 @@ public class FileGlobal extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * unique identifier from build info<h4>Blender Source Code:</h4>
-	 * <p> hash from buildinfo </p>
+	 * <p> Hash from buildinfo. </p>
 	 * @see #__DNA__FIELD__build_hash
 	 */
 	
@@ -735,9 +839,9 @@ public class FileGlobal extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 48;
 		}
 		if (__io__equals(build_hash, __io__address + __dna__offset)) {
 			return;
@@ -752,7 +856,7 @@ public class FileGlobal extends CFacade {
 	 * Get method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
+	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -763,9 +867,9 @@ public class FileGlobal extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -773,7 +877,7 @@ public class FileGlobal extends CFacade {
 	 * Set method for struct member 'filename'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> file path where this was saved, for recover 1024 = FILE_MAX </p>
+	 * <p> File path where this was saved, for recover (1024 = FILE_MAX). </p>
 	 * @see #__DNA__FIELD__filename
 	 */
 	
@@ -781,9 +885,9 @@ public class FileGlobal extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 80;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 64;
 		}
 		if (__io__equals(filename, __io__address + __dna__offset)) {
 			return;

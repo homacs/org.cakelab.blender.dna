@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=964, size64=968)
+@CMetaData(size32=956, size64=960)
 public class NodeTexBase extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexBase extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 433;
+	public static final int __DNA__SDNA_INDEX = 401;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mapping'.
@@ -63,7 +63,7 @@ public class NodeTexBase extends CFacade {
 	 * <ul>
 	 * <li>Field: 'color_mapping'</li>
 	 * <li>Signature: 'ColorMapping'</li>
-	 * <li>Actual Size (32bit/64bit): 824/824</li>
+	 * <li>Actual Size (32bit/64bit): 816/816</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__color_mapping = new long[]{140, 144};

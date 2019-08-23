@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'uiPreview'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Some preview UI data need to be saved in file. </p>
  */
 
 @CMetaData(size32=80, size64=88)
@@ -27,13 +28,10 @@ public class uiPreview extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 261;
+	public static final int __DNA__SDNA_INDEX = 267;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> some preview UI data need to be saved in file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -76,7 +74,7 @@ public class uiPreview extends CFacade {
 	 * Field descriptor (offset) for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,24 +114,24 @@ public class uiPreview extends CFacade {
 	public static final long[] __DNA__FIELD__height = new long[]{72, 80};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiPreview uipreview = ...;
-	 * CPointer&lt;Object&gt; p = uipreview.__dna__addressof(uiPreview.__DNA__FIELD__pad1);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad1 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = uipreview.__dna__addressof(uiPreview.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{74, 82};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{74, 82};
 
 	public uiPreview(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -145,9 +143,6 @@ public class uiPreview extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> some preview UI data need to be saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -165,9 +160,6 @@ public class uiPreview extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> some preview UI data need to be saved in file </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -217,7 +209,7 @@ public class uiPreview extends CFacade {
 	 * Get method for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__preview_id
 	 */
 	
@@ -238,7 +230,7 @@ public class uiPreview extends CFacade {
 	 * Set method for struct member 'preview_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__preview_id
 	 */
 	
@@ -288,29 +280,29 @@ public class uiPreview extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Short> getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 82, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 82, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 74, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 74, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(CArrayFacade<Short> pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -318,12 +310,12 @@ public class uiPreview extends CFacade {
 		} else {
 			__dna__offset = 74;
 		}
-		if (__io__equals(pad1, __io__address + __dna__offset)) {
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad1);
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			__io__generic__copy( getPad1(), pad1);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

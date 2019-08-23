@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=116, size64=136)
+@CMetaData(size32=264, size64=288)
 public class ParticleInstanceModifierData extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 118;
+	public static final int __DNA__SDNA_INDEX = 124;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +44,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +67,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__ob = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'psys'.
@@ -86,7 +87,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__psys = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__psys = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -106,7 +107,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{102, 122};
+	public static final long[] __DNA__FIELD__flag = new long[]{106, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
@@ -126,27 +127,27 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__axis = new long[]{104, 124};
+	public static final long[] __DNA__FIELD__axis = new long[]{108, 132};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__space);
+	 * CPointer&lt;Short&gt; p_space = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'space'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{106, 126};
+	public static final long[] __DNA__FIELD__space = new long[]{110, 134};
 
 	/**
 	 * Field descriptor (offset) for struct member 'position'.
@@ -166,7 +167,7 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__position = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__position = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'random_position'.
@@ -186,7 +187,133 @@ public class ParticleInstanceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__random_position = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__random_position = new long[]{116, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{120, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'random_rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__random_rotation);
+	 * CPointer&lt;Float&gt; p_random_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'random_rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__random_rotation = new long[]{124, 148};
+
+	/**
+	 * Field descriptor (offset) for struct member 'particle_amount'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__particle_amount);
+	 * CPointer&lt;Float&gt; p_particle_amount = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'particle_amount'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__particle_amount = new long[]{128, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'particle_offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__particle_offset);
+	 * CPointer&lt;Float&gt; p_particle_offset = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'particle_offset'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__particle_offset = new long[]{132, 156};
+
+	/**
+	 * Field descriptor (offset) for struct member 'index_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__index_layer_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_index_layer_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'index_layer_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__index_layer_name = new long[]{136, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'value_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleInstanceModifierData particleinstancemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particleinstancemodifierdata.__dna__addressof(ParticleInstanceModifierData.__DNA__FIELD__value_layer_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_value_layer_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'value_layer_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__value_layer_name = new long[]{200, 224};
 
 	public ParticleInstanceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -241,9 +368,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -258,9 +385,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	{
 		long __address = ((ob == null) ? 0 : ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -272,9 +399,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public short getPsys() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -286,9 +413,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public void setPsys(short psys) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, psys);
+			__io__block.writeShort(__io__address + 128, psys);
 		} else {
-			__io__block.writeShort(__io__address + 100, psys);
+			__io__block.writeShort(__io__address + 104, psys);
 		}
 	}
 
@@ -300,9 +427,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 102);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -314,9 +441,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 122, flag);
+			__io__block.writeShort(__io__address + 130, flag);
 		} else {
-			__io__block.writeShort(__io__address + 102, flag);
+			__io__block.writeShort(__io__address + 106, flag);
 		}
 	}
 
@@ -328,9 +455,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public short getAxis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 124);
+			return __io__block.readShort(__io__address + 132);
 		} else {
-			return __io__block.readShort(__io__address + 104);
+			return __io__block.readShort(__io__address + 108);
 		}
 	}
 
@@ -342,37 +469,37 @@ public class ParticleInstanceModifierData extends CFacade {
 	public void setAxis(short axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 124, axis);
+			__io__block.writeShort(__io__address + 132, axis);
 		} else {
-			__io__block.writeShort(__io__address + 104, axis);
+			__io__block.writeShort(__io__address + 108, axis);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'space'.
+	 * @see #__DNA__FIELD__space
 	 */
 	
-	public short getPad() throws IOException
+	public short getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 126);
+			return __io__block.readShort(__io__address + 134);
 		} else {
-			return __io__block.readShort(__io__address + 106);
+			return __io__block.readShort(__io__address + 110);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'space'.
+	 * @see #__DNA__FIELD__space
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setSpace(short space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 126, pad);
+			__io__block.writeShort(__io__address + 134, space);
 		} else {
-			__io__block.writeShort(__io__address + 106, pad);
+			__io__block.writeShort(__io__address + 110, space);
 		}
 	}
 
@@ -384,9 +511,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public float getPosition() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -398,9 +525,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public void setPosition(float position) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, position);
+			__io__block.writeFloat(__io__address + 136, position);
 		} else {
-			__io__block.writeFloat(__io__address + 108, position);
+			__io__block.writeFloat(__io__address + 112, position);
 		}
 	}
 
@@ -412,9 +539,9 @@ public class ParticleInstanceModifierData extends CFacade {
 	public float getRandom_position() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -426,9 +553,213 @@ public class ParticleInstanceModifierData extends CFacade {
 	public void setRandom_position(float random_position) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 132, random_position);
+			__io__block.writeFloat(__io__address + 140, random_position);
 		} else {
-			__io__block.writeFloat(__io__address + 112, random_position);
+			__io__block.writeFloat(__io__address + 116, random_position);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public float getRotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 144);
+		} else {
+			return __io__block.readFloat(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(float rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 144, rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 120, rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'random_rotation'.
+	 * @see #__DNA__FIELD__random_rotation
+	 */
+	
+	public float getRandom_rotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 148);
+		} else {
+			return __io__block.readFloat(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'random_rotation'.
+	 * @see #__DNA__FIELD__random_rotation
+	 */
+	
+	public void setRandom_rotation(float random_rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 148, random_rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 124, random_rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'particle_amount'.
+	 * @see #__DNA__FIELD__particle_amount
+	 */
+	
+	public float getParticle_amount() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 152);
+		} else {
+			return __io__block.readFloat(__io__address + 128);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'particle_amount'.
+	 * @see #__DNA__FIELD__particle_amount
+	 */
+	
+	public void setParticle_amount(float particle_amount) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 152, particle_amount);
+		} else {
+			__io__block.writeFloat(__io__address + 128, particle_amount);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'particle_offset'.
+	 * @see #__DNA__FIELD__particle_offset
+	 */
+	
+	public float getParticle_offset() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 156);
+		} else {
+			return __io__block.readFloat(__io__address + 132);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'particle_offset'.
+	 * @see #__DNA__FIELD__particle_offset
+	 */
+	
+	public void setParticle_offset(float particle_offset) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 156, particle_offset);
+		} else {
+			__io__block.writeFloat(__io__address + 132, particle_offset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'index_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * @see #__DNA__FIELD__index_layer_name
+	 */
+	
+	public CArrayFacade<Byte> getIndex_layer_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'index_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * @see #__DNA__FIELD__index_layer_name
+	 */
+	
+	public void setIndex_layer_name(CArrayFacade<Byte> index_layer_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 160;
+		} else {
+			__dna__offset = 136;
+		}
+		if (__io__equals(index_layer_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, index_layer_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, index_layer_name);
+		} else {
+			__io__generic__copy( getIndex_layer_name(), index_layer_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'value_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * @see #__DNA__FIELD__value_layer_name
+	 */
+	
+	public CArrayFacade<Byte> getValue_layer_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'value_layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
+	 * @see #__DNA__FIELD__value_layer_name
+	 */
+	
+	public void setValue_layer_name(CArrayFacade<Byte> value_layer_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 224;
+		} else {
+			__dna__offset = 200;
+		}
+		if (__io__equals(value_layer_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, value_layer_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, value_layer_name);
+		} else {
+			__io__generic__copy( getValue_layer_name(), value_layer_name);
 		}
 	}
 

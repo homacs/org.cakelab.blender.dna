@@ -27,7 +27,7 @@ public class MFace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 59;
+	public static final int __DNA__SDNA_INDEX = 65;
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.
@@ -131,6 +131,9 @@ public class MFace extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edcode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> We keep edcode, for conversion to edges draw flags in old files. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -151,9 +154,6 @@ public class MFace extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> we keep edcode, for conversion to edges draw flags in old files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -322,6 +322,9 @@ public class MFace extends CFacade {
 
 	/**
 	 * Get method for struct member 'edcode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> We keep edcode, for conversion to edges draw flags in old files. </p>
 	 * @see #__DNA__FIELD__edcode
 	 */
 	
@@ -336,6 +339,9 @@ public class MFace extends CFacade {
 
 	/**
 	 * Set method for struct member 'edcode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> We keep edcode, for conversion to edges draw flags in old files. </p>
 	 * @see #__DNA__FIELD__edcode
 	 */
 	
@@ -350,9 +356,6 @@ public class MFace extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> we keep edcode, for conversion to edges draw flags in old files </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -367,9 +370,6 @@ public class MFace extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> we keep edcode, for conversion to edges draw flags in old files </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

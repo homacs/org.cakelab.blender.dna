@@ -27,7 +27,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 550;
+	public static final int __DNA__SDNA_INDEX = 557;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of track<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** setings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -198,7 +198,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Offset of track from the parenting point<h4>Blender Source Code:</h4>
-	 * <p> offset to "parenting" point </p>
+	 * <p> Offset to "parenting" point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -221,7 +221,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** track ** count of markers in track </p>
+	 * <p> ** track ** Count of markers in track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -244,7 +244,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used marker </p>
+	 * <p> Most recently used marker. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -268,7 +268,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
-	 * <p> markers in track </p>
+	 * <p> Markers in track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -291,7 +291,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'bundle_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction data ** reconstructed position </p>
+	 * <p> ** reconstruction data ** Reconstructed position. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -314,7 +314,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average track reprojection error </p>
+	 * <p> Average track reprojection error. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -337,7 +337,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** UI editing ** </p>
+	 * <p> ** UI editing ** Flags (selection, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -378,9 +378,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'search_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flags (selection, ...) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -404,7 +401,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve<h4>Blender Source Code:</h4>
-	 * <p> custom color for track </p>
+	 * <p> Custom color for track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -428,7 +425,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> ** control how tracking happens number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set) </p>
+	 * <p> ** control how tracking happens Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -452,7 +449,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
-	 * <p> margin from frame boundaries </p>
+	 * <p> Margin from frame boundaries. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -476,7 +473,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> re-adjust every N frames </p>
+	 * <p> Re-adjust every N frames. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -500,7 +497,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
-	 * <p> tracking parameters model of the motion for this track </p>
+	 * <p> tracking parameters Model of the motion for this track. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -523,7 +520,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the tracking algorithm (use brute, use esm, use pyramid, etc </p>
+	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -546,7 +543,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'minimum_correlation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimal correlation which is still treated as successful tracking </p>
+	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -569,7 +566,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -713,7 +710,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of track<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -735,7 +732,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of track<h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -760,7 +757,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** setings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pat_min
@@ -783,7 +780,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'pat_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** setings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
+	 * <p> ** settings ** positions of left-bottom and right-top corners of pattern (in unified 0..1 units, relative to marker->pos) moved to marker's corners since planar tracking implementation
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pat_min
@@ -961,7 +958,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Offset of track from the parenting point<h4>Blender Source Code:</h4>
-	 * <p> offset to "parenting" point </p>
+	 * <p> Offset to "parenting" point. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -983,7 +980,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Offset of track from the parenting point<h4>Blender Source Code:</h4>
-	 * <p> offset to "parenting" point </p>
+	 * <p> Offset to "parenting" point. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -1008,7 +1005,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** track ** count of markers in track </p>
+	 * <p> ** track ** Count of markers in track. </p>
 	 * @see #__DNA__FIELD__markersnr
 	 */
 	
@@ -1025,7 +1022,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'markersnr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** track ** count of markers in track </p>
+	 * <p> ** track ** Count of markers in track. </p>
 	 * @see #__DNA__FIELD__markersnr
 	 */
 	
@@ -1042,7 +1039,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used marker </p>
+	 * <p> Most recently used marker. </p>
 	 * @see #__DNA__FIELD__last_marker
 	 */
 	
@@ -1059,7 +1056,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'last_marker'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> most recently used marker </p>
+	 * <p> Most recently used marker. </p>
 	 * @see #__DNA__FIELD__last_marker
 	 */
 	
@@ -1077,7 +1074,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
-	 * <p> markers in track </p>
+	 * <p> Markers in track. </p>
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -1098,7 +1095,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of markers in track<h4>Blender Source Code:</h4>
-	 * <p> markers in track </p>
+	 * <p> Markers in track. </p>
 	 * @see #__DNA__FIELD__markers
 	 */
 	
@@ -1116,7 +1113,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'bundle_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction data ** reconstructed position </p>
+	 * <p> ** reconstruction data ** Reconstructed position. </p>
 	 * @see #__DNA__FIELD__bundle_pos
 	 */
 	
@@ -1137,7 +1134,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'bundle_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction data ** reconstructed position </p>
+	 * <p> ** reconstruction data ** Reconstructed position. </p>
 	 * @see #__DNA__FIELD__bundle_pos
 	 */
 	
@@ -1162,7 +1159,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average track reprojection error </p>
+	 * <p> Average track reprojection error. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -1179,7 +1176,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'error'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> average track reprojection error </p>
+	 * <p> Average track reprojection error. </p>
 	 * @see #__DNA__FIELD__error
 	 */
 	
@@ -1196,7 +1193,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** UI editing ** </p>
+	 * <p> ** UI editing ** Flags (selection, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1213,7 +1210,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** UI editing ** </p>
+	 * <p> ** UI editing ** Flags (selection, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1256,9 +1253,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Get method for struct member 'search_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flags (selection, ...) </p>
 	 * @see #__DNA__FIELD__search_flag
 	 */
 	
@@ -1273,9 +1267,6 @@ public class MovieTrackingTrack extends CFacade {
 
 	/**
 	 * Set method for struct member 'search_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flags (selection, ...) </p>
 	 * @see #__DNA__FIELD__search_flag
 	 */
 	
@@ -1293,7 +1284,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve<h4>Blender Source Code:</h4>
-	 * <p> custom color for track </p>
+	 * <p> Custom color for track. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -1315,7 +1306,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the track in the Movie Clip Editor and the 3D viewport after a solve<h4>Blender Source Code:</h4>
-	 * <p> custom color for track </p>
+	 * <p> Custom color for track. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -1341,7 +1332,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> ** control how tracking happens number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set) </p>
+	 * <p> ** control how tracking happens Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__frames_limit
 	 */
 	
@@ -1359,7 +1350,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> ** control how tracking happens number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set) </p>
+	 * <p> ** control how tracking happens Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__frames_limit
 	 */
 	
@@ -1377,7 +1368,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
-	 * <p> margin from frame boundaries </p>
+	 * <p> Margin from frame boundaries. </p>
 	 * @see #__DNA__FIELD__margin
 	 */
 	
@@ -1395,7 +1386,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Distance from image boundary at which marker stops tracking<h4>Blender Source Code:</h4>
-	 * <p> margin from frame boundaries </p>
+	 * <p> Margin from frame boundaries. </p>
 	 * @see #__DNA__FIELD__margin
 	 */
 	
@@ -1413,7 +1404,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> re-adjust every N frames </p>
+	 * <p> Re-adjust every N frames. </p>
 	 * @see #__DNA__FIELD__pattern_match
 	 */
 	
@@ -1431,7 +1422,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> re-adjust every N frames </p>
+	 * <p> Re-adjust every N frames. </p>
 	 * @see #__DNA__FIELD__pattern_match
 	 */
 	
@@ -1449,7 +1440,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
-	 * <p> tracking parameters model of the motion for this track </p>
+	 * <p> tracking parameters Model of the motion for this track. </p>
 	 * @see #__DNA__FIELD__motion_model
 	 */
 	
@@ -1467,7 +1458,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Default motion model to use for tracking<h4>Blender Source Code:</h4>
-	 * <p> tracking parameters model of the motion for this track </p>
+	 * <p> tracking parameters Model of the motion for this track. </p>
 	 * @see #__DNA__FIELD__motion_model
 	 */
 	
@@ -1484,7 +1475,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the tracking algorithm (use brute, use esm, use pyramid, etc </p>
+	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__algorithm_flag
 	 */
 	
@@ -1501,7 +1492,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags for the tracking algorithm (use brute, use esm, use pyramid, etc </p>
+	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__algorithm_flag
 	 */
 	
@@ -1518,7 +1509,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'minimum_correlation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimal correlation which is still treated as successful tracking </p>
+	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * @see #__DNA__FIELD__minimum_correlation
 	 */
 	
@@ -1535,7 +1526,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'minimum_correlation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> minimal correlation which is still treated as successful tracking </p>
+	 * <p> Minimal correlation which is still treated as successful tracking. </p>
 	 * @see #__DNA__FIELD__minimum_correlation
 	 */
 	
@@ -1552,7 +1543,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1572,7 +1563,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	

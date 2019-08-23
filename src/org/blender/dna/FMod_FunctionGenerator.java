@@ -27,13 +27,13 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 508;
+	public static final int __DNA__SDNA_INDEX = 515;
 
 	/**
 	 * Field descriptor (offset) for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coefficients for general equation (as above) </p>
+	 * <p> Coefficients for general equation (as above). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,7 +116,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags eFMod_Generator_Functions </p>
+	 * <p> flags {@link eFMod_Generator_Functions} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,7 +139,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eFMod_Generator_flags </p>
+	 * <p> #eFMod_Generator_flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -170,7 +170,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Get method for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coefficients for general equation (as above) </p>
+	 * <p> Coefficients for general equation (as above). </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -187,7 +187,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Set method for struct member 'amplitude'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> coefficients for general equation (as above) </p>
+	 * <p> Coefficients for general equation (as above). </p>
 	 * @see #__DNA__FIELD__amplitude
 	 */
 	
@@ -288,7 +288,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags eFMod_Generator_Functions </p>
+	 * <p> flags {@link eFMod_Generator_Functions} . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -305,7 +305,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags eFMod_Generator_Functions </p>
+	 * <p> flags {@link eFMod_Generator_Functions} . </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -322,7 +322,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eFMod_Generator_flags </p>
+	 * <p> #eFMod_Generator_flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -339,7 +339,7 @@ public class FMod_FunctionGenerator extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eFMod_Generator_flags </p>
+	 * <p> #eFMod_Generator_flags. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

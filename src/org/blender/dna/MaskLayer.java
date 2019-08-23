@@ -27,7 +27,7 @@ public class MaskLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 571;
+	public static final int __DNA__SDNA_INDEX = 578;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of layer<h4>Blender Source Code:</h4>
-	 * <p> name of the mask layer (64 = MAD_ID_NAME - 2) </p>
+	 * <p> Name of the mask layer (64 = MAD_ID_NAME - 2). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of splines which defines this layer<h4>Blender Source Code:</h4>
-	 * <p> list of splines which defines this mask layer </p>
+	 * <p> List of splines which defines this mask layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -141,7 +141,7 @@ public class MaskLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_spline'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active spline </p>
+	 * <p> Active spline. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -164,7 +164,7 @@ public class MaskLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'act_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active point </p>
+	 * <p> Active point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,30 +274,30 @@ public class MaskLayer extends CFacade {
 	public static final long[] __DNA__FIELD__falloff = new long[]{102, 134};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MaskLayer masklayer = ...;
-	 * CPointer&lt;Object&gt; p = masklayer.__dna__addressof(MaskLayer.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = masklayer.__dna__addressof(MaskLayer.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{103, 135};
+	public static final long[] __DNA__FIELD___pad = new long[]{103, 135};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for animation </p>
+	 * <p> For animation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -320,7 +320,7 @@ public class MaskLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'restrictflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matching '{@link Object} ' flag of the same name - eventually use in the outliner </p>
+	 * <p> Matching '{@link Object} ' flag of the same name - eventually use in the outliner . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -416,7 +416,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of layer<h4>Blender Source Code:</h4>
-	 * <p> name of the mask layer (64 = MAD_ID_NAME - 2) </p>
+	 * <p> Name of the mask layer (64 = MAD_ID_NAME - 2). </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -438,7 +438,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unique name of layer<h4>Blender Source Code:</h4>
-	 * <p> name of the mask layer (64 = MAD_ID_NAME - 2) </p>
+	 * <p> Name of the mask layer (64 = MAD_ID_NAME - 2). </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -464,7 +464,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of splines which defines this layer<h4>Blender Source Code:</h4>
-	 * <p> list of splines which defines this mask layer </p>
+	 * <p> List of splines which defines this mask layer. </p>
 	 * @see #__DNA__FIELD__splines
 	 */
 	
@@ -482,7 +482,7 @@ public class MaskLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of splines which defines this layer<h4>Blender Source Code:</h4>
-	 * <p> list of splines which defines this mask layer </p>
+	 * <p> List of splines which defines this mask layer. </p>
 	 * @see #__DNA__FIELD__splines
 	 */
 	
@@ -543,7 +543,7 @@ public class MaskLayer extends CFacade {
 	 * Get method for struct member 'act_spline'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active spline </p>
+	 * <p> Active spline. </p>
 	 * @see #__DNA__FIELD__act_spline
 	 */
 	
@@ -563,7 +563,7 @@ public class MaskLayer extends CFacade {
 	 * Set method for struct member 'act_spline'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active spline </p>
+	 * <p> Active spline. </p>
 	 * @see #__DNA__FIELD__act_spline
 	 */
 	
@@ -581,7 +581,7 @@ public class MaskLayer extends CFacade {
 	 * Get method for struct member 'act_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active point </p>
+	 * <p> Active point. </p>
 	 * @see #__DNA__FIELD__act_point
 	 */
 	
@@ -601,7 +601,7 @@ public class MaskLayer extends CFacade {
 	 * Set method for struct member 'act_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active point </p>
+	 * <p> Active point. </p>
 	 * @see #__DNA__FIELD__act_point
 	 */
 	
@@ -748,11 +748,11 @@ public class MaskLayer extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -766,11 +766,11 @@ public class MaskLayer extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -778,12 +778,12 @@ public class MaskLayer extends CFacade {
 		} else {
 			__dna__offset = 103;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -791,7 +791,7 @@ public class MaskLayer extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for animation </p>
+	 * <p> For animation. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -808,7 +808,7 @@ public class MaskLayer extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for animation </p>
+	 * <p> For animation. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -825,7 +825,7 @@ public class MaskLayer extends CFacade {
 	 * Get method for struct member 'restrictflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matching '{@link Object} ' flag of the same name - eventually use in the outliner </p>
+	 * <p> Matching '{@link Object} ' flag of the same name - eventually use in the outliner . </p>
 	 * @see #__DNA__FIELD__restrictflag
 	 */
 	
@@ -842,7 +842,7 @@ public class MaskLayer extends CFacade {
 	 * Set method for struct member 'restrictflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matching '{@link Object} ' flag of the same name - eventually use in the outliner </p>
+	 * <p> Matching '{@link Object} ' flag of the same name - eventually use in the outliner . </p>
 	 * @see #__DNA__FIELD__restrictflag
 	 */
 	

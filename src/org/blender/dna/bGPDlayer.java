@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Layer' </p>
  */
 
-@CMetaData(size32=368, size64=392)
+@CMetaData(size32=456, size64=480)
 public class bGPDlayer extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDlayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 496;
+	public static final int __DNA__SDNA_INDEX = 471;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class bGPDlayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of annotations to display for frames ({@link bGPDframe}  list) </p>
+	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class bGPDlayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active frame (should be the frame that is currently being displayed) </p>
+	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +120,7 @@ public class bGPDlayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for layer </p>
+	 * <p> Settings for layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,125 +140,33 @@ public class bGPDlayer extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{20, 40};
 
 	/**
-	 * Field descriptor (offset) for struct member 'thickness'.
+	 * Field descriptor (offset) for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current thickness to apply to strokes </p>
+	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__thickness);
-	 * CPointer&lt;Short&gt; p_thickness = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__onion_flag);
+	 * CPointer&lt;Short&gt; p_onion_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'thickness'</li>
+	 * <li>Field: 'onion_flag'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness = new long[]{22, 42};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gstep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gstep);
-	 * CPointer&lt;Short&gt; p_gstep = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gstep'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gstep = new long[]{24, 44};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gstep_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gstep_next);
-	 * CPointer&lt;Short&gt; p_gstep_next = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gstep_next'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gstep_next = new long[]{26, 46};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gcolor_prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts before the active frame </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_prev);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_prev = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gcolor_prev'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gcolor_prev = new long[]{28, 48};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gcolor_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts after the active frame </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_next);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_next = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gcolor_next'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gcolor_next = new long[]{40, 60};
+	public static final long[] __DNA__FIELD__onion_flag = new long[]{22, 42};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color for strokes in layers (replaced by palettecolor). Only used for ruler (which uses GPencil internally) </p>
+	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -275,13 +183,13 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color = new long[]{52, 72};
+	public static final long[] __DNA__FIELD__color = new long[]{24, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Fill color for strokes in layers. Not used and replaced by palettecolor fill </p>
+	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -298,13 +206,13 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fill = new long[]{68, 88};
+	public static final long[] __DNA__FIELD__fill = new long[]{40, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'info'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional reference info about this layer (i.e. "director's comments, 12/3") this is used for the name of the layer too and kept unique. </p>
+	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -321,13 +229,59 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 128/128</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__info = new long[]{84, 104};
+	public static final long[] __DNA__FIELD__info = new long[]{56, 76};
+
+	/**
+	 * Field descriptor (offset) for struct member 'thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness to apply to strokes (Annotations). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__thickness);
+	 * CPointer&lt;Short&gt; p_thickness = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'thickness'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__thickness = new long[]{184, 204};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to filter groups of layers in modifiers. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__pass_index);
+	 * CPointer&lt;Short&gt; p_pass_index = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pass_index'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pass_index = new long[]{186, 206};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent object </p>
+	 * <p> Parent object. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -344,13 +298,13 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parent = new long[]{212, 232};
+	public static final long[] __DNA__FIELD__parent = new long[]{188, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix (only used if parented) </p>
+	 * <p> Inverse matrix (only used if parented). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,13 +321,13 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__inverse = new long[]{216, 240};
+	public static final long[] __DNA__FIELD__inverse = new long[]{192, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> String describing subobject info, MAX_ID_NAME-2 </p>
+	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,7 +344,7 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parsubstr = new long[]{280, 304};
+	public static final long[] __DNA__FIELD__parsubstr = new long[]{256, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'partype'.
@@ -410,33 +364,36 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__partype = new long[]{344, 368};
+	public static final long[] __DNA__FIELD__partype = new long[]{320, 344};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'line_change'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness adjustment. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPDlayer bgpdlayer = ...;
-	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__line_change);
+	 * CPointer&lt;Short&gt; p_line_change = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'line_change'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{346, 370};
+	public static final long[] __DNA__FIELD__line_change = new long[]{322, 346};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color used to tint layer, alpha value is used as factor </p>
+	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -453,13 +410,13 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tintcolor = new long[]{348, 372};
+	public static final long[] __DNA__FIELD__tintcolor = new long[]{324, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Opacity of the layer </p>
+	 * <p> Opacity of the layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -476,7 +433,205 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opacity = new long[]{364, 388};
+	public static final long[] __DNA__FIELD__opacity = new long[]{340, 364};
+
+	/**
+	 * Field descriptor (offset) for struct member 'viewlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the layer used to filter render output. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__viewlayername);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_viewlayername = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'viewlayername'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__viewlayername = new long[]{344, 368};
+
+	/**
+	 * Field descriptor (offset) for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__blend_mode);
+	 * CPointer&lt;Integer&gt; p_blend_mode = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'blend_mode'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__blend_mode = new long[]{408, 432};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{412, 436};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gstep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gstep);
+	 * CPointer&lt;Short&gt; p_gstep = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gstep'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gstep = new long[]{416, 440};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gstep_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gstep_next);
+	 * CPointer&lt;Short&gt; p_gstep_next = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gstep_next'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gstep_next = new long[]{418, 442};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gcolor_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts before the active frame. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_prev);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_prev = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gcolor_prev'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gcolor_prev = new long[]{420, 444};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gcolor_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts after the active frame. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__gcolor_next);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gcolor_next = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gcolor_next'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gcolor_next = new long[]{432, 456};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{444, 468};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__runtime);
+	 * CPointer&lt;bGPDlayer_Runtime&gt; p_runtime = p.cast(new Class[]{bGPDlayer_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'bGPDlayer_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{448, 472};
 
 	public bGPDlayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -554,7 +709,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of annotations to display for frames ({@link bGPDframe}  list) </p>
+	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -571,7 +726,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of annotations to display for frames ({@link bGPDframe}  list) </p>
+	 * <p> List of annotations to display for frames ({@link bGPDframe}  list). </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -596,7 +751,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active frame (should be the frame that is currently being displayed) </p>
+	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * @see #__DNA__FIELD__actframe
 	 */
 	
@@ -616,7 +771,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'actframe'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active frame (should be the frame that is currently being displayed) </p>
+	 * <p> Active frame (should be the frame that is currently being displayed). </p>
 	 * @see #__DNA__FIELD__actframe
 	 */
 	
@@ -634,7 +789,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for layer </p>
+	 * <p> Settings for layer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -651,7 +806,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings for layer </p>
+	 * <p> Settings for layer. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -665,14 +820,14 @@ public class bGPDlayer extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'thickness'.
+	 * Get method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current thickness to apply to strokes </p>
-	 * @see #__DNA__FIELD__thickness
+	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
+	 * @see #__DNA__FIELD__onion_flag
 	 */
 	
-	public short getThickness() throws IOException
+	public short getOnion_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 42);
@@ -682,179 +837,19 @@ public class bGPDlayer extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'thickness'.
+	 * Set method for struct member 'onion_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> current thickness to apply to strokes </p>
-	 * @see #__DNA__FIELD__thickness
+	 * <p> Per-layer onion-skinning flags (eGPDlayer_OnionFlag). </p>
+	 * @see #__DNA__FIELD__onion_flag
 	 */
 	
-	public void setThickness(short thickness) throws IOException
+	public void setOnion_flag(short onion_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 42, thickness);
+			__io__block.writeShort(__io__address + 42, onion_flag);
 		} else {
-			__io__block.writeShort(__io__address + 22, thickness);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gstep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself) </p>
-	 * @see #__DNA__FIELD__gstep
-	 */
-	
-	public short getGstep() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 44);
-		} else {
-			return __io__block.readShort(__io__address + 24);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gstep'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself) </p>
-	 * @see #__DNA__FIELD__gstep
-	 */
-	
-	public void setGstep(short gstep) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 44, gstep);
-		} else {
-			__io__block.writeShort(__io__address + 24, gstep);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gstep_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself) </p>
-	 * @see #__DNA__FIELD__gstep_next
-	 */
-	
-	public short getGstep_next() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 46);
-		} else {
-			return __io__block.readShort(__io__address + 26);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gstep_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself) </p>
-	 * @see #__DNA__FIELD__gstep_next
-	 */
-	
-	public void setGstep_next(short gstep_next) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 46, gstep_next);
-		} else {
-			__io__block.writeShort(__io__address + 26, gstep_next);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gcolor_prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts before the active frame </p>
-	 * @see #__DNA__FIELD__gcolor_prev
-	 */
-	
-	public CArrayFacade<Float> getGcolor_prev() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gcolor_prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts before the active frame </p>
-	 * @see #__DNA__FIELD__gcolor_prev
-	 */
-	
-	public void setGcolor_prev(CArrayFacade<Float> gcolor_prev) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
-		} else {
-			__dna__offset = 28;
-		}
-		if (__io__equals(gcolor_prev, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, gcolor_prev)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_prev);
-		} else {
-			__io__generic__copy( getGcolor_prev(), gcolor_prev);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gcolor_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts after the active frame </p>
-	 * @see #__DNA__FIELD__gcolor_next
-	 */
-	
-	public CArrayFacade<Float> getGcolor_next() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gcolor_next'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> optional color for ghosts after the active frame </p>
-	 * @see #__DNA__FIELD__gcolor_next
-	 */
-	
-	public void setGcolor_next(CArrayFacade<Float> gcolor_next) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 60;
-		} else {
-			__dna__offset = 40;
-		}
-		if (__io__equals(gcolor_next, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, gcolor_next)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_next);
-		} else {
-			__io__generic__copy( getGcolor_next(), gcolor_next);
+			__io__block.writeShort(__io__address + 22, onion_flag);
 		}
 	}
 
@@ -862,7 +857,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color for strokes in layers (replaced by palettecolor). Only used for ruler (which uses GPencil internally) </p>
+	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -873,9 +868,9 @@ public class bGPDlayer extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -883,7 +878,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color for strokes in layers (replaced by palettecolor). Only used for ruler (which uses GPencil internally) </p>
+	 * <p> Color for strokes in layers. Used for annotations, and for ruler (which uses GPencil internally). </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -891,9 +886,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 44;
 		} else {
-			__dna__offset = 52;
+			__dna__offset = 24;
 		}
 		if (__io__equals(color, __io__address + __dna__offset)) {
 			return;
@@ -908,7 +903,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Fill color for strokes in layers. Not used and replaced by palettecolor fill </p>
+	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * @see #__DNA__FIELD__fill
 	 */
 	
@@ -919,9 +914,9 @@ public class bGPDlayer extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -929,7 +924,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'fill'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Fill color for strokes in layers. Not used and replaced by palettecolor fill </p>
+	 * <p> Fill color for strokes in layers. Not used anymore (was only for). </p>
 	 * @see #__DNA__FIELD__fill
 	 */
 	
@@ -937,9 +932,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 88;
+			__dna__offset = 60;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 40;
 		}
 		if (__io__equals(fill, __io__address + __dna__offset)) {
 			return;
@@ -954,7 +949,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional reference info about this layer (i.e. "director's comments, 12/3") this is used for the name of the layer too and kept unique. </p>
+	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * @see #__DNA__FIELD__info
 	 */
 	
@@ -965,9 +960,9 @@ public class bGPDlayer extends CFacade {
 			128
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -975,7 +970,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'info'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> optional reference info about this layer (i.e. "director's comments, 12/3") this is used for the name of the layer too and kept unique. </p>
+	 * <p> Name/reference info for this layer (i.e. "director's comments, 12/.3") needs to be kept unique, as it's used as the layer identifier </p>
 	 * @see #__DNA__FIELD__info
 	 */
 	
@@ -983,9 +978,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 76;
 		} else {
-			__dna__offset = 84;
+			__dna__offset = 56;
 		}
 		if (__io__equals(info, __io__address + __dna__offset)) {
 			return;
@@ -997,10 +992,78 @@ public class bGPDlayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness to apply to strokes (Annotations). </p>
+	 * @see #__DNA__FIELD__thickness
+	 */
+	
+	public short getThickness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 204);
+		} else {
+			return __io__block.readShort(__io__address + 184);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'thickness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness to apply to strokes (Annotations). </p>
+	 * @see #__DNA__FIELD__thickness
+	 */
+	
+	public void setThickness(short thickness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 204, thickness);
+		} else {
+			__io__block.writeShort(__io__address + 184, thickness);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to filter groups of layers in modifiers. </p>
+	 * @see #__DNA__FIELD__pass_index
+	 */
+	
+	public short getPass_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 206);
+		} else {
+			return __io__block.readShort(__io__address + 186);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pass_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to filter groups of layers in modifiers. </p>
+	 * @see #__DNA__FIELD__pass_index
+	 */
+	
+	public void setPass_index(short pass_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 206, pass_index);
+		} else {
+			__io__block.writeShort(__io__address + 186, pass_index);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent object </p>
+	 * <p> Parent object. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -1008,9 +1071,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1020,7 +1083,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parent object </p>
+	 * <p> Parent object. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -1028,9 +1091,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __address = ((parent == null) ? 0 : parent.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 212, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 
@@ -1038,7 +1101,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix (only used if parented) </p>
+	 * <p> Inverse matrix (only used if parented). </p>
 	 * @see #__DNA__FIELD__inverse
 	 */
 	
@@ -1050,9 +1113,9 @@ public class bGPDlayer extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
 			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1060,7 +1123,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'inverse'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> inverse matrix (only used if parented) </p>
+	 * <p> Inverse matrix (only used if parented). </p>
 	 * @see #__DNA__FIELD__inverse
 	 */
 	
@@ -1068,9 +1131,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
-		} else {
 			__dna__offset = 216;
+		} else {
+			__dna__offset = 192;
 		}
 		if (__io__equals(inverse, __io__address + __dna__offset)) {
 			return;
@@ -1085,7 +1148,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> String describing subobject info, MAX_ID_NAME-2 </p>
+	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__parsubstr
 	 */
 	
@@ -1096,9 +1159,9 @@ public class bGPDlayer extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
 			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1106,7 +1169,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'parsubstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> String describing subobject info, MAX_ID_NAME-2 </p>
+	 * <p> String describing subobject info, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__parsubstr
 	 */
 	
@@ -1114,9 +1177,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
-		} else {
 			__dna__offset = 280;
+		} else {
+			__dna__offset = 256;
 		}
 		if (__io__equals(parsubstr, __io__address + __dna__offset)) {
 			return;
@@ -1135,9 +1198,9 @@ public class bGPDlayer extends CFacade {
 	public short getPartype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 368);
-		} else {
 			return __io__block.readShort(__io__address + 344);
+		} else {
+			return __io__block.readShort(__io__address + 320);
 		}
 	}
 
@@ -1149,37 +1212,43 @@ public class bGPDlayer extends CFacade {
 	public void setPartype(short partype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 368, partype);
-		} else {
 			__io__block.writeShort(__io__address + 344, partype);
+		} else {
+			__io__block.writeShort(__io__address + 320, partype);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'line_change'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness adjustment. </p>
+	 * @see #__DNA__FIELD__line_change
 	 */
 	
-	public short getPad() throws IOException
+	public short getLine_change() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 370);
-		} else {
 			return __io__block.readShort(__io__address + 346);
+		} else {
+			return __io__block.readShort(__io__address + 322);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'line_change'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Thickness adjustment. </p>
+	 * @see #__DNA__FIELD__line_change
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setLine_change(short line_change) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 370, pad);
+			__io__block.writeShort(__io__address + 346, line_change);
 		} else {
-			__io__block.writeShort(__io__address + 346, pad);
+			__io__block.writeShort(__io__address + 322, line_change);
 		}
 	}
 
@@ -1187,7 +1256,7 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color used to tint layer, alpha value is used as factor </p>
+	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * @see #__DNA__FIELD__tintcolor
 	 */
 	
@@ -1198,9 +1267,9 @@ public class bGPDlayer extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
 			return new CArrayFacade<Float>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1208,7 +1277,7 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'tintcolor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Color used to tint layer, alpha value is used as factor </p>
+	 * <p> Color used to tint layer, alpha value is used as factor. </p>
 	 * @see #__DNA__FIELD__tintcolor
 	 */
 	
@@ -1216,9 +1285,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 372;
-		} else {
 			__dna__offset = 348;
+		} else {
+			__dna__offset = 324;
 		}
 		if (__io__equals(tintcolor, __io__address + __dna__offset)) {
 			return;
@@ -1233,16 +1302,16 @@ public class bGPDlayer extends CFacade {
 	 * Get method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Opacity of the layer </p>
+	 * <p> Opacity of the layer. </p>
 	 * @see #__DNA__FIELD__opacity
 	 */
 	
 	public float getOpacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
-		} else {
 			return __io__block.readFloat(__io__address + 364);
+		} else {
+			return __io__block.readFloat(__io__address + 340);
 		}
 	}
 
@@ -1250,16 +1319,372 @@ public class bGPDlayer extends CFacade {
 	 * Set method for struct member 'opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Opacity of the layer </p>
+	 * <p> Opacity of the layer. </p>
 	 * @see #__DNA__FIELD__opacity
 	 */
 	
 	public void setOpacity(float opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, opacity);
-		} else {
 			__io__block.writeFloat(__io__address + 364, opacity);
+		} else {
+			__io__block.writeFloat(__io__address + 340, opacity);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'viewlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the layer used to filter render output. </p>
+	 * @see #__DNA__FIELD__viewlayername
+	 */
+	
+	public CArrayFacade<Byte> getViewlayername() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'viewlayername'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Name of the layer used to filter render output. </p>
+	 * @see #__DNA__FIELD__viewlayername
+	 */
+	
+	public void setViewlayername(CArrayFacade<Byte> viewlayername) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 368;
+		} else {
+			__dna__offset = 344;
+		}
+		if (__io__equals(viewlayername, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, viewlayername)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, viewlayername);
+		} else {
+			__io__generic__copy( getViewlayername(), viewlayername);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * @see #__DNA__FIELD__blend_mode
+	 */
+	
+	public int getBlend_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 432);
+		} else {
+			return __io__block.readInt(__io__address + 408);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * @see #__DNA__FIELD__blend_mode
+	 */
+	
+	public void setBlend_mode(int blend_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 432, blend_mode);
+		} else {
+			__io__block.writeInt(__io__address + 408, blend_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 436;
+		} else {
+			__dna__offset = 412;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gstep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
+	 * @see #__DNA__FIELD__gstep
+	 */
+	
+	public short getGstep() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 440);
+		} else {
+			return __io__block.readShort(__io__address + 416);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gstep'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> annotation onion skin Ghosts Before: max number of ghost frames to show between active frame and the one before it (0 = only the ghost itself). </p>
+	 * @see #__DNA__FIELD__gstep
+	 */
+	
+	public void setGstep(short gstep) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 440, gstep);
+		} else {
+			__io__block.writeShort(__io__address + 416, gstep);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gstep_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
+	 * @see #__DNA__FIELD__gstep_next
+	 */
+	
+	public short getGstep_next() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 442);
+		} else {
+			return __io__block.readShort(__io__address + 418);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gstep_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Ghosts After: max number of ghost frames to show after active frame and the following it (0 = only the ghost itself). </p>
+	 * @see #__DNA__FIELD__gstep_next
+	 */
+	
+	public void setGstep_next(short gstep_next) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 442, gstep_next);
+		} else {
+			__io__block.writeShort(__io__address + 418, gstep_next);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gcolor_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts before the active frame. </p>
+	 * @see #__DNA__FIELD__gcolor_prev
+	 */
+	
+	public CArrayFacade<Float> getGcolor_prev() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gcolor_prev'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts before the active frame. </p>
+	 * @see #__DNA__FIELD__gcolor_prev
+	 */
+	
+	public void setGcolor_prev(CArrayFacade<Float> gcolor_prev) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 444;
+		} else {
+			__dna__offset = 420;
+		}
+		if (__io__equals(gcolor_prev, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gcolor_prev)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_prev);
+		} else {
+			__io__generic__copy( getGcolor_prev(), gcolor_prev);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gcolor_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts after the active frame. </p>
+	 * @see #__DNA__FIELD__gcolor_next
+	 */
+	
+	public CArrayFacade<Float> getGcolor_next() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 456, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 432, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gcolor_next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Color for ghosts after the active frame. </p>
+	 * @see #__DNA__FIELD__gcolor_next
+	 */
+	
+	public void setGcolor_next(CArrayFacade<Float> gcolor_next) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 456;
+		} else {
+			__dna__offset = 432;
+		}
+		if (__io__equals(gcolor_next, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gcolor_next)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gcolor_next);
+		} else {
+			__io__generic__copy( getGcolor_next(), gcolor_next);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 444, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 468;
+		} else {
+			__dna__offset = 444;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public bGPDlayer_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new bGPDlayer_Runtime(__io__address + 472, __io__block, __io__blockTable);
+		} else {
+			return new bGPDlayer_Runtime(__io__address + 448, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(bGPDlayer_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 472;
+		} else {
+			__dna__offset = 448;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

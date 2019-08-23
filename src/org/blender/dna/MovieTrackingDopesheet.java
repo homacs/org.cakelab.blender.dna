@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -26,13 +27,13 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 560;
+	public static final int __DNA__SDNA_INDEX = 567;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flag if dopesheet information is still relevant </p>
+	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +57,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
-	 * <p> method to be used to sort tracks </p>
+	 * <p> Method to be used to sort tracks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +80,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet building flag such as inverted order of sort </p>
+	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -165,24 +166,24 @@ public class MovieTrackingDopesheet extends CFacade {
 	public static final long[] __DNA__FIELD__tot_channel = new long[]{24, 40};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MovieTrackingDopesheet movietrackingdopesheet = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingdopesheet.__dna__addressof(MovieTrackingDopesheet.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = movietrackingdopesheet.__dna__addressof(MovieTrackingDopesheet.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{28, 44};
+	public static final long[] __DNA__FIELD___pad = new long[]{28, 44};
 
 	public MovieTrackingDopesheet(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -196,7 +197,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * Get method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flag if dopesheet information is still relevant </p>
+	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * @see #__DNA__FIELD__ok
 	 */
 	
@@ -213,7 +214,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * Set method for struct member 'ok'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flag if dopesheet information is still relevant </p>
+	 * <p> Flag if dopesheet information is still relevant. </p>
 	 * @see #__DNA__FIELD__ok
 	 */
 	
@@ -231,7 +232,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
-	 * <p> method to be used to sort tracks </p>
+	 * <p> Method to be used to sort tracks. </p>
 	 * @see #__DNA__FIELD__sort_method
 	 */
 	
@@ -249,7 +250,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method to be used to sort channels in dopesheet view<h4>Blender Source Code:</h4>
-	 * <p> method to be used to sort tracks </p>
+	 * <p> Method to be used to sort tracks. </p>
 	 * @see #__DNA__FIELD__sort_method
 	 */
 	
@@ -266,7 +267,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet building flag such as inverted order of sort </p>
+	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -283,7 +284,7 @@ public class MovieTrackingDopesheet extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dopesheet building flag such as inverted order of sort </p>
+	 * <p> Dopesheet building flag such as inverted order of sort. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -409,30 +410,42 @@ public class MovieTrackingDopesheet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, pad);
+			__dna__offset = 44;
 		} else {
-			__io__block.writeInt(__io__address + 28, pad);
+			__dna__offset = 28;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

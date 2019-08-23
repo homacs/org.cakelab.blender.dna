@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=216)
+@CMetaData(size32=196, size64=224)
 public class CorrectiveSmoothModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 137;
+	public static final int __DNA__SDNA_INDEX = 143;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bind_coords_num = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__bind_coords_num = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lambda'.
@@ -90,7 +90,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lambda = new long[]{104, 124};
+	public static final long[] __DNA__FIELD__lambda = new long[]{108, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -110,7 +110,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__repeat = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -130,7 +130,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{110, 130};
+	public static final long[] __DNA__FIELD__flag = new long[]{114, 138};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_type'.
@@ -150,7 +150,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_type = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__smooth_type = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_source'.
@@ -170,33 +170,33 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rest_source = new long[]{113, 133};
+	public static final long[] __DNA__FIELD__rest_source = new long[]{117, 141};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CorrectiveSmoothModifierData correctivesmoothmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{114, 134};
+	public static final long[] __DNA__FIELD___pad = new long[]{118, 142};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -213,7 +213,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'delta_cache_num'.
@@ -233,27 +233,27 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__delta_cache_num = new long[]{184, 208};
+	public static final long[] __DNA__FIELD__delta_cache_num = new long[]{188, 216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CorrectiveSmoothModifierData correctivesmoothmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD__pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: '_pad2'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{188, 212};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{192, 220};
 
 	public CorrectiveSmoothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -310,9 +310,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public int getBind_coords_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -327,9 +327,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setBind_coords_num(int bind_coords_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, bind_coords_num);
+			__io__block.writeInt(__io__address + 128, bind_coords_num);
 		} else {
-			__io__block.writeInt(__io__address + 100, bind_coords_num);
+			__io__block.writeInt(__io__address + 104, bind_coords_num);
 		}
 	}
 
@@ -341,9 +341,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public float getLambda() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -355,9 +355,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setLambda(float lambda) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, lambda);
+			__io__block.writeFloat(__io__address + 132, lambda);
 		} else {
-			__io__block.writeFloat(__io__address + 104, lambda);
+			__io__block.writeFloat(__io__address + 108, lambda);
 		}
 	}
 
@@ -369,9 +369,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public short getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 128);
+			return __io__block.readShort(__io__address + 136);
 		} else {
-			return __io__block.readShort(__io__address + 108);
+			return __io__block.readShort(__io__address + 112);
 		}
 	}
 
@@ -383,9 +383,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setRepeat(short repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 128, repeat);
+			__io__block.writeShort(__io__address + 136, repeat);
 		} else {
-			__io__block.writeShort(__io__address + 108, repeat);
+			__io__block.writeShort(__io__address + 112, repeat);
 		}
 	}
 
@@ -397,9 +397,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 130);
+			return __io__block.readShort(__io__address + 138);
 		} else {
-			return __io__block.readShort(__io__address + 110);
+			return __io__block.readShort(__io__address + 114);
 		}
 	}
 
@@ -411,9 +411,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 130, flag);
+			__io__block.writeShort(__io__address + 138, flag);
 		} else {
-			__io__block.writeShort(__io__address + 110, flag);
+			__io__block.writeShort(__io__address + 114, flag);
 		}
 	}
 
@@ -425,9 +425,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public byte getSmooth_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 132);
+			return __io__block.readByte(__io__address + 140);
 		} else {
-			return __io__block.readByte(__io__address + 112);
+			return __io__block.readByte(__io__address + 116);
 		}
 	}
 
@@ -439,9 +439,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setSmooth_type(byte smooth_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 132, smooth_type);
+			__io__block.writeByte(__io__address + 140, smooth_type);
 		} else {
-			__io__block.writeByte(__io__address + 112, smooth_type);
+			__io__block.writeByte(__io__address + 116, smooth_type);
 		}
 	}
 
@@ -453,9 +453,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public byte getRest_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 133);
+			return __io__block.readByte(__io__address + 141);
 		} else {
-			return __io__block.readByte(__io__address + 113);
+			return __io__block.readByte(__io__address + 117);
 		}
 	}
 
@@ -467,49 +467,49 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setRest_source(byte rest_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 133, rest_source);
+			__io__block.writeByte(__io__address + 141, rest_source);
 		} else {
-			__io__block.writeByte(__io__address + 113, rest_source);
+			__io__block.writeByte(__io__address + 117, rest_source);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 142, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 114, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 134;
+			__dna__offset = 142;
 		} else {
-			__dna__offset = 114;
+			__dna__offset = 118;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -517,7 +517,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -528,9 +528,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -538,7 +538,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -546,9 +546,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 120;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -567,9 +567,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public int getDelta_cache_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -581,49 +581,49 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setDelta_cache_num(int delta_cache_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, delta_cache_num);
+			__io__block.writeInt(__io__address + 216, delta_cache_num);
 		} else {
-			__io__block.writeInt(__io__address + 184, delta_cache_num);
+			__io__block.writeInt(__io__address + 188, delta_cache_num);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CArrayFacade<Byte> getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(CArrayFacade<Byte> pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 192;
 		}
-		if (__io__equals(pad2, __io__address + __dna__offset)) {
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__generic__copy( getPad2(), pad2);
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

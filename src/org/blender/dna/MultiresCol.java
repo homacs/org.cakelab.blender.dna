@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Multires}  structs kept for compatibility with old files </p>
+ * <p>{@link Multires}  structs kept for compatibility with old files. </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -27,7 +27,7 @@ public class MultiresCol extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 78;
+	public static final int __DNA__SDNA_INDEX = 84;
 
 	/**
 	 * Field descriptor (offset) for struct member 'a'.

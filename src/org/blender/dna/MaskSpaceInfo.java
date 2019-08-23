@@ -27,7 +27,7 @@ public class MaskSpaceInfo extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 218;
+	public static final int __DNA__SDNA_INDEX = 225;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask'.
@@ -116,24 +116,24 @@ public class MaskSpaceInfo extends CFacade {
 	public static final long[] __DNA__FIELD__overlay_mode = new long[]{6, 10};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad3'.
+	 * Field descriptor (offset) for struct member '_pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MaskSpaceInfo maskspaceinfo = ...;
-	 * CPointer&lt;Object&gt; p = maskspaceinfo.__dna__addressof(MaskSpaceInfo.__DNA__FIELD__pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = maskspaceinfo.__dna__addressof(MaskSpaceInfo.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad3'</li>
+	 * <li>Field: '_pad3'</li>
 	 * <li>Signature: 'char[5]'</li>
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad3 = new long[]{7, 11};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{7, 11};
 
 	public MaskSpaceInfo(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -272,11 +272,11 @@ public class MaskSpaceInfo extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad3'.
-	 * @see #__DNA__FIELD__pad3
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
 	 */
 	
-	public CArrayFacade<Byte> getPad3() throws IOException
+	public CArrayFacade<Byte> get_pad3() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -290,11 +290,11 @@ public class MaskSpaceInfo extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad3'.
-	 * @see #__DNA__FIELD__pad3
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
 	 */
 	
-	public void setPad3(CArrayFacade<Byte> pad3) throws IOException
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -302,12 +302,12 @@ public class MaskSpaceInfo extends CFacade {
 		} else {
 			__dna__offset = 7;
 		}
-		if (__io__equals(pad3, __io__address + __dna__offset)) {
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad3);
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
 		} else {
-			__io__generic__copy( getPad3(), pad3);
+			__io__generic__copy( get_pad3(), _pad3);
 		}
 	}
 

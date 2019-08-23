@@ -29,13 +29,13 @@ public class bDopeSheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 353;
+	public static final int __DNA__SDNA_INDEX = 322;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
+	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +58,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache for channels (only initialized when pinned) </p>
+	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
+	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -89,12 +89,12 @@ public class bDopeSheet extends CFacade {
 	 * <pre>
 	 * bDopeSheet bdopesheet = ...;
 	 * CPointer&lt;Object&gt; p = bdopesheet.__dna__addressof(bDopeSheet.__DNA__FIELD__filter_grp);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_filter_grp = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_filter_grp = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'filter_grp'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -104,7 +104,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
+	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -127,7 +127,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to use for filtering data </p>
+	 * <p> Flags to use for filtering data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -147,10 +147,30 @@ public class bDopeSheet extends CFacade {
 	public static final long[] __DNA__FIELD__filterflag = new long[]{80, 96};
 
 	/**
+	 * Field descriptor (offset) for struct member 'filterflag2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bDopeSheet bdopesheet = ...;
+	 * CPointer&lt;Object&gt; p = bdopesheet.__dna__addressof(bDopeSheet.__DNA__FIELD__filterflag2);
+	 * CPointer&lt;Integer&gt; p_filterflag2 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'filterflag2'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__filterflag2 = new long[]{84, 100};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> standard flags </p>
+	 * <p> Standard flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -167,13 +187,13 @@ public class bDopeSheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{84, 100};
+	public static final long[] __DNA__FIELD__flag = new long[]{88, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'renameIndex'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
+	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,27 +210,7 @@ public class bDopeSheet extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__renameIndex = new long[]{88, 104};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bDopeSheet bdopesheet = ...;
-	 * CPointer&lt;Object&gt; p = bdopesheet.__dna__addressof(bDopeSheet.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{92, 108};
+	public static final long[] __DNA__FIELD__renameIndex = new long[]{92, 108};
 
 	public bDopeSheet(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -224,7 +224,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
+	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -244,7 +244,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'source'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil) </p>
+	 * <p> Currently ID_SCE (for Dopesheet), and ID_SC (for Grease Pencil). </p>
 	 * @see #__DNA__FIELD__source
 	 */
 	
@@ -262,7 +262,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache for channels (only initialized when pinned) </p>
+	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	
@@ -279,7 +279,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache for channels (only initialized when pinned) </p>
+	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	
@@ -304,11 +304,11 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
+	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
 	
-	public CPointer<Group> getFilter_grp() throws IOException
+	public CPointer<Collection> getFilter_grp() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -316,19 +316,19 @@ public class bDopeSheet extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 12);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'filter_grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> object group for ADS_FILTER_ONLYOBGROUP filtering option </p>
+	 * <p>{@link Object}  group for option to only include objects that belong to this {@link Collection} . </p>
 	 * @see #__DNA__FIELD__filter_grp
 	 */
 	
-	public void setFilter_grp(CPointer<Group> filter_grp) throws IOException
+	public void setFilter_grp(CPointer<Collection> filter_grp) throws IOException
 	{
 		long __address = ((filter_grp == null) ? 0 : filter_grp.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -342,7 +342,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
+	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
 	
@@ -363,7 +363,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'searchstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> string to search for in displayed names of F-Curves for ADS_FILTER_BY_FCU_NAME filtering option </p>
+	 * <p> String to search for in displayed names of F-Curves, or NlaTracks/GP Layers/etc. </p>
 	 * @see #__DNA__FIELD__searchstr
 	 */
 	
@@ -388,7 +388,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to use for filtering data </p>
+	 * <p> Flags to use for filtering data. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -405,7 +405,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to use for filtering data </p>
+	 * <p> Flags to use for filtering data. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -419,14 +419,11 @@ public class bDopeSheet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> standard flags </p>
-	 * @see #__DNA__FIELD__flag
+	 * Get method for struct member 'filterflag2'.
+	 * @see #__DNA__FIELD__filterflag2
 	 */
 	
-	public int getFlag() throws IOException
+	public int getFilterflag2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 100);
@@ -436,31 +433,28 @@ public class bDopeSheet extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> standard flags </p>
-	 * @see #__DNA__FIELD__flag
+	 * Set method for struct member 'filterflag2'.
+	 * @see #__DNA__FIELD__filterflag2
 	 */
 	
-	public void setFlag(int flag) throws IOException
+	public void setFilterflag2(int filterflag2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 100, flag);
+			__io__block.writeInt(__io__address + 100, filterflag2);
 		} else {
-			__io__block.writeInt(__io__address + 84, flag);
+			__io__block.writeInt(__io__address + 84, filterflag2);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'renameIndex'.
+	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
-	 * @see #__DNA__FIELD__renameIndex
+	 * <p> Standard flags. </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public int getRenameIndex() throws IOException
+	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 104);
@@ -470,28 +464,31 @@ public class bDopeSheet extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'renameIndex'.
+	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 of channel to rename - only gets set by renaming operator </p>
-	 * @see #__DNA__FIELD__renameIndex
+	 * <p> Standard flags. </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setRenameIndex(int renameIndex) throws IOException
+	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 104, renameIndex);
+			__io__block.writeInt(__io__address + 104, flag);
 		} else {
-			__io__block.writeInt(__io__address + 88, renameIndex);
+			__io__block.writeInt(__io__address + 88, flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'renameIndex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
+	 * @see #__DNA__FIELD__renameIndex
 	 */
 	
-	public int getPad() throws IOException
+	public int getRenameIndex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 108);
@@ -501,16 +498,19 @@ public class bDopeSheet extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'renameIndex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  of channel to rename - only gets set by renaming operator. </p>
+	 * @see #__DNA__FIELD__renameIndex
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void setRenameIndex(int renameIndex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, pad);
+			__io__block.writeInt(__io__address + 108, renameIndex);
 		} else {
-			__io__block.writeInt(__io__address + 92, pad);
+			__io__block.writeInt(__io__address + 92, renameIndex);
 		}
 	}
 

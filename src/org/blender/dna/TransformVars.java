@@ -26,7 +26,7 @@ public class TransformVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 277;
+	public static final int __DNA__SDNA_INDEX = 285;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ScalexIni'.
@@ -172,7 +172,7 @@ public class TransformVars extends CFacade {
 	 * Field descriptor (offset) for struct member 'uniform_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> preserve aspect/ratio when scaling </p>
+	 * <p> Preserve aspect/ratio when scaling. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -399,7 +399,7 @@ public class TransformVars extends CFacade {
 	 * Get method for struct member 'uniform_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> preserve aspect/ratio when scaling </p>
+	 * <p> Preserve aspect/ratio when scaling. </p>
 	 * @see #__DNA__FIELD__uniform_scale
 	 */
 	
@@ -416,7 +416,7 @@ public class TransformVars extends CFacade {
 	 * Set method for struct member 'uniform_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> preserve aspect/ratio when scaling </p>
+	 * <p> Preserve aspect/ratio when scaling. </p>
 	 * @see #__DNA__FIELD__uniform_scale
 	 */
 	

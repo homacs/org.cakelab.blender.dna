@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Floor Constraint </p>
  */
 
-@CMetaData(size32=100, size64=104)
+@CMetaData(size32=84, size64=88)
 public class bMinMaxConstraint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bMinMaxConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 368;
+	public static final int __DNA__SDNA_INDEX = 339;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -111,113 +111,10 @@ public class bMinMaxConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sticky'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bMinMaxConstraint bminmaxconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD__sticky);
-	 * CPointer&lt;Short&gt; p_sticky = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'sticky'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__sticky = new long[]{16, 20};
-
-	/**
-	 * Field descriptor (offset) for struct member 'stuck'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bMinMaxConstraint bminmaxconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD__stuck);
-	 * CPointer&lt;Short&gt; p_stuck = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'stuck'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__stuck = new long[]{18, 22};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bMinMaxConstraint bminmaxconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{20, 24};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for backward compatibility </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bMinMaxConstraint bminmaxconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD__pad2);
-	 * CPointer&lt;Short&gt; p_pad2 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{22, 26};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cache'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bMinMaxConstraint bminmaxconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD__cache);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_cache = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cache'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cache = new long[]{24, 28};
-
-	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,7 +131,27 @@ public class bMinMaxConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{36, 40};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{16, 20};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bMinMaxConstraint bminmaxconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bminmaxconstraint.__dna__addressof(bMinMaxConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;Integer&gt; p__pad = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{80, 84};
 
 	public bMinMaxConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -361,168 +278,10 @@ public class bMinMaxConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sticky'.
-	 * @see #__DNA__FIELD__sticky
-	 */
-	
-	public short getSticky() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 20);
-		} else {
-			return __io__block.readShort(__io__address + 16);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'sticky'.
-	 * @see #__DNA__FIELD__sticky
-	 */
-	
-	public void setSticky(short sticky) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 20, sticky);
-		} else {
-			__io__block.writeShort(__io__address + 16, sticky);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'stuck'.
-	 * @see #__DNA__FIELD__stuck
-	 */
-	
-	public short getStuck() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 22);
-		} else {
-			return __io__block.readShort(__io__address + 18);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'stuck'.
-	 * @see #__DNA__FIELD__stuck
-	 */
-	
-	public void setStuck(short stuck) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 22, stuck);
-		} else {
-			__io__block.writeShort(__io__address + 18, stuck);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public short getPad1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
-		} else {
-			return __io__block.readShort(__io__address + 20);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
-	 */
-	
-	public void setPad1(short pad1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, pad1);
-		} else {
-			__io__block.writeShort(__io__address + 20, pad1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for backward compatibility </p>
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public short getPad2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
-		} else {
-			return __io__block.readShort(__io__address + 22);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> for backward compatibility </p>
-	 * @see #__DNA__FIELD__pad2
-	 */
-	
-	public void setPad2(short pad2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, pad2);
-		} else {
-			__io__block.writeShort(__io__address + 22, pad2);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cache'.
-	 * @see #__DNA__FIELD__cache
-	 */
-	
-	public CArrayFacade<Float> getCache() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cache'.
-	 * @see #__DNA__FIELD__cache
-	 */
-	
-	public void setCache(CArrayFacade<Float> cache) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 28;
-		} else {
-			__dna__offset = 24;
-		}
-		if (__io__equals(cache, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, cache)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, cache);
-		} else {
-			__io__generic__copy( getCache(), cache);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -533,9 +292,9 @@ public class bMinMaxConstraint extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -543,7 +302,7 @@ public class bMinMaxConstraint extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -551,9 +310,9 @@ public class bMinMaxConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 20;
 		} else {
-			__dna__offset = 36;
+			__dna__offset = 16;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;
@@ -561,6 +320,34 @@ public class bMinMaxConstraint extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, subtarget);
 		} else {
 			__io__generic__copy( getSubtarget(), subtarget);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public int get_pad() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 84);
+		} else {
+			return __io__block.readInt(__io__address + 80);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(int _pad) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 84, _pad);
+		} else {
+			__io__block.writeInt(__io__address + 80, _pad);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class PointDensity extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 36;
+	public static final int __DNA__SDNA_INDEX = 43;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -91,9 +91,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,24 +130,24 @@ public class PointDensity extends CFacade {
 	public static final long[] __DNA__FIELD__source = new long[]{12, 12};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad0'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PointDensity pointdensity = ...;
-	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD__pad0);
-	 * CPointer&lt;Short&gt; p_pad0 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad0'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad0 = new long[]{14, 14};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{14, 14};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_source'.
@@ -218,8 +215,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -243,7 +239,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -311,8 +307,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex attribute to use for color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -336,7 +331,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the acceleration tree containing points </p>
+	 * <p> The acceleration tree containing points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -359,7 +354,7 @@ public class PointDensity extends CFacade {
 	 * Field descriptor (offset) for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dynamically allocated extra for extra information, like particle age </p>
+	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -440,9 +435,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -462,24 +454,24 @@ public class PointDensity extends CFacade {
 	public static final long[] __DNA__FIELD__noise_basis = new long[]{116, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PointDensity pointdensity = ...;
-	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD__pad1);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad1 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{118, 130};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{118, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_fac'.
@@ -503,9 +495,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -526,9 +515,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -548,30 +534,30 @@ public class PointDensity extends CFacade {
 	public static final long[] __DNA__FIELD__falloff_speed_scale = new long[]{132, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * PointDensity pointdensity = ...;
-	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD__pad2);
-	 * CPointer&lt;Float&gt; p_pad2 = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = pointdensity.__dna__addressof(PointDensity.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{136, 148};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{136, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for time -> color </p>
+	 * <p> For time -> color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -593,9 +579,8 @@ public class PointDensity extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> falloff density curve </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Falloff density curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -708,9 +693,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -725,9 +707,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'radius'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Radius from the shaded sample to look for points within
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -769,30 +748,42 @@ public class PointDensity extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad0'.
-	 * @see #__DNA__FIELD__pad0
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getPad0() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 14);
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 14);
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad0'.
-	 * @see #__DNA__FIELD__pad0
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad0(short pad0) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 14, pad0);
+			__dna__offset = 14;
 		} else {
-			__io__block.writeShort(__io__address + 14, pad0);
+			__dna__offset = 14;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -889,8 +880,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -910,8 +900,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'object'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Object to take point data from<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> for '{@link Object} ' or '{@link Particle}  system' type - source object </p>
 	 * @see #__DNA__FIELD__object
 	 */
@@ -930,7 +919,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	
@@ -947,7 +936,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index+1 in ob.particlesystem, non-ID pointer not allowed </p>
+	 * <p><code></code>  in ob.particlesystem, non-ID pointer not allowed </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	
@@ -1031,8 +1020,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex attribute to use for color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
@@ -1053,8 +1041,7 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'vertex_attribute_name'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Vertex attribute to use for color<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> vertex attribute layer for color source, MAX_CUSTOMDATA_LAYER_NAME </p>
 	 * @see #__DNA__FIELD__vertex_attribute_name
 	 */
@@ -1080,7 +1067,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the acceleration tree containing points </p>
+	 * <p> The acceleration tree containing points. </p>
 	 * @see #__DNA__FIELD__point_tree
 	 */
 	
@@ -1100,7 +1087,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'point_tree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the acceleration tree containing points </p>
+	 * <p> The acceleration tree containing points. </p>
 	 * @see #__DNA__FIELD__point_tree
 	 */
 	
@@ -1118,7 +1105,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dynamically allocated extra for extra information, like particle age </p>
+	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * @see #__DNA__FIELD__point_data
 	 */
 	
@@ -1138,7 +1125,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'point_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> dynamically allocated extra for extra information, like particle age </p>
+	 * <p> Dynamically allocated extra for extra information, like particle age. </p>
 	 * @see #__DNA__FIELD__point_data
 	 */
 	
@@ -1238,9 +1225,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * @see #__DNA__FIELD__noise_basis
 	 */
 	
@@ -1255,9 +1239,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'noise_basis'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Noise formula used for turbulence
 	 * @see #__DNA__FIELD__noise_basis
 	 */
 	
@@ -1271,29 +1252,29 @@ public class PointDensity extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Short> getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(CArrayFacade<Short> pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -1301,12 +1282,12 @@ public class PointDensity extends CFacade {
 		} else {
 			__dna__offset = 118;
 		}
-		if (__io__equals(pad1, __io__address + __dna__offset)) {
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad1);
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
-			__io__generic__copy( getPad1(), pad1);
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -1340,9 +1321,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__speed_scale
 	 */
 	
@@ -1357,9 +1335,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__speed_scale
 	 */
 	
@@ -1374,9 +1349,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Get method for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__falloff_speed_scale
 	 */
 	
@@ -1391,9 +1363,6 @@ public class PointDensity extends CFacade {
 
 	/**
 	 * Set method for struct member 'falloff_speed_scale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier to bring particle speed within an acceptable range
 	 * @see #__DNA__FIELD__falloff_speed_scale
 	 */
 	
@@ -1407,30 +1376,42 @@ public class PointDensity extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public float getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(float pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, pad2);
+			__dna__offset = 148;
 		} else {
-			__io__block.writeFloat(__io__address + 136, pad2);
+			__dna__offset = 136;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -1438,7 +1419,7 @@ public class PointDensity extends CFacade {
 	 * Get method for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for time -> color </p>
+	 * <p> For time -> color </p>
 	 * @see #__DNA__FIELD__coba
 	 */
 	
@@ -1458,7 +1439,7 @@ public class PointDensity extends CFacade {
 	 * Set method for struct member 'coba'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> for time -> color </p>
+	 * <p> For time -> color </p>
 	 * @see #__DNA__FIELD__coba
 	 */
 	
@@ -1475,9 +1456,8 @@ public class PointDensity extends CFacade {
 	/**
 	 * Get method for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> falloff density curve </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Falloff density curve. </p>
 	 * @see #__DNA__FIELD__falloff_curve
 	 */
 	
@@ -1496,9 +1476,8 @@ public class PointDensity extends CFacade {
 	/**
 	 * Set method for struct member 'falloff_curve'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> falloff density curve </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Falloff density curve. </p>
 	 * @see #__DNA__FIELD__falloff_curve
 	 */
 	

@@ -29,7 +29,7 @@ public class CustomDataLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 473;
+	public static final int __DNA__SDNA_INDEX = 444;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -89,7 +89,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	CD_NUMTYPES         = 42
 	 * 				</pre>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> type of data in layer </p>
+	 * <p> Type of data in layer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,7 +112,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in editmode, offset of layer in block </p>
+	 * <p> In editmode, offset of layer in block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,7 +148,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	// Indicates external data is read into memory 
 	 * 	CD_FLAG_IN_MEMORY = (1 << 4),
 	 * 				</pre><h4>Blender Source Code:</h4>
-	 * <p> general purpose flag </p>
+	 * <p> General purpose flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,7 +171,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the active layer of this type </p>
+	 * <p> Number of the active layer of this type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -194,7 +194,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'active_rnd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -217,7 +217,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'active_clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -240,7 +240,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'active_mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -263,7 +263,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shape keyblock unique id reference </p>
+	 * <p> Shape keyblock unique id reference. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -286,7 +286,7 @@ public class CustomDataLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> layer name, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Layer name, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,7 +310,7 @@ public class CustomDataLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Pointer on the actual data referenced by this data layer.<h4>Blender Source Code:</h4>
-	 * <p> layer data </p>
+	 * <p> Layer data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -395,7 +395,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	CD_NUMTYPES         = 42
 	 * 				</pre>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> type of data in layer </p>
+	 * <p> Type of data in layer. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -466,7 +466,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	CD_NUMTYPES         = 42
 	 * 				</pre>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> type of data in layer </p>
+	 * <p> Type of data in layer. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -483,7 +483,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in editmode, offset of layer in block </p>
+	 * <p> In editmode, offset of layer in block. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -500,7 +500,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> in editmode, offset of layer in block </p>
+	 * <p> In editmode, offset of layer in block. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -530,7 +530,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	// Indicates external data is read into memory 
 	 * 	CD_FLAG_IN_MEMORY = (1 << 4),
 	 * 				</pre><h4>Blender Source Code:</h4>
-	 * <p> general purpose flag </p>
+	 * <p> General purpose flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -560,7 +560,7 @@ public class CustomDataLayer extends CFacade {
 	 * 	// Indicates external data is read into memory 
 	 * 	CD_FLAG_IN_MEMORY = (1 << 4),
 	 * 				</pre><h4>Blender Source Code:</h4>
-	 * <p> general purpose flag </p>
+	 * <p> General purpose flag. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -577,7 +577,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the active layer of this type </p>
+	 * <p> Number of the active layer of this type. </p>
 	 * @see #__DNA__FIELD__active
 	 */
 	
@@ -594,7 +594,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'active'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the active layer of this type </p>
+	 * <p> Number of the active layer of this type. </p>
 	 * @see #__DNA__FIELD__active
 	 */
 	
@@ -611,7 +611,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'active_rnd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_rnd
 	 */
 	
@@ -628,7 +628,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'active_rnd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_rnd
 	 */
 	
@@ -645,7 +645,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'active_clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_clone
 	 */
 	
@@ -662,7 +662,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'active_clone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_clone
 	 */
 	
@@ -679,7 +679,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'active_mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_mask
 	 */
 	
@@ -696,7 +696,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'active_mask'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of the layer to render </p>
+	 * <p> Number of the layer to render. </p>
 	 * @see #__DNA__FIELD__active_mask
 	 */
 	
@@ -713,7 +713,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shape keyblock unique id reference </p>
+	 * <p> Shape keyblock unique id reference. </p>
 	 * @see #__DNA__FIELD__uid
 	 */
 	
@@ -730,7 +730,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'uid'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> shape keyblock unique id reference </p>
+	 * <p> Shape keyblock unique id reference. </p>
 	 * @see #__DNA__FIELD__uid
 	 */
 	
@@ -747,7 +747,7 @@ public class CustomDataLayer extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> layer name, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Layer name, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -768,7 +768,7 @@ public class CustomDataLayer extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> layer name, MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> Layer name, MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -794,7 +794,7 @@ public class CustomDataLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Pointer on the actual data referenced by this data layer.<h4>Blender Source Code:</h4>
-	 * <p> layer data </p>
+	 * <p> Layer data. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -815,7 +815,7 @@ public class CustomDataLayer extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Pointer on the actual data referenced by this data layer.<h4>Blender Source Code:</h4>
-	 * <p> layer data </p>
+	 * <p> Layer data. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	

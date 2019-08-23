@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Multiple-target constraints -------------------  This struct defines a constraint target. It is used during constraint solving regardless of how many targets the constraint has. </p>
+ * <p> Multiple-target constraints ---------------<mdash/><mdash/>  This struct defines a constraint target. It is used during constraint solving regardless of how many targets the constraint has. </p>
  */
 
-@CMetaData(size32=148, size64=160)
+@CMetaData(size32=156, size64=168)
 public class bConstraintTarget extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bConstraintTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 358;
+	public static final int __DNA__SDNA_INDEX = 328;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object to use as target </p>
+	 * <p>{@link Object}  to use as target. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
+	 * <p> Subtarget - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +120,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'matrix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix used during constraint solving - should be cleared before each use </p>
+	 * <p> Matrix used during constraint solving - should be cleared before each use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -143,7 +143,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
+	 * <p> Space that target should be evaluated in (overrides bConstraint->tarspace). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,7 +166,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime settings (for editor, etc.) </p>
+	 * <p> Runtime settings (for editor, etc.). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,7 +189,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
+	 * <p> Type of target (eConstraintObType). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -212,7 +212,7 @@ public class bConstraintTarget extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotOrder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rotation order for target (as defined in BLI_math.h) </p>
+	 * <p> Rotation order for target (as defined in BLI_math.h). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -230,6 +230,49 @@ public class bConstraintTarget extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__rotOrder = new long[]{146, 158};
+
+	/**
+	 * Field descriptor (offset) for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for armature deform. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bConstraintTarget bconstrainttarget = ...;
+	 * CPointer&lt;Object&gt; p = bconstrainttarget.__dna__addressof(bConstraintTarget.__DNA__FIELD__weight);
+	 * CPointer&lt;Float&gt; p_weight = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'weight'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__weight = new long[]{148, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bConstraintTarget bconstrainttarget = ...;
+	 * CPointer&lt;Object&gt; p = bconstrainttarget.__dna__addressof(bConstraintTarget.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{152, 164};
 
 	public bConstraintTarget(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -307,7 +350,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object to use as target </p>
+	 * <p>{@link Object}  to use as target. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -327,7 +370,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> object to use as target </p>
+	 * <p>{@link Object}  to use as target. </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -345,7 +388,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
+	 * <p> Subtarget - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -366,7 +409,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> subtarget - pchan or vgroup name, MAX_ID_NAME-2 </p>
+	 * <p> Subtarget - pchan or vgroup name, MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -391,7 +434,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'matrix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix used during constraint solving - should be cleared before each use </p>
+	 * <p> Matrix used during constraint solving - should be cleared before each use. </p>
 	 * @see #__DNA__FIELD__matrix
 	 */
 	
@@ -413,7 +456,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'matrix'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> matrix used during constraint solving - should be cleared before each use </p>
+	 * <p> Matrix used during constraint solving - should be cleared before each use. </p>
 	 * @see #__DNA__FIELD__matrix
 	 */
 	
@@ -438,7 +481,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
+	 * <p> Space that target should be evaluated in (overrides bConstraint->tarspace). </p>
 	 * @see #__DNA__FIELD__space
 	 */
 	
@@ -455,7 +498,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'space'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> space that target should be evaluated in (overrides bConstraint->tarspace) </p>
+	 * <p> Space that target should be evaluated in (overrides bConstraint->tarspace). </p>
 	 * @see #__DNA__FIELD__space
 	 */
 	
@@ -472,7 +515,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime settings (for editor, etc.) </p>
+	 * <p> Runtime settings (for editor, etc.). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -489,7 +532,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime settings (for editor, etc.) </p>
+	 * <p> Runtime settings (for editor, etc.). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -506,7 +549,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
+	 * <p> Type of target (eConstraintObType). </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -523,7 +566,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of target (B_CONSTRAINT_OB_TYPE) </p>
+	 * <p> Type of target (eConstraintObType). </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -540,7 +583,7 @@ public class bConstraintTarget extends CFacade {
 	 * Get method for struct member 'rotOrder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rotation order for target (as defined in BLI_math.h) </p>
+	 * <p> Rotation order for target (as defined in BLI_math.h). </p>
 	 * @see #__DNA__FIELD__rotOrder
 	 */
 	
@@ -557,7 +600,7 @@ public class bConstraintTarget extends CFacade {
 	 * Set method for struct member 'rotOrder'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> rotation order for target (as defined in BLI_math.h) </p>
+	 * <p> Rotation order for target (as defined in BLI_math.h). </p>
 	 * @see #__DNA__FIELD__rotOrder
 	 */
 	
@@ -567,6 +610,80 @@ public class bConstraintTarget extends CFacade {
 			__io__block.writeShort(__io__address + 158, rotOrder);
 		} else {
 			__io__block.writeShort(__io__address + 146, rotOrder);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for armature deform. </p>
+	 * @see #__DNA__FIELD__weight
+	 */
+	
+	public float getWeight() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 160);
+		} else {
+			return __io__block.readFloat(__io__address + 148);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'weight'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Weight for armature deform. </p>
+	 * @see #__DNA__FIELD__weight
+	 */
+	
+	public void setWeight(float weight) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 160, weight);
+		} else {
+			__io__block.writeFloat(__io__address + 148, weight);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 164;
+		} else {
+			__dna__offset = 152;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

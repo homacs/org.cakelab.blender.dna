@@ -29,10 +29,13 @@ public class Nurb extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 52;
+	public static final int __DNA__SDNA_INDEX = 56;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,9 +56,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> multiple nurbs per curve object are allowed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class Nurb extends CFacade {
 	 * Field descriptor (offset) for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index into material list </p>
+	 * <p> Index into material list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,6 +159,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pntsu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of points in the U or V directions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -179,9 +182,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pntsv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points in the U or V directions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -201,27 +201,30 @@ public class Nurb extends CFacade {
 	public static final long[] __DNA__FIELD__pntsv = new long[]{20, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Nurb nurb = ...;
-	 * CPointer&lt;Object&gt; p = nurb.__dna__addressof(Nurb.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = nurb.__dna__addressof(Nurb.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[2]'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{24, 32};
+	public static final long[] __DNA__FIELD___pad = new long[]{24, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -242,9 +245,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'resolv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> tessellation resolution in the U or V directions </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -427,7 +427,7 @@ public class Nurb extends CFacade {
 	 * Field descriptor (offset) for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE </p>
+	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -499,6 +499,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -516,6 +519,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'next'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Multiple nurbs per curve object are allowed. </p>
 	 * @see #__DNA__FIELD__next
 	 */
 	
@@ -531,9 +537,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> multiple nurbs per curve object are allowed </p>
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -551,9 +554,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'prev'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> multiple nurbs per curve object are allowed </p>
 	 * @see #__DNA__FIELD__prev
 	 */
 	
@@ -599,7 +599,7 @@ public class Nurb extends CFacade {
 	 * Get method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index into material list </p>
+	 * <p> Index into material list. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
 	
@@ -616,7 +616,7 @@ public class Nurb extends CFacade {
 	 * Set method for struct member 'mat_nr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index into material list </p>
+	 * <p> Index into material list. </p>
 	 * @see #__DNA__FIELD__mat_nr
 	 */
 	
@@ -687,6 +687,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'pntsu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of points in the U or V directions. </p>
 	 * @see #__DNA__FIELD__pntsu
 	 */
 	
@@ -701,6 +704,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'pntsu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of points in the U or V directions. </p>
 	 * @see #__DNA__FIELD__pntsu
 	 */
 	
@@ -715,9 +721,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'pntsv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points in the U or V directions </p>
 	 * @see #__DNA__FIELD__pntsv
 	 */
 	
@@ -732,9 +735,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'pntsv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> number of points in the U or V directions </p>
 	 * @see #__DNA__FIELD__pntsv
 	 */
 	
@@ -748,29 +748,29 @@ public class Nurb extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -778,17 +778,20 @@ public class Nurb extends CFacade {
 		} else {
 			__dna__offset = 24;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'resolu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
 	
@@ -803,6 +806,9 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'resolu'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Tessellation resolution in the U or V directions. </p>
 	 * @see #__DNA__FIELD__resolu
 	 */
 	
@@ -817,9 +823,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Get method for struct member 'resolv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> tessellation resolution in the U or V directions </p>
 	 * @see #__DNA__FIELD__resolv
 	 */
 	
@@ -834,9 +837,6 @@ public class Nurb extends CFacade {
 
 	/**
 	 * Set method for struct member 'resolv'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> tessellation resolution in the U or V directions </p>
 	 * @see #__DNA__FIELD__resolv
 	 */
 	
@@ -1093,7 +1093,7 @@ public class Nurb extends CFacade {
 	 * Get method for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE </p>
+	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * @see #__DNA__FIELD__tilt_interp
 	 */
 	
@@ -1110,7 +1110,7 @@ public class Nurb extends CFacade {
 	 * Set method for struct member 'tilt_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE </p>
+	 * <p> KEY_LINEAR, KEY_CARDINAL, KEY_BSPLINE. </p>
 	 * @see #__DNA__FIELD__tilt_interp
 	 */
 	

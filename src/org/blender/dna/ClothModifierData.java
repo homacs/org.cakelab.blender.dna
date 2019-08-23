@@ -27,7 +27,7 @@ public class ClothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 110;
+	public static final int __DNA__SDNA_INDEX = 116;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,33 +44,10 @@ public class ClothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
-
-	/**
-	 * Field descriptor (offset) for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the context, time etc is here </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ClothModifierData clothmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = clothmodifierdata.__dna__addressof(ClothModifierData.__DNA__FIELD__scene);
-	 * CPointer&lt;CPointer&lt;Scene&gt;&gt; p_scene = p.cast(new Class[]{CPointer.class, Scene.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'scene'</li>
-	 * <li>Signature: 'Scene*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__scene = new long[]{96, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clothObject'.
@@ -99,7 +76,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'sim_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +99,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'coll_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -145,7 +122,7 @@ public class ClothModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -355,44 +332,6 @@ public class ClothModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the context, time etc is here </p>
-	 * @see #__DNA__FIELD__scene
-	 */
-	
-	public CPointer<Scene> getScene() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Scene.class};
-		return new CPointer<Scene>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Scene.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'scene'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> the context, time etc is here </p>
-	 * @see #__DNA__FIELD__scene
-	 */
-	
-	public void setScene(CPointer<Scene> scene) throws IOException
-	{
-		long __address = ((scene == null) ? 0 : scene.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
-		} else {
-			__io__block.writeLong(__io__address + 96, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'clothObject'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -434,7 +373,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'sim_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * @see #__DNA__FIELD__sim_parms
 	 */
 	
@@ -454,7 +393,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'sim_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * @see #__DNA__FIELD__sim_parms
 	 */
 	
@@ -472,7 +411,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'coll_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * @see #__DNA__FIELD__coll_parms
 	 */
 	
@@ -492,7 +431,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'coll_parms'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_cloth_types.h}  </p>
+	 * <p> Definition is in {@link DNA_cloth_types.h} . </p>
 	 * @see #__DNA__FIELD__coll_parms
 	 */
 	
@@ -510,7 +449,7 @@ public class ClothModifierData extends CFacade {
 	 * Get method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	
@@ -530,7 +469,7 @@ public class ClothModifierData extends CFacade {
 	 * Set method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> definition is in {@link DNA_object_force.h}  </p>
+	 * <p>{@link PointCache}  can be shared with other instances of {@link ClothModifierData} . Inspect (modifier.flag & eModifierFlag_SharedCaches) to find out. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
 	

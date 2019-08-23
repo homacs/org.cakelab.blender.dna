@@ -28,13 +28,13 @@ public class bTransformConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 377;
+	public static final int __DNA__SDNA_INDEX = 348;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target (i.e. 'driver' object/bone) </p>
+	 * <p> Target (i.e. 'driver' object/bone). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,7 +57,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -78,6 +78,9 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be loc(0), rot(1) or size(2). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,9 +101,6 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'to'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be loc(0), rot(1) or size(2) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -123,7 +123,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'map'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defines which target-axis deform is copied by each owner-axis </p>
+	 * <p> Defines which target-axis deform is copied by each owner-axis. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -146,7 +146,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'expo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolate motion? if 0, confine to ranges </p>
+	 * <p> Extrapolate motion? if 0, confine to ranges. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -169,7 +169,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -192,7 +192,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -215,7 +215,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'to_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -258,7 +258,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -281,7 +281,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_max_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -304,7 +304,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'to_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,7 +347,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -370,7 +370,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'from_max_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -393,7 +393,7 @@ public class bTransformConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'to_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -444,7 +444,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target (i.e. 'driver' object/bone) </p>
+	 * <p> Target (i.e. 'driver' object/bone). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -464,7 +464,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'tar'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> target (i.e. 'driver' object/bone) </p>
+	 * <p> Target (i.e. 'driver' object/bone). </p>
 	 * @see #__DNA__FIELD__tar
 	 */
 	
@@ -482,7 +482,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -503,7 +503,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME-2 </p>
+	 * <p> MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__subtarget
 	 */
 	
@@ -526,6 +526,9 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be loc(0), rot(1) or size(2). </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -540,6 +543,9 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Can be loc(0), rot(1) or size(2). </p>
 	 * @see #__DNA__FIELD__from
 	 */
 	
@@ -554,9 +560,6 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Get method for struct member 'to'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be loc(0), rot(1) or size(2) </p>
 	 * @see #__DNA__FIELD__to
 	 */
 	
@@ -571,9 +574,6 @@ public class bTransformConstraint extends CFacade {
 
 	/**
 	 * Set method for struct member 'to'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> can be loc(0), rot(1) or size(2) </p>
 	 * @see #__DNA__FIELD__to
 	 */
 	
@@ -590,7 +590,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'map'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defines which target-axis deform is copied by each owner-axis </p>
+	 * <p> Defines which target-axis deform is copied by each owner-axis. </p>
 	 * @see #__DNA__FIELD__map
 	 */
 	
@@ -611,7 +611,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'map'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defines which target-axis deform is copied by each owner-axis </p>
+	 * <p> Defines which target-axis deform is copied by each owner-axis. </p>
 	 * @see #__DNA__FIELD__map
 	 */
 	
@@ -636,7 +636,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'expo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolate motion? if 0, confine to ranges </p>
+	 * <p> Extrapolate motion? if 0, confine to ranges. </p>
 	 * @see #__DNA__FIELD__expo
 	 */
 	
@@ -653,7 +653,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'expo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extrapolate motion? if 0, confine to ranges </p>
+	 * <p> Extrapolate motion? if 0, confine to ranges. </p>
 	 * @see #__DNA__FIELD__expo
 	 */
 	
@@ -670,7 +670,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min
 	 */
 	
@@ -691,7 +691,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min
 	 */
 	
@@ -716,7 +716,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max
 	 */
 	
@@ -737,7 +737,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_max'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max
 	 */
 	
@@ -762,7 +762,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'to_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min
 	 */
 	
@@ -783,7 +783,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'to_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min
 	 */
 	
@@ -848,7 +848,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min_rot
 	 */
 	
@@ -869,7 +869,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min_rot
 	 */
 	
@@ -894,7 +894,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_max_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max_rot
 	 */
 	
@@ -915,7 +915,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_max_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max_rot
 	 */
 	
@@ -940,7 +940,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'to_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min_rot
 	 */
 	
@@ -961,7 +961,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'to_min_rot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min_rot
 	 */
 	
@@ -1026,7 +1026,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min_scale
 	 */
 	
@@ -1047,7 +1047,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> from_min/max defines range of target transform </p>
+	 * <p> From_min/max defines range of target transform. </p>
 	 * @see #__DNA__FIELD__from_min_scale
 	 */
 	
@@ -1072,7 +1072,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'from_max_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max_scale
 	 */
 	
@@ -1093,7 +1093,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'from_max_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to map on to to_min/max range. </p>
+	 * <p> To map on to to_min/max range. </p>
 	 * @see #__DNA__FIELD__from_max_scale
 	 */
 	
@@ -1118,7 +1118,7 @@ public class bTransformConstraint extends CFacade {
 	 * Get method for struct member 'to_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min_scale
 	 */
 	
@@ -1139,7 +1139,7 @@ public class bTransformConstraint extends CFacade {
 	 * Set method for struct member 'to_min_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> range of motion on owner caused by target </p>
+	 * <p> Range of motion on owner caused by target . </p>
 	 * @see #__DNA__FIELD__to_min_scale
 	 */
 	

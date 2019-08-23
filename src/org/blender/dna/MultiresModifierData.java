@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=116, size64=136)
 public class MultiresModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MultiresModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 120;
+	public static final int __DNA__SDNA_INDEX = 126;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class MultiresModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lvl = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__lvl = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculptlvl'.
@@ -87,7 +87,7 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculptlvl = new long[]{97, 113};
+	public static final long[] __DNA__FIELD__sculptlvl = new long[]{101, 121};
 
 	/**
 	 * Field descriptor (offset) for struct member 'renderlvl'.
@@ -107,7 +107,7 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__renderlvl = new long[]{98, 114};
+	public static final long[] __DNA__FIELD__renderlvl = new long[]{102, 122};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totlvl'.
@@ -127,7 +127,7 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totlvl = new long[]{99, 115};
+	public static final long[] __DNA__FIELD__totlvl = new long[]{103, 123};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simple'.
@@ -147,7 +147,7 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simple = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__simple = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -167,27 +167,87 @@ public class MultiresModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{101, 117};
+	public static final long[] __DNA__FIELD__flags = new long[]{105, 125};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MultiresModifierData multiresmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = multiresmodifierdata.__dna__addressof(MultiresModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = multiresmodifierdata.__dna__addressof(MultiresModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{102, 118};
+	public static final long[] __DNA__FIELD___pad = new long[]{106, 126};
+
+	/**
+	 * Field descriptor (offset) for struct member 'quality'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MultiresModifierData multiresmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = multiresmodifierdata.__dna__addressof(MultiresModifierData.__DNA__FIELD__quality);
+	 * CPointer&lt;Short&gt; p_quality = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'quality'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__quality = new long[]{108, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_smooth'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MultiresModifierData multiresmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = multiresmodifierdata.__dna__addressof(MultiresModifierData.__DNA__FIELD__uv_smooth);
+	 * CPointer&lt;Short&gt; p_uv_smooth = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_smooth'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_smooth = new long[]{110, 130};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MultiresModifierData multiresmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = multiresmodifierdata.__dna__addressof(MultiresModifierData.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{112, 132};
 
 	public MultiresModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -241,9 +301,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getLvl() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 112);
+			return __io__block.readByte(__io__address + 120);
 		} else {
-			return __io__block.readByte(__io__address + 96);
+			return __io__block.readByte(__io__address + 100);
 		}
 	}
 
@@ -255,9 +315,9 @@ public class MultiresModifierData extends CFacade {
 	public void setLvl(byte lvl) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 112, lvl);
+			__io__block.writeByte(__io__address + 120, lvl);
 		} else {
-			__io__block.writeByte(__io__address + 96, lvl);
+			__io__block.writeByte(__io__address + 100, lvl);
 		}
 	}
 
@@ -269,9 +329,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getSculptlvl() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 113);
+			return __io__block.readByte(__io__address + 121);
 		} else {
-			return __io__block.readByte(__io__address + 97);
+			return __io__block.readByte(__io__address + 101);
 		}
 	}
 
@@ -283,9 +343,9 @@ public class MultiresModifierData extends CFacade {
 	public void setSculptlvl(byte sculptlvl) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 113, sculptlvl);
+			__io__block.writeByte(__io__address + 121, sculptlvl);
 		} else {
-			__io__block.writeByte(__io__address + 97, sculptlvl);
+			__io__block.writeByte(__io__address + 101, sculptlvl);
 		}
 	}
 
@@ -297,9 +357,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getRenderlvl() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 114);
+			return __io__block.readByte(__io__address + 122);
 		} else {
-			return __io__block.readByte(__io__address + 98);
+			return __io__block.readByte(__io__address + 102);
 		}
 	}
 
@@ -311,9 +371,9 @@ public class MultiresModifierData extends CFacade {
 	public void setRenderlvl(byte renderlvl) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 114, renderlvl);
+			__io__block.writeByte(__io__address + 122, renderlvl);
 		} else {
-			__io__block.writeByte(__io__address + 98, renderlvl);
+			__io__block.writeByte(__io__address + 102, renderlvl);
 		}
 	}
 
@@ -325,9 +385,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getTotlvl() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 115);
+			return __io__block.readByte(__io__address + 123);
 		} else {
-			return __io__block.readByte(__io__address + 99);
+			return __io__block.readByte(__io__address + 103);
 		}
 	}
 
@@ -339,9 +399,9 @@ public class MultiresModifierData extends CFacade {
 	public void setTotlvl(byte totlvl) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 115, totlvl);
+			__io__block.writeByte(__io__address + 123, totlvl);
 		} else {
-			__io__block.writeByte(__io__address + 99, totlvl);
+			__io__block.writeByte(__io__address + 103, totlvl);
 		}
 	}
 
@@ -353,9 +413,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getSimple() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 116);
+			return __io__block.readByte(__io__address + 124);
 		} else {
-			return __io__block.readByte(__io__address + 100);
+			return __io__block.readByte(__io__address + 104);
 		}
 	}
 
@@ -367,9 +427,9 @@ public class MultiresModifierData extends CFacade {
 	public void setSimple(byte simple) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 116, simple);
+			__io__block.writeByte(__io__address + 124, simple);
 		} else {
-			__io__block.writeByte(__io__address + 100, simple);
+			__io__block.writeByte(__io__address + 104, simple);
 		}
 	}
 
@@ -381,9 +441,9 @@ public class MultiresModifierData extends CFacade {
 	public byte getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 117);
+			return __io__block.readByte(__io__address + 125);
 		} else {
-			return __io__block.readByte(__io__address + 101);
+			return __io__block.readByte(__io__address + 105);
 		}
 	}
 
@@ -395,49 +455,145 @@ public class MultiresModifierData extends CFacade {
 	public void setFlags(byte flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 117, flags);
+			__io__block.writeByte(__io__address + 125, flags);
 		} else {
-			__io__block.writeByte(__io__address + 101, flags);
+			__io__block.writeByte(__io__address + 105, flags);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 126, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 102, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 106, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 118;
+			__dna__offset = 126;
 		} else {
-			__dna__offset = 102;
+			__dna__offset = 106;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'quality'.
+	 * @see #__DNA__FIELD__quality
+	 */
+	
+	public short getQuality() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 128);
+		} else {
+			return __io__block.readShort(__io__address + 108);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'quality'.
+	 * @see #__DNA__FIELD__quality
+	 */
+	
+	public void setQuality(short quality) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 128, quality);
+		} else {
+			__io__block.writeShort(__io__address + 108, quality);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_smooth'.
+	 * @see #__DNA__FIELD__uv_smooth
+	 */
+	
+	public short getUv_smooth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 130);
+		} else {
+			return __io__block.readShort(__io__address + 110);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_smooth'.
+	 * @see #__DNA__FIELD__uv_smooth
+	 */
+	
+	public void setUv_smooth(short uv_smooth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 130, uv_smooth);
+		} else {
+			__io__block.writeShort(__io__address + 110, uv_smooth);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 132;
+		} else {
+			__dna__offset = 112;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

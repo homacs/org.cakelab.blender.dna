@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=224)
+@CMetaData(size32=200, size64=256)
 public class Key extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Key extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 17;
+	public static final int __DNA__SDNA_INDEX = 22;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Key extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class Key extends CFacade {
 	 * Field descriptor (offset) for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,7 +70,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'refkey'.
@@ -93,13 +93,13 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__refkey = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__refkey = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
+	 * <p> This is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,13 +116,13 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elemstr = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__elemstr = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elemsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
+	 * <p> Size of each element in {@link KeyBlock.data} , use for allocation and stride. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,27 +139,27 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elemsize = new long[]{140, 168};
+	public static final long[] __DNA__FIELD__elemsize = new long[]{160, 200};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Key key = ...;
-	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{144, 172};
+	public static final long[] __DNA__FIELD___pad = new long[]{164, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
@@ -182,15 +182,15 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__block = new long[]{148, 176};
+	public static final long[] __DNA__FIELD__block = new long[]{168, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -207,7 +207,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{156, 192};
+	public static final long[] __DNA__FIELD__ipo = new long[]{176, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
@@ -227,7 +227,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from = new long[]{160, 200};
+	public static final long[] __DNA__FIELD__from = new long[]{180, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
@@ -250,7 +250,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totkey = new long[]{164, 208};
+	public static final long[] __DNA__FIELD__totkey = new long[]{184, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -270,7 +270,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{168, 212};
+	public static final long[] __DNA__FIELD__flag = new long[]{188, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -293,33 +293,33 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{170, 214};
+	public static final long[] __DNA__FIELD__type = new long[]{190, 246};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Key key = ...;
-	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD__pad2);
-	 * CPointer&lt;Byte&gt; p_pad2 = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = key.__dna__addressof(Key.__DNA__FIELD___pad2);
+	 * CPointer&lt;Byte&gt; p__pad2 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: '_pad2'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{171, 215};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{191, 247};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -336,13 +336,13 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ctime = new long[]{172, 216};
+	public static final long[] __DNA__FIELD__ctime = new long[]{192, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -359,7 +359,7 @@ public class Key extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uidgen = new long[]{176, 220};
+	public static final long[] __DNA__FIELD__uidgen = new long[]{196, 252};
 
 	public Key(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -409,7 +409,7 @@ public class Key extends CFacade {
 	 * Get method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -417,9 +417,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -429,7 +429,7 @@ public class Key extends CFacade {
 	 * Set method for struct member 'adt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> animation data (must be immediately after id for utilities to use it) </p>
+	 * <p> Animation data (must be immediately after id for utilities to use it). </p>
 	 * @see #__DNA__FIELD__adt
 	 */
 	
@@ -437,9 +437,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -455,9 +455,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{KeyBlock.class};
 		return new CPointer<KeyBlock>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, KeyBlock.__DNA__SDNA_INDEX), __io__blockTable);
@@ -475,9 +475,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((refkey == null) ? 0 : refkey.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -485,7 +485,7 @@ public class Key extends CFacade {
 	 * Get method for struct member 'elemstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
+	 * <p> This is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks. </p>
 	 * @see #__DNA__FIELD__elemstr
 	 */
 	
@@ -496,9 +496,9 @@ public class Key extends CFacade {
 			32
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -506,7 +506,7 @@ public class Key extends CFacade {
 	 * Set method for struct member 'elemstr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> this is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks </p>
+	 * <p> This is not a regular string, although it is \0 terminated this is an array of (element_array_size, element_type) pairs (each one char) used for calculating shape key-blocks. </p>
 	 * @see #__DNA__FIELD__elemstr
 	 */
 	
@@ -514,9 +514,9 @@ public class Key extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 128;
 		}
 		if (__io__equals(elemstr, __io__address + __dna__offset)) {
 			return;
@@ -531,16 +531,16 @@ public class Key extends CFacade {
 	 * Get method for struct member 'elemsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
+	 * <p> Size of each element in {@link KeyBlock.data} , use for allocation and stride. </p>
 	 * @see #__DNA__FIELD__elemsize
 	 */
 	
 	public int getElemsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 200);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -548,44 +548,56 @@ public class Key extends CFacade {
 	 * Set method for struct member 'elemsize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> size of each element in {@link KeyBlock.data} , use for allocation and stride </p>
+	 * <p> Size of each element in {@link KeyBlock.data} , use for allocation and stride. </p>
 	 * @see #__DNA__FIELD__elemsize
 	 */
 	
 	public void setElemsize(int elemsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, elemsize);
+			__io__block.writeInt(__io__address + 200, elemsize);
 		} else {
-			__io__block.writeInt(__io__address + 140, elemsize);
+			__io__block.writeInt(__io__address + 160, elemsize);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 144);
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, pad);
+			__dna__offset = 204;
 		} else {
-			__io__block.writeInt(__io__address + 144, pad);
+			__dna__offset = 164;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -600,9 +612,9 @@ public class Key extends CFacade {
 	public ListBase getBlock() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 148, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
 		}
 	}
 
@@ -618,9 +630,9 @@ public class Key extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 168;
 		}
 		if (__io__equals(block, __io__address + __dna__offset)) {
 			return;
@@ -635,9 +647,9 @@ public class Key extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -645,9 +657,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -657,9 +669,9 @@ public class Key extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> old animation system, deprecated for 2.5 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -667,9 +679,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -682,9 +694,9 @@ public class Key extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -699,9 +711,9 @@ public class Key extends CFacade {
 	{
 		long __address = ((from == null) ? 0 : from.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -716,9 +728,9 @@ public class Key extends CFacade {
 	public int getTotkey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -733,9 +745,9 @@ public class Key extends CFacade {
 	public void setTotkey(int totkey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, totkey);
+			__io__block.writeInt(__io__address + 240, totkey);
 		} else {
-			__io__block.writeInt(__io__address + 164, totkey);
+			__io__block.writeInt(__io__address + 184, totkey);
 		}
 	}
 
@@ -747,9 +759,9 @@ public class Key extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 244);
 		} else {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -761,9 +773,9 @@ public class Key extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, flag);
+			__io__block.writeShort(__io__address + 244, flag);
 		} else {
-			__io__block.writeShort(__io__address + 168, flag);
+			__io__block.writeShort(__io__address + 188, flag);
 		}
 	}
 
@@ -778,9 +790,9 @@ public class Key extends CFacade {
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 214);
+			return __io__block.readByte(__io__address + 246);
 		} else {
-			return __io__block.readByte(__io__address + 170);
+			return __io__block.readByte(__io__address + 190);
 		}
 	}
 
@@ -795,37 +807,37 @@ public class Key extends CFacade {
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 214, type);
+			__io__block.writeByte(__io__address + 246, type);
 		} else {
-			__io__block.writeByte(__io__address + 170, type);
+			__io__block.writeByte(__io__address + 190, type);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public byte getPad2() throws IOException
+	public byte get_pad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 215);
+			return __io__block.readByte(__io__address + 247);
 		} else {
-			return __io__block.readByte(__io__address + 171);
+			return __io__block.readByte(__io__address + 191);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(byte pad2) throws IOException
+	public void set_pad2(byte _pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 215, pad2);
+			__io__block.writeByte(__io__address + 247, _pad2);
 		} else {
-			__io__block.writeByte(__io__address + 171, pad2);
+			__io__block.writeByte(__io__address + 191, _pad2);
 		}
 	}
 
@@ -833,16 +845,16 @@ public class Key extends CFacade {
 	 * Get method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	
 	public float getCtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 248);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -850,16 +862,16 @@ public class Key extends CFacade {
 	 * Set method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	
 	public void setCtime(float ctime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 216, ctime);
+			__io__block.writeFloat(__io__address + 248, ctime);
 		} else {
-			__io__block.writeFloat(__io__address + 172, ctime);
+			__io__block.writeFloat(__io__address + 192, ctime);
 		}
 	}
 
@@ -867,16 +879,16 @@ public class Key extends CFacade {
 	 * Get method for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	
 	public int getUidgen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 252);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -884,16 +896,16 @@ public class Key extends CFacade {
 	 * Set method for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> can never be 0, this is used for detecting old data current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	
 	public void setUidgen(int uidgen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, uidgen);
+			__io__block.writeInt(__io__address + 252, uidgen);
 		} else {
-			__io__block.writeInt(__io__address + 176, uidgen);
+			__io__block.writeInt(__io__address + 196, uidgen);
 		}
 	}
 

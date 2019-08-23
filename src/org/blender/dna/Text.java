@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=160, size64=208)
+@CMetaData(size32=168, size64=224)
 public class Text extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class Text extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 19;
+	public static final int __DNA__SDNA_INDEX = 24;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -43,7 +43,7 @@ public class Text extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -69,7 +69,27 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__name = new long[]{120, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'compiled'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Text text = ...;
+	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__compiled);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compiled = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'compiled'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__compiled = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -89,7 +109,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__flags = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlines'.
@@ -109,7 +129,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlines = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__nlines = new long[]{132, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
@@ -132,7 +152,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lines = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__lines = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curl'.
@@ -152,7 +172,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curl = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__curl = new long[]{144, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sell'.
@@ -172,7 +192,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sell = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__sell = new long[]{148, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curc'.
@@ -192,7 +212,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curc = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__curc = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selc'.
@@ -212,87 +232,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selc = new long[]{132, 172};
-
-	/**
-	 * Field descriptor (offset) for struct member 'undo_buf'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Text text = ...;
-	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__undo_buf);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_undo_buf = p.cast(new Class[]{CPointer.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'undo_buf'</li>
-	 * <li>Signature: 'char*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__undo_buf = new long[]{136, 176};
-
-	/**
-	 * Field descriptor (offset) for struct member 'undo_pos'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Text text = ...;
-	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__undo_pos);
-	 * CPointer&lt;Integer&gt; p_undo_pos = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'undo_pos'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__undo_pos = new long[]{140, 184};
-
-	/**
-	 * Field descriptor (offset) for struct member 'undo_len'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Text text = ...;
-	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__undo_len);
-	 * CPointer&lt;Integer&gt; p_undo_len = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'undo_len'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__undo_len = new long[]{144, 188};
-
-	/**
-	 * Field descriptor (offset) for struct member 'compiled'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Text text = ...;
-	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__compiled);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compiled = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'compiled'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__compiled = new long[]{148, 192};
+	public static final long[] __DNA__FIELD__selc = new long[]{156, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtime'.
@@ -312,7 +252,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtime = new long[]{152, 200};
+	public static final long[] __DNA__FIELD__mtime = new long[]{160, 216};
 
 	public Text(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -370,9 +310,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -390,9 +330,41 @@ public class Text extends CFacade {
 	{
 		long __address = ((name == null) ? 0 : name.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'compiled'.
+	 * @see #__DNA__FIELD__compiled
+	 */
+	
+	public CPointer<Object> getCompiled() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'compiled'.
+	 * @see #__DNA__FIELD__compiled
+	 */
+	
+	public void setCompiled(CPointer<Object> compiled) throws IOException
+	{
+		long __address = ((compiled == null) ? 0 : compiled.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 160, __address);
+		} else {
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -404,9 +376,9 @@ public class Text extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -418,9 +390,9 @@ public class Text extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 128, flags);
+			__io__block.writeInt(__io__address + 168, flags);
 		} else {
-			__io__block.writeInt(__io__address + 104, flags);
+			__io__block.writeInt(__io__address + 128, flags);
 		}
 	}
 
@@ -432,9 +404,9 @@ public class Text extends CFacade {
 	public int getNlines() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 172);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 132);
 		}
 	}
 
@@ -446,9 +418,9 @@ public class Text extends CFacade {
 	public void setNlines(int nlines) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, nlines);
+			__io__block.writeInt(__io__address + 172, nlines);
 		} else {
-			__io__block.writeInt(__io__address + 108, nlines);
+			__io__block.writeInt(__io__address + 132, nlines);
 		}
 	}
 
@@ -463,9 +435,9 @@ public class Text extends CFacade {
 	public ListBase getLines() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 112, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
 		}
 	}
 
@@ -481,9 +453,9 @@ public class Text extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 136;
 		}
 		if (__io__equals(lines, __io__address + __dna__offset)) {
 			return;
@@ -503,9 +475,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TextLine.class};
 		return new CPointer<TextLine>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TextLine.__DNA__SDNA_INDEX), __io__blockTable);
@@ -520,9 +492,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((curl == null) ? 0 : curl.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -535,9 +507,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TextLine.class};
 		return new CPointer<TextLine>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TextLine.__DNA__SDNA_INDEX), __io__blockTable);
@@ -552,9 +524,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((sell == null) ? 0 : sell.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -566,9 +538,9 @@ public class Text extends CFacade {
 	public int getCurc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 208);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 152);
 		}
 	}
 
@@ -580,9 +552,9 @@ public class Text extends CFacade {
 	public void setCurc(int curc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, curc);
+			__io__block.writeInt(__io__address + 208, curc);
 		} else {
-			__io__block.writeInt(__io__address + 128, curc);
+			__io__block.writeInt(__io__address + 152, curc);
 		}
 	}
 
@@ -594,9 +566,9 @@ public class Text extends CFacade {
 	public int getSelc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 212);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 156);
 		}
 	}
 
@@ -608,129 +580,9 @@ public class Text extends CFacade {
 	public void setSelc(int selc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, selc);
+			__io__block.writeInt(__io__address + 212, selc);
 		} else {
-			__io__block.writeInt(__io__address + 132, selc);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'undo_buf'.
-	 * @see #__DNA__FIELD__undo_buf
-	 */
-	
-	public CPointer<Byte> getUndo_buf() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'undo_buf'.
-	 * @see #__DNA__FIELD__undo_buf
-	 */
-	
-	public void setUndo_buf(CPointer<Byte> undo_buf) throws IOException
-	{
-		long __address = ((undo_buf == null) ? 0 : undo_buf.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
-		} else {
-			__io__block.writeLong(__io__address + 136, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'undo_pos'.
-	 * @see #__DNA__FIELD__undo_pos
-	 */
-	
-	public int getUndo_pos() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
-		} else {
-			return __io__block.readInt(__io__address + 140);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'undo_pos'.
-	 * @see #__DNA__FIELD__undo_pos
-	 */
-	
-	public void setUndo_pos(int undo_pos) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, undo_pos);
-		} else {
-			__io__block.writeInt(__io__address + 140, undo_pos);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'undo_len'.
-	 * @see #__DNA__FIELD__undo_len
-	 */
-	
-	public int getUndo_len() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
-		} else {
-			return __io__block.readInt(__io__address + 144);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'undo_len'.
-	 * @see #__DNA__FIELD__undo_len
-	 */
-	
-	public void setUndo_len(int undo_len) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, undo_len);
-		} else {
-			__io__block.writeInt(__io__address + 144, undo_len);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'compiled'.
-	 * @see #__DNA__FIELD__compiled
-	 */
-	
-	public CPointer<Object> getCompiled() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'compiled'.
-	 * @see #__DNA__FIELD__compiled
-	 */
-	
-	public void setCompiled(CPointer<Object> compiled) throws IOException
-	{
-		long __address = ((compiled == null) ? 0 : compiled.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
-		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeInt(__io__address + 156, selc);
 		}
 	}
 
@@ -742,9 +594,9 @@ public class Text extends CFacade {
 	public double getMtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readDouble(__io__address + 200);
+			return __io__block.readDouble(__io__address + 216);
 		} else {
-			return __io__block.readDouble(__io__address + 152);
+			return __io__block.readDouble(__io__address + 160);
 		}
 	}
 
@@ -756,9 +608,9 @@ public class Text extends CFacade {
 	public void setMtime(double mtime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeDouble(__io__address + 200, mtime);
+			__io__block.writeDouble(__io__address + 216, mtime);
 		} else {
-			__io__block.writeDouble(__io__address + 152, mtime);
+			__io__block.writeDouble(__io__address + 160, mtime);
 		}
 	}
 

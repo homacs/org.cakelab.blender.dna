@@ -29,7 +29,7 @@ public class IDProperty extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 9;
+	public static final int __DNA__SDNA_INDEX = 11;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -163,7 +163,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' name<h4>Blender Source Code:</h4>
-	 * <p> MAX_IDPROP_NAME </p>
+	 * <p> MAX_IDPROP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -187,7 +187,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
-	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a pad var was needed anyway :) </p>
+	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -211,7 +211,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> note, alignment for 64 bits </p>
+	 * <p> Note, alignment for 64 bits. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -497,7 +497,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' name<h4>Blender Source Code:</h4>
-	 * <p> MAX_IDPROP_NAME </p>
+	 * <p> MAX_IDPROP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -519,7 +519,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' name<h4>Blender Source Code:</h4>
-	 * <p> MAX_IDPROP_NAME </p>
+	 * <p> MAX_IDPROP_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -545,7 +545,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
-	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a pad var was needed anyway :) </p>
+	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * @see #__DNA__FIELD__saved
 	 */
 	
@@ -563,7 +563,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * saved is used to indicate if this struct has been saved yet.<h4>Blender Source Code:</h4>
-	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a pad var was needed anyway :) </p>
+	 * <p> saved is used to indicate if this struct has been saved yet. seemed like a good idea as a '_pad' var was needed anyway :) </p>
 	 * @see #__DNA__FIELD__saved
 	 */
 	
@@ -581,7 +581,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> note, alignment for 64 bits </p>
+	 * <p> Note, alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	
@@ -599,7 +599,7 @@ public class IDProperty extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * properties' data. note, alignment for 64 bits<h4>Blender Source Code:</h4>
-	 * <p> note, alignment for 64 bits </p>
+	 * <p> Note, alignment for 64 bits. </p>
 	 * @see #__DNA__FIELD__data
 	 */
 	

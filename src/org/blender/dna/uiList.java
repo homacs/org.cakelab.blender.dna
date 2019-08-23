@@ -27,7 +27,7 @@ public class uiList extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 260;
+	public static final int __DNA__SDNA_INDEX = 265;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +76,7 @@ public class uiList extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,7 +99,7 @@ public class uiList extends CFacade {
 	 * Field descriptor (offset) for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class uiList extends CFacade {
 	 * Field descriptor (offset) for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list </p>
+	 * <p> How items are layedout in the list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -245,7 +245,7 @@ public class uiList extends CFacade {
 	 * Field descriptor (offset) for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Filtering data. defined as UI_MAX_NAME_STR </p>
+	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -432,7 +432,7 @@ public class uiList extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -452,7 +452,7 @@ public class uiList extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime </p>
+	 * <p> Runtime. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -470,7 +470,7 @@ public class uiList extends CFacade {
 	 * Get method for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__list_id
 	 */
 	
@@ -491,7 +491,7 @@ public class uiList extends CFacade {
 	 * Set method for struct member 'list_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defined as UI_MAX_NAME_STR </p>
+	 * <p> Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__list_id
 	 */
 	
@@ -516,7 +516,7 @@ public class uiList extends CFacade {
 	 * Get method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list </p>
+	 * <p> How items are layedout in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
 	
@@ -533,7 +533,7 @@ public class uiList extends CFacade {
 	 * Set method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list </p>
+	 * <p> How items are layedout in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
 	
@@ -690,7 +690,7 @@ public class uiList extends CFacade {
 	 * Get method for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Filtering data. defined as UI_MAX_NAME_STR </p>
+	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__filter_byname
 	 */
 	
@@ -711,7 +711,7 @@ public class uiList extends CFacade {
 	 * Set method for struct member 'filter_byname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Filtering data. defined as UI_MAX_NAME_STR </p>
+	 * <p> Filtering data. Defined as UI_MAX_NAME_STR. </p>
 	 * @see #__DNA__FIELD__filter_byname
 	 */
 	

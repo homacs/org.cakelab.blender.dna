@@ -27,13 +27,13 @@ public class HairKey extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 476;
+	public static final int __DNA__SDNA_INDEX = 448;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> location of hair vertex </p>
+	 * <p> Location of hair vertex. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +56,7 @@ public class HairKey extends CFacade {
 	 * Field descriptor (offset) for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time along hair, default 0-100 </p>
+	 * <p> Time along hair, default 0-100. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +79,7 @@ public class HairKey extends CFacade {
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody weight </p>
+	 * <p> Softbody weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,7 +102,7 @@ public class HairKey extends CFacade {
 	 * Field descriptor (offset) for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved particled edit mode flags </p>
+	 * <p> Saved particled edit mode flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,24 +122,24 @@ public class HairKey extends CFacade {
 	public static final long[] __DNA__FIELD__editflag = new long[]{20, 20};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * HairKey hairkey = ...;
-	 * CPointer&lt;Object&gt; p = hairkey.__dna__addressof(HairKey.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = hairkey.__dna__addressof(HairKey.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{22, 22};
+	public static final long[] __DNA__FIELD___pad = new long[]{22, 22};
 
 	/**
 	 * Field descriptor (offset) for struct member 'world_co'.
@@ -173,7 +173,7 @@ public class HairKey extends CFacade {
 	 * Get method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> location of hair vertex </p>
+	 * <p> Location of hair vertex. </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -194,7 +194,7 @@ public class HairKey extends CFacade {
 	 * Set method for struct member 'co'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> location of hair vertex </p>
+	 * <p> Location of hair vertex. </p>
 	 * @see #__DNA__FIELD__co
 	 */
 	
@@ -219,7 +219,7 @@ public class HairKey extends CFacade {
 	 * Get method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time along hair, default 0-100 </p>
+	 * <p> Time along hair, default 0-100. </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -236,7 +236,7 @@ public class HairKey extends CFacade {
 	 * Set method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> time along hair, default 0-100 </p>
+	 * <p> Time along hair, default 0-100. </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -253,7 +253,7 @@ public class HairKey extends CFacade {
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody weight </p>
+	 * <p> Softbody weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -270,7 +270,7 @@ public class HairKey extends CFacade {
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody weight </p>
+	 * <p> Softbody weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -287,7 +287,7 @@ public class HairKey extends CFacade {
 	 * Get method for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved particled edit mode flags </p>
+	 * <p> Saved particled edit mode flags. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	
@@ -304,7 +304,7 @@ public class HairKey extends CFacade {
 	 * Set method for struct member 'editflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> saved particled edit mode flags </p>
+	 * <p> Saved particled edit mode flags. </p>
 	 * @see #__DNA__FIELD__editflag
 	 */
 	
@@ -318,30 +318,42 @@ public class HairKey extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 22);
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 22, pad);
+			__dna__offset = 22;
 		} else {
-			__io__block.writeShort(__io__address + 22, pad);
+			__dna__offset = 22;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

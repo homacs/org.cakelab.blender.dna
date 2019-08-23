@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -14,10 +15,10 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Unit Settings </p>
+ *  Assorted {@link Scene}  Data -------------------------------------<mdash/><mdash/>  Unit Settings </p>
  */
 
-@CMetaData(size32=8, size64=8)
+@CMetaData(size32=16, size64=16)
 public class UnitSettings extends CFacade {
 
 	/**
@@ -28,14 +29,14 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 201;
+	public static final int __DNA__SDNA_INDEX = 203;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,8 +59,8 @@ public class UnitSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display<h4>Blender Source Code:</h4>
-	 * <p> imperial, metric etc </p>
+	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <p> Imperial, metric etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -83,7 +84,7 @@ public class UnitSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
-	 * <p> not implemented as a proper unit system yet </p>
+	 * <p> Not implemented as a proper unit system yet. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,6 +123,95 @@ public class UnitSettings extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{6, 6};
 
+	/**
+	 * Field descriptor (offset) for struct member 'length_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display length values
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnitSettings unitsettings = ...;
+	 * CPointer&lt;Object&gt; p = unitsettings.__dna__addressof(UnitSettings.__DNA__FIELD__length_unit);
+	 * CPointer&lt;Byte&gt; p_length_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'length_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__length_unit = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mass_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display mass values
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnitSettings unitsettings = ...;
+	 * CPointer&lt;Object&gt; p = unitsettings.__dna__addressof(UnitSettings.__DNA__FIELD__mass_unit);
+	 * CPointer&lt;Byte&gt; p_mass_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mass_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mass_unit = new long[]{9, 9};
+
+	/**
+	 * Field descriptor (offset) for struct member 'time_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display time values
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnitSettings unitsettings = ...;
+	 * CPointer&lt;Object&gt; p = unitsettings.__dna__addressof(UnitSettings.__DNA__FIELD__time_unit);
+	 * CPointer&lt;Byte&gt; p_time_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'time_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__time_unit = new long[]{10, 10};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnitSettings unitsettings = ...;
+	 * CPointer&lt;Object&gt; p = unitsettings.__dna__addressof(UnitSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{11, 11};
+
 	public UnitSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -134,8 +224,8 @@ public class UnitSettings extends CFacade {
 	 * Get method for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -152,8 +242,8 @@ public class UnitSettings extends CFacade {
 	 * Set method for struct member 'scale_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Scale to use when converting between blender units and dimensions<h4>Blender Source Code:</h4>
-	 * <p> Display/Editing unit options for each scene maybe have other unit conversions? </p>
+	 * Scale to use when converting between blender units and dimensions. When working at microscopic or astronomical scale, a small or large unit scale respectively can be used to avoid numerical precision problems<h4>Blender Source Code:</h4>
+	 * <p> Display/Editing unit options for each scene Maybe have other unit conversions?. </p>
 	 * @see #__DNA__FIELD__scale_length
 	 */
 	
@@ -170,8 +260,8 @@ public class UnitSettings extends CFacade {
 	 * Get method for struct member 'system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display<h4>Blender Source Code:</h4>
-	 * <p> imperial, metric etc </p>
+	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <p> Imperial, metric etc. </p>
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -188,8 +278,8 @@ public class UnitSettings extends CFacade {
 	 * Set method for struct member 'system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The unit system to use for button display<h4>Blender Source Code:</h4>
-	 * <p> imperial, metric etc </p>
+	 * The unit system to use for user interface controls<h4>Blender Source Code:</h4>
+	 * <p> Imperial, metric etc. </p>
 	 * @see #__DNA__FIELD__system
 	 */
 	
@@ -207,7 +297,7 @@ public class UnitSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
-	 * <p> not implemented as a proper unit system yet </p>
+	 * <p> Not implemented as a proper unit system yet. </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	
@@ -225,7 +315,7 @@ public class UnitSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Unit to use for displaying/editing rotation values<h4>Blender Source Code:</h4>
-	 * <p> not implemented as a proper unit system yet </p>
+	 * <p> Not implemented as a proper unit system yet. </p>
 	 * @see #__DNA__FIELD__system_rotation
 	 */
 	
@@ -263,6 +353,148 @@ public class UnitSettings extends CFacade {
 			__io__block.writeShort(__io__address + 6, flag);
 		} else {
 			__io__block.writeShort(__io__address + 6, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'length_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display length values
+	 * @see #__DNA__FIELD__length_unit
+	 */
+	
+	public byte getLength_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 8);
+		} else {
+			return __io__block.readByte(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'length_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display length values
+	 * @see #__DNA__FIELD__length_unit
+	 */
+	
+	public void setLength_unit(byte length_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 8, length_unit);
+		} else {
+			__io__block.writeByte(__io__address + 8, length_unit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mass_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display mass values
+	 * @see #__DNA__FIELD__mass_unit
+	 */
+	
+	public byte getMass_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9);
+		} else {
+			return __io__block.readByte(__io__address + 9);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mass_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display mass values
+	 * @see #__DNA__FIELD__mass_unit
+	 */
+	
+	public void setMass_unit(byte mass_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9, mass_unit);
+		} else {
+			__io__block.writeByte(__io__address + 9, mass_unit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'time_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display time values
+	 * @see #__DNA__FIELD__time_unit
+	 */
+	
+	public byte getTime_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 10);
+		} else {
+			return __io__block.readByte(__io__address + 10);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'time_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display time values
+	 * @see #__DNA__FIELD__time_unit
+	 */
+	
+	public void setTime_unit(byte time_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 10, time_unit);
+		} else {
+			__io__block.writeByte(__io__address + 10, time_unit);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			5
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 11;
+		} else {
+			__dna__offset = 11;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=120, size64=152)
+@CMetaData(size32=124, size64=160)
 public class SurfaceModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class SurfaceModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 112;
+	public static final int __DNA__SDNA_INDEX = 118;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class SurfaceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -52,7 +52,7 @@ public class SurfaceModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> old position </p>
+	 * <p> Old position. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -69,13 +69,13 @@ public class SurfaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__x = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__x = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'v'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> velocity </p>
+	 * <p> Velocity. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -92,33 +92,33 @@ public class SurfaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__v = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__v = new long[]{104, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'dm'.
+	 * Field descriptor (offset) for struct member 'mesh'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SurfaceModifierData surfacemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = surfacemodifierdata.__dna__addressof(SurfaceModifierData.__DNA__FIELD__dm);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_dm = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = surfacemodifierdata.__dna__addressof(SurfaceModifierData.__DNA__FIELD__mesh);
+	 * CPointer&lt;CPointer&lt;Mesh&gt;&gt; p_mesh = p.cast(new Class[]{CPointer.class, Mesh.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'dm'</li>
-	 * <li>Signature: 'DerivedMesh*'</li>
+	 * <li>Field: 'mesh'</li>
+	 * <li>Signature: 'Mesh*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dm = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__mesh = new long[]{108, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bounding volume hierarchy of the mesh faces </p>
+	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -135,7 +135,7 @@ public class SurfaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bvhtree = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__bvhtree = new long[]{112, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cfra'.
@@ -155,7 +155,7 @@ public class SurfaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cfra = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__cfra = new long[]{116, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'numverts'.
@@ -175,7 +175,7 @@ public class SurfaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numverts = new long[]{116, 148};
+	public static final long[] __DNA__FIELD__numverts = new long[]{120, 156};
 
 	public SurfaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -225,49 +225,11 @@ public class SurfaceModifierData extends CFacade {
 	 * Get method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> old position </p>
+	 * <p> Old position. </p>
 	 * @see #__DNA__FIELD__x
 	 */
 	
 	public CPointer<MVert> getX() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
-		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'x'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> old position </p>
-	 * @see #__DNA__FIELD__x
-	 */
-	
-	public void setX(CPointer<MVert> x) throws IOException
-	{
-		long __address = ((x == null) ? 0 : x.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
-		} else {
-			__io__block.writeLong(__io__address + 96, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'v'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> velocity </p>
-	 * @see #__DNA__FIELD__v
-	 */
-	
-	public CPointer<MVert> getV() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -280,16 +242,16 @@ public class SurfaceModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'v'.
+	 * Set method for struct member 'x'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> velocity </p>
-	 * @see #__DNA__FIELD__v
+	 * <p> Old position. </p>
+	 * @see #__DNA__FIELD__x
 	 */
 	
-	public void setV(CPointer<MVert> v) throws IOException
+	public void setX(CPointer<MVert> x) throws IOException
 	{
-		long __address = ((v == null) ? 0 : v.getAddress());
+		long __address = ((x == null) ? 0 : x.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 120, __address);
 		} else {
@@ -298,11 +260,14 @@ public class SurfaceModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Get method for struct member 'v'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocity. </p>
+	 * @see #__DNA__FIELD__v
 	 */
 	
-	public CPointer<Object> getDm() throws IOException
+	public CPointer<MVert> getV() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -310,18 +275,21 @@ public class SurfaceModifierData extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
+		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'dm'.
-	 * @see #__DNA__FIELD__dm
+	 * Set method for struct member 'v'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Velocity. </p>
+	 * @see #__DNA__FIELD__v
 	 */
 	
-	public void setDm(CPointer<Object> dm) throws IOException
+	public void setV(CPointer<MVert> v) throws IOException
 	{
-		long __address = ((dm == null) ? 0 : dm.getAddress());
+		long __address = ((v == null) ? 0 : v.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 128, __address);
 		} else {
@@ -330,10 +298,42 @@ public class SurfaceModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
+	 */
+	
+	public CPointer<Mesh> getMesh() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
+		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'mesh'.
+	 * @see #__DNA__FIELD__mesh
+	 */
+	
+	public void setMesh(CPointer<Mesh> mesh) throws IOException
+	{
+		long __address = ((mesh == null) ? 0 : mesh.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 136, __address);
+		} else {
+			__io__block.writeLong(__io__address + 108, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bounding volume hierarchy of the mesh faces </p>
+	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */
 	
@@ -341,9 +341,9 @@ public class SurfaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -353,7 +353,7 @@ public class SurfaceModifierData extends CFacade {
 	 * Set method for struct member 'bvhtree'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> bounding volume hierarchy of the mesh faces </p>
+	 * <p> Bounding volume hierarchy of the mesh faces. </p>
 	 * @see #__DNA__FIELD__bvhtree
 	 */
 	
@@ -361,9 +361,9 @@ public class SurfaceModifierData extends CFacade {
 	{
 		long __address = ((bvhtree == null) ? 0 : bvhtree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -375,9 +375,9 @@ public class SurfaceModifierData extends CFacade {
 	public int getCfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 152);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -389,9 +389,9 @@ public class SurfaceModifierData extends CFacade {
 	public void setCfra(int cfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, cfra);
+			__io__block.writeInt(__io__address + 152, cfra);
 		} else {
-			__io__block.writeInt(__io__address + 112, cfra);
+			__io__block.writeInt(__io__address + 116, cfra);
 		}
 	}
 
@@ -403,9 +403,9 @@ public class SurfaceModifierData extends CFacade {
 	public int getNumverts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 156);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -417,9 +417,9 @@ public class SurfaceModifierData extends CFacade {
 	public void setNumverts(int numverts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 148, numverts);
+			__io__block.writeInt(__io__address + 156, numverts);
 		} else {
-			__io__block.writeInt(__io__address + 116, numverts);
+			__io__block.writeInt(__io__address + 120, numverts);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class MRecast extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 84;
+	public static final int __DNA__SDNA_INDEX = 90;
 
 	/**
 	 * Field descriptor (offset) for struct member 'i'.

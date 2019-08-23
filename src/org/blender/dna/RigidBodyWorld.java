@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -13,8 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  RigidBody {@link World}  {@link RigidBodyWorld}  (rbw)</p><p> Represents a "simulation scene" existing within the parent scene. </p>
+ * <p>{@link RigidBodyWorld}  (rbw)</p><p> Represents a "simulation scene" existing within the parent scene. </p>
  */
 
 @CMetaData(size32=56, size64=88)
@@ -28,14 +28,14 @@ public class RigidBodyWorld extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 572;
+	public static final int __DNA__SDNA_INDEX = 580;
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -----------------------------------------------------------  effectors info </p>
+	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -57,9 +57,8 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Bodies </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -67,12 +66,12 @@ public class RigidBodyWorld extends CFacade {
 	 * <pre>
 	 * RigidBodyWorld rigidbodyworld = ...;
 	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD__group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -82,7 +81,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array to access group objects by index, only used at runtime </p>
+	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -105,8 +104,8 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Body Constraints </p>
+	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,42 +113,42 @@ public class RigidBodyWorld extends CFacade {
 	 * <pre>
 	 * RigidBodyWorld rigidbodyworld = ...;
 	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD__constraints);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_constraints = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_constraints = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'constraints'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__constraints = new long[]{12, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * RigidBodyWorld rigidbodyworld = ...;
-	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 32};
+	public static final long[] __DNA__FIELD___pad = new long[]{16, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last frame world was evaluated for (internal) </p>
+	 * <p> Last frame world was evaluated for (internal). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -169,10 +168,35 @@ public class RigidBodyWorld extends CFacade {
 	public static final long[] __DNA__FIELD__ltime = new long[]{20, 36};
 
 	/**
+	 * Field descriptor (offset) for struct member 'shared'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This pointer is shared between all evaluated copies. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RigidBodyWorld rigidbodyworld = ...;
+	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD__shared);
+	 * CPointer&lt;CPointer&lt;RigidBodyWorld_Shared&gt;&gt; p_shared = p.cast(new Class[]{CPointer.class, RigidBodyWorld_Shared.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shared'</li>
+	 * <li>Signature: 'RigidBodyWorld_Shared*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shared = new long[]{24, 40};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache </p>
+	 * <p> Moved to shared->pointcache. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,10 +213,15 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pointcache = new long[]{24, 40};
+	public static final long[] __DNA__FIELD__pointcache = new long[]{28, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to shared->ptcaches. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -209,13 +238,13 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{28, 48};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{32, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of objects in rigid body group </p>
+	 * <p> Number of objects in rigid body group. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -232,14 +261,14 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__numbodies = new long[]{36, 64};
+	public static final long[] __DNA__FIELD__numbodies = new long[]{40, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'steps_per_second'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of simulation steps taken per second (higher values are more accurate but slower)<h4>Blender Source Code:</h4>
-	 * <p> number of simulation steps thaken per second </p>
+	 * <p> Number of simulation steps thaken per second. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -256,13 +285,13 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__steps_per_second = new long[]{40, 68};
+	public static final long[] __DNA__FIELD__steps_per_second = new long[]{44, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of constraint solver iterations made per simulation step </p>
+	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -279,13 +308,13 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_solver_iterations = new long[]{42, 70};
+	public static final long[] __DNA__FIELD__num_solver_iterations = new long[]{46, 78};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld}  </p>
+	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -302,14 +331,14 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{44, 72};
+	public static final long[] __DNA__FIELD__flag = new long[]{48, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
-	 * <p> used to speed up or slow down the simulation </p>
+	 * <p> Used to speed up or slow down the simulation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -326,30 +355,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_scale = new long[]{48, 76};
-
-	/**
-	 * Field descriptor (offset) for struct member 'physics_world'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only --------------------  Physics sim world (i.e. btDiscreteDynamicsWorld) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RigidBodyWorld rigidbodyworld = ...;
-	 * CPointer&lt;Object&gt; p = rigidbodyworld.__dna__addressof(RigidBodyWorld.__DNA__FIELD__physics_world);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_physics_world = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'physics_world'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__physics_world = new long[]{52, 80};
+	public static final long[] __DNA__FIELD__time_scale = new long[]{52, 84};
 
 	public RigidBodyWorld(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -364,7 +370,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -----------------------------------------------------------  effectors info </p>
+	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -385,7 +391,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -----------------------------------------------------------  effectors info </p>
+	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -402,13 +408,12 @@ public class RigidBodyWorld extends CFacade {
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Bodies </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public CPointer<Group> getGroup() throws IOException
+	public CPointer<Collection> getGroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -416,20 +421,19 @@ public class RigidBodyWorld extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 4);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Group containing objects participating in this simulation<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Bodies </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Bodies. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public void setGroup(CPointer<Group> group) throws IOException
+	public void setGroup(CPointer<Collection> group) throws IOException
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -443,7 +447,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array to access group objects by index, only used at runtime </p>
+	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
 	
@@ -463,7 +467,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'objects'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array to access group objects by index, only used at runtime </p>
+	 * <p> Array to access group objects by index, only used at runtime. </p>
 	 * @see #__DNA__FIELD__objects
 	 */
 	
@@ -481,12 +485,12 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Body Constraints </p>
+	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
-	public CPointer<Group> getConstraints() throws IOException
+	public CPointer<Collection> getConstraints() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -494,20 +498,20 @@ public class RigidBodyWorld extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 12);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'constraints'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Group containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p>{@link Group}  containing objects to use for Rigid Body Constraints </p>
+	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
+	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
-	public void setConstraints(CPointer<Group> constraints) throws IOException
+	public void setConstraints(CPointer<Collection> constraints) throws IOException
 	{
 		long __address = ((constraints == null) ? 0 : constraints.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -518,30 +522,42 @@ public class RigidBodyWorld extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, pad);
+			__dna__offset = 32;
 		} else {
-			__io__block.writeInt(__io__address + 16, pad);
+			__dna__offset = 16;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -549,7 +565,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last frame world was evaluated for (internal) </p>
+	 * <p> Last frame world was evaluated for (internal). </p>
 	 * @see #__DNA__FIELD__ltime
 	 */
 	
@@ -566,7 +582,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'ltime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> last frame world was evaluated for (internal) </p>
+	 * <p> Last frame world was evaluated for (internal). </p>
 	 * @see #__DNA__FIELD__ltime
 	 */
 	
@@ -580,10 +596,50 @@ public class RigidBodyWorld extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'shared'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This pointer is shared between all evaluated copies. </p>
+	 * @see #__DNA__FIELD__shared
+	 */
+	
+	public CPointer<RigidBodyWorld_Shared> getShared() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{RigidBodyWorld_Shared.class};
+		return new CPointer<RigidBodyWorld_Shared>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, RigidBodyWorld_Shared.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'shared'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This pointer is shared between all evaluated copies. </p>
+	 * @see #__DNA__FIELD__shared
+	 */
+	
+	public void setShared(CPointer<RigidBodyWorld_Shared> shared) throws IOException
+	{
+		long __address = ((shared == null) ? 0 : shared.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 24, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache </p>
+	 * <p> Moved to shared->pointcache. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pointcache
 	 */
 	
@@ -591,9 +647,9 @@ public class RigidBodyWorld extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+			__dna__targetAddress = __io__block.readLong(__io__address + 48);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+			__dna__targetAddress = __io__block.readLong(__io__address + 28);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
 		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -603,7 +659,9 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cache </p>
+	 * <p> Moved to shared->pointcache. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pointcache
 	 */
 	
@@ -611,28 +669,38 @@ public class RigidBodyWorld extends CFacade {
 	{
 		long __address = ((pointcache == null) ? 0 : pointcache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
+			__io__block.writeLong(__io__address + 48, __address);
 		} else {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__block.writeLong(__io__address + 28, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to shared->ptcaches. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
 	 */
 	
 	public ListBase getPtcaches() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to shared->ptcaches. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
 	 */
 	
@@ -640,9 +708,9 @@ public class RigidBodyWorld extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 32;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -657,16 +725,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of objects in rigid body group </p>
+	 * <p> Number of objects in rigid body group. </p>
 	 * @see #__DNA__FIELD__numbodies
 	 */
 	
 	public int getNumbodies() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 64);
+			return __io__block.readInt(__io__address + 72);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 40);
 		}
 	}
 
@@ -674,16 +742,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'numbodies'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of objects in rigid body group </p>
+	 * <p> Number of objects in rigid body group. </p>
 	 * @see #__DNA__FIELD__numbodies
 	 */
 	
 	public void setNumbodies(int numbodies) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 64, numbodies);
+			__io__block.writeInt(__io__address + 72, numbodies);
 		} else {
-			__io__block.writeInt(__io__address + 36, numbodies);
+			__io__block.writeInt(__io__address + 40, numbodies);
 		}
 	}
 
@@ -692,16 +760,16 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of simulation steps taken per second (higher values are more accurate but slower)<h4>Blender Source Code:</h4>
-	 * <p> number of simulation steps thaken per second </p>
+	 * <p> Number of simulation steps thaken per second. </p>
 	 * @see #__DNA__FIELD__steps_per_second
 	 */
 	
 	public short getSteps_per_second() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 68);
+			return __io__block.readShort(__io__address + 76);
 		} else {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 44);
 		}
 	}
 
@@ -710,16 +778,16 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of simulation steps taken per second (higher values are more accurate but slower)<h4>Blender Source Code:</h4>
-	 * <p> number of simulation steps thaken per second </p>
+	 * <p> Number of simulation steps thaken per second. </p>
 	 * @see #__DNA__FIELD__steps_per_second
 	 */
 	
 	public void setSteps_per_second(short steps_per_second) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 68, steps_per_second);
+			__io__block.writeShort(__io__address + 76, steps_per_second);
 		} else {
-			__io__block.writeShort(__io__address + 40, steps_per_second);
+			__io__block.writeShort(__io__address + 44, steps_per_second);
 		}
 	}
 
@@ -727,16 +795,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of constraint solver iterations made per simulation step </p>
+	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
 	
 	public short getNum_solver_iterations() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 70);
+			return __io__block.readShort(__io__address + 78);
 		} else {
-			return __io__block.readShort(__io__address + 42);
+			return __io__block.readShort(__io__address + 46);
 		}
 	}
 
@@ -744,16 +812,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'num_solver_iterations'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> number of constraint solver iterations made per simulation step </p>
+	 * <p> Number of constraint solver iterations made per simulation step. </p>
 	 * @see #__DNA__FIELD__num_solver_iterations
 	 */
 	
 	public void setNum_solver_iterations(short num_solver_iterations) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 70, num_solver_iterations);
+			__io__block.writeShort(__io__address + 78, num_solver_iterations);
 		} else {
-			__io__block.writeShort(__io__address + 42, num_solver_iterations);
+			__io__block.writeShort(__io__address + 46, num_solver_iterations);
 		}
 	}
 
@@ -761,16 +829,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld}  </p>
+	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 72);
+			return __io__block.readInt(__io__address + 80);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 48);
 		}
 	}
 
@@ -778,16 +846,16 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld}  </p>
+	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 72, flag);
+			__io__block.writeInt(__io__address + 80, flag);
 		} else {
-			__io__block.writeInt(__io__address + 44, flag);
+			__io__block.writeInt(__io__address + 48, flag);
 		}
 	}
 
@@ -796,16 +864,16 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
-	 * <p> used to speed up or slow down the simulation </p>
+	 * <p> Used to speed up or slow down the simulation. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
 	public float getTime_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 84);
 		} else {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 52);
 		}
 	}
 
@@ -814,54 +882,16 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Change the speed of the simulation<h4>Blender Source Code:</h4>
-	 * <p> used to speed up or slow down the simulation </p>
+	 * <p> Used to speed up or slow down the simulation. </p>
 	 * @see #__DNA__FIELD__time_scale
 	 */
 	
 	public void setTime_scale(float time_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 76, time_scale);
+			__io__block.writeFloat(__io__address + 84, time_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 48, time_scale);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'physics_world'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only --------------------  Physics sim world (i.e. btDiscreteDynamicsWorld) </p>
-	 * @see #__DNA__FIELD__physics_world
-	 */
-	
-	public CPointer<Object> getPhysics_world() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 52);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'physics_world'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only --------------------  Physics sim world (i.e. btDiscreteDynamicsWorld) </p>
-	 * @see #__DNA__FIELD__physics_world
-	 */
-	
-	public void setPhysics_world(CPointer<Object> physics_world) throws IOException
-	{
-		long __address = ((physics_world == null) ? 0 : physics_world.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
-		} else {
-			__io__block.writeLong(__io__address + 52, __address);
+			__io__block.writeFloat(__io__address + 52, time_scale);
 		}
 	}
 

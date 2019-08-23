@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> many of these options match 'solidify' </p>
  */
 
-@CMetaData(size32=184, size64=200)
+@CMetaData(size32=188, size64=208)
 public class WireframeModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class WireframeModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 141;
+	public static final int __DNA__SDNA_INDEX = 147;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -45,7 +45,7 @@ public class WireframeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -54,7 +54,7 @@ public class WireframeModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,7 +71,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -91,7 +91,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__offset = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac'.
@@ -111,7 +111,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac = new long[]{164, 180};
+	public static final long[] __DNA__FIELD__offset_fac = new long[]{168, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac_vg'.
@@ -131,7 +131,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{168, 184};
+	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_weight'.
@@ -151,7 +151,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_weight = new long[]{172, 188};
+	public static final long[] __DNA__FIELD__crease_weight = new long[]{176, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -171,7 +171,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{176, 192};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_ofs'.
@@ -191,27 +191,27 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat_ofs = new long[]{178, 194};
+	public static final long[] __DNA__FIELD__mat_ofs = new long[]{182, 202};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * WireframeModifierData wireframemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = wireframemodifierdata.__dna__addressof(WireframeModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = wireframemodifierdata.__dna__addressof(WireframeModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[2]'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{180, 196};
+	public static final long[] __DNA__FIELD___pad = new long[]{184, 204};
 
 	public WireframeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -261,7 +261,7 @@ public class WireframeModifierData extends CFacade {
 	 * Get method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -272,9 +272,9 @@ public class WireframeModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -282,7 +282,7 @@ public class WireframeModifierData extends CFacade {
 	 * Set method for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__defgrp_name
 	 */
 	
@@ -290,9 +290,9 @@ public class WireframeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -311,9 +311,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -325,9 +325,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset(float offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, offset);
+			__io__block.writeFloat(__io__address + 184, offset);
 		} else {
-			__io__block.writeFloat(__io__address + 160, offset);
+			__io__block.writeFloat(__io__address + 164, offset);
 		}
 	}
 
@@ -339,9 +339,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -353,9 +353,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset_fac(float offset_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, offset_fac);
+			__io__block.writeFloat(__io__address + 188, offset_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 164, offset_fac);
+			__io__block.writeFloat(__io__address + 168, offset_fac);
 		}
 	}
 
@@ -367,9 +367,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset_fac_vg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -381,9 +381,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset_fac_vg(float offset_fac_vg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 192, offset_fac_vg);
 		} else {
-			__io__block.writeFloat(__io__address + 168, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 172, offset_fac_vg);
 		}
 	}
 
@@ -395,9 +395,9 @@ public class WireframeModifierData extends CFacade {
 	public float getCrease_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -409,9 +409,9 @@ public class WireframeModifierData extends CFacade {
 	public void setCrease_weight(float crease_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, crease_weight);
+			__io__block.writeFloat(__io__address + 196, crease_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 172, crease_weight);
+			__io__block.writeFloat(__io__address + 176, crease_weight);
 		}
 	}
 
@@ -423,9 +423,9 @@ public class WireframeModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -437,9 +437,9 @@ public class WireframeModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, flag);
+			__io__block.writeShort(__io__address + 200, flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		}
 	}
 
@@ -451,9 +451,9 @@ public class WireframeModifierData extends CFacade {
 	public short getMat_ofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 202);
 		} else {
-			return __io__block.readShort(__io__address + 178);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -465,49 +465,49 @@ public class WireframeModifierData extends CFacade {
 	public void setMat_ofs(short mat_ofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, mat_ofs);
+			__io__block.writeShort(__io__address + 202, mat_ofs);
 		} else {
-			__io__block.writeShort(__io__address + 178, mat_ofs);
+			__io__block.writeShort(__io__address + 182, mat_ofs);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 184;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

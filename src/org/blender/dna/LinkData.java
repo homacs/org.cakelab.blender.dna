@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * simple subclass of Link -- use this when it is not worth defining a custom one...<h4>Blender Source Code:</h4>
- * <p> simple subclass of {@link Link} &ndash; use this when it is not worth defining a custom one... </p>
+ * <p> Simple subclass of {@link Link} . Use this when it is not worth defining a custom one. </p>
  */
 
 @CMetaData(size32=12, size64=24)

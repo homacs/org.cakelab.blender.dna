@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=32, size64=32)
+@CMetaData(size32=48, size64=48)
 public class uiWidgetStateColors extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class uiWidgetStateColors extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 243;
+	public static final int __DNA__SDNA_INDEX = 242;
 
 	/**
 	 * Field descriptor (offset) for struct member 'inner_anim'.
@@ -150,6 +150,86 @@ public class uiWidgetStateColors extends CFacade {
 	public static final long[] __DNA__FIELD__inner_driven_sel = new long[]{20, 20};
 
 	/**
+	 * Field descriptor (offset) for struct member 'inner_overridden'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiWidgetStateColors uiwidgetstatecolors = ...;
+	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD__inner_overridden);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_inner_overridden = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'inner_overridden'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__inner_overridden = new long[]{24, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'inner_overridden_sel'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiWidgetStateColors uiwidgetstatecolors = ...;
+	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD__inner_overridden_sel);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_inner_overridden_sel = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'inner_overridden_sel'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__inner_overridden_sel = new long[]{28, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'inner_changed'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiWidgetStateColors uiwidgetstatecolors = ...;
+	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD__inner_changed);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_inner_changed = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'inner_changed'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__inner_changed = new long[]{32, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'inner_changed_sel'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiWidgetStateColors uiwidgetstatecolors = ...;
+	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD__inner_changed_sel);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_inner_changed_sel = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'inner_changed_sel'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__inner_changed_sel = new long[]{36, 36};
+
+	/**
 	 * Field descriptor (offset) for struct member 'blend'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,27 +247,27 @@ public class uiWidgetStateColors extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__blend = new long[]{40, 40};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiWidgetStateColors uiwidgetstatecolors = ...;
-	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = uiwidgetstatecolors.__dna__addressof(uiWidgetStateColors.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{28, 28};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{44, 44};
 
 	public uiWidgetStateColors(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -438,6 +518,166 @@ public class uiWidgetStateColors extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'inner_overridden'.
+	 * @see #__DNA__FIELD__inner_overridden
+	 */
+	
+	public CArrayFacade<Byte> getInner_overridden() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'inner_overridden'.
+	 * @see #__DNA__FIELD__inner_overridden
+	 */
+	
+	public void setInner_overridden(CArrayFacade<Byte> inner_overridden) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 24;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(inner_overridden, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, inner_overridden)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, inner_overridden);
+		} else {
+			__io__generic__copy( getInner_overridden(), inner_overridden);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'inner_overridden_sel'.
+	 * @see #__DNA__FIELD__inner_overridden_sel
+	 */
+	
+	public CArrayFacade<Byte> getInner_overridden_sel() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'inner_overridden_sel'.
+	 * @see #__DNA__FIELD__inner_overridden_sel
+	 */
+	
+	public void setInner_overridden_sel(CArrayFacade<Byte> inner_overridden_sel) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 28;
+		} else {
+			__dna__offset = 28;
+		}
+		if (__io__equals(inner_overridden_sel, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, inner_overridden_sel)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, inner_overridden_sel);
+		} else {
+			__io__generic__copy( getInner_overridden_sel(), inner_overridden_sel);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'inner_changed'.
+	 * @see #__DNA__FIELD__inner_changed
+	 */
+	
+	public CArrayFacade<Byte> getInner_changed() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'inner_changed'.
+	 * @see #__DNA__FIELD__inner_changed
+	 */
+	
+	public void setInner_changed(CArrayFacade<Byte> inner_changed) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 32;
+		} else {
+			__dna__offset = 32;
+		}
+		if (__io__equals(inner_changed, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, inner_changed)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, inner_changed);
+		} else {
+			__io__generic__copy( getInner_changed(), inner_changed);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'inner_changed_sel'.
+	 * @see #__DNA__FIELD__inner_changed_sel
+	 */
+	
+	public CArrayFacade<Byte> getInner_changed_sel() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'inner_changed_sel'.
+	 * @see #__DNA__FIELD__inner_changed_sel
+	 */
+	
+	public void setInner_changed_sel(CArrayFacade<Byte> inner_changed_sel) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 36;
+		} else {
+			__dna__offset = 36;
+		}
+		if (__io__equals(inner_changed_sel, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, inner_changed_sel)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, inner_changed_sel);
+		} else {
+			__io__generic__copy( getInner_changed_sel(), inner_changed_sel);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'blend'.
 	 * @see #__DNA__FIELD__blend
 	 */
@@ -445,9 +685,9 @@ public class uiWidgetStateColors extends CFacade {
 	public float getBlend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 40);
 		} else {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 40);
 		}
 	}
 
@@ -459,37 +699,49 @@ public class uiWidgetStateColors extends CFacade {
 	public void setBlend(float blend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 24, blend);
+			__io__block.writeFloat(__io__address + 40, blend);
 		} else {
-			__io__block.writeFloat(__io__address + 24, blend);
+			__io__block.writeFloat(__io__address + 40, blend);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public float getPad() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 28, pad);
+			__dna__offset = 44;
 		} else {
-			__io__block.writeFloat(__io__address + 28, pad);
+			__dna__offset = 44;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

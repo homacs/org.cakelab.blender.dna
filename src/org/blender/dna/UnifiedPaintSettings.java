@@ -29,7 +29,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 196;
+	public static final int __DNA__SDNA_INDEX = 199;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -362,7 +362,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used </p>
+	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1176,7 +1176,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * Get method for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used </p>
+	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * @see #__DNA__FIELD__overlap_factor
 	 */
 	
@@ -1193,7 +1193,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * Set method for struct member 'overlap_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used </p>
+	 * <p> Normalization factor due to accumulated value of curve along spacing. Calculated when brush spacing changes to dampen strength of stroke if space attenuation is used. </p>
 	 * @see #__DNA__FIELD__overlap_factor
 	 */
 	

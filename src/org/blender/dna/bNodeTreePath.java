@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'bNodeTreePath'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> Nodes Editor =========================================== Node Editor </p>
+ * 
  */
 
 @CMetaData(size32=92, size64=104)
@@ -94,7 +93,7 @@ public class bNodeTreePath extends CFacade {
 	 * Field descriptor (offset) for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> base key for nodes in this tree instance </p>
+	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,30 +113,30 @@ public class bNodeTreePath extends CFacade {
 	public static final long[] __DNA__FIELD__parent_key = new long[]{12, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeTreePath bnodetreepath = ...;
-	 * CPointer&lt;Object&gt; p = bnodetreepath.__dna__addressof(bNodeTreePath.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bnodetreepath.__dna__addressof(bNodeTreePath.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 28};
+	public static final long[] __DNA__FIELD___pad = new long[]{16, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> v2d center point, so node trees can have different offsets in editors </p>
+	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,7 +159,7 @@ public class bNodeTreePath extends CFacade {
 	 * Field descriptor (offset) for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,7 +286,7 @@ public class bNodeTreePath extends CFacade {
 	 * Get method for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> base key for nodes in this tree instance </p>
+	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
 	
@@ -304,7 +303,7 @@ public class bNodeTreePath extends CFacade {
 	 * Set method for struct member 'parent_key'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> base key for nodes in this tree instance </p>
+	 * <p>{@link Base}  key for nodes in this tree instance. </p>
 	 * @see #__DNA__FIELD__parent_key
 	 */
 	
@@ -326,30 +325,42 @@ public class bNodeTreePath extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, pad);
+			__dna__offset = 28;
 		} else {
-			__io__block.writeInt(__io__address + 16, pad);
+			__dna__offset = 16;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -357,7 +368,7 @@ public class bNodeTreePath extends CFacade {
 	 * Get method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> v2d center point, so node trees can have different offsets in editors </p>
+	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
 	
@@ -378,7 +389,7 @@ public class bNodeTreePath extends CFacade {
 	 * Set method for struct member 'view_center'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> v2d center point, so node trees can have different offsets in editors </p>
+	 * <p> V2d center point, so node trees can have different offsets in editors. </p>
 	 * @see #__DNA__FIELD__view_center
 	 */
 	
@@ -403,7 +414,7 @@ public class bNodeTreePath extends CFacade {
 	 * Get method for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__node_name
 	 */
 	
@@ -424,7 +435,7 @@ public class bNodeTreePath extends CFacade {
 	 * Set method for struct member 'node_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_NAME </p>
+	 * <p> MAX_NAME. </p>
 	 * @see #__DNA__FIELD__node_name
 	 */
 	

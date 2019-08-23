@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=172, size64=192)
+@CMetaData(size32=176, size64=200)
 public class ExplodeModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ExplodeModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 119;
+	public static final int __DNA__SDNA_INDEX = 125;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class ExplodeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class ExplodeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__facepa = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__facepa = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -87,7 +87,7 @@ public class ExplodeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__flag = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
@@ -107,7 +107,7 @@ public class ExplodeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup = new long[]{102, 122};
+	public static final long[] __DNA__FIELD__vgroup = new long[]{106, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'protect'.
@@ -127,13 +127,13 @@ public class ExplodeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__protect = new long[]{104, 124};
+	public static final long[] __DNA__FIELD__protect = new long[]{108, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -150,7 +150,7 @@ public class ExplodeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvname = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__uvname = new long[]{112, 136};
 
 	public ExplodeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -205,9 +205,9 @@ public class ExplodeModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -222,9 +222,9 @@ public class ExplodeModifierData extends CFacade {
 	{
 		long __address = ((facepa == null) ? 0 : facepa.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -236,9 +236,9 @@ public class ExplodeModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 104);
 		}
 	}
 
@@ -250,9 +250,9 @@ public class ExplodeModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, flag);
+			__io__block.writeShort(__io__address + 128, flag);
 		} else {
-			__io__block.writeShort(__io__address + 100, flag);
+			__io__block.writeShort(__io__address + 104, flag);
 		}
 	}
 
@@ -264,9 +264,9 @@ public class ExplodeModifierData extends CFacade {
 	public short getVgroup() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 102);
+			return __io__block.readShort(__io__address + 106);
 		}
 	}
 
@@ -278,9 +278,9 @@ public class ExplodeModifierData extends CFacade {
 	public void setVgroup(short vgroup) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 122, vgroup);
+			__io__block.writeShort(__io__address + 130, vgroup);
 		} else {
-			__io__block.writeShort(__io__address + 102, vgroup);
+			__io__block.writeShort(__io__address + 106, vgroup);
 		}
 	}
 
@@ -292,9 +292,9 @@ public class ExplodeModifierData extends CFacade {
 	public float getProtect() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -306,9 +306,9 @@ public class ExplodeModifierData extends CFacade {
 	public void setProtect(float protect) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, protect);
+			__io__block.writeFloat(__io__address + 132, protect);
 		} else {
-			__io__block.writeFloat(__io__address + 104, protect);
+			__io__block.writeFloat(__io__address + 108, protect);
 		}
 	}
 
@@ -316,7 +316,7 @@ public class ExplodeModifierData extends CFacade {
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -327,9 +327,9 @@ public class ExplodeModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -337,7 +337,7 @@ public class ExplodeModifierData extends CFacade {
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_CUSTOMDATA_LAYER_NAME </p>
+	 * <p> MAX_CUSTOMDATA_LAYER_NAME. </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -345,9 +345,9 @@ public class ExplodeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 112;
 		}
 		if (__io__equals(uvname, __io__address + __dna__offset)) {
 			return;

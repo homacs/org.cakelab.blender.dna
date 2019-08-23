@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=32, size64=32)
+@CMetaData(size32=40, size64=40)
 public class uiWidgetColors extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class uiWidgetColors extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 242;
+	public static final int __DNA__SDNA_INDEX = 241;
 
 	/**
 	 * Field descriptor (offset) for struct member 'outline'.
@@ -158,16 +158,36 @@ public class uiWidgetColors extends CFacade {
 	 * <pre>
 	 * uiWidgetColors uiwidgetcolors = ...;
 	 * CPointer&lt;Object&gt; p = uiwidgetcolors.__dna__addressof(uiWidgetColors.__DNA__FIELD__shaded);
-	 * CPointer&lt;Short&gt; p_shaded = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_shaded = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'shaded'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shaded = new long[]{24, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiWidgetColors uiwidgetcolors = ...;
+	 * CPointer&lt;Object&gt; p = uiwidgetcolors.__dna__addressof(uiWidgetColors.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{25, 25};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadetop'.
@@ -187,7 +207,7 @@ public class uiWidgetColors extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadetop = new long[]{26, 26};
+	public static final long[] __DNA__FIELD__shadetop = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadedown'.
@@ -207,27 +227,27 @@ public class uiWidgetColors extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadedown = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__shadedown = new long[]{34, 34};
 
 	/**
-	 * Field descriptor (offset) for struct member 'alpha_check'.
+	 * Field descriptor (offset) for struct member 'roundness'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiWidgetColors uiwidgetcolors = ...;
-	 * CPointer&lt;Object&gt; p = uiwidgetcolors.__dna__addressof(uiWidgetColors.__DNA__FIELD__alpha_check);
-	 * CPointer&lt;Short&gt; p_alpha_check = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = uiwidgetcolors.__dna__addressof(uiWidgetColors.__DNA__FIELD__roundness);
+	 * CPointer&lt;Float&gt; p_roundness = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'alpha_check'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'roundness'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_check = new long[]{30, 30};
+	public static final long[] __DNA__FIELD__roundness = new long[]{36, 36};
 
 	public uiWidgetColors(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -482,12 +502,12 @@ public class uiWidgetColors extends CFacade {
 	 * @see #__DNA__FIELD__shaded
 	 */
 	
-	public short getShaded() throws IOException
+	public byte getShaded() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readByte(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readByte(__io__address + 24);
 		}
 	}
 
@@ -496,12 +516,52 @@ public class uiWidgetColors extends CFacade {
 	 * @see #__DNA__FIELD__shaded
 	 */
 	
-	public void setShaded(short shaded) throws IOException
+	public void setShaded(byte shaded) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, shaded);
+			__io__block.writeByte(__io__address + 24, shaded);
 		} else {
-			__io__block.writeShort(__io__address + 24, shaded);
+			__io__block.writeByte(__io__address + 24, shaded);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 25, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 25, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 25;
+		} else {
+			__dna__offset = 25;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -513,9 +573,9 @@ public class uiWidgetColors extends CFacade {
 	public short getShadetop() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 32);
 		} else {
-			return __io__block.readShort(__io__address + 26);
+			return __io__block.readShort(__io__address + 32);
 		}
 	}
 
@@ -527,9 +587,9 @@ public class uiWidgetColors extends CFacade {
 	public void setShadetop(short shadetop) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, shadetop);
+			__io__block.writeShort(__io__address + 32, shadetop);
 		} else {
-			__io__block.writeShort(__io__address + 26, shadetop);
+			__io__block.writeShort(__io__address + 32, shadetop);
 		}
 	}
 
@@ -541,9 +601,9 @@ public class uiWidgetColors extends CFacade {
 	public short getShadedown() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 34);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 34);
 		}
 	}
 
@@ -555,37 +615,37 @@ public class uiWidgetColors extends CFacade {
 	public void setShadedown(short shadedown) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, shadedown);
+			__io__block.writeShort(__io__address + 34, shadedown);
 		} else {
-			__io__block.writeShort(__io__address + 28, shadedown);
+			__io__block.writeShort(__io__address + 34, shadedown);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'alpha_check'.
-	 * @see #__DNA__FIELD__alpha_check
+	 * Get method for struct member 'roundness'.
+	 * @see #__DNA__FIELD__roundness
 	 */
 	
-	public short getAlpha_check() throws IOException
+	public float getRoundness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readFloat(__io__address + 36);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readFloat(__io__address + 36);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'alpha_check'.
-	 * @see #__DNA__FIELD__alpha_check
+	 * Set method for struct member 'roundness'.
+	 * @see #__DNA__FIELD__roundness
 	 */
 	
-	public void setAlpha_check(short alpha_check) throws IOException
+	public void setRoundness(float roundness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, alpha_check);
+			__io__block.writeFloat(__io__address + 36, roundness);
 		} else {
-			__io__block.writeShort(__io__address + 30, alpha_check);
+			__io__block.writeFloat(__io__address + 36, roundness);
 		}
 	}
 

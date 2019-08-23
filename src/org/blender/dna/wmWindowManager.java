@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> reports need to be before {@link wmWindowManager}  windowmanager is saved, tag WMAN </p>
  */
 
-@CMetaData(size32=232, size64=352)
+@CMetaData(size32=260, size64=400)
 public class wmWindowManager extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 499;
+	public static final int __DNA__SDNA_INDEX = 505;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -45,13 +45,16 @@ public class wmWindowManager extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'windrawable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Separate active from drawable. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -68,13 +71,10 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__windrawable = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__windrawable = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winactive'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> separate active from drawable </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -91,7 +91,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winactive = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__winactive = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'windows'.
@@ -111,13 +111,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__windows = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__windows = new long[]{128, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'initialized'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> set on file read </p>
+	 * <p> Set on file read. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,13 +134,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__initialized = new long[]{116, 152};
+	public static final long[] __DNA__FIELD__initialized = new long[]{136, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'file_saved'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicator whether data was saved </p>
+	 * <p> Indicator whether data was saved. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -157,13 +157,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__file_saved = new long[]{120, 156};
+	public static final long[] __DNA__FIELD__file_saved = new long[]{140, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_undo_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator stack depth to avoid nested undo pushes </p>
+	 * <p> Operator stack depth to avoid nested undo pushes. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -180,13 +180,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op_undo_depth = new long[]{122, 158};
+	public static final long[] __DNA__FIELD__op_undo_depth = new long[]{142, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'operators'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator registry </p>
+	 * <p> Operator registry. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,13 +203,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__operators = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__operators = new long[]{144, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> refresh/redraw wmNotifier structs </p>
+	 * <p> Refresh/redraw wmNotifier structs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -226,13 +226,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__queue = new long[]{132, 176};
+	public static final long[] __DNA__FIELD__queue = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> information and error reports </p>
+	 * <p> Information and error reports. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -249,13 +249,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reports = new long[]{140, 192};
+	public static final long[] __DNA__FIELD__reports = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jobs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> threaded jobs manager </p>
+	 * <p> Threaded jobs manager. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -272,13 +272,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jobs = new long[]{168, 232};
+	public static final long[] __DNA__FIELD__jobs = new long[]{188, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extra overlay cursors to draw, like circles </p>
+	 * <p> Extra overlay cursors to draw, like circles. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,13 +295,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paintcursors = new long[]{176, 248};
+	public static final long[] __DNA__FIELD__paintcursors = new long[]{196, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active dragged items </p>
+	 * <p> Active dragged items. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -318,13 +318,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drags = new long[]{184, 264};
+	public static final long[] __DNA__FIELD__drags = new long[]{204, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyconfigs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> known key configurations </p>
+	 * <p> Known key configurations. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -341,13 +341,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyconfigs = new long[]{192, 280};
+	public static final long[] __DNA__FIELD__keyconfigs = new long[]{212, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defaultconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default configuration </p>
+	 * <p> Default configuration. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -364,13 +364,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defaultconf = new long[]{200, 296};
+	public static final long[] __DNA__FIELD__defaultconf = new long[]{220, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'addonconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> addon configuration </p>
+	 * <p> Addon configuration. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -387,13 +387,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__addonconf = new long[]{204, 304};
+	public static final long[] __DNA__FIELD__addonconf = new long[]{224, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'userconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user configuration </p>
+	 * <p> User configuration. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -410,13 +410,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__userconf = new long[]{208, 312};
+	public static final long[] __DNA__FIELD__userconf = new long[]{228, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active timers </p>
+	 * <p> Active timers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -433,13 +433,13 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timers = new long[]{212, 320};
+	public static final long[] __DNA__FIELD__timers = new long[]{232, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosavetimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> timer for auto save </p>
+	 * <p> Timer for auto save. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -456,13 +456,36 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autosavetimer = new long[]{220, 336};
+	public static final long[] __DNA__FIELD__autosavetimer = new long[]{240, 368};
+
+	/**
+	 * Field descriptor (offset) for struct member 'undo_stack'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All undo history (runtime only). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__undo_stack);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_undo_stack = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'undo_stack'</li>
+	 * <li>Signature: 'UndoStack*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__undo_stack = new long[]{244, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_interface_locked'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicates whether interface is locked for user interaction </p>
+	 * <p> Indicates whether interface is locked for user interaction. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -479,7 +502,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{224, 344};
+	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{248, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'par'.
@@ -499,7 +522,27 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__par = new long[]{225, 345};
+	public static final long[] __DNA__FIELD__par = new long[]{249, 385};
+
+	/**
+	 * Field descriptor (offset) for struct member 'message_bus'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__message_bus);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_message_bus = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'message_bus'</li>
+	 * <li>Signature: 'wmMsgBus*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__message_bus = new long[]{256, 392};
 
 	public wmWindowManager(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -547,6 +590,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Get method for struct member 'windrawable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Separate active from drawable. </p>
 	 * @see #__DNA__FIELD__windrawable
 	 */
 	
@@ -554,9 +600,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmWindow.class};
 		return new CPointer<wmWindow>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmWindow.__DNA__SDNA_INDEX), __io__blockTable);
@@ -564,6 +610,9 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'windrawable'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Separate active from drawable. </p>
 	 * @see #__DNA__FIELD__windrawable
 	 */
 	
@@ -571,17 +620,14 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((windrawable == null) ? 0 : windrawable.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'winactive'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> separate active from drawable </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	
@@ -589,9 +635,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmWindow.class};
 		return new CPointer<wmWindow>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmWindow.__DNA__SDNA_INDEX), __io__blockTable);
@@ -599,9 +645,6 @@ public class wmWindowManager extends CFacade {
 
 	/**
 	 * Set method for struct member 'winactive'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> separate active from drawable </p>
 	 * @see #__DNA__FIELD__winactive
 	 */
 	
@@ -609,9 +652,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((winactive == null) ? 0 : winactive.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
@@ -623,9 +666,9 @@ public class wmWindowManager extends CFacade {
 	public ListBase getWindows() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 108, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
 		}
 	}
 
@@ -638,9 +681,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 128;
 		}
 		if (__io__equals(windows, __io__address + __dna__offset)) {
 			return;
@@ -655,16 +698,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'initialized'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> set on file read </p>
+	 * <p> Set on file read. </p>
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
 	public int getInitialized() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 136);
 		}
 	}
 
@@ -672,16 +715,16 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'initialized'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> set on file read </p>
+	 * <p> Set on file read. </p>
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
 	public void setInitialized(int initialized) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, initialized);
+			__io__block.writeInt(__io__address + 184, initialized);
 		} else {
-			__io__block.writeInt(__io__address + 116, initialized);
+			__io__block.writeInt(__io__address + 136, initialized);
 		}
 	}
 
@@ -689,16 +732,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'file_saved'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicator whether data was saved </p>
+	 * <p> Indicator whether data was saved. </p>
 	 * @see #__DNA__FIELD__file_saved
 	 */
 	
 	public short getFile_saved() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 156);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 140);
 		}
 	}
 
@@ -706,16 +749,16 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'file_saved'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicator whether data was saved </p>
+	 * <p> Indicator whether data was saved. </p>
 	 * @see #__DNA__FIELD__file_saved
 	 */
 	
 	public void setFile_saved(short file_saved) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 156, file_saved);
+			__io__block.writeShort(__io__address + 188, file_saved);
 		} else {
-			__io__block.writeShort(__io__address + 120, file_saved);
+			__io__block.writeShort(__io__address + 140, file_saved);
 		}
 	}
 
@@ -723,16 +766,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'op_undo_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator stack depth to avoid nested undo pushes </p>
+	 * <p> Operator stack depth to avoid nested undo pushes. </p>
 	 * @see #__DNA__FIELD__op_undo_depth
 	 */
 	
 	public short getOp_undo_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 158);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 142);
 		}
 	}
 
@@ -740,16 +783,16 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'op_undo_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator stack depth to avoid nested undo pushes </p>
+	 * <p> Operator stack depth to avoid nested undo pushes. </p>
 	 * @see #__DNA__FIELD__op_undo_depth
 	 */
 	
 	public void setOp_undo_depth(short op_undo_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 158, op_undo_depth);
+			__io__block.writeShort(__io__address + 190, op_undo_depth);
 		} else {
-			__io__block.writeShort(__io__address + 122, op_undo_depth);
+			__io__block.writeShort(__io__address + 142, op_undo_depth);
 		}
 	}
 
@@ -757,16 +800,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'operators'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator registry </p>
+	 * <p> Operator registry. </p>
 	 * @see #__DNA__FIELD__operators
 	 */
 	
 	public ListBase getOperators() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
 		}
 	}
 
@@ -774,7 +817,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'operators'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> operator registry </p>
+	 * <p> Operator registry. </p>
 	 * @see #__DNA__FIELD__operators
 	 */
 	
@@ -782,9 +825,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 144;
 		}
 		if (__io__equals(operators, __io__address + __dna__offset)) {
 			return;
@@ -799,16 +842,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> refresh/redraw wmNotifier structs </p>
+	 * <p> Refresh/redraw wmNotifier structs. </p>
 	 * @see #__DNA__FIELD__queue
 	 */
 	
 	public ListBase getQueue() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 132, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -816,7 +859,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> refresh/redraw wmNotifier structs </p>
+	 * <p> Refresh/redraw wmNotifier structs. </p>
 	 * @see #__DNA__FIELD__queue
 	 */
 	
@@ -824,9 +867,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 132;
+			__dna__offset = 152;
 		}
 		if (__io__equals(queue, __io__address + __dna__offset)) {
 			return;
@@ -841,16 +884,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> information and error reports </p>
+	 * <p> Information and error reports. </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
 	public ReportList getReports() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ReportList(__io__address + 192, __io__block, __io__blockTable);
+			return new ReportList(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new ReportList(__io__address + 140, __io__block, __io__blockTable);
+			return new ReportList(__io__address + 160, __io__block, __io__blockTable);
 		}
 	}
 
@@ -858,7 +901,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'reports'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> information and error reports </p>
+	 * <p> Information and error reports. </p>
 	 * @see #__DNA__FIELD__reports
 	 */
 	
@@ -866,9 +909,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 160;
 		}
 		if (__io__equals(reports, __io__address + __dna__offset)) {
 			return;
@@ -883,16 +926,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'jobs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> threaded jobs manager </p>
+	 * <p> Threaded jobs manager. </p>
 	 * @see #__DNA__FIELD__jobs
 	 */
 	
 	public ListBase getJobs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 188, __io__block, __io__blockTable);
 		}
 	}
 
@@ -900,7 +943,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'jobs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> threaded jobs manager </p>
+	 * <p> Threaded jobs manager. </p>
 	 * @see #__DNA__FIELD__jobs
 	 */
 	
@@ -908,9 +951,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 188;
 		}
 		if (__io__equals(jobs, __io__address + __dna__offset)) {
 			return;
@@ -925,16 +968,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'paintcursors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extra overlay cursors to draw, like circles </p>
+	 * <p> Extra overlay cursors to draw, like circles. </p>
 	 * @see #__DNA__FIELD__paintcursors
 	 */
 	
 	public ListBase getPaintcursors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 196, __io__block, __io__blockTable);
 		}
 	}
 
@@ -942,7 +985,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'paintcursors'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> extra overlay cursors to draw, like circles </p>
+	 * <p> Extra overlay cursors to draw, like circles. </p>
 	 * @see #__DNA__FIELD__paintcursors
 	 */
 	
@@ -950,9 +993,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 196;
 		}
 		if (__io__equals(paintcursors, __io__address + __dna__offset)) {
 			return;
@@ -967,16 +1010,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'drags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active dragged items </p>
+	 * <p> Active dragged items. </p>
 	 * @see #__DNA__FIELD__drags
 	 */
 	
 	public ListBase getDrags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 204, __io__block, __io__blockTable);
 		}
 	}
 
@@ -984,7 +1027,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'drags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active dragged items </p>
+	 * <p> Active dragged items. </p>
 	 * @see #__DNA__FIELD__drags
 	 */
 	
@@ -992,9 +1035,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 204;
 		}
 		if (__io__equals(drags, __io__address + __dna__offset)) {
 			return;
@@ -1009,16 +1052,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'keyconfigs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> known key configurations </p>
+	 * <p> Known key configurations. </p>
 	 * @see #__DNA__FIELD__keyconfigs
 	 */
 	
 	public ListBase getKeyconfigs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 212, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1026,7 +1069,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'keyconfigs'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> known key configurations </p>
+	 * <p> Known key configurations. </p>
 	 * @see #__DNA__FIELD__keyconfigs
 	 */
 	
@@ -1034,9 +1077,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 212;
 		}
 		if (__io__equals(keyconfigs, __io__address + __dna__offset)) {
 			return;
@@ -1051,7 +1094,7 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'defaultconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default configuration </p>
+	 * <p> Default configuration. </p>
 	 * @see #__DNA__FIELD__defaultconf
 	 */
 	
@@ -1059,9 +1102,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 220);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1071,7 +1114,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'defaultconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default configuration </p>
+	 * <p> Default configuration. </p>
 	 * @see #__DNA__FIELD__defaultconf
 	 */
 	
@@ -1079,9 +1122,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((defaultconf == null) ? 0 : defaultconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 220, __address);
 		}
 	}
 
@@ -1089,7 +1132,7 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'addonconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> addon configuration </p>
+	 * <p> Addon configuration. </p>
 	 * @see #__DNA__FIELD__addonconf
 	 */
 	
@@ -1097,9 +1140,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1109,7 +1152,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'addonconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> addon configuration </p>
+	 * <p> Addon configuration. </p>
 	 * @see #__DNA__FIELD__addonconf
 	 */
 	
@@ -1117,9 +1160,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((addonconf == null) ? 0 : addonconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 304, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		}
 	}
 
@@ -1127,7 +1170,7 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'userconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user configuration </p>
+	 * <p> User configuration. </p>
 	 * @see #__DNA__FIELD__userconf
 	 */
 	
@@ -1135,9 +1178,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 228);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{wmKeyConfig.class};
 		return new CPointer<wmKeyConfig>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, wmKeyConfig.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1147,7 +1190,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'userconf'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user configuration </p>
+	 * <p> User configuration. </p>
 	 * @see #__DNA__FIELD__userconf
 	 */
 	
@@ -1155,9 +1198,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((userconf == null) ? 0 : userconf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		} else {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 228, __address);
 		}
 	}
 
@@ -1165,16 +1208,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'timers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active timers </p>
+	 * <p> Active timers. </p>
 	 * @see #__DNA__FIELD__timers
 	 */
 	
 	public ListBase getTimers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 320, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 212, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1182,7 +1225,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'timers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> active timers </p>
+	 * <p> Active timers. </p>
 	 * @see #__DNA__FIELD__timers
 	 */
 	
@@ -1190,9 +1233,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 320;
+			__dna__offset = 352;
 		} else {
-			__dna__offset = 212;
+			__dna__offset = 232;
 		}
 		if (__io__equals(timers, __io__address + __dna__offset)) {
 			return;
@@ -1207,7 +1250,7 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'autosavetimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> timer for auto save </p>
+	 * <p> Timer for auto save. </p>
 	 * @see #__DNA__FIELD__autosavetimer
 	 */
 	
@@ -1215,9 +1258,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1227,7 +1270,7 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'autosavetimer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> timer for auto save </p>
+	 * <p> Timer for auto save. </p>
 	 * @see #__DNA__FIELD__autosavetimer
 	 */
 	
@@ -1235,9 +1278,47 @@ public class wmWindowManager extends CFacade {
 	{
 		long __address = ((autosavetimer == null) ? 0 : autosavetimer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 240, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'undo_stack'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All undo history (runtime only). </p>
+	 * @see #__DNA__FIELD__undo_stack
+	 */
+	
+	public CPointer<Object> getUndo_stack() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'undo_stack'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> All undo history (runtime only). </p>
+	 * @see #__DNA__FIELD__undo_stack
+	 */
+	
+	public void setUndo_stack(CPointer<Object> undo_stack) throws IOException
+	{
+		long __address = ((undo_stack == null) ? 0 : undo_stack.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 376, __address);
+		} else {
+			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 
@@ -1245,16 +1326,16 @@ public class wmWindowManager extends CFacade {
 	 * Get method for struct member 'is_interface_locked'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicates whether interface is locked for user interaction </p>
+	 * <p> Indicates whether interface is locked for user interaction. </p>
 	 * @see #__DNA__FIELD__is_interface_locked
 	 */
 	
 	public byte getIs_interface_locked() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 344);
+			return __io__block.readByte(__io__address + 384);
 		} else {
-			return __io__block.readByte(__io__address + 224);
+			return __io__block.readByte(__io__address + 248);
 		}
 	}
 
@@ -1262,16 +1343,16 @@ public class wmWindowManager extends CFacade {
 	 * Set method for struct member 'is_interface_locked'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> indicates whether interface is locked for user interaction </p>
+	 * <p> Indicates whether interface is locked for user interaction. </p>
 	 * @see #__DNA__FIELD__is_interface_locked
 	 */
 	
 	public void setIs_interface_locked(byte is_interface_locked) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 344, is_interface_locked);
+			__io__block.writeByte(__io__address + 384, is_interface_locked);
 		} else {
-			__io__block.writeByte(__io__address + 224, is_interface_locked);
+			__io__block.writeByte(__io__address + 248, is_interface_locked);
 		}
 	}
 
@@ -1287,9 +1368,9 @@ public class wmWindowManager extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 345, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 385, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 225, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 249, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1302,9 +1383,9 @@ public class wmWindowManager extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 345;
+			__dna__offset = 385;
 		} else {
-			__dna__offset = 225;
+			__dna__offset = 249;
 		}
 		if (__io__equals(par, __io__address + __dna__offset)) {
 			return;
@@ -1312,6 +1393,38 @@ public class wmWindowManager extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, par);
 		} else {
 			__io__generic__copy( getPar(), par);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'message_bus'.
+	 * @see #__DNA__FIELD__message_bus
+	 */
+	
+	public CPointer<Object> getMessage_bus() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'message_bus'.
+	 * @see #__DNA__FIELD__message_bus
+	 */
+	
+	public void setMessage_bus(CPointer<Object> message_bus) throws IOException
+	{
+		long __address = ((message_bus == null) ? 0 : message_bus.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 392, __address);
+		} else {
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 

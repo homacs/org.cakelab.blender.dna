@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke Point' -> Coordinates may either be 2d or 3d depending on settings at the time -> Coordinates of point on stroke, in proportions of window size This assumes that the bottom-left corner is (0,0) </p>
  */
 
-@CMetaData(size32=28, size64=28)
+@CMetaData(size32=36, size64=36)
 public class bGPDspoint extends CFacade {
 
 	/**
@@ -27,10 +27,13 @@ public class bGPDspoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 489;
+	public static final int __DNA__SDNA_INDEX = 462;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Co-ordinates of point (usually 2d, but can be 3d as well). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -71,9 +74,6 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'z'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class bGPDspoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure of input device (from 0 to 1) at this point </p>
+	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,7 +119,7 @@ public class bGPDspoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> color strength (used for alpha factor) </p>
+	 * <p> Color strength (used for alpha factor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,7 +142,7 @@ public class bGPDspoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> seconds since start of stroke </p>
+	 * <p> Seconds since start of stroke. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -165,7 +165,7 @@ public class bGPDspoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
+	 * <p> Additional options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -184,6 +184,52 @@ public class bGPDspoint extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__flag = new long[]{24, 24};
 
+	/**
+	 * Field descriptor (offset) for struct member 'uv_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of uv along the stroke. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__uv_fac);
+	 * CPointer&lt;Float&gt; p_uv_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_fac = new long[]{28, 28};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv rotation for dot mode. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__uv_rot);
+	 * CPointer&lt;Float&gt; p_uv_rot = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_rot'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_rot = new long[]{32, 32};
+
 	public bGPDspoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -194,6 +240,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Co-ordinates of point (usually 2d, but can be 3d as well). </p>
 	 * @see #__DNA__FIELD__x
 	 */
 	
@@ -208,6 +257,9 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Co-ordinates of point (usually 2d, but can be 3d as well). </p>
 	 * @see #__DNA__FIELD__x
 	 */
 	
@@ -250,9 +302,6 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'z'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -267,9 +316,6 @@ public class bGPDspoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'z'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> co-ordinates of point (usually 2d, but can be 3d as well) </p>
 	 * @see #__DNA__FIELD__z
 	 */
 	
@@ -286,7 +332,7 @@ public class bGPDspoint extends CFacade {
 	 * Get method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure of input device (from 0 to 1) at this point </p>
+	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	
@@ -303,7 +349,7 @@ public class bGPDspoint extends CFacade {
 	 * Set method for struct member 'pressure'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure of input device (from 0 to 1) at this point </p>
+	 * <p> Pressure of input device (from 0 to 1) at this point. </p>
 	 * @see #__DNA__FIELD__pressure
 	 */
 	
@@ -320,7 +366,7 @@ public class bGPDspoint extends CFacade {
 	 * Get method for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> color strength (used for alpha factor) </p>
+	 * <p> Color strength (used for alpha factor). </p>
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -337,7 +383,7 @@ public class bGPDspoint extends CFacade {
 	 * Set method for struct member 'strength'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> color strength (used for alpha factor) </p>
+	 * <p> Color strength (used for alpha factor). </p>
 	 * @see #__DNA__FIELD__strength
 	 */
 	
@@ -354,7 +400,7 @@ public class bGPDspoint extends CFacade {
 	 * Get method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> seconds since start of stroke </p>
+	 * <p> Seconds since start of stroke. </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -371,7 +417,7 @@ public class bGPDspoint extends CFacade {
 	 * Set method for struct member 'time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> seconds since start of stroke </p>
+	 * <p> Seconds since start of stroke. </p>
 	 * @see #__DNA__FIELD__time
 	 */
 	
@@ -388,7 +434,7 @@ public class bGPDspoint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
+	 * <p> Additional options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -405,7 +451,7 @@ public class bGPDspoint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> additional options (NOTE: can shrink this field down later if needed) </p>
+	 * <p> Additional options. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -415,6 +461,74 @@ public class bGPDspoint extends CFacade {
 			__io__block.writeInt(__io__address + 24, flag);
 		} else {
 			__io__block.writeInt(__io__address + 24, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of uv along the stroke. </p>
+	 * @see #__DNA__FIELD__uv_fac
+	 */
+	
+	public float getUv_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 28);
+		} else {
+			return __io__block.readFloat(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of uv along the stroke. </p>
+	 * @see #__DNA__FIELD__uv_fac
+	 */
+	
+	public void setUv_fac(float uv_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 28, uv_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 28, uv_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv rotation for dot mode. </p>
+	 * @see #__DNA__FIELD__uv_rot
+	 */
+	
+	public float getUv_rot() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_rot'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv rotation for dot mode. </p>
+	 * @see #__DNA__FIELD__uv_rot
+	 */
+	
+	public void setUv_rot(float uv_rot) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 32, uv_rot);
+		} else {
+			__io__block.writeFloat(__io__address + 32, uv_rot);
 		}
 	}
 

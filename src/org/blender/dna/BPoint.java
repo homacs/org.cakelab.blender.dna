@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> note; alfa location in struct is abused by {@link Key}  system </p>
+ * <p><h2>Note</h2><p>{@link BPoint.tilt}  location in struct is abused by {@link Key}  system. </p> BPoint.tilt location in struct is abused by Key system. 
+ * </p>
  */
 
 @CMetaData(size32=36, size64=36)
@@ -28,7 +29,7 @@ public class BPoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 51;
+	public static final int __DNA__SDNA_INDEX = 55;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
@@ -74,7 +75,7 @@ public class BPoint extends CFacade {
 	 * Field descriptor (offset) for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight </p>
+	 * <p> Used for softbody goal weight. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -95,6 +96,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -115,9 +119,6 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'hide'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1: selection status, hide: is point hidden or not </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -138,6 +139,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-set radius per point for beveling etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -157,27 +161,24 @@ public class BPoint extends CFacade {
 	public static final long[] __DNA__FIELD__radius = new long[]{28, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> user-set radius per point for beveling etc </p>
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BPoint bpoint = ...;
-	 * CPointer&lt;Object&gt; p = bpoint.__dna__addressof(BPoint.__DNA__FIELD__pad);
-	 * CPointer&lt;Float&gt; p_pad = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = bpoint.__dna__addressof(BPoint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{32, 32};
+	public static final long[] __DNA__FIELD___pad = new long[]{32, 32};
 
 	public BPoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -259,7 +260,7 @@ public class BPoint extends CFacade {
 	 * Get method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight </p>
+	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -276,7 +277,7 @@ public class BPoint extends CFacade {
 	 * Set method for struct member 'weight'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> alfa: tilt in 3D View, weight: used for softbody goal weight </p>
+	 * <p> Used for softbody goal weight. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -291,6 +292,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -305,6 +309,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'f1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> F1: selection status, hide: is point hidden or not. </p>
 	 * @see #__DNA__FIELD__f1
 	 */
 	
@@ -319,9 +326,6 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'hide'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1: selection status, hide: is point hidden or not </p>
 	 * @see #__DNA__FIELD__hide
 	 */
 	
@@ -336,9 +340,6 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'hide'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> f1: selection status, hide: is point hidden or not </p>
 	 * @see #__DNA__FIELD__hide
 	 */
 	
@@ -353,6 +354,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Get method for struct member 'radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-set radius per point for beveling etc. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -367,6 +371,9 @@ public class BPoint extends CFacade {
 
 	/**
 	 * Set method for struct member 'radius'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> User-set radius per point for beveling etc. </p>
 	 * @see #__DNA__FIELD__radius
 	 */
 	
@@ -380,36 +387,42 @@ public class BPoint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> user-set radius per point for beveling etc </p>
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public float getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 32);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 32);
+			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> user-set radius per point for beveling etc </p>
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(float pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 32, pad);
+			__dna__offset = 32;
 		} else {
-			__io__block.writeFloat(__io__address + 32, pad);
+			__dna__offset = 32;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -22,7 +22,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> There's a nasty circular dependency here.... 'void *' to the rescue! I really wonder why this is needed. </p>
  */
 
-@CMetaData(size32=100, size64=120)
+@CMetaData(size32=120, size64=152)
 public class ID extends CFacade {
 
 	/**
@@ -33,7 +33,7 @@ public class ID extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 10;
+	public static final int __DNA__SDNA_INDEX = 15;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -146,7 +146,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
 	 * 					</table><h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME </p>
+	 * <p> MAX_ID_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -186,7 +186,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> LIB_... flags report on status of the datablock this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
+	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -218,36 +218,16 @@ public class ID extends CFacade {
 	 * <pre>
 	 * ID id = ...;
 	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__tag);
-	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_tag = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'tag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__tag = new long[]{84, 100};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad_s1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ID id = ...;
-	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__pad_s1);
-	 * CPointer&lt;Short&gt; p_pad_s1 = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad_s1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__pad_s1 = new long[]{86, 102};
 
 	/**
 	 * Field descriptor (offset) for struct member 'us'.
@@ -296,6 +276,46 @@ public class ID extends CFacade {
 	public static final long[] __DNA__FIELD__icon_id = new long[]{92, 108};
 
 	/**
+	 * Field descriptor (offset) for struct member 'recalc'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__recalc);
+	 * CPointer&lt;Integer&gt; p_recalc = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'recalc'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__recalc = new long[]{96, 112};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{100, 116};
+
+	/**
 	 * Field descriptor (offset) for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -316,7 +336,74 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__properties = new long[]{104, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'override_library'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <p> Reference linked {@link ID}  which this one overrides. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__override_library);
+	 * CPointer&lt;CPointer&lt;IDOverrideLibrary&gt;&gt; p_override_library = p.cast(new Class[]{CPointer.class, IDOverrideLibrary.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'override_library'</li>
+	 * <li>Signature: 'IDOverrideLibrary*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__override_library = new long[]{108, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'orig_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__orig_id);
+	 * CPointer&lt;CPointer&lt;ID&gt;&gt; p_orig_id = p.cast(new Class[]{CPointer.class, ID.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'orig_id'</li>
+	 * <li>Signature: 'ID*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__orig_id = new long[]{112, 136};
+
+	/**
+	 * Field descriptor (offset) for struct member 'py_instance'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__py_instance);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_py_instance = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'py_instance'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__py_instance = new long[]{116, 144};
 
 	public ID(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -494,7 +581,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
 	 * 					</table><h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME </p>
+	 * <p> MAX_ID_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -533,7 +620,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>{@link CustomDataLayer} for {@link MLoop}</td><td>"NGon Face-Vertex"</td></tr>
 	 * 					</table><h4>Blender Python API:</h4>
 	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> MAX_ID_NAME </p>
+	 * <p> MAX_ID_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -575,7 +662,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> LIB_... flags report on status of the datablock this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
+	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -609,7 +696,7 @@ public class ID extends CFacade {
 	 * 					<tr><td>LIB_ID_RECALC_DATA</td><td>8192</td><td>runtime</td><tr>
 	 * 					</table>
 	 * 				<h4>Blender Source Code:</h4>
-	 * <p> LIB_... flags report on status of the datablock this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
+	 * <p> LIB_... flags report on status of the data-block this {@link ID}  belongs to (persistent, saved to and read from .blend). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -631,12 +718,12 @@ public class ID extends CFacade {
 	 * @see #__DNA__FIELD__tag
 	 */
 	
-	public short getTag() throws IOException
+	public int getTag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readInt(__io__address + 100);
 		} else {
-			return __io__block.readShort(__io__address + 84);
+			return __io__block.readInt(__io__address + 84);
 		}
 	}
 
@@ -649,40 +736,12 @@ public class ID extends CFacade {
 	 * @see #__DNA__FIELD__tag
 	 */
 	
-	public void setTag(short tag) throws IOException
+	public void setTag(int tag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, tag);
+			__io__block.writeInt(__io__address + 100, tag);
 		} else {
-			__io__block.writeShort(__io__address + 84, tag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'pad_s1'.
-	 * @see #__DNA__FIELD__pad_s1
-	 */
-	
-	public short getPad_s1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
-		} else {
-			return __io__block.readShort(__io__address + 86);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad_s1'.
-	 * @see #__DNA__FIELD__pad_s1
-	 */
-	
-	public void setPad_s1(short pad_s1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, pad_s1);
-		} else {
-			__io__block.writeShort(__io__address + 86, pad_s1);
+			__io__block.writeInt(__io__address + 84, tag);
 		}
 	}
 
@@ -755,6 +814,74 @@ public class ID extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'recalc'.
+	 * @see #__DNA__FIELD__recalc
+	 */
+	
+	public int getRecalc() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 112);
+		} else {
+			return __io__block.readInt(__io__address + 96);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'recalc'.
+	 * @see #__DNA__FIELD__recalc
+	 */
+	
+	public void setRecalc(int recalc) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 112, recalc);
+		} else {
+			__io__block.writeInt(__io__address + 96, recalc);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 116;
+		} else {
+			__dna__offset = 100;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'properties'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -766,9 +893,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -786,9 +913,119 @@ public class ID extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 104, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'override_library'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <p> Reference linked {@link ID}  which this one overrides. </p>
+	 * @see #__DNA__FIELD__override_library
+	 */
+	
+	public CPointer<IDOverrideLibrary> getOverride_library() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{IDOverrideLibrary.class};
+		return new CPointer<IDOverrideLibrary>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDOverrideLibrary.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'override_library'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Library override data<h4>Blender Source Code:</h4>
+	 * <p> Reference linked {@link ID}  which this one overrides. </p>
+	 * @see #__DNA__FIELD__override_library
+	 */
+	
+	public void setOverride_library(CPointer<IDOverrideLibrary> override_library) throws IOException
+	{
+		long __address = ((override_library == null) ? 0 : override_library.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 128, __address);
+		} else {
+			__io__block.writeLong(__io__address + 108, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'orig_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * @see #__DNA__FIELD__orig_id
+	 */
+	
+	public CPointer<ID> getOrig_id() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
+		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'orig_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * @see #__DNA__FIELD__orig_id
+	 */
+	
+	public void setOrig_id(CPointer<ID> orig_id) throws IOException
+	{
+		long __address = ((orig_id == null) ? 0 : orig_id.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 136, __address);
+		} else {
+			__io__block.writeLong(__io__address + 112, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'py_instance'.
+	 * @see #__DNA__FIELD__py_instance
+	 */
+	
+	public CPointer<Object> getPy_instance() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'py_instance'.
+	 * @see #__DNA__FIELD__py_instance
+	 */
+	
+	public void setPy_instance(CPointer<Object> py_instance) throws IOException
+	{
+		long __address = ((py_instance == null) ? 0 : py_instance.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 144, __address);
+		} else {
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 

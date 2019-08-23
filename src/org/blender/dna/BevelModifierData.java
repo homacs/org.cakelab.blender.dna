@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=208)
+@CMetaData(size32=204, size64=224)
 public class BevelModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BevelModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 99;
+	public static final int __DNA__SDNA_INDEX = 105;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class BevelModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class BevelModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
+	 * <p> The "raw" bevel value (distance/amount to bevel). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,13 +70,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__value = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__value = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
+	 * <p> The resolution (as originally coded, it is the number of recursive bevels). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -93,13 +93,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__res = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general option flags </p>
+	 * <p> General option flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -116,13 +116,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__flags = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'val_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used to interpret the bevel value </p>
+	 * <p> Used to interpret the bevel value. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -139,13 +139,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__val_flags = new long[]{106, 122};
+	public static final long[] __DNA__FIELD__val_flags = new long[]{110, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lim_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to tell the tool how to limit the bevel </p>
+	 * <p> Flags to tell the tool how to limit the bevel. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -162,13 +162,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lim_flags = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__lim_flags = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'e_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to direct how edge weights are applied to verts </p>
+	 * <p> Flags to direct how edge weights are applied to verts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -185,13 +185,13 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__e_flags = new long[]{110, 126};
+	public static final long[] __DNA__FIELD__e_flags = new long[]{114, 134};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
+	 * <p>{@link Material}  index if >= 0, else material inherited from surrounding faces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,53 +208,116 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{112, 128};
+	public static final long[] __DNA__FIELD__mat = new long[]{116, 136};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member 'edge_flags'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BevelModifierData bevelmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__edge_flags);
+	 * CPointer&lt;Short&gt; p_edge_flags = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: 'edge_flags'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{114, 130};
+	public static final long[] __DNA__FIELD__edge_flags = new long[]{118, 138};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member 'face_str_mode'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BevelModifierData bevelmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__face_str_mode);
+	 * CPointer&lt;Short&gt; p_face_str_mode = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'face_str_mode'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{116, 132};
+	public static final long[] __DNA__FIELD__face_str_mode = new long[]{120, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'miter_inner'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BevelModifierData bevelmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__miter_inner);
+	 * CPointer&lt;Short&gt; p_miter_inner = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'miter_inner'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__miter_inner = new long[]{122, 142};
+
+	/**
+	 * Field descriptor (offset) for struct member 'miter_outer'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BevelModifierData bevelmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__miter_outer);
+	 * CPointer&lt;Short&gt; p_miter_outer = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'miter_outer'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__miter_outer = new long[]{124, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BevelModifierData bevelmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{126, 146};
 
 	/**
 	 * Field descriptor (offset) for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> controls profile shape (0->1, .5 is round) </p>
+	 * <p> Controls profile shape (0->1, .5 is round). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -271,7 +334,7 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__profile = new long[]{120, 136};
+	public static final long[] __DNA__FIELD__profile = new long[]{128, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bevel_angle'.
@@ -294,7 +357,27 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bevel_angle = new long[]{124, 140};
+	public static final long[] __DNA__FIELD__bevel_angle = new long[]{132, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spread'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BevelModifierData bevelmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__spread);
+	 * CPointer&lt;Float&gt; p_spread = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spread'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spread = new long[]{136, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -317,7 +400,7 @@ public class BevelModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{128, 144};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{140, 160};
 
 	public BevelModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -367,16 +450,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
+	 * <p> The "raw" bevel value (distance/amount to bevel). </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	
 	public float getValue() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -384,16 +467,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the "raw" bevel value (distance/amount to bevel) </p>
+	 * <p> The "raw" bevel value (distance/amount to bevel). </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	
 	public void setValue(float value) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, value);
+			__io__block.writeFloat(__io__address + 120, value);
 		} else {
-			__io__block.writeFloat(__io__address + 96, value);
+			__io__block.writeFloat(__io__address + 100, value);
 		}
 	}
 
@@ -401,16 +484,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'res'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
+	 * <p> The resolution (as originally coded, it is the number of recursive bevels). </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
 	public int getRes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -418,16 +501,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'res'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> the resolution (as originally coded, it is the number of recursive bevels) </p>
+	 * <p> The resolution (as originally coded, it is the number of recursive bevels). </p>
 	 * @see #__DNA__FIELD__res
 	 */
 	
 	public void setRes(int res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, res);
+			__io__block.writeInt(__io__address + 124, res);
 		} else {
-			__io__block.writeInt(__io__address + 100, res);
+			__io__block.writeInt(__io__address + 104, res);
 		}
 	}
 
@@ -435,16 +518,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general option flags </p>
+	 * <p> General option flags. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 104);
+			return __io__block.readShort(__io__address + 108);
 		}
 	}
 
@@ -452,16 +535,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> general option flags </p>
+	 * <p> General option flags. </p>
 	 * @see #__DNA__FIELD__flags
 	 */
 	
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, flags);
+			__io__block.writeShort(__io__address + 128, flags);
 		} else {
-			__io__block.writeShort(__io__address + 104, flags);
+			__io__block.writeShort(__io__address + 108, flags);
 		}
 	}
 
@@ -469,16 +552,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'val_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used to interpret the bevel value </p>
+	 * <p> Used to interpret the bevel value. </p>
 	 * @see #__DNA__FIELD__val_flags
 	 */
 	
 	public short getVal_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 106);
+			return __io__block.readShort(__io__address + 110);
 		}
 	}
 
@@ -486,16 +569,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'val_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> used to interpret the bevel value </p>
+	 * <p> Used to interpret the bevel value. </p>
 	 * @see #__DNA__FIELD__val_flags
 	 */
 	
 	public void setVal_flags(short val_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 122, val_flags);
+			__io__block.writeShort(__io__address + 130, val_flags);
 		} else {
-			__io__block.writeShort(__io__address + 106, val_flags);
+			__io__block.writeShort(__io__address + 110, val_flags);
 		}
 	}
 
@@ -503,16 +586,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'lim_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to tell the tool how to limit the bevel </p>
+	 * <p> Flags to tell the tool how to limit the bevel. </p>
 	 * @see #__DNA__FIELD__lim_flags
 	 */
 	
 	public short getLim_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 124);
+			return __io__block.readShort(__io__address + 132);
 		} else {
-			return __io__block.readShort(__io__address + 108);
+			return __io__block.readShort(__io__address + 112);
 		}
 	}
 
@@ -520,16 +603,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'lim_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to tell the tool how to limit the bevel </p>
+	 * <p> Flags to tell the tool how to limit the bevel. </p>
 	 * @see #__DNA__FIELD__lim_flags
 	 */
 	
 	public void setLim_flags(short lim_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 124, lim_flags);
+			__io__block.writeShort(__io__address + 132, lim_flags);
 		} else {
-			__io__block.writeShort(__io__address + 108, lim_flags);
+			__io__block.writeShort(__io__address + 112, lim_flags);
 		}
 	}
 
@@ -537,16 +620,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'e_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to direct how edge weights are applied to verts </p>
+	 * <p> Flags to direct how edge weights are applied to verts. </p>
 	 * @see #__DNA__FIELD__e_flags
 	 */
 	
 	public short getE_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 126);
+			return __io__block.readShort(__io__address + 134);
 		} else {
-			return __io__block.readShort(__io__address + 110);
+			return __io__block.readShort(__io__address + 114);
 		}
 	}
 
@@ -554,16 +637,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'e_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> flags to direct how edge weights are applied to verts </p>
+	 * <p> Flags to direct how edge weights are applied to verts. </p>
 	 * @see #__DNA__FIELD__e_flags
 	 */
 	
 	public void setE_flags(short e_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 126, e_flags);
+			__io__block.writeShort(__io__address + 134, e_flags);
 		} else {
-			__io__block.writeShort(__io__address + 110, e_flags);
+			__io__block.writeShort(__io__address + 114, e_flags);
 		}
 	}
 
@@ -571,16 +654,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
+	 * <p>{@link Material}  index if >= 0, else material inherited from surrounding faces. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
 	public short getMat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 128);
+			return __io__block.readShort(__io__address + 136);
 		} else {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 116);
 		}
 	}
 
@@ -588,72 +671,174 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> material index if >= 0, else material inherited from surrounding faces </p>
+	 * <p>{@link Material}  index if >= 0, else material inherited from surrounding faces. </p>
 	 * @see #__DNA__FIELD__mat
 	 */
 	
 	public void setMat(short mat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 128, mat);
+			__io__block.writeShort(__io__address + 136, mat);
 		} else {
-			__io__block.writeShort(__io__address + 112, mat);
+			__io__block.writeShort(__io__address + 116, mat);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member 'edge_flags'.
+	 * @see #__DNA__FIELD__edge_flags
 	 */
 	
-	public short getPad() throws IOException
+	public short getEdge_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 130);
+			return __io__block.readShort(__io__address + 138);
 		} else {
-			return __io__block.readShort(__io__address + 114);
+			return __io__block.readShort(__io__address + 118);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member 'edge_flags'.
+	 * @see #__DNA__FIELD__edge_flags
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void setEdge_flags(short edge_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 130, pad);
+			__io__block.writeShort(__io__address + 138, edge_flags);
 		} else {
-			__io__block.writeShort(__io__address + 114, pad);
+			__io__block.writeShort(__io__address + 118, edge_flags);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member 'face_str_mode'.
+	 * @see #__DNA__FIELD__face_str_mode
 	 */
 	
-	public int getPad2() throws IOException
+	public short getFace_str_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readShort(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readShort(__io__address + 120);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member 'face_str_mode'.
+	 * @see #__DNA__FIELD__face_str_mode
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void setFace_str_mode(short face_str_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, pad2);
+			__io__block.writeShort(__io__address + 140, face_str_mode);
 		} else {
-			__io__block.writeInt(__io__address + 116, pad2);
+			__io__block.writeShort(__io__address + 120, face_str_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'miter_inner'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * @see #__DNA__FIELD__miter_inner
+	 */
+	
+	public short getMiter_inner() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 142);
+		} else {
+			return __io__block.readShort(__io__address + 122);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'miter_inner'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * @see #__DNA__FIELD__miter_inner
+	 */
+	
+	public void setMiter_inner(short miter_inner) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 142, miter_inner);
+		} else {
+			__io__block.writeShort(__io__address + 122, miter_inner);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'miter_outer'.
+	 * @see #__DNA__FIELD__miter_outer
+	 */
+	
+	public short getMiter_outer() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 144);
+		} else {
+			return __io__block.readShort(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'miter_outer'.
+	 * @see #__DNA__FIELD__miter_outer
+	 */
+	
+	public void setMiter_outer(short miter_outer) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 144, miter_outer);
+		} else {
+			__io__block.writeShort(__io__address + 124, miter_outer);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 146, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 126, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 146;
+		} else {
+			__dna__offset = 126;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -661,16 +846,16 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> controls profile shape (0->1, .5 is round) </p>
+	 * <p> Controls profile shape (0->1, .5 is round). </p>
 	 * @see #__DNA__FIELD__profile
 	 */
 	
 	public float getProfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -678,16 +863,16 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'profile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> controls profile shape (0->1, .5 is round) </p>
+	 * <p> Controls profile shape (0->1, .5 is round). </p>
 	 * @see #__DNA__FIELD__profile
 	 */
 	
 	public void setProfile(float profile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, profile);
+			__io__block.writeFloat(__io__address + 148, profile);
 		} else {
-			__io__block.writeFloat(__io__address + 120, profile);
+			__io__block.writeFloat(__io__address + 128, profile);
 		}
 	}
 
@@ -702,9 +887,9 @@ public class BevelModifierData extends CFacade {
 	public float getBevel_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -719,9 +904,37 @@ public class BevelModifierData extends CFacade {
 	public void setBevel_angle(float bevel_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, bevel_angle);
+			__io__block.writeFloat(__io__address + 152, bevel_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 124, bevel_angle);
+			__io__block.writeFloat(__io__address + 132, bevel_angle);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spread'.
+	 * @see #__DNA__FIELD__spread
+	 */
+	
+	public float getSpread() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 156);
+		} else {
+			return __io__block.readFloat(__io__address + 136);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spread'.
+	 * @see #__DNA__FIELD__spread
+	 */
+	
+	public void setSpread(float spread) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 156, spread);
+		} else {
+			__io__block.writeFloat(__io__address + 136, spread);
 		}
 	}
 
@@ -740,9 +953,9 @@ public class BevelModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -758,9 +971,9 @@ public class BevelModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 140;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;

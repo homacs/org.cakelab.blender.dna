@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=112, size64=136)
+@CMetaData(size32=132, size64=168)
 public class PaintCurve extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class PaintCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 472;
+	public static final int __DNA__SDNA_INDEX = 443;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -43,7 +43,7 @@ public class PaintCurve extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -52,7 +52,7 @@ public class PaintCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> points of curve </p>
+	 * <p> Points of curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -69,7 +69,7 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__points = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__points = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_points'.
@@ -89,13 +89,13 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot_points = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__tot_points = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index where next point will be added </p>
+	 * <p> Index where next point will be added. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,7 +112,7 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__add_index = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__add_index = new long[]{128, 164};
 
 	public PaintCurve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -162,7 +162,7 @@ public class PaintCurve extends CFacade {
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> points of curve </p>
+	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -170,9 +170,9 @@ public class PaintCurve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PaintCurvePoint.class};
 		return new CPointer<PaintCurvePoint>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PaintCurvePoint.__DNA__SDNA_INDEX), __io__blockTable);
@@ -182,7 +182,7 @@ public class PaintCurve extends CFacade {
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> points of curve </p>
+	 * <p> Points of curve. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -190,9 +190,9 @@ public class PaintCurve extends CFacade {
 	{
 		long __address = ((points == null) ? 0 : points.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -204,9 +204,9 @@ public class PaintCurve extends CFacade {
 	public int getTot_points() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 160);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 124);
 		}
 	}
 
@@ -218,9 +218,9 @@ public class PaintCurve extends CFacade {
 	public void setTot_points(int tot_points) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 128, tot_points);
+			__io__block.writeInt(__io__address + 160, tot_points);
 		} else {
-			__io__block.writeInt(__io__address + 104, tot_points);
+			__io__block.writeInt(__io__address + 124, tot_points);
 		}
 	}
 
@@ -228,16 +228,16 @@ public class PaintCurve extends CFacade {
 	 * Get method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index where next point will be added </p>
+	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
 	
 	public int getAdd_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -245,16 +245,16 @@ public class PaintCurve extends CFacade {
 	 * Set method for struct member 'add_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index where next point will be added </p>
+	 * <p> Index where next point will be added. </p>
 	 * @see #__DNA__FIELD__add_index
 	 */
 	
 	public void setAdd_index(int add_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, add_index);
+			__io__block.writeInt(__io__address + 164, add_index);
 		} else {
-			__io__block.writeInt(__io__address + 108, add_index);
+			__io__block.writeInt(__io__address + 128, add_index);
 		}
 	}
 

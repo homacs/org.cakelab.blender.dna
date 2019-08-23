@@ -27,7 +27,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 551;
+	public static final int __DNA__SDNA_INDEX = 558;
 
 	/**
 	 * Field descriptor (offset) for struct member 'corners'.
@@ -73,7 +73,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Field descriptor (offset) for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of frame plane marker is associated with </p>
+	 * <p> Number of frame plane marker is associated with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Marker's flag (alive, ...) </p>
+	 * <p> Marker's flag (alive, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,7 +208,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Get method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of frame plane marker is associated with </p>
+	 * <p> Number of frame plane marker is associated with. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -225,7 +225,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Set method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of frame plane marker is associated with </p>
+	 * <p> Number of frame plane marker is associated with. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -242,7 +242,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Marker's flag (alive, ...) </p>
+	 * <p> Marker's flag (alive, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -259,7 +259,7 @@ public class MovieTrackingPlaneMarker extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Marker's flag (alive, ...) </p>
+	 * <p> Marker's flag (alive, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

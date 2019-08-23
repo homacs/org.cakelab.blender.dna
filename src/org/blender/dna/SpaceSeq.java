@@ -14,10 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link Sequence}  Editor ======================================= Sequencer </p>
+ * <p> Sequencer </p>
  */
 
-@CMetaData(size32=264, size64=320)
+@CMetaData(size32=264, size64=328)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 217;
+	public static final int __DNA__SDNA_INDEX = 224;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class SpaceSeq extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -102,74 +102,64 @@ public class SpaceSeq extends CFacade {
 	 * <pre>
 	 * SpaceSeq spaceseq = ...;
 	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__spacetype);
-	 * CPointer&lt;Integer&gt; p_spacetype = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Byte&gt; p_spacetype = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'spacetype'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__spacetype = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
+	 * Field descriptor (offset) for struct member 'link_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__blockscale);
-	 * CPointer&lt;Float&gt; p_blockscale = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__link_flag);
+	 * CPointer&lt;Byte&gt; p_link_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'blockscale'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'link_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blockscale = new long[]{20, 36};
+	public static final long[] __DNA__FIELD__link_flag = new long[]{17, 33};
 
 	/**
-	 * Field descriptor (offset) for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__blockhandler);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_blockhandler = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'blockhandler'</li>
-	 * <li>Signature: 'short[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blockhandler = new long[]{24, 40};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{18, 34};
 
 	/**
 	 * Field descriptor (offset) for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, copied to region </p>
+	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
-	 *  Deprecateddeprecated, copied to region </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -183,16 +173,16 @@ public class SpaceSeq extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 148/160</li>
+	 * <li>Actual Size (32bit/64bit): 156/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__v2d = new long[]{40, 56};
+	public static final long[] __DNA__FIELD__v2d = new long[]{24, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>
+	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -211,15 +201,15 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__xof = new long[]{180, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * <p>
 	 * @deprecated
-	 *  Deprecateddeprecated: offset for drawing the image preview </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -236,13 +226,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{192, 220};
+	public static final long[] __DNA__FIELD__yof = new long[]{184, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
+	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -259,13 +249,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mainb = new long[]{196, 224};
+	public static final long[] __DNA__FIELD__mainb = new long[]{188, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eSpaceSeq_Proxy_RenderSize </p>
+	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -282,7 +272,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_size = new long[]{198, 226};
+	public static final long[] __DNA__FIELD__render_size = new long[]{190, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanshown'.
@@ -302,7 +292,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chanshown = new long[]{200, 228};
+	public static final long[] __DNA__FIELD__chanshown = new long[]{192, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zebra'.
@@ -322,7 +312,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zebra = new long[]{202, 230};
+	public static final long[] __DNA__FIELD__zebra = new long[]{194, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -342,15 +332,15 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{204, 232};
+	public static final long[] __DNA__FIELD__flag = new long[]{196, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
-	 *  Deprecateddeprecated, handled by View2D now </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,13 +357,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zoom = new long[]{208, 236};
+	public static final long[] __DNA__FIELD__zoom = new long[]{200, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SEQ_VIEW_* below </p>
+	 * <p> See SEQ_VIEW_* below. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,7 +380,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{212, 240};
+	public static final long[] __DNA__FIELD__view = new long[]{204, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlay_type'.
@@ -410,13 +400,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay_type = new long[]{216, 244};
+	public static final long[] __DNA__FIELD__overlay_type = new long[]{208, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> overlay an image of the editing on below the strips </p>
+	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -433,33 +423,33 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_flag = new long[]{220, 248};
+	public static final long[] __DNA__FIELD__draw_flag = new long[]{212, 240};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{224, 252};
+	public static final long[] __DNA__FIELD___pad = new long[]{216, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -476,13 +466,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{228, 256};
+	public static final long[] __DNA__FIELD__gpd = new long[]{220, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> different scoped displayed in space </p>
+	 * <p> Different scoped displayed in space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -499,13 +489,13 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scopes = new long[]{232, 264};
+	public static final long[] __DNA__FIELD__scopes = new long[]{224, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use </p>
+	 * <p> Multiview current eye - for internal use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -522,27 +512,67 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multiview_eye = new long[]{256, 312};
+	public static final long[] __DNA__FIELD__multiview_eye = new long[]{248, 304};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
+	 * <li>Field: '_pad2'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{257, 313};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{249, 305};
+
+	/**
+	 * Field descriptor (offset) for struct member 'compositor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__compositor);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compositor = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'compositor'</li>
+	 * <li>Signature: 'GPUFX*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__compositor = new long[]{256, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceSeq spaceseq = ...;
+	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD___pad3);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{260, 320};
 
 	public SpaceSeq(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -620,7 +650,7 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -637,7 +667,7 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> storage of regions for inactive spaces </p>
+	 * <p> Storage of regions for inactive spaces. </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -663,12 +693,12 @@ public class SpaceSeq extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public int getSpacetype() throws IOException
+	public byte getSpacetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readByte(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readByte(__io__address + 16);
 		}
 	}
 
@@ -677,100 +707,80 @@ public class SpaceSeq extends CFacade {
 	 * @see #__DNA__FIELD__spacetype
 	 */
 	
-	public void setSpacetype(int spacetype) throws IOException
+	public void setSpacetype(byte spacetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, spacetype);
+			__io__block.writeByte(__io__address + 32, spacetype);
 		} else {
-			__io__block.writeInt(__io__address + 16, spacetype);
+			__io__block.writeByte(__io__address + 16, spacetype);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockscale
+	 * Get method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
 	 */
 	
-	public float getBlockscale() throws IOException
+	public byte getLink_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readByte(__io__address + 33);
 		} else {
-			return __io__block.readFloat(__io__address + 20);
+			return __io__block.readByte(__io__address + 17);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'blockscale'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockscale
+	 * Set method for struct member 'link_flag'.
+	 * @see #__DNA__FIELD__link_flag
 	 */
 	
-	public void setBlockscale(float blockscale) throws IOException
+	public void setLink_flag(byte link_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 36, blockscale);
+			__io__block.writeByte(__io__address + 33, link_flag);
 		} else {
-			__io__block.writeFloat(__io__address + 20, blockscale);
+			__io__block.writeByte(__io__address + 17, link_flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockhandler
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public CArrayFacade<Short> getBlockhandler() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			8
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 34, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'blockhandler'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__blockhandler
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setBlockhandler(CArrayFacade<Short> blockhandler) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 34;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 18;
 		}
-		if (__io__equals(blockhandler, __io__address + __dna__offset)) {
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, blockhandler)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, blockhandler);
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
 		} else {
-			__io__generic__copy( getBlockhandler(), blockhandler);
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -778,18 +788,18 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, copied to region </p>
+	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
-	 *  Deprecateddeprecated, copied to region </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
 	public View2D getV2d() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View2D(__io__address + 56, __io__block, __io__blockTable);
-		} else {
 			return new View2D(__io__address + 40, __io__block, __io__blockTable);
+		} else {
+			return new View2D(__io__address + 24, __io__block, __io__blockTable);
 		}
 	}
 
@@ -797,9 +807,9 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'v2d'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, copied to region </p>
+	 * <p> End '{@link SpaceLink} ' header. Deprecated, copied to region. 
 	 * @deprecated
-	 *  Deprecateddeprecated, copied to region </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__v2d
 	 */
 	
@@ -807,9 +817,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 56;
-		} else {
 			__dna__offset = 40;
+		} else {
+			__dna__offset = 24;
 		}
 		if (__io__equals(v2d, __io__address + __dna__offset)) {
 			return;
@@ -824,7 +834,7 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>
+	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xof
@@ -833,9 +843,9 @@ public class SpaceSeq extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -843,7 +853,7 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'xof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>
+	 * <p> Deprecated: offset for drawing the image preview. 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__xof
@@ -852,9 +862,9 @@ public class SpaceSeq extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 216, xof);
+			__io__block.writeFloat(__io__address + 208, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 188, xof);
+			__io__block.writeFloat(__io__address + 180, xof);
 		}
 	}
 
@@ -862,18 +872,18 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * <p>
 	 * @deprecated
-	 *  Deprecateddeprecated: offset for drawing the image preview </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -881,18 +891,18 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'yof'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated: offset for drawing the image preview </p>
+	 * <p>
 	 * @deprecated
-	 *  Deprecateddeprecated: offset for drawing the image preview </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__yof
 	 */
 	
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, yof);
+			__io__block.writeFloat(__io__address + 212, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 192, yof);
+			__io__block.writeFloat(__io__address + 184, yof);
 		}
 	}
 
@@ -900,16 +910,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
+	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
 	
 	public short getMainb() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 216);
 		} else {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -917,16 +927,16 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'mainb'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weird name for the sequencer subtype (seq, image, luma... etc) </p>
+	 * <p> Weird name for the sequencer subtype (seq, image, luma... etc). </p>
 	 * @see #__DNA__FIELD__mainb
 	 */
 	
 	public void setMainb(short mainb) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, mainb);
+			__io__block.writeShort(__io__address + 216, mainb);
 		} else {
-			__io__block.writeShort(__io__address + 196, mainb);
+			__io__block.writeShort(__io__address + 188, mainb);
 		}
 	}
 
@@ -934,16 +944,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eSpaceSeq_Proxy_RenderSize </p>
+	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
 	public short getRender_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readShort(__io__address + 190);
 		}
 	}
 
@@ -951,16 +961,16 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'render_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> eSpaceSeq_Proxy_RenderSize </p>
+	 * <p> ESpaceSeq_Proxy_RenderSize. </p>
 	 * @see #__DNA__FIELD__render_size
 	 */
 	
 	public void setRender_size(short render_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, render_size);
+			__io__block.writeShort(__io__address + 218, render_size);
 		} else {
-			__io__block.writeShort(__io__address + 198, render_size);
+			__io__block.writeShort(__io__address + 190, render_size);
 		}
 	}
 
@@ -972,9 +982,9 @@ public class SpaceSeq extends CFacade {
 	public short getChanshown() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 200);
+			return __io__block.readShort(__io__address + 192);
 		}
 	}
 
@@ -986,9 +996,9 @@ public class SpaceSeq extends CFacade {
 	public void setChanshown(short chanshown) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, chanshown);
+			__io__block.writeShort(__io__address + 220, chanshown);
 		} else {
-			__io__block.writeShort(__io__address + 200, chanshown);
+			__io__block.writeShort(__io__address + 192, chanshown);
 		}
 	}
 
@@ -1000,9 +1010,9 @@ public class SpaceSeq extends CFacade {
 	public short getZebra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 222);
 		} else {
-			return __io__block.readShort(__io__address + 202);
+			return __io__block.readShort(__io__address + 194);
 		}
 	}
 
@@ -1014,9 +1024,9 @@ public class SpaceSeq extends CFacade {
 	public void setZebra(short zebra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, zebra);
+			__io__block.writeShort(__io__address + 222, zebra);
 		} else {
-			__io__block.writeShort(__io__address + 202, zebra);
+			__io__block.writeShort(__io__address + 194, zebra);
 		}
 	}
 
@@ -1028,9 +1038,9 @@ public class SpaceSeq extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -1042,9 +1052,9 @@ public class SpaceSeq extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, flag);
+			__io__block.writeInt(__io__address + 224, flag);
 		} else {
-			__io__block.writeInt(__io__address + 204, flag);
+			__io__block.writeInt(__io__address + 196, flag);
 		}
 	}
 
@@ -1052,18 +1062,18 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
-	 *  Deprecateddeprecated, handled by View2D now </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
 	public float getZoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -1071,18 +1081,18 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'zoom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> deprecated, handled by {@link View2D}  now </p>
+	 * <p> Deprecated, handled by {@link View2D}  now. 
 	 * @deprecated
-	 *  Deprecateddeprecated, handled by View2D now </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__zoom
 	 */
 	
 	public void setZoom(float zoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, zoom);
+			__io__block.writeFloat(__io__address + 228, zoom);
 		} else {
-			__io__block.writeFloat(__io__address + 208, zoom);
+			__io__block.writeFloat(__io__address + 200, zoom);
 		}
 	}
 
@@ -1090,16 +1100,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SEQ_VIEW_* below </p>
+	 * <p> See SEQ_VIEW_* below. </p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
 	public int getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 240);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 204);
 		}
 	}
 
@@ -1107,16 +1117,16 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'view'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see SEQ_VIEW_* below </p>
+	 * <p> See SEQ_VIEW_* below. </p>
 	 * @see #__DNA__FIELD__view
 	 */
 	
 	public void setView(int view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 240, view);
+			__io__block.writeInt(__io__address + 232, view);
 		} else {
-			__io__block.writeInt(__io__address + 212, view);
+			__io__block.writeInt(__io__address + 204, view);
 		}
 	}
 
@@ -1128,9 +1138,9 @@ public class SpaceSeq extends CFacade {
 	public int getOverlay_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 236);
 		} else {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 208);
 		}
 	}
 
@@ -1142,9 +1152,9 @@ public class SpaceSeq extends CFacade {
 	public void setOverlay_type(int overlay_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 244, overlay_type);
+			__io__block.writeInt(__io__address + 236, overlay_type);
 		} else {
-			__io__block.writeInt(__io__address + 216, overlay_type);
+			__io__block.writeInt(__io__address + 208, overlay_type);
 		}
 	}
 
@@ -1152,16 +1162,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> overlay an image of the editing on below the strips </p>
+	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	
 	public int getDraw_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 212);
 		}
 	}
 
@@ -1169,44 +1179,56 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'draw_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> overlay an image of the editing on below the strips </p>
+	 * <p> Overlay an image of the editing on below the strips. </p>
 	 * @see #__DNA__FIELD__draw_flag
 	 */
 	
 	public void setDraw_flag(int draw_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, draw_flag);
+			__io__block.writeInt(__io__address + 240, draw_flag);
 		} else {
-			__io__block.writeInt(__io__address + 220, draw_flag);
+			__io__block.writeInt(__io__address + 212, draw_flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public int getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
+			return new CArrayFacade<Byte>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(int pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, pad);
+			__dna__offset = 244;
 		} else {
-			__io__block.writeInt(__io__address + 224, pad);
+			__dna__offset = 216;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -1214,7 +1236,7 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1222,9 +1244,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 228);
+			__dna__targetAddress = __io__block.readLong(__io__address + 220);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1234,7 +1256,7 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> grease-pencil data </p>
+	 * <p> Grease-pencil data. </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -1242,9 +1264,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 228, __address);
+			__io__block.writeLong(__io__address + 220, __address);
 		}
 	}
 
@@ -1252,16 +1274,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> different scoped displayed in space </p>
+	 * <p> Different scoped displayed in space. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
 	public SequencerScopes getScopes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SequencerScopes(__io__address + 264, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 256, __io__block, __io__blockTable);
 		} else {
-			return new SequencerScopes(__io__address + 232, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 224, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1269,7 +1291,7 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'scopes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> different scoped displayed in space </p>
+	 * <p> Different scoped displayed in space. </p>
 	 * @see #__DNA__FIELD__scopes
 	 */
 	
@@ -1277,9 +1299,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 232;
+			__dna__offset = 224;
 		}
 		if (__io__equals(scopes, __io__address + __dna__offset)) {
 			return;
@@ -1294,16 +1316,16 @@ public class SpaceSeq extends CFacade {
 	 * Get method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use </p>
+	 * <p> Multiview current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
 	public byte getMultiview_eye() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 312);
+			return __io__block.readByte(__io__address + 304);
 		} else {
-			return __io__block.readByte(__io__address + 256);
+			return __io__block.readByte(__io__address + 248);
 		}
 	}
 
@@ -1311,56 +1333,120 @@ public class SpaceSeq extends CFacade {
 	 * Set method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use </p>
+	 * <p> Multiview current eye - for internal use. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
 	public void setMultiview_eye(byte multiview_eye) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 312, multiview_eye);
+			__io__block.writeByte(__io__address + 304, multiview_eye);
 		} else {
-			__io__block.writeByte(__io__address + 256, multiview_eye);
+			__io__block.writeByte(__io__address + 248, multiview_eye);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public CArrayFacade<Byte> getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 313, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 257, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 249, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(CArrayFacade<Byte> pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 313;
+			__dna__offset = 305;
 		} else {
-			__dna__offset = 257;
+			__dna__offset = 249;
 		}
-		if (__io__equals(pad2, __io__address + __dna__offset)) {
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad2);
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__generic__copy( getPad2(), pad2);
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'compositor'.
+	 * @see #__DNA__FIELD__compositor
+	 */
+	
+	public CPointer<Object> getCompositor() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'compositor'.
+	 * @see #__DNA__FIELD__compositor
+	 */
+	
+	public void setCompositor(CPointer<Object> compositor) throws IOException
+	{
+		long __address = ((compositor == null) ? 0 : compositor.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 312, __address);
+		} else {
+			__io__block.writeLong(__io__address + 256, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CPointer<Object> get_pad3() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	{
+		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 320, __address);
+		} else {
+			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 

@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
- * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.
+ * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.<h4>Blender Source Code:</h4>
+ * <p> typedef struct MTexPoly { void *_pad; } MTexPoly; </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -28,7 +29,7 @@ public class MLoopUV extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 68;
+	public static final int __DNA__SDNA_INDEX = 74;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.

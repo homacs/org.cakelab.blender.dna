@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=160, size64=192)
+@CMetaData(size32=172, size64=208)
 public class ArrayModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ArrayModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 96;
+	public static final int __DNA__SDNA_INDEX = 102;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class ArrayModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start_cap = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__start_cap = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'end_cap'.
@@ -93,7 +93,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__end_cap = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__end_cap = new long[]{104, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_ob'.
@@ -116,7 +116,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_ob = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__curve_ob = new long[]{108, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_ob'.
@@ -139,7 +139,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_ob = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__offset_ob = new long[]{112, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -162,7 +162,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__offset = new long[]{116, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -185,7 +185,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{124, 156};
+	public static final long[] __DNA__FIELD__scale = new long[]{128, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
@@ -208,7 +208,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__length = new long[]{136, 168};
+	public static final long[] __DNA__FIELD__length = new long[]{140, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'merge_dist'.
@@ -231,7 +231,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__merge_dist = new long[]{140, 172};
+	public static final long[] __DNA__FIELD__merge_dist = new long[]{144, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fit_type'.
@@ -256,7 +256,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fit_type = new long[]{144, 176};
+	public static final long[] __DNA__FIELD__fit_type = new long[]{148, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_type'.
@@ -281,7 +281,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_type = new long[]{148, 180};
+	public static final long[] __DNA__FIELD__offset_type = new long[]{152, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -304,7 +304,7 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{152, 184};
+	public static final long[] __DNA__FIELD__flags = new long[]{156, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'count'.
@@ -327,7 +327,27 @@ public class ArrayModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__count = new long[]{156, 188};
+	public static final long[] __DNA__FIELD__count = new long[]{160, 196};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_offset'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ArrayModifierData arraymodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = arraymodifierdata.__dna__addressof(ArrayModifierData.__DNA__FIELD__uv_offset);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_uv_offset = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_offset'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_offset = new long[]{164, 200};
 
 	public ArrayModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -385,9 +405,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -405,9 +425,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __address = ((start_cap == null) ? 0 : start_cap.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 100, __address);
 		}
 	}
 
@@ -423,9 +443,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -443,9 +463,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __address = ((end_cap == null) ? 0 : end_cap.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 
@@ -461,9 +481,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -481,9 +501,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __address = ((curve_ob == null) ? 0 : curve_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -499,9 +519,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -519,9 +539,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __address = ((offset_ob == null) ? 0 : offset_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -540,9 +560,9 @@ public class ArrayModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -558,9 +578,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 116;
 		}
 		if (__io__equals(offset, __io__address + __dna__offset)) {
 			return;
@@ -586,9 +606,9 @@ public class ArrayModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -604,9 +624,9 @@ public class ArrayModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 128;
 		}
 		if (__io__equals(scale, __io__address + __dna__offset)) {
 			return;
@@ -628,9 +648,9 @@ public class ArrayModifierData extends CFacade {
 	public float getLength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -645,9 +665,9 @@ public class ArrayModifierData extends CFacade {
 	public void setLength(float length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, length);
+			__io__block.writeFloat(__io__address + 176, length);
 		} else {
-			__io__block.writeFloat(__io__address + 136, length);
+			__io__block.writeFloat(__io__address + 140, length);
 		}
 	}
 
@@ -662,9 +682,9 @@ public class ArrayModifierData extends CFacade {
 	public float getMerge_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -679,9 +699,9 @@ public class ArrayModifierData extends CFacade {
 	public void setMerge_dist(float merge_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, merge_dist);
+			__io__block.writeFloat(__io__address + 180, merge_dist);
 		} else {
-			__io__block.writeFloat(__io__address + 140, merge_dist);
+			__io__block.writeFloat(__io__address + 144, merge_dist);
 		}
 	}
 
@@ -698,9 +718,9 @@ public class ArrayModifierData extends CFacade {
 	public int getFit_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 148);
 		}
 	}
 
@@ -717,9 +737,9 @@ public class ArrayModifierData extends CFacade {
 	public void setFit_type(int fit_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, fit_type);
+			__io__block.writeInt(__io__address + 184, fit_type);
 		} else {
-			__io__block.writeInt(__io__address + 144, fit_type);
+			__io__block.writeInt(__io__address + 148, fit_type);
 		}
 	}
 
@@ -736,9 +756,9 @@ public class ArrayModifierData extends CFacade {
 	public int getOffset_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 152);
 		}
 	}
 
@@ -755,9 +775,9 @@ public class ArrayModifierData extends CFacade {
 	public void setOffset_type(int offset_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, offset_type);
+			__io__block.writeInt(__io__address + 188, offset_type);
 		} else {
-			__io__block.writeInt(__io__address + 148, offset_type);
+			__io__block.writeInt(__io__address + 152, offset_type);
 		}
 	}
 
@@ -772,9 +792,9 @@ public class ArrayModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 156);
 		}
 	}
 
@@ -789,9 +809,9 @@ public class ArrayModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, flags);
+			__io__block.writeInt(__io__address + 192, flags);
 		} else {
-			__io__block.writeInt(__io__address + 152, flags);
+			__io__block.writeInt(__io__address + 156, flags);
 		}
 	}
 
@@ -806,9 +826,9 @@ public class ArrayModifierData extends CFacade {
 	public int getCount() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -823,9 +843,49 @@ public class ArrayModifierData extends CFacade {
 	public void setCount(int count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, count);
+			__io__block.writeInt(__io__address + 196, count);
 		} else {
-			__io__block.writeInt(__io__address + 156, count);
+			__io__block.writeInt(__io__address + 160, count);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_offset'.
+	 * @see #__DNA__FIELD__uv_offset
+	 */
+	
+	public CArrayFacade<Float> getUv_offset() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_offset'.
+	 * @see #__DNA__FIELD__uv_offset
+	 */
+	
+	public void setUv_offset(CArrayFacade<Float> uv_offset) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 200;
+		} else {
+			__dna__offset = 164;
+		}
+		if (__io__equals(uv_offset, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, uv_offset)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, uv_offset);
+		} else {
+			__io__generic__copy( getUv_offset(), uv_offset);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 'Function-Curve' - defines values over time for a given setting (fcu) </p>
  */
 
-@CMetaData(size32=76, size64=112)
+@CMetaData(size32=84, size64=120)
 public class FCurve extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 520;
+	public static final int __DNA__SDNA_INDEX = 527;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> group group that F-Curve belongs to </p>
+	 * <p> group Group that F-Curve belongs to. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -98,7 +98,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
-	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
+	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -122,7 +122,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
-	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
+	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -145,7 +145,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion data user-editable keyframes (array) </p>
+	 * <p> motion data User-editable keyframes (array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -168,7 +168,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'baked/imported' motion samples (array) </p>
+	 * <p> 'baked/imported' motion samples (array). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,7 +191,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
+	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -214,7 +214,7 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
+	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,10 +234,30 @@ public class FCurve extends CFacade {
 	public static final long[] __DNA__FIELD__curval = new long[]{36, 68};
 
 	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{40, 72};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-editable settings for this curve </p>
+	 * <p> User-editable settings for this curve. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -254,13 +274,13 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{40, 72};
+	public static final long[] __DNA__FIELD__flag = new long[]{44, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value-extending mode for this curve (does not cover </p>
+	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -277,14 +297,58 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__extend = new long[]{42, 74};
+	public static final long[] __DNA__FIELD__extend = new long[]{46, 78};
+
+	/**
+	 * Field descriptor (offset) for struct member 'auto_smoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <p> Auto-handle smoothing mode. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__auto_smoothing);
+	 * CPointer&lt;Byte&gt; p_auto_smoothing = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'auto_smoothing'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__auto_smoothing = new long[]{48, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{49, 81};
 
 	/**
 	 * Field descriptor (offset) for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
+	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -301,13 +365,13 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__array_index = new long[]{44, 76};
+	public static final long[] __DNA__FIELD__array_index = new long[]{52, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access </p>
+	 * <p> RNA-path to resolve data-access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -324,14 +388,14 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rna_path = new long[]{48, 80};
+	public static final long[] __DNA__FIELD__rna_path = new long[]{56, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
+	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -348,14 +412,14 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_mode = new long[]{52, 88};
+	public static final long[] __DNA__FIELD__color_mode = new long[]{60, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> the last-color this curve took </p>
+	 * <p> The last-color this curve took. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -372,7 +436,7 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color = new long[]{56, 92};
+	public static final long[] __DNA__FIELD__color = new long[]{64, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev_norm_factor'.
@@ -392,7 +456,7 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prev_norm_factor = new long[]{68, 104};
+	public static final long[] __DNA__FIELD__prev_norm_factor = new long[]{76, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev_offset'.
@@ -412,7 +476,7 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prev_offset = new long[]{72, 108};
+	public static final long[] __DNA__FIELD__prev_offset = new long[]{80, 116};
 
 	public FCurve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -490,7 +554,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> group group that F-Curve belongs to </p>
+	 * <p> group Group that F-Curve belongs to. </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -510,7 +574,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'grp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> group group that F-Curve belongs to </p>
+	 * <p> group Group that F-Curve belongs to. </p>
 	 * @see #__DNA__FIELD__grp
 	 */
 	
@@ -529,7 +593,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
-	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
+	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -550,7 +614,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Channel Driver (only set for Driver F-Curves)<h4>Blender Source Code:</h4>
-	 * <p> driver settings only valid for drivers (i.e. stored in {@link AnimData}  not Actions) </p>
+	 * <p> driver settings Only valid for drivers (i.e. stored in {@link AnimData}  not Actions). </p>
 	 * @see #__DNA__FIELD__driver
 	 */
 	
@@ -569,7 +633,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
-	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
+	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -587,7 +651,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting the shape of the F-Curve<h4>Blender Source Code:</h4>
-	 * <p> evaluation settings {@link FCurve}  Modifiers </p>
+	 * <p> evaluation settings {@link FCurve}  Modifiers. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -612,7 +676,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion data user-editable keyframes (array) </p>
+	 * <p> motion data User-editable keyframes (array). </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -632,7 +696,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'bezt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> motion data user-editable keyframes (array) </p>
+	 * <p> motion data User-editable keyframes (array). </p>
 	 * @see #__DNA__FIELD__bezt
 	 */
 	
@@ -650,7 +714,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'baked/imported' motion samples (array) </p>
+	 * <p> 'baked/imported' motion samples (array). </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
 	
@@ -670,7 +734,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'fpt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'baked/imported' motion samples (array) </p>
+	 * <p> 'baked/imported' motion samples (array). </p>
 	 * @see #__DNA__FIELD__fpt
 	 */
 	
@@ -688,7 +752,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
+	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -705,7 +769,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'totvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points which define the curve (i.e. size of arrays in FPoints) </p>
+	 * <p> Total number of points which define the curve (i.e. size of arrays in FPoints). </p>
 	 * @see #__DNA__FIELD__totvert
 	 */
 	
@@ -722,7 +786,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
+	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -739,7 +803,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value cache + settings value stored from last time curve was evaluated (not threadsafe, debug display only!) </p>
+	 * <p> value cache + settings Value stored from last time curve was evaluated (not threadsafe, debug display only!). </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
@@ -753,19 +817,59 @@ public class FCurve extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 72;
+		} else {
+			__dna__offset = 40;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-editable settings for this curve </p>
+	 * <p> User-editable settings for this curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 72);
+			return __io__block.readShort(__io__address + 76);
 		} else {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 44);
 		}
 	}
 
@@ -773,16 +877,16 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user-editable settings for this curve </p>
+	 * <p> User-editable settings for this curve. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 72, flag);
+			__io__block.writeShort(__io__address + 76, flag);
 		} else {
-			__io__block.writeShort(__io__address + 40, flag);
+			__io__block.writeShort(__io__address + 44, flag);
 		}
 	}
 
@@ -790,16 +894,16 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value-extending mode for this curve (does not cover </p>
+	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * @see #__DNA__FIELD__extend
 	 */
 	
 	public short getExtend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 74);
+			return __io__block.readShort(__io__address + 78);
 		} else {
-			return __io__block.readShort(__io__address + 42);
+			return __io__block.readShort(__io__address + 46);
 		}
 	}
 
@@ -807,16 +911,92 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'extend'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value-extending mode for this curve (does not cover </p>
+	 * <p> Value-extending mode for this curve (does not cover). </p>
 	 * @see #__DNA__FIELD__extend
 	 */
 	
 	public void setExtend(short extend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 74, extend);
+			__io__block.writeShort(__io__address + 78, extend);
 		} else {
-			__io__block.writeShort(__io__address + 42, extend);
+			__io__block.writeShort(__io__address + 46, extend);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'auto_smoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <p> Auto-handle smoothing mode. </p>
+	 * @see #__DNA__FIELD__auto_smoothing
+	 */
+	
+	public byte getAuto_smoothing() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 80);
+		} else {
+			return __io__block.readByte(__io__address + 48);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'auto_smoothing'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Algorithm used to compute automatic handles<h4>Blender Source Code:</h4>
+	 * <p> Auto-handle smoothing mode. </p>
+	 * @see #__DNA__FIELD__auto_smoothing
+	 */
+	
+	public void setAuto_smoothing(byte auto_smoothing) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 80, auto_smoothing);
+		} else {
+			__io__block.writeByte(__io__address + 48, auto_smoothing);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 81, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 49, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 81;
+		} else {
+			__dna__offset = 49;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -825,16 +1005,16 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
+	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
 	public int getArray_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 84);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 52);
 		}
 	}
 
@@ -843,16 +1023,16 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link if applicable, the index of the RNA-array item to get </p>
+	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
 	public void setArray_index(int array_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, array_index);
+			__io__block.writeInt(__io__address + 84, array_index);
 		} else {
-			__io__block.writeInt(__io__address + 44, array_index);
+			__io__block.writeInt(__io__address + 52, array_index);
 		}
 	}
 
@@ -860,7 +1040,7 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access </p>
+	 * <p> RNA-path to resolve data-access. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -868,9 +1048,9 @@ public class FCurve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -880,7 +1060,7 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access </p>
+	 * <p> RNA-path to resolve data-access. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -888,9 +1068,9 @@ public class FCurve extends CFacade {
 	{
 		long __address = ((rna_path == null) ? 0 : rna_path.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		} else {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		}
 	}
 
@@ -899,16 +1079,16 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
+	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
 	public int getColor_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 88);
+			return __io__block.readInt(__io__address + 96);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 60);
 		}
 	}
 
@@ -917,16 +1097,16 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Method used to determine color of F-Curve in Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> curve coloring (for editor) coloring method to use (eFCurve_Coloring) </p>
+	 * <p> curve coloring (for editor) Coloring method to use (eFCurve_Coloring). </p>
 	 * @see #__DNA__FIELD__color_mode
 	 */
 	
 	public void setColor_mode(int color_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 88, color_mode);
+			__io__block.writeInt(__io__address + 96, color_mode);
 		} else {
-			__io__block.writeInt(__io__address + 52, color_mode);
+			__io__block.writeInt(__io__address + 60, color_mode);
 		}
 	}
 
@@ -935,7 +1115,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> the last-color this curve took </p>
+	 * <p> The last-color this curve took. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -946,9 +1126,9 @@ public class FCurve extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -957,7 +1137,7 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Color of the F-Curve in the Graph Editor<h4>Blender Source Code:</h4>
-	 * <p> the last-color this curve took </p>
+	 * <p> The last-color this curve took. </p>
 	 * @see #__DNA__FIELD__color
 	 */
 	
@@ -965,9 +1145,9 @@ public class FCurve extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 92;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 64;
 		}
 		if (__io__equals(color, __io__address + __dna__offset)) {
 			return;
@@ -986,9 +1166,9 @@ public class FCurve extends CFacade {
 	public float getPrev_norm_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 76);
 		}
 	}
 
@@ -1000,9 +1180,9 @@ public class FCurve extends CFacade {
 	public void setPrev_norm_factor(float prev_norm_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, prev_norm_factor);
+			__io__block.writeFloat(__io__address + 112, prev_norm_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 68, prev_norm_factor);
+			__io__block.writeFloat(__io__address + 76, prev_norm_factor);
 		}
 	}
 
@@ -1014,9 +1194,9 @@ public class FCurve extends CFacade {
 	public float getPrev_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 72);
+			return __io__block.readFloat(__io__address + 80);
 		}
 	}
 
@@ -1028,9 +1208,9 @@ public class FCurve extends CFacade {
 	public void setPrev_offset(float prev_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, prev_offset);
+			__io__block.writeFloat(__io__address + 116, prev_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 72, prev_offset);
+			__io__block.writeFloat(__io__address + 80, prev_offset);
 		}
 	}
 

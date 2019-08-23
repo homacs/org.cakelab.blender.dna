@@ -27,7 +27,7 @@ public class FreestyleLineSet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 575;
+	public static final int __DNA__SDNA_INDEX = 583;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class FreestyleLineSet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Line set name<h4>Blender Source Code:</h4>
-	 * <p> line set name, MAX_NAME </p>
+	 * <p> Line set name, MAX_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,7 +117,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Field descriptor (offset) for struct member 'selection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection criteria </p>
+	 * <p> Selection criteria. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -140,7 +140,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Field descriptor (offset) for struct member 'qi'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quantitative invisibility </p>
+	 * <p> Quantitative invisibility. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,24 +160,24 @@ public class FreestyleLineSet extends CFacade {
 	public static final long[] __DNA__FIELD__qi = new long[]{80, 88};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FreestyleLineSet freestylelineset = ...;
-	 * CPointer&lt;Object&gt; p = freestylelineset.__dna__addressof(FreestyleLineSet.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = freestylelineset.__dna__addressof(FreestyleLineSet.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{82, 90};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{82, 90};
 
 	/**
 	 * Field descriptor (offset) for struct member 'qi_start'.
@@ -227,6 +227,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Feature edge types. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -247,9 +250,6 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'exclude_edge_types'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> feature edge types </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -269,31 +269,30 @@ public class FreestyleLineSet extends CFacade {
 	public static final long[] __DNA__FIELD__exclude_edge_types = new long[]{96, 104};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FreestyleLineSet freestylelineset = ...;
-	 * CPointer&lt;Object&gt; p = freestylelineset.__dna__addressof(FreestyleLineSet.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = freestylelineset.__dna__addressof(FreestyleLineSet.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{100, 108};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{100, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
-	 * <p> group of target objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group of target objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -301,12 +300,12 @@ public class FreestyleLineSet extends CFacade {
 	 * <pre>
 	 * FreestyleLineSet freestylelineset = ...;
 	 * CPointer&lt;Object&gt; p = freestylelineset.__dna__addressof(FreestyleLineSet.__DNA__FIELD__group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -412,7 +411,7 @@ public class FreestyleLineSet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Line set name<h4>Blender Source Code:</h4>
-	 * <p> line set name, MAX_NAME </p>
+	 * <p> Line set name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -434,7 +433,7 @@ public class FreestyleLineSet extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Line set name<h4>Blender Source Code:</h4>
-	 * <p> line set name, MAX_NAME </p>
+	 * <p> Line set name, MAX_NAME. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -487,7 +486,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Get method for struct member 'selection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection criteria </p>
+	 * <p> Selection criteria. </p>
 	 * @see #__DNA__FIELD__selection
 	 */
 	
@@ -504,7 +503,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Set method for struct member 'selection'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selection criteria </p>
+	 * <p> Selection criteria. </p>
 	 * @see #__DNA__FIELD__selection
 	 */
 	
@@ -521,7 +520,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Get method for struct member 'qi'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quantitative invisibility </p>
+	 * <p> Quantitative invisibility. </p>
 	 * @see #__DNA__FIELD__qi
 	 */
 	
@@ -538,7 +537,7 @@ public class FreestyleLineSet extends CFacade {
 	 * Set method for struct member 'qi'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quantitative invisibility </p>
+	 * <p> Quantitative invisibility. </p>
 	 * @see #__DNA__FIELD__qi
 	 */
 	
@@ -552,30 +551,42 @@ public class FreestyleLineSet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public short getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 90);
+			return new CArrayFacade<Byte>(__io__address + 90, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 82);
+			return new CArrayFacade<Byte>(__io__address + 82, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(short pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 90, pad1);
+			__dna__offset = 90;
 		} else {
-			__io__block.writeShort(__io__address + 82, pad1);
+			__dna__offset = 82;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -649,6 +660,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Feature edge types. </p>
 	 * @see #__DNA__FIELD__edge_types
 	 */
 	
@@ -663,6 +677,9 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'edge_types'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Feature edge types. </p>
 	 * @see #__DNA__FIELD__edge_types
 	 */
 	
@@ -677,9 +694,6 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Get method for struct member 'exclude_edge_types'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> feature edge types </p>
 	 * @see #__DNA__FIELD__exclude_edge_types
 	 */
 	
@@ -694,9 +708,6 @@ public class FreestyleLineSet extends CFacade {
 
 	/**
 	 * Set method for struct member 'exclude_edge_types'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> feature edge types </p>
 	 * @see #__DNA__FIELD__exclude_edge_types
 	 */
 	
@@ -710,43 +721,54 @@ public class FreestyleLineSet extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public int getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 108);
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, pad2);
+			__dna__offset = 108;
 		} else {
-			__io__block.writeInt(__io__address + 100, pad2);
+			__dna__offset = 100;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
-	 * <p> group of target objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group of target objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public CPointer<Group> getGroup() throws IOException
+	public CPointer<Collection> getGroup() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -754,20 +776,19 @@ public class FreestyleLineSet extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
 	 * Set method for struct member 'group'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * A group of objects based on which feature edges are selected<h4>Blender Source Code:</h4>
-	 * <p> group of target objects </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Group of target objects. </p>
 	 * @see #__DNA__FIELD__group
 	 */
 	
-	public void setGroup(CPointer<Group> group) throws IOException
+	public void setGroup(CPointer<Collection> group) throws IOException
 	{
 		long __address = ((group == null) ? 0 : group.getAddress());
 		if ((__io__pointersize == 8)) {

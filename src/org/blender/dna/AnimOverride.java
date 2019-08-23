@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Animation Data {@link AnimOverride}  -----------------------------------  Animation Override (aor)</p><p> This is used to as temporary storage of values which have been changed by the user, but not yet keyframed (thus, would get overwritten by the animation system before the user had a chance to see the changes that were made).</p><p> It is probably not needed for overriding keyframed values in most cases, as those will only get evaluated on frame-change now. That situation may change in future. </p>
+ *  Animation Data {@link AnimOverride}  -------------------------------<mdash/><mdash/>  Animation Override (aor)</p><p> This is used to as temporary storage of values which have been changed by the user, but not yet keyframed (thus, would get overwritten by the animation system before the user had a chance to see the changes that were made).</p><p> It is probably not needed for overriding keyframed values in most cases, as those will only get evaluated on frame-change now. That situation may change in future. </p>
  */
 
 @CMetaData(size32=20, size64=32)
@@ -28,7 +28,7 @@ public class AnimOverride extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 527;
+	public static final int __DNA__SDNA_INDEX = 532;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -74,7 +74,7 @@ public class AnimOverride extends CFacade {
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to use to resolve data-access </p>
+	 * <p> RNA-path to use to resolve data-access. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -97,7 +97,7 @@ public class AnimOverride extends CFacade {
 	 * Field descriptor (offset) for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if applicable, the index of the RNA-array item to get </p>
+	 * <p> If applicable, the index of the RNA-array item to get. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +120,7 @@ public class AnimOverride extends CFacade {
 	 * Field descriptor (offset) for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value to override setting with </p>
+	 * <p> Value to override setting with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -215,7 +215,7 @@ public class AnimOverride extends CFacade {
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to use to resolve data-access </p>
+	 * <p> RNA-path to use to resolve data-access. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -235,7 +235,7 @@ public class AnimOverride extends CFacade {
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to use to resolve data-access </p>
+	 * <p> RNA-path to use to resolve data-access. </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -253,7 +253,7 @@ public class AnimOverride extends CFacade {
 	 * Get method for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if applicable, the index of the RNA-array item to get </p>
+	 * <p> If applicable, the index of the RNA-array item to get. </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -270,7 +270,7 @@ public class AnimOverride extends CFacade {
 	 * Set method for struct member 'array_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> if applicable, the index of the RNA-array item to get </p>
+	 * <p> If applicable, the index of the RNA-array item to get. </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -287,7 +287,7 @@ public class AnimOverride extends CFacade {
 	 * Get method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value to override setting with </p>
+	 * <p> Value to override setting with. </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	
@@ -304,7 +304,7 @@ public class AnimOverride extends CFacade {
 	 * Set method for struct member 'value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> value to override setting with </p>
+	 * <p> Value to override setting with. </p>
 	 * @see #__DNA__FIELD__value
 	 */
 	

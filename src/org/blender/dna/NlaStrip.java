@@ -15,10 +15,10 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  NLA - Non-Linear Animation NLA Strips -----------------------------------  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
+ *  'Action' Datatypes NOTE: Although these are part of the Animation System, they are not stored here... see {@link DNA_action_types.h}  instead************************************************ NLA - Non-Linear Animation NLA Strips -------------------------------<mdash/><mdash/>  NLA {@link Strip}  (strip)</p><p> A NLA {@link Strip}  is a container for the reuse of Action data, defining parameters to control the remapping of the Action data to some destination. </p>
  */
 
-@CMetaData(size32=164, size64=208)
+@CMetaData(size32=168, size64=216)
 public class NlaStrip extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class NlaStrip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 523;
+	public static final int __DNA__SDNA_INDEX = 528;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +76,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
-	 * <p> 'Child' strips (used for 'meta' strips) </p>
+	 * <p> 'Child' strips (used for 'meta' strips). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,7 +99,7 @@ public class NlaStrip extends CFacade {
 	 * Field descriptor (offset) for struct member 'act'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,34 +119,11 @@ public class NlaStrip extends CFacade {
 	public static final long[] __DNA__FIELD__act = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NlaStrip nlastrip = ...;
-	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD__remap);
-	 * CPointer&lt;CPointer&lt;AnimMapper&gt;&gt; p_remap = p.cast(new Class[]{CPointer.class, AnimMapper.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'remap'</li>
-	 * <li>Signature: 'AnimMapper*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__remap = new long[]{20, 40};
-
-	/**
 	 * Field descriptor (offset) for struct member 'fcurves'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -163,14 +140,14 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fcurves = new long[]{24, 48};
+	public static final long[] __DNA__FIELD__fcurves = new long[]{20, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifiers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
-	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
+	 * <p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -187,13 +164,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__modifiers = new long[]{32, 64};
+	public static final long[] __DNA__FIELD__modifiers = new long[]{28, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -210,14 +187,14 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{40, 80};
+	public static final long[] __DNA__FIELD__name = new long[]{36, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
-	 * <p> Influence of strip </p>
+	 * <p> Influence of strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -234,14 +211,14 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__influence = new long[]{104, 144};
+	public static final long[] __DNA__FIELD__influence = new long[]{100, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strip_time'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
-	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -258,10 +235,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strip_time = new long[]{108, 148};
+	public static final long[] __DNA__FIELD__strip_time = new long[]{104, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Extents of the strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -278,13 +258,10 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start = new long[]{112, 152};
+	public static final long[] __DNA__FIELD__start = new long[]{108, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> extents of the strip </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -301,10 +278,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__end = new long[]{116, 156};
+	public static final long[] __DNA__FIELD__end = new long[]{112, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Range of the action to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -321,13 +301,10 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actstart = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__actstart = new long[]{116, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> range of the action to use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -344,14 +321,14 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actend = new long[]{124, 164};
+	public static final long[] __DNA__FIELD__actend = new long[]{120, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
-	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
+	 * <p> The number of times to repeat the action range (only when no F-Curves). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -368,14 +345,14 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__repeat = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scaling factor for action<h4>Blender Source Code:</h4>
-	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
+	 * <p> The amount the action range is scaled by (only when no F-Curves). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -392,10 +369,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{132, 172};
+	public static final long[] __DNA__FIELD__scale = new long[]{128, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Strip}  blending length (only used when there are no F-Curves). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -412,13 +392,10 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendin = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__blendin = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -435,13 +412,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendout = new long[]{140, 180};
+	public static final long[] __DNA__FIELD__blendout = new long[]{136, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending mode (layer-based mixing) </p>
+	 * <p>{@link Strip}  blending mode (layer-based mixing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -458,13 +435,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendmode = new long[]{144, 184};
+	public static final long[] __DNA__FIELD__blendmode = new long[]{140, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip extrapolation mode (time-based mixing) </p>
+	 * <p>{@link Strip}  extrapolation mode (time-based mixing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -481,34 +458,34 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__extendmode = new long[]{146, 186};
+	public static final long[] __DNA__FIELD__extendmode = new long[]{142, 178};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NlaStrip nlastrip = ...;
-	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{148, 188};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{144, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
-	 * <p> type of NLA strip </p>
+	 * <p> Type of NLA strip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -525,13 +502,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{150, 190};
+	public static final long[] __DNA__FIELD__type = new long[]{146, 182};
 
 	/**
 	 * Field descriptor (offset) for struct member 'speaker_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> handle for speaker objects </p>
+	 * <p> Handle for speaker objects. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -548,13 +525,13 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__speaker_handle = new long[]{152, 192};
+	public static final long[] __DNA__FIELD__speaker_handle = new long[]{148, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -571,27 +548,70 @@ public class NlaStrip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{156, 200};
+	public static final long[] __DNA__FIELD__flag = new long[]{152, 192};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad2'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NlaStrip nlastrip = ...;
-	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD__pad2);
-	 * CPointer&lt;Integer&gt; p_pad2 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad2'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad2 = new long[]{160, 204};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{156, 196};
+
+	/**
+	 * Field descriptor (offset) for struct member 'orig_strip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original NLA strip. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NlaStrip nlastrip = ...;
+	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD__orig_strip);
+	 * CPointer&lt;CPointer&lt;NlaStrip&gt;&gt; p_orig_strip = p.cast(new Class[]{CPointer.class, NlaStrip.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'orig_strip'</li>
+	 * <li>Signature: 'NlaStrip*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__orig_strip = new long[]{160, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NlaStrip nlastrip = ...;
+	 * CPointer&lt;Object&gt; p = nlastrip.__dna__addressof(NlaStrip.__DNA__FIELD___pad3);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{164, 208};
 
 	public NlaStrip(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -670,7 +690,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
-	 * <p> 'Child' strips (used for 'meta' strips) </p>
+	 * <p> 'Child' strips (used for 'meta' strips). </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -688,7 +708,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    NLA Strips that this strip acts as a container for (if it is of type Meta)<h4>Blender Source Code:</h4>
-	 * <p> 'Child' strips (used for 'meta' strips) </p>
+	 * <p> 'Child' strips (used for 'meta' strips). </p>
 	 * @see #__DNA__FIELD__strips
 	 */
 	
@@ -713,7 +733,7 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'act'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action). </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -733,7 +753,7 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'act'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Action that is referenced by this strip (strip is 'user' of the action) </p>
+	 * <p> Action that is referenced by this strip (strip is 'user' of the action). </p>
 	 * @see #__DNA__FIELD__act
 	 */
 	
@@ -748,58 +768,20 @@ public class NlaStrip extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
-	 * @see #__DNA__FIELD__remap
-	 */
-	
-	public CPointer<AnimMapper> getRemap() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 40);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 20);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{AnimMapper.class};
-		return new CPointer<AnimMapper>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimMapper.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'remap'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Remapping info this strip (for tweaking correspondence of action with context) </p>
-	 * @see #__DNA__FIELD__remap
-	 */
-	
-	public void setRemap(CPointer<AnimMapper> remap) throws IOException
-	{
-		long __address = ((remap == null) ? 0 : remap.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 40, __address);
-		} else {
-			__io__block.writeLong(__io__address + 20, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'fcurves'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	
 	public ListBase getFcurves() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 24, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 20, __io__block, __io__blockTable);
 		}
 	}
 
@@ -808,7 +790,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	
@@ -816,9 +798,9 @@ public class NlaStrip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 48;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 20;
 		}
 		if (__io__equals(fcurves, __io__address + __dna__offset)) {
 			return;
@@ -834,16 +816,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
-	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
+	 * <p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
 	public ListBase getModifiers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 64, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
 		}
 	}
 
@@ -852,7 +834,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Modifiers affecting all the F-Curves in the referenced Action<h4>Blender Source Code:</h4>
-	 * <p> TODO: move out? </p><p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves </p>
+	 * <p> F-Curve modifiers to be applied to the entire strip's referenced F-Curves. </p>
 	 * @see #__DNA__FIELD__modifiers
 	 */
 	
@@ -860,9 +842,9 @@ public class NlaStrip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 56;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 28;
 		}
 		if (__io__equals(modifiers, __io__address + __dna__offset)) {
 			return;
@@ -877,7 +859,7 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -888,9 +870,9 @@ public class NlaStrip extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -898,7 +880,7 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2 </p>
+	 * <p> User-Visible Identifier for {@link Strip}  - MAX_ID_NAME-2. </p>
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -906,9 +888,9 @@ public class NlaStrip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 80;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 36;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -924,16 +906,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
-	 * <p> Influence of strip </p>
+	 * <p> Influence of strip. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public float getInfluence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -942,16 +924,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Amount the strip contributes to the current result<h4>Blender Source Code:</h4>
-	 * <p> Influence of strip </p>
+	 * <p> Influence of strip. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public void setInfluence(float influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, influence);
+			__io__block.writeFloat(__io__address + 136, influence);
 		} else {
-			__io__block.writeFloat(__io__address + 104, influence);
+			__io__block.writeFloat(__io__address + 100, influence);
 		}
 	}
 
@@ -960,16 +942,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
-	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden). </p>
 	 * @see #__DNA__FIELD__strip_time
 	 */
 	
 	public float getStrip_time() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -978,140 +960,140 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Frame of referenced Action to evaluate<h4>Blender Source Code:</h4>
-	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden) </p>
+	 * <p> Current 'time' within action being used (automatically evaluated, but can be overridden). </p>
 	 * @see #__DNA__FIELD__strip_time
 	 */
 	
 	public void setStrip_time(float strip_time) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, strip_time);
+			__io__block.writeFloat(__io__address + 140, strip_time);
 		} else {
-			__io__block.writeFloat(__io__address + 108, strip_time);
+			__io__block.writeFloat(__io__address + 104, strip_time);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Extents of the strip. </p>
 	 * @see #__DNA__FIELD__start
 	 */
 	
 	public float getStart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Extents of the strip. </p>
 	 * @see #__DNA__FIELD__start
 	 */
 	
 	public void setStart(float start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 152, start);
+			__io__block.writeFloat(__io__address + 144, start);
 		} else {
-			__io__block.writeFloat(__io__address + 112, start);
+			__io__block.writeFloat(__io__address + 108, start);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> extents of the strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
 	public float getEnd() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'end'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> extents of the strip </p>
 	 * @see #__DNA__FIELD__end
 	 */
 	
 	public void setEnd(float end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, end);
+			__io__block.writeFloat(__io__address + 148, end);
 		} else {
-			__io__block.writeFloat(__io__address + 116, end);
+			__io__block.writeFloat(__io__address + 112, end);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'actstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Range of the action to use. </p>
 	 * @see #__DNA__FIELD__actstart
 	 */
 	
 	public float getActstart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'actstart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Range of the action to use. </p>
 	 * @see #__DNA__FIELD__actstart
 	 */
 	
 	public void setActstart(float actstart) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, actstart);
+			__io__block.writeFloat(__io__address + 152, actstart);
 		} else {
-			__io__block.writeFloat(__io__address + 120, actstart);
+			__io__block.writeFloat(__io__address + 116, actstart);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'actend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> range of the action to use </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
 	public float getActend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 156);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'actend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> range of the action to use </p>
 	 * @see #__DNA__FIELD__actend
 	 */
 	
 	public void setActend(float actend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, actend);
+			__io__block.writeFloat(__io__address + 156, actend);
 		} else {
-			__io__block.writeFloat(__io__address + 124, actend);
+			__io__block.writeFloat(__io__address + 120, actend);
 		}
 	}
 
@@ -1120,16 +1102,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
-	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
+	 * <p> The number of times to repeat the action range (only when no F-Curves). </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
 	public float getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 160);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -1138,16 +1120,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Number of times to repeat the action range<h4>Blender Source Code:</h4>
-	 * <p> The number of times to repeat the action range (only when no F-Curves) </p>
+	 * <p> The number of times to repeat the action range (only when no F-Curves). </p>
 	 * @see #__DNA__FIELD__repeat
 	 */
 	
 	public void setRepeat(float repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, repeat);
+			__io__block.writeFloat(__io__address + 160, repeat);
 		} else {
-			__io__block.writeFloat(__io__address + 128, repeat);
+			__io__block.writeFloat(__io__address + 124, repeat);
 		}
 	}
 
@@ -1156,16 +1138,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scaling factor for action<h4>Blender Source Code:</h4>
-	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
+	 * <p> The amount the action range is scaled by (only when no F-Curves). </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 164);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -1174,78 +1156,78 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scaling factor for action<h4>Blender Source Code:</h4>
-	 * <p> The amount the action range is scaled by (only when no F-Curves) </p>
+	 * <p> The amount the action range is scaled by (only when no F-Curves). </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, scale);
+			__io__block.writeFloat(__io__address + 164, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 132, scale);
+			__io__block.writeFloat(__io__address + 128, scale);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Strip}  blending length (only used when there are no F-Curves). </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
 	public float getBlendin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 168);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'blendin'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Strip}  blending length (only used when there are no F-Curves). </p>
 	 * @see #__DNA__FIELD__blendin
 	 */
 	
 	public void setBlendin(float blendin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, blendin);
+			__io__block.writeFloat(__io__address + 168, blendin);
 		} else {
-			__io__block.writeFloat(__io__address + 136, blendin);
+			__io__block.writeFloat(__io__address + 132, blendin);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'blendout'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
 	public float getBlendout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'blendout'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending length (only used when there are no F-Curves) </p>
 	 * @see #__DNA__FIELD__blendout
 	 */
 	
 	public void setBlendout(float blendout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, blendout);
+			__io__block.writeFloat(__io__address + 172, blendout);
 		} else {
-			__io__block.writeFloat(__io__address + 140, blendout);
+			__io__block.writeFloat(__io__address + 136, blendout);
 		}
 	}
 
@@ -1253,16 +1235,16 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending mode (layer-based mixing) </p>
+	 * <p>{@link Strip}  blending mode (layer-based mixing). </p>
 	 * @see #__DNA__FIELD__blendmode
 	 */
 	
 	public short getBlendmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 176);
 		} else {
-			return __io__block.readShort(__io__address + 144);
+			return __io__block.readShort(__io__address + 140);
 		}
 	}
 
@@ -1270,16 +1252,16 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'blendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip blending mode (layer-based mixing) </p>
+	 * <p>{@link Strip}  blending mode (layer-based mixing). </p>
 	 * @see #__DNA__FIELD__blendmode
 	 */
 	
 	public void setBlendmode(short blendmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 184, blendmode);
+			__io__block.writeShort(__io__address + 176, blendmode);
 		} else {
-			__io__block.writeShort(__io__address + 144, blendmode);
+			__io__block.writeShort(__io__address + 140, blendmode);
 		}
 	}
 
@@ -1287,16 +1269,16 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip extrapolation mode (time-based mixing) </p>
+	 * <p>{@link Strip}  extrapolation mode (time-based mixing). </p>
 	 * @see #__DNA__FIELD__extendmode
 	 */
 	
 	public short getExtendmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 178);
 		} else {
-			return __io__block.readShort(__io__address + 146);
+			return __io__block.readShort(__io__address + 142);
 		}
 	}
 
@@ -1304,44 +1286,56 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'extendmode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> strip extrapolation mode (time-based mixing) </p>
+	 * <p>{@link Strip}  extrapolation mode (time-based mixing). </p>
 	 * @see #__DNA__FIELD__extendmode
 	 */
 	
 	public void setExtendmode(short extendmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 186, extendmode);
+			__io__block.writeShort(__io__address + 178, extendmode);
 		} else {
-			__io__block.writeShort(__io__address + 146, extendmode);
+			__io__block.writeShort(__io__address + 142, extendmode);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public short getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 148);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(short pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, pad1);
+			__dna__offset = 180;
 		} else {
-			__io__block.writeShort(__io__address + 148, pad1);
+			__dna__offset = 144;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -1350,16 +1344,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
-	 * <p> type of NLA strip </p>
+	 * <p> Type of NLA strip. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 182);
 		} else {
-			return __io__block.readShort(__io__address + 150);
+			return __io__block.readShort(__io__address + 146);
 		}
 	}
 
@@ -1368,16 +1362,16 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Type of NLA Strip<h4>Blender Source Code:</h4>
-	 * <p> type of NLA strip </p>
+	 * <p> Type of NLA strip. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, type);
+			__io__block.writeShort(__io__address + 182, type);
 		} else {
-			__io__block.writeShort(__io__address + 150, type);
+			__io__block.writeShort(__io__address + 146, type);
 		}
 	}
 
@@ -1385,7 +1379,7 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'speaker_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> handle for speaker objects </p>
+	 * <p> Handle for speaker objects. </p>
 	 * @see #__DNA__FIELD__speaker_handle
 	 */
 	
@@ -1393,9 +1387,9 @@ public class NlaStrip extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1405,7 +1399,7 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'speaker_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> handle for speaker objects </p>
+	 * <p> Handle for speaker objects. </p>
 	 * @see #__DNA__FIELD__speaker_handle
 	 */
 	
@@ -1413,9 +1407,9 @@ public class NlaStrip extends CFacade {
 	{
 		long __address = ((speaker_handle == null) ? 0 : speaker_handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -1423,16 +1417,16 @@ public class NlaStrip extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 152);
 		}
 	}
 
@@ -1440,44 +1434,126 @@ public class NlaStrip extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings </p>
+	 * <p> Settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, flag);
+			__io__block.writeInt(__io__address + 192, flag);
 		} else {
-			__io__block.writeInt(__io__address + 156, flag);
+			__io__block.writeInt(__io__address + 152, flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public int getPad2() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad2'.
-	 * @see #__DNA__FIELD__pad2
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPad2(int pad2) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, pad2);
+			__dna__offset = 196;
 		} else {
-			__io__block.writeInt(__io__address + 160, pad2);
+			__dna__offset = 156;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'orig_strip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original NLA strip. </p>
+	 * @see #__DNA__FIELD__orig_strip
+	 */
+	
+	public CPointer<NlaStrip> getOrig_strip() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{NlaStrip.class};
+		return new CPointer<NlaStrip>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, NlaStrip.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'orig_strip'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Pointer to an original NLA strip. </p>
+	 * @see #__DNA__FIELD__orig_strip
+	 */
+	
+	public void setOrig_strip(CPointer<NlaStrip> orig_strip) throws IOException
+	{
+		long __address = ((orig_strip == null) ? 0 : orig_strip.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 200, __address);
+		} else {
+			__io__block.writeLong(__io__address + 160, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CPointer<Object> get_pad3() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	{
+		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 208, __address);
+		} else {
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 

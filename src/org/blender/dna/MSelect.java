@@ -26,7 +26,7 @@ public class MSelect extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 70;
+	public static final int __DNA__SDNA_INDEX = 76;
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
@@ -52,7 +52,7 @@ public class MSelect extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -111,7 +111,7 @@ public class MSelect extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -128,7 +128,7 @@ public class MSelect extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL </p>
+	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

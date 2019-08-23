@@ -27,7 +27,7 @@ public class bNodeStack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 390;
+	public static final int __DNA__SDNA_INDEX = 361;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vec'.
@@ -113,7 +113,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when input has link, tagged before executing </p>
+	 * <p> When input has link, tagged before executing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -136,7 +136,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when output is linked, tagged before executing </p>
+	 * <p> When output is linked, tagged before executing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,7 +159,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of data pointer </p>
+	 * <p> Type of data pointer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,7 +182,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of socket stack comes from, to remap linking different sockets </p>
+	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -205,7 +205,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is a copy of external data (no freeing) </p>
+	 * <p> Data is a copy of external data (no freeing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -228,7 +228,7 @@ public class bNodeStack extends CFacade {
 	 * Field descriptor (offset) for struct member 'external'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is used by external nodes (no freeing) </p>
+	 * <p> Data is used by external nodes (no freeing). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,24 +248,24 @@ public class bNodeStack extends CFacade {
 	public static final long[] __DNA__FIELD__external = new long[]{38, 42};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeStack bnodestack = ...;
-	 * CPointer&lt;Object&gt; p = bnodestack.__dna__addressof(bNodeStack.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = bnodestack.__dna__addressof(bNodeStack.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[2]'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{40, 44};
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 44};
 
 	public bNodeStack(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -407,7 +407,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when input has link, tagged before executing </p>
+	 * <p> When input has link, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasinput
 	 */
 	
@@ -424,7 +424,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'hasinput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when input has link, tagged before executing </p>
+	 * <p> When input has link, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasinput
 	 */
 	
@@ -441,7 +441,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when output is linked, tagged before executing </p>
+	 * <p> When output is linked, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasoutput
 	 */
 	
@@ -458,7 +458,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'hasoutput'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> when output is linked, tagged before executing </p>
+	 * <p> When output is linked, tagged before executing. </p>
 	 * @see #__DNA__FIELD__hasoutput
 	 */
 	
@@ -475,7 +475,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of data pointer </p>
+	 * <p> Type of data pointer. </p>
 	 * @see #__DNA__FIELD__datatype
 	 */
 	
@@ -492,7 +492,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'datatype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of data pointer </p>
+	 * <p> Type of data pointer. </p>
 	 * @see #__DNA__FIELD__datatype
 	 */
 	
@@ -509,7 +509,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of socket stack comes from, to remap linking different sockets </p>
+	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * @see #__DNA__FIELD__sockettype
 	 */
 	
@@ -526,7 +526,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'sockettype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> type of socket stack comes from, to remap linking different sockets </p>
+	 * <p> Type of socket stack comes from, to remap linking different sockets. </p>
 	 * @see #__DNA__FIELD__sockettype
 	 */
 	
@@ -543,7 +543,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is a copy of external data (no freeing) </p>
+	 * <p> Data is a copy of external data (no freeing). </p>
 	 * @see #__DNA__FIELD__is_copy
 	 */
 	
@@ -560,7 +560,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'is_copy'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is a copy of external data (no freeing) </p>
+	 * <p> Data is a copy of external data (no freeing). </p>
 	 * @see #__DNA__FIELD__is_copy
 	 */
 	
@@ -577,7 +577,7 @@ public class bNodeStack extends CFacade {
 	 * Get method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is used by external nodes (no freeing) </p>
+	 * <p> Data is used by external nodes (no freeing). </p>
 	 * @see #__DNA__FIELD__external
 	 */
 	
@@ -594,7 +594,7 @@ public class bNodeStack extends CFacade {
 	 * Set method for struct member 'external'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> data is used by external nodes (no freeing) </p>
+	 * <p> Data is used by external nodes (no freeing). </p>
 	 * @see #__DNA__FIELD__external
 	 */
 	
@@ -608,29 +608,29 @@ public class bNodeStack extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -638,12 +638,12 @@ public class bNodeStack extends CFacade {
 		} else {
 			__dna__offset = 40;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

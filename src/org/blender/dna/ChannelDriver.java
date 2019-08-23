@@ -15,10 +15,10 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Channel Driver (i.e. Drivers / Expressions) (driver)</p><p> Channel Drivers are part of the dependency system, and are executed in addition to normal user-defined animation. They take the animation result of some channel(s), and use that (optionally combined with its own F-Curve for modification of results) to define the value of some setting semi-procedurally.</p><p> Drivers are stored as part of F-Curve data, so that the F-Curve's RNA-path settings (for storing what setting the driver will affect). The order in which they are stored defines the order that they're evaluated in. This order is set by the Depsgraph's sorting stuff. </p>
+ * </p><p> Channel Driver (i.e. Drivers / Expressions) (driver)</p><p> Channel Drivers are part of the dependency system, and are executed in addition to normal user-defined animation. They take the animation result of some channel(s), and use that (optionally combined with its own F-Curve for modification of results) to define the value of some setting semi-procedurally.</p><p> Drivers are stored as part of F-Curve data, so that the F-Curve's RNA-path settings (for storing what setting the driver will affect). The order in which they are stored defines the order that they're evaluated in. This order is set by the Depsgraph's sorting stuff. </p>
  */
 
-@CMetaData(size32=284, size64=296)
+@CMetaData(size32=288, size64=304)
 public class ChannelDriver extends CFacade {
 
 	/**
@@ -29,13 +29,13 @@ public class ChannelDriver extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 518;
+	public static final int __DNA__SDNA_INDEX = 525;
 
 	/**
 	 * Field descriptor (offset) for struct member 'variables'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
+	 * <p> Targets for this driver (i.e. list of {@link DriverVar} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -58,7 +58,7 @@ public class ChannelDriver extends CFacade {
 	 * Field descriptor (offset) for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,7 +81,7 @@ public class ChannelDriver extends CFacade {
 	 * Field descriptor (offset) for struct member 'expr_comp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> PyObject - compiled expression, don't save this </p>
+	 * <p> PyObject - compiled expression, don't save this. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -101,10 +101,33 @@ public class ChannelDriver extends CFacade {
 	public static final long[] __DNA__FIELD__expr_comp = new long[]{264, 272};
 
 	/**
+	 * Field descriptor (offset) for struct member 'expr_simple'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Compiled simple arithmetic expression. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ChannelDriver channeldriver = ...;
+	 * CPointer&lt;Object&gt; p = channeldriver.__dna__addressof(ChannelDriver.__DNA__FIELD__expr_simple);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_expr_simple = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'expr_simple'</li>
+	 * <li>Signature: 'ExprPyLike_Parsed*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__expr_simple = new long[]{268, 280};
+
+	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> result of previous evaluation </p>
+	 * <p> Result of previous evaluation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -121,13 +144,13 @@ public class ChannelDriver extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curval = new long[]{268, 280};
+	public static final long[] __DNA__FIELD__curval = new long[]{272, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of driver on result </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -144,13 +167,13 @@ public class ChannelDriver extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__influence = new long[]{272, 284};
+	public static final long[] __DNA__FIELD__influence = new long[]{276, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
+	 * <p> general settings Type of driver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -167,13 +190,13 @@ public class ChannelDriver extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{276, 288};
+	public static final long[] __DNA__FIELD__type = new long[]{280, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings of driver </p>
+	 * <p> Settings of driver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,7 +213,7 @@ public class ChannelDriver extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{280, 292};
+	public static final long[] __DNA__FIELD__flag = new long[]{284, 300};
 
 	public ChannelDriver(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -204,7 +227,7 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'variables'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
+	 * <p> Targets for this driver (i.e. list of {@link DriverVar} ). </p>
 	 * @see #__DNA__FIELD__variables
 	 */
 	
@@ -221,7 +244,7 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'variables'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> targets for this driver (i.e. list of {@link DriverVar} ) </p>
+	 * <p> Targets for this driver (i.e. list of {@link DriverVar} ). </p>
 	 * @see #__DNA__FIELD__variables
 	 */
 	
@@ -246,7 +269,7 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	
@@ -267,7 +290,7 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'expression'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueexpression to compile for evaluation </p>
+	 * <p> python expression to execute (may call functions defined in an accessory file) which relates the target 'variables' in some way to yield a single usable valueExpression to compile for evaluation. </p>
 	 * @see #__DNA__FIELD__expression
 	 */
 	
@@ -292,7 +315,7 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'expr_comp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> PyObject - compiled expression, don't save this </p>
+	 * <p> PyObject - compiled expression, don't save this. </p>
 	 * @see #__DNA__FIELD__expr_comp
 	 */
 	
@@ -312,7 +335,7 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'expr_comp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> PyObject - compiled expression, don't save this </p>
+	 * <p> PyObject - compiled expression, don't save this. </p>
 	 * @see #__DNA__FIELD__expr_comp
 	 */
 	
@@ -327,19 +350,57 @@ public class ChannelDriver extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'expr_simple'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Compiled simple arithmetic expression. </p>
+	 * @see #__DNA__FIELD__expr_simple
+	 */
+	
+	public CPointer<Object> getExpr_simple() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'expr_simple'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Compiled simple arithmetic expression. </p>
+	 * @see #__DNA__FIELD__expr_simple
+	 */
+	
+	public void setExpr_simple(CPointer<Object> expr_simple) throws IOException
+	{
+		long __address = ((expr_simple == null) ? 0 : expr_simple.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 268, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> result of previous evaluation </p>
+	 * <p> Result of previous evaluation. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
 	public float getCurval() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 272);
 		}
 	}
 
@@ -347,16 +408,16 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> result of previous evaluation </p>
+	 * <p> Result of previous evaluation. </p>
 	 * @see #__DNA__FIELD__curval
 	 */
 	
 	public void setCurval(float curval) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, curval);
+			__io__block.writeFloat(__io__address + 288, curval);
 		} else {
-			__io__block.writeFloat(__io__address + 268, curval);
+			__io__block.writeFloat(__io__address + 272, curval);
 		}
 	}
 
@@ -364,16 +425,16 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of driver on result </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public float getInfluence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 292);
 		} else {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -381,16 +442,16 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> influence of driver on result </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
 	public void setInfluence(float influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, influence);
+			__io__block.writeFloat(__io__address + 292, influence);
 		} else {
-			__io__block.writeFloat(__io__address + 272, influence);
+			__io__block.writeFloat(__io__address + 276, influence);
 		}
 	}
 
@@ -398,16 +459,16 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
+	 * <p> general settings Type of driver. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 280);
 		}
 	}
 
@@ -415,16 +476,16 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> general settings type of driver </p>
+	 * <p> general settings Type of driver. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 288, type);
+			__io__block.writeInt(__io__address + 296, type);
 		} else {
-			__io__block.writeInt(__io__address + 276, type);
+			__io__block.writeInt(__io__address + 280, type);
 		}
 	}
 
@@ -432,16 +493,16 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings of driver </p>
+	 * <p> Settings of driver. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 292);
+			return __io__block.readInt(__io__address + 300);
 		} else {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 284);
 		}
 	}
 
@@ -449,16 +510,16 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> settings of driver </p>
+	 * <p> Settings of driver. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 292, flag);
+			__io__block.writeInt(__io__address + 300, flag);
 		} else {
-			__io__block.writeInt(__io__address + 280, flag);
+			__io__block.writeInt(__io__address + 284, flag);
 		}
 	}
 

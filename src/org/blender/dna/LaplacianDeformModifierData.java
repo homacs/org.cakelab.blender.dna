@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=208)
+@CMetaData(size32=188, size64=216)
 public class LaplacianDeformModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 140;
+	public static final int __DNA__SDNA_INDEX = 146;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -53,7 +53,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'anchor_grp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -70,7 +70,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__anchor_grp_name = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__anchor_grp_name = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'total_verts'.
@@ -90,7 +90,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__total_verts = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__total_verts = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -110,7 +110,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{164, 180};
+	public static final long[] __DNA__FIELD__repeat = new long[]{168, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertexco'.
@@ -130,13 +130,13 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertexco = new long[]{168, 184};
+	public static final long[] __DNA__FIELD__vertexco = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -153,7 +153,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_system = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__cache_system = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -173,27 +173,27 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 208};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * LaplacianDeformModifierData laplaciandeformmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = laplaciandeformmodifierdata.__dna__addressof(LaplacianDeformModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * CPointer&lt;Object&gt; p = laplaciandeformmodifierdata.__dna__addressof(LaplacianDeformModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short[3]'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{178, 202};
+	public static final long[] __DNA__FIELD___pad = new long[]{182, 210};
 
 	public LaplacianDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -243,7 +243,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * Get method for struct member 'anchor_grp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__anchor_grp_name
 	 */
 	
@@ -254,9 +254,9 @@ public class LaplacianDeformModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -264,7 +264,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * Set method for struct member 'anchor_grp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> MAX_VGROUP_NAME. </p>
 	 * @see #__DNA__FIELD__anchor_grp_name
 	 */
 	
@@ -272,9 +272,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(anchor_grp_name, __io__address + __dna__offset)) {
 			return;
@@ -293,9 +293,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public int getTotal_verts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -307,9 +307,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setTotal_verts(int total_verts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, total_verts);
+			__io__block.writeInt(__io__address + 184, total_verts);
 		} else {
-			__io__block.writeInt(__io__address + 160, total_verts);
+			__io__block.writeInt(__io__address + 164, total_verts);
 		}
 	}
 
@@ -321,9 +321,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public int getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -335,9 +335,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setRepeat(int repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, repeat);
+			__io__block.writeInt(__io__address + 188, repeat);
 		} else {
-			__io__block.writeInt(__io__address + 164, repeat);
+			__io__block.writeInt(__io__address + 168, repeat);
 		}
 	}
 
@@ -350,9 +350,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -367,9 +367,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __address = ((vertexco == null) ? 0 : vertexco.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -377,7 +377,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * Get method for struct member 'cache_system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__cache_system
 	 */
 	
@@ -385,9 +385,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -397,7 +397,7 @@ public class LaplacianDeformModifierData extends CFacade {
 	 * Set method for struct member 'cache_system'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> runtime only </p>
+	 * <p> Runtime only. </p>
 	 * @see #__DNA__FIELD__cache_system
 	 */
 	
@@ -405,9 +405,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	{
 		long __address = ((cache_system == null) ? 0 : cache_system.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 172, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -419,9 +419,9 @@ public class LaplacianDeformModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 200);
+			return __io__block.readShort(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -433,49 +433,49 @@ public class LaplacianDeformModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 200, flag);
+			__io__block.writeShort(__io__address + 208, flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Short> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 202, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 182, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Short> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 202;
+			__dna__offset = 210;
 		} else {
-			__dna__offset = 178;
+			__dna__offset = 182;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

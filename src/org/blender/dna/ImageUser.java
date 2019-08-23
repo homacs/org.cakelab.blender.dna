@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,13 +28,13 @@ public class ImageUser extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 26;
+	public static final int __DNA__SDNA_INDEX = 34;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to retrieve render result </p>
+	 * <p> To retrieve render result. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -56,7 +57,7 @@ public class ImageUser extends CFacade {
 	 * Field descriptor (offset) for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movies, sequences: current to display </p>
+	 * <p> Movies, sequences: current to display. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -79,7 +80,7 @@ public class ImageUser extends CFacade {
 	 * Field descriptor (offset) for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total amount of frames to use </p>
+	 * <p> Total amount of frames to use. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -100,6 +101,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within movie, start frame in global time. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,9 +124,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> offset within movie, start frame in global time </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,30 +143,30 @@ public class ImageUser extends CFacade {
 	public static final long[] __DNA__FIELD__sfra = new long[]{16, 20};
 
 	/**
-	 * Field descriptor (offset) for struct member 'fie_ima'.
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cyclic flag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__fie_ima);
-	 * CPointer&lt;Byte&gt; p_fie_ima = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD___pad0);
+	 * CPointer&lt;Byte&gt; p__pad0 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'fie_ima'</li>
+	 * <li>Field: '_pad0'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fie_ima = new long[]{20, 24};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{20, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cycl'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> fields/image in movie, cyclic flag </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -208,7 +209,7 @@ public class ImageUser extends CFacade {
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use of drawing routines </p>
+	 * <p> Multiview current eye - for internal use of drawing routines. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,27 +249,30 @@ public class ImageUser extends CFacade {
 	public static final long[] __DNA__FIELD__pass = new long[]{24, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ImageUser imageuser = ...;
-	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{26, 30};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{26, 30};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multi_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Listbase indices, for menu browsing or retrieve buffer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -309,9 +313,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -362,7 +363,7 @@ public class ImageUser extends CFacade {
 	 * Get method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to retrieve render result </p>
+	 * <p> To retrieve render result. </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -382,7 +383,7 @@ public class ImageUser extends CFacade {
 	 * Set method for struct member 'scene'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to retrieve render result </p>
+	 * <p> To retrieve render result. </p>
 	 * @see #__DNA__FIELD__scene
 	 */
 	
@@ -400,7 +401,7 @@ public class ImageUser extends CFacade {
 	 * Get method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movies, sequences: current to display </p>
+	 * <p> Movies, sequences: current to display. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -417,7 +418,7 @@ public class ImageUser extends CFacade {
 	 * Set method for struct member 'framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> movies, sequences: current to display </p>
+	 * <p> Movies, sequences: current to display. </p>
 	 * @see #__DNA__FIELD__framenr
 	 */
 	
@@ -434,7 +435,7 @@ public class ImageUser extends CFacade {
 	 * Get method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total amount of frames to use </p>
+	 * <p> Total amount of frames to use. </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -451,7 +452,7 @@ public class ImageUser extends CFacade {
 	 * Set method for struct member 'frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total amount of frames to use </p>
+	 * <p> Total amount of frames to use. </p>
 	 * @see #__DNA__FIELD__frames
 	 */
 	
@@ -466,6 +467,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within movie, start frame in global time. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -480,6 +484,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Offset within movie, start frame in global time. </p>
 	 * @see #__DNA__FIELD__offset
 	 */
 	
@@ -494,9 +501,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'sfra'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> offset within movie, start frame in global time </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -511,9 +515,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'sfra'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> offset within movie, start frame in global time </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -527,11 +528,14 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'fie_ima'.
-	 * @see #__DNA__FIELD__fie_ima
+	 * Get method for struct member '_pad0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cyclic flag. </p>
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public byte getFie_ima() throws IOException
+	public byte get_pad0() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 24);
@@ -541,24 +545,24 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'fie_ima'.
-	 * @see #__DNA__FIELD__fie_ima
+	 * Set method for struct member '_pad0'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Cyclic flag. </p>
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setFie_ima(byte fie_ima) throws IOException
+	public void set_pad0(byte _pad0) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 24, fie_ima);
+			__io__block.writeByte(__io__address + 24, _pad0);
 		} else {
-			__io__block.writeByte(__io__address + 20, fie_ima);
+			__io__block.writeByte(__io__address + 20, _pad0);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'cycl'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> fields/image in movie, cyclic flag </p>
 	 * @see #__DNA__FIELD__cycl
 	 */
 	
@@ -573,9 +577,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'cycl'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> fields/image in movie, cyclic flag </p>
 	 * @see #__DNA__FIELD__cycl
 	 */
 	
@@ -620,7 +621,7 @@ public class ImageUser extends CFacade {
 	 * Get method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use of drawing routines </p>
+	 * <p> Multiview current eye - for internal use of drawing routines. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -637,7 +638,7 @@ public class ImageUser extends CFacade {
 	 * Set method for struct member 'multiview_eye'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> multiview current eye - for internal use of drawing routines </p>
+	 * <p> Multiview current eye - for internal use of drawing routines. </p>
 	 * @see #__DNA__FIELD__multiview_eye
 	 */
 	
@@ -679,35 +680,50 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 26);
+			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, pad);
+			__dna__offset = 30;
 		} else {
-			__io__block.writeShort(__io__address + 26, pad);
+			__dna__offset = 26;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'multi_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Listbase indices, for menu browsing or retrieve buffer. </p>
 	 * @see #__DNA__FIELD__multi_index
 	 */
 	
@@ -722,6 +738,9 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'multi_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Listbase indices, for menu browsing or retrieve buffer. </p>
 	 * @see #__DNA__FIELD__multi_index
 	 */
 	
@@ -764,9 +783,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Get method for struct member 'layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	
@@ -781,9 +797,6 @@ public class ImageUser extends CFacade {
 
 	/**
 	 * Set method for struct member 'layer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> listbase indices, for menu browsing or retrieve buffer </p>
 	 * @see #__DNA__FIELD__layer
 	 */
 	

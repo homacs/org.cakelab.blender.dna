@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1160, size64=1200)
+@CMetaData(size32=2212, size64=2264)
 public class CacheFile extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CacheFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 620;
+	public static final int __DNA__SDNA_INDEX = 628;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class CacheFile extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,47 +67,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
-
-	/**
-	 * Field descriptor (offset) for struct member 'handle'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CacheFile cachefile = ...;
-	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__handle);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_handle = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'handle'</li>
-	 * <li>Signature: 'AbcArchiveHandle*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__handle = new long[]{104, 128};
-
-	/**
-	 * Field descriptor (offset) for struct member 'handle_mutex'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CacheFile cachefile = ...;
-	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__handle_mutex);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_handle_mutex = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'handle_mutex'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__handle_mutex = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_paths'.
@@ -131,14 +91,14 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_paths = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__object_paths = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to external displacements file<h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,7 +115,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__filepath = new long[]{132, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'is_sequence'.
@@ -178,7 +138,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__is_sequence = new long[]{1144, 1184};
+	public static final long[] __DNA__FIELD__is_sequence = new long[]{1156, 1200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'forward_axis'.
@@ -198,7 +158,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__forward_axis = new long[]{1145, 1185};
+	public static final long[] __DNA__FIELD__forward_axis = new long[]{1157, 1201};
 
 	/**
 	 * Field descriptor (offset) for struct member 'up_axis'.
@@ -218,7 +178,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__up_axis = new long[]{1146, 1186};
+	public static final long[] __DNA__FIELD__up_axis = new long[]{1158, 1202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'override_frame'.
@@ -241,7 +201,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__override_frame = new long[]{1147, 1187};
+	public static final long[] __DNA__FIELD__override_frame = new long[]{1159, 1203};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -264,7 +224,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{1148, 1188};
+	public static final long[] __DNA__FIELD__scale = new long[]{1160, 1204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame'.
@@ -288,7 +248,31 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame = new long[]{1152, 1192};
+	public static final long[] __DNA__FIELD__frame = new long[]{1164, 1208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'frame_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <p> The frame offset to subtract. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__frame_offset);
+	 * CPointer&lt;Float&gt; p_frame_offset = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'frame_offset'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__frame_offset = new long[]{1168, 1212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -311,7 +295,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1156, 1196};
+	public static final long[] __DNA__FIELD__flag = new long[]{1172, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
@@ -331,7 +315,90 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_flag = new long[]{1158, 1198};
+	public static final long[] __DNA__FIELD__draw_flag = new long[]{1174, 1218};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{1176, 1220};
+
+	/**
+	 * Field descriptor (offset) for struct member 'handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__handle);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_handle = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'handle'</li>
+	 * <li>Signature: 'AbcArchiveHandle*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__handle = new long[]{1180, 1224};
+
+	/**
+	 * Field descriptor (offset) for struct member 'handle_filepath'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__handle_filepath);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_handle_filepath = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'handle_filepath'</li>
+	 * <li>Signature: 'char[1024]'</li>
+	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__handle_filepath = new long[]{1184, 1232};
+
+	/**
+	 * Field descriptor (offset) for struct member 'handle_readers'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__handle_readers);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_handle_readers = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'handle_readers'</li>
+	 * <li>Signature: 'GSet*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__handle_readers = new long[]{2208, 2256};
 
 	public CacheFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -386,9 +453,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -403,73 +470,9 @@ public class CacheFile extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 152, __address);
+		} else {
 			__io__block.writeLong(__io__address + 120, __address);
-		} else {
-			__io__block.writeLong(__io__address + 100, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'handle'.
-	 * @see #__DNA__FIELD__handle
-	 */
-	
-	public CPointer<Object> getHandle() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'handle'.
-	 * @see #__DNA__FIELD__handle
-	 */
-	
-	public void setHandle(CPointer<Object> handle) throws IOException
-	{
-		long __address = ((handle == null) ? 0 : handle.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
-		} else {
-			__io__block.writeLong(__io__address + 104, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'handle_mutex'.
-	 * @see #__DNA__FIELD__handle_mutex
-	 */
-	
-	public CPointer<Object> getHandle_mutex() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'handle_mutex'.
-	 * @see #__DNA__FIELD__handle_mutex
-	 */
-	
-	public void setHandle_mutex(CPointer<Object> handle_mutex) throws IOException
-	{
-		long __address = ((handle_mutex == null) ? 0 : handle_mutex.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
-		} else {
-			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -485,9 +488,9 @@ public class CacheFile extends CFacade {
 	public ListBase getObject_paths() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 112, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
 		}
 	}
 
@@ -504,9 +507,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 124;
 		}
 		if (__io__equals(object_paths, __io__address + __dna__offset)) {
 			return;
@@ -522,7 +525,7 @@ public class CacheFile extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to external displacements file<h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -533,9 +536,9 @@ public class CacheFile extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -544,7 +547,7 @@ public class CacheFile extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Path to external displacements file<h4>Blender Source Code:</h4>
-	 * <p> 1024 = FILE_MAX </p>
+	 * <p> 1024 = FILE_MAX. </p>
 	 * @see #__DNA__FIELD__filepath
 	 */
 	
@@ -552,9 +555,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 132;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;
@@ -576,9 +579,9 @@ public class CacheFile extends CFacade {
 	public byte getIs_sequence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1184);
+			return __io__block.readByte(__io__address + 1200);
 		} else {
-			return __io__block.readByte(__io__address + 1144);
+			return __io__block.readByte(__io__address + 1156);
 		}
 	}
 
@@ -593,9 +596,9 @@ public class CacheFile extends CFacade {
 	public void setIs_sequence(byte is_sequence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1184, is_sequence);
+			__io__block.writeByte(__io__address + 1200, is_sequence);
 		} else {
-			__io__block.writeByte(__io__address + 1144, is_sequence);
+			__io__block.writeByte(__io__address + 1156, is_sequence);
 		}
 	}
 
@@ -607,9 +610,9 @@ public class CacheFile extends CFacade {
 	public byte getForward_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1185);
+			return __io__block.readByte(__io__address + 1201);
 		} else {
-			return __io__block.readByte(__io__address + 1145);
+			return __io__block.readByte(__io__address + 1157);
 		}
 	}
 
@@ -621,9 +624,9 @@ public class CacheFile extends CFacade {
 	public void setForward_axis(byte forward_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1185, forward_axis);
+			__io__block.writeByte(__io__address + 1201, forward_axis);
 		} else {
-			__io__block.writeByte(__io__address + 1145, forward_axis);
+			__io__block.writeByte(__io__address + 1157, forward_axis);
 		}
 	}
 
@@ -635,9 +638,9 @@ public class CacheFile extends CFacade {
 	public byte getUp_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1186);
+			return __io__block.readByte(__io__address + 1202);
 		} else {
-			return __io__block.readByte(__io__address + 1146);
+			return __io__block.readByte(__io__address + 1158);
 		}
 	}
 
@@ -649,9 +652,9 @@ public class CacheFile extends CFacade {
 	public void setUp_axis(byte up_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1186, up_axis);
+			__io__block.writeByte(__io__address + 1202, up_axis);
 		} else {
-			__io__block.writeByte(__io__address + 1146, up_axis);
+			__io__block.writeByte(__io__address + 1158, up_axis);
 		}
 	}
 
@@ -666,9 +669,9 @@ public class CacheFile extends CFacade {
 	public byte getOverride_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1187);
+			return __io__block.readByte(__io__address + 1203);
 		} else {
-			return __io__block.readByte(__io__address + 1147);
+			return __io__block.readByte(__io__address + 1159);
 		}
 	}
 
@@ -683,9 +686,9 @@ public class CacheFile extends CFacade {
 	public void setOverride_frame(byte override_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1187, override_frame);
+			__io__block.writeByte(__io__address + 1203, override_frame);
 		} else {
-			__io__block.writeByte(__io__address + 1147, override_frame);
+			__io__block.writeByte(__io__address + 1159, override_frame);
 		}
 	}
 
@@ -700,9 +703,9 @@ public class CacheFile extends CFacade {
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1188);
+			return __io__block.readFloat(__io__address + 1204);
 		} else {
-			return __io__block.readFloat(__io__address + 1148);
+			return __io__block.readFloat(__io__address + 1160);
 		}
 	}
 
@@ -717,9 +720,9 @@ public class CacheFile extends CFacade {
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1188, scale);
+			__io__block.writeFloat(__io__address + 1204, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 1148, scale);
+			__io__block.writeFloat(__io__address + 1160, scale);
 		}
 	}
 
@@ -735,9 +738,9 @@ public class CacheFile extends CFacade {
 	public float getFrame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1192);
+			return __io__block.readFloat(__io__address + 1208);
 		} else {
-			return __io__block.readFloat(__io__address + 1152);
+			return __io__block.readFloat(__io__address + 1164);
 		}
 	}
 
@@ -753,9 +756,45 @@ public class CacheFile extends CFacade {
 	public void setFrame(float frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1192, frame);
+			__io__block.writeFloat(__io__address + 1208, frame);
 		} else {
-			__io__block.writeFloat(__io__address + 1152, frame);
+			__io__block.writeFloat(__io__address + 1164, frame);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'frame_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <p> The frame offset to subtract. </p>
+	 * @see #__DNA__FIELD__frame_offset
+	 */
+	
+	public float getFrame_offset() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1212);
+		} else {
+			return __io__block.readFloat(__io__address + 1168);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'frame_offset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence<h4>Blender Source Code:</h4>
+	 * <p> The frame offset to subtract. </p>
+	 * @see #__DNA__FIELD__frame_offset
+	 */
+	
+	public void setFrame_offset(float frame_offset) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1212, frame_offset);
+		} else {
+			__io__block.writeFloat(__io__address + 1168, frame_offset);
 		}
 	}
 
@@ -770,9 +809,9 @@ public class CacheFile extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1196);
+			return __io__block.readShort(__io__address + 1216);
 		} else {
-			return __io__block.readShort(__io__address + 1156);
+			return __io__block.readShort(__io__address + 1172);
 		}
 	}
 
@@ -787,9 +826,9 @@ public class CacheFile extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1196, flag);
+			__io__block.writeShort(__io__address + 1216, flag);
 		} else {
-			__io__block.writeShort(__io__address + 1156, flag);
+			__io__block.writeShort(__io__address + 1172, flag);
 		}
 	}
 
@@ -801,9 +840,9 @@ public class CacheFile extends CFacade {
 	public short getDraw_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1198);
+			return __io__block.readShort(__io__address + 1218);
 		} else {
-			return __io__block.readShort(__io__address + 1158);
+			return __io__block.readShort(__io__address + 1174);
 		}
 	}
 
@@ -815,9 +854,159 @@ public class CacheFile extends CFacade {
 	public void setDraw_flag(short draw_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1198, draw_flag);
+			__io__block.writeShort(__io__address + 1218, draw_flag);
 		} else {
-			__io__block.writeShort(__io__address + 1158, draw_flag);
+			__io__block.writeShort(__io__address + 1174, draw_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1220;
+		} else {
+			__dna__offset = 1176;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime </p>
+	 * @see #__DNA__FIELD__handle
+	 */
+	
+	public CPointer<Object> getHandle() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1224);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1180);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'handle'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime </p>
+	 * @see #__DNA__FIELD__handle
+	 */
+	
+	public void setHandle(CPointer<Object> handle) throws IOException
+	{
+		long __address = ((handle == null) ? 0 : handle.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1224, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1180, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'handle_filepath'.
+	 * @see #__DNA__FIELD__handle_filepath
+	 */
+	
+	public CArrayFacade<Byte> getHandle_filepath() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1024
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'handle_filepath'.
+	 * @see #__DNA__FIELD__handle_filepath
+	 */
+	
+	public void setHandle_filepath(CArrayFacade<Byte> handle_filepath) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1232;
+		} else {
+			__dna__offset = 1184;
+		}
+		if (__io__equals(handle_filepath, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, handle_filepath)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, handle_filepath);
+		} else {
+			__io__generic__copy( getHandle_filepath(), handle_filepath);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'handle_readers'.
+	 * @see #__DNA__FIELD__handle_readers
+	 */
+	
+	public CPointer<Object> getHandle_readers() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 2256);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 2208);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'handle_readers'.
+	 * @see #__DNA__FIELD__handle_readers
+	 */
+	
+	public void setHandle_readers(CPointer<Object> handle_readers) throws IOException
+	{
+		long __address = ((handle_readers == null) ? 0 : handle_readers.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 2256, __address);
+		} else {
+			__io__block.writeLong(__io__address + 2208, __address);
 		}
 	}
 

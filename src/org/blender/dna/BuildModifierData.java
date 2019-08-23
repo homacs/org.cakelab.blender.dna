@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=112, size64=128)
+@CMetaData(size32=116, size64=136)
 public class BuildModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class BuildModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 94;
+	public static final int __DNA__SDNA_INDEX = 100;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,7 +43,7 @@ public class BuildModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__start = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
@@ -86,7 +86,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__length = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__length = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -106,13 +106,13 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__flag = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion) </p>
+	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -129,13 +129,13 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randomize = new long[]{106, 122};
+	public static final long[] __DNA__FIELD__randomize = new long[]{110, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (int) random seed </p>
+	 * <p> (int) random seed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -152,7 +152,7 @@ public class BuildModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seed = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__seed = new long[]{112, 132};
 
 	public BuildModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -206,9 +206,9 @@ public class BuildModifierData extends CFacade {
 	public float getStart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -220,9 +220,9 @@ public class BuildModifierData extends CFacade {
 	public void setStart(float start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, start);
+			__io__block.writeFloat(__io__address + 120, start);
 		} else {
-			__io__block.writeFloat(__io__address + 96, start);
+			__io__block.writeFloat(__io__address + 100, start);
 		}
 	}
 
@@ -234,9 +234,9 @@ public class BuildModifierData extends CFacade {
 	public float getLength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -248,9 +248,9 @@ public class BuildModifierData extends CFacade {
 	public void setLength(float length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, length);
+			__io__block.writeFloat(__io__address + 124, length);
 		} else {
-			__io__block.writeFloat(__io__address + 100, length);
+			__io__block.writeFloat(__io__address + 104, length);
 		}
 	}
 
@@ -262,9 +262,9 @@ public class BuildModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 120);
+			return __io__block.readShort(__io__address + 128);
 		} else {
-			return __io__block.readShort(__io__address + 104);
+			return __io__block.readShort(__io__address + 108);
 		}
 	}
 
@@ -276,9 +276,9 @@ public class BuildModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 120, flag);
+			__io__block.writeShort(__io__address + 128, flag);
 		} else {
-			__io__block.writeShort(__io__address + 104, flag);
+			__io__block.writeShort(__io__address + 108, flag);
 		}
 	}
 
@@ -286,16 +286,16 @@ public class BuildModifierData extends CFacade {
 	 * Get method for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion) </p>
+	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * @see #__DNA__FIELD__randomize
 	 */
 	
 	public short getRandomize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 122);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return __io__block.readShort(__io__address + 106);
+			return __io__block.readShort(__io__address + 110);
 		}
 	}
 
@@ -303,16 +303,16 @@ public class BuildModifierData extends CFacade {
 	 * Set method for struct member 'randomize'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion) </p>
+	 * <p> (bool) whether order of vertices is randomized - legacy files (for readfile conversion). </p>
 	 * @see #__DNA__FIELD__randomize
 	 */
 	
 	public void setRandomize(short randomize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 122, randomize);
+			__io__block.writeShort(__io__address + 130, randomize);
 		} else {
-			__io__block.writeShort(__io__address + 106, randomize);
+			__io__block.writeShort(__io__address + 110, randomize);
 		}
 	}
 
@@ -320,16 +320,16 @@ public class BuildModifierData extends CFacade {
 	 * Get method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (int) random seed </p>
+	 * <p> (int) random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
 	
 	public int getSeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -337,16 +337,16 @@ public class BuildModifierData extends CFacade {
 	 * Set method for struct member 'seed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (int) random seed </p>
+	 * <p> (int) random seed. </p>
 	 * @see #__DNA__FIELD__seed
 	 */
 	
 	public void setSeed(int seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, seed);
+			__io__block.writeInt(__io__address + 132, seed);
 		} else {
-			__io__block.writeInt(__io__address + 108, seed);
+			__io__block.writeInt(__io__address + 112, seed);
 		}
 	}
 

@@ -26,7 +26,7 @@ public class MaskSpline extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 569;
+	public static final int __DNA__SDNA_INDEX = 576;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -72,7 +72,7 @@ public class MaskSpline extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defferent spline flag (closed, ...) </p>
+	 * <p> Different spline flag (closed, ...). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * The method used for calculating the feather offset<h4>Blender Source Code:</h4>
-	 * <p> feather offset method </p>
+	 * <p> Feather offset method. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,7 +119,7 @@ public class MaskSpline extends CFacade {
 	 * Field descriptor (offset) for struct member 'weight_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weight interpolation </p>
+	 * <p> Weight interpolation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,7 +142,7 @@ public class MaskSpline extends CFacade {
 	 * Field descriptor (offset) for struct member 'tot_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points </p>
+	 * <p> Total number of points. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -166,7 +166,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of points<h4>Blender Source Code:</h4>
-	 * <p> points which defines spline itself </p>
+	 * <p> Points which defines spline itself. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -189,7 +189,7 @@ public class MaskSpline extends CFacade {
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parenting information of the whole spline </p>
+	 * <p> Parenting information of the whole spline. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -212,7 +212,7 @@ public class MaskSpline extends CFacade {
 	 * Field descriptor (offset) for struct member 'points_deform'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> deformed copy of 'points' {@link BezTriple}  data - not saved </p>
+	 * <p> Deformed copy of 'points' {@link BezTriple}  data - not saved. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -307,7 +307,7 @@ public class MaskSpline extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defferent spline flag (closed, ...) </p>
+	 * <p> Different spline flag (closed, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -324,7 +324,7 @@ public class MaskSpline extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> defferent spline flag (closed, ...) </p>
+	 * <p> Different spline flag (closed, ...). </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -342,7 +342,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * The method used for calculating the feather offset<h4>Blender Source Code:</h4>
-	 * <p> feather offset method </p>
+	 * <p> Feather offset method. </p>
 	 * @see #__DNA__FIELD__offset_mode
 	 */
 	
@@ -360,7 +360,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * The method used for calculating the feather offset<h4>Blender Source Code:</h4>
-	 * <p> feather offset method </p>
+	 * <p> Feather offset method. </p>
 	 * @see #__DNA__FIELD__offset_mode
 	 */
 	
@@ -377,7 +377,7 @@ public class MaskSpline extends CFacade {
 	 * Get method for struct member 'weight_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weight interpolation </p>
+	 * <p> Weight interpolation. </p>
 	 * @see #__DNA__FIELD__weight_interp
 	 */
 	
@@ -394,7 +394,7 @@ public class MaskSpline extends CFacade {
 	 * Set method for struct member 'weight_interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> weight interpolation </p>
+	 * <p> Weight interpolation. </p>
 	 * @see #__DNA__FIELD__weight_interp
 	 */
 	
@@ -411,7 +411,7 @@ public class MaskSpline extends CFacade {
 	 * Get method for struct member 'tot_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points </p>
+	 * <p> Total number of points. </p>
 	 * @see #__DNA__FIELD__tot_point
 	 */
 	
@@ -428,7 +428,7 @@ public class MaskSpline extends CFacade {
 	 * Set method for struct member 'tot_point'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> total number of points </p>
+	 * <p> Total number of points. </p>
 	 * @see #__DNA__FIELD__tot_point
 	 */
 	
@@ -446,7 +446,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of points<h4>Blender Source Code:</h4>
-	 * <p> points which defines spline itself </p>
+	 * <p> Points which defines spline itself. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -467,7 +467,7 @@ public class MaskSpline extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    Collection of points<h4>Blender Source Code:</h4>
-	 * <p> points which defines spline itself </p>
+	 * <p> Points which defines spline itself. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -485,7 +485,7 @@ public class MaskSpline extends CFacade {
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parenting information of the whole spline </p>
+	 * <p> Parenting information of the whole spline. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -502,7 +502,7 @@ public class MaskSpline extends CFacade {
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> parenting information of the whole spline </p>
+	 * <p> Parenting information of the whole spline. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -527,7 +527,7 @@ public class MaskSpline extends CFacade {
 	 * Get method for struct member 'points_deform'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> deformed copy of 'points' {@link BezTriple}  data - not saved </p>
+	 * <p> Deformed copy of 'points' {@link BezTriple}  data - not saved. </p>
 	 * @see #__DNA__FIELD__points_deform
 	 */
 	
@@ -547,7 +547,7 @@ public class MaskSpline extends CFacade {
 	 * Set method for struct member 'points_deform'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> deformed copy of 'points' {@link BezTriple}  data - not saved </p>
+	 * <p> Deformed copy of 'points' {@link BezTriple}  data - not saved. </p>
 	 * @see #__DNA__FIELD__points_deform
 	 */
 	

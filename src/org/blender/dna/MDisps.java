@@ -26,7 +26,7 @@ public class MDisps extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 77;
+	public static final int __DNA__SDNA_INDEX = 83;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdisp'.
@@ -75,7 +75,8 @@ public class MDisps extends CFacade {
 	 * Field descriptor (offset) for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit. NOTE: This is a bitmap, keep in sync with type used in BLI_bitmap.h </p>
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -168,7 +169,8 @@ public class MDisps extends CFacade {
 	 * Get method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit. NOTE: This is a bitmap, keep in sync with type used in BLI_bitmap.h </p>
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * </p>
 	 * @see #__DNA__FIELD__hidden
 	 */
 	
@@ -188,7 +190,8 @@ public class MDisps extends CFacade {
 	 * Set method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit. NOTE: This is a bitmap, keep in sync with type used in BLI_bitmap.h </p>
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * </p>
 	 * @see #__DNA__FIELD__hidden
 	 */
 	

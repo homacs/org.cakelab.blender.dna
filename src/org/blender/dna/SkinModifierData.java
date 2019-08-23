@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Skin modifier </p>
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=108, size64=128)
 public class SkinModifierData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SkinModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 134;
+	public static final int __DNA__SDNA_INDEX = 140;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -45,7 +45,7 @@ public class SkinModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 96/112</li>
+	 * <li>Actual Size (32bit/64bit): 100/120</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__branch_smoothing = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__branch_smoothing = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -88,7 +88,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__flag = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_axes'.
@@ -108,27 +108,27 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetry_axes = new long[]{101, 117};
+	public static final long[] __DNA__FIELD__symmetry_axes = new long[]{105, 125};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SkinModifierData skinmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = skinmodifierdata.__dna__addressof(SkinModifierData.__DNA__FIELD__pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = skinmodifierdata.__dna__addressof(SkinModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{102, 118};
+	public static final long[] __DNA__FIELD___pad = new long[]{106, 126};
 
 	public SkinModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -182,9 +182,9 @@ public class SkinModifierData extends CFacade {
 	public float getBranch_smoothing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -196,9 +196,9 @@ public class SkinModifierData extends CFacade {
 	public void setBranch_smoothing(float branch_smoothing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, branch_smoothing);
+			__io__block.writeFloat(__io__address + 120, branch_smoothing);
 		} else {
-			__io__block.writeFloat(__io__address + 96, branch_smoothing);
+			__io__block.writeFloat(__io__address + 100, branch_smoothing);
 		}
 	}
 
@@ -210,9 +210,9 @@ public class SkinModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 116);
+			return __io__block.readByte(__io__address + 124);
 		} else {
-			return __io__block.readByte(__io__address + 100);
+			return __io__block.readByte(__io__address + 104);
 		}
 	}
 
@@ -224,9 +224,9 @@ public class SkinModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 116, flag);
+			__io__block.writeByte(__io__address + 124, flag);
 		} else {
-			__io__block.writeByte(__io__address + 100, flag);
+			__io__block.writeByte(__io__address + 104, flag);
 		}
 	}
 
@@ -238,9 +238,9 @@ public class SkinModifierData extends CFacade {
 	public byte getSymmetry_axes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 117);
+			return __io__block.readByte(__io__address + 125);
 		} else {
-			return __io__block.readByte(__io__address + 101);
+			return __io__block.readByte(__io__address + 105);
 		}
 	}
 
@@ -252,49 +252,49 @@ public class SkinModifierData extends CFacade {
 	public void setSymmetry_axes(byte symmetry_axes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 117, symmetry_axes);
+			__io__block.writeByte(__io__address + 125, symmetry_axes);
 		} else {
-			__io__block.writeByte(__io__address + 101, symmetry_axes);
+			__io__block.writeByte(__io__address + 105, symmetry_axes);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 126, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 102, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 106, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(CArrayFacade<Byte> pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 118;
+			__dna__offset = 126;
 		} else {
-			__dna__offset = 102;
+			__dna__offset = 106;
 		}
-		if (__io__equals(pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, pad);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPad(), pad);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

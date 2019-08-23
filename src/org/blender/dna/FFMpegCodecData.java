@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -26,7 +27,7 @@ public class FFMpegCodecData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 171;
+	public static final int __DNA__SDNA_INDEX = 175;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -169,24 +170,24 @@ public class FFMpegCodecData extends CFacade {
 	public static final long[] __DNA__FIELD__audio_channels = new long[]{24, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'audio_pad'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FFMpegCodecData ffmpegcodecdata = ...;
-	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__audio_pad);
-	 * CPointer&lt;Integer&gt; p_audio_pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'audio_pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__audio_pad = new long[]{28, 28};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{28, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'audio_volume'.
@@ -232,7 +233,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Field descriptor (offset) for struct member 'max_b_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * <p> Only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -295,7 +296,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Field descriptor (offset) for struct member 'ffmpeg_preset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see FFMpegPreset </p>
+	 * <p> See eFFMpegPreset. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -415,24 +416,24 @@ public class FFMpegCodecData extends CFacade {
 	public static final long[] __DNA__FIELD__mux_rate = new long[]{72, 72};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FFMpegCodecData ffmpegcodecdata = ...;
-	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD__pad1);
-	 * CPointer&lt;Integer&gt; p_pad1 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = ffmpegcodecdata.__dna__addressof(FFMpegCodecData.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{76, 76};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
@@ -659,30 +660,42 @@ public class FFMpegCodecData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'audio_pad'.
-	 * @see #__DNA__FIELD__audio_pad
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public int getAudio_pad() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'audio_pad'.
-	 * @see #__DNA__FIELD__audio_pad
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setAudio_pad(int audio_pad) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, audio_pad);
+			__dna__offset = 28;
 		} else {
-			__io__block.writeInt(__io__address + 28, audio_pad);
+			__dna__offset = 28;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -746,7 +759,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Get method for struct member 'max_b_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * <p> Only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
 	 * @see #__DNA__FIELD__max_b_frames
 	 */
 	
@@ -763,7 +776,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Set method for struct member 'max_b_frames'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
+	 * <p> Only used if FFMPEG_USE_MAX_B_FRAMES flag is set. </p>
 	 * @see #__DNA__FIELD__max_b_frames
 	 */
 	
@@ -836,7 +849,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Get method for struct member 'ffmpeg_preset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see FFMpegPreset </p>
+	 * <p> See eFFMpegPreset. </p>
 	 * @see #__DNA__FIELD__ffmpeg_preset
 	 */
 	
@@ -853,7 +866,7 @@ public class FFMpegCodecData extends CFacade {
 	 * Set method for struct member 'ffmpeg_preset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> see FFMpegPreset </p>
+	 * <p> See eFFMpegPreset. </p>
 	 * @see #__DNA__FIELD__ffmpeg_preset
 	 */
 	
@@ -1007,30 +1020,42 @@ public class FFMpegCodecData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public int getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 76);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 76);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(int pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 76, pad1);
+			__dna__offset = 76;
 		} else {
-			__io__block.writeInt(__io__address + 76, pad1);
+			__dna__offset = 76;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

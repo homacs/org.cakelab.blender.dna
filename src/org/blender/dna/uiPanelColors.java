@@ -27,7 +27,7 @@ public class uiPanelColors extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 243;
 
 	/**
 	 * Field descriptor (offset) for struct member 'header'.
@@ -70,64 +70,44 @@ public class uiPanelColors extends CFacade {
 	public static final long[] __DNA__FIELD__back = new long[]{4, 4};
 
 	/**
-	 * Field descriptor (offset) for struct member 'show_header'.
+	 * Field descriptor (offset) for struct member 'sub_back'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * uiPanelColors uipanelcolors = ...;
-	 * CPointer&lt;Object&gt; p = uipanelcolors.__dna__addressof(uiPanelColors.__DNA__FIELD__show_header);
-	 * CPointer&lt;Short&gt; p_show_header = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = uipanelcolors.__dna__addressof(uiPanelColors.__DNA__FIELD__sub_back);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_sub_back = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'show_header'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__show_header = new long[]{8, 8};
-
-	/**
-	 * Field descriptor (offset) for struct member 'show_back'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * uiPanelColors uipanelcolors = ...;
-	 * CPointer&lt;Object&gt; p = uipanelcolors.__dna__addressof(uiPanelColors.__DNA__FIELD__show_back);
-	 * CPointer&lt;Short&gt; p_show_back = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'show_back'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__show_back = new long[]{10, 10};
-
-	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * uiPanelColors uipanelcolors = ...;
-	 * CPointer&lt;Object&gt; p = uipanelcolors.__dna__addressof(uiPanelColors.__DNA__FIELD__pad);
-	 * CPointer&lt;Integer&gt; p_pad = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'sub_back'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__sub_back = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * uiPanelColors uipanelcolors = ...;
+	 * CPointer&lt;Object&gt; p = uipanelcolors.__dna__addressof(uiPanelColors.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{12, 12};
 
 	public uiPanelColors(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -218,86 +198,82 @@ public class uiPanelColors extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'show_header'.
-	 * @see #__DNA__FIELD__show_header
+	 * Get method for struct member 'sub_back'.
+	 * @see #__DNA__FIELD__sub_back
 	 */
 	
-	public short getShow_header() throws IOException
+	public CArrayFacade<Byte> getSub_back() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 8);
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 8);
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'show_header'.
-	 * @see #__DNA__FIELD__show_header
+	 * Set method for struct member 'sub_back'.
+	 * @see #__DNA__FIELD__sub_back
 	 */
 	
-	public void setShow_header(short show_header) throws IOException
+	public void setSub_back(CArrayFacade<Byte> sub_back) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 8, show_header);
+			__dna__offset = 8;
 		} else {
-			__io__block.writeShort(__io__address + 8, show_header);
+			__dna__offset = 8;
+		}
+		if (__io__equals(sub_back, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, sub_back)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, sub_back);
+		} else {
+			__io__generic__copy( getSub_back(), sub_back);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'show_back'.
-	 * @see #__DNA__FIELD__show_back
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public short getShow_back() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 10);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'show_back'.
-	 * @see #__DNA__FIELD__show_back
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setShow_back(short show_back) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10, show_back);
+			__dna__offset = 12;
 		} else {
-			__io__block.writeShort(__io__address + 10, show_back);
+			__dna__offset = 12;
 		}
-	}
-
-	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public int getPad() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
 		} else {
-			return __io__block.readInt(__io__address + 12);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
-	 */
-	
-	public void setPad(int pad) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, pad);
-		} else {
-			__io__block.writeInt(__io__address + 12, pad);
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

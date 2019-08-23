@@ -27,13 +27,13 @@ public class MovieTrackingCamera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 548;
+	public static final int __DNA__SDNA_INDEX = 555;
 
 	/**
 	 * Field descriptor (offset) for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> intrinsics handle </p>
+	 * <p> Intrinsics handle. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -76,31 +76,31 @@ public class MovieTrackingCamera extends CFacade {
 	public static final long[] __DNA__FIELD__distortion_model = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MovieTrackingCamera movietrackingcamera = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{6, 10};
+	public static final long[] __DNA__FIELD___pad = new long[]{6, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sensor_width'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
-	 * <p> width of CCD sensor </p>
+	 * <p> Width of CCD sensor. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -124,7 +124,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
-	 * <p> pixel aspect ratio </p>
+	 * <p> Pixel aspect ratio. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -147,7 +147,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Field descriptor (offset) for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> focal length </p>
+	 * <p> Focal length. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -171,7 +171,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Units used for camera focal length<h4>Blender Source Code:</h4>
-	 * <p> units of focal length user is working with </p>
+	 * <p> Units of focal length user is working with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -191,31 +191,31 @@ public class MovieTrackingCamera extends CFacade {
 	public static final long[] __DNA__FIELD__units = new long[]{20, 24};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad1'.
+	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MovieTrackingCamera movietrackingcamera = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__pad1);
-	 * CPointer&lt;Short&gt; p_pad1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad1'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad1 = new long[]{22, 26};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{22, 26};
 
 	/**
 	 * Field descriptor (offset) for struct member 'principal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Optical center of lens<h4>Blender Source Code:</h4>
-	 * <p> principal point </p>
+	 * <p> Principal point. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -239,7 +239,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> Polynomial distortion </p>
+	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -285,8 +285,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Field descriptor (offset) for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Third coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> polynomial radial distortion </p>
+	 * Third coefficient of third order polynomial radial distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -364,7 +363,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Get method for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> intrinsics handle </p>
+	 * <p> Intrinsics handle. </p>
 	 * @see #__DNA__FIELD__intrinsics
 	 */
 	
@@ -384,7 +383,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Set method for struct member 'intrinsics'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> intrinsics handle </p>
+	 * <p> Intrinsics handle. </p>
 	 * @see #__DNA__FIELD__intrinsics
 	 */
 	
@@ -433,30 +432,42 @@ public class MovieTrackingCamera extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 10);
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 6);
+			return new CArrayFacade<Byte>(__io__address + 6, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 10, pad);
+			__dna__offset = 10;
 		} else {
-			__io__block.writeShort(__io__address + 6, pad);
+			__dna__offset = 6;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -465,7 +476,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
-	 * <p> width of CCD sensor </p>
+	 * <p> Width of CCD sensor. </p>
 	 * @see #__DNA__FIELD__sensor_width
 	 */
 	
@@ -483,7 +494,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Width of CCD sensor in millimeters<h4>Blender Source Code:</h4>
-	 * <p> width of CCD sensor </p>
+	 * <p> Width of CCD sensor. </p>
 	 * @see #__DNA__FIELD__sensor_width
 	 */
 	
@@ -501,7 +512,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
-	 * <p> pixel aspect ratio </p>
+	 * <p> Pixel aspect ratio. </p>
 	 * @see #__DNA__FIELD__pixel_aspect
 	 */
 	
@@ -519,7 +530,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Pixel aspect ratio<h4>Blender Source Code:</h4>
-	 * <p> pixel aspect ratio </p>
+	 * <p> Pixel aspect ratio. </p>
 	 * @see #__DNA__FIELD__pixel_aspect
 	 */
 	
@@ -536,7 +547,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Get method for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> focal length </p>
+	 * <p> Focal length. </p>
 	 * @see #__DNA__FIELD__focal
 	 */
 	
@@ -553,7 +564,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Set method for struct member 'focal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> focal length </p>
+	 * <p> Focal length. </p>
 	 * @see #__DNA__FIELD__focal
 	 */
 	
@@ -571,7 +582,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Units used for camera focal length<h4>Blender Source Code:</h4>
-	 * <p> units of focal length user is working with </p>
+	 * <p> Units of focal length user is working with. </p>
 	 * @see #__DNA__FIELD__units
 	 */
 	
@@ -589,7 +600,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Units used for camera focal length<h4>Blender Source Code:</h4>
-	 * <p> units of focal length user is working with </p>
+	 * <p> Units of focal length user is working with. </p>
 	 * @see #__DNA__FIELD__units
 	 */
 	
@@ -603,30 +614,42 @@ public class MovieTrackingCamera extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public short getPad1() throws IOException
+	public CArrayFacade<Byte> get_pad1() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 26);
+			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad1'.
-	 * @see #__DNA__FIELD__pad1
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void setPad1(short pad1) throws IOException
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 26, pad1);
+			__dna__offset = 26;
 		} else {
-			__io__block.writeShort(__io__address + 22, pad1);
+			__dna__offset = 22;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -635,7 +658,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Optical center of lens<h4>Blender Source Code:</h4>
-	 * <p> principal point </p>
+	 * <p> Principal point. </p>
 	 * @see #__DNA__FIELD__principal
 	 */
 	
@@ -657,7 +680,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Optical center of lens<h4>Blender Source Code:</h4>
-	 * <p> principal point </p>
+	 * <p> Principal point. </p>
 	 * @see #__DNA__FIELD__principal
 	 */
 	
@@ -683,7 +706,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> Polynomial distortion </p>
+	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * @see #__DNA__FIELD__k1
 	 */
 	
@@ -701,7 +724,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * First coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> Polynomial distortion </p>
+	 * <p> Polynomial distortion Polynomial radial distortion. </p>
 	 * @see #__DNA__FIELD__k1
 	 */
 	
@@ -752,8 +775,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Get method for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Third coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> polynomial radial distortion </p>
+	 * Third coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k3
 	 */
 	
@@ -770,8 +792,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Set method for struct member 'k3'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Third coefficient of third order polynomial radial distortion<h4>Blender Source Code:</h4>
-	 * <p> polynomial radial distortion </p>
+	 * Third coefficient of third order polynomial radial distortion
 	 * @see #__DNA__FIELD__k3
 	 */
 	

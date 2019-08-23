@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=444, size64=480)
+@CMetaData(size32=448, size64=488)
 public class SoftBody extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SoftBody extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 170;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -76,7 +76,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'bpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -99,7 +99,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'bspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,24 +119,24 @@ public class SoftBody extends CFacade {
 	public static final long[] __DNA__FIELD__bspring = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SoftBody softbody = ...;
-	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__pad);
-	 * CPointer&lt;Byte&gt; p_pad = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD___pad);
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{16, 24};
+	public static final long[] __DNA__FIELD___pad = new long[]{16, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'msg_lock'.
@@ -182,7 +182,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'nodemass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  </p>
+	 * <p><em></em> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -205,7 +205,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'namedVG_Mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -228,7 +228,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 softbody amount of gravitaion to apply </p>
+	 * <p> Softbody amount of gravitaion to apply. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -251,7 +251,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'mediafrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction to env </p>
+	 * <p> Friction to env. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -274,7 +274,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'rklimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> error limit for ODE solver </p>
+	 * <p> Error limit for ODE solver. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -297,7 +297,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'physics_speed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user control over simulation speed </p>
+	 * <p> User control over simulation speed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -320,7 +320,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'goalspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> goal softbody goal springs </p>
+	 * <p> goal Softbody goal springs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -343,7 +343,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'goalfrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody goal springs friction </p>
+	 * <p> Softbody goal springs friction. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -366,7 +366,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quick limits for goal </p>
+	 * <p> Quick limits for goal. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -409,7 +409,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'defgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default goal for vertices without vgroup </p>
+	 * <p> Default goal for vertices without vgroup. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -432,7 +432,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'vertgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index starting at 1 </p>
+	 * <p> Index starting at 1. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -455,7 +455,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'namedVG_Softgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -476,9 +476,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'fuzzyness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -501,7 +498,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'inspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> springs softbody inner springs </p>
+	 * <p> springs Softbody inner springs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -524,7 +521,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'infrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody inner springs friction </p>
+	 * <p> Softbody inner springs friction. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -547,7 +544,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'namedVG_Spring_K'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -570,7 +567,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 baking </p>
+	 * <p> baking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -631,6 +628,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'local'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Local==1: use local coords for baking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -651,9 +651,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'solverflags'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> local==1: use local coords for baking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -676,7 +673,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'keys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  array of size totpointkey </p>
+	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  Array of size totpointkey. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -697,6 +694,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpointkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -717,9 +717,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'totkey'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> if totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -766,7 +763,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision fixed collision ball size if > 0 </p>
+	 * <p> self collision Fixed collision ball size if > 0. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -789,7 +786,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'balldamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cooling down collision response </p>
+	 * <p> Cooling down collision response. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -812,7 +809,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'ballstiff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure the ball is loaded with </p>
+	 * <p> Pressure the ball is loaded with. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -995,7 +992,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'scratch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scratch pad/cache on live time not saved in file </p>
+	 * <p> Scratchpad/cache on live time not saved in file. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1055,7 +1052,32 @@ public class SoftBody extends CFacade {
 	public static final long[] __DNA__FIELD__inpush = new long[]{332, 348};
 
 	/**
+	 * Field descriptor (offset) for struct member 'shared'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SoftBody softbody = ...;
+	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__shared);
+	 * CPointer&lt;CPointer&lt;SoftBody_Shared&gt;&gt; p_shared = p.cast(new Class[]{CPointer.class, SoftBody_Shared.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'shared'</li>
+	 * <li>Signature: 'SoftBody_Shared*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__shared = new long[]{336, 352};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1072,10 +1094,15 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pointcache = new long[]{336, 352};
+	public static final long[] __DNA__FIELD__pointcache = new long[]{340, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1092,7 +1119,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{340, 360};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{344, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_group'.
@@ -1103,16 +1130,16 @@ public class SoftBody extends CFacade {
 	 * <pre>
 	 * SoftBody softbody = ...;
 	 * CPointer&lt;Object&gt; p = softbody.__dna__addressof(SoftBody.__DNA__FIELD__collision_group);
-	 * CPointer&lt;CPointer&lt;Group&gt;&gt; p_collision_group = p.cast(new Class[]{CPointer.class, Group.class});
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_collision_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'collision_group'</li>
-	 * <li>Signature: 'Group*'</li>
+	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision_group = new long[]{348, 376};
+	public static final long[] __DNA__FIELD__collision_group = new long[]{352, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -1132,7 +1159,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_weights = new long[]{352, 384};
+	public static final long[] __DNA__FIELD__effector_weights = new long[]{356, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lcom'.
@@ -1155,7 +1182,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lcom = new long[]{356, 392};
+	public static final long[] __DNA__FIELD__lcom = new long[]{360, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lrot'.
@@ -1175,7 +1202,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/36</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lrot = new long[]{368, 404};
+	public static final long[] __DNA__FIELD__lrot = new long[]{372, 412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lscale'.
@@ -1195,7 +1222,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/36</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lscale = new long[]{404, 440};
+	public static final long[] __DNA__FIELD__lscale = new long[]{408, 448};
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_frame'.
@@ -1215,7 +1242,7 @@ public class SoftBody extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__last_frame = new long[]{440, 476};
+	public static final long[] __DNA__FIELD__last_frame = new long[]{444, 484};
 
 	public SoftBody(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1291,7 +1318,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'bpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * @see #__DNA__FIELD__bpoint
 	 */
 	
@@ -1311,7 +1338,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'bpoint'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * @see #__DNA__FIELD__bpoint
 	 */
 	
@@ -1329,7 +1356,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'bspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * @see #__DNA__FIELD__bspring
 	 */
 	
@@ -1349,7 +1376,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'bspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in file </p>
+	 * <p> Not saved in file. </p>
 	 * @see #__DNA__FIELD__bspring
 	 */
 	
@@ -1364,11 +1391,11 @@ public class SoftBody extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public byte getPad() throws IOException
+	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 24);
@@ -1378,16 +1405,16 @@ public class SoftBody extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(byte pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 24, pad);
+			__io__block.writeByte(__io__address + 24, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 16, pad);
+			__io__block.writeByte(__io__address + 16, _pad);
 		}
 	}
 
@@ -1451,7 +1478,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'nodemass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  </p>
+	 * <p><em></em> . </p>
 	 * @see #__DNA__FIELD__nodemass
 	 */
 	
@@ -1468,7 +1495,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'nodemass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  </p>
+	 * <p><em></em> . </p>
 	 * @see #__DNA__FIELD__nodemass
 	 */
 	
@@ -1485,7 +1512,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'namedVG_Mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Mass
 	 */
 	
@@ -1506,7 +1533,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'namedVG_Mass'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Mass
 	 */
 	
@@ -1531,7 +1558,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 softbody amount of gravitaion to apply </p>
+	 * <p> Softbody amount of gravitaion to apply. </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -1548,7 +1575,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce mass painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 softbody amount of gravitaion to apply </p>
+	 * <p> Softbody amount of gravitaion to apply. </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -1565,7 +1592,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'mediafrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction to env </p>
+	 * <p> Friction to env. </p>
 	 * @see #__DNA__FIELD__mediafrict
 	 */
 	
@@ -1582,7 +1609,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'mediafrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> friction to env </p>
+	 * <p> Friction to env. </p>
 	 * @see #__DNA__FIELD__mediafrict
 	 */
 	
@@ -1599,7 +1626,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'rklimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> error limit for ODE solver </p>
+	 * <p> Error limit for ODE solver. </p>
 	 * @see #__DNA__FIELD__rklimit
 	 */
 	
@@ -1616,7 +1643,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'rklimit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> error limit for ODE solver </p>
+	 * <p> Error limit for ODE solver. </p>
 	 * @see #__DNA__FIELD__rklimit
 	 */
 	
@@ -1633,7 +1660,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'physics_speed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user control over simulation speed </p>
+	 * <p> User control over simulation speed. </p>
 	 * @see #__DNA__FIELD__physics_speed
 	 */
 	
@@ -1650,7 +1677,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'physics_speed'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> user control over simulation speed </p>
+	 * <p> User control over simulation speed. </p>
 	 * @see #__DNA__FIELD__physics_speed
 	 */
 	
@@ -1667,7 +1694,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'goalspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> goal softbody goal springs </p>
+	 * <p> goal Softbody goal springs. </p>
 	 * @see #__DNA__FIELD__goalspring
 	 */
 	
@@ -1684,7 +1711,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'goalspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> goal softbody goal springs </p>
+	 * <p> goal Softbody goal springs. </p>
 	 * @see #__DNA__FIELD__goalspring
 	 */
 	
@@ -1701,7 +1728,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'goalfrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody goal springs friction </p>
+	 * <p> Softbody goal springs friction. </p>
 	 * @see #__DNA__FIELD__goalfrict
 	 */
 	
@@ -1718,7 +1745,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'goalfrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody goal springs friction </p>
+	 * <p> Softbody goal springs friction. </p>
 	 * @see #__DNA__FIELD__goalfrict
 	 */
 	
@@ -1735,7 +1762,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quick limits for goal </p>
+	 * <p> Quick limits for goal. </p>
 	 * @see #__DNA__FIELD__mingoal
 	 */
 	
@@ -1752,7 +1779,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'mingoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> quick limits for goal </p>
+	 * <p> Quick limits for goal. </p>
 	 * @see #__DNA__FIELD__mingoal
 	 */
 	
@@ -1797,7 +1824,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'defgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default goal for vertices without vgroup </p>
+	 * <p> Default goal for vertices without vgroup. </p>
 	 * @see #__DNA__FIELD__defgoal
 	 */
 	
@@ -1814,7 +1841,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'defgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> default goal for vertices without vgroup </p>
+	 * <p> Default goal for vertices without vgroup. </p>
 	 * @see #__DNA__FIELD__defgoal
 	 */
 	
@@ -1831,7 +1858,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'vertgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index starting at 1 </p>
+	 * <p> Index starting at 1. </p>
 	 * @see #__DNA__FIELD__vertgroup
 	 */
 	
@@ -1848,7 +1875,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'vertgroup'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> index starting at 1 </p>
+	 * <p> Index starting at 1. </p>
 	 * @see #__DNA__FIELD__vertgroup
 	 */
 	
@@ -1865,7 +1892,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'namedVG_Softgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Softgoal
 	 */
 	
@@ -1886,7 +1913,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'namedVG_Softgoal'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Softgoal
 	 */
 	
@@ -1909,9 +1936,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'fuzzyness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 </p>
 	 * @see #__DNA__FIELD__fuzzyness
 	 */
 	
@@ -1926,9 +1950,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'fuzzyness'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 </p>
 	 * @see #__DNA__FIELD__fuzzyness
 	 */
 	
@@ -1945,7 +1966,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'inspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> springs softbody inner springs </p>
+	 * <p> springs Softbody inner springs. </p>
 	 * @see #__DNA__FIELD__inspring
 	 */
 	
@@ -1962,7 +1983,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'inspring'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> springs softbody inner springs </p>
+	 * <p> springs Softbody inner springs. </p>
 	 * @see #__DNA__FIELD__inspring
 	 */
 	
@@ -1979,7 +2000,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'infrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody inner springs friction </p>
+	 * <p> Softbody inner springs friction. </p>
 	 * @see #__DNA__FIELD__infrict
 	 */
 	
@@ -1996,7 +2017,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'infrict'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> softbody inner springs friction </p>
+	 * <p> Softbody inner springs friction. </p>
 	 * @see #__DNA__FIELD__infrict
 	 */
 	
@@ -2013,7 +2034,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'namedVG_Spring_K'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Spring_K
 	 */
 	
@@ -2034,7 +2055,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'namedVG_Spring_K'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> MAX_VGROUP_NAME </p>
+	 * <p> Along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613. MAX_VGROUP_NAME </p>
 	 * @see #__DNA__FIELD__namedVG_Spring_K
 	 */
 	
@@ -2059,7 +2080,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 baking </p>
+	 * <p> baking </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -2076,7 +2097,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'sfra'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> along with it introduce Spring_K painting starting to fix old bug .. nastiness that VG are indexes rather find them by name tag to find it -> jow20090613 baking </p>
+	 * <p> baking </p>
 	 * @see #__DNA__FIELD__sfra
 	 */
 	
@@ -2147,6 +2168,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'local'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Local==1: use local coords for baking. </p>
 	 * @see #__DNA__FIELD__local
 	 */
 	
@@ -2161,6 +2185,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'local'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Local==1: use local coords for baking. </p>
 	 * @see #__DNA__FIELD__local
 	 */
 	
@@ -2175,9 +2202,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'solverflags'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> local==1: use local coords for baking </p>
 	 * @see #__DNA__FIELD__solverflags
 	 */
 	
@@ -2192,9 +2216,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'solverflags'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> local==1: use local coords for baking </p>
 	 * @see #__DNA__FIELD__solverflags
 	 */
 	
@@ -2211,7 +2232,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'keys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  array of size totpointkey </p>
+	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  Array of size totpointkey. </p>
 	 * @see #__DNA__FIELD__keys
 	 */
 	
@@ -2231,7 +2252,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'keys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  array of size totpointkey </p>
+	 * <p><ndash/>  these must be kept for backwards compatibility <ndash/>  Array of size totpointkey. </p>
 	 * @see #__DNA__FIELD__keys
 	 */
 	
@@ -2247,6 +2268,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'totpointkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys. </p>
 	 * @see #__DNA__FIELD__totpointkey
 	 */
 	
@@ -2261,6 +2285,9 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'totpointkey'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> If totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys. </p>
 	 * @see #__DNA__FIELD__totpointkey
 	 */
 	
@@ -2275,9 +2302,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Get method for struct member 'totkey'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> if totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -2292,9 +2316,6 @@ public class SoftBody extends CFacade {
 
 	/**
 	 * Set method for struct member 'totkey'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> if totpointkey != totpoint or totkey!- (efra-sfra)/interval -> free keys </p>
 	 * @see #__DNA__FIELD__totkey
 	 */
 	
@@ -2347,7 +2368,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision fixed collision ball size if > 0 </p>
+	 * <p> self collision Fixed collision ball size if > 0. </p>
 	 * @see #__DNA__FIELD__colball
 	 */
 	
@@ -2364,7 +2385,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'colball'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> self collision fixed collision ball size if > 0 </p>
+	 * <p> self collision Fixed collision ball size if > 0. </p>
 	 * @see #__DNA__FIELD__colball
 	 */
 	
@@ -2381,7 +2402,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'balldamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cooling down collision response </p>
+	 * <p> Cooling down collision response. </p>
 	 * @see #__DNA__FIELD__balldamp
 	 */
 	
@@ -2398,7 +2419,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'balldamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> cooling down collision response </p>
+	 * <p> Cooling down collision response. </p>
 	 * @see #__DNA__FIELD__balldamp
 	 */
 	
@@ -2415,7 +2436,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'ballstiff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure the ball is loaded with </p>
+	 * <p> Pressure the ball is loaded with. </p>
 	 * @see #__DNA__FIELD__ballstiff
 	 */
 	
@@ -2432,7 +2453,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'ballstiff'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> pressure the ball is loaded with </p>
+	 * <p> Pressure the ball is loaded with. </p>
 	 * @see #__DNA__FIELD__ballstiff
 	 */
 	
@@ -2673,7 +2694,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'scratch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scratch pad/cache on live time not saved in file </p>
+	 * <p> Scratchpad/cache on live time not saved in file. </p>
 	 * @see #__DNA__FIELD__scratch
 	 */
 	
@@ -2693,7 +2714,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'scratch'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> scratch pad/cache on live time not saved in file </p>
+	 * <p> Scratchpad/cache on live time not saved in file. </p>
 	 * @see #__DNA__FIELD__scratch
 	 */
 	
@@ -2764,11 +2785,11 @@ public class SoftBody extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pointcache'.
-	 * @see #__DNA__FIELD__pointcache
+	 * Get method for struct member 'shared'.
+	 * @see #__DNA__FIELD__shared
 	 */
 	
-	public CPointer<PointCache> getPointcache() throws IOException
+	public CPointer<SoftBody_Shared> getShared() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -2776,18 +2797,18 @@ public class SoftBody extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
-		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{SoftBody_Shared.class};
+		return new CPointer<SoftBody_Shared>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SoftBody_Shared.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'pointcache'.
-	 * @see #__DNA__FIELD__pointcache
+	 * Set method for struct member 'shared'.
+	 * @see #__DNA__FIELD__shared
 	 */
 	
-	public void setPointcache(CPointer<PointCache> pointcache) throws IOException
+	public void setShared(CPointer<SoftBody_Shared> shared) throws IOException
 	{
-		long __address = ((pointcache == null) ? 0 : pointcache.getAddress());
+		long __address = ((shared == null) ? 0 : shared.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 352, __address);
 		} else {
@@ -2796,21 +2817,73 @@ public class SoftBody extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'pointcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__pointcache
+	 */
+	
+	public CPointer<PointCache> getPointcache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 340);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{PointCache.class};
+		return new CPointer<PointCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PointCache.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'pointcache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__pointcache
+	 */
+	
+	public void setPointcache(CPointer<PointCache> pointcache) throws IOException
+	{
+		long __address = ((pointcache == null) ? 0 : pointcache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 360, __address);
+		} else {
+			__io__block.writeLong(__io__address + 340, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
 	 */
 	
 	public ListBase getPtcaches() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 360, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 368, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 340, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'ptcaches'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Moved to {@link SoftBody_Shared} . 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
 	 */
 	
@@ -2818,9 +2891,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 360;
+			__dna__offset = 368;
 		} else {
-			__dna__offset = 340;
+			__dna__offset = 344;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -2836,16 +2909,16 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__collision_group
 	 */
 	
-	public CPointer<Group> getCollision_group() throws IOException
+	public CPointer<Collection> getCollision_group() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 348);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Group.class};
-		return new CPointer<Group>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Group.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -2853,13 +2926,13 @@ public class SoftBody extends CFacade {
 	 * @see #__DNA__FIELD__collision_group
 	 */
 	
-	public void setCollision_group(CPointer<Group> collision_group) throws IOException
+	public void setCollision_group(CPointer<Collection> collision_group) throws IOException
 	{
 		long __address = ((collision_group == null) ? 0 : collision_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 348, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 
@@ -2872,9 +2945,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 356);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{EffectorWeights.class};
 		return new CPointer<EffectorWeights>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EffectorWeights.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2889,9 +2962,9 @@ public class SoftBody extends CFacade {
 	{
 		long __address = ((effector_weights == null) ? 0 : effector_weights.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 356, __address);
 		}
 	}
 
@@ -2910,9 +2983,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2928,9 +3001,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 392;
+			__dna__offset = 400;
 		} else {
-			__dna__offset = 356;
+			__dna__offset = 360;
 		}
 		if (__io__equals(lcom, __io__address + __dna__offset)) {
 			return;
@@ -2954,9 +3027,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2969,9 +3042,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 404;
+			__dna__offset = 412;
 		} else {
-			__dna__offset = 368;
+			__dna__offset = 372;
 		}
 		if (__io__equals(lrot, __io__address + __dna__offset)) {
 			return;
@@ -2995,9 +3068,9 @@ public class SoftBody extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3010,9 +3083,9 @@ public class SoftBody extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 440;
+			__dna__offset = 448;
 		} else {
-			__dna__offset = 404;
+			__dna__offset = 408;
 		}
 		if (__io__equals(lscale, __io__address + __dna__offset)) {
 			return;
@@ -3031,9 +3104,9 @@ public class SoftBody extends CFacade {
 	public int getLast_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 476);
+			return __io__block.readInt(__io__address + 484);
 		} else {
-			return __io__block.readInt(__io__address + 440);
+			return __io__block.readInt(__io__address + 444);
 		}
 	}
 
@@ -3045,9 +3118,9 @@ public class SoftBody extends CFacade {
 	public void setLast_frame(int last_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 476, last_frame);
+			__io__block.writeInt(__io__address + 484, last_frame);
 		} else {
-			__io__block.writeInt(__io__address + 440, last_frame);
+			__io__block.writeInt(__io__address + 444, last_frame);
 		}
 	}
 

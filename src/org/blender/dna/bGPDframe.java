@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Frame' -> Acts as storage for the 'image' formed by strokes </p>
  */
 
-@CMetaData(size32=24, size64=40)
+@CMetaData(size32=88, size64=104)
 public class bGPDframe extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bGPDframe extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 495;
+	public static final int __DNA__SDNA_INDEX = 469;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -73,7 +73,7 @@ public class bGPDframe extends CFacade {
 	 * Field descriptor (offset) for struct member 'strokes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
+	 * <p> List of the simplified 'strokes' that make up the frame's data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -96,7 +96,7 @@ public class bGPDframe extends CFacade {
 	 * Field descriptor (offset) for struct member 'framenum'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame number of this frame </p>
+	 * <p> Frame number of this frame. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -119,7 +119,7 @@ public class bGPDframe extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp settings </p>
+	 * <p> Temp settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -142,7 +142,7 @@ public class bGPDframe extends CFacade {
 	 * Field descriptor (offset) for struct member 'key_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
+	 * <p> Keyframe type (eBezTriple_KeyframeType). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,6 +160,26 @@ public class bGPDframe extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__key_type = new long[]{22, 38};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDframe bgpdframe = ...;
+	 * CPointer&lt;Object&gt; p = bgpdframe.__dna__addressof(bGPDframe.__DNA__FIELD__runtime);
+	 * CPointer&lt;bGPDframe_Runtime&gt; p_runtime = p.cast(new Class[]{bGPDframe_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'bGPDframe_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{24, 40};
 
 	public bGPDframe(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -237,7 +257,7 @@ public class bGPDframe extends CFacade {
 	 * Get method for struct member 'strokes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
+	 * <p> List of the simplified 'strokes' that make up the frame's data. </p>
 	 * @see #__DNA__FIELD__strokes
 	 */
 	
@@ -254,7 +274,7 @@ public class bGPDframe extends CFacade {
 	 * Set method for struct member 'strokes'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> list of the simplified 'strokes' that make up the frame's data </p>
+	 * <p> List of the simplified 'strokes' that make up the frame's data. </p>
 	 * @see #__DNA__FIELD__strokes
 	 */
 	
@@ -279,7 +299,7 @@ public class bGPDframe extends CFacade {
 	 * Get method for struct member 'framenum'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame number of this frame </p>
+	 * <p> Frame number of this frame. </p>
 	 * @see #__DNA__FIELD__framenum
 	 */
 	
@@ -296,7 +316,7 @@ public class bGPDframe extends CFacade {
 	 * Set method for struct member 'framenum'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> frame number of this frame </p>
+	 * <p> Frame number of this frame. </p>
 	 * @see #__DNA__FIELD__framenum
 	 */
 	
@@ -313,7 +333,7 @@ public class bGPDframe extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp settings </p>
+	 * <p> Temp settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -330,7 +350,7 @@ public class bGPDframe extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> temp settings </p>
+	 * <p> Temp settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -347,7 +367,7 @@ public class bGPDframe extends CFacade {
 	 * Get method for struct member 'key_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
+	 * <p> Keyframe type (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__key_type
 	 */
 	
@@ -364,7 +384,7 @@ public class bGPDframe extends CFacade {
 	 * Set method for struct member 'key_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> keyframe type (eBezTriple_KeyframeType) </p>
+	 * <p> Keyframe type (eBezTriple_KeyframeType). </p>
 	 * @see #__DNA__FIELD__key_type
 	 */
 	
@@ -374,6 +394,42 @@ public class bGPDframe extends CFacade {
 			__io__block.writeShort(__io__address + 38, key_type);
 		} else {
 			__io__block.writeShort(__io__address + 22, key_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public bGPDframe_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new bGPDframe_Runtime(__io__address + 40, __io__block, __io__blockTable);
+		} else {
+			return new bGPDframe_Runtime(__io__address + 24, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(bGPDframe_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 40;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=248)
+@CMetaData(size32=216, size64=288)
 public class MetaBall extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MetaBall extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 49;
+	public static final int __DNA__SDNA_INDEX = 53;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class MetaBall extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 120/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elems'.
@@ -87,7 +87,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elems = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__elems = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp'.
@@ -107,13 +107,13 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp = new long[]{112, 144};
+	public static final long[] __DNA__FIELD__disp = new long[]{132, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in files, note we use pointer for editmode check </p>
+	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -130,15 +130,15 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editelems = new long[]{120, 160};
+	public static final long[] __DNA__FIELD__editelems = new long[]{140, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -155,7 +155,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{124, 168};
+	public static final long[] __DNA__FIELD__ipo = new long[]{144, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -178,10 +178,13 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{128, 176};
+	public static final long[] __DNA__FIELD__mat = new long[]{148, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -198,13 +201,10 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{132, 184};
+	public static final long[] __DNA__FIELD__flag = new long[]{152, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flag is enum for updates, flag2 is bitflags for settings </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -221,7 +221,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag2 = new long[]{133, 185};
+	public static final long[] __DNA__FIELD__flag2 = new long[]{153, 217};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -241,10 +241,13 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{134, 186};
+	public static final long[] __DNA__FIELD__totcol = new long[]{154, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -261,30 +264,27 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{136, 188};
+	public static final long[] __DNA__FIELD__texflag = new long[]{156, 220};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> used to store MB_AUTOSPACE </p>
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MetaBall metaball = ...;
-	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD__pad);
-	 * CPointer&lt;Short&gt; p_pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pad'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pad = new long[]{138, 190};
+	public static final long[] __DNA__FIELD___pad = new long[]{158, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -307,7 +307,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{140, 192};
+	public static final long[] __DNA__FIELD__loc = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -327,7 +327,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{152, 204};
+	public static final long[] __DNA__FIELD__size = new long[]{172, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot'.
@@ -347,10 +347,13 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__rot = new long[]{184, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wiresize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display and render res. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -367,13 +370,10 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wiresize = new long[]{176, 228};
+	public static final long[] __DNA__FIELD__wiresize = new long[]{196, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rendersize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> display and render res </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -390,7 +390,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rendersize = new long[]{180, 232};
+	public static final long[] __DNA__FIELD__rendersize = new long[]{200, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thresh'.
@@ -413,7 +413,7 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thresh = new long[]{184, 236};
+	public static final long[] __DNA__FIELD__thresh = new long[]{204, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lastelem'.
@@ -436,7 +436,27 @@ public class MetaBall extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lastelem = new long[]{188, 240};
+	public static final long[] __DNA__FIELD__lastelem = new long[]{208, 272};
+
+	/**
+	 * Field descriptor (offset) for struct member 'batch_cache'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MetaBall metaball = ...;
+	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD__batch_cache);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_batch_cache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'batch_cache'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{212, 280};
 
 	public MetaBall(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -491,9 +511,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -508,9 +528,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -522,9 +542,9 @@ public class MetaBall extends CFacade {
 	public ListBase getElems() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 104, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 124, __io__block, __io__blockTable);
 		}
 	}
 
@@ -537,9 +557,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 124;
 		}
 		if (__io__equals(elems, __io__address + __dna__offset)) {
 			return;
@@ -558,9 +578,9 @@ public class MetaBall extends CFacade {
 	public ListBase getDisp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 112, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 132, __io__block, __io__blockTable);
 		}
 	}
 
@@ -573,9 +593,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 132;
 		}
 		if (__io__equals(disp, __io__address + __dna__offset)) {
 			return;
@@ -590,7 +610,7 @@ public class MetaBall extends CFacade {
 	 * Get method for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in files, note we use pointer for editmode check </p>
+	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * @see #__DNA__FIELD__editelems
 	 */
 	
@@ -598,9 +618,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ListBase.class};
 		return new CPointer<ListBase>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ListBase.__DNA__SDNA_INDEX), __io__blockTable);
@@ -610,7 +630,7 @@ public class MetaBall extends CFacade {
 	 * Set method for struct member 'editelems'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> not saved in files, note we use pointer for editmode check </p>
+	 * <p> Not saved in files, note we use pointer for editmode check. </p>
 	 * @see #__DNA__FIELD__editelems
 	 */
 	
@@ -618,9 +638,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((editelems == null) ? 0 : editelems.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 
@@ -628,9 +648,9 @@ public class MetaBall extends CFacade {
 	 * Get method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -638,9 +658,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -650,9 +670,9 @@ public class MetaBall extends CFacade {
 	 * Set method for struct member 'ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><p> old animation system, deprecated for 2.5 </p>
+	 * <p> Old animation system, deprecated for 2.5. 
 	 * @deprecated
-	 *  Deprecatedold animation system, deprecated for 2.5 </p>
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ipo
 	 */
 	
@@ -660,9 +680,9 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -678,9 +698,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -698,71 +718,71 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 184);
+			return __io__block.readByte(__io__address + 216);
 		} else {
-			return __io__block.readByte(__io__address + 132);
+			return __io__block.readByte(__io__address + 152);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flag is enum for updates, flag2 is bitflags for settings. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 184, flag);
+			__io__block.writeByte(__io__address + 216, flag);
 		} else {
-			__io__block.writeByte(__io__address + 132, flag);
+			__io__block.writeByte(__io__address + 152, flag);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flag is enum for updates, flag2 is bitflags for settings </p>
 	 * @see #__DNA__FIELD__flag2
 	 */
 	
 	public byte getFlag2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 185);
+			return __io__block.readByte(__io__address + 217);
 		} else {
-			return __io__block.readByte(__io__address + 133);
+			return __io__block.readByte(__io__address + 153);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> flag is enum for updates, flag2 is bitflags for settings </p>
 	 * @see #__DNA__FIELD__flag2
 	 */
 	
 	public void setFlag2(byte flag2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 185, flag2);
+			__io__block.writeByte(__io__address + 217, flag2);
 		} else {
-			__io__block.writeByte(__io__address + 133, flag2);
+			__io__block.writeByte(__io__address + 153, flag2);
 		}
 	}
 
@@ -774,9 +794,9 @@ public class MetaBall extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 134);
+			return __io__block.readShort(__io__address + 154);
 		}
 	}
 
@@ -788,71 +808,83 @@ public class MetaBall extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 186, totcol);
+			__io__block.writeShort(__io__address + 218, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 134, totcol);
+			__io__block.writeShort(__io__address + 154, totcol);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'texflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
 	public short getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 136);
+			return __io__block.readShort(__io__address + 156);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'texflag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used to store MB_AUTOSPACE. </p>
 	 * @see #__DNA__FIELD__texflag
 	 */
 	
 	public void setTexflag(short texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, texflag);
+			__io__block.writeShort(__io__address + 220, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 136, texflag);
+			__io__block.writeShort(__io__address + 156, texflag);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> used to store MB_AUTOSPACE </p>
-	 * @see #__DNA__FIELD__pad
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public short getPad() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return new CArrayFacade<Byte>(__io__address + 222, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 138);
+			return new CArrayFacade<Byte>(__io__address + 158, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pad'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> used to store MB_AUTOSPACE </p>
-	 * @see #__DNA__FIELD__pad
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPad(short pad) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, pad);
+			__dna__offset = 222;
 		} else {
-			__io__block.writeShort(__io__address + 138, pad);
+			__dna__offset = 158;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -871,9 +903,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -889,9 +921,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 160;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -914,9 +946,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -929,9 +961,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 236;
 		} else {
-			__dna__offset = 152;
+			__dna__offset = 172;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -954,9 +986,9 @@ public class MetaBall extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -969,9 +1001,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 184;
 		}
 		if (__io__equals(rot, __io__address + __dna__offset)) {
 			return;
@@ -984,63 +1016,63 @@ public class MetaBall extends CFacade {
 
 	/**
 	 * Get method for struct member 'wiresize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display and render res. </p>
 	 * @see #__DNA__FIELD__wiresize
 	 */
 	
 	public float getWiresize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 260);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 196);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'wiresize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Display and render res. </p>
 	 * @see #__DNA__FIELD__wiresize
 	 */
 	
 	public void setWiresize(float wiresize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, wiresize);
+			__io__block.writeFloat(__io__address + 260, wiresize);
 		} else {
-			__io__block.writeFloat(__io__address + 176, wiresize);
+			__io__block.writeFloat(__io__address + 196, wiresize);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'rendersize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> display and render res </p>
 	 * @see #__DNA__FIELD__rendersize
 	 */
 	
 	public float getRendersize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 264);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'rendersize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> display and render res </p>
 	 * @see #__DNA__FIELD__rendersize
 	 */
 	
 	public void setRendersize(float rendersize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 232, rendersize);
+			__io__block.writeFloat(__io__address + 264, rendersize);
 		} else {
-			__io__block.writeFloat(__io__address + 180, rendersize);
+			__io__block.writeFloat(__io__address + 200, rendersize);
 		}
 	}
 
@@ -1055,9 +1087,9 @@ public class MetaBall extends CFacade {
 	public float getThresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 204);
 		}
 	}
 
@@ -1072,9 +1104,9 @@ public class MetaBall extends CFacade {
 	public void setThresh(float thresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, thresh);
+			__io__block.writeFloat(__io__address + 268, thresh);
 		} else {
-			__io__block.writeFloat(__io__address + 184, thresh);
+			__io__block.writeFloat(__io__address + 204, thresh);
 		}
 	}
 
@@ -1090,9 +1122,9 @@ public class MetaBall extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MetaElem.class};
 		return new CPointer<MetaElem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MetaElem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1110,9 +1142,41 @@ public class MetaBall extends CFacade {
 	{
 		long __address = ((lastelem == null) ? 0 : lastelem.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 208, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'batch_cache'.
+	 * @see #__DNA__FIELD__batch_cache
+	 */
+	
+	public CPointer<Object> getBatch_cache() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'batch_cache'.
+	 * @see #__DNA__FIELD__batch_cache
+	 */
+	
+	public void setBatch_cache(CPointer<Object> batch_cache) throws IOException
+	{
+		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 212, __address);
 		}
 	}
 
