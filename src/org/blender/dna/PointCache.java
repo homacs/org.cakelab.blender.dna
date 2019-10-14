@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1300, size64=1328)
+@CMetaData(size32=1364, size64=1392)
 public class PointCache extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 168;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -423,8 +423,8 @@ public class PointCache extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'info'</li>
-	 * <li>Signature: 'char[64]'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Signature: 'char[128]'</li>
+	 * <li>Actual Size (32bit/64bit): 128/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__info = new long[]{184, 192};
@@ -450,7 +450,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path = new long[]{248, 256};
+	public static final long[] __DNA__FIELD__path = new long[]{312, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cached_frames'.
@@ -473,7 +473,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cached_frames = new long[]{1272, 1280};
+	public static final long[] __DNA__FIELD__cached_frames = new long[]{1336, 1344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cached_frames_len'.
@@ -493,7 +493,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cached_frames_len = new long[]{1276, 1288};
+	public static final long[] __DNA__FIELD__cached_frames_len = new long[]{1340, 1352};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -513,7 +513,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{1280, 1292};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1344, 1356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mem_cache'.
@@ -533,7 +533,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mem_cache = new long[]{1284, 1296};
+	public static final long[] __DNA__FIELD__mem_cache = new long[]{1348, 1360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit'.
@@ -553,7 +553,7 @@ public class PointCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edit = new long[]{1292, 1312};
+	public static final long[] __DNA__FIELD__edit = new long[]{1356, 1376};
 
 	public PointCache(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1169,7 +1169,7 @@ public class PointCache extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			64
+			128
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -1218,9 +1218,9 @@ public class PointCache extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1236,9 +1236,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 248;
+			__dna__offset = 312;
 		}
 		if (__io__equals(path, __io__address + __dna__offset)) {
 			return;
@@ -1261,9 +1261,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1344);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1336);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1281,9 +1281,9 @@ public class PointCache extends CFacade {
 	{
 		long __address = ((cached_frames == null) ? 0 : cached_frames.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1280, __address);
+			__io__block.writeLong(__io__address + 1344, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1336, __address);
 		}
 	}
 
@@ -1295,9 +1295,9 @@ public class PointCache extends CFacade {
 	public int getCached_frames_len() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1288);
+			return __io__block.readInt(__io__address + 1352);
 		} else {
-			return __io__block.readInt(__io__address + 1276);
+			return __io__block.readInt(__io__address + 1340);
 		}
 	}
 
@@ -1309,9 +1309,9 @@ public class PointCache extends CFacade {
 	public void setCached_frames_len(int cached_frames_len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1288, cached_frames_len);
+			__io__block.writeInt(__io__address + 1352, cached_frames_len);
 		} else {
-			__io__block.writeInt(__io__address + 1276, cached_frames_len);
+			__io__block.writeInt(__io__address + 1340, cached_frames_len);
 		}
 	}
 
@@ -1327,9 +1327,9 @@ public class PointCache extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1344, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1342,9 +1342,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1292;
+			__dna__offset = 1356;
 		} else {
-			__dna__offset = 1280;
+			__dna__offset = 1344;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1363,9 +1363,9 @@ public class PointCache extends CFacade {
 	public ListBase getMem_cache() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1296, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1360, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 1284, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 1348, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1378,9 +1378,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1296;
+			__dna__offset = 1360;
 		} else {
-			__dna__offset = 1284;
+			__dna__offset = 1348;
 		}
 		if (__io__equals(mem_cache, __io__address + __dna__offset)) {
 			return;
@@ -1400,9 +1400,9 @@ public class PointCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1292);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1356);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1417,9 +1417,9 @@ public class PointCache extends CFacade {
 	{
 		long __address = ((edit == null) ? 0 : edit.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1312, __address);
+			__io__block.writeLong(__io__address + 1376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1292, __address);
+			__io__block.writeLong(__io__address + 1356, __address);
 		}
 	}
 

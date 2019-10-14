@@ -28,7 +28,7 @@ public class bNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 363;
+	public static final int __DNA__SDNA_INDEX = 366;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1081,24 +1081,50 @@ public class bNode extends CFacade {
 	public static final long[] __DNA__FIELD__tmp_flag = new long[]{396, 460};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
+	 * Field descriptor (offset) for struct member 'branch_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNode bnode = ...;
-	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__branch_tag);
+	 * CPointer&lt;Byte&gt; p_branch_tag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'branch_tag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{398, 462};
+	public static final long[] __DNA__FIELD__branch_tag = new long[]{398, 462};
+
+	/**
+	 * Field descriptor (offset) for struct member 'iter_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime when iterating over node branches. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNode bnode = ...;
+	 * CPointer&lt;Object&gt; p = bnode.__dna__addressof(bNode.__DNA__FIELD__iter_flag);
+	 * CPointer&lt;Byte&gt; p_iter_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'iter_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__iter_flag = new long[]{399, 463};
 
 	/**
 	 * Field descriptor (offset) for struct member 'block'.
@@ -2850,42 +2876,70 @@ public class bNode extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Get method for struct member 'branch_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
+	 * @see #__DNA__FIELD__branch_tag
 	 */
 	
-	public CArrayFacade<Byte> get_pad2() throws IOException
+	public byte getBranch_tag() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 462, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 462);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 398, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 398);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Set method for struct member 'branch_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime to tag derivatives branches. EEVEE only. </p>
+	 * @see #__DNA__FIELD__branch_tag
 	 */
 	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	public void setBranch_tag(byte branch_tag) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 462;
+			__io__block.writeByte(__io__address + 462, branch_tag);
 		} else {
-			__dna__offset = 398;
+			__io__block.writeByte(__io__address + 398, branch_tag);
 		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+	}
+
+	/**
+	 * Get method for struct member 'iter_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime when iterating over node branches. </p>
+	 * @see #__DNA__FIELD__iter_flag
+	 */
+	
+	public byte getIter_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 463);
 		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			return __io__block.readByte(__io__address + 399);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'iter_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used at runtime when iterating over node branches. </p>
+	 * @see #__DNA__FIELD__iter_flag
+	 */
+	
+	public void setIter_flag(byte iter_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 463, iter_flag);
+		} else {
+			__io__block.writeByte(__io__address + 399, iter_flag);
 		}
 	}
 

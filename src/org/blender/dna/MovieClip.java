@@ -27,7 +27,7 @@ public class MovieClip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 552;
+	public static final int __DNA__SDNA_INDEX = 558;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -306,7 +306,7 @@ public class MovieClip extends CFacade {
 	 * Field descriptor (offset) for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context of tracking job used to synchronize data like framenumber in {@link SpaceClip}  clip user. </p>
+	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -953,7 +953,7 @@ public class MovieClip extends CFacade {
 	 * Get method for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context of tracking job used to synchronize data like framenumber in {@link SpaceClip}  clip user. </p>
+	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * @see #__DNA__FIELD__tracking_context
 	 */
 	
@@ -973,7 +973,7 @@ public class MovieClip extends CFacade {
 	 * Set method for struct member 'tracking_context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context of tracking job used to synchronize data like framenumber in {@link SpaceClip}  clip user. </p>
+	 * <p> Context of tracking job used to synchronize data like frame-number in {@link SpaceClip}  clip user. </p>
 	 * @see #__DNA__FIELD__tracking_context
 	 */
 	

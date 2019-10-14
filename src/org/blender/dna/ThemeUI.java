@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=936, size64=936)
+@CMetaData(size32=944, size64=944)
 public class ThemeUI extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 244;
+	public static final int __DNA__SDNA_INDEX = 245;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
@@ -920,6 +920,49 @@ public class ThemeUI extends CFacade {
 	public static final long[] __DNA__FIELD__icon_shading = new long[]{928, 928};
 
 	/**
+	 * Field descriptor (offset) for struct member 'icon_folder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> File folders. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__icon_folder);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_icon_folder = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'icon_folder'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__icon_folder = new long[]{932, 932};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThemeUI themeui = ...;
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{936, 936};
+
+	/**
 	 * Field descriptor (offset) for struct member 'icon_border_intensity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -940,7 +983,7 @@ public class ThemeUI extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__icon_border_intensity = new long[]{932, 932};
+	public static final long[] __DNA__FIELD__icon_border_intensity = new long[]{940, 940};
 
 	public ThemeUI(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2599,6 +2642,92 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'icon_folder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> File folders. </p>
+	 * @see #__DNA__FIELD__icon_folder
+	 */
+	
+	public CArrayFacade<Byte> getIcon_folder() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 932, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 932, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'icon_folder'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> File folders. </p>
+	 * @see #__DNA__FIELD__icon_folder
+	 */
+	
+	public void setIcon_folder(CArrayFacade<Byte> icon_folder) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 932;
+		} else {
+			__dna__offset = 932;
+		}
+		if (__io__equals(icon_folder, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, icon_folder)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, icon_folder);
+		} else {
+			__io__generic__copy( getIcon_folder(), icon_folder);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 936, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 936, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 936;
+		} else {
+			__dna__offset = 936;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'icon_border_intensity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -2609,9 +2738,9 @@ public class ThemeUI extends CFacade {
 	public float getIcon_border_intensity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 932);
+			return __io__block.readFloat(__io__address + 940);
 		} else {
-			return __io__block.readFloat(__io__address + 932);
+			return __io__block.readFloat(__io__address + 940);
 		}
 	}
 
@@ -2626,9 +2755,9 @@ public class ThemeUI extends CFacade {
 	public void setIcon_border_intensity(float icon_border_intensity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 932, icon_border_intensity);
+			__io__block.writeFloat(__io__address + 940, icon_border_intensity);
 		} else {
-			__io__block.writeFloat(__io__address + 932, icon_border_intensity);
+			__io__block.writeFloat(__io__address + 940, icon_border_intensity);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=244, size64=264)
+@CMetaData(size32=308, size64=328)
 public class LatticeGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 485;
+	public static final int __DNA__SDNA_INDEX = 491;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -93,6 +93,29 @@ public class LatticeGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layername = new long[]{96, 112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LatticeGpencilModifierData latticegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = latticegpencilmodifierdata.__dna__addressof(LatticeGpencilModifierData.__DNA__FIELD__materialname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_materialname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'materialname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__materialname = new long[]{160, 176};
+
+	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -113,7 +136,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__vgname = new long[]{224, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -136,7 +159,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{224, 240};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{288, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -159,7 +182,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{228, 244};
+	public static final long[] __DNA__FIELD__flag = new long[]{292, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -179,7 +202,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{232, 248};
+	public static final long[] __DNA__FIELD__strength = new long[]{296, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -202,7 +225,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{236, 252};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{300, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_data'.
@@ -225,7 +248,7 @@ public class LatticeGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_data = new long[]{240, 256};
+	public static final long[] __DNA__FIELD__cache_data = new long[]{304, 320};
 
 	public LatticeGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -350,6 +373,52 @@ public class LatticeGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public CArrayFacade<Byte> getMaterialname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public void setMaterialname(CArrayFacade<Byte> materialname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 160;
+		}
+		if (__io__equals(materialname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, materialname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
+		} else {
+			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -364,9 +433,9 @@ public class LatticeGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -382,9 +451,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 224;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -406,9 +475,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 240);
+			return __io__block.readInt(__io__address + 304);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 288);
 		}
 	}
 
@@ -423,9 +492,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 240, pass_index);
+			__io__block.writeInt(__io__address + 304, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 224, pass_index);
+			__io__block.writeInt(__io__address + 288, pass_index);
 		}
 	}
 
@@ -440,9 +509,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 308);
 		} else {
-			return __io__block.readInt(__io__address + 228);
+			return __io__block.readInt(__io__address + 292);
 		}
 	}
 
@@ -457,9 +526,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 244, flag);
+			__io__block.writeInt(__io__address + 308, flag);
 		} else {
-			__io__block.writeInt(__io__address + 228, flag);
+			__io__block.writeInt(__io__address + 292, flag);
 		}
 	}
 
@@ -471,9 +540,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 312);
 		} else {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -485,9 +554,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 248, strength);
+			__io__block.writeFloat(__io__address + 312, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 232, strength);
+			__io__block.writeFloat(__io__address + 296, strength);
 		}
 	}
 
@@ -502,9 +571,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 316);
 		} else {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 300);
 		}
 	}
 
@@ -519,9 +588,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, layer_pass);
+			__io__block.writeInt(__io__address + 316, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 236, layer_pass);
+			__io__block.writeInt(__io__address + 300, layer_pass);
 		}
 	}
 
@@ -537,9 +606,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -557,9 +626,9 @@ public class LatticeGpencilModifierData extends CFacade {
 	{
 		long __address = ((cache_data == null) ? 0 : cache_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		} else {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		}
 	}
 

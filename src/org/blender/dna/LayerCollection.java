@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=32, size64=56)
+@CMetaData(size32=40, size64=64)
 public class LayerCollection extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LayerCollection extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 631;
+	public static final int __DNA__SDNA_INDEX = 637;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -199,6 +199,46 @@ public class LayerCollection extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__layer_collections = new long[]{24, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'local_collections_bits'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LayerCollection layercollection = ...;
+	 * CPointer&lt;Object&gt; p = layercollection.__dna__addressof(LayerCollection.__DNA__FIELD__local_collections_bits);
+	 * CPointer&lt;Short&gt; p_local_collections_bits = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'local_collections_bits'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__local_collections_bits = new long[]{32, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LayerCollection layercollection = ...;
+	 * CPointer&lt;Object&gt; p = layercollection.__dna__addressof(LayerCollection.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'short[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{34, 58};
 
 	public LayerCollection(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -487,6 +527,74 @@ public class LayerCollection extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, layer_collections);
 		} else {
 			__io__generic__copy( getLayer_collections(), layer_collections);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'local_collections_bits'.
+	 * @see #__DNA__FIELD__local_collections_bits
+	 */
+	
+	public short getLocal_collections_bits() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 56);
+		} else {
+			return __io__block.readShort(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'local_collections_bits'.
+	 * @see #__DNA__FIELD__local_collections_bits
+	 */
+	
+	public void setLocal_collections_bits(short local_collections_bits) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 56, local_collections_bits);
+		} else {
+			__io__block.writeShort(__io__address + 32, local_collections_bits);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Short> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Short>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Short>(__io__address + 34, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Short> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 58;
+		} else {
+			__dna__offset = 34;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

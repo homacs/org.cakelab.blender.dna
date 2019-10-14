@@ -28,7 +28,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 505;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -125,13 +125,13 @@ public class wmWindowManager extends CFacade {
 	 * <pre>
 	 * wmWindowManager wmwindowmanager = ...;
 	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__initialized);
-	 * CPointer&lt;Integer&gt; p_initialized = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Short&gt; p_initialized = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'initialized'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__initialized = new long[]{136, 184};
@@ -157,7 +157,7 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__file_saved = new long[]{140, 188};
+	public static final long[] __DNA__FIELD__file_saved = new long[]{138, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'op_undo_depth'.
@@ -180,7 +180,30 @@ public class wmWindowManager extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__op_undo_depth = new long[]{142, 190};
+	public static final long[] __DNA__FIELD__op_undo_depth = new long[]{140, 188};
+
+	/**
+	 * Field descriptor (offset) for struct member 'outliner_sync_select_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set after selection to notify outliner to sync. Stores type of selection </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindowManager wmwindowmanager = ...;
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__outliner_sync_select_dirty);
+	 * CPointer&lt;Short&gt; p_outliner_sync_select_dirty = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'outliner_sync_select_dirty'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__outliner_sync_select_dirty = new long[]{142, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'operators'.
@@ -505,24 +528,24 @@ public class wmWindowManager extends CFacade {
 	public static final long[] __DNA__FIELD__is_interface_locked = new long[]{248, 384};
 
 	/**
-	 * Field descriptor (offset) for struct member 'par'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * wmWindowManager wmwindowmanager = ...;
-	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__par);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_par = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'par'</li>
+	 * <li>Field: '_pad'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__par = new long[]{249, 385};
+	public static final long[] __DNA__FIELD___pad = new long[]{249, 385};
 
 	/**
 	 * Field descriptor (offset) for struct member 'message_bus'.
@@ -702,12 +725,12 @@ public class wmWindowManager extends CFacade {
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
-	public int getInitialized() throws IOException
+	public short getInitialized() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readShort(__io__address + 136);
 		}
 	}
 
@@ -719,12 +742,12 @@ public class wmWindowManager extends CFacade {
 	 * @see #__DNA__FIELD__initialized
 	 */
 	
-	public void setInitialized(int initialized) throws IOException
+	public void setInitialized(short initialized) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, initialized);
+			__io__block.writeShort(__io__address + 184, initialized);
 		} else {
-			__io__block.writeInt(__io__address + 136, initialized);
+			__io__block.writeShort(__io__address + 136, initialized);
 		}
 	}
 
@@ -739,9 +762,9 @@ public class wmWindowManager extends CFacade {
 	public short getFile_saved() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 186);
 		} else {
-			return __io__block.readShort(__io__address + 140);
+			return __io__block.readShort(__io__address + 138);
 		}
 	}
 
@@ -756,9 +779,9 @@ public class wmWindowManager extends CFacade {
 	public void setFile_saved(short file_saved) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, file_saved);
+			__io__block.writeShort(__io__address + 186, file_saved);
 		} else {
-			__io__block.writeShort(__io__address + 140, file_saved);
+			__io__block.writeShort(__io__address + 138, file_saved);
 		}
 	}
 
@@ -773,9 +796,9 @@ public class wmWindowManager extends CFacade {
 	public short getOp_undo_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 142);
+			return __io__block.readShort(__io__address + 140);
 		}
 	}
 
@@ -790,9 +813,43 @@ public class wmWindowManager extends CFacade {
 	public void setOp_undo_depth(short op_undo_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, op_undo_depth);
+			__io__block.writeShort(__io__address + 188, op_undo_depth);
 		} else {
-			__io__block.writeShort(__io__address + 142, op_undo_depth);
+			__io__block.writeShort(__io__address + 140, op_undo_depth);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'outliner_sync_select_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set after selection to notify outliner to sync. Stores type of selection </p>
+	 * @see #__DNA__FIELD__outliner_sync_select_dirty
+	 */
+	
+	public short getOutliner_sync_select_dirty() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 190);
+		} else {
+			return __io__block.readShort(__io__address + 142);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'outliner_sync_select_dirty'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Set after selection to notify outliner to sync. Stores type of selection </p>
+	 * @see #__DNA__FIELD__outliner_sync_select_dirty
+	 */
+	
+	public void setOutliner_sync_select_dirty(short outliner_sync_select_dirty) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 190, outliner_sync_select_dirty);
+		} else {
+			__io__block.writeShort(__io__address + 142, outliner_sync_select_dirty);
 		}
 	}
 
@@ -1357,11 +1414,11 @@ public class wmWindowManager extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'par'.
-	 * @see #__DNA__FIELD__par
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> getPar() throws IOException
+	public CArrayFacade<Byte> get_pad() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -1375,11 +1432,11 @@ public class wmWindowManager extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'par'.
-	 * @see #__DNA__FIELD__par
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void setPar(CArrayFacade<Byte> par) throws IOException
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -1387,12 +1444,12 @@ public class wmWindowManager extends CFacade {
 		} else {
 			__dna__offset = 249;
 		}
-		if (__io__equals(par, __io__address + __dna__offset)) {
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, par)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, par);
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
-			__io__generic__copy( getPar(), par);
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

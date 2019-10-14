@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D Viewport Shading settings. </p>
  */
 
-@CMetaData(size32=856, size64=856)
+@CMetaData(size32=860, size64=864)
 public class View3DShading extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3DShading extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 212;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -243,8 +243,8 @@ public class View3DShading extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{10, 10};
@@ -271,7 +271,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__studio_light = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__studio_light = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lookdev_light'.
@@ -294,7 +294,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lookdev_light = new long[]{272, 272};
+	public static final long[] __DNA__FIELD__lookdev_light = new long[]{268, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'matcap'.
@@ -317,7 +317,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__matcap = new long[]{528, 528};
+	public static final long[] __DNA__FIELD__matcap = new long[]{524, 524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_intensity'.
@@ -340,7 +340,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadow_intensity = new long[]{784, 784};
+	public static final long[] __DNA__FIELD__shadow_intensity = new long[]{780, 780};
 
 	/**
 	 * Field descriptor (offset) for struct member 'single_color'.
@@ -363,7 +363,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__single_color = new long[]{788, 788};
+	public static final long[] __DNA__FIELD__single_color = new long[]{784, 784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'studiolight_rot_z'.
@@ -383,7 +383,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__studiolight_rot_z = new long[]{800, 800};
+	public static final long[] __DNA__FIELD__studiolight_rot_z = new long[]{796, 796};
 
 	/**
 	 * Field descriptor (offset) for struct member 'studiolight_background'.
@@ -403,7 +403,30 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__studiolight_background = new long[]{804, 804};
+	public static final long[] __DNA__FIELD__studiolight_background = new long[]{800, 800};
+
+	/**
+	 * Field descriptor (offset) for struct member 'studiolight_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the studiolight
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DShading view3dshading = ...;
+	 * CPointer&lt;Object&gt; p = view3dshading.__dna__addressof(View3DShading.__DNA__FIELD__studiolight_intensity);
+	 * CPointer&lt;Float&gt; p_studiolight_intensity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'studiolight_intensity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__studiolight_intensity = new long[]{804, 804};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_outline_color'.
@@ -585,6 +608,26 @@ public class View3DShading extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__curvature_valley_factor = new long[]{852, 852};
+
+	/**
+	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DShading view3dshading = ...;
+	 * CPointer&lt;Object&gt; p = view3dshading.__dna__addressof(View3DShading.__DNA__FIELD__prop);
+	 * CPointer&lt;CPointer&lt;IDProperty&gt;&gt; p_prop = p.cast(new Class[]{CPointer.class, IDProperty.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prop'</li>
+	 * <li>Signature: 'IDProperty*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prop = new long[]{856, 856};
 
 	public View3DShading(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -893,7 +936,7 @@ public class View3DShading extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			2
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -940,9 +983,9 @@ public class View3DShading extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -959,9 +1002,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16;
+			__dna__offset = 12;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 12;
 		}
 		if (__io__equals(studio_light, __io__address + __dna__offset)) {
 			return;
@@ -987,9 +1030,9 @@ public class View3DShading extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1005,9 +1048,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 268;
 		} else {
-			__dna__offset = 272;
+			__dna__offset = 268;
 		}
 		if (__io__equals(lookdev_light, __io__address + __dna__offset)) {
 			return;
@@ -1033,9 +1076,9 @@ public class View3DShading extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 528, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 524, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1051,9 +1094,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 528;
+			__dna__offset = 524;
 		} else {
-			__dna__offset = 528;
+			__dna__offset = 524;
 		}
 		if (__io__equals(matcap, __io__address + __dna__offset)) {
 			return;
@@ -1075,9 +1118,9 @@ public class View3DShading extends CFacade {
 	public float getShadow_intensity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 784);
+			return __io__block.readFloat(__io__address + 780);
 		} else {
-			return __io__block.readFloat(__io__address + 784);
+			return __io__block.readFloat(__io__address + 780);
 		}
 	}
 
@@ -1092,9 +1135,9 @@ public class View3DShading extends CFacade {
 	public void setShadow_intensity(float shadow_intensity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 784, shadow_intensity);
+			__io__block.writeFloat(__io__address + 780, shadow_intensity);
 		} else {
-			__io__block.writeFloat(__io__address + 784, shadow_intensity);
+			__io__block.writeFloat(__io__address + 780, shadow_intensity);
 		}
 	}
 
@@ -1113,9 +1156,9 @@ public class View3DShading extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 784, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 784, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1131,9 +1174,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 788;
+			__dna__offset = 784;
 		} else {
-			__dna__offset = 788;
+			__dna__offset = 784;
 		}
 		if (__io__equals(single_color, __io__address + __dna__offset)) {
 			return;
@@ -1152,9 +1195,9 @@ public class View3DShading extends CFacade {
 	public float getStudiolight_rot_z() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 800);
+			return __io__block.readFloat(__io__address + 796);
 		} else {
-			return __io__block.readFloat(__io__address + 800);
+			return __io__block.readFloat(__io__address + 796);
 		}
 	}
 
@@ -1166,9 +1209,9 @@ public class View3DShading extends CFacade {
 	public void setStudiolight_rot_z(float studiolight_rot_z) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 800, studiolight_rot_z);
+			__io__block.writeFloat(__io__address + 796, studiolight_rot_z);
 		} else {
-			__io__block.writeFloat(__io__address + 800, studiolight_rot_z);
+			__io__block.writeFloat(__io__address + 796, studiolight_rot_z);
 		}
 	}
 
@@ -1180,9 +1223,9 @@ public class View3DShading extends CFacade {
 	public float getStudiolight_background() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 804);
+			return __io__block.readFloat(__io__address + 800);
 		} else {
-			return __io__block.readFloat(__io__address + 804);
+			return __io__block.readFloat(__io__address + 800);
 		}
 	}
 
@@ -1194,9 +1237,43 @@ public class View3DShading extends CFacade {
 	public void setStudiolight_background(float studiolight_background) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 804, studiolight_background);
+			__io__block.writeFloat(__io__address + 800, studiolight_background);
 		} else {
-			__io__block.writeFloat(__io__address + 804, studiolight_background);
+			__io__block.writeFloat(__io__address + 800, studiolight_background);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'studiolight_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the studiolight
+	 * @see #__DNA__FIELD__studiolight_intensity
+	 */
+	
+	public float getStudiolight_intensity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 804);
+		} else {
+			return __io__block.readFloat(__io__address + 804);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'studiolight_intensity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Strength of the studiolight
+	 * @see #__DNA__FIELD__studiolight_intensity
+	 */
+	
+	public void setStudiolight_intensity(float studiolight_intensity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 804, studiolight_intensity);
+		} else {
+			__io__block.writeFloat(__io__address + 804, studiolight_intensity);
 		}
 	}
 
@@ -1487,6 +1564,38 @@ public class View3DShading extends CFacade {
 			__io__block.writeFloat(__io__address + 852, curvature_valley_factor);
 		} else {
 			__io__block.writeFloat(__io__address + 852, curvature_valley_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public CPointer<IDProperty> getProp() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
+		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public void setProp(CPointer<IDProperty> prop) throws IOException
+	{
+		long __address = ((prop == null) ? 0 : prop.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 856, __address);
+		} else {
+			__io__block.writeLong(__io__address + 856, __address);
 		}
 	}
 

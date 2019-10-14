@@ -27,7 +27,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 438;
+	public static final int __DNA__SDNA_INDEX = 443;
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.
@@ -746,24 +746,27 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__gradient_s = new long[]{108, 108};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad_2'.
+	 * Field descriptor (offset) for struct member 'simplify_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simplify adaptive factor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushGpencilSettings brushgpencilsettings = ...;
-	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad_2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__simplify_f);
+	 * CPointer&lt;Float&gt; p_simplify_f = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad_2'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'simplify_f'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad_2 = new long[]{116, 116};
+	public static final long[] __DNA__FIELD__simplify_f = new long[]{116, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_sensitivity'.
@@ -1951,42 +1954,36 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad_2'.
-	 * @see #__DNA__FIELD___pad_2
+	 * Get method for struct member 'simplify_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simplify adaptive factor </p>
+	 * @see #__DNA__FIELD__simplify_f
 	 */
 	
-	public CArrayFacade<Byte> get_pad_2() throws IOException
+	public float getSimplify_f() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad_2'.
-	 * @see #__DNA__FIELD___pad_2
+	 * Set method for struct member 'simplify_f'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simplify adaptive factor </p>
+	 * @see #__DNA__FIELD__simplify_f
 	 */
 	
-	public void set_pad_2(CArrayFacade<Byte> _pad_2) throws IOException
+	public void setSimplify_f(float simplify_f) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 116;
+			__io__block.writeFloat(__io__address + 116, simplify_f);
 		} else {
-			__dna__offset = 116;
-		}
-		if (__io__equals(_pad_2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad_2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_2);
-		} else {
-			__io__generic__copy( get_pad_2(), _pad_2);
+			__io__block.writeFloat(__io__address + 116, simplify_f);
 		}
 	}
 

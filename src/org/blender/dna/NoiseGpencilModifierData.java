@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=264, size64=280)
+@CMetaData(size32=308, size64=320)
 public class NoiseGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 476;
+	public static final int __DNA__SDNA_INDEX = 482;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -73,6 +73,29 @@ public class NoiseGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layername = new long[]{92, 104};
 
 	/**
+	 * Field descriptor (offset) for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__materialname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_materialname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'materialname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__materialname = new long[]{156, 168};
+
+	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -93,7 +116,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__vgname = new long[]{220, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -116,7 +139,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{220, 232};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{284, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -139,7 +162,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{224, 236};
+	public static final long[] __DNA__FIELD__flag = new long[]{288, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -162,7 +185,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{228, 240};
+	public static final long[] __DNA__FIELD__factor = new long[]{292, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
@@ -185,107 +208,7 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__step = new long[]{232, 244};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gp_frame'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__gp_frame);
-	 * CPointer&lt;Integer&gt; p_gp_frame = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gp_frame'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gp_frame = new long[]{236, 248};
-
-	/**
-	 * Field descriptor (offset) for struct member 'scene_frame'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__scene_frame);
-	 * CPointer&lt;Integer&gt; p_scene_frame = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'scene_frame'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__scene_frame = new long[]{240, 252};
-
-	/**
-	 * Field descriptor (offset) for struct member 'vrand1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__vrand1);
-	 * CPointer&lt;Float&gt; p_vrand1 = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'vrand1'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__vrand1 = new long[]{244, 256};
-
-	/**
-	 * Field descriptor (offset) for struct member 'vrand2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__vrand2);
-	 * CPointer&lt;Float&gt; p_vrand2 = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'vrand2'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__vrand2 = new long[]{248, 260};
-
-	/**
-	 * Field descriptor (offset) for struct member 'rng'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__rng);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_rng = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'rng'</li>
-	 * <li>Signature: 'RNG*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__rng = new long[]{252, 264};
+	public static final long[] __DNA__FIELD__step = new long[]{296, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -308,27 +231,30 @@ public class NoiseGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{256, 272};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{300, 312};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random seed </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NoiseGpencilModifierData noisegpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = noisegpencilmodifierdata.__dna__addressof(NoiseGpencilModifierData.__DNA__FIELD__seed);
+	 * CPointer&lt;Integer&gt; p_seed = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'seed'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{260, 276};
+	public static final long[] __DNA__FIELD__seed = new long[]{304, 316};
 
 	public NoiseGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -421,6 +347,52 @@ public class NoiseGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public CArrayFacade<Byte> getMaterialname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public void setMaterialname(CArrayFacade<Byte> materialname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 168;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(materialname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, materialname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
+		} else {
+			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -435,9 +407,9 @@ public class NoiseGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -453,9 +425,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 220;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -477,9 +449,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 284);
 		}
 	}
 
@@ -494,9 +466,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, pass_index);
+			__io__block.writeInt(__io__address + 296, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 220, pass_index);
+			__io__block.writeInt(__io__address + 284, pass_index);
 		}
 	}
 
@@ -511,9 +483,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 300);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 288);
 		}
 	}
 
@@ -528,9 +500,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, flag);
+			__io__block.writeInt(__io__address + 300, flag);
 		} else {
-			__io__block.writeInt(__io__address + 224, flag);
+			__io__block.writeInt(__io__address + 288, flag);
 		}
 	}
 
@@ -545,9 +517,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -562,9 +534,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 240, factor);
+			__io__block.writeFloat(__io__address + 304, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 228, factor);
+			__io__block.writeFloat(__io__address + 292, factor);
 		}
 	}
 
@@ -579,9 +551,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public int getStep() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 308);
 		} else {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 296);
 		}
 	}
 
@@ -596,153 +568,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public void setStep(int step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 244, step);
+			__io__block.writeInt(__io__address + 308, step);
 		} else {
-			__io__block.writeInt(__io__address + 232, step);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gp_frame'.
-	 * @see #__DNA__FIELD__gp_frame
-	 */
-	
-	public int getGp_frame() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
-		} else {
-			return __io__block.readInt(__io__address + 236);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gp_frame'.
-	 * @see #__DNA__FIELD__gp_frame
-	 */
-	
-	public void setGp_frame(int gp_frame) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, gp_frame);
-		} else {
-			__io__block.writeInt(__io__address + 236, gp_frame);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'scene_frame'.
-	 * @see #__DNA__FIELD__scene_frame
-	 */
-	
-	public int getScene_frame() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 252);
-		} else {
-			return __io__block.readInt(__io__address + 240);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'scene_frame'.
-	 * @see #__DNA__FIELD__scene_frame
-	 */
-	
-	public void setScene_frame(int scene_frame) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 252, scene_frame);
-		} else {
-			__io__block.writeInt(__io__address + 240, scene_frame);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'vrand1'.
-	 * @see #__DNA__FIELD__vrand1
-	 */
-	
-	public float getVrand1() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 256);
-		} else {
-			return __io__block.readFloat(__io__address + 244);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'vrand1'.
-	 * @see #__DNA__FIELD__vrand1
-	 */
-	
-	public void setVrand1(float vrand1) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 256, vrand1);
-		} else {
-			__io__block.writeFloat(__io__address + 244, vrand1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'vrand2'.
-	 * @see #__DNA__FIELD__vrand2
-	 */
-	
-	public float getVrand2() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 260);
-		} else {
-			return __io__block.readFloat(__io__address + 248);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'vrand2'.
-	 * @see #__DNA__FIELD__vrand2
-	 */
-	
-	public void setVrand2(float vrand2) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 260, vrand2);
-		} else {
-			__io__block.writeFloat(__io__address + 248, vrand2);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'rng'.
-	 * @see #__DNA__FIELD__rng
-	 */
-	
-	public CPointer<Object> getRng() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 252);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'rng'.
-	 * @see #__DNA__FIELD__rng
-	 */
-	
-	public void setRng(CPointer<Object> rng) throws IOException
-	{
-		long __address = ((rng == null) ? 0 : rng.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
-		} else {
-			__io__block.writeLong(__io__address + 252, __address);
+			__io__block.writeInt(__io__address + 296, step);
 		}
 	}
 
@@ -757,9 +585,9 @@ public class NoiseGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 272);
+			return __io__block.readInt(__io__address + 312);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 300);
 		}
 	}
 
@@ -774,49 +602,43 @@ public class NoiseGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 272, layer_pass);
+			__io__block.writeInt(__io__address + 312, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 256, layer_pass);
+			__io__block.writeInt(__io__address + 300, layer_pass);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random seed </p>
+	 * @see #__DNA__FIELD__seed
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getSeed() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 316);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 304);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'seed'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Random seed </p>
+	 * @see #__DNA__FIELD__seed
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setSeed(int seed) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 276;
+			__io__block.writeInt(__io__address + 316, seed);
 		} else {
-			__dna__offset = 260;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 304, seed);
 		}
 	}
 

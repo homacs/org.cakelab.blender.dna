@@ -14,8 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
- * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.<h4>Blender Source Code:</h4>
- * <p> typedef struct MTexPoly { void *_pad; } MTexPoly; </p>
+ * Elements of the UV map. Each element contains the UV coordinates for a point of the corresponding loop entry. Thus for each loopuv entry there exists a loop entry with the same index.
  */
 
 @CMetaData(size32=12, size64=12)

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> this system works on different transformation space levels;</p><p> 1) {@link Bone}  Space; with each {@link Bone}  having own (0,0,0) origin 2) Armature Space; the rest position, in {@link Object}  space, Bones Spaces are applied hierarchical 3) Pose Space; the animation position, in {@link Object}  space 4) {@link World}  Space; {@link Object}  matrix applied to Pose or Armature space </p>
  */
 
-@CMetaData(size32=352, size64=384)
+@CMetaData(size32=360, size64=392)
 public class Bone extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Bone extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 310;
+	public static final int __DNA__SDNA_INDEX = 313;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -193,7 +193,7 @@ public class Bone extends CFacade {
 	 * Field descriptor (offset) for struct member 'head'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
+	 * (read-only)    Location of head end of the bone relative to its parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -216,7 +216,7 @@ public class Bone extends CFacade {
 	 * Field descriptor (offset) for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
 	 * <p> head/tail and roll in {@link Bone}  Space . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -280,6 +280,46 @@ public class Bone extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{152, 176};
 
 	/**
+	 * Field descriptor (offset) for struct member 'inherit_scale_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD__inherit_scale_mode);
+	 * CPointer&lt;Byte&gt; p_inherit_scale_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'inherit_scale_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__inherit_scale_mode = new long[]{156, 180};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Bone bone = ...;
+	 * CPointer&lt;Object&gt; p = bone.__dna__addressof(Bone.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{157, 181};
+
+	/**
 	 * Field descriptor (offset) for struct member 'arm_head'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -297,7 +337,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__arm_head = new long[]{156, 180};
+	public static final long[] __DNA__FIELD__arm_head = new long[]{164, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_tail'.
@@ -320,7 +360,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__arm_tail = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__arm_tail = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_mat'.
@@ -343,7 +383,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__arm_mat = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__arm_mat = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'arm_roll'.
@@ -366,7 +406,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__arm_roll = new long[]{244, 268};
+	public static final long[] __DNA__FIELD__arm_roll = new long[]{252, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
@@ -389,7 +429,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dist = new long[]{248, 272};
+	public static final long[] __DNA__FIELD__dist = new long[]{256, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
@@ -409,7 +449,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weight = new long[]{252, 276};
+	public static final long[] __DNA__FIELD__weight = new long[]{260, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xwidth'.
@@ -432,10 +472,13 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xwidth = new long[]{256, 280};
+	public static final long[] __DNA__FIELD__xwidth = new long[]{264, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Length of the bone
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -452,7 +495,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__length = new long[]{260, 284};
+	public static final long[] __DNA__FIELD__length = new long[]{268, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zwidth'.
@@ -472,7 +515,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zwidth = new long[]{264, 288};
+	public static final long[] __DNA__FIELD__zwidth = new long[]{272, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_head'.
@@ -495,7 +538,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rad_head = new long[]{268, 292};
+	public static final long[] __DNA__FIELD__rad_head = new long[]{276, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_tail'.
@@ -515,7 +558,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rad_tail = new long[]{272, 296};
+	public static final long[] __DNA__FIELD__rad_tail = new long[]{280, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roll1'.
@@ -538,7 +581,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roll1 = new long[]{276, 300};
+	public static final long[] __DNA__FIELD__roll1 = new long[]{284, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roll2'.
@@ -558,7 +601,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roll2 = new long[]{280, 304};
+	public static final long[] __DNA__FIELD__roll2 = new long[]{288, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveInX'.
@@ -578,7 +621,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveInX = new long[]{284, 308};
+	public static final long[] __DNA__FIELD__curveInX = new long[]{292, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveInY'.
@@ -598,7 +641,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveInY = new long[]{288, 312};
+	public static final long[] __DNA__FIELD__curveInY = new long[]{296, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveOutX'.
@@ -618,7 +661,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveOutX = new long[]{292, 316};
+	public static final long[] __DNA__FIELD__curveOutX = new long[]{300, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curveOutY'.
@@ -638,7 +681,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curveOutY = new long[]{296, 320};
+	public static final long[] __DNA__FIELD__curveOutY = new long[]{304, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ease1'.
@@ -661,7 +704,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ease1 = new long[]{300, 324};
+	public static final long[] __DNA__FIELD__ease1 = new long[]{308, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ease2'.
@@ -681,7 +724,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ease2 = new long[]{304, 328};
+	public static final long[] __DNA__FIELD__ease2 = new long[]{312, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scaleIn'.
@@ -701,7 +744,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scaleIn = new long[]{308, 332};
+	public static final long[] __DNA__FIELD__scaleIn = new long[]{316, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_in_y'.
@@ -721,7 +764,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale_in_y = new long[]{312, 336};
+	public static final long[] __DNA__FIELD__scale_in_y = new long[]{320, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scaleOut'.
@@ -741,7 +784,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scaleOut = new long[]{316, 340};
+	public static final long[] __DNA__FIELD__scaleOut = new long[]{324, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_out_y'.
@@ -761,7 +804,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale_out_y = new long[]{320, 344};
+	public static final long[] __DNA__FIELD__scale_out_y = new long[]{328, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -784,7 +827,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{324, 348};
+	public static final long[] __DNA__FIELD__size = new long[]{332, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
@@ -807,7 +850,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{336, 360};
+	public static final long[] __DNA__FIELD__layer = new long[]{344, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'segments'.
@@ -830,7 +873,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__segments = new long[]{340, 364};
+	public static final long[] __DNA__FIELD__segments = new long[]{348, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev_type'.
@@ -853,7 +896,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_prev_type = new long[]{342, 366};
+	public static final long[] __DNA__FIELD__bbone_prev_type = new long[]{350, 374};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_next_type'.
@@ -873,7 +916,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_next_type = new long[]{343, 367};
+	public static final long[] __DNA__FIELD__bbone_next_type = new long[]{351, 375};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_prev'.
@@ -896,7 +939,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_prev = new long[]{344, 368};
+	public static final long[] __DNA__FIELD__bbone_prev = new long[]{352, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_next'.
@@ -916,7 +959,7 @@ public class Bone extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_next = new long[]{348, 376};
+	public static final long[] __DNA__FIELD__bbone_next = new long[]{356, 384};
 
 	public Bone(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1200,7 +1243,7 @@ public class Bone extends CFacade {
 	 * Get method for struct member 'head'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
+	 * (read-only)    Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -1221,7 +1264,7 @@ public class Bone extends CFacade {
 	 * Set method for struct member 'head'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of head end of the bone relative to its parent
+	 * (read-only)    Location of head end of the bone relative to its parent
 	 * @see #__DNA__FIELD__head
 	 */
 	
@@ -1246,7 +1289,7 @@ public class Bone extends CFacade {
 	 * Get method for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
 	 * <p> head/tail and roll in {@link Bone}  Space . </p>
 	 * @see #__DNA__FIELD__tail
 	 */
@@ -1268,7 +1311,7 @@ public class Bone extends CFacade {
 	 * Set method for struct member 'tail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Location of tail end of the bone<h4>Blender Source Code:</h4>
+	 * (read-only)    Location of tail end of the bone relative to its parent<h4>Blender Source Code:</h4>
 	 * <p> head/tail and roll in {@link Bone}  Space . </p>
 	 * @see #__DNA__FIELD__tail
 	 */
@@ -1366,6 +1409,74 @@ public class Bone extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'inherit_scale_mode'.
+	 * @see #__DNA__FIELD__inherit_scale_mode
+	 */
+	
+	public byte getInherit_scale_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 180);
+		} else {
+			return __io__block.readByte(__io__address + 156);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'inherit_scale_mode'.
+	 * @see #__DNA__FIELD__inherit_scale_mode
+	 */
+	
+	public void setInherit_scale_mode(byte inherit_scale_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 180, inherit_scale_mode);
+		} else {
+			__io__block.writeByte(__io__address + 156, inherit_scale_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 181, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 157, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 181;
+		} else {
+			__dna__offset = 157;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'arm_head'.
 	 * @see #__DNA__FIELD__arm_head
 	 */
@@ -1377,9 +1488,9 @@ public class Bone extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1392,9 +1503,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 180;
+			__dna__offset = 188;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		}
 		if (__io__equals(arm_head, __io__address + __dna__offset)) {
 			return;
@@ -1420,9 +1531,9 @@ public class Bone extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1438,9 +1549,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 176;
 		}
 		if (__io__equals(arm_tail, __io__address + __dna__offset)) {
 			return;
@@ -1467,9 +1578,9 @@ public class Bone extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1485,9 +1596,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 212;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 188;
 		}
 		if (__io__equals(arm_mat, __io__address + __dna__offset)) {
 			return;
@@ -1509,9 +1620,9 @@ public class Bone extends CFacade {
 	public float getArm_roll() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		} else {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -1526,9 +1637,9 @@ public class Bone extends CFacade {
 	public void setArm_roll(float arm_roll) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 268, arm_roll);
+			__io__block.writeFloat(__io__address + 276, arm_roll);
 		} else {
-			__io__block.writeFloat(__io__address + 244, arm_roll);
+			__io__block.writeFloat(__io__address + 252, arm_roll);
 		}
 	}
 
@@ -1543,9 +1654,9 @@ public class Bone extends CFacade {
 	public float getDist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 256);
 		}
 	}
 
@@ -1560,9 +1671,9 @@ public class Bone extends CFacade {
 	public void setDist(float dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, dist);
+			__io__block.writeFloat(__io__address + 280, dist);
 		} else {
-			__io__block.writeFloat(__io__address + 248, dist);
+			__io__block.writeFloat(__io__address + 256, dist);
 		}
 	}
 
@@ -1574,9 +1685,9 @@ public class Bone extends CFacade {
 	public float getWeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 260);
 		}
 	}
 
@@ -1588,9 +1699,9 @@ public class Bone extends CFacade {
 	public void setWeight(float weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 276, weight);
+			__io__block.writeFloat(__io__address + 284, weight);
 		} else {
-			__io__block.writeFloat(__io__address + 252, weight);
+			__io__block.writeFloat(__io__address + 260, weight);
 		}
 	}
 
@@ -1605,9 +1716,9 @@ public class Bone extends CFacade {
 	public float getXwidth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 264);
 		}
 	}
 
@@ -1622,37 +1733,43 @@ public class Bone extends CFacade {
 	public void setXwidth(float xwidth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, xwidth);
+			__io__block.writeFloat(__io__address + 288, xwidth);
 		} else {
-			__io__block.writeFloat(__io__address + 256, xwidth);
+			__io__block.writeFloat(__io__address + 264, xwidth);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Length of the bone
 	 * @see #__DNA__FIELD__length
 	 */
 	
 	public float getLength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 292);
 		} else {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 268);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Length of the bone
 	 * @see #__DNA__FIELD__length
 	 */
 	
 	public void setLength(float length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, length);
+			__io__block.writeFloat(__io__address + 292, length);
 		} else {
-			__io__block.writeFloat(__io__address + 260, length);
+			__io__block.writeFloat(__io__address + 268, length);
 		}
 	}
 
@@ -1664,9 +1781,9 @@ public class Bone extends CFacade {
 	public float getZwidth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 296);
 		} else {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 272);
 		}
 	}
 
@@ -1678,9 +1795,9 @@ public class Bone extends CFacade {
 	public void setZwidth(float zwidth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 288, zwidth);
+			__io__block.writeFloat(__io__address + 296, zwidth);
 		} else {
-			__io__block.writeFloat(__io__address + 264, zwidth);
+			__io__block.writeFloat(__io__address + 272, zwidth);
 		}
 	}
 
@@ -1695,9 +1812,9 @@ public class Bone extends CFacade {
 	public float getRad_head() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -1712,9 +1829,9 @@ public class Bone extends CFacade {
 	public void setRad_head(float rad_head) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, rad_head);
+			__io__block.writeFloat(__io__address + 300, rad_head);
 		} else {
-			__io__block.writeFloat(__io__address + 268, rad_head);
+			__io__block.writeFloat(__io__address + 276, rad_head);
 		}
 	}
 
@@ -1726,9 +1843,9 @@ public class Bone extends CFacade {
 	public float getRad_tail() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		}
 	}
 
@@ -1740,9 +1857,9 @@ public class Bone extends CFacade {
 	public void setRad_tail(float rad_tail) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 296, rad_tail);
+			__io__block.writeFloat(__io__address + 304, rad_tail);
 		} else {
-			__io__block.writeFloat(__io__address + 272, rad_tail);
+			__io__block.writeFloat(__io__address + 280, rad_tail);
 		}
 	}
 
@@ -1757,9 +1874,9 @@ public class Bone extends CFacade {
 	public float getRoll1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		}
 	}
 
@@ -1774,9 +1891,9 @@ public class Bone extends CFacade {
 	public void setRoll1(float roll1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, roll1);
+			__io__block.writeFloat(__io__address + 308, roll1);
 		} else {
-			__io__block.writeFloat(__io__address + 276, roll1);
+			__io__block.writeFloat(__io__address + 284, roll1);
 		}
 	}
 
@@ -1788,9 +1905,9 @@ public class Bone extends CFacade {
 	public float getRoll2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 312);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -1802,9 +1919,9 @@ public class Bone extends CFacade {
 	public void setRoll2(float roll2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 304, roll2);
+			__io__block.writeFloat(__io__address + 312, roll2);
 		} else {
-			__io__block.writeFloat(__io__address + 280, roll2);
+			__io__block.writeFloat(__io__address + 288, roll2);
 		}
 	}
 
@@ -1816,9 +1933,9 @@ public class Bone extends CFacade {
 	public float getCurveInX() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 316);
 		} else {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -1830,9 +1947,9 @@ public class Bone extends CFacade {
 	public void setCurveInX(float curveInX) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 308, curveInX);
+			__io__block.writeFloat(__io__address + 316, curveInX);
 		} else {
-			__io__block.writeFloat(__io__address + 284, curveInX);
+			__io__block.writeFloat(__io__address + 292, curveInX);
 		}
 	}
 
@@ -1844,9 +1961,9 @@ public class Bone extends CFacade {
 	public float getCurveInY() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 320);
 		} else {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -1858,9 +1975,9 @@ public class Bone extends CFacade {
 	public void setCurveInY(float curveInY) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 312, curveInY);
+			__io__block.writeFloat(__io__address + 320, curveInY);
 		} else {
-			__io__block.writeFloat(__io__address + 288, curveInY);
+			__io__block.writeFloat(__io__address + 296, curveInY);
 		}
 	}
 
@@ -1872,9 +1989,9 @@ public class Bone extends CFacade {
 	public float getCurveOutX() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 324);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 300);
 		}
 	}
 
@@ -1886,9 +2003,9 @@ public class Bone extends CFacade {
 	public void setCurveOutX(float curveOutX) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 316, curveOutX);
+			__io__block.writeFloat(__io__address + 324, curveOutX);
 		} else {
-			__io__block.writeFloat(__io__address + 292, curveOutX);
+			__io__block.writeFloat(__io__address + 300, curveOutX);
 		}
 	}
 
@@ -1900,9 +2017,9 @@ public class Bone extends CFacade {
 	public float getCurveOutY() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 328);
 		} else {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
@@ -1914,9 +2031,9 @@ public class Bone extends CFacade {
 	public void setCurveOutY(float curveOutY) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 320, curveOutY);
+			__io__block.writeFloat(__io__address + 328, curveOutY);
 		} else {
-			__io__block.writeFloat(__io__address + 296, curveOutY);
+			__io__block.writeFloat(__io__address + 304, curveOutY);
 		}
 	}
 
@@ -1931,9 +2048,9 @@ public class Bone extends CFacade {
 	public float getEase1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 332);
 		} else {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 308);
 		}
 	}
 
@@ -1948,9 +2065,9 @@ public class Bone extends CFacade {
 	public void setEase1(float ease1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 324, ease1);
+			__io__block.writeFloat(__io__address + 332, ease1);
 		} else {
-			__io__block.writeFloat(__io__address + 300, ease1);
+			__io__block.writeFloat(__io__address + 308, ease1);
 		}
 	}
 
@@ -1962,9 +2079,9 @@ public class Bone extends CFacade {
 	public float getEase2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 336);
 		} else {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 312);
 		}
 	}
 
@@ -1976,9 +2093,9 @@ public class Bone extends CFacade {
 	public void setEase2(float ease2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 328, ease2);
+			__io__block.writeFloat(__io__address + 336, ease2);
 		} else {
-			__io__block.writeFloat(__io__address + 304, ease2);
+			__io__block.writeFloat(__io__address + 312, ease2);
 		}
 	}
 
@@ -1990,9 +2107,9 @@ public class Bone extends CFacade {
 	public float getScaleIn() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 340);
 		} else {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 316);
 		}
 	}
 
@@ -2004,9 +2121,9 @@ public class Bone extends CFacade {
 	public void setScaleIn(float scaleIn) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 332, scaleIn);
+			__io__block.writeFloat(__io__address + 340, scaleIn);
 		} else {
-			__io__block.writeFloat(__io__address + 308, scaleIn);
+			__io__block.writeFloat(__io__address + 316, scaleIn);
 		}
 	}
 
@@ -2018,9 +2135,9 @@ public class Bone extends CFacade {
 	public float getScale_in_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 344);
 		} else {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 320);
 		}
 	}
 
@@ -2032,9 +2149,9 @@ public class Bone extends CFacade {
 	public void setScale_in_y(float scale_in_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 336, scale_in_y);
+			__io__block.writeFloat(__io__address + 344, scale_in_y);
 		} else {
-			__io__block.writeFloat(__io__address + 312, scale_in_y);
+			__io__block.writeFloat(__io__address + 320, scale_in_y);
 		}
 	}
 
@@ -2046,9 +2163,9 @@ public class Bone extends CFacade {
 	public float getScaleOut() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 348);
 		} else {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -2060,9 +2177,9 @@ public class Bone extends CFacade {
 	public void setScaleOut(float scaleOut) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 340, scaleOut);
+			__io__block.writeFloat(__io__address + 348, scaleOut);
 		} else {
-			__io__block.writeFloat(__io__address + 316, scaleOut);
+			__io__block.writeFloat(__io__address + 324, scaleOut);
 		}
 	}
 
@@ -2074,9 +2191,9 @@ public class Bone extends CFacade {
 	public float getScale_out_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 328);
 		}
 	}
 
@@ -2088,9 +2205,9 @@ public class Bone extends CFacade {
 	public void setScale_out_y(float scale_out_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 344, scale_out_y);
+			__io__block.writeFloat(__io__address + 352, scale_out_y);
 		} else {
-			__io__block.writeFloat(__io__address + 320, scale_out_y);
+			__io__block.writeFloat(__io__address + 328, scale_out_y);
 		}
 	}
 
@@ -2109,9 +2226,9 @@ public class Bone extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2127,9 +2244,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 348;
+			__dna__offset = 356;
 		} else {
-			__dna__offset = 324;
+			__dna__offset = 332;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2151,9 +2268,9 @@ public class Bone extends CFacade {
 	public int getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 360);
+			return __io__block.readInt(__io__address + 368);
 		} else {
-			return __io__block.readInt(__io__address + 336);
+			return __io__block.readInt(__io__address + 344);
 		}
 	}
 
@@ -2168,9 +2285,9 @@ public class Bone extends CFacade {
 	public void setLayer(int layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 360, layer);
+			__io__block.writeInt(__io__address + 368, layer);
 		} else {
-			__io__block.writeInt(__io__address + 336, layer);
+			__io__block.writeInt(__io__address + 344, layer);
 		}
 	}
 
@@ -2185,9 +2302,9 @@ public class Bone extends CFacade {
 	public short getSegments() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 364);
+			return __io__block.readShort(__io__address + 372);
 		} else {
-			return __io__block.readShort(__io__address + 340);
+			return __io__block.readShort(__io__address + 348);
 		}
 	}
 
@@ -2202,9 +2319,9 @@ public class Bone extends CFacade {
 	public void setSegments(short segments) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 364, segments);
+			__io__block.writeShort(__io__address + 372, segments);
 		} else {
-			__io__block.writeShort(__io__address + 340, segments);
+			__io__block.writeShort(__io__address + 348, segments);
 		}
 	}
 
@@ -2219,9 +2336,9 @@ public class Bone extends CFacade {
 	public byte getBbone_prev_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 366);
+			return __io__block.readByte(__io__address + 374);
 		} else {
-			return __io__block.readByte(__io__address + 342);
+			return __io__block.readByte(__io__address + 350);
 		}
 	}
 
@@ -2236,9 +2353,9 @@ public class Bone extends CFacade {
 	public void setBbone_prev_type(byte bbone_prev_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 366, bbone_prev_type);
+			__io__block.writeByte(__io__address + 374, bbone_prev_type);
 		} else {
-			__io__block.writeByte(__io__address + 342, bbone_prev_type);
+			__io__block.writeByte(__io__address + 350, bbone_prev_type);
 		}
 	}
 
@@ -2250,9 +2367,9 @@ public class Bone extends CFacade {
 	public byte getBbone_next_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 367);
+			return __io__block.readByte(__io__address + 375);
 		} else {
-			return __io__block.readByte(__io__address + 343);
+			return __io__block.readByte(__io__address + 351);
 		}
 	}
 
@@ -2264,9 +2381,9 @@ public class Bone extends CFacade {
 	public void setBbone_next_type(byte bbone_next_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 367, bbone_next_type);
+			__io__block.writeByte(__io__address + 375, bbone_next_type);
 		} else {
-			__io__block.writeByte(__io__address + 343, bbone_next_type);
+			__io__block.writeByte(__io__address + 351, bbone_next_type);
 		}
 	}
 
@@ -2282,9 +2399,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Bone.class};
 		return new CPointer<Bone>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Bone.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2302,9 +2419,9 @@ public class Bone extends CFacade {
 	{
 		long __address = ((bbone_prev == null) ? 0 : bbone_prev.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 
@@ -2317,9 +2434,9 @@ public class Bone extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 348);
+			__dna__targetAddress = __io__block.readLong(__io__address + 356);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Bone.class};
 		return new CPointer<Bone>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Bone.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2334,9 +2451,9 @@ public class Bone extends CFacade {
 	{
 		long __address = ((bbone_next == null) ? 0 : bbone_next.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 348, __address);
+			__io__block.writeLong(__io__address + 356, __address);
 		}
 	}
 

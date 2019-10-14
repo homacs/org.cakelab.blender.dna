@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link AnimData}  -----------------------------------  Animation data for some {@link ID}  block (adt)</p><p> This block of data is used to provide all of the necessary animation data for a datablock. Currently, this data will not be reusable, as there shouldn't be any need to do so.</p><p> This information should be made available for most if not all ID-blocks, which should enable all of its settings to be animatable locally. Animation from 'higher-up' ID-AnimData blocks may override local settings.</p><p> This datablock should be placed immediately after the {@link ID}  block where it is used, so that the code which retrieves this data can do so in an easier manner. See blenkernel/intern/anim_sys.c for details. </p>
+ * <p>{@link AnimData}  -------------------------------<mdash/><mdash/>  Animation data for some {@link ID}  block (adt)</p><p> This block of data is used to provide all of the necessary animation data for a data-block. Currently, this data will not be reusable, as there shouldn't be any need to do so.</p><p> This information should be made available for most if not all ID-blocks, which should enable all of its settings to be animatable locally. Animation from 'higher-up' ID-AnimData blocks may override local settings.</p><p> This data-block should be placed immediately after the {@link ID}  block where it is used, so that the code which retrieves this data can do so in an easier manner. See blenkernel/intern/anim_sys.c for details. </p>
  */
 
 @CMetaData(size32=60, size64=104)
@@ -28,7 +28,7 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 533;
+	public static final int __DNA__SDNA_INDEX = 539;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.

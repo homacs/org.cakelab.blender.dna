@@ -27,7 +27,7 @@ public class Collection extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 309;
+	public static final int __DNA__SDNA_INDEX = 312;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -185,6 +185,30 @@ public class Collection extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{156, 208};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <p> Runtime-only, always cleared on file load. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Collection collection = ...;
+	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD__tag);
+	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag = new long[]{158, 210};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -198,11 +222,11 @@ public class Collection extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{158, 210};
+	public static final long[] __DNA__FIELD___pad = new long[]{160, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_cache'.
@@ -575,6 +599,42 @@ public class Collection extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <p> Runtime-only, always cleared on file load. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public short getTag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 210);
+		} else {
+			return __io__block.readShort(__io__address + 158);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tools can use this to tag data for their own purposes (initial state is undefined)<h4>Blender Source Code:</h4>
+	 * <p> Runtime-only, always cleared on file load. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public void setTag(short tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 210, tag);
+		} else {
+			__io__block.writeShort(__io__address + 158, tag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -583,12 +643,12 @@ public class Collection extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 158, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -601,9 +661,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 210;
+			__dna__offset = 212;
 		} else {
-			__dna__offset = 158;
+			__dna__offset = 160;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

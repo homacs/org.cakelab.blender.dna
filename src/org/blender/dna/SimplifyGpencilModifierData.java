@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=192)
+@CMetaData(size32=252, size64=264)
 public class SimplifyGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 494;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -73,6 +73,29 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layername = new long[]{92, 104};
 
 	/**
+	 * Field descriptor (offset) for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SimplifyGpencilModifierData simplifygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = simplifygpencilmodifierdata.__dna__addressof(SimplifyGpencilModifierData.__DNA__FIELD__materialname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_materialname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'materialname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__materialname = new long[]{156, 168};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -93,7 +116,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{220, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -116,7 +139,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{160, 172};
+	public static final long[] __DNA__FIELD__flag = new long[]{224, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -139,7 +162,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{164, 176};
+	public static final long[] __DNA__FIELD__factor = new long[]{228, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -162,7 +185,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{168, 180};
+	public static final long[] __DNA__FIELD__mode = new long[]{232, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'step'.
@@ -185,7 +208,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__step = new long[]{170, 182};
+	public static final long[] __DNA__FIELD__step = new long[]{234, 246};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -208,7 +231,53 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{172, 184};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{236, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sample length </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SimplifyGpencilModifierData simplifygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = simplifygpencilmodifierdata.__dna__addressof(SimplifyGpencilModifierData.__DNA__FIELD__length);
+	 * CPointer&lt;Float&gt; p_length = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'length'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__length = new long[]{240, 252};
+
+	/**
+	 * Field descriptor (offset) for struct member 'distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Merge distance </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SimplifyGpencilModifierData simplifygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = simplifygpencilmodifierdata.__dna__addressof(SimplifyGpencilModifierData.__DNA__FIELD__distance);
+	 * CPointer&lt;Float&gt; p_distance = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'distance'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__distance = new long[]{244, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -228,7 +297,7 @@ public class SimplifyGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{176, 188};
+	public static final long[] __DNA__FIELD___pad = new long[]{248, 260};
 
 	public SimplifyGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -321,6 +390,52 @@ public class SimplifyGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public CArrayFacade<Byte> getMaterialname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public void setMaterialname(CArrayFacade<Byte> materialname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 168;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(materialname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, materialname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
+		} else {
+			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -331,9 +446,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 220);
 		}
 	}
 
@@ -348,9 +463,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, pass_index);
+			__io__block.writeInt(__io__address + 232, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 156, pass_index);
+			__io__block.writeInt(__io__address + 220, pass_index);
 		}
 	}
 
@@ -365,9 +480,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 236);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 224);
 		}
 	}
 
@@ -382,9 +497,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, flag);
+			__io__block.writeInt(__io__address + 236, flag);
 		} else {
-			__io__block.writeInt(__io__address + 160, flag);
+			__io__block.writeInt(__io__address + 224, flag);
 		}
 	}
 
@@ -399,9 +514,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 240);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 228);
 		}
 	}
 
@@ -416,9 +531,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, factor);
+			__io__block.writeFloat(__io__address + 240, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 164, factor);
+			__io__block.writeFloat(__io__address + 228, factor);
 		}
 	}
 
@@ -433,9 +548,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 244);
 		} else {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -450,9 +565,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 180, mode);
+			__io__block.writeShort(__io__address + 244, mode);
 		} else {
-			__io__block.writeShort(__io__address + 168, mode);
+			__io__block.writeShort(__io__address + 232, mode);
 		}
 	}
 
@@ -467,9 +582,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public short getStep() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 246);
 		} else {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 234);
 		}
 	}
 
@@ -484,9 +599,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setStep(short step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 182, step);
+			__io__block.writeShort(__io__address + 246, step);
 		} else {
-			__io__block.writeShort(__io__address + 170, step);
+			__io__block.writeShort(__io__address + 234, step);
 		}
 	}
 
@@ -501,9 +616,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 248);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 236);
 		}
 	}
 
@@ -518,9 +633,77 @@ public class SimplifyGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, layer_pass);
+			__io__block.writeInt(__io__address + 248, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 172, layer_pass);
+			__io__block.writeInt(__io__address + 236, layer_pass);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sample length </p>
+	 * @see #__DNA__FIELD__length
+	 */
+	
+	public float getLength() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 252);
+		} else {
+			return __io__block.readFloat(__io__address + 240);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'length'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Sample length </p>
+	 * @see #__DNA__FIELD__length
+	 */
+	
+	public void setLength(float length) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 252, length);
+		} else {
+			__io__block.writeFloat(__io__address + 240, length);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Merge distance </p>
+	 * @see #__DNA__FIELD__distance
+	 */
+	
+	public float getDistance() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 256);
+		} else {
+			return __io__block.readFloat(__io__address + 244);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Merge distance </p>
+	 * @see #__DNA__FIELD__distance
+	 */
+	
+	public void setDistance(float distance) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 256, distance);
+		} else {
+			__io__block.writeFloat(__io__address + 244, distance);
 		}
 	}
 
@@ -536,9 +719,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -551,9 +734,9 @@ public class SimplifyGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 188;
+			__dna__offset = 260;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 248;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

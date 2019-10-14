@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=196, size64=224)
+@CMetaData(size32=204, size64=232)
 public class CorrectiveSmoothModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 143;
+	public static final int __DNA__SDNA_INDEX = 144;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -216,44 +216,27 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__defgrp_name = new long[]{120, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member 'delta_cache_num'.
+	 * Field descriptor (offset) for struct member 'delta_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime-only cache </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * CorrectiveSmoothModifierData correctivesmoothmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD__delta_cache_num);
-	 * CPointer&lt;Integer&gt; p_delta_cache_num = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD__delta_cache);
+	 * CPointer&lt;CorrectiveSmoothDeltaCache&gt; p_delta_cache = p.cast(new Class[]{CorrectiveSmoothDeltaCache.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'delta_cache_num'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'delta_cache'</li>
+	 * <li>Signature: 'CorrectiveSmoothDeltaCache'</li>
+	 * <li>Actual Size (32bit/64bit): 20/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__delta_cache_num = new long[]{188, 216};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CorrectiveSmoothModifierData correctivesmoothmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = correctivesmoothmodifierdata.__dna__addressof(CorrectiveSmoothModifierData.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{192, 220};
+	public static final long[] __DNA__FIELD__delta_cache = new long[]{184, 208};
 
 	public CorrectiveSmoothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -560,70 +543,44 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'delta_cache_num'.
-	 * @see #__DNA__FIELD__delta_cache_num
+	 * Get method for struct member 'delta_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime-only cache </p>
+	 * @see #__DNA__FIELD__delta_cache
 	 */
 	
-	public int getDelta_cache_num() throws IOException
+	public CorrectiveSmoothDeltaCache getDelta_cache() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return new CorrectiveSmoothDeltaCache(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 188);
+			return new CorrectiveSmoothDeltaCache(__io__address + 184, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'delta_cache_num'.
-	 * @see #__DNA__FIELD__delta_cache_num
+	 * Set method for struct member 'delta_cache'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime-only cache </p>
+	 * @see #__DNA__FIELD__delta_cache
 	 */
 	
-	public void setDelta_cache_num(int delta_cache_num) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, delta_cache_num);
-		} else {
-			__io__block.writeInt(__io__address + 188, delta_cache_num);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public CArrayFacade<Byte> get_pad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	public void setDelta_cache(CorrectiveSmoothDeltaCache delta_cache) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 220;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 184;
 		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+		if (__io__equals(delta_cache, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else if (__io__same__encoding(this, delta_cache)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, delta_cache);
 		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__generic__copy( getDelta_cache(), delta_cache);
 		}
 	}
 

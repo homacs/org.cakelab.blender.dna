@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=3140, size64=3168)
+@CMetaData(size32=3144, size64=3176)
 public class Editing extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 282;
+	public static final int __DNA__SDNA_INDEX = 285;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
@@ -349,6 +349,26 @@ public class Editing extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__cache_flag = new long[]{3136, 3164};
+
+	/**
+	 * Field descriptor (offset) for struct member 'prefetch_job'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__prefetch_job);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_prefetch_job = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prefetch_job'</li>
+	 * <li>Signature: 'PrefetchJob*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prefetch_job = new long[]{3140, 3168};
 
 	public Editing(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -889,6 +909,38 @@ public class Editing extends CFacade {
 			__io__block.writeInt(__io__address + 3164, cache_flag);
 		} else {
 			__io__block.writeInt(__io__address + 3136, cache_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prefetch_job'.
+	 * @see #__DNA__FIELD__prefetch_job
+	 */
+	
+	public CPointer<Object> getPrefetch_job() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 3140);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'prefetch_job'.
+	 * @see #__DNA__FIELD__prefetch_job
+	 */
+	
+	public void setPrefetch_job(CPointer<Object> prefetch_job) throws IOException
+	{
+		long __address = ((prefetch_job == null) ? 0 : prefetch_job.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 3168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 3140, __address);
 		}
 	}
 

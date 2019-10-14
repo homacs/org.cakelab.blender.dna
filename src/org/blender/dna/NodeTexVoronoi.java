@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +26,7 @@ public class NodeTexVoronoi extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 409;
+	public static final int __DNA__SDNA_INDEX = 412;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -50,44 +49,24 @@ public class NodeTexVoronoi extends CFacade {
 	public static final long[] __DNA__FIELD__base = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member 'coloring'.
+	 * Field descriptor (offset) for struct member 'dimensions'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexVoronoi nodetexvoronoi = ...;
-	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD__coloring);
-	 * CPointer&lt;Integer&gt; p_coloring = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD__dimensions);
+	 * CPointer&lt;Integer&gt; p_dimensions = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'coloring'</li>
+	 * <li>Field: 'dimensions'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coloring = new long[]{956, 960};
-
-	/**
-	 * Field descriptor (offset) for struct member 'distance'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeTexVoronoi nodetexvoronoi = ...;
-	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD__distance);
-	 * CPointer&lt;Integer&gt; p_distance = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'distance'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__distance = new long[]{960, 964};
+	public static final long[] __DNA__FIELD__dimensions = new long[]{956, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'feature'.
@@ -107,27 +86,52 @@ public class NodeTexVoronoi extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__feature = new long[]{964, 968};
+	public static final long[] __DNA__FIELD__feature = new long[]{960, 964};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'distance'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexVoronoi nodetexvoronoi = ...;
-	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD__distance);
+	 * CPointer&lt;Integer&gt; p_distance = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'distance'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{968, 972};
+	public static final long[] __DNA__FIELD__distance = new long[]{964, 968};
+
+	/**
+	 * Field descriptor (offset) for struct member 'coloring'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexVoronoi nodetexvoronoi = ...;
+	 * CPointer&lt;Object&gt; p = nodetexvoronoi.__dna__addressof(NodeTexVoronoi.__DNA__FIELD__coloring);
+	 * CPointer&lt;Integer&gt; p_coloring = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'coloring'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__coloring = new long[]{968, 972};
 
 	public NodeTexVoronoi(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -174,11 +178,11 @@ public class NodeTexVoronoi extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'coloring'.
-	 * @see #__DNA__FIELD__coloring
+	 * Get method for struct member 'dimensions'.
+	 * @see #__DNA__FIELD__dimensions
 	 */
 	
-	public int getColoring() throws IOException
+	public int getDimensions() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 960);
@@ -188,44 +192,16 @@ public class NodeTexVoronoi extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'coloring'.
-	 * @see #__DNA__FIELD__coloring
+	 * Set method for struct member 'dimensions'.
+	 * @see #__DNA__FIELD__dimensions
 	 */
 	
-	public void setColoring(int coloring) throws IOException
+	public void setDimensions(int dimensions) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 960, coloring);
+			__io__block.writeInt(__io__address + 960, dimensions);
 		} else {
-			__io__block.writeInt(__io__address + 956, coloring);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'distance'.
-	 * @see #__DNA__FIELD__distance
-	 */
-	
-	public int getDistance() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 964);
-		} else {
-			return __io__block.readInt(__io__address + 960);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'distance'.
-	 * @see #__DNA__FIELD__distance
-	 */
-	
-	public void setDistance(int distance) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 964, distance);
-		} else {
-			__io__block.writeInt(__io__address + 960, distance);
+			__io__block.writeInt(__io__address + 956, dimensions);
 		}
 	}
 
@@ -237,9 +213,9 @@ public class NodeTexVoronoi extends CFacade {
 	public int getFeature() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 968);
-		} else {
 			return __io__block.readInt(__io__address + 964);
+		} else {
+			return __io__block.readInt(__io__address + 960);
 		}
 	}
 
@@ -251,49 +227,75 @@ public class NodeTexVoronoi extends CFacade {
 	public void setFeature(int feature) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 968, feature);
-		} else {
 			__io__block.writeInt(__io__address + 964, feature);
+		} else {
+			__io__block.writeInt(__io__address + 960, feature);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'distance'.
+	 * @see #__DNA__FIELD__distance
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getDistance() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 972, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 968);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 968, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 964);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'distance'.
+	 * @see #__DNA__FIELD__distance
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setDistance(int distance) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 972;
+			__io__block.writeInt(__io__address + 968, distance);
 		} else {
-			__dna__offset = 968;
+			__io__block.writeInt(__io__address + 964, distance);
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+	}
+
+	/**
+	 * Get method for struct member 'coloring'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__coloring
+	 */
+	
+	public int getColoring() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 972);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			return __io__block.readInt(__io__address + 968);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'coloring'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
+	 * @see #__DNA__FIELD__coloring
+	 */
+	
+	public void setColoring(int coloring) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 972, coloring);
+		} else {
+			__io__block.writeInt(__io__address + 968, coloring);
 		}
 	}
 

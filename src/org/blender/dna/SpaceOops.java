@@ -27,7 +27,7 @@ public class SpaceOops extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -318,16 +318,36 @@ public class SpaceOops extends CFacade {
 	 * <pre>
 	 * SpaceOops spaceoops = ...;
 	 * CPointer&lt;Object&gt; p = spaceoops.__dna__addressof(SpaceOops.__DNA__FIELD__search_flags);
-	 * CPointer&lt;Short&gt; p_search_flags = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_search_flags = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'search_flags'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__search_flags = new long[]{274, 318};
+
+	/**
+	 * Field descriptor (offset) for struct member 'sync_select_dirty'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceOops spaceoops = ...;
+	 * CPointer&lt;Object&gt; p = spaceoops.__dna__addressof(SpaceOops.__DNA__FIELD__sync_select_dirty);
+	 * CPointer&lt;Byte&gt; p_sync_select_dirty = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sync_select_dirty'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sync_select_dirty = new long[]{275, 319};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
@@ -902,12 +922,12 @@ public class SpaceOops extends CFacade {
 	 * @see #__DNA__FIELD__search_flags
 	 */
 	
-	public short getSearch_flags() throws IOException
+	public byte getSearch_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 318);
+			return __io__block.readByte(__io__address + 318);
 		} else {
-			return __io__block.readShort(__io__address + 274);
+			return __io__block.readByte(__io__address + 274);
 		}
 	}
 
@@ -916,12 +936,40 @@ public class SpaceOops extends CFacade {
 	 * @see #__DNA__FIELD__search_flags
 	 */
 	
-	public void setSearch_flags(short search_flags) throws IOException
+	public void setSearch_flags(byte search_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 318, search_flags);
+			__io__block.writeByte(__io__address + 318, search_flags);
 		} else {
-			__io__block.writeShort(__io__address + 274, search_flags);
+			__io__block.writeByte(__io__address + 274, search_flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'sync_select_dirty'.
+	 * @see #__DNA__FIELD__sync_select_dirty
+	 */
+	
+	public byte getSync_select_dirty() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 319);
+		} else {
+			return __io__block.readByte(__io__address + 275);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sync_select_dirty'.
+	 * @see #__DNA__FIELD__sync_select_dirty
+	 */
+	
+	public void setSync_select_dirty(byte sync_select_dirty) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 319, sync_select_dirty);
+		} else {
+			__io__block.writeByte(__io__address + 275, sync_select_dirty);
 		}
 	}
 

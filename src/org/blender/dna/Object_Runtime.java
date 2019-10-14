@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Not saved in file! </p>
  */
 
-@CMetaData(size32=96, size64=128)
+@CMetaData(size32=112, size64=144)
 public class Object_Runtime extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Object_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 160;
+	public static final int __DNA__SDNA_INDEX = 161;
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_data_mask'.
@@ -258,7 +258,7 @@ public class Object_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Mesh}  structure created during object evaluation. It has deforemation only modifiers applied on it. </p>
+	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,10 +347,93 @@ public class Object_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__gpencil_cache = new long[]{88, 112};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
+	 * Field descriptor (offset) for struct member 'gpencil_tot_layers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Padding is here for win32s unconventional struct alignment rules. </p>
+	 * <p> Runtime grease pencil total layers used for evaluated data created by modifiers </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD__gpencil_tot_layers);
+	 * CPointer&lt;Integer&gt; p_gpencil_tot_layers = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_tot_layers'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_tot_layers = new long[]{92, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD___pad4);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad4'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad4 = new long[]{96, 124};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_evaluated_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime grease pencil evaluated data created by modifiers </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD__gpencil_evaluated_frames);
+	 * CPointer&lt;CPointer&lt;bGPDframe&gt;&gt; p_gpencil_evaluated_frames = p.cast(new Class[]{CPointer.class, bGPDframe.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_evaluated_frames'</li>
+	 * <li>Signature: 'bGPDframe*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_evaluated_frames = new long[]{100, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'local_collections_bits'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD__local_collections_bits);
+	 * CPointer&lt;Short&gt; p_local_collections_bits = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'local_collections_bits'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__local_collections_bits = new long[]{104, 136};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -358,16 +441,16 @@ public class Object_Runtime extends CFacade {
 	 * <pre>
 	 * Object_Runtime object_runtime = ...;
 	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD___pad2);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;CArrayFacade&lt;Short&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Signature: 'short[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{92, 120};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{106, 138};
 
 	public Object_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -765,7 +848,7 @@ public class Object_Runtime extends CFacade {
 	 * Get method for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Mesh}  structure created during object evaluation. It has deforemation only modifiers applied on it. </p>
+	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * @see #__DNA__FIELD__mesh_deform_eval
 	 */
 	
@@ -785,7 +868,7 @@ public class Object_Runtime extends CFacade {
 	 * Set method for struct member 'mesh_deform_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Mesh}  structure created during object evaluation. It has deforemation only modifiers applied on it. </p>
+	 * <p>{@link Mesh}  structure created during object evaluation. It has deformation only modifiers applied on it. </p>
 	 * @see #__DNA__FIELD__mesh_deform_eval
 	 */
 	
@@ -914,40 +997,182 @@ public class Object_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad2'.
+	 * Get method for struct member 'gpencil_tot_layers'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Padding is here for win32s unconventional struct alignment rules. </p>
-	 * @see #__DNA__FIELD___pad2
+	 * <p> Runtime grease pencil total layers used for evaluated data created by modifiers </p>
+	 * @see #__DNA__FIELD__gpencil_tot_layers
 	 */
 	
-	public CPointer<Object> get_pad2() throws IOException
+	public int getGpencil_tot_layers() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 120);
+		} else {
+			return __io__block.readInt(__io__address + 92);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_tot_layers'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime grease pencil total layers used for evaluated data created by modifiers </p>
+	 * @see #__DNA__FIELD__gpencil_tot_layers
+	 */
+	
+	public void setGpencil_tot_layers(int gpencil_tot_layers) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 120, gpencil_tot_layers);
+		} else {
+			__io__block.writeInt(__io__address + 92, gpencil_tot_layers);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public CArrayFacade<Byte> get_pad4() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 124;
+		} else {
+			__dna__offset = 96;
+		}
+		if (__io__equals(_pad4, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad4)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
+		} else {
+			__io__generic__copy( get_pad4(), _pad4);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_evaluated_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime grease pencil evaluated data created by modifiers </p>
+	 * @see #__DNA__FIELD__gpencil_evaluated_frames
+	 */
+	
+	public CPointer<bGPDframe> getGpencil_evaluated_frames() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+			__dna__targetAddress = __io__block.readLong(__io__address + 100);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{bGPDframe.class};
+		return new CPointer<bGPDframe>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDframe.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_evaluated_frames'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime grease pencil evaluated data created by modifiers </p>
+	 * @see #__DNA__FIELD__gpencil_evaluated_frames
+	 */
+	
+	public void setGpencil_evaluated_frames(CPointer<bGPDframe> gpencil_evaluated_frames) throws IOException
+	{
+		long __address = ((gpencil_evaluated_frames == null) ? 0 : gpencil_evaluated_frames.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 128, __address);
+		} else {
+			__io__block.writeLong(__io__address + 100, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'local_collections_bits'.
+	 * @see #__DNA__FIELD__local_collections_bits
+	 */
+	
+	public short getLocal_collections_bits() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 136);
+		} else {
+			return __io__block.readShort(__io__address + 104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'local_collections_bits'.
+	 * @see #__DNA__FIELD__local_collections_bits
+	 */
+	
+	public void setLocal_collections_bits(short local_collections_bits) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 136, local_collections_bits);
+		} else {
+			__io__block.writeShort(__io__address + 104, local_collections_bits);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Short> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Short>(__io__address + 138, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Short>(__io__address + 106, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
 	}
 
 	/**
 	 * Set method for struct member '_pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Padding is here for win32s unconventional struct alignment rules. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void set_pad2(CPointer<Object> _pad2) throws IOException
+	public void set_pad2(CArrayFacade<Short> _pad2) throws IOException
 	{
-		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__dna__offset = 138;
 		} else {
-			__io__block.writeLong(__io__address + 92, __address);
+			__dna__offset = 106;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Generic Transform->Transform Constraint </p>
  */
 
-@CMetaData(size32=220, size64=224)
+@CMetaData(size32=228, size64=232)
 public class bTransformConstraint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bTransformConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 348;
+	public static final int __DNA__SDNA_INDEX = 351;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -166,6 +166,135 @@ public class bTransformConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__expo = new long[]{75, 79};
 
 	/**
+	 * Field descriptor (offset) for struct member 'from_rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Input rotation type - uses the same values as driver targets. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__from_rotation_mode);
+	 * CPointer&lt;Byte&gt; p_from_rotation_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'from_rotation_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__from_rotation_mode = new long[]{76, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member 'to_euler_order'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Output euler order override. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__to_euler_order);
+	 * CPointer&lt;Byte&gt; p_to_euler_order = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'to_euler_order'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__to_euler_order = new long[]{77, 81};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mix_mode_loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mixing modes for location, rotation, and scale. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__mix_mode_loc);
+	 * CPointer&lt;Byte&gt; p_mix_mode_loc = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_mode_loc'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_mode_loc = new long[]{78, 82};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mix_mode_rot'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__mix_mode_rot);
+	 * CPointer&lt;Byte&gt; p_mix_mode_rot = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_mode_rot'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_mode_rot = new long[]{79, 83};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mix_mode_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD__mix_mode_scale);
+	 * CPointer&lt;Byte&gt; p_mix_mode_scale = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_mode_scale'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_mode_scale = new long[]{80, 84};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTransformConstraint btransformconstraint = ...;
+	 * CPointer&lt;Object&gt; p = btransformconstraint.__dna__addressof(bTransformConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{81, 85};
+
+	/**
 	 * Field descriptor (offset) for struct member 'from_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -186,7 +315,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_min = new long[]{76, 80};
+	public static final long[] __DNA__FIELD__from_min = new long[]{84, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_max'.
@@ -209,7 +338,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_max = new long[]{88, 92};
+	public static final long[] __DNA__FIELD__from_max = new long[]{96, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_min'.
@@ -232,7 +361,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_min = new long[]{100, 104};
+	public static final long[] __DNA__FIELD__to_min = new long[]{108, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_max'.
@@ -252,7 +381,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_max = new long[]{112, 116};
+	public static final long[] __DNA__FIELD__to_max = new long[]{120, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_min_rot'.
@@ -275,7 +404,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_min_rot = new long[]{124, 128};
+	public static final long[] __DNA__FIELD__from_min_rot = new long[]{132, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_max_rot'.
@@ -298,7 +427,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_max_rot = new long[]{136, 140};
+	public static final long[] __DNA__FIELD__from_max_rot = new long[]{144, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_min_rot'.
@@ -321,7 +450,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_min_rot = new long[]{148, 152};
+	public static final long[] __DNA__FIELD__to_min_rot = new long[]{156, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_max_rot'.
@@ -341,7 +470,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_max_rot = new long[]{160, 164};
+	public static final long[] __DNA__FIELD__to_max_rot = new long[]{168, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_min_scale'.
@@ -364,7 +493,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_min_scale = new long[]{172, 176};
+	public static final long[] __DNA__FIELD__from_min_scale = new long[]{180, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from_max_scale'.
@@ -387,7 +516,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from_max_scale = new long[]{184, 188};
+	public static final long[] __DNA__FIELD__from_max_scale = new long[]{192, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_min_scale'.
@@ -410,7 +539,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_min_scale = new long[]{196, 200};
+	public static final long[] __DNA__FIELD__to_min_scale = new long[]{204, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_max_scale'.
@@ -430,7 +559,7 @@ public class bTransformConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_max_scale = new long[]{208, 212};
+	public static final long[] __DNA__FIELD__to_max_scale = new long[]{216, 220};
 
 	public bTransformConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -667,6 +796,204 @@ public class bTransformConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'from_rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Input rotation type - uses the same values as driver targets. </p>
+	 * @see #__DNA__FIELD__from_rotation_mode
+	 */
+	
+	public byte getFrom_rotation_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 80);
+		} else {
+			return __io__block.readByte(__io__address + 76);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'from_rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Input rotation type - uses the same values as driver targets. </p>
+	 * @see #__DNA__FIELD__from_rotation_mode
+	 */
+	
+	public void setFrom_rotation_mode(byte from_rotation_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 80, from_rotation_mode);
+		} else {
+			__io__block.writeByte(__io__address + 76, from_rotation_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'to_euler_order'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Output euler order override. </p>
+	 * @see #__DNA__FIELD__to_euler_order
+	 */
+	
+	public byte getTo_euler_order() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 81);
+		} else {
+			return __io__block.readByte(__io__address + 77);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'to_euler_order'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Output euler order override. </p>
+	 * @see #__DNA__FIELD__to_euler_order
+	 */
+	
+	public void setTo_euler_order(byte to_euler_order) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 81, to_euler_order);
+		} else {
+			__io__block.writeByte(__io__address + 77, to_euler_order);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mix_mode_loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mixing modes for location, rotation, and scale. </p>
+	 * @see #__DNA__FIELD__mix_mode_loc
+	 */
+	
+	public byte getMix_mode_loc() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 82);
+		} else {
+			return __io__block.readByte(__io__address + 78);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_mode_loc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mixing modes for location, rotation, and scale. </p>
+	 * @see #__DNA__FIELD__mix_mode_loc
+	 */
+	
+	public void setMix_mode_loc(byte mix_mode_loc) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 82, mix_mode_loc);
+		} else {
+			__io__block.writeByte(__io__address + 78, mix_mode_loc);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mix_mode_rot'.
+	 * @see #__DNA__FIELD__mix_mode_rot
+	 */
+	
+	public byte getMix_mode_rot() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 83);
+		} else {
+			return __io__block.readByte(__io__address + 79);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_mode_rot'.
+	 * @see #__DNA__FIELD__mix_mode_rot
+	 */
+	
+	public void setMix_mode_rot(byte mix_mode_rot) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 83, mix_mode_rot);
+		} else {
+			__io__block.writeByte(__io__address + 79, mix_mode_rot);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mix_mode_scale'.
+	 * @see #__DNA__FIELD__mix_mode_scale
+	 */
+	
+	public byte getMix_mode_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 84);
+		} else {
+			return __io__block.readByte(__io__address + 80);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_mode_scale'.
+	 * @see #__DNA__FIELD__mix_mode_scale
+	 */
+	
+	public void setMix_mode_scale(byte mix_mode_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 84, mix_mode_scale);
+		} else {
+			__io__block.writeByte(__io__address + 80, mix_mode_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 85, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 81, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 85;
+		} else {
+			__dna__offset = 81;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'from_min'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -681,9 +1008,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -699,9 +1026,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 80;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 76;
+			__dna__offset = 84;
 		}
 		if (__io__equals(from_min, __io__address + __dna__offset)) {
 			return;
@@ -727,9 +1054,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -745,9 +1072,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 92;
+			__dna__offset = 100;
 		} else {
-			__dna__offset = 88;
+			__dna__offset = 96;
 		}
 		if (__io__equals(from_max, __io__address + __dna__offset)) {
 			return;
@@ -773,9 +1100,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -791,9 +1118,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 108;
 		}
 		if (__io__equals(to_min, __io__address + __dna__offset)) {
 			return;
@@ -816,9 +1143,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -831,9 +1158,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 116;
+			__dna__offset = 124;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		}
 		if (__io__equals(to_max, __io__address + __dna__offset)) {
 			return;
@@ -859,9 +1186,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -877,9 +1204,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 132;
 		}
 		if (__io__equals(from_min_rot, __io__address + __dna__offset)) {
 			return;
@@ -905,9 +1232,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -923,9 +1250,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(from_max_rot, __io__address + __dna__offset)) {
 			return;
@@ -951,9 +1278,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -969,9 +1296,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 156;
 		}
 		if (__io__equals(to_min_rot, __io__address + __dna__offset)) {
 			return;
@@ -994,9 +1321,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1009,9 +1336,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		}
 		if (__io__equals(to_max_rot, __io__address + __dna__offset)) {
 			return;
@@ -1037,9 +1364,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1055,9 +1382,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(from_min_scale, __io__address + __dna__offset)) {
 			return;
@@ -1083,9 +1410,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1101,9 +1428,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 188;
+			__dna__offset = 196;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		}
 		if (__io__equals(from_max_scale, __io__address + __dna__offset)) {
 			return;
@@ -1129,9 +1456,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1147,9 +1474,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		}
 		if (__io__equals(to_min_scale, __io__address + __dna__offset)) {
 			return;
@@ -1172,9 +1499,9 @@ public class bTransformConstraint extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1187,9 +1514,9 @@ public class bTransformConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		}
 		if (__io__equals(to_max_scale, __io__address + __dna__offset)) {
 			return;

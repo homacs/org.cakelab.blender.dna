@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=176, size64=192)
+@CMetaData(size32=240, size64=256)
 public class MirrorGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 486;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -93,6 +93,29 @@ public class MirrorGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layername = new long[]{96, 112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MirrorGpencilModifierData mirrorgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mirrorgpencilmodifierdata.__dna__addressof(MirrorGpencilModifierData.__DNA__FIELD__materialname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_materialname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'materialname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__materialname = new long[]{160, 176};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -113,7 +136,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{224, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -136,7 +159,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{164, 180};
+	public static final long[] __DNA__FIELD__flag = new long[]{228, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -159,7 +182,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{168, 184};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{232, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -179,7 +202,7 @@ public class MirrorGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{172, 188};
+	public static final long[] __DNA__FIELD___pad = new long[]{236, 252};
 
 	public MirrorGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -304,6 +327,52 @@ public class MirrorGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public CArrayFacade<Byte> getMaterialname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public void setMaterialname(CArrayFacade<Byte> materialname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 176;
+		} else {
+			__dna__offset = 160;
+		}
+		if (__io__equals(materialname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, materialname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
+		} else {
+			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pass_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -314,9 +383,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 224);
 		}
 	}
 
@@ -331,9 +400,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 176, pass_index);
+			__io__block.writeInt(__io__address + 240, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 160, pass_index);
+			__io__block.writeInt(__io__address + 224, pass_index);
 		}
 	}
 
@@ -348,9 +417,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 244);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 228);
 		}
 	}
 
@@ -365,9 +434,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, flag);
+			__io__block.writeInt(__io__address + 244, flag);
 		} else {
-			__io__block.writeInt(__io__address + 164, flag);
+			__io__block.writeInt(__io__address + 228, flag);
 		}
 	}
 
@@ -382,9 +451,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 248);
 		} else {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 232);
 		}
 	}
 
@@ -399,9 +468,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, layer_pass);
+			__io__block.writeInt(__io__address + 248, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 168, layer_pass);
+			__io__block.writeInt(__io__address + 232, layer_pass);
 		}
 	}
 
@@ -417,9 +486,9 @@ public class MirrorGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -432,9 +501,9 @@ public class MirrorGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 188;
+			__dna__offset = 252;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 236;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

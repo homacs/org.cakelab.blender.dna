@@ -27,7 +27,7 @@ public class View3DOverlay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 213;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -328,7 +328,7 @@ public class View3DOverlay extends CFacade {
 	 * Field descriptor (offset) for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Paper opacity<h4>Blender Source Code:</h4>
+	 * Fade factor<h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -840,7 +840,7 @@ public class View3DOverlay extends CFacade {
 	 * Get method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Paper opacity<h4>Blender Source Code:</h4>
+	 * Fade factor<h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */
@@ -858,7 +858,7 @@ public class View3DOverlay extends CFacade {
 	 * Set method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Paper opacity<h4>Blender Source Code:</h4>
+	 * Fade factor<h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */

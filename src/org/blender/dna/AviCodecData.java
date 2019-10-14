@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *   Output Format Data </p>
+ *  {@link Scene}  Data ************************************************************* Output Format Data </p>
  */
 
 @CMetaData(size32=176, size64=184)
@@ -29,7 +29,7 @@ public class AviCodecData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 174;
+	public static final int __DNA__SDNA_INDEX = 175;
 
 	/**
 	 * Field descriptor (offset) for struct member 'lpFormat'.

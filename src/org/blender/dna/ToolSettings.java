@@ -13,9 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'ToolSettings'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  Tool Settings </p>
+ * 
  */
 
 @CMetaData(size32=1200, size64=1296)
@@ -29,7 +27,7 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 202;
+	public static final int __DNA__SDNA_INDEX = 203;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -543,27 +541,50 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__annotate_thickness = new long[]{48, 68};
 
 	/**
-	 * Field descriptor (offset) for struct member 'gpencil_selectmode'.
+	 * Field descriptor (offset) for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke selection mode. </p>
+	 * <p> Stroke selection mode for Edit. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ToolSettings toolsettings = ...;
-	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_selectmode);
-	 * CPointer&lt;Short&gt; p_gpencil_selectmode = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_selectmode_edit);
+	 * CPointer&lt;Byte&gt; p_gpencil_selectmode_edit = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'gpencil_selectmode'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'gpencil_selectmode_edit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_selectmode = new long[]{50, 70};
+	public static final long[] __DNA__FIELD__gpencil_selectmode_edit = new long[]{50, 70};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_selectmode_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection mode for {@link Sculpt} . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__gpencil_selectmode_sculpt);
+	 * CPointer&lt;Byte&gt; p_gpencil_selectmode_sculpt = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_selectmode_sculpt'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_selectmode_sculpt = new long[]{51, 71};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_sculpt'.
@@ -2344,36 +2365,70 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'gpencil_selectmode'.
+	 * Get method for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke selection mode. </p>
-	 * @see #__DNA__FIELD__gpencil_selectmode
+	 * <p> Stroke selection mode for Edit. </p>
+	 * @see #__DNA__FIELD__gpencil_selectmode_edit
 	 */
 	
-	public short getGpencil_selectmode() throws IOException
+	public byte getGpencil_selectmode_edit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 70);
+			return __io__block.readByte(__io__address + 70);
 		} else {
-			return __io__block.readShort(__io__address + 50);
+			return __io__block.readByte(__io__address + 50);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'gpencil_selectmode'.
+	 * Set method for struct member 'gpencil_selectmode_edit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke selection mode. </p>
-	 * @see #__DNA__FIELD__gpencil_selectmode
+	 * <p> Stroke selection mode for Edit. </p>
+	 * @see #__DNA__FIELD__gpencil_selectmode_edit
 	 */
 	
-	public void setGpencil_selectmode(short gpencil_selectmode) throws IOException
+	public void setGpencil_selectmode_edit(byte gpencil_selectmode_edit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 70, gpencil_selectmode);
+			__io__block.writeByte(__io__address + 70, gpencil_selectmode_edit);
 		} else {
-			__io__block.writeShort(__io__address + 50, gpencil_selectmode);
+			__io__block.writeByte(__io__address + 50, gpencil_selectmode_edit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_selectmode_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection mode for {@link Sculpt} . </p>
+	 * @see #__DNA__FIELD__gpencil_selectmode_sculpt
+	 */
+	
+	public byte getGpencil_selectmode_sculpt() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 71);
+		} else {
+			return __io__block.readByte(__io__address + 51);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_selectmode_sculpt'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection mode for {@link Sculpt} . </p>
+	 * @see #__DNA__FIELD__gpencil_selectmode_sculpt
+	 */
+	
+	public void setGpencil_selectmode_sculpt(byte gpencil_selectmode_sculpt) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 71, gpencil_selectmode_sculpt);
+		} else {
+			__io__block.writeByte(__io__address + 51, gpencil_selectmode_sculpt);
 		}
 	}
 

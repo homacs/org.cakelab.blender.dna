@@ -28,7 +28,7 @@ public class bRotateLikeConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 334;
+	public static final int __DNA__SDNA_INDEX = 337;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -71,24 +71,64 @@ public class bRotateLikeConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member 'reserved1'.
+	 * Field descriptor (offset) for struct member 'euler_order'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bRotateLikeConstraint brotatelikeconstraint = ...;
-	 * CPointer&lt;Object&gt; p = brotatelikeconstraint.__dna__addressof(bRotateLikeConstraint.__DNA__FIELD__reserved1);
-	 * CPointer&lt;Integer&gt; p_reserved1 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = brotatelikeconstraint.__dna__addressof(bRotateLikeConstraint.__DNA__FIELD__euler_order);
+	 * CPointer&lt;Byte&gt; p_euler_order = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'reserved1'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'euler_order'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reserved1 = new long[]{8, 12};
+	public static final long[] __DNA__FIELD__euler_order = new long[]{8, 12};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mix_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bRotateLikeConstraint brotatelikeconstraint = ...;
+	 * CPointer&lt;Object&gt; p = brotatelikeconstraint.__dna__addressof(bRotateLikeConstraint.__DNA__FIELD__mix_mode);
+	 * CPointer&lt;Byte&gt; p_mix_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{9, 13};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bRotateLikeConstraint brotatelikeconstraint = ...;
+	 * CPointer&lt;Object&gt; p = brotatelikeconstraint.__dna__addressof(bRotateLikeConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{10, 14};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
@@ -182,30 +222,98 @@ public class bRotateLikeConstraint extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'reserved1'.
-	 * @see #__DNA__FIELD__reserved1
+	 * Get method for struct member 'euler_order'.
+	 * @see #__DNA__FIELD__euler_order
 	 */
 	
-	public int getReserved1() throws IOException
+	public byte getEuler_order() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readByte(__io__address + 12);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readByte(__io__address + 8);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'reserved1'.
-	 * @see #__DNA__FIELD__reserved1
+	 * Set method for struct member 'euler_order'.
+	 * @see #__DNA__FIELD__euler_order
 	 */
 	
-	public void setReserved1(int reserved1) throws IOException
+	public void setEuler_order(byte euler_order) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, reserved1);
+			__io__block.writeByte(__io__address + 12, euler_order);
 		} else {
-			__io__block.writeInt(__io__address + 8, reserved1);
+			__io__block.writeByte(__io__address + 8, euler_order);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mix_mode'.
+	 * @see #__DNA__FIELD__mix_mode
+	 */
+	
+	public byte getMix_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 13);
+		} else {
+			return __io__block.readByte(__io__address + 9);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_mode'.
+	 * @see #__DNA__FIELD__mix_mode
+	 */
+	
+	public void setMix_mode(byte mix_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 13, mix_mode);
+		} else {
+			__io__block.writeByte(__io__address + 9, mix_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 14;
+		} else {
+			__dna__offset = 10;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

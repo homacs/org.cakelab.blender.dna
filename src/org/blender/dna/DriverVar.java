@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Driver Variable (dvar)</p><p> A 'variable' for use as an input for the driver evaluation. Defines a way of accessing some channel to use, that can be referred to in the expression as a variable, thus simplifying expressions and also Depsgraph building. </p>
  */
 
-@CMetaData(size32=720, size64=792)
+@CMetaData(size32=784, size64=856)
 public class DriverVar extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class DriverVar extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 524;
+	public static final int __DNA__SDNA_INDEX = 530;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -111,7 +111,7 @@ public class DriverVar extends CFacade {
 	 * <ul>
 	 * <li>Field: 'targets'</li>
 	 * <li>Signature: 'DriverTarget[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 640/704</li>
+	 * <li>Actual Size (32bit/64bit): 704/768</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__targets = new long[]{72, 80};
@@ -137,7 +137,7 @@ public class DriverVar extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_targets = new long[]{712, 784};
+	public static final long[] __DNA__FIELD__num_targets = new long[]{776, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -160,7 +160,7 @@ public class DriverVar extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{713, 785};
+	public static final long[] __DNA__FIELD__type = new long[]{777, 849};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -183,7 +183,7 @@ public class DriverVar extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{714, 786};
+	public static final long[] __DNA__FIELD__flag = new long[]{778, 850};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curval'.
@@ -206,7 +206,7 @@ public class DriverVar extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curval = new long[]{716, 788};
+	public static final long[] __DNA__FIELD__curval = new long[]{780, 852};
 
 	public DriverVar(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -383,9 +383,9 @@ public class DriverVar extends CFacade {
 	public byte getNum_targets() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 784);
+			return __io__block.readByte(__io__address + 848);
 		} else {
-			return __io__block.readByte(__io__address + 712);
+			return __io__block.readByte(__io__address + 776);
 		}
 	}
 
@@ -400,9 +400,9 @@ public class DriverVar extends CFacade {
 	public void setNum_targets(byte num_targets) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 784, num_targets);
+			__io__block.writeByte(__io__address + 848, num_targets);
 		} else {
-			__io__block.writeByte(__io__address + 712, num_targets);
+			__io__block.writeByte(__io__address + 776, num_targets);
 		}
 	}
 
@@ -417,9 +417,9 @@ public class DriverVar extends CFacade {
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 785);
+			return __io__block.readByte(__io__address + 849);
 		} else {
-			return __io__block.readByte(__io__address + 713);
+			return __io__block.readByte(__io__address + 777);
 		}
 	}
 
@@ -434,9 +434,9 @@ public class DriverVar extends CFacade {
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 785, type);
+			__io__block.writeByte(__io__address + 849, type);
 		} else {
-			__io__block.writeByte(__io__address + 713, type);
+			__io__block.writeByte(__io__address + 777, type);
 		}
 	}
 
@@ -451,9 +451,9 @@ public class DriverVar extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 786);
+			return __io__block.readShort(__io__address + 850);
 		} else {
-			return __io__block.readShort(__io__address + 714);
+			return __io__block.readShort(__io__address + 778);
 		}
 	}
 
@@ -468,9 +468,9 @@ public class DriverVar extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 786, flag);
+			__io__block.writeShort(__io__address + 850, flag);
 		} else {
-			__io__block.writeShort(__io__address + 714, flag);
+			__io__block.writeShort(__io__address + 778, flag);
 		}
 	}
 
@@ -485,9 +485,9 @@ public class DriverVar extends CFacade {
 	public float getCurval() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 788);
+			return __io__block.readFloat(__io__address + 852);
 		} else {
-			return __io__block.readFloat(__io__address + 716);
+			return __io__block.readFloat(__io__address + 780);
 		}
 	}
 
@@ -502,9 +502,9 @@ public class DriverVar extends CFacade {
 	public void setCurval(float curval) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 788, curval);
+			__io__block.writeFloat(__io__address + 852, curval);
 		} else {
-			__io__block.writeFloat(__io__address + 716, curval);
+			__io__block.writeFloat(__io__address + 780, curval);
 		}
 	}
 

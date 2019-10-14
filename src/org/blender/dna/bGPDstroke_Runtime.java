@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  GP Strokes Runtime temp data for {@link bGPDstroke}  </p>
  */
 
-@CMetaData(size32=164, size64=164)
+@CMetaData(size32=172, size64=176)
 public class bGPDstroke_Runtime extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 466;
+	public static final int __DNA__SDNA_INDEX = 472;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_stroke_rgba'.
@@ -56,6 +56,9 @@ public class bGPDstroke_Runtime extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_fill_rgba'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime final fill colors (result of original colors and modifiers) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,6 +123,49 @@ public class bGPDstroke_Runtime extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD__multi_frame_falloff = new long[]{160, 160};
 
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{164, 164};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gps_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original stroke (used to dereference evaluated data) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD__gps_orig);
+	 * CPointer&lt;CPointer&lt;bGPDstroke&gt;&gt; p_gps_orig = p.cast(new Class[]{CPointer.class, bGPDstroke.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gps_orig'</li>
+	 * <li>Signature: 'bGPDstroke*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gps_orig = new long[]{168, 168};
+
 	public bGPDstroke_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -176,6 +222,9 @@ public class bGPDstroke_Runtime extends CFacade {
 
 	/**
 	 * Get method for struct member 'tmp_fill_rgba'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime final fill colors (result of original colors and modifiers) </p>
 	 * @see #__DNA__FIELD__tmp_fill_rgba
 	 */
 	
@@ -194,6 +243,9 @@ public class bGPDstroke_Runtime extends CFacade {
 
 	/**
 	 * Set method for struct member 'tmp_fill_rgba'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> runtime final fill colors (result of original colors and modifiers) </p>
 	 * @see #__DNA__FIELD__tmp_fill_rgba
 	 */
 	
@@ -291,6 +343,84 @@ public class bGPDstroke_Runtime extends CFacade {
 			__io__block.writeFloat(__io__address + 160, multi_frame_falloff);
 		} else {
 			__io__block.writeFloat(__io__address + 160, multi_frame_falloff);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 164;
+		} else {
+			__dna__offset = 164;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gps_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original stroke (used to dereference evaluated data) </p>
+	 * @see #__DNA__FIELD__gps_orig
+	 */
+	
+	public CPointer<bGPDstroke> getGps_orig() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bGPDstroke.class};
+		return new CPointer<bGPDstroke>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDstroke.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'gps_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original stroke (used to dereference evaluated data) </p>
+	 * @see #__DNA__FIELD__gps_orig
+	 */
+	
+	public void setGps_orig(CPointer<bGPDstroke> gps_orig) throws IOException
+	{
+		long __address = ((gps_orig == null) ? 0 : gps_orig.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 

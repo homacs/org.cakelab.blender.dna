@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Drivers --------------------------------<mdash/><mdash/>  Driver Target (dtar)</p><p> Defines how to access a dependency needed for a driver variable. </p>
  */
 
-@CMetaData(size32=80, size64=88)
+@CMetaData(size32=88, size64=96)
 public class DriverTarget extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class DriverTarget extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 523;
+	public static final int __DNA__SDNA_INDEX = 529;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -124,6 +124,50 @@ public class DriverTarget extends CFacade {
 	public static final long[] __DNA__FIELD__transChan = new long[]{72, 80};
 
 	/**
+	 * Field descriptor (offset) for struct member 'rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <p> Rotation channel calculation type. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DriverTarget drivertarget = ...;
+	 * CPointer&lt;Object&gt; p = drivertarget.__dna__addressof(DriverTarget.__DNA__FIELD__rotation_mode);
+	 * CPointer&lt;Byte&gt; p_rotation_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation_mode = new long[]{74, 82};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DriverTarget drivertarget = ...;
+	 * CPointer&lt;Object&gt; p = drivertarget.__dna__addressof(DriverTarget.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{75, 83};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -144,7 +188,7 @@ public class DriverTarget extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{74, 82};
+	public static final long[] __DNA__FIELD__flag = new long[]{82, 90};
 
 	/**
 	 * Field descriptor (offset) for struct member 'idtype'.
@@ -167,7 +211,7 @@ public class DriverTarget extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__idtype = new long[]{76, 84};
+	public static final long[] __DNA__FIELD__idtype = new long[]{84, 92};
 
 	public DriverTarget(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -336,6 +380,82 @@ public class DriverTarget extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <p> Rotation channel calculation type. </p>
+	 * @see #__DNA__FIELD__rotation_mode
+	 */
+	
+	public byte getRotation_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 82);
+		} else {
+			return __io__block.readByte(__io__address + 74);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mode for calculating rotation channel values<h4>Blender Source Code:</h4>
+	 * <p> Rotation channel calculation type. </p>
+	 * @see #__DNA__FIELD__rotation_mode
+	 */
+	
+	public void setRotation_mode(byte rotation_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 82, rotation_mode);
+		} else {
+			__io__block.writeByte(__io__address + 74, rotation_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 83, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 75, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 83;
+		} else {
+			__dna__offset = 75;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -346,9 +466,9 @@ public class DriverTarget extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 82);
+			return __io__block.readShort(__io__address + 90);
 		} else {
-			return __io__block.readShort(__io__address + 74);
+			return __io__block.readShort(__io__address + 82);
 		}
 	}
 
@@ -363,9 +483,9 @@ public class DriverTarget extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 82, flag);
+			__io__block.writeShort(__io__address + 90, flag);
 		} else {
-			__io__block.writeShort(__io__address + 74, flag);
+			__io__block.writeShort(__io__address + 82, flag);
 		}
 	}
 
@@ -380,9 +500,9 @@ public class DriverTarget extends CFacade {
 	public int getIdtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 84);
+			return __io__block.readInt(__io__address + 92);
 		} else {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 84);
 		}
 	}
 
@@ -397,9 +517,9 @@ public class DriverTarget extends CFacade {
 	public void setIdtype(int idtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 84, idtype);
+			__io__block.writeInt(__io__address + 92, idtype);
 		} else {
-			__io__block.writeInt(__io__address + 76, idtype);
+			__io__block.writeInt(__io__address + 84, idtype);
 		}
 	}
 

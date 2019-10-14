@@ -29,7 +29,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 472;
+	public static final int __DNA__SDNA_INDEX = 478;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ar'.
@@ -193,27 +193,29 @@ public class bGPdata_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__bfill_style = new long[]{44, 52};
 
 	/**
-	 * Field descriptor (offset) for struct member 'sbuffer_size'.
+	 * Field descriptor (offset) for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of total elements available in cache. </p>
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPdata_Runtime bgpdata_runtime = ...;
-	 * CPointer&lt;Object&gt; p = bgpdata_runtime.__dna__addressof(bGPdata_Runtime.__DNA__FIELD__sbuffer_size);
-	 * CPointer&lt;Short&gt; p_sbuffer_size = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = bgpdata_runtime.__dna__addressof(bGPdata_Runtime.__DNA__FIELD__sbuffer_used);
+	 * CPointer&lt;Short&gt; p_sbuffer_used = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'sbuffer_size'</li>
+	 * <li>Field: 'sbuffer_used'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sbuffer_size = new long[]{46, 54};
+	public static final long[] __DNA__FIELD__sbuffer_used = new long[]{46, 54};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer_sflag'.
@@ -239,6 +241,29 @@ public class bGPdata_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__sbuffer_sflag = new long[]{48, 56};
 
 	/**
+	 * Field descriptor (offset) for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of total elements available in cache. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata_Runtime bgpdata_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata_runtime.__dna__addressof(bGPdata_Runtime.__DNA__FIELD__sbuffer_size);
+	 * CPointer&lt;Short&gt; p_sbuffer_size = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sbuffer_size'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sbuffer_size = new long[]{50, 58};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,11 +277,11 @@ public class bGPdata_Runtime extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{50, 58};
+	public static final long[] __DNA__FIELD___pad = new long[]{52, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_cp_points'.
@@ -603,14 +628,16 @@ public class bGPdata_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'sbuffer_size'.
+	 * Get method for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of total elements available in cache. </p>
-	 * @see #__DNA__FIELD__sbuffer_size
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. 
+	 * </p>
+	 * @see #__DNA__FIELD__sbuffer_used
 	 */
 	
-	public short getSbuffer_size() throws IOException
+	public short getSbuffer_used() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 54);
@@ -620,19 +647,21 @@ public class bGPdata_Runtime extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'sbuffer_size'.
+	 * Set method for struct member 'sbuffer_used'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of total elements available in cache. </p>
-	 * @see #__DNA__FIELD__sbuffer_size
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is overNumber of elements currently used in cache. 
+	 * </p>
+	 * @see #__DNA__FIELD__sbuffer_used
 	 */
 	
-	public void setSbuffer_size(short sbuffer_size) throws IOException
+	public void setSbuffer_used(short sbuffer_used) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 54, sbuffer_size);
+			__io__block.writeShort(__io__address + 54, sbuffer_used);
 		} else {
-			__io__block.writeShort(__io__address + 46, sbuffer_size);
+			__io__block.writeShort(__io__address + 46, sbuffer_used);
 		}
 	}
 
@@ -671,6 +700,40 @@ public class bGPdata_Runtime extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of total elements available in cache. </p>
+	 * @see #__DNA__FIELD__sbuffer_size
+	 */
+	
+	public short getSbuffer_size() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 58);
+		} else {
+			return __io__block.readShort(__io__address + 50);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sbuffer_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Number of total elements available in cache. </p>
+	 * @see #__DNA__FIELD__sbuffer_size
+	 */
+	
+	public void setSbuffer_size(short sbuffer_size) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 58, sbuffer_size);
+		} else {
+			__io__block.writeShort(__io__address + 50, sbuffer_size);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -679,12 +742,12 @@ public class bGPdata_Runtime extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 50, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -697,9 +760,9 @@ public class bGPdata_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 58;
+			__dna__offset = 60;
 		} else {
-			__dna__offset = 50;
+			__dna__offset = 52;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

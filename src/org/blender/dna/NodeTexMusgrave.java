@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +26,7 @@ public class NodeTexMusgrave extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 410;
+	public static final int __DNA__SDNA_INDEX = 413;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -70,24 +69,24 @@ public class NodeTexMusgrave extends CFacade {
 	public static final long[] __DNA__FIELD__musgrave_type = new long[]{956, 960};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'dimensions'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeTexMusgrave nodetexmusgrave = ...;
-	 * CPointer&lt;Object&gt; p = nodetexmusgrave.__dna__addressof(NodeTexMusgrave.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = nodetexmusgrave.__dna__addressof(NodeTexMusgrave.__DNA__FIELD__dimensions);
+	 * CPointer&lt;Integer&gt; p_dimensions = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'dimensions'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{960, 964};
+	public static final long[] __DNA__FIELD__dimensions = new long[]{960, 964};
 
 	public NodeTexMusgrave(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -162,42 +161,30 @@ public class NodeTexMusgrave extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'dimensions'.
+	 * @see #__DNA__FIELD__dimensions
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getDimensions() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 964, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 964);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 960);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'dimensions'.
+	 * @see #__DNA__FIELD__dimensions
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setDimensions(int dimensions) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 964;
+			__io__block.writeInt(__io__address + 964, dimensions);
 		} else {
-			__dna__offset = 960;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 960, dimensions);
 		}
 	}
 

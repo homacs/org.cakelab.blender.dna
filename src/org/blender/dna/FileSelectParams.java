@@ -28,7 +28,7 @@ public class FileSelectParams extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 226;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
@@ -428,30 +428,30 @@ public class FileSelectParams extends CFacade {
 	public static final long[] __DNA__FIELD__display = new long[]{2050, 2050};
 
 	/**
-	 * Field descriptor (offset) for struct member 'display_previous'.
+	 * Field descriptor (offset) for struct member 'details_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Details toggles (file size, creation date, etc.) </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * FileSelectParams fileselectparams = ...;
-	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD__display_previous);
-	 * CPointer&lt;Short&gt; p_display_previous = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = fileselectparams.__dna__addressof(FileSelectParams.__DNA__FIELD__details_flags);
+	 * CPointer&lt;Byte&gt; p_details_flags = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'display_previous'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: 'details_flags'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display_previous = new long[]{2052, 2052};
+	public static final long[] __DNA__FIELD__details_flags = new long[]{2052, 2052};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -464,14 +464,17 @@ public class FileSelectParams extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{2054, 2054};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{2053, 2053};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1231,38 +1234,41 @@ public class FileSelectParams extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'display_previous'.
-	 * @see #__DNA__FIELD__display_previous
+	 * Get method for struct member 'details_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Details toggles (file size, creation date, etc.) </p>
+	 * @see #__DNA__FIELD__details_flags
 	 */
 	
-	public short getDisplay_previous() throws IOException
+	public byte getDetails_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2052);
+			return __io__block.readByte(__io__address + 2052);
 		} else {
-			return __io__block.readShort(__io__address + 2052);
+			return __io__block.readByte(__io__address + 2052);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'display_previous'.
-	 * @see #__DNA__FIELD__display_previous
+	 * Set method for struct member 'details_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Details toggles (file size, creation date, etc.) </p>
+	 * @see #__DNA__FIELD__details_flags
 	 */
 	
-	public void setDisplay_previous(short display_previous) throws IOException
+	public void setDetails_flags(byte details_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2052, display_previous);
+			__io__block.writeByte(__io__address + 2052, details_flags);
 		} else {
-			__io__block.writeShort(__io__address + 2052, display_previous);
+			__io__block.writeByte(__io__address + 2052, details_flags);
 		}
 	}
 
 	/**
 	 * Get method for struct member '_pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
 	
@@ -1270,20 +1276,17 @@ public class FileSelectParams extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2054, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2053, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2054, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2053, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member '_pad2'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD___pad2
 	 */
 	
@@ -1291,9 +1294,9 @@ public class FileSelectParams extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2054;
+			__dna__offset = 2053;
 		} else {
-			__dna__offset = 2054;
+			__dna__offset = 2053;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1306,6 +1309,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Get method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	
@@ -1320,6 +1326,9 @@ public class FileSelectParams extends CFacade {
 
 	/**
 	 * Set method for struct member 'filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Filter when (flags & FILE_FILTER) is true. </p>
 	 * @see #__DNA__FIELD__filter
 	 */
 	

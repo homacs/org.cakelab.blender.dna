@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> this state defines appearance of text </p>
+ * <p> This state defines appearance of text. </p>
  */
 
 @CMetaData(size32=24, size64=24)
@@ -27,7 +27,7 @@ public class uiFontStyle extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 239;
+	public static final int __DNA__SDNA_INDEX = 240;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uifont_id'.

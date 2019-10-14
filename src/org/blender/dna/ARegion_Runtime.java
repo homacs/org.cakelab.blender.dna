@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=4, size64=8)
+@CMetaData(size32=20, size64=24)
 public class ARegion_Runtime extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 270;
+	public static final int __DNA__SDNA_INDEX = 273;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
@@ -50,6 +50,29 @@ public class ARegion_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__category = new long[]{0, 0};
+
+	/**
+	 * Field descriptor (offset) for struct member 'visible_rect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion_Runtime aregion_runtime = ...;
+	 * CPointer&lt;Object&gt; p = aregion_runtime.__dna__addressof(ARegion_Runtime.__DNA__FIELD__visible_rect);
+	 * CPointer&lt;rcti&gt; p_visible_rect = p.cast(new Class[]{rcti.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'visible_rect'</li>
+	 * <li>Signature: 'rcti'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__visible_rect = new long[]{4, 8};
 
 	public ARegion_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -94,6 +117,48 @@ public class ARegion_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 0, __address);
 		} else {
 			__io__block.writeLong(__io__address + 0, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'visible_rect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * @see #__DNA__FIELD__visible_rect
+	 */
+	
+	public rcti getVisible_rect() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new rcti(__io__address + 8, __io__block, __io__blockTable);
+		} else {
+			return new rcti(__io__address + 4, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'visible_rect'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The visible part of the region, use with region overlap not to draw on top of the overlapping regions.</p><p> Lazy initialize, zero'd when unset, relative to {@link ARegion.winrct}  x/y min. </p>
+	 * @see #__DNA__FIELD__visible_rect
+	 */
+	
+	public void setVisible_rect(rcti visible_rect) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 8;
+		} else {
+			__dna__offset = 4;
+		}
+		if (__io__equals(visible_rect, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, visible_rect)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, visible_rect);
+		} else {
+			__io__generic__copy( getVisible_rect(), visible_rect);
 		}
 	}
 

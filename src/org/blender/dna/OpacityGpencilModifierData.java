@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=244, size64=256)
+@CMetaData(size32=308, size64=320)
 public class OpacityGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 482;
+	public static final int __DNA__SDNA_INDEX = 488;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -73,6 +73,29 @@ public class OpacityGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layername = new long[]{92, 104};
 
 	/**
+	 * Field descriptor (offset) for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OpacityGpencilModifierData opacitygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD__materialname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_materialname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'materialname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__materialname = new long[]{156, 168};
+
+	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -93,7 +116,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__vgname = new long[]{220, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -116,7 +139,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{220, 232};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{284, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -139,7 +162,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{224, 236};
+	public static final long[] __DNA__FIELD__flag = new long[]{288, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -162,7 +185,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{228, 240};
+	public static final long[] __DNA__FIELD__factor = new long[]{292, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'modify_color'.
@@ -185,7 +208,30 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__modify_color = new long[]{232, 244};
+	public static final long[] __DNA__FIELD__modify_color = new long[]{296, 308};
+
+	/**
+	 * Field descriptor (offset) for struct member 'opacity_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode of opacity, colors or strength </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OpacityGpencilModifierData opacitygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD__opacity_mode);
+	 * CPointer&lt;Byte&gt; p_opacity_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'opacity_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__opacity_mode = new long[]{297, 309};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -201,11 +247,11 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{233, 245};
+	public static final long[] __DNA__FIELD___pad = new long[]{298, 310};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -228,7 +274,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{236, 248};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{300, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -248,7 +294,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{240, 252};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{304, 316};
 
 	public OpacityGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -341,6 +387,52 @@ public class OpacityGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public CArrayFacade<Byte> getMaterialname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'materialname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  name. </p>
+	 * @see #__DNA__FIELD__materialname
+	 */
+	
+	public void setMaterialname(CArrayFacade<Byte> materialname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 168;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(materialname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, materialname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
+		} else {
+			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'vgname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -355,9 +447,9 @@ public class OpacityGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -373,9 +465,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 220;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -397,9 +489,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 284);
 		}
 	}
 
@@ -414,9 +506,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, pass_index);
+			__io__block.writeInt(__io__address + 296, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 220, pass_index);
+			__io__block.writeInt(__io__address + 284, pass_index);
 		}
 	}
 
@@ -431,9 +523,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 300);
 		} else {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 288);
 		}
 	}
 
@@ -448,9 +540,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, flag);
+			__io__block.writeInt(__io__address + 300, flag);
 		} else {
-			__io__block.writeInt(__io__address + 224, flag);
+			__io__block.writeInt(__io__address + 288, flag);
 		}
 	}
 
@@ -465,9 +557,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -482,9 +574,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 240, factor);
+			__io__block.writeFloat(__io__address + 304, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 228, factor);
+			__io__block.writeFloat(__io__address + 292, factor);
 		}
 	}
 
@@ -499,9 +591,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public byte getModify_color() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 244);
+			return __io__block.readByte(__io__address + 308);
 		} else {
-			return __io__block.readByte(__io__address + 232);
+			return __io__block.readByte(__io__address + 296);
 		}
 	}
 
@@ -516,9 +608,43 @@ public class OpacityGpencilModifierData extends CFacade {
 	public void setModify_color(byte modify_color) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 244, modify_color);
+			__io__block.writeByte(__io__address + 308, modify_color);
 		} else {
-			__io__block.writeByte(__io__address + 232, modify_color);
+			__io__block.writeByte(__io__address + 296, modify_color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'opacity_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode of opacity, colors or strength </p>
+	 * @see #__DNA__FIELD__opacity_mode
+	 */
+	
+	public byte getOpacity_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 309);
+		} else {
+			return __io__block.readByte(__io__address + 297);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'opacity_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode of opacity, colors or strength </p>
+	 * @see #__DNA__FIELD__opacity_mode
+	 */
+	
+	public void setOpacity_mode(byte opacity_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 309, opacity_mode);
+		} else {
+			__io__block.writeByte(__io__address + 297, opacity_mode);
 		}
 	}
 
@@ -531,12 +657,12 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 245, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 310, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 233, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -549,9 +675,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 245;
+			__dna__offset = 310;
 		} else {
-			__dna__offset = 233;
+			__dna__offset = 298;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -573,9 +699,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 312);
 		} else {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 300);
 		}
 	}
 
@@ -590,9 +716,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 248, layer_pass);
+			__io__block.writeInt(__io__address + 312, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 236, layer_pass);
+			__io__block.writeInt(__io__address + 300, layer_pass);
 		}
 	}
 
@@ -608,9 +734,9 @@ public class OpacityGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -623,9 +749,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 252;
+			__dna__offset = 316;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 304;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;

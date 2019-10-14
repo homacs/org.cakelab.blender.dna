@@ -31,13 +31,13 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 280;
+	public static final short BLENDER_VERSION = 281;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 75;
+	public static final short BLENDER_SUBVERSION = 15;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.

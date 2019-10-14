@@ -27,7 +27,7 @@ public class bNodeSocket extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 362;
+	public static final int __DNA__SDNA_INDEX = 365;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -425,24 +425,24 @@ public class bNodeSocket extends CFacade {
 	public static final long[] __DNA__FIELD__stack_type = new long[]{238, 266};
 
 	/**
-	 * Field descriptor (offset) for struct member 'draw_shape'.
+	 * Field descriptor (offset) for struct member 'display_shape'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeSocket bnodesocket = ...;
-	 * CPointer&lt;Object&gt; p = bnodesocket.__dna__addressof(bNodeSocket.__DNA__FIELD__draw_shape);
-	 * CPointer&lt;Byte&gt; p_draw_shape = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = bnodesocket.__dna__addressof(bNodeSocket.__DNA__FIELD__display_shape);
+	 * CPointer&lt;Byte&gt; p_display_shape = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'draw_shape'</li>
+	 * <li>Field: 'display_shape'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_shape = new long[]{240, 268};
+	public static final long[] __DNA__FIELD__display_shape = new long[]{240, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -1257,11 +1257,11 @@ public class bNodeSocket extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'draw_shape'.
-	 * @see #__DNA__FIELD__draw_shape
+	 * Get method for struct member 'display_shape'.
+	 * @see #__DNA__FIELD__display_shape
 	 */
 	
-	public byte getDraw_shape() throws IOException
+	public byte getDisplay_shape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 268);
@@ -1271,16 +1271,16 @@ public class bNodeSocket extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'draw_shape'.
-	 * @see #__DNA__FIELD__draw_shape
+	 * Set method for struct member 'display_shape'.
+	 * @see #__DNA__FIELD__display_shape
 	 */
 	
-	public void setDraw_shape(byte draw_shape) throws IOException
+	public void setDisplay_shape(byte display_shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 268, draw_shape);
+			__io__block.writeByte(__io__address + 268, display_shape);
 		} else {
-			__io__block.writeByte(__io__address + 240, draw_shape);
+			__io__block.writeByte(__io__address + 240, display_shape);
 		}
 	}
 

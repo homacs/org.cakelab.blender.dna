@@ -28,7 +28,7 @@ public class LightCacheTexture extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 643;
+	public static final int __DNA__SDNA_INDEX = 649;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex'.
