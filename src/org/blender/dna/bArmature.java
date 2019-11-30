@@ -27,7 +27,7 @@ public class bArmature extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 314;
+	public static final int __DNA__SDNA_INDEX = 311;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -204,6 +204,49 @@ public class bArmature extends CFacade {
 	public static final long[] __DNA__FIELD__act_edbone = new long[]{148, 208};
 
 	/**
+	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bArmature barmature = ...;
+	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__needs_flush_to_id);
+	 * CPointer&lt;Byte&gt; p_needs_flush_to_id = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'needs_flush_to_id'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__needs_flush_to_id = new long[]{152, 216};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bArmature barmature = ...;
+	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{153, 217};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -221,7 +264,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{152, 216};
+	public static final long[] __DNA__FIELD__flag = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawtype'.
@@ -241,50 +284,7 @@ public class bArmature extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawtype = new long[]{156, 220};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gevertdeformer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> How vertex deformation is handled in the ge. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD__gevertdeformer);
-	 * CPointer&lt;Integer&gt; p_gevertdeformer = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gevertdeformer'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gevertdeformer = new long[]{160, 224};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bArmature barmature = ...;
-	 * CPointer&lt;Object&gt; p = barmature.__dna__addressof(bArmature.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{164, 228};
+	public static final long[] __DNA__FIELD__drawtype = new long[]{164, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'deformflag'.
@@ -693,6 +693,80 @@ public class bArmature extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
+	 * @see #__DNA__FIELD__needs_flush_to_id
+	 */
+	
+	public byte getNeeds_flush_to_id() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 216);
+		} else {
+			return __io__block.readByte(__io__address + 152);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). </p>
+	 * @see #__DNA__FIELD__needs_flush_to_id
+	 */
+	
+	public void setNeeds_flush_to_id(byte needs_flush_to_id) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 216, needs_flush_to_id);
+		} else {
+			__io__block.writeByte(__io__address + 152, needs_flush_to_id);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 217, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 153, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 217;
+		} else {
+			__dna__offset = 153;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
@@ -700,9 +774,9 @@ public class bArmature extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -714,9 +788,9 @@ public class bArmature extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, flag);
+			__io__block.writeInt(__io__address + 224, flag);
 		} else {
-			__io__block.writeInt(__io__address + 152, flag);
+			__io__block.writeInt(__io__address + 160, flag);
 		}
 	}
 
@@ -728,9 +802,9 @@ public class bArmature extends CFacade {
 	public int getDrawtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -742,83 +816,9 @@ public class bArmature extends CFacade {
 	public void setDrawtype(int drawtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, drawtype);
+			__io__block.writeInt(__io__address + 228, drawtype);
 		} else {
-			__io__block.writeInt(__io__address + 156, drawtype);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gevertdeformer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> How vertex deformation is handled in the ge. </p>
-	 * @see #__DNA__FIELD__gevertdeformer
-	 */
-	
-	public int getGevertdeformer() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
-		} else {
-			return __io__block.readInt(__io__address + 160);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gevertdeformer'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> How vertex deformation is handled in the ge. </p>
-	 * @see #__DNA__FIELD__gevertdeformer
-	 */
-	
-	public void setGevertdeformer(int gevertdeformer) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, gevertdeformer);
-		} else {
-			__io__block.writeInt(__io__address + 160, gevertdeformer);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 228;
-		} else {
-			__dna__offset = 164;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 164, drawtype);
 		}
 	}
 

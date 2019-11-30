@@ -27,7 +27,7 @@ public class Camera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 33;
+	public static final int __DNA__SDNA_INDEX = 31;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

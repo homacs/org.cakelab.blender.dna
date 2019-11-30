@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D ViewPort Struct. </p>
  */
 
-@CMetaData(size32=1192, size64=1240)
+@CMetaData(size32=1176, size64=1216)
 public class View3D extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 216;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1056,29 +1056,6 @@ public class View3D extends CFacade {
 	public static final long[] __DNA__FIELD__vertex_opacity = new long[]{224, 252};
 
 	/**
-	 * Field descriptor (offset) for struct member 'fx_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * View3D view3d = ...;
-	 * CPointer&lt;Object&gt; p = view3d.__dna__addressof(View3D.__DNA__FIELD__fx_settings);
-	 * CPointer&lt;GPUFXSettings&gt; p_fx_settings = p.cast(new Class[]{GPUFXSettings.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'fx_settings'</li>
-	 * <li>Signature: 'GPUFXSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 16/24</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__fx_settings = new long[]{228, 256};
-
-	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1101,7 +1078,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{244, 280};
+	public static final long[] __DNA__FIELD__gpd = new long[]{228, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_flag'.
@@ -1124,7 +1101,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_flag = new long[]{248, 288};
+	public static final long[] __DNA__FIELD__stereo3d_flag = new long[]{232, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_camera'.
@@ -1144,7 +1121,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_camera = new long[]{250, 290};
+	public static final long[] __DNA__FIELD__stereo3d_camera = new long[]{234, 266};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad4'.
@@ -1164,7 +1141,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{251, 291};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{235, 267};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_convergence_factor'.
@@ -1184,7 +1161,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_convergence_factor = new long[]{252, 292};
+	public static final long[] __DNA__FIELD__stereo3d_convergence_factor = new long[]{236, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_volume_alpha'.
@@ -1204,7 +1181,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_volume_alpha = new long[]{256, 296};
+	public static final long[] __DNA__FIELD__stereo3d_volume_alpha = new long[]{240, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stereo3d_convergence_alpha'.
@@ -1224,7 +1201,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stereo3d_convergence_alpha = new long[]{260, 300};
+	public static final long[] __DNA__FIELD__stereo3d_convergence_alpha = new long[]{244, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
@@ -1247,7 +1224,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 860/864</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shading = new long[]{264, 304};
+	public static final long[] __DNA__FIELD__shading = new long[]{248, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlay'.
@@ -1267,7 +1244,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay = new long[]{1124, 1168};
+	public static final long[] __DNA__FIELD__overlay = new long[]{1108, 1144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -1290,7 +1267,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1188, 1232};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1172, 1208};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2907,48 +2884,6 @@ public class View3D extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'fx_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
-	 * @see #__DNA__FIELD__fx_settings
-	 */
-	
-	public GPUFXSettings getFx_settings() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new GPUFXSettings(__io__address + 256, __io__block, __io__blockTable);
-		} else {
-			return new GPUFXSettings(__io__address + 228, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'fx_settings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><em></em>  allocated, instead set (temporarily) from camera </p>
-	 * @see #__DNA__FIELD__fx_settings
-	 */
-	
-	public void setFx_settings(GPUFXSettings fx_settings) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
-		} else {
-			__dna__offset = 228;
-		}
-		if (__io__equals(fx_settings, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, fx_settings)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, fx_settings);
-		} else {
-			__io__generic__copy( getFx_settings(), fx_settings);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'gpd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -2962,9 +2897,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+			__dna__targetAddress = __io__block.readLong(__io__address + 228);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2984,9 +2919,9 @@ public class View3D extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 244, __address);
+			__io__block.writeLong(__io__address + 228, __address);
 		}
 	}
 
@@ -3001,9 +2936,9 @@ public class View3D extends CFacade {
 	public short getStereo3d_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 288);
+			return __io__block.readShort(__io__address + 264);
 		} else {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -3018,9 +2953,9 @@ public class View3D extends CFacade {
 	public void setStereo3d_flag(short stereo3d_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 288, stereo3d_flag);
+			__io__block.writeShort(__io__address + 264, stereo3d_flag);
 		} else {
-			__io__block.writeShort(__io__address + 248, stereo3d_flag);
+			__io__block.writeShort(__io__address + 232, stereo3d_flag);
 		}
 	}
 
@@ -3032,9 +2967,9 @@ public class View3D extends CFacade {
 	public byte getStereo3d_camera() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 290);
+			return __io__block.readByte(__io__address + 266);
 		} else {
-			return __io__block.readByte(__io__address + 250);
+			return __io__block.readByte(__io__address + 234);
 		}
 	}
 
@@ -3046,9 +2981,9 @@ public class View3D extends CFacade {
 	public void setStereo3d_camera(byte stereo3d_camera) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 290, stereo3d_camera);
+			__io__block.writeByte(__io__address + 266, stereo3d_camera);
 		} else {
-			__io__block.writeByte(__io__address + 250, stereo3d_camera);
+			__io__block.writeByte(__io__address + 234, stereo3d_camera);
 		}
 	}
 
@@ -3060,9 +2995,9 @@ public class View3D extends CFacade {
 	public byte get_pad4() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 291);
+			return __io__block.readByte(__io__address + 267);
 		} else {
-			return __io__block.readByte(__io__address + 251);
+			return __io__block.readByte(__io__address + 235);
 		}
 	}
 
@@ -3074,9 +3009,9 @@ public class View3D extends CFacade {
 	public void set_pad4(byte _pad4) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 291, _pad4);
+			__io__block.writeByte(__io__address + 267, _pad4);
 		} else {
-			__io__block.writeByte(__io__address + 251, _pad4);
+			__io__block.writeByte(__io__address + 235, _pad4);
 		}
 	}
 
@@ -3088,9 +3023,9 @@ public class View3D extends CFacade {
 	public float getStereo3d_convergence_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 236);
 		}
 	}
 
@@ -3102,9 +3037,9 @@ public class View3D extends CFacade {
 	public void setStereo3d_convergence_factor(float stereo3d_convergence_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 292, stereo3d_convergence_factor);
+			__io__block.writeFloat(__io__address + 268, stereo3d_convergence_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 252, stereo3d_convergence_factor);
+			__io__block.writeFloat(__io__address + 236, stereo3d_convergence_factor);
 		}
 	}
 
@@ -3116,9 +3051,9 @@ public class View3D extends CFacade {
 	public float getStereo3d_volume_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 272);
 		} else {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -3130,9 +3065,9 @@ public class View3D extends CFacade {
 	public void setStereo3d_volume_alpha(float stereo3d_volume_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 296, stereo3d_volume_alpha);
+			__io__block.writeFloat(__io__address + 272, stereo3d_volume_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 256, stereo3d_volume_alpha);
+			__io__block.writeFloat(__io__address + 240, stereo3d_volume_alpha);
 		}
 	}
 
@@ -3144,9 +3079,9 @@ public class View3D extends CFacade {
 	public float getStereo3d_convergence_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 276);
 		} else {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -3158,9 +3093,9 @@ public class View3D extends CFacade {
 	public void setStereo3d_convergence_alpha(float stereo3d_convergence_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, stereo3d_convergence_alpha);
+			__io__block.writeFloat(__io__address + 276, stereo3d_convergence_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 260, stereo3d_convergence_alpha);
+			__io__block.writeFloat(__io__address + 244, stereo3d_convergence_alpha);
 		}
 	}
 
@@ -3175,9 +3110,9 @@ public class View3D extends CFacade {
 	public View3DShading getShading() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3DShading(__io__address + 304, __io__block, __io__blockTable);
+			return new View3DShading(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new View3DShading(__io__address + 264, __io__block, __io__blockTable);
+			return new View3DShading(__io__address + 248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3193,9 +3128,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 264;
+			__dna__offset = 248;
 		}
 		if (__io__equals(shading, __io__address + __dna__offset)) {
 			return;
@@ -3214,9 +3149,9 @@ public class View3D extends CFacade {
 	public View3DOverlay getOverlay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3DOverlay(__io__address + 1168, __io__block, __io__blockTable);
+			return new View3DOverlay(__io__address + 1144, __io__block, __io__blockTable);
 		} else {
-			return new View3DOverlay(__io__address + 1124, __io__block, __io__blockTable);
+			return new View3DOverlay(__io__address + 1108, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3229,9 +3164,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1168;
+			__dna__offset = 1144;
 		} else {
-			__dna__offset = 1124;
+			__dna__offset = 1108;
 		}
 		if (__io__equals(overlay, __io__address + __dna__offset)) {
 			return;
@@ -3253,9 +3188,9 @@ public class View3D extends CFacade {
 	public View3D_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3D_Runtime(__io__address + 1232, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1208, __io__block, __io__blockTable);
 		} else {
-			return new View3D_Runtime(__io__address + 1188, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1172, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3271,9 +3206,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1232;
+			__dna__offset = 1208;
 		} else {
-			__dna__offset = 1188;
+			__dna__offset = 1172;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

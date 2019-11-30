@@ -27,7 +27,7 @@ public class MetaBall extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 53;
+	public static final int __DNA__SDNA_INDEX = 51;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -280,11 +280,34 @@ public class MetaBall extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{158, 222};
+
+	/**
+	 * Field descriptor (offset) for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MetaBall metaball = ...;
+	 * CPointer&lt;Object&gt; p = metaball.__dna__addressof(MetaBall.__DNA__FIELD__needs_flush_to_id);
+	 * CPointer&lt;Byte&gt; p_needs_flush_to_id = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'needs_flush_to_id'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__needs_flush_to_id = new long[]{159, 223};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -857,7 +880,7 @@ public class MetaBall extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			1
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 222, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -885,6 +908,40 @@ public class MetaBall extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
+	 * @see #__DNA__FIELD__needs_flush_to_id
+	 */
+	
+	public byte getNeeds_flush_to_id() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 223);
+		} else {
+			return __io__block.readByte(__io__address + 159);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'needs_flush_to_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ID}  data is older than edit-mode data (TODO: move to edit-mode struct). Set #Main.is_memfile_undo_flush_needed when enabling. </p>
+	 * @see #__DNA__FIELD__needs_flush_to_id
+	 */
+	
+	public void setNeeds_flush_to_id(byte needs_flush_to_id) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 223, needs_flush_to_id);
+		} else {
+			__io__block.writeByte(__io__address + 159, needs_flush_to_id);
 		}
 	}
 

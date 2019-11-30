@@ -29,7 +29,7 @@ public class Sculpt extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 192;
+	public static final int __DNA__SDNA_INDEX = 189;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint'.

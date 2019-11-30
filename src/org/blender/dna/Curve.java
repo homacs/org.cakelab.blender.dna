@@ -27,7 +27,7 @@ public class Curve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 60;
+	public static final int __DNA__SDNA_INDEX = 57;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -107,7 +107,7 @@ public class Curve extends CFacade {
 	 * <pre>
 	 * Curve curve = ...;
 	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__editnurb);
-	 * CPointer&lt;CPointer&lt;EditNurb&gt;&gt; p_editnurb = p.cast(new Class[]{CPointer.class, EditNurb.class});
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_editnurb = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
@@ -1634,7 +1634,7 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__editnurb
 	 */
 	
-	public CPointer<EditNurb> getEditnurb() throws IOException
+	public CPointer<Object> getEditnurb() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1642,8 +1642,8 @@ public class Curve extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{EditNurb.class};
-		return new CPointer<EditNurb>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EditNurb.__DNA__SDNA_INDEX), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
 	}
 
 	/**
@@ -1654,7 +1654,7 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD__editnurb
 	 */
 	
-	public void setEditnurb(CPointer<EditNurb> editnurb) throws IOException
+	public void setEditnurb(CPointer<Object> editnurb) throws IOException
 	{
 		long __address = ((editnurb == null) ? 0 : editnurb.getAddress());
 		if ((__io__pointersize == 8)) {
