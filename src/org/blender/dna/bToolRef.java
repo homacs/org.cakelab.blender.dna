@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Stored per mode. </p>
  */
 
-@CMetaData(size32=88, size64=104)
+@CMetaData(size32=152, size64=168)
 public class bToolRef extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bToolRef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 637;
+	public static final int __DNA__SDNA_INDEX = 644;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -91,6 +91,29 @@ public class bToolRef extends CFacade {
 	public static final long[] __DNA__FIELD__idname = new long[]{8, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member 'idname_fallback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bToolRef btoolref = ...;
+	 * CPointer&lt;Object&gt; p = btoolref.__dna__addressof(bToolRef.__DNA__FIELD__idname_fallback);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_idname_fallback = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'idname_fallback'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__idname_fallback = new long[]{72, 80};
+
+	/**
 	 * Field descriptor (offset) for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -111,7 +134,7 @@ public class bToolRef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tag = new long[]{72, 80};
+	public static final long[] __DNA__FIELD__tag = new long[]{136, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'space_type'.
@@ -134,7 +157,7 @@ public class bToolRef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space_type = new long[]{74, 82};
+	public static final long[] __DNA__FIELD__space_type = new long[]{138, 146};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -157,7 +180,7 @@ public class bToolRef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{76, 84};
+	public static final long[] __DNA__FIELD__mode = new long[]{140, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
@@ -180,7 +203,7 @@ public class bToolRef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{80, 88};
+	public static final long[] __DNA__FIELD__properties = new long[]{144, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -203,7 +226,7 @@ public class bToolRef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{84, 96};
+	public static final long[] __DNA__FIELD__runtime = new long[]{148, 160};
 
 	public bToolRef(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -318,6 +341,52 @@ public class bToolRef extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'idname_fallback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
+	 * @see #__DNA__FIELD__idname_fallback
+	 */
+	
+	public CArrayFacade<Byte> getIdname_fallback() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'idname_fallback'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optionally use these when not interacting directly with the primary tools gizmo. </p>
+	 * @see #__DNA__FIELD__idname_fallback
+	 */
+	
+	public void setIdname_fallback(CArrayFacade<Byte> idname_fallback) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 80;
+		} else {
+			__dna__offset = 72;
+		}
+		if (__io__equals(idname_fallback, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, idname_fallback)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, idname_fallback);
+		} else {
+			__io__generic__copy( getIdname_fallback(), idname_fallback);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'tag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -328,9 +397,9 @@ public class bToolRef extends CFacade {
 	public short getTag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 80);
+			return __io__block.readShort(__io__address + 144);
 		} else {
-			return __io__block.readShort(__io__address + 72);
+			return __io__block.readShort(__io__address + 136);
 		}
 	}
 
@@ -345,9 +414,9 @@ public class bToolRef extends CFacade {
 	public void setTag(short tag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 80, tag);
+			__io__block.writeShort(__io__address + 144, tag);
 		} else {
-			__io__block.writeShort(__io__address + 72, tag);
+			__io__block.writeShort(__io__address + 136, tag);
 		}
 	}
 
@@ -362,9 +431,9 @@ public class bToolRef extends CFacade {
 	public short getSpace_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 82);
+			return __io__block.readShort(__io__address + 146);
 		} else {
-			return __io__block.readShort(__io__address + 74);
+			return __io__block.readShort(__io__address + 138);
 		}
 	}
 
@@ -379,9 +448,9 @@ public class bToolRef extends CFacade {
 	public void setSpace_type(short space_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 82, space_type);
+			__io__block.writeShort(__io__address + 146, space_type);
 		} else {
-			__io__block.writeShort(__io__address + 74, space_type);
+			__io__block.writeShort(__io__address + 138, space_type);
 		}
 	}
 
@@ -396,9 +465,9 @@ public class bToolRef extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 84);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 76);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -413,9 +482,9 @@ public class bToolRef extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 84, mode);
+			__io__block.writeInt(__io__address + 148, mode);
 		} else {
-			__io__block.writeInt(__io__address + 76, mode);
+			__io__block.writeInt(__io__address + 140, mode);
 		}
 	}
 
@@ -431,9 +500,9 @@ public class bToolRef extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -451,9 +520,9 @@ public class bToolRef extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -469,9 +538,9 @@ public class bToolRef extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 84);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -489,9 +558,9 @@ public class bToolRef extends CFacade {
 	{
 		long __address = ((runtime == null) ? 0 : runtime.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 84, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 

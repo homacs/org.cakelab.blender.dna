@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Action Constraint </p>
  */
 
-@CMetaData(size32=96, size64=104)
+@CMetaData(size32=104, size64=112)
 public class bActionConstraint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bActionConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 340;
+	public static final int __DNA__SDNA_INDEX = 344;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -197,6 +197,46 @@ public class bActionConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{24, 28};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mix_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bActionConstraint bactionconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bactionconstraint.__dna__addressof(bActionConstraint.__DNA__FIELD__mix_mode);
+	 * CPointer&lt;Byte&gt; p_mix_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mix_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{28, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bActionConstraint bactionconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bactionconstraint.__dna__addressof(bActionConstraint.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{29, 33};
+
+	/**
 	 * Field descriptor (offset) for struct member 'act'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -214,7 +254,7 @@ public class bActionConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__act = new long[]{36, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
@@ -237,7 +277,7 @@ public class bActionConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{32, 40};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{40, 48};
 
 	public bActionConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -488,6 +528,74 @@ public class bActionConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mix_mode'.
+	 * @see #__DNA__FIELD__mix_mode
+	 */
+	
+	public byte getMix_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 32);
+		} else {
+			return __io__block.readByte(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mix_mode'.
+	 * @see #__DNA__FIELD__mix_mode
+	 */
+	
+	public void setMix_mode(byte mix_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 32, mix_mode);
+		} else {
+			__io__block.writeByte(__io__address + 28, mix_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 33, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 29, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 33;
+		} else {
+			__dna__offset = 29;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'act'.
 	 * @see #__DNA__FIELD__act
 	 */
@@ -496,9 +604,9 @@ public class bActionConstraint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 28);
+			__dna__targetAddress = __io__block.readLong(__io__address + 36);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bAction.class};
 		return new CPointer<bAction>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bAction.__DNA__SDNA_INDEX), __io__blockTable);
@@ -513,9 +621,9 @@ public class bActionConstraint extends CFacade {
 	{
 		long __address = ((act == null) ? 0 : act.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 32, __address);
+			__io__block.writeLong(__io__address + 40, __address);
 		} else {
-			__io__block.writeLong(__io__address + 28, __address);
+			__io__block.writeLong(__io__address + 36, __address);
 		}
 	}
 
@@ -534,9 +642,9 @@ public class bActionConstraint extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 48, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -552,9 +660,9 @@ public class bActionConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;

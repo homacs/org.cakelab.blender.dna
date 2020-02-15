@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Main container for all overriding data info of a data-block. </p>
  */
 
-@CMetaData(size32=24, size64=40)
+@CMetaData(size32=28, size64=48)
 public class IDOverrideLibrary extends CFacade {
 
 	/**
@@ -140,6 +140,26 @@ public class IDOverrideLibrary extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__storage = new long[]{20, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibrary idoverridelibrary = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrary.__dna__addressof(IDOverrideLibrary.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'IDOverrideLibraryRuntime*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{24, 40};
 
 	public IDOverrideLibrary(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -336,6 +356,38 @@ public class IDOverrideLibrary extends CFacade {
 			__io__block.writeLong(__io__address + 32, __address);
 		} else {
 			__io__block.writeLong(__io__address + 20, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public CPointer<Object> getRuntime() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 40);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(CPointer<Object> runtime) throws IOException
+	{
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 40, __address);
+		} else {
+			__io__block.writeLong(__io__address + 24, __address);
 		}
 	}
 

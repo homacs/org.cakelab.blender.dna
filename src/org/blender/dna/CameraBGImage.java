@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Background Picture </p>
  */
 
-@CMetaData(size32=84, size64=104)
+@CMetaData(size32=92, size64=112)
 public class CameraBGImage extends CFacade {
 
 	/**
@@ -105,7 +105,7 @@ public class CameraBGImage extends CFacade {
 	 * <ul>
 	 * <li>Field: 'iuser'</li>
 	 * <li>Signature: 'ImageUser'</li>
-	 * <li>Actual Size (32bit/64bit): 36/40</li>
+	 * <li>Actual Size (32bit/64bit): 44/48</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__iuser = new long[]{12, 24};
@@ -128,7 +128,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip = new long[]{48, 64};
+	public static final long[] __DNA__FIELD__clip = new long[]{56, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cuser'.
@@ -148,7 +148,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cuser = new long[]{52, 72};
+	public static final long[] __DNA__FIELD__cuser = new long[]{60, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -168,7 +168,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{60, 80};
+	public static final long[] __DNA__FIELD__offset = new long[]{68, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -188,7 +188,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{68, 88};
+	public static final long[] __DNA__FIELD__scale = new long[]{76, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotation'.
@@ -208,7 +208,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotation = new long[]{72, 92};
+	public static final long[] __DNA__FIELD__rotation = new long[]{80, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -228,7 +228,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{76, 96};
+	public static final long[] __DNA__FIELD__alpha = new long[]{84, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -248,7 +248,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{80, 100};
+	public static final long[] __DNA__FIELD__flag = new long[]{88, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
@@ -268,7 +268,7 @@ public class CameraBGImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__source = new long[]{82, 102};
+	public static final long[] __DNA__FIELD__source = new long[]{90, 110};
 
 	public CameraBGImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -419,9 +419,9 @@ public class CameraBGImage extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 64);
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 48);
+			__dna__targetAddress = __io__block.readLong(__io__address + 56);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MovieClip.class};
 		return new CPointer<MovieClip>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MovieClip.__DNA__SDNA_INDEX), __io__blockTable);
@@ -436,9 +436,9 @@ public class CameraBGImage extends CFacade {
 	{
 		long __address = ((clip == null) ? 0 : clip.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 64, __address);
+			__io__block.writeLong(__io__address + 72, __address);
 		} else {
-			__io__block.writeLong(__io__address + 48, __address);
+			__io__block.writeLong(__io__address + 56, __address);
 		}
 	}
 
@@ -450,9 +450,9 @@ public class CameraBGImage extends CFacade {
 	public MovieClipUser getCuser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieClipUser(__io__address + 72, __io__block, __io__blockTable);
+			return new MovieClipUser(__io__address + 80, __io__block, __io__blockTable);
 		} else {
-			return new MovieClipUser(__io__address + 52, __io__block, __io__blockTable);
+			return new MovieClipUser(__io__address + 60, __io__block, __io__blockTable);
 		}
 	}
 
@@ -465,9 +465,9 @@ public class CameraBGImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
+			__dna__offset = 80;
 		} else {
-			__dna__offset = 52;
+			__dna__offset = 60;
 		}
 		if (__io__equals(cuser, __io__address + __dna__offset)) {
 			return;
@@ -490,9 +490,9 @@ public class CameraBGImage extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 80, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -505,9 +505,9 @@ public class CameraBGImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 80;
+			__dna__offset = 88;
 		} else {
-			__dna__offset = 60;
+			__dna__offset = 68;
 		}
 		if (__io__equals(offset, __io__address + __dna__offset)) {
 			return;
@@ -526,9 +526,9 @@ public class CameraBGImage extends CFacade {
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 96);
 		} else {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 76);
 		}
 	}
 
@@ -540,9 +540,9 @@ public class CameraBGImage extends CFacade {
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 88, scale);
+			__io__block.writeFloat(__io__address + 96, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 68, scale);
+			__io__block.writeFloat(__io__address + 76, scale);
 		}
 	}
 
@@ -554,9 +554,9 @@ public class CameraBGImage extends CFacade {
 	public float getRotation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		} else {
-			return __io__block.readFloat(__io__address + 72);
+			return __io__block.readFloat(__io__address + 80);
 		}
 	}
 
@@ -568,9 +568,9 @@ public class CameraBGImage extends CFacade {
 	public void setRotation(float rotation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 92, rotation);
+			__io__block.writeFloat(__io__address + 100, rotation);
 		} else {
-			__io__block.writeFloat(__io__address + 72, rotation);
+			__io__block.writeFloat(__io__address + 80, rotation);
 		}
 	}
 
@@ -582,9 +582,9 @@ public class CameraBGImage extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 104);
 		} else {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 84);
 		}
 	}
 
@@ -596,9 +596,9 @@ public class CameraBGImage extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, alpha);
+			__io__block.writeFloat(__io__address + 104, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 76, alpha);
+			__io__block.writeFloat(__io__address + 84, alpha);
 		}
 	}
 
@@ -610,9 +610,9 @@ public class CameraBGImage extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 100);
+			return __io__block.readShort(__io__address + 108);
 		} else {
-			return __io__block.readShort(__io__address + 80);
+			return __io__block.readShort(__io__address + 88);
 		}
 	}
 
@@ -624,9 +624,9 @@ public class CameraBGImage extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 100, flag);
+			__io__block.writeShort(__io__address + 108, flag);
 		} else {
-			__io__block.writeShort(__io__address + 80, flag);
+			__io__block.writeShort(__io__address + 88, flag);
 		}
 	}
 
@@ -638,9 +638,9 @@ public class CameraBGImage extends CFacade {
 	public short getSource() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 102);
+			return __io__block.readShort(__io__address + 110);
 		} else {
-			return __io__block.readShort(__io__address + 82);
+			return __io__block.readShort(__io__address + 90);
 		}
 	}
 
@@ -652,9 +652,9 @@ public class CameraBGImage extends CFacade {
 	public void setSource(short source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 102, source);
+			__io__block.writeShort(__io__address + 110, source);
 		} else {
-			__io__block.writeShort(__io__address + 82, source);
+			__io__block.writeShort(__io__address + 90, source);
 		}
 	}
 

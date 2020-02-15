@@ -29,7 +29,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 473;
+	public static final int __DNA__SDNA_INDEX = 478;
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.

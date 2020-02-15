@@ -28,7 +28,7 @@ public class SpaceText extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 227;
+	public static final int __DNA__SDNA_INDEX = 230;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -197,24 +197,44 @@ public class SpaceText extends CFacade {
 	public static final long[] __DNA__FIELD__top = new long[]{28, 48};
 
 	/**
-	 * Field descriptor (offset) for struct member 'viewlines'.
+	 * Field descriptor (offset) for struct member 'left'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__viewlines);
-	 * CPointer&lt;Integer&gt; p_viewlines = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__left);
+	 * CPointer&lt;Integer&gt; p_left = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'viewlines'</li>
+	 * <li>Field: 'left'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlines = new long[]{32, 52};
+	public static final long[] __DNA__FIELD__left = new long[]{32, 52};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceText spacetext = ...;
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{36, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -234,27 +254,7 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{36, 56};
-
-	/**
-	 * Field descriptor (offset) for struct member 'menunr'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__menunr);
-	 * CPointer&lt;Short&gt; p_menunr = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'menunr'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__menunr = new long[]{38, 58};
+	public static final long[] __DNA__FIELD__flags = new long[]{40, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lheight'.
@@ -277,90 +277,7 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lheight = new long[]{40, 60};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cwidth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime computed, character width and the number of chars to use when showing line numbers. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__cwidth);
-	 * CPointer&lt;Byte&gt; p_cwidth = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cwidth'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cwidth = new long[]{42, 62};
-
-	/**
-	 * Field descriptor (offset) for struct member 'linenrs_tot'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__linenrs_tot);
-	 * CPointer&lt;Byte&gt; p_linenrs_tot = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'linenrs_tot'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__linenrs_tot = new long[]{43, 63};
-
-	/**
-	 * Field descriptor (offset) for struct member 'left'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__left);
-	 * CPointer&lt;Integer&gt; p_left = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'left'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__left = new long[]{44, 64};
-
-	/**
-	 * Field descriptor (offset) for struct member 'showlinenrs'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__showlinenrs);
-	 * CPointer&lt;Integer&gt; p_showlinenrs = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'showlinenrs'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__showlinenrs = new long[]{48, 68};
+	public static final long[] __DNA__FIELD__lheight = new long[]{42, 62};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tabnumber'.
@@ -380,7 +297,70 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tabnumber = new long[]{52, 72};
+	public static final long[] __DNA__FIELD__tabnumber = new long[]{44, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wordwrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Booleans </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceText spacetext = ...;
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__wordwrap);
+	 * CPointer&lt;Byte&gt; p_wordwrap = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wordwrap'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wordwrap = new long[]{48, 68};
+
+	/**
+	 * Field descriptor (offset) for struct member 'doplugins'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceText spacetext = ...;
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__doplugins);
+	 * CPointer&lt;Byte&gt; p_doplugins = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'doplugins'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__doplugins = new long[]{49, 69};
+
+	/**
+	 * Field descriptor (offset) for struct member 'showlinenrs'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceText spacetext = ...;
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__showlinenrs);
+	 * CPointer&lt;Byte&gt; p_showlinenrs = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'showlinenrs'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__showlinenrs = new long[]{50, 70};
 
 	/**
 	 * Field descriptor (offset) for struct member 'showsyntax'.
@@ -391,16 +371,16 @@ public class SpaceText extends CFacade {
 	 * <pre>
 	 * SpaceText spacetext = ...;
 	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__showsyntax);
-	 * CPointer&lt;Short&gt; p_showsyntax = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_showsyntax = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'showsyntax'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__showsyntax = new long[]{56, 76};
+	public static final long[] __DNA__FIELD__showsyntax = new long[]{51, 71};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_hlight'.
@@ -411,16 +391,16 @@ public class SpaceText extends CFacade {
 	 * <pre>
 	 * SpaceText spacetext = ...;
 	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__line_hlight);
-	 * CPointer&lt;Short&gt; p_line_hlight = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_line_hlight = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'line_hlight'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__line_hlight = new long[]{58, 78};
+	public static final long[] __DNA__FIELD__line_hlight = new long[]{52, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overwrite'.
@@ -431,16 +411,16 @@ public class SpaceText extends CFacade {
 	 * <pre>
 	 * SpaceText spacetext = ...;
 	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__overwrite);
-	 * CPointer&lt;Short&gt; p_overwrite = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_overwrite = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'overwrite'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overwrite = new long[]{60, 80};
+	public static final long[] __DNA__FIELD__overwrite = new long[]{53, 73};
 
 	/**
 	 * Field descriptor (offset) for struct member 'live_edit'.
@@ -454,116 +434,36 @@ public class SpaceText extends CFacade {
 	 * <pre>
 	 * SpaceText spacetext = ...;
 	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__live_edit);
-	 * CPointer&lt;Short&gt; p_live_edit = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_live_edit = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'live_edit'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__live_edit = new long[]{62, 82};
+	public static final long[] __DNA__FIELD__live_edit = new long[]{54, 74};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pix_per_line'.
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__pix_per_line);
-	 * CPointer&lt;Float&gt; p_pix_per_line = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pix_per_line'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pix_per_line = new long[]{64, 84};
-
-	/**
-	 * Field descriptor (offset) for struct member 'txtscroll'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__txtscroll);
-	 * CPointer&lt;rcti&gt; p_txtscroll = p.cast(new Class[]{rcti.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'txtscroll'</li>
-	 * <li>Signature: 'rcti'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__txtscroll = new long[]{68, 88};
-
-	/**
-	 * Field descriptor (offset) for struct member 'txtbar'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__txtbar);
-	 * CPointer&lt;rcti&gt; p_txtbar = p.cast(new Class[]{rcti.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'txtbar'</li>
-	 * <li>Signature: 'rcti'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__txtbar = new long[]{84, 104};
-
-	/**
-	 * Field descriptor (offset) for struct member 'wordwrap'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__wordwrap);
-	 * CPointer&lt;Integer&gt; p_wordwrap = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'wordwrap'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__wordwrap = new long[]{100, 120};
-
-	/**
-	 * Field descriptor (offset) for struct member 'doplugins'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__doplugins);
-	 * CPointer&lt;Integer&gt; p_doplugins = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'doplugins'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__doplugins = new long[]{104, 124};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{55, 75};
 
 	/**
 	 * Field descriptor (offset) for struct member 'findstr'.
@@ -586,7 +486,7 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__findstr = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__findstr = new long[]{56, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'replacestr'.
@@ -609,7 +509,7 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 256/256</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__replacestr = new long[]{364, 384};
+	public static final long[] __DNA__FIELD__replacestr = new long[]{312, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'margin_column'.
@@ -632,96 +532,50 @@ public class SpaceText extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__margin_column = new long[]{620, 640};
+	public static final long[] __DNA__FIELD__margin_column = new long[]{568, 588};
 
 	/**
-	 * Field descriptor (offset) for struct member 'lheight_dpi'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Actual lineheight, dpi controlled. </p>
+	 * Field descriptor (offset) for struct member '_pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__lheight_dpi);
-	 * CPointer&lt;Short&gt; p_lheight_dpi = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'lheight_dpi'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lheight_dpi = new long[]{622, 642};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{570, 590};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{624, 644};
-
-	/**
-	 * Field descriptor (offset) for struct member 'drawcache'.
+	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache for faster drawing. </p>
+	 * <p> Keep last. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__drawcache);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_drawcache = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__runtime);
+	 * CPointer&lt;SpaceText_Runtime&gt; p_runtime = p.cast(new Class[]{SpaceText_Runtime.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'drawcache'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SpaceText_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 68/72</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawcache = new long[]{628, 648};
-
-	/**
-	 * Field descriptor (offset) for struct member 'scroll_accum'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime, for scroll increments smaller than a line. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceText spacetext = ...;
-	 * CPointer&lt;Object&gt; p = spacetext.__dna__addressof(SpaceText.__DNA__FIELD__scroll_accum);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scroll_accum = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'scroll_accum'</li>
-	 * <li>Signature: 'float[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__scroll_accum = new long[]{632, 656};
+	public static final long[] __DNA__FIELD__runtime = new long[]{572, 592};
 
 	public SpaceText(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1000,11 +854,11 @@ public class SpaceText extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'viewlines'.
-	 * @see #__DNA__FIELD__viewlines
+	 * Get method for struct member 'left'.
+	 * @see #__DNA__FIELD__left
 	 */
 	
-	public int getViewlines() throws IOException
+	public int getLeft() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 52);
@@ -1014,16 +868,56 @@ public class SpaceText extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'viewlines'.
-	 * @see #__DNA__FIELD__viewlines
+	 * Set method for struct member 'left'.
+	 * @see #__DNA__FIELD__left
 	 */
 	
-	public void setViewlines(int viewlines) throws IOException
+	public void setLeft(int left) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, viewlines);
+			__io__block.writeInt(__io__address + 52, left);
 		} else {
-			__io__block.writeInt(__io__address + 32, viewlines);
+			__io__block.writeInt(__io__address + 32, left);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 56;
+		} else {
+			__dna__offset = 36;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 
@@ -1035,9 +929,9 @@ public class SpaceText extends CFacade {
 	public short getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 56);
+			return __io__block.readShort(__io__address + 60);
 		} else {
-			return __io__block.readShort(__io__address + 36);
+			return __io__block.readShort(__io__address + 40);
 		}
 	}
 
@@ -1049,37 +943,9 @@ public class SpaceText extends CFacade {
 	public void setFlags(short flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 56, flags);
+			__io__block.writeShort(__io__address + 60, flags);
 		} else {
-			__io__block.writeShort(__io__address + 36, flags);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'menunr'.
-	 * @see #__DNA__FIELD__menunr
-	 */
-	
-	public short getMenunr() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 58);
-		} else {
-			return __io__block.readShort(__io__address + 38);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'menunr'.
-	 * @see #__DNA__FIELD__menunr
-	 */
-	
-	public void setMenunr(short menunr) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 58, menunr);
-		} else {
-			__io__block.writeShort(__io__address + 38, menunr);
+			__io__block.writeShort(__io__address + 40, flags);
 		}
 	}
 
@@ -1094,9 +960,9 @@ public class SpaceText extends CFacade {
 	public short getLheight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 60);
+			return __io__block.readShort(__io__address + 62);
 		} else {
-			return __io__block.readShort(__io__address + 40);
+			return __io__block.readShort(__io__address + 42);
 		}
 	}
 
@@ -1111,127 +977,9 @@ public class SpaceText extends CFacade {
 	public void setLheight(short lheight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 60, lheight);
+			__io__block.writeShort(__io__address + 62, lheight);
 		} else {
-			__io__block.writeShort(__io__address + 40, lheight);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cwidth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime computed, character width and the number of chars to use when showing line numbers. </p>
-	 * @see #__DNA__FIELD__cwidth
-	 */
-	
-	public byte getCwidth() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 62);
-		} else {
-			return __io__block.readByte(__io__address + 42);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cwidth'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime computed, character width and the number of chars to use when showing line numbers. </p>
-	 * @see #__DNA__FIELD__cwidth
-	 */
-	
-	public void setCwidth(byte cwidth) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 62, cwidth);
-		} else {
-			__io__block.writeByte(__io__address + 42, cwidth);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'linenrs_tot'.
-	 * @see #__DNA__FIELD__linenrs_tot
-	 */
-	
-	public byte getLinenrs_tot() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 63);
-		} else {
-			return __io__block.readByte(__io__address + 43);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'linenrs_tot'.
-	 * @see #__DNA__FIELD__linenrs_tot
-	 */
-	
-	public void setLinenrs_tot(byte linenrs_tot) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 63, linenrs_tot);
-		} else {
-			__io__block.writeByte(__io__address + 43, linenrs_tot);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'left'.
-	 * @see #__DNA__FIELD__left
-	 */
-	
-	public int getLeft() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 64);
-		} else {
-			return __io__block.readInt(__io__address + 44);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'left'.
-	 * @see #__DNA__FIELD__left
-	 */
-	
-	public void setLeft(int left) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 64, left);
-		} else {
-			__io__block.writeInt(__io__address + 44, left);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'showlinenrs'.
-	 * @see #__DNA__FIELD__showlinenrs
-	 */
-	
-	public int getShowlinenrs() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 68);
-		} else {
-			return __io__block.readInt(__io__address + 48);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'showlinenrs'.
-	 * @see #__DNA__FIELD__showlinenrs
-	 */
-	
-	public void setShowlinenrs(int showlinenrs) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 68, showlinenrs);
-		} else {
-			__io__block.writeInt(__io__address + 48, showlinenrs);
+			__io__block.writeShort(__io__address + 42, lheight);
 		}
 	}
 
@@ -1243,9 +991,9 @@ public class SpaceText extends CFacade {
 	public int getTabnumber() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 72);
+			return __io__block.readInt(__io__address + 64);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 44);
 		}
 	}
 
@@ -1257,9 +1005,99 @@ public class SpaceText extends CFacade {
 	public void setTabnumber(int tabnumber) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 72, tabnumber);
+			__io__block.writeInt(__io__address + 64, tabnumber);
 		} else {
-			__io__block.writeInt(__io__address + 52, tabnumber);
+			__io__block.writeInt(__io__address + 44, tabnumber);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'wordwrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Booleans </p>
+	 * @see #__DNA__FIELD__wordwrap
+	 */
+	
+	public byte getWordwrap() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 68);
+		} else {
+			return __io__block.readByte(__io__address + 48);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wordwrap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Booleans </p>
+	 * @see #__DNA__FIELD__wordwrap
+	 */
+	
+	public void setWordwrap(byte wordwrap) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 68, wordwrap);
+		} else {
+			__io__block.writeByte(__io__address + 48, wordwrap);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'doplugins'.
+	 * @see #__DNA__FIELD__doplugins
+	 */
+	
+	public byte getDoplugins() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 69);
+		} else {
+			return __io__block.readByte(__io__address + 49);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'doplugins'.
+	 * @see #__DNA__FIELD__doplugins
+	 */
+	
+	public void setDoplugins(byte doplugins) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 69, doplugins);
+		} else {
+			__io__block.writeByte(__io__address + 49, doplugins);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'showlinenrs'.
+	 * @see #__DNA__FIELD__showlinenrs
+	 */
+	
+	public byte getShowlinenrs() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 70);
+		} else {
+			return __io__block.readByte(__io__address + 50);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'showlinenrs'.
+	 * @see #__DNA__FIELD__showlinenrs
+	 */
+	
+	public void setShowlinenrs(byte showlinenrs) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 70, showlinenrs);
+		} else {
+			__io__block.writeByte(__io__address + 50, showlinenrs);
 		}
 	}
 
@@ -1268,12 +1106,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__showsyntax
 	 */
 	
-	public short getShowsyntax() throws IOException
+	public byte getShowsyntax() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 76);
+			return __io__block.readByte(__io__address + 71);
 		} else {
-			return __io__block.readShort(__io__address + 56);
+			return __io__block.readByte(__io__address + 51);
 		}
 	}
 
@@ -1282,12 +1120,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__showsyntax
 	 */
 	
-	public void setShowsyntax(short showsyntax) throws IOException
+	public void setShowsyntax(byte showsyntax) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 76, showsyntax);
+			__io__block.writeByte(__io__address + 71, showsyntax);
 		} else {
-			__io__block.writeShort(__io__address + 56, showsyntax);
+			__io__block.writeByte(__io__address + 51, showsyntax);
 		}
 	}
 
@@ -1296,12 +1134,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__line_hlight
 	 */
 	
-	public short getLine_hlight() throws IOException
+	public byte getLine_hlight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 78);
+			return __io__block.readByte(__io__address + 72);
 		} else {
-			return __io__block.readShort(__io__address + 58);
+			return __io__block.readByte(__io__address + 52);
 		}
 	}
 
@@ -1310,12 +1148,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__line_hlight
 	 */
 	
-	public void setLine_hlight(short line_hlight) throws IOException
+	public void setLine_hlight(byte line_hlight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 78, line_hlight);
+			__io__block.writeByte(__io__address + 72, line_hlight);
 		} else {
-			__io__block.writeShort(__io__address + 58, line_hlight);
+			__io__block.writeByte(__io__address + 52, line_hlight);
 		}
 	}
 
@@ -1324,12 +1162,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__overwrite
 	 */
 	
-	public short getOverwrite() throws IOException
+	public byte getOverwrite() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 80);
+			return __io__block.readByte(__io__address + 73);
 		} else {
-			return __io__block.readShort(__io__address + 60);
+			return __io__block.readByte(__io__address + 53);
 		}
 	}
 
@@ -1338,12 +1176,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__overwrite
 	 */
 	
-	public void setOverwrite(short overwrite) throws IOException
+	public void setOverwrite(byte overwrite) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 80, overwrite);
+			__io__block.writeByte(__io__address + 73, overwrite);
 		} else {
-			__io__block.writeShort(__io__address + 60, overwrite);
+			__io__block.writeByte(__io__address + 53, overwrite);
 		}
 	}
 
@@ -1355,12 +1193,12 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__live_edit
 	 */
 	
-	public short getLive_edit() throws IOException
+	public byte getLive_edit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 82);
+			return __io__block.readByte(__io__address + 74);
 		} else {
-			return __io__block.readShort(__io__address + 62);
+			return __io__block.readByte(__io__address + 54);
 		}
 	}
 
@@ -1372,168 +1210,52 @@ public class SpaceText extends CFacade {
 	 * @see #__DNA__FIELD__live_edit
 	 */
 	
-	public void setLive_edit(short live_edit) throws IOException
+	public void setLive_edit(byte live_edit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 82, live_edit);
+			__io__block.writeByte(__io__address + 74, live_edit);
 		} else {
-			__io__block.writeShort(__io__address + 62, live_edit);
+			__io__block.writeByte(__io__address + 54, live_edit);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'pix_per_line'.
-	 * @see #__DNA__FIELD__pix_per_line
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public float getPix_per_line() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 84);
+			return new CArrayFacade<Byte>(__io__address + 75, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 64);
+			return new CArrayFacade<Byte>(__io__address + 55, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pix_per_line'.
-	 * @see #__DNA__FIELD__pix_per_line
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPix_per_line(float pix_per_line) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 84, pix_per_line);
-		} else {
-			__io__block.writeFloat(__io__address + 64, pix_per_line);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'txtscroll'.
-	 * @see #__DNA__FIELD__txtscroll
-	 */
-	
-	public rcti getTxtscroll() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 88, __io__block, __io__blockTable);
-		} else {
-			return new rcti(__io__address + 68, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'txtscroll'.
-	 * @see #__DNA__FIELD__txtscroll
-	 */
-	
-	public void setTxtscroll(rcti txtscroll) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 88;
+			__dna__offset = 75;
 		} else {
-			__dna__offset = 68;
+			__dna__offset = 55;
 		}
-		if (__io__equals(txtscroll, __io__address + __dna__offset)) {
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, txtscroll)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, txtscroll);
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
-			__io__generic__copy( getTxtscroll(), txtscroll);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'txtbar'.
-	 * @see #__DNA__FIELD__txtbar
-	 */
-	
-	public rcti getTxtbar() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 104, __io__block, __io__blockTable);
-		} else {
-			return new rcti(__io__address + 84, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'txtbar'.
-	 * @see #__DNA__FIELD__txtbar
-	 */
-	
-	public void setTxtbar(rcti txtbar) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
-		} else {
-			__dna__offset = 84;
-		}
-		if (__io__equals(txtbar, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, txtbar)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, txtbar);
-		} else {
-			__io__generic__copy( getTxtbar(), txtbar);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'wordwrap'.
-	 * @see #__DNA__FIELD__wordwrap
-	 */
-	
-	public int getWordwrap() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
-		} else {
-			return __io__block.readInt(__io__address + 100);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'wordwrap'.
-	 * @see #__DNA__FIELD__wordwrap
-	 */
-	
-	public void setWordwrap(int wordwrap) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, wordwrap);
-		} else {
-			__io__block.writeInt(__io__address + 100, wordwrap);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'doplugins'.
-	 * @see #__DNA__FIELD__doplugins
-	 */
-	
-	public int getDoplugins() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
-		} else {
-			return __io__block.readInt(__io__address + 104);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'doplugins'.
-	 * @see #__DNA__FIELD__doplugins
-	 */
-	
-	public void setDoplugins(int doplugins) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, doplugins);
-		} else {
-			__io__block.writeInt(__io__address + 104, doplugins);
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -1552,9 +1274,9 @@ public class SpaceText extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1570,9 +1292,9 @@ public class SpaceText extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 76;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 56;
 		}
 		if (__io__equals(findstr, __io__address + __dna__offset)) {
 			return;
@@ -1598,9 +1320,9 @@ public class SpaceText extends CFacade {
 			256
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1616,9 +1338,9 @@ public class SpaceText extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 384;
+			__dna__offset = 332;
 		} else {
-			__dna__offset = 364;
+			__dna__offset = 312;
 		}
 		if (__io__equals(replacestr, __io__address + __dna__offset)) {
 			return;
@@ -1640,9 +1362,9 @@ public class SpaceText extends CFacade {
 	public short getMargin_column() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 640);
+			return __io__block.readShort(__io__address + 588);
 		} else {
-			return __io__block.readShort(__io__address + 620);
+			return __io__block.readShort(__io__address + 568);
 		}
 	}
 
@@ -1657,167 +1379,91 @@ public class SpaceText extends CFacade {
 	public void setMargin_column(short margin_column) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 640, margin_column);
+			__io__block.writeShort(__io__address + 588, margin_column);
 		} else {
-			__io__block.writeShort(__io__address + 620, margin_column);
+			__io__block.writeShort(__io__address + 568, margin_column);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'lheight_dpi'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Actual lineheight, dpi controlled. </p>
-	 * @see #__DNA__FIELD__lheight_dpi
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
 	 */
 	
-	public short getLheight_dpi() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 642);
-		} else {
-			return __io__block.readShort(__io__address + 622);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'lheight_dpi'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Actual lineheight, dpi controlled. </p>
-	 * @see #__DNA__FIELD__lheight_dpi
-	 */
-	
-	public void setLheight_dpi(short lheight_dpi) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 642, lheight_dpi);
-		} else {
-			__io__block.writeShort(__io__address + 622, lheight_dpi);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public CArrayFacade<Byte> get_pad3() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 644, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 644;
-		} else {
-			__dna__offset = 624;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'drawcache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache for faster drawing. </p>
-	 * @see #__DNA__FIELD__drawcache
-	 */
-	
-	public CPointer<Object> getDrawcache() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 648);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 628);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'drawcache'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache for faster drawing. </p>
-	 * @see #__DNA__FIELD__drawcache
-	 */
-	
-	public void setDrawcache(CPointer<Object> drawcache) throws IOException
-	{
-		long __address = ((drawcache == null) ? 0 : drawcache.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 648, __address);
-		} else {
-			__io__block.writeLong(__io__address + 628, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'scroll_accum'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime, for scroll increments smaller than a line. </p>
-	 * @see #__DNA__FIELD__scroll_accum
-	 */
-	
-	public CArrayFacade<Float> getScroll_accum() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 590, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 632, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 570, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'scroll_accum'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime, for scroll increments smaller than a line. </p>
-	 * @see #__DNA__FIELD__scroll_accum
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
 	 */
 	
-	public void setScroll_accum(CArrayFacade<Float> scroll_accum) throws IOException
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 656;
+			__dna__offset = 590;
 		} else {
-			__dna__offset = 632;
+			__dna__offset = 570;
 		}
-		if (__io__equals(scroll_accum, __io__address + __dna__offset)) {
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, scroll_accum)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, scroll_accum);
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
 		} else {
-			__io__generic__copy( getScroll_accum(), scroll_accum);
+			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keep last. </p>
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public SpaceText_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new SpaceText_Runtime(__io__address + 592, __io__block, __io__blockTable);
+		} else {
+			return new SpaceText_Runtime(__io__address + 572, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Keep last. </p>
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(SpaceText_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 592;
+		} else {
+			__dna__offset = 572;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D Viewport Shading settings. </p>
  */
 
-@CMetaData(size32=860, size64=864)
+@CMetaData(size32=868, size64=872)
 public class View3DShading extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3DShading extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 212;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -610,6 +610,50 @@ public class View3DShading extends CFacade {
 	public static final long[] __DNA__FIELD__curvature_valley_factor = new long[]{852, 852};
 
 	/**
+	 * Field descriptor (offset) for struct member 'render_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <p><code></code>  where one bit is set </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DShading view3dshading = ...;
+	 * CPointer&lt;Object&gt; p = view3dshading.__dna__addressof(View3DShading.__DNA__FIELD__render_pass);
+	 * CPointer&lt;Integer&gt; p_render_pass = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'render_pass'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__render_pass = new long[]{856, 856};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DShading view3dshading = ...;
+	 * CPointer&lt;Object&gt; p = view3dshading.__dna__addressof(View3DShading.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{860, 860};
+
+	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -627,7 +671,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop = new long[]{856, 856};
+	public static final long[] __DNA__FIELD__prop = new long[]{864, 864};
 
 	public View3DShading(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1568,6 +1612,82 @@ public class View3DShading extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'render_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <p><code></code>  where one bit is set </p>
+	 * @see #__DNA__FIELD__render_pass
+	 */
+	
+	public int getRender_pass() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 856);
+		} else {
+			return __io__block.readInt(__io__address + 856);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'render_pass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Render Pass to show in the viewport<h4>Blender Source Code:</h4>
+	 * <p><code></code>  where one bit is set </p>
+	 * @see #__DNA__FIELD__render_pass
+	 */
+	
+	public void setRender_pass(int render_pass) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 856, render_pass);
+		} else {
+			__io__block.writeInt(__io__address + 856, render_pass);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CArrayFacade<Byte> get_pad2() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 860;
+		} else {
+			__dna__offset = 860;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'prop'.
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1576,9 +1696,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+			__dna__targetAddress = __io__block.readLong(__io__address + 864);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+			__dna__targetAddress = __io__block.readLong(__io__address + 864);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1593,9 +1713,9 @@ public class View3DShading extends CFacade {
 	{
 		long __address = ((prop == null) ? 0 : prop.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 856, __address);
+			__io__block.writeLong(__io__address + 864, __address);
 		} else {
-			__io__block.writeLong(__io__address + 856, __address);
+			__io__block.writeLong(__io__address + 864, __address);
 		}
 	}
 

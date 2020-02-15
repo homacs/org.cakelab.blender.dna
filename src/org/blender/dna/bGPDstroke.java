@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=372, size64=400)
+@CMetaData(size32=376, size64=408)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDstroke extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 470;
+	public static final int __DNA__SDNA_INDEX = 475;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -446,7 +446,7 @@ public class bGPDstroke extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPDstroke_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 172/176</li>
+	 * <li>Actual Size (32bit/64bit): 176/184</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{200, 224};

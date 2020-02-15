@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'FluidsimModifierData'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> DEPRECATED, only used for versioning. </p>
  */
 
 @CMetaData(size32=104, size64=128)

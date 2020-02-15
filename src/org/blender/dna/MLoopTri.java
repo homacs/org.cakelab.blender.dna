@@ -81,8 +81,8 @@ import org.cakelab.blender.nio.CPointer;
  *         {@link MEdge}       &medge[mloop[lt->tri[j]].e]; *ed=&medge[mloop[lt->tri[j]].e];
  *          unsigned unsigned   int int           mloop[lt->tri[j_next]].v}; tri_edge[2]={mloop[lt->tri[j]].v,mloop[lt->tri[j_next]].v};
  * 
- *          if if                 || (((ed->v1==tri_edge[0])&&(ed->v2==tri_edge[1]))||
- *                              tri_edge[0]))) ((ed->v1==tri_edge[1])&&(ed->v2==tri_edge[0])))
+ *          if if   (((ed->{@link v1}               || (((ed->v1==tri_edge[0])&&(ed->v2==tri_edge[1]))||
+ *                  ((ed->{@link v1}             tri_edge[0]))) ((ed->v1==tri_edge[1])&&(ed->v2==tri_edge[0])))
  *          { {
  *                  printf( printf(         %u\n" "realedgefound%u%u\n"     tri_edge[1]); ,tri_edge[0],tri_edge[1]);
  *          } }
@@ -114,7 +114,7 @@ public class MLoopTri extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 70;
+	public static final int __DNA__SDNA_INDEX = 69;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tri'.

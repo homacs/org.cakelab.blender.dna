@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=28, size64=32)
 public class ARegion_Runtime extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 270;
+	public static final int __DNA__SDNA_INDEX = 274;
 
 	/**
 	 * Field descriptor (offset) for struct member 'category'.
@@ -73,6 +73,49 @@ public class ARegion_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__visible_rect = new long[]{4, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member 'offset_x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion_Runtime aregion_runtime = ...;
+	 * CPointer&lt;Object&gt; p = aregion_runtime.__dna__addressof(ARegion_Runtime.__DNA__FIELD__offset_x);
+	 * CPointer&lt;Integer&gt; p_offset_x = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'offset_x'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__offset_x = new long[]{20, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'offset_y'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ARegion_Runtime aregion_runtime = ...;
+	 * CPointer&lt;Object&gt; p = aregion_runtime.__dna__addressof(ARegion_Runtime.__DNA__FIELD__offset_y);
+	 * CPointer&lt;Integer&gt; p_offset_y = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'offset_y'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__offset_y = new long[]{24, 28};
 
 	public ARegion_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -159,6 +202,68 @@ public class ARegion_Runtime extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, visible_rect);
 		} else {
 			__io__generic__copy( getVisible_rect(), visible_rect);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'offset_x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * @see #__DNA__FIELD__offset_x
+	 */
+	
+	public int getOffset_x() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 24);
+		} else {
+			return __io__block.readInt(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'offset_x'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The offset needed to not overlap with window scrollbars. Only used by HUD regions for now. </p>
+	 * @see #__DNA__FIELD__offset_x
+	 */
+	
+	public void setOffset_x(int offset_x) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 24, offset_x);
+		} else {
+			__io__block.writeInt(__io__address + 20, offset_x);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'offset_y'.
+	 * @see #__DNA__FIELD__offset_y
+	 */
+	
+	public int getOffset_y() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 28);
+		} else {
+			return __io__block.readInt(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'offset_y'.
+	 * @see #__DNA__FIELD__offset_y
+	 */
+	
+	public void setOffset_y(int offset_y) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 28, offset_y);
+		} else {
+			__io__block.writeInt(__io__address + 24, offset_y);
 		}
 	}
 

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p><em></em>  be initialized to 255 Mostly its not used for transparency... (except for blender-internal rendering, see [#34096]).</p><p><h2>Note</h2><p><em></em>  swapped, as they are with {@link MCol}  </p> red and blue are not swapped, as they are with MCol 
+ * <p><h2>Note</h2><p> While alpha is currently is not in the view-port, this may eventually be added back, keep this value set to 255. </p> While alpha is currently is not in the view-port, this may eventually be added back, keep this value set to 255. 
  * </p>
  */
 
@@ -28,7 +28,7 @@ public class MLoopCol extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 72;
+	public static final int __DNA__SDNA_INDEX = 77;
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.

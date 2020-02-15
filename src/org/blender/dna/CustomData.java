@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> structure which stores custom element data associated with mesh elements (vertices, edges or faces). The custom data is organized into a series of layers, each with a data type (e.g. {@link MTFace} , {@link MDeformVert} , etc.). </p>
+ * <p> Structure which stores custom element data associated with mesh elements (vertices, edges or faces). The custom data is organized into a series of layers, each with a data type (e.g. {@link MTFace} , {@link MDeformVert} , etc.). </p>
  */
 
 @CMetaData(size32=196, size64=208)
@@ -28,7 +28,7 @@ public class CustomData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 448;
+	public static final int __DNA__SDNA_INDEX = 453;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.

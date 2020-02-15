@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=12136, size64=12200)
+@CMetaData(size32=12144, size64=12208)
 public class UserDef extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 258;
+	public static final int __DNA__SDNA_INDEX = 262;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -3153,6 +3153,26 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__file_space_data = new long[]{12096, 12160};
 
 	/**
+	 * Field descriptor (offset) for struct member 'experimental'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__experimental);
+	 * CPointer&lt;UserDef_Experimental&gt; p_experimental = p.cast(new Class[]{UserDef_Experimental.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'experimental'</li>
+	 * <li>Signature: 'UserDef_Experimental'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__experimental = new long[]{12128, 12192};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -3173,7 +3193,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{12128, 12192};
+	public static final long[] __DNA__FIELD__runtime = new long[]{12136, 12200};
 
 	public UserDef(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -8134,6 +8154,42 @@ public class UserDef extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'experimental'.
+	 * @see #__DNA__FIELD__experimental
+	 */
+	
+	public UserDef_Experimental getExperimental() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new UserDef_Experimental(__io__address + 12192, __io__block, __io__blockTable);
+		} else {
+			return new UserDef_Experimental(__io__address + 12128, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'experimental'.
+	 * @see #__DNA__FIELD__experimental
+	 */
+	
+	public void setExperimental(UserDef_Experimental experimental) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 12192;
+		} else {
+			__dna__offset = 12128;
+		}
+		if (__io__equals(experimental, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, experimental)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, experimental);
+		} else {
+			__io__generic__copy( getExperimental(), experimental);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -8144,9 +8200,9 @@ public class UserDef extends CFacade {
 	public UserDef_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new UserDef_Runtime(__io__address + 12192, __io__block, __io__blockTable);
+			return new UserDef_Runtime(__io__address + 12200, __io__block, __io__blockTable);
 		} else {
-			return new UserDef_Runtime(__io__address + 12128, __io__block, __io__blockTable);
+			return new UserDef_Runtime(__io__address + 12136, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8162,9 +8218,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12192;
+			__dna__offset = 12200;
 		} else {
-			__dna__offset = 12128;
+			__dna__offset = 12136;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

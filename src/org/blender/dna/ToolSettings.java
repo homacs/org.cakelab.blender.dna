@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1200, size64=1296)
+@CMetaData(size32=1212, size64=1312)
 public class ToolSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 200;
+	public static final int __DNA__SDNA_INDEX = 202;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -1382,6 +1382,29 @@ public class ToolSettings extends CFacade {
 	public static final long[] __DNA__FIELD__sculpt_paint_settings = new long[]{948, 1040};
 
 	/**
+	 * Field descriptor (offset) for struct member 'workspace_tool_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Action when dragging in the viewport
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__workspace_tool_type);
+	 * CPointer&lt;Byte&gt; p_workspace_tool_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'workspace_tool_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__workspace_tool_type = new long[]{950, 1042};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad5'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1395,11 +1418,11 @@ public class ToolSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad5'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad5 = new long[]{950, 1042};
+	public static final long[] __DNA__FIELD___pad5 = new long[]{951, 1043};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_paint_unified_size'.
@@ -1495,7 +1518,7 @@ public class ToolSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'unified_paint_settings'</li>
 	 * <li>Signature: 'UnifiedPaintSettings'</li>
-	 * <li>Actual Size (32bit/64bit): 148/152</li>
+	 * <li>Actual Size (32bit/64bit): 156/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__unified_paint_settings = new long[]{964, 1056};
@@ -1521,7 +1544,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_paint_settings = new long[]{1112, 1208};
+	public static final long[] __DNA__FIELD__curve_paint_settings = new long[]{1120, 1216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'statvis'.
@@ -1544,7 +1567,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__statvis = new long[]{1144, 1240};
+	public static final long[] __DNA__FIELD__statvis = new long[]{1152, 1248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_vector'.
@@ -1568,7 +1591,7 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_vector = new long[]{1184, 1280};
+	public static final long[] __DNA__FIELD__normal_vector = new long[]{1192, 1288};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad6'.
@@ -1588,7 +1611,31 @@ public class ToolSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad6 = new long[]{1196, 1292};
+	public static final long[] __DNA__FIELD___pad6 = new long[]{1204, 1300};
+
+	/**
+	 * Field descriptor (offset) for struct member 'custom_bevel_profile_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__custom_bevel_profile_preset);
+	 * CPointer&lt;CPointer&lt;CurveProfile&gt;&gt; p_custom_bevel_profile_preset = p.cast(new Class[]{CPointer.class, CurveProfile.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'custom_bevel_profile_preset'</li>
+	 * <li>Signature: 'CurveProfile*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__custom_bevel_profile_preset = new long[]{1208, 1304};
 
 	public ToolSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3647,6 +3694,40 @@ public class ToolSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'workspace_tool_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Action when dragging in the viewport
+	 * @see #__DNA__FIELD__workspace_tool_type
+	 */
+	
+	public byte getWorkspace_tool_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1042);
+		} else {
+			return __io__block.readByte(__io__address + 950);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'workspace_tool_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Action when dragging in the viewport
+	 * @see #__DNA__FIELD__workspace_tool_type
+	 */
+	
+	public void setWorkspace_tool_type(byte workspace_tool_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1042, workspace_tool_type);
+		} else {
+			__io__block.writeByte(__io__address + 950, workspace_tool_type);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad5'.
 	 * @see #__DNA__FIELD___pad5
 	 */
@@ -3655,12 +3736,12 @@ public class ToolSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1042, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1043, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 950, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 951, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3673,9 +3754,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1042;
+			__dna__offset = 1043;
 		} else {
-			__dna__offset = 950;
+			__dna__offset = 951;
 		}
 		if (__io__equals(_pad5, __io__address + __dna__offset)) {
 			return;
@@ -3855,9 +3936,9 @@ public class ToolSettings extends CFacade {
 	public CurvePaintSettings getCurve_paint_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CurvePaintSettings(__io__address + 1208, __io__block, __io__blockTable);
+			return new CurvePaintSettings(__io__address + 1216, __io__block, __io__blockTable);
 		} else {
-			return new CurvePaintSettings(__io__address + 1112, __io__block, __io__blockTable);
+			return new CurvePaintSettings(__io__address + 1120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3873,9 +3954,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1208;
+			__dna__offset = 1216;
 		} else {
-			__dna__offset = 1112;
+			__dna__offset = 1120;
 		}
 		if (__io__equals(curve_paint_settings, __io__address + __dna__offset)) {
 			return;
@@ -3897,9 +3978,9 @@ public class ToolSettings extends CFacade {
 	public MeshStatVis getStatvis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MeshStatVis(__io__address + 1240, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 1248, __io__block, __io__blockTable);
 		} else {
-			return new MeshStatVis(__io__address + 1144, __io__block, __io__blockTable);
+			return new MeshStatVis(__io__address + 1152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3915,9 +3996,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1240;
+			__dna__offset = 1248;
 		} else {
-			__dna__offset = 1144;
+			__dna__offset = 1152;
 		}
 		if (__io__equals(statvis, __io__address + __dna__offset)) {
 			return;
@@ -3944,9 +4025,9 @@ public class ToolSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3963,9 +4044,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1280;
+			__dna__offset = 1288;
 		} else {
-			__dna__offset = 1184;
+			__dna__offset = 1192;
 		}
 		if (__io__equals(normal_vector, __io__address + __dna__offset)) {
 			return;
@@ -3988,9 +4069,9 @@ public class ToolSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1300, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4003,9 +4084,9 @@ public class ToolSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1292;
+			__dna__offset = 1300;
 		} else {
-			__dna__offset = 1196;
+			__dna__offset = 1204;
 		}
 		if (__io__equals(_pad6, __io__address + __dna__offset)) {
 			return;
@@ -4013,6 +4094,46 @@ public class ToolSettings extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad6);
 		} else {
 			__io__generic__copy( get_pad6(), _pad6);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'custom_bevel_profile_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
+	 * @see #__DNA__FIELD__custom_bevel_profile_preset
+	 */
+	
+	public CPointer<CurveProfile> getCustom_bevel_profile_preset() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1208);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveProfile.class};
+		return new CPointer<CurveProfile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveProfile.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'custom_bevel_profile_preset'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Used for defining a profile's path<h4>Blender Source Code:</h4>
+	 * <p> Custom {@link Curve}  Profile for bevel tool: Temporary until there is a proper preset system that stores the profiles or maybe stores entire bevel configurations. </p>
+	 * @see #__DNA__FIELD__custom_bevel_profile_preset
+	 */
+	
+	public void setCustom_bevel_profile_preset(CPointer<CurveProfile> custom_bevel_profile_preset) throws IOException
+	{
+		long __address = ((custom_bevel_profile_preset == null) ? 0 : custom_bevel_profile_preset.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1304, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1208, __address);
 		}
 	}
 

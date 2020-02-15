@@ -27,7 +27,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 563;
+	public static final int __DNA__SDNA_INDEX = 570;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -172,7 +172,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
+	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -800,7 +800,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
+	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__default_frames_limit
 	 */
 	
@@ -818,7 +818,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Every tracking cycle, this number of frames are tracked<h4>Blender Source Code:</h4>
-	 * <p> Number of frames to be tarcked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
+	 * <p> Number of frames to be tracked during single tracking session (if TRACKING_FRAMES_LIMIT is set). </p>
 	 * @see #__DNA__FIELD__default_frames_limit
 	 */
 	

@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
- * An edge defined by two vertices v1 and v2. Vertex order does not tell which side is front facing. @see {@link MLoop}, {@link MVert}
+ * An edge defined by two vertices v1 and v2. Vertex order does not tell which side is front facing. @see {@link MLoop}, {@link MVert}<h4>Blender Source Code:</h4>
+ * <p>{@link Mesh}  Edges.</p><p> Typically accessed from {@link Mesh.medge}  </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -27,13 +28,14 @@ public class MEdge extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 63;
+	public static final int __DNA__SDNA_INDEX = 65;
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * First vertex of the edge (index in vertex array).
+	 * First vertex of the edge (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> Un-ordered vertex indices (cannot match). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -160,7 +162,8 @@ public class MEdge extends CFacade {
 	 * Get method for struct member 'v1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * First vertex of the edge (index in vertex array).
+	 * First vertex of the edge (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> Un-ordered vertex indices (cannot match). </p>
 	 * @see #__DNA__FIELD__v1
 	 */
 	
@@ -177,7 +180,8 @@ public class MEdge extends CFacade {
 	 * Set method for struct member 'v1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * First vertex of the edge (index in vertex array).
+	 * First vertex of the edge (index in vertex array).<h4>Blender Source Code:</h4>
+	 * <p> Un-ordered vertex indices (cannot match). </p>
 	 * @see #__DNA__FIELD__v1
 	 */
 	

@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * Defines a polygon based on a subset of the loop entries of the {@link Mesh}.<h4>Blender Source Code:</h4>
- * <p> new face structure, replaces {@link MFace} , which is now only used for storing tessellations. </p>
+ * <p>{@link Mesh}  Faces This only stores the polygon size & flags, the vertex & edge indices are stored in the {@link MLoop} .</p><p> Typically accessed from {@link Mesh.mpoly} . </p>
  */
 
 @CMetaData(size32=12, size64=12)
@@ -28,14 +28,14 @@ public class MPoly extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 68;
+	public static final int __DNA__SDNA_INDEX = 66;
 
 	/**
 	 * Field descriptor (offset) for struct member 'loopstart'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
-	 * <p> offset into loop array and number of loops in the face </p>
+	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -159,7 +159,7 @@ public class MPoly extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
-	 * <p> offset into loop array and number of loops in the face </p>
+	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
 	
@@ -177,7 +177,7 @@ public class MPoly extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * offset in loop array ({@link #getMLoop})<h4>Blender Source Code:</h4>
-	 * <p> offset into loop array and number of loops in the face </p>
+	 * <p> Offset into loop array and number of loops in the face. </p>
 	 * @see #__DNA__FIELD__loopstart
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=204, size64=224)
+@CMetaData(size32=208, size64=232)
 public class BevelModifierData extends CFacade {
 
 	/**
@@ -254,7 +254,7 @@ public class BevelModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'miter_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * <p> Patterns to use for mitering non-reflex and reflex miter edges </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -294,24 +294,27 @@ public class BevelModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__miter_outer = new long[]{124, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
+	 * Field descriptor (offset) for struct member 'vmesh_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The method to use for creating >2-way intersections </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BevelModifierData bevelmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD___pad0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__vmesh_method);
+	 * CPointer&lt;Short&gt; p_vmesh_method = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[2]'</li>
+	 * <li>Field: 'vmesh_method'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{126, 146};
+	public static final long[] __DNA__FIELD__vmesh_method = new long[]{126, 146};
 
 	/**
 	 * Field descriptor (offset) for struct member 'profile'.
@@ -401,6 +404,29 @@ public class BevelModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__defgrp_name = new long[]{140, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'custom_profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  info for the custom profile </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BevelModifierData bevelmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = bevelmodifierdata.__dna__addressof(BevelModifierData.__DNA__FIELD__custom_profile);
+	 * CPointer&lt;CPointer&lt;CurveProfile&gt;&gt; p_custom_profile = p.cast(new Class[]{CPointer.class, CurveProfile.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'custom_profile'</li>
+	 * <li>Signature: 'CurveProfile*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__custom_profile = new long[]{204, 224};
 
 	public BevelModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -744,7 +770,7 @@ public class BevelModifierData extends CFacade {
 	 * Get method for struct member 'miter_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * <p> Patterns to use for mitering non-reflex and reflex miter edges </p>
 	 * @see #__DNA__FIELD__miter_inner
 	 */
 	
@@ -761,7 +787,7 @@ public class BevelModifierData extends CFacade {
 	 * Set method for struct member 'miter_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> patterns to use for mitering non-reflex and reflex miter edges </p>
+	 * <p> Patterns to use for mitering non-reflex and reflex miter edges </p>
 	 * @see #__DNA__FIELD__miter_inner
 	 */
 	
@@ -803,42 +829,36 @@ public class BevelModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
+	 * Get method for struct member 'vmesh_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The method to use for creating >2-way intersections </p>
+	 * @see #__DNA__FIELD__vmesh_method
 	 */
 	
-	public CArrayFacade<Byte> get_pad0() throws IOException
+	public short getVmesh_method() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 146, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 146);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 126, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 126);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
+	 * Set method for struct member 'vmesh_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The method to use for creating >2-way intersections </p>
+	 * @see #__DNA__FIELD__vmesh_method
 	 */
 	
-	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	public void setVmesh_method(short vmesh_method) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 146;
+			__io__block.writeShort(__io__address + 146, vmesh_method);
 		} else {
-			__dna__offset = 126;
-		}
-		if (__io__equals(_pad0, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
-		} else {
-			__io__generic__copy( get_pad0(), _pad0);
+			__io__block.writeShort(__io__address + 126, vmesh_method);
 		}
 	}
 
@@ -981,6 +1001,44 @@ public class BevelModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, defgrp_name);
 		} else {
 			__io__generic__copy( getDefgrp_name(), defgrp_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'custom_profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  info for the custom profile </p>
+	 * @see #__DNA__FIELD__custom_profile
+	 */
+	
+	public CPointer<CurveProfile> getCustom_profile() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveProfile.class};
+		return new CPointer<CurveProfile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveProfile.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'custom_profile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  info for the custom profile </p>
+	 * @see #__DNA__FIELD__custom_profile
+	 */
+	
+	public void setCustom_profile(CPointer<CurveProfile> custom_profile) throws IOException
+	{
+		long __address = ((custom_profile == null) ? 0 : custom_profile.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 224, __address);
+		} else {
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 

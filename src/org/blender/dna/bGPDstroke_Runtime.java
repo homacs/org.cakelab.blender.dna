@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  GP Strokes Runtime temp data for {@link bGPDstroke}  </p>
  */
 
-@CMetaData(size32=172, size64=176)
+@CMetaData(size32=176, size64=184)
 public class bGPDstroke_Runtime extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 469;
+	public static final int __DNA__SDNA_INDEX = 474;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_stroke_rgba'.
@@ -165,6 +165,26 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gps_orig = new long[]{168, 168};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD___pad2);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{172, 176};
 
 	public bGPDstroke_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -421,6 +441,38 @@ public class bGPDstroke_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 168, __address);
 		} else {
 			__io__block.writeLong(__io__address + 168, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CPointer<Object> get_pad2() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CPointer<Object> _pad2) throws IOException
+	{
+		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 176, __address);
+		} else {
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 

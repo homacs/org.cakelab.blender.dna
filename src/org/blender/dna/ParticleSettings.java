@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 459;
+	public static final int __DNA__SDNA_INDEX = 464;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -2757,24 +2757,24 @@ public class ParticleSettings extends CFacade {
 	public static final long[] __DNA__FIELD__dupliweights = new long[]{664, 800};
 
 	/**
-	 * Field descriptor (offset) for struct member 'eff_group'.
+	 * Field descriptor (offset) for struct member 'force_group'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ParticleSettings particlesettings = ...;
-	 * CPointer&lt;Object&gt; p = particlesettings.__dna__addressof(ParticleSettings.__DNA__FIELD__eff_group);
-	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_eff_group = p.cast(new Class[]{CPointer.class, Collection.class});
+	 * CPointer&lt;Object&gt; p = particlesettings.__dna__addressof(ParticleSettings.__DNA__FIELD__force_group);
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_force_group = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'eff_group'</li>
+	 * <li>Field: 'force_group'</li>
 	 * <li>Signature: 'Collection*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eff_group = new long[]{672, 816};
+	public static final long[] __DNA__FIELD__force_group = new long[]{672, 816};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dup_ob'.
@@ -7230,11 +7230,11 @@ public class ParticleSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'eff_group'.
-	 * @see #__DNA__FIELD__eff_group
+	 * Get method for struct member 'force_group'.
+	 * @see #__DNA__FIELD__force_group
 	 */
 	
-	public CPointer<Collection> getEff_group() throws IOException
+	public CPointer<Collection> getForce_group() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -7247,13 +7247,13 @@ public class ParticleSettings extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'eff_group'.
-	 * @see #__DNA__FIELD__eff_group
+	 * Set method for struct member 'force_group'.
+	 * @see #__DNA__FIELD__force_group
 	 */
 	
-	public void setEff_group(CPointer<Collection> eff_group) throws IOException
+	public void setForce_group(CPointer<Collection> force_group) throws IOException
 	{
-		long __address = ((eff_group == null) ? 0 : eff_group.getAddress());
+		long __address = ((force_group == null) ? 0 : force_group.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 816, __address);
 		} else {

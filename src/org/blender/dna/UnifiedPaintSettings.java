@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Unified {@link Paint}  Settings These settings can override the equivalent fields in the active {@link Brush}  for any paint mode; the flag field controls whether these values are used </p>
  */
 
-@CMetaData(size32=148, size64=152)
+@CMetaData(size32=156, size64=160)
 public class UnifiedPaintSettings extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 197;
+	public static final int __DNA__SDNA_INDEX = 199;
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -551,6 +551,46 @@ public class UnifiedPaintSettings extends CFacade {
 	public static final long[] __DNA__FIELD__pixel_radius = new long[]{120, 120};
 
 	/**
+	 * Field descriptor (offset) for struct member 'initial_pixel_radius'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD__initial_pixel_radius);
+	 * CPointer&lt;Float&gt; p_initial_pixel_radius = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'initial_pixel_radius'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__initial_pixel_radius = new long[]{124, 124};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnifiedPaintSettings unifiedpaintsettings = ...;
+	 * CPointer&lt;Object&gt; p = unifiedpaintsettings.__dna__addressof(UnifiedPaintSettings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{128, 128};
+
+	/**
 	 * Field descriptor (offset) for struct member 'size_pressure_value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -571,7 +611,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size_pressure_value = new long[]{124, 124};
+	public static final long[] __DNA__FIELD__size_pressure_value = new long[]{132, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex_mouse'.
@@ -594,7 +634,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tex_mouse = new long[]{128, 128};
+	public static final long[] __DNA__FIELD__tex_mouse = new long[]{136, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mouse'.
@@ -617,7 +657,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_mouse = new long[]{136, 136};
+	public static final long[] __DNA__FIELD__mask_tex_mouse = new long[]{144, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace'.
@@ -640,7 +680,7 @@ public class UnifiedPaintSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colorspace = new long[]{144, 144};
+	public static final long[] __DNA__FIELD__colorspace = new long[]{152, 152};
 
 	public UnifiedPaintSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1473,6 +1513,74 @@ public class UnifiedPaintSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'initial_pixel_radius'.
+	 * @see #__DNA__FIELD__initial_pixel_radius
+	 */
+	
+	public float getInitial_pixel_radius() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 124);
+		} else {
+			return __io__block.readFloat(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'initial_pixel_radius'.
+	 * @see #__DNA__FIELD__initial_pixel_radius
+	 */
+	
+	public void setInitial_pixel_radius(float initial_pixel_radius) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 124, initial_pixel_radius);
+		} else {
+			__io__block.writeFloat(__io__address + 124, initial_pixel_radius);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 128;
+		} else {
+			__dna__offset = 128;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'size_pressure_value'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1483,9 +1591,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public float getSize_pressure_value() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -1500,9 +1608,9 @@ public class UnifiedPaintSettings extends CFacade {
 	public void setSize_pressure_value(float size_pressure_value) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, size_pressure_value);
+			__io__block.writeFloat(__io__address + 132, size_pressure_value);
 		} else {
-			__io__block.writeFloat(__io__address + 124, size_pressure_value);
+			__io__block.writeFloat(__io__address + 132, size_pressure_value);
 		}
 	}
 
@@ -1521,9 +1629,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1539,9 +1647,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		}
 		if (__io__equals(tex_mouse, __io__address + __dna__offset)) {
 			return;
@@ -1567,9 +1675,9 @@ public class UnifiedPaintSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1585,9 +1693,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(mask_tex_mouse, __io__address + __dna__offset)) {
 			return;
@@ -1610,9 +1718,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1630,9 +1738,9 @@ public class UnifiedPaintSettings extends CFacade {
 	{
 		long __address = ((colorspace == null) ? 0 : colorspace.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 

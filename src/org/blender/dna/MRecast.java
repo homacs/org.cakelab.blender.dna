@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> End {@link Multires}  </p>
+ * <p> Old game engine recast navigation data, while unused 2.7x files may contain this. </p>
  */
 
 @CMetaData(size32=4, size64=4)
@@ -27,7 +27,7 @@ public class MRecast extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 87;
+	public static final int __DNA__SDNA_INDEX = 85;
 
 	/**
 	 * Field descriptor (offset) for struct member 'i'.

@@ -27,7 +27,7 @@ public class View3DOverlay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 211;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -192,7 +192,7 @@ public class View3DOverlay extends CFacade {
 	 * Field descriptor (offset) for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity of the vertex paint mode overlay
+	 * Opacity of the texture paint mode stencil mask overlay
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -304,7 +304,7 @@ public class View3DOverlay extends CFacade {
 	 * Field descriptor (offset) for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Adjust the number of wires displayed (1 for all wires)<h4>Blender Source Code:</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
 	 * <p> Other settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -640,7 +640,7 @@ public class View3DOverlay extends CFacade {
 	 * Get method for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity of the vertex paint mode overlay
+	 * Opacity of the texture paint mode stencil mask overlay
 	 * @see #__DNA__FIELD__vertex_paint_mode_opacity
 	 */
 	
@@ -657,7 +657,7 @@ public class View3DOverlay extends CFacade {
 	 * Set method for struct member 'vertex_paint_mode_opacity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity of the vertex paint mode overlay
+	 * Opacity of the texture paint mode stencil mask overlay
 	 * @see #__DNA__FIELD__vertex_paint_mode_opacity
 	 */
 	
@@ -804,7 +804,7 @@ public class View3DOverlay extends CFacade {
 	 * Get method for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Adjust the number of wires displayed (1 for all wires)<h4>Blender Source Code:</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
 	 * <p> Other settings. </p>
 	 * @see #__DNA__FIELD__wireframe_threshold
 	 */
@@ -822,7 +822,7 @@ public class View3DOverlay extends CFacade {
 	 * Set method for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Adjust the number of wires displayed (1 for all wires)<h4>Blender Source Code:</h4>
+	 * Adjust the angle threshold for displaying edges (1.0 for all)<h4>Blender Source Code:</h4>
 	 * <p> Other settings. </p>
 	 * @see #__DNA__FIELD__wireframe_threshold
 	 */

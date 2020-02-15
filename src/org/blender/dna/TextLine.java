@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -135,24 +136,24 @@ public class TextLine extends CFacade {
 	public static final long[] __DNA__FIELD__len = new long[]{16, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'blen'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * TextLine textline = ...;
-	 * CPointer&lt;Object&gt; p = textline.__dna__addressof(TextLine.__DNA__FIELD__blen);
-	 * CPointer&lt;Integer&gt; p_blen = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = textline.__dna__addressof(TextLine.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'blen'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blen = new long[]{20, 36};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{20, 36};
 
 	public TextLine(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -331,30 +332,42 @@ public class TextLine extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'blen'.
-	 * @see #__DNA__FIELD__blen
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public int getBlen() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'blen'.
-	 * @see #__DNA__FIELD__blen
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setBlen(int blen) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, blen);
+			__dna__offset = 36;
 		} else {
-			__io__block.writeInt(__io__address + 20, blen);
+			__dna__offset = 20;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

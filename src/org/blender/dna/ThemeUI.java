@@ -27,7 +27,7 @@ public class ThemeUI extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 242;
+	public static final int __DNA__SDNA_INDEX = 245;
 
 	/**
 	 * Field descriptor (offset) for struct member 'wcol_regular'.
@@ -596,24 +596,24 @@ public class ThemeUI extends CFacade {
 	public static final long[] __DNA__FIELD__icon_saturation = new long[]{868, 868};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'widget_text_cursor'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ThemeUI themeui = ...;
-	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = themeui.__dna__addressof(ThemeUI.__DNA__FIELD__widget_text_cursor);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_widget_text_cursor = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: 'widget_text_cursor'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{872, 872};
+	public static final long[] __DNA__FIELD__widget_text_cursor = new long[]{872, 872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xaxis'.
@@ -1994,11 +1994,11 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'widget_text_cursor'.
+	 * @see #__DNA__FIELD__widget_text_cursor
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public CArrayFacade<Byte> getWidget_text_cursor() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -2012,11 +2012,11 @@ public class ThemeUI extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'widget_text_cursor'.
+	 * @see #__DNA__FIELD__widget_text_cursor
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setWidget_text_cursor(CArrayFacade<Byte> widget_text_cursor) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -2024,12 +2024,12 @@ public class ThemeUI extends CFacade {
 		} else {
 			__dna__offset = 872;
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
+		if (__io__equals(widget_text_cursor, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else if (__io__same__encoding(this, widget_text_cursor)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, widget_text_cursor);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__generic__copy( getWidget_text_cursor(), widget_text_cursor);
 		}
 	}
 

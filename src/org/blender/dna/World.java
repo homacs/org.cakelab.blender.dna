@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link World}  defines general modeling data such as a background fill, gravity, color model etc. It mixes rendering data and modeling data. </p>
  */
 
-@CMetaData(size32=248, size64=312)
+@CMetaData(size32=240, size64=304)
 public class World extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class World extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 171;
+	public static final int __DNA__SDNA_INDEX = 173;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -664,49 +664,6 @@ public class World extends CFacade {
 	public static final long[] __DNA__FIELD__nodetree = new long[]{228, 280};
 
 	/**
-	 * Field descriptor (offset) for struct member 'mistend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime : miststa + mistdist, used for drawing camera. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * World world = ...;
-	 * CPointer&lt;Object&gt; p = world.__dna__addressof(World.__DNA__FIELD__mistend);
-	 * CPointer&lt;Float&gt; p_mistend = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mistend'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mistend = new long[]{232, 288};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * World world = ...;
-	 * CPointer&lt;Object&gt; p = world.__dna__addressof(World.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{236, 292};
-
-	/**
 	 * Field descriptor (offset) for struct member 'gpumaterial'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -727,7 +684,7 @@ public class World extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpumaterial = new long[]{240, 296};
+	public static final long[] __DNA__FIELD__gpumaterial = new long[]{232, 288};
 
 	public World(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1724,80 +1681,6 @@ public class World extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'mistend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime : miststa + mistdist, used for drawing camera. </p>
-	 * @see #__DNA__FIELD__mistend
-	 */
-	
-	public float getMistend() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 288);
-		} else {
-			return __io__block.readFloat(__io__address + 232);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'mistend'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime : miststa + mistdist, used for drawing camera. </p>
-	 * @see #__DNA__FIELD__mistend
-	 */
-	
-	public void setMistend(float mistend) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 288, mistend);
-		} else {
-			__io__block.writeFloat(__io__address + 232, mistend);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public CArrayFacade<Byte> get_pad1() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
-	 */
-	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 292;
-		} else {
-			__dna__offset = 236;
-		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
-		} else {
-			__io__generic__copy( get_pad1(), _pad1);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'gpumaterial'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1808,9 +1691,9 @@ public class World extends CFacade {
 	public ListBase getGpumaterial() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 288, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1826,9 +1709,9 @@ public class World extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 232;
 		}
 		if (__io__equals(gpumaterial, __io__address + __dna__offset)) {
 			return;

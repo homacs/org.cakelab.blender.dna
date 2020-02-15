@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -28,7 +27,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 257;
+	public static final int __DNA__SDNA_INDEX = 260;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_type'.
@@ -146,24 +145,27 @@ public class UserDef_FileSpaceData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{16, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UserDef_FileSpaceData userdef_filespacedata = ...;
-	 * CPointer&lt;Object&gt; p = userdef_filespacedata.__dna__addressof(UserDef_FileSpaceData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = userdef_filespacedata.__dna__addressof(UserDef_FileSpaceData.__DNA__FIELD__filter_id);
+	 * CPointer&lt;Integer&gt; p_filter_id = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'filter_id'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__filter_id = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_win_sizex'.
@@ -387,42 +389,36 @@ public class UserDef_FileSpaceData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * @see #__DNA__FIELD__filter_id
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getFilter_id() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 20);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 20);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * @see #__DNA__FIELD__filter_id
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setFilter_id(int filter_id) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 20;
+			__io__block.writeInt(__io__address + 20, filter_id);
 		} else {
-			__dna__offset = 20;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 20, filter_id);
 		}
 	}
 

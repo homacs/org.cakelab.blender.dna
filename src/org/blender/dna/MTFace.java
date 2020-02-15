@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> tessellation uv face data </p>
+ * <p> Tessellation uv face data. </p>
  */
 
 @CMetaData(size32=32, size64=32)
@@ -28,7 +28,7 @@ public class MTFace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 74;
+	public static final int __DNA__SDNA_INDEX = 83;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv'.

@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MSelect'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Optionally store the order of selected elements. This wont always be set since only some selection operations have an order.</p><p> Typically accessed from #Mesh.mselect </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -26,10 +27,13 @@ public class MSelect extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 73;
+	public static final int __DNA__SDNA_INDEX = 68;
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index in the vertex, edge or polygon array. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -52,7 +56,7 @@ public class MSelect extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
+	 * <p> #ME_VSEL, #ME_ESEL, #ME_FSEL. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -81,6 +85,9 @@ public class MSelect extends CFacade {
 
 	/**
 	 * Get method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index in the vertex, edge or polygon array. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -95,6 +102,9 @@ public class MSelect extends CFacade {
 
 	/**
 	 * Set method for struct member 'index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index in the vertex, edge or polygon array. </p>
 	 * @see #__DNA__FIELD__index
 	 */
 	
@@ -111,7 +121,7 @@ public class MSelect extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
+	 * <p> #ME_VSEL, #ME_ESEL, #ME_FSEL. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -128,7 +138,7 @@ public class MSelect extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ME_VSEL/ME_ESEL/ME_FSEL. </p>
+	 * <p> #ME_VSEL, #ME_ESEL, #ME_FSEL. </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

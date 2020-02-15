@@ -14,7 +14,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
- * A single vertex with coordinates and normal vector.
+ * A single vertex with coordinates and normal vector.<h4>Blender Source Code:</h4>
+ * <p>{@link Mesh}  Vertices.</p><p> Typically accessed from {@link Mesh.mvert}  </p>
  */
 
 @CMetaData(size32=20, size64=20)
@@ -28,7 +29,7 @@ public class MVert extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 66;
+	public static final int __DNA__SDNA_INDEX = 64;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.
@@ -57,7 +58,8 @@ public class MVert extends CFacade {
 	 * Field descriptor (offset) for struct member 'no'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Normal vector.
+	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -184,7 +186,8 @@ public class MVert extends CFacade {
 	 * Get method for struct member 'no'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Normal vector.
+	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * @see #__DNA__FIELD__no
 	 */
 	
@@ -205,7 +208,8 @@ public class MVert extends CFacade {
 	 * Set method for struct member 'no'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * Normal vector.
+	 * Normal vector.<h4>Blender Source Code:</h4>
+	 * <p> Cache the normal, can always be recalculated from surrounding faces. See #CD_CUSTOMLOOPNORMAL for custom normals. </p>
 	 * @see #__DNA__FIELD__no
 	 */
 	

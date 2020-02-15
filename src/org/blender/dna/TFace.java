@@ -13,8 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'TFace'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> deprecated by {@link MTFace} , only here for file reading </p>
+ * 
  */
 
 @CMetaData(size32=60, size64=64)
@@ -28,13 +27,10 @@ public class TFace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 61;
+	public static final int __DNA__SDNA_INDEX = 63;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tpage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The faces image for the active UVLayer. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -203,9 +199,6 @@ public class TFace extends CFacade {
 
 	/**
 	 * Get method for struct member 'tpage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The faces image for the active UVLayer. </p>
 	 * @see #__DNA__FIELD__tpage
 	 */
 	
@@ -223,9 +216,6 @@ public class TFace extends CFacade {
 
 	/**
 	 * Set method for struct member 'tpage'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The faces image for the active UVLayer. </p>
 	 * @see #__DNA__FIELD__tpage
 	 */
 	

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Java .Blend:</h4>
  * Object describing referenced custom data<h4>Blender Source Code:</h4>
- * <p> descriptor and storage for a custom data layer </p>
+ * <p> Descriptor and storage for a custom data layer. </p>
  */
 
 @CMetaData(size32=100, size64=104)
@@ -29,7 +29,7 @@ public class CustomDataLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 446;
+	public static final int __DNA__SDNA_INDEX = 451;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.

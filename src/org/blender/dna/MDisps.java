@@ -12,7 +12,8 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'MDisps'.
  * 
  * <h3>Class Documentation</h3>
- * 
+ * <h4>Blender Source Code:</h4>
+ * <p> Multi-Resolution loop data. </p>
  */
 
 @CMetaData(size32=16, size64=24)
@@ -26,7 +27,7 @@ public class MDisps extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 80;
+	public static final int __DNA__SDNA_INDEX = 78;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdisp'.
@@ -75,7 +76,7 @@ public class MDisps extends CFacade {
 	 * Field descriptor (offset) for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -169,7 +170,7 @@ public class MDisps extends CFacade {
 	 * Get method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * </p>
 	 * @see #__DNA__FIELD__hidden
 	 */
@@ -190,7 +191,7 @@ public class MDisps extends CFacade {
 	 * Set method for struct member 'hidden'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
+	 * <p> Used for hiding parts of a multires mesh. Essentially the multires equivalent of #MVert.flag's ME_HIDE bit.</p><p><h2>Note</h2><p> This is a bitmap, keep in sync with type used in BLI_bitmap.h </p> This is a bitmap, keep in sync with type used in BLI_bitmap.h 
 	 * </p>
 	 * @see #__DNA__FIELD__hidden
 	 */

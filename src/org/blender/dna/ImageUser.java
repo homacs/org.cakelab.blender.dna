@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link ImageUser}  is in Texture, in Nodes, Background {@link Image} , {@link Image}  Window, .... should be used in conjunction with an {@link ID}  * to {@link Image} . </p>
  */
 
-@CMetaData(size32=36, size64=40)
+@CMetaData(size32=44, size64=48)
 public class ImageUser extends CFacade {
 
 	/**
@@ -269,6 +269,49 @@ public class ImageUser extends CFacade {
 	public static final long[] __DNA__FIELD___pad1 = new long[]{26, 30};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tile in tiled image
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD__tile);
+	 * CPointer&lt;Integer&gt; p_tile = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tile'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tile = new long[]{28, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ImageUser imageuser = ...;
+	 * CPointer&lt;Object&gt; p = imageuser.__dna__addressof(ImageUser.__DNA__FIELD___pad2);
+	 * CPointer&lt;Integer&gt; p__pad2 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{32, 36};
+
+	/**
 	 * Field descriptor (offset) for struct member 'multi_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -289,7 +332,7 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multi_index = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__multi_index = new long[]{36, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
@@ -309,7 +352,7 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{30, 34};
+	public static final long[] __DNA__FIELD__view = new long[]{38, 42};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer'.
@@ -329,7 +372,7 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer = new long[]{32, 36};
+	public static final long[] __DNA__FIELD__layer = new long[]{40, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -349,7 +392,7 @@ public class ImageUser extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{34, 38};
+	public static final long[] __DNA__FIELD__flag = new long[]{42, 46};
 
 	public ImageUser(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -720,6 +763,68 @@ public class ImageUser extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tile in tiled image
+	 * @see #__DNA__FIELD__tile
+	 */
+	
+	public int getTile() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 32);
+		} else {
+			return __io__block.readInt(__io__address + 28);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tile'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Tile in tiled image
+	 * @see #__DNA__FIELD__tile
+	 */
+	
+	public void setTile(int tile) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 32, tile);
+		} else {
+			__io__block.writeInt(__io__address + 28, tile);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public int get_pad2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 36);
+		} else {
+			return __io__block.readInt(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(int _pad2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 36, _pad2);
+		} else {
+			__io__block.writeInt(__io__address + 32, _pad2);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'multi_index'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -730,9 +835,9 @@ public class ImageUser extends CFacade {
 	public short getMulti_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 40);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 36);
 		}
 	}
 
@@ -747,9 +852,9 @@ public class ImageUser extends CFacade {
 	public void setMulti_index(short multi_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 32, multi_index);
+			__io__block.writeShort(__io__address + 40, multi_index);
 		} else {
-			__io__block.writeShort(__io__address + 28, multi_index);
+			__io__block.writeShort(__io__address + 36, multi_index);
 		}
 	}
 
@@ -761,9 +866,9 @@ public class ImageUser extends CFacade {
 	public short getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 42);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 38);
 		}
 	}
 
@@ -775,9 +880,9 @@ public class ImageUser extends CFacade {
 	public void setView(short view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 34, view);
+			__io__block.writeShort(__io__address + 42, view);
 		} else {
-			__io__block.writeShort(__io__address + 30, view);
+			__io__block.writeShort(__io__address + 38, view);
 		}
 	}
 
@@ -789,9 +894,9 @@ public class ImageUser extends CFacade {
 	public short getLayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 36);
+			return __io__block.readShort(__io__address + 44);
 		} else {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 40);
 		}
 	}
 
@@ -803,9 +908,9 @@ public class ImageUser extends CFacade {
 	public void setLayer(short layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 36, layer);
+			__io__block.writeShort(__io__address + 44, layer);
 		} else {
-			__io__block.writeShort(__io__address + 32, layer);
+			__io__block.writeShort(__io__address + 40, layer);
 		}
 	}
 
@@ -817,9 +922,9 @@ public class ImageUser extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 38);
+			return __io__block.readShort(__io__address + 46);
 		} else {
-			return __io__block.readShort(__io__address + 34);
+			return __io__block.readShort(__io__address + 42);
 		}
 	}
 
@@ -831,9 +936,9 @@ public class ImageUser extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 38, flag);
+			__io__block.writeShort(__io__address + 46, flag);
 		} else {
-			__io__block.writeShort(__io__address + 34, flag);
+			__io__block.writeShort(__io__address + 42, flag);
 		}
 	}
 

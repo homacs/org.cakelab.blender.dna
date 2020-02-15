@@ -27,7 +27,7 @@ public class SolidifyModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 128;
+	public static final int __DNA__SDNA_INDEX = 129;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -165,6 +165,69 @@ public class SolidifyModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__offset_clamp = new long[]{176, 196};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SolidifyModifierData solidifymodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD__mode);
+	 * CPointer&lt;Byte&gt; p_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mode = new long[]{180, 200};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nonmanifold_offset_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Variables for #MOD_SOLIDIFY_MODE_NONMANIFOLD. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SolidifyModifierData solidifymodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD__nonmanifold_offset_mode);
+	 * CPointer&lt;Byte&gt; p_nonmanifold_offset_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nonmanifold_offset_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nonmanifold_offset_mode = new long[]{181, 201};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nonmanifold_boundary_mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SolidifyModifierData solidifymodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD__nonmanifold_boundary_mode);
+	 * CPointer&lt;Byte&gt; p_nonmanifold_boundary_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nonmanifold_boundary_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nonmanifold_boundary_mode = new long[]{182, 202};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -173,16 +236,16 @@ public class SolidifyModifierData extends CFacade {
 	 * <pre>
 	 * SolidifyModifierData solidifymodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = solidifymodifierdata.__dna__addressof(SolidifyModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{180, 200};
+	public static final long[] __DNA__FIELD___pad = new long[]{183, 203};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_inner'.
@@ -531,20 +594,106 @@ public class SolidifyModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mode'.
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public byte getMode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 200);
+		} else {
+			return __io__block.readByte(__io__address + 180);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mode'.
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public void setMode(byte mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 200, mode);
+		} else {
+			__io__block.writeByte(__io__address + 180, mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nonmanifold_offset_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Variables for #MOD_SOLIDIFY_MODE_NONMANIFOLD. </p>
+	 * @see #__DNA__FIELD__nonmanifold_offset_mode
+	 */
+	
+	public byte getNonmanifold_offset_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 201);
+		} else {
+			return __io__block.readByte(__io__address + 181);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nonmanifold_offset_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Variables for #MOD_SOLIDIFY_MODE_NONMANIFOLD. </p>
+	 * @see #__DNA__FIELD__nonmanifold_offset_mode
+	 */
+	
+	public void setNonmanifold_offset_mode(byte nonmanifold_offset_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 201, nonmanifold_offset_mode);
+		} else {
+			__io__block.writeByte(__io__address + 181, nonmanifold_offset_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nonmanifold_boundary_mode'.
+	 * @see #__DNA__FIELD__nonmanifold_boundary_mode
+	 */
+	
+	public byte getNonmanifold_boundary_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 202);
+		} else {
+			return __io__block.readByte(__io__address + 182);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nonmanifold_boundary_mode'.
+	 * @see #__DNA__FIELD__nonmanifold_boundary_mode
+	 */
+	
+	public void setNonmanifold_boundary_mode(byte nonmanifold_boundary_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 202, nonmanifold_boundary_mode);
+		} else {
+			__io__block.writeByte(__io__address + 182, nonmanifold_boundary_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public byte get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 203);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 183);
 		}
 	}
 
@@ -553,20 +702,12 @@ public class SolidifyModifierData extends CFacade {
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__io__block.writeByte(__io__address + 203, _pad);
 		} else {
-			__dna__offset = 180;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeByte(__io__address + 183, _pad);
 		}
 	}
 

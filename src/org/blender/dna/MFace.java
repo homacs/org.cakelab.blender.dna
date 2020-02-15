@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> tessellation face, see MLoop/MPoly for the real face data </p>
+ * <p> Used in Blender pre 2.63, See {@link MLoop} , {@link MPoly}  for face data stored in the blend file. Use for reading old files and in a handful of cases which should be removed eventually. </p>
  */
 
 @CMetaData(size32=20, size64=20)
@@ -27,7 +27,7 @@ public class MFace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 62;
+	public static final int __DNA__SDNA_INDEX = 82;
 
 	/**
 	 * Field descriptor (offset) for struct member 'v1'.
