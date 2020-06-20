@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Maintain Volume Constraint </p>
+ * <p> Maintain {@link Volume}  Constraint </p>
  */
 
 @CMetaData(size32=8, size64=8)
@@ -28,7 +28,7 @@ public class bSameVolumeConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 341;
+	public static final int __DNA__SDNA_INDEX = 345;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.

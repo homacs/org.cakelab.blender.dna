@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=304, size64=320)
+@CMetaData(size32=312, size64=328)
 public class ThickGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ThickGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 486;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -165,10 +165,33 @@ public class ThickGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{288, 300};
 
 	/**
+	 * Field descriptor (offset) for struct member 'thickness_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Relative thickness factor. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThickGpencilModifierData thickgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = thickgpencilmodifierdata.__dna__addressof(ThickGpencilModifierData.__DNA__FIELD__thickness_fac);
+	 * CPointer&lt;Float&gt; p_thickness_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'thickness_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__thickness_fac = new long[]{292, 304};
+
+	/**
 	 * Field descriptor (offset) for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Thickness change. </p>
+	 * <p> Absolute thickness overide. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -185,7 +208,7 @@ public class ThickGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thickness = new long[]{292, 304};
+	public static final long[] __DNA__FIELD__thickness = new long[]{296, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -208,7 +231,27 @@ public class ThickGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{296, 308};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{300, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ThickGpencilModifierData thickgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = thickgpencilmodifierdata.__dna__addressof(ThickGpencilModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{304, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_thickness'.
@@ -228,7 +271,7 @@ public class ThickGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_thickness = new long[]{300, 312};
+	public static final long[] __DNA__FIELD__curve_thickness = new long[]{308, 320};
 
 	public ThickGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -481,19 +524,53 @@ public class ThickGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'thickness_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Relative thickness factor. </p>
+	 * @see #__DNA__FIELD__thickness_fac
+	 */
+	
+	public float getThickness_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 304);
+		} else {
+			return __io__block.readFloat(__io__address + 292);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'thickness_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Relative thickness factor. </p>
+	 * @see #__DNA__FIELD__thickness_fac
+	 */
+	
+	public void setThickness_fac(float thickness_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 304, thickness_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 292, thickness_fac);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Thickness change. </p>
+	 * <p> Absolute thickness overide. </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
 	
 	public int getThickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 304);
+			return __io__block.readInt(__io__address + 308);
 		} else {
-			return __io__block.readInt(__io__address + 292);
+			return __io__block.readInt(__io__address + 296);
 		}
 	}
 
@@ -501,16 +578,16 @@ public class ThickGpencilModifierData extends CFacade {
 	 * Set method for struct member 'thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Thickness change. </p>
+	 * <p> Absolute thickness overide. </p>
 	 * @see #__DNA__FIELD__thickness
 	 */
 	
 	public void setThickness(int thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 304, thickness);
+			__io__block.writeInt(__io__address + 308, thickness);
 		} else {
-			__io__block.writeInt(__io__address + 292, thickness);
+			__io__block.writeInt(__io__address + 296, thickness);
 		}
 	}
 
@@ -525,9 +602,9 @@ public class ThickGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 308);
+			return __io__block.readInt(__io__address + 312);
 		} else {
-			return __io__block.readInt(__io__address + 296);
+			return __io__block.readInt(__io__address + 300);
 		}
 	}
 
@@ -542,9 +619,49 @@ public class ThickGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 308, layer_pass);
+			__io__block.writeInt(__io__address + 312, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 296, layer_pass);
+			__io__block.writeInt(__io__address + 300, layer_pass);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 316;
+		} else {
+			__dna__offset = 304;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -557,9 +674,9 @@ public class ThickGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 300);
+			__dna__targetAddress = __io__block.readLong(__io__address + 308);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -574,9 +691,9 @@ public class ThickGpencilModifierData extends CFacade {
 	{
 		long __address = ((curve_thickness == null) ? 0 : curve_thickness.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		} else {
-			__io__block.writeLong(__io__address + 300, __address);
+			__io__block.writeLong(__io__address + 308, __address);
 		}
 	}
 

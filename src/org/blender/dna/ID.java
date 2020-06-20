@@ -22,7 +22,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> There's a nasty circular dependency here.... 'void *' to the rescue! I really wonder why this is needed. </p>
  */
 
-@CMetaData(size32=120, size64=152)
+@CMetaData(size32=128, size64=160)
 public class ID extends CFacade {
 
 	/**
@@ -296,24 +296,70 @@ public class ID extends CFacade {
 	public static final long[] __DNA__FIELD__recalc = new long[]{96, 112};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'recalc_up_to_undo_push'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ID id = ...;
-	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__recalc_up_to_undo_push);
+	 * CPointer&lt;Integer&gt; p_recalc_up_to_undo_push = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'recalc_up_to_undo_push'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__recalc_up_to_undo_push = new long[]{100, 116};
+
+	/**
+	 * Field descriptor (offset) for struct member 'recalc_after_undo_push'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__recalc_after_undo_push);
+	 * CPointer&lt;Integer&gt; p_recalc_after_undo_push = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'recalc_after_undo_push'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__recalc_after_undo_push = new long[]{104, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'session_uuid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__session_uuid);
+	 * CPointer&lt;Integer&gt; p_session_uuid = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'session_uuid'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__session_uuid = new long[]{108, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
@@ -336,7 +382,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__properties = new long[]{112, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'override_library'.
@@ -360,7 +406,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__override_library = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__override_library = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orig_id'.
@@ -383,7 +429,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orig_id = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__orig_id = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_instance'.
@@ -403,7 +449,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_instance = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__py_instance = new long[]{124, 152};
 
 	public ID(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -842,42 +888,98 @@ public class ID extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'recalc_up_to_undo_push'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
+	 * @see #__DNA__FIELD__recalc_up_to_undo_push
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getRecalc_up_to_undo_push() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 116);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 100);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'recalc_up_to_undo_push'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Used by undo code. recalc_after_undo_push contains the changes between the last undo push and the current state. This is accumulated as IDs are tagged for update in the depsgraph, and only cleared on undo push.</p><p> recalc_up_to_undo_push is saved to undo memory, and is the value of recalc_after_undo_push at the time of the undo push. This means it can be used to find the changes between undo states. </p>
+	 * @see #__DNA__FIELD__recalc_up_to_undo_push
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setRecalc_up_to_undo_push(int recalc_up_to_undo_push) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 116;
+			__io__block.writeInt(__io__address + 116, recalc_up_to_undo_push);
 		} else {
-			__dna__offset = 100;
+			__io__block.writeInt(__io__address + 100, recalc_up_to_undo_push);
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+	}
+
+	/**
+	 * Get method for struct member 'recalc_after_undo_push'.
+	 * @see #__DNA__FIELD__recalc_after_undo_push
+	 */
+	
+	public int getRecalc_after_undo_push() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 120);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			return __io__block.readInt(__io__address + 104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'recalc_after_undo_push'.
+	 * @see #__DNA__FIELD__recalc_after_undo_push
+	 */
+	
+	public void setRecalc_after_undo_push(int recalc_after_undo_push) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 120, recalc_after_undo_push);
+		} else {
+			__io__block.writeInt(__io__address + 104, recalc_after_undo_push);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'session_uuid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
+	 * @see #__DNA__FIELD__session_uuid
+	 */
+	
+	public int getSession_uuid() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 124);
+		} else {
+			return __io__block.readInt(__io__address + 108);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'session_uuid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A session-wide unique identifier for a given {@link ID} , that remain the same across potential re-allocations (e.g. due to undo/redo steps). </p>
+	 * @see #__DNA__FIELD__session_uuid
+	 */
+	
+	public void setSession_uuid(int session_uuid) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 124, session_uuid);
+		} else {
+			__io__block.writeInt(__io__address + 108, session_uuid);
 		}
 	}
 
@@ -893,9 +995,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -913,9 +1015,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -932,9 +1034,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDOverrideLibrary.class};
 		return new CPointer<IDOverrideLibrary>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDOverrideLibrary.__DNA__SDNA_INDEX), __io__blockTable);
@@ -953,9 +1055,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((override_library == null) ? 0 : override_library.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -971,9 +1073,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -991,9 +1093,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((orig_id == null) ? 0 : orig_id.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -1006,9 +1108,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1023,9 +1125,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((py_instance == null) ? 0 : py_instance.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 

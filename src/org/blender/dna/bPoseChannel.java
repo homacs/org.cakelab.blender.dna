@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Poses PoseChannel ------------------------------<mdash/><mdash/>  PoseChannel</p><p> A PoseChannel stores the results of Actions and transform information with respect to the restposition of Armature bones </p>
+ *  Poses PoseChannel ------------------------------<mdash/><mdash/>  PoseChannel</p><p> A {@link bPoseChannel}  stores the results of Actions and transform information with respect to the rest-position of {@link bArmature}  bones. </p>
  */
 
 @CMetaData(size32=800, size64=896)
@@ -29,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 320;
+	public static final int __DNA__SDNA_INDEX = 324;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -838,7 +838,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inverse result of constraints. doesn't include effect of restposition, parent, and local transform. </p>
+	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2819,7 +2819,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inverse result of constraints. doesn't include effect of restposition, parent, and local transform. </p>
+	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
 	
@@ -2841,7 +2841,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'constinv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Inverse result of constraints. doesn't include effect of restposition, parent, and local transform. </p>
+	 * <p> Inverse result of constraints. doesn't include effect of rest-position, parent, and local transform. </p>
 	 * @see #__DNA__FIELD__constinv
 	 */
 	

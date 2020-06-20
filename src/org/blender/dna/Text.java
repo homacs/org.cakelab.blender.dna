@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=168, size64=224)
+@CMetaData(size32=176, size64=232)
 public class Text extends CFacade {
 
 	/**
@@ -43,7 +43,7 @@ public class Text extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -69,7 +69,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__name = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'compiled'.
@@ -89,7 +89,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__compiled = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__compiled = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -109,7 +109,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__flags = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nlines'.
@@ -129,7 +129,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlines = new long[]{132, 172};
+	public static final long[] __DNA__FIELD__nlines = new long[]{140, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
@@ -152,7 +152,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lines = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__lines = new long[]{144, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curl'.
@@ -172,7 +172,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curl = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__curl = new long[]{152, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sell'.
@@ -192,7 +192,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sell = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__sell = new long[]{156, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curc'.
@@ -212,7 +212,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curc = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__curc = new long[]{160, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'selc'.
@@ -232,7 +232,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__selc = new long[]{156, 212};
+	public static final long[] __DNA__FIELD__selc = new long[]{164, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtime'.
@@ -252,7 +252,7 @@ public class Text extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtime = new long[]{160, 216};
+	public static final long[] __DNA__FIELD__mtime = new long[]{168, 224};
 
 	public Text(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -310,9 +310,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -330,9 +330,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((name == null) ? 0 : name.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -362,9 +362,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((compiled == null) ? 0 : compiled.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 
@@ -376,9 +376,9 @@ public class Text extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 176);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 136);
 		}
 	}
 
@@ -390,9 +390,9 @@ public class Text extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, flags);
+			__io__block.writeInt(__io__address + 176, flags);
 		} else {
-			__io__block.writeInt(__io__address + 128, flags);
+			__io__block.writeInt(__io__address + 136, flags);
 		}
 	}
 
@@ -404,9 +404,9 @@ public class Text extends CFacade {
 	public int getNlines() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 180);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -418,9 +418,9 @@ public class Text extends CFacade {
 	public void setNlines(int nlines) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, nlines);
+			__io__block.writeInt(__io__address + 180, nlines);
 		} else {
-			__io__block.writeInt(__io__address + 132, nlines);
+			__io__block.writeInt(__io__address + 140, nlines);
 		}
 	}
 
@@ -435,9 +435,9 @@ public class Text extends CFacade {
 	public ListBase getLines() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
 		}
 	}
 
@@ -453,9 +453,9 @@ public class Text extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(lines, __io__address + __dna__offset)) {
 			return;
@@ -475,9 +475,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TextLine.class};
 		return new CPointer<TextLine>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TextLine.__DNA__SDNA_INDEX), __io__blockTable);
@@ -492,9 +492,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((curl == null) ? 0 : curl.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -507,9 +507,9 @@ public class Text extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TextLine.class};
 		return new CPointer<TextLine>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TextLine.__DNA__SDNA_INDEX), __io__blockTable);
@@ -524,9 +524,9 @@ public class Text extends CFacade {
 	{
 		long __address = ((sell == null) ? 0 : sell.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -538,9 +538,9 @@ public class Text extends CFacade {
 	public int getCurc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -552,9 +552,9 @@ public class Text extends CFacade {
 	public void setCurc(int curc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, curc);
+			__io__block.writeInt(__io__address + 216, curc);
 		} else {
-			__io__block.writeInt(__io__address + 152, curc);
+			__io__block.writeInt(__io__address + 160, curc);
 		}
 	}
 
@@ -566,9 +566,9 @@ public class Text extends CFacade {
 	public int getSelc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -580,9 +580,9 @@ public class Text extends CFacade {
 	public void setSelc(int selc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, selc);
+			__io__block.writeInt(__io__address + 220, selc);
 		} else {
-			__io__block.writeInt(__io__address + 156, selc);
+			__io__block.writeInt(__io__address + 164, selc);
 		}
 	}
 
@@ -594,9 +594,9 @@ public class Text extends CFacade {
 	public double getMtime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readDouble(__io__address + 216);
+			return __io__block.readDouble(__io__address + 224);
 		} else {
-			return __io__block.readDouble(__io__address + 160);
+			return __io__block.readDouble(__io__address + 168);
 		}
 	}
 
@@ -608,9 +608,9 @@ public class Text extends CFacade {
 	public void setMtime(double mtime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeDouble(__io__address + 216, mtime);
+			__io__block.writeDouble(__io__address + 224, mtime);
 		} else {
-			__io__block.writeDouble(__io__address + 160, mtime);
+			__io__block.writeDouble(__io__address + 168, mtime);
 		}
 	}
 

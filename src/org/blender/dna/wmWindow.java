@@ -28,7 +28,7 @@ public class wmWindow extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 515;
+	public static final int __DNA__SDNA_INDEX = 521;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -372,39 +372,16 @@ public class wmWindow extends CFacade {
 	 * <pre>
 	 * wmWindow wmwindow = ...;
 	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__windowstate);
-	 * CPointer&lt;Short&gt; p_windowstate = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_windowstate = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'windowstate'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__windowstate = new long[]{132, 192};
-
-	/**
-	 * Field descriptor (offset) for struct member 'monitor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Multiscreen... no idea how to store yet. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * wmWindow wmwindow = ...;
-	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__monitor);
-	 * CPointer&lt;Short&gt; p_monitor = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'monitor'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__monitor = new long[]{134, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active'.
@@ -418,16 +395,36 @@ public class wmWindow extends CFacade {
 	 * <pre>
 	 * wmWindow wmwindow = ...;
 	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__active);
-	 * CPointer&lt;Short&gt; p_active = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_active = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'active'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active = new long[]{136, 196};
+	public static final long[] __DNA__FIELD__active = new long[]{133, 193};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindow wmwindow = ...;
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{134, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
@@ -533,16 +530,36 @@ public class wmWindow extends CFacade {
 	 * <pre>
 	 * wmWindow wmwindow = ...;
 	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__addmousemove);
-	 * CPointer&lt;Short&gt; p_addmousemove = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_addmousemove = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'addmousemove'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__addmousemove = new long[]{146, 206};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tag_cursor_refresh'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * wmWindow wmwindow = ...;
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__tag_cursor_refresh);
+	 * CPointer&lt;Byte&gt; p_tag_cursor_refresh = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag_cursor_refresh'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag_cursor_refresh = new long[]{147, 207};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winid'.
@@ -1395,12 +1412,12 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__windowstate
 	 */
 	
-	public short getWindowstate() throws IOException
+	public byte getWindowstate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readByte(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 132);
+			return __io__block.readByte(__io__address + 132);
 		}
 	}
 
@@ -1412,46 +1429,12 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__windowstate
 	 */
 	
-	public void setWindowstate(short windowstate) throws IOException
+	public void setWindowstate(byte windowstate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, windowstate);
+			__io__block.writeByte(__io__address + 192, windowstate);
 		} else {
-			__io__block.writeShort(__io__address + 132, windowstate);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'monitor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Multiscreen... no idea how to store yet. </p>
-	 * @see #__DNA__FIELD__monitor
-	 */
-	
-	public short getMonitor() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
-		} else {
-			return __io__block.readShort(__io__address + 134);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'monitor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Multiscreen... no idea how to store yet. </p>
-	 * @see #__DNA__FIELD__monitor
-	 */
-	
-	public void setMonitor(short monitor) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, monitor);
-		} else {
-			__io__block.writeShort(__io__address + 134, monitor);
+			__io__block.writeByte(__io__address + 132, windowstate);
 		}
 	}
 
@@ -1463,12 +1446,12 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__active
 	 */
 	
-	public short getActive() throws IOException
+	public byte getActive() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readByte(__io__address + 193);
 		} else {
-			return __io__block.readShort(__io__address + 136);
+			return __io__block.readByte(__io__address + 133);
 		}
 	}
 
@@ -1480,12 +1463,52 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__active
 	 */
 	
-	public void setActive(short active) throws IOException
+	public void setActive(byte active) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 196, active);
+			__io__block.writeByte(__io__address + 193, active);
 		} else {
-			__io__block.writeShort(__io__address + 136, active);
+			__io__block.writeByte(__io__address + 133, active);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 194;
+		} else {
+			__dna__offset = 134;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -1633,12 +1656,12 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__addmousemove
 	 */
 	
-	public short getAddmousemove() throws IOException
+	public byte getAddmousemove() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readByte(__io__address + 206);
 		} else {
-			return __io__block.readShort(__io__address + 146);
+			return __io__block.readByte(__io__address + 146);
 		}
 	}
 
@@ -1650,12 +1673,40 @@ public class wmWindow extends CFacade {
 	 * @see #__DNA__FIELD__addmousemove
 	 */
 	
-	public void setAddmousemove(short addmousemove) throws IOException
+	public void setAddmousemove(byte addmousemove) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 206, addmousemove);
+			__io__block.writeByte(__io__address + 206, addmousemove);
 		} else {
-			__io__block.writeShort(__io__address + 146, addmousemove);
+			__io__block.writeByte(__io__address + 146, addmousemove);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tag_cursor_refresh'.
+	 * @see #__DNA__FIELD__tag_cursor_refresh
+	 */
+	
+	public byte getTag_cursor_refresh() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 207);
+		} else {
+			return __io__block.readByte(__io__address + 147);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag_cursor_refresh'.
+	 * @see #__DNA__FIELD__tag_cursor_refresh
+	 */
+	
+	public void setTag_cursor_refresh(byte tag_cursor_refresh) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 207, tag_cursor_refresh);
+		} else {
+			__io__block.writeByte(__io__address + 147, tag_cursor_refresh);
 		}
 	}
 

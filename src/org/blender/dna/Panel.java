@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> The part from uiBlock that needs saved in file. </p>
  */
 
-@CMetaData(size32=196, size64=224)
+@CMetaData(size32=204, size64=232)
 public class Panel extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 267;
+	public static final int __DNA__SDNA_INDEX = 271;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -480,6 +480,26 @@ public class Panel extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__children = new long[]{188, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Panel panel = ...;
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__runtime);
+	 * CPointer&lt;Panel_Runtime&gt; p_runtime = p.cast(new Class[]{Panel_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'Panel_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{196, 224};
 
 	public Panel(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1200,6 +1220,42 @@ public class Panel extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, children);
 		} else {
 			__io__generic__copy( getChildren(), children);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public Panel_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new Panel_Runtime(__io__address + 224, __io__block, __io__blockTable);
+		} else {
+			return new Panel_Runtime(__io__address + 196, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(Panel_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 224;
+		} else {
+			__dna__offset = 196;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

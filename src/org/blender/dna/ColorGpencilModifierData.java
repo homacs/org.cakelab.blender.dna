@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=252, size64=264)
+@CMetaData(size32=256, size64=272)
 public class ColorGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ColorGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 489;
+	public static final int __DNA__SDNA_INDEX = 494;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -249,6 +249,26 @@ public class ColorGpencilModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad1 = new long[]{248, 260};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curve_intensity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ColorGpencilModifierData colorgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = colorgpencilmodifierdata.__dna__addressof(ColorGpencilModifierData.__DNA__FIELD__curve_intensity);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_curve_intensity = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_intensity'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_intensity = new long[]{252, 264};
 
 	public ColorGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -645,6 +665,38 @@ public class ColorGpencilModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
 		} else {
 			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public CPointer<CurveMapping> getCurve_intensity() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 252);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public void setCurve_intensity(CPointer<CurveMapping> curve_intensity) throws IOException
+	{
+		long __address = ((curve_intensity == null) ? 0 : curve_intensity.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 264, __address);
+		} else {
+			__io__block.writeLong(__io__address + 252, __address);
 		}
 	}
 

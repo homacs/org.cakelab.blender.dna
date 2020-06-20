@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1276, size64=1304)
+@CMetaData(size32=1292, size64=1320)
 public class OceanModifierData extends CFacade {
 
 	/**
@@ -330,6 +330,92 @@ public class OceanModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__time = new long[]{152, 180};
 
 	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OceanModifierData oceanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = oceanmodifierdata.__dna__addressof(OceanModifierData.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{156, 184};
+
+	/**
+	 * Field descriptor (offset) for struct member 'spectrum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spectrum being used. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OceanModifierData oceanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = oceanmodifierdata.__dna__addressof(OceanModifierData.__DNA__FIELD__spectrum);
+	 * CPointer&lt;Integer&gt; p_spectrum = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'spectrum'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__spectrum = new long[]{160, 188};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fetch_jonswap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OceanModifierData oceanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = oceanmodifierdata.__dna__addressof(OceanModifierData.__DNA__FIELD__fetch_jonswap);
+	 * CPointer&lt;Float&gt; p_fetch_jonswap = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fetch_jonswap'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fetch_jonswap = new long[]{164, 192};
+
+	/**
+	 * Field descriptor (offset) for struct member 'sharpen_peak_jonswap'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OceanModifierData oceanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = oceanmodifierdata.__dna__addressof(OceanModifierData.__DNA__FIELD__sharpen_peak_jonswap);
+	 * CPointer&lt;Float&gt; p_sharpen_peak_jonswap = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sharpen_peak_jonswap'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sharpen_peak_jonswap = new long[]{168, 196};
+
+	/**
 	 * Field descriptor (offset) for struct member 'bakestart'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -347,7 +433,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bakestart = new long[]{156, 184};
+	public static final long[] __DNA__FIELD__bakestart = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bakeend'.
@@ -367,7 +453,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bakeend = new long[]{160, 188};
+	public static final long[] __DNA__FIELD__bakeend = new long[]{176, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cachepath'.
@@ -390,7 +476,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cachepath = new long[]{164, 192};
+	public static final long[] __DNA__FIELD__cachepath = new long[]{180, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'foamlayername'.
@@ -413,7 +499,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__foamlayername = new long[]{1188, 1216};
+	public static final long[] __DNA__FIELD__foamlayername = new long[]{1204, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cached'.
@@ -433,7 +519,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cached = new long[]{1252, 1280};
+	public static final long[] __DNA__FIELD__cached = new long[]{1268, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'geometry_mode'.
@@ -453,7 +539,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__geometry_mode = new long[]{1253, 1281};
+	public static final long[] __DNA__FIELD__geometry_mode = new long[]{1269, 1297};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -473,7 +559,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1254, 1282};
+	public static final long[] __DNA__FIELD__flag = new long[]{1270, 1298};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -493,7 +579,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{1255, 1283};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1271, 1299};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat_x'.
@@ -513,7 +599,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat_x = new long[]{1256, 1284};
+	public static final long[] __DNA__FIELD__repeat_x = new long[]{1272, 1300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat_y'.
@@ -533,7 +619,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat_y = new long[]{1258, 1286};
+	public static final long[] __DNA__FIELD__repeat_y = new long[]{1274, 1302};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
@@ -553,7 +639,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seed = new long[]{1260, 1288};
+	public static final long[] __DNA__FIELD__seed = new long[]{1276, 1304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -573,7 +659,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{1264, 1292};
+	public static final long[] __DNA__FIELD__size = new long[]{1280, 1308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'foam_fade'.
@@ -593,7 +679,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__foam_fade = new long[]{1268, 1296};
+	public static final long[] __DNA__FIELD__foam_fade = new long[]{1284, 1312};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -613,7 +699,7 @@ public class OceanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1272, 1300};
+	public static final long[] __DNA__FIELD___pad = new long[]{1288, 1316};
 
 	public OceanModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1060,6 +1146,142 @@ public class OceanModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 184;
+		} else {
+			__dna__offset = 156;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'spectrum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spectrum being used. </p>
+	 * @see #__DNA__FIELD__spectrum
+	 */
+	
+	public int getSpectrum() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 188);
+		} else {
+			return __io__block.readInt(__io__address + 160);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'spectrum'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Spectrum being used. </p>
+	 * @see #__DNA__FIELD__spectrum
+	 */
+	
+	public void setSpectrum(int spectrum) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 188, spectrum);
+		} else {
+			__io__block.writeInt(__io__address + 160, spectrum);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fetch_jonswap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
+	 * @see #__DNA__FIELD__fetch_jonswap
+	 */
+	
+	public float getFetch_jonswap() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 192);
+		} else {
+			return __io__block.readFloat(__io__address + 164);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fetch_jonswap'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Common JONSWAP parameters. This is the distance from a lee shore, called the fetch, or the distance over which the wind blows with constant velocity. </p>
+	 * @see #__DNA__FIELD__fetch_jonswap
+	 */
+	
+	public void setFetch_jonswap(float fetch_jonswap) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 192, fetch_jonswap);
+		} else {
+			__io__block.writeFloat(__io__address + 164, fetch_jonswap);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'sharpen_peak_jonswap'.
+	 * @see #__DNA__FIELD__sharpen_peak_jonswap
+	 */
+	
+	public float getSharpen_peak_jonswap() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 196);
+		} else {
+			return __io__block.readFloat(__io__address + 168);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'sharpen_peak_jonswap'.
+	 * @see #__DNA__FIELD__sharpen_peak_jonswap
+	 */
+	
+	public void setSharpen_peak_jonswap(float sharpen_peak_jonswap) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 196, sharpen_peak_jonswap);
+		} else {
+			__io__block.writeFloat(__io__address + 168, sharpen_peak_jonswap);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'bakestart'.
 	 * @see #__DNA__FIELD__bakestart
 	 */
@@ -1067,9 +1289,9 @@ public class OceanModifierData extends CFacade {
 	public int getBakestart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 200);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -1081,9 +1303,9 @@ public class OceanModifierData extends CFacade {
 	public void setBakestart(int bakestart) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, bakestart);
+			__io__block.writeInt(__io__address + 200, bakestart);
 		} else {
-			__io__block.writeInt(__io__address + 156, bakestart);
+			__io__block.writeInt(__io__address + 172, bakestart);
 		}
 	}
 
@@ -1095,9 +1317,9 @@ public class OceanModifierData extends CFacade {
 	public int getBakeend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -1109,9 +1331,9 @@ public class OceanModifierData extends CFacade {
 	public void setBakeend(int bakeend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, bakeend);
+			__io__block.writeInt(__io__address + 204, bakeend);
 		} else {
-			__io__block.writeInt(__io__address + 160, bakeend);
+			__io__block.writeInt(__io__address + 176, bakeend);
 		}
 	}
 
@@ -1130,9 +1352,9 @@ public class OceanModifierData extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1148,9 +1370,9 @@ public class OceanModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 180;
 		}
 		if (__io__equals(cachepath, __io__address + __dna__offset)) {
 			return;
@@ -1176,9 +1398,9 @@ public class OceanModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1194,9 +1416,9 @@ public class OceanModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1216;
+			__dna__offset = 1232;
 		} else {
-			__dna__offset = 1188;
+			__dna__offset = 1204;
 		}
 		if (__io__equals(foamlayername, __io__address + __dna__offset)) {
 			return;
@@ -1215,9 +1437,9 @@ public class OceanModifierData extends CFacade {
 	public byte getCached() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1280);
+			return __io__block.readByte(__io__address + 1296);
 		} else {
-			return __io__block.readByte(__io__address + 1252);
+			return __io__block.readByte(__io__address + 1268);
 		}
 	}
 
@@ -1229,9 +1451,9 @@ public class OceanModifierData extends CFacade {
 	public void setCached(byte cached) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1280, cached);
+			__io__block.writeByte(__io__address + 1296, cached);
 		} else {
-			__io__block.writeByte(__io__address + 1252, cached);
+			__io__block.writeByte(__io__address + 1268, cached);
 		}
 	}
 
@@ -1243,9 +1465,9 @@ public class OceanModifierData extends CFacade {
 	public byte getGeometry_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1281);
+			return __io__block.readByte(__io__address + 1297);
 		} else {
-			return __io__block.readByte(__io__address + 1253);
+			return __io__block.readByte(__io__address + 1269);
 		}
 	}
 
@@ -1257,9 +1479,9 @@ public class OceanModifierData extends CFacade {
 	public void setGeometry_mode(byte geometry_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1281, geometry_mode);
+			__io__block.writeByte(__io__address + 1297, geometry_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1253, geometry_mode);
+			__io__block.writeByte(__io__address + 1269, geometry_mode);
 		}
 	}
 
@@ -1271,9 +1493,9 @@ public class OceanModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1282);
+			return __io__block.readByte(__io__address + 1298);
 		} else {
-			return __io__block.readByte(__io__address + 1254);
+			return __io__block.readByte(__io__address + 1270);
 		}
 	}
 
@@ -1285,9 +1507,9 @@ public class OceanModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1282, flag);
+			__io__block.writeByte(__io__address + 1298, flag);
 		} else {
-			__io__block.writeByte(__io__address + 1254, flag);
+			__io__block.writeByte(__io__address + 1270, flag);
 		}
 	}
 
@@ -1299,9 +1521,9 @@ public class OceanModifierData extends CFacade {
 	public byte get_pad2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1283);
+			return __io__block.readByte(__io__address + 1299);
 		} else {
-			return __io__block.readByte(__io__address + 1255);
+			return __io__block.readByte(__io__address + 1271);
 		}
 	}
 
@@ -1313,9 +1535,9 @@ public class OceanModifierData extends CFacade {
 	public void set_pad2(byte _pad2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1283, _pad2);
+			__io__block.writeByte(__io__address + 1299, _pad2);
 		} else {
-			__io__block.writeByte(__io__address + 1255, _pad2);
+			__io__block.writeByte(__io__address + 1271, _pad2);
 		}
 	}
 
@@ -1327,9 +1549,9 @@ public class OceanModifierData extends CFacade {
 	public short getRepeat_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1284);
+			return __io__block.readShort(__io__address + 1300);
 		} else {
-			return __io__block.readShort(__io__address + 1256);
+			return __io__block.readShort(__io__address + 1272);
 		}
 	}
 
@@ -1341,9 +1563,9 @@ public class OceanModifierData extends CFacade {
 	public void setRepeat_x(short repeat_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1284, repeat_x);
+			__io__block.writeShort(__io__address + 1300, repeat_x);
 		} else {
-			__io__block.writeShort(__io__address + 1256, repeat_x);
+			__io__block.writeShort(__io__address + 1272, repeat_x);
 		}
 	}
 
@@ -1355,9 +1577,9 @@ public class OceanModifierData extends CFacade {
 	public short getRepeat_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1286);
+			return __io__block.readShort(__io__address + 1302);
 		} else {
-			return __io__block.readShort(__io__address + 1258);
+			return __io__block.readShort(__io__address + 1274);
 		}
 	}
 
@@ -1369,9 +1591,9 @@ public class OceanModifierData extends CFacade {
 	public void setRepeat_y(short repeat_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1286, repeat_y);
+			__io__block.writeShort(__io__address + 1302, repeat_y);
 		} else {
-			__io__block.writeShort(__io__address + 1258, repeat_y);
+			__io__block.writeShort(__io__address + 1274, repeat_y);
 		}
 	}
 
@@ -1383,9 +1605,9 @@ public class OceanModifierData extends CFacade {
 	public int getSeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1288);
+			return __io__block.readInt(__io__address + 1304);
 		} else {
-			return __io__block.readInt(__io__address + 1260);
+			return __io__block.readInt(__io__address + 1276);
 		}
 	}
 
@@ -1397,9 +1619,9 @@ public class OceanModifierData extends CFacade {
 	public void setSeed(int seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1288, seed);
+			__io__block.writeInt(__io__address + 1304, seed);
 		} else {
-			__io__block.writeInt(__io__address + 1260, seed);
+			__io__block.writeInt(__io__address + 1276, seed);
 		}
 	}
 
@@ -1411,9 +1633,9 @@ public class OceanModifierData extends CFacade {
 	public float getSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1292);
+			return __io__block.readFloat(__io__address + 1308);
 		} else {
-			return __io__block.readFloat(__io__address + 1264);
+			return __io__block.readFloat(__io__address + 1280);
 		}
 	}
 
@@ -1425,9 +1647,9 @@ public class OceanModifierData extends CFacade {
 	public void setSize(float size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1292, size);
+			__io__block.writeFloat(__io__address + 1308, size);
 		} else {
-			__io__block.writeFloat(__io__address + 1264, size);
+			__io__block.writeFloat(__io__address + 1280, size);
 		}
 	}
 
@@ -1439,9 +1661,9 @@ public class OceanModifierData extends CFacade {
 	public float getFoam_fade() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1296);
+			return __io__block.readFloat(__io__address + 1312);
 		} else {
-			return __io__block.readFloat(__io__address + 1268);
+			return __io__block.readFloat(__io__address + 1284);
 		}
 	}
 
@@ -1453,9 +1675,9 @@ public class OceanModifierData extends CFacade {
 	public void setFoam_fade(float foam_fade) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1296, foam_fade);
+			__io__block.writeFloat(__io__address + 1312, foam_fade);
 		} else {
-			__io__block.writeFloat(__io__address + 1268, foam_fade);
+			__io__block.writeFloat(__io__address + 1284, foam_fade);
 		}
 	}
 
@@ -1471,9 +1693,9 @@ public class OceanModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1300, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1486,9 +1708,9 @@ public class OceanModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1300;
+			__dna__offset = 1316;
 		} else {
-			__dna__offset = 1272;
+			__dna__offset = 1288;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

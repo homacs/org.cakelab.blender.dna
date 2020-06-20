@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> GPencil Stroke Sculpting Settings </p>
  */
 
-@CMetaData(size32=552, size64=568)
+@CMetaData(size32=64, size64=80)
 public class GP_Sculpt_Settings extends CFacade {
 
 	/**
@@ -28,30 +28,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 197;
-
-	/**
-	 * Field descriptor (offset) for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> GP_SCULPT_TYPE_MAX. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * GP_Sculpt_Settings gp_sculpt_settings = ...;
-	 * CPointer&lt;Object&gt; p = gp_sculpt_settings.__dna__addressof(GP_Sculpt_Settings.__DNA__FIELD__brush);
-	 * CPointer&lt;CArrayFacade&lt;GP_Sculpt_Data&gt;&gt; p_brush = p.cast(new Class[]{CArrayFacade.class, GP_Sculpt_Data.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'brush'</li>
-	 * <li>Signature: 'GP_Sculpt_Data[12]'</li>
-	 * <li>Actual Size (32bit/64bit): 480/480</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__brush = new long[]{0, 0};
+	public static final int __DNA__SDNA_INDEX = 199;
 
 	/**
 	 * Field descriptor (offset) for struct member 'paintcursor'.
@@ -74,30 +51,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paintcursor = new long[]{480, 480};
-
-	/**
-	 * Field descriptor (offset) for struct member 'brushtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_Types}  (sculpt). </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * GP_Sculpt_Settings gp_sculpt_settings = ...;
-	 * CPointer&lt;Object&gt; p = gp_sculpt_settings.__dna__addressof(GP_Sculpt_Settings.__DNA__FIELD__brushtype);
-	 * CPointer&lt;Integer&gt; p_brushtype = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'brushtype'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__brushtype = new long[]{484, 488};
+	public static final long[] __DNA__FIELD__paintcursor = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -120,7 +74,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{488, 492};
+	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lock_axis'.
@@ -143,7 +97,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lock_axis = new long[]{492, 496};
+	public static final long[] __DNA__FIELD__lock_axis = new long[]{8, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'isect_threshold'.
@@ -166,50 +120,27 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__isect_threshold = new long[]{496, 500};
+	public static final long[] __DNA__FIELD__isect_threshold = new long[]{12, 16};
 
 	/**
-	 * Field descriptor (offset) for struct member 'weighttype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> weight paint is a submode of sculpt but use its own index. All weight paint brushes must be defined at the end of the brush array.{@link eGP_Sculpt_Types}  (weight paint). </p>
+	 * Field descriptor (offset) for struct member '_pad_'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * GP_Sculpt_Settings gp_sculpt_settings = ...;
-	 * CPointer&lt;Object&gt; p = gp_sculpt_settings.__dna__addressof(GP_Sculpt_Settings.__DNA__FIELD__weighttype);
-	 * CPointer&lt;Integer&gt; p_weighttype = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = gp_sculpt_settings.__dna__addressof(GP_Sculpt_Settings.__DNA__FIELD___pad_);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_ = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'weighttype'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__weighttype = new long[]{500, 504};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * GP_Sculpt_Settings gp_sculpt_settings = ...;
-	 * CPointer&lt;Object&gt; p = gp_sculpt_settings.__dna__addressof(GP_Sculpt_Settings.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: '_pad_'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{504, 508};
+	public static final long[] __DNA__FIELD___pad_ = new long[]{16, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur_falloff'.
@@ -232,7 +163,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cur_falloff = new long[]{508, 512};
+	public static final long[] __DNA__FIELD__cur_falloff = new long[]{20, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cur_primitive'.
@@ -255,7 +186,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cur_primitive = new long[]{512, 520};
+	public static final long[] __DNA__FIELD__cur_primitive = new long[]{24, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guide'.
@@ -278,7 +209,7 @@ public class GP_Sculpt_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 36/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guide = new long[]{516, 528};
+	public static final long[] __DNA__FIELD__guide = new long[]{28, 40};
 
 	public GP_Sculpt_Settings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -286,52 +217,6 @@ public class GP_Sculpt_Settings extends CFacade {
 
 	protected GP_Sculpt_Settings(GP_Sculpt_Settings that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
-	}
-
-	/**
-	 * Get method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> GP_SCULPT_TYPE_MAX. </p>
-	 * @see #__DNA__FIELD__brush
-	 */
-	
-	public CArrayFacade<GP_Sculpt_Data> getBrush() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{GP_Sculpt_Data.class};
-		int[] __dna__dimensions = new int[]{
-			12
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<GP_Sculpt_Data>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<GP_Sculpt_Data>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'brush'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> GP_SCULPT_TYPE_MAX. </p>
-	 * @see #__DNA__FIELD__brush
-	 */
-	
-	public void setBrush(CArrayFacade<GP_Sculpt_Data> brush) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 0;
-		} else {
-			__dna__offset = 0;
-		}
-		if (__io__equals(brush, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, brush)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, brush);
-		} else {
-			__io__generic__copy( getBrush(), brush);
-		}
 	}
 
 	/**
@@ -346,9 +231,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 480);
+			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 480);
+			__dna__targetAddress = __io__block.readLong(__io__address + 0);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -366,43 +251,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __address = ((paintcursor == null) ? 0 : paintcursor.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 480, __address);
+			__io__block.writeLong(__io__address + 0, __address);
 		} else {
-			__io__block.writeLong(__io__address + 480, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'brushtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_Types}  (sculpt). </p>
-	 * @see #__DNA__FIELD__brushtype
-	 */
-	
-	public int getBrushtype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 488);
-		} else {
-			return __io__block.readInt(__io__address + 484);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'brushtype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link eGP_Sculpt_Types}  (sculpt). </p>
-	 * @see #__DNA__FIELD__brushtype
-	 */
-	
-	public void setBrushtype(int brushtype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 488, brushtype);
-		} else {
-			__io__block.writeInt(__io__address + 484, brushtype);
+			__io__block.writeLong(__io__address + 0, __address);
 		}
 	}
 
@@ -417,9 +268,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 492);
+			return __io__block.readInt(__io__address + 8);
 		} else {
-			return __io__block.readInt(__io__address + 488);
+			return __io__block.readInt(__io__address + 4);
 		}
 	}
 
@@ -434,9 +285,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 492, flag);
+			__io__block.writeInt(__io__address + 8, flag);
 		} else {
-			__io__block.writeInt(__io__address + 488, flag);
+			__io__block.writeInt(__io__address + 4, flag);
 		}
 	}
 
@@ -451,9 +302,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public int getLock_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 496);
+			return __io__block.readInt(__io__address + 12);
 		} else {
-			return __io__block.readInt(__io__address + 492);
+			return __io__block.readInt(__io__address + 8);
 		}
 	}
 
@@ -468,9 +319,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public void setLock_axis(int lock_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 496, lock_axis);
+			__io__block.writeInt(__io__address + 12, lock_axis);
 		} else {
-			__io__block.writeInt(__io__address + 492, lock_axis);
+			__io__block.writeInt(__io__address + 8, lock_axis);
 		}
 	}
 
@@ -485,9 +336,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public float getIsect_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 500);
+			return __io__block.readFloat(__io__address + 16);
 		} else {
-			return __io__block.readFloat(__io__address + 496);
+			return __io__block.readFloat(__io__address + 12);
 		}
 	}
 
@@ -502,83 +353,49 @@ public class GP_Sculpt_Settings extends CFacade {
 	public void setIsect_threshold(float isect_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 500, isect_threshold);
+			__io__block.writeFloat(__io__address + 16, isect_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 496, isect_threshold);
+			__io__block.writeFloat(__io__address + 12, isect_threshold);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'weighttype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> weight paint is a submode of sculpt but use its own index. All weight paint brushes must be defined at the end of the brush array.{@link eGP_Sculpt_Types}  (weight paint). </p>
-	 * @see #__DNA__FIELD__weighttype
+	 * Get method for struct member '_pad_'.
+	 * @see #__DNA__FIELD___pad_
 	 */
 	
-	public int getWeighttype() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 504);
-		} else {
-			return __io__block.readInt(__io__address + 500);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'weighttype'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> weight paint is a submode of sculpt but use its own index. All weight paint brushes must be defined at the end of the brush array.{@link eGP_Sculpt_Types}  (weight paint). </p>
-	 * @see #__DNA__FIELD__weighttype
-	 */
-	
-	public void setWeighttype(int weighttype) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 504, weighttype);
-		} else {
-			__io__block.writeInt(__io__address + 500, weighttype);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public CArrayFacade<Byte> get_pad_() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 504, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member '_pad_'.
+	 * @see #__DNA__FIELD___pad_
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void set_pad_(CArrayFacade<Byte> _pad_) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 508;
+			__dna__offset = 20;
 		} else {
-			__dna__offset = 504;
+			__dna__offset = 16;
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
+		if (__io__equals(_pad_, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else if (__io__same__encoding(this, _pad_)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__generic__copy( get_pad_(), _pad_);
 		}
 	}
 
@@ -594,9 +411,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 512);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 508);
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -614,9 +431,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __address = ((cur_falloff == null) ? 0 : cur_falloff.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 512, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		} else {
-			__io__block.writeLong(__io__address + 508, __address);
+			__io__block.writeLong(__io__address + 20, __address);
 		}
 	}
 
@@ -632,9 +449,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 520);
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 512);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -652,9 +469,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __address = ((cur_primitive == null) ? 0 : cur_primitive.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 520, __address);
+			__io__block.writeLong(__io__address + 32, __address);
 		} else {
-			__io__block.writeLong(__io__address + 512, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		}
 	}
 
@@ -669,9 +486,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	public GP_Sculpt_Guide getGuide() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new GP_Sculpt_Guide(__io__address + 528, __io__block, __io__blockTable);
+			return new GP_Sculpt_Guide(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new GP_Sculpt_Guide(__io__address + 516, __io__block, __io__blockTable);
+			return new GP_Sculpt_Guide(__io__address + 28, __io__block, __io__blockTable);
 		}
 	}
 
@@ -687,9 +504,9 @@ public class GP_Sculpt_Settings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 528;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 516;
+			__dna__offset = 28;
 		}
 		if (__io__equals(guide, __io__address + __dna__offset)) {
 			return;

@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> A single overridden property, contain all operations on this one. </p>
  */
 
-@CMetaData(size32=20, size64=40)
+@CMetaData(size32=28, size64=48)
 public class IDOverrideLibraryProperty extends CFacade {
 
 	/**
@@ -116,6 +117,49 @@ public class IDOverrideLibraryProperty extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__operations = new long[]{12, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibraryProperty idoverridelibraryproperty = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibraryproperty.__dna__addressof(IDOverrideLibraryProperty.__DNA__FIELD__tag);
+	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag = new long[]{20, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibraryProperty idoverridelibraryproperty = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibraryproperty.__dna__addressof(IDOverrideLibraryProperty.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{22, 42};
 
 	public IDOverrideLibraryProperty(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -270,6 +314,80 @@ public class IDOverrideLibraryProperty extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, operations);
 		} else {
 			__io__generic__copy( getOperations(), operations);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public short getTag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 40);
+		} else {
+			return __io__block.readShort(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public void setTag(short tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 40, tag);
+		} else {
+			__io__block.writeShort(__io__address + 20, tag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 42, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 42;
+		} else {
+			__dna__offset = 22;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

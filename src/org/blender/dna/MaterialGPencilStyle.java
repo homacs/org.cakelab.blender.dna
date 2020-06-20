@@ -242,7 +242,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Adjustment Factor<h4>Blender Source Code:</h4>
+	 * Mix Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -266,7 +266,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Angle used for gradients orientation. </p>
+	 * <p> Angle used for gradients orientation. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -289,7 +291,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Radius for radial gradients. </p>
+	 * <p> Radius for radial gradients. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -309,34 +313,32 @@ public class MaterialGPencilStyle extends CFacade {
 	public static final long[] __DNA__FIELD__gradient_radius = new long[]{72, 80};
 
 	/**
-	 * Field descriptor (offset) for struct member 'pattern_gridsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Box Size<h4>Blender Source Code:</h4>
-	 * <p> Cheesboard size. </p>
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MaterialGPencilStyle materialgpencilstyle = ...;
-	 * CPointer&lt;Object&gt; p = materialgpencilstyle.__dna__addressof(MaterialGPencilStyle.__DNA__FIELD__pattern_gridsize);
-	 * CPointer&lt;Float&gt; p_pattern_gridsize = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = materialgpencilstyle.__dna__addressof(MaterialGPencilStyle.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'pattern_gridsize'</li>
-	 * <li>Signature: 'float'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pattern_gridsize = new long[]{76, 84};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{76, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Uv coordinates scale. </p>
+	 * <p> Uv coordinates scale. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -359,7 +361,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor to shift filling in 2d space. </p>
+	 * <p> Factor to shift filling in 2d space. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -453,9 +457,10 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Opacity<h4>Blender Source Code:</h4>
-	 * <p> Texture opacity. </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture opacity. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -549,7 +554,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Color<h4>Blender Source Code:</h4>
+	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -979,7 +984,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Adjustment Factor<h4>Blender Source Code:</h4>
+	 * Mix Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * @see #__DNA__FIELD__mix_factor
 	 */
@@ -997,7 +1002,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'mix_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Adjustment Factor<h4>Blender Source Code:</h4>
+	 * Mix Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to define shader behavior (several uses). </p>
 	 * @see #__DNA__FIELD__mix_factor
 	 */
@@ -1015,7 +1020,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Angle used for gradients orientation. </p>
+	 * <p> Angle used for gradients orientation. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_angle
 	 */
 	
@@ -1032,7 +1039,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'gradient_angle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Angle used for gradients orientation. </p>
+	 * <p> Angle used for gradients orientation. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_angle
 	 */
 	
@@ -1049,7 +1058,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Radius for radial gradients. </p>
+	 * <p> Radius for radial gradients. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_radius
 	 */
 	
@@ -1066,7 +1077,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'gradient_radius'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Radius for radial gradients. </p>
+	 * <p> Radius for radial gradients. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_radius
 	 */
 	
@@ -1080,38 +1093,42 @@ public class MaterialGPencilStyle extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'pattern_gridsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Box Size<h4>Blender Source Code:</h4>
-	 * <p> Cheesboard size. </p>
-	 * @see #__DNA__FIELD__pattern_gridsize
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public float getPattern_gridsize() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 84);
+			return new CArrayFacade<Byte>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readFloat(__io__address + 76);
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'pattern_gridsize'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Box Size<h4>Blender Source Code:</h4>
-	 * <p> Cheesboard size. </p>
-	 * @see #__DNA__FIELD__pattern_gridsize
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setPattern_gridsize(float pattern_gridsize) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 84, pattern_gridsize);
+			__dna__offset = 84;
 		} else {
-			__io__block.writeFloat(__io__address + 76, pattern_gridsize);
+			__dna__offset = 76;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -1119,7 +1136,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Uv coordinates scale. </p>
+	 * <p> Uv coordinates scale. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_scale
 	 */
 	
@@ -1140,7 +1159,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'gradient_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Uv coordinates scale. </p>
+	 * <p> Uv coordinates scale. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_scale
 	 */
 	
@@ -1165,7 +1186,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor to shift filling in 2d space. </p>
+	 * <p> Factor to shift filling in 2d space. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_shift
 	 */
 	
@@ -1186,7 +1209,9 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'gradient_shift'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Factor to shift filling in 2d space. </p>
+	 * <p> Factor to shift filling in 2d space. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__gradient_shift
 	 */
 	
@@ -1342,9 +1367,10 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Get method for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Opacity<h4>Blender Source Code:</h4>
-	 * <p> Texture opacity. </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture opacity. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__texture_opacity
 	 */
 	
@@ -1360,9 +1386,10 @@ public class MaterialGPencilStyle extends CFacade {
 	/**
 	 * Set method for struct member 'texture_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Texture Opacity<h4>Blender Source Code:</h4>
-	 * <p> Texture opacity. </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Texture opacity. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__texture_opacity
 	 */
 	
@@ -1485,7 +1512,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Color<h4>Blender Source Code:</h4>
+	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * @see #__DNA__FIELD__mix_stroke_factor
 	 */
@@ -1503,7 +1530,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'mix_stroke_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Mix Stroke Color<h4>Blender Source Code:</h4>
+	 * Mix Stroke Factor<h4>Blender Source Code:</h4>
 	 * <p> Factor used to mix texture and stroke color. </p>
 	 * @see #__DNA__FIELD__mix_stroke_factor
 	 */

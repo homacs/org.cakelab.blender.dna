@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=28, size64=32)
 public class CorrectiveSmoothDeltaCache extends CFacade {
 
 	/**
@@ -73,6 +73,26 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public static final long[] __DNA__FIELD__lambda = new long[]{8, 12};
 
 	/**
+	 * Field descriptor (offset) for struct member 'scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CorrectiveSmoothDeltaCache correctivesmoothdeltacache = ...;
+	 * CPointer&lt;Object&gt; p = correctivesmoothdeltacache.__dna__addressof(CorrectiveSmoothDeltaCache.__DNA__FIELD__scale);
+	 * CPointer&lt;Float&gt; p_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale = new long[]{12, 16};
+
+	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -90,7 +110,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{12, 16};
+	public static final long[] __DNA__FIELD__repeat = new long[]{16, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,7 +130,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{14, 18};
+	public static final long[] __DNA__FIELD__flag = new long[]{18, 22};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_type'.
@@ -130,7 +150,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_type = new long[]{16, 20};
+	public static final long[] __DNA__FIELD__smooth_type = new long[]{20, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_source'.
@@ -150,7 +170,7 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rest_source = new long[]{17, 21};
+	public static final long[] __DNA__FIELD__rest_source = new long[]{21, 25};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -166,11 +186,11 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{18, 22};
+	public static final long[] __DNA__FIELD___pad = new long[]{22, 26};
 
 	public CorrectiveSmoothDeltaCache(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -243,6 +263,34 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'scale'.
+	 * @see #__DNA__FIELD__scale
+	 */
+	
+	public float getScale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 16);
+		} else {
+			return __io__block.readFloat(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale'.
+	 * @see #__DNA__FIELD__scale
+	 */
+	
+	public void setScale(float scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 16, scale);
+		} else {
+			__io__block.writeFloat(__io__address + 12, scale);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'repeat'.
 	 * @see #__DNA__FIELD__repeat
 	 */
@@ -250,9 +298,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public short getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 16);
+			return __io__block.readShort(__io__address + 20);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 16);
 		}
 	}
 
@@ -264,9 +312,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public void setRepeat(short repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 16, repeat);
+			__io__block.writeShort(__io__address + 20, repeat);
 		} else {
-			__io__block.writeShort(__io__address + 12, repeat);
+			__io__block.writeShort(__io__address + 16, repeat);
 		}
 	}
 
@@ -278,9 +326,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 18);
+			return __io__block.readShort(__io__address + 22);
 		} else {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readShort(__io__address + 18);
 		}
 	}
 
@@ -292,9 +340,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 18, flag);
+			__io__block.writeShort(__io__address + 22, flag);
 		} else {
-			__io__block.writeShort(__io__address + 14, flag);
+			__io__block.writeShort(__io__address + 18, flag);
 		}
 	}
 
@@ -306,9 +354,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public byte getSmooth_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 20);
+			return __io__block.readByte(__io__address + 24);
 		} else {
-			return __io__block.readByte(__io__address + 16);
+			return __io__block.readByte(__io__address + 20);
 		}
 	}
 
@@ -320,9 +368,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public void setSmooth_type(byte smooth_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 20, smooth_type);
+			__io__block.writeByte(__io__address + 24, smooth_type);
 		} else {
-			__io__block.writeByte(__io__address + 16, smooth_type);
+			__io__block.writeByte(__io__address + 20, smooth_type);
 		}
 	}
 
@@ -334,9 +382,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public byte getRest_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 21);
+			return __io__block.readByte(__io__address + 25);
 		} else {
-			return __io__block.readByte(__io__address + 17);
+			return __io__block.readByte(__io__address + 21);
 		}
 	}
 
@@ -348,9 +396,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	public void setRest_source(byte rest_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 21, rest_source);
+			__io__block.writeByte(__io__address + 25, rest_source);
 		} else {
-			__io__block.writeByte(__io__address + 17, rest_source);
+			__io__block.writeByte(__io__address + 21, rest_source);
 		}
 	}
 
@@ -363,12 +411,12 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -381,9 +429,9 @@ public class CorrectiveSmoothDeltaCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 22;
+			__dna__offset = 26;
 		} else {
-			__dna__offset = 18;
+			__dna__offset = 22;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

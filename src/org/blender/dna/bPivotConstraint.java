@@ -28,7 +28,7 @@ public class bPivotConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 353;
+	public static final int __DNA__SDNA_INDEX = 357;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -103,7 +103,7 @@ public class bPivotConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for footrollsRotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -287,7 +287,7 @@ public class bPivotConstraint extends CFacade {
 	 * Get method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for footrollsRotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	
@@ -304,7 +304,7 @@ public class bPivotConstraint extends CFacade {
 	 * Set method for struct member 'rotAxis'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotation-driven activation: This option provides easier one-stop setups for footrollsRotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
+	 * <p> Rotation-driven activation: This option provides easier one-stop setups for foot-rolls.Rotation axes to consider for this ({@link ePivotConstraint_Axis} ). </p>
 	 * @see #__DNA__FIELD__rotAxis
 	 */
 	

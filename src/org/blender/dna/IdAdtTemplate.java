@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link Base}  Struct for Anim -------------------------------<mdash/><mdash/>  Used for #BKE_animdata_from_id() All ID-data-blocks which have their own 'local' {@link AnimData}  should have the same arrangement in their structs. </p>
  */
 
-@CMetaData(size32=124, size64=160)
+@CMetaData(size32=132, size64=168)
 public class IdAdtTemplate extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class IdAdtTemplate extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 543;
+	public static final int __DNA__SDNA_INDEX = 549;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class IdAdtTemplate extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class IdAdtTemplate extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
 
 	public IdAdtTemplate(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -122,9 +122,9 @@ public class IdAdtTemplate extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -139,9 +139,9 @@ public class IdAdtTemplate extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 

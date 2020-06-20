@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=964, size64=968)
+@CMetaData(size32=972, size64=976)
 public class NodeTexWave extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class NodeTexWave extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 415;
+	public static final int __DNA__SDNA_INDEX = 419;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base'.
@@ -69,6 +69,46 @@ public class NodeTexWave extends CFacade {
 	public static final long[] __DNA__FIELD__wave_type = new long[]{956, 960};
 
 	/**
+	 * Field descriptor (offset) for struct member 'bands_direction'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexWave nodetexwave = ...;
+	 * CPointer&lt;Object&gt; p = nodetexwave.__dna__addressof(NodeTexWave.__DNA__FIELD__bands_direction);
+	 * CPointer&lt;Integer&gt; p_bands_direction = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bands_direction'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bands_direction = new long[]{960, 964};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rings_direction'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeTexWave nodetexwave = ...;
+	 * CPointer&lt;Object&gt; p = nodetexwave.__dna__addressof(NodeTexWave.__DNA__FIELD__rings_direction);
+	 * CPointer&lt;Integer&gt; p_rings_direction = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rings_direction'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rings_direction = new long[]{964, 968};
+
+	/**
 	 * Field descriptor (offset) for struct member 'wave_profile'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -86,7 +126,7 @@ public class NodeTexWave extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wave_profile = new long[]{960, 964};
+	public static final long[] __DNA__FIELD__wave_profile = new long[]{968, 972};
 
 	public NodeTexWave(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -161,6 +201,62 @@ public class NodeTexWave extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'bands_direction'.
+	 * @see #__DNA__FIELD__bands_direction
+	 */
+	
+	public int getBands_direction() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 964);
+		} else {
+			return __io__block.readInt(__io__address + 960);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bands_direction'.
+	 * @see #__DNA__FIELD__bands_direction
+	 */
+	
+	public void setBands_direction(int bands_direction) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 964, bands_direction);
+		} else {
+			__io__block.writeInt(__io__address + 960, bands_direction);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rings_direction'.
+	 * @see #__DNA__FIELD__rings_direction
+	 */
+	
+	public int getRings_direction() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 968);
+		} else {
+			return __io__block.readInt(__io__address + 964);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rings_direction'.
+	 * @see #__DNA__FIELD__rings_direction
+	 */
+	
+	public void setRings_direction(int rings_direction) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 968, rings_direction);
+		} else {
+			__io__block.writeInt(__io__address + 964, rings_direction);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'wave_profile'.
 	 * @see #__DNA__FIELD__wave_profile
 	 */
@@ -168,9 +264,9 @@ public class NodeTexWave extends CFacade {
 	public int getWave_profile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 964);
+			return __io__block.readInt(__io__address + 972);
 		} else {
-			return __io__block.readInt(__io__address + 960);
+			return __io__block.readInt(__io__address + 968);
 		}
 	}
 
@@ -182,9 +278,9 @@ public class NodeTexWave extends CFacade {
 	public void setWave_profile(int wave_profile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 964, wave_profile);
+			__io__block.writeInt(__io__address + 972, wave_profile);
 		} else {
-			__io__block.writeInt(__io__address + 960, wave_profile);
+			__io__block.writeInt(__io__address + 968, wave_profile);
 		}
 	}
 

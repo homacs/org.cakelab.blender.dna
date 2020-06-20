@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=260, size64=272)
+@CMetaData(size32=336, size64=360)
 public class TintGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 506;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -50,6 +50,26 @@ public class TintGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'object'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__object = new long[]{92, 104};
+
+	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -70,7 +90,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layername = new long[]{92, 104};
+	public static final long[] __DNA__FIELD__layername = new long[]{96, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
@@ -93,7 +113,30 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__materialname = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__materialname = new long[]{160, 176};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__vgname);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_vgname = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vgname'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vgname = new long[]{224, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -116,119 +159,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{220, 232};
-
-	/**
-	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{224, 236};
-
-	/**
-	 * Field descriptor (offset) for struct member 'rgb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Tint color. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__rgb);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rgb = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'rgb'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__rgb = new long[]{228, 240};
-
-	/**
-	 * Field descriptor (offset) for struct member 'factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mix factor. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__factor);
-	 * CPointer&lt;Float&gt; p_factor = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'factor'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{240, 252};
-
-	/**
-	 * Field descriptor (offset) for struct member 'modify_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Modify stroke, fill or both. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__modify_color);
-	 * CPointer&lt;Byte&gt; p_modify_color = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'modify_color'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__modify_color = new long[]{244, 256};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{245, 257};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{288, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -251,27 +182,179 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{252, 264};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{292, 308};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{256, 268};
+	public static final long[] __DNA__FIELD__flag = new long[]{296, 312};
+
+	/**
+	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode (Stroke/Fill/Both). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__mode);
+	 * CPointer&lt;Integer&gt; p_mode = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mode'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mode = new long[]{300, 316};
+
+	/**
+	 * Field descriptor (offset) for struct member 'factor'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__factor);
+	 * CPointer&lt;Float&gt; p_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__factor = new long[]{304, 320};
+
+	/**
+	 * Field descriptor (offset) for struct member 'radius'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__radius);
+	 * CPointer&lt;Float&gt; p_radius = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'radius'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__radius = new long[]{308, 324};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simple Tint color. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__rgb);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rgb = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rgb'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rgb = new long[]{312, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of Tint. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__type);
+	 * CPointer&lt;Integer&gt; p_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{324, 340};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curve_intensity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__curve_intensity);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_curve_intensity = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_intensity'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_intensity = new long[]{328, 344};
+
+	/**
+	 * Field descriptor (offset) for struct member 'colorband'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__colorband);
+	 * CPointer&lt;CPointer&lt;ColorBand&gt;&gt; p_colorband = p.cast(new Class[]{CPointer.class, ColorBand.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'colorband'</li>
+	 * <li>Signature: 'ColorBand*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__colorband = new long[]{332, 352};
 
 	public TintGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -318,6 +401,38 @@ public class TintGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'object'.
+	 * @see #__DNA__FIELD__object
+	 */
+	
+	public CPointer<BlenderObject> getObject() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'object'.
+	 * @see #__DNA__FIELD__object
+	 */
+	
+	public void setObject(CPointer<BlenderObject> object) throws IOException
+	{
+		long __address = ((object == null) ? 0 : object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 104, __address);
+		} else {
+			__io__block.writeLong(__io__address + 92, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -332,9 +447,9 @@ public class TintGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -350,9 +465,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		} else {
-			__dna__offset = 92;
+			__dna__offset = 96;
 		}
 		if (__io__equals(layername, __io__address + __dna__offset)) {
 			return;
@@ -378,9 +493,9 @@ public class TintGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -396,9 +511,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 160;
 		}
 		if (__io__equals(materialname, __io__address + __dna__offset)) {
 			return;
@@ -406,6 +521,52 @@ public class TintGpencilModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, materialname);
 		} else {
 			__io__generic__copy( getMaterialname(), materialname);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * @see #__DNA__FIELD__vgname
+	 */
+	
+	public CArrayFacade<Byte> getVgname() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vgname'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional vertexgroup name, MAX_VGROUP_NAME. </p>
+	 * @see #__DNA__FIELD__vgname
+	 */
+	
+	public void setVgname(CArrayFacade<Byte> vgname) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 240;
+		} else {
+			__dna__offset = 224;
+		}
+		if (__io__equals(vgname, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vgname)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vgname);
+		} else {
+			__io__generic__copy( getVgname(), vgname);
 		}
 	}
 
@@ -420,9 +581,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 304);
 		} else {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 288);
 		}
 	}
 
@@ -437,197 +598,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, pass_index);
+			__io__block.writeInt(__io__address + 304, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 220, pass_index);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags. </p>
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public int getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
-		} else {
-			return __io__block.readInt(__io__address + 224);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags. </p>
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(int flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, flag);
-		} else {
-			__io__block.writeInt(__io__address + 224, flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'rgb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Tint color. </p>
-	 * @see #__DNA__FIELD__rgb
-	 */
-	
-	public CArrayFacade<Float> getRgb() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'rgb'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Tint color. </p>
-	 * @see #__DNA__FIELD__rgb
-	 */
-	
-	public void setRgb(CArrayFacade<Float> rgb) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
-		} else {
-			__dna__offset = 228;
-		}
-		if (__io__equals(rgb, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, rgb)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, rgb);
-		} else {
-			__io__generic__copy( getRgb(), rgb);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mix factor. </p>
-	 * @see #__DNA__FIELD__factor
-	 */
-	
-	public float getFactor() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 252);
-		} else {
-			return __io__block.readFloat(__io__address + 240);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mix factor. </p>
-	 * @see #__DNA__FIELD__factor
-	 */
-	
-	public void setFactor(float factor) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 252, factor);
-		} else {
-			__io__block.writeFloat(__io__address + 240, factor);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'modify_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Modify stroke, fill or both. </p>
-	 * @see #__DNA__FIELD__modify_color
-	 */
-	
-	public byte getModify_color() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 256);
-		} else {
-			return __io__block.readByte(__io__address + 244);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'modify_color'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Modify stroke, fill or both. </p>
-	 * @see #__DNA__FIELD__modify_color
-	 */
-	
-	public void setModify_color(byte modify_color) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 256, modify_color);
-		} else {
-			__io__block.writeByte(__io__address + 244, modify_color);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			7
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 257, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 245, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 257;
-		} else {
-			__dna__offset = 245;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 288, pass_index);
 		}
 	}
 
@@ -642,9 +615,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 308);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 292);
 		}
 	}
 
@@ -659,49 +632,277 @@ public class TintGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 264, layer_pass);
+			__io__block.writeInt(__io__address + 308, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 252, layer_pass);
+			__io__block.writeInt(__io__address + 292, layer_pass);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
+	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public CArrayFacade<Byte> get_pad1() throws IOException
+	public int getFlag() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 312);
+		} else {
+			return __io__block.readInt(__io__address + 296);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Flags. </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 312, flag);
+		} else {
+			__io__block.writeInt(__io__address + 296, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode (Stroke/Fill/Both). </p>
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public int getMode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 316);
+		} else {
+			return __io__block.readInt(__io__address + 300);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Mode (Stroke/Fill/Both). </p>
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public void setMode(int mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 316, mode);
+		} else {
+			__io__block.writeInt(__io__address + 300, mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'factor'.
+	 * @see #__DNA__FIELD__factor
+	 */
+	
+	public float getFactor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 320);
+		} else {
+			return __io__block.readFloat(__io__address + 304);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'factor'.
+	 * @see #__DNA__FIELD__factor
+	 */
+	
+	public void setFactor(float factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 320, factor);
+		} else {
+			__io__block.writeFloat(__io__address + 304, factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'radius'.
+	 * @see #__DNA__FIELD__radius
+	 */
+	
+	public float getRadius() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 324);
+		} else {
+			return __io__block.readFloat(__io__address + 308);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'radius'.
+	 * @see #__DNA__FIELD__radius
+	 */
+	
+	public void setRadius(float radius) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 324, radius);
+		} else {
+			__io__block.writeFloat(__io__address + 308, radius);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simple Tint color. </p>
+	 * @see #__DNA__FIELD__rgb
+	 */
+	
+	public CArrayFacade<Float> getRgb() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Set method for struct member 'rgb'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Simple Tint color. </p>
+	 * @see #__DNA__FIELD__rgb
 	 */
 	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	public void setRgb(CArrayFacade<Float> rgb) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 268;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 312;
 		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+		if (__io__equals(rgb, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else if (__io__same__encoding(this, rgb)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rgb);
 		} else {
-			__io__generic__copy( get_pad1(), _pad1);
+			__io__generic__copy( getRgb(), rgb);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of Tint. </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public int getType() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 340);
+		} else {
+			return __io__block.readInt(__io__address + 324);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of Tint. </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public void setType(int type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 340, type);
+		} else {
+			__io__block.writeInt(__io__address + 324, type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public CPointer<CurveMapping> getCurve_intensity() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public void setCurve_intensity(CPointer<CurveMapping> curve_intensity) throws IOException
+	{
+		long __address = ((curve_intensity == null) ? 0 : curve_intensity.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 344, __address);
+		} else {
+			__io__block.writeLong(__io__address + 328, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'colorband'.
+	 * @see #__DNA__FIELD__colorband
+	 */
+	
+	public CPointer<ColorBand> getColorband() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
+		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'colorband'.
+	 * @see #__DNA__FIELD__colorband
+	 */
+	
+	public void setColorband(CPointer<ColorBand> colorband) throws IOException
+	{
+		long __address = ((colorband == null) ? 0 : colorband.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 352, __address);
+		} else {
+			__io__block.writeLong(__io__address + 332, __address);
 		}
 	}
 

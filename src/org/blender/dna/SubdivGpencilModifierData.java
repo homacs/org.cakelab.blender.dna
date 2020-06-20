@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=236, size64=248)
+@CMetaData(size32=244, size64=256)
 public class SubdivGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SubdivGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 485;
+	public static final int __DNA__SDNA_INDEX = 491;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -186,6 +186,49 @@ public class SubdivGpencilModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__layer_pass = new long[]{232, 244};
+
+	/**
+	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of subdivision </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SubdivGpencilModifierData subdivgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = subdivgpencilmodifierdata.__dna__addressof(SubdivGpencilModifierData.__DNA__FIELD__type);
+	 * CPointer&lt;Short&gt; p_type = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{236, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SubdivGpencilModifierData subdivgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = subdivgpencilmodifierdata.__dna__addressof(SubdivGpencilModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{238, 250};
 
 	public SubdivGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -456,6 +499,80 @@ public class SubdivGpencilModifierData extends CFacade {
 			__io__block.writeInt(__io__address + 244, layer_pass);
 		} else {
 			__io__block.writeInt(__io__address + 232, layer_pass);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of subdivision </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public short getType() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 248);
+		} else {
+			return __io__block.readShort(__io__address + 236);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of subdivision </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public void setType(short type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 248, type);
+		} else {
+			__io__block.writeShort(__io__address + 236, type);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 250, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 238, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 250;
+		} else {
+			__dna__offset = 238;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

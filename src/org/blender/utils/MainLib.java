@@ -31,13 +31,13 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 282;
+	public static final short BLENDER_VERSION = 283;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 7;
+	public static final short BLENDER_SUBVERSION = 18;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
@@ -50,6 +50,16 @@ public class MainLib extends MainLibBase {
 	 * Every file with a version lower than this needs conversion.
 	 */
 	public static final short BLENDER_MINSUBVERSION = 0;
+
+	/**
+	 * BLENDER_VERSION and _SUBVERSION as a String.
+	 */
+	public static final String BLENDER_VERSION_STRING = "2.83.18";
+
+	/**
+	 * BLENDER_MINVERSION and _MINSUBVERSION as a String.
+	 */
+	public static final String BLENDER_MINVERSION_STRING = "2.80.0";
 
 	/**Linkage between main libraries.
 	 */
@@ -252,6 +262,21 @@ public class MainLib extends MainLibBase {
 	 * See {@link LightProbe} for documentation.
 	 */
 	private LightProbe lightProbe;
+
+	/**
+	 * See {@link Hair} for documentation.
+	 */
+	private Hair hair;
+
+	/**
+	 * See {@link PointCloud} for documentation.
+	 */
+	private PointCloud pointCloud;
+
+	/**
+	 * See {@link Volume} for documentation.
+	 */
+	private Volume volume;
 
 
 	public MainLib(BlenderFile blendFile) throws IOException{
@@ -854,6 +879,48 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setLightProbe(LightProbe lightProbe) {
 		this.lightProbe = lightProbe;
+	}
+
+	/**
+	 * See {@link Hair} for documentation.
+	 */
+	public Hair getHair(){
+		return hair;
+	}
+
+	/**
+	 * See {@link Hair} for documentation.
+	 */
+	public void setHair(Hair hair) {
+		this.hair = hair;
+	}
+
+	/**
+	 * See {@link PointCloud} for documentation.
+	 */
+	public PointCloud getPointCloud(){
+		return pointCloud;
+	}
+
+	/**
+	 * See {@link PointCloud} for documentation.
+	 */
+	public void setPointCloud(PointCloud pointCloud) {
+		this.pointCloud = pointCloud;
+	}
+
+	/**
+	 * See {@link Volume} for documentation.
+	 */
+	public Volume getVolume(){
+		return volume;
+	}
+
+	/**
+	 * See {@link Volume} for documentation.
+	 */
+	public void setVolume(Volume volume) {
+		this.volume = volume;
 	}
 
 }

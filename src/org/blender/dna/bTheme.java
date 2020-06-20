@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=15456, size64=15464)
+@CMetaData(size32=16416, size64=16424)
 public class bTheme extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bTheme extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 248;
+	public static final int __DNA__SDNA_INDEX = 251;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -106,7 +106,7 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tui'</li>
 	 * <li>Signature: 'ThemeUI'</li>
-	 * <li>Actual Size (32bit/64bit): 944/944</li>
+	 * <li>Actual Size (32bit/64bit): 952/952</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__tui = new long[]{40, 48};
@@ -126,10 +126,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tbuts'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tbuts = new long[]{984, 992};
+	public static final long[] __DNA__FIELD__tbuts = new long[]{992, 1000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tv3d'.
@@ -146,10 +146,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tv3d'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tv3d = new long[]{1816, 1824};
+	public static final long[] __DNA__FIELD__tv3d = new long[]{1880, 1888};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tfile'.
@@ -166,10 +166,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tfile'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tfile = new long[]{2648, 2656};
+	public static final long[] __DNA__FIELD__tfile = new long[]{2768, 2776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tipo'.
@@ -186,10 +186,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tipo'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tipo = new long[]{3480, 3488};
+	public static final long[] __DNA__FIELD__tipo = new long[]{3656, 3664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tinfo'.
@@ -206,10 +206,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tinfo'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tinfo = new long[]{4312, 4320};
+	public static final long[] __DNA__FIELD__tinfo = new long[]{4544, 4552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tact'.
@@ -226,10 +226,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tact'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tact = new long[]{5144, 5152};
+	public static final long[] __DNA__FIELD__tact = new long[]{5432, 5440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tnla'.
@@ -246,10 +246,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tnla'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tnla = new long[]{5976, 5984};
+	public static final long[] __DNA__FIELD__tnla = new long[]{6320, 6328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tseq'.
@@ -266,10 +266,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tseq'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tseq = new long[]{6808, 6816};
+	public static final long[] __DNA__FIELD__tseq = new long[]{7208, 7216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tima'.
@@ -286,10 +286,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tima'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tima = new long[]{7640, 7648};
+	public static final long[] __DNA__FIELD__tima = new long[]{8096, 8104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
@@ -306,10 +306,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'text'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__text = new long[]{8472, 8480};
+	public static final long[] __DNA__FIELD__text = new long[]{8984, 8992};
 
 	/**
 	 * Field descriptor (offset) for struct member 'toops'.
@@ -326,10 +326,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'toops'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__toops = new long[]{9304, 9312};
+	public static final long[] __DNA__FIELD__toops = new long[]{9872, 9880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tnode'.
@@ -346,10 +346,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tnode'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tnode = new long[]{10136, 10144};
+	public static final long[] __DNA__FIELD__tnode = new long[]{10760, 10768};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tuserpref'.
@@ -366,10 +366,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tuserpref'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tuserpref = new long[]{10968, 10976};
+	public static final long[] __DNA__FIELD__tuserpref = new long[]{11648, 11656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tconsole'.
@@ -386,10 +386,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tconsole'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tconsole = new long[]{11800, 11808};
+	public static final long[] __DNA__FIELD__tconsole = new long[]{12536, 12544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tclip'.
@@ -406,10 +406,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tclip'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tclip = new long[]{12632, 12640};
+	public static final long[] __DNA__FIELD__tclip = new long[]{13424, 13432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ttopbar'.
@@ -426,10 +426,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'ttopbar'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ttopbar = new long[]{13464, 13472};
+	public static final long[] __DNA__FIELD__ttopbar = new long[]{14312, 14320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tstatusbar'.
@@ -446,10 +446,10 @@ public class bTheme extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tstatusbar'</li>
 	 * <li>Signature: 'ThemeSpace'</li>
-	 * <li>Actual Size (32bit/64bit): 832/832</li>
+	 * <li>Actual Size (32bit/64bit): 888/888</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tstatusbar = new long[]{14296, 14304};
+	public static final long[] __DNA__FIELD__tstatusbar = new long[]{15200, 15208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tarm'.
@@ -472,7 +472,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 320/320</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tarm = new long[]{15128, 15136};
+	public static final long[] __DNA__FIELD__tarm = new long[]{16088, 16096};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_theme_area'.
@@ -495,7 +495,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_theme_area = new long[]{15448, 15456};
+	public static final long[] __DNA__FIELD__active_theme_area = new long[]{16408, 16416};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -515,7 +515,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{15452, 15460};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{16412, 16420};
 
 	public bTheme(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -673,9 +673,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTbuts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 992, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 1000, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 984, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 992, __io__block, __io__blockTable);
 		}
 	}
 
@@ -688,9 +688,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 992;
+			__dna__offset = 1000;
 		} else {
-			__dna__offset = 984;
+			__dna__offset = 992;
 		}
 		if (__io__equals(tbuts, __io__address + __dna__offset)) {
 			return;
@@ -709,9 +709,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTv3d() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 1824, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 1888, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 1816, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 1880, __io__block, __io__blockTable);
 		}
 	}
 
@@ -724,9 +724,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1824;
+			__dna__offset = 1888;
 		} else {
-			__dna__offset = 1816;
+			__dna__offset = 1880;
 		}
 		if (__io__equals(tv3d, __io__address + __dna__offset)) {
 			return;
@@ -745,9 +745,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 2656, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 2776, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 2648, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 2768, __io__block, __io__blockTable);
 		}
 	}
 
@@ -760,9 +760,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2656;
+			__dna__offset = 2776;
 		} else {
-			__dna__offset = 2648;
+			__dna__offset = 2768;
 		}
 		if (__io__equals(tfile, __io__address + __dna__offset)) {
 			return;
@@ -781,9 +781,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTipo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 3488, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 3664, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 3480, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 3656, __io__block, __io__blockTable);
 		}
 	}
 
@@ -796,9 +796,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 3488;
+			__dna__offset = 3664;
 		} else {
-			__dna__offset = 3480;
+			__dna__offset = 3656;
 		}
 		if (__io__equals(tipo, __io__address + __dna__offset)) {
 			return;
@@ -817,9 +817,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTinfo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 4320, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 4552, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 4312, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 4544, __io__block, __io__blockTable);
 		}
 	}
 
@@ -832,9 +832,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4320;
+			__dna__offset = 4552;
 		} else {
-			__dna__offset = 4312;
+			__dna__offset = 4544;
 		}
 		if (__io__equals(tinfo, __io__address + __dna__offset)) {
 			return;
@@ -853,9 +853,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTact() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 5152, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 5440, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 5144, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 5432, __io__block, __io__blockTable);
 		}
 	}
 
@@ -868,9 +868,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 5152;
+			__dna__offset = 5440;
 		} else {
-			__dna__offset = 5144;
+			__dna__offset = 5432;
 		}
 		if (__io__equals(tact, __io__address + __dna__offset)) {
 			return;
@@ -889,9 +889,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTnla() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 5984, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 6328, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 5976, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 6320, __io__block, __io__blockTable);
 		}
 	}
 
@@ -904,9 +904,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 5984;
+			__dna__offset = 6328;
 		} else {
-			__dna__offset = 5976;
+			__dna__offset = 6320;
 		}
 		if (__io__equals(tnla, __io__address + __dna__offset)) {
 			return;
@@ -925,9 +925,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTseq() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 6816, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 7216, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 6808, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 7208, __io__block, __io__blockTable);
 		}
 	}
 
@@ -940,9 +940,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6816;
+			__dna__offset = 7216;
 		} else {
-			__dna__offset = 6808;
+			__dna__offset = 7208;
 		}
 		if (__io__equals(tseq, __io__address + __dna__offset)) {
 			return;
@@ -961,9 +961,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTima() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 7648, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 8104, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 7640, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 8096, __io__block, __io__blockTable);
 		}
 	}
 
@@ -976,9 +976,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 7648;
+			__dna__offset = 8104;
 		} else {
-			__dna__offset = 7640;
+			__dna__offset = 8096;
 		}
 		if (__io__equals(tima, __io__address + __dna__offset)) {
 			return;
@@ -997,9 +997,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getText() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 8480, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 8992, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 8472, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 8984, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1012,9 +1012,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 8480;
+			__dna__offset = 8992;
 		} else {
-			__dna__offset = 8472;
+			__dna__offset = 8984;
 		}
 		if (__io__equals(text, __io__address + __dna__offset)) {
 			return;
@@ -1033,9 +1033,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getToops() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 9312, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 9880, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 9304, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 9872, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1048,9 +1048,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9312;
+			__dna__offset = 9880;
 		} else {
-			__dna__offset = 9304;
+			__dna__offset = 9872;
 		}
 		if (__io__equals(toops, __io__address + __dna__offset)) {
 			return;
@@ -1069,9 +1069,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTnode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 10144, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 10768, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 10136, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 10760, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1084,9 +1084,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10144;
+			__dna__offset = 10768;
 		} else {
-			__dna__offset = 10136;
+			__dna__offset = 10760;
 		}
 		if (__io__equals(tnode, __io__address + __dna__offset)) {
 			return;
@@ -1105,9 +1105,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTuserpref() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 10976, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 11656, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 10968, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 11648, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1120,9 +1120,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10976;
+			__dna__offset = 11656;
 		} else {
-			__dna__offset = 10968;
+			__dna__offset = 11648;
 		}
 		if (__io__equals(tuserpref, __io__address + __dna__offset)) {
 			return;
@@ -1141,9 +1141,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTconsole() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 11808, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 12544, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 11800, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 12536, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1156,9 +1156,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 11808;
+			__dna__offset = 12544;
 		} else {
-			__dna__offset = 11800;
+			__dna__offset = 12536;
 		}
 		if (__io__equals(tconsole, __io__address + __dna__offset)) {
 			return;
@@ -1177,9 +1177,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTclip() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 12640, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 13432, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 12632, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 13424, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1192,9 +1192,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12640;
+			__dna__offset = 13432;
 		} else {
-			__dna__offset = 12632;
+			__dna__offset = 13424;
 		}
 		if (__io__equals(tclip, __io__address + __dna__offset)) {
 			return;
@@ -1213,9 +1213,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTtopbar() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 13472, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 14320, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 13464, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 14312, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1228,9 +1228,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 13472;
+			__dna__offset = 14320;
 		} else {
-			__dna__offset = 13464;
+			__dna__offset = 14312;
 		}
 		if (__io__equals(ttopbar, __io__address + __dna__offset)) {
 			return;
@@ -1249,9 +1249,9 @@ public class bTheme extends CFacade {
 	public ThemeSpace getTstatusbar() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ThemeSpace(__io__address + 14304, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 15208, __io__block, __io__blockTable);
 		} else {
-			return new ThemeSpace(__io__address + 14296, __io__block, __io__blockTable);
+			return new ThemeSpace(__io__address + 15200, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1264,9 +1264,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 14304;
+			__dna__offset = 15208;
 		} else {
-			__dna__offset = 14296;
+			__dna__offset = 15200;
 		}
 		if (__io__equals(tstatusbar, __io__address + __dna__offset)) {
 			return;
@@ -1292,9 +1292,9 @@ public class bTheme extends CFacade {
 			20
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ThemeWireColor>(__io__address + 15136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeWireColor>(__io__address + 16096, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<ThemeWireColor>(__io__address + 15128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeWireColor>(__io__address + 16088, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1310,9 +1310,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 15136;
+			__dna__offset = 16096;
 		} else {
-			__dna__offset = 15128;
+			__dna__offset = 16088;
 		}
 		if (__io__equals(tarm, __io__address + __dna__offset)) {
 			return;
@@ -1334,9 +1334,9 @@ public class bTheme extends CFacade {
 	public int getActive_theme_area() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 15456);
+			return __io__block.readInt(__io__address + 16416);
 		} else {
-			return __io__block.readInt(__io__address + 15448);
+			return __io__block.readInt(__io__address + 16408);
 		}
 	}
 
@@ -1351,9 +1351,9 @@ public class bTheme extends CFacade {
 	public void setActive_theme_area(int active_theme_area) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 15456, active_theme_area);
+			__io__block.writeInt(__io__address + 16416, active_theme_area);
 		} else {
-			__io__block.writeInt(__io__address + 15448, active_theme_area);
+			__io__block.writeInt(__io__address + 16408, active_theme_area);
 		}
 	}
 
@@ -1369,9 +1369,9 @@ public class bTheme extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 15460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 15452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16412, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1384,9 +1384,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 15460;
+			__dna__offset = 16420;
 		} else {
-			__dna__offset = 15452;
+			__dna__offset = 16412;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;

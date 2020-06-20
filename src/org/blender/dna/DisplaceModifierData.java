@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=260, size64=288)
+@CMetaData(size32=332, size64=360)
 public class DisplaceModifierData extends CFacade {
 
 	/**
@@ -93,6 +93,26 @@ public class DisplaceModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__map_object = new long[]{104, 128};
 
 	/**
+	 * Field descriptor (offset) for struct member 'map_bone'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DisplaceModifierData displacemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = displacemodifierdata.__dna__addressof(DisplaceModifierData.__DNA__FIELD__map_bone);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_map_bone = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'map_bone'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__map_bone = new long[]{108, 136};
+
+	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -113,7 +133,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -133,7 +153,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{172, 200};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{236, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -153,7 +173,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{176, 204};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{240, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -176,7 +196,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__strength = new long[]{244, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'direction'.
@@ -196,7 +216,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__direction = new long[]{184, 212};
+	public static final long[] __DNA__FIELD__direction = new long[]{248, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -219,7 +239,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{252, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'midlevel'.
@@ -239,7 +259,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__midlevel = new long[]{252, 280};
+	public static final long[] __DNA__FIELD__midlevel = new long[]{316, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
@@ -259,7 +279,47 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space = new long[]{256, 284};
+	public static final long[] __DNA__FIELD__space = new long[]{320, 348};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DisplaceModifierData displacemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = displacemodifierdata.__dna__addressof(DisplaceModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{324, 352};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * DisplaceModifierData displacemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = displacemodifierdata.__dna__addressof(DisplaceModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{326, 354};
 
 	public DisplaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -376,6 +436,46 @@ public class DisplaceModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public CArrayFacade<Byte> getMap_bone() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public void setMap_bone(CArrayFacade<Byte> map_bone) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 136;
+		} else {
+			__dna__offset = 108;
+		}
+		if (__io__equals(map_bone, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, map_bone)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, map_bone);
+		} else {
+			__io__generic__copy( getMap_bone(), map_bone);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -390,9 +490,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -408,9 +508,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 172;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -429,9 +529,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 236);
 		}
 	}
 
@@ -443,9 +543,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 172, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 236, uvlayer_tmp);
 		}
 	}
 
@@ -457,9 +557,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -471,9 +571,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, texmapping);
+			__io__block.writeInt(__io__address + 268, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 176, texmapping);
+			__io__block.writeInt(__io__address + 240, texmapping);
 		}
 	}
 
@@ -488,9 +588,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 272);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -505,9 +605,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, strength);
+			__io__block.writeFloat(__io__address + 272, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 180, strength);
+			__io__block.writeFloat(__io__address + 244, strength);
 		}
 	}
 
@@ -519,9 +619,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getDirection() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 248);
 		}
 	}
 
@@ -533,9 +633,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setDirection(int direction) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, direction);
+			__io__block.writeInt(__io__address + 276, direction);
 		} else {
-			__io__block.writeInt(__io__address + 184, direction);
+			__io__block.writeInt(__io__address + 248, direction);
 		}
 	}
 
@@ -554,9 +654,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -572,9 +672,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 252;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -593,9 +693,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getMidlevel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 344);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 316);
 		}
 	}
 
@@ -607,9 +707,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setMidlevel(float midlevel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, midlevel);
+			__io__block.writeFloat(__io__address + 344, midlevel);
 		} else {
-			__io__block.writeFloat(__io__address + 252, midlevel);
+			__io__block.writeFloat(__io__address + 316, midlevel);
 		}
 	}
 
@@ -621,9 +721,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return __io__block.readInt(__io__address + 256);
+			return __io__block.readInt(__io__address + 320);
 		}
 	}
 
@@ -635,9 +735,77 @@ public class DisplaceModifierData extends CFacade {
 	public void setSpace(int space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 284, space);
+			__io__block.writeInt(__io__address + 348, space);
 		} else {
-			__io__block.writeInt(__io__address + 256, space);
+			__io__block.writeInt(__io__address + 320, space);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 352);
+		} else {
+			return __io__block.readShort(__io__address + 324);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 352, flag);
+		} else {
+			__io__block.writeShort(__io__address + 324, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 354, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 326, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 354;
+		} else {
+			__dna__offset = 326;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

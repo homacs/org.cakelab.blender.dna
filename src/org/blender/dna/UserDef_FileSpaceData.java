@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Storage for UI data that to keep it even after the window was closed. (Similar to {@link UserDef_SpaceData} .) </p>
  */
 
-@CMetaData(size32=32, size64=32)
+@CMetaData(size32=40, size64=40)
 public class UserDef_FileSpaceData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 260;
+	public static final int __DNA__SDNA_INDEX = 263;
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_type'.
@@ -145,10 +145,30 @@ public class UserDef_FileSpaceData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{16, 16};
 
 	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_FileSpaceData userdef_filespacedata = ...;
+	 * CPointer&lt;Object&gt; p = userdef_filespacedata.__dna__addressof(UserDef_FileSpaceData.__DNA__FIELD___pad0);
+	 * CPointer&lt;Integer&gt; p__pad0 = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{20, 20};
+
+	/**
 	 * Field descriptor (offset) for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * <p> FileSelectParams.filter_id </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -156,16 +176,16 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * <pre>
 	 * UserDef_FileSpaceData userdef_filespacedata = ...;
 	 * CPointer&lt;Object&gt; p = userdef_filespacedata.__dna__addressof(UserDef_FileSpaceData.__DNA__FIELD__filter_id);
-	 * CPointer&lt;Integer&gt; p_filter_id = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;int64&gt; p_filter_id = p.cast(new Class[]{int64.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'filter_id'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'uint64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filter_id = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__filter_id = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_win_sizex'.
@@ -188,7 +208,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_win_sizex = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__temp_win_sizex = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_win_sizey'.
@@ -208,7 +228,7 @@ public class UserDef_FileSpaceData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_win_sizey = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__temp_win_sizey = new long[]{36, 36};
 
 	public UserDef_FileSpaceData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -389,14 +409,11 @@ public class UserDef_FileSpaceData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'filter_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
-	 * @see #__DNA__FIELD__filter_id
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public int getFilter_id() throws IOException
+	public int get_pad0() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 20);
@@ -406,19 +423,50 @@ public class UserDef_FileSpaceData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'filter_id'.
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(int _pad0) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 20, _pad0);
+		} else {
+			__io__block.writeInt(__io__address + 20, _pad0);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'filter_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link FileSelectParams.filter_id}  </p>
+	 * <p> FileSelectParams.filter_id </p>
 	 * @see #__DNA__FIELD__filter_id
 	 */
 	
-	public void setFilter_id(int filter_id) throws IOException
+	public long getFilter_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, filter_id);
+			return __io__block.readInt64(__io__address + 24);
 		} else {
-			__io__block.writeInt(__io__address + 20, filter_id);
+			return __io__block.readInt64(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'filter_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> FileSelectParams.filter_id </p>
+	 * @see #__DNA__FIELD__filter_id
+	 */
+	
+	public void setFilter_id(long filter_id) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 24, filter_id);
+		} else {
+			__io__block.writeInt64(__io__address + 24, filter_id);
 		}
 	}
 
@@ -433,9 +481,9 @@ public class UserDef_FileSpaceData extends CFacade {
 	public int getTemp_win_sizex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 24);
+			return __io__block.readInt(__io__address + 32);
 		}
 	}
 
@@ -450,9 +498,9 @@ public class UserDef_FileSpaceData extends CFacade {
 	public void setTemp_win_sizex(int temp_win_sizex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, temp_win_sizex);
+			__io__block.writeInt(__io__address + 32, temp_win_sizex);
 		} else {
-			__io__block.writeInt(__io__address + 24, temp_win_sizex);
+			__io__block.writeInt(__io__address + 32, temp_win_sizex);
 		}
 	}
 
@@ -464,9 +512,9 @@ public class UserDef_FileSpaceData extends CFacade {
 	public int getTemp_win_sizey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 36);
 		}
 	}
 
@@ -478,9 +526,9 @@ public class UserDef_FileSpaceData extends CFacade {
 	public void setTemp_win_sizey(int temp_win_sizey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 28, temp_win_sizey);
+			__io__block.writeInt(__io__address + 36, temp_win_sizey);
 		} else {
-			__io__block.writeInt(__io__address + 28, temp_win_sizey);
+			__io__block.writeInt(__io__address + 36, temp_win_sizey);
 		}
 	}
 

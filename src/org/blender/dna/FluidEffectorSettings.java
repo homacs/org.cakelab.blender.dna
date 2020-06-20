@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Collision objects (filled with smoke). </p>
  */
 
-@CMetaData(size32=36, size64=48)
+@CMetaData(size32=44, size64=56)
 public class FluidEffectorSettings extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 556;
+	public static final int __DNA__SDNA_INDEX = 562;
 
 	/**
 	 * Field descriptor (offset) for struct member 'mmd'.
@@ -117,7 +117,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -158,6 +158,29 @@ public class FluidEffectorSettings extends CFacade {
 	public static final long[] __DNA__FIELD__flags = new long[]{20, 32};
 
 	/**
+	 * Field descriptor (offset) for struct member 'subframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidEffectorSettings fluideffectorsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluideffectorsettings.__dna__addressof(FluidEffectorSettings.__DNA__FIELD__subframes);
+	 * CPointer&lt;Integer&gt; p_subframes = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'subframes'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__subframes = new long[]{24, 36};
+
+	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -175,7 +198,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{24, 36};
+	public static final long[] __DNA__FIELD__type = new long[]{28, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -191,11 +214,11 @@ public class FluidEffectorSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{26, 38};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{30, 42};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vel_multi'.
@@ -218,7 +241,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vel_multi = new long[]{28, 40};
+	public static final long[] __DNA__FIELD__vel_multi = new long[]{36, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiding_mode'.
@@ -238,7 +261,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_mode = new long[]{32, 44};
+	public static final long[] __DNA__FIELD__guiding_mode = new long[]{40, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -258,7 +281,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{34, 46};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{42, 54};
 
 	public FluidEffectorSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -402,7 +425,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * Get method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -420,7 +443,7 @@ public class FluidEffectorSettings extends CFacade {
 	 * Set method for struct member 'surface_distance'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
+	 * Additional distance around mesh surface to consider as effector<h4>Blender Source Code:</h4>
 	 * <p><ndash/>  User-accesible fields (from here on). <ndash/>  Thickness of mesh surface, used in obstacle sdf. </p>
 	 * @see #__DNA__FIELD__surface_distance
 	 */
@@ -463,6 +486,40 @@ public class FluidEffectorSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'subframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
+	 * @see #__DNA__FIELD__subframes
+	 */
+	
+	public int getSubframes() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 36);
+		} else {
+			return __io__block.readInt(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'subframes'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of additional samples to take between frames to improve quality of fast moving effector objects
+	 * @see #__DNA__FIELD__subframes
+	 */
+	
+	public void setSubframes(int subframes) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 36, subframes);
+		} else {
+			__io__block.writeInt(__io__address + 24, subframes);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'type'.
 	 * @see #__DNA__FIELD__type
 	 */
@@ -470,9 +527,9 @@ public class FluidEffectorSettings extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 36);
+			return __io__block.readShort(__io__address + 40);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readShort(__io__address + 28);
 		}
 	}
 
@@ -484,9 +541,9 @@ public class FluidEffectorSettings extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 36, type);
+			__io__block.writeShort(__io__address + 40, type);
 		} else {
-			__io__block.writeShort(__io__address + 24, type);
+			__io__block.writeShort(__io__address + 28, type);
 		}
 	}
 
@@ -499,12 +556,12 @@ public class FluidEffectorSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 38, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 42, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 26, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -517,9 +574,9 @@ public class FluidEffectorSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 38;
+			__dna__offset = 42;
 		} else {
-			__dna__offset = 26;
+			__dna__offset = 30;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -541,9 +598,9 @@ public class FluidEffectorSettings extends CFacade {
 	public float getVel_multi() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 40);
+			return __io__block.readFloat(__io__address + 48);
 		} else {
-			return __io__block.readFloat(__io__address + 28);
+			return __io__block.readFloat(__io__address + 36);
 		}
 	}
 
@@ -558,9 +615,9 @@ public class FluidEffectorSettings extends CFacade {
 	public void setVel_multi(float vel_multi) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 40, vel_multi);
+			__io__block.writeFloat(__io__address + 48, vel_multi);
 		} else {
-			__io__block.writeFloat(__io__address + 28, vel_multi);
+			__io__block.writeFloat(__io__address + 36, vel_multi);
 		}
 	}
 
@@ -572,9 +629,9 @@ public class FluidEffectorSettings extends CFacade {
 	public short getGuiding_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 44);
+			return __io__block.readShort(__io__address + 52);
 		} else {
-			return __io__block.readShort(__io__address + 32);
+			return __io__block.readShort(__io__address + 40);
 		}
 	}
 
@@ -586,9 +643,9 @@ public class FluidEffectorSettings extends CFacade {
 	public void setGuiding_mode(short guiding_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 44, guiding_mode);
+			__io__block.writeShort(__io__address + 52, guiding_mode);
 		} else {
-			__io__block.writeShort(__io__address + 32, guiding_mode);
+			__io__block.writeShort(__io__address + 40, guiding_mode);
 		}
 	}
 
@@ -604,9 +661,9 @@ public class FluidEffectorSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 54, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 34, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 42, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -619,9 +676,9 @@ public class FluidEffectorSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 46;
+			__dna__offset = 54;
 		} else {
-			__dna__offset = 34;
+			__dna__offset = 42;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

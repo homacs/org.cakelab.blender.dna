@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=172, size64=192)
+@CMetaData(size32=180, size64=200)
 public class WeldModifierData extends CFacade {
 
 	/**
@@ -114,6 +114,46 @@ public class WeldModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__defgrp_name = new long[]{108, 128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WeldModifierData weldmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = weldmodifierdata.__dna__addressof(WeldModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{172, 192};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WeldModifierData weldmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = weldmodifierdata.__dna__addressof(WeldModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{174, 194};
 
 	public WeldModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -264,6 +304,74 @@ public class WeldModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, defgrp_name);
 		} else {
 			__io__generic__copy( getDefgrp_name(), defgrp_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 192);
+		} else {
+			return __io__block.readShort(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 192, flag);
+		} else {
+			__io__block.writeShort(__io__address + 172, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 174, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 194;
+		} else {
+			__dna__offset = 174;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

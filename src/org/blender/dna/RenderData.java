@@ -644,29 +644,6 @@ public class RenderData extends CFacade {
 	public static final long[] __DNA__FIELD__quality = new long[]{414, 430};
 
 	/**
-	 * Field descriptor (offset) for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Render to image editor, fullscreen or to new window. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RenderData renderdata = ...;
-	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__displaymode);
-	 * CPointer&lt;Short&gt; p_displaymode = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'displaymode'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__displaymode = new long[]{416, 432};
-
-	/**
 	 * Field descriptor (offset) for struct member 'use_lock_interface'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -684,7 +661,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_lock_interface = new long[]{418, 434};
+	public static final long[] __DNA__FIELD__use_lock_interface = new long[]{416, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad7'.
@@ -695,16 +672,16 @@ public class RenderData extends CFacade {
 	 * <pre>
 	 * RenderData renderdata = ...;
 	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD___pad7);
-	 * CPointer&lt;Byte&gt; p__pad7 = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad7 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad7'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad7 = new long[]{419, 435};
+	public static final long[] __DNA__FIELD___pad7 = new long[]{417, 433};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scemode'.
@@ -1401,8 +1378,8 @@ public class RenderData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad5'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad5 = new long[]{2335, 2359};
@@ -1428,7 +1405,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2340, 2364};
+	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2342, 2366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_subsurf_render'.
@@ -1448,7 +1425,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_subsurf_render = new long[]{2342, 2366};
+	public static final long[] __DNA__FIELD__simplify_subsurf_render = new long[]{2344, 2368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_gpencil'.
@@ -1468,27 +1445,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_gpencil = new long[]{2344, 2368};
-
-	/**
-	 * Field descriptor (offset) for struct member 'simplify_smoke_ignore_highres'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * RenderData renderdata = ...;
-	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__simplify_smoke_ignore_highres);
-	 * CPointer&lt;Short&gt; p_simplify_smoke_ignore_highres = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'simplify_smoke_ignore_highres'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__simplify_smoke_ignore_highres = new long[]{2346, 2370};
+	public static final long[] __DNA__FIELD__simplify_gpencil = new long[]{2346, 2370};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_particles'.
@@ -1613,11 +1570,34 @@ public class RenderData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad2 = new long[]{2396, 2420};
+
+	/**
+	 * Field descriptor (offset) for struct member 'perf_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Performance Options </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__perf_flag);
+	 * CPointer&lt;Short&gt; p_perf_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'perf_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__perf_flag = new long[]{2398, 2422};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bake'.
@@ -1772,7 +1752,7 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'hair_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hair Display </p>
+	 * <p>{@link Hair}  Display </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2763,40 +2743,6 @@ public class RenderData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Render to image editor, fullscreen or to new window. </p>
-	 * @see #__DNA__FIELD__displaymode
-	 */
-	
-	public short getDisplaymode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 432);
-		} else {
-			return __io__block.readShort(__io__address + 416);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'displaymode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Render to image editor, fullscreen or to new window. </p>
-	 * @see #__DNA__FIELD__displaymode
-	 */
-	
-	public void setDisplaymode(short displaymode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 432, displaymode);
-		} else {
-			__io__block.writeShort(__io__address + 416, displaymode);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'use_lock_interface'.
 	 * @see #__DNA__FIELD__use_lock_interface
 	 */
@@ -2804,9 +2750,9 @@ public class RenderData extends CFacade {
 	public byte getUse_lock_interface() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 434);
+			return __io__block.readByte(__io__address + 432);
 		} else {
-			return __io__block.readByte(__io__address + 418);
+			return __io__block.readByte(__io__address + 416);
 		}
 	}
 
@@ -2818,9 +2764,9 @@ public class RenderData extends CFacade {
 	public void setUse_lock_interface(byte use_lock_interface) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 434, use_lock_interface);
+			__io__block.writeByte(__io__address + 432, use_lock_interface);
 		} else {
-			__io__block.writeByte(__io__address + 418, use_lock_interface);
+			__io__block.writeByte(__io__address + 416, use_lock_interface);
 		}
 	}
 
@@ -2829,12 +2775,16 @@ public class RenderData extends CFacade {
 	 * @see #__DNA__FIELD___pad7
 	 */
 	
-	public byte get_pad7() throws IOException
+	public CArrayFacade<Byte> get_pad7() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 435);
+			return new CArrayFacade<Byte>(__io__address + 433, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readByte(__io__address + 419);
+			return new CArrayFacade<Byte>(__io__address + 417, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2843,12 +2793,20 @@ public class RenderData extends CFacade {
 	 * @see #__DNA__FIELD___pad7
 	 */
 	
-	public void set_pad7(byte _pad7) throws IOException
+	public void set_pad7(CArrayFacade<Byte> _pad7) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 435, _pad7);
+			__dna__offset = 433;
 		} else {
-			__io__block.writeByte(__io__address + 419, _pad7);
+			__dna__offset = 417;
+		}
+		if (__io__equals(_pad7, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad7)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad7);
+		} else {
+			__io__generic__copy( get_pad7(), _pad7);
 		}
 	}
 
@@ -3951,7 +3909,7 @@ public class RenderData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			7
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 2359, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -3993,9 +3951,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_subsurf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2364);
+			return __io__block.readShort(__io__address + 2366);
 		} else {
-			return __io__block.readShort(__io__address + 2340);
+			return __io__block.readShort(__io__address + 2342);
 		}
 	}
 
@@ -4010,9 +3968,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_subsurf(short simplify_subsurf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2364, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2366, simplify_subsurf);
 		} else {
-			__io__block.writeShort(__io__address + 2340, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2342, simplify_subsurf);
 		}
 	}
 
@@ -4024,9 +3982,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_subsurf_render() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2366);
+			return __io__block.readShort(__io__address + 2368);
 		} else {
-			return __io__block.readShort(__io__address + 2342);
+			return __io__block.readShort(__io__address + 2344);
 		}
 	}
 
@@ -4038,9 +3996,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_subsurf_render(short simplify_subsurf_render) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2366, simplify_subsurf_render);
+			__io__block.writeShort(__io__address + 2368, simplify_subsurf_render);
 		} else {
-			__io__block.writeShort(__io__address + 2342, simplify_subsurf_render);
+			__io__block.writeShort(__io__address + 2344, simplify_subsurf_render);
 		}
 	}
 
@@ -4052,9 +4010,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_gpencil() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2368);
+			return __io__block.readShort(__io__address + 2370);
 		} else {
-			return __io__block.readShort(__io__address + 2344);
+			return __io__block.readShort(__io__address + 2346);
 		}
 	}
 
@@ -4066,37 +4024,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_gpencil(short simplify_gpencil) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2368, simplify_gpencil);
+			__io__block.writeShort(__io__address + 2370, simplify_gpencil);
 		} else {
-			__io__block.writeShort(__io__address + 2344, simplify_gpencil);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'simplify_smoke_ignore_highres'.
-	 * @see #__DNA__FIELD__simplify_smoke_ignore_highres
-	 */
-	
-	public short getSimplify_smoke_ignore_highres() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2370);
-		} else {
-			return __io__block.readShort(__io__address + 2346);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'simplify_smoke_ignore_highres'.
-	 * @see #__DNA__FIELD__simplify_smoke_ignore_highres
-	 */
-	
-	public void setSimplify_smoke_ignore_highres(short simplify_smoke_ignore_highres) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2370, simplify_smoke_ignore_highres);
-		} else {
-			__io__block.writeShort(__io__address + 2346, simplify_smoke_ignore_highres);
+			__io__block.writeShort(__io__address + 2346, simplify_gpencil);
 		}
 	}
 
@@ -4279,7 +4209,7 @@ public class RenderData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 2420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -4307,6 +4237,40 @@ public class RenderData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
 			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'perf_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Performance Options </p>
+	 * @see #__DNA__FIELD__perf_flag
+	 */
+	
+	public short getPerf_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 2422);
+		} else {
+			return __io__block.readShort(__io__address + 2398);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'perf_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Performance Options </p>
+	 * @see #__DNA__FIELD__perf_flag
+	 */
+	
+	public void setPerf_flag(short perf_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 2422, perf_flag);
+		} else {
+			__io__block.writeShort(__io__address + 2398, perf_flag);
 		}
 	}
 
@@ -4544,7 +4508,7 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'hair_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hair Display </p>
+	 * <p>{@link Hair}  Display </p>
 	 * @see #__DNA__FIELD__hair_type
 	 */
 	
@@ -4561,7 +4525,7 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'hair_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Hair Display </p>
+	 * <p>{@link Hair}  Display </p>
 	 * @see #__DNA__FIELD__hair_type
 	 */
 	

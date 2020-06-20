@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=376, size64=408)
+@CMetaData(size32=408, size64=440)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDstroke extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 475;
+	public static final int __DNA__SDNA_INDEX = 480;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -324,9 +324,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_f'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> gradient control along y for color </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -347,9 +344,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_s'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> factor xy of shape for dots gradients </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -369,24 +363,139 @@ public class bGPDstroke extends CFacade {
 	public static final long[] __DNA__FIELD__gradient_s = new long[]{180, 196};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad_3'.
+	 * Field descriptor (offset) for struct member 'fill_opacity_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPDstroke bgpdstroke = ...;
-	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD___pad_3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__fill_opacity_fac);
+	 * CPointer&lt;Float&gt; p_fill_opacity_fac = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad_3'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'fill_opacity_fac'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad_3 = new long[]{188, 204};
+	public static final long[] __DNA__FIELD__fill_opacity_fac = new long[]{188, 204};
+
+	/**
+	 * Field descriptor (offset) for struct member 'boundbox_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Min of the bound box used to speedup painting operators. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__boundbox_min);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_boundbox_min = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'boundbox_min'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__boundbox_min = new long[]{192, 208};
+
+	/**
+	 * Field descriptor (offset) for struct member 'boundbox_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Max of the bound box used to speedup painting operators. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__boundbox_max);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_boundbox_max = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'boundbox_max'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__boundbox_max = new long[]{204, 220};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV rotation </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__uv_rotation);
+	 * CPointer&lt;Float&gt; p_uv_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_rotation = new long[]{216, 232};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_translation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV translation (X and Y axis) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__uv_translation);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_uv_translation = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_translation'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_translation = new long[]{220, 236};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__uv_scale);
+	 * CPointer&lt;Float&gt; p_uv_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_scale = new long[]{228, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dvert'.
@@ -409,7 +518,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dvert = new long[]{192, 208};
+	public static final long[] __DNA__FIELD__dvert = new long[]{232, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -429,7 +538,30 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{196, 216};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{236, 256};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vert_color_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__vert_color_fill);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_vert_color_fill = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vert_color_fill'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vert_color_fill = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -446,10 +578,10 @@ public class bGPDstroke extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPDstroke_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 176/184</li>
+	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{200, 224};
+	public static final long[] __DNA__FIELD__runtime = new long[]{256, 280};
 
 	public bGPDstroke(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -941,9 +1073,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Get method for struct member 'gradient_f'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> gradient control along y for color </p>
 	 * @see #__DNA__FIELD__gradient_f
 	 */
 	
@@ -958,9 +1087,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Set method for struct member 'gradient_f'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> gradient control along y for color </p>
 	 * @see #__DNA__FIELD__gradient_f
 	 */
 	
@@ -975,9 +1101,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Get method for struct member 'gradient_s'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> factor xy of shape for dots gradients </p>
 	 * @see #__DNA__FIELD__gradient_s
 	 */
 	
@@ -996,9 +1119,6 @@ public class bGPDstroke extends CFacade {
 
 	/**
 	 * Set method for struct member 'gradient_s'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> factor xy of shape for dots gradients </p>
 	 * @see #__DNA__FIELD__gradient_s
 	 */
 	
@@ -1020,42 +1140,236 @@ public class bGPDstroke extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad_3'.
-	 * @see #__DNA__FIELD___pad_3
+	 * Get method for struct member 'fill_opacity_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
+	 * @see #__DNA__FIELD__fill_opacity_fac
 	 */
 	
-	public CArrayFacade<Byte> get_pad_3() throws IOException
+	public float getFill_opacity_fac() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad_3'.
-	 * @see #__DNA__FIELD___pad_3
+	 * Set method for struct member 'fill_opacity_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor of opacity for Fill color (used by opacity modifier). </p>
+	 * @see #__DNA__FIELD__fill_opacity_fac
 	 */
 	
-	public void set_pad_3(CArrayFacade<Byte> _pad_3) throws IOException
+	public void setFill_opacity_fac(float fill_opacity_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 204, fill_opacity_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 188, fill_opacity_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'boundbox_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Min of the bound box used to speedup painting operators. </p>
+	 * @see #__DNA__FIELD__boundbox_min
+	 */
+	
+	public CArrayFacade<Float> getBoundbox_min() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'boundbox_min'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Min of the bound box used to speedup painting operators. </p>
+	 * @see #__DNA__FIELD__boundbox_min
+	 */
+	
+	public void setBoundbox_min(CArrayFacade<Float> boundbox_min) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 192;
 		}
-		if (__io__equals(_pad_3, __io__address + __dna__offset)) {
+		if (__io__equals(boundbox_min, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad_3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_3);
+		} else if (__io__same__encoding(this, boundbox_min)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, boundbox_min);
 		} else {
-			__io__generic__copy( get_pad_3(), _pad_3);
+			__io__generic__copy( getBoundbox_min(), boundbox_min);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'boundbox_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Max of the bound box used to speedup painting operators. </p>
+	 * @see #__DNA__FIELD__boundbox_max
+	 */
+	
+	public CArrayFacade<Float> getBoundbox_max() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'boundbox_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Max of the bound box used to speedup painting operators. </p>
+	 * @see #__DNA__FIELD__boundbox_max
+	 */
+	
+	public void setBoundbox_max(CArrayFacade<Float> boundbox_max) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 220;
+		} else {
+			__dna__offset = 204;
+		}
+		if (__io__equals(boundbox_max, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, boundbox_max)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, boundbox_max);
+		} else {
+			__io__generic__copy( getBoundbox_max(), boundbox_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV rotation </p>
+	 * @see #__DNA__FIELD__uv_rotation
+	 */
+	
+	public float getUv_rotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 232);
+		} else {
+			return __io__block.readFloat(__io__address + 216);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV rotation </p>
+	 * @see #__DNA__FIELD__uv_rotation
+	 */
+	
+	public void setUv_rotation(float uv_rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 232, uv_rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 216, uv_rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_translation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV translation (X and Y axis) </p>
+	 * @see #__DNA__FIELD__uv_translation
+	 */
+	
+	public CArrayFacade<Float> getUv_translation() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_translation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> UV translation (X and Y axis) </p>
+	 * @see #__DNA__FIELD__uv_translation
+	 */
+	
+	public void setUv_translation(CArrayFacade<Float> uv_translation) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 236;
+		} else {
+			__dna__offset = 220;
+		}
+		if (__io__equals(uv_translation, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, uv_translation)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, uv_translation);
+		} else {
+			__io__generic__copy( getUv_translation(), uv_translation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'uv_scale'.
+	 * @see #__DNA__FIELD__uv_scale
+	 */
+	
+	public float getUv_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 244);
+		} else {
+			return __io__block.readFloat(__io__address + 228);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_scale'.
+	 * @see #__DNA__FIELD__uv_scale
+	 */
+	
+	public void setUv_scale(float uv_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 244, uv_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 228, uv_scale);
 		}
 	}
 
@@ -1071,9 +1385,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
 		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1091,9 +1405,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((dvert == null) ? 0 : dvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		}
 	}
 
@@ -1106,9 +1420,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 236);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1123,9 +1437,55 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 236, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vert_color_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
+	 * @see #__DNA__FIELD__vert_color_fill
+	 */
+	
+	public CArrayFacade<Float> getVert_color_fill() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vert_color_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color for Fill (one for all stroke, A=mix factor). </p>
+	 * @see #__DNA__FIELD__vert_color_fill
+	 */
+	
+	public void setVert_color_fill(CArrayFacade<Float> vert_color_fill) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 264;
+		} else {
+			__dna__offset = 240;
+		}
+		if (__io__equals(vert_color_fill, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vert_color_fill)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vert_color_fill);
+		} else {
+			__io__generic__copy( getVert_color_fill(), vert_color_fill);
 		}
 	}
 
@@ -1137,9 +1497,9 @@ public class bGPDstroke extends CFacade {
 	public bGPDstroke_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPDstroke_Runtime(__io__address + 224, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new bGPDstroke_Runtime(__io__address + 200, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 256, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1152,9 +1512,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 256;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Frame' -> Acts as storage for the 'image' formed by strokes </p>
  */
 
-@CMetaData(size32=88, size64=104)
+@CMetaData(size32=36, size64=56)
 public class bGPDframe extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bGPDframe extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 477;
+	public static final int __DNA__SDNA_INDEX = 482;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -176,7 +176,7 @@ public class bGPDframe extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'bGPDframe_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{24, 40};

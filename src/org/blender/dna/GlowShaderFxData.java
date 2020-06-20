@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=168, size64=192)
+@CMetaData(size32=184, size64=208)
 public class GlowShaderFxData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class GlowShaderFxData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 506;
+	public static final int __DNA__SDNA_INDEX = 512;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.
@@ -63,8 +63,8 @@ public class GlowShaderFxData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'glow_color'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__glow_color = new long[]{92, 104};
@@ -87,7 +87,7 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__select_color = new long[]{104, 116};
+	public static final long[] __DNA__FIELD__select_color = new long[]{108, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.
@@ -107,7 +107,7 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__threshold = new long[]{116, 128};
+	public static final long[] __DNA__FIELD__threshold = new long[]{120, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -130,7 +130,7 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{120, 132};
+	public static final long[] __DNA__FIELD__flag = new long[]{124, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -150,7 +150,7 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{124, 136};
+	public static final long[] __DNA__FIELD__mode = new long[]{128, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blur'.
@@ -161,16 +161,16 @@ public class GlowShaderFxData extends CFacade {
 	 * <pre>
 	 * GlowShaderFxData glowshaderfxdata = ...;
 	 * CPointer&lt;Object&gt; p = glowshaderfxdata.__dna__addressof(GlowShaderFxData.__DNA__FIELD__blur);
-	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_blur = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_blur = p.cast(new Class[]{CArrayFacade.class, Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'blur'</li>
-	 * <li>Signature: 'int[2]'</li>
+	 * <li>Signature: 'float[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blur = new long[]{128, 140};
+	public static final long[] __DNA__FIELD__blur = new long[]{132, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'samples'.
@@ -190,7 +190,73 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__samples = new long[]{136, 148};
+	public static final long[] __DNA__FIELD__samples = new long[]{140, 152};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of effect. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GlowShaderFxData glowshaderfxdata = ...;
+	 * CPointer&lt;Object&gt; p = glowshaderfxdata.__dna__addressof(GlowShaderFxData.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{144, 156};
+
+	/**
+	 * Field descriptor (offset) for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GlowShaderFxData glowshaderfxdata = ...;
+	 * CPointer&lt;Object&gt; p = glowshaderfxdata.__dna__addressof(GlowShaderFxData.__DNA__FIELD__blend_mode);
+	 * CPointer&lt;Integer&gt; p_blend_mode = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'blend_mode'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__blend_mode = new long[]{148, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GlowShaderFxData glowshaderfxdata = ...;
+	 * CPointer&lt;Object&gt; p = glowshaderfxdata.__dna__addressof(GlowShaderFxData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{152, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -210,7 +276,7 @@ public class GlowShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{140, 152};
+	public static final long[] __DNA__FIELD__runtime = new long[]{156, 168};
 
 	public GlowShaderFxData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -265,7 +331,7 @@ public class GlowShaderFxData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			4
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -308,9 +374,9 @@ public class GlowShaderFxData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -323,9 +389,9 @@ public class GlowShaderFxData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 116;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 108;
 		}
 		if (__io__equals(select_color, __io__address + __dna__offset)) {
 			return;
@@ -344,9 +410,9 @@ public class GlowShaderFxData extends CFacade {
 	public float getThreshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -358,9 +424,9 @@ public class GlowShaderFxData extends CFacade {
 	public void setThreshold(float threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, threshold);
+			__io__block.writeFloat(__io__address + 132, threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 116, threshold);
+			__io__block.writeFloat(__io__address + 120, threshold);
 		}
 	}
 
@@ -375,9 +441,9 @@ public class GlowShaderFxData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 124);
 		}
 	}
 
@@ -392,9 +458,9 @@ public class GlowShaderFxData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, flag);
+			__io__block.writeInt(__io__address + 136, flag);
 		} else {
-			__io__block.writeInt(__io__address + 120, flag);
+			__io__block.writeInt(__io__address + 124, flag);
 		}
 	}
 
@@ -406,9 +472,9 @@ public class GlowShaderFxData extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -420,9 +486,9 @@ public class GlowShaderFxData extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, mode);
+			__io__block.writeInt(__io__address + 140, mode);
 		} else {
-			__io__block.writeInt(__io__address + 124, mode);
+			__io__block.writeInt(__io__address + 128, mode);
 		}
 	}
 
@@ -431,16 +497,16 @@ public class GlowShaderFxData extends CFacade {
 	 * @see #__DNA__FIELD__blur
 	 */
 	
-	public CArrayFacade<Integer> getBlur() throws IOException
+	public CArrayFacade<Float> getBlur() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -449,13 +515,13 @@ public class GlowShaderFxData extends CFacade {
 	 * @see #__DNA__FIELD__blur
 	 */
 	
-	public void setBlur(CArrayFacade<Integer> blur) throws IOException
+	public void setBlur(CArrayFacade<Float> blur) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 132;
 		}
 		if (__io__equals(blur, __io__address + __dna__offset)) {
 			return;
@@ -474,9 +540,9 @@ public class GlowShaderFxData extends CFacade {
 	public int getSamples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 152);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -488,9 +554,117 @@ public class GlowShaderFxData extends CFacade {
 	public void setSamples(int samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 148, samples);
+			__io__block.writeInt(__io__address + 152, samples);
 		} else {
-			__io__block.writeInt(__io__address + 136, samples);
+			__io__block.writeInt(__io__address + 140, samples);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of effect. </p>
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public float getRotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 156);
+		} else {
+			return __io__block.readFloat(__io__address + 144);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Rotation of effect. </p>
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(float rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 156, rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 144, rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * @see #__DNA__FIELD__blend_mode
+	 */
+	
+	public int getBlend_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 160);
+		} else {
+			return __io__block.readInt(__io__address + 148);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'blend_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Blend modes. </p>
+	 * @see #__DNA__FIELD__blend_mode
+	 */
+	
+	public void setBlend_mode(int blend_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 160, blend_mode);
+		} else {
+			__io__block.writeInt(__io__address + 148, blend_mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 164;
+		} else {
+			__dna__offset = 152;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 
@@ -502,9 +676,9 @@ public class GlowShaderFxData extends CFacade {
 	public ShaderFxData_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ShaderFxData_Runtime(__io__address + 152, __io__block, __io__blockTable);
+			return new ShaderFxData_Runtime(__io__address + 168, __io__block, __io__blockTable);
 		} else {
-			return new ShaderFxData_Runtime(__io__address + 140, __io__block, __io__blockTable);
+			return new ShaderFxData_Runtime(__io__address + 156, __io__block, __io__blockTable);
 		}
 	}
 
@@ -517,9 +691,9 @@ public class GlowShaderFxData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 156;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

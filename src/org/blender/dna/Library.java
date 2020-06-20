@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> For each library file used, a {@link Library}  struct is added to Main WARNING: readfile.c, expand_doit() reads this struct without DNA check! </p>
  */
 
-@CMetaData(size32=2188, size64=2232)
+@CMetaData(size32=2196, size64=2240)
 public class Library extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class Library extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filedata = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__filedata = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -92,7 +92,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__name = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filepath'.
@@ -116,7 +116,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{1148, 1184};
+	public static final long[] __DNA__FIELD__filepath = new long[]{1156, 1192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
@@ -140,7 +140,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parent = new long[]{2172, 2208};
+	public static final long[] __DNA__FIELD__parent = new long[]{2180, 2216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'packedfile'.
@@ -160,7 +160,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__packedfile = new long[]{2176, 2216};
+	public static final long[] __DNA__FIELD__packedfile = new long[]{2184, 2224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'temp_index'.
@@ -183,13 +183,13 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__temp_index = new long[]{2180, 2224};
+	public static final long[] __DNA__FIELD__temp_index = new long[]{2188, 2232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
+	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -206,7 +206,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__versionfile = new long[]{2184, 2228};
+	public static final long[] __DNA__FIELD__versionfile = new long[]{2192, 2236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subversionfile'.
@@ -226,7 +226,7 @@ public class Library extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subversionfile = new long[]{2186, 2230};
+	public static final long[] __DNA__FIELD__subversionfile = new long[]{2194, 2238};
 
 	public Library(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -281,9 +281,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -298,9 +298,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((filedata == null) ? 0 : filedata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -320,9 +320,9 @@ public class Library extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -339,9 +339,9 @@ public class Library extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 132;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -368,9 +368,9 @@ public class Library extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -387,9 +387,9 @@ public class Library extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1184;
+			__dna__offset = 1192;
 		} else {
-			__dna__offset = 1148;
+			__dna__offset = 1156;
 		}
 		if (__io__equals(filepath, __io__address + __dna__offset)) {
 			return;
@@ -413,9 +413,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Library.class};
 		return new CPointer<Library>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Library.__DNA__SDNA_INDEX), __io__blockTable);
@@ -434,9 +434,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((parent == null) ? 0 : parent.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2208, __address);
+			__io__block.writeLong(__io__address + 2216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2172, __address);
+			__io__block.writeLong(__io__address + 2180, __address);
 		}
 	}
 
@@ -449,9 +449,9 @@ public class Library extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PackedFile.class};
 		return new CPointer<PackedFile>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PackedFile.__DNA__SDNA_INDEX), __io__blockTable);
@@ -466,9 +466,9 @@ public class Library extends CFacade {
 	{
 		long __address = ((packedfile == null) ? 0 : packedfile.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2216, __address);
+			__io__block.writeLong(__io__address + 2224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2176, __address);
+			__io__block.writeLong(__io__address + 2184, __address);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class Library extends CFacade {
 	public int getTemp_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2224);
+			return __io__block.readInt(__io__address + 2232);
 		} else {
-			return __io__block.readInt(__io__address + 2180);
+			return __io__block.readInt(__io__address + 2188);
 		}
 	}
 
@@ -500,9 +500,9 @@ public class Library extends CFacade {
 	public void setTemp_index(int temp_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2224, temp_index);
+			__io__block.writeInt(__io__address + 2232, temp_index);
 		} else {
-			__io__block.writeInt(__io__address + 2180, temp_index);
+			__io__block.writeInt(__io__address + 2188, temp_index);
 		}
 	}
 
@@ -510,16 +510,16 @@ public class Library extends CFacade {
 	 * Get method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
+	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
 	public short getVersionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2228);
+			return __io__block.readShort(__io__address + 2236);
 		} else {
-			return __io__block.readShort(__io__address + 2184);
+			return __io__block.readShort(__io__address + 2192);
 		}
 	}
 
@@ -527,16 +527,16 @@ public class Library extends CFacade {
 	 * Set method for struct member 'versionfile'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> See BLENDER_VERSION, BLENDER_SUBVERSION, needed for do_versions. </p>
+	 * <p> See BLENDER_FILE_VERSION, BLENDER_FILE_SUBVERSION, needed for do_versions. </p>
 	 * @see #__DNA__FIELD__versionfile
 	 */
 	
 	public void setVersionfile(short versionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2228, versionfile);
+			__io__block.writeShort(__io__address + 2236, versionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2184, versionfile);
+			__io__block.writeShort(__io__address + 2192, versionfile);
 		}
 	}
 
@@ -548,9 +548,9 @@ public class Library extends CFacade {
 	public short getSubversionfile() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2230);
+			return __io__block.readShort(__io__address + 2238);
 		} else {
-			return __io__block.readShort(__io__address + 2186);
+			return __io__block.readShort(__io__address + 2194);
 		}
 	}
 
@@ -562,9 +562,9 @@ public class Library extends CFacade {
 	public void setSubversionfile(short subversionfile) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2230, subversionfile);
+			__io__block.writeShort(__io__address + 2238, subversionfile);
 		} else {
-			__io__block.writeShort(__io__address + 2186, subversionfile);
+			__io__block.writeShort(__io__address + 2194, subversionfile);
 		}
 	}
 

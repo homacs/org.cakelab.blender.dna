@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -15,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=4, size64=8)
+@CMetaData(size32=12, size64=16)
 public class View3D_Runtime extends CFacade {
 
 	/**
@@ -26,7 +27,7 @@ public class View3D_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 214;
+	public static final int __DNA__SDNA_INDEX = 217;
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties_storage'.
@@ -50,6 +51,49 @@ public class View3D_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__properties_storage = new long[]{0, 0};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only flags. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D_Runtime view3d_runtime = ...;
+	 * CPointer&lt;Object&gt; p = view3d_runtime.__dna__addressof(View3D_Runtime.__DNA__FIELD__flag);
+	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{4, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3D_Runtime view3d_runtime = ...;
+	 * CPointer&lt;Object&gt; p = view3d_runtime.__dna__addressof(View3D_Runtime.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{8, 12};
 
 	public View3D_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -94,6 +138,80 @@ public class View3D_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 0, __address);
 		} else {
 			__io__block.writeLong(__io__address + 0, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only flags. </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public int getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 8);
+		} else {
+			return __io__block.readInt(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime only flags. </p>
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(int flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 8, flag);
+		} else {
+			__io__block.writeInt(__io__address + 4, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 12;
+		} else {
+			__dna__offset = 8;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

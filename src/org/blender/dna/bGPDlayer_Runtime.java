@@ -14,11 +14,10 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p><hr/> 
- *  GP Layer Runtime temp data for {@link bGPDlayer}  </p>
+ * <p> Runtime temp data for {@link bGPDlayer}  </p>
  */
 
-@CMetaData(size32=8, size64=8)
+@CMetaData(size32=12, size64=16)
 public class bGPDlayer_Runtime extends CFacade {
 
 	/**
@@ -29,7 +28,7 @@ public class bGPDlayer_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 478;
+	public static final int __DNA__SDNA_INDEX = 484;
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
@@ -73,6 +72,29 @@ public class bGPDlayer_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpl_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original layer (used to dereference evaluated data) </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer_Runtime bgpdlayer_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer_runtime.__dna__addressof(bGPDlayer_Runtime.__DNA__FIELD__gpl_orig);
+	 * CPointer&lt;CPointer&lt;bGPDlayer&gt;&gt; p_gpl_orig = p.cast(new Class[]{CPointer.class, bGPDlayer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpl_orig'</li>
+	 * <li>Signature: 'bGPDlayer*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpl_orig = new long[]{8, 8};
 
 	public bGPDlayer_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -153,6 +175,44 @@ public class bGPDlayer_Runtime extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpl_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original layer (used to dereference evaluated data) </p>
+	 * @see #__DNA__FIELD__gpl_orig
+	 */
+	
+	public CPointer<bGPDlayer> getGpl_orig() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 8);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bGPDlayer.class};
+		return new CPointer<bGPDlayer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDlayer.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'gpl_orig'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Original layer (used to dereference evaluated data) </p>
+	 * @see #__DNA__FIELD__gpl_orig
+	 */
+	
+	public void setGpl_orig(CPointer<bGPDlayer> gpl_orig) throws IOException
+	{
+		long __address = ((gpl_orig == null) ? 0 : gpl_orig.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 8, __address);
+		} else {
+			__io__block.writeLong(__io__address + 8, __address);
 		}
 	}
 

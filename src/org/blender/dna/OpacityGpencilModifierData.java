@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=308, size64=320)
+@CMetaData(size32=312, size64=328)
 public class OpacityGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 490;
+	public static final int __DNA__SDNA_INDEX = 495;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -211,29 +211,6 @@ public class OpacityGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__modify_color = new long[]{296, 308};
 
 	/**
-	 * Field descriptor (offset) for struct member 'opacity_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mode of opacity, colors or strength </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * OpacityGpencilModifierData opacitygpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD__opacity_mode);
-	 * CPointer&lt;Byte&gt; p_opacity_mode = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'opacity_mode'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__opacity_mode = new long[]{297, 309};
-
-	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -247,11 +224,11 @@ public class OpacityGpencilModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{298, 310};
+	public static final long[] __DNA__FIELD___pad = new long[]{297, 309};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -277,24 +254,44 @@ public class OpacityGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__layer_pass = new long[]{300, 312};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad1'.
+	 * Field descriptor (offset) for struct member 'hardeness'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * OpacityGpencilModifierData opacitygpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD__hardeness);
+	 * CPointer&lt;Float&gt; p_hardeness = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'hardeness'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{304, 316};
+	public static final long[] __DNA__FIELD__hardeness = new long[]{304, 316};
+
+	/**
+	 * Field descriptor (offset) for struct member 'curve_intensity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * OpacityGpencilModifierData opacitygpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = opacitygpencilmodifierdata.__dna__addressof(OpacityGpencilModifierData.__DNA__FIELD__curve_intensity);
+	 * CPointer&lt;CPointer&lt;CurveMapping&gt;&gt; p_curve_intensity = p.cast(new Class[]{CPointer.class, CurveMapping.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'curve_intensity'</li>
+	 * <li>Signature: 'CurveMapping*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__curve_intensity = new long[]{308, 320};
 
 	public OpacityGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -615,40 +612,6 @@ public class OpacityGpencilModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'opacity_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mode of opacity, colors or strength </p>
-	 * @see #__DNA__FIELD__opacity_mode
-	 */
-	
-	public byte getOpacity_mode() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 309);
-		} else {
-			return __io__block.readByte(__io__address + 297);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'opacity_mode'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mode of opacity, colors or strength </p>
-	 * @see #__DNA__FIELD__opacity_mode
-	 */
-	
-	public void setOpacity_mode(byte opacity_mode) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 309, opacity_mode);
-		} else {
-			__io__block.writeByte(__io__address + 297, opacity_mode);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -657,12 +620,12 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 310, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 309, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 297, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -675,9 +638,9 @@ public class OpacityGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 310;
+			__dna__offset = 309;
 		} else {
-			__dna__offset = 298;
+			__dna__offset = 297;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -723,42 +686,62 @@ public class OpacityGpencilModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Get method for struct member 'hardeness'.
+	 * @see #__DNA__FIELD__hardeness
 	 */
 	
-	public CArrayFacade<Byte> get_pad1() throws IOException
+	public float getHardeness() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 316);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad1'.
-	 * @see #__DNA__FIELD___pad1
+	 * Set method for struct member 'hardeness'.
+	 * @see #__DNA__FIELD__hardeness
 	 */
 	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	public void setHardeness(float hardeness) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 316;
+			__io__block.writeFloat(__io__address + 316, hardeness);
 		} else {
-			__dna__offset = 304;
+			__io__block.writeFloat(__io__address + 304, hardeness);
 		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+	}
+
+	/**
+	 * Get method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public CPointer<CurveMapping> getCurve_intensity() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		} else {
-			__io__generic__copy( get_pad1(), _pad1);
+			__dna__targetAddress = __io__block.readLong(__io__address + 308);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
+		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'curve_intensity'.
+	 * @see #__DNA__FIELD__curve_intensity
+	 */
+	
+	public void setCurve_intensity(CPointer<CurveMapping> curve_intensity) throws IOException
+	{
+		long __address = ((curve_intensity == null) ? 0 : curve_intensity.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 320, __address);
+		} else {
+			__io__block.writeLong(__io__address + 308, __address);
 		}
 	}
 

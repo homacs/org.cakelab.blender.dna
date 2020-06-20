@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=364, size64=424)
+@CMetaData(size32=372, size64=432)
 public class Tex extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class Tex extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noisesize'.
@@ -90,7 +90,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noisesize = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__noisesize = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'turbul'.
@@ -110,7 +110,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__turbul = new long[]{128, 164};
+	public static final long[] __DNA__FIELD__turbul = new long[]{136, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bright'.
@@ -130,7 +130,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bright = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__bright = new long[]{140, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'contrast'.
@@ -150,7 +150,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__contrast = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__contrast = new long[]{144, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'saturation'.
@@ -170,7 +170,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__saturation = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__saturation = new long[]{148, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rfac'.
@@ -190,7 +190,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rfac = new long[]{144, 180};
+	public static final long[] __DNA__FIELD__rfac = new long[]{152, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gfac'.
@@ -210,7 +210,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gfac = new long[]{148, 184};
+	public static final long[] __DNA__FIELD__gfac = new long[]{156, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bfac'.
@@ -230,7 +230,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bfac = new long[]{152, 188};
+	public static final long[] __DNA__FIELD__bfac = new long[]{160, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'filtersize'.
@@ -250,7 +250,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filtersize = new long[]{156, 192};
+	public static final long[] __DNA__FIELD__filtersize = new long[]{164, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -270,7 +270,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{160, 196};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{168, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mg_H'.
@@ -293,7 +293,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mg_H = new long[]{164, 200};
+	public static final long[] __DNA__FIELD__mg_H = new long[]{172, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mg_lacunarity'.
@@ -313,7 +313,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mg_lacunarity = new long[]{168, 204};
+	public static final long[] __DNA__FIELD__mg_lacunarity = new long[]{176, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mg_octaves'.
@@ -333,7 +333,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mg_octaves = new long[]{172, 208};
+	public static final long[] __DNA__FIELD__mg_octaves = new long[]{180, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mg_offset'.
@@ -353,7 +353,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mg_offset = new long[]{176, 212};
+	public static final long[] __DNA__FIELD__mg_offset = new long[]{184, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mg_gain'.
@@ -373,7 +373,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mg_gain = new long[]{180, 216};
+	public static final long[] __DNA__FIELD__mg_gain = new long[]{188, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist_amount'.
@@ -396,7 +396,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dist_amount = new long[]{184, 220};
+	public static final long[] __DNA__FIELD__dist_amount = new long[]{192, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ns_outscale'.
@@ -416,7 +416,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ns_outscale = new long[]{188, 224};
+	public static final long[] __DNA__FIELD__ns_outscale = new long[]{196, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_w1'.
@@ -439,7 +439,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_w1 = new long[]{192, 228};
+	public static final long[] __DNA__FIELD__vn_w1 = new long[]{200, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_w2'.
@@ -459,7 +459,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_w2 = new long[]{196, 232};
+	public static final long[] __DNA__FIELD__vn_w2 = new long[]{204, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_w3'.
@@ -479,7 +479,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_w3 = new long[]{200, 236};
+	public static final long[] __DNA__FIELD__vn_w3 = new long[]{208, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_w4'.
@@ -499,7 +499,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_w4 = new long[]{204, 240};
+	public static final long[] __DNA__FIELD__vn_w4 = new long[]{212, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_mexp'.
@@ -519,7 +519,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_mexp = new long[]{208, 244};
+	public static final long[] __DNA__FIELD__vn_mexp = new long[]{216, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_distm'.
@@ -539,7 +539,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_distm = new long[]{212, 248};
+	public static final long[] __DNA__FIELD__vn_distm = new long[]{220, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vn_coltype'.
@@ -559,7 +559,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vn_coltype = new long[]{214, 250};
+	public static final long[] __DNA__FIELD__vn_coltype = new long[]{222, 258};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noisedepth'.
@@ -582,7 +582,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noisedepth = new long[]{216, 252};
+	public static final long[] __DNA__FIELD__noisedepth = new long[]{224, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noisetype'.
@@ -602,7 +602,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noisetype = new long[]{218, 254};
+	public static final long[] __DNA__FIELD__noisetype = new long[]{226, 262};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noisebasis'.
@@ -625,7 +625,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noisebasis = new long[]{220, 256};
+	public static final long[] __DNA__FIELD__noisebasis = new long[]{228, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noisebasis2'.
@@ -645,7 +645,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noisebasis2 = new long[]{222, 258};
+	public static final long[] __DNA__FIELD__noisebasis2 = new long[]{230, 266};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imaflag'.
@@ -665,7 +665,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imaflag = new long[]{224, 260};
+	public static final long[] __DNA__FIELD__imaflag = new long[]{232, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -685,7 +685,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{226, 262};
+	public static final long[] __DNA__FIELD__flag = new long[]{234, 270};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -705,7 +705,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{228, 264};
+	public static final long[] __DNA__FIELD__type = new long[]{236, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stype'.
@@ -725,7 +725,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stype = new long[]{230, 266};
+	public static final long[] __DNA__FIELD__stype = new long[]{238, 274};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cropxmin'.
@@ -745,7 +745,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cropxmin = new long[]{232, 268};
+	public static final long[] __DNA__FIELD__cropxmin = new long[]{240, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cropymin'.
@@ -765,7 +765,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cropymin = new long[]{236, 272};
+	public static final long[] __DNA__FIELD__cropymin = new long[]{244, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cropxmax'.
@@ -785,7 +785,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cropxmax = new long[]{240, 276};
+	public static final long[] __DNA__FIELD__cropxmax = new long[]{248, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cropymax'.
@@ -805,7 +805,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cropymax = new long[]{244, 280};
+	public static final long[] __DNA__FIELD__cropymax = new long[]{252, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texfilter'.
@@ -825,7 +825,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texfilter = new long[]{248, 284};
+	public static final long[] __DNA__FIELD__texfilter = new long[]{256, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'afmax'.
@@ -845,7 +845,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__afmax = new long[]{252, 288};
+	public static final long[] __DNA__FIELD__afmax = new long[]{260, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xrepeat'.
@@ -865,7 +865,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xrepeat = new long[]{256, 292};
+	public static final long[] __DNA__FIELD__xrepeat = new long[]{264, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yrepeat'.
@@ -885,7 +885,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yrepeat = new long[]{258, 294};
+	public static final long[] __DNA__FIELD__yrepeat = new long[]{266, 302};
 
 	/**
 	 * Field descriptor (offset) for struct member 'extend'.
@@ -905,7 +905,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__extend = new long[]{260, 296};
+	public static final long[] __DNA__FIELD__extend = new long[]{268, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -928,7 +928,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{262, 298};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{270, 306};
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
@@ -948,7 +948,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__len = new long[]{264, 300};
+	public static final long[] __DNA__FIELD__len = new long[]{272, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frames'.
@@ -968,7 +968,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frames = new long[]{268, 304};
+	public static final long[] __DNA__FIELD__frames = new long[]{276, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -988,7 +988,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{272, 308};
+	public static final long[] __DNA__FIELD__offset = new long[]{280, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
@@ -1008,7 +1008,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{276, 312};
+	public static final long[] __DNA__FIELD__sfra = new long[]{284, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'checkerdist'.
@@ -1028,7 +1028,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__checkerdist = new long[]{280, 316};
+	public static final long[] __DNA__FIELD__checkerdist = new long[]{288, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nabla'.
@@ -1048,7 +1048,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nabla = new long[]{284, 320};
+	public static final long[] __DNA__FIELD__nabla = new long[]{292, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -1068,7 +1068,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{288, 324};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{296, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iuser'.
@@ -1088,7 +1088,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 44/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iuser = new long[]{292, 328};
+	public static final long[] __DNA__FIELD__iuser = new long[]{300, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -1108,7 +1108,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{336, 376};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{344, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -1133,7 +1133,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{340, 384};
+	public static final long[] __DNA__FIELD__ipo = new long[]{348, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ima'.
@@ -1153,7 +1153,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ima = new long[]{344, 392};
+	public static final long[] __DNA__FIELD__ima = new long[]{352, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
@@ -1173,7 +1173,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coba = new long[]{348, 400};
+	public static final long[] __DNA__FIELD__coba = new long[]{356, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -1193,7 +1193,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{352, 408};
+	public static final long[] __DNA__FIELD__preview = new long[]{360, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
@@ -1213,7 +1213,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_nodes = new long[]{356, 416};
+	public static final long[] __DNA__FIELD__use_nodes = new long[]{364, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -1233,7 +1233,7 @@ public class Tex extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{357, 417};
+	public static final long[] __DNA__FIELD___pad = new long[]{365, 425};
 
 	public Tex(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1291,9 +1291,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1311,9 +1311,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		}
 	}
 
@@ -1325,9 +1325,9 @@ public class Tex extends CFacade {
 	public float getNoisesize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 168);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -1339,9 +1339,9 @@ public class Tex extends CFacade {
 	public void setNoisesize(float noisesize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 160, noisesize);
+			__io__block.writeFloat(__io__address + 168, noisesize);
 		} else {
-			__io__block.writeFloat(__io__address + 124, noisesize);
+			__io__block.writeFloat(__io__address + 132, noisesize);
 		}
 	}
 
@@ -1353,9 +1353,9 @@ public class Tex extends CFacade {
 	public float getTurbul() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
@@ -1367,9 +1367,9 @@ public class Tex extends CFacade {
 	public void setTurbul(float turbul) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, turbul);
+			__io__block.writeFloat(__io__address + 172, turbul);
 		} else {
-			__io__block.writeFloat(__io__address + 128, turbul);
+			__io__block.writeFloat(__io__address + 136, turbul);
 		}
 	}
 
@@ -1381,9 +1381,9 @@ public class Tex extends CFacade {
 	public float getBright() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -1395,9 +1395,9 @@ public class Tex extends CFacade {
 	public void setBright(float bright) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, bright);
+			__io__block.writeFloat(__io__address + 176, bright);
 		} else {
-			__io__block.writeFloat(__io__address + 132, bright);
+			__io__block.writeFloat(__io__address + 140, bright);
 		}
 	}
 
@@ -1409,9 +1409,9 @@ public class Tex extends CFacade {
 	public float getContrast() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -1423,9 +1423,9 @@ public class Tex extends CFacade {
 	public void setContrast(float contrast) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, contrast);
+			__io__block.writeFloat(__io__address + 180, contrast);
 		} else {
-			__io__block.writeFloat(__io__address + 136, contrast);
+			__io__block.writeFloat(__io__address + 144, contrast);
 		}
 	}
 
@@ -1437,9 +1437,9 @@ public class Tex extends CFacade {
 	public float getSaturation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -1451,9 +1451,9 @@ public class Tex extends CFacade {
 	public void setSaturation(float saturation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, saturation);
+			__io__block.writeFloat(__io__address + 184, saturation);
 		} else {
-			__io__block.writeFloat(__io__address + 140, saturation);
+			__io__block.writeFloat(__io__address + 148, saturation);
 		}
 	}
 
@@ -1465,9 +1465,9 @@ public class Tex extends CFacade {
 	public float getRfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -1479,9 +1479,9 @@ public class Tex extends CFacade {
 	public void setRfac(float rfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, rfac);
+			__io__block.writeFloat(__io__address + 188, rfac);
 		} else {
-			__io__block.writeFloat(__io__address + 144, rfac);
+			__io__block.writeFloat(__io__address + 152, rfac);
 		}
 	}
 
@@ -1493,9 +1493,9 @@ public class Tex extends CFacade {
 	public float getGfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -1507,9 +1507,9 @@ public class Tex extends CFacade {
 	public void setGfac(float gfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, gfac);
+			__io__block.writeFloat(__io__address + 192, gfac);
 		} else {
-			__io__block.writeFloat(__io__address + 148, gfac);
+			__io__block.writeFloat(__io__address + 156, gfac);
 		}
 	}
 
@@ -1521,9 +1521,9 @@ public class Tex extends CFacade {
 	public float getBfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -1535,9 +1535,9 @@ public class Tex extends CFacade {
 	public void setBfac(float bfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, bfac);
+			__io__block.writeFloat(__io__address + 196, bfac);
 		} else {
-			__io__block.writeFloat(__io__address + 152, bfac);
+			__io__block.writeFloat(__io__address + 160, bfac);
 		}
 	}
 
@@ -1549,9 +1549,9 @@ public class Tex extends CFacade {
 	public float getFiltersize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -1563,9 +1563,9 @@ public class Tex extends CFacade {
 	public void setFiltersize(float filtersize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, filtersize);
+			__io__block.writeFloat(__io__address + 200, filtersize);
 		} else {
-			__io__block.writeFloat(__io__address + 156, filtersize);
+			__io__block.writeFloat(__io__address + 164, filtersize);
 		}
 	}
 
@@ -1581,9 +1581,9 @@ public class Tex extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1596,9 +1596,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1620,9 +1620,9 @@ public class Tex extends CFacade {
 	public float getMg_H() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -1637,9 +1637,9 @@ public class Tex extends CFacade {
 	public void setMg_H(float mg_H) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, mg_H);
+			__io__block.writeFloat(__io__address + 208, mg_H);
 		} else {
-			__io__block.writeFloat(__io__address + 164, mg_H);
+			__io__block.writeFloat(__io__address + 172, mg_H);
 		}
 	}
 
@@ -1651,9 +1651,9 @@ public class Tex extends CFacade {
 	public float getMg_lacunarity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -1665,9 +1665,9 @@ public class Tex extends CFacade {
 	public void setMg_lacunarity(float mg_lacunarity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, mg_lacunarity);
+			__io__block.writeFloat(__io__address + 212, mg_lacunarity);
 		} else {
-			__io__block.writeFloat(__io__address + 168, mg_lacunarity);
+			__io__block.writeFloat(__io__address + 176, mg_lacunarity);
 		}
 	}
 
@@ -1679,9 +1679,9 @@ public class Tex extends CFacade {
 	public float getMg_octaves() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1693,9 +1693,9 @@ public class Tex extends CFacade {
 	public void setMg_octaves(float mg_octaves) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, mg_octaves);
+			__io__block.writeFloat(__io__address + 216, mg_octaves);
 		} else {
-			__io__block.writeFloat(__io__address + 172, mg_octaves);
+			__io__block.writeFloat(__io__address + 180, mg_octaves);
 		}
 	}
 
@@ -1707,9 +1707,9 @@ public class Tex extends CFacade {
 	public float getMg_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -1721,9 +1721,9 @@ public class Tex extends CFacade {
 	public void setMg_offset(float mg_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, mg_offset);
+			__io__block.writeFloat(__io__address + 220, mg_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 176, mg_offset);
+			__io__block.writeFloat(__io__address + 184, mg_offset);
 		}
 	}
 
@@ -1735,9 +1735,9 @@ public class Tex extends CFacade {
 	public float getMg_gain() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -1749,9 +1749,9 @@ public class Tex extends CFacade {
 	public void setMg_gain(float mg_gain) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 216, mg_gain);
+			__io__block.writeFloat(__io__address + 224, mg_gain);
 		} else {
-			__io__block.writeFloat(__io__address + 180, mg_gain);
+			__io__block.writeFloat(__io__address + 188, mg_gain);
 		}
 	}
 
@@ -1766,9 +1766,9 @@ public class Tex extends CFacade {
 	public float getDist_amount() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -1783,9 +1783,9 @@ public class Tex extends CFacade {
 	public void setDist_amount(float dist_amount) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, dist_amount);
+			__io__block.writeFloat(__io__address + 228, dist_amount);
 		} else {
-			__io__block.writeFloat(__io__address + 184, dist_amount);
+			__io__block.writeFloat(__io__address + 192, dist_amount);
 		}
 	}
 
@@ -1797,9 +1797,9 @@ public class Tex extends CFacade {
 	public float getNs_outscale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 224);
+			return __io__block.readFloat(__io__address + 232);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		}
 	}
 
@@ -1811,9 +1811,9 @@ public class Tex extends CFacade {
 	public void setNs_outscale(float ns_outscale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 224, ns_outscale);
+			__io__block.writeFloat(__io__address + 232, ns_outscale);
 		} else {
-			__io__block.writeFloat(__io__address + 188, ns_outscale);
+			__io__block.writeFloat(__io__address + 196, ns_outscale);
 		}
 	}
 
@@ -1828,9 +1828,9 @@ public class Tex extends CFacade {
 	public float getVn_w1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 236);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		}
 	}
 
@@ -1845,9 +1845,9 @@ public class Tex extends CFacade {
 	public void setVn_w1(float vn_w1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, vn_w1);
+			__io__block.writeFloat(__io__address + 236, vn_w1);
 		} else {
-			__io__block.writeFloat(__io__address + 192, vn_w1);
+			__io__block.writeFloat(__io__address + 200, vn_w1);
 		}
 	}
 
@@ -1859,9 +1859,9 @@ public class Tex extends CFacade {
 	public float getVn_w2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 240);
 		} else {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 204);
 		}
 	}
 
@@ -1873,9 +1873,9 @@ public class Tex extends CFacade {
 	public void setVn_w2(float vn_w2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 232, vn_w2);
+			__io__block.writeFloat(__io__address + 240, vn_w2);
 		} else {
-			__io__block.writeFloat(__io__address + 196, vn_w2);
+			__io__block.writeFloat(__io__address + 204, vn_w2);
 		}
 	}
 
@@ -1887,9 +1887,9 @@ public class Tex extends CFacade {
 	public float getVn_w3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 244);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		}
 	}
 
@@ -1901,9 +1901,9 @@ public class Tex extends CFacade {
 	public void setVn_w3(float vn_w3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, vn_w3);
+			__io__block.writeFloat(__io__address + 244, vn_w3);
 		} else {
-			__io__block.writeFloat(__io__address + 200, vn_w3);
+			__io__block.writeFloat(__io__address + 208, vn_w3);
 		}
 	}
 
@@ -1915,9 +1915,9 @@ public class Tex extends CFacade {
 	public float getVn_w4() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 248);
 		} else {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		}
 	}
 
@@ -1929,9 +1929,9 @@ public class Tex extends CFacade {
 	public void setVn_w4(float vn_w4) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 240, vn_w4);
+			__io__block.writeFloat(__io__address + 248, vn_w4);
 		} else {
-			__io__block.writeFloat(__io__address + 204, vn_w4);
+			__io__block.writeFloat(__io__address + 212, vn_w4);
 		}
 	}
 
@@ -1943,9 +1943,9 @@ public class Tex extends CFacade {
 	public float getVn_mexp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 252);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 216);
 		}
 	}
 
@@ -1957,9 +1957,9 @@ public class Tex extends CFacade {
 	public void setVn_mexp(float vn_mexp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 244, vn_mexp);
+			__io__block.writeFloat(__io__address + 252, vn_mexp);
 		} else {
-			__io__block.writeFloat(__io__address + 208, vn_mexp);
+			__io__block.writeFloat(__io__address + 216, vn_mexp);
 		}
 	}
 
@@ -1971,9 +1971,9 @@ public class Tex extends CFacade {
 	public short getVn_distm() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 256);
 		} else {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 220);
 		}
 	}
 
@@ -1985,9 +1985,9 @@ public class Tex extends CFacade {
 	public void setVn_distm(short vn_distm) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 248, vn_distm);
+			__io__block.writeShort(__io__address + 256, vn_distm);
 		} else {
-			__io__block.writeShort(__io__address + 212, vn_distm);
+			__io__block.writeShort(__io__address + 220, vn_distm);
 		}
 	}
 
@@ -1999,9 +1999,9 @@ public class Tex extends CFacade {
 	public short getVn_coltype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 258);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 222);
 		}
 	}
 
@@ -2013,9 +2013,9 @@ public class Tex extends CFacade {
 	public void setVn_coltype(short vn_coltype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 250, vn_coltype);
+			__io__block.writeShort(__io__address + 258, vn_coltype);
 		} else {
-			__io__block.writeShort(__io__address + 214, vn_coltype);
+			__io__block.writeShort(__io__address + 222, vn_coltype);
 		}
 	}
 
@@ -2030,9 +2030,9 @@ public class Tex extends CFacade {
 	public short getNoisedepth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 260);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 224);
 		}
 	}
 
@@ -2047,9 +2047,9 @@ public class Tex extends CFacade {
 	public void setNoisedepth(short noisedepth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 252, noisedepth);
+			__io__block.writeShort(__io__address + 260, noisedepth);
 		} else {
-			__io__block.writeShort(__io__address + 216, noisedepth);
+			__io__block.writeShort(__io__address + 224, noisedepth);
 		}
 	}
 
@@ -2061,9 +2061,9 @@ public class Tex extends CFacade {
 	public short getNoisetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 254);
+			return __io__block.readShort(__io__address + 262);
 		} else {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 226);
 		}
 	}
 
@@ -2075,9 +2075,9 @@ public class Tex extends CFacade {
 	public void setNoisetype(short noisetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 254, noisetype);
+			__io__block.writeShort(__io__address + 262, noisetype);
 		} else {
-			__io__block.writeShort(__io__address + 218, noisetype);
+			__io__block.writeShort(__io__address + 226, noisetype);
 		}
 	}
 
@@ -2092,9 +2092,9 @@ public class Tex extends CFacade {
 	public short getNoisebasis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 256);
+			return __io__block.readShort(__io__address + 264);
 		} else {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 228);
 		}
 	}
 
@@ -2109,9 +2109,9 @@ public class Tex extends CFacade {
 	public void setNoisebasis(short noisebasis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 256, noisebasis);
+			__io__block.writeShort(__io__address + 264, noisebasis);
 		} else {
-			__io__block.writeShort(__io__address + 220, noisebasis);
+			__io__block.writeShort(__io__address + 228, noisebasis);
 		}
 	}
 
@@ -2123,9 +2123,9 @@ public class Tex extends CFacade {
 	public short getNoisebasis2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 258);
+			return __io__block.readShort(__io__address + 266);
 		} else {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 230);
 		}
 	}
 
@@ -2137,9 +2137,9 @@ public class Tex extends CFacade {
 	public void setNoisebasis2(short noisebasis2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 258, noisebasis2);
+			__io__block.writeShort(__io__address + 266, noisebasis2);
 		} else {
-			__io__block.writeShort(__io__address + 222, noisebasis2);
+			__io__block.writeShort(__io__address + 230, noisebasis2);
 		}
 	}
 
@@ -2151,9 +2151,9 @@ public class Tex extends CFacade {
 	public short getImaflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 268);
 		} else {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -2165,9 +2165,9 @@ public class Tex extends CFacade {
 	public void setImaflag(short imaflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 260, imaflag);
+			__io__block.writeShort(__io__address + 268, imaflag);
 		} else {
-			__io__block.writeShort(__io__address + 224, imaflag);
+			__io__block.writeShort(__io__address + 232, imaflag);
 		}
 	}
 
@@ -2179,9 +2179,9 @@ public class Tex extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 270);
 		} else {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 234);
 		}
 	}
 
@@ -2193,9 +2193,9 @@ public class Tex extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 262, flag);
+			__io__block.writeShort(__io__address + 270, flag);
 		} else {
-			__io__block.writeShort(__io__address + 226, flag);
+			__io__block.writeShort(__io__address + 234, flag);
 		}
 	}
 
@@ -2207,9 +2207,9 @@ public class Tex extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 264);
+			return __io__block.readShort(__io__address + 272);
 		} else {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 236);
 		}
 	}
 
@@ -2221,9 +2221,9 @@ public class Tex extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 264, type);
+			__io__block.writeShort(__io__address + 272, type);
 		} else {
-			__io__block.writeShort(__io__address + 228, type);
+			__io__block.writeShort(__io__address + 236, type);
 		}
 	}
 
@@ -2235,9 +2235,9 @@ public class Tex extends CFacade {
 	public short getStype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 266);
+			return __io__block.readShort(__io__address + 274);
 		} else {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 238);
 		}
 	}
 
@@ -2249,9 +2249,9 @@ public class Tex extends CFacade {
 	public void setStype(short stype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 266, stype);
+			__io__block.writeShort(__io__address + 274, stype);
 		} else {
-			__io__block.writeShort(__io__address + 230, stype);
+			__io__block.writeShort(__io__address + 238, stype);
 		}
 	}
 
@@ -2263,9 +2263,9 @@ public class Tex extends CFacade {
 	public float getCropxmin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		} else {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -2277,9 +2277,9 @@ public class Tex extends CFacade {
 	public void setCropxmin(float cropxmin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 268, cropxmin);
+			__io__block.writeFloat(__io__address + 276, cropxmin);
 		} else {
-			__io__block.writeFloat(__io__address + 232, cropxmin);
+			__io__block.writeFloat(__io__address + 240, cropxmin);
 		}
 	}
 
@@ -2291,9 +2291,9 @@ public class Tex extends CFacade {
 	public float getCropymin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -2305,9 +2305,9 @@ public class Tex extends CFacade {
 	public void setCropymin(float cropymin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, cropymin);
+			__io__block.writeFloat(__io__address + 280, cropymin);
 		} else {
-			__io__block.writeFloat(__io__address + 236, cropymin);
+			__io__block.writeFloat(__io__address + 244, cropymin);
 		}
 	}
 
@@ -2319,9 +2319,9 @@ public class Tex extends CFacade {
 	public float getCropxmax() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		} else {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 248);
 		}
 	}
 
@@ -2333,9 +2333,9 @@ public class Tex extends CFacade {
 	public void setCropxmax(float cropxmax) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 276, cropxmax);
+			__io__block.writeFloat(__io__address + 284, cropxmax);
 		} else {
-			__io__block.writeFloat(__io__address + 240, cropxmax);
+			__io__block.writeFloat(__io__address + 248, cropxmax);
 		}
 	}
 
@@ -2347,9 +2347,9 @@ public class Tex extends CFacade {
 	public float getCropymax() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		} else {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -2361,9 +2361,9 @@ public class Tex extends CFacade {
 	public void setCropymax(float cropymax) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, cropymax);
+			__io__block.writeFloat(__io__address + 288, cropymax);
 		} else {
-			__io__block.writeFloat(__io__address + 244, cropymax);
+			__io__block.writeFloat(__io__address + 252, cropymax);
 		}
 	}
 
@@ -2375,9 +2375,9 @@ public class Tex extends CFacade {
 	public int getTexfilter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 292);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 256);
 		}
 	}
 
@@ -2389,9 +2389,9 @@ public class Tex extends CFacade {
 	public void setTexfilter(int texfilter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 284, texfilter);
+			__io__block.writeInt(__io__address + 292, texfilter);
 		} else {
-			__io__block.writeInt(__io__address + 248, texfilter);
+			__io__block.writeInt(__io__address + 256, texfilter);
 		}
 	}
 
@@ -2403,9 +2403,9 @@ public class Tex extends CFacade {
 	public int getAfmax() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 296);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 260);
 		}
 	}
 
@@ -2417,9 +2417,9 @@ public class Tex extends CFacade {
 	public void setAfmax(int afmax) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 288, afmax);
+			__io__block.writeInt(__io__address + 296, afmax);
 		} else {
-			__io__block.writeInt(__io__address + 252, afmax);
+			__io__block.writeInt(__io__address + 260, afmax);
 		}
 	}
 
@@ -2431,9 +2431,9 @@ public class Tex extends CFacade {
 	public short getXrepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 292);
+			return __io__block.readShort(__io__address + 300);
 		} else {
-			return __io__block.readShort(__io__address + 256);
+			return __io__block.readShort(__io__address + 264);
 		}
 	}
 
@@ -2445,9 +2445,9 @@ public class Tex extends CFacade {
 	public void setXrepeat(short xrepeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 292, xrepeat);
+			__io__block.writeShort(__io__address + 300, xrepeat);
 		} else {
-			__io__block.writeShort(__io__address + 256, xrepeat);
+			__io__block.writeShort(__io__address + 264, xrepeat);
 		}
 	}
 
@@ -2459,9 +2459,9 @@ public class Tex extends CFacade {
 	public short getYrepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 294);
+			return __io__block.readShort(__io__address + 302);
 		} else {
-			return __io__block.readShort(__io__address + 258);
+			return __io__block.readShort(__io__address + 266);
 		}
 	}
 
@@ -2473,9 +2473,9 @@ public class Tex extends CFacade {
 	public void setYrepeat(short yrepeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 294, yrepeat);
+			__io__block.writeShort(__io__address + 302, yrepeat);
 		} else {
-			__io__block.writeShort(__io__address + 258, yrepeat);
+			__io__block.writeShort(__io__address + 266, yrepeat);
 		}
 	}
 
@@ -2487,9 +2487,9 @@ public class Tex extends CFacade {
 	public short getExtend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 296);
+			return __io__block.readShort(__io__address + 304);
 		} else {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 268);
 		}
 	}
 
@@ -2501,9 +2501,9 @@ public class Tex extends CFacade {
 	public void setExtend(short extend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 296, extend);
+			__io__block.writeShort(__io__address + 304, extend);
 		} else {
-			__io__block.writeShort(__io__address + 260, extend);
+			__io__block.writeShort(__io__address + 268, extend);
 		}
 	}
 
@@ -2518,9 +2518,9 @@ public class Tex extends CFacade {
 	public short get_pad0() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 306);
 		} else {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 270);
 		}
 	}
 
@@ -2535,9 +2535,9 @@ public class Tex extends CFacade {
 	public void set_pad0(short _pad0) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 298, _pad0);
+			__io__block.writeShort(__io__address + 306, _pad0);
 		} else {
-			__io__block.writeShort(__io__address + 262, _pad0);
+			__io__block.writeShort(__io__address + 270, _pad0);
 		}
 	}
 
@@ -2549,9 +2549,9 @@ public class Tex extends CFacade {
 	public int getLen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readInt(__io__address + 308);
 		} else {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -2563,9 +2563,9 @@ public class Tex extends CFacade {
 	public void setLen(int len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 300, len);
+			__io__block.writeInt(__io__address + 308, len);
 		} else {
-			__io__block.writeInt(__io__address + 264, len);
+			__io__block.writeInt(__io__address + 272, len);
 		}
 	}
 
@@ -2577,9 +2577,9 @@ public class Tex extends CFacade {
 	public int getFrames() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 304);
+			return __io__block.readInt(__io__address + 312);
 		} else {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 276);
 		}
 	}
 
@@ -2591,9 +2591,9 @@ public class Tex extends CFacade {
 	public void setFrames(int frames) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 304, frames);
+			__io__block.writeInt(__io__address + 312, frames);
 		} else {
-			__io__block.writeInt(__io__address + 268, frames);
+			__io__block.writeInt(__io__address + 276, frames);
 		}
 	}
 
@@ -2605,9 +2605,9 @@ public class Tex extends CFacade {
 	public int getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 308);
+			return __io__block.readInt(__io__address + 316);
 		} else {
-			return __io__block.readInt(__io__address + 272);
+			return __io__block.readInt(__io__address + 280);
 		}
 	}
 
@@ -2619,9 +2619,9 @@ public class Tex extends CFacade {
 	public void setOffset(int offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 308, offset);
+			__io__block.writeInt(__io__address + 316, offset);
 		} else {
-			__io__block.writeInt(__io__address + 272, offset);
+			__io__block.writeInt(__io__address + 280, offset);
 		}
 	}
 
@@ -2633,9 +2633,9 @@ public class Tex extends CFacade {
 	public int getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 312);
+			return __io__block.readInt(__io__address + 320);
 		} else {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 284);
 		}
 	}
 
@@ -2647,9 +2647,9 @@ public class Tex extends CFacade {
 	public void setSfra(int sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 312, sfra);
+			__io__block.writeInt(__io__address + 320, sfra);
 		} else {
-			__io__block.writeInt(__io__address + 276, sfra);
+			__io__block.writeInt(__io__address + 284, sfra);
 		}
 	}
 
@@ -2661,9 +2661,9 @@ public class Tex extends CFacade {
 	public float getCheckerdist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 324);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -2675,9 +2675,9 @@ public class Tex extends CFacade {
 	public void setCheckerdist(float checkerdist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 316, checkerdist);
+			__io__block.writeFloat(__io__address + 324, checkerdist);
 		} else {
-			__io__block.writeFloat(__io__address + 280, checkerdist);
+			__io__block.writeFloat(__io__address + 288, checkerdist);
 		}
 	}
 
@@ -2689,9 +2689,9 @@ public class Tex extends CFacade {
 	public float getNabla() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 328);
 		} else {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -2703,9 +2703,9 @@ public class Tex extends CFacade {
 	public void setNabla(float nabla) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 320, nabla);
+			__io__block.writeFloat(__io__address + 328, nabla);
 		} else {
-			__io__block.writeFloat(__io__address + 284, nabla);
+			__io__block.writeFloat(__io__address + 292, nabla);
 		}
 	}
 
@@ -2721,9 +2721,9 @@ public class Tex extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 324, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2736,9 +2736,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 324;
+			__dna__offset = 332;
 		} else {
-			__dna__offset = 288;
+			__dna__offset = 296;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -2757,9 +2757,9 @@ public class Tex extends CFacade {
 	public ImageUser getIuser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ImageUser(__io__address + 328, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 336, __io__block, __io__blockTable);
 		} else {
-			return new ImageUser(__io__address + 292, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 300, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2772,9 +2772,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 292;
+			__dna__offset = 300;
 		}
 		if (__io__equals(iuser, __io__address + __dna__offset)) {
 			return;
@@ -2794,9 +2794,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2811,9 +2811,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		} else {
-			__io__block.writeLong(__io__address + 336, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		}
 	}
 
@@ -2831,9 +2831,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 392);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 340);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2853,9 +2853,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 392, __address);
 		} else {
-			__io__block.writeLong(__io__address + 340, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -2868,9 +2868,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2885,9 +2885,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((ima == null) ? 0 : ima.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 
@@ -2900,9 +2900,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+			__dna__targetAddress = __io__block.readLong(__io__address + 408);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 348);
+			__dna__targetAddress = __io__block.readLong(__io__address + 356);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2917,9 +2917,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((coba == null) ? 0 : coba.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 400, __address);
+			__io__block.writeLong(__io__address + 408, __address);
 		} else {
-			__io__block.writeLong(__io__address + 348, __address);
+			__io__block.writeLong(__io__address + 356, __address);
 		}
 	}
 
@@ -2932,9 +2932,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 408);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2949,9 +2949,9 @@ public class Tex extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 408, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		}
 	}
 
@@ -2963,9 +2963,9 @@ public class Tex extends CFacade {
 	public byte getUse_nodes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 416);
+			return __io__block.readByte(__io__address + 424);
 		} else {
-			return __io__block.readByte(__io__address + 356);
+			return __io__block.readByte(__io__address + 364);
 		}
 	}
 
@@ -2977,9 +2977,9 @@ public class Tex extends CFacade {
 	public void setUse_nodes(byte use_nodes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 416, use_nodes);
+			__io__block.writeByte(__io__address + 424, use_nodes);
 		} else {
-			__io__block.writeByte(__io__address + 356, use_nodes);
+			__io__block.writeByte(__io__address + 364, use_nodes);
 		}
 	}
 
@@ -2995,9 +2995,9 @@ public class Tex extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 417, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 425, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 357, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 365, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3010,9 +3010,9 @@ public class Tex extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 417;
+			__dna__offset = 425;
 		} else {
-			__dna__offset = 357;
+			__dna__offset = 365;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

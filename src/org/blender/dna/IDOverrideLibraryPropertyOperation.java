@@ -118,6 +118,29 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{10, 18};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * IDOverrideLibraryPropertyOperation idoverridelibrarypropertyoperation = ...;
+	 * CPointer&lt;Object&gt; p = idoverridelibrarypropertyoperation.__dna__addressof(IDOverrideLibraryPropertyOperation.__DNA__FIELD__tag);
+	 * CPointer&lt;Short&gt; p_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tag = new long[]{12, 20};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -131,11 +154,11 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{12, 20};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{14, 22};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subitem_reference_name'.
@@ -373,6 +396,40 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public short getTag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 20);
+		} else {
+			return __io__block.readShort(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime, tags are common to both IDOverrideProperty and IDOverridePropertyOperation. </p>
+	 * @see #__DNA__FIELD__tag
+	 */
+	
+	public void setTag(short tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 20, tag);
+		} else {
+			__io__block.writeShort(__io__address + 12, tag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad0'.
 	 * @see #__DNA__FIELD___pad0
 	 */
@@ -381,12 +438,12 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 14, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -399,9 +456,9 @@ public class IDOverrideLibraryPropertyOperation extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 20;
+			__dna__offset = 22;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 14;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Structure which stores custom element data associated with mesh elements (vertices, edges or faces). The custom data is organized into a series of layers, each with a data type (e.g. {@link MTFace} , {@link MDeformVert} , etc.). </p>
  */
 
-@CMetaData(size32=196, size64=208)
+@CMetaData(size32=212, size64=224)
 public class CustomData extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class CustomData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 453;
+	public static final int __DNA__SDNA_INDEX = 458;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
@@ -70,31 +70,11 @@ public class CustomData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'typemap'</li>
-	 * <li>Signature: 'int[42]'</li>
-	 * <li>Actual Size (32bit/64bit): 168/168</li>
+	 * <li>Signature: 'int[47]'</li>
+	 * <li>Actual Size (32bit/64bit): 188/188</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__typemap = new long[]{4, 8};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CustomData customdata = ...;
-	 * CPointer&lt;Object&gt; p = customdata.__dna__addressof(CustomData.__DNA__FIELD___pad0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{172, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totlayer'.
@@ -117,7 +97,7 @@ public class CustomData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totlayer = new long[]{176, 180};
+	public static final long[] __DNA__FIELD__totlayer = new long[]{192, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxlayer'.
@@ -137,7 +117,7 @@ public class CustomData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxlayer = new long[]{180, 184};
+	public static final long[] __DNA__FIELD__maxlayer = new long[]{196, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totsize'.
@@ -160,7 +140,7 @@ public class CustomData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totsize = new long[]{184, 188};
+	public static final long[] __DNA__FIELD__totsize = new long[]{200, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pool'.
@@ -183,7 +163,7 @@ public class CustomData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pool = new long[]{188, 192};
+	public static final long[] __DNA__FIELD__pool = new long[]{204, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'external'.
@@ -206,7 +186,7 @@ public class CustomData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__external = new long[]{192, 200};
+	public static final long[] __DNA__FIELD__external = new long[]{208, 216};
 
 	public CustomData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -266,7 +246,7 @@ public class CustomData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		int[] __dna__dimensions = new int[]{
-			42
+			47
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Integer>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -301,46 +281,6 @@ public class CustomData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public CArrayFacade<Byte> get_pad0() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
-		} else {
-			__dna__offset = 172;
-		}
-		if (__io__equals(_pad0, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
-		} else {
-			__io__generic__copy( get_pad0(), _pad0);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'totlayer'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -351,9 +291,9 @@ public class CustomData extends CFacade {
 	public int getTotlayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -368,9 +308,9 @@ public class CustomData extends CFacade {
 	public void setTotlayer(int totlayer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, totlayer);
+			__io__block.writeInt(__io__address + 196, totlayer);
 		} else {
-			__io__block.writeInt(__io__address + 176, totlayer);
+			__io__block.writeInt(__io__address + 192, totlayer);
 		}
 	}
 
@@ -382,9 +322,9 @@ public class CustomData extends CFacade {
 	public int getMaxlayer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 200);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -396,9 +336,9 @@ public class CustomData extends CFacade {
 	public void setMaxlayer(int maxlayer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, maxlayer);
+			__io__block.writeInt(__io__address + 200, maxlayer);
 		} else {
-			__io__block.writeInt(__io__address + 180, maxlayer);
+			__io__block.writeInt(__io__address + 196, maxlayer);
 		}
 	}
 
@@ -413,9 +353,9 @@ public class CustomData extends CFacade {
 	public int getTotsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 200);
 		}
 	}
 
@@ -430,9 +370,9 @@ public class CustomData extends CFacade {
 	public void setTotsize(int totsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, totsize);
+			__io__block.writeInt(__io__address + 204, totsize);
 		} else {
-			__io__block.writeInt(__io__address + 184, totsize);
+			__io__block.writeInt(__io__address + 200, totsize);
 		}
 	}
 
@@ -448,9 +388,9 @@ public class CustomData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -468,9 +408,9 @@ public class CustomData extends CFacade {
 	{
 		long __address = ((pool == null) ? 0 : pool.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -486,9 +426,9 @@ public class CustomData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CustomDataExternal.class};
 		return new CPointer<CustomDataExternal>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CustomDataExternal.__DNA__SDNA_INDEX), __io__blockTable);
@@ -506,9 +446,9 @@ public class CustomData extends CFacade {
 	{
 		long __address = ((external == null) ? 0 : external.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2104, size64=2184)
+@CMetaData(size32=2176, size64=2256)
 public class Brush extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Brush extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 446;
+	public static final int __DNA__SDNA_INDEX = 450;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Brush extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 20/24</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clone = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__clone = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve'.
@@ -91,7 +91,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__curve = new long[]{148, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
@@ -111,7 +111,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 312/320</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtex = new long[]{144, 184};
+	public static final long[] __DNA__FIELD__mtex = new long[]{152, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_mtex'.
@@ -131,7 +131,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 312/320</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_mtex = new long[]{456, 504};
+	public static final long[] __DNA__FIELD__mask_mtex = new long[]{464, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'toggle_brush'.
@@ -151,7 +151,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__toggle_brush = new long[]{768, 824};
+	public static final long[] __DNA__FIELD__toggle_brush = new long[]{776, 832};
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_imbuf'.
@@ -171,7 +171,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__icon_imbuf = new long[]{772, 832};
+	public static final long[] __DNA__FIELD__icon_imbuf = new long[]{780, 840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -194,7 +194,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{776, 840};
+	public static final long[] __DNA__FIELD__preview = new long[]{784, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient'.
@@ -218,7 +218,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gradient = new long[]{780, 848};
+	public static final long[] __DNA__FIELD__gradient = new long[]{788, 856};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_curve'.
@@ -241,7 +241,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_curve = new long[]{784, 856};
+	public static final long[] __DNA__FIELD__paint_curve = new long[]{792, 864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_filepath'.
@@ -265,7 +265,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__icon_filepath = new long[]{788, 864};
+	public static final long[] __DNA__FIELD__icon_filepath = new long[]{796, 872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_weight'.
@@ -288,7 +288,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_weight = new long[]{1812, 1888};
+	public static final long[] __DNA__FIELD__normal_weight = new long[]{1820, 1896};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rake_factor'.
@@ -312,7 +312,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rake_factor = new long[]{1816, 1892};
+	public static final long[] __DNA__FIELD__rake_factor = new long[]{1824, 1900};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend'.
@@ -336,7 +336,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend = new long[]{1820, 1896};
+	public static final long[] __DNA__FIELD__blend = new long[]{1828, 1904};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_mode'.
@@ -359,7 +359,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_mode = new long[]{1822, 1898};
+	public static final long[] __DNA__FIELD__ob_mode = new long[]{1830, 1906};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
@@ -383,7 +383,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weight = new long[]{1824, 1900};
+	public static final long[] __DNA__FIELD__weight = new long[]{1832, 1908};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -407,7 +407,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{1828, 1904};
+	public static final long[] __DNA__FIELD__size = new long[]{1836, 1912};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -430,7 +430,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1832, 1908};
+	public static final long[] __DNA__FIELD__flag = new long[]{1840, 1916};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag2'.
@@ -450,7 +450,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag2 = new long[]{1836, 1912};
+	public static final long[] __DNA__FIELD__flag2 = new long[]{1844, 1920};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sampling_flag'.
@@ -470,7 +470,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sampling_flag = new long[]{1840, 1916};
+	public static final long[] __DNA__FIELD__sampling_flag = new long[]{1848, 1924};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_pressure'.
@@ -493,7 +493,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_pressure = new long[]{1844, 1920};
+	public static final long[] __DNA__FIELD__mask_pressure = new long[]{1852, 1928};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jitter'.
@@ -517,7 +517,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jitter = new long[]{1848, 1924};
+	public static final long[] __DNA__FIELD__jitter = new long[]{1856, 1932};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jitter_absolute'.
@@ -541,7 +541,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jitter_absolute = new long[]{1852, 1928};
+	public static final long[] __DNA__FIELD__jitter_absolute = new long[]{1860, 1936};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlay_flags'.
@@ -561,7 +561,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay_flags = new long[]{1856, 1932};
+	public static final long[] __DNA__FIELD__overlay_flags = new long[]{1864, 1940};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spacing'.
@@ -585,7 +585,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spacing = new long[]{1860, 1936};
+	public static final long[] __DNA__FIELD__spacing = new long[]{1868, 1944};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_radius'.
@@ -609,7 +609,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_stroke_radius = new long[]{1864, 1940};
+	public static final long[] __DNA__FIELD__smooth_stroke_radius = new long[]{1872, 1948};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_stroke_factor'.
@@ -633,7 +633,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_stroke_factor = new long[]{1868, 1944};
+	public static final long[] __DNA__FIELD__smooth_stroke_factor = new long[]{1876, 1952};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rate'.
@@ -657,7 +657,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rate = new long[]{1872, 1948};
+	public static final long[] __DNA__FIELD__rate = new long[]{1880, 1956};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
@@ -680,7 +680,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rgb = new long[]{1876, 1952};
+	public static final long[] __DNA__FIELD__rgb = new long[]{1884, 1960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -703,7 +703,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{1888, 1964};
+	public static final long[] __DNA__FIELD__alpha = new long[]{1896, 1972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'secondary_rgb'.
@@ -726,7 +726,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__secondary_rgb = new long[]{1892, 1968};
+	public static final long[] __DNA__FIELD__secondary_rgb = new long[]{1900, 1976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash_ratio'.
@@ -750,7 +750,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash_ratio = new long[]{1904, 1980};
+	public static final long[] __DNA__FIELD__dash_ratio = new long[]{1912, 1988};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dash_samples'.
@@ -773,7 +773,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dash_samples = new long[]{1908, 1984};
+	public static final long[] __DNA__FIELD__dash_samples = new long[]{1916, 1992};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_plane'.
@@ -796,7 +796,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_plane = new long[]{1912, 1988};
+	public static final long[] __DNA__FIELD__sculpt_plane = new long[]{1920, 1996};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_offset'.
@@ -820,7 +820,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plane_offset = new long[]{1916, 1992};
+	public static final long[] __DNA__FIELD__plane_offset = new long[]{1924, 2000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_spacing'.
@@ -840,7 +840,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gradient_spacing = new long[]{1920, 1996};
+	public static final long[] __DNA__FIELD__gradient_spacing = new long[]{1928, 2004};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_stroke_mode'.
@@ -863,7 +863,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gradient_stroke_mode = new long[]{1924, 2000};
+	public static final long[] __DNA__FIELD__gradient_stroke_mode = new long[]{1932, 2008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gradient_fill_mode'.
@@ -886,7 +886,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gradient_fill_mode = new long[]{1925, 2001};
+	public static final long[] __DNA__FIELD__gradient_fill_mode = new long[]{1933, 2009};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -897,16 +897,16 @@ public class Brush extends CFacade {
 	 * <pre>
 	 * Brush brush = ...;
 	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD___pad0);
-	 * CPointer&lt;Byte&gt; p__pad0 = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'char[1]'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{1926, 2002};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{1934, 2010};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_shape'.
@@ -930,7 +930,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_shape = new long[]{1927, 2003};
+	public static final long[] __DNA__FIELD__falloff_shape = new long[]{1935, 2011};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_angle'.
@@ -953,7 +953,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_angle = new long[]{1928, 2004};
+	public static final long[] __DNA__FIELD__falloff_angle = new long[]{1936, 2012};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sculpt_tool'.
@@ -976,7 +976,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sculpt_tool = new long[]{1932, 2008};
+	public static final long[] __DNA__FIELD__sculpt_tool = new long[]{1940, 2016};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_sculpt_tool'.
@@ -999,7 +999,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{1933, 2009};
+	public static final long[] __DNA__FIELD__uv_sculpt_tool = new long[]{1941, 2017};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vertexpaint_tool'.
@@ -1022,7 +1022,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vertexpaint_tool = new long[]{1934, 2010};
+	public static final long[] __DNA__FIELD__vertexpaint_tool = new long[]{1942, 2018};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weightpaint_tool'.
@@ -1045,7 +1045,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weightpaint_tool = new long[]{1935, 2011};
+	public static final long[] __DNA__FIELD__weightpaint_tool = new long[]{1943, 2019};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imagepaint_tool'.
@@ -1068,7 +1068,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imagepaint_tool = new long[]{1936, 2012};
+	public static final long[] __DNA__FIELD__imagepaint_tool = new long[]{1944, 2020};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tool'.
@@ -1091,7 +1091,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tool = new long[]{1937, 2013};
+	public static final long[] __DNA__FIELD__mask_tool = new long[]{1945, 2021};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_tool'.
@@ -1114,7 +1114,76 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_tool = new long[]{1938, 2014};
+	public static final long[] __DNA__FIELD__gpencil_tool = new long[]{1946, 2022};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_vertex_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil vertex tool. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__gpencil_vertex_tool);
+	 * CPointer&lt;Byte&gt; p_gpencil_vertex_tool = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_vertex_tool'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_vertex_tool = new long[]{1947, 2023};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil sculpt tool. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__gpencil_sculpt_tool);
+	 * CPointer&lt;Byte&gt; p_gpencil_sculpt_tool = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_sculpt_tool'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_sculpt_tool = new long[]{1948, 2024};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_weight_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil weight tool. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__gpencil_weight_tool);
+	 * CPointer&lt;Byte&gt; p_gpencil_weight_tool = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_weight_tool'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_weight_tool = new long[]{1949, 2025};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -1130,11 +1199,11 @@ public class Brush extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{1939, 2015};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1950, 2026};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosmooth_factor'.
@@ -1154,7 +1223,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autosmooth_factor = new long[]{1944, 2020};
+	public static final long[] __DNA__FIELD__autosmooth_factor = new long[]{1956, 2032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'topology_rake_factor'.
@@ -1177,7 +1246,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__topology_rake_factor = new long[]{1948, 2024};
+	public static final long[] __DNA__FIELD__topology_rake_factor = new long[]{1960, 2036};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_pinch_factor'.
@@ -1200,7 +1269,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_pinch_factor = new long[]{1952, 2028};
+	public static final long[] __DNA__FIELD__crease_pinch_factor = new long[]{1964, 2040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_radius_factor'.
@@ -1223,7 +1292,30 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_radius_factor = new long[]{1956, 2032};
+	public static final long[] __DNA__FIELD__normal_radius_factor = new long[]{1968, 2044};
+
+	/**
+	 * Field descriptor (offset) for struct member 'area_radius_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__area_radius_factor);
+	 * CPointer&lt;Float&gt; p_area_radius_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'area_radius_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__area_radius_factor = new long[]{1972, 2048};
 
 	/**
 	 * Field descriptor (offset) for struct member 'plane_trim'.
@@ -1246,7 +1338,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__plane_trim = new long[]{1960, 2036};
+	public static final long[] __DNA__FIELD__plane_trim = new long[]{1976, 2052};
 
 	/**
 	 * Field descriptor (offset) for struct member 'height'.
@@ -1270,7 +1362,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__height = new long[]{1964, 2040};
+	public static final long[] __DNA__FIELD__height = new long[]{1980, 2056};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_sample_bias'.
@@ -1293,7 +1385,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_sample_bias = new long[]{1968, 2044};
+	public static final long[] __DNA__FIELD__texture_sample_bias = new long[]{1984, 2060};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_preset'.
@@ -1313,10 +1405,36 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_preset = new long[]{1972, 2048};
+	public static final long[] __DNA__FIELD__curve_preset = new long[]{1988, 2064};
+
+	/**
+	 * Field descriptor (offset) for struct member 'hardness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__hardness);
+	 * CPointer&lt;Float&gt; p_hardness = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'hardness'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__hardness = new long[]{1992, 2068};
 
 	/**
 	 * Field descriptor (offset) for struct member 'automasking_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> automasking </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1333,7 +1451,54 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__automasking_flags = new long[]{1976, 2052};
+	public static final long[] __DNA__FIELD__automasking_flags = new long[]{1996, 2072};
+
+	/**
+	 * Field descriptor (offset) for struct member 'automasking_boundary_edges_propagation_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__automasking_boundary_edges_propagation_steps);
+	 * CPointer&lt;Integer&gt; p_automasking_boundary_edges_propagation_steps = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'automasking_boundary_edges_propagation_steps'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__automasking_boundary_edges_propagation_steps = new long[]{2000, 2076};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tip_roundness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <p> Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__tip_roundness);
+	 * CPointer&lt;Float&gt; p_tip_roundness = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tip_roundness'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tip_roundness = new long[]{2004, 2080};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elastic_deform_type'.
@@ -1356,7 +1521,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elastic_deform_type = new long[]{1980, 2056};
+	public static final long[] __DNA__FIELD__elastic_deform_type = new long[]{2008, 2084};
 
 	/**
 	 * Field descriptor (offset) for struct member 'elastic_deform_volume_preservation'.
@@ -1379,7 +1544,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__elastic_deform_volume_preservation = new long[]{1984, 2060};
+	public static final long[] __DNA__FIELD__elastic_deform_volume_preservation = new long[]{2012, 2088};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_offset'.
@@ -1403,7 +1568,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_offset = new long[]{1988, 2064};
+	public static final long[] __DNA__FIELD__pose_offset = new long[]{2016, 2092};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_smooth_iterations'.
@@ -1426,7 +1591,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_smooth_iterations = new long[]{1992, 2068};
+	public static final long[] __DNA__FIELD__pose_smooth_iterations = new long[]{2020, 2096};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pose_ik_segments'.
@@ -1449,7 +1614,262 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pose_ik_segments = new long[]{1996, 2072};
+	public static final long[] __DNA__FIELD__pose_ik_segments = new long[]{2024, 2100};
+
+	/**
+	 * Field descriptor (offset) for struct member 'pose_origin_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method to set the rotation origins for the segments of the brush
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__pose_origin_type);
+	 * CPointer&lt;Integer&gt; p_pose_origin_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pose_origin_type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pose_origin_type = new long[]{2028, 2104};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> cloth </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_deform_type);
+	 * CPointer&lt;Integer&gt; p_cloth_deform_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_deform_type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_deform_type = new long[]{2032, 2108};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_force_falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Shape used in the brush to apply force to the cloth
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_force_falloff_type);
+	 * CPointer&lt;Integer&gt; p_cloth_force_falloff_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_force_falloff_type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_force_falloff_type = new long[]{2036, 2112};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_mass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mass of each simulation particle
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_mass);
+	 * CPointer&lt;Float&gt; p_cloth_mass = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_mass'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_mass = new long[]{2040, 2116};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_damping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the applied forces are propagated through the cloth
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_damping);
+	 * CPointer&lt;Float&gt; p_cloth_damping = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_damping'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_damping = new long[]{2044, 2120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_sim_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor added relative to the size of the radius to limit the cloth simulation effects
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_sim_limit);
+	 * CPointer&lt;Float&gt; p_cloth_sim_limit = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_sim_limit'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_sim_limit = new long[]{2048, 2124};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cloth_sim_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Area to apply deformation falloff to the effects of the simulation
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__cloth_sim_falloff);
+	 * CPointer&lt;Float&gt; p_cloth_sim_falloff = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cloth_sim_falloff'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cloth_sim_falloff = new long[]{2052, 2128};
+
+	/**
+	 * Field descriptor (offset) for struct member 'smooth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> smooth </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__smooth_deform_type);
+	 * CPointer&lt;Integer&gt; p_smooth_deform_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'smooth_deform_type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__smooth_deform_type = new long[]{2056, 2132};
+
+	/**
+	 * Field descriptor (offset) for struct member 'surface_smooth_shape_preservation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much of the original shape is preserved when smoothing
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__surface_smooth_shape_preservation);
+	 * CPointer&lt;Float&gt; p_surface_smooth_shape_preservation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'surface_smooth_shape_preservation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__surface_smooth_shape_preservation = new long[]{2060, 2136};
+
+	/**
+	 * Field descriptor (offset) for struct member 'surface_smooth_current_vertex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the position of each individual vertex influences the final result
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__surface_smooth_current_vertex);
+	 * CPointer&lt;Float&gt; p_surface_smooth_current_vertex = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'surface_smooth_current_vertex'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__surface_smooth_current_vertex = new long[]{2064, 2140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'surface_smooth_iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of smoothing iterations per brush step
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Brush brush = ...;
+	 * CPointer&lt;Object&gt; p = brush.__dna__addressof(Brush.__DNA__FIELD__surface_smooth_iterations);
+	 * CPointer&lt;Integer&gt; p_surface_smooth_iterations = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'surface_smooth_iterations'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__surface_smooth_iterations = new long[]{2068, 2144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiplane_scrape_angle'.
@@ -1473,7 +1893,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multiplane_scrape_angle = new long[]{2000, 2076};
+	public static final long[] __DNA__FIELD__multiplane_scrape_angle = new long[]{2072, 2148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_overlay_alpha'.
@@ -1496,7 +1916,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_overlay_alpha = new long[]{2004, 2080};
+	public static final long[] __DNA__FIELD__texture_overlay_alpha = new long[]{2076, 2152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_overlay_alpha'.
@@ -1516,7 +1936,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_overlay_alpha = new long[]{2008, 2084};
+	public static final long[] __DNA__FIELD__mask_overlay_alpha = new long[]{2080, 2156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor_overlay_alpha'.
@@ -1536,7 +1956,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cursor_overlay_alpha = new long[]{2012, 2088};
+	public static final long[] __DNA__FIELD__cursor_overlay_alpha = new long[]{2084, 2160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'unprojected_radius'.
@@ -1559,7 +1979,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__unprojected_radius = new long[]{2016, 2092};
+	public static final long[] __DNA__FIELD__unprojected_radius = new long[]{2088, 2164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sharp_threshold'.
@@ -1583,7 +2003,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sharp_threshold = new long[]{2020, 2096};
+	public static final long[] __DNA__FIELD__sharp_threshold = new long[]{2092, 2168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blur_kernel_radius'.
@@ -1606,7 +2026,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blur_kernel_radius = new long[]{2024, 2100};
+	public static final long[] __DNA__FIELD__blur_kernel_radius = new long[]{2096, 2172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blur_mode'.
@@ -1626,7 +2046,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blur_mode = new long[]{2028, 2104};
+	public static final long[] __DNA__FIELD__blur_mode = new long[]{2100, 2176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fill_threshold'.
@@ -1650,7 +2070,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fill_threshold = new long[]{2032, 2108};
+	public static final long[] __DNA__FIELD__fill_threshold = new long[]{2104, 2180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_col'.
@@ -1670,7 +2090,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__add_col = new long[]{2036, 2112};
+	public static final long[] __DNA__FIELD__add_col = new long[]{2108, 2184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sub_col'.
@@ -1690,7 +2110,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sub_col = new long[]{2052, 2128};
+	public static final long[] __DNA__FIELD__sub_col = new long[]{2124, 2200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_pos'.
@@ -1713,7 +2133,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stencil_pos = new long[]{2068, 2144};
+	public static final long[] __DNA__FIELD__stencil_pos = new long[]{2140, 2216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'stencil_dimension'.
@@ -1736,7 +2156,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stencil_dimension = new long[]{2076, 2152};
+	public static final long[] __DNA__FIELD__stencil_dimension = new long[]{2148, 2224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_pos'.
@@ -1759,7 +2179,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_stencil_pos = new long[]{2084, 2160};
+	public static final long[] __DNA__FIELD__mask_stencil_pos = new long[]{2156, 2232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_stencil_dimension'.
@@ -1782,7 +2202,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_stencil_dimension = new long[]{2092, 2168};
+	public static final long[] __DNA__FIELD__mask_stencil_dimension = new long[]{2164, 2240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_settings'.
@@ -1805,7 +2225,7 @@ public class Brush extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_settings = new long[]{2100, 2176};
+	public static final long[] __DNA__FIELD__gpencil_settings = new long[]{2172, 2248};
 
 	public Brush(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1859,9 +2279,9 @@ public class Brush extends CFacade {
 	public BrushClone getClone() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new BrushClone(__io__address + 152, __io__block, __io__blockTable);
+			return new BrushClone(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new BrushClone(__io__address + 120, __io__block, __io__blockTable);
+			return new BrushClone(__io__address + 128, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1874,9 +2294,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		}
 		if (__io__equals(clone, __io__address + __dna__offset)) {
 			return;
@@ -1900,9 +2320,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1921,9 +2341,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((curve == null) ? 0 : curve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -1935,9 +2355,9 @@ public class Brush extends CFacade {
 	public MTex getMtex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MTex(__io__address + 184, __io__block, __io__blockTable);
+			return new MTex(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new MTex(__io__address + 144, __io__block, __io__blockTable);
+			return new MTex(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1950,9 +2370,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		}
 		if (__io__equals(mtex, __io__address + __dna__offset)) {
 			return;
@@ -1971,9 +2391,9 @@ public class Brush extends CFacade {
 	public MTex getMask_mtex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MTex(__io__address + 504, __io__block, __io__blockTable);
+			return new MTex(__io__address + 512, __io__block, __io__blockTable);
 		} else {
-			return new MTex(__io__address + 456, __io__block, __io__blockTable);
+			return new MTex(__io__address + 464, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1986,9 +2406,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 504;
+			__dna__offset = 512;
 		} else {
-			__dna__offset = 456;
+			__dna__offset = 464;
 		}
 		if (__io__equals(mask_mtex, __io__address + __dna__offset)) {
 			return;
@@ -2008,9 +2428,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 824);
+			__dna__targetAddress = __io__block.readLong(__io__address + 832);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 768);
+			__dna__targetAddress = __io__block.readLong(__io__address + 776);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Brush.class};
 		return new CPointer<Brush>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Brush.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2025,9 +2445,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((toggle_brush == null) ? 0 : toggle_brush.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 824, __address);
+			__io__block.writeLong(__io__address + 832, __address);
 		} else {
-			__io__block.writeLong(__io__address + 768, __address);
+			__io__block.writeLong(__io__address + 776, __address);
 		}
 	}
 
@@ -2040,9 +2460,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 832);
+			__dna__targetAddress = __io__block.readLong(__io__address + 840);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 772);
+			__dna__targetAddress = __io__block.readLong(__io__address + 780);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2057,9 +2477,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((icon_imbuf == null) ? 0 : icon_imbuf.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 832, __address);
+			__io__block.writeLong(__io__address + 840, __address);
 		} else {
-			__io__block.writeLong(__io__address + 772, __address);
+			__io__block.writeLong(__io__address + 780, __address);
 		}
 	}
 
@@ -2075,9 +2495,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 840);
+			__dna__targetAddress = __io__block.readLong(__io__address + 848);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 776);
+			__dna__targetAddress = __io__block.readLong(__io__address + 784);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2095,9 +2515,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 840, __address);
+			__io__block.writeLong(__io__address + 848, __address);
 		} else {
-			__io__block.writeLong(__io__address + 776, __address);
+			__io__block.writeLong(__io__address + 784, __address);
 		}
 	}
 
@@ -2114,9 +2534,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 848);
+			__dna__targetAddress = __io__block.readLong(__io__address + 856);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 780);
+			__dna__targetAddress = __io__block.readLong(__io__address + 788);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2135,9 +2555,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((gradient == null) ? 0 : gradient.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 848, __address);
+			__io__block.writeLong(__io__address + 856, __address);
 		} else {
-			__io__block.writeLong(__io__address + 780, __address);
+			__io__block.writeLong(__io__address + 788, __address);
 		}
 	}
 
@@ -2153,9 +2573,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+			__dna__targetAddress = __io__block.readLong(__io__address + 864);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 784);
+			__dna__targetAddress = __io__block.readLong(__io__address + 792);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PaintCurve.class};
 		return new CPointer<PaintCurve>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PaintCurve.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2173,9 +2593,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((paint_curve == null) ? 0 : paint_curve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 856, __address);
+			__io__block.writeLong(__io__address + 864, __address);
 		} else {
-			__io__block.writeLong(__io__address + 784, __address);
+			__io__block.writeLong(__io__address + 792, __address);
 		}
 	}
 
@@ -2195,9 +2615,9 @@ public class Brush extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 872, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 788, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 796, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2214,9 +2634,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 864;
+			__dna__offset = 872;
 		} else {
-			__dna__offset = 788;
+			__dna__offset = 796;
 		}
 		if (__io__equals(icon_filepath, __io__address + __dna__offset)) {
 			return;
@@ -2238,9 +2658,9 @@ public class Brush extends CFacade {
 	public float getNormal_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1888);
+			return __io__block.readFloat(__io__address + 1896);
 		} else {
-			return __io__block.readFloat(__io__address + 1812);
+			return __io__block.readFloat(__io__address + 1820);
 		}
 	}
 
@@ -2255,9 +2675,9 @@ public class Brush extends CFacade {
 	public void setNormal_weight(float normal_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1888, normal_weight);
+			__io__block.writeFloat(__io__address + 1896, normal_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 1812, normal_weight);
+			__io__block.writeFloat(__io__address + 1820, normal_weight);
 		}
 	}
 
@@ -2273,9 +2693,9 @@ public class Brush extends CFacade {
 	public float getRake_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1892);
+			return __io__block.readFloat(__io__address + 1900);
 		} else {
-			return __io__block.readFloat(__io__address + 1816);
+			return __io__block.readFloat(__io__address + 1824);
 		}
 	}
 
@@ -2291,9 +2711,9 @@ public class Brush extends CFacade {
 	public void setRake_factor(float rake_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1892, rake_factor);
+			__io__block.writeFloat(__io__address + 1900, rake_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1816, rake_factor);
+			__io__block.writeFloat(__io__address + 1824, rake_factor);
 		}
 	}
 
@@ -2309,9 +2729,9 @@ public class Brush extends CFacade {
 	public short getBlend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1896);
+			return __io__block.readShort(__io__address + 1904);
 		} else {
-			return __io__block.readShort(__io__address + 1820);
+			return __io__block.readShort(__io__address + 1828);
 		}
 	}
 
@@ -2327,9 +2747,9 @@ public class Brush extends CFacade {
 	public void setBlend(short blend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1896, blend);
+			__io__block.writeShort(__io__address + 1904, blend);
 		} else {
-			__io__block.writeShort(__io__address + 1820, blend);
+			__io__block.writeShort(__io__address + 1828, blend);
 		}
 	}
 
@@ -2344,9 +2764,9 @@ public class Brush extends CFacade {
 	public short getOb_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1898);
+			return __io__block.readShort(__io__address + 1906);
 		} else {
-			return __io__block.readShort(__io__address + 1822);
+			return __io__block.readShort(__io__address + 1830);
 		}
 	}
 
@@ -2361,9 +2781,9 @@ public class Brush extends CFacade {
 	public void setOb_mode(short ob_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1898, ob_mode);
+			__io__block.writeShort(__io__address + 1906, ob_mode);
 		} else {
-			__io__block.writeShort(__io__address + 1822, ob_mode);
+			__io__block.writeShort(__io__address + 1830, ob_mode);
 		}
 	}
 
@@ -2379,9 +2799,9 @@ public class Brush extends CFacade {
 	public float getWeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1900);
+			return __io__block.readFloat(__io__address + 1908);
 		} else {
-			return __io__block.readFloat(__io__address + 1824);
+			return __io__block.readFloat(__io__address + 1832);
 		}
 	}
 
@@ -2397,9 +2817,9 @@ public class Brush extends CFacade {
 	public void setWeight(float weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1900, weight);
+			__io__block.writeFloat(__io__address + 1908, weight);
 		} else {
-			__io__block.writeFloat(__io__address + 1824, weight);
+			__io__block.writeFloat(__io__address + 1832, weight);
 		}
 	}
 
@@ -2415,9 +2835,9 @@ public class Brush extends CFacade {
 	public int getSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1904);
+			return __io__block.readInt(__io__address + 1912);
 		} else {
-			return __io__block.readInt(__io__address + 1828);
+			return __io__block.readInt(__io__address + 1836);
 		}
 	}
 
@@ -2433,9 +2853,9 @@ public class Brush extends CFacade {
 	public void setSize(int size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1904, size);
+			__io__block.writeInt(__io__address + 1912, size);
 		} else {
-			__io__block.writeInt(__io__address + 1828, size);
+			__io__block.writeInt(__io__address + 1836, size);
 		}
 	}
 
@@ -2450,9 +2870,9 @@ public class Brush extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1908);
+			return __io__block.readInt(__io__address + 1916);
 		} else {
-			return __io__block.readInt(__io__address + 1832);
+			return __io__block.readInt(__io__address + 1840);
 		}
 	}
 
@@ -2467,9 +2887,9 @@ public class Brush extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1908, flag);
+			__io__block.writeInt(__io__address + 1916, flag);
 		} else {
-			__io__block.writeInt(__io__address + 1832, flag);
+			__io__block.writeInt(__io__address + 1840, flag);
 		}
 	}
 
@@ -2481,9 +2901,9 @@ public class Brush extends CFacade {
 	public int getFlag2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1912);
+			return __io__block.readInt(__io__address + 1920);
 		} else {
-			return __io__block.readInt(__io__address + 1836);
+			return __io__block.readInt(__io__address + 1844);
 		}
 	}
 
@@ -2495,9 +2915,9 @@ public class Brush extends CFacade {
 	public void setFlag2(int flag2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1912, flag2);
+			__io__block.writeInt(__io__address + 1920, flag2);
 		} else {
-			__io__block.writeInt(__io__address + 1836, flag2);
+			__io__block.writeInt(__io__address + 1844, flag2);
 		}
 	}
 
@@ -2509,9 +2929,9 @@ public class Brush extends CFacade {
 	public int getSampling_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1916);
+			return __io__block.readInt(__io__address + 1924);
 		} else {
-			return __io__block.readInt(__io__address + 1840);
+			return __io__block.readInt(__io__address + 1848);
 		}
 	}
 
@@ -2523,9 +2943,9 @@ public class Brush extends CFacade {
 	public void setSampling_flag(int sampling_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1916, sampling_flag);
+			__io__block.writeInt(__io__address + 1924, sampling_flag);
 		} else {
-			__io__block.writeInt(__io__address + 1840, sampling_flag);
+			__io__block.writeInt(__io__address + 1848, sampling_flag);
 		}
 	}
 
@@ -2540,9 +2960,9 @@ public class Brush extends CFacade {
 	public int getMask_pressure() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1920);
+			return __io__block.readInt(__io__address + 1928);
 		} else {
-			return __io__block.readInt(__io__address + 1844);
+			return __io__block.readInt(__io__address + 1852);
 		}
 	}
 
@@ -2557,9 +2977,9 @@ public class Brush extends CFacade {
 	public void setMask_pressure(int mask_pressure) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1920, mask_pressure);
+			__io__block.writeInt(__io__address + 1928, mask_pressure);
 		} else {
-			__io__block.writeInt(__io__address + 1844, mask_pressure);
+			__io__block.writeInt(__io__address + 1852, mask_pressure);
 		}
 	}
 
@@ -2575,9 +2995,9 @@ public class Brush extends CFacade {
 	public float getJitter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1924);
+			return __io__block.readFloat(__io__address + 1932);
 		} else {
-			return __io__block.readFloat(__io__address + 1848);
+			return __io__block.readFloat(__io__address + 1856);
 		}
 	}
 
@@ -2593,9 +3013,9 @@ public class Brush extends CFacade {
 	public void setJitter(float jitter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1924, jitter);
+			__io__block.writeFloat(__io__address + 1932, jitter);
 		} else {
-			__io__block.writeFloat(__io__address + 1848, jitter);
+			__io__block.writeFloat(__io__address + 1856, jitter);
 		}
 	}
 
@@ -2611,9 +3031,9 @@ public class Brush extends CFacade {
 	public int getJitter_absolute() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1928);
+			return __io__block.readInt(__io__address + 1936);
 		} else {
-			return __io__block.readInt(__io__address + 1852);
+			return __io__block.readInt(__io__address + 1860);
 		}
 	}
 
@@ -2629,9 +3049,9 @@ public class Brush extends CFacade {
 	public void setJitter_absolute(int jitter_absolute) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1928, jitter_absolute);
+			__io__block.writeInt(__io__address + 1936, jitter_absolute);
 		} else {
-			__io__block.writeInt(__io__address + 1852, jitter_absolute);
+			__io__block.writeInt(__io__address + 1860, jitter_absolute);
 		}
 	}
 
@@ -2643,9 +3063,9 @@ public class Brush extends CFacade {
 	public int getOverlay_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1932);
+			return __io__block.readInt(__io__address + 1940);
 		} else {
-			return __io__block.readInt(__io__address + 1856);
+			return __io__block.readInt(__io__address + 1864);
 		}
 	}
 
@@ -2657,9 +3077,9 @@ public class Brush extends CFacade {
 	public void setOverlay_flags(int overlay_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1932, overlay_flags);
+			__io__block.writeInt(__io__address + 1940, overlay_flags);
 		} else {
-			__io__block.writeInt(__io__address + 1856, overlay_flags);
+			__io__block.writeInt(__io__address + 1864, overlay_flags);
 		}
 	}
 
@@ -2675,9 +3095,9 @@ public class Brush extends CFacade {
 	public int getSpacing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1936);
+			return __io__block.readInt(__io__address + 1944);
 		} else {
-			return __io__block.readInt(__io__address + 1860);
+			return __io__block.readInt(__io__address + 1868);
 		}
 	}
 
@@ -2693,9 +3113,9 @@ public class Brush extends CFacade {
 	public void setSpacing(int spacing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1936, spacing);
+			__io__block.writeInt(__io__address + 1944, spacing);
 		} else {
-			__io__block.writeInt(__io__address + 1860, spacing);
+			__io__block.writeInt(__io__address + 1868, spacing);
 		}
 	}
 
@@ -2711,9 +3131,9 @@ public class Brush extends CFacade {
 	public int getSmooth_stroke_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1940);
+			return __io__block.readInt(__io__address + 1948);
 		} else {
-			return __io__block.readInt(__io__address + 1864);
+			return __io__block.readInt(__io__address + 1872);
 		}
 	}
 
@@ -2729,9 +3149,9 @@ public class Brush extends CFacade {
 	public void setSmooth_stroke_radius(int smooth_stroke_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1940, smooth_stroke_radius);
+			__io__block.writeInt(__io__address + 1948, smooth_stroke_radius);
 		} else {
-			__io__block.writeInt(__io__address + 1864, smooth_stroke_radius);
+			__io__block.writeInt(__io__address + 1872, smooth_stroke_radius);
 		}
 	}
 
@@ -2747,9 +3167,9 @@ public class Brush extends CFacade {
 	public float getSmooth_stroke_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1944);
+			return __io__block.readFloat(__io__address + 1952);
 		} else {
-			return __io__block.readFloat(__io__address + 1868);
+			return __io__block.readFloat(__io__address + 1876);
 		}
 	}
 
@@ -2765,9 +3185,9 @@ public class Brush extends CFacade {
 	public void setSmooth_stroke_factor(float smooth_stroke_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1944, smooth_stroke_factor);
+			__io__block.writeFloat(__io__address + 1952, smooth_stroke_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1868, smooth_stroke_factor);
+			__io__block.writeFloat(__io__address + 1876, smooth_stroke_factor);
 		}
 	}
 
@@ -2783,9 +3203,9 @@ public class Brush extends CFacade {
 	public float getRate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1948);
+			return __io__block.readFloat(__io__address + 1956);
 		} else {
-			return __io__block.readFloat(__io__address + 1872);
+			return __io__block.readFloat(__io__address + 1880);
 		}
 	}
 
@@ -2801,9 +3221,9 @@ public class Brush extends CFacade {
 	public void setRate(float rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1948, rate);
+			__io__block.writeFloat(__io__address + 1956, rate);
 		} else {
-			__io__block.writeFloat(__io__address + 1872, rate);
+			__io__block.writeFloat(__io__address + 1880, rate);
 		}
 	}
 
@@ -2822,9 +3242,9 @@ public class Brush extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1952, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1876, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2840,9 +3260,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1952;
+			__dna__offset = 1960;
 		} else {
-			__dna__offset = 1876;
+			__dna__offset = 1884;
 		}
 		if (__io__equals(rgb, __io__address + __dna__offset)) {
 			return;
@@ -2864,9 +3284,9 @@ public class Brush extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1964);
+			return __io__block.readFloat(__io__address + 1972);
 		} else {
-			return __io__block.readFloat(__io__address + 1888);
+			return __io__block.readFloat(__io__address + 1896);
 		}
 	}
 
@@ -2881,9 +3301,9 @@ public class Brush extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1964, alpha);
+			__io__block.writeFloat(__io__address + 1972, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 1888, alpha);
+			__io__block.writeFloat(__io__address + 1896, alpha);
 		}
 	}
 
@@ -2902,9 +3322,9 @@ public class Brush extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1968, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1976, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1892, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2920,9 +3340,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1968;
+			__dna__offset = 1976;
 		} else {
-			__dna__offset = 1892;
+			__dna__offset = 1900;
 		}
 		if (__io__equals(secondary_rgb, __io__address + __dna__offset)) {
 			return;
@@ -2945,9 +3365,9 @@ public class Brush extends CFacade {
 	public float getDash_ratio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1980);
+			return __io__block.readFloat(__io__address + 1988);
 		} else {
-			return __io__block.readFloat(__io__address + 1904);
+			return __io__block.readFloat(__io__address + 1912);
 		}
 	}
 
@@ -2963,9 +3383,9 @@ public class Brush extends CFacade {
 	public void setDash_ratio(float dash_ratio) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1980, dash_ratio);
+			__io__block.writeFloat(__io__address + 1988, dash_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 1904, dash_ratio);
+			__io__block.writeFloat(__io__address + 1912, dash_ratio);
 		}
 	}
 
@@ -2980,9 +3400,9 @@ public class Brush extends CFacade {
 	public int getDash_samples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1984);
+			return __io__block.readInt(__io__address + 1992);
 		} else {
-			return __io__block.readInt(__io__address + 1908);
+			return __io__block.readInt(__io__address + 1916);
 		}
 	}
 
@@ -2997,9 +3417,9 @@ public class Brush extends CFacade {
 	public void setDash_samples(int dash_samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1984, dash_samples);
+			__io__block.writeInt(__io__address + 1992, dash_samples);
 		} else {
-			__io__block.writeInt(__io__address + 1908, dash_samples);
+			__io__block.writeInt(__io__address + 1916, dash_samples);
 		}
 	}
 
@@ -3014,9 +3434,9 @@ public class Brush extends CFacade {
 	public int getSculpt_plane() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1988);
+			return __io__block.readInt(__io__address + 1996);
 		} else {
-			return __io__block.readInt(__io__address + 1912);
+			return __io__block.readInt(__io__address + 1920);
 		}
 	}
 
@@ -3031,9 +3451,9 @@ public class Brush extends CFacade {
 	public void setSculpt_plane(int sculpt_plane) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1988, sculpt_plane);
+			__io__block.writeInt(__io__address + 1996, sculpt_plane);
 		} else {
-			__io__block.writeInt(__io__address + 1912, sculpt_plane);
+			__io__block.writeInt(__io__address + 1920, sculpt_plane);
 		}
 	}
 
@@ -3049,9 +3469,9 @@ public class Brush extends CFacade {
 	public float getPlane_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1992);
+			return __io__block.readFloat(__io__address + 2000);
 		} else {
-			return __io__block.readFloat(__io__address + 1916);
+			return __io__block.readFloat(__io__address + 1924);
 		}
 	}
 
@@ -3067,9 +3487,9 @@ public class Brush extends CFacade {
 	public void setPlane_offset(float plane_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1992, plane_offset);
+			__io__block.writeFloat(__io__address + 2000, plane_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 1916, plane_offset);
+			__io__block.writeFloat(__io__address + 1924, plane_offset);
 		}
 	}
 
@@ -3081,9 +3501,9 @@ public class Brush extends CFacade {
 	public int getGradient_spacing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1996);
+			return __io__block.readInt(__io__address + 2004);
 		} else {
-			return __io__block.readInt(__io__address + 1920);
+			return __io__block.readInt(__io__address + 1928);
 		}
 	}
 
@@ -3095,9 +3515,9 @@ public class Brush extends CFacade {
 	public void setGradient_spacing(int gradient_spacing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1996, gradient_spacing);
+			__io__block.writeInt(__io__address + 2004, gradient_spacing);
 		} else {
-			__io__block.writeInt(__io__address + 1920, gradient_spacing);
+			__io__block.writeInt(__io__address + 1928, gradient_spacing);
 		}
 	}
 
@@ -3112,9 +3532,9 @@ public class Brush extends CFacade {
 	public byte getGradient_stroke_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2000);
+			return __io__block.readByte(__io__address + 2008);
 		} else {
-			return __io__block.readByte(__io__address + 1924);
+			return __io__block.readByte(__io__address + 1932);
 		}
 	}
 
@@ -3129,9 +3549,9 @@ public class Brush extends CFacade {
 	public void setGradient_stroke_mode(byte gradient_stroke_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2000, gradient_stroke_mode);
+			__io__block.writeByte(__io__address + 2008, gradient_stroke_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1924, gradient_stroke_mode);
+			__io__block.writeByte(__io__address + 1932, gradient_stroke_mode);
 		}
 	}
 
@@ -3146,9 +3566,9 @@ public class Brush extends CFacade {
 	public byte getGradient_fill_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2001);
+			return __io__block.readByte(__io__address + 2009);
 		} else {
-			return __io__block.readByte(__io__address + 1925);
+			return __io__block.readByte(__io__address + 1933);
 		}
 	}
 
@@ -3163,9 +3583,9 @@ public class Brush extends CFacade {
 	public void setGradient_fill_mode(byte gradient_fill_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2001, gradient_fill_mode);
+			__io__block.writeByte(__io__address + 2009, gradient_fill_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1925, gradient_fill_mode);
+			__io__block.writeByte(__io__address + 1933, gradient_fill_mode);
 		}
 	}
 
@@ -3174,12 +3594,16 @@ public class Brush extends CFacade {
 	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public byte get_pad0() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2002);
+			return new CArrayFacade<Byte>(__io__address + 2010, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readByte(__io__address + 1926);
+			return new CArrayFacade<Byte>(__io__address + 1934, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3188,12 +3612,20 @@ public class Brush extends CFacade {
 	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void set_pad0(byte _pad0) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2002, _pad0);
+			__dna__offset = 2010;
 		} else {
-			__io__block.writeByte(__io__address + 1926, _pad0);
+			__dna__offset = 1934;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 
@@ -3209,9 +3641,9 @@ public class Brush extends CFacade {
 	public byte getFalloff_shape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2003);
+			return __io__block.readByte(__io__address + 2011);
 		} else {
-			return __io__block.readByte(__io__address + 1927);
+			return __io__block.readByte(__io__address + 1935);
 		}
 	}
 
@@ -3227,9 +3659,9 @@ public class Brush extends CFacade {
 	public void setFalloff_shape(byte falloff_shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2003, falloff_shape);
+			__io__block.writeByte(__io__address + 2011, falloff_shape);
 		} else {
-			__io__block.writeByte(__io__address + 1927, falloff_shape);
+			__io__block.writeByte(__io__address + 1935, falloff_shape);
 		}
 	}
 
@@ -3244,9 +3676,9 @@ public class Brush extends CFacade {
 	public float getFalloff_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2004);
+			return __io__block.readFloat(__io__address + 2012);
 		} else {
-			return __io__block.readFloat(__io__address + 1928);
+			return __io__block.readFloat(__io__address + 1936);
 		}
 	}
 
@@ -3261,9 +3693,9 @@ public class Brush extends CFacade {
 	public void setFalloff_angle(float falloff_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2004, falloff_angle);
+			__io__block.writeFloat(__io__address + 2012, falloff_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 1928, falloff_angle);
+			__io__block.writeFloat(__io__address + 1936, falloff_angle);
 		}
 	}
 
@@ -3278,9 +3710,9 @@ public class Brush extends CFacade {
 	public byte getSculpt_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2008);
+			return __io__block.readByte(__io__address + 2016);
 		} else {
-			return __io__block.readByte(__io__address + 1932);
+			return __io__block.readByte(__io__address + 1940);
 		}
 	}
 
@@ -3295,9 +3727,9 @@ public class Brush extends CFacade {
 	public void setSculpt_tool(byte sculpt_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2008, sculpt_tool);
+			__io__block.writeByte(__io__address + 2016, sculpt_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1932, sculpt_tool);
+			__io__block.writeByte(__io__address + 1940, sculpt_tool);
 		}
 	}
 
@@ -3312,9 +3744,9 @@ public class Brush extends CFacade {
 	public byte getUv_sculpt_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2009);
+			return __io__block.readByte(__io__address + 2017);
 		} else {
-			return __io__block.readByte(__io__address + 1933);
+			return __io__block.readByte(__io__address + 1941);
 		}
 	}
 
@@ -3329,9 +3761,9 @@ public class Brush extends CFacade {
 	public void setUv_sculpt_tool(byte uv_sculpt_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2009, uv_sculpt_tool);
+			__io__block.writeByte(__io__address + 2017, uv_sculpt_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1933, uv_sculpt_tool);
+			__io__block.writeByte(__io__address + 1941, uv_sculpt_tool);
 		}
 	}
 
@@ -3346,9 +3778,9 @@ public class Brush extends CFacade {
 	public byte getVertexpaint_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2010);
+			return __io__block.readByte(__io__address + 2018);
 		} else {
-			return __io__block.readByte(__io__address + 1934);
+			return __io__block.readByte(__io__address + 1942);
 		}
 	}
 
@@ -3363,9 +3795,9 @@ public class Brush extends CFacade {
 	public void setVertexpaint_tool(byte vertexpaint_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2010, vertexpaint_tool);
+			__io__block.writeByte(__io__address + 2018, vertexpaint_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1934, vertexpaint_tool);
+			__io__block.writeByte(__io__address + 1942, vertexpaint_tool);
 		}
 	}
 
@@ -3380,9 +3812,9 @@ public class Brush extends CFacade {
 	public byte getWeightpaint_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2011);
+			return __io__block.readByte(__io__address + 2019);
 		} else {
-			return __io__block.readByte(__io__address + 1935);
+			return __io__block.readByte(__io__address + 1943);
 		}
 	}
 
@@ -3397,9 +3829,9 @@ public class Brush extends CFacade {
 	public void setWeightpaint_tool(byte weightpaint_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2011, weightpaint_tool);
+			__io__block.writeByte(__io__address + 2019, weightpaint_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1935, weightpaint_tool);
+			__io__block.writeByte(__io__address + 1943, weightpaint_tool);
 		}
 	}
 
@@ -3414,9 +3846,9 @@ public class Brush extends CFacade {
 	public byte getImagepaint_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2012);
+			return __io__block.readByte(__io__address + 2020);
 		} else {
-			return __io__block.readByte(__io__address + 1936);
+			return __io__block.readByte(__io__address + 1944);
 		}
 	}
 
@@ -3431,9 +3863,9 @@ public class Brush extends CFacade {
 	public void setImagepaint_tool(byte imagepaint_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2012, imagepaint_tool);
+			__io__block.writeByte(__io__address + 2020, imagepaint_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1936, imagepaint_tool);
+			__io__block.writeByte(__io__address + 1944, imagepaint_tool);
 		}
 	}
 
@@ -3448,9 +3880,9 @@ public class Brush extends CFacade {
 	public byte getMask_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2013);
+			return __io__block.readByte(__io__address + 2021);
 		} else {
-			return __io__block.readByte(__io__address + 1937);
+			return __io__block.readByte(__io__address + 1945);
 		}
 	}
 
@@ -3465,9 +3897,9 @@ public class Brush extends CFacade {
 	public void setMask_tool(byte mask_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2013, mask_tool);
+			__io__block.writeByte(__io__address + 2021, mask_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1937, mask_tool);
+			__io__block.writeByte(__io__address + 1945, mask_tool);
 		}
 	}
 
@@ -3482,9 +3914,9 @@ public class Brush extends CFacade {
 	public byte getGpencil_tool() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2014);
+			return __io__block.readByte(__io__address + 2022);
 		} else {
-			return __io__block.readByte(__io__address + 1938);
+			return __io__block.readByte(__io__address + 1946);
 		}
 	}
 
@@ -3499,9 +3931,111 @@ public class Brush extends CFacade {
 	public void setGpencil_tool(byte gpencil_tool) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2014, gpencil_tool);
+			__io__block.writeByte(__io__address + 2022, gpencil_tool);
 		} else {
-			__io__block.writeByte(__io__address + 1938, gpencil_tool);
+			__io__block.writeByte(__io__address + 1946, gpencil_tool);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_vertex_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil vertex tool. </p>
+	 * @see #__DNA__FIELD__gpencil_vertex_tool
+	 */
+	
+	public byte getGpencil_vertex_tool() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2023);
+		} else {
+			return __io__block.readByte(__io__address + 1947);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_vertex_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil vertex tool. </p>
+	 * @see #__DNA__FIELD__gpencil_vertex_tool
+	 */
+	
+	public void setGpencil_vertex_tool(byte gpencil_vertex_tool) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2023, gpencil_vertex_tool);
+		} else {
+			__io__block.writeByte(__io__address + 1947, gpencil_vertex_tool);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil sculpt tool. </p>
+	 * @see #__DNA__FIELD__gpencil_sculpt_tool
+	 */
+	
+	public byte getGpencil_sculpt_tool() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2024);
+		} else {
+			return __io__block.readByte(__io__address + 1948);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_sculpt_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil sculpt tool. </p>
+	 * @see #__DNA__FIELD__gpencil_sculpt_tool
+	 */
+	
+	public void setGpencil_sculpt_tool(byte gpencil_sculpt_tool) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2024, gpencil_sculpt_tool);
+		} else {
+			__io__block.writeByte(__io__address + 1948, gpencil_sculpt_tool);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_weight_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil weight tool. </p>
+	 * @see #__DNA__FIELD__gpencil_weight_tool
+	 */
+	
+	public byte getGpencil_weight_tool() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2025);
+		} else {
+			return __io__block.readByte(__io__address + 1949);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_weight_tool'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Active grease pencil weight tool. </p>
+	 * @see #__DNA__FIELD__gpencil_weight_tool
+	 */
+	
+	public void setGpencil_weight_tool(byte gpencil_weight_tool) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2025, gpencil_weight_tool);
+		} else {
+			__io__block.writeByte(__io__address + 1949, gpencil_weight_tool);
 		}
 	}
 
@@ -3514,12 +4048,12 @@ public class Brush extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2015, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2026, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1939, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1950, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3532,9 +4066,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2015;
+			__dna__offset = 2026;
 		} else {
-			__dna__offset = 1939;
+			__dna__offset = 1950;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -3553,9 +4087,9 @@ public class Brush extends CFacade {
 	public float getAutosmooth_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2020);
+			return __io__block.readFloat(__io__address + 2032);
 		} else {
-			return __io__block.readFloat(__io__address + 1944);
+			return __io__block.readFloat(__io__address + 1956);
 		}
 	}
 
@@ -3567,9 +4101,9 @@ public class Brush extends CFacade {
 	public void setAutosmooth_factor(float autosmooth_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2020, autosmooth_factor);
+			__io__block.writeFloat(__io__address + 2032, autosmooth_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1944, autosmooth_factor);
+			__io__block.writeFloat(__io__address + 1956, autosmooth_factor);
 		}
 	}
 
@@ -3584,9 +4118,9 @@ public class Brush extends CFacade {
 	public float getTopology_rake_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2024);
+			return __io__block.readFloat(__io__address + 2036);
 		} else {
-			return __io__block.readFloat(__io__address + 1948);
+			return __io__block.readFloat(__io__address + 1960);
 		}
 	}
 
@@ -3601,9 +4135,9 @@ public class Brush extends CFacade {
 	public void setTopology_rake_factor(float topology_rake_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2024, topology_rake_factor);
+			__io__block.writeFloat(__io__address + 2036, topology_rake_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1948, topology_rake_factor);
+			__io__block.writeFloat(__io__address + 1960, topology_rake_factor);
 		}
 	}
 
@@ -3618,9 +4152,9 @@ public class Brush extends CFacade {
 	public float getCrease_pinch_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2028);
+			return __io__block.readFloat(__io__address + 2040);
 		} else {
-			return __io__block.readFloat(__io__address + 1952);
+			return __io__block.readFloat(__io__address + 1964);
 		}
 	}
 
@@ -3635,9 +4169,9 @@ public class Brush extends CFacade {
 	public void setCrease_pinch_factor(float crease_pinch_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2028, crease_pinch_factor);
+			__io__block.writeFloat(__io__address + 2040, crease_pinch_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1952, crease_pinch_factor);
+			__io__block.writeFloat(__io__address + 1964, crease_pinch_factor);
 		}
 	}
 
@@ -3652,9 +4186,9 @@ public class Brush extends CFacade {
 	public float getNormal_radius_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2032);
+			return __io__block.readFloat(__io__address + 2044);
 		} else {
-			return __io__block.readFloat(__io__address + 1956);
+			return __io__block.readFloat(__io__address + 1968);
 		}
 	}
 
@@ -3669,9 +4203,43 @@ public class Brush extends CFacade {
 	public void setNormal_radius_factor(float normal_radius_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2032, normal_radius_factor);
+			__io__block.writeFloat(__io__address + 2044, normal_radius_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 1956, normal_radius_factor);
+			__io__block.writeFloat(__io__address + 1968, normal_radius_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'area_radius_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
+	 * @see #__DNA__FIELD__area_radius_factor
+	 */
+	
+	public float getArea_radius_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2048);
+		} else {
+			return __io__block.readFloat(__io__address + 1972);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'area_radius_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Ratio between the brush radius and the radius that is going to be used to sample the area center
+	 * @see #__DNA__FIELD__area_radius_factor
+	 */
+	
+	public void setArea_radius_factor(float area_radius_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2048, area_radius_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 1972, area_radius_factor);
 		}
 	}
 
@@ -3686,9 +4254,9 @@ public class Brush extends CFacade {
 	public float getPlane_trim() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2036);
+			return __io__block.readFloat(__io__address + 2052);
 		} else {
-			return __io__block.readFloat(__io__address + 1960);
+			return __io__block.readFloat(__io__address + 1976);
 		}
 	}
 
@@ -3703,9 +4271,9 @@ public class Brush extends CFacade {
 	public void setPlane_trim(float plane_trim) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2036, plane_trim);
+			__io__block.writeFloat(__io__address + 2052, plane_trim);
 		} else {
-			__io__block.writeFloat(__io__address + 1960, plane_trim);
+			__io__block.writeFloat(__io__address + 1976, plane_trim);
 		}
 	}
 
@@ -3721,9 +4289,9 @@ public class Brush extends CFacade {
 	public float getHeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2040);
+			return __io__block.readFloat(__io__address + 2056);
 		} else {
-			return __io__block.readFloat(__io__address + 1964);
+			return __io__block.readFloat(__io__address + 1980);
 		}
 	}
 
@@ -3739,9 +4307,9 @@ public class Brush extends CFacade {
 	public void setHeight(float height) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2040, height);
+			__io__block.writeFloat(__io__address + 2056, height);
 		} else {
-			__io__block.writeFloat(__io__address + 1964, height);
+			__io__block.writeFloat(__io__address + 1980, height);
 		}
 	}
 
@@ -3756,9 +4324,9 @@ public class Brush extends CFacade {
 	public float getTexture_sample_bias() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2044);
+			return __io__block.readFloat(__io__address + 2060);
 		} else {
-			return __io__block.readFloat(__io__address + 1968);
+			return __io__block.readFloat(__io__address + 1984);
 		}
 	}
 
@@ -3773,9 +4341,9 @@ public class Brush extends CFacade {
 	public void setTexture_sample_bias(float texture_sample_bias) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2044, texture_sample_bias);
+			__io__block.writeFloat(__io__address + 2060, texture_sample_bias);
 		} else {
-			__io__block.writeFloat(__io__address + 1968, texture_sample_bias);
+			__io__block.writeFloat(__io__address + 1984, texture_sample_bias);
 		}
 	}
 
@@ -3787,9 +4355,9 @@ public class Brush extends CFacade {
 	public int getCurve_preset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2048);
+			return __io__block.readInt(__io__address + 2064);
 		} else {
-			return __io__block.readInt(__io__address + 1972);
+			return __io__block.readInt(__io__address + 1988);
 		}
 	}
 
@@ -3801,37 +4369,147 @@ public class Brush extends CFacade {
 	public void setCurve_preset(int curve_preset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2048, curve_preset);
+			__io__block.writeInt(__io__address + 2064, curve_preset);
 		} else {
-			__io__block.writeInt(__io__address + 1972, curve_preset);
+			__io__block.writeInt(__io__address + 1988, curve_preset);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'hardness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * @see #__DNA__FIELD__hardness
+	 */
+	
+	public float getHardness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2068);
+		} else {
+			return __io__block.readFloat(__io__address + 1992);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'hardness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How close the brush falloff starts from the edge of the brush
+	 * @see #__DNA__FIELD__hardness
+	 */
+	
+	public void setHardness(float hardness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2068, hardness);
+		} else {
+			__io__block.writeFloat(__io__address + 1992, hardness);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'automasking_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> automasking </p>
 	 * @see #__DNA__FIELD__automasking_flags
 	 */
 	
 	public int getAutomasking_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2052);
+			return __io__block.readInt(__io__address + 2072);
 		} else {
-			return __io__block.readInt(__io__address + 1976);
+			return __io__block.readInt(__io__address + 1996);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'automasking_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> automasking </p>
 	 * @see #__DNA__FIELD__automasking_flags
 	 */
 	
 	public void setAutomasking_flags(int automasking_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2052, automasking_flags);
+			__io__block.writeInt(__io__address + 2072, automasking_flags);
 		} else {
-			__io__block.writeInt(__io__address + 1976, automasking_flags);
+			__io__block.writeInt(__io__address + 1996, automasking_flags);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'automasking_boundary_edges_propagation_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
+	 * @see #__DNA__FIELD__automasking_boundary_edges_propagation_steps
+	 */
+	
+	public int getAutomasking_boundary_edges_propagation_steps() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2076);
+		} else {
+			return __io__block.readInt(__io__address + 2000);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'automasking_boundary_edges_propagation_steps'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Distance where boundary edge automasking is going to protect vertices from the fully masked edge
+	 * @see #__DNA__FIELD__automasking_boundary_edges_propagation_steps
+	 */
+	
+	public void setAutomasking_boundary_edges_propagation_steps(int automasking_boundary_edges_propagation_steps) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2076, automasking_boundary_edges_propagation_steps);
+		} else {
+			__io__block.writeInt(__io__address + 2000, automasking_boundary_edges_propagation_steps);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tip_roundness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <p> Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
+	 * @see #__DNA__FIELD__tip_roundness
+	 */
+	
+	public float getTip_roundness() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2080);
+		} else {
+			return __io__block.readFloat(__io__address + 2004);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'tip_roundness'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Roundness of the brush tip<h4>Blender Source Code:</h4>
+	 * <p> Factor that controls the shape of the brush tip by rounding the corners of a square. 0.0 value produces a square, 1.0 produces a circle. </p>
+	 * @see #__DNA__FIELD__tip_roundness
+	 */
+	
+	public void setTip_roundness(float tip_roundness) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2080, tip_roundness);
+		} else {
+			__io__block.writeFloat(__io__address + 2004, tip_roundness);
 		}
 	}
 
@@ -3846,9 +4524,9 @@ public class Brush extends CFacade {
 	public int getElastic_deform_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2056);
+			return __io__block.readInt(__io__address + 2084);
 		} else {
-			return __io__block.readInt(__io__address + 1980);
+			return __io__block.readInt(__io__address + 2008);
 		}
 	}
 
@@ -3863,9 +4541,9 @@ public class Brush extends CFacade {
 	public void setElastic_deform_type(int elastic_deform_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2056, elastic_deform_type);
+			__io__block.writeInt(__io__address + 2084, elastic_deform_type);
 		} else {
-			__io__block.writeInt(__io__address + 1980, elastic_deform_type);
+			__io__block.writeInt(__io__address + 2008, elastic_deform_type);
 		}
 	}
 
@@ -3880,9 +4558,9 @@ public class Brush extends CFacade {
 	public float getElastic_deform_volume_preservation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2060);
+			return __io__block.readFloat(__io__address + 2088);
 		} else {
-			return __io__block.readFloat(__io__address + 1984);
+			return __io__block.readFloat(__io__address + 2012);
 		}
 	}
 
@@ -3897,9 +4575,9 @@ public class Brush extends CFacade {
 	public void setElastic_deform_volume_preservation(float elastic_deform_volume_preservation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2060, elastic_deform_volume_preservation);
+			__io__block.writeFloat(__io__address + 2088, elastic_deform_volume_preservation);
 		} else {
-			__io__block.writeFloat(__io__address + 1984, elastic_deform_volume_preservation);
+			__io__block.writeFloat(__io__address + 2012, elastic_deform_volume_preservation);
 		}
 	}
 
@@ -3915,9 +4593,9 @@ public class Brush extends CFacade {
 	public float getPose_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2064);
+			return __io__block.readFloat(__io__address + 2092);
 		} else {
-			return __io__block.readFloat(__io__address + 1988);
+			return __io__block.readFloat(__io__address + 2016);
 		}
 	}
 
@@ -3933,9 +4611,9 @@ public class Brush extends CFacade {
 	public void setPose_offset(float pose_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2064, pose_offset);
+			__io__block.writeFloat(__io__address + 2092, pose_offset);
 		} else {
-			__io__block.writeFloat(__io__address + 1988, pose_offset);
+			__io__block.writeFloat(__io__address + 2016, pose_offset);
 		}
 	}
 
@@ -3950,9 +4628,9 @@ public class Brush extends CFacade {
 	public int getPose_smooth_iterations() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2068);
+			return __io__block.readInt(__io__address + 2096);
 		} else {
-			return __io__block.readInt(__io__address + 1992);
+			return __io__block.readInt(__io__address + 2020);
 		}
 	}
 
@@ -3967,9 +4645,9 @@ public class Brush extends CFacade {
 	public void setPose_smooth_iterations(int pose_smooth_iterations) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2068, pose_smooth_iterations);
+			__io__block.writeInt(__io__address + 2096, pose_smooth_iterations);
 		} else {
-			__io__block.writeInt(__io__address + 1992, pose_smooth_iterations);
+			__io__block.writeInt(__io__address + 2020, pose_smooth_iterations);
 		}
 	}
 
@@ -3984,9 +4662,9 @@ public class Brush extends CFacade {
 	public int getPose_ik_segments() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2072);
+			return __io__block.readInt(__io__address + 2100);
 		} else {
-			return __io__block.readInt(__io__address + 1996);
+			return __io__block.readInt(__io__address + 2024);
 		}
 	}
 
@@ -4001,9 +4679,387 @@ public class Brush extends CFacade {
 	public void setPose_ik_segments(int pose_ik_segments) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2072, pose_ik_segments);
+			__io__block.writeInt(__io__address + 2100, pose_ik_segments);
 		} else {
-			__io__block.writeInt(__io__address + 1996, pose_ik_segments);
+			__io__block.writeInt(__io__address + 2024, pose_ik_segments);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'pose_origin_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method to set the rotation origins for the segments of the brush
+	 * @see #__DNA__FIELD__pose_origin_type
+	 */
+	
+	public int getPose_origin_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2104);
+		} else {
+			return __io__block.readInt(__io__address + 2028);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pose_origin_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Method to set the rotation origins for the segments of the brush
+	 * @see #__DNA__FIELD__pose_origin_type
+	 */
+	
+	public void setPose_origin_type(int pose_origin_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2104, pose_origin_type);
+		} else {
+			__io__block.writeInt(__io__address + 2028, pose_origin_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> cloth </p>
+	 * @see #__DNA__FIELD__cloth_deform_type
+	 */
+	
+	public int getCloth_deform_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2108);
+		} else {
+			return __io__block.readInt(__io__address + 2032);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> cloth </p>
+	 * @see #__DNA__FIELD__cloth_deform_type
+	 */
+	
+	public void setCloth_deform_type(int cloth_deform_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2108, cloth_deform_type);
+		} else {
+			__io__block.writeInt(__io__address + 2032, cloth_deform_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_force_falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Shape used in the brush to apply force to the cloth
+	 * @see #__DNA__FIELD__cloth_force_falloff_type
+	 */
+	
+	public int getCloth_force_falloff_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2112);
+		} else {
+			return __io__block.readInt(__io__address + 2036);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_force_falloff_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Shape used in the brush to apply force to the cloth
+	 * @see #__DNA__FIELD__cloth_force_falloff_type
+	 */
+	
+	public void setCloth_force_falloff_type(int cloth_force_falloff_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2112, cloth_force_falloff_type);
+		} else {
+			__io__block.writeInt(__io__address + 2036, cloth_force_falloff_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_mass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mass of each simulation particle
+	 * @see #__DNA__FIELD__cloth_mass
+	 */
+	
+	public float getCloth_mass() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2116);
+		} else {
+			return __io__block.readFloat(__io__address + 2040);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_mass'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Mass of each simulation particle
+	 * @see #__DNA__FIELD__cloth_mass
+	 */
+	
+	public void setCloth_mass(float cloth_mass) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2116, cloth_mass);
+		} else {
+			__io__block.writeFloat(__io__address + 2040, cloth_mass);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_damping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the applied forces are propagated through the cloth
+	 * @see #__DNA__FIELD__cloth_damping
+	 */
+	
+	public float getCloth_damping() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2120);
+		} else {
+			return __io__block.readFloat(__io__address + 2044);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_damping'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the applied forces are propagated through the cloth
+	 * @see #__DNA__FIELD__cloth_damping
+	 */
+	
+	public void setCloth_damping(float cloth_damping) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2120, cloth_damping);
+		} else {
+			__io__block.writeFloat(__io__address + 2044, cloth_damping);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_sim_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor added relative to the size of the radius to limit the cloth simulation effects
+	 * @see #__DNA__FIELD__cloth_sim_limit
+	 */
+	
+	public float getCloth_sim_limit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2124);
+		} else {
+			return __io__block.readFloat(__io__address + 2048);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_sim_limit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor added relative to the size of the radius to limit the cloth simulation effects
+	 * @see #__DNA__FIELD__cloth_sim_limit
+	 */
+	
+	public void setCloth_sim_limit(float cloth_sim_limit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2124, cloth_sim_limit);
+		} else {
+			__io__block.writeFloat(__io__address + 2048, cloth_sim_limit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cloth_sim_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Area to apply deformation falloff to the effects of the simulation
+	 * @see #__DNA__FIELD__cloth_sim_falloff
+	 */
+	
+	public float getCloth_sim_falloff() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2128);
+		} else {
+			return __io__block.readFloat(__io__address + 2052);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cloth_sim_falloff'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Area to apply deformation falloff to the effects of the simulation
+	 * @see #__DNA__FIELD__cloth_sim_falloff
+	 */
+	
+	public void setCloth_sim_falloff(float cloth_sim_falloff) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2128, cloth_sim_falloff);
+		} else {
+			__io__block.writeFloat(__io__address + 2052, cloth_sim_falloff);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'smooth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> smooth </p>
+	 * @see #__DNA__FIELD__smooth_deform_type
+	 */
+	
+	public int getSmooth_deform_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2132);
+		} else {
+			return __io__block.readInt(__io__address + 2056);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'smooth_deform_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Deformation type that is used in the brush<h4>Blender Source Code:</h4>
+	 * <p> smooth </p>
+	 * @see #__DNA__FIELD__smooth_deform_type
+	 */
+	
+	public void setSmooth_deform_type(int smooth_deform_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2132, smooth_deform_type);
+		} else {
+			__io__block.writeInt(__io__address + 2056, smooth_deform_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'surface_smooth_shape_preservation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much of the original shape is preserved when smoothing
+	 * @see #__DNA__FIELD__surface_smooth_shape_preservation
+	 */
+	
+	public float getSurface_smooth_shape_preservation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2136);
+		} else {
+			return __io__block.readFloat(__io__address + 2060);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'surface_smooth_shape_preservation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much of the original shape is preserved when smoothing
+	 * @see #__DNA__FIELD__surface_smooth_shape_preservation
+	 */
+	
+	public void setSurface_smooth_shape_preservation(float surface_smooth_shape_preservation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2136, surface_smooth_shape_preservation);
+		} else {
+			__io__block.writeFloat(__io__address + 2060, surface_smooth_shape_preservation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'surface_smooth_current_vertex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the position of each individual vertex influences the final result
+	 * @see #__DNA__FIELD__surface_smooth_current_vertex
+	 */
+	
+	public float getSurface_smooth_current_vertex() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2140);
+		} else {
+			return __io__block.readFloat(__io__address + 2064);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'surface_smooth_current_vertex'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How much the position of each individual vertex influences the final result
+	 * @see #__DNA__FIELD__surface_smooth_current_vertex
+	 */
+	
+	public void setSurface_smooth_current_vertex(float surface_smooth_current_vertex) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2140, surface_smooth_current_vertex);
+		} else {
+			__io__block.writeFloat(__io__address + 2064, surface_smooth_current_vertex);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'surface_smooth_iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of smoothing iterations per brush step
+	 * @see #__DNA__FIELD__surface_smooth_iterations
+	 */
+	
+	public int getSurface_smooth_iterations() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2144);
+		} else {
+			return __io__block.readInt(__io__address + 2068);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'surface_smooth_iterations'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Number of smoothing iterations per brush step
+	 * @see #__DNA__FIELD__surface_smooth_iterations
+	 */
+	
+	public void setSurface_smooth_iterations(int surface_smooth_iterations) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2144, surface_smooth_iterations);
+		} else {
+			__io__block.writeInt(__io__address + 2068, surface_smooth_iterations);
 		}
 	}
 
@@ -4019,9 +5075,9 @@ public class Brush extends CFacade {
 	public float getMultiplane_scrape_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2076);
+			return __io__block.readFloat(__io__address + 2148);
 		} else {
-			return __io__block.readFloat(__io__address + 2000);
+			return __io__block.readFloat(__io__address + 2072);
 		}
 	}
 
@@ -4037,9 +5093,9 @@ public class Brush extends CFacade {
 	public void setMultiplane_scrape_angle(float multiplane_scrape_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2076, multiplane_scrape_angle);
+			__io__block.writeFloat(__io__address + 2148, multiplane_scrape_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 2000, multiplane_scrape_angle);
+			__io__block.writeFloat(__io__address + 2072, multiplane_scrape_angle);
 		}
 	}
 
@@ -4054,9 +5110,9 @@ public class Brush extends CFacade {
 	public int getTexture_overlay_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2080);
+			return __io__block.readInt(__io__address + 2152);
 		} else {
-			return __io__block.readInt(__io__address + 2004);
+			return __io__block.readInt(__io__address + 2076);
 		}
 	}
 
@@ -4071,9 +5127,9 @@ public class Brush extends CFacade {
 	public void setTexture_overlay_alpha(int texture_overlay_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2080, texture_overlay_alpha);
+			__io__block.writeInt(__io__address + 2152, texture_overlay_alpha);
 		} else {
-			__io__block.writeInt(__io__address + 2004, texture_overlay_alpha);
+			__io__block.writeInt(__io__address + 2076, texture_overlay_alpha);
 		}
 	}
 
@@ -4085,9 +5141,9 @@ public class Brush extends CFacade {
 	public int getMask_overlay_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2084);
+			return __io__block.readInt(__io__address + 2156);
 		} else {
-			return __io__block.readInt(__io__address + 2008);
+			return __io__block.readInt(__io__address + 2080);
 		}
 	}
 
@@ -4099,9 +5155,9 @@ public class Brush extends CFacade {
 	public void setMask_overlay_alpha(int mask_overlay_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2084, mask_overlay_alpha);
+			__io__block.writeInt(__io__address + 2156, mask_overlay_alpha);
 		} else {
-			__io__block.writeInt(__io__address + 2008, mask_overlay_alpha);
+			__io__block.writeInt(__io__address + 2080, mask_overlay_alpha);
 		}
 	}
 
@@ -4113,9 +5169,9 @@ public class Brush extends CFacade {
 	public int getCursor_overlay_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2088);
+			return __io__block.readInt(__io__address + 2160);
 		} else {
-			return __io__block.readInt(__io__address + 2012);
+			return __io__block.readInt(__io__address + 2084);
 		}
 	}
 
@@ -4127,9 +5183,9 @@ public class Brush extends CFacade {
 	public void setCursor_overlay_alpha(int cursor_overlay_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2088, cursor_overlay_alpha);
+			__io__block.writeInt(__io__address + 2160, cursor_overlay_alpha);
 		} else {
-			__io__block.writeInt(__io__address + 2012, cursor_overlay_alpha);
+			__io__block.writeInt(__io__address + 2084, cursor_overlay_alpha);
 		}
 	}
 
@@ -4144,9 +5200,9 @@ public class Brush extends CFacade {
 	public float getUnprojected_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2092);
+			return __io__block.readFloat(__io__address + 2164);
 		} else {
-			return __io__block.readFloat(__io__address + 2016);
+			return __io__block.readFloat(__io__address + 2088);
 		}
 	}
 
@@ -4161,9 +5217,9 @@ public class Brush extends CFacade {
 	public void setUnprojected_radius(float unprojected_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2092, unprojected_radius);
+			__io__block.writeFloat(__io__address + 2164, unprojected_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 2016, unprojected_radius);
+			__io__block.writeFloat(__io__address + 2088, unprojected_radius);
 		}
 	}
 
@@ -4179,9 +5235,9 @@ public class Brush extends CFacade {
 	public float getSharp_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2096);
+			return __io__block.readFloat(__io__address + 2168);
 		} else {
-			return __io__block.readFloat(__io__address + 2020);
+			return __io__block.readFloat(__io__address + 2092);
 		}
 	}
 
@@ -4197,9 +5253,9 @@ public class Brush extends CFacade {
 	public void setSharp_threshold(float sharp_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2096, sharp_threshold);
+			__io__block.writeFloat(__io__address + 2168, sharp_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 2020, sharp_threshold);
+			__io__block.writeFloat(__io__address + 2092, sharp_threshold);
 		}
 	}
 
@@ -4214,9 +5270,9 @@ public class Brush extends CFacade {
 	public int getBlur_kernel_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2100);
+			return __io__block.readInt(__io__address + 2172);
 		} else {
-			return __io__block.readInt(__io__address + 2024);
+			return __io__block.readInt(__io__address + 2096);
 		}
 	}
 
@@ -4231,9 +5287,9 @@ public class Brush extends CFacade {
 	public void setBlur_kernel_radius(int blur_kernel_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2100, blur_kernel_radius);
+			__io__block.writeInt(__io__address + 2172, blur_kernel_radius);
 		} else {
-			__io__block.writeInt(__io__address + 2024, blur_kernel_radius);
+			__io__block.writeInt(__io__address + 2096, blur_kernel_radius);
 		}
 	}
 
@@ -4245,9 +5301,9 @@ public class Brush extends CFacade {
 	public int getBlur_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2104);
+			return __io__block.readInt(__io__address + 2176);
 		} else {
-			return __io__block.readInt(__io__address + 2028);
+			return __io__block.readInt(__io__address + 2100);
 		}
 	}
 
@@ -4259,9 +5315,9 @@ public class Brush extends CFacade {
 	public void setBlur_mode(int blur_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2104, blur_mode);
+			__io__block.writeInt(__io__address + 2176, blur_mode);
 		} else {
-			__io__block.writeInt(__io__address + 2028, blur_mode);
+			__io__block.writeInt(__io__address + 2100, blur_mode);
 		}
 	}
 
@@ -4277,9 +5333,9 @@ public class Brush extends CFacade {
 	public float getFill_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2108);
+			return __io__block.readFloat(__io__address + 2180);
 		} else {
-			return __io__block.readFloat(__io__address + 2032);
+			return __io__block.readFloat(__io__address + 2104);
 		}
 	}
 
@@ -4295,9 +5351,9 @@ public class Brush extends CFacade {
 	public void setFill_threshold(float fill_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2108, fill_threshold);
+			__io__block.writeFloat(__io__address + 2180, fill_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 2032, fill_threshold);
+			__io__block.writeFloat(__io__address + 2104, fill_threshold);
 		}
 	}
 
@@ -4313,9 +5369,9 @@ public class Brush extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2036, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4328,9 +5384,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2112;
+			__dna__offset = 2184;
 		} else {
-			__dna__offset = 2036;
+			__dna__offset = 2108;
 		}
 		if (__io__equals(add_col, __io__address + __dna__offset)) {
 			return;
@@ -4353,9 +5409,9 @@ public class Brush extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2052, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4368,9 +5424,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2128;
+			__dna__offset = 2200;
 		} else {
-			__dna__offset = 2052;
+			__dna__offset = 2124;
 		}
 		if (__io__equals(sub_col, __io__address + __dna__offset)) {
 			return;
@@ -4396,9 +5452,9 @@ public class Brush extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2068, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4414,9 +5470,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2144;
+			__dna__offset = 2216;
 		} else {
-			__dna__offset = 2068;
+			__dna__offset = 2140;
 		}
 		if (__io__equals(stencil_pos, __io__address + __dna__offset)) {
 			return;
@@ -4442,9 +5498,9 @@ public class Brush extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2076, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4460,9 +5516,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2152;
+			__dna__offset = 2224;
 		} else {
-			__dna__offset = 2076;
+			__dna__offset = 2148;
 		}
 		if (__io__equals(stencil_dimension, __io__address + __dna__offset)) {
 			return;
@@ -4488,9 +5544,9 @@ public class Brush extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2084, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4506,9 +5562,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2160;
+			__dna__offset = 2232;
 		} else {
-			__dna__offset = 2084;
+			__dna__offset = 2156;
 		}
 		if (__io__equals(mask_stencil_pos, __io__address + __dna__offset)) {
 			return;
@@ -4534,9 +5590,9 @@ public class Brush extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 2168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 2092, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 2164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4552,9 +5608,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2168;
+			__dna__offset = 2240;
 		} else {
-			__dna__offset = 2092;
+			__dna__offset = 2164;
 		}
 		if (__io__equals(mask_stencil_dimension, __io__address + __dna__offset)) {
 			return;
@@ -4577,9 +5633,9 @@ public class Brush extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BrushGpencilSettings.class};
 		return new CPointer<BrushGpencilSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BrushGpencilSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -4597,9 +5653,9 @@ public class Brush extends CFacade {
 	{
 		long __address = ((gpencil_settings == null) ? 0 : gpencil_settings.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2176, __address);
+			__io__block.writeLong(__io__address + 2248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2100, __address);
+			__io__block.writeLong(__io__address + 2172, __address);
 		}
 	}
 

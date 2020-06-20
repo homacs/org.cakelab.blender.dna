@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=152, size64=176)
+@CMetaData(size32=144, size64=168)
 public class BlurShaderFxData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BlurShaderFxData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 503;
+	public static final int __DNA__SDNA_INDEX = 509;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfx'.
@@ -58,12 +58,12 @@ public class BlurShaderFxData extends CFacade {
 	 * <pre>
 	 * BlurShaderFxData blurshaderfxdata = ...;
 	 * CPointer&lt;Object&gt; p = blurshaderfxdata.__dna__addressof(BlurShaderFxData.__DNA__FIELD__radius);
-	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_radius = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_radius = p.cast(new Class[]{CArrayFacade.class, Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'radius'</li>
-	 * <li>Signature: 'int[2]'</li>
+	 * <li>Signature: 'float[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
@@ -116,50 +116,27 @@ public class BlurShaderFxData extends CFacade {
 	public static final long[] __DNA__FIELD__samples = new long[]{104, 116};
 
 	/**
-	 * Field descriptor (offset) for struct member 'coc'.
+	 * Field descriptor (offset) for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Circle of confusion. </p>
+	 * <p> Rotation of blur effect. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BlurShaderFxData blurshaderfxdata = ...;
-	 * CPointer&lt;Object&gt; p = blurshaderfxdata.__dna__addressof(BlurShaderFxData.__DNA__FIELD__coc);
-	 * CPointer&lt;Float&gt; p_coc = p.cast(new Class[]{Float.class});
+	 * CPointer&lt;Object&gt; p = blurshaderfxdata.__dna__addressof(BlurShaderFxData.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'coc'</li>
+	 * <li>Field: 'rotation'</li>
 	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coc = new long[]{108, 120};
-
-	/**
-	 * Field descriptor (offset) for struct member 'blur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not visible in rna. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlurShaderFxData blurshaderfxdata = ...;
-	 * CPointer&lt;Object&gt; p = blurshaderfxdata.__dna__addressof(BlurShaderFxData.__DNA__FIELD__blur);
-	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p_blur = p.cast(new Class[]{CArrayFacade.class, Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'blur'</li>
-	 * <li>Signature: 'int[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__blur = new long[]{112, 124};
+	public static final long[] __DNA__FIELD__rotation = new long[]{108, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -179,7 +156,7 @@ public class BlurShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{120, 132};
+	public static final long[] __DNA__FIELD___pad = new long[]{112, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -199,7 +176,7 @@ public class BlurShaderFxData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{124, 136};
+	public static final long[] __DNA__FIELD__runtime = new long[]{116, 128};
 
 	public BlurShaderFxData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -250,16 +227,16 @@ public class BlurShaderFxData extends CFacade {
 	 * @see #__DNA__FIELD__radius
 	 */
 	
-	public CArrayFacade<Integer> getRadius() throws IOException
+	public CArrayFacade<Float> getRadius() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		int[] __dna__dimensions = new int[]{
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -268,7 +245,7 @@ public class BlurShaderFxData extends CFacade {
 	 * @see #__DNA__FIELD__radius
 	 */
 	
-	public void setRadius(CArrayFacade<Integer> radius) throws IOException
+	public void setRadius(CArrayFacade<Float> radius) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -354,14 +331,14 @@ public class BlurShaderFxData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'coc'.
+	 * Get method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Circle of confusion. </p>
-	 * @see #__DNA__FIELD__coc
+	 * <p> Rotation of blur effect. </p>
+	 * @see #__DNA__FIELD__rotation
 	 */
 	
-	public float getCoc() throws IOException
+	public float getRotation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readFloat(__io__address + 120);
@@ -371,65 +348,19 @@ public class BlurShaderFxData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'coc'.
+	 * Set method for struct member 'rotation'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Circle of confusion. </p>
-	 * @see #__DNA__FIELD__coc
+	 * <p> Rotation of blur effect. </p>
+	 * @see #__DNA__FIELD__rotation
 	 */
 	
-	public void setCoc(float coc) throws IOException
+	public void setRotation(float rotation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 120, coc);
+			__io__block.writeFloat(__io__address + 120, rotation);
 		} else {
-			__io__block.writeFloat(__io__address + 108, coc);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'blur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not visible in rna. </p>
-	 * @see #__DNA__FIELD__blur
-	 */
-	
-	public CArrayFacade<Integer> getBlur() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Integer>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'blur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not visible in rna. </p>
-	 * @see #__DNA__FIELD__blur
-	 */
-	
-	public void setBlur(CArrayFacade<Integer> blur) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 124;
-		} else {
-			__dna__offset = 112;
-		}
-		if (__io__equals(blur, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, blur)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, blur);
-		} else {
-			__io__generic__copy( getBlur(), blur);
+			__io__block.writeFloat(__io__address + 108, rotation);
 		}
 	}
 
@@ -445,9 +376,9 @@ public class BlurShaderFxData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -460,9 +391,9 @@ public class BlurShaderFxData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 132;
+			__dna__offset = 124;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 112;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -481,9 +412,9 @@ public class BlurShaderFxData extends CFacade {
 	public ShaderFxData_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ShaderFxData_Runtime(__io__address + 136, __io__block, __io__blockTable);
+			return new ShaderFxData_Runtime(__io__address + 128, __io__block, __io__blockTable);
 		} else {
-			return new ShaderFxData_Runtime(__io__address + 124, __io__block, __io__blockTable);
+			return new ShaderFxData_Runtime(__io__address + 116, __io__block, __io__blockTable);
 		}
 	}
 
@@ -496,9 +427,9 @@ public class BlurShaderFxData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 116;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

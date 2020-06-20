@@ -34,7 +34,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is sued as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
+	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -417,7 +417,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is sued as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
+	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * @see #__DNA__FIELD__mesh_eval
 	 */
 	
@@ -437,7 +437,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'mesh_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is sued as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
+	 * <p> Evaluated mesh for objects which do not have effective modifiers. This mesh is used as a result of modifier stack evaluation. Since modifier stack evaluation is threaded on object level we need some synchronization. </p>
 	 * @see #__DNA__FIELD__mesh_eval
 	 */
 	

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Actions --------------------------------<mdash/><mdash/>  Action - reusable F-Curve 'bag' (act)</p><p> This contains F-Curves that may affect settings from more than one {@link ID}  blocktype and/or datablock (i.e. sub-data linked/used directly to the {@link ID}  block that the animation data is linked to), but with the restriction that the other unrelated data (i.e. data that is not directly used or linked to by the source {@link ID}  block).</p><p> It serves as a 'unit' of reusable animation information (i.e. keyframes/motion data), that affects a group of related settings (as defined by the user). </p>
  */
 
-@CMetaData(size32=168, size64=232)
+@CMetaData(size32=176, size64=240)
 public class bAction extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bAction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 325;
+	public static final int __DNA__SDNA_INDEX = 329;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -48,7 +48,7 @@ public class bAction extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 120/152</li>
+	 * <li>Actual Size (32bit/64bit): 128/160</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -74,7 +74,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curves = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__curves = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.
@@ -99,7 +99,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chanbase = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__chanbase = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'groups'.
@@ -122,7 +122,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__groups = new long[]{136, 184};
+	public static final long[] __DNA__FIELD__groups = new long[]{144, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'markers'.
@@ -145,7 +145,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__markers = new long[]{144, 200};
+	public static final long[] __DNA__FIELD__markers = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -168,7 +168,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{152, 216};
+	public static final long[] __DNA__FIELD__flag = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_marker'.
@@ -191,7 +191,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_marker = new long[]{156, 220};
+	public static final long[] __DNA__FIELD__active_marker = new long[]{164, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'idroot'.
@@ -214,7 +214,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__idroot = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__idroot = new long[]{168, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -234,7 +234,7 @@ public class bAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{164, 228};
+	public static final long[] __DNA__FIELD___pad = new long[]{172, 236};
 
 	public bAction(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -297,9 +297,9 @@ public class bAction extends CFacade {
 	public ListBase getCurves() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 120, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
 		}
 	}
 
@@ -315,9 +315,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		}
 		if (__io__equals(curves, __io__address + __dna__offset)) {
 			return;
@@ -341,9 +341,9 @@ public class bAction extends CFacade {
 	public ListBase getChanbase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 168, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 176, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 128, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
 		}
 	}
 
@@ -361,9 +361,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		}
 		if (__io__equals(chanbase, __io__address + __dna__offset)) {
 			return;
@@ -385,9 +385,9 @@ public class bAction extends CFacade {
 	public ListBase getGroups() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 184, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 136, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
 		}
 	}
 
@@ -403,9 +403,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(groups, __io__address + __dna__offset)) {
 			return;
@@ -427,9 +427,9 @@ public class bAction extends CFacade {
 	public ListBase getMarkers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 144, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -445,9 +445,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		}
 		if (__io__equals(markers, __io__address + __dna__offset)) {
 			return;
@@ -469,9 +469,9 @@ public class bAction extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -486,9 +486,9 @@ public class bAction extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, flag);
+			__io__block.writeInt(__io__address + 224, flag);
 		} else {
-			__io__block.writeInt(__io__address + 152, flag);
+			__io__block.writeInt(__io__address + 160, flag);
 		}
 	}
 
@@ -503,9 +503,9 @@ public class bAction extends CFacade {
 	public int getActive_marker() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 220);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -520,9 +520,9 @@ public class bAction extends CFacade {
 	public void setActive_marker(int active_marker) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 220, active_marker);
+			__io__block.writeInt(__io__address + 228, active_marker);
 		} else {
-			__io__block.writeInt(__io__address + 156, active_marker);
+			__io__block.writeInt(__io__address + 164, active_marker);
 		}
 	}
 
@@ -537,9 +537,9 @@ public class bAction extends CFacade {
 	public int getIdroot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -554,9 +554,9 @@ public class bAction extends CFacade {
 	public void setIdroot(int idroot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, idroot);
+			__io__block.writeInt(__io__address + 232, idroot);
 		} else {
-			__io__block.writeInt(__io__address + 160, idroot);
+			__io__block.writeInt(__io__address + 168, idroot);
 		}
 	}
 
@@ -572,9 +572,9 @@ public class bAction extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -587,9 +587,9 @@ public class bAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 228;
+			__dna__offset = 236;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

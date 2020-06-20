@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=3144, size64=3176)
+@CMetaData(size32=3152, size64=3184)
 public class Editing extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 286;
+	public static final int __DNA__SDNA_INDEX = 290;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
@@ -369,6 +369,29 @@ public class Editing extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__prefetch_job = new long[]{3140, 3168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'disk_cache_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Editing editing = ...;
+	 * CPointer&lt;Object&gt; p = editing.__dna__addressof(Editing.__DNA__FIELD__disk_cache_timestamp);
+	 * CPointer&lt;int64&gt; p_disk_cache_timestamp = p.cast(new Class[]{int64.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'disk_cache_timestamp'</li>
+	 * <li>Signature: 'int64_t'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__disk_cache_timestamp = new long[]{3144, 3176};
 
 	public Editing(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -941,6 +964,40 @@ public class Editing extends CFacade {
 			__io__block.writeLong(__io__address + 3168, __address);
 		} else {
 			__io__block.writeLong(__io__address + 3140, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'disk_cache_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * @see #__DNA__FIELD__disk_cache_timestamp
+	 */
+	
+	public long getDisk_cache_timestamp() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt64(__io__address + 3176);
+		} else {
+			return __io__block.readInt64(__io__address + 3144);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'disk_cache_timestamp'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * @see #__DNA__FIELD__disk_cache_timestamp
+	 */
+	
+	public void setDisk_cache_timestamp(long disk_cache_timestamp) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt64(__io__address + 3176, disk_cache_timestamp);
+		} else {
+			__io__block.writeInt64(__io__address + 3144, disk_cache_timestamp);
 		}
 	}
 

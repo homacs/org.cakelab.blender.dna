@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=272, size64=312)
+@CMetaData(size32=464, size64=504)
 public class WarpModifierData extends CFacade {
 
 	/**
@@ -93,6 +93,26 @@ public class WarpModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__map_object = new long[]{104, 128};
 
 	/**
+	 * Field descriptor (offset) for struct member 'map_bone'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WarpModifierData warpmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = warpmodifierdata.__dna__addressof(WarpModifierData.__DNA__FIELD__map_bone);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_map_bone = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'map_bone'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__map_bone = new long[]{108, 136};
+
+	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -113,7 +133,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -133,7 +153,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{172, 200};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{236, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -153,7 +173,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{176, 204};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{240, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_from'.
@@ -176,7 +196,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_from = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__object_from = new long[]{244, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_to'.
@@ -196,7 +216,53 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_to = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__object_to = new long[]{248, 280};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bone_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WarpModifierData warpmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = warpmodifierdata.__dna__addressof(WarpModifierData.__DNA__FIELD__bone_from);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_bone_from = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bone_from'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bone_from = new long[]{252, 288};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bone_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WarpModifierData warpmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = warpmodifierdata.__dna__addressof(WarpModifierData.__DNA__FIELD__bone_to);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_bone_to = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bone_to'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bone_to = new long[]{316, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curfalloff'.
@@ -216,7 +282,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curfalloff = new long[]{188, 224};
+	public static final long[] __DNA__FIELD__curfalloff = new long[]{380, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -239,7 +305,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{192, 232};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{384, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -259,7 +325,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{256, 296};
+	public static final long[] __DNA__FIELD__strength = new long[]{448, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_radius'.
@@ -279,13 +345,10 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_radius = new long[]{260, 300};
+	public static final long[] __DNA__FIELD__falloff_radius = new long[]{452, 492};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not used yet. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -302,7 +365,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{264, 304};
+	public static final long[] __DNA__FIELD__flag = new long[]{456, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
@@ -322,7 +385,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_type = new long[]{265, 305};
+	public static final long[] __DNA__FIELD__falloff_type = new long[]{457, 497};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -342,7 +405,7 @@ public class WarpModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{266, 306};
+	public static final long[] __DNA__FIELD___pad = new long[]{458, 498};
 
 	public WarpModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -459,6 +522,46 @@ public class WarpModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public CArrayFacade<Byte> getMap_bone() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public void setMap_bone(CArrayFacade<Byte> map_bone) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 136;
+		} else {
+			__dna__offset = 108;
+		}
+		if (__io__equals(map_bone, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, map_bone)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, map_bone);
+		} else {
+			__io__generic__copy( getMap_bone(), map_bone);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -473,9 +576,9 @@ public class WarpModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -491,9 +594,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 172;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -512,9 +615,9 @@ public class WarpModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 236);
 		}
 	}
 
@@ -526,9 +629,9 @@ public class WarpModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 172, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 236, uvlayer_tmp);
 		}
 	}
 
@@ -540,9 +643,9 @@ public class WarpModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -554,9 +657,9 @@ public class WarpModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, texmapping);
+			__io__block.writeInt(__io__address + 268, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 176, texmapping);
+			__io__block.writeInt(__io__address + 240, texmapping);
 		}
 	}
 
@@ -572,9 +675,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -592,9 +695,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __address = ((object_from == null) ? 0 : object_from.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 
@@ -607,9 +710,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -624,9 +727,101 @@ public class WarpModifierData extends CFacade {
 	{
 		long __address = ((object_to == null) ? 0 : object_to.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 248, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bone_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__bone_from
+	 */
+	
+	public CArrayFacade<Byte> getBone_from() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bone_from'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__bone_from
+	 */
+	
+	public void setBone_from(CArrayFacade<Byte> bone_from) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 288;
+		} else {
+			__dna__offset = 252;
+		}
+		if (__io__equals(bone_from, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, bone_from)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, bone_from);
+		} else {
+			__io__generic__copy( getBone_from(), bone_from);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bone_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__bone_to
+	 */
+	
+	public CArrayFacade<Byte> getBone_to() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bone_to'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional name of bone target, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__bone_to
+	 */
+	
+	public void setBone_to(CArrayFacade<Byte> bone_to) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 352;
+		} else {
+			__dna__offset = 316;
+		}
+		if (__io__equals(bone_to, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, bone_to)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, bone_to);
+		} else {
+			__io__generic__copy( getBone_to(), bone_to);
 		}
 	}
 
@@ -639,9 +834,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 416);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 380);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -656,9 +851,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __address = ((curfalloff == null) ? 0 : curfalloff.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 416, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 380, __address);
 		}
 	}
 
@@ -677,9 +872,9 @@ public class WarpModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -695,9 +890,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 424;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 384;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -716,9 +911,9 @@ public class WarpModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 488);
 		} else {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 448);
 		}
 	}
 
@@ -730,9 +925,9 @@ public class WarpModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 296, strength);
+			__io__block.writeFloat(__io__address + 488, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 256, strength);
+			__io__block.writeFloat(__io__address + 448, strength);
 		}
 	}
 
@@ -744,9 +939,9 @@ public class WarpModifierData extends CFacade {
 	public float getFalloff_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 492);
 		} else {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 452);
 		}
 	}
 
@@ -758,43 +953,37 @@ public class WarpModifierData extends CFacade {
 	public void setFalloff_radius(float falloff_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, falloff_radius);
+			__io__block.writeFloat(__io__address + 492, falloff_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 260, falloff_radius);
+			__io__block.writeFloat(__io__address + 452, falloff_radius);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not used yet. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 304);
+			return __io__block.readByte(__io__address + 496);
 		} else {
-			return __io__block.readByte(__io__address + 264);
+			return __io__block.readByte(__io__address + 456);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Not used yet. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 304, flag);
+			__io__block.writeByte(__io__address + 496, flag);
 		} else {
-			__io__block.writeByte(__io__address + 264, flag);
+			__io__block.writeByte(__io__address + 456, flag);
 		}
 	}
 
@@ -806,9 +995,9 @@ public class WarpModifierData extends CFacade {
 	public byte getFalloff_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 305);
+			return __io__block.readByte(__io__address + 497);
 		} else {
-			return __io__block.readByte(__io__address + 265);
+			return __io__block.readByte(__io__address + 457);
 		}
 	}
 
@@ -820,9 +1009,9 @@ public class WarpModifierData extends CFacade {
 	public void setFalloff_type(byte falloff_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 305, falloff_type);
+			__io__block.writeByte(__io__address + 497, falloff_type);
 		} else {
-			__io__block.writeByte(__io__address + 265, falloff_type);
+			__io__block.writeByte(__io__address + 457, falloff_type);
 		}
 	}
 
@@ -838,9 +1027,9 @@ public class WarpModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 306, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 498, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 266, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 458, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -853,9 +1042,9 @@ public class WarpModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 306;
+			__dna__offset = 498;
 		} else {
-			__dna__offset = 266;
+			__dna__offset = 458;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

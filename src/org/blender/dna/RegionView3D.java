@@ -27,7 +27,7 @@ public class RegionView3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'winmat'.
@@ -715,7 +715,30 @@ public class RegionView3D extends CFacade {
 	public static final long[] __DNA__FIELD__view = new long[]{858, 882};
 
 	/**
+	 * Field descriptor (offset) for struct member 'view_axis_roll'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__view_axis_roll);
+	 * CPointer&lt;Byte&gt; p_view_axis_roll = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'view_axis_roll'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__view_axis_roll = new long[]{859, 883};
+
+	/**
 	 * Field descriptor (offset) for struct member 'viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -732,7 +755,30 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock = new long[]{859, 883};
+	public static final long[] __DNA__FIELD__viewlock = new long[]{860, 884};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime_viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__runtime_viewlock);
+	 * CPointer&lt;Byte&gt; p_runtime_viewlock = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime_viewlock'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime_viewlock = new long[]{861, 885};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewlock_quad'.
@@ -755,7 +801,7 @@ public class RegionView3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{860, 884};
+	public static final long[] __DNA__FIELD__viewlock_quad = new long[]{862, 886};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -771,11 +817,11 @@ public class RegionView3D extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{861, 885};
+	public static final long[] __DNA__FIELD___pad = new long[]{863, 887};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ofs_lock'.
@@ -878,13 +924,13 @@ public class RegionView3D extends CFacade {
 	 * <pre>
 	 * RegionView3D regionview3d = ...;
 	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__lpersp);
-	 * CPointer&lt;Short&gt; p_lpersp = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_lpersp = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'lpersp'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__lpersp = new long[]{892, 916};
@@ -898,16 +944,56 @@ public class RegionView3D extends CFacade {
 	 * <pre>
 	 * RegionView3D regionview3d = ...;
 	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__lview);
-	 * CPointer&lt;Short&gt; p_lview = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_lview = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'lview'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lview = new long[]{894, 918};
+	public static final long[] __DNA__FIELD__lview = new long[]{893, 917};
+
+	/**
+	 * Field descriptor (offset) for struct member 'lview_axis_roll'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD__lview_axis_roll);
+	 * CPointer&lt;Byte&gt; p_lview_axis_roll = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lview_axis_roll'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lview_axis_roll = new long[]{894, 918};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad8'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RegionView3D regionview3d = ...;
+	 * CPointer&lt;Object&gt; p = regionview3d.__dna__addressof(RegionView3D.__DNA__FIELD___pad8);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad8 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad8'</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad8 = new long[]{895, 919};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_angle'.
@@ -2186,11 +2272,11 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'viewlock'.
-	 * @see #__DNA__FIELD__viewlock
+	 * Get method for struct member 'view_axis_roll'.
+	 * @see #__DNA__FIELD__view_axis_roll
 	 */
 	
-	public byte getViewlock() throws IOException
+	public byte getView_axis_roll() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 883);
@@ -2200,16 +2286,84 @@ public class RegionView3D extends CFacade {
 	}
 
 	/**
+	 * Set method for struct member 'view_axis_roll'.
+	 * @see #__DNA__FIELD__view_axis_roll
+	 */
+	
+	public void setView_axis_roll(byte view_axis_roll) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 883, view_axis_roll);
+		} else {
+			__io__block.writeByte(__io__address + 859, view_axis_roll);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * @see #__DNA__FIELD__viewlock
+	 */
+	
+	public byte getViewlock() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 884);
+		} else {
+			return __io__block.readByte(__io__address + 860);
+		}
+	}
+
+	/**
 	 * Set method for struct member 'viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
 	 * @see #__DNA__FIELD__viewlock
 	 */
 	
 	public void setViewlock(byte viewlock) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 883, viewlock);
+			__io__block.writeByte(__io__address + 884, viewlock);
 		} else {
-			__io__block.writeByte(__io__address + 859, viewlock);
+			__io__block.writeByte(__io__address + 860, viewlock);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime_viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * @see #__DNA__FIELD__runtime_viewlock
+	 */
+	
+	public byte getRuntime_viewlock() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 885);
+		} else {
+			return __io__block.readByte(__io__address + 861);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime_viewlock'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Options for runtime only locking (cleared on file read) Should usually be accessed with {@link RV3D_LOCK_FLAGS()} ! </p>
+	 * @see #__DNA__FIELD__runtime_viewlock
+	 */
+	
+	public void setRuntime_viewlock(byte runtime_viewlock) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 885, runtime_viewlock);
+		} else {
+			__io__block.writeByte(__io__address + 861, runtime_viewlock);
 		}
 	}
 
@@ -2224,9 +2378,9 @@ public class RegionView3D extends CFacade {
 	public byte getViewlock_quad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 884);
+			return __io__block.readByte(__io__address + 886);
 		} else {
-			return __io__block.readByte(__io__address + 860);
+			return __io__block.readByte(__io__address + 862);
 		}
 	}
 
@@ -2241,9 +2395,9 @@ public class RegionView3D extends CFacade {
 	public void setViewlock_quad(byte viewlock_quad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 884, viewlock_quad);
+			__io__block.writeByte(__io__address + 886, viewlock_quad);
 		} else {
-			__io__block.writeByte(__io__address + 860, viewlock_quad);
+			__io__block.writeByte(__io__address + 862, viewlock_quad);
 		}
 	}
 
@@ -2256,12 +2410,12 @@ public class RegionView3D extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 885, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 887, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 861, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 863, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2274,9 +2428,9 @@ public class RegionView3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 885;
+			__dna__offset = 887;
 		} else {
-			__dna__offset = 861;
+			__dna__offset = 863;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -2449,12 +2603,12 @@ public class RegionView3D extends CFacade {
 	 * @see #__DNA__FIELD__lpersp
 	 */
 	
-	public short getLpersp() throws IOException
+	public byte getLpersp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 916);
+			return __io__block.readByte(__io__address + 916);
 		} else {
-			return __io__block.readShort(__io__address + 892);
+			return __io__block.readByte(__io__address + 892);
 		}
 	}
 
@@ -2466,12 +2620,12 @@ public class RegionView3D extends CFacade {
 	 * @see #__DNA__FIELD__lpersp
 	 */
 	
-	public void setLpersp(short lpersp) throws IOException
+	public void setLpersp(byte lpersp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 916, lpersp);
+			__io__block.writeByte(__io__address + 916, lpersp);
 		} else {
-			__io__block.writeShort(__io__address + 892, lpersp);
+			__io__block.writeByte(__io__address + 892, lpersp);
 		}
 	}
 
@@ -2480,12 +2634,12 @@ public class RegionView3D extends CFacade {
 	 * @see #__DNA__FIELD__lview
 	 */
 	
-	public short getLview() throws IOException
+	public byte getLview() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 918);
+			return __io__block.readByte(__io__address + 917);
 		} else {
-			return __io__block.readShort(__io__address + 894);
+			return __io__block.readByte(__io__address + 893);
 		}
 	}
 
@@ -2494,12 +2648,80 @@ public class RegionView3D extends CFacade {
 	 * @see #__DNA__FIELD__lview
 	 */
 	
-	public void setLview(short lview) throws IOException
+	public void setLview(byte lview) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 918, lview);
+			__io__block.writeByte(__io__address + 917, lview);
 		} else {
-			__io__block.writeShort(__io__address + 894, lview);
+			__io__block.writeByte(__io__address + 893, lview);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'lview_axis_roll'.
+	 * @see #__DNA__FIELD__lview_axis_roll
+	 */
+	
+	public byte getLview_axis_roll() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 918);
+		} else {
+			return __io__block.readByte(__io__address + 894);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lview_axis_roll'.
+	 * @see #__DNA__FIELD__lview_axis_roll
+	 */
+	
+	public void setLview_axis_roll(byte lview_axis_roll) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 918, lview_axis_roll);
+		} else {
+			__io__block.writeByte(__io__address + 894, lview_axis_roll);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad8'.
+	 * @see #__DNA__FIELD___pad8
+	 */
+	
+	public CArrayFacade<Byte> get_pad8() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 919, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 895, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad8'.
+	 * @see #__DNA__FIELD___pad8
+	 */
+	
+	public void set_pad8(CArrayFacade<Byte> _pad8) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 919;
+		} else {
+			__dna__offset = 895;
+		}
+		if (__io__equals(_pad8, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad8)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad8);
+		} else {
+			__io__generic__copy( get_pad8(), _pad8);
 		}
 	}
 

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=116, size64=136)
+@CMetaData(size32=124, size64=144)
 public class RemeshModifierData extends CFacade {
 
 	/**
@@ -196,6 +196,49 @@ public class RemeshModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{115, 135};
+
+	/**
+	 * Field descriptor (offset) for struct member 'voxel_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB Voxel remesh properties. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RemeshModifierData remeshmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = remeshmodifierdata.__dna__addressof(RemeshModifierData.__DNA__FIELD__voxel_size);
+	 * CPointer&lt;Float&gt; p_voxel_size = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'voxel_size'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__voxel_size = new long[]{116, 136};
+
+	/**
+	 * Field descriptor (offset) for struct member 'adaptivity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RemeshModifierData remeshmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = remeshmodifierdata.__dna__addressof(RemeshModifierData.__DNA__FIELD__adaptivity);
+	 * CPointer&lt;Float&gt; p_adaptivity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'adaptivity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__adaptivity = new long[]{120, 140};
 
 	public RemeshModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -452,6 +495,68 @@ public class RemeshModifierData extends CFacade {
 			__io__block.writeByte(__io__address + 135, _pad);
 		} else {
 			__io__block.writeByte(__io__address + 115, _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'voxel_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB Voxel remesh properties. </p>
+	 * @see #__DNA__FIELD__voxel_size
+	 */
+	
+	public float getVoxel_size() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 136);
+		} else {
+			return __io__block.readFloat(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'voxel_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> OpenVDB Voxel remesh properties. </p>
+	 * @see #__DNA__FIELD__voxel_size
+	 */
+	
+	public void setVoxel_size(float voxel_size) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 136, voxel_size);
+		} else {
+			__io__block.writeFloat(__io__address + 116, voxel_size);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'adaptivity'.
+	 * @see #__DNA__FIELD__adaptivity
+	 */
+	
+	public float getAdaptivity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 140);
+		} else {
+			return __io__block.readFloat(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'adaptivity'.
+	 * @see #__DNA__FIELD__adaptivity
+	 */
+	
+	public void setAdaptivity(float adaptivity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 140, adaptivity);
+		} else {
+			__io__block.writeFloat(__io__address + 120, adaptivity);
 		}
 	}
 

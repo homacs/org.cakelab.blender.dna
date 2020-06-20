@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=308, size64=352)
+@CMetaData(size32=372, size64=416)
 public class bNodeSocket extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bNodeSocket extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 366;
+	public static final int __DNA__SDNA_INDEX = 370;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -225,7 +225,7 @@ public class bNodeSocket extends CFacade {
 	 * Field descriptor (offset) for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. </p>
+	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -465,6 +465,29 @@ public class bNodeSocket extends CFacade {
 	public static final long[] __DNA__FIELD___pad = new long[]{241, 269};
 
 	/**
+	 * Field descriptor (offset) for struct member 'label'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom dynamic defined label, MAX_NAME. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeSocket bnodesocket = ...;
+	 * CPointer&lt;Object&gt; p = bnodesocket.__dna__addressof(bNodeSocket.__DNA__FIELD__label);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_label = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'label'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__label = new long[]{244, 272};
+
+	/**
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -485,7 +508,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache = new long[]{244, 272};
+	public static final long[] __DNA__FIELD__cache = new long[]{308, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'own_index'.
@@ -510,7 +533,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__own_index = new long[]{248, 280};
+	public static final long[] __DNA__FIELD__own_index = new long[]{312, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'to_index'.
@@ -535,7 +558,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__to_index = new long[]{252, 284};
+	public static final long[] __DNA__FIELD__to_index = new long[]{316, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'groupsock'.
@@ -560,7 +583,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__groupsock = new long[]{256, 288};
+	public static final long[] __DNA__FIELD__groupsock = new long[]{320, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'link'.
@@ -583,7 +606,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__link = new long[]{260, 296};
+	public static final long[] __DNA__FIELD__link = new long[]{324, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ns'.
@@ -608,7 +631,7 @@ public class bNodeSocket extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 44/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ns = new long[]{264, 304};
+	public static final long[] __DNA__FIELD__ns = new long[]{328, 368};
 
 	public bNodeSocket(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -942,7 +965,7 @@ public class bNodeSocket extends CFacade {
 	 * Get method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. </p>
+	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -959,7 +982,7 @@ public class bNodeSocket extends CFacade {
 	 * Set method for struct member 'limit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Max. number of links. </p>
+	 * <p> Max. number of links. Read via nodeSocketLinkLimit, because the limit might be defined on the socket type. </p>
 	 * @see #__DNA__FIELD__limit
 	 */
 	
@@ -1325,6 +1348,52 @@ public class bNodeSocket extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'label'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom dynamic defined label, MAX_NAME. </p>
+	 * @see #__DNA__FIELD__label
+	 */
+	
+	public CArrayFacade<Byte> getLabel() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'label'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Custom dynamic defined label, MAX_NAME. </p>
+	 * @see #__DNA__FIELD__label
+	 */
+	
+	public void setLabel(CArrayFacade<Byte> label) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 272;
+		} else {
+			__dna__offset = 244;
+		}
+		if (__io__equals(label, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, label)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, label);
+		} else {
+			__io__generic__copy( getLabel(), label);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1336,9 +1405,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 244);
+			__dna__targetAddress = __io__block.readLong(__io__address + 308);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1356,9 +1425,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __address = ((cache == null) ? 0 : cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		} else {
-			__io__block.writeLong(__io__address + 244, __address);
+			__io__block.writeLong(__io__address + 308, __address);
 		}
 	}
 
@@ -1375,9 +1444,9 @@ public class bNodeSocket extends CFacade {
 	public int getOwn_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 280);
+			return __io__block.readInt(__io__address + 344);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 312);
 		}
 	}
 
@@ -1394,9 +1463,9 @@ public class bNodeSocket extends CFacade {
 	public void setOwn_index(int own_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 280, own_index);
+			__io__block.writeInt(__io__address + 344, own_index);
 		} else {
-			__io__block.writeInt(__io__address + 248, own_index);
+			__io__block.writeInt(__io__address + 312, own_index);
 		}
 	}
 
@@ -1413,9 +1482,9 @@ public class bNodeSocket extends CFacade {
 	public int getTo_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 284);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return __io__block.readInt(__io__address + 252);
+			return __io__block.readInt(__io__address + 316);
 		}
 	}
 
@@ -1432,9 +1501,9 @@ public class bNodeSocket extends CFacade {
 	public void setTo_index(int to_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 284, to_index);
+			__io__block.writeInt(__io__address + 348, to_index);
 		} else {
-			__io__block.writeInt(__io__address + 252, to_index);
+			__io__block.writeInt(__io__address + 316, to_index);
 		}
 	}
 
@@ -1452,9 +1521,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 320);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeSocket.class};
 		return new CPointer<bNodeSocket>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeSocket.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1474,9 +1543,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __address = ((groupsock == null) ? 0 : groupsock.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 320, __address);
 		}
 	}
 
@@ -1492,9 +1561,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 324);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeLink.class};
 		return new CPointer<bNodeLink>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeLink.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1512,9 +1581,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __address = ((link == null) ? 0 : link.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 324, __address);
 		}
 	}
 
@@ -1531,9 +1600,9 @@ public class bNodeSocket extends CFacade {
 	public bNodeStack getNs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bNodeStack(__io__address + 304, __io__block, __io__blockTable);
+			return new bNodeStack(__io__address + 368, __io__block, __io__blockTable);
 		} else {
-			return new bNodeStack(__io__address + 264, __io__block, __io__blockTable);
+			return new bNodeStack(__io__address + 328, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1551,9 +1620,9 @@ public class bNodeSocket extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 368;
 		} else {
-			__dna__offset = 264;
+			__dna__offset = 328;
 		}
 		if (__io__equals(ns, __io__address + __dna__offset)) {
 			return;

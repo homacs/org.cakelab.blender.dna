@@ -113,6 +113,26 @@ public class LatticeModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__strength = new long[]{168, 192};
 
 	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LatticeModifierData latticemodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = latticemodifierdata.__dna__addressof(LatticeModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{172, 196};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -126,11 +146,11 @@ public class LatticeModifierData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{172, 196};
+	public static final long[] __DNA__FIELD___pad = new long[]{174, 198};
 
 	public LatticeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -283,6 +303,34 @@ public class LatticeModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 196);
+		} else {
+			return __io__block.readShort(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 196, flag);
+		} else {
+			__io__block.writeShort(__io__address + 172, flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -291,12 +339,12 @@ public class LatticeModifierData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 174, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -309,9 +357,9 @@ public class LatticeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 198;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 174;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

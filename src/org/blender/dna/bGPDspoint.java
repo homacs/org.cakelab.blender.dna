@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke Point' -> Coordinates may either be 2d or 3d depending on settings at the time -> Coordinates of point on stroke, in proportions of window size This assumes that the bottom-left corner is (0,0) </p>
  */
 
-@CMetaData(size32=52, size64=56)
+@CMetaData(size32=76, size64=80)
 public class bGPDspoint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDspoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 470;
+	public static final int __DNA__SDNA_INDEX = 475;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
@@ -232,6 +232,52 @@ public class bGPDspoint extends CFacade {
 	public static final long[] __DNA__FIELD__uv_rot = new long[]{32, 32};
 
 	/**
+	 * Field descriptor (offset) for struct member 'uv_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv for fill mode </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__uv_fill);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_uv_fill = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_fill'</li>
+	 * <li>Signature: 'float[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_fill = new long[]{36, 36};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vert_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color RGBA (A=mix factor). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDspoint bgpdspoint = ...;
+	 * CPointer&lt;Object&gt; p = bgpdspoint.__dna__addressof(bGPDspoint.__DNA__FIELD__vert_color);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_vert_color = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vert_color'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vert_color = new long[]{44, 44};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -252,7 +298,7 @@ public class bGPDspoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{36, 36};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{60, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -272,7 +318,7 @@ public class bGPDspoint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__runtime = new long[]{64, 64};
 
 	public bGPDspoint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -577,6 +623,98 @@ public class bGPDspoint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'uv_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv for fill mode </p>
+	 * @see #__DNA__FIELD__uv_fill
+	 */
+	
+	public CArrayFacade<Float> getUv_fill() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_fill'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Uv for fill mode </p>
+	 * @see #__DNA__FIELD__uv_fill
+	 */
+	
+	public void setUv_fill(CArrayFacade<Float> uv_fill) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 36;
+		} else {
+			__dna__offset = 36;
+		}
+		if (__io__equals(uv_fill, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, uv_fill)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, uv_fill);
+		} else {
+			__io__generic__copy( getUv_fill(), uv_fill);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vert_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color RGBA (A=mix factor). </p>
+	 * @see #__DNA__FIELD__vert_color
+	 */
+	
+	public CArrayFacade<Float> getVert_color() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 44, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vert_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vertex Color RGBA (A=mix factor). </p>
+	 * @see #__DNA__FIELD__vert_color
+	 */
+	
+	public void setVert_color(CArrayFacade<Float> vert_color) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 44;
+		} else {
+			__dna__offset = 44;
+		}
+		if (__io__equals(vert_color, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, vert_color)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, vert_color);
+		} else {
+			__io__generic__copy( getVert_color(), vert_color);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -591,9 +729,9 @@ public class bGPDspoint extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -609,9 +747,9 @@ public class bGPDspoint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__dna__offset = 60;
 		} else {
-			__dna__offset = 36;
+			__dna__offset = 60;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -630,9 +768,9 @@ public class bGPDspoint extends CFacade {
 	public bGPDspoint_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPDspoint_Runtime(__io__address + 40, __io__block, __io__blockTable);
+			return new bGPDspoint_Runtime(__io__address + 64, __io__block, __io__blockTable);
 		} else {
-			return new bGPDspoint_Runtime(__io__address + 40, __io__block, __io__blockTable);
+			return new bGPDspoint_Runtime(__io__address + 64, __io__block, __io__blockTable);
 		}
 	}
 
@@ -645,9 +783,9 @@ public class bGPDspoint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 40;
+			__dna__offset = 64;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 64;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

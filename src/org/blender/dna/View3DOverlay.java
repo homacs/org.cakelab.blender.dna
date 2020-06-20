@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D Viewport Overlay settings. </p>
  */
 
-@CMetaData(size32=64, size64=64)
+@CMetaData(size32=72, size64=72)
 public class View3DOverlay extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class View3DOverlay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 213;
+	public static final int __DNA__SDNA_INDEX = 216;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -255,33 +256,31 @@ public class View3DOverlay extends CFacade {
 	public static final long[] __DNA__FIELD__sculpt_mode_mask_opacity = new long[]{36, 36};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Armature edit/pose mode settings. </p>
+	 * Field descriptor (offset) for struct member 'sculpt_mode_face_sets_opacity'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * View3DOverlay view3doverlay = ...;
-	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD___pad3);
-	 * CPointer&lt;Integer&gt; p__pad3 = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD__sculpt_mode_face_sets_opacity);
+	 * CPointer&lt;Float&gt; p_sculpt_mode_face_sets_opacity = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: 'sculpt_mode_face_sets_opacity'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__sculpt_mode_face_sets_opacity = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection
+	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <p> Armature edit/pose mode settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -327,8 +326,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fade factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -393,6 +391,50 @@ public class View3DOverlay extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gpencil_fade_layer = new long[]{60, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gpencil_vertex_paint_opacity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <p> Factor for mixing vertex paint with original color </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DOverlay view3doverlay = ...;
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD__gpencil_vertex_paint_opacity);
+	 * CPointer&lt;Float&gt; p_gpencil_vertex_paint_opacity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gpencil_vertex_paint_opacity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gpencil_vertex_paint_opacity = new long[]{64, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DOverlay view3doverlay = ...;
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD___pad4);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad4'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad4 = new long[]{68, 68};
 
 	public View3DOverlay(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -733,36 +775,30 @@ public class View3DOverlay extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Armature edit/pose mode settings. </p>
-	 * @see #__DNA__FIELD___pad3
+	 * Get method for struct member 'sculpt_mode_face_sets_opacity'.
+	 * @see #__DNA__FIELD__sculpt_mode_face_sets_opacity
 	 */
 	
-	public int get_pad3() throws IOException
+	public float getSculpt_mode_face_sets_opacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readFloat(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readFloat(__io__address + 40);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad3'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Armature edit/pose mode settings. </p>
-	 * @see #__DNA__FIELD___pad3
+	 * Set method for struct member 'sculpt_mode_face_sets_opacity'.
+	 * @see #__DNA__FIELD__sculpt_mode_face_sets_opacity
 	 */
 	
-	public void set_pad3(int _pad3) throws IOException
+	public void setSculpt_mode_face_sets_opacity(float sculpt_mode_face_sets_opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, _pad3);
+			__io__block.writeFloat(__io__address + 40, sculpt_mode_face_sets_opacity);
 		} else {
-			__io__block.writeInt(__io__address + 40, _pad3);
+			__io__block.writeFloat(__io__address + 40, sculpt_mode_face_sets_opacity);
 		}
 	}
 
@@ -770,7 +806,8 @@ public class View3DOverlay extends CFacade {
 	 * Get method for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection
+	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <p> Armature edit/pose mode settings. </p>
 	 * @see #__DNA__FIELD__xray_alpha_bone
 	 */
 	
@@ -787,7 +824,8 @@ public class View3DOverlay extends CFacade {
 	 * Set method for struct member 'xray_alpha_bone'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Opacity to use for bone selection
+	 * Opacity to use for bone selection<h4>Blender Source Code:</h4>
+	 * <p> Armature edit/pose mode settings. </p>
 	 * @see #__DNA__FIELD__xray_alpha_bone
 	 */
 	
@@ -839,8 +877,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Get method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fade factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */
@@ -857,8 +894,7 @@ public class View3DOverlay extends CFacade {
 	/**
 	 * Set method for struct member 'gpencil_paper_opacity'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Fade factor<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Grease pencil settings. </p>
 	 * @see #__DNA__FIELD__gpencil_paper_opacity
 	 */
@@ -937,6 +973,82 @@ public class View3DOverlay extends CFacade {
 			__io__block.writeFloat(__io__address + 60, gpencil_fade_layer);
 		} else {
 			__io__block.writeFloat(__io__address + 60, gpencil_fade_layer);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gpencil_vertex_paint_opacity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <p> Factor for mixing vertex paint with original color </p>
+	 * @see #__DNA__FIELD__gpencil_vertex_paint_opacity
+	 */
+	
+	public float getGpencil_vertex_paint_opacity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 64);
+		} else {
+			return __io__block.readFloat(__io__address + 64);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gpencil_vertex_paint_opacity'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vertex Paint mix factor<h4>Blender Source Code:</h4>
+	 * <p> Factor for mixing vertex paint with original color </p>
+	 * @see #__DNA__FIELD__gpencil_vertex_paint_opacity
+	 */
+	
+	public void setGpencil_vertex_paint_opacity(float gpencil_vertex_paint_opacity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 64, gpencil_vertex_paint_opacity);
+		} else {
+			__io__block.writeFloat(__io__address + 64, gpencil_vertex_paint_opacity);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public CArrayFacade<Byte> get_pad4() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 68;
+		} else {
+			__dna__offset = 68;
+		}
+		if (__io__equals(_pad4, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad4)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
+		} else {
+			__io__generic__copy( get_pad4(), _pad4);
 		}
 	}
 

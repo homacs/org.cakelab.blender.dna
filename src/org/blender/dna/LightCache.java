@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=92, size64=120)
+@CMetaData(size32=100, size64=128)
 public class LightCache extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LightCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 654;
+	public static final int __DNA__SDNA_INDEX = 661;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -50,6 +50,52 @@ public class LightCache extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'version'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LightCache lightcache = ...;
+	 * CPointer&lt;Object&gt; p = lightcache.__dna__addressof(LightCache.__DNA__FIELD__version);
+	 * CPointer&lt;Integer&gt; p_version = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'version'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__version = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of data this cache contains. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * LightCache lightcache = ...;
+	 * CPointer&lt;Object&gt; p = lightcache.__dna__addressof(LightCache.__DNA__FIELD__type);
+	 * CPointer&lt;Integer&gt; p_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{8, 8};
+
+	/**
 	 * Field descriptor (offset) for struct member 'cube_len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -70,7 +116,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cube_len = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__cube_len = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_len'.
@@ -90,7 +136,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_len = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__grid_len = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mips_len'.
@@ -113,7 +159,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mips_len = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__mips_len = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vis_res'.
@@ -136,7 +182,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vis_res = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__vis_res = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ref_res'.
@@ -156,7 +202,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ref_res = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__ref_res = new long[]{28, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -176,7 +222,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{24, 24};
+	public static final long[] __DNA__FIELD___pad = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_tx'.
@@ -199,7 +245,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_tx = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__grid_tx = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cube_tx'.
@@ -222,7 +268,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cube_tx = new long[]{56, 64};
+	public static final long[] __DNA__FIELD__cube_tx = new long[]{64, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cube_mips'.
@@ -245,7 +291,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cube_mips = new long[]{80, 96};
+	public static final long[] __DNA__FIELD__cube_mips = new long[]{88, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cube_data'.
@@ -268,7 +314,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cube_data = new long[]{84, 104};
+	public static final long[] __DNA__FIELD__cube_data = new long[]{92, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_data'.
@@ -288,7 +334,7 @@ public class LightCache extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_data = new long[]{88, 112};
+	public static final long[] __DNA__FIELD__grid_data = new long[]{96, 120};
 
 	public LightCache(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -327,6 +373,74 @@ public class LightCache extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'version'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
+	 * @see #__DNA__FIELD__version
+	 */
+	
+	public int getVersion() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 4);
+		} else {
+			return __io__block.readInt(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'version'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Version number to know if the cache data is compatible with this version of blender. </p>
+	 * @see #__DNA__FIELD__version
+	 */
+	
+	public void setVersion(int version) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 4, version);
+		} else {
+			__io__block.writeInt(__io__address + 4, version);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of data this cache contains. </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public int getType() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 8);
+		} else {
+			return __io__block.readInt(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Type of data this cache contains. </p>
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public void setType(int type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 8, type);
+		} else {
+			__io__block.writeInt(__io__address + 8, type);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'cube_len'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -337,9 +451,9 @@ public class LightCache extends CFacade {
 	public int getCube_len() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 4);
+			return __io__block.readInt(__io__address + 12);
 		} else {
-			return __io__block.readInt(__io__address + 4);
+			return __io__block.readInt(__io__address + 12);
 		}
 	}
 
@@ -354,9 +468,9 @@ public class LightCache extends CFacade {
 	public void setCube_len(int cube_len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 4, cube_len);
+			__io__block.writeInt(__io__address + 12, cube_len);
 		} else {
-			__io__block.writeInt(__io__address + 4, cube_len);
+			__io__block.writeInt(__io__address + 12, cube_len);
 		}
 	}
 
@@ -368,9 +482,9 @@ public class LightCache extends CFacade {
 	public int getGrid_len() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readInt(__io__address + 16);
 		} else {
-			return __io__block.readInt(__io__address + 8);
+			return __io__block.readInt(__io__address + 16);
 		}
 	}
 
@@ -382,9 +496,9 @@ public class LightCache extends CFacade {
 	public void setGrid_len(int grid_len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 8, grid_len);
+			__io__block.writeInt(__io__address + 16, grid_len);
 		} else {
-			__io__block.writeInt(__io__address + 8, grid_len);
+			__io__block.writeInt(__io__address + 16, grid_len);
 		}
 	}
 
@@ -399,9 +513,9 @@ public class LightCache extends CFacade {
 	public int getMips_len() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readInt(__io__address + 20);
 		} else {
-			return __io__block.readInt(__io__address + 12);
+			return __io__block.readInt(__io__address + 20);
 		}
 	}
 
@@ -416,9 +530,9 @@ public class LightCache extends CFacade {
 	public void setMips_len(int mips_len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, mips_len);
+			__io__block.writeInt(__io__address + 20, mips_len);
 		} else {
-			__io__block.writeInt(__io__address + 12, mips_len);
+			__io__block.writeInt(__io__address + 20, mips_len);
 		}
 	}
 
@@ -433,9 +547,9 @@ public class LightCache extends CFacade {
 	public int getVis_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 24);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return __io__block.readInt(__io__address + 24);
 		}
 	}
 
@@ -450,9 +564,9 @@ public class LightCache extends CFacade {
 	public void setVis_res(int vis_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16, vis_res);
+			__io__block.writeInt(__io__address + 24, vis_res);
 		} else {
-			__io__block.writeInt(__io__address + 16, vis_res);
+			__io__block.writeInt(__io__address + 24, vis_res);
 		}
 	}
 
@@ -464,9 +578,9 @@ public class LightCache extends CFacade {
 	public int getRef_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 20);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
@@ -478,9 +592,9 @@ public class LightCache extends CFacade {
 	public void setRef_res(int ref_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 20, ref_res);
+			__io__block.writeInt(__io__address + 28, ref_res);
 		} else {
-			__io__block.writeInt(__io__address + 20, ref_res);
+			__io__block.writeInt(__io__address + 28, ref_res);
 		}
 	}
 
@@ -497,9 +611,9 @@ public class LightCache extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Byte>>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -512,9 +626,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		} else {
-			__dna__offset = 24;
+			__dna__offset = 32;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -536,9 +650,9 @@ public class LightCache extends CFacade {
 	public LightCacheTexture getGrid_tx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new LightCacheTexture(__io__address + 32, __io__block, __io__blockTable);
+			return new LightCacheTexture(__io__address + 40, __io__block, __io__blockTable);
 		} else {
-			return new LightCacheTexture(__io__address + 32, __io__block, __io__blockTable);
+			return new LightCacheTexture(__io__address + 40, __io__block, __io__blockTable);
 		}
 	}
 
@@ -554,9 +668,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(grid_tx, __io__address + __dna__offset)) {
 			return;
@@ -578,9 +692,9 @@ public class LightCache extends CFacade {
 	public LightCacheTexture getCube_tx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new LightCacheTexture(__io__address + 64, __io__block, __io__blockTable);
+			return new LightCacheTexture(__io__address + 72, __io__block, __io__blockTable);
 		} else {
-			return new LightCacheTexture(__io__address + 56, __io__block, __io__blockTable);
+			return new LightCacheTexture(__io__address + 64, __io__block, __io__blockTable);
 		}
 	}
 
@@ -596,9 +710,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 64;
+			__dna__offset = 72;
 		} else {
-			__dna__offset = 56;
+			__dna__offset = 64;
 		}
 		if (__io__equals(cube_tx, __io__address + __dna__offset)) {
 			return;
@@ -621,9 +735,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightCacheTexture.class};
 		return new CPointer<LightCacheTexture>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightCacheTexture.__DNA__SDNA_INDEX), __io__blockTable);
@@ -641,9 +755,9 @@ public class LightCache extends CFacade {
 	{
 		long __address = ((cube_mips == null) ? 0 : cube_mips.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		} else {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 
@@ -659,9 +773,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 84);
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightProbeCache.class};
 		return new CPointer<LightProbeCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightProbeCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -679,9 +793,9 @@ public class LightCache extends CFacade {
 	{
 		long __address = ((cube_data == null) ? 0 : cube_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		} else {
-			__io__block.writeLong(__io__address + 84, __address);
+			__io__block.writeLong(__io__address + 92, __address);
 		}
 	}
 
@@ -694,9 +808,9 @@ public class LightCache extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightGridCache.class};
 		return new CPointer<LightGridCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightGridCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -711,9 +825,9 @@ public class LightCache extends CFacade {
 	{
 		long __address = ((grid_data == null) ? 0 : grid_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		}
 	}
 

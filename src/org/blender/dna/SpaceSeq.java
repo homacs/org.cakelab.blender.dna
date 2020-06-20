@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Sequencer </p>
  */
 
-@CMetaData(size32=264, size64=328)
+@CMetaData(size32=256, size64=312)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 224;
+	public static final int __DNA__SDNA_INDEX = 227;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -533,46 +533,6 @@ public class SpaceSeq extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad2 = new long[]{249, 305};
-
-	/**
-	 * Field descriptor (offset) for struct member 'compositor'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD__compositor);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_compositor = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'compositor'</li>
-	 * <li>Signature: 'GPUFX*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__compositor = new long[]{256, 312};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceSeq spaceseq = ...;
-	 * CPointer&lt;Object&gt; p = spaceseq.__dna__addressof(SpaceSeq.__DNA__FIELD___pad3);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{260, 320};
 
 	public SpaceSeq(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1383,70 +1343,6 @@ public class SpaceSeq extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
 			__io__generic__copy( get_pad2(), _pad2);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'compositor'.
-	 * @see #__DNA__FIELD__compositor
-	 */
-	
-	public CPointer<Object> getCompositor() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'compositor'.
-	 * @see #__DNA__FIELD__compositor
-	 */
-	
-	public void setCompositor(CPointer<Object> compositor) throws IOException
-	{
-		long __address = ((compositor == null) ? 0 : compositor.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
-		} else {
-			__io__block.writeLong(__io__address + 256, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public CPointer<Object> get_pad3() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CPointer<Object> _pad3) throws IOException
-	{
-		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
-		} else {
-			__io__block.writeLong(__io__address + 260, __address);
 		}
 	}
 

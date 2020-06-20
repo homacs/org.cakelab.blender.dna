@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=188, size64=264)
+@CMetaData(size32=196, size64=272)
 public class ViewLayer extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ViewLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 642;
+	public static final int __DNA__SDNA_INDEX = 649;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -203,7 +203,7 @@ public class ViewLayer extends CFacade {
 	 * Field descriptor (offset) for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link LayerCollection} . </p>
+	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -398,6 +398,29 @@ public class ViewLayer extends CFacade {
 	public static final long[] __DNA__FIELD__freestyle_config = new long[]{132, 176};
 
 	/**
+	 * Field descriptor (offset) for struct member 'eevee'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    View layer settings for EEVEE
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__eevee);
+	 * CPointer&lt;ViewLayerEEVEE&gt; p_eevee = p.cast(new Class[]{ViewLayerEEVEE.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'eevee'</li>
+	 * <li>Signature: 'ViewLayerEEVEE'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__eevee = new long[]{172, 232};
+
+	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -418,7 +441,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawdata = new long[]{172, 232};
+	public static final long[] __DNA__FIELD__drawdata = new long[]{180, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_array'.
@@ -438,7 +461,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_array = new long[]{180, 248};
+	public static final long[] __DNA__FIELD__object_bases_array = new long[]{188, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_hash'.
@@ -458,7 +481,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{184, 256};
+	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{192, 264};
 
 	public ViewLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -764,7 +787,7 @@ public class ViewLayer extends CFacade {
 	 * Get method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link LayerCollection} . </p>
+	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */
 	
@@ -781,7 +804,7 @@ public class ViewLayer extends CFacade {
 	 * Set method for struct member 'layer_collections'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link LayerCollection} . </p>
+	 * <p> A view layer has one top level layer collection, because a scene has only one top level collection. The layer_collections list always contains a single element. {@link ListBase}  is convenient when applying functions to all layer collections recursively. </p>
 	 * @see #__DNA__FIELD__layer_collections
 	 */
 	
@@ -1077,6 +1100,48 @@ public class ViewLayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'eevee'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    View layer settings for EEVEE
+	 * @see #__DNA__FIELD__eevee
+	 */
+	
+	public ViewLayerEEVEE getEevee() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ViewLayerEEVEE(__io__address + 232, __io__block, __io__blockTable);
+		} else {
+			return new ViewLayerEEVEE(__io__address + 172, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'eevee'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    View layer settings for EEVEE
+	 * @see #__DNA__FIELD__eevee
+	 */
+	
+	public void setEevee(ViewLayerEEVEE eevee) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 232;
+		} else {
+			__dna__offset = 172;
+		}
+		if (__io__equals(eevee, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, eevee)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, eevee);
+		} else {
+			__io__generic__copy( getEevee(), eevee);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'drawdata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1087,9 +1152,9 @@ public class ViewLayer extends CFacade {
 	public ListBase getDrawdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 172, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 180, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1105,9 +1170,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(drawdata, __io__address + __dna__offset)) {
 			return;
@@ -1127,9 +1192,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Base.class};
 		return new CPointer<CPointer<Base>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1144,9 +1209,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_array == null) ? 0 : object_bases_array.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 
@@ -1159,9 +1224,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1176,9 +1241,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_hash == null) ? 0 : object_bases_hash.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		}
 	}
 

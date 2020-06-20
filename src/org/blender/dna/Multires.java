@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=420, size64=464)
+@CMetaData(size32=452, size64=496)
 public class Multires extends CFacade {
 
 	/**
@@ -246,7 +246,7 @@ public class Multires extends CFacade {
 	 * <ul>
 	 * <li>Field: 'vdata'</li>
 	 * <li>Signature: 'CustomData'</li>
-	 * <li>Actual Size (32bit/64bit): 196/208</li>
+	 * <li>Actual Size (32bit/64bit): 212/224</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__vdata = new long[]{20, 32};
@@ -266,10 +266,10 @@ public class Multires extends CFacade {
 	 * <ul>
 	 * <li>Field: 'fdata'</li>
 	 * <li>Signature: 'CustomData'</li>
-	 * <li>Actual Size (32bit/64bit): 196/208</li>
+	 * <li>Actual Size (32bit/64bit): 212/224</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fdata = new long[]{216, 240};
+	public static final long[] __DNA__FIELD__fdata = new long[]{232, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_flags'.
@@ -289,7 +289,7 @@ public class Multires extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_flags = new long[]{412, 448};
+	public static final long[] __DNA__FIELD__edge_flags = new long[]{444, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edge_creases'.
@@ -309,7 +309,7 @@ public class Multires extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edge_creases = new long[]{416, 456};
+	public static final long[] __DNA__FIELD__edge_creases = new long[]{448, 488};
 
 	public Multires(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -661,9 +661,9 @@ public class Multires extends CFacade {
 	public CustomData getFdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 240, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 256, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 216, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 232, __io__block, __io__blockTable);
 		}
 	}
 
@@ -676,9 +676,9 @@ public class Multires extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 232;
 		}
 		if (__io__equals(fdata, __io__address + __dna__offset)) {
 			return;
@@ -698,9 +698,9 @@ public class Multires extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 448);
+			__dna__targetAddress = __io__block.readLong(__io__address + 480);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 412);
+			__dna__targetAddress = __io__block.readLong(__io__address + 444);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Short.class};
 		return new CPointer<Short>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -715,9 +715,9 @@ public class Multires extends CFacade {
 	{
 		long __address = ((edge_flags == null) ? 0 : edge_flags.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 448, __address);
+			__io__block.writeLong(__io__address + 480, __address);
 		} else {
-			__io__block.writeLong(__io__address + 412, __address);
+			__io__block.writeLong(__io__address + 444, __address);
 		}
 	}
 
@@ -730,9 +730,9 @@ public class Multires extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 456);
+			__dna__targetAddress = __io__block.readLong(__io__address + 488);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 416);
+			__dna__targetAddress = __io__block.readLong(__io__address + 448);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -747,9 +747,9 @@ public class Multires extends CFacade {
 	{
 		long __address = ((edge_creases == null) ? 0 : edge_creases.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 456, __address);
+			__io__block.writeLong(__io__address + 488, __address);
 		} else {
-			__io__block.writeLong(__io__address + 416, __address);
+			__io__block.writeLong(__io__address + 448, __address);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D ViewPort Struct. </p>
  */
 
-@CMetaData(size32=1184, size64=1224)
+@CMetaData(size32=1200, size64=1240)
 public class View3D extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 215;
+	public static final int __DNA__SDNA_INDEX = 218;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -492,9 +492,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_centre_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional string for armature bone to define center, MAXBONENAME. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -620,9 +617,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_centre_cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional bool for 3d cursor to define center. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1241,7 +1235,7 @@ public class View3D extends CFacade {
 	 * <ul>
 	 * <li>Field: 'overlay'</li>
 	 * <li>Signature: 'View3DOverlay'</li>
-	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * <li>Actual Size (32bit/64bit): 72/72</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__overlay = new long[]{1116, 1152};
@@ -1264,10 +1258,10 @@ public class View3D extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'View3D_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1180, 1216};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1188, 1224};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2019,9 +2013,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob_centre_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional string for armature bone to define center, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__ob_centre_bone
 	 */
 	
@@ -2040,9 +2031,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob_centre_bone'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional string for armature bone to define center, MAXBONENAME. </p>
 	 * @see #__DNA__FIELD__ob_centre_bone
 	 */
 	
@@ -2239,9 +2227,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Get method for struct member 'ob_centre_cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional bool for 3d cursor to define center. </p>
 	 * @see #__DNA__FIELD__ob_centre_cursor
 	 */
 	
@@ -2256,9 +2241,6 @@ public class View3D extends CFacade {
 
 	/**
 	 * Set method for struct member 'ob_centre_cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Optional bool for 3d cursor to define center. </p>
 	 * @see #__DNA__FIELD__ob_centre_cursor
 	 */
 	
@@ -3188,9 +3170,9 @@ public class View3D extends CFacade {
 	public View3D_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3D_Runtime(__io__address + 1216, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1224, __io__block, __io__blockTable);
 		} else {
-			return new View3D_Runtime(__io__address + 1180, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1188, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3206,9 +3188,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1216;
+			__dna__offset = 1224;
 		} else {
-			__dna__offset = 1180;
+			__dna__offset = 1188;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

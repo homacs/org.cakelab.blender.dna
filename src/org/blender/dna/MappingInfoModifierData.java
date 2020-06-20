@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> not a real modifier </p>
  */
 
-@CMetaData(size32=180, size64=208)
+@CMetaData(size32=244, size64=272)
 public class MappingInfoModifierData extends CFacade {
 
 	/**
@@ -91,6 +91,26 @@ public class MappingInfoModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__map_object = new long[]{104, 128};
 
 	/**
+	 * Field descriptor (offset) for struct member 'map_bone'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MappingInfoModifierData mappinginfomodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mappinginfomodifierdata.__dna__addressof(MappingInfoModifierData.__DNA__FIELD__map_bone);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_map_bone = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'map_bone'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__map_bone = new long[]{108, 136};
+
+	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -111,7 +131,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -131,7 +151,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{172, 200};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{236, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -151,7 +171,7 @@ public class MappingInfoModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{176, 204};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{240, 268};
 
 	public MappingInfoModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -262,6 +282,46 @@ public class MappingInfoModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public CArrayFacade<Byte> getMap_bone() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'map_bone'.
+	 * @see #__DNA__FIELD__map_bone
+	 */
+	
+	public void setMap_bone(CArrayFacade<Byte> map_bone) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 136;
+		} else {
+			__dna__offset = 108;
+		}
+		if (__io__equals(map_bone, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, map_bone)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, map_bone);
+		} else {
+			__io__generic__copy( getMap_bone(), map_bone);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'uvlayer_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -276,9 +336,9 @@ public class MappingInfoModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -294,9 +354,9 @@ public class MappingInfoModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 172;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -315,9 +375,9 @@ public class MappingInfoModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 264);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 236);
 		}
 	}
 
@@ -329,9 +389,9 @@ public class MappingInfoModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 172, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 236, uvlayer_tmp);
 		}
 	}
 
@@ -343,9 +403,9 @@ public class MappingInfoModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 268);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 240);
 		}
 	}
 
@@ -357,9 +417,9 @@ public class MappingInfoModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, texmapping);
+			__io__block.writeInt(__io__address + 268, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 176, texmapping);
+			__io__block.writeInt(__io__address + 240, texmapping);
 		}
 	}
 

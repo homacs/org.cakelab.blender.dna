@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=192, size64=224)
+@CMetaData(size32=264, size64=296)
 public class SurfaceDeformModifierData extends CFacade {
 
 	/**
@@ -214,6 +214,66 @@ public class SurfaceDeformModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__mat = new long[]{128, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'strength'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SurfaceDeformModifierData surfacedeformmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = surfacedeformmodifierdata.__dna__addressof(SurfaceDeformModifierData.__DNA__FIELD__strength);
+	 * CPointer&lt;Float&gt; p_strength = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'strength'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__strength = new long[]{192, 224};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SurfaceDeformModifierData surfacedeformmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = surfacedeformmodifierdata.__dna__addressof(SurfaceDeformModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{196, 228};
+
+	/**
+	 * Field descriptor (offset) for struct member 'defgrp_name'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SurfaceDeformModifierData surfacedeformmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = surfacedeformmodifierdata.__dna__addressof(SurfaceDeformModifierData.__DNA__FIELD__defgrp_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_defgrp_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'defgrp_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{200, 232};
 
 	public SurfaceDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -517,6 +577,114 @@ public class SurfaceDeformModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, mat);
 		} else {
 			__io__generic__copy( getMat(), mat);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'strength'.
+	 * @see #__DNA__FIELD__strength
+	 */
+	
+	public float getStrength() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 224);
+		} else {
+			return __io__block.readFloat(__io__address + 192);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'strength'.
+	 * @see #__DNA__FIELD__strength
+	 */
+	
+	public void setStrength(float strength) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 224, strength);
+		} else {
+			__io__block.writeFloat(__io__address + 192, strength);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 228;
+		} else {
+			__dna__offset = 196;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'defgrp_name'.
+	 * @see #__DNA__FIELD__defgrp_name
+	 */
+	
+	public CArrayFacade<Byte> getDefgrp_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'defgrp_name'.
+	 * @see #__DNA__FIELD__defgrp_name
+	 */
+	
+	public void setDefgrp_name(CArrayFacade<Byte> defgrp_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 232;
+		} else {
+			__dna__offset = 200;
+		}
+		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, defgrp_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, defgrp_name);
+		} else {
+			__io__generic__copy( getDefgrp_name(), defgrp_name);
 		}
 	}
 
