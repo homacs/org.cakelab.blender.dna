@@ -107,13 +107,13 @@ public class UserDef extends CFacade {
 	 * <pre>
 	 * UserDef userdef = ...;
 	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__dupflag);
-	 * CPointer&lt;Short&gt; p_dupflag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_dupflag = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'dupflag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__dupflag = new long[]{12, 12};
@@ -139,7 +139,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pref_flag = new long[]{14, 14};
+	public static final long[] __DNA__FIELD__pref_flag = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'savetime'.
@@ -159,7 +159,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__savetime = new long[]{15, 15};
+	public static final long[] __DNA__FIELD__savetime = new long[]{17, 17};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mouse_emulate_3_button_modifier'.
@@ -179,7 +179,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mouse_emulate_3_button_modifier = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__mouse_emulate_3_button_modifier = new long[]{18, 18};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad4'.
@@ -195,11 +195,11 @@ public class UserDef extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad4'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{17, 17};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{19, 19};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tempdir'.
@@ -3370,12 +3370,12 @@ public class UserDef extends CFacade {
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
-	public short getDupflag() throws IOException
+	public int getDupflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readInt(__io__address + 12);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readInt(__io__address + 12);
 		}
 	}
 
@@ -3387,12 +3387,12 @@ public class UserDef extends CFacade {
 	 * @see #__DNA__FIELD__dupflag
 	 */
 	
-	public void setDupflag(short dupflag) throws IOException
+	public void setDupflag(int dupflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12, dupflag);
+			__io__block.writeInt(__io__address + 12, dupflag);
 		} else {
-			__io__block.writeShort(__io__address + 12, dupflag);
+			__io__block.writeInt(__io__address + 12, dupflag);
 		}
 	}
 
@@ -3407,9 +3407,9 @@ public class UserDef extends CFacade {
 	public byte getPref_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 14);
+			return __io__block.readByte(__io__address + 16);
 		} else {
-			return __io__block.readByte(__io__address + 14);
+			return __io__block.readByte(__io__address + 16);
 		}
 	}
 
@@ -3424,9 +3424,9 @@ public class UserDef extends CFacade {
 	public void setPref_flag(byte pref_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 14, pref_flag);
+			__io__block.writeByte(__io__address + 16, pref_flag);
 		} else {
-			__io__block.writeByte(__io__address + 14, pref_flag);
+			__io__block.writeByte(__io__address + 16, pref_flag);
 		}
 	}
 
@@ -3438,9 +3438,9 @@ public class UserDef extends CFacade {
 	public byte getSavetime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 15);
+			return __io__block.readByte(__io__address + 17);
 		} else {
-			return __io__block.readByte(__io__address + 15);
+			return __io__block.readByte(__io__address + 17);
 		}
 	}
 
@@ -3452,9 +3452,9 @@ public class UserDef extends CFacade {
 	public void setSavetime(byte savetime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 15, savetime);
+			__io__block.writeByte(__io__address + 17, savetime);
 		} else {
-			__io__block.writeByte(__io__address + 15, savetime);
+			__io__block.writeByte(__io__address + 17, savetime);
 		}
 	}
 
@@ -3466,9 +3466,9 @@ public class UserDef extends CFacade {
 	public byte getMouse_emulate_3_button_modifier() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 16);
+			return __io__block.readByte(__io__address + 18);
 		} else {
-			return __io__block.readByte(__io__address + 16);
+			return __io__block.readByte(__io__address + 18);
 		}
 	}
 
@@ -3480,9 +3480,9 @@ public class UserDef extends CFacade {
 	public void setMouse_emulate_3_button_modifier(byte mouse_emulate_3_button_modifier) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 16, mouse_emulate_3_button_modifier);
+			__io__block.writeByte(__io__address + 18, mouse_emulate_3_button_modifier);
 		} else {
-			__io__block.writeByte(__io__address + 16, mouse_emulate_3_button_modifier);
+			__io__block.writeByte(__io__address + 18, mouse_emulate_3_button_modifier);
 		}
 	}
 
@@ -3495,12 +3495,12 @@ public class UserDef extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 17, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 19, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 17, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 19, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3513,9 +3513,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 17;
+			__dna__offset = 19;
 		} else {
-			__dna__offset = 17;
+			__dna__offset = 19;
 		}
 		if (__io__equals(_pad4, __io__address + __dna__offset)) {
 			return;

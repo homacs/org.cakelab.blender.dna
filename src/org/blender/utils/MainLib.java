@@ -37,7 +37,7 @@ public class MainLib extends MainLibBase {
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 18;
+	public static final short BLENDER_SUBVERSION = 19;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
@@ -54,7 +54,7 @@ public class MainLib extends MainLibBase {
 	/**
 	 * BLENDER_VERSION and _SUBVERSION as a String.
 	 */
-	public static final String BLENDER_VERSION_STRING = "2.83.18";
+	public static final String BLENDER_VERSION_STRING = "2.83.19";
 
 	/**
 	 * BLENDER_MINVERSION and _MINSUBVERSION as a String.
@@ -306,8 +306,8 @@ public class MainLib extends MainLibBase {
 	 * 
 	 * <em>Please note that conversion requires to take into account all semantic 
 	 * reinterpretation to be found in Blender's source code in files 
-	 * <code>source/blender/blenloader/intern/versioning_*.c</code>. Thus, it is 
-	 * not enough to just apply type conversions on raw data.</em>
+	 * <code>source/blender/blenloader/intern/versioning_*.c</code>. These functions 
+	 * are not implemeted in Java .Blend.</em>
 	 * 
 	 * You can get file version info from {@link BlenderFile#readFileGlobal}.
 	 */
