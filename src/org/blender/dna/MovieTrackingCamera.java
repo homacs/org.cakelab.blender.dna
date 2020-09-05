@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=52, size64=56)
+@CMetaData(size32=60, size64=64)
 public class MovieTrackingCamera extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 571;
+	public static final int __DNA__SDNA_INDEX = 575;
 
 	/**
 	 * Field descriptor (offset) for struct member 'intrinsics'.
@@ -350,6 +350,53 @@ public class MovieTrackingCamera extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__division_k2 = new long[]{48, 52};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nuke_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <p> Nuke distortion model coefficients </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__nuke_k1);
+	 * CPointer&lt;Float&gt; p_nuke_k1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nuke_k1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nuke_k1 = new long[]{52, 56};
+
+	/**
+	 * Field descriptor (offset) for struct member 'nuke_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Nuke distortion
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__nuke_k2);
+	 * CPointer&lt;Float&gt; p_nuke_k2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'nuke_k2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__nuke_k2 = new long[]{56, 60};
 
 	public MovieTrackingCamera(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -872,6 +919,76 @@ public class MovieTrackingCamera extends CFacade {
 			__io__block.writeFloat(__io__address + 52, division_k2);
 		} else {
 			__io__block.writeFloat(__io__address + 48, division_k2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nuke_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <p> Nuke distortion model coefficients </p>
+	 * @see #__DNA__FIELD__nuke_k1
+	 */
+	
+	public float getNuke_k1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 56);
+		} else {
+			return __io__block.readFloat(__io__address + 52);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nuke_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Nuke distortion<h4>Blender Source Code:</h4>
+	 * <p> Nuke distortion model coefficients </p>
+	 * @see #__DNA__FIELD__nuke_k1
+	 */
+	
+	public void setNuke_k1(float nuke_k1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 56, nuke_k1);
+		} else {
+			__io__block.writeFloat(__io__address + 52, nuke_k1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'nuke_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Nuke distortion
+	 * @see #__DNA__FIELD__nuke_k2
+	 */
+	
+	public float getNuke_k2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 60);
+		} else {
+			return __io__block.readFloat(__io__address + 56);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'nuke_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Nuke distortion
+	 * @see #__DNA__FIELD__nuke_k2
+	 */
+	
+	public void setNuke_k2(float nuke_k2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 60, nuke_k2);
+		} else {
+			__io__block.writeFloat(__io__address + 56, nuke_k2);
 		}
 	}
 

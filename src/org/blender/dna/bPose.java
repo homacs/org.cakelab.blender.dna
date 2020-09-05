@@ -28,7 +28,7 @@ public class bPose extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 325;
+	public static final int __DNA__SDNA_INDEX = 326;
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanbase'.

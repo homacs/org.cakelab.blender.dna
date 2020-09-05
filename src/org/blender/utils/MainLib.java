@@ -31,19 +31,19 @@ public class MainLib extends MainLibBase {
 	 * This is the version of blender, the data model was generated from.
 	 * Implicitly, it is the maximum version the generated import code can understand.
 	 */
-	public static final short BLENDER_VERSION = 283;
+	public static final short BLENDER_VERSION = 290;
 
 	/**
 	 * This is the subversion of blender, the data model was generated from.
 	 * Implicitly, it is the maximum subversion the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 19;
+	public static final short BLENDER_SUBVERSION = 8;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
 	 * Every file with a version lower than this needs conversion.
 	 */
-	public static final short BLENDER_MINVERSION = 280;
+	public static final short BLENDER_MINVERSION = 290;
 
 	/**
 	 * This is the minimal version of blender, the generated data model corresponds to.
@@ -54,12 +54,12 @@ public class MainLib extends MainLibBase {
 	/**
 	 * BLENDER_VERSION and _SUBVERSION as a String.
 	 */
-	public static final String BLENDER_VERSION_STRING = "2.83.19";
+	public static final String BLENDER_VERSION_STRING = "2.90.8";
 
 	/**
 	 * BLENDER_MINVERSION and _MINSUBVERSION as a String.
 	 */
-	public static final String BLENDER_MINVERSION_STRING = "2.80.0";
+	public static final String BLENDER_MINVERSION_STRING = "2.90.0";
 
 	/**Linkage between main libraries.
 	 */
@@ -277,6 +277,11 @@ public class MainLib extends MainLibBase {
 	 * See {@link Volume} for documentation.
 	 */
 	private Volume volume;
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	private Simulation simulation;
 
 
 	public MainLib(BlenderFile blendFile) throws IOException{
@@ -921,6 +926,20 @@ public class MainLib extends MainLibBase {
 	 */
 	public void setVolume(Volume volume) {
 		this.volume = volume;
+	}
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	public Simulation getSimulation(){
+		return simulation;
+	}
+
+	/**
+	 * See {@link Simulation} for documentation.
+	 */
+	public void setSimulation(Simulation simulation) {
+		this.simulation = simulation;
 	}
 
 }

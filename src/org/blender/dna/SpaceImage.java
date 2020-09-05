@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Image/UV Editor </p>
  */
 
-@CMetaData(size32=10552, size64=10600)
+@CMetaData(size32=10560, size64=10608)
 public class SpaceImage extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 230;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -666,11 +666,31 @@ public class SpaceImage extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad2 = new long[]{10529, 10573};
+
+	/**
+	 * Field descriptor (offset) for struct member 'uv_opacity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__uv_opacity);
+	 * CPointer&lt;Float&gt; p_uv_opacity = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'uv_opacity'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__uv_opacity = new long[]{10536, 10580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tile_grid_shape'.
@@ -690,7 +710,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tile_grid_shape = new long[]{10532, 10576};
+	public static final long[] __DNA__FIELD__tile_grid_shape = new long[]{10540, 10584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_info'.
@@ -710,7 +730,7 @@ public class SpaceImage extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_info = new long[]{10540, 10584};
+	public static final long[] __DNA__FIELD__mask_info = new long[]{10548, 10592};
 
 	public SpaceImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1697,7 +1717,7 @@ public class SpaceImage extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			7
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 10573, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -1729,6 +1749,34 @@ public class SpaceImage extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'uv_opacity'.
+	 * @see #__DNA__FIELD__uv_opacity
+	 */
+	
+	public float getUv_opacity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 10580);
+		} else {
+			return __io__block.readFloat(__io__address + 10536);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'uv_opacity'.
+	 * @see #__DNA__FIELD__uv_opacity
+	 */
+	
+	public void setUv_opacity(float uv_opacity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 10580, uv_opacity);
+		} else {
+			__io__block.writeFloat(__io__address + 10536, uv_opacity);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'tile_grid_shape'.
 	 * @see #__DNA__FIELD__tile_grid_shape
 	 */
@@ -1740,9 +1788,9 @@ public class SpaceImage extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 10576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 10584, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 10532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 10540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1755,9 +1803,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10576;
+			__dna__offset = 10584;
 		} else {
-			__dna__offset = 10532;
+			__dna__offset = 10540;
 		}
 		if (__io__equals(tile_grid_shape, __io__address + __dna__offset)) {
 			return;
@@ -1776,9 +1824,9 @@ public class SpaceImage extends CFacade {
 	public MaskSpaceInfo getMask_info() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MaskSpaceInfo(__io__address + 10584, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10592, __io__block, __io__blockTable);
 		} else {
-			return new MaskSpaceInfo(__io__address + 10540, __io__block, __io__blockTable);
+			return new MaskSpaceInfo(__io__address + 10548, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1791,9 +1839,9 @@ public class SpaceImage extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 10584;
+			__dna__offset = 10592;
 		} else {
-			__dna__offset = 10540;
+			__dna__offset = 10548;
 		}
 		if (__io__equals(mask_info, __io__address + __dna__offset)) {
 			return;

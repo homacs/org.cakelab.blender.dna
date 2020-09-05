@@ -29,7 +29,7 @@ public class bDopeSheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 331;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
@@ -127,7 +127,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags to use for filtering data. </p>
+	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,6 +148,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'filterflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -388,7 +391,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags to use for filtering data. </p>
+	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -405,7 +408,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'filterflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags to use for filtering data. </p>
+	 * <p> Flags to use for filtering data #eAnimFilter_Flags. </p>
 	 * @see #__DNA__FIELD__filterflag
 	 */
 	
@@ -420,6 +423,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Get method for struct member 'filterflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
 	 * @see #__DNA__FIELD__filterflag2
 	 */
 	
@@ -434,6 +440,9 @@ public class bDopeSheet extends CFacade {
 
 	/**
 	 * Set method for struct member 'filterflag2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eDopeSheet_FilterFlag2}  </p>
 	 * @see #__DNA__FIELD__filterflag2
 	 */
 	

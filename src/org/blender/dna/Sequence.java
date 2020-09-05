@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=304, size64=408)
+@CMetaData(size32=304, size64=400)
 public class Sequence extends CFacade {
 
 	/**
@@ -1269,44 +1269,24 @@ public class Sequence extends CFacade {
 	public static final long[] __DNA__FIELD___pad2 = new long[]{284, 380};
 
 	/**
-	 * Field descriptor (offset) for struct member 'orig_sequence'.
+	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Sequence sequence = ...;
-	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__orig_sequence);
-	 * CPointer&lt;CPointer&lt;Sequence&gt;&gt; p_orig_sequence = p.cast(new Class[]{CPointer.class, Sequence.class});
+	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD__runtime);
+	 * CPointer&lt;SequenceRuntime&gt; p_runtime = p.cast(new Class[]{SequenceRuntime.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'orig_sequence'</li>
-	 * <li>Signature: 'Sequence*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SequenceRuntime'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orig_sequence = new long[]{296, 392};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Sequence sequence = ...;
-	 * CPointer&lt;Object&gt; p = sequence.__dna__addressof(Sequence.__DNA__FIELD___pad3);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'void*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{300, 400};
+	public static final long[] __DNA__FIELD__runtime = new long[]{296, 392};
 
 	public Sequence(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3237,66 +3217,38 @@ public class Sequence extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'orig_sequence'.
-	 * @see #__DNA__FIELD__orig_sequence
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
 	 */
 	
-	public CPointer<Sequence> getOrig_sequence() throws IOException
+	public SequenceRuntime getRuntime() throws IOException
 	{
-		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			return new SequenceRuntime(__io__address + 392, __io__block, __io__blockTable);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Sequence.class};
-		return new CPointer<Sequence>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Sequence.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'orig_sequence'.
-	 * @see #__DNA__FIELD__orig_sequence
-	 */
-	
-	public void setOrig_sequence(CPointer<Sequence> orig_sequence) throws IOException
-	{
-		long __address = ((orig_sequence == null) ? 0 : orig_sequence.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
-		} else {
-			__io__block.writeLong(__io__address + 296, __address);
+			return new SequenceRuntime(__io__address + 296, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
 	 */
 	
-	public CPointer<Object> get_pad3() throws IOException
+	public void setRuntime(SequenceRuntime runtime) throws IOException
 	{
-		long __dna__targetAddress;
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+			__dna__offset = 392;
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 300);
+			__dna__offset = 296;
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CPointer<Object> _pad3) throws IOException
-	{
-		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 400, __address);
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
 		} else {
-			__io__block.writeLong(__io__address + 300, __address);
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

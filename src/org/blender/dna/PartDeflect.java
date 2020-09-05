@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=220, size64=232)
+@CMetaData(size32=228, size64=240)
 public class PartDeflect extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class PartDeflect extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 165;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -300,6 +300,49 @@ public class PartDeflect extends CFacade {
 	public static final long[] __DNA__FIELD__f_flow = new long[]{28, 28};
 
 	/**
+	 * Field descriptor (offset) for struct member 'f_wind_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PartDeflect partdeflect = ...;
+	 * CPointer&lt;Object&gt; p = partdeflect.__dna__addressof(PartDeflect.__DNA__FIELD__f_wind_factor);
+	 * CPointer&lt;Float&gt; p_f_wind_factor = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'f_wind_factor'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__f_wind_factor = new long[]{32, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * PartDeflect partdeflect = ...;
+	 * CPointer&lt;Object&gt; p = partdeflect.__dna__addressof(PartDeflect.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad0 = new long[]{36, 36};
+
+	/**
 	 * Field descriptor (offset) for struct member 'f_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -320,7 +363,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_size = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__f_size = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f_power'.
@@ -343,7 +386,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_power = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__f_power = new long[]{44, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxdist'.
@@ -366,7 +409,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxdist = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__maxdist = new long[]{48, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mindist'.
@@ -389,7 +432,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mindist = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__mindist = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f_power_r'.
@@ -412,7 +455,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_power_r = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__f_power_r = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxrad'.
@@ -435,7 +478,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxrad = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__maxrad = new long[]{60, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'minrad'.
@@ -455,7 +498,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__minrad = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__minrad = new long[]{64, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_damp'.
@@ -478,7 +521,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_damp = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__pdef_damp = new long[]{68, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_rdamp'.
@@ -501,7 +544,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_rdamp = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__pdef_rdamp = new long[]{72, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_perm'.
@@ -524,7 +567,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_perm = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__pdef_perm = new long[]{76, 76};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_frict'.
@@ -547,7 +590,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_frict = new long[]{72, 72};
+	public static final long[] __DNA__FIELD__pdef_frict = new long[]{80, 80};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_rfrict'.
@@ -570,7 +613,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_rfrict = new long[]{76, 76};
+	public static final long[] __DNA__FIELD__pdef_rfrict = new long[]{84, 84};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_stickness'.
@@ -593,7 +636,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_stickness = new long[]{80, 80};
+	public static final long[] __DNA__FIELD__pdef_stickness = new long[]{88, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'absorption'.
@@ -616,7 +659,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__absorption = new long[]{84, 84};
+	public static final long[] __DNA__FIELD__absorption = new long[]{92, 92};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sbdamp'.
@@ -639,7 +682,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_sbdamp = new long[]{88, 88};
+	public static final long[] __DNA__FIELD__pdef_sbdamp = new long[]{96, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sbift'.
@@ -662,7 +705,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_sbift = new long[]{92, 92};
+	public static final long[] __DNA__FIELD__pdef_sbift = new long[]{100, 100};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_sboft'.
@@ -685,7 +728,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_sboft = new long[]{96, 96};
+	public static final long[] __DNA__FIELD__pdef_sboft = new long[]{104, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clump_fac'.
@@ -708,7 +751,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clump_fac = new long[]{100, 100};
+	public static final long[] __DNA__FIELD__clump_fac = new long[]{108, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clump_pow'.
@@ -728,7 +771,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clump_pow = new long[]{104, 104};
+	public static final long[] __DNA__FIELD__clump_pow = new long[]{112, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_freq'.
@@ -748,7 +791,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_freq = new long[]{108, 108};
+	public static final long[] __DNA__FIELD__kink_freq = new long[]{116, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_shape'.
@@ -768,7 +811,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_shape = new long[]{112, 112};
+	public static final long[] __DNA__FIELD__kink_shape = new long[]{120, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_amp'.
@@ -788,7 +831,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_amp = new long[]{116, 116};
+	public static final long[] __DNA__FIELD__kink_amp = new long[]{124, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'free_end'.
@@ -808,7 +851,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__free_end = new long[]{120, 120};
+	public static final long[] __DNA__FIELD__free_end = new long[]{128, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex_nabla'.
@@ -831,7 +874,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tex_nabla = new long[]{124, 124};
+	public static final long[] __DNA__FIELD__tex_nabla = new long[]{132, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex'.
@@ -854,7 +897,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tex = new long[]{128, 128};
+	public static final long[] __DNA__FIELD__tex = new long[]{136, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rng'.
@@ -877,7 +920,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rng = new long[]{132, 136};
+	public static final long[] __DNA__FIELD__rng = new long[]{140, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f_noise'.
@@ -900,7 +943,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_noise = new long[]{136, 144};
+	public static final long[] __DNA__FIELD__f_noise = new long[]{144, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'seed'.
@@ -923,7 +966,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__seed = new long[]{140, 148};
+	public static final long[] __DNA__FIELD__seed = new long[]{148, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec1'.
@@ -946,7 +989,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawvec1 = new long[]{144, 152};
+	public static final long[] __DNA__FIELD__drawvec1 = new long[]{152, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec2'.
@@ -969,7 +1012,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawvec2 = new long[]{160, 168};
+	public static final long[] __DNA__FIELD__drawvec2 = new long[]{168, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec_falloff_min'.
@@ -992,7 +1035,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawvec_falloff_min = new long[]{176, 184};
+	public static final long[] __DNA__FIELD__drawvec_falloff_min = new long[]{184, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -1012,7 +1055,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{188, 196};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{196, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawvec_falloff_max'.
@@ -1035,7 +1078,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawvec_falloff_max = new long[]{192, 200};
+	public static final long[] __DNA__FIELD__drawvec_falloff_max = new long[]{200, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -1055,7 +1098,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{204, 212};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{212, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'f_source'.
@@ -1078,7 +1121,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f_source = new long[]{208, 216};
+	public static final long[] __DNA__FIELD__f_source = new long[]{216, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdef_cfrict'.
@@ -1101,7 +1144,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdef_cfrict = new long[]{212, 224};
+	public static final long[] __DNA__FIELD__pdef_cfrict = new long[]{220, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -1121,7 +1164,7 @@ public class PartDeflect extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{216, 228};
+	public static final long[] __DNA__FIELD___pad = new long[]{224, 236};
 
 	public PartDeflect(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1528,6 +1571,80 @@ public class PartDeflect extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'f_wind_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
+	 * @see #__DNA__FIELD__f_wind_factor
+	 */
+	
+	public float getF_wind_factor() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 32);
+		} else {
+			return __io__block.readFloat(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'f_wind_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> How much force is reduced when acting parallel to a surface, e.g. cloth. </p>
+	 * @see #__DNA__FIELD__f_wind_factor
+	 */
+	
+	public void setF_wind_factor(float f_wind_factor) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 32, f_wind_factor);
+		} else {
+			__io__block.writeFloat(__io__address + 32, f_wind_factor);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public CArrayFacade<Byte> get_pad0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
+	 */
+	
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 36;
+		} else {
+			__dna__offset = 36;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'f_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1538,9 +1655,9 @@ public class PartDeflect extends CFacade {
 	public float getF_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 32);
+			return __io__block.readFloat(__io__address + 40);
 		} else {
-			return __io__block.readFloat(__io__address + 32);
+			return __io__block.readFloat(__io__address + 40);
 		}
 	}
 
@@ -1555,9 +1672,9 @@ public class PartDeflect extends CFacade {
 	public void setF_size(float f_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 32, f_size);
+			__io__block.writeFloat(__io__address + 40, f_size);
 		} else {
-			__io__block.writeFloat(__io__address + 32, f_size);
+			__io__block.writeFloat(__io__address + 40, f_size);
 		}
 	}
 
@@ -1572,9 +1689,9 @@ public class PartDeflect extends CFacade {
 	public float getF_power() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readFloat(__io__address + 44);
 		} else {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readFloat(__io__address + 44);
 		}
 	}
 
@@ -1589,9 +1706,9 @@ public class PartDeflect extends CFacade {
 	public void setF_power(float f_power) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 36, f_power);
+			__io__block.writeFloat(__io__address + 44, f_power);
 		} else {
-			__io__block.writeFloat(__io__address + 36, f_power);
+			__io__block.writeFloat(__io__address + 44, f_power);
 		}
 	}
 
@@ -1606,9 +1723,9 @@ public class PartDeflect extends CFacade {
 	public float getMaxdist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 40);
+			return __io__block.readFloat(__io__address + 48);
 		} else {
-			return __io__block.readFloat(__io__address + 40);
+			return __io__block.readFloat(__io__address + 48);
 		}
 	}
 
@@ -1623,9 +1740,9 @@ public class PartDeflect extends CFacade {
 	public void setMaxdist(float maxdist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 40, maxdist);
+			__io__block.writeFloat(__io__address + 48, maxdist);
 		} else {
-			__io__block.writeFloat(__io__address + 40, maxdist);
+			__io__block.writeFloat(__io__address + 48, maxdist);
 		}
 	}
 
@@ -1640,9 +1757,9 @@ public class PartDeflect extends CFacade {
 	public float getMindist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 44);
+			return __io__block.readFloat(__io__address + 52);
 		} else {
-			return __io__block.readFloat(__io__address + 44);
+			return __io__block.readFloat(__io__address + 52);
 		}
 	}
 
@@ -1657,9 +1774,9 @@ public class PartDeflect extends CFacade {
 	public void setMindist(float mindist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 44, mindist);
+			__io__block.writeFloat(__io__address + 52, mindist);
 		} else {
-			__io__block.writeFloat(__io__address + 44, mindist);
+			__io__block.writeFloat(__io__address + 52, mindist);
 		}
 	}
 
@@ -1674,9 +1791,9 @@ public class PartDeflect extends CFacade {
 	public float getF_power_r() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 56);
 		} else {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 56);
 		}
 	}
 
@@ -1691,9 +1808,9 @@ public class PartDeflect extends CFacade {
 	public void setF_power_r(float f_power_r) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 48, f_power_r);
+			__io__block.writeFloat(__io__address + 56, f_power_r);
 		} else {
-			__io__block.writeFloat(__io__address + 48, f_power_r);
+			__io__block.writeFloat(__io__address + 56, f_power_r);
 		}
 	}
 
@@ -1708,9 +1825,9 @@ public class PartDeflect extends CFacade {
 	public float getMaxrad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 52);
+			return __io__block.readFloat(__io__address + 60);
 		} else {
-			return __io__block.readFloat(__io__address + 52);
+			return __io__block.readFloat(__io__address + 60);
 		}
 	}
 
@@ -1725,9 +1842,9 @@ public class PartDeflect extends CFacade {
 	public void setMaxrad(float maxrad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 52, maxrad);
+			__io__block.writeFloat(__io__address + 60, maxrad);
 		} else {
-			__io__block.writeFloat(__io__address + 52, maxrad);
+			__io__block.writeFloat(__io__address + 60, maxrad);
 		}
 	}
 
@@ -1739,9 +1856,9 @@ public class PartDeflect extends CFacade {
 	public float getMinrad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 64);
 		} else {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 64);
 		}
 	}
 
@@ -1753,9 +1870,9 @@ public class PartDeflect extends CFacade {
 	public void setMinrad(float minrad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 56, minrad);
+			__io__block.writeFloat(__io__address + 64, minrad);
 		} else {
-			__io__block.writeFloat(__io__address + 56, minrad);
+			__io__block.writeFloat(__io__address + 64, minrad);
 		}
 	}
 
@@ -1770,9 +1887,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_damp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 68);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 68);
 		}
 	}
 
@@ -1787,9 +1904,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_damp(float pdef_damp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, pdef_damp);
+			__io__block.writeFloat(__io__address + 68, pdef_damp);
 		} else {
-			__io__block.writeFloat(__io__address + 60, pdef_damp);
+			__io__block.writeFloat(__io__address + 68, pdef_damp);
 		}
 	}
 
@@ -1804,9 +1921,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_rdamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 72);
 		} else {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 72);
 		}
 	}
 
@@ -1821,9 +1938,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_rdamp(float pdef_rdamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 64, pdef_rdamp);
+			__io__block.writeFloat(__io__address + 72, pdef_rdamp);
 		} else {
-			__io__block.writeFloat(__io__address + 64, pdef_rdamp);
+			__io__block.writeFloat(__io__address + 72, pdef_rdamp);
 		}
 	}
 
@@ -1838,9 +1955,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_perm() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 76);
 		} else {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 76);
 		}
 	}
 
@@ -1855,9 +1972,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_perm(float pdef_perm) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 68, pdef_perm);
+			__io__block.writeFloat(__io__address + 76, pdef_perm);
 		} else {
-			__io__block.writeFloat(__io__address + 68, pdef_perm);
+			__io__block.writeFloat(__io__address + 76, pdef_perm);
 		}
 	}
 
@@ -1872,9 +1989,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_frict() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 72);
+			return __io__block.readFloat(__io__address + 80);
 		} else {
-			return __io__block.readFloat(__io__address + 72);
+			return __io__block.readFloat(__io__address + 80);
 		}
 	}
 
@@ -1889,9 +2006,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_frict(float pdef_frict) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 72, pdef_frict);
+			__io__block.writeFloat(__io__address + 80, pdef_frict);
 		} else {
-			__io__block.writeFloat(__io__address + 72, pdef_frict);
+			__io__block.writeFloat(__io__address + 80, pdef_frict);
 		}
 	}
 
@@ -1906,9 +2023,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_rfrict() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 84);
 		} else {
-			return __io__block.readFloat(__io__address + 76);
+			return __io__block.readFloat(__io__address + 84);
 		}
 	}
 
@@ -1923,9 +2040,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_rfrict(float pdef_rfrict) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 76, pdef_rfrict);
+			__io__block.writeFloat(__io__address + 84, pdef_rfrict);
 		} else {
-			__io__block.writeFloat(__io__address + 76, pdef_rfrict);
+			__io__block.writeFloat(__io__address + 84, pdef_rfrict);
 		}
 	}
 
@@ -1940,9 +2057,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_stickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 80);
+			return __io__block.readFloat(__io__address + 88);
 		} else {
-			return __io__block.readFloat(__io__address + 80);
+			return __io__block.readFloat(__io__address + 88);
 		}
 	}
 
@@ -1957,9 +2074,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_stickness(float pdef_stickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 80, pdef_stickness);
+			__io__block.writeFloat(__io__address + 88, pdef_stickness);
 		} else {
-			__io__block.writeFloat(__io__address + 80, pdef_stickness);
+			__io__block.writeFloat(__io__address + 88, pdef_stickness);
 		}
 	}
 
@@ -1974,9 +2091,9 @@ public class PartDeflect extends CFacade {
 	public float getAbsorption() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 92);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 92);
 		}
 	}
 
@@ -1991,9 +2108,9 @@ public class PartDeflect extends CFacade {
 	public void setAbsorption(float absorption) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 84, absorption);
+			__io__block.writeFloat(__io__address + 92, absorption);
 		} else {
-			__io__block.writeFloat(__io__address + 84, absorption);
+			__io__block.writeFloat(__io__address + 92, absorption);
 		}
 	}
 
@@ -2008,9 +2125,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_sbdamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 96);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 96);
 		}
 	}
 
@@ -2025,9 +2142,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_sbdamp(float pdef_sbdamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 88, pdef_sbdamp);
+			__io__block.writeFloat(__io__address + 96, pdef_sbdamp);
 		} else {
-			__io__block.writeFloat(__io__address + 88, pdef_sbdamp);
+			__io__block.writeFloat(__io__address + 96, pdef_sbdamp);
 		}
 	}
 
@@ -2042,9 +2159,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_sbift() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		} else {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -2059,9 +2176,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_sbift(float pdef_sbift) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 92, pdef_sbift);
+			__io__block.writeFloat(__io__address + 100, pdef_sbift);
 		} else {
-			__io__block.writeFloat(__io__address + 92, pdef_sbift);
+			__io__block.writeFloat(__io__address + 100, pdef_sbift);
 		}
 	}
 
@@ -2076,9 +2193,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_sboft() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 104);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -2093,9 +2210,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_sboft(float pdef_sboft) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, pdef_sboft);
+			__io__block.writeFloat(__io__address + 104, pdef_sboft);
 		} else {
-			__io__block.writeFloat(__io__address + 96, pdef_sboft);
+			__io__block.writeFloat(__io__address + 104, pdef_sboft);
 		}
 	}
 
@@ -2110,9 +2227,9 @@ public class PartDeflect extends CFacade {
 	public float getClump_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 108);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -2127,9 +2244,9 @@ public class PartDeflect extends CFacade {
 	public void setClump_fac(float clump_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, clump_fac);
+			__io__block.writeFloat(__io__address + 108, clump_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 100, clump_fac);
+			__io__block.writeFloat(__io__address + 108, clump_fac);
 		}
 	}
 
@@ -2141,9 +2258,9 @@ public class PartDeflect extends CFacade {
 	public float getClump_pow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -2155,9 +2272,9 @@ public class PartDeflect extends CFacade {
 	public void setClump_pow(float clump_pow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, clump_pow);
+			__io__block.writeFloat(__io__address + 112, clump_pow);
 		} else {
-			__io__block.writeFloat(__io__address + 104, clump_pow);
+			__io__block.writeFloat(__io__address + 112, clump_pow);
 		}
 	}
 
@@ -2169,9 +2286,9 @@ public class PartDeflect extends CFacade {
 	public float getKink_freq() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -2183,9 +2300,9 @@ public class PartDeflect extends CFacade {
 	public void setKink_freq(float kink_freq) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, kink_freq);
+			__io__block.writeFloat(__io__address + 116, kink_freq);
 		} else {
-			__io__block.writeFloat(__io__address + 108, kink_freq);
+			__io__block.writeFloat(__io__address + 116, kink_freq);
 		}
 	}
 
@@ -2197,9 +2314,9 @@ public class PartDeflect extends CFacade {
 	public float getKink_shape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -2211,9 +2328,9 @@ public class PartDeflect extends CFacade {
 	public void setKink_shape(float kink_shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, kink_shape);
+			__io__block.writeFloat(__io__address + 120, kink_shape);
 		} else {
-			__io__block.writeFloat(__io__address + 112, kink_shape);
+			__io__block.writeFloat(__io__address + 120, kink_shape);
 		}
 	}
 
@@ -2225,9 +2342,9 @@ public class PartDeflect extends CFacade {
 	public float getKink_amp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -2239,9 +2356,9 @@ public class PartDeflect extends CFacade {
 	public void setKink_amp(float kink_amp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, kink_amp);
+			__io__block.writeFloat(__io__address + 124, kink_amp);
 		} else {
-			__io__block.writeFloat(__io__address + 116, kink_amp);
+			__io__block.writeFloat(__io__address + 124, kink_amp);
 		}
 	}
 
@@ -2253,9 +2370,9 @@ public class PartDeflect extends CFacade {
 	public float getFree_end() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 128);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 128);
 		}
 	}
 
@@ -2267,9 +2384,9 @@ public class PartDeflect extends CFacade {
 	public void setFree_end(float free_end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 120, free_end);
+			__io__block.writeFloat(__io__address + 128, free_end);
 		} else {
-			__io__block.writeFloat(__io__address + 120, free_end);
+			__io__block.writeFloat(__io__address + 128, free_end);
 		}
 	}
 
@@ -2284,9 +2401,9 @@ public class PartDeflect extends CFacade {
 	public float getTex_nabla() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -2301,9 +2418,9 @@ public class PartDeflect extends CFacade {
 	public void setTex_nabla(float tex_nabla) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 124, tex_nabla);
+			__io__block.writeFloat(__io__address + 132, tex_nabla);
 		} else {
-			__io__block.writeFloat(__io__address + 124, tex_nabla);
+			__io__block.writeFloat(__io__address + 132, tex_nabla);
 		}
 	}
 
@@ -2319,9 +2436,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2339,9 +2456,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __address = ((tex == null) ? 0 : tex.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -2357,9 +2474,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -2377,9 +2494,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __address = ((rng == null) ? 0 : rng.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 
@@ -2394,9 +2511,9 @@ public class PartDeflect extends CFacade {
 	public float getF_noise() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -2411,9 +2528,9 @@ public class PartDeflect extends CFacade {
 	public void setF_noise(float f_noise) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, f_noise);
+			__io__block.writeFloat(__io__address + 152, f_noise);
 		} else {
-			__io__block.writeFloat(__io__address + 136, f_noise);
+			__io__block.writeFloat(__io__address + 144, f_noise);
 		}
 	}
 
@@ -2428,9 +2545,9 @@ public class PartDeflect extends CFacade {
 	public int getSeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 156);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 148);
 		}
 	}
 
@@ -2445,9 +2562,9 @@ public class PartDeflect extends CFacade {
 	public void setSeed(int seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 148, seed);
+			__io__block.writeInt(__io__address + 156, seed);
 		} else {
-			__io__block.writeInt(__io__address + 140, seed);
+			__io__block.writeInt(__io__address + 148, seed);
 		}
 	}
 
@@ -2466,9 +2583,9 @@ public class PartDeflect extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2484,9 +2601,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		}
 		if (__io__equals(drawvec1, __io__address + __dna__offset)) {
 			return;
@@ -2512,9 +2629,9 @@ public class PartDeflect extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2530,9 +2647,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 176;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		}
 		if (__io__equals(drawvec2, __io__address + __dna__offset)) {
 			return;
@@ -2558,9 +2675,9 @@ public class PartDeflect extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2576,9 +2693,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		}
 		if (__io__equals(drawvec_falloff_min, __io__address + __dna__offset)) {
 			return;
@@ -2601,9 +2718,9 @@ public class PartDeflect extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2616,9 +2733,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 196;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -2644,9 +2761,9 @@ public class PartDeflect extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2662,9 +2779,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		}
 		if (__io__equals(drawvec_falloff_max, __io__address + __dna__offset)) {
 			return;
@@ -2687,9 +2804,9 @@ public class PartDeflect extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2702,9 +2819,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 204;
+			__dna__offset = 212;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -2727,9 +2844,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2747,9 +2864,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __address = ((f_source == null) ? 0 : f_source.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		}
 	}
 
@@ -2764,9 +2881,9 @@ public class PartDeflect extends CFacade {
 	public float getPdef_cfrict() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 224);
+			return __io__block.readFloat(__io__address + 232);
 		} else {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 220);
 		}
 	}
 
@@ -2781,9 +2898,9 @@ public class PartDeflect extends CFacade {
 	public void setPdef_cfrict(float pdef_cfrict) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 224, pdef_cfrict);
+			__io__block.writeFloat(__io__address + 232, pdef_cfrict);
 		} else {
-			__io__block.writeFloat(__io__address + 212, pdef_cfrict);
+			__io__block.writeFloat(__io__address + 220, pdef_cfrict);
 		}
 	}
 
@@ -2799,9 +2916,9 @@ public class PartDeflect extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2814,9 +2931,9 @@ public class PartDeflect extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 228;
+			__dna__offset = 236;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 224;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

@@ -74,8 +74,7 @@ public class Library extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
+	 * Unique data-block ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -95,28 +94,27 @@ public class Library extends CFacade {
 	public static final long[] __DNA__FIELD__name = new long[]{132, 168};
 
 	/**
-	 * Field descriptor (offset) for struct member 'filepath'.
+	 * Field descriptor (offset) for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Library library = ...;
-	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__filepath);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_filepath = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = library.__dna__addressof(Library.__DNA__FIELD__filepath_abs);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_filepath_abs = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'filepath'</li>
+	 * <li>Field: 'filepath_abs'</li>
 	 * <li>Signature: 'char[1024]'</li>
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__filepath = new long[]{1156, 1192};
+	public static final long[] __DNA__FIELD__filepath_abs = new long[]{1156, 1192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parent'.
@@ -308,8 +306,7 @@ public class Library extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
+	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -330,8 +327,7 @@ public class Library extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  name used for reading, can be relative and edited in the outliner. </p>
+	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -353,15 +349,14 @@ public class Library extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'filepath'.
+	 * Get method for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
-	 * @see #__DNA__FIELD__filepath
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
+	 * @see #__DNA__FIELD__filepath_abs
 	 */
 	
-	public CArrayFacade<Byte> getFilepath() throws IOException
+	public CArrayFacade<Byte> getFilepath_abs() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
@@ -375,15 +370,14 @@ public class Library extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'filepath'.
+	 * Set method for struct member 'filepath_abs'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Path to the library .blend file<h4>Blender Source Code:</h4>
-	 * <p> Absolute filepath, this is only for convenience, 'name' is the real path used on file read but in some cases its useful to access the absolute one. This is set on file read. Use BKE_library_filepath_set() rather than setting 'name' directly and it will be kept in sync - campbell </p>
-	 * @see #__DNA__FIELD__filepath
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  is the real path used on file read but in some cases its useful to access the absolute one.</p><p><code></code>  directly and it will be kept in sync - campbell </p>
+	 * @see #__DNA__FIELD__filepath_abs
 	 */
 	
-	public void setFilepath(CArrayFacade<Byte> filepath) throws IOException
+	public void setFilepath_abs(CArrayFacade<Byte> filepath_abs) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -391,12 +385,12 @@ public class Library extends CFacade {
 		} else {
 			__dna__offset = 1156;
 		}
-		if (__io__equals(filepath, __io__address + __dna__offset)) {
+		if (__io__equals(filepath_abs, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, filepath)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, filepath);
+		} else if (__io__same__encoding(this, filepath_abs)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, filepath_abs);
 		} else {
-			__io__generic__copy( getFilepath(), filepath);
+			__io__generic__copy( getFilepath_abs(), filepath_abs);
 		}
 	}
 

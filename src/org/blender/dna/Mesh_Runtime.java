@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> not saved in file! </p>
  */
 
-@CMetaData(size32=96, size64=136)
+@CMetaData(size32=136, size64=176)
 public class Mesh_Runtime extends CFacade {
 
 	/**
@@ -297,7 +297,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'BVHCache', for 'BKE_bvhutil.c' </p>
+	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -310,7 +310,7 @@ public class Mesh_Runtime extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'bvh_cache'</li>
-	 * <li>Signature: 'LinkNode*'</li>
+	 * <li>Signature: 'BVHCache*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
@@ -366,7 +366,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with editmesh data). In the future we may leave the mesh-data empty since its not needed if we can use edit-mesh data. </p>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -386,6 +386,52 @@ public class Mesh_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__is_original = new long[]{89, 129};
 
 	/**
+	 * Field descriptor (offset) for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type);
+	 * CPointer&lt;Byte&gt; p_wrapper_type = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wrapper_type'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wrapper_type = new long[]{90, 130};
+
+	/**
+	 * Field descriptor (offset) for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__wrapper_type_finalize);
+	 * CPointer&lt;Byte&gt; p_wrapper_type_finalize = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'wrapper_type_finalize'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__wrapper_type_finalize = new long[]{91, 131};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -399,11 +445,34 @@ public class Mesh_Runtime extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{90, 130};
+	public static final long[] __DNA__FIELD___pad = new long[]{92, 132};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cd_mask_extra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed in case we need to lazily initialize the mesh. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh_Runtime mesh_runtime = ...;
+	 * CPointer&lt;Object&gt; p = mesh_runtime.__dna__addressof(Mesh_Runtime.__DNA__FIELD__cd_mask_extra);
+	 * CPointer&lt;CustomData_MeshMasks&gt; p_cd_mask_extra = p.cast(new Class[]{CustomData_MeshMasks.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cd_mask_extra'</li>
+	 * <li>Signature: 'CustomData_MeshMasks'</li>
+	 * <li>Actual Size (32bit/64bit): 40/40</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cd_mask_extra = new long[]{96, 136};
 
 	public Mesh_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -831,7 +900,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'BVHCache', for 'BKE_bvhutil.c' </p>
+	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
 	
@@ -851,7 +920,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'bvh_cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> 'BVHCache', for 'BKE_bvhutil.c' </p>
+	 * <p><code></code>  defined in 'BKE_bvhutil.c' </p>
 	 * @see #__DNA__FIELD__bvh_cache
 	 */
 	
@@ -941,7 +1010,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Get method for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with editmesh data). In the future we may leave the mesh-data empty since its not needed if we can use edit-mesh data. </p>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * @see #__DNA__FIELD__is_original
 	 */
 	
@@ -958,7 +1027,7 @@ public class Mesh_Runtime extends CFacade {
 	 * Set method for struct member 'is_original'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copied from edit-mesh (hint, draw with editmesh data). In the future we may leave the mesh-data empty since its not needed if we can use edit-mesh data. </p>
+	 * <p> Copied from edit-mesh (hint, draw with edit-mesh data when true).</p><p> Modifiers that edit the mesh data in-place must set this to false (most #eModifierTypeType_NonGeometrical modifiers). Otherwise the edit-mesh data will be used for drawing, missing changes from modifiers. See T79517. </p>
 	 * @see #__DNA__FIELD__is_original
 	 */
 	
@@ -972,6 +1041,74 @@ public class Mesh_Runtime extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * @see #__DNA__FIELD__wrapper_type
+	 */
+	
+	public byte getWrapper_type() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 130);
+		} else {
+			return __io__block.readByte(__io__address + 90);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wrapper_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link eMeshWrapperType}  and others. </p>
+	 * @see #__DNA__FIELD__wrapper_type
+	 */
+	
+	public void setWrapper_type(byte wrapper_type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 130, wrapper_type);
+		} else {
+			__io__block.writeByte(__io__address + 90, wrapper_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * @see #__DNA__FIELD__wrapper_type_finalize
+	 */
+	
+	public byte getWrapper_type_finalize() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 131);
+		} else {
+			return __io__block.readByte(__io__address + 91);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'wrapper_type_finalize'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> A type mask from wrapper_type, in case there are differences in finalizing logic between types. </p>
+	 * @see #__DNA__FIELD__wrapper_type_finalize
+	 */
+	
+	public void setWrapper_type_finalize(byte wrapper_type_finalize) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 131, wrapper_type_finalize);
+		} else {
+			__io__block.writeByte(__io__address + 91, wrapper_type_finalize);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -980,12 +1117,12 @@ public class Mesh_Runtime extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 90, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -998,9 +1135,9 @@ public class Mesh_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 130;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 90;
+			__dna__offset = 92;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1008,6 +1145,48 @@ public class Mesh_Runtime extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cd_mask_extra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed in case we need to lazily initialize the mesh. </p>
+	 * @see #__DNA__FIELD__cd_mask_extra
+	 */
+	
+	public CustomData_MeshMasks getCd_mask_extra() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new CustomData_MeshMasks(__io__address + 136, __io__block, __io__blockTable);
+		} else {
+			return new CustomData_MeshMasks(__io__address + 96, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cd_mask_extra'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Needed in case we need to lazily initialize the mesh. </p>
+	 * @see #__DNA__FIELD__cd_mask_extra
+	 */
+	
+	public void setCd_mask_extra(CustomData_MeshMasks cd_mask_extra) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 136;
+		} else {
+			__dna__offset = 96;
+		}
+		if (__io__equals(cd_mask_extra, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, cd_mask_extra)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, cd_mask_extra);
+		} else {
+			__io__generic__copy( getCd_mask_extra(), cd_mask_extra);
 		}
 	}
 

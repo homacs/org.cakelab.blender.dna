@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> The part from uiBlock that needs saved in file. </p>
  */
 
-@CMetaData(size32=204, size64=232)
+@CMetaData(size32=208, size64=240)
 public class Panel extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 271;
+	public static final int __DNA__SDNA_INDEX = 270;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -326,8 +326,8 @@ public class Panel extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{170, 186};
@@ -350,7 +350,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{172, 188};
+	public static final long[] __DNA__FIELD__flag = new long[]{174, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_flag'.
@@ -370,27 +370,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime_flag = new long[]{174, 190};
-
-	/**
-	 * Field descriptor (offset) for struct member 'control'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__control);
-	 * CPointer&lt;Short&gt; p_control = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'control'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__control = new long[]{176, 192};
+	public static final long[] __DNA__FIELD__runtime_flag = new long[]{176, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'snap'.
@@ -496,7 +476,7 @@ public class Panel extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Panel_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{196, 224};
@@ -966,7 +946,7 @@ public class Panel extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			4
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -1005,9 +985,9 @@ public class Panel extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -1019,9 +999,9 @@ public class Panel extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 190, flag);
 		} else {
-			__io__block.writeShort(__io__address + 172, flag);
+			__io__block.writeShort(__io__address + 174, flag);
 		}
 	}
 
@@ -1033,9 +1013,9 @@ public class Panel extends CFacade {
 	public short getRuntime_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -1047,37 +1027,9 @@ public class Panel extends CFacade {
 	public void setRuntime_flag(short runtime_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, runtime_flag);
+			__io__block.writeShort(__io__address + 192, runtime_flag);
 		} else {
-			__io__block.writeShort(__io__address + 174, runtime_flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'control'.
-	 * @see #__DNA__FIELD__control
-	 */
-	
-	public short getControl() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
-		} else {
-			return __io__block.readShort(__io__address + 176);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'control'.
-	 * @see #__DNA__FIELD__control
-	 */
-	
-	public void setControl(short control) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, control);
-		} else {
-			__io__block.writeShort(__io__address + 176, control);
+			__io__block.writeShort(__io__address + 176, runtime_flag);
 		}
 	}
 

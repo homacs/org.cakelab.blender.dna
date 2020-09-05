@@ -342,7 +342,7 @@ public class Key extends CFacade {
 	 * Field descriptor (offset) for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free UID for key-blocks. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -879,7 +879,7 @@ public class Key extends CFacade {
 	 * Get method for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free UID for key-blocks. </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	
@@ -896,7 +896,7 @@ public class Key extends CFacade {
 	 * Set method for struct member 'uidgen'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Can never be 0, this is used for detecting old data. current free uid for keyblocks </p>
+	 * <p> Can never be 0, this is used for detecting old data. current free UID for key-blocks. </p>
 	 * @see #__DNA__FIELD__uidgen
 	 */
 	

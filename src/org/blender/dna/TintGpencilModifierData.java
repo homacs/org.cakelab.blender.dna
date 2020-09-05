@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=336, size64=360)
+@CMetaData(size32=340, size64=368)
 public class TintGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 506;
+	public static final int __DNA__SDNA_INDEX = 509;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -70,6 +70,29 @@ public class TintGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__object = new long[]{92, 104};
 
 	/**
+	 * Field descriptor (offset) for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TintGpencilModifierData tintgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = tintgpencilmodifierdata.__dna__addressof(TintGpencilModifierData.__DNA__FIELD__material);
+	 * CPointer&lt;CPointer&lt;Material&gt;&gt; p_material = p.cast(new Class[]{CPointer.class, Material.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'material'</li>
+	 * <li>Signature: 'Material*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__material = new long[]{96, 112};
+
+	/**
 	 * Field descriptor (offset) for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -90,13 +113,15 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layername = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__layername = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -113,7 +138,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__materialname = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__materialname = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
@@ -136,7 +161,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{224, 240};
+	public static final long[] __DNA__FIELD__vgname = new long[]{228, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -159,7 +184,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{288, 304};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{292, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -182,7 +207,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{292, 308};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{296, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -205,7 +230,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{296, 312};
+	public static final long[] __DNA__FIELD__flag = new long[]{300, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -228,7 +253,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{300, 316};
+	public static final long[] __DNA__FIELD__mode = new long[]{304, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -248,7 +273,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{304, 320};
+	public static final long[] __DNA__FIELD__factor = new long[]{308, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
@@ -268,7 +293,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radius = new long[]{308, 324};
+	public static final long[] __DNA__FIELD__radius = new long[]{312, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rgb'.
@@ -291,7 +316,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rgb = new long[]{312, 328};
+	public static final long[] __DNA__FIELD__rgb = new long[]{316, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -314,7 +339,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{324, 340};
+	public static final long[] __DNA__FIELD__type = new long[]{328, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_intensity'.
@@ -334,7 +359,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_intensity = new long[]{328, 344};
+	public static final long[] __DNA__FIELD__curve_intensity = new long[]{332, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorband'.
@@ -354,7 +379,7 @@ public class TintGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colorband = new long[]{332, 352};
+	public static final long[] __DNA__FIELD__colorband = new long[]{336, 360};
 
 	public TintGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -433,6 +458,44 @@ public class TintGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public CPointer<Material> getMaterial() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
+		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public void setMaterial(CPointer<Material> material) throws IOException
+	{
+		long __address = ((material == null) ? 0 : material.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 112, __address);
+		} else {
+			__io__block.writeLong(__io__address + 96, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'layername'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -447,9 +510,9 @@ public class TintGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -465,9 +528,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(layername, __io__address + __dna__offset)) {
 			return;
@@ -482,7 +545,9 @@ public class TintGpencilModifierData extends CFacade {
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__materialname
 	 */
 	
@@ -493,9 +558,9 @@ public class TintGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -503,7 +568,9 @@ public class TintGpencilModifierData extends CFacade {
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__materialname
 	 */
 	
@@ -511,9 +578,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 164;
 		}
 		if (__io__equals(materialname, __io__address + __dna__offset)) {
 			return;
@@ -539,9 +606,9 @@ public class TintGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -557,9 +624,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 228;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -581,9 +648,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 304);
+			return __io__block.readInt(__io__address + 312);
 		} else {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 292);
 		}
 	}
 
@@ -598,9 +665,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 304, pass_index);
+			__io__block.writeInt(__io__address + 312, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 288, pass_index);
+			__io__block.writeInt(__io__address + 292, pass_index);
 		}
 	}
 
@@ -615,9 +682,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 308);
+			return __io__block.readInt(__io__address + 316);
 		} else {
-			return __io__block.readInt(__io__address + 292);
+			return __io__block.readInt(__io__address + 296);
 		}
 	}
 
@@ -632,9 +699,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 308, layer_pass);
+			__io__block.writeInt(__io__address + 316, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 292, layer_pass);
+			__io__block.writeInt(__io__address + 296, layer_pass);
 		}
 	}
 
@@ -649,9 +716,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 312);
+			return __io__block.readInt(__io__address + 320);
 		} else {
-			return __io__block.readInt(__io__address + 296);
+			return __io__block.readInt(__io__address + 300);
 		}
 	}
 
@@ -666,9 +733,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 312, flag);
+			__io__block.writeInt(__io__address + 320, flag);
 		} else {
-			__io__block.writeInt(__io__address + 296, flag);
+			__io__block.writeInt(__io__address + 300, flag);
 		}
 	}
 
@@ -683,9 +750,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 316);
+			return __io__block.readInt(__io__address + 324);
 		} else {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readInt(__io__address + 304);
 		}
 	}
 
@@ -700,9 +767,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setMode(int mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 316, mode);
+			__io__block.writeInt(__io__address + 324, mode);
 		} else {
-			__io__block.writeInt(__io__address + 300, mode);
+			__io__block.writeInt(__io__address + 304, mode);
 		}
 	}
 
@@ -714,9 +781,9 @@ public class TintGpencilModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 328);
 		} else {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 308);
 		}
 	}
 
@@ -728,9 +795,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 320, factor);
+			__io__block.writeFloat(__io__address + 328, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 304, factor);
+			__io__block.writeFloat(__io__address + 308, factor);
 		}
 	}
 
@@ -742,9 +809,9 @@ public class TintGpencilModifierData extends CFacade {
 	public float getRadius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 332);
 		} else {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 312);
 		}
 	}
 
@@ -756,9 +823,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setRadius(float radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 324, radius);
+			__io__block.writeFloat(__io__address + 332, radius);
 		} else {
-			__io__block.writeFloat(__io__address + 308, radius);
+			__io__block.writeFloat(__io__address + 312, radius);
 		}
 	}
 
@@ -777,9 +844,9 @@ public class TintGpencilModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -795,9 +862,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 312;
+			__dna__offset = 316;
 		}
 		if (__io__equals(rgb, __io__address + __dna__offset)) {
 			return;
@@ -819,9 +886,9 @@ public class TintGpencilModifierData extends CFacade {
 	public int getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 340);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return __io__block.readInt(__io__address + 324);
+			return __io__block.readInt(__io__address + 328);
 		}
 	}
 
@@ -836,9 +903,9 @@ public class TintGpencilModifierData extends CFacade {
 	public void setType(int type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 340, type);
+			__io__block.writeInt(__io__address + 348, type);
 		} else {
-			__io__block.writeInt(__io__address + 324, type);
+			__io__block.writeInt(__io__address + 328, type);
 		}
 	}
 
@@ -851,9 +918,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -868,9 +935,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __address = ((curve_intensity == null) ? 0 : curve_intensity.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 332, __address);
 		}
 	}
 
@@ -883,9 +950,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 332);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -900,9 +967,9 @@ public class TintGpencilModifierData extends CFacade {
 	{
 		long __address = ((colorband == null) ? 0 : colorband.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 332, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		}
 	}
 

@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=120, size64=136)
+@CMetaData(size32=128, size64=144)
 public class bPoseChannel_Runtime extends CFacade {
 
 	/**
@@ -26,7 +26,27 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 323;
+	public static final int __DNA__SDNA_INDEX = 324;
+
+	/**
+	 * Field descriptor (offset) for struct member 'session_uuid'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bPoseChannel_Runtime bposechannel_runtime = ...;
+	 * CPointer&lt;Object&gt; p = bposechannel_runtime.__dna__addressof(bPoseChannel_Runtime.__DNA__FIELD__session_uuid);
+	 * CPointer&lt;SessionUUID&gt; p_session_uuid = p.cast(new Class[]{SessionUUID.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'session_uuid'</li>
+	 * <li>Signature: 'SessionUUID'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__session_uuid = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'deform_dual_quat'.
@@ -49,7 +69,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 100/100</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__deform_dual_quat = new long[]{0, 0};
+	public static final long[] __DNA__FIELD__deform_dual_quat = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_segments'.
@@ -72,7 +92,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_segments = new long[]{100, 100};
+	public static final long[] __DNA__FIELD__bbone_segments = new long[]{108, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_rest_mats'.
@@ -95,7 +115,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_rest_mats = new long[]{104, 104};
+	public static final long[] __DNA__FIELD__bbone_rest_mats = new long[]{112, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_pose_mats'.
@@ -115,7 +135,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_pose_mats = new long[]{108, 112};
+	public static final long[] __DNA__FIELD__bbone_pose_mats = new long[]{116, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_deform_mats'.
@@ -138,7 +158,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_deform_mats = new long[]{112, 120};
+	public static final long[] __DNA__FIELD__bbone_deform_mats = new long[]{120, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bbone_dual_quats'.
@@ -158,7 +178,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bbone_dual_quats = new long[]{116, 128};
+	public static final long[] __DNA__FIELD__bbone_dual_quats = new long[]{124, 136};
 
 	public bPoseChannel_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -166,6 +186,42 @@ public class bPoseChannel_Runtime extends CFacade {
 
 	protected bPoseChannel_Runtime(bPoseChannel_Runtime that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
+	}
+
+	/**
+	 * Get method for struct member 'session_uuid'.
+	 * @see #__DNA__FIELD__session_uuid
+	 */
+	
+	public SessionUUID getSession_uuid() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new SessionUUID(__io__address + 0, __io__block, __io__blockTable);
+		} else {
+			return new SessionUUID(__io__address + 0, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'session_uuid'.
+	 * @see #__DNA__FIELD__session_uuid
+	 */
+	
+	public void setSession_uuid(SessionUUID session_uuid) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 0;
+		} else {
+			__dna__offset = 0;
+		}
+		if (__io__equals(session_uuid, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, session_uuid)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, session_uuid);
+		} else {
+			__io__generic__copy( getSession_uuid(), session_uuid);
+		}
 	}
 
 	/**
@@ -179,9 +235,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	public DualQuat getDeform_dual_quat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new DualQuat(__io__address + 0, __io__block, __io__blockTable);
+			return new DualQuat(__io__address + 8, __io__block, __io__blockTable);
 		} else {
-			return new DualQuat(__io__address + 0, __io__block, __io__blockTable);
+			return new DualQuat(__io__address + 8, __io__block, __io__blockTable);
 		}
 	}
 
@@ -197,9 +253,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 0;
+			__dna__offset = 8;
 		} else {
-			__dna__offset = 0;
+			__dna__offset = 8;
 		}
 		if (__io__equals(deform_dual_quat, __io__address + __dna__offset)) {
 			return;
@@ -221,9 +277,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	public int getBbone_segments() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 108);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -238,9 +294,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	public void setBbone_segments(int bbone_segments) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 100, bbone_segments);
+			__io__block.writeInt(__io__address + 108, bbone_segments);
 		} else {
-			__io__block.writeInt(__io__address + 100, bbone_segments);
+			__io__block.writeInt(__io__address + 108, bbone_segments);
 		}
 	}
 
@@ -256,9 +312,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -276,9 +332,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __address = ((bbone_rest_mats == null) ? 0 : bbone_rest_mats.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -291,9 +347,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -308,9 +364,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __address = ((bbone_pose_mats == null) ? 0 : bbone_pose_mats.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -326,9 +382,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -346,9 +402,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __address = ((bbone_deform_mats == null) ? 0 : bbone_deform_mats.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -361,9 +417,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{DualQuat.class};
 		return new CPointer<DualQuat>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, DualQuat.__DNA__SDNA_INDEX), __io__blockTable);
@@ -378,9 +434,9 @@ public class bPoseChannel_Runtime extends CFacade {
 	{
 		long __address = ((bbone_dual_quats == null) ? 0 : bbone_dual_quats.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 

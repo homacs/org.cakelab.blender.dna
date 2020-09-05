@@ -27,7 +27,7 @@ public class ShaderFxData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 507;
+	public static final int __DNA__SDNA_INDEX = 511;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -150,24 +150,27 @@ public class ShaderFxData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{20, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Expansion for shader effect panels and sub-panels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * ShaderFxData shaderfxdata = ...;
-	 * CPointer&lt;Object&gt; p = shaderfxdata.__dna__addressof(ShaderFxData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = shaderfxdata.__dna__addressof(ShaderFxData.__DNA__FIELD__ui_expand_flag);
+	 * CPointer&lt;Short&gt; p_ui_expand_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
+	 * <li>Field: 'ui_expand_flag'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{22, 30};
+	public static final long[] __DNA__FIELD__ui_expand_flag = new long[]{22, 30};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -397,42 +400,36 @@ public class ShaderFxData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Expansion for shader effect panels and sub-panels. </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public short getUi_expand_flag() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 30);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 22, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 22);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Expansion for shader effect panels and sub-panels. </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setUi_expand_flag(short ui_expand_flag) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 30;
+			__io__block.writeShort(__io__address + 30, ui_expand_flag);
 		} else {
-			__dna__offset = 22;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeShort(__io__address + 22, ui_expand_flag);
 		}
 	}
 

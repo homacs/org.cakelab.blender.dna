@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=460, size64=480)
+@CMetaData(size32=464, size64=488)
 public class HookGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 500;
+	public static final int __DNA__SDNA_INDEX = 503;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -70,6 +70,29 @@ public class HookGpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__object = new long[]{92, 104};
 
 	/**
+	 * Field descriptor (offset) for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * HookGpencilModifierData hookgpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = hookgpencilmodifierdata.__dna__addressof(HookGpencilModifierData.__DNA__FIELD__material);
+	 * CPointer&lt;CPointer&lt;Material&gt;&gt; p_material = p.cast(new Class[]{CPointer.class, Material.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'material'</li>
+	 * <li>Signature: 'Material*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__material = new long[]{96, 112};
+
+	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -90,7 +113,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layername'.
@@ -113,13 +136,15 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layername = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__layername = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -136,7 +161,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__materialname = new long[]{224, 240};
+	public static final long[] __DNA__FIELD__materialname = new long[]{228, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgname'.
@@ -159,7 +184,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgname = new long[]{288, 304};
+	public static final long[] __DNA__FIELD__vgname = new long[]{292, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pass_index'.
@@ -182,7 +207,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_index = new long[]{352, 368};
+	public static final long[] __DNA__FIELD__pass_index = new long[]{356, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layer_pass'.
@@ -205,7 +230,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layer_pass = new long[]{356, 372};
+	public static final long[] __DNA__FIELD__layer_pass = new long[]{360, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -225,7 +250,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{360, 376};
+	public static final long[] __DNA__FIELD___pad = new long[]{364, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -245,7 +270,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{364, 380};
+	public static final long[] __DNA__FIELD__flag = new long[]{368, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
@@ -268,7 +293,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_type = new long[]{368, 384};
+	public static final long[] __DNA__FIELD__falloff_type = new long[]{372, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -288,7 +313,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{369, 385};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{373, 393};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
@@ -311,7 +336,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parentinv = new long[]{372, 388};
+	public static final long[] __DNA__FIELD__parentinv = new long[]{376, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
@@ -334,7 +359,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cent = new long[]{436, 452};
+	public static final long[] __DNA__FIELD__cent = new long[]{440, 460};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
@@ -357,7 +382,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{448, 464};
+	public static final long[] __DNA__FIELD__falloff = new long[]{452, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'force'.
@@ -377,7 +402,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__force = new long[]{452, 468};
+	public static final long[] __DNA__FIELD__force = new long[]{456, 476};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curfalloff'.
@@ -397,7 +422,7 @@ public class HookGpencilModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curfalloff = new long[]{456, 472};
+	public static final long[] __DNA__FIELD__curfalloff = new long[]{460, 480};
 
 	public HookGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -476,6 +501,44 @@ public class HookGpencilModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public CPointer<Material> getMaterial() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
+		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'material'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Material}  for filtering. </p>
+	 * @see #__DNA__FIELD__material
+	 */
+	
+	public void setMaterial(CPointer<Material> material) throws IOException
+	{
+		long __address = ((material == null) ? 0 : material.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 112, __address);
+		} else {
+			__io__block.writeLong(__io__address + 96, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'subtarget'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -490,9 +553,9 @@ public class HookGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -508,9 +571,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 112;
+			__dna__offset = 120;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 100;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;
@@ -536,9 +599,9 @@ public class HookGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -554,9 +617,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 160;
+			__dna__offset = 164;
 		}
 		if (__io__equals(layername, __io__address + __dna__offset)) {
 			return;
@@ -571,7 +634,9 @@ public class HookGpencilModifierData extends CFacade {
 	 * Get method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__materialname
 	 */
 	
@@ -582,9 +647,9 @@ public class HookGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -592,7 +657,9 @@ public class HookGpencilModifierData extends CFacade {
 	 * Set method for struct member 'materialname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Material}  name. </p>
+	 * <p>{@link Material}  name. 
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__materialname
 	 */
 	
@@ -600,9 +667,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 228;
 		}
 		if (__io__equals(materialname, __io__address + __dna__offset)) {
 			return;
@@ -628,9 +695,9 @@ public class HookGpencilModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -646,9 +713,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 288;
+			__dna__offset = 292;
 		}
 		if (__io__equals(vgname, __io__address + __dna__offset)) {
 			return;
@@ -670,9 +737,9 @@ public class HookGpencilModifierData extends CFacade {
 	public int getPass_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 368);
+			return __io__block.readInt(__io__address + 376);
 		} else {
-			return __io__block.readInt(__io__address + 352);
+			return __io__block.readInt(__io__address + 356);
 		}
 	}
 
@@ -687,9 +754,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setPass_index(int pass_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 368, pass_index);
+			__io__block.writeInt(__io__address + 376, pass_index);
 		} else {
-			__io__block.writeInt(__io__address + 352, pass_index);
+			__io__block.writeInt(__io__address + 356, pass_index);
 		}
 	}
 
@@ -704,9 +771,9 @@ public class HookGpencilModifierData extends CFacade {
 	public int getLayer_pass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 372);
+			return __io__block.readInt(__io__address + 380);
 		} else {
-			return __io__block.readInt(__io__address + 356);
+			return __io__block.readInt(__io__address + 360);
 		}
 	}
 
@@ -721,9 +788,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setLayer_pass(int layer_pass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 372, layer_pass);
+			__io__block.writeInt(__io__address + 380, layer_pass);
 		} else {
-			__io__block.writeInt(__io__address + 356, layer_pass);
+			__io__block.writeInt(__io__address + 360, layer_pass);
 		}
 	}
 
@@ -739,9 +806,9 @@ public class HookGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -754,9 +821,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 376;
+			__dna__offset = 384;
 		} else {
-			__dna__offset = 360;
+			__dna__offset = 364;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -775,9 +842,9 @@ public class HookGpencilModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 380);
+			return __io__block.readInt(__io__address + 388);
 		} else {
-			return __io__block.readInt(__io__address + 364);
+			return __io__block.readInt(__io__address + 368);
 		}
 	}
 
@@ -789,9 +856,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 380, flag);
+			__io__block.writeInt(__io__address + 388, flag);
 		} else {
-			__io__block.writeInt(__io__address + 364, flag);
+			__io__block.writeInt(__io__address + 368, flag);
 		}
 	}
 
@@ -806,9 +873,9 @@ public class HookGpencilModifierData extends CFacade {
 	public byte getFalloff_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 384);
+			return __io__block.readByte(__io__address + 392);
 		} else {
-			return __io__block.readByte(__io__address + 368);
+			return __io__block.readByte(__io__address + 372);
 		}
 	}
 
@@ -823,9 +890,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setFalloff_type(byte falloff_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 384, falloff_type);
+			__io__block.writeByte(__io__address + 392, falloff_type);
 		} else {
-			__io__block.writeByte(__io__address + 368, falloff_type);
+			__io__block.writeByte(__io__address + 372, falloff_type);
 		}
 	}
 
@@ -841,9 +908,9 @@ public class HookGpencilModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 385, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 393, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 369, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 373, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -856,9 +923,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 385;
+			__dna__offset = 393;
 		} else {
-			__dna__offset = 369;
+			__dna__offset = 373;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -885,9 +952,9 @@ public class HookGpencilModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 372, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -903,9 +970,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 388;
+			__dna__offset = 396;
 		} else {
-			__dna__offset = 372;
+			__dna__offset = 376;
 		}
 		if (__io__equals(parentinv, __io__address + __dna__offset)) {
 			return;
@@ -931,9 +998,9 @@ public class HookGpencilModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 452, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 440, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -949,9 +1016,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 452;
+			__dna__offset = 460;
 		} else {
-			__dna__offset = 436;
+			__dna__offset = 440;
 		}
 		if (__io__equals(cent, __io__address + __dna__offset)) {
 			return;
@@ -973,9 +1040,9 @@ public class HookGpencilModifierData extends CFacade {
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 464);
+			return __io__block.readFloat(__io__address + 472);
 		} else {
-			return __io__block.readFloat(__io__address + 448);
+			return __io__block.readFloat(__io__address + 452);
 		}
 	}
 
@@ -990,9 +1057,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 464, falloff);
+			__io__block.writeFloat(__io__address + 472, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 448, falloff);
+			__io__block.writeFloat(__io__address + 452, falloff);
 		}
 	}
 
@@ -1004,9 +1071,9 @@ public class HookGpencilModifierData extends CFacade {
 	public float getForce() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 468);
+			return __io__block.readFloat(__io__address + 476);
 		} else {
-			return __io__block.readFloat(__io__address + 452);
+			return __io__block.readFloat(__io__address + 456);
 		}
 	}
 
@@ -1018,9 +1085,9 @@ public class HookGpencilModifierData extends CFacade {
 	public void setForce(float force) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 468, force);
+			__io__block.writeFloat(__io__address + 476, force);
 		} else {
-			__io__block.writeFloat(__io__address + 452, force);
+			__io__block.writeFloat(__io__address + 456, force);
 		}
 	}
 
@@ -1033,9 +1100,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 472);
+			__dna__targetAddress = __io__block.readLong(__io__address + 480);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 456);
+			__dna__targetAddress = __io__block.readLong(__io__address + 460);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1050,9 +1117,9 @@ public class HookGpencilModifierData extends CFacade {
 	{
 		long __address = ((curfalloff == null) ? 0 : curfalloff.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 472, __address);
+			__io__block.writeLong(__io__address + 480, __address);
 		} else {
-			__io__block.writeLong(__io__address + 456, __address);
+			__io__block.writeLong(__io__address + 460, __address);
 		}
 	}
 

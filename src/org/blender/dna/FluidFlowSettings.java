@@ -27,10 +27,10 @@ public class FluidFlowSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 561;
+	public static final int __DNA__SDNA_INDEX = 565;
 
 	/**
-	 * Field descriptor (offset) for struct member 'mmd'.
+	 * Field descriptor (offset) for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
@@ -40,17 +40,17 @@ public class FluidFlowSettings extends CFacade {
 	 * </p>
 	 * <pre>
 	 * FluidFlowSettings fluidflowsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluidflowsettings.__dna__addressof(FluidFlowSettings.__DNA__FIELD__mmd);
-	 * CPointer&lt;CPointer&lt;FluidModifierData&gt;&gt; p_mmd = p.cast(new Class[]{CPointer.class, FluidModifierData.class});
+	 * CPointer&lt;Object&gt; p = fluidflowsettings.__dna__addressof(FluidFlowSettings.__DNA__FIELD__fmd);
+	 * CPointer&lt;CPointer&lt;FluidModifierData&gt;&gt; p_fmd = p.cast(new Class[]{CPointer.class, FluidModifierData.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'mmd'</li>
+	 * <li>Field: 'fmd'</li>
 	 * <li>Signature: 'FluidModifierData*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mmd = new long[]{0, 0};
+	public static final long[] __DNA__FIELD__fmd = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh'.
@@ -690,14 +690,14 @@ public class FluidFlowSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'mmd'.
+	 * Get method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
-	 * @see #__DNA__FIELD__mmd
+	 * @see #__DNA__FIELD__fmd
 	 */
 	
-	public CPointer<FluidModifierData> getMmd() throws IOException
+	public CPointer<FluidModifierData> getFmd() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -710,16 +710,16 @@ public class FluidFlowSettings extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'mmd'.
+	 * Set method for struct member 'fmd'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p><ndash/>  Runtime-only fields (from here on). <ndash/>  For fast RNA access. </p>
-	 * @see #__DNA__FIELD__mmd
+	 * @see #__DNA__FIELD__fmd
 	 */
 	
-	public void setMmd(CPointer<FluidModifierData> mmd) throws IOException
+	public void setFmd(CPointer<FluidModifierData> fmd) throws IOException
 	{
-		long __address = ((mmd == null) ? 0 : mmd.getAddress());
+		long __address = ((fmd == null) ? 0 : fmd.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 0, __address);
 		} else {

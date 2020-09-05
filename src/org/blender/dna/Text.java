@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -73,6 +74,9 @@ public class Text extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'compiled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Python code object for this text (cached result of #Py_CompileStringObject). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -112,24 +116,24 @@ public class Text extends CFacade {
 	public static final long[] __DNA__FIELD__flags = new long[]{136, 176};
 
 	/**
-	 * Field descriptor (offset) for struct member 'nlines'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Text text = ...;
-	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD__nlines);
-	 * CPointer&lt;Integer&gt; p_nlines = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = text.__dna__addressof(Text.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'nlines'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nlines = new long[]{140, 180};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{140, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
@@ -338,6 +342,9 @@ public class Text extends CFacade {
 
 	/**
 	 * Get method for struct member 'compiled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Python code object for this text (cached result of #Py_CompileStringObject). </p>
 	 * @see #__DNA__FIELD__compiled
 	 */
 	
@@ -355,6 +362,9 @@ public class Text extends CFacade {
 
 	/**
 	 * Set method for struct member 'compiled'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Python code object for this text (cached result of #Py_CompileStringObject). </p>
 	 * @see #__DNA__FIELD__compiled
 	 */
 	
@@ -397,30 +407,42 @@ public class Text extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'nlines'.
-	 * @see #__DNA__FIELD__nlines
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public int getNlines() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 140);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'nlines'.
-	 * @see #__DNA__FIELD__nlines
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setNlines(int nlines) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, nlines);
+			__dna__offset = 180;
 		} else {
-			__io__block.writeInt(__io__address + 140, nlines);
+			__dna__offset = 140;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

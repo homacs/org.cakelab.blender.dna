@@ -27,7 +27,7 @@ public class ArmatureModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 110;
+	public static final int __DNA__SDNA_INDEX = 111;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -53,7 +53,7 @@ public class ArmatureModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deformflag replaces armature->deformflag. </p>
+	 * <p>{@link eArmature_DeformFlag}  use instead of #bArmature.deformflag. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,29 +133,6 @@ public class ArmatureModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__object = new long[]{108, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'prevCos'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Stored input of previous modifier, for vertexgroup blending. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * ArmatureModifierData armaturemodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = armaturemodifierdata.__dna__addressof(ArmatureModifierData.__DNA__FIELD__prevCos);
-	 * CPointer&lt;CPointer&lt;Float&gt;&gt; p_prevCos = p.cast(new Class[]{CPointer.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'prevCos'</li>
-	 * <li>Signature: 'float*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__prevCos = new long[]{112, 136};
-
-	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -226,7 +203,7 @@ public class ArmatureModifierData extends CFacade {
 	 * Get method for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deformflag replaces armature->deformflag. </p>
+	 * <p>{@link eArmature_DeformFlag}  use instead of #bArmature.deformflag. </p>
 	 * @see #__DNA__FIELD__deformflag
 	 */
 	
@@ -243,7 +220,7 @@ public class ArmatureModifierData extends CFacade {
 	 * Set method for struct member 'deformflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Deformflag replaces armature->deformflag. </p>
+	 * <p>{@link eArmature_DeformFlag}  use instead of #bArmature.deformflag. </p>
 	 * @see #__DNA__FIELD__deformflag
 	 */
 	
@@ -353,44 +330,6 @@ public class ArmatureModifierData extends CFacade {
 			__io__block.writeLong(__io__address + 128, __address);
 		} else {
 			__io__block.writeLong(__io__address + 108, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'prevCos'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Stored input of previous modifier, for vertexgroup blending. </p>
-	 * @see #__DNA__FIELD__prevCos
-	 */
-	
-	public CPointer<Float> getPrevCos() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'prevCos'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Stored input of previous modifier, for vertexgroup blending. </p>
-	 * @see #__DNA__FIELD__prevCos
-	 */
-	
-	public void setPrevCos(CPointer<Float> prevCos) throws IOException
-	{
-		long __address = ((prevCos == null) ? 0 : prevCos.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
-		} else {
-			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 

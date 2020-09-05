@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 469;
+	public static final int __DNA__SDNA_INDEX = 472;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -2885,7 +2885,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'use_modifier_stack'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)<h4>Blender Source Code:</h4>
+	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)<h4>Blender Source Code:</h4>
 	 * <p> modified dm support </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -7435,7 +7435,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'use_modifier_stack'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)<h4>Blender Source Code:</h4>
+	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)<h4>Blender Source Code:</h4>
 	 * <p> modified dm support </p>
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */
@@ -7453,7 +7453,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'use_modifier_stack'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)<h4>Blender Source Code:</h4>
+	 * Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)<h4>Blender Source Code:</h4>
 	 * <p> modified dm support </p>
 	 * @see #__DNA__FIELD__use_modifier_stack
 	 */

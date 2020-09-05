@@ -26,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 279;
+	public static final int __DNA__SDNA_INDEX = 278;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -339,7 +339,7 @@ public class ARegion extends CFacade {
 	public static final long[] __DNA__FIELD__do_draw = new long[]{212, 232};
 
 	/**
-	 * Field descriptor (offset) for struct member 'do_draw_overlay'.
+	 * Field descriptor (offset) for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Private, cached notifier events. </p>
@@ -349,17 +349,17 @@ public class ARegion extends CFacade {
 	 * </p>
 	 * <pre>
 	 * ARegion aregion = ...;
-	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__do_draw_overlay);
-	 * CPointer&lt;Short&gt; p_do_draw_overlay = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = aregion.__dna__addressof(ARegion.__DNA__FIELD__do_draw_paintcursor);
+	 * CPointer&lt;Short&gt; p_do_draw_paintcursor = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'do_draw_overlay'</li>
+	 * <li>Field: 'do_draw_paintcursor'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_overlay = new long[]{214, 234};
+	public static final long[] __DNA__FIELD__do_draw_paintcursor = new long[]{214, 234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlap'.
@@ -1216,14 +1216,14 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'do_draw_overlay'.
+	 * Get method for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Private, cached notifier events. </p>
-	 * @see #__DNA__FIELD__do_draw_overlay
+	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
 	
-	public short getDo_draw_overlay() throws IOException
+	public short getDo_draw_paintcursor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 234);
@@ -1233,19 +1233,19 @@ public class ARegion extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'do_draw_overlay'.
+	 * Set method for struct member 'do_draw_paintcursor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Private, cached notifier events. </p>
-	 * @see #__DNA__FIELD__do_draw_overlay
+	 * @see #__DNA__FIELD__do_draw_paintcursor
 	 */
 	
-	public void setDo_draw_overlay(short do_draw_overlay) throws IOException
+	public void setDo_draw_paintcursor(short do_draw_paintcursor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 234, do_draw_overlay);
+			__io__block.writeShort(__io__address + 234, do_draw_paintcursor);
 		} else {
-			__io__block.writeShort(__io__address + 214, do_draw_overlay);
+			__io__block.writeShort(__io__address + 214, do_draw_paintcursor);
 		}
 	}
 

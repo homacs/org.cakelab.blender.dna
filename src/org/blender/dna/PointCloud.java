@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=384, size64=448)
+@CMetaData(size32=400, size64=464)
 public class PointCloud extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class PointCloud extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 668;
+	public static final int __DNA__SDNA_INDEX = 672;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -190,7 +190,7 @@ public class PointCloud extends CFacade {
 	 * <ul>
 	 * <li>Field: 'pdata'</li>
 	 * <li>Signature: 'CustomData'</li>
-	 * <li>Actual Size (32bit/64bit): 212/224</li>
+	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__pdata = new long[]{156, 200};
@@ -216,7 +216,7 @@ public class PointCloud extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{368, 424};
+	public static final long[] __DNA__FIELD__mat = new long[]{384, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -236,7 +236,7 @@ public class PointCloud extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{372, 432};
+	public static final long[] __DNA__FIELD__totcol = new long[]{388, 448};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -256,7 +256,7 @@ public class PointCloud extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{374, 434};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{390, 450};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -279,7 +279,7 @@ public class PointCloud extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{380, 440};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{396, 456};
 
 	public PointCloud(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -585,9 +585,9 @@ public class PointCloud extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 424);
+			__dna__targetAddress = __io__block.readLong(__io__address + 440);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 384);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -605,9 +605,9 @@ public class PointCloud extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 424, __address);
+			__io__block.writeLong(__io__address + 440, __address);
 		} else {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 384, __address);
 		}
 	}
 
@@ -619,9 +619,9 @@ public class PointCloud extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 432);
+			return __io__block.readShort(__io__address + 448);
 		} else {
-			return __io__block.readShort(__io__address + 372);
+			return __io__block.readShort(__io__address + 388);
 		}
 	}
 
@@ -633,9 +633,9 @@ public class PointCloud extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 432, totcol);
+			__io__block.writeShort(__io__address + 448, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 372, totcol);
+			__io__block.writeShort(__io__address + 388, totcol);
 		}
 	}
 
@@ -651,9 +651,9 @@ public class PointCloud extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 434, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 450, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 374, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 390, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -666,9 +666,9 @@ public class PointCloud extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 434;
+			__dna__offset = 450;
 		} else {
-			__dna__offset = 374;
+			__dna__offset = 390;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -691,9 +691,9 @@ public class PointCloud extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 440);
+			__dna__targetAddress = __io__block.readLong(__io__address + 456);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 380);
+			__dna__targetAddress = __io__block.readLong(__io__address + 396);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -711,9 +711,9 @@ public class PointCloud extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 440, __address);
+			__io__block.writeLong(__io__address + 456, __address);
 		} else {
-			__io__block.writeLong(__io__address + 380, __address);
+			__io__block.writeLong(__io__address + 396, __address);
 		}
 	}
 

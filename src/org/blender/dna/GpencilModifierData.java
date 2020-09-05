@@ -27,7 +27,7 @@ public class GpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 489;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -150,24 +150,24 @@ public class GpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{20, 28};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * GpencilModifierData gpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = gpencilmodifierdata.__dna__addressof(GpencilModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;Short&gt; p__pad = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = gpencilmodifierdata.__dna__addressof(GpencilModifierData.__DNA__FIELD__ui_expand_flag);
+	 * CPointer&lt;Short&gt; p_ui_expand_flag = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: 'ui_expand_flag'</li>
 	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{22, 30};
+	public static final long[] __DNA__FIELD__ui_expand_flag = new long[]{22, 30};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -397,11 +397,11 @@ public class GpencilModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'ui_expand_flag'.
+	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	
-	public short get_pad() throws IOException
+	public short getUi_expand_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readShort(__io__address + 30);
@@ -411,16 +411,16 @@ public class GpencilModifierData extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'ui_expand_flag'.
+	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	
-	public void set_pad(short _pad) throws IOException
+	public void setUi_expand_flag(short ui_expand_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, _pad);
+			__io__block.writeShort(__io__address + 30, ui_expand_flag);
 		} else {
-			__io__block.writeShort(__io__address + 22, _pad);
+			__io__block.writeShort(__io__address + 22, ui_expand_flag);
 		}
 	}
 

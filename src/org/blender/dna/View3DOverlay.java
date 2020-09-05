@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -28,7 +27,7 @@ public class View3DOverlay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 216;
+	public static final int __DNA__SDNA_INDEX = 215;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -417,24 +416,27 @@ public class View3DOverlay extends CFacade {
 	public static final long[] __DNA__FIELD__gpencil_vertex_paint_opacity = new long[]{64, 64};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad4'.
+	 * Field descriptor (offset) for struct member 'handle_display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Handles display type for curves. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * View3DOverlay view3doverlay = ...;
-	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD___pad4);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD__handle_display);
+	 * CPointer&lt;Integer&gt; p_handle_display = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad4'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'handle_display'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__handle_display = new long[]{68, 68};
 
 	public View3DOverlay(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1013,42 +1015,36 @@ public class View3DOverlay extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad4'.
-	 * @see #__DNA__FIELD___pad4
+	 * Get method for struct member 'handle_display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Handles display type for curves. </p>
+	 * @see #__DNA__FIELD__handle_display
 	 */
 	
-	public CArrayFacade<Byte> get_pad4() throws IOException
+	public int getHandle_display() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 68);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 68);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad4'.
-	 * @see #__DNA__FIELD___pad4
+	 * Set method for struct member 'handle_display'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Handles display type for curves. </p>
+	 * @see #__DNA__FIELD__handle_display
 	 */
 	
-	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
+	public void setHandle_display(int handle_display) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 68;
+			__io__block.writeInt(__io__address + 68, handle_display);
 		} else {
-			__dna__offset = 68;
-		}
-		if (__io__equals(_pad4, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad4)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
-		} else {
-			__io__generic__copy( get_pad4(), _pad4);
+			__io__block.writeInt(__io__address + 68, handle_display);
 		}
 	}
 

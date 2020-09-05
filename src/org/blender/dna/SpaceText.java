@@ -28,7 +28,7 @@ public class SpaceText extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 233;
+	public static final int __DNA__SDNA_INDEX = 232;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -178,6 +178,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'top'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -198,6 +201,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'left'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -827,6 +833,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'top'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * @see #__DNA__FIELD__top
 	 */
 	
@@ -841,6 +850,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'top'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines at what line the top of the text is displayed. </p>
 	 * @see #__DNA__FIELD__top
 	 */
 	
@@ -855,6 +867,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Get method for struct member 'left'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * @see #__DNA__FIELD__left
 	 */
 	
@@ -869,6 +884,9 @@ public class SpaceText extends CFacade {
 
 	/**
 	 * Set method for struct member 'left'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Determines the horizontal scroll (in columns). </p>
 	 * @see #__DNA__FIELD__left
 	 */
 	

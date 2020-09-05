@@ -60,8 +60,7 @@ public class Image extends CFacade {
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> File path, 1024 = FILE_MAX. </p>
+	 * Unique data-block ID name
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -950,8 +949,7 @@ public class Image extends CFacade {
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> File path, 1024 = FILE_MAX. </p>
+	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	
@@ -972,8 +970,7 @@ public class Image extends CFacade {
 	 * Set method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Unique data-block ID name<h4>Blender Source Code:</h4>
-	 * <p> File path, 1024 = FILE_MAX. </p>
+	 * Unique data-block ID name
 	 * @see #__DNA__FIELD__name
 	 */
 	

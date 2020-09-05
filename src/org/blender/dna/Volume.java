@@ -27,7 +27,7 @@ public class Volume extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 672;
+	public static final int __DNA__SDNA_INDEX = 676;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.

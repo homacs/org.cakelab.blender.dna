@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1300, size64=1312)
+@CMetaData(size32=1308, size64=1320)
 public class BakeData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BakeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 181;
+	public static final int __DNA__SDNA_INDEX = 180;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -173,6 +173,26 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__cage_extrusion = new long[]{1280, 1288};
 
 	/**
+	 * Field descriptor (offset) for struct member 'max_ray_distance'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BakeData bakedata = ...;
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__max_ray_distance);
+	 * CPointer&lt;Float&gt; p_max_ray_distance = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'max_ray_distance'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__max_ray_distance = new long[]{1284, 1292};
+
+	/**
 	 * Field descriptor (offset) for struct member 'pass_filter'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -190,7 +210,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pass_filter = new long[]{1284, 1292};
+	public static final long[] __DNA__FIELD__pass_filter = new long[]{1288, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_swizzle'.
@@ -210,7 +230,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_swizzle = new long[]{1288, 1296};
+	public static final long[] __DNA__FIELD__normal_swizzle = new long[]{1292, 1300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normal_space'.
@@ -230,7 +250,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normal_space = new long[]{1291, 1299};
+	public static final long[] __DNA__FIELD__normal_space = new long[]{1295, 1303};
 
 	/**
 	 * Field descriptor (offset) for struct member 'save_mode'.
@@ -250,7 +270,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__save_mode = new long[]{1292, 1300};
+	public static final long[] __DNA__FIELD__save_mode = new long[]{1296, 1304};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -266,11 +286,11 @@ public class BakeData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 3/3</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1293, 1301};
+	public static final long[] __DNA__FIELD___pad = new long[]{1297, 1305};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cage_object'.
@@ -290,7 +310,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cage_object = new long[]{1296, 1304};
+	public static final long[] __DNA__FIELD__cage_object = new long[]{1304, 1312};
 
 	public BakeData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -523,6 +543,34 @@ public class BakeData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'max_ray_distance'.
+	 * @see #__DNA__FIELD__max_ray_distance
+	 */
+	
+	public float getMax_ray_distance() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 1292);
+		} else {
+			return __io__block.readFloat(__io__address + 1284);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'max_ray_distance'.
+	 * @see #__DNA__FIELD__max_ray_distance
+	 */
+	
+	public void setMax_ray_distance(float max_ray_distance) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 1292, max_ray_distance);
+		} else {
+			__io__block.writeFloat(__io__address + 1284, max_ray_distance);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'pass_filter'.
 	 * @see #__DNA__FIELD__pass_filter
 	 */
@@ -530,9 +578,9 @@ public class BakeData extends CFacade {
 	public int getPass_filter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1292);
+			return __io__block.readInt(__io__address + 1296);
 		} else {
-			return __io__block.readInt(__io__address + 1284);
+			return __io__block.readInt(__io__address + 1288);
 		}
 	}
 
@@ -544,9 +592,9 @@ public class BakeData extends CFacade {
 	public void setPass_filter(int pass_filter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1292, pass_filter);
+			__io__block.writeInt(__io__address + 1296, pass_filter);
 		} else {
-			__io__block.writeInt(__io__address + 1284, pass_filter);
+			__io__block.writeInt(__io__address + 1288, pass_filter);
 		}
 	}
 
@@ -562,9 +610,9 @@ public class BakeData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1300, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -577,9 +625,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1296;
+			__dna__offset = 1300;
 		} else {
-			__dna__offset = 1288;
+			__dna__offset = 1292;
 		}
 		if (__io__equals(normal_swizzle, __io__address + __dna__offset)) {
 			return;
@@ -598,9 +646,9 @@ public class BakeData extends CFacade {
 	public byte getNormal_space() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1299);
+			return __io__block.readByte(__io__address + 1303);
 		} else {
-			return __io__block.readByte(__io__address + 1291);
+			return __io__block.readByte(__io__address + 1295);
 		}
 	}
 
@@ -612,9 +660,9 @@ public class BakeData extends CFacade {
 	public void setNormal_space(byte normal_space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1299, normal_space);
+			__io__block.writeByte(__io__address + 1303, normal_space);
 		} else {
-			__io__block.writeByte(__io__address + 1291, normal_space);
+			__io__block.writeByte(__io__address + 1295, normal_space);
 		}
 	}
 
@@ -626,9 +674,9 @@ public class BakeData extends CFacade {
 	public byte getSave_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1300);
+			return __io__block.readByte(__io__address + 1304);
 		} else {
-			return __io__block.readByte(__io__address + 1292);
+			return __io__block.readByte(__io__address + 1296);
 		}
 	}
 
@@ -640,9 +688,9 @@ public class BakeData extends CFacade {
 	public void setSave_mode(byte save_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1300, save_mode);
+			__io__block.writeByte(__io__address + 1304, save_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1292, save_mode);
+			__io__block.writeByte(__io__address + 1296, save_mode);
 		}
 	}
 
@@ -655,12 +703,12 @@ public class BakeData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			3
+			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1301, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1293, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1297, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -673,9 +721,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1301;
+			__dna__offset = 1305;
 		} else {
-			__dna__offset = 1293;
+			__dna__offset = 1297;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -695,9 +743,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1304);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -712,9 +760,9 @@ public class BakeData extends CFacade {
 	{
 		long __address = ((cage_object == null) ? 0 : cage_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1304, __address);
+			__io__block.writeLong(__io__address + 1312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1296, __address);
+			__io__block.writeLong(__io__address + 1304, __address);
 		}
 	}
 
