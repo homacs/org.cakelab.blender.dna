@@ -29,7 +29,7 @@ public class NlaStrip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 547;
+	public static final int __DNA__SDNA_INDEX = 552;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -123,7 +123,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> F-Curves for controlling this strip's influence and timing TODO: move out? </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -772,7 +772,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> F-Curves for controlling this strip's influence and timing TODO: move out? </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	
@@ -790,7 +790,7 @@ public class NlaStrip extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    F-Curves for controlling the strip's influence and timing<h4>Blender Source Code:</h4>
-	 * <p> TODO: move o.ut? </p><p> F-Curves for controlling this strip's influence and timing </p>
+	 * <p> F-Curves for controlling this strip's influence and timing TODO: move out? </p>
 	 * @see #__DNA__FIELD__fcurves
 	 */
 	

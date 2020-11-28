@@ -29,7 +29,7 @@ public class ChannelDriver extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 544;
+	public static final int __DNA__SDNA_INDEX = 549;
 
 	/**
 	 * Field descriptor (offset) for struct member 'variables'.
@@ -150,7 +150,7 @@ public class ChannelDriver extends CFacade {
 	 * Field descriptor (offset) for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. Influence of driver on result. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -425,7 +425,7 @@ public class ChannelDriver extends CFacade {
 	 * Get method for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. Influence of driver on result. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	
@@ -442,7 +442,7 @@ public class ChannelDriver extends CFacade {
 	 * Set method for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX to be implemented... this is like the constraint influence setting. </p><p> Influence of driver on result. </p>
+	 * <p> XXX to be implemented... this is like the constraint influence setting. Influence of driver on result. </p>
 	 * @see #__DNA__FIELD__influence
 	 */
 	

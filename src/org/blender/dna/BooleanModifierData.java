@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=112, size64=136)
+@CMetaData(size32=124, size64=152)
 public class BooleanModifierData extends CFacade {
 
 	/**
@@ -44,7 +43,7 @@ public class BooleanModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,67 +66,27 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__object = new long[]{108, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member 'operation'.
+	 * Field descriptor (offset) for struct member 'collection'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BooleanModifierData booleanmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__operation);
-	 * CPointer&lt;Byte&gt; p_operation = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__collection);
+	 * CPointer&lt;CPointer&lt;Collection&gt;&gt; p_collection = p.cast(new Class[]{CPointer.class, Collection.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'operation'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Field: 'collection'</li>
+	 * <li>Signature: 'Collection*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__operation = new long[]{104, 128};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BooleanModifierData booleanmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{105, 129};
-
-	/**
-	 * Field descriptor (offset) for struct member 'bm_flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BooleanModifierData booleanmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__bm_flag);
-	 * CPointer&lt;Byte&gt; p_bm_flag = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'bm_flag'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__bm_flag = new long[]{107, 131};
+	public static final long[] __DNA__FIELD__collection = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'double_threshold'.
@@ -147,7 +106,87 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__double_threshold = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__double_threshold = new long[]{116, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'operation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__operation);
+	 * CPointer&lt;Byte&gt; p_operation = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'operation'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__operation = new long[]{120, 148};
+
+	/**
+	 * Field descriptor (offset) for struct member 'solver'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__solver);
+	 * CPointer&lt;Byte&gt; p_solver = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'solver'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__solver = new long[]{121, 149};
+
+	/**
+	 * Field descriptor (offset) for struct member 'flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__flag);
+	 * CPointer&lt;Byte&gt; p_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__flag = new long[]{122, 150};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bm_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BooleanModifierData booleanmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = booleanmodifierdata.__dna__addressof(BooleanModifierData.__DNA__FIELD__bm_flag);
+	 * CPointer&lt;Byte&gt; p_bm_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bm_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bm_flag = new long[]{123, 151};
 
 	public BooleanModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -202,9 +241,9 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -219,105 +258,41 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
 	/**
-	 * Get method for struct member 'operation'.
-	 * @see #__DNA__FIELD__operation
+	 * Get method for struct member 'collection'.
+	 * @see #__DNA__FIELD__collection
 	 */
 	
-	public byte getOperation() throws IOException
+	public CPointer<Collection> getCollection() throws IOException
 	{
+		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			return __io__block.readByte(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
+		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
+		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
-	 * Set method for struct member 'operation'.
-	 * @see #__DNA__FIELD__operation
+	 * Set method for struct member 'collection'.
+	 * @see #__DNA__FIELD__collection
 	 */
 	
-	public void setOperation(byte operation) throws IOException
+	public void setCollection(CPointer<Collection> collection) throws IOException
 	{
+		long __address = ((collection == null) ? 0 : collection.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 128, operation);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeByte(__io__address + 104, operation);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 129, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 105, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 129;
-		} else {
-			__dna__offset = 105;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'bm_flag'.
-	 * @see #__DNA__FIELD__bm_flag
-	 */
-	
-	public byte getBm_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 131);
-		} else {
-			return __io__block.readByte(__io__address + 107);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'bm_flag'.
-	 * @see #__DNA__FIELD__bm_flag
-	 */
-	
-	public void setBm_flag(byte bm_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 131, bm_flag);
-		} else {
-			__io__block.writeByte(__io__address + 107, bm_flag);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -329,9 +304,9 @@ public class BooleanModifierData extends CFacade {
 	public float getDouble_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -343,9 +318,121 @@ public class BooleanModifierData extends CFacade {
 	public void setDouble_threshold(float double_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 132, double_threshold);
+			__io__block.writeFloat(__io__address + 144, double_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 108, double_threshold);
+			__io__block.writeFloat(__io__address + 116, double_threshold);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'operation'.
+	 * @see #__DNA__FIELD__operation
+	 */
+	
+	public byte getOperation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 148);
+		} else {
+			return __io__block.readByte(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'operation'.
+	 * @see #__DNA__FIELD__operation
+	 */
+	
+	public void setOperation(byte operation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 148, operation);
+		} else {
+			__io__block.writeByte(__io__address + 120, operation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'solver'.
+	 * @see #__DNA__FIELD__solver
+	 */
+	
+	public byte getSolver() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 149);
+		} else {
+			return __io__block.readByte(__io__address + 121);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'solver'.
+	 * @see #__DNA__FIELD__solver
+	 */
+	
+	public void setSolver(byte solver) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 149, solver);
+		} else {
+			__io__block.writeByte(__io__address + 121, solver);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public byte getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 150);
+		} else {
+			return __io__block.readByte(__io__address + 122);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(byte flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 150, flag);
+		} else {
+			__io__block.writeByte(__io__address + 122, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bm_flag'.
+	 * @see #__DNA__FIELD__bm_flag
+	 */
+	
+	public byte getBm_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 151);
+		} else {
+			return __io__block.readByte(__io__address + 123);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bm_flag'.
+	 * @see #__DNA__FIELD__bm_flag
+	 */
+	
+	public void setBm_flag(byte bm_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 151, bm_flag);
+		} else {
+			__io__block.writeByte(__io__address + 123, bm_flag);
 		}
 	}
 

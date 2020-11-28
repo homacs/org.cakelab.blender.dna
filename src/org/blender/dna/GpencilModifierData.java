@@ -27,7 +27,7 @@ public class GpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 492;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -110,24 +110,24 @@ public class GpencilModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__mode = new long[]{12, 20};
 
 	/**
-	 * Field descriptor (offset) for struct member 'stackindex'.
+	 * Field descriptor (offset) for struct member '_pad0'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * GpencilModifierData gpencilmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = gpencilmodifierdata.__dna__addressof(GpencilModifierData.__DNA__FIELD__stackindex);
-	 * CPointer&lt;Integer&gt; p_stackindex = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = gpencilmodifierdata.__dna__addressof(GpencilModifierData.__DNA__FIELD___pad0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'stackindex'</li>
-	 * <li>Signature: 'int'</li>
+	 * <li>Field: '_pad0'</li>
+	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__stackindex = new long[]{16, 24};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{16, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -341,30 +341,42 @@ public class GpencilModifierData extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'stackindex'.
-	 * @see #__DNA__FIELD__stackindex
+	 * Get method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public int getStackindex() throws IOException
+	public CArrayFacade<Byte> get_pad0() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 24);
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readInt(__io__address + 16);
+			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'stackindex'.
-	 * @see #__DNA__FIELD__stackindex
+	 * Set method for struct member '_pad0'.
+	 * @see #__DNA__FIELD___pad0
 	 */
 	
-	public void setStackindex(int stackindex) throws IOException
+	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 24, stackindex);
+			__dna__offset = 24;
 		} else {
-			__io__block.writeInt(__io__address + 16, stackindex);
+			__dna__offset = 16;
+		}
+		if (__io__equals(_pad0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
+		} else {
+			__io__generic__copy( get_pad0(), _pad0);
 		}
 	}
 

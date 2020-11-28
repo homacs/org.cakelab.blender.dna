@@ -13,11 +13,10 @@ import org.cakelab.blender.nio.CPointer;
  * Generated facet for DNA struct type 'SpaceImage'.
  * 
  * <h3>Class Documentation</h3>
- * <h4>Blender Source Code:</h4>
- * <p> Image/UV Editor </p>
+ * 
  */
 
-@CMetaData(size32=10560, size64=10608)
+@CMetaData(size32=10568, size64=10616)
 public class SpaceImage extends CFacade {
 
 	/**
@@ -28,7 +27,7 @@ public class SpaceImage extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 230;
+	public static final int __DNA__SDNA_INDEX = 234;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -731,6 +730,26 @@ public class SpaceImage extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__mask_info = new long[]{10548, 10592};
+
+	/**
+	 * Field descriptor (offset) for struct member 'overlay'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceImage spaceimage = ...;
+	 * CPointer&lt;Object&gt; p = spaceimage.__dna__addressof(SpaceImage.__DNA__FIELD__overlay);
+	 * CPointer&lt;SpaceImageOverlay&gt; p_overlay = p.cast(new Class[]{SpaceImageOverlay.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'overlay'</li>
+	 * <li>Signature: 'SpaceImageOverlay'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__overlay = new long[]{10560, 10608};
 
 	public SpaceImage(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1849,6 +1868,42 @@ public class SpaceImage extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, mask_info);
 		} else {
 			__io__generic__copy( getMask_info(), mask_info);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'overlay'.
+	 * @see #__DNA__FIELD__overlay
+	 */
+	
+	public SpaceImageOverlay getOverlay() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new SpaceImageOverlay(__io__address + 10608, __io__block, __io__blockTable);
+		} else {
+			return new SpaceImageOverlay(__io__address + 10560, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'overlay'.
+	 * @see #__DNA__FIELD__overlay
+	 */
+	
+	public void setOverlay(SpaceImageOverlay overlay) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 10608;
+		} else {
+			__dna__offset = 10560;
+		}
+		if (__io__equals(overlay, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, overlay)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, overlay);
+		} else {
+			__io__generic__copy( getOverlay(), overlay);
 		}
 	}
 

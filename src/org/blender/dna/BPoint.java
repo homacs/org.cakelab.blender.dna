@@ -106,16 +106,36 @@ public class BPoint extends CFacade {
 	 * <pre>
 	 * BPoint bpoint = ...;
 	 * CPointer&lt;Object&gt; p = bpoint.__dna__addressof(BPoint.__DNA__FIELD__f1);
-	 * CPointer&lt;Short&gt; p_f1 = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_f1 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'f1'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'uchar'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__f1 = new long[]{24, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BPoint bpoint = ...;
+	 * CPointer&lt;Object&gt; p = bpoint.__dna__addressof(BPoint.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[1]'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{25, 25};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hide'.
@@ -298,12 +318,12 @@ public class BPoint extends CFacade {
 	 * @see #__DNA__FIELD__f1
 	 */
 	
-	public short getF1() throws IOException
+	public byte getF1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readByte(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 24);
+			return __io__block.readByte(__io__address + 24);
 		}
 	}
 
@@ -315,12 +335,52 @@ public class BPoint extends CFacade {
 	 * @see #__DNA__FIELD__f1
 	 */
 	
-	public void setF1(short f1) throws IOException
+	public void setF1(byte f1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 24, f1);
+			__io__block.writeByte(__io__address + 24, f1);
 		} else {
-			__io__block.writeShort(__io__address + 24, f1);
+			__io__block.writeByte(__io__address + 24, f1);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			1
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 25, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 25, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 25;
+		} else {
+			__dna__offset = 25;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
 		}
 	}
 

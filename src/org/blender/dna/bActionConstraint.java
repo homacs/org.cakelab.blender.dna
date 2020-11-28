@@ -28,7 +28,7 @@ public class bActionConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 349;
+	public static final int __DNA__SDNA_INDEX = 354;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.
@@ -230,11 +230,34 @@ public class bActionConstraint extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{29, 33};
+
+	/**
+	 * Field descriptor (offset) for struct member 'eval_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only used when flag ACTCON_USE_EVAL_TIME is set. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bActionConstraint bactionconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bactionconstraint.__dna__addressof(bActionConstraint.__DNA__FIELD__eval_time);
+	 * CPointer&lt;Float&gt; p_eval_time = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'eval_time'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__eval_time = new long[]{32, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act'.
@@ -564,7 +587,7 @@ public class bActionConstraint extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			3
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 33, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -592,6 +615,40 @@ public class bActionConstraint extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'eval_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only used when flag ACTCON_USE_EVAL_TIME is set. </p>
+	 * @see #__DNA__FIELD__eval_time
+	 */
+	
+	public float getEval_time() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 36);
+		} else {
+			return __io__block.readFloat(__io__address + 32);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'eval_time'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Only used when flag ACTCON_USE_EVAL_TIME is set. </p>
+	 * @see #__DNA__FIELD__eval_time
+	 */
+	
+	public void setEval_time(float eval_time) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 36, eval_time);
+		} else {
+			__io__block.writeFloat(__io__address + 32, eval_time);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Action Editor Space. This is defined here instead of in {@link DNA_space_types.h}  </p>
  */
 
-@CMetaData(size32=304, size64=352)
+@CMetaData(size32=292, size64=336)
 public class SpaceAction extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceAction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 333;
+	public static final int __DNA__SDNA_INDEX = 338;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -173,7 +173,7 @@ public class SpaceAction extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{24, 40};
@@ -199,7 +199,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__action = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__action = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ads'.
@@ -222,7 +222,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 96/112</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ads = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__ads = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timeslide'.
@@ -245,7 +245,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timeslide = new long[]{280, 328};
+	public static final long[] __DNA__FIELD__timeslide = new long[]{268, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -265,7 +265,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{284, 332};
+	public static final long[] __DNA__FIELD__flag = new long[]{272, 316};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -288,7 +288,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{286, 334};
+	public static final long[] __DNA__FIELD__mode = new long[]{274, 318};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode_prev'.
@@ -311,7 +311,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode_prev = new long[]{287, 335};
+	public static final long[] __DNA__FIELD__mode_prev = new long[]{275, 319};
 
 	/**
 	 * Field descriptor (offset) for struct member 'autosnap'.
@@ -334,7 +334,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__autosnap = new long[]{288, 336};
+	public static final long[] __DNA__FIELD__autosnap = new long[]{276, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_display'.
@@ -357,7 +357,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_display = new long[]{289, 337};
+	public static final long[] __DNA__FIELD__cache_display = new long[]{277, 321};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -377,7 +377,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{290, 338};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{278, 322};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -397,7 +397,7 @@ public class SpaceAction extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{296, 344};
+	public static final long[] __DNA__FIELD__runtime = new long[]{284, 328};
 
 	public SpaceAction(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -667,9 +667,9 @@ public class SpaceAction extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bAction.class};
 		return new CPointer<bAction>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bAction.__DNA__SDNA_INDEX), __io__blockTable);
@@ -687,9 +687,9 @@ public class SpaceAction extends CFacade {
 	{
 		long __address = ((action == null) ? 0 : action.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 
@@ -704,9 +704,9 @@ public class SpaceAction extends CFacade {
 	public bDopeSheet getAds() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bDopeSheet(__io__address + 216, __io__block, __io__blockTable);
+			return new bDopeSheet(__io__address + 200, __io__block, __io__blockTable);
 		} else {
-			return new bDopeSheet(__io__address + 184, __io__block, __io__blockTable);
+			return new bDopeSheet(__io__address + 172, __io__block, __io__blockTable);
 		}
 	}
 
@@ -722,9 +722,9 @@ public class SpaceAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 172;
 		}
 		if (__io__equals(ads, __io__address + __dna__offset)) {
 			return;
@@ -746,9 +746,9 @@ public class SpaceAction extends CFacade {
 	public float getTimeslide() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 312);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 268);
 		}
 	}
 
@@ -763,9 +763,9 @@ public class SpaceAction extends CFacade {
 	public void setTimeslide(float timeslide) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 328, timeslide);
+			__io__block.writeFloat(__io__address + 312, timeslide);
 		} else {
-			__io__block.writeFloat(__io__address + 280, timeslide);
+			__io__block.writeFloat(__io__address + 268, timeslide);
 		}
 	}
 
@@ -777,9 +777,9 @@ public class SpaceAction extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 332);
+			return __io__block.readShort(__io__address + 316);
 		} else {
-			return __io__block.readShort(__io__address + 284);
+			return __io__block.readShort(__io__address + 272);
 		}
 	}
 
@@ -791,9 +791,9 @@ public class SpaceAction extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 332, flag);
+			__io__block.writeShort(__io__address + 316, flag);
 		} else {
-			__io__block.writeShort(__io__address + 284, flag);
+			__io__block.writeShort(__io__address + 272, flag);
 		}
 	}
 
@@ -808,9 +808,9 @@ public class SpaceAction extends CFacade {
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 334);
+			return __io__block.readByte(__io__address + 318);
 		} else {
-			return __io__block.readByte(__io__address + 286);
+			return __io__block.readByte(__io__address + 274);
 		}
 	}
 
@@ -825,9 +825,9 @@ public class SpaceAction extends CFacade {
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 334, mode);
+			__io__block.writeByte(__io__address + 318, mode);
 		} else {
-			__io__block.writeByte(__io__address + 286, mode);
+			__io__block.writeByte(__io__address + 274, mode);
 		}
 	}
 
@@ -842,9 +842,9 @@ public class SpaceAction extends CFacade {
 	public byte getMode_prev() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 335);
+			return __io__block.readByte(__io__address + 319);
 		} else {
-			return __io__block.readByte(__io__address + 287);
+			return __io__block.readByte(__io__address + 275);
 		}
 	}
 
@@ -859,9 +859,9 @@ public class SpaceAction extends CFacade {
 	public void setMode_prev(byte mode_prev) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 335, mode_prev);
+			__io__block.writeByte(__io__address + 319, mode_prev);
 		} else {
-			__io__block.writeByte(__io__address + 287, mode_prev);
+			__io__block.writeByte(__io__address + 275, mode_prev);
 		}
 	}
 
@@ -876,9 +876,9 @@ public class SpaceAction extends CFacade {
 	public byte getAutosnap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 336);
+			return __io__block.readByte(__io__address + 320);
 		} else {
-			return __io__block.readByte(__io__address + 288);
+			return __io__block.readByte(__io__address + 276);
 		}
 	}
 
@@ -893,9 +893,9 @@ public class SpaceAction extends CFacade {
 	public void setAutosnap(byte autosnap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 336, autosnap);
+			__io__block.writeByte(__io__address + 320, autosnap);
 		} else {
-			__io__block.writeByte(__io__address + 288, autosnap);
+			__io__block.writeByte(__io__address + 276, autosnap);
 		}
 	}
 
@@ -910,9 +910,9 @@ public class SpaceAction extends CFacade {
 	public byte getCache_display() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 337);
+			return __io__block.readByte(__io__address + 321);
 		} else {
-			return __io__block.readByte(__io__address + 289);
+			return __io__block.readByte(__io__address + 277);
 		}
 	}
 
@@ -927,9 +927,9 @@ public class SpaceAction extends CFacade {
 	public void setCache_display(byte cache_display) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 337, cache_display);
+			__io__block.writeByte(__io__address + 321, cache_display);
 		} else {
-			__io__block.writeByte(__io__address + 289, cache_display);
+			__io__block.writeByte(__io__address + 277, cache_display);
 		}
 	}
 
@@ -945,9 +945,9 @@ public class SpaceAction extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 338, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 322, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 290, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 278, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -960,9 +960,9 @@ public class SpaceAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 338;
+			__dna__offset = 322;
 		} else {
-			__dna__offset = 290;
+			__dna__offset = 278;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -981,9 +981,9 @@ public class SpaceAction extends CFacade {
 	public SpaceAction_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SpaceAction_Runtime(__io__address + 344, __io__block, __io__blockTable);
+			return new SpaceAction_Runtime(__io__address + 328, __io__block, __io__blockTable);
 		} else {
-			return new SpaceAction_Runtime(__io__address + 296, __io__block, __io__blockTable);
+			return new SpaceAction_Runtime(__io__address + 284, __io__block, __io__blockTable);
 		}
 	}
 
@@ -996,9 +996,9 @@ public class SpaceAction extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 344;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 296;
+			__dna__offset = 284;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

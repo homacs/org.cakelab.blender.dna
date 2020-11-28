@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=248, size64=272)
+@CMetaData(size32=256, size64=280)
 public class DataTransferModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_source = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__ob_source = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'data_types'.
@@ -90,7 +90,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__data_types = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__data_types = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vmap_mode'.
@@ -113,7 +113,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vmap_mode = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__vmap_mode = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'emap_mode'.
@@ -133,7 +133,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__emap_mode = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__emap_mode = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lmap_mode'.
@@ -153,7 +153,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lmap_mode = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__lmap_mode = new long[]{124, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmap_mode'.
@@ -173,7 +173,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pmap_mode = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__pmap_mode = new long[]{128, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_max_distance'.
@@ -193,7 +193,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_max_distance = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__map_max_distance = new long[]{132, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_ray_radius'.
@@ -213,7 +213,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_ray_radius = new long[]{128, 152};
+	public static final long[] __DNA__FIELD__map_ray_radius = new long[]{136, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'islands_precision'.
@@ -233,7 +233,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__islands_precision = new long[]{132, 156};
+	public static final long[] __DNA__FIELD__islands_precision = new long[]{140, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -253,7 +253,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{136, 160};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{144, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers_select_src'.
@@ -276,7 +276,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layers_select_src = new long[]{140, 164};
+	public static final long[] __DNA__FIELD__layers_select_src = new long[]{148, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers_select_dst'.
@@ -299,7 +299,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__layers_select_dst = new long[]{156, 180};
+	public static final long[] __DNA__FIELD__layers_select_dst = new long[]{164, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
@@ -322,7 +322,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_mode = new long[]{172, 196};
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_factor'.
@@ -342,7 +342,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_factor = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__mix_factor = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -365,7 +365,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -385,7 +385,7 @@ public class DataTransferModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{244, 268};
+	public static final long[] __DNA__FIELD__flags = new long[]{252, 276};
 
 	public DataTransferModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -440,9 +440,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -457,9 +457,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __address = ((ob_source == null) ? 0 : ob_source.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -474,9 +474,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getData_types() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -491,9 +491,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setData_types(int data_types) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 128, data_types);
+			__io__block.writeInt(__io__address + 136, data_types);
 		} else {
-			__io__block.writeInt(__io__address + 104, data_types);
+			__io__block.writeInt(__io__address + 112, data_types);
 		}
 	}
 
@@ -508,9 +508,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getVmap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -525,9 +525,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setVmap_mode(int vmap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, vmap_mode);
+			__io__block.writeInt(__io__address + 140, vmap_mode);
 		} else {
-			__io__block.writeInt(__io__address + 108, vmap_mode);
+			__io__block.writeInt(__io__address + 116, vmap_mode);
 		}
 	}
 
@@ -539,9 +539,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getEmap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 144);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -553,9 +553,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setEmap_mode(int emap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, emap_mode);
+			__io__block.writeInt(__io__address + 144, emap_mode);
 		} else {
-			__io__block.writeInt(__io__address + 112, emap_mode);
+			__io__block.writeInt(__io__address + 120, emap_mode);
 		}
 	}
 
@@ -567,9 +567,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getLmap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
+			return __io__block.readInt(__io__address + 148);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 124);
 		}
 	}
 
@@ -581,9 +581,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setLmap_mode(int lmap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, lmap_mode);
+			__io__block.writeInt(__io__address + 148, lmap_mode);
 		} else {
-			__io__block.writeInt(__io__address + 116, lmap_mode);
+			__io__block.writeInt(__io__address + 124, lmap_mode);
 		}
 	}
 
@@ -595,9 +595,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getPmap_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 152);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -609,9 +609,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setPmap_mode(int pmap_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, pmap_mode);
+			__io__block.writeInt(__io__address + 152, pmap_mode);
 		} else {
-			__io__block.writeInt(__io__address + 120, pmap_mode);
+			__io__block.writeInt(__io__address + 128, pmap_mode);
 		}
 	}
 
@@ -623,9 +623,9 @@ public class DataTransferModifierData extends CFacade {
 	public float getMap_max_distance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 156);
 		} else {
-			return __io__block.readFloat(__io__address + 124);
+			return __io__block.readFloat(__io__address + 132);
 		}
 	}
 
@@ -637,9 +637,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMap_max_distance(float map_max_distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, map_max_distance);
+			__io__block.writeFloat(__io__address + 156, map_max_distance);
 		} else {
-			__io__block.writeFloat(__io__address + 124, map_max_distance);
+			__io__block.writeFloat(__io__address + 132, map_max_distance);
 		}
 	}
 
@@ -651,9 +651,9 @@ public class DataTransferModifierData extends CFacade {
 	public float getMap_ray_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 160);
 		} else {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		}
 	}
 
@@ -665,9 +665,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMap_ray_radius(float map_ray_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 152, map_ray_radius);
+			__io__block.writeFloat(__io__address + 160, map_ray_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 128, map_ray_radius);
+			__io__block.writeFloat(__io__address + 136, map_ray_radius);
 		}
 	}
 
@@ -679,9 +679,9 @@ public class DataTransferModifierData extends CFacade {
 	public float getIslands_precision() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 164);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -693,9 +693,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setIslands_precision(float islands_precision) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 156, islands_precision);
+			__io__block.writeFloat(__io__address + 164, islands_precision);
 		} else {
-			__io__block.writeFloat(__io__address + 132, islands_precision);
+			__io__block.writeFloat(__io__address + 140, islands_precision);
 		}
 	}
 
@@ -711,9 +711,9 @@ public class DataTransferModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -726,9 +726,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -754,9 +754,9 @@ public class DataTransferModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -772,9 +772,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		} else {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		}
 		if (__io__equals(layers_select_src, __io__address + __dna__offset)) {
 			return;
@@ -800,9 +800,9 @@ public class DataTransferModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -818,9 +818,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 180;
+			__dna__offset = 188;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		}
 		if (__io__equals(layers_select_dst, __io__address + __dna__offset)) {
 			return;
@@ -842,9 +842,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getMix_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -859,9 +859,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMix_mode(int mix_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 196, mix_mode);
+			__io__block.writeInt(__io__address + 204, mix_mode);
 		} else {
-			__io__block.writeInt(__io__address + 172, mix_mode);
+			__io__block.writeInt(__io__address + 180, mix_mode);
 		}
 	}
 
@@ -873,9 +873,9 @@ public class DataTransferModifierData extends CFacade {
 	public float getMix_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -887,9 +887,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setMix_factor(float mix_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, mix_factor);
+			__io__block.writeFloat(__io__address + 208, mix_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 176, mix_factor);
+			__io__block.writeFloat(__io__address + 184, mix_factor);
 		}
 	}
 
@@ -908,9 +908,9 @@ public class DataTransferModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -926,9 +926,9 @@ public class DataTransferModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 212;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 188;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -947,9 +947,9 @@ public class DataTransferModifierData extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 244);
+			return __io__block.readInt(__io__address + 252);
 		}
 	}
 
@@ -961,9 +961,9 @@ public class DataTransferModifierData extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, flags);
+			__io__block.writeInt(__io__address + 276, flags);
 		} else {
-			__io__block.writeInt(__io__address + 244, flags);
+			__io__block.writeInt(__io__address + 252, flags);
 		}
 	}
 

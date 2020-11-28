@@ -27,7 +27,7 @@ public class PointCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 684;
+	public static final int __DNA__SDNA_INDEX = 685;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -96,7 +96,7 @@ public class PointCache extends CFacade {
 	 * Field descriptor (offset) for struct member 'step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, but for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -665,7 +665,7 @@ public class PointCache extends CFacade {
 	 * Get method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, but for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	
@@ -682,7 +682,7 @@ public class PointCache extends CFacade {
 	 * Set method for struct member 'step'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, buf for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
+	 * <p> The number of frames between cached frames. This should probably be an upper bound for a per point adaptive step in the future, but for now it's the same for all points. Without adaptivity this can effect the perceived simulation quite a bit though. If for example particles are colliding with a horizontal plane (with high damping) they quickly come to a stop on the plane, however there are still forces acting on the particle (gravity and collisions), so the particle velocity isn't necessarily zero for the whole duration of the frame even if the particle seems stationary. If all simulation frames aren't cached (step > 1) these velocities are interpolated into movement for the non-cached frames. The result will look like the point is oscillating around the collision location. So for now cache step should be set to 1 for accurate reproduction of collisions. </p>
 	 * @see #__DNA__FIELD__step
 	 */
 	

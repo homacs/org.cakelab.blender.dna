@@ -27,7 +27,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 452;
+	public static final int __DNA__SDNA_INDEX = 457;
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.
@@ -257,24 +257,51 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__draw_subdivide = new long[]{34, 34};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'fill_layer_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <p> Layers used for fill. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushGpencilSettings brushgpencilsettings = ...;
-	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__fill_layer_mode);
+	 * CPointer&lt;Short&gt; p_fill_layer_mode = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Field: 'fill_layer_mode'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__fill_layer_mode = new long[]{36, 36};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fill_direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Direction of the fill
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BrushGpencilSettings brushgpencilsettings = ...;
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__fill_direction);
+	 * CPointer&lt;Short&gt; p_fill_direction = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fill_direction'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fill_direction = new long[]{38, 38};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fill_threshold'.
@@ -806,24 +833,28 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__preset_type = new long[]{128, 128};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
+	 * Field descriptor (offset) for struct member 'brush_draw_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushGpencilSettings brushgpencilsettings = ...;
-	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__brush_draw_mode);
+	 * CPointer&lt;Short&gt; p_brush_draw_mode = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[2]'</li>
+	 * <li>Field: 'brush_draw_mode'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{130, 130};
+	public static final long[] __DNA__FIELD__brush_draw_mode = new long[]{130, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'random_hue'.
@@ -1462,42 +1493,72 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'fill_layer_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <p> Layers used for fill. </p>
+	 * @see #__DNA__FIELD__fill_layer_mode
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public short getFill_layer_mode() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 36);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 36);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'fill_layer_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Layers used as boundaries<h4>Blender Source Code:</h4>
+	 * <p> Layers used for fill. </p>
+	 * @see #__DNA__FIELD__fill_layer_mode
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setFill_layer_mode(short fill_layer_mode) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__io__block.writeShort(__io__address + 36, fill_layer_mode);
 		} else {
-			__dna__offset = 36;
+			__io__block.writeShort(__io__address + 36, fill_layer_mode);
 		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+	}
+
+	/**
+	 * Get method for struct member 'fill_direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Direction of the fill
+	 * @see #__DNA__FIELD__fill_direction
+	 */
+	
+	public short getFill_direction() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 38);
 		} else {
-			__io__generic__copy( get_pad(), _pad);
+			return __io__block.readShort(__io__address + 38);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fill_direction'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Direction of the fill
+	 * @see #__DNA__FIELD__fill_direction
+	 */
+	
+	public void setFill_direction(short fill_direction) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 38, fill_direction);
+		} else {
+			__io__block.writeShort(__io__address + 38, fill_direction);
 		}
 	}
 
@@ -2296,42 +2357,38 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Get method for struct member 'brush_draw_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
+	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
 	
-	public CArrayFacade<Byte> get_pad3() throws IOException
+	public short getBrush_draw_mode() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 130);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 130);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
+	 * Set method for struct member 'brush_draw_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Preselected mode when using this brush<h4>Blender Source Code:</h4>
+	 * <p>{@link Brush}  preselected mode (Active/Material/Vertexcolor). </p>
+	 * @see #__DNA__FIELD__brush_draw_mode
 	 */
 	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	public void setBrush_draw_mode(short brush_draw_mode) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 130;
+			__io__block.writeShort(__io__address + 130, brush_draw_mode);
 		} else {
-			__dna__offset = 130;
-		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
-		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__block.writeShort(__io__address + 130, brush_draw_mode);
 		}
 	}
 

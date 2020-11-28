@@ -26,7 +26,7 @@ public class Volume_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 673;
+	public static final int __DNA__SDNA_INDEX = 678;
 
 	/**
 	 * Field descriptor (offset) for struct member 'grids'.
@@ -75,24 +75,27 @@ public class Volume_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__frame = new long[]{4, 8};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'default_simplify_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Default simplify level for volume grids loaded from files. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Volume_Runtime volume_runtime = ...;
-	 * CPointer&lt;Object&gt; p = volume_runtime.__dna__addressof(Volume_Runtime.__DNA__FIELD___pad);
-	 * CPointer&lt;Integer&gt; p__pad = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = volume_runtime.__dna__addressof(Volume_Runtime.__DNA__FIELD__default_simplify_level);
+	 * CPointer&lt;Integer&gt; p_default_simplify_level = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
+	 * <li>Field: 'default_simplify_level'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{8, 12};
+	public static final long[] __DNA__FIELD__default_simplify_level = new long[]{8, 12};
 
 	public Volume_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -175,11 +178,14 @@ public class Volume_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'default_simplify_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Default simplify level for volume grids loaded from files. </p>
+	 * @see #__DNA__FIELD__default_simplify_level
 	 */
 	
-	public int get_pad() throws IOException
+	public int getDefault_simplify_level() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 12);
@@ -189,16 +195,19 @@ public class Volume_Runtime extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'default_simplify_level'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Default simplify level for volume grids loaded from files. </p>
+	 * @see #__DNA__FIELD__default_simplify_level
 	 */
 	
-	public void set_pad(int _pad) throws IOException
+	public void setDefault_simplify_level(int default_simplify_level) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 12, _pad);
+			__io__block.writeInt(__io__address + 12, default_simplify_level);
 		} else {
-			__io__block.writeInt(__io__address + 8, _pad);
+			__io__block.writeInt(__io__address + 8, default_simplify_level);
 		}
 	}
 

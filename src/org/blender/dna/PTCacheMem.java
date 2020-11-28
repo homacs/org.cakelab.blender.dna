@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=96, size64=176)
+@CMetaData(size32=64, size64=112)
 public class PTCacheMem extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class PTCacheMem extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 683;
+	public static final int __DNA__SDNA_INDEX = 684;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -173,29 +173,6 @@ public class PTCacheMem extends CFacade {
 	public static final long[] __DNA__FIELD__data = new long[]{24, 32};
 
 	/**
-	 * Field descriptor (offset) for struct member 'cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BPHYS_TOT_DATA. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * PTCacheMem ptcachemem = ...;
-	 * CPointer&lt;Object&gt; p = ptcachemem.__dna__addressof(PTCacheMem.__DNA__FIELD__cur);
-	 * CPointer&lt;CArrayFacade&lt;CPointer&lt;Object&gt;&gt;&gt; p_cur = p.cast(new Class[]{CArrayFacade.class, CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cur'</li>
-	 * <li>Signature: 'void*[8]'</li>
-	 * <li>Actual Size (32bit/64bit): 32/64</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cur = new long[]{56, 96};
-
-	/**
 	 * Field descriptor (offset) for struct member 'extradata'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -213,7 +190,7 @@ public class PTCacheMem extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__extradata = new long[]{88, 160};
+	public static final long[] __DNA__FIELD__extradata = new long[]{56, 96};
 
 	public PTCacheMem(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -446,52 +423,6 @@ public class PTCacheMem extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BPHYS_TOT_DATA. </p>
-	 * @see #__DNA__FIELD__cur
-	 */
-	
-	public CArrayFacade<CPointer<Object>> getCur() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Object.class};
-		int[] __dna__dimensions = new int[]{
-			8
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<Object>>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<CPointer<Object>>(__io__address + 56, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> BPHYS_TOT_DATA. </p>
-	 * @see #__DNA__FIELD__cur
-	 */
-	
-	public void setCur(CArrayFacade<CPointer<Object>> cur) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 96;
-		} else {
-			__dna__offset = 56;
-		}
-		if (__io__equals(cur, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, cur)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, cur);
-		} else {
-			__io__generic__copy( getCur(), cur);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'extradata'.
 	 * @see #__DNA__FIELD__extradata
 	 */
@@ -499,9 +430,9 @@ public class PTCacheMem extends CFacade {
 	public ListBase getExtradata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 96, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 88, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 56, __io__block, __io__blockTable);
 		}
 	}
 
@@ -514,9 +445,9 @@ public class PTCacheMem extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 96;
 		} else {
-			__dna__offset = 88;
+			__dna__offset = 56;
 		}
 		if (__io__equals(extradata, __io__address + __dna__offset)) {
 			return;

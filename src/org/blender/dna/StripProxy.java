@@ -27,10 +27,13 @@ public class StripProxy extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 285;
+	public static final int __DNA__SDNA_INDEX = 290;
 
 	/**
 	 * Field descriptor (offset) for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom directory for index and proxy files </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -53,7 +56,7 @@ public class StripProxy extends CFacade {
 	 * Field descriptor (offset) for struct member 'file'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (defaults to BL_proxy) </p>
+	 * <p> (defaults to BL_proxy) custom file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -74,6 +77,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'anim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom proxy anim file </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -94,6 +100,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -114,6 +123,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -134,6 +146,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'build_size_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -156,7 +171,7 @@ public class StripProxy extends CFacade {
 	 * Field descriptor (offset) for struct member 'build_tc_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to build </p>
+	 * <p> to build time code flags (see below) of all tc indices </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -248,6 +263,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom directory for index and proxy files </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -266,6 +284,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom directory for index and proxy files </p>
 	 * @see #__DNA__FIELD__dir
 	 */
 	
@@ -290,7 +311,7 @@ public class StripProxy extends CFacade {
 	 * Get method for struct member 'file'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (defaults to BL_proxy) </p>
+	 * <p> (defaults to BL_proxy) custom file </p>
 	 * @see #__DNA__FIELD__file
 	 */
 	
@@ -311,7 +332,7 @@ public class StripProxy extends CFacade {
 	 * Set method for struct member 'file'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (defaults to BL_proxy) </p>
+	 * <p> (defaults to BL_proxy) custom file </p>
 	 * @see #__DNA__FIELD__file
 	 */
 	
@@ -334,6 +355,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'anim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom proxy anim file </p>
 	 * @see #__DNA__FIELD__anim
 	 */
 	
@@ -351,6 +375,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'anim'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> custom proxy anim file </p>
 	 * @see #__DNA__FIELD__anim
 	 */
 	
@@ -366,6 +393,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * @see #__DNA__FIELD__tc
 	 */
 	
@@ -380,6 +410,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'tc'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> time code in use </p>
 	 * @see #__DNA__FIELD__tc
 	 */
 	
@@ -394,6 +427,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -408,6 +444,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'quality'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> proxy build quality </p>
 	 * @see #__DNA__FIELD__quality
 	 */
 	
@@ -422,6 +461,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Get method for struct member 'build_size_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies </p>
 	 * @see #__DNA__FIELD__build_size_flags
 	 */
 	
@@ -436,6 +478,9 @@ public class StripProxy extends CFacade {
 
 	/**
 	 * Set method for struct member 'build_size_flags'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> size flags (see below) of all proxies </p>
 	 * @see #__DNA__FIELD__build_size_flags
 	 */
 	
@@ -452,7 +497,7 @@ public class StripProxy extends CFacade {
 	 * Get method for struct member 'build_tc_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to build </p>
+	 * <p> to build time code flags (see below) of all tc indices </p>
 	 * @see #__DNA__FIELD__build_tc_flags
 	 */
 	
@@ -469,7 +514,7 @@ public class StripProxy extends CFacade {
 	 * Set method for struct member 'build_tc_flags'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> to build </p>
+	 * <p> to build time code flags (see below) of all tc indices </p>
 	 * @see #__DNA__FIELD__build_tc_flags
 	 */
 	

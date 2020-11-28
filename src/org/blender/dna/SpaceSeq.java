@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Sequencer </p>
  */
 
-@CMetaData(size32=256, size64=312)
+@CMetaData(size32=244, size64=296)
 public class SpaceSeq extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceSeq extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 226;
+	public static final int __DNA__SDNA_INDEX = 229;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -173,7 +173,7 @@ public class SpaceSeq extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{24, 40};
@@ -201,7 +201,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__xof = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
@@ -226,7 +226,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{184, 212};
+	public static final long[] __DNA__FIELD__yof = new long[]{172, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainb'.
@@ -249,7 +249,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mainb = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__mainb = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'render_size'.
@@ -272,7 +272,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__render_size = new long[]{190, 218};
+	public static final long[] __DNA__FIELD__render_size = new long[]{178, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'chanshown'.
@@ -292,7 +292,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__chanshown = new long[]{192, 220};
+	public static final long[] __DNA__FIELD__chanshown = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zebra'.
@@ -312,7 +312,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zebra = new long[]{194, 222};
+	public static final long[] __DNA__FIELD__zebra = new long[]{182, 206};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -332,7 +332,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{196, 224};
+	public static final long[] __DNA__FIELD__flag = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
@@ -357,7 +357,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zoom = new long[]{200, 228};
+	public static final long[] __DNA__FIELD__zoom = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view'.
@@ -380,7 +380,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view = new long[]{204, 232};
+	public static final long[] __DNA__FIELD__view = new long[]{192, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlay_type'.
@@ -400,7 +400,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay_type = new long[]{208, 236};
+	public static final long[] __DNA__FIELD__overlay_type = new long[]{196, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flag'.
@@ -423,7 +423,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_flag = new long[]{212, 240};
+	public static final long[] __DNA__FIELD__draw_flag = new long[]{200, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -443,7 +443,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{216, 244};
+	public static final long[] __DNA__FIELD___pad = new long[]{204, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -466,7 +466,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{220, 248};
+	public static final long[] __DNA__FIELD__gpd = new long[]{208, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scopes'.
@@ -489,7 +489,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 24/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scopes = new long[]{224, 256};
+	public static final long[] __DNA__FIELD__scopes = new long[]{212, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'multiview_eye'.
@@ -512,7 +512,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__multiview_eye = new long[]{248, 304};
+	public static final long[] __DNA__FIELD__multiview_eye = new long[]{236, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -532,7 +532,7 @@ public class SpaceSeq extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{249, 305};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{237, 289};
 
 	public SpaceSeq(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -803,9 +803,9 @@ public class SpaceSeq extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -822,9 +822,9 @@ public class SpaceSeq extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, xof);
+			__io__block.writeFloat(__io__address + 192, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 180, xof);
+			__io__block.writeFloat(__io__address + 168, xof);
 		}
 	}
 
@@ -841,9 +841,9 @@ public class SpaceSeq extends CFacade {
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -860,9 +860,9 @@ public class SpaceSeq extends CFacade {
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, yof);
+			__io__block.writeFloat(__io__address + 196, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 184, yof);
+			__io__block.writeFloat(__io__address + 172, yof);
 		}
 	}
 
@@ -877,9 +877,9 @@ public class SpaceSeq extends CFacade {
 	public short getMainb() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -894,9 +894,9 @@ public class SpaceSeq extends CFacade {
 	public void setMainb(short mainb) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, mainb);
+			__io__block.writeShort(__io__address + 200, mainb);
 		} else {
-			__io__block.writeShort(__io__address + 188, mainb);
+			__io__block.writeShort(__io__address + 176, mainb);
 		}
 	}
 
@@ -911,9 +911,9 @@ public class SpaceSeq extends CFacade {
 	public short getRender_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 202);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -928,9 +928,9 @@ public class SpaceSeq extends CFacade {
 	public void setRender_size(short render_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, render_size);
+			__io__block.writeShort(__io__address + 202, render_size);
 		} else {
-			__io__block.writeShort(__io__address + 190, render_size);
+			__io__block.writeShort(__io__address + 178, render_size);
 		}
 	}
 
@@ -942,9 +942,9 @@ public class SpaceSeq extends CFacade {
 	public short getChanshown() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 204);
 		} else {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -956,9 +956,9 @@ public class SpaceSeq extends CFacade {
 	public void setChanshown(short chanshown) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 220, chanshown);
+			__io__block.writeShort(__io__address + 204, chanshown);
 		} else {
-			__io__block.writeShort(__io__address + 192, chanshown);
+			__io__block.writeShort(__io__address + 180, chanshown);
 		}
 	}
 
@@ -970,9 +970,9 @@ public class SpaceSeq extends CFacade {
 	public short getZebra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 206);
 		} else {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -984,9 +984,9 @@ public class SpaceSeq extends CFacade {
 	public void setZebra(short zebra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 222, zebra);
+			__io__block.writeShort(__io__address + 206, zebra);
 		} else {
-			__io__block.writeShort(__io__address + 194, zebra);
+			__io__block.writeShort(__io__address + 182, zebra);
 		}
 	}
 
@@ -998,9 +998,9 @@ public class SpaceSeq extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 208);
 		} else {
-			return __io__block.readInt(__io__address + 196);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -1012,9 +1012,9 @@ public class SpaceSeq extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, flag);
+			__io__block.writeInt(__io__address + 208, flag);
 		} else {
-			__io__block.writeInt(__io__address + 196, flag);
+			__io__block.writeInt(__io__address + 184, flag);
 		}
 	}
 
@@ -1031,9 +1031,9 @@ public class SpaceSeq extends CFacade {
 	public float getZoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -1050,9 +1050,9 @@ public class SpaceSeq extends CFacade {
 	public void setZoom(float zoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, zoom);
+			__io__block.writeFloat(__io__address + 212, zoom);
 		} else {
-			__io__block.writeFloat(__io__address + 200, zoom);
+			__io__block.writeFloat(__io__address + 188, zoom);
 		}
 	}
 
@@ -1067,9 +1067,9 @@ public class SpaceSeq extends CFacade {
 	public int getView() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -1084,9 +1084,9 @@ public class SpaceSeq extends CFacade {
 	public void setView(int view) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, view);
+			__io__block.writeInt(__io__address + 216, view);
 		} else {
-			__io__block.writeInt(__io__address + 204, view);
+			__io__block.writeInt(__io__address + 192, view);
 		}
 	}
 
@@ -1098,9 +1098,9 @@ public class SpaceSeq extends CFacade {
 	public int getOverlay_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -1112,9 +1112,9 @@ public class SpaceSeq extends CFacade {
 	public void setOverlay_type(int overlay_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, overlay_type);
+			__io__block.writeInt(__io__address + 220, overlay_type);
 		} else {
-			__io__block.writeInt(__io__address + 208, overlay_type);
+			__io__block.writeInt(__io__address + 196, overlay_type);
 		}
 	}
 
@@ -1129,9 +1129,9 @@ public class SpaceSeq extends CFacade {
 	public int getDraw_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 240);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 200);
 		}
 	}
 
@@ -1146,9 +1146,9 @@ public class SpaceSeq extends CFacade {
 	public void setDraw_flag(int draw_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 240, draw_flag);
+			__io__block.writeInt(__io__address + 224, draw_flag);
 		} else {
-			__io__block.writeInt(__io__address + 212, draw_flag);
+			__io__block.writeInt(__io__address + 200, draw_flag);
 		}
 	}
 
@@ -1164,9 +1164,9 @@ public class SpaceSeq extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1179,9 +1179,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 244;
+			__dna__offset = 228;
 		} else {
-			__dna__offset = 216;
+			__dna__offset = 204;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1204,9 +1204,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1224,9 +1224,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -1241,9 +1241,9 @@ public class SpaceSeq extends CFacade {
 	public SequencerScopes getScopes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SequencerScopes(__io__address + 256, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new SequencerScopes(__io__address + 224, __io__block, __io__blockTable);
+			return new SequencerScopes(__io__address + 212, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1259,9 +1259,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 212;
 		}
 		if (__io__equals(scopes, __io__address + __dna__offset)) {
 			return;
@@ -1283,9 +1283,9 @@ public class SpaceSeq extends CFacade {
 	public byte getMultiview_eye() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 304);
+			return __io__block.readByte(__io__address + 288);
 		} else {
-			return __io__block.readByte(__io__address + 248);
+			return __io__block.readByte(__io__address + 236);
 		}
 	}
 
@@ -1300,9 +1300,9 @@ public class SpaceSeq extends CFacade {
 	public void setMultiview_eye(byte multiview_eye) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 304, multiview_eye);
+			__io__block.writeByte(__io__address + 288, multiview_eye);
 		} else {
-			__io__block.writeByte(__io__address + 248, multiview_eye);
+			__io__block.writeByte(__io__address + 236, multiview_eye);
 		}
 	}
 
@@ -1318,9 +1318,9 @@ public class SpaceSeq extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 289, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 249, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 237, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1333,9 +1333,9 @@ public class SpaceSeq extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 305;
+			__dna__offset = 289;
 		} else {
-			__dna__offset = 249;
+			__dna__offset = 237;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

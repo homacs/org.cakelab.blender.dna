@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  View 2D data - stored per region </p>
  */
 
-@CMetaData(size32=156, size64=168)
+@CMetaData(size32=144, size64=152)
 public class View2D extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class View2D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 218;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot'.
@@ -497,75 +497,6 @@ public class View2D extends CFacade {
 	public static final long[] __DNA__FIELD__around = new long[]{126, 126};
 
 	/**
-	 * Field descriptor (offset) for struct member 'tab_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Different offset per tab, for buttons. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * View2D view2d = ...;
-	 * CPointer&lt;Object&gt; p = view2d.__dna__addressof(View2D.__DNA__FIELD__tab_offset);
-	 * CPointer&lt;CPointer&lt;Float&gt;&gt; p_tab_offset = p.cast(new Class[]{CPointer.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tab_offset'</li>
-	 * <li>Signature: 'float*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tab_offset = new long[]{128, 128};
-
-	/**
-	 * Field descriptor (offset) for struct member 'tab_num'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of tabs stored. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * View2D view2d = ...;
-	 * CPointer&lt;Object&gt; p = view2d.__dna__addressof(View2D.__DNA__FIELD__tab_num);
-	 * CPointer&lt;Integer&gt; p_tab_num = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tab_num'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tab_num = new long[]{132, 136};
-
-	/**
-	 * Field descriptor (offset) for struct member 'tab_cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Current tab. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * View2D view2d = ...;
-	 * CPointer&lt;Object&gt; p = view2d.__dna__addressof(View2D.__DNA__FIELD__tab_cur);
-	 * CPointer&lt;Integer&gt; p_tab_cur = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'tab_cur'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__tab_cur = new long[]{136, 140};
-
-	/**
 	 * Field descriptor (offset) for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -586,7 +517,7 @@ public class View2D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_vert = new long[]{140, 144};
+	public static final long[] __DNA__FIELD__alpha_vert = new long[]{128, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_hor'.
@@ -606,7 +537,7 @@ public class View2D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_hor = new long[]{141, 145};
+	public static final long[] __DNA__FIELD__alpha_hor = new long[]{129, 129};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -626,7 +557,7 @@ public class View2D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{142, 146};
+	public static final long[] __DNA__FIELD___pad = new long[]{130, 130};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sms'.
@@ -649,7 +580,7 @@ public class View2D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sms = new long[]{148, 152};
+	public static final long[] __DNA__FIELD__sms = new long[]{136, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_timer'.
@@ -669,7 +600,7 @@ public class View2D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_timer = new long[]{152, 160};
+	public static final long[] __DNA__FIELD__smooth_timer = new long[]{140, 144};
 
 	public View2D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1422,112 +1353,6 @@ public class View2D extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'tab_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Different offset per tab, for buttons. </p>
-	 * @see #__DNA__FIELD__tab_offset
-	 */
-	
-	public CPointer<Float> getTab_offset() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'tab_offset'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Different offset per tab, for buttons. </p>
-	 * @see #__DNA__FIELD__tab_offset
-	 */
-	
-	public void setTab_offset(CPointer<Float> tab_offset) throws IOException
-	{
-		long __address = ((tab_offset == null) ? 0 : tab_offset.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
-		} else {
-			__io__block.writeLong(__io__address + 128, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'tab_num'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of tabs stored. </p>
-	 * @see #__DNA__FIELD__tab_num
-	 */
-	
-	public int getTab_num() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
-		} else {
-			return __io__block.readInt(__io__address + 132);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'tab_num'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Number of tabs stored. </p>
-	 * @see #__DNA__FIELD__tab_num
-	 */
-	
-	public void setTab_num(int tab_num) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, tab_num);
-		} else {
-			__io__block.writeInt(__io__address + 132, tab_num);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'tab_cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Current tab. </p>
-	 * @see #__DNA__FIELD__tab_cur
-	 */
-	
-	public int getTab_cur() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 140);
-		} else {
-			return __io__block.readInt(__io__address + 136);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'tab_cur'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Current tab. </p>
-	 * @see #__DNA__FIELD__tab_cur
-	 */
-	
-	public void setTab_cur(int tab_cur) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 140, tab_cur);
-		} else {
-			__io__block.writeInt(__io__address + 136, tab_cur);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'alpha_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1538,9 +1363,9 @@ public class View2D extends CFacade {
 	public byte getAlpha_vert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 144);
+			return __io__block.readByte(__io__address + 128);
 		} else {
-			return __io__block.readByte(__io__address + 140);
+			return __io__block.readByte(__io__address + 128);
 		}
 	}
 
@@ -1555,9 +1380,9 @@ public class View2D extends CFacade {
 	public void setAlpha_vert(byte alpha_vert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 144, alpha_vert);
+			__io__block.writeByte(__io__address + 128, alpha_vert);
 		} else {
-			__io__block.writeByte(__io__address + 140, alpha_vert);
+			__io__block.writeByte(__io__address + 128, alpha_vert);
 		}
 	}
 
@@ -1569,9 +1394,9 @@ public class View2D extends CFacade {
 	public byte getAlpha_hor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 145);
+			return __io__block.readByte(__io__address + 129);
 		} else {
-			return __io__block.readByte(__io__address + 141);
+			return __io__block.readByte(__io__address + 129);
 		}
 	}
 
@@ -1583,9 +1408,9 @@ public class View2D extends CFacade {
 	public void setAlpha_hor(byte alpha_hor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 145, alpha_hor);
+			__io__block.writeByte(__io__address + 129, alpha_hor);
 		} else {
-			__io__block.writeByte(__io__address + 141, alpha_hor);
+			__io__block.writeByte(__io__address + 129, alpha_hor);
 		}
 	}
 
@@ -1601,9 +1426,9 @@ public class View2D extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 146, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 142, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1616,9 +1441,9 @@ public class View2D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 146;
+			__dna__offset = 130;
 		} else {
-			__dna__offset = 142;
+			__dna__offset = 130;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -1641,9 +1466,9 @@ public class View2D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1661,9 +1486,9 @@ public class View2D extends CFacade {
 	{
 		long __address = ((sms == null) ? 0 : sms.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -1676,9 +1501,9 @@ public class View2D extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1693,9 +1518,9 @@ public class View2D extends CFacade {
 	{
 		long __address = ((smooth_timer == null) ? 0 : smooth_timer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

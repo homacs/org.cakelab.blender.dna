@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=336, size64=368)
+@CMetaData(size32=344, size64=376)
 public class HookModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class HookModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__object = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subtarget'.
@@ -90,7 +90,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subtarget = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__subtarget = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,7 +110,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__flag = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff_type'.
@@ -133,7 +133,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff_type = new long[]{169, 193};
+	public static final long[] __DNA__FIELD__falloff_type = new long[]{177, 201};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -153,7 +153,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{170, 194};
+	public static final long[] __DNA__FIELD___pad = new long[]{178, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parentinv'.
@@ -176,7 +176,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parentinv = new long[]{176, 200};
+	public static final long[] __DNA__FIELD__parentinv = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cent'.
@@ -199,7 +199,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cent = new long[]{240, 264};
+	public static final long[] __DNA__FIELD__cent = new long[]{248, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
@@ -222,7 +222,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{252, 276};
+	public static final long[] __DNA__FIELD__falloff = new long[]{260, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curfalloff'.
@@ -242,7 +242,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curfalloff = new long[]{256, 280};
+	public static final long[] __DNA__FIELD__curfalloff = new long[]{264, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'indexar'.
@@ -265,7 +265,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__indexar = new long[]{260, 288};
+	public static final long[] __DNA__FIELD__indexar = new long[]{268, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totindex'.
@@ -285,7 +285,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totindex = new long[]{264, 296};
+	public static final long[] __DNA__FIELD__totindex = new long[]{272, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'force'.
@@ -305,7 +305,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__force = new long[]{268, 300};
+	public static final long[] __DNA__FIELD__force = new long[]{276, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -328,7 +328,7 @@ public class HookModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{272, 304};
+	public static final long[] __DNA__FIELD__name = new long[]{280, 312};
 
 	public HookModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -383,9 +383,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -400,9 +400,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -421,9 +421,9 @@ public class HookModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -439,9 +439,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		}
 		if (__io__equals(subtarget, __io__address + __dna__offset)) {
 			return;
@@ -460,9 +460,9 @@ public class HookModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 192);
+			return __io__block.readByte(__io__address + 200);
 		} else {
-			return __io__block.readByte(__io__address + 168);
+			return __io__block.readByte(__io__address + 176);
 		}
 	}
 
@@ -474,9 +474,9 @@ public class HookModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 192, flag);
+			__io__block.writeByte(__io__address + 200, flag);
 		} else {
-			__io__block.writeByte(__io__address + 168, flag);
+			__io__block.writeByte(__io__address + 176, flag);
 		}
 	}
 
@@ -491,9 +491,9 @@ public class HookModifierData extends CFacade {
 	public byte getFalloff_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 193);
+			return __io__block.readByte(__io__address + 201);
 		} else {
-			return __io__block.readByte(__io__address + 169);
+			return __io__block.readByte(__io__address + 177);
 		}
 	}
 
@@ -508,9 +508,9 @@ public class HookModifierData extends CFacade {
 	public void setFalloff_type(byte falloff_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 193, falloff_type);
+			__io__block.writeByte(__io__address + 201, falloff_type);
 		} else {
-			__io__block.writeByte(__io__address + 169, falloff_type);
+			__io__block.writeByte(__io__address + 177, falloff_type);
 		}
 	}
 
@@ -526,9 +526,9 @@ public class HookModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 202, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -541,9 +541,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 194;
+			__dna__offset = 202;
 		} else {
-			__dna__offset = 170;
+			__dna__offset = 178;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -570,9 +570,9 @@ public class HookModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		}
 		if (__io__equals(parentinv, __io__address + __dna__offset)) {
 			return;
@@ -616,9 +616,9 @@ public class HookModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -634,9 +634,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		}
 		if (__io__equals(cent, __io__address + __dna__offset)) {
 			return;
@@ -658,9 +658,9 @@ public class HookModifierData extends CFacade {
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 260);
 		}
 	}
 
@@ -675,9 +675,9 @@ public class HookModifierData extends CFacade {
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 276, falloff);
+			__io__block.writeFloat(__io__address + 284, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 252, falloff);
+			__io__block.writeFloat(__io__address + 260, falloff);
 		}
 	}
 
@@ -690,9 +690,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -707,9 +707,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((curfalloff == null) ? 0 : curfalloff.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		}
 	}
 
@@ -725,9 +725,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		return new CPointer<Integer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -745,9 +745,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __address = ((indexar == null) ? 0 : indexar.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 
@@ -759,9 +759,9 @@ public class HookModifierData extends CFacade {
 	public int getTotindex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 296);
+			return __io__block.readInt(__io__address + 304);
 		} else {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -773,9 +773,9 @@ public class HookModifierData extends CFacade {
 	public void setTotindex(int totindex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 296, totindex);
+			__io__block.writeInt(__io__address + 304, totindex);
 		} else {
-			__io__block.writeInt(__io__address + 264, totindex);
+			__io__block.writeInt(__io__address + 272, totindex);
 		}
 	}
 
@@ -787,9 +787,9 @@ public class HookModifierData extends CFacade {
 	public float getForce() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 300);
+			return __io__block.readFloat(__io__address + 308);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -801,9 +801,9 @@ public class HookModifierData extends CFacade {
 	public void setForce(float force) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 300, force);
+			__io__block.writeFloat(__io__address + 308, force);
 		} else {
-			__io__block.writeFloat(__io__address + 268, force);
+			__io__block.writeFloat(__io__address + 276, force);
 		}
 	}
 
@@ -822,9 +822,9 @@ public class HookModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -840,9 +840,9 @@ public class HookModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 272;
+			__dna__offset = 280;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;

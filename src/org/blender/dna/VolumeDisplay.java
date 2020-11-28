@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=16, size64=16)
+@CMetaData(size32=32, size64=32)
 public class VolumeDisplay extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class VolumeDisplay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 674;
+	public static final int __DNA__SDNA_INDEX = 679;
 
 	/**
 	 * Field descriptor (offset) for struct member 'density'.
@@ -99,6 +99,92 @@ public class VolumeDisplay extends CFacade {
 	public static final long[] __DNA__FIELD__wireframe_detail = new long[]{8, 8};
 
 	/**
+	 * Field descriptor (offset) for struct member 'interpolation_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interpolation method to use for volumes in solid mode
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * VolumeDisplay volumedisplay = ...;
+	 * CPointer&lt;Object&gt; p = volumedisplay.__dna__addressof(VolumeDisplay.__DNA__FIELD__interpolation_method);
+	 * CPointer&lt;Integer&gt; p_interpolation_method = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'interpolation_method'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__interpolation_method = new long[]{12, 12};
+
+	/**
+	 * Field descriptor (offset) for struct member 'axis_slice_method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * VolumeDisplay volumedisplay = ...;
+	 * CPointer&lt;Object&gt; p = volumedisplay.__dna__addressof(VolumeDisplay.__DNA__FIELD__axis_slice_method);
+	 * CPointer&lt;Integer&gt; p_axis_slice_method = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'axis_slice_method'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__axis_slice_method = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_axis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * VolumeDisplay volumedisplay = ...;
+	 * CPointer&lt;Object&gt; p = volumedisplay.__dna__addressof(VolumeDisplay.__DNA__FIELD__slice_axis);
+	 * CPointer&lt;Integer&gt; p_slice_axis = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_axis'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_axis = new long[]{20, 20};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * VolumeDisplay volumedisplay = ...;
+	 * CPointer&lt;Object&gt; p = volumedisplay.__dna__addressof(VolumeDisplay.__DNA__FIELD__slice_depth);
+	 * CPointer&lt;Float&gt; p_slice_depth = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_depth'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_depth = new long[]{24, 24};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -116,7 +202,7 @@ public class VolumeDisplay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{12, 12};
+	public static final long[] __DNA__FIELD___pad = new long[]{28, 28};
 
 	public VolumeDisplay(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -229,6 +315,130 @@ public class VolumeDisplay extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'interpolation_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interpolation method to use for volumes in solid mode
+	 * @see #__DNA__FIELD__interpolation_method
+	 */
+	
+	public int getInterpolation_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 12);
+		} else {
+			return __io__block.readInt(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'interpolation_method'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Interpolation method to use for volumes in solid mode
+	 * @see #__DNA__FIELD__interpolation_method
+	 */
+	
+	public void setInterpolation_method(int interpolation_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 12, interpolation_method);
+		} else {
+			__io__block.writeInt(__io__address + 12, interpolation_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public int getAxis_slice_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 16);
+		} else {
+			return __io__block.readInt(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public void setAxis_slice_method(int axis_slice_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 16, axis_slice_method);
+		} else {
+			__io__block.writeInt(__io__address + 16, axis_slice_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public int getSlice_axis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 20);
+		} else {
+			return __io__block.readInt(__io__address + 20);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public void setSlice_axis(int slice_axis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 20, slice_axis);
+		} else {
+			__io__block.writeInt(__io__address + 20, slice_axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * @see #__DNA__FIELD__slice_depth
+	 */
+	
+	public float getSlice_depth() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 24);
+		} else {
+			return __io__block.readFloat(__io__address + 24);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_depth'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Position of the slice
+	 * @see #__DNA__FIELD__slice_depth
+	 */
+	
+	public void setSlice_depth(float slice_depth) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 24, slice_depth);
+		} else {
+			__io__block.writeFloat(__io__address + 24, slice_depth);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -240,9 +450,9 @@ public class VolumeDisplay extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -255,9 +465,9 @@ public class VolumeDisplay extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 12;
+			__dna__offset = 28;
 		} else {
-			__dna__offset = 12;
+			__dna__offset = 28;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

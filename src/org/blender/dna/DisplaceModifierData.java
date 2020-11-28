@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=332, size64=360)
+@CMetaData(size32=340, size64=368)
 public class DisplaceModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__texture = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_object'.
@@ -90,7 +90,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_object = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__map_object = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'map_bone'.
@@ -110,7 +110,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__map_bone = new long[]{108, 136};
+	public static final long[] __DNA__FIELD__map_bone = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_name'.
@@ -133,7 +133,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{172, 200};
+	public static final long[] __DNA__FIELD__uvlayer_name = new long[]{180, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uvlayer_tmp'.
@@ -153,7 +153,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{236, 264};
+	public static final long[] __DNA__FIELD__uvlayer_tmp = new long[]{244, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texmapping'.
@@ -173,7 +173,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texmapping = new long[]{240, 268};
+	public static final long[] __DNA__FIELD__texmapping = new long[]{248, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -196,7 +196,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{244, 272};
+	public static final long[] __DNA__FIELD__strength = new long[]{252, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'direction'.
@@ -216,7 +216,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__direction = new long[]{248, 276};
+	public static final long[] __DNA__FIELD__direction = new long[]{256, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -239,7 +239,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{252, 280};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{260, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'midlevel'.
@@ -259,7 +259,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__midlevel = new long[]{316, 344};
+	public static final long[] __DNA__FIELD__midlevel = new long[]{324, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'space'.
@@ -279,7 +279,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space = new long[]{320, 348};
+	public static final long[] __DNA__FIELD__space = new long[]{328, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -299,7 +299,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{324, 352};
+	public static final long[] __DNA__FIELD__flag = new long[]{332, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -319,7 +319,7 @@ public class DisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{326, 354};
+	public static final long[] __DNA__FIELD___pad = new long[]{334, 362};
 
 	public DisplaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -377,9 +377,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -397,9 +397,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __address = ((texture == null) ? 0 : texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -412,9 +412,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -429,9 +429,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __address = ((map_object == null) ? 0 : map_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -447,9 +447,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -462,9 +462,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 116;
 		}
 		if (__io__equals(map_bone, __io__address + __dna__offset)) {
 			return;
@@ -490,9 +490,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -508,9 +508,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -529,9 +529,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getUvlayer_tmp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 264);
+			return __io__block.readInt(__io__address + 272);
 		} else {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 244);
 		}
 	}
 
@@ -543,9 +543,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setUvlayer_tmp(int uvlayer_tmp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 264, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 272, uvlayer_tmp);
 		} else {
-			__io__block.writeInt(__io__address + 236, uvlayer_tmp);
+			__io__block.writeInt(__io__address + 244, uvlayer_tmp);
 		}
 	}
 
@@ -557,9 +557,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getTexmapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 268);
+			return __io__block.readInt(__io__address + 276);
 		} else {
-			return __io__block.readInt(__io__address + 240);
+			return __io__block.readInt(__io__address + 248);
 		}
 	}
 
@@ -571,9 +571,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setTexmapping(int texmapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 268, texmapping);
+			__io__block.writeInt(__io__address + 276, texmapping);
 		} else {
-			__io__block.writeInt(__io__address + 240, texmapping);
+			__io__block.writeInt(__io__address + 248, texmapping);
 		}
 	}
 
@@ -588,9 +588,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 252);
 		}
 	}
 
@@ -605,9 +605,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, strength);
+			__io__block.writeFloat(__io__address + 280, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 244, strength);
+			__io__block.writeFloat(__io__address + 252, strength);
 		}
 	}
 
@@ -619,9 +619,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getDirection() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 276);
+			return __io__block.readInt(__io__address + 284);
 		} else {
-			return __io__block.readInt(__io__address + 248);
+			return __io__block.readInt(__io__address + 256);
 		}
 	}
 
@@ -633,9 +633,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setDirection(int direction) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 276, direction);
+			__io__block.writeInt(__io__address + 284, direction);
 		} else {
-			__io__block.writeInt(__io__address + 248, direction);
+			__io__block.writeInt(__io__address + 256, direction);
 		}
 	}
 
@@ -654,9 +654,9 @@ public class DisplaceModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -672,9 +672,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 252;
+			__dna__offset = 260;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -693,9 +693,9 @@ public class DisplaceModifierData extends CFacade {
 	public float getMidlevel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 324);
 		}
 	}
 
@@ -707,9 +707,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setMidlevel(float midlevel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 344, midlevel);
+			__io__block.writeFloat(__io__address + 352, midlevel);
 		} else {
-			__io__block.writeFloat(__io__address + 316, midlevel);
+			__io__block.writeFloat(__io__address + 324, midlevel);
 		}
 	}
 
@@ -721,9 +721,9 @@ public class DisplaceModifierData extends CFacade {
 	public int getSpace() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 348);
+			return __io__block.readInt(__io__address + 356);
 		} else {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 328);
 		}
 	}
 
@@ -735,9 +735,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setSpace(int space) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 348, space);
+			__io__block.writeInt(__io__address + 356, space);
 		} else {
-			__io__block.writeInt(__io__address + 320, space);
+			__io__block.writeInt(__io__address + 328, space);
 		}
 	}
 
@@ -749,9 +749,9 @@ public class DisplaceModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 352);
+			return __io__block.readShort(__io__address + 360);
 		} else {
-			return __io__block.readShort(__io__address + 324);
+			return __io__block.readShort(__io__address + 332);
 		}
 	}
 
@@ -763,9 +763,9 @@ public class DisplaceModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 352, flag);
+			__io__block.writeShort(__io__address + 360, flag);
 		} else {
-			__io__block.writeShort(__io__address + 324, flag);
+			__io__block.writeShort(__io__address + 332, flag);
 		}
 	}
 
@@ -781,9 +781,9 @@ public class DisplaceModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 354, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 362, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 326, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 334, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -796,9 +796,9 @@ public class DisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 354;
+			__dna__offset = 362;
 		} else {
-			__dna__offset = 326;
+			__dna__offset = 334;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

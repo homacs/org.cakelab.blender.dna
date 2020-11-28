@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2120, size64=2232)
+@CMetaData(size32=2176, size64=2296)
 public class FluidDomainSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class FluidDomainSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 564;
+	public static final int __DNA__SDNA_INDEX = 569;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
@@ -406,6 +406,46 @@ public class FluidDomainSettings extends CFacade {
 	public static final long[] __DNA__FIELD__tex_velocity_z = new long[]{68, 136};
 
 	/**
+	 * Field descriptor (offset) for struct member 'tex_flags'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__tex_flags);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_tex_flags = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tex_flags'</li>
+	 * <li>Signature: 'GPUTexture*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tex_flags = new long[]{72, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'tex_range_field'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__tex_range_field);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_tex_range_field = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'tex_range_field'</li>
+	 * <li>Signature: 'GPUTexture*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__tex_range_field = new long[]{76, 152};
+
+	/**
 	 * Field descriptor (offset) for struct member 'guiding_parent'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -423,7 +463,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_parent = new long[]{72, 144};
+	public static final long[] __DNA__FIELD__guiding_parent = new long[]{80, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_velocities'.
@@ -446,7 +486,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_velocities = new long[]{76, 152};
+	public static final long[] __DNA__FIELD__mesh_velocities = new long[]{84, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -469,7 +509,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_weights = new long[]{80, 160};
+	public static final long[] __DNA__FIELD__effector_weights = new long[]{88, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'p0'.
@@ -492,7 +532,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__p0 = new long[]{84, 168};
+	public static final long[] __DNA__FIELD__p0 = new long[]{92, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'p1'.
@@ -515,7 +555,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__p1 = new long[]{96, 180};
+	public static final long[] __DNA__FIELD__p1 = new long[]{104, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dp0'.
@@ -538,7 +578,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dp0 = new long[]{108, 192};
+	public static final long[] __DNA__FIELD__dp0 = new long[]{116, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cell_size'.
@@ -562,7 +602,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cell_size = new long[]{120, 204};
+	public static final long[] __DNA__FIELD__cell_size = new long[]{128, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'global_size'.
@@ -585,7 +625,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__global_size = new long[]{132, 216};
+	public static final long[] __DNA__FIELD__global_size = new long[]{140, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'prev_loc'.
@@ -605,7 +645,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prev_loc = new long[]{144, 228};
+	public static final long[] __DNA__FIELD__prev_loc = new long[]{152, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shift'.
@@ -628,7 +668,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shift = new long[]{156, 240};
+	public static final long[] __DNA__FIELD__shift = new long[]{164, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shift_f'.
@@ -651,7 +691,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shift_f = new long[]{168, 252};
+	public static final long[] __DNA__FIELD__shift_f = new long[]{176, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obj_shift_f'.
@@ -674,7 +714,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obj_shift_f = new long[]{180, 264};
+	public static final long[] __DNA__FIELD__obj_shift_f = new long[]{188, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'imat'.
@@ -697,7 +737,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__imat = new long[]{192, 276};
+	public static final long[] __DNA__FIELD__imat = new long[]{200, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obmat'.
@@ -720,7 +760,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obmat = new long[]{256, 340};
+	public static final long[] __DNA__FIELD__obmat = new long[]{264, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluidmat'.
@@ -743,7 +783,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fluidmat = new long[]{320, 404};
+	public static final long[] __DNA__FIELD__fluidmat = new long[]{328, 420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluidmat_wt'.
@@ -766,7 +806,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fluidmat_wt = new long[]{384, 468};
+	public static final long[] __DNA__FIELD__fluidmat_wt = new long[]{392, 484};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_res'.
@@ -789,7 +829,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_res = new long[]{448, 532};
+	public static final long[] __DNA__FIELD__base_res = new long[]{456, 548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_min'.
@@ -812,7 +852,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_min = new long[]{460, 544};
+	public static final long[] __DNA__FIELD__res_min = new long[]{468, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_max'.
@@ -835,7 +875,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_max = new long[]{472, 556};
+	public static final long[] __DNA__FIELD__res_max = new long[]{480, 572};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res'.
@@ -858,7 +898,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res = new long[]{484, 568};
+	public static final long[] __DNA__FIELD__res = new long[]{492, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'total_cells'.
@@ -878,7 +918,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__total_cells = new long[]{496, 580};
+	public static final long[] __DNA__FIELD__total_cells = new long[]{504, 596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dx'.
@@ -901,7 +941,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dx = new long[]{500, 584};
+	public static final long[] __DNA__FIELD__dx = new long[]{508, 600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -924,7 +964,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{504, 588};
+	public static final long[] __DNA__FIELD__scale = new long[]{512, 604};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boundary_width'.
@@ -947,7 +987,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boundary_width = new long[]{508, 592};
+	public static final long[] __DNA__FIELD__boundary_width = new long[]{516, 608};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity_final'.
@@ -970,7 +1010,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravity_final = new long[]{512, 596};
+	public static final long[] __DNA__FIELD__gravity_final = new long[]{520, 612};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_margin'.
@@ -994,7 +1034,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_margin = new long[]{524, 608};
+	public static final long[] __DNA__FIELD__adapt_margin = new long[]{532, 624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_res'.
@@ -1014,7 +1054,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_res = new long[]{528, 612};
+	public static final long[] __DNA__FIELD__adapt_res = new long[]{536, 628};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_threshold'.
@@ -1037,7 +1077,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_threshold = new long[]{532, 616};
+	public static final long[] __DNA__FIELD__adapt_threshold = new long[]{540, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'maxres'.
@@ -1060,7 +1100,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__maxres = new long[]{536, 620};
+	public static final long[] __DNA__FIELD__maxres = new long[]{544, 636};
 
 	/**
 	 * Field descriptor (offset) for struct member 'solver_res'.
@@ -1083,7 +1123,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__solver_res = new long[]{540, 624};
+	public static final long[] __DNA__FIELD__solver_res = new long[]{548, 640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'border_collisions'.
@@ -1106,7 +1146,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__border_collisions = new long[]{544, 628};
+	public static final long[] __DNA__FIELD__border_collisions = new long[]{552, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flags'.
@@ -1129,7 +1169,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flags = new long[]{548, 632};
+	public static final long[] __DNA__FIELD__flags = new long[]{556, 648};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gravity'.
@@ -1152,7 +1192,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gravity = new long[]{552, 636};
+	public static final long[] __DNA__FIELD__gravity = new long[]{560, 652};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_fields'.
@@ -1172,7 +1212,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_fields = new long[]{564, 648};
+	public static final long[] __DNA__FIELD__active_fields = new long[]{572, 664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -1195,7 +1235,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{568, 652};
+	public static final long[] __DNA__FIELD__type = new long[]{576, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -1218,7 +1258,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{570, 654};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{578, 670};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -1242,7 +1282,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{576, 660};
+	public static final long[] __DNA__FIELD__alpha = new long[]{584, 676};
 
 	/**
 	 * Field descriptor (offset) for struct member 'beta'.
@@ -1265,7 +1305,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__beta = new long[]{580, 664};
+	public static final long[] __DNA__FIELD__beta = new long[]{588, 680};
 
 	/**
 	 * Field descriptor (offset) for struct member 'diss_speed'.
@@ -1288,7 +1328,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__diss_speed = new long[]{584, 668};
+	public static final long[] __DNA__FIELD__diss_speed = new long[]{592, 684};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vorticity'.
@@ -1311,7 +1351,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vorticity = new long[]{588, 672};
+	public static final long[] __DNA__FIELD__vorticity = new long[]{596, 688};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_color'.
@@ -1334,7 +1374,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_color = new long[]{592, 676};
+	public static final long[] __DNA__FIELD__active_color = new long[]{600, 692};
 
 	/**
 	 * Field descriptor (offset) for struct member 'highres_sampling'.
@@ -1357,7 +1397,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__highres_sampling = new long[]{604, 688};
+	public static final long[] __DNA__FIELD__highres_sampling = new long[]{612, 704};
 
 	/**
 	 * Field descriptor (offset) for struct member 'burning_rate'.
@@ -1381,7 +1421,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__burning_rate = new long[]{608, 692};
+	public static final long[] __DNA__FIELD__burning_rate = new long[]{616, 708};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke'.
@@ -1404,7 +1444,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_smoke = new long[]{612, 696};
+	public static final long[] __DNA__FIELD__flame_smoke = new long[]{620, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_vorticity'.
@@ -1427,7 +1467,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_vorticity = new long[]{616, 700};
+	public static final long[] __DNA__FIELD__flame_vorticity = new long[]{624, 716};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_ignition'.
@@ -1450,7 +1490,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_ignition = new long[]{620, 704};
+	public static final long[] __DNA__FIELD__flame_ignition = new long[]{628, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_max_temp'.
@@ -1473,7 +1513,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_max_temp = new long[]{624, 708};
+	public static final long[] __DNA__FIELD__flame_max_temp = new long[]{632, 724};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flame_smoke_color'.
@@ -1496,7 +1536,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flame_smoke_color = new long[]{628, 712};
+	public static final long[] __DNA__FIELD__flame_smoke_color = new long[]{636, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_strength'.
@@ -1520,7 +1560,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise_strength = new long[]{640, 724};
+	public static final long[] __DNA__FIELD__noise_strength = new long[]{648, 740};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_pos_scale'.
@@ -1543,7 +1583,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise_pos_scale = new long[]{644, 728};
+	public static final long[] __DNA__FIELD__noise_pos_scale = new long[]{652, 744};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_time_anim'.
@@ -1566,7 +1606,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise_time_anim = new long[]{648, 732};
+	public static final long[] __DNA__FIELD__noise_time_anim = new long[]{656, 748};
 
 	/**
 	 * Field descriptor (offset) for struct member 'res_noise'.
@@ -1586,7 +1626,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__res_noise = new long[]{652, 736};
+	public static final long[] __DNA__FIELD__res_noise = new long[]{660, 752};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_scale'.
@@ -1609,7 +1649,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise_scale = new long[]{664, 748};
+	public static final long[] __DNA__FIELD__noise_scale = new long[]{672, 764};
 
 	/**
 	 * Field descriptor (offset) for struct member 'noise_type'.
@@ -1633,7 +1673,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__noise_type = new long[]{668, 752};
+	public static final long[] __DNA__FIELD__noise_type = new long[]{676, 768};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -1656,7 +1696,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{670, 754};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{678, 770};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_randomness'.
@@ -1680,7 +1720,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_randomness = new long[]{672, 756};
+	public static final long[] __DNA__FIELD__particle_randomness = new long[]{680, 772};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_number'.
@@ -1703,7 +1743,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_number = new long[]{676, 760};
+	public static final long[] __DNA__FIELD__particle_number = new long[]{684, 776};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_minimum'.
@@ -1723,7 +1763,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_minimum = new long[]{680, 764};
+	public static final long[] __DNA__FIELD__particle_minimum = new long[]{688, 780};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_maximum'.
@@ -1743,7 +1783,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_maximum = new long[]{684, 768};
+	public static final long[] __DNA__FIELD__particle_maximum = new long[]{692, 784};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_radius'.
@@ -1766,7 +1806,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_radius = new long[]{688, 772};
+	public static final long[] __DNA__FIELD__particle_radius = new long[]{696, 788};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_band_width'.
@@ -1789,7 +1829,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_band_width = new long[]{692, 776};
+	public static final long[] __DNA__FIELD__particle_band_width = new long[]{700, 792};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fractions_threshold'.
@@ -1812,7 +1852,30 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fractions_threshold = new long[]{696, 780};
+	public static final long[] __DNA__FIELD__fractions_threshold = new long[]{704, 796};
+
+	/**
+	 * Field descriptor (offset) for struct member 'fractions_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__fractions_distance);
+	 * CPointer&lt;Float&gt; p_fractions_distance = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fractions_distance'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fractions_distance = new long[]{708, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flip_ratio'.
@@ -1835,7 +1898,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flip_ratio = new long[]{700, 784};
+	public static final long[] __DNA__FIELD__flip_ratio = new long[]{712, 804};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sys_particle_maximum'.
@@ -1858,7 +1921,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sys_particle_maximum = new long[]{704, 788};
+	public static final long[] __DNA__FIELD__sys_particle_maximum = new long[]{716, 808};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simulation_method'.
@@ -1881,7 +1944,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simulation_method = new long[]{708, 792};
+	public static final long[] __DNA__FIELD__simulation_method = new long[]{720, 812};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad4'.
@@ -1897,11 +1960,11 @@ public class FluidDomainSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad4'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{710, 794};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{722, 814};
 
 	/**
 	 * Field descriptor (offset) for struct member 'surface_tension'.
@@ -1925,7 +1988,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__surface_tension = new long[]{712, 796};
+	public static final long[] __DNA__FIELD__surface_tension = new long[]{728, 820};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viscosity_base'.
@@ -1948,7 +2011,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viscosity_base = new long[]{716, 800};
+	public static final long[] __DNA__FIELD__viscosity_base = new long[]{732, 824};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viscosity_exponent'.
@@ -1971,7 +2034,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viscosity_exponent = new long[]{720, 804};
+	public static final long[] __DNA__FIELD__viscosity_exponent = new long[]{736, 828};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_concave_upper'.
@@ -1995,7 +2058,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_concave_upper = new long[]{724, 808};
+	public static final long[] __DNA__FIELD__mesh_concave_upper = new long[]{740, 832};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_concave_lower'.
@@ -2018,7 +2081,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_concave_lower = new long[]{728, 812};
+	public static final long[] __DNA__FIELD__mesh_concave_lower = new long[]{744, 836};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_particle_radius'.
@@ -2041,7 +2104,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_particle_radius = new long[]{732, 816};
+	public static final long[] __DNA__FIELD__mesh_particle_radius = new long[]{748, 840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_smoothen_pos'.
@@ -2064,7 +2127,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_smoothen_pos = new long[]{736, 820};
+	public static final long[] __DNA__FIELD__mesh_smoothen_pos = new long[]{752, 844};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_smoothen_neg'.
@@ -2087,7 +2150,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_smoothen_neg = new long[]{740, 824};
+	public static final long[] __DNA__FIELD__mesh_smoothen_neg = new long[]{756, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_scale'.
@@ -2110,7 +2173,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_scale = new long[]{744, 828};
+	public static final long[] __DNA__FIELD__mesh_scale = new long[]{760, 852};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
@@ -2130,7 +2193,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totvert = new long[]{748, 832};
+	public static final long[] __DNA__FIELD__totvert = new long[]{764, 856};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_generator'.
@@ -2153,7 +2216,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_generator = new long[]{752, 836};
+	public static final long[] __DNA__FIELD__mesh_generator = new long[]{768, 860};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad5'.
@@ -2176,7 +2239,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad5 = new long[]{754, 838};
+	public static final long[] __DNA__FIELD___pad5 = new long[]{770, 862};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_type'.
@@ -2199,7 +2262,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_type = new long[]{760, 844};
+	public static final long[] __DNA__FIELD__particle_type = new long[]{776, 868};
 
 	/**
 	 * Field descriptor (offset) for struct member 'particle_scale'.
@@ -2222,7 +2285,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__particle_scale = new long[]{764, 848};
+	public static final long[] __DNA__FIELD__particle_scale = new long[]{780, 872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_min_wc'.
@@ -2242,7 +2305,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_min_wc = new long[]{768, 852};
+	public static final long[] __DNA__FIELD__sndparticle_tau_min_wc = new long[]{784, 876};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_max_wc'.
@@ -2262,7 +2325,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_max_wc = new long[]{772, 856};
+	public static final long[] __DNA__FIELD__sndparticle_tau_max_wc = new long[]{788, 880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_min_ta'.
@@ -2282,7 +2345,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_min_ta = new long[]{776, 860};
+	public static final long[] __DNA__FIELD__sndparticle_tau_min_ta = new long[]{792, 884};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_max_ta'.
@@ -2302,7 +2365,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_max_ta = new long[]{780, 864};
+	public static final long[] __DNA__FIELD__sndparticle_tau_max_ta = new long[]{796, 888};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_min_k'.
@@ -2322,7 +2385,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_min_k = new long[]{784, 868};
+	public static final long[] __DNA__FIELD__sndparticle_tau_min_k = new long[]{800, 892};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_tau_max_k'.
@@ -2342,7 +2405,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_tau_max_k = new long[]{788, 872};
+	public static final long[] __DNA__FIELD__sndparticle_tau_max_k = new long[]{804, 896};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_k_wc'.
@@ -2362,7 +2425,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_k_wc = new long[]{792, 876};
+	public static final long[] __DNA__FIELD__sndparticle_k_wc = new long[]{808, 900};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_k_ta'.
@@ -2382,7 +2445,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_k_ta = new long[]{796, 880};
+	public static final long[] __DNA__FIELD__sndparticle_k_ta = new long[]{812, 904};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_k_b'.
@@ -2402,7 +2465,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_k_b = new long[]{800, 884};
+	public static final long[] __DNA__FIELD__sndparticle_k_b = new long[]{816, 908};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_k_d'.
@@ -2422,7 +2485,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_k_d = new long[]{804, 888};
+	public static final long[] __DNA__FIELD__sndparticle_k_d = new long[]{820, 912};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_l_min'.
@@ -2442,7 +2505,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_l_min = new long[]{808, 892};
+	public static final long[] __DNA__FIELD__sndparticle_l_min = new long[]{824, 916};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_l_max'.
@@ -2462,7 +2525,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_l_max = new long[]{812, 896};
+	public static final long[] __DNA__FIELD__sndparticle_l_max = new long[]{828, 920};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_potential_radius'.
@@ -2485,7 +2548,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_potential_radius = new long[]{816, 900};
+	public static final long[] __DNA__FIELD__sndparticle_potential_radius = new long[]{832, 924};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_update_radius'.
@@ -2508,7 +2571,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_update_radius = new long[]{820, 904};
+	public static final long[] __DNA__FIELD__sndparticle_update_radius = new long[]{836, 928};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_boundary'.
@@ -2531,7 +2594,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_boundary = new long[]{824, 908};
+	public static final long[] __DNA__FIELD__sndparticle_boundary = new long[]{840, 932};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sndparticle_combined_export'.
@@ -2554,7 +2617,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sndparticle_combined_export = new long[]{825, 909};
+	public static final long[] __DNA__FIELD__sndparticle_combined_export = new long[]{841, 933};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad6'.
@@ -2577,7 +2640,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad6 = new long[]{826, 910};
+	public static final long[] __DNA__FIELD___pad6 = new long[]{842, 934};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiding_alpha'.
@@ -2597,7 +2660,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_alpha = new long[]{832, 916};
+	public static final long[] __DNA__FIELD__guiding_alpha = new long[]{848, 940};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiding_beta'.
@@ -2617,7 +2680,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_beta = new long[]{836, 920};
+	public static final long[] __DNA__FIELD__guiding_beta = new long[]{852, 944};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiding_vel_factor'.
@@ -2637,7 +2700,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_vel_factor = new long[]{840, 924};
+	public static final long[] __DNA__FIELD__guiding_vel_factor = new long[]{856, 948};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guide_res'.
@@ -2660,7 +2723,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guide_res = new long[]{844, 928};
+	public static final long[] __DNA__FIELD__guide_res = new long[]{860, 952};
 
 	/**
 	 * Field descriptor (offset) for struct member 'guiding_source'.
@@ -2680,7 +2743,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__guiding_source = new long[]{856, 940};
+	public static final long[] __DNA__FIELD__guiding_source = new long[]{872, 964};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad7'.
@@ -2703,7 +2766,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad7 = new long[]{858, 942};
+	public static final long[] __DNA__FIELD___pad7 = new long[]{874, 966};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_start'.
@@ -2727,7 +2790,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_start = new long[]{860, 944};
+	public static final long[] __DNA__FIELD__cache_frame_start = new long[]{876, 968};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_end'.
@@ -2750,7 +2813,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_end = new long[]{864, 948};
+	public static final long[] __DNA__FIELD__cache_frame_end = new long[]{880, 972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_pause_data'.
@@ -2770,7 +2833,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_pause_data = new long[]{868, 952};
+	public static final long[] __DNA__FIELD__cache_frame_pause_data = new long[]{884, 976};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_pause_noise'.
@@ -2790,7 +2853,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_pause_noise = new long[]{872, 956};
+	public static final long[] __DNA__FIELD__cache_frame_pause_noise = new long[]{888, 980};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_pause_mesh'.
@@ -2810,7 +2873,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_pause_mesh = new long[]{876, 960};
+	public static final long[] __DNA__FIELD__cache_frame_pause_mesh = new long[]{892, 984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_pause_particles'.
@@ -2830,7 +2893,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_pause_particles = new long[]{880, 964};
+	public static final long[] __DNA__FIELD__cache_frame_pause_particles = new long[]{896, 988};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_pause_guiding'.
@@ -2850,7 +2913,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_pause_guiding = new long[]{884, 968};
+	public static final long[] __DNA__FIELD__cache_frame_pause_guiding = new long[]{900, 992};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_frame_offset'.
@@ -2873,7 +2936,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_frame_offset = new long[]{888, 972};
+	public static final long[] __DNA__FIELD__cache_frame_offset = new long[]{904, 996};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_flag'.
@@ -2893,7 +2956,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_flag = new long[]{892, 976};
+	public static final long[] __DNA__FIELD__cache_flag = new long[]{908, 1000};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_mesh_format'.
@@ -2916,7 +2979,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_mesh_format = new long[]{896, 980};
+	public static final long[] __DNA__FIELD__cache_mesh_format = new long[]{912, 1004};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_data_format'.
@@ -2939,7 +3002,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_data_format = new long[]{897, 981};
+	public static final long[] __DNA__FIELD__cache_data_format = new long[]{913, 1005};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_particle_format'.
@@ -2962,7 +3025,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_particle_format = new long[]{898, 982};
+	public static final long[] __DNA__FIELD__cache_particle_format = new long[]{914, 1006};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_noise_format'.
@@ -2985,7 +3048,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_noise_format = new long[]{899, 983};
+	public static final long[] __DNA__FIELD__cache_noise_format = new long[]{915, 1007};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_directory'.
@@ -3008,7 +3071,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_directory = new long[]{900, 984};
+	public static final long[] __DNA__FIELD__cache_directory = new long[]{916, 1008};
 
 	/**
 	 * Field descriptor (offset) for struct member 'error'.
@@ -3031,7 +3094,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__error = new long[]{1924, 2008};
+	public static final long[] __DNA__FIELD__error = new long[]{1940, 2032};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_type'.
@@ -3054,7 +3117,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_type = new long[]{1988, 2072};
+	public static final long[] __DNA__FIELD__cache_type = new long[]{2004, 2096};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_id'.
@@ -3077,7 +3140,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_id = new long[]{1990, 2074};
+	public static final long[] __DNA__FIELD__cache_id = new long[]{2006, 2098};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad8'.
@@ -3097,7 +3160,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad8 = new long[]{1994, 2078};
+	public static final long[] __DNA__FIELD___pad8 = new long[]{2010, 2102};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dt'.
@@ -3120,7 +3183,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dt = new long[]{1996, 2080};
+	public static final long[] __DNA__FIELD__dt = new long[]{2012, 2104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_total'.
@@ -3140,7 +3203,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_total = new long[]{2000, 2084};
+	public static final long[] __DNA__FIELD__time_total = new long[]{2016, 2108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_per_frame'.
@@ -3160,7 +3223,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_per_frame = new long[]{2004, 2088};
+	public static final long[] __DNA__FIELD__time_per_frame = new long[]{2020, 2112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_length'.
@@ -3180,7 +3243,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_length = new long[]{2008, 2092};
+	public static final long[] __DNA__FIELD__frame_length = new long[]{2024, 2116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_scale'.
@@ -3203,7 +3266,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_scale = new long[]{2012, 2096};
+	public static final long[] __DNA__FIELD__time_scale = new long[]{2028, 2120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cfl_condition'.
@@ -3226,7 +3289,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cfl_condition = new long[]{2016, 2100};
+	public static final long[] __DNA__FIELD__cfl_condition = new long[]{2032, 2124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timesteps_minimum'.
@@ -3246,7 +3309,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timesteps_minimum = new long[]{2020, 2104};
+	public static final long[] __DNA__FIELD__timesteps_minimum = new long[]{2036, 2128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timesteps_maximum'.
@@ -3266,97 +3329,14 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timesteps_maximum = new long[]{2024, 2108};
-
-	/**
-	 * Field descriptor (offset) for struct member 'slice_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
-	 * <p> Display options. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__slice_method);
-	 * CPointer&lt;Byte&gt; p_slice_method = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'slice_method'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__slice_method = new long[]{2028, 2112};
-
-	/**
-	 * Field descriptor (offset) for struct member 'axis_slice_method'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__axis_slice_method);
-	 * CPointer&lt;Byte&gt; p_axis_slice_method = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'axis_slice_method'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__axis_slice_method = new long[]{2029, 2113};
-
-	/**
-	 * Field descriptor (offset) for struct member 'slice_axis'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__slice_axis);
-	 * CPointer&lt;Byte&gt; p_slice_axis = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'slice_axis'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__slice_axis = new long[]{2030, 2114};
-
-	/**
-	 * Field descriptor (offset) for struct member 'draw_velocity'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__draw_velocity);
-	 * CPointer&lt;Byte&gt; p_draw_velocity = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'draw_velocity'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__draw_velocity = new long[]{2031, 2115};
+	public static final long[] __DNA__FIELD__timesteps_maximum = new long[]{2040, 2132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated
+	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <p> Display options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3373,7 +3353,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__slice_per_voxel = new long[]{2032, 2116};
+	public static final long[] __DNA__FIELD__slice_per_voxel = new long[]{2044, 2136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'slice_depth'.
@@ -3396,7 +3376,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__slice_depth = new long[]{2036, 2120};
+	public static final long[] __DNA__FIELD__slice_depth = new long[]{2048, 2140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'display_thickness'.
@@ -3419,7 +3399,27 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__display_thickness = new long[]{2040, 2124};
+	public static final long[] __DNA__FIELD__display_thickness = new long[]{2052, 2144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'grid_scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__grid_scale);
+	 * CPointer&lt;Float&gt; p_grid_scale = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'grid_scale'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__grid_scale = new long[]{2056, 2148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba'.
@@ -3439,7 +3439,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coba = new long[]{2044, 2128};
+	public static final long[] __DNA__FIELD__coba = new long[]{2060, 2152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vector_scale'.
@@ -3462,7 +3462,159 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vector_scale = new long[]{2048, 2136};
+	public static final long[] __DNA__FIELD__vector_scale = new long[]{2064, 2160};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridlines_lower_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Lower bound of the highlighting range
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__gridlines_lower_bound);
+	 * CPointer&lt;Float&gt; p_gridlines_lower_bound = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridlines_lower_bound'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridlines_lower_bound = new long[]{2068, 2164};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridlines_upper_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Upper bound of the highlighting range
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__gridlines_upper_bound);
+	 * CPointer&lt;Float&gt; p_gridlines_upper_bound = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridlines_upper_bound'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridlines_upper_bound = new long[]{2072, 2168};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridlines_range_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color used to highlight the range
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__gridlines_range_color);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_gridlines_range_color = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridlines_range_color'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridlines_range_color = new long[]{2076, 2172};
+
+	/**
+	 * Field descriptor (offset) for struct member 'axis_slice_method'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__axis_slice_method);
+	 * CPointer&lt;Byte&gt; p_axis_slice_method = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'axis_slice_method'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__axis_slice_method = new long[]{2092, 2188};
+
+	/**
+	 * Field descriptor (offset) for struct member 'slice_axis'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__slice_axis);
+	 * CPointer&lt;Byte&gt; p_slice_axis = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'slice_axis'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__slice_axis = new long[]{2093, 2189};
+
+	/**
+	 * Field descriptor (offset) for struct member 'show_gridlines'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Show gridlines
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__show_gridlines);
+	 * CPointer&lt;Byte&gt; p_show_gridlines = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'show_gridlines'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__show_gridlines = new long[]{2094, 2190};
+
+	/**
+	 * Field descriptor (offset) for struct member 'draw_velocity'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__draw_velocity);
+	 * CPointer&lt;Byte&gt; p_draw_velocity = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'draw_velocity'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__draw_velocity = new long[]{2095, 2191};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vector_draw_type'.
@@ -3482,7 +3634,74 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vector_draw_type = new long[]{2052, 2140};
+	public static final long[] __DNA__FIELD__vector_draw_type = new long[]{2096, 2192};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vector_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used for vector display. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__vector_field);
+	 * CPointer&lt;Byte&gt; p_vector_field = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vector_field'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vector_field = new long[]{2097, 2193};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vector_scale_with_magnitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale vectors with their magnitudes
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__vector_scale_with_magnitude);
+	 * CPointer&lt;Byte&gt; p_vector_scale_with_magnitude = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vector_scale_with_magnitude'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vector_scale_with_magnitude = new long[]{2098, 2194};
+
+	/**
+	 * Field descriptor (offset) for struct member 'vector_draw_mac_components'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__vector_draw_mac_components);
+	 * CPointer&lt;Byte&gt; p_vector_draw_mac_components = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vector_draw_mac_components'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vector_draw_mac_components = new long[]{2099, 2195};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_coba'.
@@ -3502,13 +3721,12 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_coba = new long[]{2053, 2141};
+	public static final long[] __DNA__FIELD__use_coba = new long[]{2100, 2196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3526,7 +3744,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__coba_field = new long[]{2054, 2142};
+	public static final long[] __DNA__FIELD__coba_field = new long[]{2101, 2197};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interp_method'.
@@ -3546,7 +3764,74 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interp_method = new long[]{2055, 2143};
+	public static final long[] __DNA__FIELD__interp_method = new long[]{2102, 2198};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridlines_color_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__gridlines_color_field);
+	 * CPointer&lt;Byte&gt; p_gridlines_color_field = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridlines_color_field'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridlines_color_field = new long[]{2103, 2199};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gridlines_cell_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cell type to be highlighted
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD__gridlines_cell_filter);
+	 * CPointer&lt;Byte&gt; p_gridlines_cell_filter = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gridlines_cell_filter'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gridlines_cell_filter = new long[]{2104, 2200};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad9'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FluidDomainSettings fluiddomainsettings = ...;
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad9);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad9 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad9'</li>
+	 * <li>Signature: 'char[7]'</li>
+	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad9 = new long[]{2105, 2201};
 
 	/**
 	 * Field descriptor (offset) for struct member 'openvdb_compression'.
@@ -3569,7 +3854,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__openvdb_compression = new long[]{2056, 2144};
+	public static final long[] __DNA__FIELD__openvdb_compression = new long[]{2112, 2208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipping'.
@@ -3592,13 +3877,13 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipping = new long[]{2060, 2148};
+	public static final long[] __DNA__FIELD__clipping = new long[]{2116, 2212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3615,10 +3900,10 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__openvdb_data_depth = new long[]{2064, 2152};
+	public static final long[] __DNA__FIELD__openvdb_data_depth = new long[]{2120, 2216};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad9'.
+	 * Field descriptor (offset) for struct member '_pad10'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Unused. </p>
@@ -3628,17 +3913,17 @@ public class FluidDomainSettings extends CFacade {
 	 * </p>
 	 * <pre>
 	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad9);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad9 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad10);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad10 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad9'</li>
+	 * <li>Field: '_pad10'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad9 = new long[]{2065, 2153};
+	public static final long[] __DNA__FIELD___pad10 = new long[]{2121, 2217};
 
 	/**
 	 * Field descriptor (offset) for struct member 'viewsettings'.
@@ -3661,10 +3946,10 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__viewsettings = new long[]{2072, 2160};
+	public static final long[] __DNA__FIELD__viewsettings = new long[]{2128, 2224};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad10'.
+	 * Field descriptor (offset) for struct member '_pad11'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Unused. </p>
@@ -3674,23 +3959,22 @@ public class FluidDomainSettings extends CFacade {
 	 * </p>
 	 * <pre>
 	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad10);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad10 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad11);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad11 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad10'</li>
+	 * <li>Field: '_pad11'</li>
 	 * <li>Signature: 'char[4]'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad10 = new long[]{2076, 2164};
+	public static final long[] __DNA__FIELD___pad11 = new long[]{2132, 2228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3708,7 +3992,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__point_cache = new long[]{2080, 2168};
+	public static final long[] __DNA__FIELD__point_cache = new long[]{2136, 2232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ptcaches'.
@@ -3728,7 +4012,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ptcaches = new long[]{2088, 2184};
+	public static final long[] __DNA__FIELD__ptcaches = new long[]{2144, 2248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_comp'.
@@ -3748,7 +4032,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_comp = new long[]{2104, 2216};
+	public static final long[] __DNA__FIELD__cache_comp = new long[]{2160, 2280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_high_comp'.
@@ -3768,7 +4052,7 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_high_comp = new long[]{2108, 2220};
+	public static final long[] __DNA__FIELD__cache_high_comp = new long[]{2164, 2284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache_file_format'.
@@ -3788,10 +4072,10 @@ public class FluidDomainSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cache_file_format = new long[]{2112, 2224};
+	public static final long[] __DNA__FIELD__cache_file_format = new long[]{2168, 2288};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad11'.
+	 * Field descriptor (offset) for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Unused. </p>
@@ -3801,17 +4085,17 @@ public class FluidDomainSettings extends CFacade {
 	 * </p>
 	 * <pre>
 	 * FluidDomainSettings fluiddomainsettings = ...;
-	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad11);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad11 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = fluiddomainsettings.__dna__addressof(FluidDomainSettings.__DNA__FIELD___pad12);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad12 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad11'</li>
+	 * <li>Field: '_pad12'</li>
 	 * <li>Signature: 'char[7]'</li>
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad11 = new long[]{2113, 2225};
+	public static final long[] __DNA__FIELD___pad12 = new long[]{2169, 2289};
 
 	public FluidDomainSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -4430,6 +4714,70 @@ public class FluidDomainSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'tex_flags'.
+	 * @see #__DNA__FIELD__tex_flags
+	 */
+	
+	public CPointer<Object> getTex_flags() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'tex_flags'.
+	 * @see #__DNA__FIELD__tex_flags
+	 */
+	
+	public void setTex_flags(CPointer<Object> tex_flags) throws IOException
+	{
+		long __address = ((tex_flags == null) ? 0 : tex_flags.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 144, __address);
+		} else {
+			__io__block.writeLong(__io__address + 72, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'tex_range_field'.
+	 * @see #__DNA__FIELD__tex_range_field
+	 */
+	
+	public CPointer<Object> getTex_range_field() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'tex_range_field'.
+	 * @see #__DNA__FIELD__tex_range_field
+	 */
+	
+	public void setTex_range_field(CPointer<Object> tex_range_field) throws IOException
+	{
+		long __address = ((tex_range_field == null) ? 0 : tex_range_field.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 152, __address);
+		} else {
+			__io__block.writeLong(__io__address + 76, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'guiding_parent'.
 	 * @see #__DNA__FIELD__guiding_parent
 	 */
@@ -4438,9 +4786,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 72);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -4455,9 +4803,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __address = ((guiding_parent == null) ? 0 : guiding_parent.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 72, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		}
 	}
 
@@ -4473,9 +4821,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+			__dna__targetAddress = __io__block.readLong(__io__address + 84);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{FluidDomainVertexVelocity.class};
 		return new CPointer<FluidDomainVertexVelocity>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, FluidDomainVertexVelocity.__DNA__SDNA_INDEX), __io__blockTable);
@@ -4493,9 +4841,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __address = ((mesh_velocities == null) ? 0 : mesh_velocities.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 76, __address);
+			__io__block.writeLong(__io__address + 84, __address);
 		}
 	}
 
@@ -4511,9 +4859,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{EffectorWeights.class};
 		return new CPointer<EffectorWeights>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EffectorWeights.__DNA__SDNA_INDEX), __io__blockTable);
@@ -4531,9 +4879,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __address = ((effector_weights == null) ? 0 : effector_weights.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 
@@ -4552,9 +4900,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 84, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4570,9 +4918,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 168;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 84;
+			__dna__offset = 92;
 		}
 		if (__io__equals(p0, __io__address + __dna__offset)) {
 			return;
@@ -4598,9 +4946,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 96, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4616,9 +4964,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 180;
+			__dna__offset = 196;
 		} else {
-			__dna__offset = 96;
+			__dna__offset = 104;
 		}
 		if (__io__equals(p1, __io__address + __dna__offset)) {
 			return;
@@ -4644,9 +4992,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4662,9 +5010,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 208;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 116;
 		}
 		if (__io__equals(dp0, __io__address + __dna__offset)) {
 			return;
@@ -4691,9 +5039,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4710,9 +5058,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 204;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		}
 		if (__io__equals(cell_size, __io__address + __dna__offset)) {
 			return;
@@ -4738,9 +5086,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4756,9 +5104,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		}
 		if (__io__equals(global_size, __io__address + __dna__offset)) {
 			return;
@@ -4781,9 +5129,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4796,9 +5144,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 228;
+			__dna__offset = 244;
 		} else {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		}
 		if (__io__equals(prev_loc, __io__address + __dna__offset)) {
 			return;
@@ -4824,9 +5172,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 156, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4842,9 +5190,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 156;
+			__dna__offset = 164;
 		}
 		if (__io__equals(shift, __io__address + __dna__offset)) {
 			return;
@@ -4870,9 +5218,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4888,9 +5236,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 252;
+			__dna__offset = 268;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 176;
 		}
 		if (__io__equals(shift_f, __io__address + __dna__offset)) {
 			return;
@@ -4916,9 +5264,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4934,9 +5282,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 188;
 		}
 		if (__io__equals(obj_shift_f, __io__address + __dna__offset)) {
 			return;
@@ -4963,9 +5311,9 @@ public class FluidDomainSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4981,9 +5329,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 276;
+			__dna__offset = 292;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		}
 		if (__io__equals(imat, __io__address + __dna__offset)) {
 			return;
@@ -5010,9 +5358,9 @@ public class FluidDomainSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5028,9 +5376,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 340;
+			__dna__offset = 356;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 264;
 		}
 		if (__io__equals(obmat, __io__address + __dna__offset)) {
 			return;
@@ -5057,9 +5405,9 @@ public class FluidDomainSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 420, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 320, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5075,9 +5423,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 404;
+			__dna__offset = 420;
 		} else {
-			__dna__offset = 320;
+			__dna__offset = 328;
 		}
 		if (__io__equals(fluidmat, __io__address + __dna__offset)) {
 			return;
@@ -5104,9 +5452,9 @@ public class FluidDomainSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 392, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5122,9 +5470,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 468;
+			__dna__offset = 484;
 		} else {
-			__dna__offset = 384;
+			__dna__offset = 392;
 		}
 		if (__io__equals(fluidmat_wt, __io__address + __dna__offset)) {
 			return;
@@ -5150,9 +5498,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 548, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 456, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5168,9 +5516,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 532;
+			__dna__offset = 548;
 		} else {
-			__dna__offset = 448;
+			__dna__offset = 456;
 		}
 		if (__io__equals(base_res, __io__address + __dna__offset)) {
 			return;
@@ -5196,9 +5544,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 460, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 468, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5214,9 +5562,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 460;
+			__dna__offset = 468;
 		}
 		if (__io__equals(res_min, __io__address + __dna__offset)) {
 			return;
@@ -5242,9 +5590,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 472, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5260,9 +5608,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 556;
+			__dna__offset = 572;
 		} else {
-			__dna__offset = 472;
+			__dna__offset = 480;
 		}
 		if (__io__equals(res_max, __io__address + __dna__offset)) {
 			return;
@@ -5288,9 +5636,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 568, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 584, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 484, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5306,9 +5654,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 568;
+			__dna__offset = 584;
 		} else {
-			__dna__offset = 484;
+			__dna__offset = 492;
 		}
 		if (__io__equals(res, __io__address + __dna__offset)) {
 			return;
@@ -5327,9 +5675,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getTotal_cells() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 580);
+			return __io__block.readInt(__io__address + 596);
 		} else {
-			return __io__block.readInt(__io__address + 496);
+			return __io__block.readInt(__io__address + 504);
 		}
 	}
 
@@ -5341,9 +5689,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTotal_cells(int total_cells) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 580, total_cells);
+			__io__block.writeInt(__io__address + 596, total_cells);
 		} else {
-			__io__block.writeInt(__io__address + 496, total_cells);
+			__io__block.writeInt(__io__address + 504, total_cells);
 		}
 	}
 
@@ -5358,9 +5706,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getDx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 584);
+			return __io__block.readFloat(__io__address + 600);
 		} else {
-			return __io__block.readFloat(__io__address + 500);
+			return __io__block.readFloat(__io__address + 508);
 		}
 	}
 
@@ -5375,9 +5723,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setDx(float dx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 584, dx);
+			__io__block.writeFloat(__io__address + 600, dx);
 		} else {
-			__io__block.writeFloat(__io__address + 500, dx);
+			__io__block.writeFloat(__io__address + 508, dx);
 		}
 	}
 
@@ -5392,9 +5740,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 588);
+			return __io__block.readFloat(__io__address + 604);
 		} else {
-			return __io__block.readFloat(__io__address + 504);
+			return __io__block.readFloat(__io__address + 512);
 		}
 	}
 
@@ -5409,9 +5757,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 588, scale);
+			__io__block.writeFloat(__io__address + 604, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 504, scale);
+			__io__block.writeFloat(__io__address + 512, scale);
 		}
 	}
 
@@ -5426,9 +5774,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getBoundary_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 592);
+			return __io__block.readInt(__io__address + 608);
 		} else {
-			return __io__block.readInt(__io__address + 508);
+			return __io__block.readInt(__io__address + 516);
 		}
 	}
 
@@ -5443,9 +5791,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setBoundary_width(int boundary_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 592, boundary_width);
+			__io__block.writeInt(__io__address + 608, boundary_width);
 		} else {
-			__io__block.writeInt(__io__address + 508, boundary_width);
+			__io__block.writeInt(__io__address + 516, boundary_width);
 		}
 	}
 
@@ -5464,9 +5812,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 612, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 512, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5482,9 +5830,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 596;
+			__dna__offset = 612;
 		} else {
-			__dna__offset = 512;
+			__dna__offset = 520;
 		}
 		if (__io__equals(gravity_final, __io__address + __dna__offset)) {
 			return;
@@ -5507,9 +5855,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getAdapt_margin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 608);
+			return __io__block.readInt(__io__address + 624);
 		} else {
-			return __io__block.readInt(__io__address + 524);
+			return __io__block.readInt(__io__address + 532);
 		}
 	}
 
@@ -5525,9 +5873,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setAdapt_margin(int adapt_margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 608, adapt_margin);
+			__io__block.writeInt(__io__address + 624, adapt_margin);
 		} else {
-			__io__block.writeInt(__io__address + 524, adapt_margin);
+			__io__block.writeInt(__io__address + 532, adapt_margin);
 		}
 	}
 
@@ -5539,9 +5887,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getAdapt_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 612);
+			return __io__block.readInt(__io__address + 628);
 		} else {
-			return __io__block.readInt(__io__address + 528);
+			return __io__block.readInt(__io__address + 536);
 		}
 	}
 
@@ -5553,9 +5901,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setAdapt_res(int adapt_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 612, adapt_res);
+			__io__block.writeInt(__io__address + 628, adapt_res);
 		} else {
-			__io__block.writeInt(__io__address + 528, adapt_res);
+			__io__block.writeInt(__io__address + 536, adapt_res);
 		}
 	}
 
@@ -5570,9 +5918,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getAdapt_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 616);
+			return __io__block.readFloat(__io__address + 632);
 		} else {
-			return __io__block.readFloat(__io__address + 532);
+			return __io__block.readFloat(__io__address + 540);
 		}
 	}
 
@@ -5587,9 +5935,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setAdapt_threshold(float adapt_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 616, adapt_threshold);
+			__io__block.writeFloat(__io__address + 632, adapt_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 532, adapt_threshold);
+			__io__block.writeFloat(__io__address + 540, adapt_threshold);
 		}
 	}
 
@@ -5604,9 +5952,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getMaxres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 620);
+			return __io__block.readInt(__io__address + 636);
 		} else {
-			return __io__block.readInt(__io__address + 536);
+			return __io__block.readInt(__io__address + 544);
 		}
 	}
 
@@ -5621,9 +5969,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMaxres(int maxres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 620, maxres);
+			__io__block.writeInt(__io__address + 636, maxres);
 		} else {
-			__io__block.writeInt(__io__address + 536, maxres);
+			__io__block.writeInt(__io__address + 544, maxres);
 		}
 	}
 
@@ -5638,9 +5986,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSolver_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 624);
+			return __io__block.readInt(__io__address + 640);
 		} else {
-			return __io__block.readInt(__io__address + 540);
+			return __io__block.readInt(__io__address + 548);
 		}
 	}
 
@@ -5655,9 +6003,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSolver_res(int solver_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 624, solver_res);
+			__io__block.writeInt(__io__address + 640, solver_res);
 		} else {
-			__io__block.writeInt(__io__address + 540, solver_res);
+			__io__block.writeInt(__io__address + 548, solver_res);
 		}
 	}
 
@@ -5672,9 +6020,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getBorder_collisions() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 628);
+			return __io__block.readInt(__io__address + 644);
 		} else {
-			return __io__block.readInt(__io__address + 544);
+			return __io__block.readInt(__io__address + 552);
 		}
 	}
 
@@ -5689,9 +6037,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setBorder_collisions(int border_collisions) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 628, border_collisions);
+			__io__block.writeInt(__io__address + 644, border_collisions);
 		} else {
-			__io__block.writeInt(__io__address + 544, border_collisions);
+			__io__block.writeInt(__io__address + 552, border_collisions);
 		}
 	}
 
@@ -5706,9 +6054,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getFlags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 632);
+			return __io__block.readInt(__io__address + 648);
 		} else {
-			return __io__block.readInt(__io__address + 548);
+			return __io__block.readInt(__io__address + 556);
 		}
 	}
 
@@ -5723,9 +6071,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlags(int flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 632, flags);
+			__io__block.writeInt(__io__address + 648, flags);
 		} else {
-			__io__block.writeInt(__io__address + 548, flags);
+			__io__block.writeInt(__io__address + 556, flags);
 		}
 	}
 
@@ -5744,9 +6092,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5762,9 +6110,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 636;
+			__dna__offset = 652;
 		} else {
-			__dna__offset = 552;
+			__dna__offset = 560;
 		}
 		if (__io__equals(gravity, __io__address + __dna__offset)) {
 			return;
@@ -5783,9 +6131,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getActive_fields() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 648);
+			return __io__block.readInt(__io__address + 664);
 		} else {
-			return __io__block.readInt(__io__address + 564);
+			return __io__block.readInt(__io__address + 572);
 		}
 	}
 
@@ -5797,9 +6145,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setActive_fields(int active_fields) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 648, active_fields);
+			__io__block.writeInt(__io__address + 664, active_fields);
 		} else {
-			__io__block.writeInt(__io__address + 564, active_fields);
+			__io__block.writeInt(__io__address + 572, active_fields);
 		}
 	}
 
@@ -5814,9 +6162,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 652);
+			return __io__block.readShort(__io__address + 668);
 		} else {
-			return __io__block.readShort(__io__address + 568);
+			return __io__block.readShort(__io__address + 576);
 		}
 	}
 
@@ -5831,9 +6179,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 652, type);
+			__io__block.writeShort(__io__address + 668, type);
 		} else {
-			__io__block.writeShort(__io__address + 568, type);
+			__io__block.writeShort(__io__address + 576, type);
 		}
 	}
 
@@ -5852,9 +6200,9 @@ public class FluidDomainSettings extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 654, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 670, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 570, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 578, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5870,9 +6218,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 654;
+			__dna__offset = 670;
 		} else {
-			__dna__offset = 570;
+			__dna__offset = 578;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -5895,9 +6243,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 660);
+			return __io__block.readFloat(__io__address + 676);
 		} else {
-			return __io__block.readFloat(__io__address + 576);
+			return __io__block.readFloat(__io__address + 584);
 		}
 	}
 
@@ -5913,9 +6261,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 660, alpha);
+			__io__block.writeFloat(__io__address + 676, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 576, alpha);
+			__io__block.writeFloat(__io__address + 584, alpha);
 		}
 	}
 
@@ -5930,9 +6278,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getBeta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 664);
+			return __io__block.readFloat(__io__address + 680);
 		} else {
-			return __io__block.readFloat(__io__address + 580);
+			return __io__block.readFloat(__io__address + 588);
 		}
 	}
 
@@ -5947,9 +6295,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setBeta(float beta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 664, beta);
+			__io__block.writeFloat(__io__address + 680, beta);
 		} else {
-			__io__block.writeFloat(__io__address + 580, beta);
+			__io__block.writeFloat(__io__address + 588, beta);
 		}
 	}
 
@@ -5964,9 +6312,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getDiss_speed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 668);
+			return __io__block.readInt(__io__address + 684);
 		} else {
-			return __io__block.readInt(__io__address + 584);
+			return __io__block.readInt(__io__address + 592);
 		}
 	}
 
@@ -5981,9 +6329,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setDiss_speed(int diss_speed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 668, diss_speed);
+			__io__block.writeInt(__io__address + 684, diss_speed);
 		} else {
-			__io__block.writeInt(__io__address + 584, diss_speed);
+			__io__block.writeInt(__io__address + 592, diss_speed);
 		}
 	}
 
@@ -5998,9 +6346,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getVorticity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 672);
+			return __io__block.readFloat(__io__address + 688);
 		} else {
-			return __io__block.readFloat(__io__address + 588);
+			return __io__block.readFloat(__io__address + 596);
 		}
 	}
 
@@ -6015,9 +6363,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setVorticity(float vorticity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 672, vorticity);
+			__io__block.writeFloat(__io__address + 688, vorticity);
 		} else {
-			__io__block.writeFloat(__io__address + 588, vorticity);
+			__io__block.writeFloat(__io__address + 596, vorticity);
 		}
 	}
 
@@ -6036,9 +6384,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 676, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 692, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 592, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 600, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6054,9 +6402,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 676;
+			__dna__offset = 692;
 		} else {
-			__dna__offset = 592;
+			__dna__offset = 600;
 		}
 		if (__io__equals(active_color, __io__address + __dna__offset)) {
 			return;
@@ -6078,9 +6426,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getHighres_sampling() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 688);
+			return __io__block.readInt(__io__address + 704);
 		} else {
-			return __io__block.readInt(__io__address + 604);
+			return __io__block.readInt(__io__address + 612);
 		}
 	}
 
@@ -6095,9 +6443,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setHighres_sampling(int highres_sampling) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 688, highres_sampling);
+			__io__block.writeInt(__io__address + 704, highres_sampling);
 		} else {
-			__io__block.writeInt(__io__address + 604, highres_sampling);
+			__io__block.writeInt(__io__address + 612, highres_sampling);
 		}
 	}
 
@@ -6113,9 +6461,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getBurning_rate() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 692);
+			return __io__block.readFloat(__io__address + 708);
 		} else {
-			return __io__block.readFloat(__io__address + 608);
+			return __io__block.readFloat(__io__address + 616);
 		}
 	}
 
@@ -6131,9 +6479,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setBurning_rate(float burning_rate) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 692, burning_rate);
+			__io__block.writeFloat(__io__address + 708, burning_rate);
 		} else {
-			__io__block.writeFloat(__io__address + 608, burning_rate);
+			__io__block.writeFloat(__io__address + 616, burning_rate);
 		}
 	}
 
@@ -6148,9 +6496,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFlame_smoke() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 696);
+			return __io__block.readFloat(__io__address + 712);
 		} else {
-			return __io__block.readFloat(__io__address + 612);
+			return __io__block.readFloat(__io__address + 620);
 		}
 	}
 
@@ -6165,9 +6513,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlame_smoke(float flame_smoke) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 696, flame_smoke);
+			__io__block.writeFloat(__io__address + 712, flame_smoke);
 		} else {
-			__io__block.writeFloat(__io__address + 612, flame_smoke);
+			__io__block.writeFloat(__io__address + 620, flame_smoke);
 		}
 	}
 
@@ -6182,9 +6530,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFlame_vorticity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 700);
+			return __io__block.readFloat(__io__address + 716);
 		} else {
-			return __io__block.readFloat(__io__address + 616);
+			return __io__block.readFloat(__io__address + 624);
 		}
 	}
 
@@ -6199,9 +6547,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlame_vorticity(float flame_vorticity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 700, flame_vorticity);
+			__io__block.writeFloat(__io__address + 716, flame_vorticity);
 		} else {
-			__io__block.writeFloat(__io__address + 616, flame_vorticity);
+			__io__block.writeFloat(__io__address + 624, flame_vorticity);
 		}
 	}
 
@@ -6216,9 +6564,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFlame_ignition() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 704);
+			return __io__block.readFloat(__io__address + 720);
 		} else {
-			return __io__block.readFloat(__io__address + 620);
+			return __io__block.readFloat(__io__address + 628);
 		}
 	}
 
@@ -6233,9 +6581,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlame_ignition(float flame_ignition) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 704, flame_ignition);
+			__io__block.writeFloat(__io__address + 720, flame_ignition);
 		} else {
-			__io__block.writeFloat(__io__address + 620, flame_ignition);
+			__io__block.writeFloat(__io__address + 628, flame_ignition);
 		}
 	}
 
@@ -6250,9 +6598,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFlame_max_temp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 708);
+			return __io__block.readFloat(__io__address + 724);
 		} else {
-			return __io__block.readFloat(__io__address + 624);
+			return __io__block.readFloat(__io__address + 632);
 		}
 	}
 
@@ -6267,9 +6615,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlame_max_temp(float flame_max_temp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 708, flame_max_temp);
+			__io__block.writeFloat(__io__address + 724, flame_max_temp);
 		} else {
-			__io__block.writeFloat(__io__address + 624, flame_max_temp);
+			__io__block.writeFloat(__io__address + 632, flame_max_temp);
 		}
 	}
 
@@ -6288,9 +6636,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 712, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 728, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 628, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 636, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6306,9 +6654,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 712;
+			__dna__offset = 728;
 		} else {
-			__dna__offset = 628;
+			__dna__offset = 636;
 		}
 		if (__io__equals(flame_smoke_color, __io__address + __dna__offset)) {
 			return;
@@ -6331,9 +6679,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getNoise_strength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 724);
+			return __io__block.readFloat(__io__address + 740);
 		} else {
-			return __io__block.readFloat(__io__address + 640);
+			return __io__block.readFloat(__io__address + 648);
 		}
 	}
 
@@ -6349,9 +6697,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setNoise_strength(float noise_strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 724, noise_strength);
+			__io__block.writeFloat(__io__address + 740, noise_strength);
 		} else {
-			__io__block.writeFloat(__io__address + 640, noise_strength);
+			__io__block.writeFloat(__io__address + 648, noise_strength);
 		}
 	}
 
@@ -6366,9 +6714,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getNoise_pos_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 728);
+			return __io__block.readFloat(__io__address + 744);
 		} else {
-			return __io__block.readFloat(__io__address + 644);
+			return __io__block.readFloat(__io__address + 652);
 		}
 	}
 
@@ -6383,9 +6731,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setNoise_pos_scale(float noise_pos_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 728, noise_pos_scale);
+			__io__block.writeFloat(__io__address + 744, noise_pos_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 644, noise_pos_scale);
+			__io__block.writeFloat(__io__address + 652, noise_pos_scale);
 		}
 	}
 
@@ -6400,9 +6748,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getNoise_time_anim() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 732);
+			return __io__block.readFloat(__io__address + 748);
 		} else {
-			return __io__block.readFloat(__io__address + 648);
+			return __io__block.readFloat(__io__address + 656);
 		}
 	}
 
@@ -6417,9 +6765,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setNoise_time_anim(float noise_time_anim) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 732, noise_time_anim);
+			__io__block.writeFloat(__io__address + 748, noise_time_anim);
 		} else {
-			__io__block.writeFloat(__io__address + 648, noise_time_anim);
+			__io__block.writeFloat(__io__address + 656, noise_time_anim);
 		}
 	}
 
@@ -6435,9 +6783,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 736, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 752, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 652, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6450,9 +6798,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 736;
+			__dna__offset = 752;
 		} else {
-			__dna__offset = 652;
+			__dna__offset = 660;
 		}
 		if (__io__equals(res_noise, __io__address + __dna__offset)) {
 			return;
@@ -6474,9 +6822,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getNoise_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 748);
+			return __io__block.readInt(__io__address + 764);
 		} else {
-			return __io__block.readInt(__io__address + 664);
+			return __io__block.readInt(__io__address + 672);
 		}
 	}
 
@@ -6491,9 +6839,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setNoise_scale(int noise_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 748, noise_scale);
+			__io__block.writeInt(__io__address + 764, noise_scale);
 		} else {
-			__io__block.writeInt(__io__address + 664, noise_scale);
+			__io__block.writeInt(__io__address + 672, noise_scale);
 		}
 	}
 
@@ -6509,9 +6857,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getNoise_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 752);
+			return __io__block.readShort(__io__address + 768);
 		} else {
-			return __io__block.readShort(__io__address + 668);
+			return __io__block.readShort(__io__address + 676);
 		}
 	}
 
@@ -6527,9 +6875,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setNoise_type(short noise_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 752, noise_type);
+			__io__block.writeShort(__io__address + 768, noise_type);
 		} else {
-			__io__block.writeShort(__io__address + 668, noise_type);
+			__io__block.writeShort(__io__address + 676, noise_type);
 		}
 	}
 
@@ -6548,9 +6896,9 @@ public class FluidDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 754, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 770, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 670, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 678, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6566,9 +6914,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 754;
+			__dna__offset = 770;
 		} else {
-			__dna__offset = 670;
+			__dna__offset = 678;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -6591,9 +6939,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getParticle_randomness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 756);
+			return __io__block.readFloat(__io__address + 772);
 		} else {
-			return __io__block.readFloat(__io__address + 672);
+			return __io__block.readFloat(__io__address + 680);
 		}
 	}
 
@@ -6609,9 +6957,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_randomness(float particle_randomness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 756, particle_randomness);
+			__io__block.writeFloat(__io__address + 772, particle_randomness);
 		} else {
-			__io__block.writeFloat(__io__address + 672, particle_randomness);
+			__io__block.writeFloat(__io__address + 680, particle_randomness);
 		}
 	}
 
@@ -6626,9 +6974,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getParticle_number() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 760);
+			return __io__block.readInt(__io__address + 776);
 		} else {
-			return __io__block.readInt(__io__address + 676);
+			return __io__block.readInt(__io__address + 684);
 		}
 	}
 
@@ -6643,9 +6991,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_number(int particle_number) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 760, particle_number);
+			__io__block.writeInt(__io__address + 776, particle_number);
 		} else {
-			__io__block.writeInt(__io__address + 676, particle_number);
+			__io__block.writeInt(__io__address + 684, particle_number);
 		}
 	}
 
@@ -6657,9 +7005,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getParticle_minimum() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 764);
+			return __io__block.readInt(__io__address + 780);
 		} else {
-			return __io__block.readInt(__io__address + 680);
+			return __io__block.readInt(__io__address + 688);
 		}
 	}
 
@@ -6671,9 +7019,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_minimum(int particle_minimum) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 764, particle_minimum);
+			__io__block.writeInt(__io__address + 780, particle_minimum);
 		} else {
-			__io__block.writeInt(__io__address + 680, particle_minimum);
+			__io__block.writeInt(__io__address + 688, particle_minimum);
 		}
 	}
 
@@ -6685,9 +7033,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getParticle_maximum() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 768);
+			return __io__block.readInt(__io__address + 784);
 		} else {
-			return __io__block.readInt(__io__address + 684);
+			return __io__block.readInt(__io__address + 692);
 		}
 	}
 
@@ -6699,9 +7047,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_maximum(int particle_maximum) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 768, particle_maximum);
+			__io__block.writeInt(__io__address + 784, particle_maximum);
 		} else {
-			__io__block.writeInt(__io__address + 684, particle_maximum);
+			__io__block.writeInt(__io__address + 692, particle_maximum);
 		}
 	}
 
@@ -6716,9 +7064,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getParticle_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 772);
+			return __io__block.readFloat(__io__address + 788);
 		} else {
-			return __io__block.readFloat(__io__address + 688);
+			return __io__block.readFloat(__io__address + 696);
 		}
 	}
 
@@ -6733,9 +7081,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_radius(float particle_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 772, particle_radius);
+			__io__block.writeFloat(__io__address + 788, particle_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 688, particle_radius);
+			__io__block.writeFloat(__io__address + 696, particle_radius);
 		}
 	}
 
@@ -6750,9 +7098,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getParticle_band_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 776);
+			return __io__block.readFloat(__io__address + 792);
 		} else {
-			return __io__block.readFloat(__io__address + 692);
+			return __io__block.readFloat(__io__address + 700);
 		}
 	}
 
@@ -6767,9 +7115,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_band_width(float particle_band_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 776, particle_band_width);
+			__io__block.writeFloat(__io__address + 792, particle_band_width);
 		} else {
-			__io__block.writeFloat(__io__address + 692, particle_band_width);
+			__io__block.writeFloat(__io__address + 700, particle_band_width);
 		}
 	}
 
@@ -6784,9 +7132,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFractions_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 780);
+			return __io__block.readFloat(__io__address + 796);
 		} else {
-			return __io__block.readFloat(__io__address + 696);
+			return __io__block.readFloat(__io__address + 704);
 		}
 	}
 
@@ -6801,9 +7149,43 @@ public class FluidDomainSettings extends CFacade {
 	public void setFractions_threshold(float fractions_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 780, fractions_threshold);
+			__io__block.writeFloat(__io__address + 796, fractions_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 696, fractions_threshold);
+			__io__block.writeFloat(__io__address + 704, fractions_threshold);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'fractions_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
+	 * @see #__DNA__FIELD__fractions_distance
+	 */
+	
+	public float getFractions_distance() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 800);
+		} else {
+			return __io__block.readFloat(__io__address + 708);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fractions_distance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determines how far apart fluid and obstacle are (higher values will result in fluid being further away from obstacles, smaller values will let fluid move towards the inside of obstacles)
+	 * @see #__DNA__FIELD__fractions_distance
+	 */
+	
+	public void setFractions_distance(float fractions_distance) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 800, fractions_distance);
+		} else {
+			__io__block.writeFloat(__io__address + 708, fractions_distance);
 		}
 	}
 
@@ -6818,9 +7200,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFlip_ratio() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 784);
+			return __io__block.readFloat(__io__address + 804);
 		} else {
-			return __io__block.readFloat(__io__address + 700);
+			return __io__block.readFloat(__io__address + 712);
 		}
 	}
 
@@ -6835,9 +7217,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFlip_ratio(float flip_ratio) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 784, flip_ratio);
+			__io__block.writeFloat(__io__address + 804, flip_ratio);
 		} else {
-			__io__block.writeFloat(__io__address + 700, flip_ratio);
+			__io__block.writeFloat(__io__address + 712, flip_ratio);
 		}
 	}
 
@@ -6852,9 +7234,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSys_particle_maximum() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 788);
+			return __io__block.readInt(__io__address + 808);
 		} else {
-			return __io__block.readInt(__io__address + 704);
+			return __io__block.readInt(__io__address + 716);
 		}
 	}
 
@@ -6869,9 +7251,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSys_particle_maximum(int sys_particle_maximum) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 788, sys_particle_maximum);
+			__io__block.writeInt(__io__address + 808, sys_particle_maximum);
 		} else {
-			__io__block.writeInt(__io__address + 704, sys_particle_maximum);
+			__io__block.writeInt(__io__address + 716, sys_particle_maximum);
 		}
 	}
 
@@ -6886,9 +7268,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getSimulation_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 792);
+			return __io__block.readShort(__io__address + 812);
 		} else {
-			return __io__block.readShort(__io__address + 708);
+			return __io__block.readShort(__io__address + 720);
 		}
 	}
 
@@ -6903,9 +7285,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSimulation_method(short simulation_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 792, simulation_method);
+			__io__block.writeShort(__io__address + 812, simulation_method);
 		} else {
-			__io__block.writeShort(__io__address + 708, simulation_method);
+			__io__block.writeShort(__io__address + 720, simulation_method);
 		}
 	}
 
@@ -6918,12 +7300,12 @@ public class FluidDomainSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			2
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 794, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 814, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 710, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 722, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6936,9 +7318,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 794;
+			__dna__offset = 814;
 		} else {
-			__dna__offset = 710;
+			__dna__offset = 722;
 		}
 		if (__io__equals(_pad4, __io__address + __dna__offset)) {
 			return;
@@ -6961,9 +7343,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSurface_tension() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 796);
+			return __io__block.readFloat(__io__address + 820);
 		} else {
-			return __io__block.readFloat(__io__address + 712);
+			return __io__block.readFloat(__io__address + 728);
 		}
 	}
 
@@ -6979,9 +7361,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSurface_tension(float surface_tension) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 796, surface_tension);
+			__io__block.writeFloat(__io__address + 820, surface_tension);
 		} else {
-			__io__block.writeFloat(__io__address + 712, surface_tension);
+			__io__block.writeFloat(__io__address + 728, surface_tension);
 		}
 	}
 
@@ -6996,9 +7378,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getViscosity_base() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 800);
+			return __io__block.readFloat(__io__address + 824);
 		} else {
-			return __io__block.readFloat(__io__address + 716);
+			return __io__block.readFloat(__io__address + 732);
 		}
 	}
 
@@ -7013,9 +7395,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setViscosity_base(float viscosity_base) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 800, viscosity_base);
+			__io__block.writeFloat(__io__address + 824, viscosity_base);
 		} else {
-			__io__block.writeFloat(__io__address + 716, viscosity_base);
+			__io__block.writeFloat(__io__address + 732, viscosity_base);
 		}
 	}
 
@@ -7030,9 +7412,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getViscosity_exponent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 804);
+			return __io__block.readInt(__io__address + 828);
 		} else {
-			return __io__block.readInt(__io__address + 720);
+			return __io__block.readInt(__io__address + 736);
 		}
 	}
 
@@ -7047,9 +7429,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setViscosity_exponent(int viscosity_exponent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 804, viscosity_exponent);
+			__io__block.writeInt(__io__address + 828, viscosity_exponent);
 		} else {
-			__io__block.writeInt(__io__address + 720, viscosity_exponent);
+			__io__block.writeInt(__io__address + 736, viscosity_exponent);
 		}
 	}
 
@@ -7065,9 +7447,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getMesh_concave_upper() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 808);
+			return __io__block.readFloat(__io__address + 832);
 		} else {
-			return __io__block.readFloat(__io__address + 724);
+			return __io__block.readFloat(__io__address + 740);
 		}
 	}
 
@@ -7083,9 +7465,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_concave_upper(float mesh_concave_upper) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 808, mesh_concave_upper);
+			__io__block.writeFloat(__io__address + 832, mesh_concave_upper);
 		} else {
-			__io__block.writeFloat(__io__address + 724, mesh_concave_upper);
+			__io__block.writeFloat(__io__address + 740, mesh_concave_upper);
 		}
 	}
 
@@ -7100,9 +7482,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getMesh_concave_lower() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 812);
+			return __io__block.readFloat(__io__address + 836);
 		} else {
-			return __io__block.readFloat(__io__address + 728);
+			return __io__block.readFloat(__io__address + 744);
 		}
 	}
 
@@ -7117,9 +7499,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_concave_lower(float mesh_concave_lower) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 812, mesh_concave_lower);
+			__io__block.writeFloat(__io__address + 836, mesh_concave_lower);
 		} else {
-			__io__block.writeFloat(__io__address + 728, mesh_concave_lower);
+			__io__block.writeFloat(__io__address + 744, mesh_concave_lower);
 		}
 	}
 
@@ -7134,9 +7516,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getMesh_particle_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 816);
+			return __io__block.readFloat(__io__address + 840);
 		} else {
-			return __io__block.readFloat(__io__address + 732);
+			return __io__block.readFloat(__io__address + 748);
 		}
 	}
 
@@ -7151,9 +7533,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_particle_radius(float mesh_particle_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 816, mesh_particle_radius);
+			__io__block.writeFloat(__io__address + 840, mesh_particle_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 732, mesh_particle_radius);
+			__io__block.writeFloat(__io__address + 748, mesh_particle_radius);
 		}
 	}
 
@@ -7168,9 +7550,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getMesh_smoothen_pos() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 820);
+			return __io__block.readInt(__io__address + 844);
 		} else {
-			return __io__block.readInt(__io__address + 736);
+			return __io__block.readInt(__io__address + 752);
 		}
 	}
 
@@ -7185,9 +7567,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_smoothen_pos(int mesh_smoothen_pos) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 820, mesh_smoothen_pos);
+			__io__block.writeInt(__io__address + 844, mesh_smoothen_pos);
 		} else {
-			__io__block.writeInt(__io__address + 736, mesh_smoothen_pos);
+			__io__block.writeInt(__io__address + 752, mesh_smoothen_pos);
 		}
 	}
 
@@ -7202,9 +7584,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getMesh_smoothen_neg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 824);
+			return __io__block.readInt(__io__address + 848);
 		} else {
-			return __io__block.readInt(__io__address + 740);
+			return __io__block.readInt(__io__address + 756);
 		}
 	}
 
@@ -7219,9 +7601,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_smoothen_neg(int mesh_smoothen_neg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 824, mesh_smoothen_neg);
+			__io__block.writeInt(__io__address + 848, mesh_smoothen_neg);
 		} else {
-			__io__block.writeInt(__io__address + 740, mesh_smoothen_neg);
+			__io__block.writeInt(__io__address + 756, mesh_smoothen_neg);
 		}
 	}
 
@@ -7236,9 +7618,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getMesh_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 828);
+			return __io__block.readInt(__io__address + 852);
 		} else {
-			return __io__block.readInt(__io__address + 744);
+			return __io__block.readInt(__io__address + 760);
 		}
 	}
 
@@ -7253,9 +7635,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_scale(int mesh_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 828, mesh_scale);
+			__io__block.writeInt(__io__address + 852, mesh_scale);
 		} else {
-			__io__block.writeInt(__io__address + 744, mesh_scale);
+			__io__block.writeInt(__io__address + 760, mesh_scale);
 		}
 	}
 
@@ -7267,9 +7649,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getTotvert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 832);
+			return __io__block.readInt(__io__address + 856);
 		} else {
-			return __io__block.readInt(__io__address + 748);
+			return __io__block.readInt(__io__address + 764);
 		}
 	}
 
@@ -7281,9 +7663,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTotvert(int totvert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 832, totvert);
+			__io__block.writeInt(__io__address + 856, totvert);
 		} else {
-			__io__block.writeInt(__io__address + 748, totvert);
+			__io__block.writeInt(__io__address + 764, totvert);
 		}
 	}
 
@@ -7298,9 +7680,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getMesh_generator() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 836);
+			return __io__block.readShort(__io__address + 860);
 		} else {
-			return __io__block.readShort(__io__address + 752);
+			return __io__block.readShort(__io__address + 768);
 		}
 	}
 
@@ -7315,9 +7697,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setMesh_generator(short mesh_generator) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 836, mesh_generator);
+			__io__block.writeShort(__io__address + 860, mesh_generator);
 		} else {
-			__io__block.writeShort(__io__address + 752, mesh_generator);
+			__io__block.writeShort(__io__address + 768, mesh_generator);
 		}
 	}
 
@@ -7336,9 +7718,9 @@ public class FluidDomainSettings extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 838, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 862, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 754, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 770, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7354,9 +7736,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 838;
+			__dna__offset = 862;
 		} else {
-			__dna__offset = 754;
+			__dna__offset = 770;
 		}
 		if (__io__equals(_pad5, __io__address + __dna__offset)) {
 			return;
@@ -7378,9 +7760,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getParticle_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 844);
+			return __io__block.readInt(__io__address + 868);
 		} else {
-			return __io__block.readInt(__io__address + 760);
+			return __io__block.readInt(__io__address + 776);
 		}
 	}
 
@@ -7395,9 +7777,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_type(int particle_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 844, particle_type);
+			__io__block.writeInt(__io__address + 868, particle_type);
 		} else {
-			__io__block.writeInt(__io__address + 760, particle_type);
+			__io__block.writeInt(__io__address + 776, particle_type);
 		}
 	}
 
@@ -7412,9 +7794,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getParticle_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 848);
+			return __io__block.readInt(__io__address + 872);
 		} else {
-			return __io__block.readInt(__io__address + 764);
+			return __io__block.readInt(__io__address + 780);
 		}
 	}
 
@@ -7429,9 +7811,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setParticle_scale(int particle_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 848, particle_scale);
+			__io__block.writeInt(__io__address + 872, particle_scale);
 		} else {
-			__io__block.writeInt(__io__address + 764, particle_scale);
+			__io__block.writeInt(__io__address + 780, particle_scale);
 		}
 	}
 
@@ -7443,9 +7825,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_min_wc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 852);
+			return __io__block.readFloat(__io__address + 876);
 		} else {
-			return __io__block.readFloat(__io__address + 768);
+			return __io__block.readFloat(__io__address + 784);
 		}
 	}
 
@@ -7457,9 +7839,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_min_wc(float sndparticle_tau_min_wc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 852, sndparticle_tau_min_wc);
+			__io__block.writeFloat(__io__address + 876, sndparticle_tau_min_wc);
 		} else {
-			__io__block.writeFloat(__io__address + 768, sndparticle_tau_min_wc);
+			__io__block.writeFloat(__io__address + 784, sndparticle_tau_min_wc);
 		}
 	}
 
@@ -7471,9 +7853,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_max_wc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 856);
+			return __io__block.readFloat(__io__address + 880);
 		} else {
-			return __io__block.readFloat(__io__address + 772);
+			return __io__block.readFloat(__io__address + 788);
 		}
 	}
 
@@ -7485,9 +7867,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_max_wc(float sndparticle_tau_max_wc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 856, sndparticle_tau_max_wc);
+			__io__block.writeFloat(__io__address + 880, sndparticle_tau_max_wc);
 		} else {
-			__io__block.writeFloat(__io__address + 772, sndparticle_tau_max_wc);
+			__io__block.writeFloat(__io__address + 788, sndparticle_tau_max_wc);
 		}
 	}
 
@@ -7499,9 +7881,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_min_ta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 860);
+			return __io__block.readFloat(__io__address + 884);
 		} else {
-			return __io__block.readFloat(__io__address + 776);
+			return __io__block.readFloat(__io__address + 792);
 		}
 	}
 
@@ -7513,9 +7895,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_min_ta(float sndparticle_tau_min_ta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 860, sndparticle_tau_min_ta);
+			__io__block.writeFloat(__io__address + 884, sndparticle_tau_min_ta);
 		} else {
-			__io__block.writeFloat(__io__address + 776, sndparticle_tau_min_ta);
+			__io__block.writeFloat(__io__address + 792, sndparticle_tau_min_ta);
 		}
 	}
 
@@ -7527,9 +7909,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_max_ta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 864);
+			return __io__block.readFloat(__io__address + 888);
 		} else {
-			return __io__block.readFloat(__io__address + 780);
+			return __io__block.readFloat(__io__address + 796);
 		}
 	}
 
@@ -7541,9 +7923,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_max_ta(float sndparticle_tau_max_ta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 864, sndparticle_tau_max_ta);
+			__io__block.writeFloat(__io__address + 888, sndparticle_tau_max_ta);
 		} else {
-			__io__block.writeFloat(__io__address + 780, sndparticle_tau_max_ta);
+			__io__block.writeFloat(__io__address + 796, sndparticle_tau_max_ta);
 		}
 	}
 
@@ -7555,9 +7937,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_min_k() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 868);
+			return __io__block.readFloat(__io__address + 892);
 		} else {
-			return __io__block.readFloat(__io__address + 784);
+			return __io__block.readFloat(__io__address + 800);
 		}
 	}
 
@@ -7569,9 +7951,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_min_k(float sndparticle_tau_min_k) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 868, sndparticle_tau_min_k);
+			__io__block.writeFloat(__io__address + 892, sndparticle_tau_min_k);
 		} else {
-			__io__block.writeFloat(__io__address + 784, sndparticle_tau_min_k);
+			__io__block.writeFloat(__io__address + 800, sndparticle_tau_min_k);
 		}
 	}
 
@@ -7583,9 +7965,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_tau_max_k() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 872);
+			return __io__block.readFloat(__io__address + 896);
 		} else {
-			return __io__block.readFloat(__io__address + 788);
+			return __io__block.readFloat(__io__address + 804);
 		}
 	}
 
@@ -7597,9 +7979,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_tau_max_k(float sndparticle_tau_max_k) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 872, sndparticle_tau_max_k);
+			__io__block.writeFloat(__io__address + 896, sndparticle_tau_max_k);
 		} else {
-			__io__block.writeFloat(__io__address + 788, sndparticle_tau_max_k);
+			__io__block.writeFloat(__io__address + 804, sndparticle_tau_max_k);
 		}
 	}
 
@@ -7611,9 +7993,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSndparticle_k_wc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 876);
+			return __io__block.readInt(__io__address + 900);
 		} else {
-			return __io__block.readInt(__io__address + 792);
+			return __io__block.readInt(__io__address + 808);
 		}
 	}
 
@@ -7625,9 +8007,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_k_wc(int sndparticle_k_wc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 876, sndparticle_k_wc);
+			__io__block.writeInt(__io__address + 900, sndparticle_k_wc);
 		} else {
-			__io__block.writeInt(__io__address + 792, sndparticle_k_wc);
+			__io__block.writeInt(__io__address + 808, sndparticle_k_wc);
 		}
 	}
 
@@ -7639,9 +8021,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSndparticle_k_ta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 880);
+			return __io__block.readInt(__io__address + 904);
 		} else {
-			return __io__block.readInt(__io__address + 796);
+			return __io__block.readInt(__io__address + 812);
 		}
 	}
 
@@ -7653,9 +8035,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_k_ta(int sndparticle_k_ta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 880, sndparticle_k_ta);
+			__io__block.writeInt(__io__address + 904, sndparticle_k_ta);
 		} else {
-			__io__block.writeInt(__io__address + 796, sndparticle_k_ta);
+			__io__block.writeInt(__io__address + 812, sndparticle_k_ta);
 		}
 	}
 
@@ -7667,9 +8049,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_k_b() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 884);
+			return __io__block.readFloat(__io__address + 908);
 		} else {
-			return __io__block.readFloat(__io__address + 800);
+			return __io__block.readFloat(__io__address + 816);
 		}
 	}
 
@@ -7681,9 +8063,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_k_b(float sndparticle_k_b) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 884, sndparticle_k_b);
+			__io__block.writeFloat(__io__address + 908, sndparticle_k_b);
 		} else {
-			__io__block.writeFloat(__io__address + 800, sndparticle_k_b);
+			__io__block.writeFloat(__io__address + 816, sndparticle_k_b);
 		}
 	}
 
@@ -7695,9 +8077,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_k_d() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 888);
+			return __io__block.readFloat(__io__address + 912);
 		} else {
-			return __io__block.readFloat(__io__address + 804);
+			return __io__block.readFloat(__io__address + 820);
 		}
 	}
 
@@ -7709,9 +8091,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_k_d(float sndparticle_k_d) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 888, sndparticle_k_d);
+			__io__block.writeFloat(__io__address + 912, sndparticle_k_d);
 		} else {
-			__io__block.writeFloat(__io__address + 804, sndparticle_k_d);
+			__io__block.writeFloat(__io__address + 820, sndparticle_k_d);
 		}
 	}
 
@@ -7723,9 +8105,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_l_min() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 892);
+			return __io__block.readFloat(__io__address + 916);
 		} else {
-			return __io__block.readFloat(__io__address + 808);
+			return __io__block.readFloat(__io__address + 824);
 		}
 	}
 
@@ -7737,9 +8119,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_l_min(float sndparticle_l_min) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 892, sndparticle_l_min);
+			__io__block.writeFloat(__io__address + 916, sndparticle_l_min);
 		} else {
-			__io__block.writeFloat(__io__address + 808, sndparticle_l_min);
+			__io__block.writeFloat(__io__address + 824, sndparticle_l_min);
 		}
 	}
 
@@ -7751,9 +8133,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSndparticle_l_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 896);
+			return __io__block.readFloat(__io__address + 920);
 		} else {
-			return __io__block.readFloat(__io__address + 812);
+			return __io__block.readFloat(__io__address + 828);
 		}
 	}
 
@@ -7765,9 +8147,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_l_max(float sndparticle_l_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 896, sndparticle_l_max);
+			__io__block.writeFloat(__io__address + 920, sndparticle_l_max);
 		} else {
-			__io__block.writeFloat(__io__address + 812, sndparticle_l_max);
+			__io__block.writeFloat(__io__address + 828, sndparticle_l_max);
 		}
 	}
 
@@ -7782,9 +8164,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSndparticle_potential_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 900);
+			return __io__block.readInt(__io__address + 924);
 		} else {
-			return __io__block.readInt(__io__address + 816);
+			return __io__block.readInt(__io__address + 832);
 		}
 	}
 
@@ -7799,9 +8181,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_potential_radius(int sndparticle_potential_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 900, sndparticle_potential_radius);
+			__io__block.writeInt(__io__address + 924, sndparticle_potential_radius);
 		} else {
-			__io__block.writeInt(__io__address + 816, sndparticle_potential_radius);
+			__io__block.writeInt(__io__address + 832, sndparticle_potential_radius);
 		}
 	}
 
@@ -7816,9 +8198,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getSndparticle_update_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 904);
+			return __io__block.readInt(__io__address + 928);
 		} else {
-			return __io__block.readInt(__io__address + 820);
+			return __io__block.readInt(__io__address + 836);
 		}
 	}
 
@@ -7833,9 +8215,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_update_radius(int sndparticle_update_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 904, sndparticle_update_radius);
+			__io__block.writeInt(__io__address + 928, sndparticle_update_radius);
 		} else {
-			__io__block.writeInt(__io__address + 820, sndparticle_update_radius);
+			__io__block.writeInt(__io__address + 836, sndparticle_update_radius);
 		}
 	}
 
@@ -7850,9 +8232,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getSndparticle_boundary() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 908);
+			return __io__block.readByte(__io__address + 932);
 		} else {
-			return __io__block.readByte(__io__address + 824);
+			return __io__block.readByte(__io__address + 840);
 		}
 	}
 
@@ -7867,9 +8249,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_boundary(byte sndparticle_boundary) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 908, sndparticle_boundary);
+			__io__block.writeByte(__io__address + 932, sndparticle_boundary);
 		} else {
-			__io__block.writeByte(__io__address + 824, sndparticle_boundary);
+			__io__block.writeByte(__io__address + 840, sndparticle_boundary);
 		}
 	}
 
@@ -7884,9 +8266,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getSndparticle_combined_export() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 909);
+			return __io__block.readByte(__io__address + 933);
 		} else {
-			return __io__block.readByte(__io__address + 825);
+			return __io__block.readByte(__io__address + 841);
 		}
 	}
 
@@ -7901,9 +8283,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSndparticle_combined_export(byte sndparticle_combined_export) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 909, sndparticle_combined_export);
+			__io__block.writeByte(__io__address + 933, sndparticle_combined_export);
 		} else {
-			__io__block.writeByte(__io__address + 825, sndparticle_combined_export);
+			__io__block.writeByte(__io__address + 841, sndparticle_combined_export);
 		}
 	}
 
@@ -7922,9 +8304,9 @@ public class FluidDomainSettings extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 910, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 934, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 826, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 842, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7940,9 +8322,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 910;
+			__dna__offset = 934;
 		} else {
-			__dna__offset = 826;
+			__dna__offset = 842;
 		}
 		if (__io__equals(_pad6, __io__address + __dna__offset)) {
 			return;
@@ -7961,9 +8343,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getGuiding_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 916);
+			return __io__block.readFloat(__io__address + 940);
 		} else {
-			return __io__block.readFloat(__io__address + 832);
+			return __io__block.readFloat(__io__address + 848);
 		}
 	}
 
@@ -7975,9 +8357,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setGuiding_alpha(float guiding_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 916, guiding_alpha);
+			__io__block.writeFloat(__io__address + 940, guiding_alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 832, guiding_alpha);
+			__io__block.writeFloat(__io__address + 848, guiding_alpha);
 		}
 	}
 
@@ -7989,9 +8371,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getGuiding_beta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 920);
+			return __io__block.readInt(__io__address + 944);
 		} else {
-			return __io__block.readInt(__io__address + 836);
+			return __io__block.readInt(__io__address + 852);
 		}
 	}
 
@@ -8003,9 +8385,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setGuiding_beta(int guiding_beta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 920, guiding_beta);
+			__io__block.writeInt(__io__address + 944, guiding_beta);
 		} else {
-			__io__block.writeInt(__io__address + 836, guiding_beta);
+			__io__block.writeInt(__io__address + 852, guiding_beta);
 		}
 	}
 
@@ -8017,9 +8399,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getGuiding_vel_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 924);
+			return __io__block.readFloat(__io__address + 948);
 		} else {
-			return __io__block.readFloat(__io__address + 840);
+			return __io__block.readFloat(__io__address + 856);
 		}
 	}
 
@@ -8031,9 +8413,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setGuiding_vel_factor(float guiding_vel_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 924, guiding_vel_factor);
+			__io__block.writeFloat(__io__address + 948, guiding_vel_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 840, guiding_vel_factor);
+			__io__block.writeFloat(__io__address + 856, guiding_vel_factor);
 		}
 	}
 
@@ -8052,9 +8434,9 @@ public class FluidDomainSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 928, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 952, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 844, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 860, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8070,9 +8452,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 928;
+			__dna__offset = 952;
 		} else {
-			__dna__offset = 844;
+			__dna__offset = 860;
 		}
 		if (__io__equals(guide_res, __io__address + __dna__offset)) {
 			return;
@@ -8091,9 +8473,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getGuiding_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 940);
+			return __io__block.readShort(__io__address + 964);
 		} else {
-			return __io__block.readShort(__io__address + 856);
+			return __io__block.readShort(__io__address + 872);
 		}
 	}
 
@@ -8105,9 +8487,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setGuiding_source(short guiding_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 940, guiding_source);
+			__io__block.writeShort(__io__address + 964, guiding_source);
 		} else {
-			__io__block.writeShort(__io__address + 856, guiding_source);
+			__io__block.writeShort(__io__address + 872, guiding_source);
 		}
 	}
 
@@ -8126,9 +8508,9 @@ public class FluidDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 942, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 966, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 858, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 874, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8144,9 +8526,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 942;
+			__dna__offset = 966;
 		} else {
-			__dna__offset = 858;
+			__dna__offset = 874;
 		}
 		if (__io__equals(_pad7, __io__address + __dna__offset)) {
 			return;
@@ -8169,9 +8551,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 944);
+			return __io__block.readInt(__io__address + 968);
 		} else {
-			return __io__block.readInt(__io__address + 860);
+			return __io__block.readInt(__io__address + 876);
 		}
 	}
 
@@ -8187,9 +8569,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_start(int cache_frame_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 944, cache_frame_start);
+			__io__block.writeInt(__io__address + 968, cache_frame_start);
 		} else {
-			__io__block.writeInt(__io__address + 860, cache_frame_start);
+			__io__block.writeInt(__io__address + 876, cache_frame_start);
 		}
 	}
 
@@ -8204,9 +8586,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_end() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 948);
+			return __io__block.readInt(__io__address + 972);
 		} else {
-			return __io__block.readInt(__io__address + 864);
+			return __io__block.readInt(__io__address + 880);
 		}
 	}
 
@@ -8221,9 +8603,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_end(int cache_frame_end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 948, cache_frame_end);
+			__io__block.writeInt(__io__address + 972, cache_frame_end);
 		} else {
-			__io__block.writeInt(__io__address + 864, cache_frame_end);
+			__io__block.writeInt(__io__address + 880, cache_frame_end);
 		}
 	}
 
@@ -8235,9 +8617,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_pause_data() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 952);
+			return __io__block.readInt(__io__address + 976);
 		} else {
-			return __io__block.readInt(__io__address + 868);
+			return __io__block.readInt(__io__address + 884);
 		}
 	}
 
@@ -8249,9 +8631,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_pause_data(int cache_frame_pause_data) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 952, cache_frame_pause_data);
+			__io__block.writeInt(__io__address + 976, cache_frame_pause_data);
 		} else {
-			__io__block.writeInt(__io__address + 868, cache_frame_pause_data);
+			__io__block.writeInt(__io__address + 884, cache_frame_pause_data);
 		}
 	}
 
@@ -8263,9 +8645,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_pause_noise() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 956);
+			return __io__block.readInt(__io__address + 980);
 		} else {
-			return __io__block.readInt(__io__address + 872);
+			return __io__block.readInt(__io__address + 888);
 		}
 	}
 
@@ -8277,9 +8659,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_pause_noise(int cache_frame_pause_noise) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 956, cache_frame_pause_noise);
+			__io__block.writeInt(__io__address + 980, cache_frame_pause_noise);
 		} else {
-			__io__block.writeInt(__io__address + 872, cache_frame_pause_noise);
+			__io__block.writeInt(__io__address + 888, cache_frame_pause_noise);
 		}
 	}
 
@@ -8291,9 +8673,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_pause_mesh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 960);
+			return __io__block.readInt(__io__address + 984);
 		} else {
-			return __io__block.readInt(__io__address + 876);
+			return __io__block.readInt(__io__address + 892);
 		}
 	}
 
@@ -8305,9 +8687,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_pause_mesh(int cache_frame_pause_mesh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 960, cache_frame_pause_mesh);
+			__io__block.writeInt(__io__address + 984, cache_frame_pause_mesh);
 		} else {
-			__io__block.writeInt(__io__address + 876, cache_frame_pause_mesh);
+			__io__block.writeInt(__io__address + 892, cache_frame_pause_mesh);
 		}
 	}
 
@@ -8319,9 +8701,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_pause_particles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 964);
+			return __io__block.readInt(__io__address + 988);
 		} else {
-			return __io__block.readInt(__io__address + 880);
+			return __io__block.readInt(__io__address + 896);
 		}
 	}
 
@@ -8333,9 +8715,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_pause_particles(int cache_frame_pause_particles) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 964, cache_frame_pause_particles);
+			__io__block.writeInt(__io__address + 988, cache_frame_pause_particles);
 		} else {
-			__io__block.writeInt(__io__address + 880, cache_frame_pause_particles);
+			__io__block.writeInt(__io__address + 896, cache_frame_pause_particles);
 		}
 	}
 
@@ -8347,9 +8729,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_pause_guiding() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 968);
+			return __io__block.readInt(__io__address + 992);
 		} else {
-			return __io__block.readInt(__io__address + 884);
+			return __io__block.readInt(__io__address + 900);
 		}
 	}
 
@@ -8361,9 +8743,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_pause_guiding(int cache_frame_pause_guiding) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 968, cache_frame_pause_guiding);
+			__io__block.writeInt(__io__address + 992, cache_frame_pause_guiding);
 		} else {
-			__io__block.writeInt(__io__address + 884, cache_frame_pause_guiding);
+			__io__block.writeInt(__io__address + 900, cache_frame_pause_guiding);
 		}
 	}
 
@@ -8378,9 +8760,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_frame_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 972);
+			return __io__block.readInt(__io__address + 996);
 		} else {
-			return __io__block.readInt(__io__address + 888);
+			return __io__block.readInt(__io__address + 904);
 		}
 	}
 
@@ -8395,9 +8777,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_frame_offset(int cache_frame_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 972, cache_frame_offset);
+			__io__block.writeInt(__io__address + 996, cache_frame_offset);
 		} else {
-			__io__block.writeInt(__io__address + 888, cache_frame_offset);
+			__io__block.writeInt(__io__address + 904, cache_frame_offset);
 		}
 	}
 
@@ -8409,9 +8791,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 976);
+			return __io__block.readInt(__io__address + 1000);
 		} else {
-			return __io__block.readInt(__io__address + 892);
+			return __io__block.readInt(__io__address + 908);
 		}
 	}
 
@@ -8423,9 +8805,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_flag(int cache_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 976, cache_flag);
+			__io__block.writeInt(__io__address + 1000, cache_flag);
 		} else {
-			__io__block.writeInt(__io__address + 892, cache_flag);
+			__io__block.writeInt(__io__address + 908, cache_flag);
 		}
 	}
 
@@ -8440,9 +8822,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCache_mesh_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 980);
+			return __io__block.readByte(__io__address + 1004);
 		} else {
-			return __io__block.readByte(__io__address + 896);
+			return __io__block.readByte(__io__address + 912);
 		}
 	}
 
@@ -8457,9 +8839,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_mesh_format(byte cache_mesh_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 980, cache_mesh_format);
+			__io__block.writeByte(__io__address + 1004, cache_mesh_format);
 		} else {
-			__io__block.writeByte(__io__address + 896, cache_mesh_format);
+			__io__block.writeByte(__io__address + 912, cache_mesh_format);
 		}
 	}
 
@@ -8474,9 +8856,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCache_data_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 981);
+			return __io__block.readByte(__io__address + 1005);
 		} else {
-			return __io__block.readByte(__io__address + 897);
+			return __io__block.readByte(__io__address + 913);
 		}
 	}
 
@@ -8491,9 +8873,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_data_format(byte cache_data_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 981, cache_data_format);
+			__io__block.writeByte(__io__address + 1005, cache_data_format);
 		} else {
-			__io__block.writeByte(__io__address + 897, cache_data_format);
+			__io__block.writeByte(__io__address + 913, cache_data_format);
 		}
 	}
 
@@ -8508,9 +8890,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCache_particle_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 982);
+			return __io__block.readByte(__io__address + 1006);
 		} else {
-			return __io__block.readByte(__io__address + 898);
+			return __io__block.readByte(__io__address + 914);
 		}
 	}
 
@@ -8525,9 +8907,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_particle_format(byte cache_particle_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 982, cache_particle_format);
+			__io__block.writeByte(__io__address + 1006, cache_particle_format);
 		} else {
-			__io__block.writeByte(__io__address + 898, cache_particle_format);
+			__io__block.writeByte(__io__address + 914, cache_particle_format);
 		}
 	}
 
@@ -8542,9 +8924,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCache_noise_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 983);
+			return __io__block.readByte(__io__address + 1007);
 		} else {
-			return __io__block.readByte(__io__address + 899);
+			return __io__block.readByte(__io__address + 915);
 		}
 	}
 
@@ -8559,9 +8941,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_noise_format(byte cache_noise_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 983, cache_noise_format);
+			__io__block.writeByte(__io__address + 1007, cache_noise_format);
 		} else {
-			__io__block.writeByte(__io__address + 899, cache_noise_format);
+			__io__block.writeByte(__io__address + 915, cache_noise_format);
 		}
 	}
 
@@ -8580,9 +8962,9 @@ public class FluidDomainSettings extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 984, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1008, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 916, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8598,9 +8980,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 984;
+			__dna__offset = 1008;
 		} else {
-			__dna__offset = 900;
+			__dna__offset = 916;
 		}
 		if (__io__equals(cache_directory, __io__address + __dna__offset)) {
 			return;
@@ -8626,9 +9008,9 @@ public class FluidDomainSettings extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2008, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2032, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1924, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1940, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8644,9 +9026,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2008;
+			__dna__offset = 2032;
 		} else {
-			__dna__offset = 1924;
+			__dna__offset = 1940;
 		}
 		if (__io__equals(error, __io__address + __dna__offset)) {
 			return;
@@ -8668,9 +9050,9 @@ public class FluidDomainSettings extends CFacade {
 	public short getCache_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2072);
+			return __io__block.readShort(__io__address + 2096);
 		} else {
-			return __io__block.readShort(__io__address + 1988);
+			return __io__block.readShort(__io__address + 2004);
 		}
 	}
 
@@ -8685,9 +9067,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_type(short cache_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2072, cache_type);
+			__io__block.writeShort(__io__address + 2096, cache_type);
 		} else {
-			__io__block.writeShort(__io__address + 1988, cache_type);
+			__io__block.writeShort(__io__address + 2004, cache_type);
 		}
 	}
 
@@ -8706,9 +9088,9 @@ public class FluidDomainSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2074, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2098, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1990, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2006, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8724,9 +9106,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2074;
+			__dna__offset = 2098;
 		} else {
-			__dna__offset = 1990;
+			__dna__offset = 2006;
 		}
 		if (__io__equals(cache_id, __io__address + __dna__offset)) {
 			return;
@@ -8749,9 +9131,9 @@ public class FluidDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2078, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2102, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1994, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2010, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8764,9 +9146,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2078;
+			__dna__offset = 2102;
 		} else {
-			__dna__offset = 1994;
+			__dna__offset = 2010;
 		}
 		if (__io__equals(_pad8, __io__address + __dna__offset)) {
 			return;
@@ -8788,9 +9170,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getDt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2080);
+			return __io__block.readFloat(__io__address + 2104);
 		} else {
-			return __io__block.readFloat(__io__address + 1996);
+			return __io__block.readFloat(__io__address + 2012);
 		}
 	}
 
@@ -8805,9 +9187,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setDt(float dt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2080, dt);
+			__io__block.writeFloat(__io__address + 2104, dt);
 		} else {
-			__io__block.writeFloat(__io__address + 1996, dt);
+			__io__block.writeFloat(__io__address + 2012, dt);
 		}
 	}
 
@@ -8819,9 +9201,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getTime_total() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2084);
+			return __io__block.readFloat(__io__address + 2108);
 		} else {
-			return __io__block.readFloat(__io__address + 2000);
+			return __io__block.readFloat(__io__address + 2016);
 		}
 	}
 
@@ -8833,9 +9215,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTime_total(float time_total) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2084, time_total);
+			__io__block.writeFloat(__io__address + 2108, time_total);
 		} else {
-			__io__block.writeFloat(__io__address + 2000, time_total);
+			__io__block.writeFloat(__io__address + 2016, time_total);
 		}
 	}
 
@@ -8847,9 +9229,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getTime_per_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2088);
+			return __io__block.readFloat(__io__address + 2112);
 		} else {
-			return __io__block.readFloat(__io__address + 2004);
+			return __io__block.readFloat(__io__address + 2020);
 		}
 	}
 
@@ -8861,9 +9243,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTime_per_frame(float time_per_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2088, time_per_frame);
+			__io__block.writeFloat(__io__address + 2112, time_per_frame);
 		} else {
-			__io__block.writeFloat(__io__address + 2004, time_per_frame);
+			__io__block.writeFloat(__io__address + 2020, time_per_frame);
 		}
 	}
 
@@ -8875,9 +9257,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getFrame_length() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2092);
+			return __io__block.readFloat(__io__address + 2116);
 		} else {
-			return __io__block.readFloat(__io__address + 2008);
+			return __io__block.readFloat(__io__address + 2024);
 		}
 	}
 
@@ -8889,9 +9271,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setFrame_length(float frame_length) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2092, frame_length);
+			__io__block.writeFloat(__io__address + 2116, frame_length);
 		} else {
-			__io__block.writeFloat(__io__address + 2008, frame_length);
+			__io__block.writeFloat(__io__address + 2024, frame_length);
 		}
 	}
 
@@ -8906,9 +9288,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getTime_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2096);
+			return __io__block.readFloat(__io__address + 2120);
 		} else {
-			return __io__block.readFloat(__io__address + 2012);
+			return __io__block.readFloat(__io__address + 2028);
 		}
 	}
 
@@ -8923,9 +9305,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTime_scale(float time_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2096, time_scale);
+			__io__block.writeFloat(__io__address + 2120, time_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 2012, time_scale);
+			__io__block.writeFloat(__io__address + 2028, time_scale);
 		}
 	}
 
@@ -8940,9 +9322,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getCfl_condition() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2100);
+			return __io__block.readFloat(__io__address + 2124);
 		} else {
-			return __io__block.readFloat(__io__address + 2016);
+			return __io__block.readFloat(__io__address + 2032);
 		}
 	}
 
@@ -8957,9 +9339,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCfl_condition(float cfl_condition) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2100, cfl_condition);
+			__io__block.writeFloat(__io__address + 2124, cfl_condition);
 		} else {
-			__io__block.writeFloat(__io__address + 2016, cfl_condition);
+			__io__block.writeFloat(__io__address + 2032, cfl_condition);
 		}
 	}
 
@@ -8971,9 +9353,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getTimesteps_minimum() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2104);
+			return __io__block.readInt(__io__address + 2128);
 		} else {
-			return __io__block.readInt(__io__address + 2020);
+			return __io__block.readInt(__io__address + 2036);
 		}
 	}
 
@@ -8985,9 +9367,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTimesteps_minimum(int timesteps_minimum) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2104, timesteps_minimum);
+			__io__block.writeInt(__io__address + 2128, timesteps_minimum);
 		} else {
-			__io__block.writeInt(__io__address + 2020, timesteps_minimum);
+			__io__block.writeInt(__io__address + 2036, timesteps_minimum);
 		}
 	}
 
@@ -8999,9 +9381,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getTimesteps_maximum() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2108);
+			return __io__block.readInt(__io__address + 2132);
 		} else {
-			return __io__block.readInt(__io__address + 2024);
+			return __io__block.readInt(__io__address + 2040);
 		}
 	}
 
@@ -9013,129 +9395,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setTimesteps_maximum(int timesteps_maximum) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2108, timesteps_maximum);
+			__io__block.writeInt(__io__address + 2132, timesteps_maximum);
 		} else {
-			__io__block.writeInt(__io__address + 2024, timesteps_maximum);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'slice_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
-	 * <p> Display options. </p>
-	 * @see #__DNA__FIELD__slice_method
-	 */
-	
-	public byte getSlice_method() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2112);
-		} else {
-			return __io__block.readByte(__io__address + 2028);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'slice_method'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * How to slice the volume for viewport rendering<h4>Blender Source Code:</h4>
-	 * <p> Display options. </p>
-	 * @see #__DNA__FIELD__slice_method
-	 */
-	
-	public void setSlice_method(byte slice_method) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2112, slice_method);
-		} else {
-			__io__block.writeByte(__io__address + 2028, slice_method);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'axis_slice_method'.
-	 * @see #__DNA__FIELD__axis_slice_method
-	 */
-	
-	public byte getAxis_slice_method() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2113);
-		} else {
-			return __io__block.readByte(__io__address + 2029);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'axis_slice_method'.
-	 * @see #__DNA__FIELD__axis_slice_method
-	 */
-	
-	public void setAxis_slice_method(byte axis_slice_method) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2113, axis_slice_method);
-		} else {
-			__io__block.writeByte(__io__address + 2029, axis_slice_method);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'slice_axis'.
-	 * @see #__DNA__FIELD__slice_axis
-	 */
-	
-	public byte getSlice_axis() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2114);
-		} else {
-			return __io__block.readByte(__io__address + 2030);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'slice_axis'.
-	 * @see #__DNA__FIELD__slice_axis
-	 */
-	
-	public void setSlice_axis(byte slice_axis) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2114, slice_axis);
-		} else {
-			__io__block.writeByte(__io__address + 2030, slice_axis);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'draw_velocity'.
-	 * @see #__DNA__FIELD__draw_velocity
-	 */
-	
-	public byte getDraw_velocity() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2115);
-		} else {
-			return __io__block.readByte(__io__address + 2031);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'draw_velocity'.
-	 * @see #__DNA__FIELD__draw_velocity
-	 */
-	
-	public void setDraw_velocity(byte draw_velocity) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2115, draw_velocity);
-		} else {
-			__io__block.writeByte(__io__address + 2031, draw_velocity);
+			__io__block.writeInt(__io__address + 2040, timesteps_maximum);
 		}
 	}
 
@@ -9143,16 +9405,17 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated
+	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <p> Display options. </p>
 	 * @see #__DNA__FIELD__slice_per_voxel
 	 */
 	
 	public float getSlice_per_voxel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2116);
+			return __io__block.readFloat(__io__address + 2136);
 		} else {
-			return __io__block.readFloat(__io__address + 2032);
+			return __io__block.readFloat(__io__address + 2044);
 		}
 	}
 
@@ -9160,16 +9423,17 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'slice_per_voxel'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * How many slices per voxel should be generated
+	 * How many slices per voxel should be generated<h4>Blender Source Code:</h4>
+	 * <p> Display options. </p>
 	 * @see #__DNA__FIELD__slice_per_voxel
 	 */
 	
 	public void setSlice_per_voxel(float slice_per_voxel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2116, slice_per_voxel);
+			__io__block.writeFloat(__io__address + 2136, slice_per_voxel);
 		} else {
-			__io__block.writeFloat(__io__address + 2032, slice_per_voxel);
+			__io__block.writeFloat(__io__address + 2044, slice_per_voxel);
 		}
 	}
 
@@ -9184,9 +9448,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getSlice_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2120);
+			return __io__block.readFloat(__io__address + 2140);
 		} else {
-			return __io__block.readFloat(__io__address + 2036);
+			return __io__block.readFloat(__io__address + 2048);
 		}
 	}
 
@@ -9201,9 +9465,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setSlice_depth(float slice_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2120, slice_depth);
+			__io__block.writeFloat(__io__address + 2140, slice_depth);
 		} else {
-			__io__block.writeFloat(__io__address + 2036, slice_depth);
+			__io__block.writeFloat(__io__address + 2048, slice_depth);
 		}
 	}
 
@@ -9218,9 +9482,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getDisplay_thickness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2124);
+			return __io__block.readFloat(__io__address + 2144);
 		} else {
-			return __io__block.readFloat(__io__address + 2040);
+			return __io__block.readFloat(__io__address + 2052);
 		}
 	}
 
@@ -9235,9 +9499,37 @@ public class FluidDomainSettings extends CFacade {
 	public void setDisplay_thickness(float display_thickness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2124, display_thickness);
+			__io__block.writeFloat(__io__address + 2144, display_thickness);
 		} else {
-			__io__block.writeFloat(__io__address + 2040, display_thickness);
+			__io__block.writeFloat(__io__address + 2052, display_thickness);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'grid_scale'.
+	 * @see #__DNA__FIELD__grid_scale
+	 */
+	
+	public float getGrid_scale() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2148);
+		} else {
+			return __io__block.readFloat(__io__address + 2056);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'grid_scale'.
+	 * @see #__DNA__FIELD__grid_scale
+	 */
+	
+	public void setGrid_scale(float grid_scale) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2148, grid_scale);
+		} else {
+			__io__block.writeFloat(__io__address + 2056, grid_scale);
 		}
 	}
 
@@ -9250,9 +9542,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2044);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2060);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ColorBand.class};
 		return new CPointer<ColorBand>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ColorBand.__DNA__SDNA_INDEX), __io__blockTable);
@@ -9267,9 +9559,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __address = ((coba == null) ? 0 : coba.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2128, __address);
+			__io__block.writeLong(__io__address + 2152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2044, __address);
+			__io__block.writeLong(__io__address + 2060, __address);
 		}
 	}
 
@@ -9284,9 +9576,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getVector_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2136);
+			return __io__block.readFloat(__io__address + 2160);
 		} else {
-			return __io__block.readFloat(__io__address + 2048);
+			return __io__block.readFloat(__io__address + 2064);
 		}
 	}
 
@@ -9301,9 +9593,241 @@ public class FluidDomainSettings extends CFacade {
 	public void setVector_scale(float vector_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2136, vector_scale);
+			__io__block.writeFloat(__io__address + 2160, vector_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 2048, vector_scale);
+			__io__block.writeFloat(__io__address + 2064, vector_scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridlines_lower_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Lower bound of the highlighting range
+	 * @see #__DNA__FIELD__gridlines_lower_bound
+	 */
+	
+	public float getGridlines_lower_bound() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2164);
+		} else {
+			return __io__block.readFloat(__io__address + 2068);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridlines_lower_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Lower bound of the highlighting range
+	 * @see #__DNA__FIELD__gridlines_lower_bound
+	 */
+	
+	public void setGridlines_lower_bound(float gridlines_lower_bound) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2164, gridlines_lower_bound);
+		} else {
+			__io__block.writeFloat(__io__address + 2068, gridlines_lower_bound);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridlines_upper_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Upper bound of the highlighting range
+	 * @see #__DNA__FIELD__gridlines_upper_bound
+	 */
+	
+	public float getGridlines_upper_bound() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2168);
+		} else {
+			return __io__block.readFloat(__io__address + 2072);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridlines_upper_bound'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Upper bound of the highlighting range
+	 * @see #__DNA__FIELD__gridlines_upper_bound
+	 */
+	
+	public void setGridlines_upper_bound(float gridlines_upper_bound) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2168, gridlines_upper_bound);
+		} else {
+			__io__block.writeFloat(__io__address + 2072, gridlines_upper_bound);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridlines_range_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color used to highlight the range
+	 * @see #__DNA__FIELD__gridlines_range_color
+	 */
+	
+	public CArrayFacade<Float> getGridlines_range_color() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 2172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 2076, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridlines_range_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color used to highlight the range
+	 * @see #__DNA__FIELD__gridlines_range_color
+	 */
+	
+	public void setGridlines_range_color(CArrayFacade<Float> gridlines_range_color) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2172;
+		} else {
+			__dna__offset = 2076;
+		}
+		if (__io__equals(gridlines_range_color, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, gridlines_range_color)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, gridlines_range_color);
+		} else {
+			__io__generic__copy( getGridlines_range_color(), gridlines_range_color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public byte getAxis_slice_method() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2188);
+		} else {
+			return __io__block.readByte(__io__address + 2092);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'axis_slice_method'.
+	 * @see #__DNA__FIELD__axis_slice_method
+	 */
+	
+	public void setAxis_slice_method(byte axis_slice_method) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2188, axis_slice_method);
+		} else {
+			__io__block.writeByte(__io__address + 2092, axis_slice_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public byte getSlice_axis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2189);
+		} else {
+			return __io__block.readByte(__io__address + 2093);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'slice_axis'.
+	 * @see #__DNA__FIELD__slice_axis
+	 */
+	
+	public void setSlice_axis(byte slice_axis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2189, slice_axis);
+		} else {
+			__io__block.writeByte(__io__address + 2093, slice_axis);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'show_gridlines'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Show gridlines
+	 * @see #__DNA__FIELD__show_gridlines
+	 */
+	
+	public byte getShow_gridlines() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2190);
+		} else {
+			return __io__block.readByte(__io__address + 2094);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'show_gridlines'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Show gridlines
+	 * @see #__DNA__FIELD__show_gridlines
+	 */
+	
+	public void setShow_gridlines(byte show_gridlines) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2190, show_gridlines);
+		} else {
+			__io__block.writeByte(__io__address + 2094, show_gridlines);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'draw_velocity'.
+	 * @see #__DNA__FIELD__draw_velocity
+	 */
+	
+	public byte getDraw_velocity() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2191);
+		} else {
+			return __io__block.readByte(__io__address + 2095);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'draw_velocity'.
+	 * @see #__DNA__FIELD__draw_velocity
+	 */
+	
+	public void setDraw_velocity(byte draw_velocity) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2191, draw_velocity);
+		} else {
+			__io__block.writeByte(__io__address + 2095, draw_velocity);
 		}
 	}
 
@@ -9315,9 +9839,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getVector_draw_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2140);
+			return __io__block.readByte(__io__address + 2192);
 		} else {
-			return __io__block.readByte(__io__address + 2052);
+			return __io__block.readByte(__io__address + 2096);
 		}
 	}
 
@@ -9329,9 +9853,107 @@ public class FluidDomainSettings extends CFacade {
 	public void setVector_draw_type(byte vector_draw_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2140, vector_draw_type);
+			__io__block.writeByte(__io__address + 2192, vector_draw_type);
 		} else {
-			__io__block.writeByte(__io__address + 2052, vector_draw_type);
+			__io__block.writeByte(__io__address + 2096, vector_draw_type);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vector_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used for vector display. </p>
+	 * @see #__DNA__FIELD__vector_field
+	 */
+	
+	public byte getVector_field() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2193);
+		} else {
+			return __io__block.readByte(__io__address + 2097);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vector_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Vector field to be represented by the display vectors<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used for vector display. </p>
+	 * @see #__DNA__FIELD__vector_field
+	 */
+	
+	public void setVector_field(byte vector_field) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2193, vector_field);
+		} else {
+			__io__block.writeByte(__io__address + 2097, vector_field);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vector_scale_with_magnitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale vectors with their magnitudes
+	 * @see #__DNA__FIELD__vector_scale_with_magnitude
+	 */
+	
+	public byte getVector_scale_with_magnitude() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2194);
+		} else {
+			return __io__block.readByte(__io__address + 2098);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vector_scale_with_magnitude'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Scale vectors with their magnitudes
+	 * @see #__DNA__FIELD__vector_scale_with_magnitude
+	 */
+	
+	public void setVector_scale_with_magnitude(byte vector_scale_with_magnitude) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2194, vector_scale_with_magnitude);
+		} else {
+			__io__block.writeByte(__io__address + 2098, vector_scale_with_magnitude);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'vector_draw_mac_components'.
+	 * @see #__DNA__FIELD__vector_draw_mac_components
+	 */
+	
+	public byte getVector_draw_mac_components() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2195);
+		} else {
+			return __io__block.readByte(__io__address + 2099);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vector_draw_mac_components'.
+	 * @see #__DNA__FIELD__vector_draw_mac_components
+	 */
+	
+	public void setVector_draw_mac_components(byte vector_draw_mac_components) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2195, vector_draw_mac_components);
+		} else {
+			__io__block.writeByte(__io__address + 2099, vector_draw_mac_components);
 		}
 	}
 
@@ -9343,9 +9965,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getUse_coba() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2141);
+			return __io__block.readByte(__io__address + 2196);
 		} else {
-			return __io__block.readByte(__io__address + 2053);
+			return __io__block.readByte(__io__address + 2100);
 		}
 	}
 
@@ -9357,17 +9979,16 @@ public class FluidDomainSettings extends CFacade {
 	public void setUse_coba(byte use_coba) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2141, use_coba);
+			__io__block.writeByte(__io__address + 2196, use_coba);
 		} else {
-			__io__block.writeByte(__io__address + 2053, use_coba);
+			__io__block.writeByte(__io__address + 2100, use_coba);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * @see #__DNA__FIELD__coba_field
 	 */
@@ -9375,17 +9996,16 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCoba_field() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2142);
+			return __io__block.readByte(__io__address + 2197);
 		} else {
-			return __io__block.readByte(__io__address + 2054);
+			return __io__block.readByte(__io__address + 2101);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'coba_field'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Simulation field to color map<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p>{@link Simulation}  field used for the color mapping. </p>
 	 * @see #__DNA__FIELD__coba_field
 	 */
@@ -9393,9 +10013,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCoba_field(byte coba_field) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2142, coba_field);
+			__io__block.writeByte(__io__address + 2197, coba_field);
 		} else {
-			__io__block.writeByte(__io__address + 2054, coba_field);
+			__io__block.writeByte(__io__address + 2101, coba_field);
 		}
 	}
 
@@ -9407,9 +10027,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getInterp_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2143);
+			return __io__block.readByte(__io__address + 2198);
 		} else {
-			return __io__block.readByte(__io__address + 2055);
+			return __io__block.readByte(__io__address + 2102);
 		}
 	}
 
@@ -9421,9 +10041,119 @@ public class FluidDomainSettings extends CFacade {
 	public void setInterp_method(byte interp_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2143, interp_method);
+			__io__block.writeByte(__io__address + 2198, interp_method);
 		} else {
-			__io__block.writeByte(__io__address + 2055, interp_method);
+			__io__block.writeByte(__io__address + 2102, interp_method);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridlines_color_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
+	 * @see #__DNA__FIELD__gridlines_color_field
+	 */
+	
+	public byte getGridlines_color_field() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2199);
+		} else {
+			return __io__block.readByte(__io__address + 2103);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridlines_color_field'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Simulation field to color map onto gridlines<h4>Blender Source Code:</h4>
+	 * <p>{@link Simulation}  field used to color map onto gridlines. </p>
+	 * @see #__DNA__FIELD__gridlines_color_field
+	 */
+	
+	public void setGridlines_color_field(byte gridlines_color_field) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2199, gridlines_color_field);
+		} else {
+			__io__block.writeByte(__io__address + 2103, gridlines_color_field);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gridlines_cell_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cell type to be highlighted
+	 * @see #__DNA__FIELD__gridlines_cell_filter
+	 */
+	
+	public byte getGridlines_cell_filter() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 2200);
+		} else {
+			return __io__block.readByte(__io__address + 2104);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gridlines_cell_filter'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Cell type to be highlighted
+	 * @see #__DNA__FIELD__gridlines_cell_filter
+	 */
+	
+	public void setGridlines_cell_filter(byte gridlines_cell_filter) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 2200, gridlines_cell_filter);
+		} else {
+			__io__block.writeByte(__io__address + 2104, gridlines_cell_filter);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad9'.
+	 * @see #__DNA__FIELD___pad9
+	 */
+	
+	public CArrayFacade<Byte> get_pad9() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			7
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 2201, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 2105, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad9'.
+	 * @see #__DNA__FIELD___pad9
+	 */
+	
+	public void set_pad9(CArrayFacade<Byte> _pad9) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2201;
+		} else {
+			__dna__offset = 2105;
+		}
+		if (__io__equals(_pad9, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad9)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad9);
+		} else {
+			__io__generic__copy( get_pad9(), _pad9);
 		}
 	}
 
@@ -9438,9 +10168,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getOpenvdb_compression() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2144);
+			return __io__block.readInt(__io__address + 2208);
 		} else {
-			return __io__block.readInt(__io__address + 2056);
+			return __io__block.readInt(__io__address + 2112);
 		}
 	}
 
@@ -9455,9 +10185,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setOpenvdb_compression(int openvdb_compression) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2144, openvdb_compression);
+			__io__block.writeInt(__io__address + 2208, openvdb_compression);
 		} else {
-			__io__block.writeInt(__io__address + 2056, openvdb_compression);
+			__io__block.writeInt(__io__address + 2112, openvdb_compression);
 		}
 	}
 
@@ -9472,9 +10202,9 @@ public class FluidDomainSettings extends CFacade {
 	public float getClipping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2148);
+			return __io__block.readFloat(__io__address + 2212);
 		} else {
-			return __io__block.readFloat(__io__address + 2060);
+			return __io__block.readFloat(__io__address + 2116);
 		}
 	}
 
@@ -9489,9 +10219,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setClipping(float clipping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2148, clipping);
+			__io__block.writeFloat(__io__address + 2212, clipping);
 		} else {
-			__io__block.writeFloat(__io__address + 2060, clipping);
+			__io__block.writeFloat(__io__address + 2116, clipping);
 		}
 	}
 
@@ -9499,16 +10229,16 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * @see #__DNA__FIELD__openvdb_data_depth
 	 */
 	
 	public byte getOpenvdb_data_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2152);
+			return __io__block.readByte(__io__address + 2216);
 		} else {
-			return __io__block.readByte(__io__address + 2064);
+			return __io__block.readByte(__io__address + 2120);
 		}
 	}
 
@@ -9516,96 +10246,16 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'openvdb_data_depth'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Bit depth for writing all scalar (including vector) lower values reduce file size
+	 * Bit depth for fluid particles and grids (lower bit values reduce file size)
 	 * @see #__DNA__FIELD__openvdb_data_depth
 	 */
 	
 	public void setOpenvdb_data_depth(byte openvdb_data_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2152, openvdb_data_depth);
+			__io__block.writeByte(__io__address + 2216, openvdb_data_depth);
 		} else {
-			__io__block.writeByte(__io__address + 2064, openvdb_data_depth);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad9'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Unused. </p>
-	 * @see #__DNA__FIELD___pad9
-	 */
-	
-	public CArrayFacade<Byte> get_pad9() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			7
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2153, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 2065, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad9'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Unused. </p>
-	 * @see #__DNA__FIELD___pad9
-	 */
-	
-	public void set_pad9(CArrayFacade<Byte> _pad9) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 2153;
-		} else {
-			__dna__offset = 2065;
-		}
-		if (__io__equals(_pad9, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad9)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad9);
-		} else {
-			__io__generic__copy( get_pad9(), _pad9);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'viewsettings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
-	 * @see #__DNA__FIELD__viewsettings
-	 */
-	
-	public int getViewsettings() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2160);
-		} else {
-			return __io__block.readInt(__io__address + 2072);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'viewsettings'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
-	 * @see #__DNA__FIELD__viewsettings
-	 */
-	
-	public void setViewsettings(int viewsettings) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2160, viewsettings);
-		} else {
-			__io__block.writeInt(__io__address + 2072, viewsettings);
+			__io__block.writeByte(__io__address + 2120, openvdb_data_depth);
 		}
 	}
 
@@ -9621,12 +10271,12 @@ public class FluidDomainSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2164, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2217, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2076, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2121, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9642,9 +10292,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2164;
+			__dna__offset = 2217;
 		} else {
-			__dna__offset = 2076;
+			__dna__offset = 2121;
 		}
 		if (__io__equals(_pad10, __io__address + __dna__offset)) {
 			return;
@@ -9656,10 +10306,89 @@ public class FluidDomainSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'viewsettings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
+	 * @see #__DNA__FIELD__viewsettings
+	 */
+	
+	public int getViewsettings() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 2224);
+		} else {
+			return __io__block.readInt(__io__address + 2128);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'viewsettings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><ndash/>  Deprecated / unsed options (below). <ndash/>  View options. </p>
+	 * @see #__DNA__FIELD__viewsettings
+	 */
+	
+	public void setViewsettings(int viewsettings) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 2224, viewsettings);
+		} else {
+			__io__block.writeInt(__io__address + 2128, viewsettings);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad11'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Unused. </p>
+	 * @see #__DNA__FIELD___pad11
+	 */
+	
+	public CArrayFacade<Byte> get_pad11() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 2228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 2132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad11'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Unused. </p>
+	 * @see #__DNA__FIELD___pad11
+	 */
+	
+	public void set_pad11(CArrayFacade<Byte> _pad11) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 2228;
+		} else {
+			__dna__offset = 2132;
+		}
+		if (__io__equals(_pad11, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad11)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad11);
+		} else {
+			__io__generic__copy( get_pad11(), _pad11);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
@@ -9671,17 +10400,16 @@ public class FluidDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<PointCache>>(__io__address + 2168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<PointCache>>(__io__address + 2232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CPointer<PointCache>>(__io__address + 2080, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<PointCache>>(__io__address + 2136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'point_cache'.
 	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointcache options. Smoke uses only one cache from now on (index [0]), but keeping the array for now for reading old files. Definition is in {@link DNA_object_force_types.h} . </p>
 	 * @see #__DNA__FIELD__point_cache
 	 */
@@ -9690,9 +10418,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2168;
+			__dna__offset = 2232;
 		} else {
-			__dna__offset = 2080;
+			__dna__offset = 2136;
 		}
 		if (__io__equals(point_cache, __io__address + __dna__offset)) {
 			return;
@@ -9715,9 +10443,9 @@ public class FluidDomainSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ListBase>(__io__address + 2184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ListBase>(__io__address + 2248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<ListBase>(__io__address + 2088, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ListBase>(__io__address + 2144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -9730,9 +10458,9 @@ public class FluidDomainSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2184;
+			__dna__offset = 2248;
 		} else {
-			__dna__offset = 2088;
+			__dna__offset = 2144;
 		}
 		if (__io__equals(ptcaches, __io__address + __dna__offset)) {
 			return;
@@ -9751,9 +10479,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_comp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2216);
+			return __io__block.readInt(__io__address + 2280);
 		} else {
-			return __io__block.readInt(__io__address + 2104);
+			return __io__block.readInt(__io__address + 2160);
 		}
 	}
 
@@ -9765,9 +10493,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_comp(int cache_comp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2216, cache_comp);
+			__io__block.writeInt(__io__address + 2280, cache_comp);
 		} else {
-			__io__block.writeInt(__io__address + 2104, cache_comp);
+			__io__block.writeInt(__io__address + 2160, cache_comp);
 		}
 	}
 
@@ -9779,9 +10507,9 @@ public class FluidDomainSettings extends CFacade {
 	public int getCache_high_comp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2220);
+			return __io__block.readInt(__io__address + 2284);
 		} else {
-			return __io__block.readInt(__io__address + 2108);
+			return __io__block.readInt(__io__address + 2164);
 		}
 	}
 
@@ -9793,9 +10521,9 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_high_comp(int cache_high_comp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2220, cache_high_comp);
+			__io__block.writeInt(__io__address + 2284, cache_high_comp);
 		} else {
-			__io__block.writeInt(__io__address + 2108, cache_high_comp);
+			__io__block.writeInt(__io__address + 2164, cache_high_comp);
 		}
 	}
 
@@ -9807,9 +10535,9 @@ public class FluidDomainSettings extends CFacade {
 	public byte getCache_file_format() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2224);
+			return __io__block.readByte(__io__address + 2288);
 		} else {
-			return __io__block.readByte(__io__address + 2112);
+			return __io__block.readByte(__io__address + 2168);
 		}
 	}
 
@@ -9821,55 +10549,55 @@ public class FluidDomainSettings extends CFacade {
 	public void setCache_file_format(byte cache_file_format) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2224, cache_file_format);
+			__io__block.writeByte(__io__address + 2288, cache_file_format);
 		} else {
-			__io__block.writeByte(__io__address + 2112, cache_file_format);
+			__io__block.writeByte(__io__address + 2168, cache_file_format);
 		}
 	}
 
 	/**
-	 * Get method for struct member '_pad11'.
+	 * Get method for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Unused. </p>
-	 * @see #__DNA__FIELD___pad11
+	 * @see #__DNA__FIELD___pad12
 	 */
 	
-	public CArrayFacade<Byte> get_pad11() throws IOException
+	public CArrayFacade<Byte> get_pad12() throws IOException
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 2225, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2289, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 2113, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 2169, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad11'.
+	 * Set method for struct member '_pad12'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Unused. </p>
-	 * @see #__DNA__FIELD___pad11
+	 * @see #__DNA__FIELD___pad12
 	 */
 	
-	public void set_pad11(CArrayFacade<Byte> _pad11) throws IOException
+	public void set_pad12(CArrayFacade<Byte> _pad12) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2225;
+			__dna__offset = 2289;
 		} else {
-			__dna__offset = 2113;
+			__dna__offset = 2169;
 		}
-		if (__io__equals(_pad11, __io__address + __dna__offset)) {
+		if (__io__equals(_pad12, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, _pad11)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad11);
+		} else if (__io__same__encoding(this, _pad12)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad12);
 		} else {
-			__io__generic__copy( get_pad11(), _pad11);
+			__io__generic__copy( get_pad12(), _pad12);
 		}
 	}
 

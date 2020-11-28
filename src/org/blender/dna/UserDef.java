@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=13192, size64=13256)
+@CMetaData(size32=13200, size64=13264)
 public class UserDef extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 264;
+	public static final int __DNA__SDNA_INDEX = 269;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -3296,7 +3296,7 @@ public class UserDef extends CFacade {
 	 * <ul>
 	 * <li>Field: 'experimental'</li>
 	 * <li>Signature: 'UserDef_Experimental'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__experimental = new long[]{13176, 13240};
@@ -3322,7 +3322,7 @@ public class UserDef extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{13184, 13248};
+	public static final long[] __DNA__FIELD__runtime = new long[]{13192, 13256};
 
 	public UserDef(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -8539,9 +8539,9 @@ public class UserDef extends CFacade {
 	public UserDef_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new UserDef_Runtime(__io__address + 13248, __io__block, __io__blockTable);
+			return new UserDef_Runtime(__io__address + 13256, __io__block, __io__blockTable);
 		} else {
-			return new UserDef_Runtime(__io__address + 13184, __io__block, __io__blockTable);
+			return new UserDef_Runtime(__io__address + 13192, __io__block, __io__blockTable);
 		}
 	}
 
@@ -8557,9 +8557,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 13248;
+			__dna__offset = 13256;
 		} else {
-			__dna__offset = 13184;
+			__dna__offset = 13192;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  Markers </p>
  */
 
-@CMetaData(size32=84, size64=96)
+@CMetaData(size32=88, size64=104)
 public class TimeMarker extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class TimeMarker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 183;
+	public static final int __DNA__SDNA_INDEX = 186;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -150,6 +150,26 @@ public class TimeMarker extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__camera = new long[]{80, 88};
+
+	/**
+	 * Field descriptor (offset) for struct member 'prop'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TimeMarker timemarker = ...;
+	 * CPointer&lt;Object&gt; p = timemarker.__dna__addressof(TimeMarker.__DNA__FIELD__prop);
+	 * CPointer&lt;CPointer&lt;IDProperty&gt;&gt; p_prop = p.cast(new Class[]{CPointer.class, IDProperty.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'prop'</li>
+	 * <li>Signature: 'IDProperty*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__prop = new long[]{84, 96};
 
 	public TimeMarker(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -348,6 +368,38 @@ public class TimeMarker extends CFacade {
 			__io__block.writeLong(__io__address + 88, __address);
 		} else {
 			__io__block.writeLong(__io__address + 80, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public CPointer<IDProperty> getProp() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 84);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
+		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'prop'.
+	 * @see #__DNA__FIELD__prop
+	 */
+	
+	public void setProp(CPointer<IDProperty> prop) throws IOException
+	{
+		long __address = ((prop == null) ? 0 : prop.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 96, __address);
+		} else {
+			__io__block.writeLong(__io__address + 84, __address);
 		}
 	}
 

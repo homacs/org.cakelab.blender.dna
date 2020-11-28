@@ -28,14 +28,14 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 552;
+	public static final int __DNA__SDNA_INDEX = 557;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Active Action for this data-block<h4>Blender Source Code:</h4>
-	 * <p> active action - acts as the 'tweaking track' for the NLA </p>
+	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -342,7 +342,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Active Action for this data-block<h4>Blender Source Code:</h4>
-	 * <p> active action - acts as the 'tweaking track' for the NLA </p>
+	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -363,7 +363,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Active Action for this data-block<h4>Blender Source Code:</h4>
-	 * <p> active action - acts as the 'tweaking track' for the NLA </p>
+	 * <p> Active action - acts as the 'tweaking track' for the NLA. Either use BKE_animdata_set_action() to set this, or call BKE_animdata_action_ensure_idroot() after setting. </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	

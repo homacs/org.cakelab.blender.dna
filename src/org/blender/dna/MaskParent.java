@@ -27,7 +27,7 @@ public class MaskParent extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 593;
+	public static final int __DNA__SDNA_INDEX = 598;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id_type'.
@@ -81,7 +81,7 @@ public class MaskParent extends CFacade {
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to it's property<h4>Blender Source Code:</h4>
+	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -279,7 +279,7 @@ public class MaskParent extends CFacade {
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to it's property<h4>Blender Source Code:</h4>
+	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * @see #__DNA__FIELD__id
 	 */
@@ -300,7 +300,7 @@ public class MaskParent extends CFacade {
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * ID-block to which masking element would be parented to or to it's property<h4>Blender Source Code:</h4>
+	 * ID-block to which masking element would be parented to or to its property<h4>Blender Source Code:</h4>
 	 * <p>{@link ID}  block of entity to which mask/spline is parented to in case of parenting to movie tracking data set to {@link MovieClip}  datablock. </p>
 	 * @see #__DNA__FIELD__id
 	 */

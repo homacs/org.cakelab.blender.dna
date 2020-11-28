@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 472;
+	public static final int __DNA__SDNA_INDEX = 477;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1279,7 +1279,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'userjit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
+	 * Emission locations per face (0 = automatic)
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2758,6 +2758,11 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'force_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated </p>
+	 * @deprecated
+	 *  Deprecateddeprecated </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -5007,7 +5012,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'userjit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
+	 * Emission locations per face (0 = automatic)
 	 * @see #__DNA__FIELD__userjit
 	 */
 	
@@ -5024,7 +5029,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'userjit'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Emission locations / face (0 = automatic)
+	 * Emission locations per face (0 = automatic)
 	 * @see #__DNA__FIELD__userjit
 	 */
 	
@@ -7231,6 +7236,11 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Get method for struct member 'force_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated </p>
+	 * @deprecated
+	 *  Deprecateddeprecated </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
 	
@@ -7248,6 +7258,11 @@ public class ParticleSettings extends CFacade {
 
 	/**
 	 * Set method for struct member 'force_group'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><p> deprecated </p>
+	 * @deprecated
+	 *  Deprecateddeprecated </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
 	

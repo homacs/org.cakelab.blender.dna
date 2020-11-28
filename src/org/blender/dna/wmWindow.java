@@ -28,7 +28,7 @@ public class wmWindow extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 525;
+	public static final int __DNA__SDNA_INDEX = 530;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -680,7 +680,7 @@ public class wmWindow extends CFacade {
 	 * Field descriptor (offset) for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Input Method Editor data - complex character input (esp. for asian character input) Currently WIN32, runtime-only data </p>
+	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32, runtime-only data. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1892,7 +1892,7 @@ public class wmWindow extends CFacade {
 	 * Get method for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Input Method Editor data - complex character input (esp. for asian character input) Currently WIN32, runtime-only data </p>
+	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32, runtime-only data. </p>
 	 * @see #__DNA__FIELD__ime_data
 	 */
 	
@@ -1912,7 +1912,7 @@ public class wmWindow extends CFacade {
 	 * Set method for struct member 'ime_data'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Input Method Editor data - complex character input (esp. for asian character input) Currently WIN32, runtime-only data </p>
+	 * <p> Input Method Editor data - complex character input (especially for Asian character input) Currently WIN32, runtime-only data. </p>
 	 * @see #__DNA__FIELD__ime_data
 	 */
 	

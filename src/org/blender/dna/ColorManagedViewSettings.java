@@ -27,7 +27,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 448;
+	public static final int __DNA__SDNA_INDEX = 453;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -73,7 +73,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'look'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
+	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -289,7 +289,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * Get method for struct member 'look'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
+	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */
@@ -311,7 +311,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * Set method for struct member 'look'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Additional transform applied before view transform for an artistic needs<h4>Blender Source Code:</h4>
+	 * Additional transform applied before view transform for artistic needs<h4>Blender Source Code:</h4>
 	 * <p> Look which is being applied when displaying buffer on the screen (prior to view transform). </p>
 	 * @see #__DNA__FIELD__look
 	 */

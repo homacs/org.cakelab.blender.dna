@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=168, size64=224)
+@CMetaData(size32=144, size64=184)
 public class Simulation extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Simulation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 677;
+	public static final int __DNA__SDNA_INDEX = 682;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -74,6 +74,9 @@ public class Simulation extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This nodetree is embedded into the data block. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -113,46 +116,6 @@ public class Simulation extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{136, 176};
 
 	/**
-	 * Field descriptor (offset) for struct member 'current_frame'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Simulation simulation = ...;
-	 * CPointer&lt;Object&gt; p = simulation.__dna__addressof(Simulation.__DNA__FIELD__current_frame);
-	 * CPointer&lt;Float&gt; p_current_frame = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'current_frame'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__current_frame = new long[]{140, 180};
-
-	/**
-	 * Field descriptor (offset) for struct member 'current_simulation_time'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Simulation simulation = ...;
-	 * CPointer&lt;Object&gt; p = simulation.__dna__addressof(Simulation.__DNA__FIELD__current_simulation_time);
-	 * CPointer&lt;Float&gt; p_current_simulation_time = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'current_simulation_time'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__current_simulation_time = new long[]{144, 184};
-
-	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -170,53 +133,7 @@ public class Simulation extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{148, 188};
-
-	/**
-	 * Field descriptor (offset) for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link SimulationState}  objects. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Simulation simulation = ...;
-	 * CPointer&lt;Object&gt; p = simulation.__dna__addressof(Simulation.__DNA__FIELD__states);
-	 * CPointer&lt;ListBase&gt; p_states = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'states'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__states = new long[]{152, 192};
-
-	/**
-	 * Field descriptor (offset) for struct member 'persistent_data_handles'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link PersistentDataHandleItem}  objects. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Simulation simulation = ...;
-	 * CPointer&lt;Object&gt; p = simulation.__dna__addressof(Simulation.__DNA__FIELD__persistent_data_handles);
-	 * CPointer&lt;ListBase&gt; p_persistent_data_handles = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'persistent_data_handles'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__persistent_data_handles = new long[]{160, 208};
+	public static final long[] __DNA__FIELD___pad = new long[]{140, 180};
 
 	public Simulation(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -302,6 +219,9 @@ public class Simulation extends CFacade {
 
 	/**
 	 * Get method for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This nodetree is embedded into the data block. </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
 	
@@ -319,6 +239,9 @@ public class Simulation extends CFacade {
 
 	/**
 	 * Set method for struct member 'nodetree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> This nodetree is embedded into the data block. </p>
 	 * @see #__DNA__FIELD__nodetree
 	 */
 	
@@ -361,62 +284,6 @@ public class Simulation extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'current_frame'.
-	 * @see #__DNA__FIELD__current_frame
-	 */
-	
-	public float getCurrent_frame() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
-		} else {
-			return __io__block.readFloat(__io__address + 140);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'current_frame'.
-	 * @see #__DNA__FIELD__current_frame
-	 */
-	
-	public void setCurrent_frame(float current_frame) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, current_frame);
-		} else {
-			__io__block.writeFloat(__io__address + 140, current_frame);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'current_simulation_time'.
-	 * @see #__DNA__FIELD__current_simulation_time
-	 */
-	
-	public float getCurrent_simulation_time() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
-		} else {
-			return __io__block.readFloat(__io__address + 144);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'current_simulation_time'.
-	 * @see #__DNA__FIELD__current_simulation_time
-	 */
-	
-	public void setCurrent_simulation_time(float current_simulation_time) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, current_simulation_time);
-		} else {
-			__io__block.writeFloat(__io__address + 144, current_simulation_time);
-		}
-	}
-
-	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -428,9 +295,9 @@ public class Simulation extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -443,9 +310,9 @@ public class Simulation extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 188;
+			__dna__offset = 180;
 		} else {
-			__dna__offset = 148;
+			__dna__offset = 140;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -453,90 +320,6 @@ public class Simulation extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link SimulationState}  objects. </p>
-	 * @see #__DNA__FIELD__states
-	 */
-	
-	public ListBase getStates() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 152, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'states'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link SimulationState}  objects. </p>
-	 * @see #__DNA__FIELD__states
-	 */
-	
-	public void setStates(ListBase states) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
-		} else {
-			__dna__offset = 152;
-		}
-		if (__io__equals(states, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, states)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, states);
-		} else {
-			__io__generic__copy( getStates(), states);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'persistent_data_handles'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link PersistentDataHandleItem}  objects. </p>
-	 * @see #__DNA__FIELD__persistent_data_handles
-	 */
-	
-	public ListBase getPersistent_data_handles() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 160, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'persistent_data_handles'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> List containing {@link PersistentDataHandleItem}  objects. </p>
-	 * @see #__DNA__FIELD__persistent_data_handles
-	 */
-	
-	public void setPersistent_data_handles(ListBase persistent_data_handles) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
-		} else {
-			__dna__offset = 160;
-		}
-		if (__io__equals(persistent_data_handles, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, persistent_data_handles)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, persistent_data_handles);
-		} else {
-			__io__generic__copy( getPersistent_data_handles(), persistent_data_handles);
 		}
 	}
 

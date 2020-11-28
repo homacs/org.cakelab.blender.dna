@@ -29,7 +29,7 @@ public class RenderData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 181;
+	public static final int __DNA__SDNA_INDEX = 184;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -367,7 +367,7 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> Standalone player stereo settings XXX deprecated since .2.5 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -1378,8 +1378,8 @@ public class RenderData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad5'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad5 = new long[]{2335, 2359};
@@ -1405,7 +1405,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2342, 2366};
+	public static final long[] __DNA__FIELD__simplify_subsurf = new long[]{2338, 2362};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_subsurf_render'.
@@ -1425,7 +1425,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_subsurf_render = new long[]{2344, 2368};
+	public static final long[] __DNA__FIELD__simplify_subsurf_render = new long[]{2340, 2364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_gpencil'.
@@ -1445,7 +1445,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_gpencil = new long[]{2346, 2370};
+	public static final long[] __DNA__FIELD__simplify_gpencil = new long[]{2342, 2366};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_particles'.
@@ -1465,7 +1465,7 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_particles = new long[]{2348, 2372};
+	public static final long[] __DNA__FIELD__simplify_particles = new long[]{2344, 2368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'simplify_particles_render'.
@@ -1485,7 +1485,27 @@ public class RenderData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__simplify_particles_render = new long[]{2352, 2376};
+	public static final long[] __DNA__FIELD__simplify_particles_render = new long[]{2348, 2372};
+
+	/**
+	 * Field descriptor (offset) for struct member 'simplify_volumes'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * RenderData renderdata = ...;
+	 * CPointer&lt;Object&gt; p = renderdata.__dna__addressof(RenderData.__DNA__FIELD__simplify_volumes);
+	 * CPointer&lt;Float&gt; p_simplify_volumes = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'simplify_volumes'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__simplify_volumes = new long[]{2352, 2376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_thickness_mode'.
@@ -2318,7 +2338,7 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> Standalone player stereo settings XXX deprecated since .2.5 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stereomode
@@ -2337,7 +2357,7 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'stereomode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX deprecated since .2.5. </p><p> Standalone player stereo settings
+	 * <p> Standalone player stereo settings XXX deprecated since .2.5 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__stereomode
@@ -3909,7 +3929,7 @@ public class RenderData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			3
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 2359, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -3951,9 +3971,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_subsurf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2366);
+			return __io__block.readShort(__io__address + 2362);
 		} else {
-			return __io__block.readShort(__io__address + 2342);
+			return __io__block.readShort(__io__address + 2338);
 		}
 	}
 
@@ -3968,9 +3988,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_subsurf(short simplify_subsurf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2366, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2362, simplify_subsurf);
 		} else {
-			__io__block.writeShort(__io__address + 2342, simplify_subsurf);
+			__io__block.writeShort(__io__address + 2338, simplify_subsurf);
 		}
 	}
 
@@ -3982,9 +4002,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_subsurf_render() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2368);
+			return __io__block.readShort(__io__address + 2364);
 		} else {
-			return __io__block.readShort(__io__address + 2344);
+			return __io__block.readShort(__io__address + 2340);
 		}
 	}
 
@@ -3996,9 +4016,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_subsurf_render(short simplify_subsurf_render) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2368, simplify_subsurf_render);
+			__io__block.writeShort(__io__address + 2364, simplify_subsurf_render);
 		} else {
-			__io__block.writeShort(__io__address + 2344, simplify_subsurf_render);
+			__io__block.writeShort(__io__address + 2340, simplify_subsurf_render);
 		}
 	}
 
@@ -4010,9 +4030,9 @@ public class RenderData extends CFacade {
 	public short getSimplify_gpencil() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 2370);
+			return __io__block.readShort(__io__address + 2366);
 		} else {
-			return __io__block.readShort(__io__address + 2346);
+			return __io__block.readShort(__io__address + 2342);
 		}
 	}
 
@@ -4024,9 +4044,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_gpencil(short simplify_gpencil) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 2370, simplify_gpencil);
+			__io__block.writeShort(__io__address + 2366, simplify_gpencil);
 		} else {
-			__io__block.writeShort(__io__address + 2346, simplify_gpencil);
+			__io__block.writeShort(__io__address + 2342, simplify_gpencil);
 		}
 	}
 
@@ -4038,9 +4058,9 @@ public class RenderData extends CFacade {
 	public float getSimplify_particles() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2372);
+			return __io__block.readFloat(__io__address + 2368);
 		} else {
-			return __io__block.readFloat(__io__address + 2348);
+			return __io__block.readFloat(__io__address + 2344);
 		}
 	}
 
@@ -4052,9 +4072,9 @@ public class RenderData extends CFacade {
 	public void setSimplify_particles(float simplify_particles) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2372, simplify_particles);
+			__io__block.writeFloat(__io__address + 2368, simplify_particles);
 		} else {
-			__io__block.writeFloat(__io__address + 2348, simplify_particles);
+			__io__block.writeFloat(__io__address + 2344, simplify_particles);
 		}
 	}
 
@@ -4066,9 +4086,9 @@ public class RenderData extends CFacade {
 	public float getSimplify_particles_render() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 2376);
+			return __io__block.readFloat(__io__address + 2372);
 		} else {
-			return __io__block.readFloat(__io__address + 2352);
+			return __io__block.readFloat(__io__address + 2348);
 		}
 	}
 
@@ -4080,9 +4100,37 @@ public class RenderData extends CFacade {
 	public void setSimplify_particles_render(float simplify_particles_render) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 2376, simplify_particles_render);
+			__io__block.writeFloat(__io__address + 2372, simplify_particles_render);
 		} else {
-			__io__block.writeFloat(__io__address + 2352, simplify_particles_render);
+			__io__block.writeFloat(__io__address + 2348, simplify_particles_render);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'simplify_volumes'.
+	 * @see #__DNA__FIELD__simplify_volumes
+	 */
+	
+	public float getSimplify_volumes() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 2376);
+		} else {
+			return __io__block.readFloat(__io__address + 2352);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'simplify_volumes'.
+	 * @see #__DNA__FIELD__simplify_volumes
+	 */
+	
+	public void setSimplify_volumes(float simplify_volumes) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 2376, simplify_volumes);
+		} else {
+			__io__block.writeFloat(__io__address + 2352, simplify_volumes);
 		}
 	}
 

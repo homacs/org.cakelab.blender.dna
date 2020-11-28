@@ -162,7 +162,7 @@ public class BezTriple extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'h1'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
@@ -182,7 +182,7 @@ public class BezTriple extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'h2'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
@@ -205,7 +205,7 @@ public class BezTriple extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'f1'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
@@ -225,7 +225,7 @@ public class BezTriple extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'f2'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
@@ -245,7 +245,7 @@ public class BezTriple extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'f3'</li>
-	 * <li>Signature: 'char'</li>
+	 * <li>Signature: 'uchar'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */

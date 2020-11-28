@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=60, size64=64)
+@CMetaData(size32=84, size64=88)
 public class MovieTrackingCamera extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 575;
+	public static final int __DNA__SDNA_INDEX = 580;
 
 	/**
 	 * Field descriptor (offset) for struct member 'intrinsics'.
@@ -332,7 +332,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Field descriptor (offset) for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion
+	 * Second coefficient of second order division distortion
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -397,6 +397,146 @@ public class MovieTrackingCamera extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__nuke_k2 = new long[]{56, 60};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_k1);
+	 * CPointer&lt;Float&gt; p_brown_k1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_k1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_k1 = new long[]{60, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of fourth order Brown-Conrady radial distortion
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_k2);
+	 * CPointer&lt;Float&gt; p_brown_k2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_k2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_k2 = new long[]{64, 68};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_k3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Third coefficient of fourth order Brown-Conrady radial distortion
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_k3);
+	 * CPointer&lt;Float&gt; p_brown_k3 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_k3'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_k3 = new long[]{68, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_k4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_k4);
+	 * CPointer&lt;Float&gt; p_brown_k4 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_k4'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_k4 = new long[]{72, 76};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady tangential distortion </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_p1);
+	 * CPointer&lt;Float&gt; p_brown_p1 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_p1'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_p1 = new long[]{76, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member 'brown_p2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Brown-Conrady tangential distortion
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MovieTrackingCamera movietrackingcamera = ...;
+	 * CPointer&lt;Object&gt; p = movietrackingcamera.__dna__addressof(MovieTrackingCamera.__DNA__FIELD__brown_p2);
+	 * CPointer&lt;Float&gt; p_brown_p2 = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'brown_p2'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__brown_p2 = new long[]{80, 84};
 
 	public MovieTrackingCamera(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -892,7 +1032,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Get method for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion
+	 * Second coefficient of second order division distortion
 	 * @see #__DNA__FIELD__division_k2
 	 */
 	
@@ -909,7 +1049,7 @@ public class MovieTrackingCamera extends CFacade {
 	 * Set method for struct member 'division_k2'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * First coefficient of second order division distortion
+	 * Second coefficient of second order division distortion
 	 * @see #__DNA__FIELD__division_k2
 	 */
 	
@@ -989,6 +1129,214 @@ public class MovieTrackingCamera extends CFacade {
 			__io__block.writeFloat(__io__address + 60, nuke_k2);
 		} else {
 			__io__block.writeFloat(__io__address + 56, nuke_k2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
+	 * @see #__DNA__FIELD__brown_k1
+	 */
+	
+	public float getBrown_k1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 64);
+		} else {
+			return __io__block.readFloat(__io__address + 60);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_k1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of fourth order Brown-Conrady radial distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady distortion model coefficients Brown-Conrady radial distortion </p>
+	 * @see #__DNA__FIELD__brown_k1
+	 */
+	
+	public void setBrown_k1(float brown_k1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 64, brown_k1);
+		} else {
+			__io__block.writeFloat(__io__address + 60, brown_k1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k2
+	 */
+	
+	public float getBrown_k2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 68);
+		} else {
+			return __io__block.readFloat(__io__address + 64);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_k2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k2
+	 */
+	
+	public void setBrown_k2(float brown_k2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 68, brown_k2);
+		} else {
+			__io__block.writeFloat(__io__address + 64, brown_k2);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_k3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Third coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k3
+	 */
+	
+	public float getBrown_k3() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 72);
+		} else {
+			return __io__block.readFloat(__io__address + 68);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_k3'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Third coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k3
+	 */
+	
+	public void setBrown_k3(float brown_k3) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 72, brown_k3);
+		} else {
+			__io__block.writeFloat(__io__address + 68, brown_k3);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_k4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k4
+	 */
+	
+	public float getBrown_k4() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 76);
+		} else {
+			return __io__block.readFloat(__io__address + 72);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_k4'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Fourth coefficient of fourth order Brown-Conrady radial distortion
+	 * @see #__DNA__FIELD__brown_k4
+	 */
+	
+	public void setBrown_k4(float brown_k4) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 76, brown_k4);
+		} else {
+			__io__block.writeFloat(__io__address + 72, brown_k4);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady tangential distortion </p>
+	 * @see #__DNA__FIELD__brown_p1
+	 */
+	
+	public float getBrown_p1() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 80);
+		} else {
+			return __io__block.readFloat(__io__address + 76);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_p1'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * First coefficient of second order Brown-Conrady tangential distortion<h4>Blender Source Code:</h4>
+	 * <p> Brown-Conrady tangential distortion </p>
+	 * @see #__DNA__FIELD__brown_p1
+	 */
+	
+	public void setBrown_p1(float brown_p1) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 80, brown_p1);
+		} else {
+			__io__block.writeFloat(__io__address + 76, brown_p1);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'brown_p2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Brown-Conrady tangential distortion
+	 * @see #__DNA__FIELD__brown_p2
+	 */
+	
+	public float getBrown_p2() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 84);
+		} else {
+			return __io__block.readFloat(__io__address + 80);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'brown_p2'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Second coefficient of second order Brown-Conrady tangential distortion
+	 * @see #__DNA__FIELD__brown_p2
+	 */
+	
+	public void setBrown_p2(float brown_p2) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 84, brown_p2);
+		} else {
+			__io__block.writeFloat(__io__address + 80, brown_p2);
 		}
 	}
 

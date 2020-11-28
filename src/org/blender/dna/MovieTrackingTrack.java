@@ -27,7 +27,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 577;
+	public static final int __DNA__SDNA_INDEX = 582;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -590,7 +590,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Influence of this track on a final solution<h4>Blender Source Code:</h4>
-	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared it's weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
+	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared its weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1582,7 +1582,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Influence of this track on a final solution<h4>Blender Source Code:</h4>
-	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared it's weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
+	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared its weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	
@@ -1600,7 +1600,7 @@ public class MovieTrackingTrack extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Influence of this track on a final solution<h4>Blender Source Code:</h4>
-	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared it's weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
+	 * <p> Weight of this track.</p><p> Weight defines how much the track affects on the final reconstruction, usually gets animated in a way so when track has just appeared its weight is zero and then it gets faded up.</p><p> Used to prevent jumps of the camera when tracks are appearing or disappearing. </p>
 	 * @see #__DNA__FIELD__weight
 	 */
 	

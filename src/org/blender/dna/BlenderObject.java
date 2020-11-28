@@ -39,7 +39,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1136, size64=1416)
+@CMetaData(size32=1124, size64=1392)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -50,7 +50,7 @@ public class BlenderObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 163;
+	public static final int __DNA__SDNA_INDEX = 166;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -452,7 +452,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; </p>
+	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -546,7 +548,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Grease Pencil data<h4>Blender Source Code:</h4>
-	 * <p> Grease Pencil data. </p>
+	 * <p> Grease Pencil data. <p> XXX deprecated... replaced by gpencil object, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by gpencil object, keep for readfile </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -637,7 +641,10 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
+	 * old animation system.<br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -660,7 +667,10 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
+	 * <br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... keep for readfile </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2257,7 +2267,10 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2280,7 +2293,10 @@ public class BlenderObject extends CFacade {
 	 * Field descriptor (offset) for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2399,7 +2415,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * if fluidsim enabled, store additional settings<h4>Blender Source Code:</h4>
-	 * <p> If fluidsim enabled, store additional settings. </p>
+	 * <p> If fluidsim enabled, store additional settings. <p> XXX deprecated... replaced by mantaflow, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by mantaflow, keep for readfile </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2617,49 +2635,6 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD___pad8 = new long[]{1011, 1243};
 
 	/**
-	 * Field descriptor (offset) for struct member 'lodlevels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Contains data for levels of detail. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__lodlevels);
-	 * CPointer&lt;ListBase&gt; p_lodlevels = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'lodlevels'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__lodlevels = new long[]{1016, 1248};
-
-	/**
-	 * Field descriptor (offset) for struct member 'currentlod'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * BlenderObject blenderobject = ...;
-	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__currentlod);
-	 * CPointer&lt;CPointer&lt;LodLevel&gt;&gt; p_currentlod = p.cast(new Class[]{CPointer.class, LodLevel.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'currentlod'</li>
-	 * <li>Signature: 'LodLevel*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__currentlod = new long[]{1024, 1264};
-
-	/**
 	 * Field descriptor (offset) for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -2680,7 +2655,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{1028, 1272};
+	public static final long[] __DNA__FIELD__preview = new long[]{1016, 1248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -2703,7 +2678,7 @@ public class BlenderObject extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 104/136</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1032, 1280};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1020, 1256};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3376,7 +3351,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; </p>
+	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -3397,7 +3374,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; </p>
+	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__action
 	 */
 	
@@ -3532,7 +3511,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Grease Pencil data<h4>Blender Source Code:</h4>
-	 * <p> Grease Pencil data. </p>
+	 * <p> Grease Pencil data. <p> XXX deprecated... replaced by gpencil object, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by gpencil object, keep for readfile </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -3553,7 +3534,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * Grease Pencil data<h4>Blender Source Code:</h4>
-	 * <p> Grease Pencil data. </p>
+	 * <p> Grease Pencil data. <p> XXX deprecated... replaced by gpencil object, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by gpencil object, keep for readfile </p>
 	 * @see #__DNA__FIELD__gpd
 	 */
 	
@@ -3687,7 +3670,10 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
+	 * old animation system.<br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -3704,7 +3690,10 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'constraintChannels'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * old animation system.<br/>@depricated
+	 * old animation system.<br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__constraintChannels
 	 */
 	
@@ -3729,7 +3718,10 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
+	 * <br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... keep for readfile </p>
 	 * @see #__DNA__FIELD__effect
 	 */
 	
@@ -3746,7 +3738,10 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'effect'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * <br/>@depricated
+	 * <br/>@depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... keep for readfile </p>
 	 * @see #__DNA__FIELD__effect
 	 */
 	
@@ -6464,7 +6459,10 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__nlastrips
 	 */
 	
@@ -6481,7 +6479,10 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'nlastrips'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__nlastrips
 	 */
 	
@@ -6506,7 +6507,10 @@ public class BlenderObject extends CFacade {
 	 * Get method for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__hooks
 	 */
 	
@@ -6523,7 +6527,10 @@ public class BlenderObject extends CFacade {
 	 * Set method for struct member 'hooks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
-	 * @depricated
+	 * @depricated<h4>Blender Source Code:</h4>
+	 * <p><p> XXX deprecated... old animation system </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... old animation system </p>
 	 * @see #__DNA__FIELD__hooks
 	 */
 	
@@ -6711,7 +6718,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * if fluidsim enabled, store additional settings<h4>Blender Source Code:</h4>
-	 * <p> If fluidsim enabled, store additional settings. </p>
+	 * <p> If fluidsim enabled, store additional settings. <p> XXX deprecated... replaced by mantaflow, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by mantaflow, keep for readfile </p>
 	 * @see #__DNA__FIELD__fluidsimSettings
 	 */
 	
@@ -6732,7 +6741,9 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * if fluidsim enabled, store additional settings<h4>Blender Source Code:</h4>
-	 * <p> If fluidsim enabled, store additional settings. </p>
+	 * <p> If fluidsim enabled, store additional settings. <p> XXX deprecated... replaced by mantaflow, keep for readfile </p>
+	 * @deprecated
+	 *  DeprecatedXXX deprecated... replaced by mantaflow, keep for readfile </p>
 	 * @see #__DNA__FIELD__fluidsimSettings
 	 */
 	
@@ -7079,80 +7090,6 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'lodlevels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Contains data for levels of detail. </p>
-	 * @see #__DNA__FIELD__lodlevels
-	 */
-	
-	public ListBase getLodlevels() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 1248, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 1016, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'lodlevels'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Contains data for levels of detail. </p>
-	 * @see #__DNA__FIELD__lodlevels
-	 */
-	
-	public void setLodlevels(ListBase lodlevels) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 1248;
-		} else {
-			__dna__offset = 1016;
-		}
-		if (__io__equals(lodlevels, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, lodlevels)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, lodlevels);
-		} else {
-			__io__generic__copy( getLodlevels(), lodlevels);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'currentlod'.
-	 * @see #__DNA__FIELD__currentlod
-	 */
-	
-	public CPointer<LodLevel> getCurrentlod() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1264);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1024);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{LodLevel.class};
-		return new CPointer<LodLevel>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LodLevel.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'currentlod'.
-	 * @see #__DNA__FIELD__currentlod
-	 */
-	
-	public void setCurrentlod(CPointer<LodLevel> currentlod) throws IOException
-	{
-		long __address = ((currentlod == null) ? 0 : currentlod.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1264, __address);
-		} else {
-			__io__block.writeLong(__io__address + 1024, __address);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'preview'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -7164,9 +7101,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1028);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1016);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7184,9 +7121,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1028, __address);
+			__io__block.writeLong(__io__address + 1016, __address);
 		}
 	}
 
@@ -7201,9 +7138,9 @@ public class BlenderObject extends CFacade {
 	public Object_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Object_Runtime(__io__address + 1280, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1256, __io__block, __io__blockTable);
 		} else {
-			return new Object_Runtime(__io__address + 1032, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1020, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7219,9 +7156,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1280;
+			__dna__offset = 1256;
 		} else {
-			__dna__offset = 1032;
+			__dna__offset = 1020;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

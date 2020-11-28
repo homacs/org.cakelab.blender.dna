@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> The part from uiBlock that needs saved in file. </p>
  */
 
-@CMetaData(size32=208, size64=240)
+@CMetaData(size32=212, size64=248)
 public class Panel extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 270;
+	public static final int __DNA__SDNA_INDEX = 275;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -476,7 +476,7 @@ public class Panel extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Panel_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 12/16</li>
+	 * <li>Actual Size (32bit/64bit): 16/24</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{196, 224};

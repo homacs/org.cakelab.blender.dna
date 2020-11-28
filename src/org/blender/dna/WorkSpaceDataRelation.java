@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -19,7 +20,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=16, size64=32)
+@CMetaData(size32=24, size64=40)
 public class WorkSpaceDataRelation extends CFacade {
 
 	/**
@@ -30,7 +31,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 659;
+	public static final int __DNA__SDNA_INDEX = 664;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -76,7 +77,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Field descriptor (offset) for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -117,6 +118,49 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__value = new long[]{12, 24};
+
+	/**
+	 * Field descriptor (offset) for struct member 'parentid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WorkSpaceDataRelation workspacedatarelation = ...;
+	 * CPointer&lt;Object&gt; p = workspacedatarelation.__dna__addressof(WorkSpaceDataRelation.__DNA__FIELD__parentid);
+	 * CPointer&lt;Integer&gt; p_parentid = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'parentid'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__parentid = new long[]{16, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad_0'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WorkSpaceDataRelation workspacedatarelation = ...;
+	 * CPointer&lt;Object&gt; p = workspacedatarelation.__dna__addressof(WorkSpaceDataRelation.__DNA__FIELD___pad_0);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad_0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad_0'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad_0 = new long[]{20, 36};
 
 	public WorkSpaceDataRelation(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -194,7 +238,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Get method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -214,7 +258,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * Set method for struct member 'parent'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). </p>
+	 * <p> The data used to identify the relation (e.g. to find screen-layout (= value) from/for a hook). Note: Now runtime only. </p>
 	 * @see #__DNA__FIELD__parent
 	 */
 	
@@ -263,6 +307,80 @@ public class WorkSpaceDataRelation extends CFacade {
 			__io__block.writeLong(__io__address + 24, __address);
 		} else {
 			__io__block.writeLong(__io__address + 12, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'parentid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
+	 * @see #__DNA__FIELD__parentid
+	 */
+	
+	public int getParentid() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 32);
+		} else {
+			return __io__block.readInt(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'parentid'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Reference to the actual parent window, wmWindow->winid. Used in read/write code. </p>
+	 * @see #__DNA__FIELD__parentid
+	 */
+	
+	public void setParentid(int parentid) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 32, parentid);
+		} else {
+			__io__block.writeInt(__io__address + 16, parentid);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public CArrayFacade<Byte> get_pad_0() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad_0'.
+	 * @see #__DNA__FIELD___pad_0
+	 */
+	
+	public void set_pad_0(CArrayFacade<Byte> _pad_0) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 36;
+		} else {
+			__dna__offset = 20;
+		}
+		if (__io__equals(_pad_0, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad_0)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad_0);
+		} else {
+			__io__generic__copy( get_pad_0(), _pad_0);
 		}
 	}
 

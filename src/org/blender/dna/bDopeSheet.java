@@ -29,7 +29,7 @@ public class bDopeSheet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 331;
+	public static final int __DNA__SDNA_INDEX = 336;
 
 	/**
 	 * Field descriptor (offset) for struct member 'source'.
@@ -58,7 +58,7 @@ public class bDopeSheet extends CFacade {
 	 * Field descriptor (offset) for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
+	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -265,7 +265,7 @@ public class bDopeSheet extends CFacade {
 	 * Get method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
+	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	
@@ -282,7 +282,7 @@ public class bDopeSheet extends CFacade {
 	 * Set method for struct member 'chanbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX not used! </p><p> Cache for channels (only initialized when pinned). </p>
+	 * <p> Cache for channels (only initialized when pinned). XXX not used! </p>
 	 * @see #__DNA__FIELD__chanbase
 	 */
 	

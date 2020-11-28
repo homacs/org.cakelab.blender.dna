@@ -27,7 +27,7 @@ public class LineStyleGeometryModifier_TipRemover extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 638;
+	public static final int __DNA__SDNA_INDEX = 643;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.

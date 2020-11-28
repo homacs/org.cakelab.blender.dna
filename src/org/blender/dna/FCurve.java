@@ -28,7 +28,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 546;
+	public static final int __DNA__SDNA_INDEX = 551;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -211,6 +211,29 @@ public class FCurve extends CFacade {
 	public static final long[] __DNA__FIELD__totvert = new long[]{32, 64};
 
 	/**
+	 * Field descriptor (offset) for struct member 'active_keyframe_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active keyframe in {@link bezt}  for numerical editing in the interface. A value of {@link FCURVE_ACTIVE_KEYFRAME_NONE}  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FCurve fcurve = ...;
+	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD__active_keyframe_index);
+	 * CPointer&lt;Integer&gt; p_active_keyframe_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'active_keyframe_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__active_keyframe_index = new long[]{36, 68};
+
+	/**
 	 * Field descriptor (offset) for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -231,27 +254,7 @@ public class FCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curval = new long[]{36, 68};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * FCurve fcurve = ...;
-	 * CPointer&lt;Object&gt; p = fcurve.__dna__addressof(FCurve.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{40, 72};
+	public static final long[] __DNA__FIELD__curval = new long[]{40, 72};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -783,6 +786,40 @@ public class FCurve extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'active_keyframe_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active keyframe in {@link bezt}  for numerical editing in the interface. A value of {@link FCURVE_ACTIVE_KEYFRAME_NONE}  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * @see #__DNA__FIELD__active_keyframe_index
+	 */
+	
+	public int getActive_keyframe_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 68);
+		} else {
+			return __io__block.readInt(__io__address + 36);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'active_keyframe_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Index of active keyframe in {@link bezt}  for numerical editing in the interface. A value of {@link FCURVE_ACTIVE_KEYFRAME_NONE}  indicates that the {@link FCurve}  has no active keyframe.</p><p> Do not access directly, use #BKE_fcurve_active_keyframe_index() and #BKE_fcurve_active_keyframe_set() instead. </p>
+	 * @see #__DNA__FIELD__active_keyframe_index
+	 */
+	
+	public void setActive_keyframe_index(int active_keyframe_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 68, active_keyframe_index);
+		} else {
+			__io__block.writeInt(__io__address + 36, active_keyframe_index);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'curval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -793,9 +830,9 @@ public class FCurve extends CFacade {
 	public float getCurval() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 68);
+			return __io__block.readFloat(__io__address + 72);
 		} else {
-			return __io__block.readFloat(__io__address + 36);
+			return __io__block.readFloat(__io__address + 40);
 		}
 	}
 
@@ -810,49 +847,9 @@ public class FCurve extends CFacade {
 	public void setCurval(float curval) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 68, curval);
+			__io__block.writeFloat(__io__address + 72, curval);
 		} else {
-			__io__block.writeFloat(__io__address + 36, curval);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public CArrayFacade<Byte> get_pad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 72, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 72;
-		} else {
-			__dna__offset = 40;
-		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
-		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__block.writeFloat(__io__address + 40, curval);
 		}
 	}
 

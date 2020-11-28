@@ -29,7 +29,7 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 204;
+	public static final int __DNA__SDNA_INDEX = 207;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.
@@ -193,6 +193,29 @@ public class UnitSettings extends CFacade {
 	public static final long[] __DNA__FIELD__time_unit = new long[]{10, 10};
 
 	/**
+	 * Field descriptor (offset) for struct member 'temperature_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display temperature values
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UnitSettings unitsettings = ...;
+	 * CPointer&lt;Object&gt; p = unitsettings.__dna__addressof(UnitSettings.__DNA__FIELD__temperature_unit);
+	 * CPointer&lt;Byte&gt; p_temperature_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'temperature_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__temperature_unit = new long[]{11, 11};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,11 +229,11 @@ public class UnitSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{11, 11};
+	public static final long[] __DNA__FIELD___pad = new long[]{12, 12};
 
 	public UnitSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -459,6 +482,40 @@ public class UnitSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'temperature_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display temperature values
+	 * @see #__DNA__FIELD__temperature_unit
+	 */
+	
+	public byte getTemperature_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 11);
+		} else {
+			return __io__block.readByte(__io__address + 11);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'temperature_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Unit that will be used to display temperature values
+	 * @see #__DNA__FIELD__temperature_unit
+	 */
+	
+	public void setTemperature_unit(byte temperature_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 11, temperature_unit);
+		} else {
+			__io__block.writeByte(__io__address + 11, temperature_unit);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -467,12 +524,12 @@ public class UnitSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 11, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -485,9 +542,9 @@ public class UnitSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 11;
+			__dna__offset = 12;
 		} else {
-			__dna__offset = 11;
+			__dna__offset = 12;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

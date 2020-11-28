@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p>{@link Mask}  Modifier </p>
  */
 
-@CMetaData(size32=176, size64=200)
+@CMetaData(size32=184, size64=208)
 public class MaskModifierData extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class MaskModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_arm = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__ob_arm = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
@@ -94,7 +94,7 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__vgroup = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -117,7 +117,7 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__mode = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -140,7 +140,7 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{170, 194};
+	public static final long[] __DNA__FIELD__flag = new long[]{178, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'threshold'.
@@ -160,7 +160,7 @@ public class MaskModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__threshold = new long[]{172, 196};
+	public static final long[] __DNA__FIELD__threshold = new long[]{180, 204};
 
 	public MaskModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -218,9 +218,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -238,9 +238,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __address = ((ob_arm == null) ? 0 : ob_arm.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -259,9 +259,9 @@ public class MaskModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -277,9 +277,9 @@ public class MaskModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		}
 		if (__io__equals(vgroup, __io__address + __dna__offset)) {
 			return;
@@ -301,9 +301,9 @@ public class MaskModifierData extends CFacade {
 	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -318,9 +318,9 @@ public class MaskModifierData extends CFacade {
 	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, mode);
+			__io__block.writeShort(__io__address + 200, mode);
 		} else {
-			__io__block.writeShort(__io__address + 168, mode);
+			__io__block.writeShort(__io__address + 176, mode);
 		}
 	}
 
@@ -335,9 +335,9 @@ public class MaskModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 202);
 		} else {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -352,9 +352,9 @@ public class MaskModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, flag);
+			__io__block.writeShort(__io__address + 202, flag);
 		} else {
-			__io__block.writeShort(__io__address + 170, flag);
+			__io__block.writeShort(__io__address + 178, flag);
 		}
 	}
 
@@ -366,9 +366,9 @@ public class MaskModifierData extends CFacade {
 	public float getThreshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -380,9 +380,9 @@ public class MaskModifierData extends CFacade {
 	public void setThreshold(float threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, threshold);
+			__io__block.writeFloat(__io__address + 204, threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 172, threshold);
+			__io__block.writeFloat(__io__address + 180, threshold);
 		}
 	}
 

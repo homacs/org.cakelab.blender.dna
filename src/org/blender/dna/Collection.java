@@ -27,7 +27,7 @@ public class Collection extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 318;
+	public static final int __DNA__SDNA_INDEX = 323;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -209,6 +209,29 @@ public class Collection extends CFacade {
 	public static final long[] __DNA__FIELD__tag = new long[]{166, 218};
 
 	/**
+	 * Field descriptor (offset) for struct member 'color_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color tag for a collection
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Collection collection = ...;
+	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD__color_tag);
+	 * CPointer&lt;Short&gt; p_color_tag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'color_tag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__color_tag = new long[]{168, 220};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -222,11 +245,11 @@ public class Collection extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[2]'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{168, 220};
+	public static final long[] __DNA__FIELD___pad = new long[]{170, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_cache'.
@@ -635,6 +658,40 @@ public class Collection extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'color_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color tag for a collection
+	 * @see #__DNA__FIELD__color_tag
+	 */
+	
+	public short getColor_tag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 220);
+		} else {
+			return __io__block.readShort(__io__address + 168);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'color_tag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Color tag for a collection
+	 * @see #__DNA__FIELD__color_tag
+	 */
+	
+	public void setColor_tag(short color_tag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 220, color_tag);
+		} else {
+			__io__block.writeShort(__io__address + 168, color_tag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -643,12 +700,12 @@ public class Collection extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 222, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -661,9 +718,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 220;
+			__dna__offset = 222;
 		} else {
-			__dna__offset = 168;
+			__dna__offset = 170;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

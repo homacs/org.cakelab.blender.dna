@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=32, size64=56)
+@CMetaData(size32=28, size64=48)
 public class MovieClip_RuntimeGPUTexture extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 570;
+	public static final int __DNA__SDNA_INDEX = 575;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -93,7 +93,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * Field descriptor (offset) for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Not written in file 4 = TEXTARGET_COUNT. </p>
+	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -106,8 +106,8 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'gputexture'</li>
-	 * <li>Signature: 'GPUTexture*[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 16/32</li>
+	 * <li>Signature: 'GPUTexture*[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/24</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gputexture = new long[]{16, 24};
@@ -224,7 +224,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * Get method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Not written in file 4 = TEXTARGET_COUNT. </p>
+	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
 	
@@ -232,7 +232,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Object.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<CPointer<Object>>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -245,7 +245,7 @@ public class MovieClip_RuntimeGPUTexture extends CFacade {
 	 * Set method for struct member 'gputexture'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Not written in file 4 = TEXTARGET_COUNT. </p>
+	 * <p> Not written in file 3 = TEXTARGET_COUNT. </p>
 	 * @see #__DNA__FIELD__gputexture
 	 */
 	

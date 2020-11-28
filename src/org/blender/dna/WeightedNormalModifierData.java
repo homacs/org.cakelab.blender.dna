@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=172, size64=192)
+@CMetaData(size32=180, size64=200)
 public class WeightedNormalModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 155;
+	public static final int __DNA__SDNA_INDEX = 156;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -44,7 +44,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -90,7 +90,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{164, 184};
+	public static final long[] __DNA__FIELD__mode = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,7 +110,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{165, 185};
+	public static final long[] __DNA__FIELD__flag = new long[]{173, 193};
 
 	/**
 	 * Field descriptor (offset) for struct member 'weight'.
@@ -130,7 +130,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__weight = new long[]{166, 186};
+	public static final long[] __DNA__FIELD__weight = new long[]{174, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'thresh'.
@@ -150,7 +150,7 @@ public class WeightedNormalModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__thresh = new long[]{168, 188};
+	public static final long[] __DNA__FIELD__thresh = new long[]{176, 196};
 
 	public WeightedNormalModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -211,9 +211,9 @@ public class WeightedNormalModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 100, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -229,9 +229,9 @@ public class WeightedNormalModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 128;
 		} else {
-			__dna__offset = 100;
+			__dna__offset = 108;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -250,9 +250,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 184);
+			return __io__block.readByte(__io__address + 192);
 		} else {
-			return __io__block.readByte(__io__address + 164);
+			return __io__block.readByte(__io__address + 172);
 		}
 	}
 
@@ -264,9 +264,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 184, mode);
+			__io__block.writeByte(__io__address + 192, mode);
 		} else {
-			__io__block.writeByte(__io__address + 164, mode);
+			__io__block.writeByte(__io__address + 172, mode);
 		}
 	}
 
@@ -278,9 +278,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 185);
+			return __io__block.readByte(__io__address + 193);
 		} else {
-			return __io__block.readByte(__io__address + 165);
+			return __io__block.readByte(__io__address + 173);
 		}
 	}
 
@@ -292,9 +292,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 185, flag);
+			__io__block.writeByte(__io__address + 193, flag);
 		} else {
-			__io__block.writeByte(__io__address + 165, flag);
+			__io__block.writeByte(__io__address + 173, flag);
 		}
 	}
 
@@ -306,9 +306,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public short getWeight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 166);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -320,9 +320,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public void setWeight(short weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 186, weight);
+			__io__block.writeShort(__io__address + 194, weight);
 		} else {
-			__io__block.writeShort(__io__address + 166, weight);
+			__io__block.writeShort(__io__address + 174, weight);
 		}
 	}
 
@@ -334,9 +334,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public float getThresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -348,9 +348,9 @@ public class WeightedNormalModifierData extends CFacade {
 	public void setThresh(float thresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, thresh);
+			__io__block.writeFloat(__io__address + 196, thresh);
 		} else {
-			__io__block.writeFloat(__io__address + 168, thresh);
+			__io__block.writeFloat(__io__address + 176, thresh);
 		}
 	}
 

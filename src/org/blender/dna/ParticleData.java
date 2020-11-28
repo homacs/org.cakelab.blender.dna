@@ -27,7 +27,7 @@ public class ParticleData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 470;
+	public static final int __DNA__SDNA_INDEX = 475;
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
@@ -283,7 +283,7 @@ public class ParticleData extends CFacade {
 	 * Field descriptor (offset) for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Coordinates on face/edge number "num" and depth alon.g </p>
+	 * <p> Coordinates on face/edge number "num" and depth along. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -859,7 +859,7 @@ public class ParticleData extends CFacade {
 	 * Get method for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Coordinates on face/edge number "num" and depth alon.g </p>
+	 * <p> Coordinates on face/edge number "num" and depth along. </p>
 	 * @see #__DNA__FIELD__fuv
 	 */
 	
@@ -880,7 +880,7 @@ public class ParticleData extends CFacade {
 	 * Set method for struct member 'fuv'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Coordinates on face/edge number "num" and depth alon.g </p>
+	 * <p> Coordinates on face/edge number "num" and depth along. </p>
 	 * @see #__DNA__FIELD__fuv
 	 */
 	

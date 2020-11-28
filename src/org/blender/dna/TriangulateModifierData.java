@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Triangulate modifier </p>
  */
 
-@CMetaData(size32=116, size64=136)
+@CMetaData(size32=124, size64=144)
 public class TriangulateModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__flag = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'quad_method'.
@@ -87,7 +87,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__quad_method = new long[]{104, 124};
+	public static final long[] __DNA__FIELD__quad_method = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ngon_method'.
@@ -107,7 +107,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ngon_method = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__ngon_method = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'min_vertices'.
@@ -127,7 +127,7 @@ public class TriangulateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__min_vertices = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__min_vertices = new long[]{120, 140};
 
 	public TriangulateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -181,9 +181,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -195,9 +195,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, flag);
+			__io__block.writeInt(__io__address + 128, flag);
 		} else {
-			__io__block.writeInt(__io__address + 100, flag);
+			__io__block.writeInt(__io__address + 108, flag);
 		}
 	}
 
@@ -209,9 +209,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getQuad_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -223,9 +223,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setQuad_method(int quad_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, quad_method);
+			__io__block.writeInt(__io__address + 132, quad_method);
 		} else {
-			__io__block.writeInt(__io__address + 104, quad_method);
+			__io__block.writeInt(__io__address + 112, quad_method);
 		}
 	}
 
@@ -237,9 +237,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getNgon_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -251,9 +251,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setNgon_method(int ngon_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 128, ngon_method);
+			__io__block.writeInt(__io__address + 136, ngon_method);
 		} else {
-			__io__block.writeInt(__io__address + 108, ngon_method);
+			__io__block.writeInt(__io__address + 116, ngon_method);
 		}
 	}
 
@@ -265,9 +265,9 @@ public class TriangulateModifierData extends CFacade {
 	public int getMin_vertices() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -279,9 +279,9 @@ public class TriangulateModifierData extends CFacade {
 	public void setMin_vertices(int min_vertices) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 132, min_vertices);
+			__io__block.writeInt(__io__address + 140, min_vertices);
 		} else {
-			__io__block.writeInt(__io__address + 112, min_vertices);
+			__io__block.writeInt(__io__address + 120, min_vertices);
 		}
 	}
 

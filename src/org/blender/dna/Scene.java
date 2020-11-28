@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=6144, size64=6432)
+@CMetaData(size32=6152, size64=6440)
 public class Scene extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Scene extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 211;
+	public static final int __DNA__SDNA_INDEX = 214;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1206,7 +1206,7 @@ public class Scene extends CFacade {
 	 * <ul>
 	 * <li>Field: 'eevee'</li>
 	 * <li>Signature: 'SceneEEVEE'</li>
-	 * <li>Actual Size (32bit/64bit): 264/272</li>
+	 * <li>Actual Size (32bit/64bit): 272/280</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__eevee = new long[]{5872, 6152};
@@ -1232,7 +1232,7 @@ public class Scene extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grease_pencil_settings = new long[]{6136, 6424};
+	public static final long[] __DNA__FIELD__grease_pencil_settings = new long[]{6144, 6432};
 
 	public Scene(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3281,9 +3281,9 @@ public class Scene extends CFacade {
 	public SceneGpencil getGrease_pencil_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new SceneGpencil(__io__address + 6424, __io__block, __io__blockTable);
+			return new SceneGpencil(__io__address + 6432, __io__block, __io__blockTable);
 		} else {
-			return new SceneGpencil(__io__address + 6136, __io__block, __io__blockTable);
+			return new SceneGpencil(__io__address + 6144, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3299,9 +3299,9 @@ public class Scene extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 6424;
+			__dna__offset = 6432;
 		} else {
-			__dna__offset = 6136;
+			__dna__offset = 6144;
 		}
 		if (__io__equals(grease_pencil_settings, __io__address + __dna__offset)) {
 			return;

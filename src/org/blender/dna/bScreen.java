@@ -27,7 +27,7 @@ public class bScreen extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 265;
+	public static final int __DNA__SDNA_INDEX = 270;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -506,7 +506,7 @@ public class bScreen extends CFacade {
 	 * Field descriptor (offset) for struct member 'context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context callback. </p>
+	 * <p> Context callback. bContextDataCallback </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1338,7 +1338,7 @@ public class bScreen extends CFacade {
 	 * Get method for struct member 'context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context callback. </p>
+	 * <p> Context callback. bContextDataCallback </p>
 	 * @see #__DNA__FIELD__context
 	 */
 	
@@ -1358,7 +1358,7 @@ public class bScreen extends CFacade {
 	 * Set method for struct member 'context'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Context callback. </p>
+	 * <p> Context callback. bContextDataCallback </p>
 	 * @see #__DNA__FIELD__context
 	 */
 	

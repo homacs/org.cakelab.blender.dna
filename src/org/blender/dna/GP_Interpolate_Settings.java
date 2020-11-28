@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Settings for GP Interpolation Operators </p>
  */
 
-@CMetaData(size32=20, size64=24)
+@CMetaData(size32=28, size64=32)
 public class GP_Interpolate_Settings extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 199;
+	public static final int __DNA__SDNA_INDEX = 202;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -165,6 +166,49 @@ public class GP_Interpolate_Settings extends CFacade {
 	public static final long[] __DNA__FIELD__period = new long[]{12, 12};
 
 	/**
+	 * Field descriptor (offset) for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Step between sequence interpolated frames. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GP_Interpolate_Settings gp_interpolate_settings = ...;
+	 * CPointer&lt;Object&gt; p = gp_interpolate_settings.__dna__addressof(GP_Interpolate_Settings.__DNA__FIELD__step);
+	 * CPointer&lt;Integer&gt; p_step = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'step'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__step = new long[]{16, 16};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * GP_Interpolate_Settings gp_interpolate_settings = ...;
+	 * CPointer&lt;Object&gt; p = gp_interpolate_settings.__dna__addressof(GP_Interpolate_Settings.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{20, 20};
+
+	/**
 	 * Field descriptor (offset) for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -185,7 +229,7 @@ public class GP_Interpolate_Settings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__custom_ipo = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__custom_ipo = new long[]{24, 24};
 
 	public GP_Interpolate_Settings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -394,6 +438,80 @@ public class GP_Interpolate_Settings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Step between sequence interpolated frames. </p>
+	 * @see #__DNA__FIELD__step
+	 */
+	
+	public int getStep() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 16);
+		} else {
+			return __io__block.readInt(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'step'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Step between sequence interpolated frames. </p>
+	 * @see #__DNA__FIELD__step
+	 */
+	
+	public void setStep(int step) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 16, step);
+		} else {
+			__io__block.writeInt(__io__address + 16, step);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 20;
+		} else {
+			__dna__offset = 20;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'custom_ipo'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -405,9 +523,9 @@ public class GP_Interpolate_Settings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+			__dna__targetAddress = __io__block.readLong(__io__address + 24);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -425,9 +543,9 @@ public class GP_Interpolate_Settings extends CFacade {
 	{
 		long __address = ((custom_ipo == null) ? 0 : custom_ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 16, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		} else {
-			__io__block.writeLong(__io__address + 16, __address);
+			__io__block.writeLong(__io__address + 24, __address);
 		}
 	}
 

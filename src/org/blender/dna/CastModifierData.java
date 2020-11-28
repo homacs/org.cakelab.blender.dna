@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=208)
+@CMetaData(size32=192, size64=216)
 public class CastModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class CastModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__object = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fac'.
@@ -87,7 +87,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fac = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__fac = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
@@ -107,7 +107,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radius = new long[]{108, 132};
+	public static final long[] __DNA__FIELD__radius = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -127,7 +127,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__size = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -150,7 +150,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{124, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -170,7 +170,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__flag = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -190,7 +190,7 @@ public class CastModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{182, 206};
+	public static final long[] __DNA__FIELD__type = new long[]{190, 214};
 
 	public CastModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -245,9 +245,9 @@ public class CastModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -262,9 +262,9 @@ public class CastModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -276,9 +276,9 @@ public class CastModifierData extends CFacade {
 	public float getFac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -290,9 +290,9 @@ public class CastModifierData extends CFacade {
 	public void setFac(float fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, fac);
+			__io__block.writeFloat(__io__address + 136, fac);
 		} else {
-			__io__block.writeFloat(__io__address + 104, fac);
+			__io__block.writeFloat(__io__address + 112, fac);
 		}
 	}
 
@@ -304,9 +304,9 @@ public class CastModifierData extends CFacade {
 	public float getRadius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 140);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -318,9 +318,9 @@ public class CastModifierData extends CFacade {
 	public void setRadius(float radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 132, radius);
+			__io__block.writeFloat(__io__address + 140, radius);
 		} else {
-			__io__block.writeFloat(__io__address + 108, radius);
+			__io__block.writeFloat(__io__address + 116, radius);
 		}
 	}
 
@@ -332,9 +332,9 @@ public class CastModifierData extends CFacade {
 	public float getSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -346,9 +346,9 @@ public class CastModifierData extends CFacade {
 	public void setSize(float size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, size);
+			__io__block.writeFloat(__io__address + 144, size);
 		} else {
-			__io__block.writeFloat(__io__address + 112, size);
+			__io__block.writeFloat(__io__address + 120, size);
 		}
 	}
 
@@ -367,9 +367,9 @@ public class CastModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -385,9 +385,9 @@ public class CastModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 124;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -406,9 +406,9 @@ public class CastModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 212);
 		} else {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -420,9 +420,9 @@ public class CastModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 204, flag);
+			__io__block.writeShort(__io__address + 212, flag);
 		} else {
-			__io__block.writeShort(__io__address + 180, flag);
+			__io__block.writeShort(__io__address + 188, flag);
 		}
 	}
 
@@ -434,9 +434,9 @@ public class CastModifierData extends CFacade {
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readShort(__io__address + 214);
 		} else {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 190);
 		}
 	}
 
@@ -448,9 +448,9 @@ public class CastModifierData extends CFacade {
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 206, type);
+			__io__block.writeShort(__io__address + 214, type);
 		} else {
-			__io__block.writeShort(__io__address + 182, type);
+			__io__block.writeShort(__io__address + 190, type);
 		}
 	}
 

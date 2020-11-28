@@ -319,7 +319,7 @@ public class Key extends CFacade {
 	 * Field descriptor (offset) for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather than using the scene's time, this value can be animated to give greater control </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -845,7 +845,7 @@ public class Key extends CFacade {
 	 * Get method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather than using the scene's time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	
@@ -862,7 +862,7 @@ public class Key extends CFacade {
 	 * Set method for struct member 'ctime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather then using the scenes time, this value can be animated to give greater control </p>
+	 * <p> Only used when (Key->type == KEY_NORMAL), this value is used as a time slider, rather than using the scene's time, this value can be animated to give greater control </p>
 	 * @see #__DNA__FIELD__ctime
 	 */
 	

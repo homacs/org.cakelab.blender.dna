@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=208)
+@CMetaData(size32=192, size64=216)
 public class SimpleDeformModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__origin = new long[]{100, 120};
+	public static final long[] __DNA__FIELD__origin = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
@@ -93,7 +93,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup_name = new long[]{104, 128};
+	public static final long[] __DNA__FIELD__vgroup_name = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'factor'.
@@ -116,7 +116,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__factor = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__factor = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'limit'.
@@ -139,7 +139,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__limit = new long[]{172, 196};
+	public static final long[] __DNA__FIELD__limit = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -162,7 +162,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{180, 204};
+	public static final long[] __DNA__FIELD__mode = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
@@ -185,7 +185,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__axis = new long[]{181, 205};
+	public static final long[] __DNA__FIELD__axis = new long[]{189, 213};
 
 	/**
 	 * Field descriptor (offset) for struct member 'deform_axis'.
@@ -208,7 +208,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__deform_axis = new long[]{182, 206};
+	public static final long[] __DNA__FIELD__deform_axis = new long[]{190, 214};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -228,7 +228,7 @@ public class SimpleDeformModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{183, 207};
+	public static final long[] __DNA__FIELD__flag = new long[]{191, 215};
 
 	public SimpleDeformModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -286,9 +286,9 @@ public class SimpleDeformModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
+			__dna__targetAddress = __io__block.readLong(__io__address + 108);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -306,9 +306,9 @@ public class SimpleDeformModifierData extends CFacade {
 	{
 		long __address = ((origin == null) ? 0 : origin.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 100, __address);
+			__io__block.writeLong(__io__address + 108, __address);
 		}
 	}
 
@@ -327,9 +327,9 @@ public class SimpleDeformModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class SimpleDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 104;
+			__dna__offset = 112;
 		}
 		if (__io__equals(vgroup_name, __io__address + __dna__offset)) {
 			return;
@@ -369,9 +369,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public float getFactor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -386,9 +386,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public void setFactor(float factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, factor);
+			__io__block.writeFloat(__io__address + 200, factor);
 		} else {
-			__io__block.writeFloat(__io__address + 168, factor);
+			__io__block.writeFloat(__io__address + 176, factor);
 		}
 	}
 
@@ -407,9 +407,9 @@ public class SimpleDeformModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -425,9 +425,9 @@ public class SimpleDeformModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(limit, __io__address + __dna__offset)) {
 			return;
@@ -449,9 +449,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 204);
+			return __io__block.readByte(__io__address + 212);
 		} else {
-			return __io__block.readByte(__io__address + 180);
+			return __io__block.readByte(__io__address + 188);
 		}
 	}
 
@@ -466,9 +466,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 204, mode);
+			__io__block.writeByte(__io__address + 212, mode);
 		} else {
-			__io__block.writeByte(__io__address + 180, mode);
+			__io__block.writeByte(__io__address + 188, mode);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public byte getAxis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 205);
+			return __io__block.readByte(__io__address + 213);
 		} else {
-			return __io__block.readByte(__io__address + 181);
+			return __io__block.readByte(__io__address + 189);
 		}
 	}
 
@@ -500,9 +500,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public void setAxis(byte axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 205, axis);
+			__io__block.writeByte(__io__address + 213, axis);
 		} else {
-			__io__block.writeByte(__io__address + 181, axis);
+			__io__block.writeByte(__io__address + 189, axis);
 		}
 	}
 
@@ -517,9 +517,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public byte getDeform_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 206);
+			return __io__block.readByte(__io__address + 214);
 		} else {
-			return __io__block.readByte(__io__address + 182);
+			return __io__block.readByte(__io__address + 190);
 		}
 	}
 
@@ -534,9 +534,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public void setDeform_axis(byte deform_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 206, deform_axis);
+			__io__block.writeByte(__io__address + 214, deform_axis);
 		} else {
-			__io__block.writeByte(__io__address + 182, deform_axis);
+			__io__block.writeByte(__io__address + 190, deform_axis);
 		}
 	}
 
@@ -548,9 +548,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 207);
+			return __io__block.readByte(__io__address + 215);
 		} else {
-			return __io__block.readByte(__io__address + 183);
+			return __io__block.readByte(__io__address + 191);
 		}
 	}
 
@@ -562,9 +562,9 @@ public class SimpleDeformModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 207, flag);
+			__io__block.writeByte(__io__address + 215, flag);
 		} else {
-			__io__block.writeByte(__io__address + 183, flag);
+			__io__block.writeByte(__io__address + 191, flag);
 		}
 	}
 

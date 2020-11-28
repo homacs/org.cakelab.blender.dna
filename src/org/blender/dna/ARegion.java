@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=328, size64=432)
+@CMetaData(size32=316, size64=416)
 public class ARegion extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class ARegion extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 278;
+	public static final int __DNA__SDNA_INDEX = 283;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -86,7 +86,7 @@ public class ARegion extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{8, 16};
@@ -112,7 +112,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winrct = new long[]{164, 184};
+	public static final long[] __DNA__FIELD__winrct = new long[]{152, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawrct'.
@@ -135,7 +135,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawrct = new long[]{180, 200};
+	public static final long[] __DNA__FIELD__drawrct = new long[]{168, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winx'.
@@ -158,7 +158,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winx = new long[]{196, 216};
+	public static final long[] __DNA__FIELD__winx = new long[]{184, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'winy'.
@@ -178,7 +178,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__winy = new long[]{198, 218};
+	public static final long[] __DNA__FIELD__winy = new long[]{186, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'visible'.
@@ -201,7 +201,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__visible = new long[]{200, 220};
+	public static final long[] __DNA__FIELD__visible = new long[]{188, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiontype'.
@@ -224,7 +224,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiontype = new long[]{202, 222};
+	public static final long[] __DNA__FIELD__regiontype = new long[]{190, 206};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alignment'.
@@ -247,7 +247,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alignment = new long[]{204, 224};
+	public static final long[] __DNA__FIELD__alignment = new long[]{192, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -270,7 +270,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{206, 226};
+	public static final long[] __DNA__FIELD__flag = new long[]{194, 210};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizex'.
@@ -293,7 +293,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizex = new long[]{208, 228};
+	public static final long[] __DNA__FIELD__sizex = new long[]{196, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sizey'.
@@ -313,7 +313,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sizey = new long[]{210, 230};
+	public static final long[] __DNA__FIELD__sizey = new long[]{198, 214};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw'.
@@ -336,7 +336,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw = new long[]{212, 232};
+	public static final long[] __DNA__FIELD__do_draw = new long[]{200, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'do_draw_paintcursor'.
@@ -359,7 +359,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__do_draw_paintcursor = new long[]{214, 234};
+	public static final long[] __DNA__FIELD__do_draw_paintcursor = new long[]{202, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overlap'.
@@ -382,7 +382,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlap = new long[]{216, 236};
+	public static final long[] __DNA__FIELD__overlap = new long[]{204, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flagfullscreen'.
@@ -405,7 +405,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flagfullscreen = new long[]{218, 238};
+	public static final long[] __DNA__FIELD__flagfullscreen = new long[]{206, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -428,7 +428,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{220, 240};
+	public static final long[] __DNA__FIELD__type = new long[]{208, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uiblocks'.
@@ -451,7 +451,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uiblocks = new long[]{224, 248};
+	public static final long[] __DNA__FIELD__uiblocks = new long[]{212, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panels'.
@@ -474,7 +474,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panels = new long[]{232, 264};
+	public static final long[] __DNA__FIELD__panels = new long[]{220, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panels_category_active'.
@@ -497,7 +497,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panels_category_active = new long[]{240, 280};
+	public static final long[] __DNA__FIELD__panels_category_active = new long[]{228, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ui_lists'.
@@ -520,7 +520,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ui_lists = new long[]{248, 296};
+	public static final long[] __DNA__FIELD__ui_lists = new long[]{236, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ui_previews'.
@@ -543,7 +543,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ui_previews = new long[]{256, 312};
+	public static final long[] __DNA__FIELD__ui_previews = new long[]{244, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handlers'.
@@ -566,7 +566,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handlers = new long[]{264, 328};
+	public static final long[] __DNA__FIELD__handlers = new long[]{252, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'panels_category'.
@@ -589,7 +589,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__panels_category = new long[]{272, 344};
+	public static final long[] __DNA__FIELD__panels_category = new long[]{260, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gizmo_map'.
@@ -612,7 +612,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gizmo_map = new long[]{280, 360};
+	public static final long[] __DNA__FIELD__gizmo_map = new long[]{268, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiontimer'.
@@ -635,7 +635,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiontimer = new long[]{284, 368};
+	public static final long[] __DNA__FIELD__regiontimer = new long[]{272, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_buffer'.
@@ -655,7 +655,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_buffer = new long[]{288, 376};
+	public static final long[] __DNA__FIELD__draw_buffer = new long[]{276, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'headerstr'.
@@ -678,7 +678,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__headerstr = new long[]{292, 384};
+	public static final long[] __DNA__FIELD__headerstr = new long[]{280, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'regiondata'.
@@ -701,7 +701,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__regiondata = new long[]{296, 392};
+	public static final long[] __DNA__FIELD__regiondata = new long[]{284, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -721,7 +721,7 @@ public class ARegion extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{300, 400};
+	public static final long[] __DNA__FIELD__runtime = new long[]{288, 384};
 
 	public ARegion(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -848,9 +848,9 @@ public class ARegion extends CFacade {
 	public rcti getWinrct() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 184, __io__block, __io__blockTable);
+			return new rcti(__io__address + 168, __io__block, __io__blockTable);
 		} else {
-			return new rcti(__io__address + 164, __io__block, __io__blockTable);
+			return new rcti(__io__address + 152, __io__block, __io__blockTable);
 		}
 	}
 
@@ -866,9 +866,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 184;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 152;
 		}
 		if (__io__equals(winrct, __io__address + __dna__offset)) {
 			return;
@@ -890,9 +890,9 @@ public class ARegion extends CFacade {
 	public rcti getDrawrct() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new rcti(__io__address + 200, __io__block, __io__blockTable);
+			return new rcti(__io__address + 184, __io__block, __io__blockTable);
 		} else {
-			return new rcti(__io__address + 180, __io__block, __io__blockTable);
+			return new rcti(__io__address + 168, __io__block, __io__blockTable);
 		}
 	}
 
@@ -908,9 +908,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 200;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 168;
 		}
 		if (__io__equals(drawrct, __io__address + __dna__offset)) {
 			return;
@@ -932,9 +932,9 @@ public class ARegion extends CFacade {
 	public short getWinx() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 184);
 		}
 	}
 
@@ -949,9 +949,9 @@ public class ARegion extends CFacade {
 	public void setWinx(short winx) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, winx);
+			__io__block.writeShort(__io__address + 200, winx);
 		} else {
-			__io__block.writeShort(__io__address + 196, winx);
+			__io__block.writeShort(__io__address + 184, winx);
 		}
 	}
 
@@ -963,9 +963,9 @@ public class ARegion extends CFacade {
 	public short getWiny() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 202);
 		} else {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readShort(__io__address + 186);
 		}
 	}
 
@@ -977,9 +977,9 @@ public class ARegion extends CFacade {
 	public void setWiny(short winy) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, winy);
+			__io__block.writeShort(__io__address + 202, winy);
 		} else {
-			__io__block.writeShort(__io__address + 198, winy);
+			__io__block.writeShort(__io__address + 186, winy);
 		}
 	}
 
@@ -994,9 +994,9 @@ public class ARegion extends CFacade {
 	public short getVisible() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 204);
 		} else {
-			return __io__block.readShort(__io__address + 200);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -1011,9 +1011,9 @@ public class ARegion extends CFacade {
 	public void setVisible(short visible) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 220, visible);
+			__io__block.writeShort(__io__address + 204, visible);
 		} else {
-			__io__block.writeShort(__io__address + 200, visible);
+			__io__block.writeShort(__io__address + 188, visible);
 		}
 	}
 
@@ -1028,9 +1028,9 @@ public class ARegion extends CFacade {
 	public short getRegiontype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 206);
 		} else {
-			return __io__block.readShort(__io__address + 202);
+			return __io__block.readShort(__io__address + 190);
 		}
 	}
 
@@ -1045,9 +1045,9 @@ public class ARegion extends CFacade {
 	public void setRegiontype(short regiontype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 222, regiontype);
+			__io__block.writeShort(__io__address + 206, regiontype);
 		} else {
-			__io__block.writeShort(__io__address + 202, regiontype);
+			__io__block.writeShort(__io__address + 190, regiontype);
 		}
 	}
 
@@ -1062,9 +1062,9 @@ public class ARegion extends CFacade {
 	public short getAlignment() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 192);
 		}
 	}
 
@@ -1079,9 +1079,9 @@ public class ARegion extends CFacade {
 	public void setAlignment(short alignment) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, alignment);
+			__io__block.writeShort(__io__address + 208, alignment);
 		} else {
-			__io__block.writeShort(__io__address + 204, alignment);
+			__io__block.writeShort(__io__address + 192, alignment);
 		}
 	}
 
@@ -1096,9 +1096,9 @@ public class ARegion extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 210);
 		} else {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readShort(__io__address + 194);
 		}
 	}
 
@@ -1113,9 +1113,9 @@ public class ARegion extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, flag);
+			__io__block.writeShort(__io__address + 210, flag);
 		} else {
-			__io__block.writeShort(__io__address + 206, flag);
+			__io__block.writeShort(__io__address + 194, flag);
 		}
 	}
 
@@ -1130,9 +1130,9 @@ public class ARegion extends CFacade {
 	public short getSizex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 212);
 		} else {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 196);
 		}
 	}
 
@@ -1147,9 +1147,9 @@ public class ARegion extends CFacade {
 	public void setSizex(short sizex) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, sizex);
+			__io__block.writeShort(__io__address + 212, sizex);
 		} else {
-			__io__block.writeShort(__io__address + 208, sizex);
+			__io__block.writeShort(__io__address + 196, sizex);
 		}
 	}
 
@@ -1161,9 +1161,9 @@ public class ARegion extends CFacade {
 	public short getSizey() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 214);
 		} else {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 198);
 		}
 	}
 
@@ -1175,9 +1175,9 @@ public class ARegion extends CFacade {
 	public void setSizey(short sizey) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, sizey);
+			__io__block.writeShort(__io__address + 214, sizey);
 		} else {
-			__io__block.writeShort(__io__address + 210, sizey);
+			__io__block.writeShort(__io__address + 198, sizey);
 		}
 	}
 
@@ -1192,9 +1192,9 @@ public class ARegion extends CFacade {
 	public short getDo_draw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 232);
+			return __io__block.readShort(__io__address + 216);
 		} else {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 200);
 		}
 	}
 
@@ -1209,9 +1209,9 @@ public class ARegion extends CFacade {
 	public void setDo_draw(short do_draw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 232, do_draw);
+			__io__block.writeShort(__io__address + 216, do_draw);
 		} else {
-			__io__block.writeShort(__io__address + 212, do_draw);
+			__io__block.writeShort(__io__address + 200, do_draw);
 		}
 	}
 
@@ -1226,9 +1226,9 @@ public class ARegion extends CFacade {
 	public short getDo_draw_paintcursor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 234);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 202);
 		}
 	}
 
@@ -1243,9 +1243,9 @@ public class ARegion extends CFacade {
 	public void setDo_draw_paintcursor(short do_draw_paintcursor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 234, do_draw_paintcursor);
+			__io__block.writeShort(__io__address + 218, do_draw_paintcursor);
 		} else {
-			__io__block.writeShort(__io__address + 214, do_draw_paintcursor);
+			__io__block.writeShort(__io__address + 202, do_draw_paintcursor);
 		}
 	}
 
@@ -1260,9 +1260,9 @@ public class ARegion extends CFacade {
 	public short getOverlap() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 236);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 204);
 		}
 	}
 
@@ -1277,9 +1277,9 @@ public class ARegion extends CFacade {
 	public void setOverlap(short overlap) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 236, overlap);
+			__io__block.writeShort(__io__address + 220, overlap);
 		} else {
-			__io__block.writeShort(__io__address + 216, overlap);
+			__io__block.writeShort(__io__address + 204, overlap);
 		}
 	}
 
@@ -1294,9 +1294,9 @@ public class ARegion extends CFacade {
 	public short getFlagfullscreen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 238);
+			return __io__block.readShort(__io__address + 222);
 		} else {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 206);
 		}
 	}
 
@@ -1311,9 +1311,9 @@ public class ARegion extends CFacade {
 	public void setFlagfullscreen(short flagfullscreen) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 238, flagfullscreen);
+			__io__block.writeShort(__io__address + 222, flagfullscreen);
 		} else {
-			__io__block.writeShort(__io__address + 218, flagfullscreen);
+			__io__block.writeShort(__io__address + 206, flagfullscreen);
 		}
 	}
 
@@ -1329,9 +1329,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1349,9 +1349,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((type == null) ? 0 : type.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -1366,9 +1366,9 @@ public class ARegion extends CFacade {
 	public ListBase getUiblocks() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 212, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1384,9 +1384,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 212;
 		}
 		if (__io__equals(uiblocks, __io__address + __dna__offset)) {
 			return;
@@ -1408,9 +1408,9 @@ public class ARegion extends CFacade {
 	public ListBase getPanels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 220, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1426,9 +1426,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 248;
 		} else {
-			__dna__offset = 232;
+			__dna__offset = 220;
 		}
 		if (__io__equals(panels, __io__address + __dna__offset)) {
 			return;
@@ -1450,9 +1450,9 @@ public class ARegion extends CFacade {
 	public ListBase getPanels_category_active() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 228, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1468,9 +1468,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 228;
 		}
 		if (__io__equals(panels_category_active, __io__address + __dna__offset)) {
 			return;
@@ -1492,9 +1492,9 @@ public class ARegion extends CFacade {
 	public ListBase getUi_lists() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 280, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 236, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1510,9 +1510,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 280;
 		} else {
-			__dna__offset = 248;
+			__dna__offset = 236;
 		}
 		if (__io__equals(ui_lists, __io__address + __dna__offset)) {
 			return;
@@ -1534,9 +1534,9 @@ public class ARegion extends CFacade {
 	public ListBase getUi_previews() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 244, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1552,9 +1552,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 312;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 244;
 		}
 		if (__io__equals(ui_previews, __io__address + __dna__offset)) {
 			return;
@@ -1576,9 +1576,9 @@ public class ARegion extends CFacade {
 	public ListBase getHandlers() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 312, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 264, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 252, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1594,9 +1594,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 264;
+			__dna__offset = 252;
 		}
 		if (__io__equals(handlers, __io__address + __dna__offset)) {
 			return;
@@ -1618,9 +1618,9 @@ public class ARegion extends CFacade {
 	public ListBase getPanels_category() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 344, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 328, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 260, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1636,9 +1636,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 344;
+			__dna__offset = 328;
 		} else {
-			__dna__offset = 272;
+			__dna__offset = 260;
 		}
 		if (__io__equals(panels_category, __io__address + __dna__offset)) {
 			return;
@@ -1661,9 +1661,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+			__dna__targetAddress = __io__block.readLong(__io__address + 344);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1681,9 +1681,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((gizmo_map == null) ? 0 : gizmo_map.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 360, __address);
+			__io__block.writeLong(__io__address + 344, __address);
 		} else {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 
@@ -1699,9 +1699,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 284);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1719,9 +1719,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((regiontimer == null) ? 0 : regiontimer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 284, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		}
 	}
 
@@ -1734,9 +1734,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 276);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1751,9 +1751,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((draw_buffer == null) ? 0 : draw_buffer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 276, __address);
 		}
 	}
 
@@ -1769,9 +1769,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 292);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1789,9 +1789,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((headerstr == null) ? 0 : headerstr.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 292, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		}
 	}
 
@@ -1807,9 +1807,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1827,9 +1827,9 @@ public class ARegion extends CFacade {
 	{
 		long __address = ((regiondata == null) ? 0 : regiondata.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 
@@ -1841,9 +1841,9 @@ public class ARegion extends CFacade {
 	public ARegion_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ARegion_Runtime(__io__address + 400, __io__block, __io__blockTable);
+			return new ARegion_Runtime(__io__address + 384, __io__block, __io__blockTable);
 		} else {
-			return new ARegion_Runtime(__io__address + 300, __io__block, __io__blockTable);
+			return new ARegion_Runtime(__io__address + 288, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1856,9 +1856,9 @@ public class ARegion extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 400;
+			__dna__offset = 384;
 		} else {
-			__dna__offset = 300;
+			__dna__offset = 288;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

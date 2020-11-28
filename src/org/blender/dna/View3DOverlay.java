@@ -3,6 +3,7 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
+import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D Viewport Overlay settings. </p>
  */
 
-@CMetaData(size32=72, size64=72)
+@CMetaData(size32=80, size64=80)
 public class View3DOverlay extends CFacade {
 
 	/**
@@ -27,7 +28,7 @@ public class View3DOverlay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 215;
+	public static final int __DNA__SDNA_INDEX = 218;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -299,6 +300,29 @@ public class View3DOverlay extends CFacade {
 	public static final long[] __DNA__FIELD__xray_alpha_bone = new long[]{44, 44};
 
 	/**
+	 * Field descriptor (offset) for struct member 'fade_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Darken Inactive. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DOverlay view3doverlay = ...;
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD__fade_alpha);
+	 * CPointer&lt;Float&gt; p_fade_alpha = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fade_alpha'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fade_alpha = new long[]{48, 48};
+
+	/**
 	 * Field descriptor (offset) for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -320,7 +344,7 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wireframe_threshold = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__wireframe_threshold = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_paper_opacity'.
@@ -343,7 +367,7 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_paper_opacity = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__gpencil_paper_opacity = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_grid_opacity'.
@@ -366,7 +390,7 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_grid_opacity = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__gpencil_grid_opacity = new long[]{60, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_fade_layer'.
@@ -389,7 +413,7 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_fade_layer = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__gpencil_fade_layer = new long[]{64, 64};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpencil_vertex_paint_opacity'.
@@ -413,7 +437,7 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpencil_vertex_paint_opacity = new long[]{64, 64};
+	public static final long[] __DNA__FIELD__gpencil_vertex_paint_opacity = new long[]{68, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_display'.
@@ -436,7 +460,27 @@ public class View3DOverlay extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_display = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__handle_display = new long[]{72, 72};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DOverlay view3doverlay = ...;
+	 * CPointer&lt;Object&gt; p = view3doverlay.__dna__addressof(View3DOverlay.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{76, 76};
 
 	public View3DOverlay(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -841,6 +885,40 @@ public class View3DOverlay extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'fade_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Darken Inactive. </p>
+	 * @see #__DNA__FIELD__fade_alpha
+	 */
+	
+	public float getFade_alpha() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 48);
+		} else {
+			return __io__block.readFloat(__io__address + 48);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fade_alpha'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Darken Inactive. </p>
+	 * @see #__DNA__FIELD__fade_alpha
+	 */
+	
+	public void setFade_alpha(float fade_alpha) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 48, fade_alpha);
+		} else {
+			__io__block.writeFloat(__io__address + 48, fade_alpha);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'wireframe_threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -852,9 +930,9 @@ public class View3DOverlay extends CFacade {
 	public float getWireframe_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 52);
 		} else {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 52);
 		}
 	}
 
@@ -870,9 +948,9 @@ public class View3DOverlay extends CFacade {
 	public void setWireframe_threshold(float wireframe_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 48, wireframe_threshold);
+			__io__block.writeFloat(__io__address + 52, wireframe_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 48, wireframe_threshold);
+			__io__block.writeFloat(__io__address + 52, wireframe_threshold);
 		}
 	}
 
@@ -887,9 +965,9 @@ public class View3DOverlay extends CFacade {
 	public float getGpencil_paper_opacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 52);
+			return __io__block.readFloat(__io__address + 56);
 		} else {
-			return __io__block.readFloat(__io__address + 52);
+			return __io__block.readFloat(__io__address + 56);
 		}
 	}
 
@@ -904,9 +982,9 @@ public class View3DOverlay extends CFacade {
 	public void setGpencil_paper_opacity(float gpencil_paper_opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 52, gpencil_paper_opacity);
+			__io__block.writeFloat(__io__address + 56, gpencil_paper_opacity);
 		} else {
-			__io__block.writeFloat(__io__address + 52, gpencil_paper_opacity);
+			__io__block.writeFloat(__io__address + 56, gpencil_paper_opacity);
 		}
 	}
 
@@ -921,9 +999,9 @@ public class View3DOverlay extends CFacade {
 	public float getGpencil_grid_opacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 60);
 		} else {
-			return __io__block.readFloat(__io__address + 56);
+			return __io__block.readFloat(__io__address + 60);
 		}
 	}
 
@@ -938,9 +1016,9 @@ public class View3DOverlay extends CFacade {
 	public void setGpencil_grid_opacity(float gpencil_grid_opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 56, gpencil_grid_opacity);
+			__io__block.writeFloat(__io__address + 60, gpencil_grid_opacity);
 		} else {
-			__io__block.writeFloat(__io__address + 56, gpencil_grid_opacity);
+			__io__block.writeFloat(__io__address + 60, gpencil_grid_opacity);
 		}
 	}
 
@@ -955,9 +1033,9 @@ public class View3DOverlay extends CFacade {
 	public float getGpencil_fade_layer() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 64);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 64);
 		}
 	}
 
@@ -972,9 +1050,9 @@ public class View3DOverlay extends CFacade {
 	public void setGpencil_fade_layer(float gpencil_fade_layer) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, gpencil_fade_layer);
+			__io__block.writeFloat(__io__address + 64, gpencil_fade_layer);
 		} else {
-			__io__block.writeFloat(__io__address + 60, gpencil_fade_layer);
+			__io__block.writeFloat(__io__address + 64, gpencil_fade_layer);
 		}
 	}
 
@@ -990,9 +1068,9 @@ public class View3DOverlay extends CFacade {
 	public float getGpencil_vertex_paint_opacity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 68);
 		} else {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 68);
 		}
 	}
 
@@ -1008,9 +1086,9 @@ public class View3DOverlay extends CFacade {
 	public void setGpencil_vertex_paint_opacity(float gpencil_vertex_paint_opacity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 64, gpencil_vertex_paint_opacity);
+			__io__block.writeFloat(__io__address + 68, gpencil_vertex_paint_opacity);
 		} else {
-			__io__block.writeFloat(__io__address + 64, gpencil_vertex_paint_opacity);
+			__io__block.writeFloat(__io__address + 68, gpencil_vertex_paint_opacity);
 		}
 	}
 
@@ -1025,9 +1103,9 @@ public class View3DOverlay extends CFacade {
 	public int getHandle_display() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 68);
+			return __io__block.readInt(__io__address + 72);
 		} else {
-			return __io__block.readInt(__io__address + 68);
+			return __io__block.readInt(__io__address + 72);
 		}
 	}
 
@@ -1042,9 +1120,49 @@ public class View3DOverlay extends CFacade {
 	public void setHandle_display(int handle_display) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 68, handle_display);
+			__io__block.writeInt(__io__address + 72, handle_display);
 		} else {
-			__io__block.writeInt(__io__address + 68, handle_display);
+			__io__block.writeInt(__io__address + 72, handle_display);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 76, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 76;
+		} else {
+			__dna__offset = 76;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

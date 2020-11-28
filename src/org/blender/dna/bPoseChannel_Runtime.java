@@ -26,7 +26,7 @@ public class bPoseChannel_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 324;
+	public static final int __DNA__SDNA_INDEX = 329;
 
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.

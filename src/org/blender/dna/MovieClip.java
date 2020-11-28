@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2356, size64=2480)
+@CMetaData(size32=2380, size64=2504)
 public class MovieClip extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MovieClip extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 572;
+	public static final int __DNA__SDNA_INDEX = 577;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -296,7 +296,7 @@ public class MovieClip extends CFacade {
 	 * <ul>
 	 * <li>Field: 'tracking'</li>
 	 * <li>Signature: 'MovieTracking'</li>
-	 * <li>Actual Size (32bit/64bit): 296/360</li>
+	 * <li>Actual Size (32bit/64bit): 320/384</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__tracking = new long[]{1192, 1240};
@@ -322,7 +322,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tracking_context = new long[]{1488, 1600};
+	public static final long[] __DNA__FIELD__tracking_context = new long[]{1512, 1624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'proxy'.
@@ -346,7 +346,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 776/776</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__proxy = new long[]{1492, 1608};
+	public static final long[] __DNA__FIELD__proxy = new long[]{1516, 1632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -366,7 +366,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{2268, 2384};
+	public static final long[] __DNA__FIELD__flag = new long[]{2292, 2408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'len'.
@@ -389,7 +389,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__len = new long[]{2272, 2388};
+	public static final long[] __DNA__FIELD__len = new long[]{2296, 2412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'start_frame'.
@@ -412,13 +412,13 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__start_frame = new long[]{2276, 2392};
+	public static final long[] __DNA__FIELD__start_frame = new long[]{2300, 2416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -436,7 +436,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__frame_offset = new long[]{2280, 2396};
+	public static final long[] __DNA__FIELD__frame_offset = new long[]{2304, 2420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'colorspace_settings'.
@@ -460,7 +460,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{2284, 2400};
+	public static final long[] __DNA__FIELD__colorspace_settings = new long[]{2308, 2424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -480,7 +480,7 @@ public class MovieClip extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{2348, 2464};
+	public static final long[] __DNA__FIELD__runtime = new long[]{2372, 2488};
 
 	public MovieClip(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -958,9 +958,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1600);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1624);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1488);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1512);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -978,9 +978,9 @@ public class MovieClip extends CFacade {
 	{
 		long __address = ((tracking_context == null) ? 0 : tracking_context.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1600, __address);
+			__io__block.writeLong(__io__address + 1624, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1488, __address);
+			__io__block.writeLong(__io__address + 1512, __address);
 		}
 	}
 
@@ -996,9 +996,9 @@ public class MovieClip extends CFacade {
 	public MovieClipProxy getProxy() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieClipProxy(__io__address + 1608, __io__block, __io__blockTable);
+			return new MovieClipProxy(__io__address + 1632, __io__block, __io__blockTable);
 		} else {
-			return new MovieClipProxy(__io__address + 1492, __io__block, __io__blockTable);
+			return new MovieClipProxy(__io__address + 1516, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1015,9 +1015,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1608;
+			__dna__offset = 1632;
 		} else {
-			__dna__offset = 1492;
+			__dna__offset = 1516;
 		}
 		if (__io__equals(proxy, __io__address + __dna__offset)) {
 			return;
@@ -1036,9 +1036,9 @@ public class MovieClip extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2384);
+			return __io__block.readInt(__io__address + 2408);
 		} else {
-			return __io__block.readInt(__io__address + 2268);
+			return __io__block.readInt(__io__address + 2292);
 		}
 	}
 
@@ -1050,9 +1050,9 @@ public class MovieClip extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2384, flag);
+			__io__block.writeInt(__io__address + 2408, flag);
 		} else {
-			__io__block.writeInt(__io__address + 2268, flag);
+			__io__block.writeInt(__io__address + 2292, flag);
 		}
 	}
 
@@ -1067,9 +1067,9 @@ public class MovieClip extends CFacade {
 	public int getLen() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2388);
+			return __io__block.readInt(__io__address + 2412);
 		} else {
-			return __io__block.readInt(__io__address + 2272);
+			return __io__block.readInt(__io__address + 2296);
 		}
 	}
 
@@ -1084,9 +1084,9 @@ public class MovieClip extends CFacade {
 	public void setLen(int len) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2388, len);
+			__io__block.writeInt(__io__address + 2412, len);
 		} else {
-			__io__block.writeInt(__io__address + 2272, len);
+			__io__block.writeInt(__io__address + 2296, len);
 		}
 	}
 
@@ -1101,9 +1101,9 @@ public class MovieClip extends CFacade {
 	public int getStart_frame() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2392);
+			return __io__block.readInt(__io__address + 2416);
 		} else {
-			return __io__block.readInt(__io__address + 2276);
+			return __io__block.readInt(__io__address + 2300);
 		}
 	}
 
@@ -1118,9 +1118,9 @@ public class MovieClip extends CFacade {
 	public void setStart_frame(int start_frame) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2392, start_frame);
+			__io__block.writeInt(__io__address + 2416, start_frame);
 		} else {
-			__io__block.writeInt(__io__address + 2276, start_frame);
+			__io__block.writeInt(__io__address + 2300, start_frame);
 		}
 	}
 
@@ -1128,7 +1128,7 @@ public class MovieClip extends CFacade {
 	 * Get method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -1136,9 +1136,9 @@ public class MovieClip extends CFacade {
 	public int getFrame_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 2396);
+			return __io__block.readInt(__io__address + 2420);
 		} else {
-			return __io__block.readInt(__io__address + 2280);
+			return __io__block.readInt(__io__address + 2304);
 		}
 	}
 
@@ -1146,7 +1146,7 @@ public class MovieClip extends CFacade {
 	 * Set method for struct member 'frame_offset'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
+	 * Offset of footage first frame relative to its file name (affects only how footage is loading, does not change data associated with a clip)<h4>Blender Source Code:</h4>
 	 * <p> Offset which is adding to a file number when reading frame from a file. affects only a way how scene frame is mapping to a file name and not touches other data associated with a clip. </p>
 	 * @see #__DNA__FIELD__frame_offset
 	 */
@@ -1154,9 +1154,9 @@ public class MovieClip extends CFacade {
 	public void setFrame_offset(int frame_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 2396, frame_offset);
+			__io__block.writeInt(__io__address + 2420, frame_offset);
 		} else {
-			__io__block.writeInt(__io__address + 2280, frame_offset);
+			__io__block.writeInt(__io__address + 2304, frame_offset);
 		}
 	}
 
@@ -1172,9 +1172,9 @@ public class MovieClip extends CFacade {
 	public ColorManagedColorspaceSettings getColorspace_settings() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ColorManagedColorspaceSettings(__io__address + 2400, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 2424, __io__block, __io__blockTable);
 		} else {
-			return new ColorManagedColorspaceSettings(__io__address + 2284, __io__block, __io__blockTable);
+			return new ColorManagedColorspaceSettings(__io__address + 2308, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1191,9 +1191,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2400;
+			__dna__offset = 2424;
 		} else {
-			__dna__offset = 2284;
+			__dna__offset = 2308;
 		}
 		if (__io__equals(colorspace_settings, __io__address + __dna__offset)) {
 			return;
@@ -1212,9 +1212,9 @@ public class MovieClip extends CFacade {
 	public MovieClip_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new MovieClip_Runtime(__io__address + 2464, __io__block, __io__blockTable);
+			return new MovieClip_Runtime(__io__address + 2488, __io__block, __io__blockTable);
 		} else {
-			return new MovieClip_Runtime(__io__address + 2348, __io__block, __io__blockTable);
+			return new MovieClip_Runtime(__io__address + 2372, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1227,9 +1227,9 @@ public class MovieClip extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 2464;
+			__dna__offset = 2488;
 		} else {
-			__dna__offset = 2348;
+			__dna__offset = 2372;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

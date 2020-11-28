@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=108, size64=136)
+@CMetaData(size32=108, size64=128)
 public class SimulationModifierData extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class SimulationModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 156;
+	public static final int __DNA__SDNA_INDEX = 157;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -43,50 +43,10 @@ public class SimulationModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 100/120</li>
+	 * <li>Actual Size (32bit/64bit): 108/128</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
-
-	/**
-	 * Field descriptor (offset) for struct member 'simulation'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SimulationModifierData simulationmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = simulationmodifierdata.__dna__addressof(SimulationModifierData.__DNA__FIELD__simulation);
-	 * CPointer&lt;CPointer&lt;Simulation&gt;&gt; p_simulation = p.cast(new Class[]{CPointer.class, Simulation.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'simulation'</li>
-	 * <li>Signature: 'Simulation*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__simulation = new long[]{100, 120};
-
-	/**
-	 * Field descriptor (offset) for struct member 'data_path'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SimulationModifierData simulationmodifierdata = ...;
-	 * CPointer&lt;Object&gt; p = simulationmodifierdata.__dna__addressof(SimulationModifierData.__DNA__FIELD__data_path);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_data_path = p.cast(new Class[]{CPointer.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'data_path'</li>
-	 * <li>Signature: 'char*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__data_path = new long[]{104, 128};
 
 	public SimulationModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -129,70 +89,6 @@ public class SimulationModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, modifier);
 		} else {
 			__io__generic__copy( getModifier(), modifier);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'simulation'.
-	 * @see #__DNA__FIELD__simulation
-	 */
-	
-	public CPointer<Simulation> getSimulation() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 100);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Simulation.class};
-		return new CPointer<Simulation>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Simulation.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'simulation'.
-	 * @see #__DNA__FIELD__simulation
-	 */
-	
-	public void setSimulation(CPointer<Simulation> simulation) throws IOException
-	{
-		long __address = ((simulation == null) ? 0 : simulation.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
-		} else {
-			__io__block.writeLong(__io__address + 100, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'data_path'.
-	 * @see #__DNA__FIELD__data_path
-	 */
-	
-	public CPointer<Byte> getData_path() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'data_path'.
-	 * @see #__DNA__FIELD__data_path
-	 */
-	
-	public void setData_path(CPointer<Byte> data_path) throws IOException
-	{
-		long __address = ((data_path == null) ? 0 : data_path.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
-		} else {
-			__io__block.writeLong(__io__address + 104, __address);
 		}
 	}
 

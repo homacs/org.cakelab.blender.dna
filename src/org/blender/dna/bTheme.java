@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=16144, size64=16152)
+@CMetaData(size32=16176, size64=16184)
 public class bTheme extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class bTheme extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 250;
+	public static final int __DNA__SDNA_INDEX = 255;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -475,10 +475,30 @@ public class bTheme extends CFacade {
 	public static final long[] __DNA__FIELD__tarm = new long[]{15816, 15824};
 
 	/**
-	 * Field descriptor (offset) for struct member 'active_theme_area'.
+	 * Field descriptor (offset) for struct member 'collection_color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link ThemeWireColor}  tobj[20]; </p>
+	 * <p>{@link ThemeWireColor}  tobj[20]; See COLLECTION_COLOR_TOT for the number of collection colors. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTheme btheme = ...;
+	 * CPointer&lt;Object&gt; p = btheme.__dna__addressof(bTheme.__DNA__FIELD__collection_color);
+	 * CPointer&lt;CArrayFacade&lt;ThemeCollectionColor&gt;&gt; p_collection_color = p.cast(new Class[]{CArrayFacade.class, ThemeCollectionColor.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'collection_color'</li>
+	 * <li>Signature: 'ThemeCollectionColor[8]'</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__collection_color = new long[]{16136, 16144};
+
+	/**
+	 * Field descriptor (offset) for struct member 'active_theme_area'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -495,7 +515,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_theme_area = new long[]{16136, 16144};
+	public static final long[] __DNA__FIELD__active_theme_area = new long[]{16168, 16176};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -515,7 +535,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{16140, 16148};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{16172, 16180};
 
 	public bTheme(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1324,36 +1344,76 @@ public class bTheme extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'active_theme_area'.
+	 * Get method for struct member 'collection_color'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link ThemeWireColor}  tobj[20]; </p>
+	 * <p>{@link ThemeWireColor}  tobj[20]; See COLLECTION_COLOR_TOT for the number of collection colors. </p>
+	 * @see #__DNA__FIELD__collection_color
+	 */
+	
+	public CArrayFacade<ThemeCollectionColor> getCollection_color() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{ThemeCollectionColor.class};
+		int[] __dna__dimensions = new int[]{
+			8
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<ThemeCollectionColor>(__io__address + 16144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<ThemeCollectionColor>(__io__address + 16136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'collection_color'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link ThemeWireColor}  tobj[20]; See COLLECTION_COLOR_TOT for the number of collection colors. </p>
+	 * @see #__DNA__FIELD__collection_color
+	 */
+	
+	public void setCollection_color(CArrayFacade<ThemeCollectionColor> collection_color) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 16144;
+		} else {
+			__dna__offset = 16136;
+		}
+		if (__io__equals(collection_color, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, collection_color)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, collection_color);
+		} else {
+			__io__generic__copy( getCollection_color(), collection_color);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'active_theme_area'.
 	 * @see #__DNA__FIELD__active_theme_area
 	 */
 	
 	public int getActive_theme_area() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16144);
+			return __io__block.readInt(__io__address + 16176);
 		} else {
-			return __io__block.readInt(__io__address + 16136);
+			return __io__block.readInt(__io__address + 16168);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'active_theme_area'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link ThemeWireColor}  tobj[20]; </p>
 	 * @see #__DNA__FIELD__active_theme_area
 	 */
 	
 	public void setActive_theme_area(int active_theme_area) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16144, active_theme_area);
+			__io__block.writeInt(__io__address + 16176, active_theme_area);
 		} else {
-			__io__block.writeInt(__io__address + 16136, active_theme_area);
+			__io__block.writeInt(__io__address + 16168, active_theme_area);
 		}
 	}
 
@@ -1369,9 +1429,9 @@ public class bTheme extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 16148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16180, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 16172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1384,9 +1444,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16148;
+			__dna__offset = 16180;
 		} else {
-			__dna__offset = 16140;
+			__dna__offset = 16172;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;

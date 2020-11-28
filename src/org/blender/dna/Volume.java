@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=1244, size64=1296)
+@CMetaData(size32=1260, size64=1312)
 public class Volume extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Volume extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 676;
+	public static final int __DNA__SDNA_INDEX = 681;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -403,7 +403,7 @@ public class Volume extends CFacade {
 	 * <ul>
 	 * <li>Field: 'display'</li>
 	 * <li>Signature: 'VolumeDisplay'</li>
-	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__display = new long[]{1212, 1256};
@@ -429,7 +429,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{1228, 1272};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{1244, 1288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -452,7 +452,7 @@ public class Volume extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1232, 1280};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1248, 1296};
 
 	public Volume(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1100,9 +1100,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1228);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1120,9 +1120,9 @@ public class Volume extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1272, __address);
+			__io__block.writeLong(__io__address + 1288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1228, __address);
+			__io__block.writeLong(__io__address + 1244, __address);
 		}
 	}
 
@@ -1137,9 +1137,9 @@ public class Volume extends CFacade {
 	public Volume_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Volume_Runtime(__io__address + 1280, __io__block, __io__blockTable);
+			return new Volume_Runtime(__io__address + 1296, __io__block, __io__blockTable);
 		} else {
-			return new Volume_Runtime(__io__address + 1232, __io__block, __io__blockTable);
+			return new Volume_Runtime(__io__address + 1248, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1155,9 +1155,9 @@ public class Volume extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1280;
+			__dna__offset = 1296;
 		} else {
-			__dna__offset = 1232;
+			__dna__offset = 1248;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

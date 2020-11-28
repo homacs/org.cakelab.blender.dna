@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=256)
+@CMetaData(size32=208, size64=248)
 public class SpaceButs extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceButs extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 221;
+	public static final int __DNA__SDNA_INDEX = 224;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -164,7 +164,7 @@ public class SpaceButs extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{24, 40};
@@ -187,7 +187,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__space_subtype = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__space_subtype = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainb'.
@@ -207,7 +207,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mainb = new long[]{182, 210};
+	public static final long[] __DNA__FIELD__mainb = new long[]{170, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainbo'.
@@ -227,7 +227,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mainbo = new long[]{184, 212};
+	public static final long[] __DNA__FIELD__mainbo = new long[]{172, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mainbuser'.
@@ -247,7 +247,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mainbuser = new long[]{186, 214};
+	public static final long[] __DNA__FIELD__mainbuser = new long[]{174, 198};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -267,7 +267,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__preview = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -287,7 +287,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{190, 218};
+	public static final long[] __DNA__FIELD___pad = new long[]{178, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -307,7 +307,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{195, 223};
+	public static final long[] __DNA__FIELD__flag = new long[]{183, 207};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
@@ -327,7 +327,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path = new long[]{196, 224};
+	public static final long[] __DNA__FIELD__path = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pathflag'.
@@ -347,7 +347,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pathflag = new long[]{200, 232};
+	public static final long[] __DNA__FIELD__pathflag = new long[]{188, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dataicon'.
@@ -367,7 +367,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dataicon = new long[]{204, 236};
+	public static final long[] __DNA__FIELD__dataicon = new long[]{192, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pinid'.
@@ -387,7 +387,7 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pinid = new long[]{208, 240};
+	public static final long[] __DNA__FIELD__pinid = new long[]{196, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texuser'.
@@ -407,7 +407,27 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texuser = new long[]{212, 248};
+	public static final long[] __DNA__FIELD__texuser = new long[]{200, 232};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceButs spacebuts = ...;
+	 * CPointer&lt;Object&gt; p = spacebuts.__dna__addressof(SpaceButs.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SpaceProperties_Runtime*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{204, 240};
 
 	public SpaceButs(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -657,9 +677,9 @@ public class SpaceButs extends CFacade {
 	public short getSpace_subtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -671,9 +691,9 @@ public class SpaceButs extends CFacade {
 	public void setSpace_subtype(short space_subtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, space_subtype);
+			__io__block.writeShort(__io__address + 192, space_subtype);
 		} else {
-			__io__block.writeShort(__io__address + 180, space_subtype);
+			__io__block.writeShort(__io__address + 168, space_subtype);
 		}
 	}
 
@@ -685,9 +705,9 @@ public class SpaceButs extends CFacade {
 	public short getMainb() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 170);
 		}
 	}
 
@@ -699,9 +719,9 @@ public class SpaceButs extends CFacade {
 	public void setMainb(short mainb) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, mainb);
+			__io__block.writeShort(__io__address + 194, mainb);
 		} else {
-			__io__block.writeShort(__io__address + 182, mainb);
+			__io__block.writeShort(__io__address + 170, mainb);
 		}
 	}
 
@@ -713,9 +733,9 @@ public class SpaceButs extends CFacade {
 	public short getMainbo() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 196);
 		} else {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 172);
 		}
 	}
 
@@ -727,9 +747,9 @@ public class SpaceButs extends CFacade {
 	public void setMainbo(short mainbo) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, mainbo);
+			__io__block.writeShort(__io__address + 196, mainbo);
 		} else {
-			__io__block.writeShort(__io__address + 184, mainbo);
+			__io__block.writeShort(__io__address + 172, mainbo);
 		}
 	}
 
@@ -741,9 +761,9 @@ public class SpaceButs extends CFacade {
 	public short getMainbuser() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 198);
 		} else {
-			return __io__block.readShort(__io__address + 186);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -755,9 +775,9 @@ public class SpaceButs extends CFacade {
 	public void setMainbuser(short mainbuser) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, mainbuser);
+			__io__block.writeShort(__io__address + 198, mainbuser);
 		} else {
-			__io__block.writeShort(__io__address + 186, mainbuser);
+			__io__block.writeShort(__io__address + 174, mainbuser);
 		}
 	}
 
@@ -769,9 +789,9 @@ public class SpaceButs extends CFacade {
 	public short getPreview() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 200);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -783,9 +803,9 @@ public class SpaceButs extends CFacade {
 	public void setPreview(short preview) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, preview);
+			__io__block.writeShort(__io__address + 200, preview);
 		} else {
-			__io__block.writeShort(__io__address + 188, preview);
+			__io__block.writeShort(__io__address + 176, preview);
 		}
 	}
 
@@ -801,9 +821,9 @@ public class SpaceButs extends CFacade {
 			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 218, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 202, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 190, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -816,9 +836,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 218;
+			__dna__offset = 202;
 		} else {
-			__dna__offset = 190;
+			__dna__offset = 178;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -837,9 +857,9 @@ public class SpaceButs extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 223);
+			return __io__block.readByte(__io__address + 207);
 		} else {
-			return __io__block.readByte(__io__address + 195);
+			return __io__block.readByte(__io__address + 183);
 		}
 	}
 
@@ -851,9 +871,9 @@ public class SpaceButs extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 223, flag);
+			__io__block.writeByte(__io__address + 207, flag);
 		} else {
-			__io__block.writeByte(__io__address + 195, flag);
+			__io__block.writeByte(__io__address + 183, flag);
 		}
 	}
 
@@ -866,9 +886,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -883,9 +903,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __address = ((path == null) ? 0 : path.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 
@@ -897,9 +917,9 @@ public class SpaceButs extends CFacade {
 	public int getPathflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 232);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -911,9 +931,9 @@ public class SpaceButs extends CFacade {
 	public void setPathflag(int pathflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 232, pathflag);
+			__io__block.writeInt(__io__address + 216, pathflag);
 		} else {
-			__io__block.writeInt(__io__address + 200, pathflag);
+			__io__block.writeInt(__io__address + 188, pathflag);
 		}
 	}
 
@@ -925,9 +945,9 @@ public class SpaceButs extends CFacade {
 	public int getDataicon() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 236);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -939,9 +959,9 @@ public class SpaceButs extends CFacade {
 	public void setDataicon(int dataicon) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 236, dataicon);
+			__io__block.writeInt(__io__address + 220, dataicon);
 		} else {
-			__io__block.writeInt(__io__address + 204, dataicon);
+			__io__block.writeInt(__io__address + 192, dataicon);
 		}
 	}
 
@@ -954,9 +974,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -971,9 +991,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __address = ((pinid == null) ? 0 : pinid.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 
@@ -986,9 +1006,9 @@ public class SpaceButs extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 212);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1003,9 +1023,41 @@ public class SpaceButs extends CFacade {
 	{
 		long __address = ((texuser == null) ? 0 : texuser.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 212, __address);
+			__io__block.writeLong(__io__address + 200, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public CPointer<Object> getRuntime() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(CPointer<Object> runtime) throws IOException
+	{
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 240, __address);
+		} else {
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class bSound extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 315;
+	public static final int __DNA__SDNA_INDEX = 320;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -345,7 +345,7 @@ public class bSound extends CFacade {
 	 * Field descriptor (offset) for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused currently int type; struct {@link bSound}  *child_sound; The audaspace handle for cache. </p>
+	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -391,7 +391,7 @@ public class bSound extends CFacade {
 	 * Field descriptor (offset) for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle </p>
+	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -937,7 +937,7 @@ public class bSound extends CFacade {
 	 * Get method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused currently int type; struct {@link bSound}  *child_sound; The audaspace handle for cache. </p>
+	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -957,7 +957,7 @@ public class bSound extends CFacade {
 	 * Set method for struct member 'cache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> unused currently int type; struct {@link bSound}  *child_sound; The audaspace handle for cache. </p>
+	 * <p> int type; struct {@link bSound}  *child_sound; </p><p> Unused currently. The audaspace handle for cache. </p>
 	 * @see #__DNA__FIELD__cache
 	 */
 	
@@ -1013,7 +1013,7 @@ public class bSound extends CFacade {
 	 * Get method for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle </p>
+	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * @see #__DNA__FIELD__playback_handle
 	 */
 	
@@ -1033,7 +1033,7 @@ public class bSound extends CFacade {
 	 * Set method for struct member 'playback_handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise it's handle </p>
+	 * <p> The audaspace handle that should actually be played back. Should be cache if cache != NULL; otherwise its handle </p>
 	 * @see #__DNA__FIELD__playback_handle
 	 */
 	

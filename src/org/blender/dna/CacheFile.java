@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=2220, size64=2272)
+@CMetaData(size32=2284, size64=2336)
 public class CacheFile extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class CacheFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 648;
+	public static final int __DNA__SDNA_INDEX = 653;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -334,11 +334,58 @@ public class CacheFile extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{1184, 1228};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__velocity_unit);
+	 * CPointer&lt;Byte&gt; p_velocity_unit = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_unit'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_unit = new long[]{1187, 1231};
+
+	/**
+	 * Field descriptor (offset) for struct member 'velocity_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <p> Name of the velocity property in the Alembic file. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * CacheFile cachefile = ...;
+	 * CPointer&lt;Object&gt; p = cachefile.__dna__addressof(CacheFile.__DNA__FIELD__velocity_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_velocity_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'velocity_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__velocity_name = new long[]{1188, 1232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle'.
@@ -361,7 +408,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle = new long[]{1188, 1232};
+	public static final long[] __DNA__FIELD__handle = new long[]{1252, 1296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_filepath'.
@@ -381,7 +428,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1024/1024</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_filepath = new long[]{1192, 1240};
+	public static final long[] __DNA__FIELD__handle_filepath = new long[]{1256, 1304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'handle_readers'.
@@ -401,7 +448,7 @@ public class CacheFile extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__handle_readers = new long[]{2216, 2264};
+	public static final long[] __DNA__FIELD__handle_readers = new long[]{2280, 2328};
 
 	public CacheFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -878,7 +925,7 @@ public class CacheFile extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 1228, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -910,6 +957,88 @@ public class CacheFile extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * @see #__DNA__FIELD__velocity_unit
+	 */
+	
+	public byte getVelocity_unit() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1231);
+		} else {
+			return __io__block.readByte(__io__address + 1187);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_unit'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Define how the velocity vectors are interpreted with regard to time, 'frame' means the delta time is 1 frame, 'second' means the delta time is 1 / FPS
+	 * @see #__DNA__FIELD__velocity_unit
+	 */
+	
+	public void setVelocity_unit(byte velocity_unit) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1231, velocity_unit);
+		} else {
+			__io__block.writeByte(__io__address + 1187, velocity_unit);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'velocity_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <p> Name of the velocity property in the Alembic file. </p>
+	 * @see #__DNA__FIELD__velocity_name
+	 */
+	
+	public CArrayFacade<Byte> getVelocity_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 1232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 1188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'velocity_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the Alembic attribute used for generating motion blur data<h4>Blender Source Code:</h4>
+	 * <p> Name of the velocity property in the Alembic file. </p>
+	 * @see #__DNA__FIELD__velocity_name
+	 */
+	
+	public void setVelocity_name(CArrayFacade<Byte> velocity_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1232;
+		} else {
+			__dna__offset = 1188;
+		}
+		if (__io__equals(velocity_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, velocity_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, velocity_name);
+		} else {
+			__io__generic__copy( getVelocity_name(), velocity_name);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'handle'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -921,9 +1050,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 1252);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -941,9 +1070,9 @@ public class CacheFile extends CFacade {
 	{
 		long __address = ((handle == null) ? 0 : handle.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1232, __address);
+			__io__block.writeLong(__io__address + 1296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 1188, __address);
+			__io__block.writeLong(__io__address + 1252, __address);
 		}
 	}
 
@@ -959,9 +1088,9 @@ public class CacheFile extends CFacade {
 			1024
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -974,9 +1103,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1240;
+			__dna__offset = 1304;
 		} else {
-			__dna__offset = 1192;
+			__dna__offset = 1256;
 		}
 		if (__io__equals(handle_filepath, __io__address + __dna__offset)) {
 			return;
@@ -996,9 +1125,9 @@ public class CacheFile extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 2216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 2280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1013,9 +1142,9 @@ public class CacheFile extends CFacade {
 	{
 		long __address = ((handle_readers == null) ? 0 : handle_readers.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 2264, __address);
+			__io__block.writeLong(__io__address + 2328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 2216, __address);
+			__io__block.writeLong(__io__address + 2280, __address);
 		}
 	}
 

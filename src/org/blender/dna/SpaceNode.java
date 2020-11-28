@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=332, size64=400)
+@CMetaData(size32=320, size64=384)
 public class SpaceNode extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 236;
+	public static final int __DNA__SDNA_INDEX = 240;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -172,7 +172,7 @@ public class SpaceNode extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{24, 40};
@@ -198,7 +198,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__id = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__id = new long[]{168, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
@@ -218,7 +218,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from = new long[]{184, 216};
+	public static final long[] __DNA__FIELD__from = new long[]{172, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -241,7 +241,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{188, 224};
+	public static final long[] __DNA__FIELD__flag = new long[]{176, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -261,7 +261,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{190, 226};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{178, 210};
 
 	/**
 	 * Field descriptor (offset) for struct member 'aspect'.
@@ -284,7 +284,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__aspect = new long[]{192, 228};
+	public static final long[] __DNA__FIELD__aspect = new long[]{180, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -304,7 +304,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{196, 232};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
@@ -327,7 +327,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{200, 236};
+	public static final long[] __DNA__FIELD__xof = new long[]{188, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
@@ -347,7 +347,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{204, 240};
+	public static final long[] __DNA__FIELD__yof = new long[]{192, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
@@ -370,7 +370,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zoom = new long[]{208, 244};
+	public static final long[] __DNA__FIELD__zoom = new long[]{196, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cursor'.
@@ -393,7 +393,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cursor = new long[]{212, 248};
+	public static final long[] __DNA__FIELD__cursor = new long[]{200, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'treepath'.
@@ -416,7 +416,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treepath = new long[]{220, 256};
+	public static final long[] __DNA__FIELD__treepath = new long[]{208, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -436,7 +436,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{228, 272};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{216, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edittree'.
@@ -456,7 +456,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edittree = new long[]{232, 280};
+	public static final long[] __DNA__FIELD__edittree = new long[]{220, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tree_idname'.
@@ -479,7 +479,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tree_idname = new long[]{236, 288};
+	public static final long[] __DNA__FIELD__tree_idname = new long[]{224, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'treetype'.
@@ -504,7 +504,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treetype = new long[]{300, 352};
+	public static final long[] __DNA__FIELD__treetype = new long[]{288, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -524,7 +524,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{304, 356};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{292, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texfrom'.
@@ -547,7 +547,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texfrom = new long[]{308, 360};
+	public static final long[] __DNA__FIELD__texfrom = new long[]{296, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfrom'.
@@ -570,7 +570,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shaderfrom = new long[]{310, 362};
+	public static final long[] __DNA__FIELD__shaderfrom = new long[]{298, 346};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
@@ -593,7 +593,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{312, 364};
+	public static final long[] __DNA__FIELD__recalc = new long[]{300, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
@@ -616,7 +616,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__insert_ofs_dir = new long[]{314, 366};
+	public static final long[] __DNA__FIELD__insert_ofs_dir = new long[]{302, 350};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad4'.
@@ -636,7 +636,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{315, 367};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{303, 351};
 
 	/**
 	 * Field descriptor (offset) for struct member 'linkdrag'.
@@ -659,7 +659,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__linkdrag = new long[]{316, 368};
+	public static final long[] __DNA__FIELD__linkdrag = new long[]{304, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iofsd'.
@@ -682,7 +682,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iofsd = new long[]{324, 384};
+	public static final long[] __DNA__FIELD__iofsd = new long[]{312, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -705,7 +705,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{328, 392};
+	public static final long[] __DNA__FIELD__gpd = new long[]{316, 376};
 
 	public SpaceNode(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -975,9 +975,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -995,9 +995,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((id == null) ? 0 : id.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 
@@ -1010,9 +1010,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1027,9 +1027,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((from == null) ? 0 : from.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -1044,9 +1044,9 @@ public class SpaceNode extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 208);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -1061,9 +1061,9 @@ public class SpaceNode extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 224, flag);
+			__io__block.writeShort(__io__address + 208, flag);
 		} else {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 176, flag);
 		}
 	}
 
@@ -1079,9 +1079,9 @@ public class SpaceNode extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 226, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 190, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1094,9 +1094,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 226;
+			__dna__offset = 210;
 		} else {
-			__dna__offset = 190;
+			__dna__offset = 178;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1118,9 +1118,9 @@ public class SpaceNode extends CFacade {
 	public float getAspect() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1135,9 +1135,9 @@ public class SpaceNode extends CFacade {
 	public void setAspect(float aspect) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, aspect);
+			__io__block.writeFloat(__io__address + 212, aspect);
 		} else {
-			__io__block.writeFloat(__io__address + 192, aspect);
+			__io__block.writeFloat(__io__address + 180, aspect);
 		}
 	}
 
@@ -1153,9 +1153,9 @@ public class SpaceNode extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1168,9 +1168,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 216;
 		} else {
-			__dna__offset = 196;
+			__dna__offset = 184;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -1192,9 +1192,9 @@ public class SpaceNode extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -1209,9 +1209,9 @@ public class SpaceNode extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 236, xof);
+			__io__block.writeFloat(__io__address + 220, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 200, xof);
+			__io__block.writeFloat(__io__address + 188, xof);
 		}
 	}
 
@@ -1223,9 +1223,9 @@ public class SpaceNode extends CFacade {
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -1237,9 +1237,9 @@ public class SpaceNode extends CFacade {
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 240, yof);
+			__io__block.writeFloat(__io__address + 224, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 204, yof);
+			__io__block.writeFloat(__io__address + 192, yof);
 		}
 	}
 
@@ -1254,9 +1254,9 @@ public class SpaceNode extends CFacade {
 	public float getZoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 244);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 196);
 		}
 	}
 
@@ -1271,9 +1271,9 @@ public class SpaceNode extends CFacade {
 	public void setZoom(float zoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 244, zoom);
+			__io__block.writeFloat(__io__address + 228, zoom);
 		} else {
-			__io__block.writeFloat(__io__address + 208, zoom);
+			__io__block.writeFloat(__io__address + 196, zoom);
 		}
 	}
 
@@ -1292,9 +1292,9 @@ public class SpaceNode extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1310,9 +1310,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 212;
+			__dna__offset = 200;
 		}
 		if (__io__equals(cursor, __io__address + __dna__offset)) {
 			return;
@@ -1334,9 +1334,9 @@ public class SpaceNode extends CFacade {
 	public ListBase getTreepath() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 220, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1352,9 +1352,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 220;
+			__dna__offset = 208;
 		}
 		if (__io__equals(treepath, __io__address + __dna__offset)) {
 			return;
@@ -1374,9 +1374,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 228);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1391,9 +1391,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 228, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		}
 	}
 
@@ -1406,9 +1406,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 220);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1423,9 +1423,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((edittree == null) ? 0 : edittree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 220, __address);
 		}
 	}
 
@@ -1444,9 +1444,9 @@ public class SpaceNode extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1462,9 +1462,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 288;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 236;
+			__dna__offset = 224;
 		}
 		if (__io__equals(tree_idname, __io__address + __dna__offset)) {
 			return;
@@ -1488,9 +1488,9 @@ public class SpaceNode extends CFacade {
 	public int getTreetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 352);
+			return __io__block.readInt(__io__address + 336);
 		} else {
-			return __io__block.readInt(__io__address + 300);
+			return __io__block.readInt(__io__address + 288);
 		}
 	}
 
@@ -1507,9 +1507,9 @@ public class SpaceNode extends CFacade {
 	public void setTreetype(int treetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 352, treetype);
+			__io__block.writeInt(__io__address + 336, treetype);
 		} else {
-			__io__block.writeInt(__io__address + 300, treetype);
+			__io__block.writeInt(__io__address + 288, treetype);
 		}
 	}
 
@@ -1525,9 +1525,9 @@ public class SpaceNode extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1540,9 +1540,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 356;
+			__dna__offset = 340;
 		} else {
-			__dna__offset = 304;
+			__dna__offset = 292;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -1564,9 +1564,9 @@ public class SpaceNode extends CFacade {
 	public short getTexfrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 360);
+			return __io__block.readShort(__io__address + 344);
 		} else {
-			return __io__block.readShort(__io__address + 308);
+			return __io__block.readShort(__io__address + 296);
 		}
 	}
 
@@ -1581,9 +1581,9 @@ public class SpaceNode extends CFacade {
 	public void setTexfrom(short texfrom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 360, texfrom);
+			__io__block.writeShort(__io__address + 344, texfrom);
 		} else {
-			__io__block.writeShort(__io__address + 308, texfrom);
+			__io__block.writeShort(__io__address + 296, texfrom);
 		}
 	}
 
@@ -1598,9 +1598,9 @@ public class SpaceNode extends CFacade {
 	public short getShaderfrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 362);
+			return __io__block.readShort(__io__address + 346);
 		} else {
-			return __io__block.readShort(__io__address + 310);
+			return __io__block.readShort(__io__address + 298);
 		}
 	}
 
@@ -1615,9 +1615,9 @@ public class SpaceNode extends CFacade {
 	public void setShaderfrom(short shaderfrom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 362, shaderfrom);
+			__io__block.writeShort(__io__address + 346, shaderfrom);
 		} else {
-			__io__block.writeShort(__io__address + 310, shaderfrom);
+			__io__block.writeShort(__io__address + 298, shaderfrom);
 		}
 	}
 
@@ -1632,9 +1632,9 @@ public class SpaceNode extends CFacade {
 	public short getRecalc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 364);
+			return __io__block.readShort(__io__address + 348);
 		} else {
-			return __io__block.readShort(__io__address + 312);
+			return __io__block.readShort(__io__address + 300);
 		}
 	}
 
@@ -1649,9 +1649,9 @@ public class SpaceNode extends CFacade {
 	public void setRecalc(short recalc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 364, recalc);
+			__io__block.writeShort(__io__address + 348, recalc);
 		} else {
-			__io__block.writeShort(__io__address + 312, recalc);
+			__io__block.writeShort(__io__address + 300, recalc);
 		}
 	}
 
@@ -1666,9 +1666,9 @@ public class SpaceNode extends CFacade {
 	public byte getInsert_ofs_dir() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 366);
+			return __io__block.readByte(__io__address + 350);
 		} else {
-			return __io__block.readByte(__io__address + 314);
+			return __io__block.readByte(__io__address + 302);
 		}
 	}
 
@@ -1683,9 +1683,9 @@ public class SpaceNode extends CFacade {
 	public void setInsert_ofs_dir(byte insert_ofs_dir) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 366, insert_ofs_dir);
+			__io__block.writeByte(__io__address + 350, insert_ofs_dir);
 		} else {
-			__io__block.writeByte(__io__address + 314, insert_ofs_dir);
+			__io__block.writeByte(__io__address + 302, insert_ofs_dir);
 		}
 	}
 
@@ -1697,9 +1697,9 @@ public class SpaceNode extends CFacade {
 	public byte get_pad4() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 367);
+			return __io__block.readByte(__io__address + 351);
 		} else {
-			return __io__block.readByte(__io__address + 315);
+			return __io__block.readByte(__io__address + 303);
 		}
 	}
 
@@ -1711,9 +1711,9 @@ public class SpaceNode extends CFacade {
 	public void set_pad4(byte _pad4) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 367, _pad4);
+			__io__block.writeByte(__io__address + 351, _pad4);
 		} else {
-			__io__block.writeByte(__io__address + 315, _pad4);
+			__io__block.writeByte(__io__address + 303, _pad4);
 		}
 	}
 
@@ -1728,9 +1728,9 @@ public class SpaceNode extends CFacade {
 	public ListBase getLinkdrag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 368, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 316, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 304, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1746,9 +1746,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 368;
+			__dna__offset = 352;
 		} else {
-			__dna__offset = 316;
+			__dna__offset = 304;
 		}
 		if (__io__equals(linkdrag, __io__address + __dna__offset)) {
 			return;
@@ -1771,9 +1771,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 384);
+			__dna__targetAddress = __io__block.readLong(__io__address + 368);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 324);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1791,9 +1791,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((iofsd == null) ? 0 : iofsd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 384, __address);
+			__io__block.writeLong(__io__address + 368, __address);
 		} else {
-			__io__block.writeLong(__io__address + 324, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		}
 	}
 
@@ -1809,9 +1809,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 376);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 316);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1829,9 +1829,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 376, __address);
 		} else {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 316, __address);
 		}
 	}
 

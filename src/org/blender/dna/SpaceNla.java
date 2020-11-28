@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> NLA Editor </p>
  */
 
-@CMetaData(size32=192, size64=224)
+@CMetaData(size32=180, size64=208)
 public class SpaceNla extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceNla extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 228;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -256,7 +256,7 @@ public class SpaceNla extends CFacade {
 	 * <ul>
 	 * <li>Field: 'v2d'</li>
 	 * <li>Signature: 'View2D'</li>
-	 * <li>Actual Size (32bit/64bit): 156/168</li>
+	 * <li>Actual Size (32bit/64bit): 144/152</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__v2d = new long[]{36, 56};
