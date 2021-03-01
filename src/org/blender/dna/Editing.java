@@ -27,7 +27,7 @@ public class Editing extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 295;
+	public static final int __DNA__SDNA_INDEX = 298;
 
 	/**
 	 * Field descriptor (offset) for struct member 'seqbasep'.
@@ -311,7 +311,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache control </p>
+	 * <p> Cache control UNUSED only for versioning. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -374,7 +374,7 @@ public class Editing extends CFacade {
 	 * Field descriptor (offset) for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -877,7 +877,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache control </p>
+	 * <p> Cache control UNUSED only for versioning. </p>
 	 * @see #__DNA__FIELD__recycle_max_cost
 	 */
 	
@@ -894,7 +894,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'recycle_max_cost'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Cache control </p>
+	 * <p> Cache control UNUSED only for versioning. </p>
 	 * @see #__DNA__FIELD__recycle_max_cost
 	 */
 	
@@ -971,7 +971,7 @@ public class Editing extends CFacade {
 	 * Get method for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * @see #__DNA__FIELD__disk_cache_timestamp
 	 */
 	
@@ -988,7 +988,7 @@ public class Editing extends CFacade {
 	 * Set method for struct member 'disk_cache_timestamp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Must be initialized only by BKE_sequencer_cache_create() </p>
+	 * <p> Must be initialized only by seq_cache_create() </p>
 	 * @see #__DNA__FIELD__disk_cache_timestamp
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=572, size64=576)
+@CMetaData(size32=596, size64=600)
 public class TextVars extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class TextVars extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 302;
+	public static final int __DNA__SDNA_INDEX = 305;
 
 	/**
 	 * Field descriptor (offset) for struct member 'text'.
@@ -150,6 +150,26 @@ public class TextVars extends CFacade {
 	public static final long[] __DNA__FIELD__shadow_color = new long[]{540, 544};
 
 	/**
+	 * Field descriptor (offset) for struct member 'box_color'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TextVars textvars = ...;
+	 * CPointer&lt;Object&gt; p = textvars.__dna__addressof(TextVars.__DNA__FIELD__box_color);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_box_color = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'box_color'</li>
+	 * <li>Signature: 'float[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 16/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__box_color = new long[]{556, 560};
+
+	/**
 	 * Field descriptor (offset) for struct member 'loc'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -167,7 +187,7 @@ public class TextVars extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{556, 560};
+	public static final long[] __DNA__FIELD__loc = new long[]{572, 576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'wrap_width'.
@@ -187,7 +207,27 @@ public class TextVars extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__wrap_width = new long[]{564, 568};
+	public static final long[] __DNA__FIELD__wrap_width = new long[]{580, 584};
+
+	/**
+	 * Field descriptor (offset) for struct member 'box_margin'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TextVars textvars = ...;
+	 * CPointer&lt;Object&gt; p = textvars.__dna__addressof(TextVars.__DNA__FIELD__box_margin);
+	 * CPointer&lt;Float&gt; p_box_margin = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'box_margin'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__box_margin = new long[]{584, 588};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -207,7 +247,7 @@ public class TextVars extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{568, 572};
+	public static final long[] __DNA__FIELD__flag = new long[]{588, 592};
 
 	/**
 	 * Field descriptor (offset) for struct member 'align'.
@@ -227,7 +267,7 @@ public class TextVars extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__align = new long[]{569, 573};
+	public static final long[] __DNA__FIELD__align = new long[]{589, 593};
 
 	/**
 	 * Field descriptor (offset) for struct member 'align_y'.
@@ -247,7 +287,7 @@ public class TextVars extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__align_y = new long[]{570, 574};
+	public static final long[] __DNA__FIELD__align_y = new long[]{590, 594};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -263,11 +303,11 @@ public class TextVars extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[1]'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{571, 575};
+	public static final long[] __DNA__FIELD___pad = new long[]{591, 595};
 
 	public TextVars(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -486,6 +526,46 @@ public class TextVars extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'box_color'.
+	 * @see #__DNA__FIELD__box_color
+	 */
+	
+	public CArrayFacade<Float> getBox_color() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'box_color'.
+	 * @see #__DNA__FIELD__box_color
+	 */
+	
+	public void setBox_color(CArrayFacade<Float> box_color) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 560;
+		} else {
+			__dna__offset = 556;
+		}
+		if (__io__equals(box_color, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, box_color)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, box_color);
+		} else {
+			__io__generic__copy( getBox_color(), box_color);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'loc'.
 	 * @see #__DNA__FIELD__loc
 	 */
@@ -497,9 +577,9 @@ public class TextVars extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 576, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 572, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -512,9 +592,9 @@ public class TextVars extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 560;
+			__dna__offset = 576;
 		} else {
-			__dna__offset = 556;
+			__dna__offset = 572;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -533,9 +613,9 @@ public class TextVars extends CFacade {
 	public float getWrap_width() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 568);
+			return __io__block.readFloat(__io__address + 584);
 		} else {
-			return __io__block.readFloat(__io__address + 564);
+			return __io__block.readFloat(__io__address + 580);
 		}
 	}
 
@@ -547,9 +627,37 @@ public class TextVars extends CFacade {
 	public void setWrap_width(float wrap_width) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 568, wrap_width);
+			__io__block.writeFloat(__io__address + 584, wrap_width);
 		} else {
-			__io__block.writeFloat(__io__address + 564, wrap_width);
+			__io__block.writeFloat(__io__address + 580, wrap_width);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'box_margin'.
+	 * @see #__DNA__FIELD__box_margin
+	 */
+	
+	public float getBox_margin() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 588);
+		} else {
+			return __io__block.readFloat(__io__address + 584);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'box_margin'.
+	 * @see #__DNA__FIELD__box_margin
+	 */
+	
+	public void setBox_margin(float box_margin) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 588, box_margin);
+		} else {
+			__io__block.writeFloat(__io__address + 584, box_margin);
 		}
 	}
 
@@ -561,9 +669,9 @@ public class TextVars extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 572);
+			return __io__block.readByte(__io__address + 592);
 		} else {
-			return __io__block.readByte(__io__address + 568);
+			return __io__block.readByte(__io__address + 588);
 		}
 	}
 
@@ -575,9 +683,9 @@ public class TextVars extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 572, flag);
+			__io__block.writeByte(__io__address + 592, flag);
 		} else {
-			__io__block.writeByte(__io__address + 568, flag);
+			__io__block.writeByte(__io__address + 588, flag);
 		}
 	}
 
@@ -589,9 +697,9 @@ public class TextVars extends CFacade {
 	public byte getAlign() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 573);
+			return __io__block.readByte(__io__address + 593);
 		} else {
-			return __io__block.readByte(__io__address + 569);
+			return __io__block.readByte(__io__address + 589);
 		}
 	}
 
@@ -603,9 +711,9 @@ public class TextVars extends CFacade {
 	public void setAlign(byte align) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 573, align);
+			__io__block.writeByte(__io__address + 593, align);
 		} else {
-			__io__block.writeByte(__io__address + 569, align);
+			__io__block.writeByte(__io__address + 589, align);
 		}
 	}
 
@@ -617,9 +725,9 @@ public class TextVars extends CFacade {
 	public byte getAlign_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 574);
+			return __io__block.readByte(__io__address + 594);
 		} else {
-			return __io__block.readByte(__io__address + 570);
+			return __io__block.readByte(__io__address + 590);
 		}
 	}
 
@@ -631,9 +739,9 @@ public class TextVars extends CFacade {
 	public void setAlign_y(byte align_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 574, align_y);
+			__io__block.writeByte(__io__address + 594, align_y);
 		} else {
-			__io__block.writeByte(__io__address + 570, align_y);
+			__io__block.writeByte(__io__address + 590, align_y);
 		}
 	}
 
@@ -646,12 +754,12 @@ public class TextVars extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			1
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 575, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 595, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 571, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 591, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -664,9 +772,9 @@ public class TextVars extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 575;
+			__dna__offset = 595;
 		} else {
-			__dna__offset = 571;
+			__dna__offset = 591;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

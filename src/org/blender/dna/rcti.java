@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> typedef struct vec3d { double x, y, z; } vec3d;</p><p> typedef struct vec4i { int x, y, z, w; } vec4i;</p><p> typedef struct vec4f { float x, y, z, w; } vec4f;</p><p> typedef struct vec4d { double x, y, z, w; } vec4d;integer rectangle. </p>
+ * <p> typedef struct vec3d { double x, y, z; } vec3d;</p><p> typedef struct vec4i { int x, y, z, w; } vec4i;</p><p> typedef struct vec4f { float x, y, z, w; } vec4f;</p><p> typedef struct vec4d { double x, y, z, w; } vec4d; integer rectangle. </p>
  */
 
 @CMetaData(size32=16, size64=16)

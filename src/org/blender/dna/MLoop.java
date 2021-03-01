@@ -60,6 +60,7 @@ public class MLoop extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
 	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -129,6 +130,7 @@ public class MLoop extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
 	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__e
 	 */
@@ -148,6 +150,7 @@ public class MLoop extends CFacade {
 	 * <h4>Java .Blend:</h4>
 	 * Associated edge (index in edge array).<h4>Blender Source Code:</h4>
 	 * <p> Edge index.</p><p><h2>Note</h2><p> The e here is because we want to move away from relying on edge hashes. </p> The e here is because we want to move away from relying on edge hashes. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__e
 	 */

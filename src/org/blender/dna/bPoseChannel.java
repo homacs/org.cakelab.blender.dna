@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Poses PoseChannel ------------------------------<mdash/><mdash/>  PoseChannel</p><p> A {@link bPoseChannel}  stores the results of Actions and transform information with respect to the rest-position of {@link bArmature}  bones. </p>
+ *  Poses PoseChannel ---------------------------------<mdash/>  PoseChannel</p><p> A {@link bPoseChannel}  stores the results of Actions and transform information with respect to the rest-position of {@link bArmature}  bones. </p>
  */
 
 @CMetaData(size32=808, size64=904)
@@ -29,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 333;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -614,7 +614,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time)Euler rotation. </p>
+	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2391,7 +2391,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time)Euler rotation. </p>
+	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * @see #__DNA__FIELD__eul
 	 */
 	
@@ -2412,7 +2412,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'eul'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time)Euler rotation. </p>
+	 * <p> Rotations - written in by actions or transform (but only one representation gets used at any time) Euler rotation. </p>
 	 * @see #__DNA__FIELD__eul
 	 */
 	

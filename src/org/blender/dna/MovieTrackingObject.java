@@ -27,7 +27,7 @@ public class MovieTrackingObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 588;
+	public static final int __DNA__SDNA_INDEX = 607;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -118,7 +118,7 @@ public class MovieTrackingObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale of object solution in camera space<h4>Blender Source Code:</h4>
-	 * <p> Scale of object solution in amera space. </p>
+	 * <p> Scale of object solution in camera space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -405,7 +405,7 @@ public class MovieTrackingObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale of object solution in camera space<h4>Blender Source Code:</h4>
-	 * <p> Scale of object solution in amera space. </p>
+	 * <p> Scale of object solution in camera space. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	
@@ -423,7 +423,7 @@ public class MovieTrackingObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Scale of object solution in camera space<h4>Blender Source Code:</h4>
-	 * <p> Scale of object solution in amera space. </p>
+	 * <p> Scale of object solution in camera space. </p>
 	 * @see #__DNA__FIELD__scale
 	 */
 	

@@ -28,7 +28,7 @@ public class CustomData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 466;
+	public static final int __DNA__SDNA_INDEX = 483;
 
 	/**
 	 * Field descriptor (offset) for struct member 'layers'.
@@ -70,31 +70,11 @@ public class CustomData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'typemap'</li>
-	 * <li>Signature: 'int[50]'</li>
-	 * <li>Actual Size (32bit/64bit): 200/200</li>
+	 * <li>Signature: 'int[51]'</li>
+	 * <li>Actual Size (32bit/64bit): 204/204</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__typemap = new long[]{4, 8};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * CustomData customdata = ...;
-	 * CPointer&lt;Object&gt; p = customdata.__dna__addressof(CustomData.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{204, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totlayer'.
@@ -266,7 +246,7 @@ public class CustomData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
 		int[] __dna__dimensions = new int[]{
-			50
+			51
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Integer>(__io__address + 8, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -297,46 +277,6 @@ public class CustomData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, typemap);
 		} else {
 			__io__generic__copy( getTypemap(), typemap);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
-		} else {
-			__dna__offset = 204;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

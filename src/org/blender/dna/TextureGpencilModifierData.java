@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=328, size64=344)
+@CMetaData(size32=336, size64=352)
 public class TextureGpencilModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class TextureGpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 515;
+	public static final int __DNA__SDNA_INDEX = 534;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -357,6 +357,49 @@ public class TextureGpencilModifierData extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__mode = new long[]{326, 342};
+
+	/**
+	 * Field descriptor (offset) for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dot texture rotation </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TextureGpencilModifierData texturegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = texturegpencilmodifierdata.__dna__addressof(TextureGpencilModifierData.__DNA__FIELD__alignment_rotation);
+	 * CPointer&lt;Float&gt; p_alignment_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'alignment_rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__alignment_rotation = new long[]{328, 344};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * TextureGpencilModifierData texturegpencilmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = texturegpencilmodifierdata.__dna__addressof(TextureGpencilModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{332, 348};
 
 	public TextureGpencilModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -901,6 +944,80 @@ public class TextureGpencilModifierData extends CFacade {
 			__io__block.writeShort(__io__address + 342, mode);
 		} else {
 			__io__block.writeShort(__io__address + 326, mode);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dot texture rotation </p>
+	 * @see #__DNA__FIELD__alignment_rotation
+	 */
+	
+	public float getAlignment_rotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 344);
+		} else {
+			return __io__block.readFloat(__io__address + 328);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Dot texture rotation </p>
+	 * @see #__DNA__FIELD__alignment_rotation
+	 */
+	
+	public void setAlignment_rotation(float alignment_rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 344, alignment_rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 328, alignment_rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 348, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 348;
+		} else {
+			__dna__offset = 332;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

@@ -15,10 +15,30 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Keyframes on F-Curves (allows code reuse of Bezier eval code) and Points on Bezier Curves/Paths are generally BezTriples.</p><p><h2>Note</h2><p>{@link BezTriple.tilt}  location in struct is abused by {@link Key}  system.</p> BezTriple.tilt location in struct is abused by Key system.
+ * 
  * <h2>Note</h2><p> vec in {@link BezTriple}  looks like this:<ul><li><p> vec[0][0] = x location of handle 1</p></li><li><p> vec[0][1] = y location of handle 1</p></li><li><p> vec[0][2] = z location of handle 1 (not used for {@link FCurve}  Points(2d))</p></li><li><p> vec[1][0] = x location of control point</p></li><li><p> vec[1][1] = y location of control point</p></li><li><p> vec[1][2] = z location of control point</p></li><li><p> vec[2][0] = x location of handle 2</p></li><li><p> vec[2][1] = y location of handle 2</p></li><li><p> vec[2][2] = z location of handle 2 (not used for {@link FCurve}  Points(2d)) </p></li></ul> 
- * vec[0][0] = x location of handle 1vec[0][1] = y location of handle 1vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))vec[1][0] = x location of control pointvec[1][1] = y location of control pointvec[1][2] = z location of control pointvec[2][0] = x location of handle 2vec[2][1] = y location of handle 2vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * vec[0][0] = x location of handle 1
+ * vec[0][1] = y location of handle 1
+ * vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))
+ * vec[1][0] = x location of control point
+ * vec[1][1] = y location of control point
+ * vec[1][2] = z location of control point
+ * vec[2][0] = x location of handle 2
+ * vec[2][1] = y location of handle 2
+ * vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * 
  * </p> vec in BezTriple looks like this:
- * vec[0][0] = x location of handle 1vec[0][1] = y location of handle 1vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))vec[1][0] = x location of control pointvec[1][1] = y location of control pointvec[1][2] = z location of control pointvec[2][0] = x location of handle 2vec[2][1] = y location of handle 2vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * vec[0][0] = x location of handle 1
+ * vec[0][1] = y location of handle 1
+ * vec[0][2] = z location of handle 1 (not used for FCurve Points(2d))
+ * vec[1][0] = x location of control point
+ * vec[1][1] = y location of control point
+ * vec[1][2] = z location of control point
+ * vec[2][0] = x location of handle 2
+ * vec[2][1] = y location of handle 2
+ * vec[2][2] = z location of handle 2 (not used for FCurve Points(2d)) 
+ * 
+ * 
  * 
  * </p>
  */
@@ -364,27 +384,27 @@ public class BezTriple extends CFacade {
 	public static final long[] __DNA__FIELD__period = new long[]{64, 64};
 
 	/**
-	 * Field descriptor (offset) for struct member 'f5'.
+	 * Field descriptor (offset) for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
+	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BezTriple beztriple = ...;
-	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__f5);
-	 * CPointer&lt;Byte&gt; p_f5 = p.cast(new Class[]{Byte.class});
+	 * CPointer&lt;Object&gt; p = beztriple.__dna__addressof(BezTriple.__DNA__FIELD__auto_handle_type);
+	 * CPointer&lt;Byte&gt; p_auto_handle_type = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'f5'</li>
+	 * <li>Field: 'auto_handle_type'</li>
 	 * <li>Signature: 'char'</li>
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__f5 = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__auto_handle_type = new long[]{68, 68};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -902,14 +922,14 @@ public class BezTriple extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'f5'.
+	 * Get method for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
-	 * @see #__DNA__FIELD__f5
+	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
+	 * @see #__DNA__FIELD__auto_handle_type
 	 */
 	
-	public byte getF5() throws IOException
+	public byte getAuto_handle_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readByte(__io__address + 68);
@@ -919,19 +939,19 @@ public class BezTriple extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'f5'.
+	 * Set method for struct member 'auto_handle_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> F5: used for auto handle to distinguish between normal handle and exception (extrema). </p>
-	 * @see #__DNA__FIELD__f5
+	 * <p> Used during auto handle calculation to mark special cases (local extremes). </p>
+	 * @see #__DNA__FIELD__auto_handle_type
 	 */
 	
-	public void setF5(byte f5) throws IOException
+	public void setAuto_handle_type(byte auto_handle_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 68, f5);
+			__io__block.writeByte(__io__address + 68, auto_handle_type);
 		} else {
-			__io__block.writeByte(__io__address + 68, f5);
+			__io__block.writeByte(__io__address + 68, auto_handle_type);
 		}
 	}
 

@@ -27,7 +27,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 121;
+	public static final int __DNA__SDNA_INDEX = 115;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -51,6 +51,9 @@ public class ParticleSystemModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'psys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -261,6 +264,9 @@ public class ParticleSystemModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'psys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	
@@ -278,6 +284,9 @@ public class ParticleSystemModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'psys'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code><code></code> . </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=36, size64=40)
+@CMetaData(size32=44, size64=56)
 public class NodeCryptomatte extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeCryptomatte extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 446;
+	public static final int __DNA__SDNA_INDEX = 452;
 
 	/**
 	 * Field descriptor (offset) for struct member 'add'.
@@ -71,6 +71,11 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -90,6 +95,29 @@ public class NodeCryptomatte extends CFacade {
 	public static final long[] __DNA__FIELD__matte_id = new long[]{24, 24};
 
 	/**
+	 * Field descriptor (offset) for struct member 'entries'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeCryptomatte nodecryptomatte = ...;
+	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__entries);
+	 * CPointer&lt;ListBase&gt; p_entries = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'entries'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__entries = new long[]{28, 32};
+
+	/**
 	 * Field descriptor (offset) for struct member 'num_inputs'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -107,7 +135,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_inputs = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__num_inputs = new long[]{36, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -127,7 +155,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{32, 36};
+	public static final long[] __DNA__FIELD___pad = new long[]{40, 52};
 
 	public NodeCryptomatte(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -219,6 +247,11 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Get method for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__matte_id
 	 */
 	
@@ -236,6 +269,11 @@ public class NodeCryptomatte extends CFacade {
 
 	/**
 	 * Set method for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>
+	 * @deprecated
+	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__matte_id
 	 */
 	
@@ -250,6 +288,48 @@ public class NodeCryptomatte extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'entries'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
+	 * @see #__DNA__FIELD__entries
+	 */
+	
+	public ListBase getEntries() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'entries'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code> Contains {@link CryptomatteEntry}</code> . </p>
+	 * @see #__DNA__FIELD__entries
+	 */
+	
+	public void setEntries(ListBase entries) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 32;
+		} else {
+			__dna__offset = 28;
+		}
+		if (__io__equals(entries, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, entries)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, entries);
+		} else {
+			__io__generic__copy( getEntries(), entries);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'num_inputs'.
 	 * @see #__DNA__FIELD__num_inputs
 	 */
@@ -257,9 +337,9 @@ public class NodeCryptomatte extends CFacade {
 	public int getNum_inputs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 48);
 		} else {
-			return __io__block.readInt(__io__address + 28);
+			return __io__block.readInt(__io__address + 36);
 		}
 	}
 
@@ -271,9 +351,9 @@ public class NodeCryptomatte extends CFacade {
 	public void setNum_inputs(int num_inputs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, num_inputs);
+			__io__block.writeInt(__io__address + 48, num_inputs);
 		} else {
-			__io__block.writeInt(__io__address + 28, num_inputs);
+			__io__block.writeInt(__io__address + 36, num_inputs);
 		}
 	}
 
@@ -289,9 +369,9 @@ public class NodeCryptomatte extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 36, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -304,9 +384,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 36;
+			__dna__offset = 52;
 		} else {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

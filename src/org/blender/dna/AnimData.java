@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p>{@link AnimData}  -------------------------------<mdash/><mdash/>  Animation data for some {@link ID}  block (adt)</p><p> This block of data is used to provide all of the necessary animation data for a data-block. Currently, this data will not be reusable, as there shouldn't be any need to do so.</p><p> This information should be made available for most if not all ID-blocks, which should enable all of its settings to be animatable locally. Animation from 'higher-up' ID-AnimData blocks may override local settings.</p><p> This data-block should be placed immediately after the {@link ID}  block where it is used, so that the code which retrieves this data can do so in an easier manner. See blenkernel/intern/anim_sys.c for details. </p>
+ * <p>{@link AnimData}  ----------------------------------<mdash/>  Animation data for some {@link ID}  block (adt)</p><p> This block of data is used to provide all of the necessary animation data for a data-block. Currently, this data will not be reusable, as there shouldn't be any need to do so.</p><p> This information should be made available for most if not all ID-blocks, which should enable all of its settings to be animatable locally. Animation from 'higher-up' ID-AnimData blocks may override local settings.</p><p> This data-block should be placed immediately after the {@link ID}  block where it is used, so that the code which retrieves this data can do so in an easier manner. See blenkernel/intern/anim_sys.c for details. </p>
  */
 
 @CMetaData(size32=60, size64=104)
@@ -28,7 +28,7 @@ public class AnimData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 557;
+	public static final int __DNA__SDNA_INDEX = 576;
 
 	/**
 	 * Field descriptor (offset) for struct member 'action'.
@@ -152,7 +152,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -540,7 +540,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
 	
@@ -558,7 +558,7 @@ public class AnimData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    The Drivers/Expressions for this data-block<h4>Blender Source Code:</h4>
-	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation dataStandard user-created Drivers/Expressions (used as part of a rig). </p>
+	 * <p> 'drivers' for this ID-block's settings - FCurves, but are completely separate from those for animation data Standard user-created Drivers/Expressions (used as part of a rig). </p>
 	 * @see #__DNA__FIELD__drivers
 	 */
 	

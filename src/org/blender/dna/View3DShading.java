@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D Viewport Shading settings. </p>
  */
 
-@CMetaData(size32=872, size64=880)
+@CMetaData(size32=936, size64=944)
 public class View3DShading extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3DShading extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 217;
+	public static final int __DNA__SDNA_INDEX = 213;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -654,6 +654,29 @@ public class View3DShading extends CFacade {
 	public static final long[] __DNA__FIELD__render_pass = new long[]{860, 860};
 
 	/**
+	 * Field descriptor (offset) for struct member 'aov_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the active Shader AOV
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * View3DShading view3dshading = ...;
+	 * CPointer&lt;Object&gt; p = view3dshading.__dna__addressof(View3DShading.__DNA__FIELD__aov_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_aov_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'aov_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__aov_name = new long[]{864, 864};
+
+	/**
 	 * Field descriptor (offset) for struct member 'prop'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -671,7 +694,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__prop = new long[]{864, 864};
+	public static final long[] __DNA__FIELD__prop = new long[]{928, 928};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -691,7 +714,7 @@ public class View3DShading extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{868, 872};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{932, 936};
 
 	public View3DShading(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1696,6 +1719,52 @@ public class View3DShading extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'aov_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the active Shader AOV
+	 * @see #__DNA__FIELD__aov_name
+	 */
+	
+	public CArrayFacade<Byte> getAov_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 864, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'aov_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Name of the active Shader AOV
+	 * @see #__DNA__FIELD__aov_name
+	 */
+	
+	public void setAov_name(CArrayFacade<Byte> aov_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 864;
+		} else {
+			__dna__offset = 864;
+		}
+		if (__io__equals(aov_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, aov_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, aov_name);
+		} else {
+			__io__generic__copy( getAov_name(), aov_name);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'prop'.
 	 * @see #__DNA__FIELD__prop
 	 */
@@ -1704,9 +1773,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 864);
+			__dna__targetAddress = __io__block.readLong(__io__address + 928);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 864);
+			__dna__targetAddress = __io__block.readLong(__io__address + 928);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1721,9 +1790,9 @@ public class View3DShading extends CFacade {
 	{
 		long __address = ((prop == null) ? 0 : prop.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 864, __address);
+			__io__block.writeLong(__io__address + 928, __address);
 		} else {
-			__io__block.writeLong(__io__address + 864, __address);
+			__io__block.writeLong(__io__address + 928, __address);
 		}
 	}
 
@@ -1736,9 +1805,9 @@ public class View3DShading extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 872);
+			__dna__targetAddress = __io__block.readLong(__io__address + 936);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 868);
+			__dna__targetAddress = __io__block.readLong(__io__address + 932);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1753,9 +1822,9 @@ public class View3DShading extends CFacade {
 	{
 		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 872, __address);
+			__io__block.writeLong(__io__address + 936, __address);
 		} else {
-			__io__block.writeLong(__io__address + 868, __address);
+			__io__block.writeLong(__io__address + 932, __address);
 		}
 	}
 

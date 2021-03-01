@@ -15,6 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Each control point that makes up the profile. <h2>Note</h2><p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. </p> The flags use the same enum as Bezier curves, but they aren't guaranteed to have identical functionality, and all types aren't implemented. 
+ * 
  * </p>
  */
 
@@ -29,7 +30,7 @@ public class CurveProfilePoint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 671;
+	public static final int __DNA__SDNA_INDEX = 691;
 
 	/**
 	 * Field descriptor (offset) for struct member 'x'.
@@ -145,6 +146,7 @@ public class CurveProfilePoint extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -398,6 +400,7 @@ public class CurveProfilePoint extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__h1_loc
 	 */
@@ -420,6 +423,7 @@ public class CurveProfilePoint extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Handle locations, keep together. <h2>Note</h2><p> For now the two handle types are set to the same type in RNA. </p> For now the two handle types are set to the same type in RNA. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__h1_loc
 	 */

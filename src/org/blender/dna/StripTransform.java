@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=8, size64=8)
+@CMetaData(size32=20, size64=20)
 public class StripTransform extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class StripTransform extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 288;
+	public static final int __DNA__SDNA_INDEX = 291;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xofs'.
@@ -67,6 +67,66 @@ public class StripTransform extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__yofs = new long[]{4, 4};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale_x'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripTransform striptransform = ...;
+	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__scale_x);
+	 * CPointer&lt;Float&gt; p_scale_x = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_x'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_x = new long[]{8, 8};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale_y'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripTransform striptransform = ...;
+	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__scale_y);
+	 * CPointer&lt;Float&gt; p_scale_y = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale_y'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale_y = new long[]{12, 12};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * StripTransform striptransform = ...;
+	 * CPointer&lt;Object&gt; p = striptransform.__dna__addressof(StripTransform.__DNA__FIELD__rotation);
+	 * CPointer&lt;Float&gt; p_rotation = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{16, 16};
 
 	public StripTransform(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -129,6 +189,90 @@ public class StripTransform extends CFacade {
 			__io__block.writeInt(__io__address + 4, yofs);
 		} else {
 			__io__block.writeInt(__io__address + 4, yofs);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale_x'.
+	 * @see #__DNA__FIELD__scale_x
+	 */
+	
+	public float getScale_x() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 8);
+		} else {
+			return __io__block.readFloat(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_x'.
+	 * @see #__DNA__FIELD__scale_x
+	 */
+	
+	public void setScale_x(float scale_x) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 8, scale_x);
+		} else {
+			__io__block.writeFloat(__io__address + 8, scale_x);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale_y'.
+	 * @see #__DNA__FIELD__scale_y
+	 */
+	
+	public float getScale_y() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 12);
+		} else {
+			return __io__block.readFloat(__io__address + 12);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale_y'.
+	 * @see #__DNA__FIELD__scale_y
+	 */
+	
+	public void setScale_y(float scale_y) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 12, scale_y);
+		} else {
+			__io__block.writeFloat(__io__address + 12, scale_y);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public float getRotation() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 16);
+		} else {
+			return __io__block.readFloat(__io__address + 16);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(float rotation) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 16, rotation);
+		} else {
+			__io__block.writeFloat(__io__address + 16, rotation);
 		}
 	}
 

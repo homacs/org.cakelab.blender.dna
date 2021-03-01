@@ -28,7 +28,7 @@ public class wmWindow extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 530;
+	public static final int __DNA__SDNA_INDEX = 549;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -229,28 +229,24 @@ public class wmWindow extends CFacade {
 	public static final long[] __DNA__FIELD__workspace_hook = new long[]{92, 120};
 
 	/**
-	 * Field descriptor (offset) for struct member 'global_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
-	 * </p>
+	 * Field descriptor (offset) for struct member 'global_area_map'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * wmWindow wmwindow = ...;
-	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__global_areas);
-	 * CPointer&lt;ScrAreaMap&gt; p_global_areas = p.cast(new Class[]{ScrAreaMap.class});
+	 * CPointer&lt;Object&gt; p = wmwindow.__dna__addressof(wmWindow.__DNA__FIELD__global_area_map);
+	 * CPointer&lt;ScrAreaMap&gt; p_global_area_map = p.cast(new Class[]{ScrAreaMap.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'global_areas'</li>
+	 * <li>Field: 'global_area_map'</li>
 	 * <li>Signature: 'ScrAreaMap'</li>
 	 * <li>Actual Size (32bit/64bit): 24/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__global_areas = new long[]{96, 128};
+	public static final long[] __DNA__FIELD__global_area_map = new long[]{96, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'screen'.
@@ -1201,15 +1197,11 @@ public class wmWindow extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'global_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
-	 * </p>
-	 * @see #__DNA__FIELD__global_areas
+	 * Get method for struct member 'global_area_map'.
+	 * @see #__DNA__FIELD__global_area_map
 	 */
 	
-	public ScrAreaMap getGlobal_areas() throws IOException
+	public ScrAreaMap getGlobal_area_map() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return new ScrAreaMap(__io__address + 128, __io__block, __io__blockTable);
@@ -1219,15 +1211,11 @@ public class wmWindow extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'global_areas'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Global areas aren't part of the screen, but part of the window directly. <h2>Note</h2><p> Code assumes global areas with fixed height, fixed width not supported yet </p> Code assumes global areas with fixed height, fixed width not supported yet 
-	 * </p>
-	 * @see #__DNA__FIELD__global_areas
+	 * Set method for struct member 'global_area_map'.
+	 * @see #__DNA__FIELD__global_area_map
 	 */
 	
-	public void setGlobal_areas(ScrAreaMap global_areas) throws IOException
+	public void setGlobal_area_map(ScrAreaMap global_area_map) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -1235,12 +1223,12 @@ public class wmWindow extends CFacade {
 		} else {
 			__dna__offset = 96;
 		}
-		if (__io__equals(global_areas, __io__address + __dna__offset)) {
+		if (__io__equals(global_area_map, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, global_areas)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, global_areas);
+		} else if (__io__same__encoding(this, global_area_map)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, global_area_map);
 		} else {
-			__io__generic__copy( getGlobal_areas(), global_areas);
+			__io__generic__copy( getGlobal_area_map(), global_area_map);
 		}
 	}
 

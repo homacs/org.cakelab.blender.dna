@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=140, size64=176)
+@CMetaData(size32=148, size64=192)
 public class PaintCurve extends CFacade {
 
 	/**
@@ -26,7 +26,7 @@ public class PaintCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 463;
+	public static final int __DNA__SDNA_INDEX = 480;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -43,7 +43,7 @@ public class PaintCurve extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -69,7 +69,7 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__points = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__points = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_points'.
@@ -89,7 +89,7 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot_points = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__tot_points = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'add_index'.
@@ -112,7 +112,7 @@ public class PaintCurve extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__add_index = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__add_index = new long[]{144, 188};
 
 	public PaintCurve(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -170,9 +170,9 @@ public class PaintCurve extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PaintCurvePoint.class};
 		return new CPointer<PaintCurvePoint>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PaintCurvePoint.__DNA__SDNA_INDEX), __io__blockTable);
@@ -190,9 +190,9 @@ public class PaintCurve extends CFacade {
 	{
 		long __address = ((points == null) ? 0 : points.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -204,9 +204,9 @@ public class PaintCurve extends CFacade {
 	public int getTot_points() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -218,9 +218,9 @@ public class PaintCurve extends CFacade {
 	public void setTot_points(int tot_points) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, tot_points);
+			__io__block.writeInt(__io__address + 184, tot_points);
 		} else {
-			__io__block.writeInt(__io__address + 132, tot_points);
+			__io__block.writeInt(__io__address + 140, tot_points);
 		}
 	}
 
@@ -235,9 +235,9 @@ public class PaintCurve extends CFacade {
 	public int getAdd_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 144);
 		}
 	}
 
@@ -252,9 +252,9 @@ public class PaintCurve extends CFacade {
 	public void setAdd_index(int add_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 172, add_index);
+			__io__block.writeInt(__io__address + 188, add_index);
 		} else {
-			__io__block.writeInt(__io__address + 136, add_index);
+			__io__block.writeInt(__io__address + 144, add_index);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=264, size64=328)
+@CMetaData(size32=272, size64=344)
 public class Material extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class Material extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -90,7 +90,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__flag = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -110,7 +110,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{134, 170};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{142, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'r'.
@@ -133,7 +133,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__r = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__r = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'g'.
@@ -153,7 +153,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__g = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__g = new long[]{148, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'b'.
@@ -173,7 +173,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__b = new long[]{144, 180};
+	public static final long[] __DNA__FIELD__b = new long[]{152, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'a'.
@@ -193,7 +193,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__a = new long[]{148, 184};
+	public static final long[] __DNA__FIELD__a = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'specr'.
@@ -213,7 +213,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__specr = new long[]{152, 188};
+	public static final long[] __DNA__FIELD__specr = new long[]{160, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'specg'.
@@ -233,7 +233,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__specg = new long[]{156, 192};
+	public static final long[] __DNA__FIELD__specg = new long[]{164, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'specb'.
@@ -253,7 +253,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__specb = new long[]{160, 196};
+	public static final long[] __DNA__FIELD__specb = new long[]{168, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha'.
@@ -278,7 +278,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha = new long[]{164, 200};
+	public static final long[] __DNA__FIELD__alpha = new long[]{172, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ray_mirror'.
@@ -303,7 +303,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ray_mirror = new long[]{168, 204};
+	public static final long[] __DNA__FIELD__ray_mirror = new long[]{176, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'spec'.
@@ -323,7 +323,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spec = new long[]{172, 208};
+	public static final long[] __DNA__FIELD__spec = new long[]{180, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gloss_mir'.
@@ -348,7 +348,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gloss_mir = new long[]{176, 212};
+	public static final long[] __DNA__FIELD__gloss_mir = new long[]{184, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roughness'.
@@ -371,7 +371,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roughness = new long[]{180, 216};
+	public static final long[] __DNA__FIELD__roughness = new long[]{188, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'metallic'.
@@ -394,7 +394,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__metallic = new long[]{184, 220};
+	public static final long[] __DNA__FIELD__metallic = new long[]{192, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_nodes'.
@@ -418,7 +418,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_nodes = new long[]{188, 224};
+	public static final long[] __DNA__FIELD__use_nodes = new long[]{196, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pr_type'.
@@ -441,7 +441,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pr_type = new long[]{189, 225};
+	public static final long[] __DNA__FIELD__pr_type = new long[]{197, 241};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pr_texture'.
@@ -461,7 +461,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pr_texture = new long[]{190, 226};
+	public static final long[] __DNA__FIELD__pr_texture = new long[]{198, 242};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pr_flag'.
@@ -481,7 +481,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pr_flag = new long[]{192, 228};
+	public static final long[] __DNA__FIELD__pr_flag = new long[]{200, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'index'.
@@ -504,7 +504,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__index = new long[]{194, 230};
+	public static final long[] __DNA__FIELD__index = new long[]{202, 246};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -524,7 +524,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{196, 232};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{204, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -549,7 +549,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{200, 240};
+	public static final long[] __DNA__FIELD__ipo = new long[]{208, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -572,7 +572,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{204, 248};
+	public static final long[] __DNA__FIELD__preview = new long[]{212, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_col'.
@@ -595,7 +595,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__line_col = new long[]{208, 256};
+	public static final long[] __DNA__FIELD__line_col = new long[]{216, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'line_priority'.
@@ -618,7 +618,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__line_priority = new long[]{224, 272};
+	public static final long[] __DNA__FIELD__line_priority = new long[]{232, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vcol_alpha'.
@@ -638,7 +638,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vcol_alpha = new long[]{226, 274};
+	public static final long[] __DNA__FIELD__vcol_alpha = new long[]{234, 290};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_active_slot'.
@@ -662,7 +662,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_active_slot = new long[]{228, 276};
+	public static final long[] __DNA__FIELD__paint_active_slot = new long[]{236, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'paint_clone_slot'.
@@ -685,7 +685,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__paint_clone_slot = new long[]{230, 278};
+	public static final long[] __DNA__FIELD__paint_clone_slot = new long[]{238, 294};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tot_slots'.
@@ -705,7 +705,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tot_slots = new long[]{232, 280};
+	public static final long[] __DNA__FIELD__tot_slots = new long[]{240, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -725,7 +725,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{234, 282};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{242, 298};
 
 	/**
 	 * Field descriptor (offset) for struct member 'alpha_threshold'.
@@ -749,7 +749,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__alpha_threshold = new long[]{236, 284};
+	public static final long[] __DNA__FIELD__alpha_threshold = new long[]{244, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'refract_depth'.
@@ -769,7 +769,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__refract_depth = new long[]{240, 288};
+	public static final long[] __DNA__FIELD__refract_depth = new long[]{248, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_method'.
@@ -792,7 +792,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend_method = new long[]{244, 292};
+	public static final long[] __DNA__FIELD__blend_method = new long[]{252, 308};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_shadow'.
@@ -812,7 +812,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend_shadow = new long[]{245, 293};
+	public static final long[] __DNA__FIELD__blend_shadow = new long[]{253, 309};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blend_flag'.
@@ -832,7 +832,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blend_flag = new long[]{246, 294};
+	public static final long[] __DNA__FIELD__blend_flag = new long[]{254, 310};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -852,7 +852,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{247, 295};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{255, 311};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texpaintslot'.
@@ -875,7 +875,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texpaintslot = new long[]{248, 296};
+	public static final long[] __DNA__FIELD__texpaintslot = new long[]{256, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpumaterial'.
@@ -898,7 +898,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpumaterial = new long[]{252, 304};
+	public static final long[] __DNA__FIELD__gpumaterial = new long[]{260, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gp_style'.
@@ -921,7 +921,7 @@ public class Material extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gp_style = new long[]{260, 320};
+	public static final long[] __DNA__FIELD__gp_style = new long[]{268, 336};
 
 	public Material(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -979,9 +979,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -999,9 +999,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -1013,9 +1013,9 @@ public class Material extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readShort(__io__address + 132);
+			return __io__block.readShort(__io__address + 140);
 		}
 	}
 
@@ -1027,9 +1027,9 @@ public class Material extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 168, flag);
+			__io__block.writeShort(__io__address + 184, flag);
 		} else {
-			__io__block.writeShort(__io__address + 132, flag);
+			__io__block.writeShort(__io__address + 140, flag);
 		}
 	}
 
@@ -1045,9 +1045,9 @@ public class Material extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 142, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1060,9 +1060,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 170;
+			__dna__offset = 186;
 		} else {
-			__dna__offset = 134;
+			__dna__offset = 142;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1084,9 +1084,9 @@ public class Material extends CFacade {
 	public float getR() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -1101,9 +1101,9 @@ public class Material extends CFacade {
 	public void setR(float r) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, r);
+			__io__block.writeFloat(__io__address + 188, r);
 		} else {
-			__io__block.writeFloat(__io__address + 136, r);
+			__io__block.writeFloat(__io__address + 144, r);
 		}
 	}
 
@@ -1115,9 +1115,9 @@ public class Material extends CFacade {
 	public float getG() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -1129,9 +1129,9 @@ public class Material extends CFacade {
 	public void setG(float g) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, g);
+			__io__block.writeFloat(__io__address + 192, g);
 		} else {
-			__io__block.writeFloat(__io__address + 140, g);
+			__io__block.writeFloat(__io__address + 148, g);
 		}
 	}
 
@@ -1143,9 +1143,9 @@ public class Material extends CFacade {
 	public float getB() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -1157,9 +1157,9 @@ public class Material extends CFacade {
 	public void setB(float b) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, b);
+			__io__block.writeFloat(__io__address + 196, b);
 		} else {
-			__io__block.writeFloat(__io__address + 144, b);
+			__io__block.writeFloat(__io__address + 152, b);
 		}
 	}
 
@@ -1171,9 +1171,9 @@ public class Material extends CFacade {
 	public float getA() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -1185,9 +1185,9 @@ public class Material extends CFacade {
 	public void setA(float a) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, a);
+			__io__block.writeFloat(__io__address + 200, a);
 		} else {
-			__io__block.writeFloat(__io__address + 148, a);
+			__io__block.writeFloat(__io__address + 156, a);
 		}
 	}
 
@@ -1199,9 +1199,9 @@ public class Material extends CFacade {
 	public float getSpecr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -1213,9 +1213,9 @@ public class Material extends CFacade {
 	public void setSpecr(float specr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, specr);
+			__io__block.writeFloat(__io__address + 204, specr);
 		} else {
-			__io__block.writeFloat(__io__address + 152, specr);
+			__io__block.writeFloat(__io__address + 160, specr);
 		}
 	}
 
@@ -1227,9 +1227,9 @@ public class Material extends CFacade {
 	public float getSpecg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -1241,9 +1241,9 @@ public class Material extends CFacade {
 	public void setSpecg(float specg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, specg);
+			__io__block.writeFloat(__io__address + 208, specg);
 		} else {
-			__io__block.writeFloat(__io__address + 156, specg);
+			__io__block.writeFloat(__io__address + 164, specg);
 		}
 	}
 
@@ -1255,9 +1255,9 @@ public class Material extends CFacade {
 	public float getSpecb() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -1269,9 +1269,9 @@ public class Material extends CFacade {
 	public void setSpecb(float specb) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, specb);
+			__io__block.writeFloat(__io__address + 212, specb);
 		} else {
-			__io__block.writeFloat(__io__address + 160, specb);
+			__io__block.writeFloat(__io__address + 168, specb);
 		}
 	}
 
@@ -1288,9 +1288,9 @@ public class Material extends CFacade {
 	public float getAlpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -1307,9 +1307,9 @@ public class Material extends CFacade {
 	public void setAlpha(float alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, alpha);
+			__io__block.writeFloat(__io__address + 216, alpha);
 		} else {
-			__io__block.writeFloat(__io__address + 164, alpha);
+			__io__block.writeFloat(__io__address + 172, alpha);
 		}
 	}
 
@@ -1326,9 +1326,9 @@ public class Material extends CFacade {
 	public float getRay_mirror() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -1345,9 +1345,9 @@ public class Material extends CFacade {
 	public void setRay_mirror(float ray_mirror) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, ray_mirror);
+			__io__block.writeFloat(__io__address + 220, ray_mirror);
 		} else {
-			__io__block.writeFloat(__io__address + 168, ray_mirror);
+			__io__block.writeFloat(__io__address + 176, ray_mirror);
 		}
 	}
 
@@ -1359,9 +1359,9 @@ public class Material extends CFacade {
 	public float getSpec() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1373,9 +1373,9 @@ public class Material extends CFacade {
 	public void setSpec(float spec) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, spec);
+			__io__block.writeFloat(__io__address + 224, spec);
 		} else {
-			__io__block.writeFloat(__io__address + 172, spec);
+			__io__block.writeFloat(__io__address + 180, spec);
 		}
 	}
 
@@ -1392,9 +1392,9 @@ public class Material extends CFacade {
 	public float getGloss_mir() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -1411,9 +1411,9 @@ public class Material extends CFacade {
 	public void setGloss_mir(float gloss_mir) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, gloss_mir);
+			__io__block.writeFloat(__io__address + 228, gloss_mir);
 		} else {
-			__io__block.writeFloat(__io__address + 176, gloss_mir);
+			__io__block.writeFloat(__io__address + 184, gloss_mir);
 		}
 	}
 
@@ -1428,9 +1428,9 @@ public class Material extends CFacade {
 	public float getRoughness() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 232);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -1445,9 +1445,9 @@ public class Material extends CFacade {
 	public void setRoughness(float roughness) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 216, roughness);
+			__io__block.writeFloat(__io__address + 232, roughness);
 		} else {
-			__io__block.writeFloat(__io__address + 180, roughness);
+			__io__block.writeFloat(__io__address + 188, roughness);
 		}
 	}
 
@@ -1462,9 +1462,9 @@ public class Material extends CFacade {
 	public float getMetallic() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 236);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -1479,9 +1479,9 @@ public class Material extends CFacade {
 	public void setMetallic(float metallic) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, metallic);
+			__io__block.writeFloat(__io__address + 236, metallic);
 		} else {
-			__io__block.writeFloat(__io__address + 184, metallic);
+			__io__block.writeFloat(__io__address + 192, metallic);
 		}
 	}
 
@@ -1497,9 +1497,9 @@ public class Material extends CFacade {
 	public byte getUse_nodes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 224);
+			return __io__block.readByte(__io__address + 240);
 		} else {
-			return __io__block.readByte(__io__address + 188);
+			return __io__block.readByte(__io__address + 196);
 		}
 	}
 
@@ -1515,9 +1515,9 @@ public class Material extends CFacade {
 	public void setUse_nodes(byte use_nodes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 224, use_nodes);
+			__io__block.writeByte(__io__address + 240, use_nodes);
 		} else {
-			__io__block.writeByte(__io__address + 188, use_nodes);
+			__io__block.writeByte(__io__address + 196, use_nodes);
 		}
 	}
 
@@ -1532,9 +1532,9 @@ public class Material extends CFacade {
 	public byte getPr_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 225);
+			return __io__block.readByte(__io__address + 241);
 		} else {
-			return __io__block.readByte(__io__address + 189);
+			return __io__block.readByte(__io__address + 197);
 		}
 	}
 
@@ -1549,9 +1549,9 @@ public class Material extends CFacade {
 	public void setPr_type(byte pr_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 225, pr_type);
+			__io__block.writeByte(__io__address + 241, pr_type);
 		} else {
-			__io__block.writeByte(__io__address + 189, pr_type);
+			__io__block.writeByte(__io__address + 197, pr_type);
 		}
 	}
 
@@ -1563,9 +1563,9 @@ public class Material extends CFacade {
 	public short getPr_texture() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 242);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 198);
 		}
 	}
 
@@ -1577,9 +1577,9 @@ public class Material extends CFacade {
 	public void setPr_texture(short pr_texture) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 226, pr_texture);
+			__io__block.writeShort(__io__address + 242, pr_texture);
 		} else {
-			__io__block.writeShort(__io__address + 190, pr_texture);
+			__io__block.writeShort(__io__address + 198, pr_texture);
 		}
 	}
 
@@ -1591,9 +1591,9 @@ public class Material extends CFacade {
 	public short getPr_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 244);
 		} else {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 200);
 		}
 	}
 
@@ -1605,9 +1605,9 @@ public class Material extends CFacade {
 	public void setPr_flag(short pr_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 228, pr_flag);
+			__io__block.writeShort(__io__address + 244, pr_flag);
 		} else {
-			__io__block.writeShort(__io__address + 192, pr_flag);
+			__io__block.writeShort(__io__address + 200, pr_flag);
 		}
 	}
 
@@ -1622,9 +1622,9 @@ public class Material extends CFacade {
 	public short getIndex() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 246);
 		} else {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 202);
 		}
 	}
 
@@ -1639,9 +1639,9 @@ public class Material extends CFacade {
 	public void setIndex(short index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 230, index);
+			__io__block.writeShort(__io__address + 246, index);
 		} else {
-			__io__block.writeShort(__io__address + 194, index);
+			__io__block.writeShort(__io__address + 202, index);
 		}
 	}
 
@@ -1654,9 +1654,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1671,9 +1671,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -1691,9 +1691,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1713,9 +1713,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -1731,9 +1731,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 204);
+			__dna__targetAddress = __io__block.readLong(__io__address + 212);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1751,9 +1751,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 204, __address);
+			__io__block.writeLong(__io__address + 212, __address);
 		}
 	}
 
@@ -1772,9 +1772,9 @@ public class Material extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1790,9 +1790,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		}
 		if (__io__equals(line_col, __io__address + __dna__offset)) {
 			return;
@@ -1814,9 +1814,9 @@ public class Material extends CFacade {
 	public short getLine_priority() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 272);
+			return __io__block.readShort(__io__address + 288);
 		} else {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -1831,9 +1831,9 @@ public class Material extends CFacade {
 	public void setLine_priority(short line_priority) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 272, line_priority);
+			__io__block.writeShort(__io__address + 288, line_priority);
 		} else {
-			__io__block.writeShort(__io__address + 224, line_priority);
+			__io__block.writeShort(__io__address + 232, line_priority);
 		}
 	}
 
@@ -1845,9 +1845,9 @@ public class Material extends CFacade {
 	public short getVcol_alpha() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 274);
+			return __io__block.readShort(__io__address + 290);
 		} else {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 234);
 		}
 	}
 
@@ -1859,9 +1859,9 @@ public class Material extends CFacade {
 	public void setVcol_alpha(short vcol_alpha) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 274, vcol_alpha);
+			__io__block.writeShort(__io__address + 290, vcol_alpha);
 		} else {
-			__io__block.writeShort(__io__address + 226, vcol_alpha);
+			__io__block.writeShort(__io__address + 234, vcol_alpha);
 		}
 	}
 
@@ -1877,9 +1877,9 @@ public class Material extends CFacade {
 	public short getPaint_active_slot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 276);
+			return __io__block.readShort(__io__address + 292);
 		} else {
-			return __io__block.readShort(__io__address + 228);
+			return __io__block.readShort(__io__address + 236);
 		}
 	}
 
@@ -1895,9 +1895,9 @@ public class Material extends CFacade {
 	public void setPaint_active_slot(short paint_active_slot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 276, paint_active_slot);
+			__io__block.writeShort(__io__address + 292, paint_active_slot);
 		} else {
-			__io__block.writeShort(__io__address + 228, paint_active_slot);
+			__io__block.writeShort(__io__address + 236, paint_active_slot);
 		}
 	}
 
@@ -1912,9 +1912,9 @@ public class Material extends CFacade {
 	public short getPaint_clone_slot() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 278);
+			return __io__block.readShort(__io__address + 294);
 		} else {
-			return __io__block.readShort(__io__address + 230);
+			return __io__block.readShort(__io__address + 238);
 		}
 	}
 
@@ -1929,9 +1929,9 @@ public class Material extends CFacade {
 	public void setPaint_clone_slot(short paint_clone_slot) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 278, paint_clone_slot);
+			__io__block.writeShort(__io__address + 294, paint_clone_slot);
 		} else {
-			__io__block.writeShort(__io__address + 230, paint_clone_slot);
+			__io__block.writeShort(__io__address + 238, paint_clone_slot);
 		}
 	}
 
@@ -1943,9 +1943,9 @@ public class Material extends CFacade {
 	public short getTot_slots() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 280);
+			return __io__block.readShort(__io__address + 296);
 		} else {
-			return __io__block.readShort(__io__address + 232);
+			return __io__block.readShort(__io__address + 240);
 		}
 	}
 
@@ -1957,9 +1957,9 @@ public class Material extends CFacade {
 	public void setTot_slots(short tot_slots) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 280, tot_slots);
+			__io__block.writeShort(__io__address + 296, tot_slots);
 		} else {
-			__io__block.writeShort(__io__address + 232, tot_slots);
+			__io__block.writeShort(__io__address + 240, tot_slots);
 		}
 	}
 
@@ -1975,9 +1975,9 @@ public class Material extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 282, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 234, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 242, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1990,9 +1990,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 282;
+			__dna__offset = 298;
 		} else {
-			__dna__offset = 234;
+			__dna__offset = 242;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -2015,9 +2015,9 @@ public class Material extends CFacade {
 	public float getAlpha_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -2033,9 +2033,9 @@ public class Material extends CFacade {
 	public void setAlpha_threshold(float alpha_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, alpha_threshold);
+			__io__block.writeFloat(__io__address + 300, alpha_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 236, alpha_threshold);
+			__io__block.writeFloat(__io__address + 244, alpha_threshold);
 		}
 	}
 
@@ -2047,9 +2047,9 @@ public class Material extends CFacade {
 	public float getRefract_depth() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 304);
 		} else {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 248);
 		}
 	}
 
@@ -2061,9 +2061,9 @@ public class Material extends CFacade {
 	public void setRefract_depth(float refract_depth) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 288, refract_depth);
+			__io__block.writeFloat(__io__address + 304, refract_depth);
 		} else {
-			__io__block.writeFloat(__io__address + 240, refract_depth);
+			__io__block.writeFloat(__io__address + 248, refract_depth);
 		}
 	}
 
@@ -2078,9 +2078,9 @@ public class Material extends CFacade {
 	public byte getBlend_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 292);
+			return __io__block.readByte(__io__address + 308);
 		} else {
-			return __io__block.readByte(__io__address + 244);
+			return __io__block.readByte(__io__address + 252);
 		}
 	}
 
@@ -2095,9 +2095,9 @@ public class Material extends CFacade {
 	public void setBlend_method(byte blend_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 292, blend_method);
+			__io__block.writeByte(__io__address + 308, blend_method);
 		} else {
-			__io__block.writeByte(__io__address + 244, blend_method);
+			__io__block.writeByte(__io__address + 252, blend_method);
 		}
 	}
 
@@ -2109,9 +2109,9 @@ public class Material extends CFacade {
 	public byte getBlend_shadow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 293);
+			return __io__block.readByte(__io__address + 309);
 		} else {
-			return __io__block.readByte(__io__address + 245);
+			return __io__block.readByte(__io__address + 253);
 		}
 	}
 
@@ -2123,9 +2123,9 @@ public class Material extends CFacade {
 	public void setBlend_shadow(byte blend_shadow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 293, blend_shadow);
+			__io__block.writeByte(__io__address + 309, blend_shadow);
 		} else {
-			__io__block.writeByte(__io__address + 245, blend_shadow);
+			__io__block.writeByte(__io__address + 253, blend_shadow);
 		}
 	}
 
@@ -2137,9 +2137,9 @@ public class Material extends CFacade {
 	public byte getBlend_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 294);
+			return __io__block.readByte(__io__address + 310);
 		} else {
-			return __io__block.readByte(__io__address + 246);
+			return __io__block.readByte(__io__address + 254);
 		}
 	}
 
@@ -2151,9 +2151,9 @@ public class Material extends CFacade {
 	public void setBlend_flag(byte blend_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 294, blend_flag);
+			__io__block.writeByte(__io__address + 310, blend_flag);
 		} else {
-			__io__block.writeByte(__io__address + 246, blend_flag);
+			__io__block.writeByte(__io__address + 254, blend_flag);
 		}
 	}
 
@@ -2169,9 +2169,9 @@ public class Material extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 295, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 311, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 247, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 255, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2184,9 +2184,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 295;
+			__dna__offset = 311;
 		} else {
-			__dna__offset = 247;
+			__dna__offset = 255;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -2209,9 +2209,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TexPaintSlot.class};
 		return new CPointer<TexPaintSlot>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TexPaintSlot.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2229,9 +2229,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((texpaintslot == null) ? 0 : texpaintslot.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		}
 	}
 
@@ -2246,9 +2246,9 @@ public class Material extends CFacade {
 	public ListBase getGpumaterial() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 304, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 320, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 252, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 260, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2264,9 +2264,9 @@ public class Material extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 252;
+			__dna__offset = 260;
 		}
 		if (__io__equals(gpumaterial, __io__address + __dna__offset)) {
 			return;
@@ -2289,9 +2289,9 @@ public class Material extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MaterialGPencilStyle.class};
 		return new CPointer<MaterialGPencilStyle>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MaterialGPencilStyle.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2309,9 +2309,9 @@ public class Material extends CFacade {
 	{
 		long __address = ((gp_style == null) ? 0 : gp_style.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 

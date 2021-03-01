@@ -27,7 +27,7 @@ public class WeldModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 148;
+	public static final int __DNA__SDNA_INDEX = 142;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -96,6 +96,26 @@ public class WeldModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__defgrp_name = new long[]{112, 132};
 
 	/**
+	 * Field descriptor (offset) for struct member 'mode'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * WeldModifierData weldmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = weldmodifierdata.__dna__addressof(WeldModifierData.__DNA__FIELD__mode);
+	 * CPointer&lt;Byte&gt; p_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__mode = new long[]{176, 196};
+
+	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -104,16 +124,16 @@ public class WeldModifierData extends CFacade {
 	 * <pre>
 	 * WeldModifierData weldmodifierdata = ...;
 	 * CPointer&lt;Object&gt; p = weldmodifierdata.__dna__addressof(WeldModifierData.__DNA__FIELD__flag);
-	 * CPointer&lt;Short&gt; p_flag = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Byte&gt; p_flag = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__flag = new long[]{177, 197};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -260,16 +280,44 @@ public class WeldModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'mode'.
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public byte getMode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 196);
+		} else {
+			return __io__block.readByte(__io__address + 176);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'mode'.
+	 * @see #__DNA__FIELD__mode
+	 */
+	
+	public void setMode(byte mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 196, mode);
+		} else {
+			__io__block.writeByte(__io__address + 176, mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'flag'.
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public short getFlag() throws IOException
+	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readByte(__io__address + 197);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readByte(__io__address + 177);
 		}
 	}
 
@@ -278,12 +326,12 @@ public class WeldModifierData extends CFacade {
 	 * @see #__DNA__FIELD__flag
 	 */
 	
-	public void setFlag(short flag) throws IOException
+	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 196, flag);
+			__io__block.writeByte(__io__address + 197, flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeByte(__io__address + 177, flag);
 		}
 	}
 

@@ -14,7 +14,9 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p> Is a structure because of the following considerations:</p><p><ul><li><p> It is not possible to use custom types in DNA members: makesdna does not recognize them.</p></li><li><p> It allows to add more bits, more than standard fixed-size types can store. For example, if we ever need to go 128 bits, it is as simple as adding extra 64bit field. </p></li></ul> 
- * It is not possible to use custom types in DNA members: makesdna does not recognize them.It allows to add more bits, more than standard fixed-size types can store. For example, if we ever need to go 128 bits, it is as simple as adding extra 64bit field. 
+ * It is not possible to use custom types in DNA members: makesdna does not recognize them.
+ * It allows to add more bits, more than standard fixed-size types can store. For example, if we ever need to go 128 bits, it is as simple as adding extra 64bit field. 
+ * 
  * </p>
  */
 
@@ -29,7 +31,7 @@ public class SessionUUID extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 313;
+	public static final int __DNA__SDNA_INDEX = 316;
 
 	/**
 	 * Field descriptor (offset) for struct member 'uuid_'.

@@ -27,7 +27,7 @@ public class ParticleData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 475;
+	public static final int __DNA__SDNA_INDEX = 492;
 
 	/**
 	 * Field descriptor (offset) for struct member 'state'.
@@ -237,7 +237,7 @@ public class ParticleData extends CFacade {
 	 * Field descriptor (offset) for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS!Index to vert/edge/face. </p>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! Index to vert/edge/face. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -260,7 +260,7 @@ public class ParticleData extends CFacade {
 	 * Field descriptor (offset) for struct member 'num_dmcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index to derived mesh data (face) to avoid slow lookups. </p>
+	 * <p> Index to derived mesh data (face) to avoid slow lookups. It can also have negative values DMCACHE_NOTFOUND and DMCACHE_ISCHILD. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -791,7 +791,7 @@ public class ParticleData extends CFacade {
 	 * Get method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS!Index to vert/edge/face. </p>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! Index to vert/edge/face. </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -808,7 +808,7 @@ public class ParticleData extends CFacade {
 	 * Set method for struct member 'num'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS!Index to vert/edge/face. </p>
+	 * <p> WARNING! Those two indices, when not affected to vertices, are for !!! TESSELLATED FACES !!!, not POLYGONS! Index to vert/edge/face. </p>
 	 * @see #__DNA__FIELD__num
 	 */
 	
@@ -825,7 +825,7 @@ public class ParticleData extends CFacade {
 	 * Get method for struct member 'num_dmcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index to derived mesh data (face) to avoid slow lookups. </p>
+	 * <p> Index to derived mesh data (face) to avoid slow lookups. It can also have negative values DMCACHE_NOTFOUND and DMCACHE_ISCHILD. </p>
 	 * @see #__DNA__FIELD__num_dmcache
 	 */
 	
@@ -842,7 +842,7 @@ public class ParticleData extends CFacade {
 	 * Set method for struct member 'num_dmcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Index to derived mesh data (face) to avoid slow lookups. </p>
+	 * <p> Index to derived mesh data (face) to avoid slow lookups. It can also have negative values DMCACHE_NOTFOUND and DMCACHE_ISCHILD. </p>
 	 * @see #__DNA__FIELD__num_dmcache
 	 */
 	

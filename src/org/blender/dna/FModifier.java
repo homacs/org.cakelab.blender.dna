@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  F-Curve DataTypes Modifiers --------------------------------<mdash/><mdash/>  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
+ *  F-Curve DataTypes Modifiers -----------------------------------<mdash/>  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
  */
 
 @CMetaData(size32=104, size64=120)
@@ -29,7 +29,7 @@ public class FModifier extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 537;
+	public static final int __DNA__SDNA_INDEX = 556;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

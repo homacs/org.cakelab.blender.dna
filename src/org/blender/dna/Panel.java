@@ -28,7 +28,7 @@ public class Panel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 275;
+	public static final int __DNA__SDNA_INDEX = 277;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -313,26 +313,6 @@ public class Panel extends CFacade {
 	public static final long[] __DNA__FIELD__labelofs = new long[]{168, 184};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{170, 186};
-
-	/**
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -350,7 +330,7 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{174, 190};
+	public static final long[] __DNA__FIELD__flag = new long[]{170, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime_flag'.
@@ -370,27 +350,27 @@ public class Panel extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime_flag = new long[]{176, 192};
+	public static final long[] __DNA__FIELD__runtime_flag = new long[]{172, 188};
 
 	/**
-	 * Field descriptor (offset) for struct member 'snap'.
+	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * Panel panel = ...;
-	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD__snap);
-	 * CPointer&lt;Short&gt; p_snap = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = panel.__dna__addressof(Panel.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'snap'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__snap = new long[]{178, 194};
+	public static final long[] __DNA__FIELD___pad = new long[]{174, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sortorder'.
@@ -938,6 +918,62 @@ public class Panel extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public short getFlag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 186);
+		} else {
+			return __io__block.readShort(__io__address + 170);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'flag'.
+	 * @see #__DNA__FIELD__flag
+	 */
+	
+	public void setFlag(short flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 186, flag);
+		} else {
+			__io__block.writeShort(__io__address + 170, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime_flag'.
+	 * @see #__DNA__FIELD__runtime_flag
+	 */
+	
+	public short getRuntime_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 188);
+		} else {
+			return __io__block.readShort(__io__address + 172);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime_flag'.
+	 * @see #__DNA__FIELD__runtime_flag
+	 */
+	
+	public void setRuntime_flag(short runtime_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 188, runtime_flag);
+		} else {
+			__io__block.writeShort(__io__address + 172, runtime_flag);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -946,12 +982,12 @@ public class Panel extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 186, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 190, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 170, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 174, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -964,9 +1000,9 @@ public class Panel extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 186;
+			__dna__offset = 190;
 		} else {
-			__dna__offset = 170;
+			__dna__offset = 174;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -974,90 +1010,6 @@ public class Panel extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public short getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 190);
-		} else {
-			return __io__block.readShort(__io__address + 174);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(short flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 190, flag);
-		} else {
-			__io__block.writeShort(__io__address + 174, flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'runtime_flag'.
-	 * @see #__DNA__FIELD__runtime_flag
-	 */
-	
-	public short getRuntime_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 192);
-		} else {
-			return __io__block.readShort(__io__address + 176);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'runtime_flag'.
-	 * @see #__DNA__FIELD__runtime_flag
-	 */
-	
-	public void setRuntime_flag(short runtime_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 192, runtime_flag);
-		} else {
-			__io__block.writeShort(__io__address + 176, runtime_flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'snap'.
-	 * @see #__DNA__FIELD__snap
-	 */
-	
-	public short getSnap() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 194);
-		} else {
-			return __io__block.readShort(__io__address + 178);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'snap'.
-	 * @see #__DNA__FIELD__snap
-	 */
-	
-	public void setSnap(short snap) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 194, snap);
-		} else {
-			__io__block.writeShort(__io__address + 178, snap);
 		}
 	}
 

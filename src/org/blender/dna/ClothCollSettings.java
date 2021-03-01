@@ -27,7 +27,7 @@ public class ClothCollSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 480;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_list'.
@@ -335,7 +335,7 @@ public class ClothCollSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
+	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -355,6 +355,29 @@ public class ClothCollSettings extends CFacade {
 	public static final long[] __DNA__FIELD__vgroup_selfcol = new long[]{48, 56};
 
 	/**
+	 * Field descriptor (offset) for struct member 'vgroup_objcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ClothCollSettings clothcollsettings = ...;
+	 * CPointer&lt;Object&gt; p = clothcollsettings.__dna__addressof(ClothCollSettings.__DNA__FIELD__vgroup_objcol);
+	 * CPointer&lt;Short&gt; p_vgroup_objcol = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'vgroup_objcol'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__vgroup_objcol = new long[]{50, 58};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -368,11 +391,11 @@ public class ClothCollSettings extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[6]'</li>
-	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{50, 58};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{52, 60};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clamp'.
@@ -900,7 +923,7 @@ public class ClothCollSettings extends CFacade {
 	 * Get method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
+	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
 	
@@ -917,7 +940,7 @@ public class ClothCollSettings extends CFacade {
 	 * Set method for struct member 'vgroup_selfcol'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Vgroup to paint which vertices are used for self collisions. </p>
+	 * <p> Vgroup to paint which vertices are not used for self collisions. </p>
 	 * @see #__DNA__FIELD__vgroup_selfcol
 	 */
 	
@@ -931,6 +954,40 @@ public class ClothCollSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'vgroup_objcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
+	 * @see #__DNA__FIELD__vgroup_objcol
+	 */
+	
+	public short getVgroup_objcol() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 58);
+		} else {
+			return __io__block.readShort(__io__address + 50);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'vgroup_objcol'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Vgroup to paint which vertices are not used for object collisions. </p>
+	 * @see #__DNA__FIELD__vgroup_objcol
+	 */
+	
+	public void setVgroup_objcol(short vgroup_objcol) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 58, vgroup_objcol);
+		} else {
+			__io__block.writeShort(__io__address + 50, vgroup_objcol);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad2'.
 	 * @see #__DNA__FIELD___pad2
 	 */
@@ -939,12 +996,12 @@ public class ClothCollSettings extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			6
+			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 58, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 60, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 50, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -957,9 +1014,9 @@ public class ClothCollSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 58;
+			__dna__offset = 60;
 		} else {
-			__dna__offset = 50;
+			__dna__offset = 52;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

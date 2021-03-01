@@ -29,7 +29,7 @@ public class bGPDstroke_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 487;
+	public static final int __DNA__SDNA_INDEX = 506;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tmp_layerinfo'.
@@ -124,24 +124,27 @@ public class bGPDstroke_Runtime extends CFacade {
 	public static final long[] __DNA__FIELD__fill_start = new long[]{136, 136};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'curve_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bGPDstroke_Runtime bgpdstroke_runtime = ...;
-	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Integer&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Integer.class});
+	 * CPointer&lt;Object&gt; p = bgpdstroke_runtime.__dna__addressof(bGPDstroke_Runtime.__DNA__FIELD__curve_start);
+	 * CPointer&lt;Integer&gt; p_curve_start = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'int[1]'</li>
+	 * <li>Field: 'curve_start'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{140, 140};
+	public static final long[] __DNA__FIELD__curve_start = new long[]{140, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gps_orig'.
@@ -343,42 +346,36 @@ public class bGPDstroke_Runtime extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'curve_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
+	 * @see #__DNA__FIELD__curve_start
 	 */
 	
-	public CArrayFacade<Integer> get_pad() throws IOException
+	public int getCurve_start() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Integer.class};
-		int[] __dna__dimensions = new int[]{
-			1
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 140);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'curve_start'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  Handles offset in the ibo where this handle starts. </p>
+	 * @see #__DNA__FIELD__curve_start
 	 */
 	
-	public void set_pad(CArrayFacade<Integer> _pad) throws IOException
+	public void setCurve_start(int curve_start) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__io__block.writeInt(__io__address + 140, curve_start);
 		} else {
-			__dna__offset = 140;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 140, curve_start);
 		}
 	}
 

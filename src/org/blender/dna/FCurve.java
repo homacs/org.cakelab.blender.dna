@@ -28,7 +28,7 @@ public class FCurve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 551;
+	public static final int __DNA__SDNA_INDEX = 570;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -351,7 +351,9 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
+	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -374,7 +376,9 @@ public class FCurve extends CFacade {
 	 * Field descriptor (offset) for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access. </p>
+	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1002,7 +1006,9 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
+	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -1020,7 +1026,9 @@ public class FCurve extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Index to the specific property affected by F-Curve if applicable<h4>Blender Source Code:</h4>
-	 * <p> RNA - data link If applicable, the index of the RNA-array item to get. </p>
+	 * <p><code></code>  is an array, use this to access the array index.</p><p><h2>Note</h2><p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. </p> This may be negative (as it wasn't prevented in 2.91 and older). Currently it silently fails to resolve the data-path in this case. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__array_index
 	 */
 	
@@ -1037,7 +1045,9 @@ public class FCurve extends CFacade {
 	 * Get method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access. </p>
+	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	
@@ -1057,7 +1067,9 @@ public class FCurve extends CFacade {
 	 * Set method for struct member 'rna_path'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> RNA-path to resolve data-access. </p>
+	 * <p> RNA-path to resolve data-access, see: #RNA_path_resolve_property.</p><p><h2>Note</h2><p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. </p> String look-ups for collection and custom-properties are escaped using #BLI_str_escape. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__rna_path
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=216, size64=264)
+@CMetaData(size32=224, size64=280)
 public class LightProbe extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class LightProbe extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 666;
+	public static final int __DNA__SDNA_INDEX = 686;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class LightProbe extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -94,7 +94,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__type = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -117,7 +117,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{133, 169};
+	public static final long[] __DNA__FIELD__flag = new long[]{141, 185};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attenuation_type'.
@@ -140,7 +140,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attenuation_type = new long[]{134, 170};
+	public static final long[] __DNA__FIELD__attenuation_type = new long[]{142, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parallax_type'.
@@ -164,7 +164,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parallax_type = new long[]{135, 171};
+	public static final long[] __DNA__FIELD__parallax_type = new long[]{143, 187};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distinf'.
@@ -187,7 +187,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distinf = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__distinf = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distpar'.
@@ -210,7 +210,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distpar = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__distpar = new long[]{148, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'falloff'.
@@ -234,7 +234,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__falloff = new long[]{144, 180};
+	public static final long[] __DNA__FIELD__falloff = new long[]{152, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipsta'.
@@ -254,7 +254,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipsta = new long[]{148, 184};
+	public static final long[] __DNA__FIELD__clipsta = new long[]{156, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clipend'.
@@ -274,7 +274,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clipend = new long[]{152, 188};
+	public static final long[] __DNA__FIELD__clipend = new long[]{160, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vis_bias'.
@@ -297,7 +297,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vis_bias = new long[]{156, 192};
+	public static final long[] __DNA__FIELD__vis_bias = new long[]{164, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vis_bleedbias'.
@@ -317,7 +317,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vis_bleedbias = new long[]{160, 196};
+	public static final long[] __DNA__FIELD__vis_bleedbias = new long[]{168, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vis_blur'.
@@ -337,7 +337,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vis_blur = new long[]{164, 200};
+	public static final long[] __DNA__FIELD__vis_blur = new long[]{172, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'intensity'.
@@ -361,7 +361,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__intensity = new long[]{168, 204};
+	public static final long[] __DNA__FIELD__intensity = new long[]{176, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_x'.
@@ -385,7 +385,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_resolution_x = new long[]{172, 208};
+	public static final long[] __DNA__FIELD__grid_resolution_x = new long[]{180, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_y'.
@@ -408,7 +408,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_resolution_y = new long[]{176, 212};
+	public static final long[] __DNA__FIELD__grid_resolution_y = new long[]{184, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_resolution_z'.
@@ -431,7 +431,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_resolution_z = new long[]{180, 216};
+	public static final long[] __DNA__FIELD__grid_resolution_z = new long[]{188, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -451,7 +451,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{184, 220};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{192, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parallax_ob'.
@@ -474,7 +474,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parallax_ob = new long[]{188, 224};
+	public static final long[] __DNA__FIELD__parallax_ob = new long[]{196, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'image'.
@@ -497,7 +497,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__image = new long[]{192, 232};
+	public static final long[] __DNA__FIELD__image = new long[]{200, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'visibility_grp'.
@@ -520,7 +520,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__visibility_grp = new long[]{196, 240};
+	public static final long[] __DNA__FIELD__visibility_grp = new long[]{204, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distfalloff'.
@@ -543,7 +543,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distfalloff = new long[]{200, 248};
+	public static final long[] __DNA__FIELD__distfalloff = new long[]{208, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distgridinf'.
@@ -563,7 +563,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distgridinf = new long[]{204, 252};
+	public static final long[] __DNA__FIELD__distgridinf = new long[]{212, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -583,7 +583,7 @@ public class LightProbe extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{208, 256};
+	public static final long[] __DNA__FIELD___pad = new long[]{216, 272};
 
 	public LightProbe(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -641,9 +641,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -661,9 +661,9 @@ public class LightProbe extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -679,9 +679,9 @@ public class LightProbe extends CFacade {
 	public byte getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 168);
+			return __io__block.readByte(__io__address + 184);
 		} else {
-			return __io__block.readByte(__io__address + 132);
+			return __io__block.readByte(__io__address + 140);
 		}
 	}
 
@@ -697,9 +697,9 @@ public class LightProbe extends CFacade {
 	public void setType(byte type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 168, type);
+			__io__block.writeByte(__io__address + 184, type);
 		} else {
-			__io__block.writeByte(__io__address + 132, type);
+			__io__block.writeByte(__io__address + 140, type);
 		}
 	}
 
@@ -714,9 +714,9 @@ public class LightProbe extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 169);
+			return __io__block.readByte(__io__address + 185);
 		} else {
-			return __io__block.readByte(__io__address + 133);
+			return __io__block.readByte(__io__address + 141);
 		}
 	}
 
@@ -731,9 +731,9 @@ public class LightProbe extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 169, flag);
+			__io__block.writeByte(__io__address + 185, flag);
 		} else {
-			__io__block.writeByte(__io__address + 133, flag);
+			__io__block.writeByte(__io__address + 141, flag);
 		}
 	}
 
@@ -748,9 +748,9 @@ public class LightProbe extends CFacade {
 	public byte getAttenuation_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 170);
+			return __io__block.readByte(__io__address + 186);
 		} else {
-			return __io__block.readByte(__io__address + 134);
+			return __io__block.readByte(__io__address + 142);
 		}
 	}
 
@@ -765,9 +765,9 @@ public class LightProbe extends CFacade {
 	public void setAttenuation_type(byte attenuation_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 170, attenuation_type);
+			__io__block.writeByte(__io__address + 186, attenuation_type);
 		} else {
-			__io__block.writeByte(__io__address + 134, attenuation_type);
+			__io__block.writeByte(__io__address + 142, attenuation_type);
 		}
 	}
 
@@ -783,9 +783,9 @@ public class LightProbe extends CFacade {
 	public byte getParallax_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 171);
+			return __io__block.readByte(__io__address + 187);
 		} else {
-			return __io__block.readByte(__io__address + 135);
+			return __io__block.readByte(__io__address + 143);
 		}
 	}
 
@@ -801,9 +801,9 @@ public class LightProbe extends CFacade {
 	public void setParallax_type(byte parallax_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 171, parallax_type);
+			__io__block.writeByte(__io__address + 187, parallax_type);
 		} else {
-			__io__block.writeByte(__io__address + 135, parallax_type);
+			__io__block.writeByte(__io__address + 143, parallax_type);
 		}
 	}
 
@@ -818,9 +818,9 @@ public class LightProbe extends CFacade {
 	public float getDistinf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -835,9 +835,9 @@ public class LightProbe extends CFacade {
 	public void setDistinf(float distinf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, distinf);
+			__io__block.writeFloat(__io__address + 188, distinf);
 		} else {
-			__io__block.writeFloat(__io__address + 136, distinf);
+			__io__block.writeFloat(__io__address + 144, distinf);
 		}
 	}
 
@@ -852,9 +852,9 @@ public class LightProbe extends CFacade {
 	public float getDistpar() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 192);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -869,9 +869,9 @@ public class LightProbe extends CFacade {
 	public void setDistpar(float distpar) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 176, distpar);
+			__io__block.writeFloat(__io__address + 192, distpar);
 		} else {
-			__io__block.writeFloat(__io__address + 140, distpar);
+			__io__block.writeFloat(__io__address + 148, distpar);
 		}
 	}
 
@@ -887,9 +887,9 @@ public class LightProbe extends CFacade {
 	public float getFalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 196);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -905,9 +905,9 @@ public class LightProbe extends CFacade {
 	public void setFalloff(float falloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 180, falloff);
+			__io__block.writeFloat(__io__address + 196, falloff);
 		} else {
-			__io__block.writeFloat(__io__address + 144, falloff);
+			__io__block.writeFloat(__io__address + 152, falloff);
 		}
 	}
 
@@ -919,9 +919,9 @@ public class LightProbe extends CFacade {
 	public float getClipsta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -933,9 +933,9 @@ public class LightProbe extends CFacade {
 	public void setClipsta(float clipsta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 184, clipsta);
+			__io__block.writeFloat(__io__address + 200, clipsta);
 		} else {
-			__io__block.writeFloat(__io__address + 148, clipsta);
+			__io__block.writeFloat(__io__address + 156, clipsta);
 		}
 	}
 
@@ -947,9 +947,9 @@ public class LightProbe extends CFacade {
 	public float getClipend() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 152);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -961,9 +961,9 @@ public class LightProbe extends CFacade {
 	public void setClipend(float clipend) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 188, clipend);
+			__io__block.writeFloat(__io__address + 204, clipend);
 		} else {
-			__io__block.writeFloat(__io__address + 152, clipend);
+			__io__block.writeFloat(__io__address + 160, clipend);
 		}
 	}
 
@@ -978,9 +978,9 @@ public class LightProbe extends CFacade {
 	public float getVis_bias() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -995,9 +995,9 @@ public class LightProbe extends CFacade {
 	public void setVis_bias(float vis_bias) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, vis_bias);
+			__io__block.writeFloat(__io__address + 208, vis_bias);
 		} else {
-			__io__block.writeFloat(__io__address + 156, vis_bias);
+			__io__block.writeFloat(__io__address + 164, vis_bias);
 		}
 	}
 
@@ -1009,9 +1009,9 @@ public class LightProbe extends CFacade {
 	public float getVis_bleedbias() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -1023,9 +1023,9 @@ public class LightProbe extends CFacade {
 	public void setVis_bleedbias(float vis_bleedbias) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, vis_bleedbias);
+			__io__block.writeFloat(__io__address + 212, vis_bleedbias);
 		} else {
-			__io__block.writeFloat(__io__address + 160, vis_bleedbias);
+			__io__block.writeFloat(__io__address + 168, vis_bleedbias);
 		}
 	}
 
@@ -1037,9 +1037,9 @@ public class LightProbe extends CFacade {
 	public float getVis_blur() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -1051,9 +1051,9 @@ public class LightProbe extends CFacade {
 	public void setVis_blur(float vis_blur) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, vis_blur);
+			__io__block.writeFloat(__io__address + 216, vis_blur);
 		} else {
-			__io__block.writeFloat(__io__address + 164, vis_blur);
+			__io__block.writeFloat(__io__address + 172, vis_blur);
 		}
 	}
 
@@ -1069,9 +1069,9 @@ public class LightProbe extends CFacade {
 	public float getIntensity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -1087,9 +1087,9 @@ public class LightProbe extends CFacade {
 	public void setIntensity(float intensity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, intensity);
+			__io__block.writeFloat(__io__address + 220, intensity);
 		} else {
-			__io__block.writeFloat(__io__address + 168, intensity);
+			__io__block.writeFloat(__io__address + 176, intensity);
 		}
 	}
 
@@ -1105,9 +1105,9 @@ public class LightProbe extends CFacade {
 	public int getGrid_resolution_x() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -1123,9 +1123,9 @@ public class LightProbe extends CFacade {
 	public void setGrid_resolution_x(int grid_resolution_x) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, grid_resolution_x);
+			__io__block.writeInt(__io__address + 224, grid_resolution_x);
 		} else {
-			__io__block.writeInt(__io__address + 172, grid_resolution_x);
+			__io__block.writeInt(__io__address + 180, grid_resolution_x);
 		}
 	}
 
@@ -1140,9 +1140,9 @@ public class LightProbe extends CFacade {
 	public int getGrid_resolution_y() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 176);
+			return __io__block.readInt(__io__address + 184);
 		}
 	}
 
@@ -1157,9 +1157,9 @@ public class LightProbe extends CFacade {
 	public void setGrid_resolution_y(int grid_resolution_y) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, grid_resolution_y);
+			__io__block.writeInt(__io__address + 228, grid_resolution_y);
 		} else {
-			__io__block.writeInt(__io__address + 176, grid_resolution_y);
+			__io__block.writeInt(__io__address + 184, grid_resolution_y);
 		}
 	}
 
@@ -1174,9 +1174,9 @@ public class LightProbe extends CFacade {
 	public int getGrid_resolution_z() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 216);
+			return __io__block.readInt(__io__address + 232);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -1191,9 +1191,9 @@ public class LightProbe extends CFacade {
 	public void setGrid_resolution_z(int grid_resolution_z) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 216, grid_resolution_z);
+			__io__block.writeInt(__io__address + 232, grid_resolution_z);
 		} else {
-			__io__block.writeInt(__io__address + 180, grid_resolution_z);
+			__io__block.writeInt(__io__address + 188, grid_resolution_z);
 		}
 	}
 
@@ -1209,9 +1209,9 @@ public class LightProbe extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1224,9 +1224,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 220;
+			__dna__offset = 236;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -1249,9 +1249,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1269,9 +1269,9 @@ public class LightProbe extends CFacade {
 	{
 		long __address = ((parallax_ob == null) ? 0 : parallax_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 
@@ -1287,9 +1287,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Image.class};
 		return new CPointer<Image>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Image.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1307,9 +1307,9 @@ public class LightProbe extends CFacade {
 	{
 		long __address = ((image == null) ? 0 : image.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -1325,9 +1325,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1345,9 +1345,9 @@ public class LightProbe extends CFacade {
 	{
 		long __address = ((visibility_grp == null) ? 0 : visibility_grp.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -1362,9 +1362,9 @@ public class LightProbe extends CFacade {
 	public float getDistfalloff() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 248);
+			return __io__block.readFloat(__io__address + 264);
 		} else {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		}
 	}
 
@@ -1379,9 +1379,9 @@ public class LightProbe extends CFacade {
 	public void setDistfalloff(float distfalloff) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 248, distfalloff);
+			__io__block.writeFloat(__io__address + 264, distfalloff);
 		} else {
-			__io__block.writeFloat(__io__address + 200, distfalloff);
+			__io__block.writeFloat(__io__address + 208, distfalloff);
 		}
 	}
 
@@ -1393,9 +1393,9 @@ public class LightProbe extends CFacade {
 	public float getDistgridinf() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		}
 	}
 
@@ -1407,9 +1407,9 @@ public class LightProbe extends CFacade {
 	public void setDistgridinf(float distgridinf) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 252, distgridinf);
+			__io__block.writeFloat(__io__address + 268, distgridinf);
 		} else {
-			__io__block.writeFloat(__io__address + 204, distgridinf);
+			__io__block.writeFloat(__io__address + 212, distgridinf);
 		}
 	}
 
@@ -1425,9 +1425,9 @@ public class LightProbe extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1440,9 +1440,9 @@ public class LightProbe extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

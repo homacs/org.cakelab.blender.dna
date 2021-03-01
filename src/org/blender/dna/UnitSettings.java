@@ -15,7 +15,8 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Assorted {@link Scene}  Data -------------------------------------<mdash/><mdash/>  Unit Settings </p>
+ *  Assorted {@link Scene}  Data <hr/> 
+ *  Unit Settings </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -29,7 +30,7 @@ public class UnitSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 207;
+	public static final int __DNA__SDNA_INDEX = 203;
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale_length'.

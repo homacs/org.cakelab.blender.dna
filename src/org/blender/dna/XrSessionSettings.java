@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=916, size64=928)
+@CMetaData(size32=980, size64=992)
 public class XrSessionSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class XrSessionSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 673;
+	public static final int __DNA__SDNA_INDEX = 693;
 
 	/**
 	 * Field descriptor (offset) for struct member 'shading'.
@@ -48,7 +48,7 @@ public class XrSessionSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'shading'</li>
 	 * <li>Signature: 'View3DShading'</li>
-	 * <li>Actual Size (32bit/64bit): 872/880</li>
+	 * <li>Actual Size (32bit/64bit): 936/944</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shading = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 7/7</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{872, 880};
+	public static final long[] __DNA__FIELD___pad = new long[]{936, 944};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_type'.
@@ -95,7 +95,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_pose_type = new long[]{879, 887};
+	public static final long[] __DNA__FIELD__base_pose_type = new long[]{943, 951};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_object'.
@@ -119,7 +119,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_pose_object = new long[]{880, 888};
+	public static final long[] __DNA__FIELD__base_pose_object = new long[]{944, 952};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_location'.
@@ -142,7 +142,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_pose_location = new long[]{884, 896};
+	public static final long[] __DNA__FIELD__base_pose_location = new long[]{948, 960};
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_pose_angle'.
@@ -165,7 +165,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__base_pose_angle = new long[]{896, 908};
+	public static final long[] __DNA__FIELD__base_pose_angle = new long[]{960, 972};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_flags'.
@@ -188,7 +188,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_flags = new long[]{900, 912};
+	public static final long[] __DNA__FIELD__draw_flags = new long[]{964, 976};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -208,7 +208,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{901, 913};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{965, 977};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip_start'.
@@ -232,7 +232,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip_start = new long[]{904, 916};
+	public static final long[] __DNA__FIELD__clip_start = new long[]{968, 980};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clip_end'.
@@ -255,7 +255,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clip_end = new long[]{908, 920};
+	public static final long[] __DNA__FIELD__clip_end = new long[]{972, 984};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -275,7 +275,7 @@ public class XrSessionSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{912, 924};
+	public static final long[] __DNA__FIELD__flag = new long[]{976, 988};
 
 	public XrSessionSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -341,9 +341,9 @@ public class XrSessionSettings extends CFacade {
 			7
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 880, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 944, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 872, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 936, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -356,9 +356,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 880;
+			__dna__offset = 944;
 		} else {
-			__dna__offset = 872;
+			__dna__offset = 936;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -381,9 +381,9 @@ public class XrSessionSettings extends CFacade {
 	public byte getBase_pose_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 887);
+			return __io__block.readByte(__io__address + 951);
 		} else {
-			return __io__block.readByte(__io__address + 879);
+			return __io__block.readByte(__io__address + 943);
 		}
 	}
 
@@ -399,9 +399,9 @@ public class XrSessionSettings extends CFacade {
 	public void setBase_pose_type(byte base_pose_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 887, base_pose_type);
+			__io__block.writeByte(__io__address + 951, base_pose_type);
 		} else {
-			__io__block.writeByte(__io__address + 879, base_pose_type);
+			__io__block.writeByte(__io__address + 943, base_pose_type);
 		}
 	}
 
@@ -418,9 +418,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 888);
+			__dna__targetAddress = __io__block.readLong(__io__address + 952);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 880);
+			__dna__targetAddress = __io__block.readLong(__io__address + 944);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -439,9 +439,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __address = ((base_pose_object == null) ? 0 : base_pose_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 888, __address);
+			__io__block.writeLong(__io__address + 952, __address);
 		} else {
-			__io__block.writeLong(__io__address + 880, __address);
+			__io__block.writeLong(__io__address + 944, __address);
 		}
 	}
 
@@ -460,9 +460,9 @@ public class XrSessionSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 896, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 948, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -478,9 +478,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 896;
+			__dna__offset = 960;
 		} else {
-			__dna__offset = 884;
+			__dna__offset = 948;
 		}
 		if (__io__equals(base_pose_location, __io__address + __dna__offset)) {
 			return;
@@ -502,9 +502,9 @@ public class XrSessionSettings extends CFacade {
 	public float getBase_pose_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 908);
+			return __io__block.readFloat(__io__address + 972);
 		} else {
-			return __io__block.readFloat(__io__address + 896);
+			return __io__block.readFloat(__io__address + 960);
 		}
 	}
 
@@ -519,9 +519,9 @@ public class XrSessionSettings extends CFacade {
 	public void setBase_pose_angle(float base_pose_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 908, base_pose_angle);
+			__io__block.writeFloat(__io__address + 972, base_pose_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 896, base_pose_angle);
+			__io__block.writeFloat(__io__address + 960, base_pose_angle);
 		}
 	}
 
@@ -536,9 +536,9 @@ public class XrSessionSettings extends CFacade {
 	public byte getDraw_flags() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 912);
+			return __io__block.readByte(__io__address + 976);
 		} else {
-			return __io__block.readByte(__io__address + 900);
+			return __io__block.readByte(__io__address + 964);
 		}
 	}
 
@@ -553,9 +553,9 @@ public class XrSessionSettings extends CFacade {
 	public void setDraw_flags(byte draw_flags) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 912, draw_flags);
+			__io__block.writeByte(__io__address + 976, draw_flags);
 		} else {
-			__io__block.writeByte(__io__address + 900, draw_flags);
+			__io__block.writeByte(__io__address + 964, draw_flags);
 		}
 	}
 
@@ -571,9 +571,9 @@ public class XrSessionSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 913, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 977, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 901, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 965, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -586,9 +586,9 @@ public class XrSessionSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 913;
+			__dna__offset = 977;
 		} else {
-			__dna__offset = 901;
+			__dna__offset = 965;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -611,9 +611,9 @@ public class XrSessionSettings extends CFacade {
 	public float getClip_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 916);
+			return __io__block.readFloat(__io__address + 980);
 		} else {
-			return __io__block.readFloat(__io__address + 904);
+			return __io__block.readFloat(__io__address + 968);
 		}
 	}
 
@@ -629,9 +629,9 @@ public class XrSessionSettings extends CFacade {
 	public void setClip_start(float clip_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 916, clip_start);
+			__io__block.writeFloat(__io__address + 980, clip_start);
 		} else {
-			__io__block.writeFloat(__io__address + 904, clip_start);
+			__io__block.writeFloat(__io__address + 968, clip_start);
 		}
 	}
 
@@ -646,9 +646,9 @@ public class XrSessionSettings extends CFacade {
 	public float getClip_end() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 920);
+			return __io__block.readFloat(__io__address + 984);
 		} else {
-			return __io__block.readFloat(__io__address + 908);
+			return __io__block.readFloat(__io__address + 972);
 		}
 	}
 
@@ -663,9 +663,9 @@ public class XrSessionSettings extends CFacade {
 	public void setClip_end(float clip_end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 920, clip_end);
+			__io__block.writeFloat(__io__address + 984, clip_end);
 		} else {
-			__io__block.writeFloat(__io__address + 908, clip_end);
+			__io__block.writeFloat(__io__address + 972, clip_end);
 		}
 	}
 
@@ -677,9 +677,9 @@ public class XrSessionSettings extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 924);
+			return __io__block.readInt(__io__address + 988);
 		} else {
-			return __io__block.readInt(__io__address + 912);
+			return __io__block.readInt(__io__address + 976);
 		}
 	}
 
@@ -691,9 +691,9 @@ public class XrSessionSettings extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 924, flag);
+			__io__block.writeInt(__io__address + 988, flag);
 		} else {
-			__io__block.writeInt(__io__address + 912, flag);
+			__io__block.writeInt(__io__address + 976, flag);
 		}
 	}
 

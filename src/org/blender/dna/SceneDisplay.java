@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  {@link Scene}  Display - used for store scene specific display settings for the 3d view </p>
  */
 
-@CMetaData(size32=912, size64=920)
+@CMetaData(size32=976, size64=984)
 public class SceneDisplay extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class SceneDisplay extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 210;
+	public static final int __DNA__SDNA_INDEX = 206;
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_direction'.
@@ -257,7 +257,7 @@ public class SceneDisplay extends CFacade {
 	 * <ul>
 	 * <li>Field: 'shading'</li>
 	 * <li>Signature: 'View3DShading'</li>
-	 * <li>Actual Size (32bit/64bit): 872/880</li>
+	 * <li>Actual Size (32bit/64bit): 936/944</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shading = new long[]{40, 40};

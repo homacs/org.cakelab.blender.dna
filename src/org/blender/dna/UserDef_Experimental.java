@@ -27,7 +27,7 @@ public class UserDef_Experimental extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 270;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.
@@ -93,30 +93,10 @@ public class UserDef_Experimental extends CFacade {
 	public static final long[] __DNA__FIELD__SANITIZE_AFTER_HERE = new long[]{2, 2};
 
 	/**
-	 * Field descriptor (offset) for struct member 'use_new_geometry_nodes'.
+	 * Field descriptor (offset) for struct member 'use_new_hair_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef_Experimental userdef_experimental = ...;
-	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_new_geometry_nodes);
-	 * CPointer&lt;Byte&gt; p_use_new_geometry_nodes = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'use_new_geometry_nodes'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__use_new_geometry_nodes = new long[]{3, 3};
-
-	/**
-	 * Field descriptor (offset) for struct member 'use_new_hair_type'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -133,7 +113,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_new_hair_type = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__use_new_hair_type = new long[]{3, 3};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_point_cloud_type'.
@@ -153,7 +133,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_new_point_cloud_type = new long[]{5, 5};
+	public static final long[] __DNA__FIELD__use_new_point_cloud_type = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_sculpt_vertex_colors'.
@@ -173,7 +153,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_sculpt_vertex_colors = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__use_sculpt_vertex_colors = new long[]{5, 5};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_switch_object_operator'.
@@ -193,7 +173,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_switch_object_operator = new long[]{7, 7};
+	public static final long[] __DNA__FIELD__use_switch_object_operator = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_sculpt_tools_tilt'.
@@ -213,7 +193,27 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_sculpt_tools_tilt = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__use_sculpt_tools_tilt = new long[]{7, 7};
+
+	/**
+	 * Field descriptor (offset) for struct member 'use_asset_browser'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_asset_browser);
+	 * CPointer&lt;Byte&gt; p_use_asset_browser = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_asset_browser'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_asset_browser = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -334,64 +334,36 @@ public class UserDef_Experimental extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'use_new_geometry_nodes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
-	 * @see #__DNA__FIELD__use_new_geometry_nodes
-	 */
-	
-	public byte getUse_new_geometry_nodes() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 3);
-		} else {
-			return __io__block.readByte(__io__address + 3);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'use_new_geometry_nodes'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
-	 * @see #__DNA__FIELD__use_new_geometry_nodes
-	 */
-	
-	public void setUse_new_geometry_nodes(byte use_new_geometry_nodes) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 3, use_new_geometry_nodes);
-		} else {
-			__io__block.writeByte(__io__address + 3, use_new_geometry_nodes);
-		}
-	}
-
-	/**
 	 * Get method for struct member 'use_new_hair_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */
 	
 	public byte getUse_new_hair_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 4);
+			return __io__block.readByte(__io__address + 3);
 		} else {
-			return __io__block.readByte(__io__address + 4);
+			return __io__block.readByte(__io__address + 3);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'use_new_hair_type'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The following options are automatically sanitized (set to 0) when the release cycle is not alpha. </p>
 	 * @see #__DNA__FIELD__use_new_hair_type
 	 */
 	
 	public void setUse_new_hair_type(byte use_new_hair_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 4, use_new_hair_type);
+			__io__block.writeByte(__io__address + 3, use_new_hair_type);
 		} else {
-			__io__block.writeByte(__io__address + 4, use_new_hair_type);
+			__io__block.writeByte(__io__address + 3, use_new_hair_type);
 		}
 	}
 
@@ -403,9 +375,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_new_point_cloud_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 4);
 		} else {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 4);
 		}
 	}
 
@@ -417,9 +389,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_new_point_cloud_type(byte use_new_point_cloud_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 5, use_new_point_cloud_type);
+			__io__block.writeByte(__io__address + 4, use_new_point_cloud_type);
 		} else {
-			__io__block.writeByte(__io__address + 5, use_new_point_cloud_type);
+			__io__block.writeByte(__io__address + 4, use_new_point_cloud_type);
 		}
 	}
 
@@ -431,9 +403,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_sculpt_vertex_colors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 6);
+			return __io__block.readByte(__io__address + 5);
 		} else {
-			return __io__block.readByte(__io__address + 6);
+			return __io__block.readByte(__io__address + 5);
 		}
 	}
 
@@ -445,9 +417,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_sculpt_vertex_colors(byte use_sculpt_vertex_colors) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 6, use_sculpt_vertex_colors);
+			__io__block.writeByte(__io__address + 5, use_sculpt_vertex_colors);
 		} else {
-			__io__block.writeByte(__io__address + 6, use_sculpt_vertex_colors);
+			__io__block.writeByte(__io__address + 5, use_sculpt_vertex_colors);
 		}
 	}
 
@@ -459,9 +431,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_switch_object_operator() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 7);
+			return __io__block.readByte(__io__address + 6);
 		} else {
-			return __io__block.readByte(__io__address + 7);
+			return __io__block.readByte(__io__address + 6);
 		}
 	}
 
@@ -473,9 +445,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_switch_object_operator(byte use_switch_object_operator) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 7, use_switch_object_operator);
+			__io__block.writeByte(__io__address + 6, use_switch_object_operator);
 		} else {
-			__io__block.writeByte(__io__address + 7, use_switch_object_operator);
+			__io__block.writeByte(__io__address + 6, use_switch_object_operator);
 		}
 	}
 
@@ -487,9 +459,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_sculpt_tools_tilt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 8);
+			return __io__block.readByte(__io__address + 7);
 		} else {
-			return __io__block.readByte(__io__address + 8);
+			return __io__block.readByte(__io__address + 7);
 		}
 	}
 
@@ -501,9 +473,37 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_sculpt_tools_tilt(byte use_sculpt_tools_tilt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 8, use_sculpt_tools_tilt);
+			__io__block.writeByte(__io__address + 7, use_sculpt_tools_tilt);
 		} else {
-			__io__block.writeByte(__io__address + 8, use_sculpt_tools_tilt);
+			__io__block.writeByte(__io__address + 7, use_sculpt_tools_tilt);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'use_asset_browser'.
+	 * @see #__DNA__FIELD__use_asset_browser
+	 */
+	
+	public byte getUse_asset_browser() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 8);
+		} else {
+			return __io__block.readByte(__io__address + 8);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_asset_browser'.
+	 * @see #__DNA__FIELD__use_asset_browser
+	 */
+	
+	public void setUse_asset_browser(byte use_asset_browser) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 8, use_asset_browser);
+		} else {
+			__io__block.writeByte(__io__address + 8, use_asset_browser);
 		}
 	}
 

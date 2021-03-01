@@ -27,7 +27,7 @@ public class SpaceOops extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 225;
+	public static final int __DNA__SDNA_INDEX = 221;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -430,24 +430,24 @@ public class SpaceOops extends CFacade {
 	public static final long[] __DNA__FIELD__filter_id_type = new long[]{270, 310};
 
 	/**
-	 * Field descriptor (offset) for struct member 'treehash'.
+	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * SpaceOops spaceoops = ...;
-	 * CPointer&lt;Object&gt; p = spaceoops.__dna__addressof(SpaceOops.__DNA__FIELD__treehash);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_treehash = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;Object&gt; p = spaceoops.__dna__addressof(SpaceOops.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'treehash'</li>
-	 * <li>Signature: 'void*'</li>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SpaceOutliner_Runtime*'</li>
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treehash = new long[]{272, 312};
+	public static final long[] __DNA__FIELD__runtime = new long[]{272, 312};
 
 	public SpaceOops(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1086,11 +1086,11 @@ public class SpaceOops extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'treehash'.
-	 * @see #__DNA__FIELD__treehash
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
 	 */
 	
-	public CPointer<Object> getTreehash() throws IOException
+	public CPointer<Object> getRuntime() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1103,13 +1103,13 @@ public class SpaceOops extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'treehash'.
-	 * @see #__DNA__FIELD__treehash
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
 	 */
 	
-	public void setTreehash(CPointer<Object> treehash) throws IOException
+	public void setRuntime(CPointer<Object> runtime) throws IOException
 	{
-		long __address = ((treehash == null) ? 0 : treehash.getAddress());
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
 		if ((__io__pointersize == 8)) {
 			__io__block.writeLong(__io__address + 312, __address);
 		} else {

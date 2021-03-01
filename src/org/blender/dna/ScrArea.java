@@ -27,7 +27,7 @@ public class ScrArea extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 281;
+	public static final int __DNA__SDNA_INDEX = 284;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -453,7 +453,7 @@ public class ScrArea extends CFacade {
 	 * <pre>
 	 * ScrArea scrarea = ...;
 	 * CPointer&lt;Object&gt; p = scrarea.__dna__addressof(ScrArea.__DNA__FIELD__global);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_global = p.cast(new Class[]{CPointer.class, Object.class});
+	 * CPointer&lt;CPointer&lt;ScrGlobalAreaData&gt;&gt; p_global = p.cast(new Class[]{CPointer.class, ScrGlobalAreaData.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
@@ -468,7 +468,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one. {@link SpaceLink} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -491,7 +491,7 @@ public class ScrArea extends CFacade {
 	 * Field descriptor (offset) for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1240,7 +1240,7 @@ public class ScrArea extends CFacade {
 	 * @see #__DNA__FIELD__global
 	 */
 	
-	public CPointer<Object> getGlobal() throws IOException
+	public CPointer<ScrGlobalAreaData> getGlobal() throws IOException
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
@@ -1248,8 +1248,8 @@ public class ScrArea extends CFacade {
 		} else {
 			__dna__targetAddress = __io__block.readLong(__io__address + 64);
 		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+		Class<?>[] __dna__targetTypes = new Class[]{ScrGlobalAreaData.class};
+		return new CPointer<ScrGlobalAreaData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ScrGlobalAreaData.__DNA__SDNA_INDEX), __io__blockTable);
 	}
 
 	/**
@@ -1260,7 +1260,7 @@ public class ScrArea extends CFacade {
 	 * @see #__DNA__FIELD__global
 	 */
 	
-	public void setGlobal(CPointer<Object> global) throws IOException
+	public void setGlobal(CPointer<ScrGlobalAreaData> global) throws IOException
 	{
 		long __address = ((global == null) ? 0 : global.getAddress());
 		if ((__io__pointersize == 8)) {
@@ -1274,7 +1274,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one. {@link SpaceLink} . </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
@@ -1291,7 +1291,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'spacedata'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one.{@link SpaceLink} . </p>
+	 * <p> A list of space links (editors) that were open in this area before. When changing the editor type, we try to reuse old editor data from this list. The first item is the active/visible one. {@link SpaceLink} . </p>
 	 * @see #__DNA__FIELD__spacedata
 	 */
 	
@@ -1316,7 +1316,7 @@ public class ScrArea extends CFacade {
 	 * Get method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	
@@ -1333,7 +1333,7 @@ public class ScrArea extends CFacade {
 	 * Set method for struct member 'regionbase'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)!{@link ARegion} . </p>
+	 * <p> NOTE: This region list is the one from the active/visible editor (first item in spacedata list). Use {@link SpaceLink.regionbase}  if it's inactive (but only then)! {@link ARegion} . </p>
 	 * @see #__DNA__FIELD__regionbase
 	 */
 	

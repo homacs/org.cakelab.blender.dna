@@ -13,7 +13,8 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> transform limiting constraints - zero target ----------------------<mdash/><mdash/>  Limit Location Constraint </p>
+ * <p> transform limiting constraints - zero target -------------------------<mdash/>  <br/> 
+ *  Limit Location Constraint </p>
  */
 
 @CMetaData(size32=28, size64=28)
@@ -27,7 +28,7 @@ public class bLocLimitConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 364;
+	public static final int __DNA__SDNA_INDEX = 367;
 
 	/**
 	 * Field descriptor (offset) for struct member 'xmin'.

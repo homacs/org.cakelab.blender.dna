@@ -27,7 +27,7 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 403;
+	public static final int __DNA__SDNA_INDEX = 407;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_render_format'.
@@ -78,6 +78,26 @@ public class NodeImageMultiFileSocket extends CFacade {
 	public static final long[] __DNA__FIELD__use_node_format = new long[]{2, 2};
 
 	/**
+	 * Field descriptor (offset) for struct member 'save_as_render'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeImageMultiFileSocket nodeimagemultifilesocket = ...;
+	 * CPointer&lt;Object&gt; p = nodeimagemultifilesocket.__dna__addressof(NodeImageMultiFileSocket.__DNA__FIELD__save_as_render);
+	 * CPointer&lt;Byte&gt; p_save_as_render = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'save_as_render'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__save_as_render = new long[]{4, 4};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -91,11 +111,11 @@ public class NodeImageMultiFileSocket extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{4, 4};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{5, 5};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
@@ -264,6 +284,34 @@ public class NodeImageMultiFileSocket extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'save_as_render'.
+	 * @see #__DNA__FIELD__save_as_render
+	 */
+	
+	public byte getSave_as_render() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 4);
+		} else {
+			return __io__block.readByte(__io__address + 4);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'save_as_render'.
+	 * @see #__DNA__FIELD__save_as_render
+	 */
+	
+	public void setSave_as_render(byte save_as_render) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 4, save_as_render);
+		} else {
+			__io__block.writeByte(__io__address + 4, save_as_render);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad1'.
 	 * @see #__DNA__FIELD___pad1
 	 */
@@ -272,12 +320,12 @@ public class NodeImageMultiFileSocket extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 5, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 5, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -290,9 +338,9 @@ public class NodeImageMultiFileSocket extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4;
+			__dna__offset = 5;
 		} else {
-			__dna__offset = 4;
+			__dna__offset = 5;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;

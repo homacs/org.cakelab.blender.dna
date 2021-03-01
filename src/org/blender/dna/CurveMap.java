@@ -27,7 +27,7 @@ public class CurveMap extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 449;
+	public static final int __DNA__SDNA_INDEX = 466;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -233,7 +233,7 @@ public class CurveMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'premultable'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled table. </p>
+	 * <p> For RGB curves, pre-multiplied table. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -256,7 +256,7 @@ public class CurveMap extends CFacade {
 	 * Field descriptor (offset) for struct member 'premul_ext_in'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled extrapolation vector. </p>
+	 * <p> For RGB curves, pre-multiplied extrapolation vector. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -631,7 +631,7 @@ public class CurveMap extends CFacade {
 	 * Get method for struct member 'premultable'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled table. </p>
+	 * <p> For RGB curves, pre-multiplied table. </p>
 	 * @see #__DNA__FIELD__premultable
 	 */
 	
@@ -651,7 +651,7 @@ public class CurveMap extends CFacade {
 	 * Set method for struct member 'premultable'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled table. </p>
+	 * <p> For RGB curves, pre-multiplied table. </p>
 	 * @see #__DNA__FIELD__premultable
 	 */
 	
@@ -669,7 +669,7 @@ public class CurveMap extends CFacade {
 	 * Get method for struct member 'premul_ext_in'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled extrapolation vector. </p>
+	 * <p> For RGB curves, pre-multiplied extrapolation vector. </p>
 	 * @see #__DNA__FIELD__premul_ext_in
 	 */
 	
@@ -690,7 +690,7 @@ public class CurveMap extends CFacade {
 	 * Set method for struct member 'premul_ext_in'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For RGB curves, premulled extrapolation vector. </p>
+	 * <p> For RGB curves, pre-multiplied extrapolation vector. </p>
 	 * @see #__DNA__FIELD__premul_ext_in
 	 */
 	

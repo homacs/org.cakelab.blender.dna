@@ -599,24 +599,28 @@ public class MaterialGPencilStyle extends CFacade {
 	public static final long[] __DNA__FIELD__alignment_mode = new long[]{136, 144};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * <p> Rotation for texture for Dots and Squares. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MaterialGPencilStyle materialgpencilstyle = ...;
-	 * CPointer&lt;Object&gt; p = materialgpencilstyle.__dna__addressof(MaterialGPencilStyle.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = materialgpencilstyle.__dna__addressof(MaterialGPencilStyle.__DNA__FIELD__alignment_rotation);
+	 * CPointer&lt;Float&gt; p_alignment_rotation = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'alignment_rotation'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{140, 148};
+	public static final long[] __DNA__FIELD__alignment_rotation = new long[]{140, 148};
 
 	public MaterialGPencilStyle(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1581,42 +1585,38 @@ public class MaterialGPencilStyle extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * <p> Rotation for texture for Dots and Squares. </p>
+	 * @see #__DNA__FIELD__alignment_rotation
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public float getAlignment_rotation() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'alignment_rotation'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Additional rotation applied to dots and square strokes<h4>Blender Source Code:</h4>
+	 * <p> Rotation for texture for Dots and Squares. </p>
+	 * @see #__DNA__FIELD__alignment_rotation
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setAlignment_rotation(float alignment_rotation) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 148;
+			__io__block.writeFloat(__io__address + 148, alignment_rotation);
 		} else {
-			__dna__offset = 140;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeFloat(__io__address + 140, alignment_rotation);
 		}
 	}
 

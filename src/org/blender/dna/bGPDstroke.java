@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=408, size64=440)
+@CMetaData(size32=412, size64=448)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDstroke extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 488;
+	public static final int __DNA__SDNA_INDEX = 507;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -564,6 +564,29 @@ public class bGPDstroke extends CFacade {
 	public static final long[] __DNA__FIELD__vert_color_fill = new long[]{240, 264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'editcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__editcurve);
+	 * CPointer&lt;CPointer&lt;bGPDcurve&gt;&gt; p_editcurve = p.cast(new Class[]{CPointer.class, bGPDcurve.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'editcurve'</li>
+	 * <li>Signature: 'bGPDcurve*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__editcurve = new long[]{256, 280};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -581,7 +604,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{256, 280};
+	public static final long[] __DNA__FIELD__runtime = new long[]{260, 288};
 
 	public bGPDstroke(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1490,6 +1513,44 @@ public class bGPDstroke extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'editcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
+	 * @see #__DNA__FIELD__editcurve
+	 */
+	
+	public CPointer<bGPDcurve> getEditcurve() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bGPDcurve.class};
+		return new CPointer<bGPDcurve>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDcurve.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'editcurve'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Curve}  used to edit the stroke using Bezier handlers. </p>
+	 * @see #__DNA__FIELD__editcurve
+	 */
+	
+	public void setEditcurve(CPointer<bGPDcurve> editcurve) throws IOException
+	{
+		long __address = ((editcurve == null) ? 0 : editcurve.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 256, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -1497,9 +1558,9 @@ public class bGPDstroke extends CFacade {
 	public bGPDstroke_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPDstroke_Runtime(__io__address + 280, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 288, __io__block, __io__blockTable);
 		} else {
-			return new bGPDstroke_Runtime(__io__address + 256, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 260, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1512,9 +1573,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 280;
+			__dna__offset = 288;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 260;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

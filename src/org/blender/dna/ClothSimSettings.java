@@ -28,7 +28,7 @@ public class ClothSimSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 479;
+	public static final int __DNA__SDNA_INDEX = 496;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
@@ -151,7 +151,8 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. </p>
+	 * <p> This is the duration of our time step, computed.. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -477,7 +478,8 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -875,7 +877,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess already Damping of bending springs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1795,7 +1797,8 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. </p>
+	 * <p> This is the duration of our time step, computed.. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -1812,7 +1815,8 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. </p>
+	 * <p> This is the duration of our time step, computed.. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -2279,7 +2283,8 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -2296,7 +2301,8 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -2871,7 +2877,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess already Damping of bending springs. </p>
 	 * @see #__DNA__FIELD__bending_damping
 	 */
 	
@@ -2888,7 +2894,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'bending_damping'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess alreadyDamping of bending springs. </p>
+	 * <p> XXX various hair stuff should really be separate, this struct is a horrible mess already Damping of bending springs. </p>
 	 * @see #__DNA__FIELD__bending_damping
 	 */
 	

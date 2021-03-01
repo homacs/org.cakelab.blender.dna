@@ -27,7 +27,7 @@ public class SpaceButs extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 224;
+	public static final int __DNA__SDNA_INDEX = 220;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -283,8 +283,8 @@ public class SpaceButs extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{178, 202};
@@ -307,7 +307,27 @@ public class SpaceButs extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{183, 207};
+	public static final long[] __DNA__FIELD__flag = new long[]{182, 206};
+
+	/**
+	 * Field descriptor (offset) for struct member 'outliner_sync'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceButs spacebuts = ...;
+	 * CPointer&lt;Object&gt; p = spacebuts.__dna__addressof(SpaceButs.__DNA__FIELD__outliner_sync);
+	 * CPointer&lt;Byte&gt; p_outliner_sync = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'outliner_sync'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__outliner_sync = new long[]{183, 207};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path'.
@@ -818,7 +838,7 @@ public class SpaceButs extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			5
+			4
 		};
 		if ((__io__pointersize == 8)) {
 			return new CArrayFacade<Byte>(__io__address + 202, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
@@ -857,9 +877,9 @@ public class SpaceButs extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 207);
+			return __io__block.readByte(__io__address + 206);
 		} else {
-			return __io__block.readByte(__io__address + 183);
+			return __io__block.readByte(__io__address + 182);
 		}
 	}
 
@@ -871,9 +891,37 @@ public class SpaceButs extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 207, flag);
+			__io__block.writeByte(__io__address + 206, flag);
 		} else {
-			__io__block.writeByte(__io__address + 183, flag);
+			__io__block.writeByte(__io__address + 182, flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'outliner_sync'.
+	 * @see #__DNA__FIELD__outliner_sync
+	 */
+	
+	public byte getOutliner_sync() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 207);
+		} else {
+			return __io__block.readByte(__io__address + 183);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'outliner_sync'.
+	 * @see #__DNA__FIELD__outliner_sync
+	 */
+	
+	public void setOutliner_sync(byte outliner_sync) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 207, outliner_sync);
+		} else {
+			__io__block.writeByte(__io__address + 183, outliner_sync);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=64, size64=64)
+@CMetaData(size32=72, size64=72)
 public class NodeShaderAttribute extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class NodeShaderAttribute extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 429;
+	public static final int __DNA__SDNA_INDEX = 434;
 
 	/**
 	 * Field descriptor (offset) for struct member 'name'.
@@ -48,6 +48,46 @@ public class NodeShaderAttribute extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__name = new long[]{0, 0};
+
+	/**
+	 * Field descriptor (offset) for struct member 'type'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderAttribute nodeshaderattribute = ...;
+	 * CPointer&lt;Object&gt; p = nodeshaderattribute.__dna__addressof(NodeShaderAttribute.__DNA__FIELD__type);
+	 * CPointer&lt;Integer&gt; p_type = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'type'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__type = new long[]{64, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeShaderAttribute nodeshaderattribute = ...;
+	 * CPointer&lt;Object&gt; p = nodeshaderattribute.__dna__addressof(NodeShaderAttribute.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{68, 68};
 
 	public NodeShaderAttribute(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -94,6 +134,74 @@ public class NodeShaderAttribute extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, name);
 		} else {
 			__io__generic__copy( getName(), name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'type'.
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public int getType() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 64);
+		} else {
+			return __io__block.readInt(__io__address + 64);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'type'.
+	 * @see #__DNA__FIELD__type
+	 */
+	
+	public void setType(int type) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 64, type);
+		} else {
+			__io__block.writeInt(__io__address + 64, type);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 68;
+		} else {
+			__dna__offset = 68;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
 		}
 	}
 

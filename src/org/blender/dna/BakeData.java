@@ -27,7 +27,7 @@ public class BakeData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 183;
+	public static final int __DNA__SDNA_INDEX = 178;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -253,6 +253,26 @@ public class BakeData extends CFacade {
 	public static final long[] __DNA__FIELD__normal_space = new long[]{1295, 1303};
 
 	/**
+	 * Field descriptor (offset) for struct member 'target'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BakeData bakedata = ...;
+	 * CPointer&lt;Object&gt; p = bakedata.__dna__addressof(BakeData.__DNA__FIELD__target);
+	 * CPointer&lt;Byte&gt; p_target = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'target'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__target = new long[]{1296, 1304};
+
+	/**
 	 * Field descriptor (offset) for struct member 'save_mode'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -270,7 +290,7 @@ public class BakeData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__save_mode = new long[]{1296, 1304};
+	public static final long[] __DNA__FIELD__save_mode = new long[]{1297, 1305};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -286,11 +306,11 @@ public class BakeData extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1297, 1305};
+	public static final long[] __DNA__FIELD___pad = new long[]{1298, 1306};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cage_object'.
@@ -667,6 +687,34 @@ public class BakeData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'target'.
+	 * @see #__DNA__FIELD__target
+	 */
+	
+	public byte getTarget() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1304);
+		} else {
+			return __io__block.readByte(__io__address + 1296);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'target'.
+	 * @see #__DNA__FIELD__target
+	 */
+	
+	public void setTarget(byte target) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1304, target);
+		} else {
+			__io__block.writeByte(__io__address + 1296, target);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'save_mode'.
 	 * @see #__DNA__FIELD__save_mode
 	 */
@@ -674,9 +722,9 @@ public class BakeData extends CFacade {
 	public byte getSave_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1304);
+			return __io__block.readByte(__io__address + 1305);
 		} else {
-			return __io__block.readByte(__io__address + 1296);
+			return __io__block.readByte(__io__address + 1297);
 		}
 	}
 
@@ -688,9 +736,9 @@ public class BakeData extends CFacade {
 	public void setSave_mode(byte save_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1304, save_mode);
+			__io__block.writeByte(__io__address + 1305, save_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1296, save_mode);
+			__io__block.writeByte(__io__address + 1297, save_mode);
 		}
 	}
 
@@ -703,12 +751,12 @@ public class BakeData extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1305, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1306, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1297, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1298, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -721,9 +769,9 @@ public class BakeData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1305;
+			__dna__offset = 1306;
 		} else {
-			__dna__offset = 1297;
+			__dna__offset = 1298;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

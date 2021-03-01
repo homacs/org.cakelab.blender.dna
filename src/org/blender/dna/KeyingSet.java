@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- * </p><p>{@link KeyingSet}  definition (ks)</p><p> A {@link KeyingSet}  defines a group of properties that should be keyframed together, providing a convenient way for animators to insert keyframes without resorting to Auto-Keyframing.</p><p> A few 'generic' (non-absolute and dependent on templates) KeyingSets are defined 'built-in' to facilitate easy animating for the casual animator without the need to add extra steps to the rigging process. </p>
+ *  {@link KeyingSet}  definition (ks)</p><p> A {@link KeyingSet}  defines a group of properties that should be keyframed together, providing a convenient way for animators to insert keyframes without resorting to Auto-Keyframing.</p><p> A few 'generic' (non-absolute and dependent on templates) KeyingSets are defined 'built-in' to facilitate easy animating for the casual animator without the need to add extra steps to the rigging process. </p>
  */
 
 @CMetaData(size32=464, size64=480)
@@ -29,7 +29,7 @@ public class KeyingSet extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 555;
+	public static final int __DNA__SDNA_INDEX = 574;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

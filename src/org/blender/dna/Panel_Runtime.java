@@ -27,7 +27,7 @@ public class Panel_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 274;
+	public static final int __DNA__SDNA_INDEX = 276;
 
 	/**
 	 * Field descriptor (offset) for struct member 'region_ofsx'.
@@ -77,6 +77,7 @@ public class Panel_Runtime extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -206,6 +207,7 @@ public class Panel_Runtime extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__custom_data_ptr
 	 */
@@ -227,6 +229,7 @@ public class Panel_Runtime extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Pointer for storing which data the panel corresponds to. Useful when there can be multiple instances of the same panel type.</p><p><h2>Note</h2><p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. </p> A panel and its sub-panels share the same custom data pointer. This avoids freeing the same pointer twice when panels are removed. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__custom_data_ptr
 	 */

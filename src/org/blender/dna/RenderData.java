@@ -29,7 +29,7 @@ public class RenderData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 184;
+	public static final int __DNA__SDNA_INDEX = 179;
 
 	/**
 	 * Field descriptor (offset) for struct member 'im_format'.
@@ -952,7 +952,8 @@ public class RenderData extends CFacade {
 	 * Field descriptor (offset) for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -3260,7 +3261,8 @@ public class RenderData extends CFacade {
 	 * Get method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	
@@ -3277,7 +3279,8 @@ public class RenderData extends CFacade {
 	 * Set method for struct member 'gauss'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Value used to define filter size for all filter options </p>
+	 * <p> Value used to define filter size for all filter options <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__gauss
 	 */
 	

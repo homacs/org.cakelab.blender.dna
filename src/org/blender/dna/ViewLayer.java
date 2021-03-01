@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=196, size64=272)
+@CMetaData(size32=216, size64=304)
 public class ViewLayer extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ViewLayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 658;
+	public static final int __DNA__SDNA_INDEX = 678;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -312,6 +312,66 @@ public class ViewLayer extends CFacade {
 	public static final long[] __DNA__FIELD__pass_alpha_threshold = new long[]{116, 152};
 
 	/**
+	 * Field descriptor (offset) for struct member 'cryptomatte_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__cryptomatte_flag);
+	 * CPointer&lt;Short&gt; p_cryptomatte_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cryptomatte_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cryptomatte_flag = new long[]{120, 156};
+
+	/**
+	 * Field descriptor (offset) for struct member 'cryptomatte_levels'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__cryptomatte_levels);
+	 * CPointer&lt;Short&gt; p_cryptomatte_levels = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'cryptomatte_levels'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__cryptomatte_levels = new long[]{122, 158};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD___pad1);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{124, 160};
+
+	/**
 	 * Field descriptor (offset) for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -332,7 +392,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__samples = new long[]{120, 156};
+	public static final long[] __DNA__FIELD__samples = new long[]{128, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_override'.
@@ -352,7 +412,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat_override = new long[]{124, 160};
+	public static final long[] __DNA__FIELD__mat_override = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'id_properties'.
@@ -375,7 +435,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__id_properties = new long[]{128, 168};
+	public static final long[] __DNA__FIELD__id_properties = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'freestyle_config'.
@@ -395,13 +455,13 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/56</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__freestyle_config = new long[]{132, 176};
+	public static final long[] __DNA__FIELD__freestyle_config = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    View layer settings for EEVEE
+	 * (read-only)    View layer settings for Eevee
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -418,7 +478,54 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eevee = new long[]{172, 232};
+	public static final long[] __DNA__FIELD__eevee = new long[]{180, 240};
+
+	/**
+	 * Field descriptor (offset) for struct member 'aovs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__aovs);
+	 * CPointer&lt;ListBase&gt; p_aovs = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'aovs'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__aovs = new long[]{188, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member 'active_aov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Active AOV
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ViewLayer viewlayer = ...;
+	 * CPointer&lt;Object&gt; p = viewlayer.__dna__addressof(ViewLayer.__DNA__FIELD__active_aov);
+	 * CPointer&lt;CPointer&lt;ViewLayerAOV&gt;&gt; p_active_aov = p.cast(new Class[]{CPointer.class, ViewLayerAOV.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'active_aov'</li>
+	 * <li>Signature: 'ViewLayerAOV*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__active_aov = new long[]{196, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'drawdata'.
@@ -441,7 +548,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__drawdata = new long[]{180, 240};
+	public static final long[] __DNA__FIELD__drawdata = new long[]{200, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_array'.
@@ -461,7 +568,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_array = new long[]{188, 256};
+	public static final long[] __DNA__FIELD__object_bases_array = new long[]{208, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_bases_hash'.
@@ -481,7 +588,7 @@ public class ViewLayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{192, 264};
+	public static final long[] __DNA__FIELD__object_bases_hash = new long[]{212, 296};
 
 	public ViewLayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -960,6 +1067,102 @@ public class ViewLayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'cryptomatte_flag'.
+	 * @see #__DNA__FIELD__cryptomatte_flag
+	 */
+	
+	public short getCryptomatte_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 156);
+		} else {
+			return __io__block.readShort(__io__address + 120);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cryptomatte_flag'.
+	 * @see #__DNA__FIELD__cryptomatte_flag
+	 */
+	
+	public void setCryptomatte_flag(short cryptomatte_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 156, cryptomatte_flag);
+		} else {
+			__io__block.writeShort(__io__address + 120, cryptomatte_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'cryptomatte_levels'.
+	 * @see #__DNA__FIELD__cryptomatte_levels
+	 */
+	
+	public short getCryptomatte_levels() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 158);
+		} else {
+			return __io__block.readShort(__io__address + 122);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'cryptomatte_levels'.
+	 * @see #__DNA__FIELD__cryptomatte_levels
+	 */
+	
+	public void setCryptomatte_levels(short cryptomatte_levels) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 158, cryptomatte_levels);
+		} else {
+			__io__block.writeShort(__io__address + 122, cryptomatte_levels);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CArrayFacade<Byte> get_pad1() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 160;
+		} else {
+			__dna__offset = 124;
+		}
+		if (__io__equals(_pad1, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad1)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
+		} else {
+			__io__generic__copy( get_pad1(), _pad1);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'samples'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -970,9 +1173,9 @@ public class ViewLayer extends CFacade {
 	public int getSamples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -987,9 +1190,9 @@ public class ViewLayer extends CFacade {
 	public void setSamples(int samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, samples);
+			__io__block.writeInt(__io__address + 164, samples);
 		} else {
-			__io__block.writeInt(__io__address + 120, samples);
+			__io__block.writeInt(__io__address + 128, samples);
 		}
 	}
 
@@ -1002,9 +1205,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
 		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1019,9 +1222,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((mat_override == null) ? 0 : mat_override.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 
@@ -1037,9 +1240,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1057,9 +1260,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((id_properties == null) ? 0 : id_properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -1071,9 +1274,9 @@ public class ViewLayer extends CFacade {
 	public FreestyleConfig getFreestyle_config() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new FreestyleConfig(__io__address + 176, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 184, __io__block, __io__blockTable);
 		} else {
-			return new FreestyleConfig(__io__address + 132, __io__block, __io__blockTable);
+			return new FreestyleConfig(__io__address + 140, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1086,9 +1289,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
+			__dna__offset = 184;
 		} else {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		}
 		if (__io__equals(freestyle_config, __io__address + __dna__offset)) {
 			return;
@@ -1103,16 +1306,16 @@ public class ViewLayer extends CFacade {
 	 * Get method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    View layer settings for EEVEE
+	 * (read-only)    View layer settings for Eevee
 	 * @see #__DNA__FIELD__eevee
 	 */
 	
 	public ViewLayerEEVEE getEevee() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ViewLayerEEVEE(__io__address + 232, __io__block, __io__blockTable);
+			return new ViewLayerEEVEE(__io__address + 240, __io__block, __io__blockTable);
 		} else {
-			return new ViewLayerEEVEE(__io__address + 172, __io__block, __io__blockTable);
+			return new ViewLayerEEVEE(__io__address + 180, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1120,7 +1323,7 @@ public class ViewLayer extends CFacade {
 	 * Set method for struct member 'eevee'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * (read-only)    View layer settings for EEVEE
+	 * (read-only)    View layer settings for Eevee
 	 * @see #__DNA__FIELD__eevee
 	 */
 	
@@ -1128,9 +1331,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
+			__dna__offset = 240;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 180;
 		}
 		if (__io__equals(eevee, __io__address + __dna__offset)) {
 			return;
@@ -1138,6 +1341,88 @@ public class ViewLayer extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, eevee);
 		} else {
 			__io__generic__copy( getEevee(), eevee);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'aovs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
+	 * @see #__DNA__FIELD__aovs
+	 */
+	
+	public ListBase getAovs() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 248, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 188, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'aovs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)<h4>Blender Source Code:</h4>
+	 * <p><code> List containing the {@link ViewLayerAOV}</code> s </p>
+	 * @see #__DNA__FIELD__aovs
+	 */
+	
+	public void setAovs(ListBase aovs) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 248;
+		} else {
+			__dna__offset = 188;
+		}
+		if (__io__equals(aovs, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, aovs)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, aovs);
+		} else {
+			__io__generic__copy( getAovs(), aovs);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'active_aov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Active AOV
+	 * @see #__DNA__FIELD__active_aov
+	 */
+	
+	public CPointer<ViewLayerAOV> getActive_aov() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{ViewLayerAOV.class};
+		return new CPointer<ViewLayerAOV>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewLayerAOV.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'active_aov'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Active AOV
+	 * @see #__DNA__FIELD__active_aov
+	 */
+	
+	public void setActive_aov(CPointer<ViewLayerAOV> active_aov) throws IOException
+	{
+		long __address = ((active_aov == null) ? 0 : active_aov.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 264, __address);
+		} else {
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 
@@ -1152,9 +1437,9 @@ public class ViewLayer extends CFacade {
 	public ListBase getDrawdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 180, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 200, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1170,9 +1455,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 180;
+			__dna__offset = 200;
 		}
 		if (__io__equals(drawdata, __io__address + __dna__offset)) {
 			return;
@@ -1192,9 +1477,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Base.class};
 		return new CPointer<CPointer<Base>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1209,9 +1494,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_array == null) ? 0 : object_bases_array.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 
@@ -1224,9 +1509,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 212);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1241,9 +1526,9 @@ public class ViewLayer extends CFacade {
 	{
 		long __address = ((object_bases_hash == null) ? 0 : object_bases_hash.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 212, __address);
 		}
 	}
 

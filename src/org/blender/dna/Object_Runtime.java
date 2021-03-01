@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Not saved in file! </p>
  */
 
-@CMetaData(size32=104, size64=136)
+@CMetaData(size32=108, size64=144)
 public class Object_Runtime extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class Object_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 165;
+	public static final int __DNA__SDNA_INDEX = 160;
 
 	/**
 	 * Field descriptor (offset) for struct member 'last_data_mask'.
@@ -123,7 +123,7 @@ public class Object_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Selection id of this object; only available in the original object </p>
+	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -235,7 +235,7 @@ public class Object_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. </p>
+	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. For example, for mesh and curve objects, this is a mesh. For a volume object, this is a volume. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -253,6 +253,29 @@ public class Object_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__data_eval = new long[]{72, 80};
+
+	/**
+	 * Field descriptor (offset) for struct member 'geometry_set_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD__geometry_set_eval);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_geometry_set_eval = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'geometry_set_eval'</li>
+	 * <li>Signature: 'GeometrySet*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__geometry_set_eval = new long[]{76, 88};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_deform_eval'.
@@ -275,7 +298,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_deform_eval = new long[]{76, 88};
+	public static final long[] __DNA__FIELD__mesh_deform_eval = new long[]{80, 96};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd_orig'.
@@ -298,7 +321,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd_orig = new long[]{80, 96};
+	public static final long[] __DNA__FIELD__gpd_orig = new long[]{84, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd_eval'.
@@ -321,7 +344,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd_eval = new long[]{84, 104};
+	public static final long[] __DNA__FIELD__gpd_eval = new long[]{88, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_as_temp_mesh'.
@@ -344,7 +367,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_as_temp_mesh = new long[]{88, 112};
+	public static final long[] __DNA__FIELD__object_as_temp_mesh = new long[]{92, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_cache'.
@@ -367,7 +390,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_cache = new long[]{92, 120};
+	public static final long[] __DNA__FIELD__curve_cache = new long[]{96, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'local_collections_bits'.
@@ -387,7 +410,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__local_collections_bits = new long[]{96, 128};
+	public static final long[] __DNA__FIELD__local_collections_bits = new long[]{100, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -407,7 +430,7 @@ public class Object_Runtime extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{98, 130};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{102, 138};
 
 	public Object_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -583,7 +606,7 @@ public class Object_Runtime extends CFacade {
 	 * Get method for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Selection id of this object; only available in the original object </p>
+	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * @see #__DNA__FIELD__select_id
 	 */
 	
@@ -600,7 +623,7 @@ public class Object_Runtime extends CFacade {
 	 * Set method for struct member 'select_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Selection id of this object; only available in the original object </p>
+	 * <p> Selection id of this object. It might differ between an evaluated and its original object, when the object is being instanced. </p>
 	 * @see #__DNA__FIELD__select_id
 	 */
 	
@@ -767,7 +790,7 @@ public class Object_Runtime extends CFacade {
 	 * Get method for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. </p>
+	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. For example, for mesh and curve objects, this is a mesh. For a volume object, this is a volume. </p>
 	 * @see #__DNA__FIELD__data_eval
 	 */
 	
@@ -787,7 +810,7 @@ public class Object_Runtime extends CFacade {
 	 * Set method for struct member 'data_eval'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. </p>
+	 * <p>{@link Object}  data structure created during object evaluation. It has all modifiers applied. The type is determined by the type of the original object. For example, for mesh and curve objects, this is a mesh. For a volume object, this is a volume. </p>
 	 * @see #__DNA__FIELD__data_eval
 	 */
 	
@@ -798,6 +821,44 @@ public class Object_Runtime extends CFacade {
 			__io__block.writeLong(__io__address + 80, __address);
 		} else {
 			__io__block.writeLong(__io__address + 72, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'geometry_set_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * @see #__DNA__FIELD__geometry_set_eval
+	 */
+	
+	public CPointer<Object> getGeometry_set_eval() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'geometry_set_eval'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> s can evaluate to a geometry set instead of a single {@link ID} . In those cases, the evaluated geometry set will be stored here. An {@link ID}  of the correct type is still stored in {@link data_eval} . {@link geometry_set_eval}  might reference the {@link ID}  pointed to by {@link data_eval}  as well, but does not own the data. </p>
+	 * @see #__DNA__FIELD__geometry_set_eval
+	 */
+	
+	public void setGeometry_set_eval(CPointer<Object> geometry_set_eval) throws IOException
+	{
+		long __address = ((geometry_set_eval == null) ? 0 : geometry_set_eval.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 88, __address);
+		} else {
+			__io__block.writeLong(__io__address + 76, __address);
 		}
 	}
 
@@ -813,9 +874,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 76);
+			__dna__targetAddress = __io__block.readLong(__io__address + 80);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
 		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
@@ -833,9 +894,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __address = ((mesh_deform_eval == null) ? 0 : mesh_deform_eval.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		} else {
-			__io__block.writeLong(__io__address + 76, __address);
+			__io__block.writeLong(__io__address + 80, __address);
 		}
 	}
 
@@ -851,9 +912,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 96);
+			__dna__targetAddress = __io__block.readLong(__io__address + 104);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 80);
+			__dna__targetAddress = __io__block.readLong(__io__address + 84);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -871,9 +932,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __address = ((gpd_orig == null) ? 0 : gpd_orig.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 96, __address);
+			__io__block.writeLong(__io__address + 104, __address);
 		} else {
-			__io__block.writeLong(__io__address + 80, __address);
+			__io__block.writeLong(__io__address + 84, __address);
 		}
 	}
 
@@ -889,9 +950,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 84);
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -909,9 +970,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __address = ((gpd_eval == null) ? 0 : gpd_eval.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		} else {
-			__io__block.writeLong(__io__address + 84, __address);
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 
@@ -927,9 +988,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+			__dna__targetAddress = __io__block.readLong(__io__address + 92);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
 		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
@@ -947,9 +1008,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __address = ((object_as_temp_mesh == null) ? 0 : object_as_temp_mesh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		} else {
-			__io__block.writeLong(__io__address + 88, __address);
+			__io__block.writeLong(__io__address + 92, __address);
 		}
 	}
 
@@ -965,9 +1026,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+			__dna__targetAddress = __io__block.readLong(__io__address + 96);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -985,9 +1046,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __address = ((curve_cache == null) ? 0 : curve_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 128, __address);
 		} else {
-			__io__block.writeLong(__io__address + 92, __address);
+			__io__block.writeLong(__io__address + 96, __address);
 		}
 	}
 
@@ -999,9 +1060,9 @@ public class Object_Runtime extends CFacade {
 	public short getLocal_collections_bits() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 128);
+			return __io__block.readShort(__io__address + 136);
 		} else {
-			return __io__block.readShort(__io__address + 96);
+			return __io__block.readShort(__io__address + 100);
 		}
 	}
 
@@ -1013,9 +1074,9 @@ public class Object_Runtime extends CFacade {
 	public void setLocal_collections_bits(short local_collections_bits) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 128, local_collections_bits);
+			__io__block.writeShort(__io__address + 136, local_collections_bits);
 		} else {
-			__io__block.writeShort(__io__address + 96, local_collections_bits);
+			__io__block.writeShort(__io__address + 100, local_collections_bits);
 		}
 	}
 
@@ -1031,9 +1092,9 @@ public class Object_Runtime extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 138, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 98, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 102, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1046,9 +1107,9 @@ public class Object_Runtime extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 130;
+			__dna__offset = 138;
 		} else {
-			__dna__offset = 98;
+			__dna__offset = 102;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=744, size64=920)
+@CMetaData(size32=752, size64=936)
 public class ParticleSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 477;
+	public static final int __DNA__SDNA_INDEX = 494;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class ParticleSettings extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'boids'.
@@ -90,7 +90,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__boids = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__boids = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fluid'.
@@ -113,7 +113,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fluid = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__fluid = new long[]{144, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -136,7 +136,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_weights = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__effector_weights = new long[]{148, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collision_group'.
@@ -156,7 +156,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collision_group = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__collision_group = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -176,7 +176,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__flag = new long[]{156, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rt'.
@@ -196,13 +196,13 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rt = new long[]{152, 204};
+	public static final long[] __DNA__FIELD__rt = new long[]{160, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Particle Type
+	 * Particle type
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -219,7 +219,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__type = new long[]{156, 208};
+	public static final long[] __DNA__FIELD__type = new long[]{164, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'from'.
@@ -239,7 +239,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__from = new long[]{158, 210};
+	public static final long[] __DNA__FIELD__from = new long[]{166, 226};
 
 	/**
 	 * Field descriptor (offset) for struct member 'distr'.
@@ -259,7 +259,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__distr = new long[]{160, 212};
+	public static final long[] __DNA__FIELD__distr = new long[]{168, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texact'.
@@ -279,7 +279,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texact = new long[]{162, 214};
+	public static final long[] __DNA__FIELD__texact = new long[]{170, 230};
 
 	/**
 	 * Field descriptor (offset) for struct member 'phystype'.
@@ -302,7 +302,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__phystype = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__phystype = new long[]{172, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotmode'.
@@ -322,7 +322,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotmode = new long[]{166, 218};
+	public static final long[] __DNA__FIELD__rotmode = new long[]{174, 234};
 
 	/**
 	 * Field descriptor (offset) for struct member 'avemode'.
@@ -342,7 +342,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__avemode = new long[]{168, 220};
+	public static final long[] __DNA__FIELD__avemode = new long[]{176, 236};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reactevent'.
@@ -362,7 +362,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reactevent = new long[]{170, 222};
+	public static final long[] __DNA__FIELD__reactevent = new long[]{178, 238};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw'.
@@ -382,7 +382,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw = new long[]{172, 224};
+	public static final long[] __DNA__FIELD__draw = new long[]{180, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_size'.
@@ -402,7 +402,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_size = new long[]{176, 228};
+	public static final long[] __DNA__FIELD__draw_size = new long[]{184, 244};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_as'.
@@ -422,7 +422,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_as = new long[]{180, 232};
+	public static final long[] __DNA__FIELD__draw_as = new long[]{188, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'childtype'.
@@ -442,7 +442,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__childtype = new long[]{182, 234};
+	public static final long[] __DNA__FIELD__childtype = new long[]{190, 250};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -462,7 +462,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{184, 236};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{192, 252};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ren_as'.
@@ -482,7 +482,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ren_as = new long[]{188, 240};
+	public static final long[] __DNA__FIELD__ren_as = new long[]{196, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subframes'.
@@ -505,7 +505,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subframes = new long[]{190, 242};
+	public static final long[] __DNA__FIELD__subframes = new long[]{198, 258};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_col'.
@@ -525,7 +525,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_col = new long[]{192, 244};
+	public static final long[] __DNA__FIELD__draw_col = new long[]{200, 260};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_step'.
@@ -548,7 +548,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_step = new long[]{194, 246};
+	public static final long[] __DNA__FIELD__draw_step = new long[]{202, 262};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ren_step'.
@@ -568,7 +568,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ren_step = new long[]{196, 248};
+	public static final long[] __DNA__FIELD__ren_step = new long[]{204, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'hair_step'.
@@ -591,7 +591,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__hair_step = new long[]{198, 250};
+	public static final long[] __DNA__FIELD__hair_step = new long[]{206, 266};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keys_step'.
@@ -611,7 +611,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keys_step = new long[]{200, 252};
+	public static final long[] __DNA__FIELD__keys_step = new long[]{208, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_angle'.
@@ -634,7 +634,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_angle = new long[]{202, 254};
+	public static final long[] __DNA__FIELD__adapt_angle = new long[]{210, 270};
 
 	/**
 	 * Field descriptor (offset) for struct member 'adapt_pix'.
@@ -654,7 +654,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adapt_pix = new long[]{204, 256};
+	public static final long[] __DNA__FIELD__adapt_pix = new long[]{212, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'disp'.
@@ -674,7 +674,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__disp = new long[]{206, 258};
+	public static final long[] __DNA__FIELD__disp = new long[]{214, 274};
 
 	/**
 	 * Field descriptor (offset) for struct member 'omat'.
@@ -694,7 +694,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__omat = new long[]{208, 260};
+	public static final long[] __DNA__FIELD__omat = new long[]{216, 276};
 
 	/**
 	 * Field descriptor (offset) for struct member 'interpolation'.
@@ -714,7 +714,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__interpolation = new long[]{210, 262};
+	public static final long[] __DNA__FIELD__interpolation = new long[]{218, 278};
 
 	/**
 	 * Field descriptor (offset) for struct member 'integrator'.
@@ -737,7 +737,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__integrator = new long[]{212, 264};
+	public static final long[] __DNA__FIELD__integrator = new long[]{220, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rotfrom'.
@@ -762,7 +762,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rotfrom = new long[]{214, 266};
+	public static final long[] __DNA__FIELD__rotfrom = new long[]{222, 282};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink'.
@@ -785,7 +785,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink = new long[]{216, 268};
+	public static final long[] __DNA__FIELD__kink = new long[]{224, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_axis'.
@@ -808,7 +808,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_axis = new long[]{218, 270};
+	public static final long[] __DNA__FIELD__kink_axis = new long[]{226, 286};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_align'.
@@ -831,7 +831,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_align = new long[]{220, 272};
+	public static final long[] __DNA__FIELD__bb_align = new long[]{228, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_uv_split'.
@@ -851,7 +851,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_uv_split = new long[]{222, 274};
+	public static final long[] __DNA__FIELD__bb_uv_split = new long[]{230, 290};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_anim'.
@@ -871,7 +871,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_anim = new long[]{224, 276};
+	public static final long[] __DNA__FIELD__bb_anim = new long[]{232, 292};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_split_offset'.
@@ -896,7 +896,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_split_offset = new long[]{226, 278};
+	public static final long[] __DNA__FIELD__bb_split_offset = new long[]{234, 294};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_tilt'.
@@ -916,7 +916,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_tilt = new long[]{228, 280};
+	public static final long[] __DNA__FIELD__bb_tilt = new long[]{236, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_rand_tilt'.
@@ -936,7 +936,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_rand_tilt = new long[]{232, 284};
+	public static final long[] __DNA__FIELD__bb_rand_tilt = new long[]{240, 300};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_offset'.
@@ -956,7 +956,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_offset = new long[]{236, 288};
+	public static final long[] __DNA__FIELD__bb_offset = new long[]{244, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_size'.
@@ -976,7 +976,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_size = new long[]{244, 296};
+	public static final long[] __DNA__FIELD__bb_size = new long[]{252, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_vel_head'.
@@ -996,7 +996,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_vel_head = new long[]{252, 304};
+	public static final long[] __DNA__FIELD__bb_vel_head = new long[]{260, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_vel_tail'.
@@ -1021,7 +1021,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_vel_tail = new long[]{256, 308};
+	public static final long[] __DNA__FIELD__bb_vel_tail = new long[]{264, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'color_vec_max'.
@@ -1044,7 +1044,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_vec_max = new long[]{260, 312};
+	public static final long[] __DNA__FIELD__color_vec_max = new long[]{268, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sta'.
@@ -1067,7 +1067,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sta = new long[]{264, 316};
+	public static final long[] __DNA__FIELD__sta = new long[]{272, 332};
 
 	/**
 	 * Field descriptor (offset) for struct member 'end'.
@@ -1087,7 +1087,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__end = new long[]{268, 320};
+	public static final long[] __DNA__FIELD__end = new long[]{276, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lifetime'.
@@ -1110,7 +1110,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lifetime = new long[]{272, 324};
+	public static final long[] __DNA__FIELD__lifetime = new long[]{280, 340};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randlife'.
@@ -1130,7 +1130,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randlife = new long[]{276, 328};
+	public static final long[] __DNA__FIELD__randlife = new long[]{284, 344};
 
 	/**
 	 * Field descriptor (offset) for struct member 'timetweak'.
@@ -1150,13 +1150,13 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__timetweak = new long[]{280, 332};
+	public static final long[] __DNA__FIELD__timetweak = new long[]{288, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'courant_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
+	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01 to 0.3 is the recommended range
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1173,7 +1173,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__courant_target = new long[]{284, 336};
+	public static final long[] __DNA__FIELD__courant_target = new long[]{292, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'jitfac'.
@@ -1193,7 +1193,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__jitfac = new long[]{288, 340};
+	public static final long[] __DNA__FIELD__jitfac = new long[]{296, 356};
 
 	/**
 	 * Field descriptor (offset) for struct member 'eff_hair'.
@@ -1213,7 +1213,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__eff_hair = new long[]{292, 344};
+	public static final long[] __DNA__FIELD__eff_hair = new long[]{300, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_rand'.
@@ -1233,7 +1233,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_rand = new long[]{296, 348};
+	public static final long[] __DNA__FIELD__grid_rand = new long[]{304, 364};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ps_offset'.
@@ -1253,7 +1253,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ps_offset = new long[]{300, 352};
+	public static final long[] __DNA__FIELD__ps_offset = new long[]{308, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpart'.
@@ -1273,7 +1273,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpart = new long[]{304, 356};
+	public static final long[] __DNA__FIELD__totpart = new long[]{312, 372};
 
 	/**
 	 * Field descriptor (offset) for struct member 'userjit'.
@@ -1296,7 +1296,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__userjit = new long[]{308, 360};
+	public static final long[] __DNA__FIELD__userjit = new long[]{316, 376};
 
 	/**
 	 * Field descriptor (offset) for struct member 'grid_res'.
@@ -1316,7 +1316,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid_res = new long[]{312, 364};
+	public static final long[] __DNA__FIELD__grid_res = new long[]{320, 380};
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_amount'.
@@ -1339,7 +1339,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__effector_amount = new long[]{316, 368};
+	public static final long[] __DNA__FIELD__effector_amount = new long[]{324, 384};
 
 	/**
 	 * Field descriptor (offset) for struct member 'time_flag'.
@@ -1359,7 +1359,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__time_flag = new long[]{320, 372};
+	public static final long[] __DNA__FIELD__time_flag = new long[]{328, 388};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -1379,7 +1379,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{322, 374};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{330, 390};
 
 	/**
 	 * Field descriptor (offset) for struct member 'normfac'.
@@ -1402,7 +1402,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__normfac = new long[]{328, 380};
+	public static final long[] __DNA__FIELD__normfac = new long[]{336, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'obfac'.
@@ -1422,7 +1422,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__obfac = new long[]{332, 384};
+	public static final long[] __DNA__FIELD__obfac = new long[]{340, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randfac'.
@@ -1442,7 +1442,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randfac = new long[]{336, 388};
+	public static final long[] __DNA__FIELD__randfac = new long[]{344, 404};
 
 	/**
 	 * Field descriptor (offset) for struct member 'partfac'.
@@ -1462,7 +1462,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__partfac = new long[]{340, 392};
+	public static final long[] __DNA__FIELD__partfac = new long[]{348, 408};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tanfac'.
@@ -1482,7 +1482,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tanfac = new long[]{344, 396};
+	public static final long[] __DNA__FIELD__tanfac = new long[]{352, 412};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tanphase'.
@@ -1502,7 +1502,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tanphase = new long[]{348, 400};
+	public static final long[] __DNA__FIELD__tanphase = new long[]{356, 416};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reactfac'.
@@ -1522,7 +1522,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reactfac = new long[]{352, 404};
+	public static final long[] __DNA__FIELD__reactfac = new long[]{360, 420};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ob_vel'.
@@ -1542,7 +1542,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ob_vel = new long[]{356, 408};
+	public static final long[] __DNA__FIELD__ob_vel = new long[]{364, 424};
 
 	/**
 	 * Field descriptor (offset) for struct member 'avefac'.
@@ -1562,7 +1562,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__avefac = new long[]{368, 420};
+	public static final long[] __DNA__FIELD__avefac = new long[]{376, 436};
 
 	/**
 	 * Field descriptor (offset) for struct member 'phasefac'.
@@ -1582,7 +1582,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__phasefac = new long[]{372, 424};
+	public static final long[] __DNA__FIELD__phasefac = new long[]{380, 440};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randrotfac'.
@@ -1602,7 +1602,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randrotfac = new long[]{376, 428};
+	public static final long[] __DNA__FIELD__randrotfac = new long[]{384, 444};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randphasefac'.
@@ -1622,7 +1622,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randphasefac = new long[]{380, 432};
+	public static final long[] __DNA__FIELD__randphasefac = new long[]{388, 448};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mass'.
@@ -1646,7 +1646,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mass = new long[]{384, 436};
+	public static final long[] __DNA__FIELD__mass = new long[]{392, 452};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -1666,7 +1666,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{388, 440};
+	public static final long[] __DNA__FIELD__size = new long[]{396, 456};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randsize'.
@@ -1686,7 +1686,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randsize = new long[]{392, 444};
+	public static final long[] __DNA__FIELD__randsize = new long[]{400, 460};
 
 	/**
 	 * Field descriptor (offset) for struct member 'acc'.
@@ -1709,7 +1709,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__acc = new long[]{396, 448};
+	public static final long[] __DNA__FIELD__acc = new long[]{404, 464};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dragfac'.
@@ -1729,7 +1729,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dragfac = new long[]{408, 460};
+	public static final long[] __DNA__FIELD__dragfac = new long[]{416, 476};
 
 	/**
 	 * Field descriptor (offset) for struct member 'brownfac'.
@@ -1749,7 +1749,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__brownfac = new long[]{412, 464};
+	public static final long[] __DNA__FIELD__brownfac = new long[]{420, 480};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dampfac'.
@@ -1769,7 +1769,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dampfac = new long[]{416, 468};
+	public static final long[] __DNA__FIELD__dampfac = new long[]{424, 484};
 
 	/**
 	 * Field descriptor (offset) for struct member 'randlength'.
@@ -1792,7 +1792,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__randlength = new long[]{420, 472};
+	public static final long[] __DNA__FIELD__randlength = new long[]{428, 488};
 
 	/**
 	 * Field descriptor (offset) for struct member 'child_flag'.
@@ -1815,7 +1815,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__child_flag = new long[]{424, 476};
+	public static final long[] __DNA__FIELD__child_flag = new long[]{432, 492};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -1835,7 +1835,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{428, 480};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{436, 496};
 
 	/**
 	 * Field descriptor (offset) for struct member 'child_nbr'.
@@ -1858,7 +1858,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__child_nbr = new long[]{432, 484};
+	public static final long[] __DNA__FIELD__child_nbr = new long[]{440, 500};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ren_child_nbr'.
@@ -1878,7 +1878,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ren_child_nbr = new long[]{436, 488};
+	public static final long[] __DNA__FIELD__ren_child_nbr = new long[]{444, 504};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parents'.
@@ -1898,7 +1898,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parents = new long[]{440, 492};
+	public static final long[] __DNA__FIELD__parents = new long[]{448, 508};
 
 	/**
 	 * Field descriptor (offset) for struct member 'childsize'.
@@ -1918,7 +1918,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__childsize = new long[]{444, 496};
+	public static final long[] __DNA__FIELD__childsize = new long[]{452, 512};
 
 	/**
 	 * Field descriptor (offset) for struct member 'childrandsize'.
@@ -1938,7 +1938,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__childrandsize = new long[]{448, 500};
+	public static final long[] __DNA__FIELD__childrandsize = new long[]{456, 516};
 
 	/**
 	 * Field descriptor (offset) for struct member 'childrad'.
@@ -1958,7 +1958,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__childrad = new long[]{452, 504};
+	public static final long[] __DNA__FIELD__childrad = new long[]{460, 520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'childflat'.
@@ -1978,7 +1978,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__childflat = new long[]{456, 508};
+	public static final long[] __DNA__FIELD__childflat = new long[]{464, 524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clumpfac'.
@@ -2001,7 +2001,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clumpfac = new long[]{460, 512};
+	public static final long[] __DNA__FIELD__clumpfac = new long[]{468, 528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clumppow'.
@@ -2021,7 +2021,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clumppow = new long[]{464, 516};
+	public static final long[] __DNA__FIELD__clumppow = new long[]{472, 532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_amp'.
@@ -2044,7 +2044,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_amp = new long[]{468, 520};
+	public static final long[] __DNA__FIELD__kink_amp = new long[]{476, 536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_freq'.
@@ -2064,7 +2064,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_freq = new long[]{472, 524};
+	public static final long[] __DNA__FIELD__kink_freq = new long[]{480, 540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_shape'.
@@ -2087,7 +2087,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_shape = new long[]{476, 528};
+	public static final long[] __DNA__FIELD__kink_shape = new long[]{484, 544};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_flat'.
@@ -2110,7 +2110,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_flat = new long[]{480, 532};
+	public static final long[] __DNA__FIELD__kink_flat = new long[]{488, 548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_amp_clump'.
@@ -2130,7 +2130,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_amp_clump = new long[]{484, 536};
+	public static final long[] __DNA__FIELD__kink_amp_clump = new long[]{492, 552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_extra_steps'.
@@ -2153,7 +2153,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_extra_steps = new long[]{488, 540};
+	public static final long[] __DNA__FIELD__kink_extra_steps = new long[]{496, 556};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad4'.
@@ -2173,7 +2173,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{492, 544};
+	public static final long[] __DNA__FIELD___pad4 = new long[]{500, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_axis_random'.
@@ -2196,7 +2196,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_axis_random = new long[]{496, 548};
+	public static final long[] __DNA__FIELD__kink_axis_random = new long[]{504, 564};
 
 	/**
 	 * Field descriptor (offset) for struct member 'kink_amp_random'.
@@ -2216,7 +2216,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__kink_amp_random = new long[]{500, 552};
+	public static final long[] __DNA__FIELD__kink_amp_random = new long[]{508, 568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough1'.
@@ -2239,7 +2239,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough1 = new long[]{504, 556};
+	public static final long[] __DNA__FIELD__rough1 = new long[]{512, 572};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough1_size'.
@@ -2259,7 +2259,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough1_size = new long[]{508, 560};
+	public static final long[] __DNA__FIELD__rough1_size = new long[]{516, 576};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough2'.
@@ -2279,7 +2279,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough2 = new long[]{512, 564};
+	public static final long[] __DNA__FIELD__rough2 = new long[]{520, 580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough2_size'.
@@ -2299,7 +2299,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough2_size = new long[]{516, 568};
+	public static final long[] __DNA__FIELD__rough2_size = new long[]{524, 584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough2_thres'.
@@ -2319,7 +2319,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough2_thres = new long[]{520, 572};
+	public static final long[] __DNA__FIELD__rough2_thres = new long[]{528, 588};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough_end'.
@@ -2339,7 +2339,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough_end = new long[]{524, 576};
+	public static final long[] __DNA__FIELD__rough_end = new long[]{532, 592};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rough_end_shape'.
@@ -2359,7 +2359,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rough_end_shape = new long[]{528, 580};
+	public static final long[] __DNA__FIELD__rough_end_shape = new long[]{536, 596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clength'.
@@ -2382,7 +2382,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clength = new long[]{532, 584};
+	public static final long[] __DNA__FIELD__clength = new long[]{540, 600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clength_thres'.
@@ -2402,7 +2402,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clength_thres = new long[]{536, 588};
+	public static final long[] __DNA__FIELD__clength_thres = new long[]{544, 604};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parting_fac'.
@@ -2425,7 +2425,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parting_fac = new long[]{540, 592};
+	public static final long[] __DNA__FIELD__parting_fac = new long[]{548, 608};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parting_min'.
@@ -2445,7 +2445,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parting_min = new long[]{544, 596};
+	public static final long[] __DNA__FIELD__parting_min = new long[]{552, 612};
 
 	/**
 	 * Field descriptor (offset) for struct member 'parting_max'.
@@ -2465,7 +2465,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parting_max = new long[]{548, 600};
+	public static final long[] __DNA__FIELD__parting_max = new long[]{556, 616};
 
 	/**
 	 * Field descriptor (offset) for struct member 'branch_thres'.
@@ -2488,7 +2488,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__branch_thres = new long[]{552, 604};
+	public static final long[] __DNA__FIELD__branch_thres = new long[]{560, 620};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_line'.
@@ -2511,7 +2511,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__draw_line = new long[]{556, 608};
+	public static final long[] __DNA__FIELD__draw_line = new long[]{564, 624};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_start'.
@@ -2534,7 +2534,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_start = new long[]{564, 616};
+	public static final long[] __DNA__FIELD__path_start = new long[]{572, 632};
 
 	/**
 	 * Field descriptor (offset) for struct member 'path_end'.
@@ -2557,7 +2557,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__path_end = new long[]{568, 620};
+	public static final long[] __DNA__FIELD__path_end = new long[]{576, 636};
 
 	/**
 	 * Field descriptor (offset) for struct member 'trail_count'.
@@ -2580,7 +2580,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__trail_count = new long[]{572, 624};
+	public static final long[] __DNA__FIELD__trail_count = new long[]{580, 640};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyed_loops'.
@@ -2604,7 +2604,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyed_loops = new long[]{576, 628};
+	public static final long[] __DNA__FIELD__keyed_loops = new long[]{584, 644};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clumpcurve'.
@@ -2624,7 +2624,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clumpcurve = new long[]{580, 632};
+	public static final long[] __DNA__FIELD__clumpcurve = new long[]{588, 648};
 
 	/**
 	 * Field descriptor (offset) for struct member 'roughcurve'.
@@ -2644,7 +2644,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__roughcurve = new long[]{584, 640};
+	public static final long[] __DNA__FIELD__roughcurve = new long[]{592, 656};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clump_noise_size'.
@@ -2667,7 +2667,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clump_noise_size = new long[]{588, 648};
+	public static final long[] __DNA__FIELD__clump_noise_size = new long[]{596, 664};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bending_random'.
@@ -2691,7 +2691,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bending_random = new long[]{592, 652};
+	public static final long[] __DNA__FIELD__bending_random = new long[]{600, 668};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtex'.
@@ -2714,7 +2714,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 72/144</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtex = new long[]{596, 656};
+	public static final long[] __DNA__FIELD__mtex = new long[]{604, 672};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dup_group'.
@@ -2734,7 +2734,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dup_group = new long[]{668, 800};
+	public static final long[] __DNA__FIELD__dup_group = new long[]{676, 816};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dupliweights'.
@@ -2754,7 +2754,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dupliweights = new long[]{672, 808};
+	public static final long[] __DNA__FIELD__dupliweights = new long[]{680, 824};
 
 	/**
 	 * Field descriptor (offset) for struct member 'force_group'.
@@ -2762,7 +2762,8 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Source Code:</h4>
 	 * <p><p> deprecated </p>
 	 * @deprecated
-	 *  Deprecateddeprecated </p>
+	 *  Deprecateddeprecated 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2779,7 +2780,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__force_group = new long[]{680, 824};
+	public static final long[] __DNA__FIELD__force_group = new long[]{688, 840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dup_ob'.
@@ -2799,7 +2800,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dup_ob = new long[]{684, 832};
+	public static final long[] __DNA__FIELD__dup_ob = new long[]{692, 848};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bb_ob'.
@@ -2819,7 +2820,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bb_ob = new long[]{688, 840};
+	public static final long[] __DNA__FIELD__bb_ob = new long[]{696, 856};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -2844,7 +2845,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{692, 848};
+	public static final long[] __DNA__FIELD__ipo = new long[]{700, 864};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd'.
@@ -2864,7 +2865,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pd = new long[]{696, 856};
+	public static final long[] __DNA__FIELD__pd = new long[]{704, 872};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pd2'.
@@ -2884,7 +2885,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pd2 = new long[]{700, 864};
+	public static final long[] __DNA__FIELD__pd2 = new long[]{708, 880};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_modifier_stack'.
@@ -2908,7 +2909,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_modifier_stack = new long[]{704, 872};
+	public static final long[] __DNA__FIELD__use_modifier_stack = new long[]{712, 888};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad5'.
@@ -2928,7 +2929,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad5 = new long[]{706, 874};
+	public static final long[] __DNA__FIELD___pad5 = new long[]{714, 890};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shape_flag'.
@@ -2951,7 +2952,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shape_flag = new long[]{708, 876};
+	public static final long[] __DNA__FIELD__shape_flag = new long[]{716, 892};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad6'.
@@ -2971,7 +2972,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad6 = new long[]{710, 878};
+	public static final long[] __DNA__FIELD___pad6 = new long[]{718, 894};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twist'.
@@ -2994,7 +2995,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twist = new long[]{712, 880};
+	public static final long[] __DNA__FIELD__twist = new long[]{720, 896};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad8'.
@@ -3014,7 +3015,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad8 = new long[]{716, 884};
+	public static final long[] __DNA__FIELD___pad8 = new long[]{724, 900};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shape'.
@@ -3038,7 +3039,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shape = new long[]{720, 888};
+	public static final long[] __DNA__FIELD__shape = new long[]{728, 904};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_root'.
@@ -3058,7 +3059,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rad_root = new long[]{724, 892};
+	public static final long[] __DNA__FIELD__rad_root = new long[]{732, 908};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_tip'.
@@ -3078,7 +3079,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rad_tip = new long[]{728, 896};
+	public static final long[] __DNA__FIELD__rad_tip = new long[]{736, 912};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rad_scale'.
@@ -3098,7 +3099,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rad_scale = new long[]{732, 900};
+	public static final long[] __DNA__FIELD__rad_scale = new long[]{740, 916};
 
 	/**
 	 * Field descriptor (offset) for struct member 'twistcurve'.
@@ -3118,7 +3119,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__twistcurve = new long[]{736, 904};
+	public static final long[] __DNA__FIELD__twistcurve = new long[]{744, 920};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad7'.
@@ -3138,7 +3139,7 @@ public class ParticleSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad7 = new long[]{740, 912};
+	public static final long[] __DNA__FIELD___pad7 = new long[]{748, 928};
 
 	public ParticleSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3193,9 +3194,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3210,9 +3211,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -3228,9 +3229,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BoidSettings.class};
 		return new CPointer<BoidSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BoidSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3248,9 +3249,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((boids == null) ? 0 : boids.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 
@@ -3266,9 +3267,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SPHFluidSettings.class};
 		return new CPointer<SPHFluidSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SPHFluidSettings.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3286,9 +3287,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((fluid == null) ? 0 : fluid.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -3304,9 +3305,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{EffectorWeights.class};
 		return new CPointer<EffectorWeights>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, EffectorWeights.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3324,9 +3325,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((effector_weights == null) ? 0 : effector_weights.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -3339,9 +3340,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3356,9 +3357,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((collision_group == null) ? 0 : collision_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -3370,9 +3371,9 @@ public class ParticleSettings extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 200);
+			return __io__block.readInt(__io__address + 216);
 		} else {
-			return __io__block.readInt(__io__address + 148);
+			return __io__block.readInt(__io__address + 156);
 		}
 	}
 
@@ -3384,9 +3385,9 @@ public class ParticleSettings extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 200, flag);
+			__io__block.writeInt(__io__address + 216, flag);
 		} else {
-			__io__block.writeInt(__io__address + 148, flag);
+			__io__block.writeInt(__io__address + 156, flag);
 		}
 	}
 
@@ -3398,9 +3399,9 @@ public class ParticleSettings extends CFacade {
 	public int getRt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 204);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -3412,9 +3413,9 @@ public class ParticleSettings extends CFacade {
 	public void setRt(int rt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 204, rt);
+			__io__block.writeInt(__io__address + 220, rt);
 		} else {
-			__io__block.writeInt(__io__address + 152, rt);
+			__io__block.writeInt(__io__address + 160, rt);
 		}
 	}
 
@@ -3422,16 +3423,16 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Particle Type
+	 * Particle type
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public short getType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 224);
 		} else {
-			return __io__block.readShort(__io__address + 156);
+			return __io__block.readShort(__io__address + 164);
 		}
 	}
 
@@ -3439,16 +3440,16 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Particle Type
+	 * Particle type
 	 * @see #__DNA__FIELD__type
 	 */
 	
 	public void setType(short type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, type);
+			__io__block.writeShort(__io__address + 224, type);
 		} else {
-			__io__block.writeShort(__io__address + 156, type);
+			__io__block.writeShort(__io__address + 164, type);
 		}
 	}
 
@@ -3460,9 +3461,9 @@ public class ParticleSettings extends CFacade {
 	public short getFrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 226);
 		} else {
-			return __io__block.readShort(__io__address + 158);
+			return __io__block.readShort(__io__address + 166);
 		}
 	}
 
@@ -3474,9 +3475,9 @@ public class ParticleSettings extends CFacade {
 	public void setFrom(short from) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, from);
+			__io__block.writeShort(__io__address + 226, from);
 		} else {
-			__io__block.writeShort(__io__address + 158, from);
+			__io__block.writeShort(__io__address + 166, from);
 		}
 	}
 
@@ -3488,9 +3489,9 @@ public class ParticleSettings extends CFacade {
 	public short getDistr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 228);
 		} else {
-			return __io__block.readShort(__io__address + 160);
+			return __io__block.readShort(__io__address + 168);
 		}
 	}
 
@@ -3502,9 +3503,9 @@ public class ParticleSettings extends CFacade {
 	public void setDistr(short distr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, distr);
+			__io__block.writeShort(__io__address + 228, distr);
 		} else {
-			__io__block.writeShort(__io__address + 160, distr);
+			__io__block.writeShort(__io__address + 168, distr);
 		}
 	}
 
@@ -3516,9 +3517,9 @@ public class ParticleSettings extends CFacade {
 	public short getTexact() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 230);
 		} else {
-			return __io__block.readShort(__io__address + 162);
+			return __io__block.readShort(__io__address + 170);
 		}
 	}
 
@@ -3530,9 +3531,9 @@ public class ParticleSettings extends CFacade {
 	public void setTexact(short texact) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 214, texact);
+			__io__block.writeShort(__io__address + 230, texact);
 		} else {
-			__io__block.writeShort(__io__address + 162, texact);
+			__io__block.writeShort(__io__address + 170, texact);
 		}
 	}
 
@@ -3547,9 +3548,9 @@ public class ParticleSettings extends CFacade {
 	public short getPhystype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 232);
 		} else {
-			return __io__block.readShort(__io__address + 164);
+			return __io__block.readShort(__io__address + 172);
 		}
 	}
 
@@ -3564,9 +3565,9 @@ public class ParticleSettings extends CFacade {
 	public void setPhystype(short phystype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 216, phystype);
+			__io__block.writeShort(__io__address + 232, phystype);
 		} else {
-			__io__block.writeShort(__io__address + 164, phystype);
+			__io__block.writeShort(__io__address + 172, phystype);
 		}
 	}
 
@@ -3578,9 +3579,9 @@ public class ParticleSettings extends CFacade {
 	public short getRotmode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 234);
 		} else {
-			return __io__block.readShort(__io__address + 166);
+			return __io__block.readShort(__io__address + 174);
 		}
 	}
 
@@ -3592,9 +3593,9 @@ public class ParticleSettings extends CFacade {
 	public void setRotmode(short rotmode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 218, rotmode);
+			__io__block.writeShort(__io__address + 234, rotmode);
 		} else {
-			__io__block.writeShort(__io__address + 166, rotmode);
+			__io__block.writeShort(__io__address + 174, rotmode);
 		}
 	}
 
@@ -3606,9 +3607,9 @@ public class ParticleSettings extends CFacade {
 	public short getAvemode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 236);
 		} else {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 176);
 		}
 	}
 
@@ -3620,9 +3621,9 @@ public class ParticleSettings extends CFacade {
 	public void setAvemode(short avemode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 220, avemode);
+			__io__block.writeShort(__io__address + 236, avemode);
 		} else {
-			__io__block.writeShort(__io__address + 168, avemode);
+			__io__block.writeShort(__io__address + 176, avemode);
 		}
 	}
 
@@ -3634,9 +3635,9 @@ public class ParticleSettings extends CFacade {
 	public short getReactevent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 238);
 		} else {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -3648,9 +3649,9 @@ public class ParticleSettings extends CFacade {
 	public void setReactevent(short reactevent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 222, reactevent);
+			__io__block.writeShort(__io__address + 238, reactevent);
 		} else {
-			__io__block.writeShort(__io__address + 170, reactevent);
+			__io__block.writeShort(__io__address + 178, reactevent);
 		}
 	}
 
@@ -3662,9 +3663,9 @@ public class ParticleSettings extends CFacade {
 	public int getDraw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 224);
+			return __io__block.readInt(__io__address + 240);
 		} else {
-			return __io__block.readInt(__io__address + 172);
+			return __io__block.readInt(__io__address + 180);
 		}
 	}
 
@@ -3676,9 +3677,9 @@ public class ParticleSettings extends CFacade {
 	public void setDraw(int draw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 224, draw);
+			__io__block.writeInt(__io__address + 240, draw);
 		} else {
-			__io__block.writeInt(__io__address + 172, draw);
+			__io__block.writeInt(__io__address + 180, draw);
 		}
 	}
 
@@ -3690,9 +3691,9 @@ public class ParticleSettings extends CFacade {
 	public float getDraw_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 244);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -3704,9 +3705,9 @@ public class ParticleSettings extends CFacade {
 	public void setDraw_size(float draw_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, draw_size);
+			__io__block.writeFloat(__io__address + 244, draw_size);
 		} else {
-			__io__block.writeFloat(__io__address + 176, draw_size);
+			__io__block.writeFloat(__io__address + 184, draw_size);
 		}
 	}
 
@@ -3718,9 +3719,9 @@ public class ParticleSettings extends CFacade {
 	public short getDraw_as() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 232);
+			return __io__block.readShort(__io__address + 248);
 		} else {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -3732,9 +3733,9 @@ public class ParticleSettings extends CFacade {
 	public void setDraw_as(short draw_as) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 232, draw_as);
+			__io__block.writeShort(__io__address + 248, draw_as);
 		} else {
-			__io__block.writeShort(__io__address + 180, draw_as);
+			__io__block.writeShort(__io__address + 188, draw_as);
 		}
 	}
 
@@ -3746,9 +3747,9 @@ public class ParticleSettings extends CFacade {
 	public short getChildtype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 234);
+			return __io__block.readShort(__io__address + 250);
 		} else {
-			return __io__block.readShort(__io__address + 182);
+			return __io__block.readShort(__io__address + 190);
 		}
 	}
 
@@ -3760,9 +3761,9 @@ public class ParticleSettings extends CFacade {
 	public void setChildtype(short childtype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 234, childtype);
+			__io__block.writeShort(__io__address + 250, childtype);
 		} else {
-			__io__block.writeShort(__io__address + 182, childtype);
+			__io__block.writeShort(__io__address + 190, childtype);
 		}
 	}
 
@@ -3778,9 +3779,9 @@ public class ParticleSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3793,9 +3794,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 236;
+			__dna__offset = 252;
 		} else {
-			__dna__offset = 184;
+			__dna__offset = 192;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -3814,9 +3815,9 @@ public class ParticleSettings extends CFacade {
 	public short getRen_as() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 240);
+			return __io__block.readShort(__io__address + 256);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 196);
 		}
 	}
 
@@ -3828,9 +3829,9 @@ public class ParticleSettings extends CFacade {
 	public void setRen_as(short ren_as) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 240, ren_as);
+			__io__block.writeShort(__io__address + 256, ren_as);
 		} else {
-			__io__block.writeShort(__io__address + 188, ren_as);
+			__io__block.writeShort(__io__address + 196, ren_as);
 		}
 	}
 
@@ -3845,9 +3846,9 @@ public class ParticleSettings extends CFacade {
 	public short getSubframes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 242);
+			return __io__block.readShort(__io__address + 258);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 198);
 		}
 	}
 
@@ -3862,9 +3863,9 @@ public class ParticleSettings extends CFacade {
 	public void setSubframes(short subframes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 242, subframes);
+			__io__block.writeShort(__io__address + 258, subframes);
 		} else {
-			__io__block.writeShort(__io__address + 190, subframes);
+			__io__block.writeShort(__io__address + 198, subframes);
 		}
 	}
 
@@ -3876,9 +3877,9 @@ public class ParticleSettings extends CFacade {
 	public short getDraw_col() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 244);
+			return __io__block.readShort(__io__address + 260);
 		} else {
-			return __io__block.readShort(__io__address + 192);
+			return __io__block.readShort(__io__address + 200);
 		}
 	}
 
@@ -3890,9 +3891,9 @@ public class ParticleSettings extends CFacade {
 	public void setDraw_col(short draw_col) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 244, draw_col);
+			__io__block.writeShort(__io__address + 260, draw_col);
 		} else {
-			__io__block.writeShort(__io__address + 192, draw_col);
+			__io__block.writeShort(__io__address + 200, draw_col);
 		}
 	}
 
@@ -3907,9 +3908,9 @@ public class ParticleSettings extends CFacade {
 	public short getDraw_step() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 246);
+			return __io__block.readShort(__io__address + 262);
 		} else {
-			return __io__block.readShort(__io__address + 194);
+			return __io__block.readShort(__io__address + 202);
 		}
 	}
 
@@ -3924,9 +3925,9 @@ public class ParticleSettings extends CFacade {
 	public void setDraw_step(short draw_step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 246, draw_step);
+			__io__block.writeShort(__io__address + 262, draw_step);
 		} else {
-			__io__block.writeShort(__io__address + 194, draw_step);
+			__io__block.writeShort(__io__address + 202, draw_step);
 		}
 	}
 
@@ -3938,9 +3939,9 @@ public class ParticleSettings extends CFacade {
 	public short getRen_step() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 248);
+			return __io__block.readShort(__io__address + 264);
 		} else {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 204);
 		}
 	}
 
@@ -3952,9 +3953,9 @@ public class ParticleSettings extends CFacade {
 	public void setRen_step(short ren_step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 248, ren_step);
+			__io__block.writeShort(__io__address + 264, ren_step);
 		} else {
-			__io__block.writeShort(__io__address + 196, ren_step);
+			__io__block.writeShort(__io__address + 204, ren_step);
 		}
 	}
 
@@ -3969,9 +3970,9 @@ public class ParticleSettings extends CFacade {
 	public short getHair_step() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 250);
+			return __io__block.readShort(__io__address + 266);
 		} else {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readShort(__io__address + 206);
 		}
 	}
 
@@ -3986,9 +3987,9 @@ public class ParticleSettings extends CFacade {
 	public void setHair_step(short hair_step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 250, hair_step);
+			__io__block.writeShort(__io__address + 266, hair_step);
 		} else {
-			__io__block.writeShort(__io__address + 198, hair_step);
+			__io__block.writeShort(__io__address + 206, hair_step);
 		}
 	}
 
@@ -4000,9 +4001,9 @@ public class ParticleSettings extends CFacade {
 	public short getKeys_step() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 252);
+			return __io__block.readShort(__io__address + 268);
 		} else {
-			return __io__block.readShort(__io__address + 200);
+			return __io__block.readShort(__io__address + 208);
 		}
 	}
 
@@ -4014,9 +4015,9 @@ public class ParticleSettings extends CFacade {
 	public void setKeys_step(short keys_step) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 252, keys_step);
+			__io__block.writeShort(__io__address + 268, keys_step);
 		} else {
-			__io__block.writeShort(__io__address + 200, keys_step);
+			__io__block.writeShort(__io__address + 208, keys_step);
 		}
 	}
 
@@ -4031,9 +4032,9 @@ public class ParticleSettings extends CFacade {
 	public short getAdapt_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 254);
+			return __io__block.readShort(__io__address + 270);
 		} else {
-			return __io__block.readShort(__io__address + 202);
+			return __io__block.readShort(__io__address + 210);
 		}
 	}
 
@@ -4048,9 +4049,9 @@ public class ParticleSettings extends CFacade {
 	public void setAdapt_angle(short adapt_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 254, adapt_angle);
+			__io__block.writeShort(__io__address + 270, adapt_angle);
 		} else {
-			__io__block.writeShort(__io__address + 202, adapt_angle);
+			__io__block.writeShort(__io__address + 210, adapt_angle);
 		}
 	}
 
@@ -4062,9 +4063,9 @@ public class ParticleSettings extends CFacade {
 	public short getAdapt_pix() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 256);
+			return __io__block.readShort(__io__address + 272);
 		} else {
-			return __io__block.readShort(__io__address + 204);
+			return __io__block.readShort(__io__address + 212);
 		}
 	}
 
@@ -4076,9 +4077,9 @@ public class ParticleSettings extends CFacade {
 	public void setAdapt_pix(short adapt_pix) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 256, adapt_pix);
+			__io__block.writeShort(__io__address + 272, adapt_pix);
 		} else {
-			__io__block.writeShort(__io__address + 204, adapt_pix);
+			__io__block.writeShort(__io__address + 212, adapt_pix);
 		}
 	}
 
@@ -4090,9 +4091,9 @@ public class ParticleSettings extends CFacade {
 	public short getDisp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 258);
+			return __io__block.readShort(__io__address + 274);
 		} else {
-			return __io__block.readShort(__io__address + 206);
+			return __io__block.readShort(__io__address + 214);
 		}
 	}
 
@@ -4104,9 +4105,9 @@ public class ParticleSettings extends CFacade {
 	public void setDisp(short disp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 258, disp);
+			__io__block.writeShort(__io__address + 274, disp);
 		} else {
-			__io__block.writeShort(__io__address + 206, disp);
+			__io__block.writeShort(__io__address + 214, disp);
 		}
 	}
 
@@ -4118,9 +4119,9 @@ public class ParticleSettings extends CFacade {
 	public short getOmat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 260);
+			return __io__block.readShort(__io__address + 276);
 		} else {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 216);
 		}
 	}
 
@@ -4132,9 +4133,9 @@ public class ParticleSettings extends CFacade {
 	public void setOmat(short omat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 260, omat);
+			__io__block.writeShort(__io__address + 276, omat);
 		} else {
-			__io__block.writeShort(__io__address + 208, omat);
+			__io__block.writeShort(__io__address + 216, omat);
 		}
 	}
 
@@ -4146,9 +4147,9 @@ public class ParticleSettings extends CFacade {
 	public short getInterpolation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 262);
+			return __io__block.readShort(__io__address + 278);
 		} else {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 218);
 		}
 	}
 
@@ -4160,9 +4161,9 @@ public class ParticleSettings extends CFacade {
 	public void setInterpolation(short interpolation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 262, interpolation);
+			__io__block.writeShort(__io__address + 278, interpolation);
 		} else {
-			__io__block.writeShort(__io__address + 210, interpolation);
+			__io__block.writeShort(__io__address + 218, interpolation);
 		}
 	}
 
@@ -4177,9 +4178,9 @@ public class ParticleSettings extends CFacade {
 	public short getIntegrator() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 264);
+			return __io__block.readShort(__io__address + 280);
 		} else {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 220);
 		}
 	}
 
@@ -4194,9 +4195,9 @@ public class ParticleSettings extends CFacade {
 	public void setIntegrator(short integrator) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 264, integrator);
+			__io__block.writeShort(__io__address + 280, integrator);
 		} else {
-			__io__block.writeShort(__io__address + 212, integrator);
+			__io__block.writeShort(__io__address + 220, integrator);
 		}
 	}
 
@@ -4213,9 +4214,9 @@ public class ParticleSettings extends CFacade {
 	public short getRotfrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 266);
+			return __io__block.readShort(__io__address + 282);
 		} else {
-			return __io__block.readShort(__io__address + 214);
+			return __io__block.readShort(__io__address + 222);
 		}
 	}
 
@@ -4232,9 +4233,9 @@ public class ParticleSettings extends CFacade {
 	public void setRotfrom(short rotfrom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 266, rotfrom);
+			__io__block.writeShort(__io__address + 282, rotfrom);
 		} else {
-			__io__block.writeShort(__io__address + 214, rotfrom);
+			__io__block.writeShort(__io__address + 222, rotfrom);
 		}
 	}
 
@@ -4249,9 +4250,9 @@ public class ParticleSettings extends CFacade {
 	public short getKink() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 268);
+			return __io__block.readShort(__io__address + 284);
 		} else {
-			return __io__block.readShort(__io__address + 216);
+			return __io__block.readShort(__io__address + 224);
 		}
 	}
 
@@ -4266,9 +4267,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink(short kink) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 268, kink);
+			__io__block.writeShort(__io__address + 284, kink);
 		} else {
-			__io__block.writeShort(__io__address + 216, kink);
+			__io__block.writeShort(__io__address + 224, kink);
 		}
 	}
 
@@ -4283,9 +4284,9 @@ public class ParticleSettings extends CFacade {
 	public short getKink_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 270);
+			return __io__block.readShort(__io__address + 286);
 		} else {
-			return __io__block.readShort(__io__address + 218);
+			return __io__block.readShort(__io__address + 226);
 		}
 	}
 
@@ -4300,9 +4301,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_axis(short kink_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 270, kink_axis);
+			__io__block.writeShort(__io__address + 286, kink_axis);
 		} else {
-			__io__block.writeShort(__io__address + 218, kink_axis);
+			__io__block.writeShort(__io__address + 226, kink_axis);
 		}
 	}
 
@@ -4317,9 +4318,9 @@ public class ParticleSettings extends CFacade {
 	public short getBb_align() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 272);
+			return __io__block.readShort(__io__address + 288);
 		} else {
-			return __io__block.readShort(__io__address + 220);
+			return __io__block.readShort(__io__address + 228);
 		}
 	}
 
@@ -4334,9 +4335,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_align(short bb_align) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 272, bb_align);
+			__io__block.writeShort(__io__address + 288, bb_align);
 		} else {
-			__io__block.writeShort(__io__address + 220, bb_align);
+			__io__block.writeShort(__io__address + 228, bb_align);
 		}
 	}
 
@@ -4348,9 +4349,9 @@ public class ParticleSettings extends CFacade {
 	public short getBb_uv_split() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 274);
+			return __io__block.readShort(__io__address + 290);
 		} else {
-			return __io__block.readShort(__io__address + 222);
+			return __io__block.readShort(__io__address + 230);
 		}
 	}
 
@@ -4362,9 +4363,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_uv_split(short bb_uv_split) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 274, bb_uv_split);
+			__io__block.writeShort(__io__address + 290, bb_uv_split);
 		} else {
-			__io__block.writeShort(__io__address + 222, bb_uv_split);
+			__io__block.writeShort(__io__address + 230, bb_uv_split);
 		}
 	}
 
@@ -4376,9 +4377,9 @@ public class ParticleSettings extends CFacade {
 	public short getBb_anim() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 276);
+			return __io__block.readShort(__io__address + 292);
 		} else {
-			return __io__block.readShort(__io__address + 224);
+			return __io__block.readShort(__io__address + 232);
 		}
 	}
 
@@ -4390,9 +4391,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_anim(short bb_anim) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 276, bb_anim);
+			__io__block.writeShort(__io__address + 292, bb_anim);
 		} else {
-			__io__block.writeShort(__io__address + 224, bb_anim);
+			__io__block.writeShort(__io__address + 232, bb_anim);
 		}
 	}
 
@@ -4409,9 +4410,9 @@ public class ParticleSettings extends CFacade {
 	public short getBb_split_offset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 278);
+			return __io__block.readShort(__io__address + 294);
 		} else {
-			return __io__block.readShort(__io__address + 226);
+			return __io__block.readShort(__io__address + 234);
 		}
 	}
 
@@ -4428,9 +4429,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_split_offset(short bb_split_offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 278, bb_split_offset);
+			__io__block.writeShort(__io__address + 294, bb_split_offset);
 		} else {
-			__io__block.writeShort(__io__address + 226, bb_split_offset);
+			__io__block.writeShort(__io__address + 234, bb_split_offset);
 		}
 	}
 
@@ -4442,9 +4443,9 @@ public class ParticleSettings extends CFacade {
 	public float getBb_tilt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 296);
 		} else {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 236);
 		}
 	}
 
@@ -4456,9 +4457,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_tilt(float bb_tilt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 280, bb_tilt);
+			__io__block.writeFloat(__io__address + 296, bb_tilt);
 		} else {
-			__io__block.writeFloat(__io__address + 228, bb_tilt);
+			__io__block.writeFloat(__io__address + 236, bb_tilt);
 		}
 	}
 
@@ -4470,9 +4471,9 @@ public class ParticleSettings extends CFacade {
 	public float getBb_rand_tilt() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 300);
 		} else {
-			return __io__block.readFloat(__io__address + 232);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -4484,9 +4485,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_rand_tilt(float bb_rand_tilt) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 284, bb_rand_tilt);
+			__io__block.writeFloat(__io__address + 300, bb_rand_tilt);
 		} else {
-			__io__block.writeFloat(__io__address + 232, bb_rand_tilt);
+			__io__block.writeFloat(__io__address + 240, bb_rand_tilt);
 		}
 	}
 
@@ -4502,9 +4503,9 @@ public class ParticleSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 288, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 304, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4517,9 +4518,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 288;
+			__dna__offset = 304;
 		} else {
-			__dna__offset = 236;
+			__dna__offset = 244;
 		}
 		if (__io__equals(bb_offset, __io__address + __dna__offset)) {
 			return;
@@ -4542,9 +4543,9 @@ public class ParticleSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 296, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 312, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 244, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4557,9 +4558,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 296;
+			__dna__offset = 312;
 		} else {
-			__dna__offset = 244;
+			__dna__offset = 252;
 		}
 		if (__io__equals(bb_size, __io__address + __dna__offset)) {
 			return;
@@ -4578,9 +4579,9 @@ public class ParticleSettings extends CFacade {
 	public float getBb_vel_head() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 304);
+			return __io__block.readFloat(__io__address + 320);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 260);
 		}
 	}
 
@@ -4592,9 +4593,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_vel_head(float bb_vel_head) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 304, bb_vel_head);
+			__io__block.writeFloat(__io__address + 320, bb_vel_head);
 		} else {
-			__io__block.writeFloat(__io__address + 252, bb_vel_head);
+			__io__block.writeFloat(__io__address + 260, bb_vel_head);
 		}
 	}
 
@@ -4611,9 +4612,9 @@ public class ParticleSettings extends CFacade {
 	public float getBb_vel_tail() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 308);
+			return __io__block.readFloat(__io__address + 324);
 		} else {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 264);
 		}
 	}
 
@@ -4630,9 +4631,9 @@ public class ParticleSettings extends CFacade {
 	public void setBb_vel_tail(float bb_vel_tail) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 308, bb_vel_tail);
+			__io__block.writeFloat(__io__address + 324, bb_vel_tail);
 		} else {
-			__io__block.writeFloat(__io__address + 256, bb_vel_tail);
+			__io__block.writeFloat(__io__address + 264, bb_vel_tail);
 		}
 	}
 
@@ -4647,9 +4648,9 @@ public class ParticleSettings extends CFacade {
 	public float getColor_vec_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 312);
+			return __io__block.readFloat(__io__address + 328);
 		} else {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 268);
 		}
 	}
 
@@ -4664,9 +4665,9 @@ public class ParticleSettings extends CFacade {
 	public void setColor_vec_max(float color_vec_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 312, color_vec_max);
+			__io__block.writeFloat(__io__address + 328, color_vec_max);
 		} else {
-			__io__block.writeFloat(__io__address + 260, color_vec_max);
+			__io__block.writeFloat(__io__address + 268, color_vec_max);
 		}
 	}
 
@@ -4681,9 +4682,9 @@ public class ParticleSettings extends CFacade {
 	public float getSta() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 316);
+			return __io__block.readFloat(__io__address + 332);
 		} else {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 272);
 		}
 	}
 
@@ -4698,9 +4699,9 @@ public class ParticleSettings extends CFacade {
 	public void setSta(float sta) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 316, sta);
+			__io__block.writeFloat(__io__address + 332, sta);
 		} else {
-			__io__block.writeFloat(__io__address + 264, sta);
+			__io__block.writeFloat(__io__address + 272, sta);
 		}
 	}
 
@@ -4712,9 +4713,9 @@ public class ParticleSettings extends CFacade {
 	public float getEnd() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 320);
+			return __io__block.readFloat(__io__address + 336);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -4726,9 +4727,9 @@ public class ParticleSettings extends CFacade {
 	public void setEnd(float end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 320, end);
+			__io__block.writeFloat(__io__address + 336, end);
 		} else {
-			__io__block.writeFloat(__io__address + 268, end);
+			__io__block.writeFloat(__io__address + 276, end);
 		}
 	}
 
@@ -4743,9 +4744,9 @@ public class ParticleSettings extends CFacade {
 	public float getLifetime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 340);
 		} else {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		}
 	}
 
@@ -4760,9 +4761,9 @@ public class ParticleSettings extends CFacade {
 	public void setLifetime(float lifetime) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 324, lifetime);
+			__io__block.writeFloat(__io__address + 340, lifetime);
 		} else {
-			__io__block.writeFloat(__io__address + 272, lifetime);
+			__io__block.writeFloat(__io__address + 280, lifetime);
 		}
 	}
 
@@ -4774,9 +4775,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandlife() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 344);
 		} else {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		}
 	}
 
@@ -4788,9 +4789,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandlife(float randlife) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 328, randlife);
+			__io__block.writeFloat(__io__address + 344, randlife);
 		} else {
-			__io__block.writeFloat(__io__address + 276, randlife);
+			__io__block.writeFloat(__io__address + 284, randlife);
 		}
 	}
 
@@ -4802,9 +4803,9 @@ public class ParticleSettings extends CFacade {
 	public float getTimetweak() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 348);
 		} else {
-			return __io__block.readFloat(__io__address + 280);
+			return __io__block.readFloat(__io__address + 288);
 		}
 	}
 
@@ -4816,9 +4817,9 @@ public class ParticleSettings extends CFacade {
 	public void setTimetweak(float timetweak) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 332, timetweak);
+			__io__block.writeFloat(__io__address + 348, timetweak);
 		} else {
-			__io__block.writeFloat(__io__address + 280, timetweak);
+			__io__block.writeFloat(__io__address + 288, timetweak);
 		}
 	}
 
@@ -4826,16 +4827,16 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'courant_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
+	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01 to 0.3 is the recommended range
 	 * @see #__DNA__FIELD__courant_target
 	 */
 	
 	public float getCourant_target() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 352);
 		} else {
-			return __io__block.readFloat(__io__address + 284);
+			return __io__block.readFloat(__io__address + 292);
 		}
 	}
 
@@ -4843,16 +4844,16 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'courant_target'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01-0.3 is the recommended range
+	 * The relative distance a particle can move before requiring more subframes (target Courant number); 0.01 to 0.3 is the recommended range
 	 * @see #__DNA__FIELD__courant_target
 	 */
 	
 	public void setCourant_target(float courant_target) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 336, courant_target);
+			__io__block.writeFloat(__io__address + 352, courant_target);
 		} else {
-			__io__block.writeFloat(__io__address + 284, courant_target);
+			__io__block.writeFloat(__io__address + 292, courant_target);
 		}
 	}
 
@@ -4864,9 +4865,9 @@ public class ParticleSettings extends CFacade {
 	public float getJitfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 356);
 		} else {
-			return __io__block.readFloat(__io__address + 288);
+			return __io__block.readFloat(__io__address + 296);
 		}
 	}
 
@@ -4878,9 +4879,9 @@ public class ParticleSettings extends CFacade {
 	public void setJitfac(float jitfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 340, jitfac);
+			__io__block.writeFloat(__io__address + 356, jitfac);
 		} else {
-			__io__block.writeFloat(__io__address + 288, jitfac);
+			__io__block.writeFloat(__io__address + 296, jitfac);
 		}
 	}
 
@@ -4892,9 +4893,9 @@ public class ParticleSettings extends CFacade {
 	public float getEff_hair() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 360);
 		} else {
-			return __io__block.readFloat(__io__address + 292);
+			return __io__block.readFloat(__io__address + 300);
 		}
 	}
 
@@ -4906,9 +4907,9 @@ public class ParticleSettings extends CFacade {
 	public void setEff_hair(float eff_hair) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 344, eff_hair);
+			__io__block.writeFloat(__io__address + 360, eff_hair);
 		} else {
-			__io__block.writeFloat(__io__address + 292, eff_hair);
+			__io__block.writeFloat(__io__address + 300, eff_hair);
 		}
 	}
 
@@ -4920,9 +4921,9 @@ public class ParticleSettings extends CFacade {
 	public float getGrid_rand() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 364);
 		} else {
-			return __io__block.readFloat(__io__address + 296);
+			return __io__block.readFloat(__io__address + 304);
 		}
 	}
 
@@ -4934,9 +4935,9 @@ public class ParticleSettings extends CFacade {
 	public void setGrid_rand(float grid_rand) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 348, grid_rand);
+			__io__block.writeFloat(__io__address + 364, grid_rand);
 		} else {
-			__io__block.writeFloat(__io__address + 296, grid_rand);
+			__io__block.writeFloat(__io__address + 304, grid_rand);
 		}
 	}
 
@@ -4952,9 +4953,9 @@ public class ParticleSettings extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 300, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -4967,9 +4968,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
+			__dna__offset = 368;
 		} else {
-			__dna__offset = 300;
+			__dna__offset = 308;
 		}
 		if (__io__equals(ps_offset, __io__address + __dna__offset)) {
 			return;
@@ -4988,9 +4989,9 @@ public class ParticleSettings extends CFacade {
 	public int getTotpart() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 356);
+			return __io__block.readInt(__io__address + 372);
 		} else {
-			return __io__block.readInt(__io__address + 304);
+			return __io__block.readInt(__io__address + 312);
 		}
 	}
 
@@ -5002,9 +5003,9 @@ public class ParticleSettings extends CFacade {
 	public void setTotpart(int totpart) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 356, totpart);
+			__io__block.writeInt(__io__address + 372, totpart);
 		} else {
-			__io__block.writeInt(__io__address + 304, totpart);
+			__io__block.writeInt(__io__address + 312, totpart);
 		}
 	}
 
@@ -5019,9 +5020,9 @@ public class ParticleSettings extends CFacade {
 	public int getUserjit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 360);
+			return __io__block.readInt(__io__address + 376);
 		} else {
-			return __io__block.readInt(__io__address + 308);
+			return __io__block.readInt(__io__address + 316);
 		}
 	}
 
@@ -5036,9 +5037,9 @@ public class ParticleSettings extends CFacade {
 	public void setUserjit(int userjit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 360, userjit);
+			__io__block.writeInt(__io__address + 376, userjit);
 		} else {
-			__io__block.writeInt(__io__address + 308, userjit);
+			__io__block.writeInt(__io__address + 316, userjit);
 		}
 	}
 
@@ -5050,9 +5051,9 @@ public class ParticleSettings extends CFacade {
 	public int getGrid_res() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 364);
+			return __io__block.readInt(__io__address + 380);
 		} else {
-			return __io__block.readInt(__io__address + 312);
+			return __io__block.readInt(__io__address + 320);
 		}
 	}
 
@@ -5064,9 +5065,9 @@ public class ParticleSettings extends CFacade {
 	public void setGrid_res(int grid_res) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 364, grid_res);
+			__io__block.writeInt(__io__address + 380, grid_res);
 		} else {
-			__io__block.writeInt(__io__address + 312, grid_res);
+			__io__block.writeInt(__io__address + 320, grid_res);
 		}
 	}
 
@@ -5081,9 +5082,9 @@ public class ParticleSettings extends CFacade {
 	public int getEffector_amount() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 368);
+			return __io__block.readInt(__io__address + 384);
 		} else {
-			return __io__block.readInt(__io__address + 316);
+			return __io__block.readInt(__io__address + 324);
 		}
 	}
 
@@ -5098,9 +5099,9 @@ public class ParticleSettings extends CFacade {
 	public void setEffector_amount(int effector_amount) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 368, effector_amount);
+			__io__block.writeInt(__io__address + 384, effector_amount);
 		} else {
-			__io__block.writeInt(__io__address + 316, effector_amount);
+			__io__block.writeInt(__io__address + 324, effector_amount);
 		}
 	}
 
@@ -5112,9 +5113,9 @@ public class ParticleSettings extends CFacade {
 	public short getTime_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 372);
+			return __io__block.readShort(__io__address + 388);
 		} else {
-			return __io__block.readShort(__io__address + 320);
+			return __io__block.readShort(__io__address + 328);
 		}
 	}
 
@@ -5126,9 +5127,9 @@ public class ParticleSettings extends CFacade {
 	public void setTime_flag(short time_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 372, time_flag);
+			__io__block.writeShort(__io__address + 388, time_flag);
 		} else {
-			__io__block.writeShort(__io__address + 320, time_flag);
+			__io__block.writeShort(__io__address + 328, time_flag);
 		}
 	}
 
@@ -5144,9 +5145,9 @@ public class ParticleSettings extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 374, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 390, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 322, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 330, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5159,9 +5160,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 374;
+			__dna__offset = 390;
 		} else {
-			__dna__offset = 322;
+			__dna__offset = 330;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
@@ -5183,9 +5184,9 @@ public class ParticleSettings extends CFacade {
 	public float getNormfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 380);
+			return __io__block.readFloat(__io__address + 396);
 		} else {
-			return __io__block.readFloat(__io__address + 328);
+			return __io__block.readFloat(__io__address + 336);
 		}
 	}
 
@@ -5200,9 +5201,9 @@ public class ParticleSettings extends CFacade {
 	public void setNormfac(float normfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 380, normfac);
+			__io__block.writeFloat(__io__address + 396, normfac);
 		} else {
-			__io__block.writeFloat(__io__address + 328, normfac);
+			__io__block.writeFloat(__io__address + 336, normfac);
 		}
 	}
 
@@ -5214,9 +5215,9 @@ public class ParticleSettings extends CFacade {
 	public float getObfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 400);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 340);
 		}
 	}
 
@@ -5228,9 +5229,9 @@ public class ParticleSettings extends CFacade {
 	public void setObfac(float obfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, obfac);
+			__io__block.writeFloat(__io__address + 400, obfac);
 		} else {
-			__io__block.writeFloat(__io__address + 332, obfac);
+			__io__block.writeFloat(__io__address + 340, obfac);
 		}
 	}
 
@@ -5242,9 +5243,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 404);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 344);
 		}
 	}
 
@@ -5256,9 +5257,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandfac(float randfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, randfac);
+			__io__block.writeFloat(__io__address + 404, randfac);
 		} else {
-			__io__block.writeFloat(__io__address + 336, randfac);
+			__io__block.writeFloat(__io__address + 344, randfac);
 		}
 	}
 
@@ -5270,9 +5271,9 @@ public class ParticleSettings extends CFacade {
 	public float getPartfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 392);
+			return __io__block.readFloat(__io__address + 408);
 		} else {
-			return __io__block.readFloat(__io__address + 340);
+			return __io__block.readFloat(__io__address + 348);
 		}
 	}
 
@@ -5284,9 +5285,9 @@ public class ParticleSettings extends CFacade {
 	public void setPartfac(float partfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 392, partfac);
+			__io__block.writeFloat(__io__address + 408, partfac);
 		} else {
-			__io__block.writeFloat(__io__address + 340, partfac);
+			__io__block.writeFloat(__io__address + 348, partfac);
 		}
 	}
 
@@ -5298,9 +5299,9 @@ public class ParticleSettings extends CFacade {
 	public float getTanfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 396);
+			return __io__block.readFloat(__io__address + 412);
 		} else {
-			return __io__block.readFloat(__io__address + 344);
+			return __io__block.readFloat(__io__address + 352);
 		}
 	}
 
@@ -5312,9 +5313,9 @@ public class ParticleSettings extends CFacade {
 	public void setTanfac(float tanfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 396, tanfac);
+			__io__block.writeFloat(__io__address + 412, tanfac);
 		} else {
-			__io__block.writeFloat(__io__address + 344, tanfac);
+			__io__block.writeFloat(__io__address + 352, tanfac);
 		}
 	}
 
@@ -5326,9 +5327,9 @@ public class ParticleSettings extends CFacade {
 	public float getTanphase() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 400);
+			return __io__block.readFloat(__io__address + 416);
 		} else {
-			return __io__block.readFloat(__io__address + 348);
+			return __io__block.readFloat(__io__address + 356);
 		}
 	}
 
@@ -5340,9 +5341,9 @@ public class ParticleSettings extends CFacade {
 	public void setTanphase(float tanphase) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 400, tanphase);
+			__io__block.writeFloat(__io__address + 416, tanphase);
 		} else {
-			__io__block.writeFloat(__io__address + 348, tanphase);
+			__io__block.writeFloat(__io__address + 356, tanphase);
 		}
 	}
 
@@ -5354,9 +5355,9 @@ public class ParticleSettings extends CFacade {
 	public float getReactfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 404);
+			return __io__block.readFloat(__io__address + 420);
 		} else {
-			return __io__block.readFloat(__io__address + 352);
+			return __io__block.readFloat(__io__address + 360);
 		}
 	}
 
@@ -5368,9 +5369,9 @@ public class ParticleSettings extends CFacade {
 	public void setReactfac(float reactfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 404, reactfac);
+			__io__block.writeFloat(__io__address + 420, reactfac);
 		} else {
-			__io__block.writeFloat(__io__address + 352, reactfac);
+			__io__block.writeFloat(__io__address + 360, reactfac);
 		}
 	}
 
@@ -5386,9 +5387,9 @@ public class ParticleSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 408, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 424, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 356, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 364, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5401,9 +5402,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 408;
+			__dna__offset = 424;
 		} else {
-			__dna__offset = 356;
+			__dna__offset = 364;
 		}
 		if (__io__equals(ob_vel, __io__address + __dna__offset)) {
 			return;
@@ -5422,9 +5423,9 @@ public class ParticleSettings extends CFacade {
 	public float getAvefac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 420);
+			return __io__block.readFloat(__io__address + 436);
 		} else {
-			return __io__block.readFloat(__io__address + 368);
+			return __io__block.readFloat(__io__address + 376);
 		}
 	}
 
@@ -5436,9 +5437,9 @@ public class ParticleSettings extends CFacade {
 	public void setAvefac(float avefac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 420, avefac);
+			__io__block.writeFloat(__io__address + 436, avefac);
 		} else {
-			__io__block.writeFloat(__io__address + 368, avefac);
+			__io__block.writeFloat(__io__address + 376, avefac);
 		}
 	}
 
@@ -5450,9 +5451,9 @@ public class ParticleSettings extends CFacade {
 	public float getPhasefac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 424);
+			return __io__block.readFloat(__io__address + 440);
 		} else {
-			return __io__block.readFloat(__io__address + 372);
+			return __io__block.readFloat(__io__address + 380);
 		}
 	}
 
@@ -5464,9 +5465,9 @@ public class ParticleSettings extends CFacade {
 	public void setPhasefac(float phasefac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 424, phasefac);
+			__io__block.writeFloat(__io__address + 440, phasefac);
 		} else {
-			__io__block.writeFloat(__io__address + 372, phasefac);
+			__io__block.writeFloat(__io__address + 380, phasefac);
 		}
 	}
 
@@ -5478,9 +5479,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandrotfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 428);
+			return __io__block.readFloat(__io__address + 444);
 		} else {
-			return __io__block.readFloat(__io__address + 376);
+			return __io__block.readFloat(__io__address + 384);
 		}
 	}
 
@@ -5492,9 +5493,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandrotfac(float randrotfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 428, randrotfac);
+			__io__block.writeFloat(__io__address + 444, randrotfac);
 		} else {
-			__io__block.writeFloat(__io__address + 376, randrotfac);
+			__io__block.writeFloat(__io__address + 384, randrotfac);
 		}
 	}
 
@@ -5506,9 +5507,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandphasefac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 432);
+			return __io__block.readFloat(__io__address + 448);
 		} else {
-			return __io__block.readFloat(__io__address + 380);
+			return __io__block.readFloat(__io__address + 388);
 		}
 	}
 
@@ -5520,9 +5521,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandphasefac(float randphasefac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 432, randphasefac);
+			__io__block.writeFloat(__io__address + 448, randphasefac);
 		} else {
-			__io__block.writeFloat(__io__address + 380, randphasefac);
+			__io__block.writeFloat(__io__address + 388, randphasefac);
 		}
 	}
 
@@ -5538,9 +5539,9 @@ public class ParticleSettings extends CFacade {
 	public float getMass() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 436);
+			return __io__block.readFloat(__io__address + 452);
 		} else {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 392);
 		}
 	}
 
@@ -5556,9 +5557,9 @@ public class ParticleSettings extends CFacade {
 	public void setMass(float mass) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 436, mass);
+			__io__block.writeFloat(__io__address + 452, mass);
 		} else {
-			__io__block.writeFloat(__io__address + 384, mass);
+			__io__block.writeFloat(__io__address + 392, mass);
 		}
 	}
 
@@ -5570,9 +5571,9 @@ public class ParticleSettings extends CFacade {
 	public float getSize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 440);
+			return __io__block.readFloat(__io__address + 456);
 		} else {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 396);
 		}
 	}
 
@@ -5584,9 +5585,9 @@ public class ParticleSettings extends CFacade {
 	public void setSize(float size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 440, size);
+			__io__block.writeFloat(__io__address + 456, size);
 		} else {
-			__io__block.writeFloat(__io__address + 388, size);
+			__io__block.writeFloat(__io__address + 396, size);
 		}
 	}
 
@@ -5598,9 +5599,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 444);
+			return __io__block.readFloat(__io__address + 460);
 		} else {
-			return __io__block.readFloat(__io__address + 392);
+			return __io__block.readFloat(__io__address + 400);
 		}
 	}
 
@@ -5612,9 +5613,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandsize(float randsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 444, randsize);
+			__io__block.writeFloat(__io__address + 460, randsize);
 		} else {
-			__io__block.writeFloat(__io__address + 392, randsize);
+			__io__block.writeFloat(__io__address + 400, randsize);
 		}
 	}
 
@@ -5633,9 +5634,9 @@ public class ParticleSettings extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 448, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5651,9 +5652,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 448;
+			__dna__offset = 464;
 		} else {
-			__dna__offset = 396;
+			__dna__offset = 404;
 		}
 		if (__io__equals(acc, __io__address + __dna__offset)) {
 			return;
@@ -5672,9 +5673,9 @@ public class ParticleSettings extends CFacade {
 	public float getDragfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 460);
+			return __io__block.readFloat(__io__address + 476);
 		} else {
-			return __io__block.readFloat(__io__address + 408);
+			return __io__block.readFloat(__io__address + 416);
 		}
 	}
 
@@ -5686,9 +5687,9 @@ public class ParticleSettings extends CFacade {
 	public void setDragfac(float dragfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 460, dragfac);
+			__io__block.writeFloat(__io__address + 476, dragfac);
 		} else {
-			__io__block.writeFloat(__io__address + 408, dragfac);
+			__io__block.writeFloat(__io__address + 416, dragfac);
 		}
 	}
 
@@ -5700,9 +5701,9 @@ public class ParticleSettings extends CFacade {
 	public float getBrownfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 464);
+			return __io__block.readFloat(__io__address + 480);
 		} else {
-			return __io__block.readFloat(__io__address + 412);
+			return __io__block.readFloat(__io__address + 420);
 		}
 	}
 
@@ -5714,9 +5715,9 @@ public class ParticleSettings extends CFacade {
 	public void setBrownfac(float brownfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 464, brownfac);
+			__io__block.writeFloat(__io__address + 480, brownfac);
 		} else {
-			__io__block.writeFloat(__io__address + 412, brownfac);
+			__io__block.writeFloat(__io__address + 420, brownfac);
 		}
 	}
 
@@ -5728,9 +5729,9 @@ public class ParticleSettings extends CFacade {
 	public float getDampfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 468);
+			return __io__block.readFloat(__io__address + 484);
 		} else {
-			return __io__block.readFloat(__io__address + 416);
+			return __io__block.readFloat(__io__address + 424);
 		}
 	}
 
@@ -5742,9 +5743,9 @@ public class ParticleSettings extends CFacade {
 	public void setDampfac(float dampfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 468, dampfac);
+			__io__block.writeFloat(__io__address + 484, dampfac);
 		} else {
-			__io__block.writeFloat(__io__address + 416, dampfac);
+			__io__block.writeFloat(__io__address + 424, dampfac);
 		}
 	}
 
@@ -5759,9 +5760,9 @@ public class ParticleSettings extends CFacade {
 	public float getRandlength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 472);
+			return __io__block.readFloat(__io__address + 488);
 		} else {
-			return __io__block.readFloat(__io__address + 420);
+			return __io__block.readFloat(__io__address + 428);
 		}
 	}
 
@@ -5776,9 +5777,9 @@ public class ParticleSettings extends CFacade {
 	public void setRandlength(float randlength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 472, randlength);
+			__io__block.writeFloat(__io__address + 488, randlength);
 		} else {
-			__io__block.writeFloat(__io__address + 420, randlength);
+			__io__block.writeFloat(__io__address + 428, randlength);
 		}
 	}
 
@@ -5793,9 +5794,9 @@ public class ParticleSettings extends CFacade {
 	public int getChild_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 476);
+			return __io__block.readInt(__io__address + 492);
 		} else {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 432);
 		}
 	}
 
@@ -5810,9 +5811,9 @@ public class ParticleSettings extends CFacade {
 	public void setChild_flag(int child_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 476, child_flag);
+			__io__block.writeInt(__io__address + 492, child_flag);
 		} else {
-			__io__block.writeInt(__io__address + 424, child_flag);
+			__io__block.writeInt(__io__address + 432, child_flag);
 		}
 	}
 
@@ -5828,9 +5829,9 @@ public class ParticleSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 480, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5843,9 +5844,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 480;
+			__dna__offset = 496;
 		} else {
-			__dna__offset = 428;
+			__dna__offset = 436;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -5867,9 +5868,9 @@ public class ParticleSettings extends CFacade {
 	public int getChild_nbr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 484);
+			return __io__block.readInt(__io__address + 500);
 		} else {
-			return __io__block.readInt(__io__address + 432);
+			return __io__block.readInt(__io__address + 440);
 		}
 	}
 
@@ -5884,9 +5885,9 @@ public class ParticleSettings extends CFacade {
 	public void setChild_nbr(int child_nbr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 484, child_nbr);
+			__io__block.writeInt(__io__address + 500, child_nbr);
 		} else {
-			__io__block.writeInt(__io__address + 432, child_nbr);
+			__io__block.writeInt(__io__address + 440, child_nbr);
 		}
 	}
 
@@ -5898,9 +5899,9 @@ public class ParticleSettings extends CFacade {
 	public int getRen_child_nbr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 488);
+			return __io__block.readInt(__io__address + 504);
 		} else {
-			return __io__block.readInt(__io__address + 436);
+			return __io__block.readInt(__io__address + 444);
 		}
 	}
 
@@ -5912,9 +5913,9 @@ public class ParticleSettings extends CFacade {
 	public void setRen_child_nbr(int ren_child_nbr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 488, ren_child_nbr);
+			__io__block.writeInt(__io__address + 504, ren_child_nbr);
 		} else {
-			__io__block.writeInt(__io__address + 436, ren_child_nbr);
+			__io__block.writeInt(__io__address + 444, ren_child_nbr);
 		}
 	}
 
@@ -5926,9 +5927,9 @@ public class ParticleSettings extends CFacade {
 	public float getParents() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 492);
+			return __io__block.readFloat(__io__address + 508);
 		} else {
-			return __io__block.readFloat(__io__address + 440);
+			return __io__block.readFloat(__io__address + 448);
 		}
 	}
 
@@ -5940,9 +5941,9 @@ public class ParticleSettings extends CFacade {
 	public void setParents(float parents) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 492, parents);
+			__io__block.writeFloat(__io__address + 508, parents);
 		} else {
-			__io__block.writeFloat(__io__address + 440, parents);
+			__io__block.writeFloat(__io__address + 448, parents);
 		}
 	}
 
@@ -5954,9 +5955,9 @@ public class ParticleSettings extends CFacade {
 	public float getChildsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 496);
+			return __io__block.readFloat(__io__address + 512);
 		} else {
-			return __io__block.readFloat(__io__address + 444);
+			return __io__block.readFloat(__io__address + 452);
 		}
 	}
 
@@ -5968,9 +5969,9 @@ public class ParticleSettings extends CFacade {
 	public void setChildsize(float childsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 496, childsize);
+			__io__block.writeFloat(__io__address + 512, childsize);
 		} else {
-			__io__block.writeFloat(__io__address + 444, childsize);
+			__io__block.writeFloat(__io__address + 452, childsize);
 		}
 	}
 
@@ -5982,9 +5983,9 @@ public class ParticleSettings extends CFacade {
 	public float getChildrandsize() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 500);
+			return __io__block.readFloat(__io__address + 516);
 		} else {
-			return __io__block.readFloat(__io__address + 448);
+			return __io__block.readFloat(__io__address + 456);
 		}
 	}
 
@@ -5996,9 +5997,9 @@ public class ParticleSettings extends CFacade {
 	public void setChildrandsize(float childrandsize) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 500, childrandsize);
+			__io__block.writeFloat(__io__address + 516, childrandsize);
 		} else {
-			__io__block.writeFloat(__io__address + 448, childrandsize);
+			__io__block.writeFloat(__io__address + 456, childrandsize);
 		}
 	}
 
@@ -6010,9 +6011,9 @@ public class ParticleSettings extends CFacade {
 	public float getChildrad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 504);
+			return __io__block.readFloat(__io__address + 520);
 		} else {
-			return __io__block.readFloat(__io__address + 452);
+			return __io__block.readFloat(__io__address + 460);
 		}
 	}
 
@@ -6024,9 +6025,9 @@ public class ParticleSettings extends CFacade {
 	public void setChildrad(float childrad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 504, childrad);
+			__io__block.writeFloat(__io__address + 520, childrad);
 		} else {
-			__io__block.writeFloat(__io__address + 452, childrad);
+			__io__block.writeFloat(__io__address + 460, childrad);
 		}
 	}
 
@@ -6038,9 +6039,9 @@ public class ParticleSettings extends CFacade {
 	public float getChildflat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 508);
+			return __io__block.readFloat(__io__address + 524);
 		} else {
-			return __io__block.readFloat(__io__address + 456);
+			return __io__block.readFloat(__io__address + 464);
 		}
 	}
 
@@ -6052,9 +6053,9 @@ public class ParticleSettings extends CFacade {
 	public void setChildflat(float childflat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 508, childflat);
+			__io__block.writeFloat(__io__address + 524, childflat);
 		} else {
-			__io__block.writeFloat(__io__address + 456, childflat);
+			__io__block.writeFloat(__io__address + 464, childflat);
 		}
 	}
 
@@ -6069,9 +6070,9 @@ public class ParticleSettings extends CFacade {
 	public float getClumpfac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 512);
+			return __io__block.readFloat(__io__address + 528);
 		} else {
-			return __io__block.readFloat(__io__address + 460);
+			return __io__block.readFloat(__io__address + 468);
 		}
 	}
 
@@ -6086,9 +6087,9 @@ public class ParticleSettings extends CFacade {
 	public void setClumpfac(float clumpfac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 512, clumpfac);
+			__io__block.writeFloat(__io__address + 528, clumpfac);
 		} else {
-			__io__block.writeFloat(__io__address + 460, clumpfac);
+			__io__block.writeFloat(__io__address + 468, clumpfac);
 		}
 	}
 
@@ -6100,9 +6101,9 @@ public class ParticleSettings extends CFacade {
 	public float getClumppow() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 516);
+			return __io__block.readFloat(__io__address + 532);
 		} else {
-			return __io__block.readFloat(__io__address + 464);
+			return __io__block.readFloat(__io__address + 472);
 		}
 	}
 
@@ -6114,9 +6115,9 @@ public class ParticleSettings extends CFacade {
 	public void setClumppow(float clumppow) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 516, clumppow);
+			__io__block.writeFloat(__io__address + 532, clumppow);
 		} else {
-			__io__block.writeFloat(__io__address + 464, clumppow);
+			__io__block.writeFloat(__io__address + 472, clumppow);
 		}
 	}
 
@@ -6131,9 +6132,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_amp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 520);
+			return __io__block.readFloat(__io__address + 536);
 		} else {
-			return __io__block.readFloat(__io__address + 468);
+			return __io__block.readFloat(__io__address + 476);
 		}
 	}
 
@@ -6148,9 +6149,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_amp(float kink_amp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 520, kink_amp);
+			__io__block.writeFloat(__io__address + 536, kink_amp);
 		} else {
-			__io__block.writeFloat(__io__address + 468, kink_amp);
+			__io__block.writeFloat(__io__address + 476, kink_amp);
 		}
 	}
 
@@ -6162,9 +6163,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_freq() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 524);
+			return __io__block.readFloat(__io__address + 540);
 		} else {
-			return __io__block.readFloat(__io__address + 472);
+			return __io__block.readFloat(__io__address + 480);
 		}
 	}
 
@@ -6176,9 +6177,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_freq(float kink_freq) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 524, kink_freq);
+			__io__block.writeFloat(__io__address + 540, kink_freq);
 		} else {
-			__io__block.writeFloat(__io__address + 472, kink_freq);
+			__io__block.writeFloat(__io__address + 480, kink_freq);
 		}
 	}
 
@@ -6193,9 +6194,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_shape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 528);
+			return __io__block.readFloat(__io__address + 544);
 		} else {
-			return __io__block.readFloat(__io__address + 476);
+			return __io__block.readFloat(__io__address + 484);
 		}
 	}
 
@@ -6210,9 +6211,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_shape(float kink_shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 528, kink_shape);
+			__io__block.writeFloat(__io__address + 544, kink_shape);
 		} else {
-			__io__block.writeFloat(__io__address + 476, kink_shape);
+			__io__block.writeFloat(__io__address + 484, kink_shape);
 		}
 	}
 
@@ -6227,9 +6228,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_flat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 532);
+			return __io__block.readFloat(__io__address + 548);
 		} else {
-			return __io__block.readFloat(__io__address + 480);
+			return __io__block.readFloat(__io__address + 488);
 		}
 	}
 
@@ -6244,9 +6245,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_flat(float kink_flat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 532, kink_flat);
+			__io__block.writeFloat(__io__address + 548, kink_flat);
 		} else {
-			__io__block.writeFloat(__io__address + 480, kink_flat);
+			__io__block.writeFloat(__io__address + 488, kink_flat);
 		}
 	}
 
@@ -6258,9 +6259,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_amp_clump() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 536);
+			return __io__block.readFloat(__io__address + 552);
 		} else {
-			return __io__block.readFloat(__io__address + 484);
+			return __io__block.readFloat(__io__address + 492);
 		}
 	}
 
@@ -6272,9 +6273,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_amp_clump(float kink_amp_clump) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 536, kink_amp_clump);
+			__io__block.writeFloat(__io__address + 552, kink_amp_clump);
 		} else {
-			__io__block.writeFloat(__io__address + 484, kink_amp_clump);
+			__io__block.writeFloat(__io__address + 492, kink_amp_clump);
 		}
 	}
 
@@ -6289,9 +6290,9 @@ public class ParticleSettings extends CFacade {
 	public int getKink_extra_steps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 540);
+			return __io__block.readInt(__io__address + 556);
 		} else {
-			return __io__block.readInt(__io__address + 488);
+			return __io__block.readInt(__io__address + 496);
 		}
 	}
 
@@ -6306,9 +6307,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_extra_steps(int kink_extra_steps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 540, kink_extra_steps);
+			__io__block.writeInt(__io__address + 556, kink_extra_steps);
 		} else {
-			__io__block.writeInt(__io__address + 488, kink_extra_steps);
+			__io__block.writeInt(__io__address + 496, kink_extra_steps);
 		}
 	}
 
@@ -6324,9 +6325,9 @@ public class ParticleSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 544, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 560, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 492, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6339,9 +6340,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 492;
+			__dna__offset = 500;
 		}
 		if (__io__equals(_pad4, __io__address + __dna__offset)) {
 			return;
@@ -6363,9 +6364,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_axis_random() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 548);
+			return __io__block.readFloat(__io__address + 564);
 		} else {
-			return __io__block.readFloat(__io__address + 496);
+			return __io__block.readFloat(__io__address + 504);
 		}
 	}
 
@@ -6380,9 +6381,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_axis_random(float kink_axis_random) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 548, kink_axis_random);
+			__io__block.writeFloat(__io__address + 564, kink_axis_random);
 		} else {
-			__io__block.writeFloat(__io__address + 496, kink_axis_random);
+			__io__block.writeFloat(__io__address + 504, kink_axis_random);
 		}
 	}
 
@@ -6394,9 +6395,9 @@ public class ParticleSettings extends CFacade {
 	public float getKink_amp_random() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 552);
+			return __io__block.readFloat(__io__address + 568);
 		} else {
-			return __io__block.readFloat(__io__address + 500);
+			return __io__block.readFloat(__io__address + 508);
 		}
 	}
 
@@ -6408,9 +6409,9 @@ public class ParticleSettings extends CFacade {
 	public void setKink_amp_random(float kink_amp_random) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 552, kink_amp_random);
+			__io__block.writeFloat(__io__address + 568, kink_amp_random);
 		} else {
-			__io__block.writeFloat(__io__address + 500, kink_amp_random);
+			__io__block.writeFloat(__io__address + 508, kink_amp_random);
 		}
 	}
 
@@ -6425,9 +6426,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 556);
+			return __io__block.readFloat(__io__address + 572);
 		} else {
-			return __io__block.readFloat(__io__address + 504);
+			return __io__block.readFloat(__io__address + 512);
 		}
 	}
 
@@ -6442,9 +6443,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough1(float rough1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 556, rough1);
+			__io__block.writeFloat(__io__address + 572, rough1);
 		} else {
-			__io__block.writeFloat(__io__address + 504, rough1);
+			__io__block.writeFloat(__io__address + 512, rough1);
 		}
 	}
 
@@ -6456,9 +6457,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough1_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 560);
+			return __io__block.readFloat(__io__address + 576);
 		} else {
-			return __io__block.readFloat(__io__address + 508);
+			return __io__block.readFloat(__io__address + 516);
 		}
 	}
 
@@ -6470,9 +6471,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough1_size(float rough1_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 560, rough1_size);
+			__io__block.writeFloat(__io__address + 576, rough1_size);
 		} else {
-			__io__block.writeFloat(__io__address + 508, rough1_size);
+			__io__block.writeFloat(__io__address + 516, rough1_size);
 		}
 	}
 
@@ -6484,9 +6485,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 564);
+			return __io__block.readFloat(__io__address + 580);
 		} else {
-			return __io__block.readFloat(__io__address + 512);
+			return __io__block.readFloat(__io__address + 520);
 		}
 	}
 
@@ -6498,9 +6499,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough2(float rough2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 564, rough2);
+			__io__block.writeFloat(__io__address + 580, rough2);
 		} else {
-			__io__block.writeFloat(__io__address + 512, rough2);
+			__io__block.writeFloat(__io__address + 520, rough2);
 		}
 	}
 
@@ -6512,9 +6513,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough2_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 568);
+			return __io__block.readFloat(__io__address + 584);
 		} else {
-			return __io__block.readFloat(__io__address + 516);
+			return __io__block.readFloat(__io__address + 524);
 		}
 	}
 
@@ -6526,9 +6527,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough2_size(float rough2_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 568, rough2_size);
+			__io__block.writeFloat(__io__address + 584, rough2_size);
 		} else {
-			__io__block.writeFloat(__io__address + 516, rough2_size);
+			__io__block.writeFloat(__io__address + 524, rough2_size);
 		}
 	}
 
@@ -6540,9 +6541,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough2_thres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 572);
+			return __io__block.readFloat(__io__address + 588);
 		} else {
-			return __io__block.readFloat(__io__address + 520);
+			return __io__block.readFloat(__io__address + 528);
 		}
 	}
 
@@ -6554,9 +6555,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough2_thres(float rough2_thres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 572, rough2_thres);
+			__io__block.writeFloat(__io__address + 588, rough2_thres);
 		} else {
-			__io__block.writeFloat(__io__address + 520, rough2_thres);
+			__io__block.writeFloat(__io__address + 528, rough2_thres);
 		}
 	}
 
@@ -6568,9 +6569,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough_end() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 576);
+			return __io__block.readFloat(__io__address + 592);
 		} else {
-			return __io__block.readFloat(__io__address + 524);
+			return __io__block.readFloat(__io__address + 532);
 		}
 	}
 
@@ -6582,9 +6583,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough_end(float rough_end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 576, rough_end);
+			__io__block.writeFloat(__io__address + 592, rough_end);
 		} else {
-			__io__block.writeFloat(__io__address + 524, rough_end);
+			__io__block.writeFloat(__io__address + 532, rough_end);
 		}
 	}
 
@@ -6596,9 +6597,9 @@ public class ParticleSettings extends CFacade {
 	public float getRough_end_shape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 580);
+			return __io__block.readFloat(__io__address + 596);
 		} else {
-			return __io__block.readFloat(__io__address + 528);
+			return __io__block.readFloat(__io__address + 536);
 		}
 	}
 
@@ -6610,9 +6611,9 @@ public class ParticleSettings extends CFacade {
 	public void setRough_end_shape(float rough_end_shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 580, rough_end_shape);
+			__io__block.writeFloat(__io__address + 596, rough_end_shape);
 		} else {
-			__io__block.writeFloat(__io__address + 528, rough_end_shape);
+			__io__block.writeFloat(__io__address + 536, rough_end_shape);
 		}
 	}
 
@@ -6627,9 +6628,9 @@ public class ParticleSettings extends CFacade {
 	public float getClength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 584);
+			return __io__block.readFloat(__io__address + 600);
 		} else {
-			return __io__block.readFloat(__io__address + 532);
+			return __io__block.readFloat(__io__address + 540);
 		}
 	}
 
@@ -6644,9 +6645,9 @@ public class ParticleSettings extends CFacade {
 	public void setClength(float clength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 584, clength);
+			__io__block.writeFloat(__io__address + 600, clength);
 		} else {
-			__io__block.writeFloat(__io__address + 532, clength);
+			__io__block.writeFloat(__io__address + 540, clength);
 		}
 	}
 
@@ -6658,9 +6659,9 @@ public class ParticleSettings extends CFacade {
 	public float getClength_thres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 588);
+			return __io__block.readFloat(__io__address + 604);
 		} else {
-			return __io__block.readFloat(__io__address + 536);
+			return __io__block.readFloat(__io__address + 544);
 		}
 	}
 
@@ -6672,9 +6673,9 @@ public class ParticleSettings extends CFacade {
 	public void setClength_thres(float clength_thres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 588, clength_thres);
+			__io__block.writeFloat(__io__address + 604, clength_thres);
 		} else {
-			__io__block.writeFloat(__io__address + 536, clength_thres);
+			__io__block.writeFloat(__io__address + 544, clength_thres);
 		}
 	}
 
@@ -6689,9 +6690,9 @@ public class ParticleSettings extends CFacade {
 	public float getParting_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 592);
+			return __io__block.readFloat(__io__address + 608);
 		} else {
-			return __io__block.readFloat(__io__address + 540);
+			return __io__block.readFloat(__io__address + 548);
 		}
 	}
 
@@ -6706,9 +6707,9 @@ public class ParticleSettings extends CFacade {
 	public void setParting_fac(float parting_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 592, parting_fac);
+			__io__block.writeFloat(__io__address + 608, parting_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 540, parting_fac);
+			__io__block.writeFloat(__io__address + 548, parting_fac);
 		}
 	}
 
@@ -6720,9 +6721,9 @@ public class ParticleSettings extends CFacade {
 	public float getParting_min() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 596);
+			return __io__block.readFloat(__io__address + 612);
 		} else {
-			return __io__block.readFloat(__io__address + 544);
+			return __io__block.readFloat(__io__address + 552);
 		}
 	}
 
@@ -6734,9 +6735,9 @@ public class ParticleSettings extends CFacade {
 	public void setParting_min(float parting_min) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 596, parting_min);
+			__io__block.writeFloat(__io__address + 612, parting_min);
 		} else {
-			__io__block.writeFloat(__io__address + 544, parting_min);
+			__io__block.writeFloat(__io__address + 552, parting_min);
 		}
 	}
 
@@ -6748,9 +6749,9 @@ public class ParticleSettings extends CFacade {
 	public float getParting_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 600);
+			return __io__block.readFloat(__io__address + 616);
 		} else {
-			return __io__block.readFloat(__io__address + 548);
+			return __io__block.readFloat(__io__address + 556);
 		}
 	}
 
@@ -6762,9 +6763,9 @@ public class ParticleSettings extends CFacade {
 	public void setParting_max(float parting_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 600, parting_max);
+			__io__block.writeFloat(__io__address + 616, parting_max);
 		} else {
-			__io__block.writeFloat(__io__address + 548, parting_max);
+			__io__block.writeFloat(__io__address + 556, parting_max);
 		}
 	}
 
@@ -6779,9 +6780,9 @@ public class ParticleSettings extends CFacade {
 	public float getBranch_thres() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 604);
+			return __io__block.readFloat(__io__address + 620);
 		} else {
-			return __io__block.readFloat(__io__address + 552);
+			return __io__block.readFloat(__io__address + 560);
 		}
 	}
 
@@ -6796,9 +6797,9 @@ public class ParticleSettings extends CFacade {
 	public void setBranch_thres(float branch_thres) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 604, branch_thres);
+			__io__block.writeFloat(__io__address + 620, branch_thres);
 		} else {
-			__io__block.writeFloat(__io__address + 552, branch_thres);
+			__io__block.writeFloat(__io__address + 560, branch_thres);
 		}
 	}
 
@@ -6817,9 +6818,9 @@ public class ParticleSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 608, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 624, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 564, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -6835,9 +6836,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 608;
+			__dna__offset = 624;
 		} else {
-			__dna__offset = 556;
+			__dna__offset = 564;
 		}
 		if (__io__equals(draw_line, __io__address + __dna__offset)) {
 			return;
@@ -6859,9 +6860,9 @@ public class ParticleSettings extends CFacade {
 	public float getPath_start() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 616);
+			return __io__block.readFloat(__io__address + 632);
 		} else {
-			return __io__block.readFloat(__io__address + 564);
+			return __io__block.readFloat(__io__address + 572);
 		}
 	}
 
@@ -6876,9 +6877,9 @@ public class ParticleSettings extends CFacade {
 	public void setPath_start(float path_start) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 616, path_start);
+			__io__block.writeFloat(__io__address + 632, path_start);
 		} else {
-			__io__block.writeFloat(__io__address + 564, path_start);
+			__io__block.writeFloat(__io__address + 572, path_start);
 		}
 	}
 
@@ -6893,9 +6894,9 @@ public class ParticleSettings extends CFacade {
 	public float getPath_end() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 620);
+			return __io__block.readFloat(__io__address + 636);
 		} else {
-			return __io__block.readFloat(__io__address + 568);
+			return __io__block.readFloat(__io__address + 576);
 		}
 	}
 
@@ -6910,9 +6911,9 @@ public class ParticleSettings extends CFacade {
 	public void setPath_end(float path_end) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 620, path_end);
+			__io__block.writeFloat(__io__address + 636, path_end);
 		} else {
-			__io__block.writeFloat(__io__address + 568, path_end);
+			__io__block.writeFloat(__io__address + 576, path_end);
 		}
 	}
 
@@ -6927,9 +6928,9 @@ public class ParticleSettings extends CFacade {
 	public int getTrail_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 624);
+			return __io__block.readInt(__io__address + 640);
 		} else {
-			return __io__block.readInt(__io__address + 572);
+			return __io__block.readInt(__io__address + 580);
 		}
 	}
 
@@ -6944,9 +6945,9 @@ public class ParticleSettings extends CFacade {
 	public void setTrail_count(int trail_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 624, trail_count);
+			__io__block.writeInt(__io__address + 640, trail_count);
 		} else {
-			__io__block.writeInt(__io__address + 572, trail_count);
+			__io__block.writeInt(__io__address + 580, trail_count);
 		}
 	}
 
@@ -6962,9 +6963,9 @@ public class ParticleSettings extends CFacade {
 	public int getKeyed_loops() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 628);
+			return __io__block.readInt(__io__address + 644);
 		} else {
-			return __io__block.readInt(__io__address + 576);
+			return __io__block.readInt(__io__address + 584);
 		}
 	}
 
@@ -6980,9 +6981,9 @@ public class ParticleSettings extends CFacade {
 	public void setKeyed_loops(int keyed_loops) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 628, keyed_loops);
+			__io__block.writeInt(__io__address + 644, keyed_loops);
 		} else {
-			__io__block.writeInt(__io__address + 576, keyed_loops);
+			__io__block.writeInt(__io__address + 584, keyed_loops);
 		}
 	}
 
@@ -6995,9 +6996,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 632);
+			__dna__targetAddress = __io__block.readLong(__io__address + 648);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 580);
+			__dna__targetAddress = __io__block.readLong(__io__address + 588);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7012,9 +7013,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((clumpcurve == null) ? 0 : clumpcurve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 632, __address);
+			__io__block.writeLong(__io__address + 648, __address);
 		} else {
-			__io__block.writeLong(__io__address + 580, __address);
+			__io__block.writeLong(__io__address + 588, __address);
 		}
 	}
 
@@ -7027,9 +7028,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 640);
+			__dna__targetAddress = __io__block.readLong(__io__address + 656);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 584);
+			__dna__targetAddress = __io__block.readLong(__io__address + 592);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7044,9 +7045,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((roughcurve == null) ? 0 : roughcurve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 640, __address);
+			__io__block.writeLong(__io__address + 656, __address);
 		} else {
-			__io__block.writeLong(__io__address + 584, __address);
+			__io__block.writeLong(__io__address + 592, __address);
 		}
 	}
 
@@ -7061,9 +7062,9 @@ public class ParticleSettings extends CFacade {
 	public float getClump_noise_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 648);
+			return __io__block.readFloat(__io__address + 664);
 		} else {
-			return __io__block.readFloat(__io__address + 588);
+			return __io__block.readFloat(__io__address + 596);
 		}
 	}
 
@@ -7078,9 +7079,9 @@ public class ParticleSettings extends CFacade {
 	public void setClump_noise_size(float clump_noise_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 648, clump_noise_size);
+			__io__block.writeFloat(__io__address + 664, clump_noise_size);
 		} else {
-			__io__block.writeFloat(__io__address + 588, clump_noise_size);
+			__io__block.writeFloat(__io__address + 596, clump_noise_size);
 		}
 	}
 
@@ -7096,9 +7097,9 @@ public class ParticleSettings extends CFacade {
 	public float getBending_random() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 652);
+			return __io__block.readFloat(__io__address + 668);
 		} else {
-			return __io__block.readFloat(__io__address + 592);
+			return __io__block.readFloat(__io__address + 600);
 		}
 	}
 
@@ -7114,9 +7115,9 @@ public class ParticleSettings extends CFacade {
 	public void setBending_random(float bending_random) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 652, bending_random);
+			__io__block.writeFloat(__io__address + 668, bending_random);
 		} else {
-			__io__block.writeFloat(__io__address + 592, bending_random);
+			__io__block.writeFloat(__io__address + 600, bending_random);
 		}
 	}
 
@@ -7135,9 +7136,9 @@ public class ParticleSettings extends CFacade {
 			18
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<CPointer<MTex>>(__io__address + 656, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 672, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<CPointer<MTex>>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<CPointer<MTex>>(__io__address + 604, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7153,9 +7154,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 656;
+			__dna__offset = 672;
 		} else {
-			__dna__offset = 596;
+			__dna__offset = 604;
 		}
 		if (__io__equals(mtex, __io__address + __dna__offset)) {
 			return;
@@ -7175,9 +7176,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 800);
+			__dna__targetAddress = __io__block.readLong(__io__address + 816);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 668);
+			__dna__targetAddress = __io__block.readLong(__io__address + 676);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7192,9 +7193,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((dup_group == null) ? 0 : dup_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 800, __address);
+			__io__block.writeLong(__io__address + 816, __address);
 		} else {
-			__io__block.writeLong(__io__address + 668, __address);
+			__io__block.writeLong(__io__address + 676, __address);
 		}
 	}
 
@@ -7206,9 +7207,9 @@ public class ParticleSettings extends CFacade {
 	public ListBase getDupliweights() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 808, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 824, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 672, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 680, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7221,9 +7222,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 808;
+			__dna__offset = 824;
 		} else {
-			__dna__offset = 672;
+			__dna__offset = 680;
 		}
 		if (__io__equals(dupliweights, __io__address + __dna__offset)) {
 			return;
@@ -7240,7 +7241,8 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Source Code:</h4>
 	 * <p><p> deprecated </p>
 	 * @deprecated
-	 *  Deprecateddeprecated </p>
+	 *  Deprecateddeprecated 
+	 * </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
 	
@@ -7248,9 +7250,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 824);
+			__dna__targetAddress = __io__block.readLong(__io__address + 840);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 680);
+			__dna__targetAddress = __io__block.readLong(__io__address + 688);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7262,7 +7264,8 @@ public class ParticleSettings extends CFacade {
 	 * <h4>Blender Source Code:</h4>
 	 * <p><p> deprecated </p>
 	 * @deprecated
-	 *  Deprecateddeprecated </p>
+	 *  Deprecateddeprecated 
+	 * </p>
 	 * @see #__DNA__FIELD__force_group
 	 */
 	
@@ -7270,9 +7273,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((force_group == null) ? 0 : force_group.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 824, __address);
+			__io__block.writeLong(__io__address + 840, __address);
 		} else {
-			__io__block.writeLong(__io__address + 680, __address);
+			__io__block.writeLong(__io__address + 688, __address);
 		}
 	}
 
@@ -7285,9 +7288,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 832);
+			__dna__targetAddress = __io__block.readLong(__io__address + 848);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 684);
+			__dna__targetAddress = __io__block.readLong(__io__address + 692);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7302,9 +7305,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((dup_ob == null) ? 0 : dup_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 832, __address);
+			__io__block.writeLong(__io__address + 848, __address);
 		} else {
-			__io__block.writeLong(__io__address + 684, __address);
+			__io__block.writeLong(__io__address + 692, __address);
 		}
 	}
 
@@ -7317,9 +7320,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 840);
+			__dna__targetAddress = __io__block.readLong(__io__address + 856);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 688);
+			__dna__targetAddress = __io__block.readLong(__io__address + 696);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7334,9 +7337,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((bb_ob == null) ? 0 : bb_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 840, __address);
+			__io__block.writeLong(__io__address + 856, __address);
 		} else {
-			__io__block.writeLong(__io__address + 688, __address);
+			__io__block.writeLong(__io__address + 696, __address);
 		}
 	}
 
@@ -7354,9 +7357,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 848);
+			__dna__targetAddress = __io__block.readLong(__io__address + 864);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 692);
+			__dna__targetAddress = __io__block.readLong(__io__address + 700);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7376,9 +7379,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 848, __address);
+			__io__block.writeLong(__io__address + 864, __address);
 		} else {
-			__io__block.writeLong(__io__address + 692, __address);
+			__io__block.writeLong(__io__address + 700, __address);
 		}
 	}
 
@@ -7391,9 +7394,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 856);
+			__dna__targetAddress = __io__block.readLong(__io__address + 872);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 696);
+			__dna__targetAddress = __io__block.readLong(__io__address + 704);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PartDeflect.class};
 		return new CPointer<PartDeflect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PartDeflect.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7408,9 +7411,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((pd == null) ? 0 : pd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 856, __address);
+			__io__block.writeLong(__io__address + 872, __address);
 		} else {
-			__io__block.writeLong(__io__address + 696, __address);
+			__io__block.writeLong(__io__address + 704, __address);
 		}
 	}
 
@@ -7423,9 +7426,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 864);
+			__dna__targetAddress = __io__block.readLong(__io__address + 880);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 700);
+			__dna__targetAddress = __io__block.readLong(__io__address + 708);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PartDeflect.class};
 		return new CPointer<PartDeflect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PartDeflect.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7440,9 +7443,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((pd2 == null) ? 0 : pd2.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 864, __address);
+			__io__block.writeLong(__io__address + 880, __address);
 		} else {
-			__io__block.writeLong(__io__address + 700, __address);
+			__io__block.writeLong(__io__address + 708, __address);
 		}
 	}
 
@@ -7458,9 +7461,9 @@ public class ParticleSettings extends CFacade {
 	public short getUse_modifier_stack() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 872);
+			return __io__block.readShort(__io__address + 888);
 		} else {
-			return __io__block.readShort(__io__address + 704);
+			return __io__block.readShort(__io__address + 712);
 		}
 	}
 
@@ -7476,9 +7479,9 @@ public class ParticleSettings extends CFacade {
 	public void setUse_modifier_stack(short use_modifier_stack) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 872, use_modifier_stack);
+			__io__block.writeShort(__io__address + 888, use_modifier_stack);
 		} else {
-			__io__block.writeShort(__io__address + 704, use_modifier_stack);
+			__io__block.writeShort(__io__address + 712, use_modifier_stack);
 		}
 	}
 
@@ -7494,9 +7497,9 @@ public class ParticleSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 874, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 890, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 706, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 714, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7509,9 +7512,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 874;
+			__dna__offset = 890;
 		} else {
-			__dna__offset = 706;
+			__dna__offset = 714;
 		}
 		if (__io__equals(_pad5, __io__address + __dna__offset)) {
 			return;
@@ -7533,9 +7536,9 @@ public class ParticleSettings extends CFacade {
 	public short getShape_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 876);
+			return __io__block.readShort(__io__address + 892);
 		} else {
-			return __io__block.readShort(__io__address + 708);
+			return __io__block.readShort(__io__address + 716);
 		}
 	}
 
@@ -7550,9 +7553,9 @@ public class ParticleSettings extends CFacade {
 	public void setShape_flag(short shape_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 876, shape_flag);
+			__io__block.writeShort(__io__address + 892, shape_flag);
 		} else {
-			__io__block.writeShort(__io__address + 708, shape_flag);
+			__io__block.writeShort(__io__address + 716, shape_flag);
 		}
 	}
 
@@ -7568,9 +7571,9 @@ public class ParticleSettings extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 878, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 894, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 710, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 718, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7583,9 +7586,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 878;
+			__dna__offset = 894;
 		} else {
-			__dna__offset = 710;
+			__dna__offset = 718;
 		}
 		if (__io__equals(_pad6, __io__address + __dna__offset)) {
 			return;
@@ -7607,9 +7610,9 @@ public class ParticleSettings extends CFacade {
 	public float getTwist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 880);
+			return __io__block.readFloat(__io__address + 896);
 		} else {
-			return __io__block.readFloat(__io__address + 712);
+			return __io__block.readFloat(__io__address + 720);
 		}
 	}
 
@@ -7624,9 +7627,9 @@ public class ParticleSettings extends CFacade {
 	public void setTwist(float twist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 880, twist);
+			__io__block.writeFloat(__io__address + 896, twist);
 		} else {
-			__io__block.writeFloat(__io__address + 712, twist);
+			__io__block.writeFloat(__io__address + 720, twist);
 		}
 	}
 
@@ -7642,9 +7645,9 @@ public class ParticleSettings extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 884, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 900, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 716, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 724, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7657,9 +7660,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 884;
+			__dna__offset = 900;
 		} else {
-			__dna__offset = 716;
+			__dna__offset = 724;
 		}
 		if (__io__equals(_pad8, __io__address + __dna__offset)) {
 			return;
@@ -7682,9 +7685,9 @@ public class ParticleSettings extends CFacade {
 	public float getShape() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 888);
+			return __io__block.readFloat(__io__address + 904);
 		} else {
-			return __io__block.readFloat(__io__address + 720);
+			return __io__block.readFloat(__io__address + 728);
 		}
 	}
 
@@ -7700,9 +7703,9 @@ public class ParticleSettings extends CFacade {
 	public void setShape(float shape) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 888, shape);
+			__io__block.writeFloat(__io__address + 904, shape);
 		} else {
-			__io__block.writeFloat(__io__address + 720, shape);
+			__io__block.writeFloat(__io__address + 728, shape);
 		}
 	}
 
@@ -7714,9 +7717,9 @@ public class ParticleSettings extends CFacade {
 	public float getRad_root() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 892);
+			return __io__block.readFloat(__io__address + 908);
 		} else {
-			return __io__block.readFloat(__io__address + 724);
+			return __io__block.readFloat(__io__address + 732);
 		}
 	}
 
@@ -7728,9 +7731,9 @@ public class ParticleSettings extends CFacade {
 	public void setRad_root(float rad_root) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 892, rad_root);
+			__io__block.writeFloat(__io__address + 908, rad_root);
 		} else {
-			__io__block.writeFloat(__io__address + 724, rad_root);
+			__io__block.writeFloat(__io__address + 732, rad_root);
 		}
 	}
 
@@ -7742,9 +7745,9 @@ public class ParticleSettings extends CFacade {
 	public float getRad_tip() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 896);
+			return __io__block.readFloat(__io__address + 912);
 		} else {
-			return __io__block.readFloat(__io__address + 728);
+			return __io__block.readFloat(__io__address + 736);
 		}
 	}
 
@@ -7756,9 +7759,9 @@ public class ParticleSettings extends CFacade {
 	public void setRad_tip(float rad_tip) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 896, rad_tip);
+			__io__block.writeFloat(__io__address + 912, rad_tip);
 		} else {
-			__io__block.writeFloat(__io__address + 728, rad_tip);
+			__io__block.writeFloat(__io__address + 736, rad_tip);
 		}
 	}
 
@@ -7770,9 +7773,9 @@ public class ParticleSettings extends CFacade {
 	public float getRad_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 900);
+			return __io__block.readFloat(__io__address + 916);
 		} else {
-			return __io__block.readFloat(__io__address + 732);
+			return __io__block.readFloat(__io__address + 740);
 		}
 	}
 
@@ -7784,9 +7787,9 @@ public class ParticleSettings extends CFacade {
 	public void setRad_scale(float rad_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 900, rad_scale);
+			__io__block.writeFloat(__io__address + 916, rad_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 732, rad_scale);
+			__io__block.writeFloat(__io__address + 740, rad_scale);
 		}
 	}
 
@@ -7799,9 +7802,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 904);
+			__dna__targetAddress = __io__block.readLong(__io__address + 920);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 736);
+			__dna__targetAddress = __io__block.readLong(__io__address + 744);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -7816,9 +7819,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((twistcurve == null) ? 0 : twistcurve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 904, __address);
+			__io__block.writeLong(__io__address + 920, __address);
 		} else {
-			__io__block.writeLong(__io__address + 736, __address);
+			__io__block.writeLong(__io__address + 744, __address);
 		}
 	}
 
@@ -7831,9 +7834,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 912);
+			__dna__targetAddress = __io__block.readLong(__io__address + 928);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 740);
+			__dna__targetAddress = __io__block.readLong(__io__address + 748);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -7848,9 +7851,9 @@ public class ParticleSettings extends CFacade {
 	{
 		long __address = ((_pad7 == null) ? 0 : _pad7.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 912, __address);
+			__io__block.writeLong(__io__address + 928, __address);
 		} else {
-			__io__block.writeLong(__io__address + 740, __address);
+			__io__block.writeLong(__io__address + 748, __address);
 		}
 	}
 

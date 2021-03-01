@@ -22,7 +22,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> There's a nasty circular dependency here.... 'void *' to the rescue! I really wonder why this is needed. </p>
  */
 
-@CMetaData(size32=128, size64=160)
+@CMetaData(size32=136, size64=176)
 public class ID extends CFacade {
 
 	/**
@@ -125,6 +125,30 @@ public class ID extends CFacade {
 	public static final long[] __DNA__FIELD__lib = new long[]{12, 24};
 
 	/**
+	 * Field descriptor (offset) for struct member 'asset_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD__asset_data);
+	 * CPointer&lt;CPointer&lt;AssetMetaData&gt;&gt; p_asset_data = p.cast(new Class[]{CPointer.class, AssetMetaData.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'asset_data'</li>
+	 * <li>Signature: 'AssetMetaData*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__asset_data = new long[]{16, 32};
+
+	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -163,7 +187,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 66/66</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{16, 32};
+	public static final long[] __DNA__FIELD__name = new long[]{20, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -203,7 +227,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{82, 98};
+	public static final long[] __DNA__FIELD__flag = new long[]{86, 106};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tag'.
@@ -227,7 +251,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tag = new long[]{84, 100};
+	public static final long[] __DNA__FIELD__tag = new long[]{88, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'us'.
@@ -250,7 +274,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__us = new long[]{88, 104};
+	public static final long[] __DNA__FIELD__us = new long[]{92, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'icon_id'.
@@ -273,7 +297,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__icon_id = new long[]{92, 108};
+	public static final long[] __DNA__FIELD__icon_id = new long[]{96, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
@@ -293,7 +317,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__recalc = new long[]{100, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc_up_to_undo_push'.
@@ -316,7 +340,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc_up_to_undo_push = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__recalc_up_to_undo_push = new long[]{104, 124};
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc_after_undo_push'.
@@ -336,7 +360,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__recalc_after_undo_push = new long[]{104, 120};
+	public static final long[] __DNA__FIELD__recalc_after_undo_push = new long[]{108, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'session_uuid'.
@@ -359,7 +383,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__session_uuid = new long[]{108, 124};
+	public static final long[] __DNA__FIELD__session_uuid = new long[]{112, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'properties'.
@@ -382,7 +406,7 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__properties = new long[]{112, 128};
+	public static final long[] __DNA__FIELD__properties = new long[]{116, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'override_library'.
@@ -406,13 +430,13 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__override_library = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__override_library = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -429,10 +453,18 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__orig_id = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__orig_id = new long[]{124, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'py_instance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
+	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
+	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
+	 * This is of limited benefit though, as it doesn't apply to non ID data that references this ID (the bones of an armature or the modifiers of an object for e.g.). 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -449,7 +481,27 @@ public class ID extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__py_instance = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__py_instance = new long[]{128, 160};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ID id = ...;
+	 * CPointer&lt;Object&gt; p = id.__dna__addressof(ID.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{132, 168};
 
 	public ID(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -606,6 +658,46 @@ public class ID extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'asset_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
+	 * @see #__DNA__FIELD__asset_data
+	 */
+	
+	public CPointer<AssetMetaData> getAsset_data() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 16);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{AssetMetaData.class};
+		return new CPointer<AssetMetaData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AssetMetaData.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'asset_data'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Additional data for an asset data-block<h4>Blender Source Code:</h4>
+	 * <p> If the {@link ID}  is an asset, this pointer is set. Owning pointer. </p>
+	 * @see #__DNA__FIELD__asset_data
+	 */
+	
+	public void setAsset_data(CPointer<AssetMetaData> asset_data) throws IOException
+	{
+		long __address = ((asset_data == null) ? 0 : asset_data.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 32, __address);
+		} else {
+			__io__block.writeLong(__io__address + 16, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
@@ -638,9 +730,9 @@ public class ID extends CFacade {
 			66
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 32, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 20, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -674,9 +766,9 @@ public class ID extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 40;
 		} else {
-			__dna__offset = 16;
+			__dna__offset = 20;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -715,9 +807,9 @@ public class ID extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 98);
+			return __io__block.readShort(__io__address + 106);
 		} else {
-			return __io__block.readShort(__io__address + 82);
+			return __io__block.readShort(__io__address + 86);
 		}
 	}
 
@@ -749,9 +841,9 @@ public class ID extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 98, flag);
+			__io__block.writeShort(__io__address + 106, flag);
 		} else {
-			__io__block.writeShort(__io__address + 82, flag);
+			__io__block.writeShort(__io__address + 86, flag);
 		}
 	}
 
@@ -767,9 +859,9 @@ public class ID extends CFacade {
 	public int getTag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 108);
 		} else {
-			return __io__block.readInt(__io__address + 84);
+			return __io__block.readInt(__io__address + 88);
 		}
 	}
 
@@ -785,9 +877,9 @@ public class ID extends CFacade {
 	public void setTag(int tag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 100, tag);
+			__io__block.writeInt(__io__address + 108, tag);
 		} else {
-			__io__block.writeInt(__io__address + 84, tag);
+			__io__block.writeInt(__io__address + 88, tag);
 		}
 	}
 
@@ -802,9 +894,9 @@ public class ID extends CFacade {
 	public int getUs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 112);
 		} else {
-			return __io__block.readInt(__io__address + 88);
+			return __io__block.readInt(__io__address + 92);
 		}
 	}
 
@@ -819,9 +911,9 @@ public class ID extends CFacade {
 	public void setUs(int us) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 104, us);
+			__io__block.writeInt(__io__address + 112, us);
 		} else {
-			__io__block.writeInt(__io__address + 88, us);
+			__io__block.writeInt(__io__address + 92, us);
 		}
 	}
 
@@ -836,9 +928,9 @@ public class ID extends CFacade {
 	public int getIcon_id() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 116);
 		} else {
-			return __io__block.readInt(__io__address + 92);
+			return __io__block.readInt(__io__address + 96);
 		}
 	}
 
@@ -853,9 +945,9 @@ public class ID extends CFacade {
 	public void setIcon_id(int icon_id) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, icon_id);
+			__io__block.writeInt(__io__address + 116, icon_id);
 		} else {
-			__io__block.writeInt(__io__address + 92, icon_id);
+			__io__block.writeInt(__io__address + 96, icon_id);
 		}
 	}
 
@@ -867,9 +959,9 @@ public class ID extends CFacade {
 	public int getRecalc() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 120);
 		} else {
-			return __io__block.readInt(__io__address + 96);
+			return __io__block.readInt(__io__address + 100);
 		}
 	}
 
@@ -881,9 +973,9 @@ public class ID extends CFacade {
 	public void setRecalc(int recalc) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 112, recalc);
+			__io__block.writeInt(__io__address + 120, recalc);
 		} else {
-			__io__block.writeInt(__io__address + 96, recalc);
+			__io__block.writeInt(__io__address + 100, recalc);
 		}
 	}
 
@@ -898,9 +990,9 @@ public class ID extends CFacade {
 	public int getRecalc_up_to_undo_push() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 124);
 		} else {
-			return __io__block.readInt(__io__address + 100);
+			return __io__block.readInt(__io__address + 104);
 		}
 	}
 
@@ -915,9 +1007,9 @@ public class ID extends CFacade {
 	public void setRecalc_up_to_undo_push(int recalc_up_to_undo_push) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 116, recalc_up_to_undo_push);
+			__io__block.writeInt(__io__address + 124, recalc_up_to_undo_push);
 		} else {
-			__io__block.writeInt(__io__address + 100, recalc_up_to_undo_push);
+			__io__block.writeInt(__io__address + 104, recalc_up_to_undo_push);
 		}
 	}
 
@@ -929,9 +1021,9 @@ public class ID extends CFacade {
 	public int getRecalc_after_undo_push() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 128);
 		} else {
-			return __io__block.readInt(__io__address + 104);
+			return __io__block.readInt(__io__address + 108);
 		}
 	}
 
@@ -943,9 +1035,9 @@ public class ID extends CFacade {
 	public void setRecalc_after_undo_push(int recalc_after_undo_push) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 120, recalc_after_undo_push);
+			__io__block.writeInt(__io__address + 128, recalc_after_undo_push);
 		} else {
-			__io__block.writeInt(__io__address + 104, recalc_after_undo_push);
+			__io__block.writeInt(__io__address + 108, recalc_after_undo_push);
 		}
 	}
 
@@ -960,9 +1052,9 @@ public class ID extends CFacade {
 	public int getSession_uuid() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 132);
 		} else {
-			return __io__block.readInt(__io__address + 108);
+			return __io__block.readInt(__io__address + 112);
 		}
 	}
 
@@ -977,9 +1069,9 @@ public class ID extends CFacade {
 	public void setSession_uuid(int session_uuid) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 124, session_uuid);
+			__io__block.writeInt(__io__address + 132, session_uuid);
 		} else {
-			__io__block.writeInt(__io__address + 108, session_uuid);
+			__io__block.writeInt(__io__address + 112, session_uuid);
 		}
 	}
 
@@ -995,9 +1087,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDProperty.class};
 		return new CPointer<IDProperty>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDProperty.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1015,9 +1107,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((properties == null) ? 0 : properties.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -1034,9 +1126,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{IDOverrideLibrary.class};
 		return new CPointer<IDOverrideLibrary>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, IDOverrideLibrary.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1055,9 +1147,9 @@ public class ID extends CFacade {
 	{
 		long __address = ((override_library == null) ? 0 : override_library.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -1065,7 +1157,7 @@ public class ID extends CFacade {
 	 * Get method for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * @see #__DNA__FIELD__orig_id
 	 */
 	
@@ -1073,9 +1165,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 120);
+			__dna__targetAddress = __io__block.readLong(__io__address + 124);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ID.class};
 		return new CPointer<ID>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ID.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1085,7 +1177,7 @@ public class ID extends CFacade {
 	 * Set method for struct member 'orig_id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. </p>
+	 * <p> Only set for data-blocks which are coming from copy-on-write, points to the original version of it. Also used temporarily during memfile undo to keep a reference to old {@link ID}  when found. </p>
 	 * @see #__DNA__FIELD__orig_id
 	 */
 	
@@ -1093,14 +1185,22 @@ public class ID extends CFacade {
 	{
 		long __address = ((orig_id == null) ? 0 : orig_id.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 120, __address);
+			__io__block.writeLong(__io__address + 124, __address);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'py_instance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
+	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
+	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
+	 * This is of limited benefit though, as it doesn't apply to non ID data that references this ID (the bones of an armature or the modifiers of an object for e.g.). 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__py_instance
 	 */
 	
@@ -1108,9 +1208,9 @@ public class ID extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 124);
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1118,6 +1218,14 @@ public class ID extends CFacade {
 
 	/**
 	 * Set method for struct member 'py_instance'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Holds the #PyObject reference to the {@link ID}  (initialized on demand).</p><p> This isn't essential, it could be removed however it gives some advantages:</p><p><ul><li><p> Every time the {@link ID}  is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access {@link ID} 's).</p></li><li><p> When this {@link ID}  is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.</p><p> This is of limited benefit though, as it doesn't apply to non {@link ID}  data that references this {@link ID}  (the bones of an armature or the modifiers of an object for e.g.). </p></li></ul> 
+	 * Every time the ID is accessed a #BPy_StructRNA doesn't have to be created & destroyed (consider all the polling and drawing functions that access ID's).
+	 * When this ID is deleted, the #BPy_StructRNA can be invalidated so accessing it from Python raises an exception instead of crashing.
+	 * This is of limited benefit though, as it doesn't apply to non ID data that references this ID (the bones of an armature or the modifiers of an object for e.g.). 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__py_instance
 	 */
 	
@@ -1125,9 +1233,41 @@ public class ID extends CFacade {
 	{
 		long __address = ((py_instance == null) ? 0 : py_instance.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 124, __address);
+			__io__block.writeLong(__io__address + 128, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CPointer<Object> get_pad1() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 168, __address);
+		} else {
+			__io__block.writeLong(__io__address + 132, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=268, size64=328)
+@CMetaData(size32=276, size64=344)
 public class Lattice extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Lattice extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 161;
+	public static final int __DNA__SDNA_INDEX = 156;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Lattice extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pntsu'.
@@ -87,7 +87,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pntsu = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__pntsu = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pntsv'.
@@ -107,7 +107,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pntsv = new long[]{134, 170};
+	public static final long[] __DNA__FIELD__pntsv = new long[]{142, 186};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pntsw'.
@@ -127,7 +127,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pntsw = new long[]{136, 172};
+	public static final long[] __DNA__FIELD__pntsw = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -147,7 +147,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{138, 174};
+	public static final long[] __DNA__FIELD__flag = new long[]{146, 190};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opntsu'.
@@ -167,7 +167,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opntsu = new long[]{140, 176};
+	public static final long[] __DNA__FIELD__opntsu = new long[]{148, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opntsv'.
@@ -187,7 +187,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opntsv = new long[]{142, 178};
+	public static final long[] __DNA__FIELD__opntsv = new long[]{150, 194};
 
 	/**
 	 * Field descriptor (offset) for struct member 'opntsw'.
@@ -207,7 +207,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__opntsw = new long[]{144, 180};
+	public static final long[] __DNA__FIELD__opntsw = new long[]{152, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -227,7 +227,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{146, 182};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{154, 198};
 
 	/**
 	 * Field descriptor (offset) for struct member 'typeu'.
@@ -247,7 +247,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__typeu = new long[]{149, 185};
+	public static final long[] __DNA__FIELD__typeu = new long[]{157, 201};
 
 	/**
 	 * Field descriptor (offset) for struct member 'typev'.
@@ -267,7 +267,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__typev = new long[]{150, 186};
+	public static final long[] __DNA__FIELD__typev = new long[]{158, 202};
 
 	/**
 	 * Field descriptor (offset) for struct member 'typew'.
@@ -287,7 +287,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__typew = new long[]{151, 187};
+	public static final long[] __DNA__FIELD__typew = new long[]{159, 203};
 
 	/**
 	 * Field descriptor (offset) for struct member 'actbp'.
@@ -310,7 +310,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__actbp = new long[]{152, 188};
+	public static final long[] __DNA__FIELD__actbp = new long[]{160, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fu'.
@@ -330,7 +330,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fu = new long[]{156, 192};
+	public static final long[] __DNA__FIELD__fu = new long[]{164, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fv'.
@@ -350,7 +350,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fv = new long[]{160, 196};
+	public static final long[] __DNA__FIELD__fv = new long[]{168, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fw'.
@@ -370,7 +370,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fw = new long[]{164, 200};
+	public static final long[] __DNA__FIELD__fw = new long[]{172, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'du'.
@@ -390,7 +390,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__du = new long[]{168, 204};
+	public static final long[] __DNA__FIELD__du = new long[]{176, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dv'.
@@ -410,7 +410,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dv = new long[]{172, 208};
+	public static final long[] __DNA__FIELD__dv = new long[]{180, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dw'.
@@ -430,7 +430,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dw = new long[]{176, 212};
+	public static final long[] __DNA__FIELD__dw = new long[]{184, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'def'.
@@ -450,7 +450,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__def = new long[]{180, 216};
+	public static final long[] __DNA__FIELD__def = new long[]{188, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -475,7 +475,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{184, 224};
+	public static final long[] __DNA__FIELD__ipo = new long[]{192, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
@@ -495,7 +495,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__key = new long[]{188, 232};
+	public static final long[] __DNA__FIELD__key = new long[]{196, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dvert'.
@@ -515,7 +515,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dvert = new long[]{192, 240};
+	public static final long[] __DNA__FIELD__dvert = new long[]{200, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup'.
@@ -538,7 +538,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup = new long[]{196, 248};
+	public static final long[] __DNA__FIELD__vgroup = new long[]{204, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editlatt'.
@@ -558,7 +558,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editlatt = new long[]{260, 312};
+	public static final long[] __DNA__FIELD__editlatt = new long[]{268, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -578,7 +578,7 @@ public class Lattice extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{264, 320};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{272, 336};
 
 	public Lattice(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -633,9 +633,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -650,9 +650,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -664,9 +664,9 @@ public class Lattice extends CFacade {
 	public short getPntsu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 168);
+			return __io__block.readShort(__io__address + 184);
 		} else {
-			return __io__block.readShort(__io__address + 132);
+			return __io__block.readShort(__io__address + 140);
 		}
 	}
 
@@ -678,9 +678,9 @@ public class Lattice extends CFacade {
 	public void setPntsu(short pntsu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 168, pntsu);
+			__io__block.writeShort(__io__address + 184, pntsu);
 		} else {
-			__io__block.writeShort(__io__address + 132, pntsu);
+			__io__block.writeShort(__io__address + 140, pntsu);
 		}
 	}
 
@@ -692,9 +692,9 @@ public class Lattice extends CFacade {
 	public short getPntsv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 170);
+			return __io__block.readShort(__io__address + 186);
 		} else {
-			return __io__block.readShort(__io__address + 134);
+			return __io__block.readShort(__io__address + 142);
 		}
 	}
 
@@ -706,9 +706,9 @@ public class Lattice extends CFacade {
 	public void setPntsv(short pntsv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 170, pntsv);
+			__io__block.writeShort(__io__address + 186, pntsv);
 		} else {
-			__io__block.writeShort(__io__address + 134, pntsv);
+			__io__block.writeShort(__io__address + 142, pntsv);
 		}
 	}
 
@@ -720,9 +720,9 @@ public class Lattice extends CFacade {
 	public short getPntsw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 172);
+			return __io__block.readShort(__io__address + 188);
 		} else {
-			return __io__block.readShort(__io__address + 136);
+			return __io__block.readShort(__io__address + 144);
 		}
 	}
 
@@ -734,9 +734,9 @@ public class Lattice extends CFacade {
 	public void setPntsw(short pntsw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 172, pntsw);
+			__io__block.writeShort(__io__address + 188, pntsw);
 		} else {
-			__io__block.writeShort(__io__address + 136, pntsw);
+			__io__block.writeShort(__io__address + 144, pntsw);
 		}
 	}
 
@@ -748,9 +748,9 @@ public class Lattice extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 174);
+			return __io__block.readShort(__io__address + 190);
 		} else {
-			return __io__block.readShort(__io__address + 138);
+			return __io__block.readShort(__io__address + 146);
 		}
 	}
 
@@ -762,9 +762,9 @@ public class Lattice extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 174, flag);
+			__io__block.writeShort(__io__address + 190, flag);
 		} else {
-			__io__block.writeShort(__io__address + 138, flag);
+			__io__block.writeShort(__io__address + 146, flag);
 		}
 	}
 
@@ -776,9 +776,9 @@ public class Lattice extends CFacade {
 	public short getOpntsu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 192);
 		} else {
-			return __io__block.readShort(__io__address + 140);
+			return __io__block.readShort(__io__address + 148);
 		}
 	}
 
@@ -790,9 +790,9 @@ public class Lattice extends CFacade {
 	public void setOpntsu(short opntsu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 176, opntsu);
+			__io__block.writeShort(__io__address + 192, opntsu);
 		} else {
-			__io__block.writeShort(__io__address + 140, opntsu);
+			__io__block.writeShort(__io__address + 148, opntsu);
 		}
 	}
 
@@ -804,9 +804,9 @@ public class Lattice extends CFacade {
 	public short getOpntsv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 178);
+			return __io__block.readShort(__io__address + 194);
 		} else {
-			return __io__block.readShort(__io__address + 142);
+			return __io__block.readShort(__io__address + 150);
 		}
 	}
 
@@ -818,9 +818,9 @@ public class Lattice extends CFacade {
 	public void setOpntsv(short opntsv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 178, opntsv);
+			__io__block.writeShort(__io__address + 194, opntsv);
 		} else {
-			__io__block.writeShort(__io__address + 142, opntsv);
+			__io__block.writeShort(__io__address + 150, opntsv);
 		}
 	}
 
@@ -832,9 +832,9 @@ public class Lattice extends CFacade {
 	public short getOpntsw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 180);
+			return __io__block.readShort(__io__address + 196);
 		} else {
-			return __io__block.readShort(__io__address + 144);
+			return __io__block.readShort(__io__address + 152);
 		}
 	}
 
@@ -846,9 +846,9 @@ public class Lattice extends CFacade {
 	public void setOpntsw(short opntsw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 180, opntsw);
+			__io__block.writeShort(__io__address + 196, opntsw);
 		} else {
-			__io__block.writeShort(__io__address + 144, opntsw);
+			__io__block.writeShort(__io__address + 152, opntsw);
 		}
 	}
 
@@ -864,9 +864,9 @@ public class Lattice extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 182, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 146, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 154, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -879,9 +879,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 182;
+			__dna__offset = 198;
 		} else {
-			__dna__offset = 146;
+			__dna__offset = 154;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -900,9 +900,9 @@ public class Lattice extends CFacade {
 	public byte getTypeu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 185);
+			return __io__block.readByte(__io__address + 201);
 		} else {
-			return __io__block.readByte(__io__address + 149);
+			return __io__block.readByte(__io__address + 157);
 		}
 	}
 
@@ -914,9 +914,9 @@ public class Lattice extends CFacade {
 	public void setTypeu(byte typeu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 185, typeu);
+			__io__block.writeByte(__io__address + 201, typeu);
 		} else {
-			__io__block.writeByte(__io__address + 149, typeu);
+			__io__block.writeByte(__io__address + 157, typeu);
 		}
 	}
 
@@ -928,9 +928,9 @@ public class Lattice extends CFacade {
 	public byte getTypev() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 186);
+			return __io__block.readByte(__io__address + 202);
 		} else {
-			return __io__block.readByte(__io__address + 150);
+			return __io__block.readByte(__io__address + 158);
 		}
 	}
 
@@ -942,9 +942,9 @@ public class Lattice extends CFacade {
 	public void setTypev(byte typev) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 186, typev);
+			__io__block.writeByte(__io__address + 202, typev);
 		} else {
-			__io__block.writeByte(__io__address + 150, typev);
+			__io__block.writeByte(__io__address + 158, typev);
 		}
 	}
 
@@ -956,9 +956,9 @@ public class Lattice extends CFacade {
 	public byte getTypew() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 187);
+			return __io__block.readByte(__io__address + 203);
 		} else {
-			return __io__block.readByte(__io__address + 151);
+			return __io__block.readByte(__io__address + 159);
 		}
 	}
 
@@ -970,9 +970,9 @@ public class Lattice extends CFacade {
 	public void setTypew(byte typew) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 187, typew);
+			__io__block.writeByte(__io__address + 203, typew);
 		} else {
-			__io__block.writeByte(__io__address + 151, typew);
+			__io__block.writeByte(__io__address + 159, typew);
 		}
 	}
 
@@ -987,9 +987,9 @@ public class Lattice extends CFacade {
 	public int getActbp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 204);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		}
 	}
 
@@ -1004,9 +1004,9 @@ public class Lattice extends CFacade {
 	public void setActbp(int actbp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, actbp);
+			__io__block.writeInt(__io__address + 204, actbp);
 		} else {
-			__io__block.writeInt(__io__address + 152, actbp);
+			__io__block.writeInt(__io__address + 160, actbp);
 		}
 	}
 
@@ -1018,9 +1018,9 @@ public class Lattice extends CFacade {
 	public float getFu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 156);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -1032,9 +1032,9 @@ public class Lattice extends CFacade {
 	public void setFu(float fu) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, fu);
+			__io__block.writeFloat(__io__address + 208, fu);
 		} else {
-			__io__block.writeFloat(__io__address + 156, fu);
+			__io__block.writeFloat(__io__address + 164, fu);
 		}
 	}
 
@@ -1046,9 +1046,9 @@ public class Lattice extends CFacade {
 	public float getFv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 160);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -1060,9 +1060,9 @@ public class Lattice extends CFacade {
 	public void setFv(float fv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, fv);
+			__io__block.writeFloat(__io__address + 212, fv);
 		} else {
-			__io__block.writeFloat(__io__address + 160, fv);
+			__io__block.writeFloat(__io__address + 168, fv);
 		}
 	}
 
@@ -1074,9 +1074,9 @@ public class Lattice extends CFacade {
 	public float getFw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		}
 	}
 
@@ -1088,9 +1088,9 @@ public class Lattice extends CFacade {
 	public void setFw(float fw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, fw);
+			__io__block.writeFloat(__io__address + 216, fw);
 		} else {
-			__io__block.writeFloat(__io__address + 164, fw);
+			__io__block.writeFloat(__io__address + 172, fw);
 		}
 	}
 
@@ -1102,9 +1102,9 @@ public class Lattice extends CFacade {
 	public float getDu() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -1116,9 +1116,9 @@ public class Lattice extends CFacade {
 	public void setDu(float du) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, du);
+			__io__block.writeFloat(__io__address + 220, du);
 		} else {
-			__io__block.writeFloat(__io__address + 168, du);
+			__io__block.writeFloat(__io__address + 176, du);
 		}
 	}
 
@@ -1130,9 +1130,9 @@ public class Lattice extends CFacade {
 	public float getDv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1144,9 +1144,9 @@ public class Lattice extends CFacade {
 	public void setDv(float dv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, dv);
+			__io__block.writeFloat(__io__address + 224, dv);
 		} else {
-			__io__block.writeFloat(__io__address + 172, dv);
+			__io__block.writeFloat(__io__address + 180, dv);
 		}
 	}
 
@@ -1158,9 +1158,9 @@ public class Lattice extends CFacade {
 	public float getDw() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			return __io__block.readFloat(__io__address + 228);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -1172,9 +1172,9 @@ public class Lattice extends CFacade {
 	public void setDw(float dw) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, dw);
+			__io__block.writeFloat(__io__address + 228, dw);
 		} else {
-			__io__block.writeFloat(__io__address + 176, dw);
+			__io__block.writeFloat(__io__address + 184, dw);
 		}
 	}
 
@@ -1187,9 +1187,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BPoint.class};
 		return new CPointer<BPoint>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BPoint.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1204,9 +1204,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((def == null) ? 0 : def.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 
@@ -1224,9 +1224,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1246,9 +1246,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		}
 	}
 
@@ -1261,9 +1261,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Key.class};
 		return new CPointer<Key>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Key.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1278,9 +1278,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((key == null) ? 0 : key.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 
@@ -1293,9 +1293,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
 		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1310,9 +1310,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((dvert == null) ? 0 : dvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -1331,9 +1331,9 @@ public class Lattice extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 204, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1349,9 +1349,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 248;
+			__dna__offset = 264;
 		} else {
-			__dna__offset = 196;
+			__dna__offset = 204;
 		}
 		if (__io__equals(vgroup, __io__address + __dna__offset)) {
 			return;
@@ -1371,9 +1371,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 260);
+			__dna__targetAddress = __io__block.readLong(__io__address + 268);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1388,9 +1388,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((editlatt == null) ? 0 : editlatt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 260, __address);
+			__io__block.writeLong(__io__address + 268, __address);
 		}
 	}
 
@@ -1403,9 +1403,9 @@ public class Lattice extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 320);
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1420,9 +1420,9 @@ public class Lattice extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 320, __address);
+			__io__block.writeLong(__io__address + 336, __address);
 		} else {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		}
 	}
 

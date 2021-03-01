@@ -27,7 +27,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 585;
+	public static final int __DNA__SDNA_INDEX = 604;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -77,7 +77,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
+	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -124,7 +124,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of pattern area for new tracks. </p>
+	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -148,7 +148,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of search area for new tracks. </p>
+	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -220,7 +220,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> Re-adjust every N frames. </p>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -337,7 +337,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -415,36 +415,16 @@ public class MovieTrackingSettings extends CFacade {
 	 * <pre>
 	 * MovieTrackingSettings movietrackingsettings = ...;
 	 * CPointer&lt;Object&gt; p = movietrackingsettings.__dna__addressof(MovieTrackingSettings.__DNA__FIELD__refine_camera_intrinsics);
-	 * CPointer&lt;Short&gt; p_refine_camera_intrinsics = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Integer&gt; p_refine_camera_intrinsics = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: 'refine_camera_intrinsics'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__refine_camera_intrinsics = new long[]{44, 44};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MovieTrackingSettings movietrackingsettings = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingsettings.__dna__addressof(MovieTrackingSettings.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{46, 46};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
@@ -659,7 +639,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Get method for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
+	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__default_algorithm_flag
 	 */
 	
@@ -676,7 +656,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Set method for struct member 'default_algorithm_flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flags for the tracking algorithm (use brute, use esm, use pyramid, etc. </p>
+	 * <p> Flags for the tracking algorithm (use brute, use ESM, use pyramid, etc. </p>
 	 * @see #__DNA__FIELD__default_algorithm_flag
 	 */
 	
@@ -728,7 +708,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of pattern area for new tracks. </p>
+	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_pattern_size
 	 */
 	
@@ -746,7 +726,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of pattern area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of pattern area for new tracks. </p>
+	 * <p> Size of pattern area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_pattern_size
 	 */
 	
@@ -764,7 +744,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of search area for new tracks. </p>
+	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_search_size
 	 */
 	
@@ -782,7 +762,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Size of search area for newly created tracks<h4>Blender Source Code:</h4>
-	 * <p> Size of search area for new tracks. </p>
+	 * <p> Size of search area for new tracks, measured in pixels. </p>
 	 * @see #__DNA__FIELD__default_search_size
 	 */
 	
@@ -872,7 +852,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> Re-adjust every N frames. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__default_pattern_match
 	 */
 	
@@ -890,7 +870,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Track pattern from given frame when tracking marker to next frame<h4>Blender Source Code:</h4>
-	 * <p> Re-adjust every N frames. </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__default_pattern_match
 	 */
 	
@@ -1047,7 +1027,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Get method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__keyframe1
@@ -1066,7 +1046,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * Set method for struct member 'keyframe1'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings
+	 * <p> ** reconstruction settings ** two keyframes for reconstruction initialization were moved to per-tracking object settings 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__keyframe1
@@ -1155,12 +1135,12 @@ public class MovieTrackingSettings extends CFacade {
 	 * @see #__DNA__FIELD__refine_camera_intrinsics
 	 */
 	
-	public short getRefine_camera_intrinsics() throws IOException
+	public int getRefine_camera_intrinsics() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 44);
+			return __io__block.readInt(__io__address + 44);
 		} else {
-			return __io__block.readShort(__io__address + 44);
+			return __io__block.readInt(__io__address + 44);
 		}
 	}
 
@@ -1172,52 +1152,12 @@ public class MovieTrackingSettings extends CFacade {
 	 * @see #__DNA__FIELD__refine_camera_intrinsics
 	 */
 	
-	public void setRefine_camera_intrinsics(short refine_camera_intrinsics) throws IOException
+	public void setRefine_camera_intrinsics(int refine_camera_intrinsics) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 44, refine_camera_intrinsics);
+			__io__block.writeInt(__io__address + 44, refine_camera_intrinsics);
 		} else {
-			__io__block.writeShort(__io__address + 44, refine_camera_intrinsics);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public CArrayFacade<Byte> get_pad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 46;
-		} else {
-			__dna__offset = 46;
-		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
-		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__block.writeInt(__io__address + 44, refine_camera_intrinsics);
 		}
 	}
 

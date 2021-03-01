@@ -28,7 +28,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 604;
+	public static final int __DNA__SDNA_INDEX = 623;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pointcache'.
@@ -77,7 +77,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * Field descriptor (offset) for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only ----------------<mdash/><mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
+	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -182,7 +182,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * Get method for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only ----------------<mdash/><mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
+	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
 	 * @see #__DNA__FIELD__physics_world
 	 */
 	
@@ -202,7 +202,7 @@ public class RigidBodyWorld_Shared extends CFacade {
 	 * Set method for struct member 'physics_world'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> References to Physics Sim objects. Exist at runtime only ----------------<mdash/><mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
+	 * <p> References to Physics Sim objects. Exist at runtime only -------------------<mdash/>  Physics sim world (i.e. btDiscreteDynamicsWorld). </p>
 	 * @see #__DNA__FIELD__physics_world
 	 */
 	

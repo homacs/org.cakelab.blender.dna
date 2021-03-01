@@ -28,7 +28,7 @@ public class FileSelectParams extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 228;
 
 	/**
 	 * Field descriptor (offset) for struct member 'title'.
@@ -361,7 +361,7 @@ public class FileSelectParams extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. </p>
+	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1155,7 +1155,7 @@ public class FileSelectParams extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. </p>
+	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -1172,7 +1172,7 @@ public class FileSelectParams extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> short XXXXX for now store type here, should be moved to the operator. </p>
+	 * <p> short XXXXX for now store type here, should be moved to the operator. eFileSelectType </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	

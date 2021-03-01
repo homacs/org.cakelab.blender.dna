@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> A Constraint </p>
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=172, size64=192)
 public class bConstraint extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 341;
+	public static final int __DNA__SDNA_INDEX = 344;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -97,7 +97,8 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -120,7 +121,8 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -186,6 +188,75 @@ public class bConstraint extends CFacade {
 	public static final long[] __DNA__FIELD__tarspace = new long[]{17, 29};
 
 	/**
+	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bConstraint bconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bconstraint.__dna__addressof(bConstraint.__DNA__FIELD__ui_expand_flag);
+	 * CPointer&lt;Short&gt; p_ui_expand_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_expand_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_expand_flag = new long[]{18, 30};
+
+	/**
+	 * Field descriptor (offset) for struct member 'space_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bConstraint bconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bconstraint.__dna__addressof(bConstraint.__DNA__FIELD__space_object);
+	 * CPointer&lt;CPointer&lt;BlenderObject&gt;&gt; p_space_object = p.cast(new Class[]{CPointer.class, BlenderObject.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'space_object'</li>
+	 * <li>Signature: 'Object*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__space_object = new long[]{20, 32};
+
+	/**
+	 * Field descriptor (offset) for struct member 'space_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bConstraint bconstraint = ...;
+	 * CPointer&lt;Object&gt; p = bconstraint.__dna__addressof(bConstraint.__DNA__FIELD__space_subtarget);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_space_subtarget = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'space_subtarget'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__space_subtarget = new long[]{24, 40};
+
+	/**
 	 * Field descriptor (offset) for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -206,30 +277,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__name = new long[]{18, 30};
-
-	/**
-	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag for panel and subpanel closed / open state in the UI. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * bConstraint bconstraint = ...;
-	 * CPointer&lt;Object&gt; p = bconstraint.__dna__addressof(bConstraint.__DNA__FIELD__ui_expand_flag);
-	 * CPointer&lt;Short&gt; p_ui_expand_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'ui_expand_flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__ui_expand_flag = new long[]{82, 94};
+	public static final long[] __DNA__FIELD__name = new long[]{88, 104};
 
 	/**
 	 * Field descriptor (offset) for struct member 'enforce'.
@@ -252,7 +300,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__enforce = new long[]{84, 96};
+	public static final long[] __DNA__FIELD__enforce = new long[]{152, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'headtail'.
@@ -275,7 +323,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__headtail = new long[]{88, 100};
+	public static final long[] __DNA__FIELD__headtail = new long[]{156, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -300,7 +348,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{92, 104};
+	public static final long[] __DNA__FIELD__ipo = new long[]{160, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lin_error'.
@@ -323,7 +371,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lin_error = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__lin_error = new long[]{164, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rot_error'.
@@ -346,7 +394,7 @@ public class bConstraint extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rot_error = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__rot_error = new long[]{168, 188};
 
 	public bConstraint(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -462,7 +510,8 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -479,7 +528,8 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraint type. </p>
+	 * <p> Constraint type. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__type
 	 */
 	
@@ -496,7 +546,8 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -513,7 +564,8 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag - General Settings. </p>
+	 * <p> Flag - General Settings. <br/> 
+	 *  </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -595,6 +647,124 @@ public class bConstraint extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
+	 */
+	
+	public short getUi_expand_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 30);
+		} else {
+			return __io__block.readShort(__io__address + 18);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the constraint's (sub)panels (uiPanelDataExpansion). </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
+	 */
+	
+	public void setUi_expand_flag(short ui_expand_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 30, ui_expand_flag);
+		} else {
+			__io__block.writeShort(__io__address + 18, ui_expand_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'space_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
+	 * @see #__DNA__FIELD__space_object
+	 */
+	
+	public CPointer<BlenderObject> getSpace_object() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 32);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 20);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
+		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'space_object'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p>{@link Object}  to use as target for Custom Space of owner. </p>
+	 * @see #__DNA__FIELD__space_object
+	 */
+	
+	public void setSpace_object(CPointer<BlenderObject> space_object) throws IOException
+	{
+		long __address = ((space_object == null) ? 0 : space_object.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 32, __address);
+		} else {
+			__io__block.writeLong(__io__address + 20, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'space_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__space_subtarget
+	 */
+	
+	public CArrayFacade<Byte> getSpace_subtarget() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 24, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'space_subtarget'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Subtarget for Custom Space of owner - pchan or vgroup name, MAX_ID_NAME-2. </p>
+	 * @see #__DNA__FIELD__space_subtarget
+	 */
+	
+	public void setSpace_subtarget(CArrayFacade<Byte> space_subtarget) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 40;
+		} else {
+			__dna__offset = 24;
+		}
+		if (__io__equals(space_subtarget, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, space_subtarget)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, space_subtarget);
+		} else {
+			__io__generic__copy( getSpace_subtarget(), space_subtarget);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'name'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -609,9 +779,9 @@ public class bConstraint extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 30, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 18, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 88, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -627,9 +797,9 @@ public class bConstraint extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 30;
+			__dna__offset = 104;
 		} else {
-			__dna__offset = 18;
+			__dna__offset = 88;
 		}
 		if (__io__equals(name, __io__address + __dna__offset)) {
 			return;
@@ -637,40 +807,6 @@ public class bConstraint extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, name);
 		} else {
 			__io__generic__copy( getName(), name);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'ui_expand_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag for panel and subpanel closed / open state in the UI. </p>
-	 * @see #__DNA__FIELD__ui_expand_flag
-	 */
-	
-	public short getUi_expand_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 94);
-		} else {
-			return __io__block.readShort(__io__address + 82);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'ui_expand_flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Flag for panel and subpanel closed / open state in the UI. </p>
-	 * @see #__DNA__FIELD__ui_expand_flag
-	 */
-	
-	public void setUi_expand_flag(short ui_expand_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 94, ui_expand_flag);
-		} else {
-			__io__block.writeShort(__io__address + 82, ui_expand_flag);
 		}
 	}
 
@@ -685,9 +821,9 @@ public class bConstraint extends CFacade {
 	public float getEnforce() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 168);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -702,9 +838,9 @@ public class bConstraint extends CFacade {
 	public void setEnforce(float enforce) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 96, enforce);
+			__io__block.writeFloat(__io__address + 168, enforce);
 		} else {
-			__io__block.writeFloat(__io__address + 84, enforce);
+			__io__block.writeFloat(__io__address + 152, enforce);
 		}
 	}
 
@@ -719,9 +855,9 @@ public class bConstraint extends CFacade {
 	public float getHeadtail() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -736,9 +872,9 @@ public class bConstraint extends CFacade {
 	public void setHeadtail(float headtail) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, headtail);
+			__io__block.writeFloat(__io__address + 172, headtail);
 		} else {
-			__io__block.writeFloat(__io__address + 88, headtail);
+			__io__block.writeFloat(__io__address + 156, headtail);
 		}
 	}
 
@@ -756,9 +892,9 @@ public class bConstraint extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 104);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 92);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -778,9 +914,9 @@ public class bConstraint extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 104, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 92, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		}
 	}
 
@@ -795,9 +931,9 @@ public class bConstraint extends CFacade {
 	public float getLin_error() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 164);
 		}
 	}
 
@@ -812,9 +948,9 @@ public class bConstraint extends CFacade {
 	public void setLin_error(float lin_error) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, lin_error);
+			__io__block.writeFloat(__io__address + 184, lin_error);
 		} else {
-			__io__block.writeFloat(__io__address + 96, lin_error);
+			__io__block.writeFloat(__io__address + 164, lin_error);
 		}
 	}
 
@@ -829,9 +965,9 @@ public class bConstraint extends CFacade {
 	public float getRot_error() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 188);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 168);
 		}
 	}
 
@@ -846,9 +982,9 @@ public class bConstraint extends CFacade {
 	public void setRot_error(float rot_error) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, rot_error);
+			__io__block.writeFloat(__io__address + 188, rot_error);
 		} else {
-			__io__block.writeFloat(__io__address + 100, rot_error);
+			__io__block.writeFloat(__io__address + 168, rot_error);
 		}
 	}
 

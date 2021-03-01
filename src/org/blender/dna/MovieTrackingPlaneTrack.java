@@ -27,7 +27,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 584;
+	public static final int __DNA__SDNA_INDEX = 603;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -97,7 +97,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * Field descriptor (offset) for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of point tracks used to define this pla.ne. Each element is a pointer to {@link MovieTrackingTrack} . </p>
+	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -424,7 +424,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * Get method for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of point tracks used to define this pla.ne. Each element is a pointer to {@link MovieTrackingTrack} . </p>
+	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * @see #__DNA__FIELD__point_tracks
 	 */
 	
@@ -444,7 +444,7 @@ public class MovieTrackingPlaneTrack extends CFacade {
 	 * Set method for struct member 'point_tracks'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Array of point tracks used to define this pla.ne. Each element is a pointer to {@link MovieTrackingTrack} . </p>
+	 * <p> Array of point tracks used to define this plane. Each element is a pointer to {@link MovieTrackingTrack} . </p>
 	 * @see #__DNA__FIELD__point_tracks
 	 */
 	

@@ -15,8 +15,12 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p>{@link MLoopTri} 's are lightweight triangulation data, for functionality that doesn't support ngons ({@link MPoly} ). This is cache data created from ({@link MPoly} , {@link MLoop}  & {@link MVert}  arrays). There is no attempt to maintain this data's validity over time, any changes to the underlying mesh invalidate the {@link MLoopTri}  array, which will need to be re-calculated.</p><p> Users normally access this via #BKE_mesh_runtime_looptri_ensure. In rare cases its calculated directly, with #BKE_mesh_recalc_looptri.</p><p> Typical usage includes:<ul><li><p> OpenGL drawing.</p></li><li><p> #BVHTree creation.</p></li><li><p> Physics/collision detection.</p></li></ul> 
- * OpenGL drawing.#BVHTree creation.Physics/collision detection.
+ * OpenGL drawing.
+ * #BVHTree creation.
+ * Physics/collision detection.
+ * 
  * </p><p> Storing loop indices (instead of vertex indices) allows us to directly access UV's, vertex-colors as well as vertices. The index of the source polygon is stored as well, giving access to materials and polygon normals.</p><p><h2>Note</h2><p> This data is runtime only, never written to disk.</p> This data is runtime only, never written to disk.
+ * 
  * Usage examples: <code>       material. ///accessoriginalmaterial.
  *  short short       mpoly[lt->poly].mat_nr; mat_nr=mpoly[lt->poly].mat_nr;
  * 
@@ -100,6 +104,7 @@ import org.cakelab.blender.nio.CPointer;
  * }
  * }
  * </p><p> See #BKE_mesh_looptri_get_real_edges for a utility that does this.</p><p><h2>Note</h2><p> A {@link MLoopTri}<b></b>  edges. </p> A MLoopTri may be in the middle of an ngon and not reference any edges. 
+ * 
  * </p>
  */
 

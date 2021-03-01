@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=740, size64=848)
+@CMetaData(size32=744, size64=856)
 public class ToolSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class ToolSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 206;
+	public static final int __DNA__SDNA_INDEX = 202;
 
 	/**
 	 * Field descriptor (offset) for struct member 'vpaint'.
@@ -865,7 +865,7 @@ public class ToolSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Multires}  </p>
+	 * <p> Multires </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1751,6 +1751,29 @@ public class ToolSettings extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__custom_bevel_profile_preset = new long[]{736, 840};
+
+	/**
+	 * Field descriptor (offset) for struct member 'sequencer_tool_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ToolSettings toolsettings = ...;
+	 * CPointer&lt;Object&gt; p = toolsettings.__dna__addressof(ToolSettings.__DNA__FIELD__sequencer_tool_settings);
+	 * CPointer&lt;CPointer&lt;SequencerToolSettings&gt;&gt; p_sequencer_tool_settings = p.cast(new Class[]{CPointer.class, SequencerToolSettings.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'sequencer_tool_settings'</li>
+	 * <li>Signature: 'SequencerToolSettings*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__sequencer_tool_settings = new long[]{740, 848};
 
 	public ToolSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3048,7 +3071,7 @@ public class ToolSettings extends CFacade {
 	 * Get method for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Multires}  </p>
+	 * <p> Multires </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
 	
@@ -3065,7 +3088,7 @@ public class ToolSettings extends CFacade {
 	 * Set method for struct member 'multires_subdiv_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Multires}  </p>
+	 * <p> Multires </p>
 	 * @see #__DNA__FIELD__multires_subdiv_type
 	 */
 	
@@ -4431,6 +4454,44 @@ public class ToolSettings extends CFacade {
 			__io__block.writeLong(__io__address + 840, __address);
 		} else {
 			__io__block.writeLong(__io__address + 736, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'sequencer_tool_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__sequencer_tool_settings
+	 */
+	
+	public CPointer<SequencerToolSettings> getSequencer_tool_settings() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 848);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 740);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{SequencerToolSettings.class};
+		return new CPointer<SequencerToolSettings>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SequencerToolSettings.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'sequencer_tool_settings'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)
+	 * @see #__DNA__FIELD__sequencer_tool_settings
+	 */
+	
+	public void setSequencer_tool_settings(CPointer<SequencerToolSettings> sequencer_tool_settings) throws IOException
+	{
+		long __address = ((sequencer_tool_settings == null) ? 0 : sequencer_tool_settings.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 848, __address);
+		} else {
+			__io__block.writeLong(__io__address + 740, __address);
 		}
 	}
 

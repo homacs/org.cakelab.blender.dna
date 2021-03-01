@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  Visualization Motion Paths ---------------------------<mdash/><mdash/><mdash/>  (used for Pose Channels and Objects) Data point for motion path (mpv) </p>
+ *  Visualization Motion Paths ---------------------------------<mdash/>  (used for Pose Channels and Objects) Data point for motion path (mpv) </p>
  */
 
 @CMetaData(size32=16, size64=16)
@@ -29,7 +29,7 @@ public class bMotionPathVert extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 326;
+	public static final int __DNA__SDNA_INDEX = 329;
 
 	/**
 	 * Field descriptor (offset) for struct member 'co'.

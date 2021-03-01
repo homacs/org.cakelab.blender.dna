@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=644, size64=728)
+@CMetaData(size32=652, size64=744)
 public class Hair extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Hair extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 676;
+	public static final int __DNA__SDNA_INDEX = 696;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -44,7 +44,7 @@ public class Hair extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -90,7 +90,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__flag = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -110,7 +110,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{136, 172};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{144, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'radius'.
@@ -130,7 +130,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__radius = new long[]{144, 184};
+	public static final long[] __DNA__FIELD__radius = new long[]{152, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curves'.
@@ -150,7 +150,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curves = new long[]{148, 192};
+	public static final long[] __DNA__FIELD__curves = new long[]{156, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mapping'.
@@ -170,7 +170,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mapping = new long[]{152, 200};
+	public static final long[] __DNA__FIELD__mapping = new long[]{160, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -190,7 +190,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpoint = new long[]{156, 208};
+	public static final long[] __DNA__FIELD__totpoint = new long[]{164, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcurve'.
@@ -210,7 +210,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcurve = new long[]{160, 212};
+	public static final long[] __DNA__FIELD__totcurve = new long[]{168, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdata'.
@@ -233,7 +233,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdata = new long[]{164, 216};
+	public static final long[] __DNA__FIELD__pdata = new long[]{172, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cdata'.
@@ -253,7 +253,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cdata = new long[]{392, 456};
+	public static final long[] __DNA__FIELD__cdata = new long[]{400, 472};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attributes_active_index'.
@@ -273,7 +273,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{620, 696};
+	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{628, 712};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -293,7 +293,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{624, 700};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{632, 716};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -316,7 +316,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{628, 704};
+	public static final long[] __DNA__FIELD__mat = new long[]{636, 720};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -336,7 +336,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{632, 712};
+	public static final long[] __DNA__FIELD__totcol = new long[]{640, 728};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad2'.
@@ -356,7 +356,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{634, 714};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{642, 730};
 
 	/**
 	 * Field descriptor (offset) for struct member 'batch_cache'.
@@ -379,7 +379,7 @@ public class Hair extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__batch_cache = new long[]{640, 720};
+	public static final long[] __DNA__FIELD__batch_cache = new long[]{648, 736};
 
 	public Hair(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -437,9 +437,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -457,9 +457,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -471,9 +471,9 @@ public class Hair extends CFacade {
 	public int getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 168);
+			return __io__block.readInt(__io__address + 184);
 		} else {
-			return __io__block.readInt(__io__address + 132);
+			return __io__block.readInt(__io__address + 140);
 		}
 	}
 
@@ -485,9 +485,9 @@ public class Hair extends CFacade {
 	public void setFlag(int flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 168, flag);
+			__io__block.writeInt(__io__address + 184, flag);
 		} else {
-			__io__block.writeInt(__io__address + 132, flag);
+			__io__block.writeInt(__io__address + 140, flag);
 		}
 	}
 
@@ -503,9 +503,9 @@ public class Hair extends CFacade {
 			1
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Integer>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Integer>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Integer>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -518,9 +518,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 172;
+			__dna__offset = 188;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -540,9 +540,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
 		return new CPointer<Float>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -557,9 +557,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((radius == null) ? 0 : radius.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -572,9 +572,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{HairCurve.class};
 		return new CPointer<HairCurve>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, HairCurve.__DNA__SDNA_INDEX), __io__blockTable);
@@ -589,9 +589,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((curves == null) ? 0 : curves.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -604,9 +604,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -621,9 +621,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((mapping == null) ? 0 : mapping.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		}
 	}
 
@@ -635,9 +635,9 @@ public class Hair extends CFacade {
 	public int getTotpoint() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 208);
+			return __io__block.readInt(__io__address + 224);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -649,9 +649,9 @@ public class Hair extends CFacade {
 	public void setTotpoint(int totpoint) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 208, totpoint);
+			__io__block.writeInt(__io__address + 224, totpoint);
 		} else {
-			__io__block.writeInt(__io__address + 156, totpoint);
+			__io__block.writeInt(__io__address + 164, totpoint);
 		}
 	}
 
@@ -663,9 +663,9 @@ public class Hair extends CFacade {
 	public int getTotcurve() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 228);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -677,9 +677,9 @@ public class Hair extends CFacade {
 	public void setTotcurve(int totcurve) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, totcurve);
+			__io__block.writeInt(__io__address + 228, totcurve);
 		} else {
-			__io__block.writeInt(__io__address + 160, totcurve);
+			__io__block.writeInt(__io__address + 168, totcurve);
 		}
 	}
 
@@ -694,9 +694,9 @@ public class Hair extends CFacade {
 	public CustomData getPdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 216, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 232, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 164, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 172, __io__block, __io__blockTable);
 		}
 	}
 
@@ -712,9 +712,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 164;
+			__dna__offset = 172;
 		}
 		if (__io__equals(pdata, __io__address + __dna__offset)) {
 			return;
@@ -733,9 +733,9 @@ public class Hair extends CFacade {
 	public CustomData getCdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 456, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 472, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 392, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 400, __io__block, __io__blockTable);
 		}
 	}
 
@@ -748,9 +748,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 456;
+			__dna__offset = 472;
 		} else {
-			__dna__offset = 392;
+			__dna__offset = 400;
 		}
 		if (__io__equals(cdata, __io__address + __dna__offset)) {
 			return;
@@ -769,9 +769,9 @@ public class Hair extends CFacade {
 	public int getAttributes_active_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 696);
+			return __io__block.readInt(__io__address + 712);
 		} else {
-			return __io__block.readInt(__io__address + 620);
+			return __io__block.readInt(__io__address + 628);
 		}
 	}
 
@@ -783,9 +783,9 @@ public class Hair extends CFacade {
 	public void setAttributes_active_index(int attributes_active_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 696, attributes_active_index);
+			__io__block.writeInt(__io__address + 712, attributes_active_index);
 		} else {
-			__io__block.writeInt(__io__address + 620, attributes_active_index);
+			__io__block.writeInt(__io__address + 628, attributes_active_index);
 		}
 	}
 
@@ -797,9 +797,9 @@ public class Hair extends CFacade {
 	public int get_pad3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 700);
+			return __io__block.readInt(__io__address + 716);
 		} else {
-			return __io__block.readInt(__io__address + 624);
+			return __io__block.readInt(__io__address + 632);
 		}
 	}
 
@@ -811,9 +811,9 @@ public class Hair extends CFacade {
 	public void set_pad3(int _pad3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 700, _pad3);
+			__io__block.writeInt(__io__address + 716, _pad3);
 		} else {
-			__io__block.writeInt(__io__address + 624, _pad3);
+			__io__block.writeInt(__io__address + 632, _pad3);
 		}
 	}
 
@@ -829,9 +829,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 704);
+			__dna__targetAddress = __io__block.readLong(__io__address + 720);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 628);
+			__dna__targetAddress = __io__block.readLong(__io__address + 636);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -849,9 +849,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 704, __address);
+			__io__block.writeLong(__io__address + 720, __address);
 		} else {
-			__io__block.writeLong(__io__address + 628, __address);
+			__io__block.writeLong(__io__address + 636, __address);
 		}
 	}
 
@@ -863,9 +863,9 @@ public class Hair extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 712);
+			return __io__block.readShort(__io__address + 728);
 		} else {
-			return __io__block.readShort(__io__address + 632);
+			return __io__block.readShort(__io__address + 640);
 		}
 	}
 
@@ -877,9 +877,9 @@ public class Hair extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 712, totcol);
+			__io__block.writeShort(__io__address + 728, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 632, totcol);
+			__io__block.writeShort(__io__address + 640, totcol);
 		}
 	}
 
@@ -895,9 +895,9 @@ public class Hair extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Short>(__io__address + 714, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 730, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Short>(__io__address + 634, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Short>(__io__address + 642, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -910,9 +910,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 714;
+			__dna__offset = 730;
 		} else {
-			__dna__offset = 634;
+			__dna__offset = 642;
 		}
 		if (__io__equals(_pad2, __io__address + __dna__offset)) {
 			return;
@@ -935,9 +935,9 @@ public class Hair extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 720);
+			__dna__targetAddress = __io__block.readLong(__io__address + 736);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 640);
+			__dna__targetAddress = __io__block.readLong(__io__address + 648);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -955,9 +955,9 @@ public class Hair extends CFacade {
 	{
 		long __address = ((batch_cache == null) ? 0 : batch_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 720, __address);
+			__io__block.writeLong(__io__address + 736, __address);
 		} else {
-			__io__block.writeLong(__io__address + 640, __address);
+			__io__block.writeLong(__io__address + 648, __address);
 		}
 	}
 

@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> used only to store data in in blend files </p>
+ * <p> Used only to store data in blend files. </p>
  */
 
 @CMetaData(size32=12, size64=16)
@@ -27,7 +27,7 @@ public class TreeStore extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 319;
+	public static final int __DNA__SDNA_INDEX = 322;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totelem'.

@@ -29,7 +29,7 @@ public class bGPdata_Runtime extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 494;
+	public static final int __DNA__SDNA_INDEX = 513;
 
 	/**
 	 * Field descriptor (offset) for struct member 'sbuffer'.
@@ -167,8 +167,9 @@ public class bGPdata_Runtime extends CFacade {
 	 * Field descriptor (offset) for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. </p></li></ul> 
-	 * buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. 
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -704,8 +705,9 @@ public class bGPdata_Runtime extends CFacade {
 	 * Get method for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. </p></li></ul> 
-	 * buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. 
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__sbuffer_sflag
 	 */
@@ -723,8 +725,9 @@ public class bGPdata_Runtime extends CFacade {
 	 * Set method for struct member 'sbuffer_sflag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. </p></li></ul> 
-	 * buffer must be initialized before use, but freed after whole paint operation is overFlags for stroke that cache represents. 
+	 * <p> Stroke Buffer data (only used during paint-session)<ul><li><p> buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. </p></li></ul> 
+	 * buffer must be initialized before use, but freed after whole paint operation is over Flags for stroke that cache represents. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__sbuffer_sflag
 	 */

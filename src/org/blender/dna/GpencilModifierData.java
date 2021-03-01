@@ -27,7 +27,7 @@ public class GpencilModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 497;
+	public static final int __DNA__SDNA_INDEX = 516;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -151,6 +151,9 @@ public class GpencilModifierData extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -410,6 +413,9 @@ public class GpencilModifierData extends CFacade {
 
 	/**
 	 * Get method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	
@@ -424,6 +430,9 @@ public class GpencilModifierData extends CFacade {
 
 	/**
 	 * Set method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> An "expand" bit for each of the modifier's (sub)panels (uiPanelDataExpansion). </p>
 	 * @see #__DNA__FIELD__ui_expand_flag
 	 */
 	

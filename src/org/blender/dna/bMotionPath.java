@@ -16,6 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h4>Blender Source Code:</h4>
  * <p> ........ Motion {@link Path}  data cache (mpath)<ul><li><p> for elements providing transforms (i.e. Objects or PoseChannels) </p></li></ul> 
  * for elements providing transforms (i.e. Objects or PoseChannels) 
+ * 
  * </p>
  */
 
@@ -30,7 +31,7 @@ public class bMotionPath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 327;
+	public static final int __DNA__SDNA_INDEX = 330;
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.

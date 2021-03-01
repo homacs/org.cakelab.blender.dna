@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * Wrapper for referencing Objects in a Scene
  */
 
-@CMetaData(size32=1576, size64=1784)
+@CMetaData(size32=1580, size64=1792)
 public class Mesh extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class Mesh extends CFacade {
 	 * <ul>
 	 * <li>Field: 'id'</li>
 	 * <li>Signature: 'ID'</li>
-	 * <li>Actual Size (32bit/64bit): 128/160</li>
+	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__id = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__adt = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__adt = new long[]{136, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ipo'.
@@ -96,7 +96,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ipo = new long[]{132, 168};
+	public static final long[] __DNA__FIELD__ipo = new long[]{140, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'key'.
@@ -116,7 +116,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__key = new long[]{136, 176};
+	public static final long[] __DNA__FIELD__key = new long[]{144, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat'.
@@ -136,7 +136,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat = new long[]{140, 184};
+	public static final long[] __DNA__FIELD__mat = new long[]{148, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mselect'.
@@ -156,7 +156,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mselect = new long[]{144, 192};
+	public static final long[] __DNA__FIELD__mselect = new long[]{152, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mpoly'.
@@ -179,7 +179,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mpoly = new long[]{148, 200};
+	public static final long[] __DNA__FIELD__mpoly = new long[]{156, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mloop'.
@@ -202,7 +202,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mloop = new long[]{152, 208};
+	public static final long[] __DNA__FIELD__mloop = new long[]{160, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mloopuv'.
@@ -225,7 +225,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mloopuv = new long[]{156, 216};
+	public static final long[] __DNA__FIELD__mloopuv = new long[]{164, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mloopcol'.
@@ -245,13 +245,14 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mloopcol = new long[]{160, 224};
+	public static final long[] __DNA__FIELD__mloopcol = new long[]{168, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mface'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -269,7 +270,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mface = new long[]{164, 232};
+	public static final long[] __DNA__FIELD__mface = new long[]{172, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mtface'.
@@ -292,7 +293,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mtface = new long[]{168, 240};
+	public static final long[] __DNA__FIELD__mtface = new long[]{176, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tface'.
@@ -317,7 +318,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tface = new long[]{172, 248};
+	public static final long[] __DNA__FIELD__tface = new long[]{180, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mvert'.
@@ -341,7 +342,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mvert = new long[]{176, 256};
+	public static final long[] __DNA__FIELD__mvert = new long[]{184, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'medge'.
@@ -365,7 +366,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__medge = new long[]{180, 264};
+	public static final long[] __DNA__FIELD__medge = new long[]{188, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dvert'.
@@ -388,7 +389,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dvert = new long[]{184, 272};
+	public static final long[] __DNA__FIELD__dvert = new long[]{192, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mcol'.
@@ -411,7 +412,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mcol = new long[]{188, 280};
+	public static final long[] __DNA__FIELD__mcol = new long[]{196, 296};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texcomesh'.
@@ -431,7 +432,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texcomesh = new long[]{192, 288};
+	public static final long[] __DNA__FIELD__texcomesh = new long[]{200, 304};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit_mesh'.
@@ -454,7 +455,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edit_mesh = new long[]{196, 296};
+	public static final long[] __DNA__FIELD__edit_mesh = new long[]{204, 312};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vdata'.
@@ -477,7 +478,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vdata = new long[]{200, 304};
+	public static final long[] __DNA__FIELD__vdata = new long[]{208, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edata'.
@@ -500,7 +501,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__edata = new long[]{428, 544};
+	public static final long[] __DNA__FIELD__edata = new long[]{436, 560};
 
 	/**
 	 * Field descriptor (offset) for struct member 'fdata'.
@@ -523,7 +524,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fdata = new long[]{656, 784};
+	public static final long[] __DNA__FIELD__fdata = new long[]{664, 800};
 
 	/**
 	 * Field descriptor (offset) for struct member 'pdata'.
@@ -546,7 +547,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__pdata = new long[]{884, 1024};
+	public static final long[] __DNA__FIELD__pdata = new long[]{892, 1040};
 
 	/**
 	 * Field descriptor (offset) for struct member 'ldata'.
@@ -570,7 +571,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 228/240</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__ldata = new long[]{1112, 1264};
+	public static final long[] __DNA__FIELD__ldata = new long[]{1120, 1280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totvert'.
@@ -593,7 +594,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totvert = new long[]{1340, 1504};
+	public static final long[] __DNA__FIELD__totvert = new long[]{1348, 1520};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totedge'.
@@ -613,7 +614,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totedge = new long[]{1344, 1508};
+	public static final long[] __DNA__FIELD__totedge = new long[]{1352, 1524};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totface'.
@@ -633,7 +634,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totface = new long[]{1348, 1512};
+	public static final long[] __DNA__FIELD__totface = new long[]{1356, 1528};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totselect'.
@@ -656,7 +657,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totselect = new long[]{1352, 1516};
+	public static final long[] __DNA__FIELD__totselect = new long[]{1360, 1532};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoly'.
@@ -679,7 +680,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totpoly = new long[]{1356, 1520};
+	public static final long[] __DNA__FIELD__totpoly = new long[]{1364, 1536};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totloop'.
@@ -699,7 +700,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totloop = new long[]{1360, 1524};
+	public static final long[] __DNA__FIELD__totloop = new long[]{1368, 1540};
 
 	/**
 	 * Field descriptor (offset) for struct member 'attributes_active_index'.
@@ -722,7 +723,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{1364, 1528};
+	public static final long[] __DNA__FIELD__attributes_active_index = new long[]{1372, 1544};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -742,7 +743,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{1368, 1532};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{1376, 1548};
 
 	/**
 	 * Field descriptor (offset) for struct member 'act_face'.
@@ -765,7 +766,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__act_face = new long[]{1372, 1536};
+	public static final long[] __DNA__FIELD__act_face = new long[]{1380, 1552};
 
 	/**
 	 * Field descriptor (offset) for struct member 'loc'.
@@ -788,7 +789,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__loc = new long[]{1376, 1540};
+	public static final long[] __DNA__FIELD__loc = new long[]{1384, 1556};
 
 	/**
 	 * Field descriptor (offset) for struct member 'size'.
@@ -808,7 +809,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__size = new long[]{1388, 1552};
+	public static final long[] __DNA__FIELD__size = new long[]{1396, 1568};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texflag'.
@@ -834,7 +835,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texflag = new long[]{1400, 1564};
+	public static final long[] __DNA__FIELD__texflag = new long[]{1408, 1580};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -870,7 +871,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{1402, 1566};
+	public static final long[] __DNA__FIELD__flag = new long[]{1410, 1582};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smoothresh'.
@@ -890,7 +891,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smoothresh = new long[]{1404, 1568};
+	public static final long[] __DNA__FIELD__smoothresh = new long[]{1412, 1584};
 
 	/**
 	 * Field descriptor (offset) for struct member 'cd_flag'.
@@ -913,7 +914,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__cd_flag = new long[]{1408, 1572};
+	public static final long[] __DNA__FIELD__cd_flag = new long[]{1416, 1588};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -933,7 +934,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{1409, 1573};
+	public static final long[] __DNA__FIELD___pad = new long[]{1417, 1589};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subdiv'.
@@ -958,7 +959,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdiv = new long[]{1410, 1574};
+	public static final long[] __DNA__FIELD__subdiv = new long[]{1418, 1590};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subdivr'.
@@ -983,7 +984,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subdivr = new long[]{1411, 1575};
+	public static final long[] __DNA__FIELD__subdivr = new long[]{1419, 1591};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurftype'.
@@ -1008,7 +1009,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurftype = new long[]{1412, 1576};
+	public static final long[] __DNA__FIELD__subsurftype = new long[]{1420, 1592};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editflag'.
@@ -1028,7 +1029,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editflag = new long[]{1413, 1577};
+	public static final long[] __DNA__FIELD__editflag = new long[]{1421, 1593};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totcol'.
@@ -1048,7 +1049,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totcol = new long[]{1414, 1578};
+	public static final long[] __DNA__FIELD__totcol = new long[]{1422, 1594};
 
 	/**
 	 * Field descriptor (offset) for struct member 'remesh_voxel_size'.
@@ -1071,7 +1072,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__remesh_voxel_size = new long[]{1416, 1580};
+	public static final long[] __DNA__FIELD__remesh_voxel_size = new long[]{1424, 1596};
 
 	/**
 	 * Field descriptor (offset) for struct member 'remesh_voxel_adaptivity'.
@@ -1094,7 +1095,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__remesh_voxel_adaptivity = new long[]{1420, 1584};
+	public static final long[] __DNA__FIELD__remesh_voxel_adaptivity = new long[]{1428, 1600};
 
 	/**
 	 * Field descriptor (offset) for struct member 'remesh_mode'.
@@ -1114,10 +1115,13 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__remesh_mode = new long[]{1424, 1588};
+	public static final long[] __DNA__FIELD__remesh_mode = new long[]{1432, 1604};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1134,7 +1138,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetry = new long[]{1425, 1589};
+	public static final long[] __DNA__FIELD__symmetry = new long[]{1433, 1605};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -1154,7 +1158,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{1426, 1590};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{1434, 1606};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_sets_color_seed'.
@@ -1174,7 +1178,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_sets_color_seed = new long[]{1428, 1592};
+	public static final long[] __DNA__FIELD__face_sets_color_seed = new long[]{1436, 1608};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_sets_color_default'.
@@ -1197,32 +1201,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_sets_color_default = new long[]{1432, 1596};
-
-	/**
-	 * Field descriptor (offset) for struct member 'mr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated multiresolution modeling data, only keep for loading old files. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Mesh mesh = ...;
-	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD__mr);
-	 * CPointer&lt;CPointer&lt;Multires&gt;&gt; p_mr = p.cast(new Class[]{CPointer.class, Multires.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'mr'</li>
-	 * <li>Signature: 'Multires*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__mr = new long[]{1436, 1600};
+	public static final long[] __DNA__FIELD__face_sets_color_default = new long[]{1440, 1612};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -1242,7 +1221,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1440, 1608};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1444, 1616};
 
 	public Mesh(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1300,9 +1279,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{AnimData.class};
 		return new CPointer<AnimData>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, AnimData.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1320,9 +1299,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((adt == null) ? 0 : adt.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		}
 	}
 
@@ -1340,9 +1319,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Ipo.class};
 		return new CPointer<Ipo>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Ipo.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1362,9 +1341,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((ipo == null) ? 0 : ipo.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 
@@ -1377,9 +1356,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Key.class};
 		return new CPointer<Key>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Key.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1394,9 +1373,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((key == null) ? 0 : key.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		}
 	}
 
@@ -1409,9 +1388,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+			__dna__targetAddress = __io__block.readLong(__io__address + 148);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CPointer.class, Material.class};
 		return new CPointer<CPointer<Material>>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
@@ -1426,9 +1405,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mat == null) ? 0 : mat.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 140, __address);
+			__io__block.writeLong(__io__address + 148, __address);
 		}
 	}
 
@@ -1441,9 +1420,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MSelect.class};
 		return new CPointer<MSelect>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MSelect.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1458,9 +1437,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mselect == null) ? 0 : mselect.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -1476,9 +1455,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MPoly.class};
 		return new CPointer<MPoly>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MPoly.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1496,9 +1475,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mpoly == null) ? 0 : mpoly.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -1514,9 +1493,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MLoop.class};
 		return new CPointer<MLoop>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoop.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1534,9 +1513,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mloop == null) ? 0 : mloop.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		}
 	}
 
@@ -1552,9 +1531,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 232);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MLoopUV.class};
 		return new CPointer<MLoopUV>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopUV.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1572,9 +1551,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mloopuv == null) ? 0 : mloopuv.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 232, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 
@@ -1587,9 +1566,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 224);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MLoopCol.class};
 		return new CPointer<MLoopCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MLoopCol.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1604,9 +1583,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mloopcol == null) ? 0 : mloopcol.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 224, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		} else {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 
@@ -1615,6 +1594,7 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
 	 */
@@ -1623,9 +1603,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MFace.class};
 		return new CPointer<MFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MFace.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1636,6 +1616,7 @@ public class Mesh extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> END BMESH ONLY Legacy face storage (quads & tries only), faces are now stored in {@link Mesh.mpoly}  & #Mesh.mloop arrays.</p><p><h2>Note</h2><p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). </p> This would be marked deprecated however the particles still use this at run-time for placing particles on the mesh (something which should be eventually upgraded). 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__mface
 	 */
@@ -1644,9 +1625,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mface == null) ? 0 : mface.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 164, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -1662,9 +1643,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MTFace.class};
 		return new CPointer<MTFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MTFace.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1682,9 +1663,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mtface == null) ? 0 : mtface.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 240, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -1702,9 +1683,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{TFace.class};
 		return new CPointer<TFace>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, TFace.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1724,9 +1705,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((tface == null) ? 0 : tface.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 172, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -1743,9 +1724,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 272);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MVert.class};
 		return new CPointer<MVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1764,9 +1745,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mvert == null) ? 0 : mvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 272, __address);
 		} else {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 
@@ -1783,9 +1764,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MEdge.class};
 		return new CPointer<MEdge>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MEdge.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1804,9 +1785,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((medge == null) ? 0 : medge.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
+			__io__block.writeLong(__io__address + 280, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 
@@ -1822,9 +1803,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
 		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1842,9 +1823,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((dvert == null) ? 0 : dvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		}
 	}
 
@@ -1860,9 +1841,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 188);
+			__dna__targetAddress = __io__block.readLong(__io__address + 196);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MCol.class};
 		return new CPointer<MCol>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MCol.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1880,9 +1861,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((mcol == null) ? 0 : mcol.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 188, __address);
+			__io__block.writeLong(__io__address + 196, __address);
 		}
 	}
 
@@ -1895,9 +1876,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 288);
+			__dna__targetAddress = __io__block.readLong(__io__address + 304);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
 		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1912,9 +1893,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((texcomesh == null) ? 0 : texcomesh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 288, __address);
+			__io__block.writeLong(__io__address + 304, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -1930,9 +1911,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 296);
+			__dna__targetAddress = __io__block.readLong(__io__address + 312);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1950,9 +1931,9 @@ public class Mesh extends CFacade {
 	{
 		long __address = ((edit_mesh == null) ? 0 : edit_mesh.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 296, __address);
+			__io__block.writeLong(__io__address + 312, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -1967,9 +1948,9 @@ public class Mesh extends CFacade {
 	public CustomData getVdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 304, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 320, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 200, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 208, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1985,9 +1966,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 304;
+			__dna__offset = 320;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		}
 		if (__io__equals(vdata, __io__address + __dna__offset)) {
 			return;
@@ -2009,9 +1990,9 @@ public class Mesh extends CFacade {
 	public CustomData getEdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 544, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 560, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 428, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 436, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2027,9 +2008,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 544;
+			__dna__offset = 560;
 		} else {
-			__dna__offset = 428;
+			__dna__offset = 436;
 		}
 		if (__io__equals(edata, __io__address + __dna__offset)) {
 			return;
@@ -2051,9 +2032,9 @@ public class Mesh extends CFacade {
 	public CustomData getFdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 784, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 800, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 656, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 664, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2069,9 +2050,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 784;
+			__dna__offset = 800;
 		} else {
-			__dna__offset = 656;
+			__dna__offset = 664;
 		}
 		if (__io__equals(fdata, __io__address + __dna__offset)) {
 			return;
@@ -2093,9 +2074,9 @@ public class Mesh extends CFacade {
 	public CustomData getPdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 1024, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 1040, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 884, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 892, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2111,9 +2092,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1024;
+			__dna__offset = 1040;
 		} else {
-			__dna__offset = 884;
+			__dna__offset = 892;
 		}
 		if (__io__equals(pdata, __io__address + __dna__offset)) {
 			return;
@@ -2136,9 +2117,9 @@ public class Mesh extends CFacade {
 	public CustomData getLdata() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CustomData(__io__address + 1264, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 1280, __io__block, __io__blockTable);
 		} else {
-			return new CustomData(__io__address + 1112, __io__block, __io__blockTable);
+			return new CustomData(__io__address + 1120, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2155,9 +2136,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1264;
+			__dna__offset = 1280;
 		} else {
-			__dna__offset = 1112;
+			__dna__offset = 1120;
 		}
 		if (__io__equals(ldata, __io__address + __dna__offset)) {
 			return;
@@ -2179,9 +2160,9 @@ public class Mesh extends CFacade {
 	public int getTotvert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1504);
+			return __io__block.readInt(__io__address + 1520);
 		} else {
-			return __io__block.readInt(__io__address + 1340);
+			return __io__block.readInt(__io__address + 1348);
 		}
 	}
 
@@ -2196,9 +2177,9 @@ public class Mesh extends CFacade {
 	public void setTotvert(int totvert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1504, totvert);
+			__io__block.writeInt(__io__address + 1520, totvert);
 		} else {
-			__io__block.writeInt(__io__address + 1340, totvert);
+			__io__block.writeInt(__io__address + 1348, totvert);
 		}
 	}
 
@@ -2210,9 +2191,9 @@ public class Mesh extends CFacade {
 	public int getTotedge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1508);
+			return __io__block.readInt(__io__address + 1524);
 		} else {
-			return __io__block.readInt(__io__address + 1344);
+			return __io__block.readInt(__io__address + 1352);
 		}
 	}
 
@@ -2224,9 +2205,9 @@ public class Mesh extends CFacade {
 	public void setTotedge(int totedge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1508, totedge);
+			__io__block.writeInt(__io__address + 1524, totedge);
 		} else {
-			__io__block.writeInt(__io__address + 1344, totedge);
+			__io__block.writeInt(__io__address + 1352, totedge);
 		}
 	}
 
@@ -2238,9 +2219,9 @@ public class Mesh extends CFacade {
 	public int getTotface() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1512);
+			return __io__block.readInt(__io__address + 1528);
 		} else {
-			return __io__block.readInt(__io__address + 1348);
+			return __io__block.readInt(__io__address + 1356);
 		}
 	}
 
@@ -2252,9 +2233,9 @@ public class Mesh extends CFacade {
 	public void setTotface(int totface) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1512, totface);
+			__io__block.writeInt(__io__address + 1528, totface);
 		} else {
-			__io__block.writeInt(__io__address + 1348, totface);
+			__io__block.writeInt(__io__address + 1356, totface);
 		}
 	}
 
@@ -2269,9 +2250,9 @@ public class Mesh extends CFacade {
 	public int getTotselect() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1516);
+			return __io__block.readInt(__io__address + 1532);
 		} else {
-			return __io__block.readInt(__io__address + 1352);
+			return __io__block.readInt(__io__address + 1360);
 		}
 	}
 
@@ -2286,9 +2267,9 @@ public class Mesh extends CFacade {
 	public void setTotselect(int totselect) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1516, totselect);
+			__io__block.writeInt(__io__address + 1532, totselect);
 		} else {
-			__io__block.writeInt(__io__address + 1352, totselect);
+			__io__block.writeInt(__io__address + 1360, totselect);
 		}
 	}
 
@@ -2303,9 +2284,9 @@ public class Mesh extends CFacade {
 	public int getTotpoly() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1520);
+			return __io__block.readInt(__io__address + 1536);
 		} else {
-			return __io__block.readInt(__io__address + 1356);
+			return __io__block.readInt(__io__address + 1364);
 		}
 	}
 
@@ -2320,9 +2301,9 @@ public class Mesh extends CFacade {
 	public void setTotpoly(int totpoly) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1520, totpoly);
+			__io__block.writeInt(__io__address + 1536, totpoly);
 		} else {
-			__io__block.writeInt(__io__address + 1356, totpoly);
+			__io__block.writeInt(__io__address + 1364, totpoly);
 		}
 	}
 
@@ -2334,9 +2315,9 @@ public class Mesh extends CFacade {
 	public int getTotloop() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1524);
+			return __io__block.readInt(__io__address + 1540);
 		} else {
-			return __io__block.readInt(__io__address + 1360);
+			return __io__block.readInt(__io__address + 1368);
 		}
 	}
 
@@ -2348,9 +2329,9 @@ public class Mesh extends CFacade {
 	public void setTotloop(int totloop) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1524, totloop);
+			__io__block.writeInt(__io__address + 1540, totloop);
 		} else {
-			__io__block.writeInt(__io__address + 1360, totloop);
+			__io__block.writeInt(__io__address + 1368, totloop);
 		}
 	}
 
@@ -2365,9 +2346,9 @@ public class Mesh extends CFacade {
 	public int getAttributes_active_index() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1528);
+			return __io__block.readInt(__io__address + 1544);
 		} else {
-			return __io__block.readInt(__io__address + 1364);
+			return __io__block.readInt(__io__address + 1372);
 		}
 	}
 
@@ -2382,9 +2363,9 @@ public class Mesh extends CFacade {
 	public void setAttributes_active_index(int attributes_active_index) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1528, attributes_active_index);
+			__io__block.writeInt(__io__address + 1544, attributes_active_index);
 		} else {
-			__io__block.writeInt(__io__address + 1364, attributes_active_index);
+			__io__block.writeInt(__io__address + 1372, attributes_active_index);
 		}
 	}
 
@@ -2396,9 +2377,9 @@ public class Mesh extends CFacade {
 	public int get_pad3() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1532);
+			return __io__block.readInt(__io__address + 1548);
 		} else {
-			return __io__block.readInt(__io__address + 1368);
+			return __io__block.readInt(__io__address + 1376);
 		}
 	}
 
@@ -2410,9 +2391,9 @@ public class Mesh extends CFacade {
 	public void set_pad3(int _pad3) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1532, _pad3);
+			__io__block.writeInt(__io__address + 1548, _pad3);
 		} else {
-			__io__block.writeInt(__io__address + 1368, _pad3);
+			__io__block.writeInt(__io__address + 1376, _pad3);
 		}
 	}
 
@@ -2427,9 +2408,9 @@ public class Mesh extends CFacade {
 	public int getAct_face() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1536);
+			return __io__block.readInt(__io__address + 1552);
 		} else {
-			return __io__block.readInt(__io__address + 1372);
+			return __io__block.readInt(__io__address + 1380);
 		}
 	}
 
@@ -2444,9 +2425,9 @@ public class Mesh extends CFacade {
 	public void setAct_face(int act_face) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1536, act_face);
+			__io__block.writeInt(__io__address + 1552, act_face);
 		} else {
-			__io__block.writeInt(__io__address + 1372, act_face);
+			__io__block.writeInt(__io__address + 1380, act_face);
 		}
 	}
 
@@ -2465,9 +2446,9 @@ public class Mesh extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1540, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1556, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1376, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1384, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2483,9 +2464,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1540;
+			__dna__offset = 1556;
 		} else {
-			__dna__offset = 1376;
+			__dna__offset = 1384;
 		}
 		if (__io__equals(loc, __io__address + __dna__offset)) {
 			return;
@@ -2508,9 +2489,9 @@ public class Mesh extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 1552, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1568, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 1388, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 1396, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2523,9 +2504,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1552;
+			__dna__offset = 1568;
 		} else {
-			__dna__offset = 1388;
+			__dna__offset = 1396;
 		}
 		if (__io__equals(size, __io__address + __dna__offset)) {
 			return;
@@ -2550,9 +2531,9 @@ public class Mesh extends CFacade {
 	public short getTexflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1564);
+			return __io__block.readShort(__io__address + 1580);
 		} else {
-			return __io__block.readShort(__io__address + 1400);
+			return __io__block.readShort(__io__address + 1408);
 		}
 	}
 
@@ -2570,9 +2551,9 @@ public class Mesh extends CFacade {
 	public void setTexflag(short texflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1564, texflag);
+			__io__block.writeShort(__io__address + 1580, texflag);
 		} else {
-			__io__block.writeShort(__io__address + 1400, texflag);
+			__io__block.writeShort(__io__address + 1408, texflag);
 		}
 	}
 
@@ -2600,9 +2581,9 @@ public class Mesh extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1566);
+			return __io__block.readShort(__io__address + 1582);
 		} else {
-			return __io__block.readShort(__io__address + 1402);
+			return __io__block.readShort(__io__address + 1410);
 		}
 	}
 
@@ -2630,9 +2611,9 @@ public class Mesh extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1566, flag);
+			__io__block.writeShort(__io__address + 1582, flag);
 		} else {
-			__io__block.writeShort(__io__address + 1402, flag);
+			__io__block.writeShort(__io__address + 1410, flag);
 		}
 	}
 
@@ -2644,9 +2625,9 @@ public class Mesh extends CFacade {
 	public float getSmoothresh() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1568);
+			return __io__block.readFloat(__io__address + 1584);
 		} else {
-			return __io__block.readFloat(__io__address + 1404);
+			return __io__block.readFloat(__io__address + 1412);
 		}
 	}
 
@@ -2658,9 +2639,9 @@ public class Mesh extends CFacade {
 	public void setSmoothresh(float smoothresh) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1568, smoothresh);
+			__io__block.writeFloat(__io__address + 1584, smoothresh);
 		} else {
-			__io__block.writeFloat(__io__address + 1404, smoothresh);
+			__io__block.writeFloat(__io__address + 1412, smoothresh);
 		}
 	}
 
@@ -2675,9 +2656,9 @@ public class Mesh extends CFacade {
 	public byte getCd_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1572);
+			return __io__block.readByte(__io__address + 1588);
 		} else {
-			return __io__block.readByte(__io__address + 1408);
+			return __io__block.readByte(__io__address + 1416);
 		}
 	}
 
@@ -2692,9 +2673,9 @@ public class Mesh extends CFacade {
 	public void setCd_flag(byte cd_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1572, cd_flag);
+			__io__block.writeByte(__io__address + 1588, cd_flag);
 		} else {
-			__io__block.writeByte(__io__address + 1408, cd_flag);
+			__io__block.writeByte(__io__address + 1416, cd_flag);
 		}
 	}
 
@@ -2706,9 +2687,9 @@ public class Mesh extends CFacade {
 	public byte get_pad() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1573);
+			return __io__block.readByte(__io__address + 1589);
 		} else {
-			return __io__block.readByte(__io__address + 1409);
+			return __io__block.readByte(__io__address + 1417);
 		}
 	}
 
@@ -2720,9 +2701,9 @@ public class Mesh extends CFacade {
 	public void set_pad(byte _pad) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1573, _pad);
+			__io__block.writeByte(__io__address + 1589, _pad);
 		} else {
-			__io__block.writeByte(__io__address + 1409, _pad);
+			__io__block.writeByte(__io__address + 1417, _pad);
 		}
 	}
 
@@ -2739,9 +2720,9 @@ public class Mesh extends CFacade {
 	public byte getSubdiv() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1574);
+			return __io__block.readByte(__io__address + 1590);
 		} else {
-			return __io__block.readByte(__io__address + 1410);
+			return __io__block.readByte(__io__address + 1418);
 		}
 	}
 
@@ -2758,9 +2739,9 @@ public class Mesh extends CFacade {
 	public void setSubdiv(byte subdiv) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1574, subdiv);
+			__io__block.writeByte(__io__address + 1590, subdiv);
 		} else {
-			__io__block.writeByte(__io__address + 1410, subdiv);
+			__io__block.writeByte(__io__address + 1418, subdiv);
 		}
 	}
 
@@ -2777,9 +2758,9 @@ public class Mesh extends CFacade {
 	public byte getSubdivr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1575);
+			return __io__block.readByte(__io__address + 1591);
 		} else {
-			return __io__block.readByte(__io__address + 1411);
+			return __io__block.readByte(__io__address + 1419);
 		}
 	}
 
@@ -2796,9 +2777,9 @@ public class Mesh extends CFacade {
 	public void setSubdivr(byte subdivr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1575, subdivr);
+			__io__block.writeByte(__io__address + 1591, subdivr);
 		} else {
-			__io__block.writeByte(__io__address + 1411, subdivr);
+			__io__block.writeByte(__io__address + 1419, subdivr);
 		}
 	}
 
@@ -2815,9 +2796,9 @@ public class Mesh extends CFacade {
 	public byte getSubsurftype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1576);
+			return __io__block.readByte(__io__address + 1592);
 		} else {
-			return __io__block.readByte(__io__address + 1412);
+			return __io__block.readByte(__io__address + 1420);
 		}
 	}
 
@@ -2834,9 +2815,9 @@ public class Mesh extends CFacade {
 	public void setSubsurftype(byte subsurftype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1576, subsurftype);
+			__io__block.writeByte(__io__address + 1592, subsurftype);
 		} else {
-			__io__block.writeByte(__io__address + 1412, subsurftype);
+			__io__block.writeByte(__io__address + 1420, subsurftype);
 		}
 	}
 
@@ -2848,9 +2829,9 @@ public class Mesh extends CFacade {
 	public byte getEditflag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1577);
+			return __io__block.readByte(__io__address + 1593);
 		} else {
-			return __io__block.readByte(__io__address + 1413);
+			return __io__block.readByte(__io__address + 1421);
 		}
 	}
 
@@ -2862,9 +2843,9 @@ public class Mesh extends CFacade {
 	public void setEditflag(byte editflag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1577, editflag);
+			__io__block.writeByte(__io__address + 1593, editflag);
 		} else {
-			__io__block.writeByte(__io__address + 1413, editflag);
+			__io__block.writeByte(__io__address + 1421, editflag);
 		}
 	}
 
@@ -2876,9 +2857,9 @@ public class Mesh extends CFacade {
 	public short getTotcol() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 1578);
+			return __io__block.readShort(__io__address + 1594);
 		} else {
-			return __io__block.readShort(__io__address + 1414);
+			return __io__block.readShort(__io__address + 1422);
 		}
 	}
 
@@ -2890,9 +2871,9 @@ public class Mesh extends CFacade {
 	public void setTotcol(short totcol) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 1578, totcol);
+			__io__block.writeShort(__io__address + 1594, totcol);
 		} else {
-			__io__block.writeShort(__io__address + 1414, totcol);
+			__io__block.writeShort(__io__address + 1422, totcol);
 		}
 	}
 
@@ -2907,9 +2888,9 @@ public class Mesh extends CFacade {
 	public float getRemesh_voxel_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1580);
+			return __io__block.readFloat(__io__address + 1596);
 		} else {
-			return __io__block.readFloat(__io__address + 1416);
+			return __io__block.readFloat(__io__address + 1424);
 		}
 	}
 
@@ -2924,9 +2905,9 @@ public class Mesh extends CFacade {
 	public void setRemesh_voxel_size(float remesh_voxel_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1580, remesh_voxel_size);
+			__io__block.writeFloat(__io__address + 1596, remesh_voxel_size);
 		} else {
-			__io__block.writeFloat(__io__address + 1416, remesh_voxel_size);
+			__io__block.writeFloat(__io__address + 1424, remesh_voxel_size);
 		}
 	}
 
@@ -2941,9 +2922,9 @@ public class Mesh extends CFacade {
 	public float getRemesh_voxel_adaptivity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 1584);
+			return __io__block.readFloat(__io__address + 1600);
 		} else {
-			return __io__block.readFloat(__io__address + 1420);
+			return __io__block.readFloat(__io__address + 1428);
 		}
 	}
 
@@ -2958,9 +2939,9 @@ public class Mesh extends CFacade {
 	public void setRemesh_voxel_adaptivity(float remesh_voxel_adaptivity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 1584, remesh_voxel_adaptivity);
+			__io__block.writeFloat(__io__address + 1600, remesh_voxel_adaptivity);
 		} else {
-			__io__block.writeFloat(__io__address + 1420, remesh_voxel_adaptivity);
+			__io__block.writeFloat(__io__address + 1428, remesh_voxel_adaptivity);
 		}
 	}
 
@@ -2972,9 +2953,9 @@ public class Mesh extends CFacade {
 	public byte getRemesh_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1588);
+			return __io__block.readByte(__io__address + 1604);
 		} else {
-			return __io__block.readByte(__io__address + 1424);
+			return __io__block.readByte(__io__address + 1432);
 		}
 	}
 
@@ -2986,37 +2967,43 @@ public class Mesh extends CFacade {
 	public void setRemesh_mode(byte remesh_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1588, remesh_mode);
+			__io__block.writeByte(__io__address + 1604, remesh_mode);
 		} else {
-			__io__block.writeByte(__io__address + 1424, remesh_mode);
+			__io__block.writeByte(__io__address + 1432, remesh_mode);
 		}
 	}
 
 	/**
 	 * Get method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
 	 * @see #__DNA__FIELD__symmetry
 	 */
 	
 	public byte getSymmetry() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1589);
+			return __io__block.readByte(__io__address + 1605);
 		} else {
-			return __io__block.readByte(__io__address + 1425);
+			return __io__block.readByte(__io__address + 1433);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'symmetry'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Indicates the symmetry that a mesh has, according to the artist, so that tools can consistently ensure that this symmetry is maintained. </p>
 	 * @see #__DNA__FIELD__symmetry
 	 */
 	
 	public void setSymmetry(byte symmetry) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1589, symmetry);
+			__io__block.writeByte(__io__address + 1605, symmetry);
 		} else {
-			__io__block.writeByte(__io__address + 1425, symmetry);
+			__io__block.writeByte(__io__address + 1433, symmetry);
 		}
 	}
 
@@ -3032,9 +3019,9 @@ public class Mesh extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 1590, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1606, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 1426, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 1434, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3047,9 +3034,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1590;
+			__dna__offset = 1606;
 		} else {
-			__dna__offset = 1426;
+			__dna__offset = 1434;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;
@@ -3068,9 +3055,9 @@ public class Mesh extends CFacade {
 	public int getFace_sets_color_seed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1592);
+			return __io__block.readInt(__io__address + 1608);
 		} else {
-			return __io__block.readInt(__io__address + 1428);
+			return __io__block.readInt(__io__address + 1436);
 		}
 	}
 
@@ -3082,9 +3069,9 @@ public class Mesh extends CFacade {
 	public void setFace_sets_color_seed(int face_sets_color_seed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1592, face_sets_color_seed);
+			__io__block.writeInt(__io__address + 1608, face_sets_color_seed);
 		} else {
-			__io__block.writeInt(__io__address + 1428, face_sets_color_seed);
+			__io__block.writeInt(__io__address + 1436, face_sets_color_seed);
 		}
 	}
 
@@ -3099,9 +3086,9 @@ public class Mesh extends CFacade {
 	public int getFace_sets_color_default() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 1596);
+			return __io__block.readInt(__io__address + 1612);
 		} else {
-			return __io__block.readInt(__io__address + 1432);
+			return __io__block.readInt(__io__address + 1440);
 		}
 	}
 
@@ -3116,51 +3103,9 @@ public class Mesh extends CFacade {
 	public void setFace_sets_color_default(int face_sets_color_default) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 1596, face_sets_color_default);
+			__io__block.writeInt(__io__address + 1612, face_sets_color_default);
 		} else {
-			__io__block.writeInt(__io__address + 1432, face_sets_color_default);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'mr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated multiresolution modeling data, only keep for loading old files. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__mr
-	 */
-	
-	public CPointer<Multires> getMr() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1600);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 1436);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Multires.class};
-		return new CPointer<Multires>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Multires.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'mr'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Deprecated multiresolution modeling data, only keep for loading old files. 
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__mr
-	 */
-	
-	public void setMr(CPointer<Multires> mr) throws IOException
-	{
-		long __address = ((mr == null) ? 0 : mr.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 1600, __address);
-		} else {
-			__io__block.writeLong(__io__address + 1436, __address);
+			__io__block.writeInt(__io__address + 1440, face_sets_color_default);
 		}
 	}
 
@@ -3172,9 +3117,9 @@ public class Mesh extends CFacade {
 	public Mesh_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Mesh_Runtime(__io__address + 1608, __io__block, __io__blockTable);
+			return new Mesh_Runtime(__io__address + 1616, __io__block, __io__blockTable);
 		} else {
-			return new Mesh_Runtime(__io__address + 1440, __io__block, __io__blockTable);
+			return new Mesh_Runtime(__io__address + 1444, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3187,9 +3132,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1608;
+			__dna__offset = 1616;
 		} else {
-			__dna__offset = 1440;
+			__dna__offset = 1444;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

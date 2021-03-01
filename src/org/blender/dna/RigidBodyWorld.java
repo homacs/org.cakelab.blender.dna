@@ -28,14 +28,14 @@ public class RigidBodyWorld extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 605;
+	public static final int __DNA__SDNA_INDEX = 624;
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
+	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -366,7 +366,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
+	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	
@@ -387,7 +387,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)<h4>Blender Source Code:</h4>
-	 * <p> Sim {@link World}  Settings -------------------------------------------------------<mdash/><mdash/>  Effectors info. </p>
+	 * <p> Sim {@link World}  Settings ----------------------------------------------------------<mdash/>  Effectors info. </p>
 	 * @see #__DNA__FIELD__effector_weights
 	 */
 	

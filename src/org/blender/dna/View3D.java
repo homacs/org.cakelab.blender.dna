@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> 3D ViewPort Struct. </p>
  */
 
-@CMetaData(size32=1212, size64=1256)
+@CMetaData(size32=1276, size64=1320)
 public class View3D extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class View3D extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 220;
+	public static final int __DNA__SDNA_INDEX = 216;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -1215,7 +1215,7 @@ public class View3D extends CFacade {
 	 * <ul>
 	 * <li>Field: 'shading'</li>
 	 * <li>Signature: 'View3DShading'</li>
-	 * <li>Actual Size (32bit/64bit): 872/880</li>
+	 * <li>Actual Size (32bit/64bit): 936/944</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__shading = new long[]{248, 280};
@@ -1238,7 +1238,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 80/80</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overlay = new long[]{1120, 1160};
+	public static final long[] __DNA__FIELD__overlay = new long[]{1184, 1224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -1261,7 +1261,7 @@ public class View3D extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1200, 1240};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1264, 1304};
 
 	public View3D(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3131,9 +3131,9 @@ public class View3D extends CFacade {
 	public View3DOverlay getOverlay() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3DOverlay(__io__address + 1160, __io__block, __io__blockTable);
+			return new View3DOverlay(__io__address + 1224, __io__block, __io__blockTable);
 		} else {
-			return new View3DOverlay(__io__address + 1120, __io__block, __io__blockTable);
+			return new View3DOverlay(__io__address + 1184, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3146,9 +3146,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1160;
+			__dna__offset = 1224;
 		} else {
-			__dna__offset = 1120;
+			__dna__offset = 1184;
 		}
 		if (__io__equals(overlay, __io__address + __dna__offset)) {
 			return;
@@ -3170,9 +3170,9 @@ public class View3D extends CFacade {
 	public View3D_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new View3D_Runtime(__io__address + 1240, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1304, __io__block, __io__blockTable);
 		} else {
-			return new View3D_Runtime(__io__address + 1200, __io__block, __io__blockTable);
+			return new View3D_Runtime(__io__address + 1264, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3188,9 +3188,9 @@ public class View3D extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1240;
+			__dna__offset = 1304;
 		} else {
-			__dna__offset = 1200;
+			__dna__offset = 1264;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

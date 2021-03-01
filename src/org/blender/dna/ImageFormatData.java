@@ -29,13 +29,14 @@ public class ImageFormatData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 182;
+	public static final int __DNA__SDNA_INDEX = 177;
 
 	/**
 	 * Field descriptor (offset) for struct member 'imtype'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> Video types should only ever be set from this structure when used from {@link RenderData} . </p> Video types should only ever be set from this structure when used from RenderData. 
+	 * 
 	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -461,6 +462,7 @@ public class ImageFormatData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> Video types should only ever be set from this structure when used from {@link RenderData} . </p> Video types should only ever be set from this structure when used from RenderData. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__imtype
 	 */
@@ -479,6 +481,7 @@ public class ImageFormatData extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> R_IMF_IMTYPE_PNG, R_... <h2>Note</h2><p> Video types should only ever be set from this structure when used from {@link RenderData} . </p> Video types should only ever be set from this structure when used from RenderData. 
+	 * 
 	 * </p>
 	 * @see #__DNA__FIELD__imtype
 	 */
