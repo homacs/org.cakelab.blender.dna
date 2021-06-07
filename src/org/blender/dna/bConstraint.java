@@ -28,7 +28,7 @@ public class bConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 344;
+	public static final int __DNA__SDNA_INDEX = 354;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -283,7 +283,7 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Amount of influence exherted by constraint (0.0-1.0). </p>
+	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -306,7 +306,7 @@ public class bConstraint extends CFacade {
 	 * Field descriptor (offset) for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Point along subtarget bone where the actual target is. 0=head (default for all), 1=tail. </p>
+	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -814,7 +814,7 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Amount of influence exherted by constraint (0.0-1.0). </p>
+	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * @see #__DNA__FIELD__enforce
 	 */
 	
@@ -831,7 +831,7 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'enforce'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Amount of influence exherted by constraint (0.0-1.0). </p>
+	 * <p> Amount of influence exerted by constraint (0.0-1.0). </p>
 	 * @see #__DNA__FIELD__enforce
 	 */
 	
@@ -848,7 +848,7 @@ public class bConstraint extends CFacade {
 	 * Get method for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Point along subtarget bone where the actual target is. 0=head (default for all), 1=tail. </p>
+	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * @see #__DNA__FIELD__headtail
 	 */
 	
@@ -865,7 +865,7 @@ public class bConstraint extends CFacade {
 	 * Set method for struct member 'headtail'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Point along subtarget bone where the actual target is. 0=head (default for all), 1=tail. </p>
+	 * <p><code></code>  bone where the actual target is. 0=head (default for all), 1=tail. </p>
 	 * @see #__DNA__FIELD__headtail
 	 */
 	

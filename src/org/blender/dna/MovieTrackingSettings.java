@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=72, size64=72)
+@CMetaData(size32=64, size64=64)
 public class MovieTrackingSettings extends CFacade {
 
 	/**
@@ -27,27 +26,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 604;
-
-	/**
-	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MovieTrackingSettings movietrackingsettings = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingsettings.__dna__addressof(MovieTrackingSettings.__DNA__FIELD__flag);
-	 * CPointer&lt;Integer&gt; p_flag = p.cast(new Class[]{Integer.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'flag'</li>
-	 * <li>Signature: 'int'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{0, 0};
+	public static final int __DNA__SDNA_INDEX = 634;
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_motion_model'.
@@ -71,7 +50,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_motion_model = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__default_motion_model = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_algorithm_flag'.
@@ -94,7 +73,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_algorithm_flag = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__default_algorithm_flag = new long[]{2, 2};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_minimum_correlation'.
@@ -117,7 +96,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_minimum_correlation = new long[]{8, 8};
+	public static final long[] __DNA__FIELD__default_minimum_correlation = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_pattern_size'.
@@ -141,7 +120,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_pattern_size = new long[]{12, 12};
+	public static final long[] __DNA__FIELD__default_pattern_size = new long[]{8, 8};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_search_size'.
@@ -165,7 +144,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_search_size = new long[]{14, 14};
+	public static final long[] __DNA__FIELD__default_search_size = new long[]{10, 10};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_frames_limit'.
@@ -189,7 +168,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_frames_limit = new long[]{16, 16};
+	public static final long[] __DNA__FIELD__default_frames_limit = new long[]{12, 12};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_margin'.
@@ -213,7 +192,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_margin = new long[]{18, 18};
+	public static final long[] __DNA__FIELD__default_margin = new long[]{14, 14};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_pattern_match'.
@@ -237,7 +216,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_pattern_match = new long[]{20, 20};
+	public static final long[] __DNA__FIELD__default_pattern_match = new long[]{16, 16};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_flag'.
@@ -260,7 +239,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_flag = new long[]{22, 22};
+	public static final long[] __DNA__FIELD__default_flag = new long[]{18, 18};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight'.
@@ -284,7 +263,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_weight = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__default_weight = new long[]{20, 20};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_flag'.
@@ -307,7 +286,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_flag = new long[]{28, 28};
+	public static final long[] __DNA__FIELD__motion_flag = new long[]{24, 24};
 
 	/**
 	 * Field descriptor (offset) for struct member 'speed'.
@@ -331,7 +310,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__speed = new long[]{30, 30};
+	public static final long[] __DNA__FIELD__speed = new long[]{26, 26};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe1'.
@@ -356,7 +335,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyframe1 = new long[]{32, 32};
+	public static final long[] __DNA__FIELD__keyframe1 = new long[]{28, 28};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keyframe2'.
@@ -381,7 +360,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keyframe2 = new long[]{36, 36};
+	public static final long[] __DNA__FIELD__keyframe2 = new long[]{32, 32};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reconstruction_flag'.
@@ -401,7 +380,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__reconstruction_flag = new long[]{40, 40};
+	public static final long[] __DNA__FIELD__reconstruction_flag = new long[]{36, 36};
 
 	/**
 	 * Field descriptor (offset) for struct member 'refine_camera_intrinsics'.
@@ -424,7 +403,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__refine_camera_intrinsics = new long[]{44, 44};
+	public static final long[] __DNA__FIELD__refine_camera_intrinsics = new long[]{40, 40};
 
 	/**
 	 * Field descriptor (offset) for struct member 'dist'.
@@ -447,7 +426,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dist = new long[]{48, 48};
+	public static final long[] __DNA__FIELD__dist = new long[]{44, 44};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clean_frames'.
@@ -471,7 +450,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clean_frames = new long[]{52, 52};
+	public static final long[] __DNA__FIELD__clean_frames = new long[]{48, 48};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clean_action'.
@@ -494,7 +473,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clean_action = new long[]{56, 56};
+	public static final long[] __DNA__FIELD__clean_action = new long[]{52, 52};
 
 	/**
 	 * Field descriptor (offset) for struct member 'clean_error'.
@@ -517,7 +496,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__clean_error = new long[]{60, 60};
+	public static final long[] __DNA__FIELD__clean_error = new long[]{56, 56};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_distance'.
@@ -541,27 +520,7 @@ public class MovieTrackingSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object_distance = new long[]{64, 64};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * MovieTrackingSettings movietrackingsettings = ...;
-	 * CPointer&lt;Object&gt; p = movietrackingsettings.__dna__addressof(MovieTrackingSettings.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{68, 68};
+	public static final long[] __DNA__FIELD__object_distance = new long[]{60, 60};
 
 	public MovieTrackingSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -569,34 +528,6 @@ public class MovieTrackingSettings extends CFacade {
 
 	protected MovieTrackingSettings(MovieTrackingSettings that) {
 		super(that.__io__address, that.__io__block, that.__io__blockTable);
-	}
-
-	/**
-	 * Get method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public int getFlag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 0);
-		} else {
-			return __io__block.readInt(__io__address + 0);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'flag'.
-	 * @see #__DNA__FIELD__flag
-	 */
-	
-	public void setFlag(int flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 0, flag);
-		} else {
-			__io__block.writeInt(__io__address + 0, flag);
-		}
 	}
 
 	/**
@@ -611,9 +542,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_motion_model() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 4);
+			return __io__block.readShort(__io__address + 0);
 		} else {
-			return __io__block.readShort(__io__address + 4);
+			return __io__block.readShort(__io__address + 0);
 		}
 	}
 
@@ -629,9 +560,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_motion_model(short default_motion_model) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 4, default_motion_model);
+			__io__block.writeShort(__io__address + 0, default_motion_model);
 		} else {
-			__io__block.writeShort(__io__address + 4, default_motion_model);
+			__io__block.writeShort(__io__address + 0, default_motion_model);
 		}
 	}
 
@@ -646,9 +577,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_algorithm_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 2);
 		} else {
-			return __io__block.readShort(__io__address + 6);
+			return __io__block.readShort(__io__address + 2);
 		}
 	}
 
@@ -663,9 +594,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_algorithm_flag(short default_algorithm_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 6, default_algorithm_flag);
+			__io__block.writeShort(__io__address + 2, default_algorithm_flag);
 		} else {
-			__io__block.writeShort(__io__address + 6, default_algorithm_flag);
+			__io__block.writeShort(__io__address + 2, default_algorithm_flag);
 		}
 	}
 
@@ -680,9 +611,9 @@ public class MovieTrackingSettings extends CFacade {
 	public float getDefault_minimum_correlation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 8);
+			return __io__block.readFloat(__io__address + 4);
 		} else {
-			return __io__block.readFloat(__io__address + 8);
+			return __io__block.readFloat(__io__address + 4);
 		}
 	}
 
@@ -697,9 +628,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_minimum_correlation(float default_minimum_correlation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 8, default_minimum_correlation);
+			__io__block.writeFloat(__io__address + 4, default_minimum_correlation);
 		} else {
-			__io__block.writeFloat(__io__address + 8, default_minimum_correlation);
+			__io__block.writeFloat(__io__address + 4, default_minimum_correlation);
 		}
 	}
 
@@ -715,9 +646,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_pattern_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 8);
 		} else {
-			return __io__block.readShort(__io__address + 12);
+			return __io__block.readShort(__io__address + 8);
 		}
 	}
 
@@ -733,9 +664,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_pattern_size(short default_pattern_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 12, default_pattern_size);
+			__io__block.writeShort(__io__address + 8, default_pattern_size);
 		} else {
-			__io__block.writeShort(__io__address + 12, default_pattern_size);
+			__io__block.writeShort(__io__address + 8, default_pattern_size);
 		}
 	}
 
@@ -751,9 +682,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_search_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readShort(__io__address + 10);
 		} else {
-			return __io__block.readShort(__io__address + 14);
+			return __io__block.readShort(__io__address + 10);
 		}
 	}
 
@@ -769,9 +700,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_search_size(short default_search_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 14, default_search_size);
+			__io__block.writeShort(__io__address + 10, default_search_size);
 		} else {
-			__io__block.writeShort(__io__address + 14, default_search_size);
+			__io__block.writeShort(__io__address + 10, default_search_size);
 		}
 	}
 
@@ -787,9 +718,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_frames_limit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 16);
+			return __io__block.readShort(__io__address + 12);
 		} else {
-			return __io__block.readShort(__io__address + 16);
+			return __io__block.readShort(__io__address + 12);
 		}
 	}
 
@@ -805,9 +736,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_frames_limit(short default_frames_limit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 16, default_frames_limit);
+			__io__block.writeShort(__io__address + 12, default_frames_limit);
 		} else {
-			__io__block.writeShort(__io__address + 16, default_frames_limit);
+			__io__block.writeShort(__io__address + 12, default_frames_limit);
 		}
 	}
 
@@ -823,9 +754,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_margin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 18);
+			return __io__block.readShort(__io__address + 14);
 		} else {
-			return __io__block.readShort(__io__address + 18);
+			return __io__block.readShort(__io__address + 14);
 		}
 	}
 
@@ -841,9 +772,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_margin(short default_margin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 18, default_margin);
+			__io__block.writeShort(__io__address + 14, default_margin);
 		} else {
-			__io__block.writeShort(__io__address + 18, default_margin);
+			__io__block.writeShort(__io__address + 14, default_margin);
 		}
 	}
 
@@ -859,9 +790,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_pattern_match() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 20);
+			return __io__block.readShort(__io__address + 16);
 		} else {
-			return __io__block.readShort(__io__address + 20);
+			return __io__block.readShort(__io__address + 16);
 		}
 	}
 
@@ -877,9 +808,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_pattern_match(short default_pattern_match) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 20, default_pattern_match);
+			__io__block.writeShort(__io__address + 16, default_pattern_match);
 		} else {
-			__io__block.writeShort(__io__address + 20, default_pattern_match);
+			__io__block.writeShort(__io__address + 16, default_pattern_match);
 		}
 	}
 
@@ -894,9 +825,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getDefault_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 18);
 		} else {
-			return __io__block.readShort(__io__address + 22);
+			return __io__block.readShort(__io__address + 18);
 		}
 	}
 
@@ -911,9 +842,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_flag(short default_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 22, default_flag);
+			__io__block.writeShort(__io__address + 18, default_flag);
 		} else {
-			__io__block.writeShort(__io__address + 22, default_flag);
+			__io__block.writeShort(__io__address + 18, default_flag);
 		}
 	}
 
@@ -929,9 +860,9 @@ public class MovieTrackingSettings extends CFacade {
 	public float getDefault_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 20);
 		} else {
-			return __io__block.readFloat(__io__address + 24);
+			return __io__block.readFloat(__io__address + 20);
 		}
 	}
 
@@ -947,9 +878,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDefault_weight(float default_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 24, default_weight);
+			__io__block.writeFloat(__io__address + 20, default_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 24, default_weight);
+			__io__block.writeFloat(__io__address + 20, default_weight);
 		}
 	}
 
@@ -964,9 +895,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getMotion_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 24);
 		} else {
-			return __io__block.readShort(__io__address + 28);
+			return __io__block.readShort(__io__address + 24);
 		}
 	}
 
@@ -981,9 +912,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setMotion_flag(short motion_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 28, motion_flag);
+			__io__block.writeShort(__io__address + 24, motion_flag);
 		} else {
-			__io__block.writeShort(__io__address + 28, motion_flag);
+			__io__block.writeShort(__io__address + 24, motion_flag);
 		}
 	}
 
@@ -999,9 +930,9 @@ public class MovieTrackingSettings extends CFacade {
 	public short getSpeed() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 26);
 		} else {
-			return __io__block.readShort(__io__address + 30);
+			return __io__block.readShort(__io__address + 26);
 		}
 	}
 
@@ -1017,9 +948,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setSpeed(short speed) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 30, speed);
+			__io__block.writeShort(__io__address + 26, speed);
 		} else {
-			__io__block.writeShort(__io__address + 30, speed);
+			__io__block.writeShort(__io__address + 26, speed);
 		}
 	}
 
@@ -1036,9 +967,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getKeyframe1() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 28);
 		} else {
-			return __io__block.readInt(__io__address + 32);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
@@ -1055,9 +986,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setKeyframe1(int keyframe1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 32, keyframe1);
+			__io__block.writeInt(__io__address + 28, keyframe1);
 		} else {
-			__io__block.writeInt(__io__address + 32, keyframe1);
+			__io__block.writeInt(__io__address + 28, keyframe1);
 		}
 	}
 
@@ -1074,9 +1005,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getKeyframe2() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 32);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 32);
 		}
 	}
 
@@ -1093,9 +1024,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setKeyframe2(int keyframe2) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 36, keyframe2);
+			__io__block.writeInt(__io__address + 32, keyframe2);
 		} else {
-			__io__block.writeInt(__io__address + 36, keyframe2);
+			__io__block.writeInt(__io__address + 32, keyframe2);
 		}
 	}
 
@@ -1107,9 +1038,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getReconstruction_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 36);
 		} else {
-			return __io__block.readInt(__io__address + 40);
+			return __io__block.readInt(__io__address + 36);
 		}
 	}
 
@@ -1121,9 +1052,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setReconstruction_flag(int reconstruction_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 40, reconstruction_flag);
+			__io__block.writeInt(__io__address + 36, reconstruction_flag);
 		} else {
-			__io__block.writeInt(__io__address + 40, reconstruction_flag);
+			__io__block.writeInt(__io__address + 36, reconstruction_flag);
 		}
 	}
 
@@ -1138,9 +1069,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getRefine_camera_intrinsics() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 40);
 		} else {
-			return __io__block.readInt(__io__address + 44);
+			return __io__block.readInt(__io__address + 40);
 		}
 	}
 
@@ -1155,9 +1086,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setRefine_camera_intrinsics(int refine_camera_intrinsics) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 44, refine_camera_intrinsics);
+			__io__block.writeInt(__io__address + 40, refine_camera_intrinsics);
 		} else {
-			__io__block.writeInt(__io__address + 44, refine_camera_intrinsics);
+			__io__block.writeInt(__io__address + 40, refine_camera_intrinsics);
 		}
 	}
 
@@ -1172,9 +1103,9 @@ public class MovieTrackingSettings extends CFacade {
 	public float getDist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 44);
 		} else {
-			return __io__block.readFloat(__io__address + 48);
+			return __io__block.readFloat(__io__address + 44);
 		}
 	}
 
@@ -1189,9 +1120,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setDist(float dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 48, dist);
+			__io__block.writeFloat(__io__address + 44, dist);
 		} else {
-			__io__block.writeFloat(__io__address + 48, dist);
+			__io__block.writeFloat(__io__address + 44, dist);
 		}
 	}
 
@@ -1207,9 +1138,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getClean_frames() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 48);
 		} else {
-			return __io__block.readInt(__io__address + 52);
+			return __io__block.readInt(__io__address + 48);
 		}
 	}
 
@@ -1225,9 +1156,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setClean_frames(int clean_frames) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 52, clean_frames);
+			__io__block.writeInt(__io__address + 48, clean_frames);
 		} else {
-			__io__block.writeInt(__io__address + 52, clean_frames);
+			__io__block.writeInt(__io__address + 48, clean_frames);
 		}
 	}
 
@@ -1242,9 +1173,9 @@ public class MovieTrackingSettings extends CFacade {
 	public int getClean_action() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 52);
 		} else {
-			return __io__block.readInt(__io__address + 56);
+			return __io__block.readInt(__io__address + 52);
 		}
 	}
 
@@ -1259,9 +1190,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setClean_action(int clean_action) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 56, clean_action);
+			__io__block.writeInt(__io__address + 52, clean_action);
 		} else {
-			__io__block.writeInt(__io__address + 56, clean_action);
+			__io__block.writeInt(__io__address + 52, clean_action);
 		}
 	}
 
@@ -1276,9 +1207,9 @@ public class MovieTrackingSettings extends CFacade {
 	public float getClean_error() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 56);
 		} else {
-			return __io__block.readFloat(__io__address + 60);
+			return __io__block.readFloat(__io__address + 56);
 		}
 	}
 
@@ -1293,9 +1224,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setClean_error(float clean_error) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 60, clean_error);
+			__io__block.writeFloat(__io__address + 56, clean_error);
 		} else {
-			__io__block.writeFloat(__io__address + 60, clean_error);
+			__io__block.writeFloat(__io__address + 56, clean_error);
 		}
 	}
 
@@ -1311,9 +1242,9 @@ public class MovieTrackingSettings extends CFacade {
 	public float getObject_distance() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 60);
 		} else {
-			return __io__block.readFloat(__io__address + 64);
+			return __io__block.readFloat(__io__address + 60);
 		}
 	}
 
@@ -1329,49 +1260,9 @@ public class MovieTrackingSettings extends CFacade {
 	public void setObject_distance(float object_distance) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 64, object_distance);
+			__io__block.writeFloat(__io__address + 60, object_distance);
 		} else {
-			__io__block.writeFloat(__io__address + 64, object_distance);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public CArrayFacade<Byte> get_pad3() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 68, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 68;
-		} else {
-			__dna__offset = 68;
-		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
-		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__block.writeFloat(__io__address + 60, object_distance);
 		}
 	}
 

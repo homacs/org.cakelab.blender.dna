@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=320, size64=384)
+@CMetaData(size32=288, size64=344)
 public class SpaceNode extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SpaceNode extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 239;
+	public static final int __DNA__SDNA_INDEX = 242;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -222,9 +222,6 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Menunr: browse id block in header. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -244,6 +241,29 @@ public class SpaceNode extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{176, 208};
 
 	/**
+	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Direction for offsetting nodes on insertion. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceNode spacenode = ...;
+	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__insert_ofs_dir);
+	 * CPointer&lt;Byte&gt; p_insert_ofs_dir = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'insert_ofs_dir'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__insert_ofs_dir = new long[]{178, 210};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -252,59 +272,16 @@ public class SpaceNode extends CFacade {
 	 * <pre>
 	 * SpaceNode spacenode = ...;
 	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD___pad1);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad1 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Byte&gt; p__pad1 = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad1'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{178, 210};
-
-	/**
-	 * Field descriptor (offset) for struct member 'aspect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Internal state variables. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__aspect);
-	 * CPointer&lt;Float&gt; p_aspect = p.cast(new Class[]{Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'aspect'</li>
-	 * <li>Signature: 'float'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__aspect = new long[]{180, 212};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{184, 216};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{179, 211};
 
 	/**
 	 * Field descriptor (offset) for struct member 'xof'.
@@ -327,7 +304,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__xof = new long[]{188, 220};
+	public static final long[] __DNA__FIELD__xof = new long[]{180, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'yof'.
@@ -347,7 +324,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__yof = new long[]{192, 224};
+	public static final long[] __DNA__FIELD__yof = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'zoom'.
@@ -370,30 +347,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__zoom = new long[]{196, 228};
-
-	/**
-	 * Field descriptor (offset) for struct member 'cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mouse pos for drawing socketless link and adding nodes. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__cursor);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_cursor = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'cursor'</li>
-	 * <li>Signature: 'float[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 8/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__cursor = new long[]{200, 232};
+	public static final long[] __DNA__FIELD__zoom = new long[]{188, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'treepath'.
@@ -416,7 +370,30 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treepath = new long[]{208, 240};
+	public static final long[] __DNA__FIELD__treepath = new long[]{192, 224};
+
+	/**
+	 * Field descriptor (offset) for struct member 'edittree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The tree farthest down in the group hierarchy. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceNode spacenode = ...;
+	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__edittree);
+	 * CPointer&lt;CPointer&lt;bNodeTree&gt;&gt; p_edittree = p.cast(new Class[]{CPointer.class, bNodeTree.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'edittree'</li>
+	 * <li>Signature: 'bNodeTree*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__edittree = new long[]{200, 240};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -436,27 +413,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{216, 256};
-
-	/**
-	 * Field descriptor (offset) for struct member 'edittree'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__edittree);
-	 * CPointer&lt;CPointer&lt;bNodeTree&gt;&gt; p_edittree = p.cast(new Class[]{CPointer.class, bNodeTree.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'edittree'</li>
-	 * <li>Signature: 'bNodeTree*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__edittree = new long[]{220, 264};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{204, 248};
 
 	/**
 	 * Field descriptor (offset) for struct member 'tree_idname'.
@@ -479,7 +436,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tree_idname = new long[]{224, 272};
+	public static final long[] __DNA__FIELD__tree_idname = new long[]{208, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member 'treetype'.
@@ -504,27 +461,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__treetype = new long[]{288, 336};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{292, 340};
+	public static final long[] __DNA__FIELD__treetype = new long[]{272, 320};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texfrom'.
@@ -547,7 +484,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texfrom = new long[]{296, 344};
+	public static final long[] __DNA__FIELD__texfrom = new long[]{276, 324};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shaderfrom'.
@@ -570,119 +507,7 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shaderfrom = new long[]{298, 346};
-
-	/**
-	 * Field descriptor (offset) for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Currently on 0/1, for auto compo. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__recalc);
-	 * CPointer&lt;Short&gt; p_recalc = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'recalc'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__recalc = new long[]{300, 348};
-
-	/**
-	 * Field descriptor (offset) for struct member 'insert_ofs_dir'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Direction for offsetting nodes on insertion. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__insert_ofs_dir);
-	 * CPointer&lt;Byte&gt; p_insert_ofs_dir = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'insert_ofs_dir'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__insert_ofs_dir = new long[]{302, 350};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad4'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD___pad4);
-	 * CPointer&lt;Byte&gt; p__pad4 = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad4'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad4 = new long[]{303, 351};
-
-	/**
-	 * Field descriptor (offset) for struct member 'linkdrag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Temporary data for modal linking operator. </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__linkdrag);
-	 * CPointer&lt;ListBase&gt; p_linkdrag = p.cast(new Class[]{ListBase.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'linkdrag'</li>
-	 * <li>Signature: 'ListBase'</li>
-	 * <li>Actual Size (32bit/64bit): 8/16</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__linkdrag = new long[]{304, 352};
-
-	/**
-	 * Field descriptor (offset) for struct member 'iofsd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op Temporary data for node insert offset (in UI called Auto-offset). </p>
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SpaceNode spacenode = ...;
-	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__iofsd);
-	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_iofsd = p.cast(new Class[]{CPointer.class, Object.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'iofsd'</li>
-	 * <li>Signature: 'NodeInsertOfsData*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__iofsd = new long[]{312, 368};
+	public static final long[] __DNA__FIELD__shaderfrom = new long[]{278, 326};
 
 	/**
 	 * Field descriptor (offset) for struct member 'gpd'.
@@ -705,7 +530,27 @@ public class SpaceNode extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__gpd = new long[]{316, 376};
+	public static final long[] __DNA__FIELD__gpd = new long[]{280, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceNode spacenode = ...;
+	 * CPointer&lt;Object&gt; p = spacenode.__dna__addressof(SpaceNode.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SpaceNode_Runtime*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{284, 336};
 
 	public SpaceNode(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1035,9 +880,6 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Get method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Menunr: browse id block in header. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1052,9 +894,6 @@ public class SpaceNode extends CFacade {
 
 	/**
 	 * Set method for struct member 'flag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Menunr: browse id block in header. </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -1068,20 +907,50 @@ public class SpaceNode extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Direction for offsetting nodes on insertion. </p>
+	 * @see #__DNA__FIELD__insert_ofs_dir
+	 */
+	
+	public byte getInsert_ofs_dir() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 210);
+		} else {
+			return __io__block.readByte(__io__address + 178);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'insert_ofs_dir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Direction for offsetting nodes on insertion. </p>
+	 * @see #__DNA__FIELD__insert_ofs_dir
+	 */
+	
+	public void setInsert_ofs_dir(byte insert_ofs_dir) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 210, insert_ofs_dir);
+		} else {
+			__io__block.writeByte(__io__address + 178, insert_ofs_dir);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad1'.
 	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public CArrayFacade<Byte> get_pad1() throws IOException
+	public byte get_pad1() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 210, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 211);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 179);
 		}
 	}
 
@@ -1090,94 +959,12 @@ public class SpaceNode extends CFacade {
 	 * @see #__DNA__FIELD___pad1
 	 */
 	
-	public void set_pad1(CArrayFacade<Byte> _pad1) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 210;
-		} else {
-			__dna__offset = 178;
-		}
-		if (__io__equals(_pad1, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad1)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad1);
-		} else {
-			__io__generic__copy( get_pad1(), _pad1);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'aspect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Internal state variables. </p>
-	 * @see #__DNA__FIELD__aspect
-	 */
-	
-	public float getAspect() throws IOException
+	public void set_pad1(byte _pad1) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 212);
+			__io__block.writeByte(__io__address + 211, _pad1);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'aspect'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Internal state variables. </p>
-	 * @see #__DNA__FIELD__aspect
-	 */
-	
-	public void setAspect(float aspect) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 212, aspect);
-		} else {
-			__io__block.writeFloat(__io__address + 180, aspect);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public CArrayFacade<Byte> get_pad2() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 184, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
-	 */
-	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 216;
-		} else {
-			__dna__offset = 184;
-		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
-		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__block.writeByte(__io__address + 179, _pad1);
 		}
 	}
 
@@ -1192,9 +979,9 @@ public class SpaceNode extends CFacade {
 	public float getXof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 220);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -1209,9 +996,9 @@ public class SpaceNode extends CFacade {
 	public void setXof(float xof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 220, xof);
+			__io__block.writeFloat(__io__address + 212, xof);
 		} else {
-			__io__block.writeFloat(__io__address + 188, xof);
+			__io__block.writeFloat(__io__address + 180, xof);
 		}
 	}
 
@@ -1223,9 +1010,9 @@ public class SpaceNode extends CFacade {
 	public float getYof() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 224);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -1237,9 +1024,9 @@ public class SpaceNode extends CFacade {
 	public void setYof(float yof) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 224, yof);
+			__io__block.writeFloat(__io__address + 216, yof);
 		} else {
-			__io__block.writeFloat(__io__address + 192, yof);
+			__io__block.writeFloat(__io__address + 184, yof);
 		}
 	}
 
@@ -1254,9 +1041,9 @@ public class SpaceNode extends CFacade {
 	public float getZoom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 228);
+			return __io__block.readFloat(__io__address + 220);
 		} else {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -1271,55 +1058,9 @@ public class SpaceNode extends CFacade {
 	public void setZoom(float zoom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 228, zoom);
+			__io__block.writeFloat(__io__address + 220, zoom);
 		} else {
-			__io__block.writeFloat(__io__address + 196, zoom);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mouse pos for drawing socketless link and adding nodes. </p>
-	 * @see #__DNA__FIELD__cursor
-	 */
-	
-	public CArrayFacade<Float> getCursor() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 232, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'cursor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Mouse pos for drawing socketless link and adding nodes. </p>
-	 * @see #__DNA__FIELD__cursor
-	 */
-	
-	public void setCursor(CArrayFacade<Float> cursor) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 232;
-		} else {
-			__dna__offset = 200;
-		}
-		if (__io__equals(cursor, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, cursor)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, cursor);
-		} else {
-			__io__generic__copy( getCursor(), cursor);
+			__io__block.writeFloat(__io__address + 188, zoom);
 		}
 	}
 
@@ -1334,9 +1075,9 @@ public class SpaceNode extends CFacade {
 	public ListBase getTreepath() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 240, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 224, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 208, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 192, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1352,9 +1093,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 240;
+			__dna__offset = 224;
 		} else {
-			__dna__offset = 208;
+			__dna__offset = 192;
 		}
 		if (__io__equals(treepath, __io__address + __dna__offset)) {
 			return;
@@ -1362,6 +1103,44 @@ public class SpaceNode extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, treepath);
 		} else {
 			__io__generic__copy( getTreepath(), treepath);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'edittree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The tree farthest down in the group hierarchy. </p>
+	 * @see #__DNA__FIELD__edittree
+	 */
+	
+	public CPointer<bNodeTree> getEdittree() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
+		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'edittree'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> The tree farthest down in the group hierarchy. </p>
+	 * @see #__DNA__FIELD__edittree
+	 */
+	
+	public void setEdittree(CPointer<bNodeTree> edittree) throws IOException
+	{
+		long __address = ((edittree == null) ? 0 : edittree.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 240, __address);
+		} else {
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -1374,9 +1153,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 248);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1391,41 +1170,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 248, __address);
 		} else {
-			__io__block.writeLong(__io__address + 216, __address);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'edittree'.
-	 * @see #__DNA__FIELD__edittree
-	 */
-	
-	public CPointer<bNodeTree> getEdittree() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 264);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 220);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
-		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'edittree'.
-	 * @see #__DNA__FIELD__edittree
-	 */
-	
-	public void setEdittree(CPointer<bNodeTree> edittree) throws IOException
-	{
-		long __address = ((edittree == null) ? 0 : edittree.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 264, __address);
-		} else {
-			__io__block.writeLong(__io__address + 220, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -1444,9 +1191,9 @@ public class SpaceNode extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 224, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1462,9 +1209,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 272;
+			__dna__offset = 256;
 		} else {
-			__dna__offset = 224;
+			__dna__offset = 208;
 		}
 		if (__io__equals(tree_idname, __io__address + __dna__offset)) {
 			return;
@@ -1488,9 +1235,9 @@ public class SpaceNode extends CFacade {
 	public int getTreetype() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 336);
+			return __io__block.readInt(__io__address + 320);
 		} else {
-			return __io__block.readInt(__io__address + 288);
+			return __io__block.readInt(__io__address + 272);
 		}
 	}
 
@@ -1507,49 +1254,9 @@ public class SpaceNode extends CFacade {
 	public void setTreetype(int treetype) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 336, treetype);
+			__io__block.writeInt(__io__address + 320, treetype);
 		} else {
-			__io__block.writeInt(__io__address + 288, treetype);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public CArrayFacade<Byte> get_pad3() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 340, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 292, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 340;
-		} else {
-			__dna__offset = 292;
-		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
-		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__block.writeInt(__io__address + 272, treetype);
 		}
 	}
 
@@ -1564,9 +1271,9 @@ public class SpaceNode extends CFacade {
 	public short getTexfrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 344);
+			return __io__block.readShort(__io__address + 324);
 		} else {
-			return __io__block.readShort(__io__address + 296);
+			return __io__block.readShort(__io__address + 276);
 		}
 	}
 
@@ -1581,9 +1288,9 @@ public class SpaceNode extends CFacade {
 	public void setTexfrom(short texfrom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 344, texfrom);
+			__io__block.writeShort(__io__address + 324, texfrom);
 		} else {
-			__io__block.writeShort(__io__address + 296, texfrom);
+			__io__block.writeShort(__io__address + 276, texfrom);
 		}
 	}
 
@@ -1598,9 +1305,9 @@ public class SpaceNode extends CFacade {
 	public short getShaderfrom() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 346);
+			return __io__block.readShort(__io__address + 326);
 		} else {
-			return __io__block.readShort(__io__address + 298);
+			return __io__block.readShort(__io__address + 278);
 		}
 	}
 
@@ -1615,185 +1322,9 @@ public class SpaceNode extends CFacade {
 	public void setShaderfrom(short shaderfrom) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 346, shaderfrom);
+			__io__block.writeShort(__io__address + 326, shaderfrom);
 		} else {
-			__io__block.writeShort(__io__address + 298, shaderfrom);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Currently on 0/1, for auto compo. </p>
-	 * @see #__DNA__FIELD__recalc
-	 */
-	
-	public short getRecalc() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 348);
-		} else {
-			return __io__block.readShort(__io__address + 300);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'recalc'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Currently on 0/1, for auto compo. </p>
-	 * @see #__DNA__FIELD__recalc
-	 */
-	
-	public void setRecalc(short recalc) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 348, recalc);
-		} else {
-			__io__block.writeShort(__io__address + 300, recalc);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'insert_ofs_dir'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Direction for offsetting nodes on insertion. </p>
-	 * @see #__DNA__FIELD__insert_ofs_dir
-	 */
-	
-	public byte getInsert_ofs_dir() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 350);
-		} else {
-			return __io__block.readByte(__io__address + 302);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'insert_ofs_dir'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Direction for offsetting nodes on insertion. </p>
-	 * @see #__DNA__FIELD__insert_ofs_dir
-	 */
-	
-	public void setInsert_ofs_dir(byte insert_ofs_dir) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 350, insert_ofs_dir);
-		} else {
-			__io__block.writeByte(__io__address + 302, insert_ofs_dir);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad4'.
-	 * @see #__DNA__FIELD___pad4
-	 */
-	
-	public byte get_pad4() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 351);
-		} else {
-			return __io__block.readByte(__io__address + 303);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad4'.
-	 * @see #__DNA__FIELD___pad4
-	 */
-	
-	public void set_pad4(byte _pad4) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 351, _pad4);
-		} else {
-			__io__block.writeByte(__io__address + 303, _pad4);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'linkdrag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Temporary data for modal linking operator. </p>
-	 * @see #__DNA__FIELD__linkdrag
-	 */
-	
-	public ListBase getLinkdrag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 352, __io__block, __io__blockTable);
-		} else {
-			return new ListBase(__io__address + 304, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'linkdrag'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Temporary data for modal linking operator. </p>
-	 * @see #__DNA__FIELD__linkdrag
-	 */
-	
-	public void setLinkdrag(ListBase linkdrag) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
-		} else {
-			__dna__offset = 304;
-		}
-		if (__io__equals(linkdrag, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, linkdrag)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, linkdrag);
-		} else {
-			__io__generic__copy( getLinkdrag(), linkdrag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'iofsd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op Temporary data for node insert offset (in UI called Auto-offset). </p>
-	 * @see #__DNA__FIELD__iofsd
-	 */
-	
-	public CPointer<Object> getIofsd() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 368);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 312);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
-		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'iofsd'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> XXX hack for translate_attach op-macros to pass data from transform op to insert_offset op Temporary data for node insert offset (in UI called Auto-offset). </p>
-	 * @see #__DNA__FIELD__iofsd
-	 */
-	
-	public void setIofsd(CPointer<Object> iofsd) throws IOException
-	{
-		long __address = ((iofsd == null) ? 0 : iofsd.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 368, __address);
-		} else {
-			__io__block.writeLong(__io__address + 312, __address);
+			__io__block.writeShort(__io__address + 278, shaderfrom);
 		}
 	}
 
@@ -1809,9 +1340,9 @@ public class SpaceNode extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 376);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 316);
+			__dna__targetAddress = __io__block.readLong(__io__address + 280);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPdata.class};
 		return new CPointer<bGPdata>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPdata.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1829,9 +1360,41 @@ public class SpaceNode extends CFacade {
 	{
 		long __address = ((gpd == null) ? 0 : gpd.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 376, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		} else {
-			__io__block.writeLong(__io__address + 316, __address);
+			__io__block.writeLong(__io__address + 280, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public CPointer<Object> getRuntime() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 336);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 284);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(CPointer<Object> runtime) throws IOException
+	{
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 336, __address);
+		} else {
+			__io__block.writeLong(__io__address + 284, __address);
 		}
 	}
 

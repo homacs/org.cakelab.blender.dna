@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> File Browser </p>
  */
 
-@CMetaData(size32=88, size64=152)
+@CMetaData(size32=92, size64=160)
 public class SpaceFile extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class SpaceFile extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 231;
+	public static final int __DNA__SDNA_INDEX = 234;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -553,6 +553,26 @@ public class SpaceFile extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__system_bookmarknr = new long[]{86, 150};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SpaceFile spacefile = ...;
+	 * CPointer&lt;Object&gt; p = spacefile.__dna__addressof(SpaceFile.__DNA__FIELD__runtime);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_runtime = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'SpaceFile_Runtime*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{88, 152};
 
 	public SpaceFile(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1395,6 +1415,38 @@ public class SpaceFile extends CFacade {
 			__io__block.writeShort(__io__address + 150, system_bookmarknr);
 		} else {
 			__io__block.writeShort(__io__address + 86, system_bookmarknr);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public CPointer<Object> getRuntime() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 88);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(CPointer<Object> runtime) throws IOException
+	{
+		long __address = ((runtime == null) ? 0 : runtime.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 152, __address);
+		} else {
+			__io__block.writeLong(__io__address + 88, __address);
 		}
 	}
 

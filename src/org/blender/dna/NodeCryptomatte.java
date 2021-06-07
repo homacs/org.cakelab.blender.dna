@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=44, size64=56)
+@CMetaData(size32=160, size64=184)
 public class NodeCryptomatte extends CFacade {
 
 	/**
@@ -27,72 +27,30 @@ public class NodeCryptomatte extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 452;
+	public static final int __DNA__SDNA_INDEX = 465;
 
 	/**
-	 * Field descriptor (offset) for struct member 'add'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeCryptomatte nodecryptomatte = ...;
-	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__add);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_add = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'add'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__add = new long[]{0, 0};
-
-	/**
-	 * Field descriptor (offset) for struct member 'remove'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeCryptomatte nodecryptomatte = ...;
-	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__remove);
-	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_remove = p.cast(new Class[]{CArrayFacade.class, Float.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'remove'</li>
-	 * <li>Signature: 'float[3]'</li>
-	 * <li>Actual Size (32bit/64bit): 12/12</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__remove = new long[]{12, 12};
-
-	/**
-	 * Field descriptor (offset) for struct member 'matte_id'.
+	 * Field descriptor (offset) for struct member 'iuser'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
+	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * NodeCryptomatte nodecryptomatte = ...;
-	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__matte_id);
-	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_matte_id = p.cast(new Class[]{CPointer.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__iuser);
+	 * CPointer&lt;ImageUser&gt; p_iuser = p.cast(new Class[]{ImageUser.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'matte_id'</li>
-	 * <li>Signature: 'char*'</li>
-	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * <li>Field: 'iuser'</li>
+	 * <li>Signature: 'ImageUser'</li>
+	 * <li>Actual Size (32bit/64bit): 44/48</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__matte_id = new long[]{24, 24};
+	public static final long[] __DNA__FIELD__iuser = new long[]{0, 0};
 
 	/**
 	 * Field descriptor (offset) for struct member 'entries'.
@@ -115,10 +73,59 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__entries = new long[]{28, 32};
+	public static final long[] __DNA__FIELD__entries = new long[]{44, 48};
+
+	/**
+	 * Field descriptor (offset) for struct member 'layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeCryptomatte nodecryptomatte = ...;
+	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__layer_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_layer_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'layer_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__layer_name = new long[]{52, 64};
+
+	/**
+	 * Field descriptor (offset) for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeCryptomatte nodecryptomatte = ...;
+	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__matte_id);
+	 * CPointer&lt;CPointer&lt;Byte&gt;&gt; p_matte_id = p.cast(new Class[]{CPointer.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'matte_id'</li>
+	 * <li>Signature: 'char*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__matte_id = new long[]{116, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'num_inputs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Legacy attributes Number of input sockets. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -135,7 +142,7 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__num_inputs = new long[]{36, 48};
+	public static final long[] __DNA__FIELD__num_inputs = new long[]{120, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -155,7 +162,27 @@ public class NodeCryptomatte extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{40, 52};
+	public static final long[] __DNA__FIELD___pad = new long[]{124, 140};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeCryptomatte nodecryptomatte = ...;
+	 * CPointer&lt;Object&gt; p = nodecryptomatte.__dna__addressof(NodeCryptomatte.__DNA__FIELD__runtime);
+	 * CPointer&lt;NodeCryptomatte_Runtime&gt; p_runtime = p.cast(new Class[]{NodeCryptomatte_Runtime.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'runtime'</li>
+	 * <li>Signature: 'NodeCryptomatte_Runtime'</li>
+	 * <li>Actual Size (32bit/64bit): 32/40</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__runtime = new long[]{128, 144};
 
 	public NodeCryptomatte(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -166,29 +193,31 @@ public class NodeCryptomatte extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'add'.
-	 * @see #__DNA__FIELD__add
+	 * Get method for struct member 'iuser'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
+	 * @see #__DNA__FIELD__iuser
 	 */
 	
-	public CArrayFacade<Float> getAdd() throws IOException
+	public ImageUser getIuser() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 0, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 0, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new ImageUser(__io__address + 0, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'add'.
-	 * @see #__DNA__FIELD__add
+	 * Set method for struct member 'iuser'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code><code></code> , so storage needs to be cast to {@link ImageUser}  directly. </p>
+	 * @see #__DNA__FIELD__iuser
 	 */
 	
-	public void setAdd(CArrayFacade<Float> add) throws IOException
+	public void setIuser(ImageUser iuser) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -196,94 +225,12 @@ public class NodeCryptomatte extends CFacade {
 		} else {
 			__dna__offset = 0;
 		}
-		if (__io__equals(add, __io__address + __dna__offset)) {
+		if (__io__equals(iuser, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, add)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, add);
+		} else if (__io__same__encoding(this, iuser)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, iuser);
 		} else {
-			__io__generic__copy( getAdd(), add);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'remove'.
-	 * @see #__DNA__FIELD__remove
-	 */
-	
-	public CArrayFacade<Float> getRemove() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
-		int[] __dna__dimensions = new int[]{
-			3
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Float>(__io__address + 12, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'remove'.
-	 * @see #__DNA__FIELD__remove
-	 */
-	
-	public void setRemove(CArrayFacade<Float> remove) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 12;
-		} else {
-			__dna__offset = 12;
-		}
-		if (__io__equals(remove, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, remove)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, remove);
-		} else {
-			__io__generic__copy( getRemove(), remove);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'matte_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__matte_id
-	 */
-	
-	public CPointer<Byte> getMatte_id() throws IOException
-	{
-		long __dna__targetAddress;
-		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
-		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 24);
-		}
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
-	}
-
-	/**
-	 * Set method for struct member 'matte_id'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p>
-	 * @deprecated
-	 *  Deprecated</p>
-	 * @see #__DNA__FIELD__matte_id
-	 */
-	
-	public void setMatte_id(CPointer<Byte> matte_id) throws IOException
-	{
-		long __address = ((matte_id == null) ? 0 : matte_id.getAddress());
-		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 24, __address);
-		} else {
-			__io__block.writeLong(__io__address + 24, __address);
+			__io__generic__copy( getIuser(), iuser);
 		}
 	}
 
@@ -298,9 +245,9 @@ public class NodeCryptomatte extends CFacade {
 	public ListBase getEntries() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 32, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 48, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 28, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 44, __io__block, __io__blockTable);
 		}
 	}
 
@@ -316,9 +263,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 32;
+			__dna__offset = 48;
 		} else {
-			__dna__offset = 28;
+			__dna__offset = 44;
 		}
 		if (__io__equals(entries, __io__address + __dna__offset)) {
 			return;
@@ -330,30 +277,120 @@ public class NodeCryptomatte extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
+	 * @see #__DNA__FIELD__layer_name
+	 */
+	
+	public CArrayFacade<Byte> getLayer_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 64, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'layer_name'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> MAX_NAME </p>
+	 * @see #__DNA__FIELD__layer_name
+	 */
+	
+	public void setLayer_name(CArrayFacade<Byte> layer_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 64;
+		} else {
+			__dna__offset = 52;
+		}
+		if (__io__equals(layer_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, layer_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, layer_name);
+		} else {
+			__io__generic__copy( getLayer_name(), layer_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
+	 * @see #__DNA__FIELD__matte_id
+	 */
+	
+	public CPointer<Byte> getMatte_id() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		return new CPointer<Byte>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, __dna__targetTypes), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'matte_id'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  as a string for opening in 2.80-2.91. </p>
+	 * @see #__DNA__FIELD__matte_id
+	 */
+	
+	public void setMatte_id(CPointer<Byte> matte_id) throws IOException
+	{
+		long __address = ((matte_id == null) ? 0 : matte_id.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 128, __address);
+		} else {
+			__io__block.writeLong(__io__address + 116, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'num_inputs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */
 	
 	public int getNum_inputs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 48);
+			return __io__block.readInt(__io__address + 136);
 		} else {
-			return __io__block.readInt(__io__address + 36);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'num_inputs'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Legacy attributes Number of input sockets. </p>
 	 * @see #__DNA__FIELD__num_inputs
 	 */
 	
 	public void setNum_inputs(int num_inputs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 48, num_inputs);
+			__io__block.writeInt(__io__address + 136, num_inputs);
 		} else {
-			__io__block.writeInt(__io__address + 36, num_inputs);
+			__io__block.writeInt(__io__address + 120, num_inputs);
 		}
 	}
 
@@ -369,9 +406,9 @@ public class NodeCryptomatte extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 40, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -384,9 +421,9 @@ public class NodeCryptomatte extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 52;
+			__dna__offset = 140;
 		} else {
-			__dna__offset = 40;
+			__dna__offset = 124;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -394,6 +431,42 @@ public class NodeCryptomatte extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public NodeCryptomatte_Runtime getRuntime() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new NodeCryptomatte_Runtime(__io__address + 144, __io__block, __io__blockTable);
+		} else {
+			return new NodeCryptomatte_Runtime(__io__address + 128, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'runtime'.
+	 * @see #__DNA__FIELD__runtime
+	 */
+	
+	public void setRuntime(NodeCryptomatte_Runtime runtime) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 144;
+		} else {
+			__dna__offset = 128;
+		}
+		if (__io__equals(runtime, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, runtime)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
+		} else {
+			__io__generic__copy( getRuntime(), runtime);
 		}
 	}
 

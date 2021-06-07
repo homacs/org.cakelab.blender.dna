@@ -506,7 +506,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Select draw mode for stroke<h4>Blender Source Code:</h4>
+	 * Select line type for strokes<h4>Blender Source Code:</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1444,7 +1444,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Select draw mode for stroke<h4>Blender Source Code:</h4>
+	 * Select line type for strokes<h4>Blender Source Code:</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * @see #__DNA__FIELD__mode
 	 */
@@ -1462,7 +1462,7 @@ public class MaterialGPencilStyle extends CFacade {
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Select draw mode for stroke<h4>Blender Source Code:</h4>
+	 * Select line type for strokes<h4>Blender Source Code:</h4>
 	 * <p> Drawing mode (line or dots). </p>
 	 * @see #__DNA__FIELD__mode
 	 */

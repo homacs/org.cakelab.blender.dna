@@ -28,7 +28,7 @@ public class View3DShading extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 213;
+	public static final int __DNA__SDNA_INDEX = 216;
 
 	/**
 	 * Field descriptor (offset) for struct member 'type'.
@@ -167,7 +167,7 @@ public class View3DShading extends CFacade {
 	 * Field descriptor (offset) for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the background
+	 * Way to display the background
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -190,7 +190,7 @@ public class View3DShading extends CFacade {
 	 * Field descriptor (offset) for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the cavity shading
+	 * Way to display the cavity shading
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -922,7 +922,7 @@ public class View3DShading extends CFacade {
 	 * Get method for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the background
+	 * Way to display the background
 	 * @see #__DNA__FIELD__background_type
 	 */
 	
@@ -939,7 +939,7 @@ public class View3DShading extends CFacade {
 	 * Set method for struct member 'background_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the background
+	 * Way to display the background
 	 * @see #__DNA__FIELD__background_type
 	 */
 	
@@ -956,7 +956,7 @@ public class View3DShading extends CFacade {
 	 * Get method for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the cavity shading
+	 * Way to display the cavity shading
 	 * @see #__DNA__FIELD__cavity_type
 	 */
 	
@@ -973,7 +973,7 @@ public class View3DShading extends CFacade {
 	 * Set method for struct member 'cavity_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Way to draw the cavity shading
+	 * Way to display the cavity shading
 	 * @see #__DNA__FIELD__cavity_type
 	 */
 	

@@ -27,7 +27,7 @@ public class Brush extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 475;
+	public static final int __DNA__SDNA_INDEX = 504;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -1644,7 +1644,7 @@ public class Brush extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
-	 * <p> Maximun distance to search fake neighbors from a vertex. </p>
+	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -5167,7 +5167,7 @@ public class Brush extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
-	 * <p> Maximun distance to search fake neighbors from a vertex. </p>
+	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * @see #__DNA__FIELD__disconnected_distance_max
 	 */
 	
@@ -5185,7 +5185,7 @@ public class Brush extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Maximum distance to search for disconnected loose parts in the mesh<h4>Blender Source Code:</h4>
-	 * <p> Maximun distance to search fake neighbors from a vertex. </p>
+	 * <p> Maximum distance to search fake neighbors from a vertex. </p>
 	 * @see #__DNA__FIELD__disconnected_distance_max
 	 */
 	

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=184, size64=224)
+@CMetaData(size32=192, size64=232)
 public class BrushGpencilSettings extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 474;
+	public static final int __DNA__SDNA_INDEX = 503;
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_smoothfac'.
@@ -53,24 +53,28 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__draw_smoothfac = new long[]{0, 0};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad2'.
+	 * Field descriptor (offset) for struct member 'fill_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <p> Fill zoom factor </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushGpencilSettings brushgpencilsettings = ...;
-	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad2);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__fill_factor);
+	 * CPointer&lt;Float&gt; p_fill_factor = p.cast(new Class[]{Float.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad2'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'fill_factor'</li>
+	 * <li>Signature: 'float'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad2 = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__fill_factor = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'draw_strength'.
@@ -352,28 +356,24 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__fill_leak = new long[]{44, 44};
 
 	/**
-	 * Field descriptor (offset) for struct member 'fill_factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier for fill resolution, higher resolution is more accurate but slower<h4>Blender Source Code:</h4>
-	 * <p> Fill zoom factor </p>
+	 * Field descriptor (offset) for struct member '_pad2'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * BrushGpencilSettings brushgpencilsettings = ...;
-	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__fill_factor);
-	 * CPointer&lt;Short&gt; p_fill_factor = p.cast(new Class[]{Short.class});
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad2);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad2 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'fill_factor'</li>
-	 * <li>Signature: 'short'</li>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'char[2]'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fill_factor = new long[]{46, 46};
+	public static final long[] __DNA__FIELD___pad2 = new long[]{46, 46};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag2'.
@@ -926,6 +926,49 @@ public class BrushGpencilSettings extends CFacade {
 	public static final long[] __DNA__FIELD__random_value = new long[]{140, 140};
 
 	/**
+	 * Field descriptor (offset) for struct member 'fill_extend_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor to extend stroke extremes using fill tool. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BrushGpencilSettings brushgpencilsettings = ...;
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD__fill_extend_fac);
+	 * CPointer&lt;Float&gt; p_fill_extend_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'fill_extend_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__fill_extend_fac = new long[]{144, 144};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BrushGpencilSettings brushgpencilsettings = ...;
+	 * CPointer&lt;Object&gt; p = brushgpencilsettings.__dna__addressof(BrushGpencilSettings.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{148, 148};
+
+	/**
 	 * Field descriptor (offset) for struct member 'curve_sensitivity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -946,7 +989,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_sensitivity = new long[]{144, 144};
+	public static final long[] __DNA__FIELD__curve_sensitivity = new long[]{152, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_strength'.
@@ -969,7 +1012,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_strength = new long[]{148, 152};
+	public static final long[] __DNA__FIELD__curve_strength = new long[]{156, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_jitter'.
@@ -992,7 +1035,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_jitter = new long[]{152, 160};
+	public static final long[] __DNA__FIELD__curve_jitter = new long[]{160, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_pressure'.
@@ -1012,7 +1055,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_pressure = new long[]{156, 168};
+	public static final long[] __DNA__FIELD__curve_rand_pressure = new long[]{164, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_strength'.
@@ -1032,7 +1075,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_strength = new long[]{160, 176};
+	public static final long[] __DNA__FIELD__curve_rand_strength = new long[]{168, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_uv'.
@@ -1052,7 +1095,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_uv = new long[]{164, 184};
+	public static final long[] __DNA__FIELD__curve_rand_uv = new long[]{172, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_hue'.
@@ -1072,7 +1115,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_hue = new long[]{168, 192};
+	public static final long[] __DNA__FIELD__curve_rand_hue = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_saturation'.
@@ -1092,7 +1135,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_saturation = new long[]{172, 200};
+	public static final long[] __DNA__FIELD__curve_rand_saturation = new long[]{180, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'curve_rand_value'.
@@ -1112,7 +1155,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__curve_rand_value = new long[]{176, 208};
+	public static final long[] __DNA__FIELD__curve_rand_value = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'material'.
@@ -1136,7 +1179,7 @@ public class BrushGpencilSettings extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__material = new long[]{180, 216};
+	public static final long[] __DNA__FIELD__material = new long[]{188, 224};
 
 	public BrushGpencilSettings(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1181,42 +1224,38 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Get method for struct member 'fill_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <p> Fill zoom factor </p>
+	 * @see #__DNA__FIELD__fill_factor
 	 */
 	
-	public CArrayFacade<Byte> get_pad2() throws IOException
+	public float getFill_factor() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 4);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 4, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readFloat(__io__address + 4);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad2'.
-	 * @see #__DNA__FIELD___pad2
+	 * Set method for struct member 'fill_factor'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Factor for fill boundary accuracy, higher values are more accurate but slower<h4>Blender Source Code:</h4>
+	 * <p> Fill zoom factor </p>
+	 * @see #__DNA__FIELD__fill_factor
 	 */
 	
-	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
+	public void setFill_factor(float fill_factor) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 4;
+			__io__block.writeFloat(__io__address + 4, fill_factor);
 		} else {
-			__dna__offset = 4;
-		}
-		if (__io__equals(_pad2, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad2)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
-		} else {
-			__io__generic__copy( get_pad2(), _pad2);
+			__io__block.writeFloat(__io__address + 4, fill_factor);
 		}
 	}
 
@@ -1635,38 +1674,42 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'fill_factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier for fill resolution, higher resolution is more accurate but slower<h4>Blender Source Code:</h4>
-	 * <p> Fill zoom factor </p>
-	 * @see #__DNA__FIELD__fill_factor
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public short getFill_factor() throws IOException
+	public CArrayFacade<Byte> get_pad2() throws IOException
 	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			2
+		};
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 46);
+			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return __io__block.readShort(__io__address + 46);
+			return new CArrayFacade<Byte>(__io__address + 46, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
-	 * Set method for struct member 'fill_factor'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Python API:</h4>
-	 * Multiplier for fill resolution, higher resolution is more accurate but slower<h4>Blender Source Code:</h4>
-	 * <p> Fill zoom factor </p>
-	 * @see #__DNA__FIELD__fill_factor
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
 	 */
 	
-	public void setFill_factor(short fill_factor) throws IOException
+	public void set_pad2(CArrayFacade<Byte> _pad2) throws IOException
 	{
+		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 46, fill_factor);
+			__dna__offset = 46;
 		} else {
-			__io__block.writeShort(__io__address + 46, fill_factor);
+			__dna__offset = 46;
+		}
+		if (__io__equals(_pad2, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad2)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
+		} else {
+			__io__generic__copy( get_pad2(), _pad2);
 		}
 	}
 
@@ -2495,6 +2538,80 @@ public class BrushGpencilSettings extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'fill_extend_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor to extend stroke extremes using fill tool. </p>
+	 * @see #__DNA__FIELD__fill_extend_fac
+	 */
+	
+	public float getFill_extend_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 144);
+		} else {
+			return __io__block.readFloat(__io__address + 144);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'fill_extend_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Factor to extend stroke extremes using fill tool. </p>
+	 * @see #__DNA__FIELD__fill_extend_fac
+	 */
+	
+	public void setFill_extend_fac(float fill_extend_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 144, fill_extend_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 144, fill_extend_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CArrayFacade<Byte> get_pad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 148;
+		} else {
+			__dna__offset = 148;
+		}
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else {
+			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'curve_sensitivity'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -2506,9 +2623,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2526,9 +2643,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_sensitivity == null) ? 0 : curve_sensitivity.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		}
 	}
 
@@ -2544,9 +2661,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 148);
+			__dna__targetAddress = __io__block.readLong(__io__address + 156);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2564,9 +2681,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_strength == null) ? 0 : curve_strength.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 148, __address);
+			__io__block.writeLong(__io__address + 156, __address);
 		}
 	}
 
@@ -2582,9 +2699,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2602,9 +2719,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_jitter == null) ? 0 : curve_jitter.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		} else {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		}
 	}
 
@@ -2617,9 +2734,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 156);
+			__dna__targetAddress = __io__block.readLong(__io__address + 164);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2634,9 +2751,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_pressure == null) ? 0 : curve_rand_pressure.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		} else {
-			__io__block.writeLong(__io__address + 156, __address);
+			__io__block.writeLong(__io__address + 164, __address);
 		}
 	}
 
@@ -2649,9 +2766,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+			__dna__targetAddress = __io__block.readLong(__io__address + 168);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2666,9 +2783,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_strength == null) ? 0 : curve_rand_strength.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		} else {
-			__io__block.writeLong(__io__address + 160, __address);
+			__io__block.writeLong(__io__address + 168, __address);
 		}
 	}
 
@@ -2681,9 +2798,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+			__dna__targetAddress = __io__block.readLong(__io__address + 192);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 164);
+			__dna__targetAddress = __io__block.readLong(__io__address + 172);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2698,9 +2815,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_uv == null) ? 0 : curve_rand_uv.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 184, __address);
+			__io__block.writeLong(__io__address + 192, __address);
 		} else {
-			__io__block.writeLong(__io__address + 164, __address);
+			__io__block.writeLong(__io__address + 172, __address);
 		}
 	}
 
@@ -2713,9 +2830,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 168);
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2730,9 +2847,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_hue == null) ? 0 : curve_rand_hue.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 168, __address);
+			__io__block.writeLong(__io__address + 176, __address);
 		}
 	}
 
@@ -2745,9 +2862,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 172);
+			__dna__targetAddress = __io__block.readLong(__io__address + 180);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2762,9 +2879,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_saturation == null) ? 0 : curve_rand_saturation.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 172, __address);
+			__io__block.writeLong(__io__address + 180, __address);
 		}
 	}
 
@@ -2777,9 +2894,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 208);
+			__dna__targetAddress = __io__block.readLong(__io__address + 216);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{CurveMapping.class};
 		return new CPointer<CurveMapping>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, CurveMapping.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2794,9 +2911,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((curve_rand_value == null) ? 0 : curve_rand_value.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 208, __address);
+			__io__block.writeLong(__io__address + 216, __address);
 		} else {
-			__io__block.writeLong(__io__address + 176, __address);
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 
@@ -2813,9 +2930,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 216);
+			__dna__targetAddress = __io__block.readLong(__io__address + 224);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 180);
+			__dna__targetAddress = __io__block.readLong(__io__address + 188);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Material.class};
 		return new CPointer<Material>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Material.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2834,9 +2951,9 @@ public class BrushGpencilSettings extends CFacade {
 	{
 		long __address = ((material == null) ? 0 : material.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 216, __address);
+			__io__block.writeLong(__io__address + 224, __address);
 		} else {
-			__io__block.writeLong(__io__address + 180, __address);
+			__io__block.writeLong(__io__address + 188, __address);
 		}
 	}
 

@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -27,7 +26,7 @@ public class bNodeLink extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 382;
+	public static final int __DNA__SDNA_INDEX = 392;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -170,24 +169,24 @@ public class bNodeLink extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{24, 48};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad'.
+	 * Field descriptor (offset) for struct member 'multi_input_socket_index'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * bNodeLink bnodelink = ...;
-	 * CPointer&lt;Object&gt; p = bnodelink.__dna__addressof(bNodeLink.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = bnodelink.__dna__addressof(bNodeLink.__DNA__FIELD__multi_input_socket_index);
+	 * CPointer&lt;Integer&gt; p_multi_input_socket_index = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[4]'</li>
+	 * <li>Field: 'multi_input_socket_index'</li>
+	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{28, 52};
+	public static final long[] __DNA__FIELD__multi_input_socket_index = new long[]{28, 52};
 
 	public bNodeLink(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -418,42 +417,30 @@ public class bNodeLink extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Get method for struct member 'multi_input_socket_index'.
+	 * @see #__DNA__FIELD__multi_input_socket_index
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public int getMulti_input_socket_index() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 52, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 52);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 28, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readInt(__io__address + 28);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
+	 * Set method for struct member 'multi_input_socket_index'.
+	 * @see #__DNA__FIELD__multi_input_socket_index
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void setMulti_input_socket_index(int multi_input_socket_index) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 52;
+			__io__block.writeInt(__io__address + 52, multi_input_socket_index);
 		} else {
-			__dna__offset = 28;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeInt(__io__address + 28, multi_input_socket_index);
 		}
 	}
 

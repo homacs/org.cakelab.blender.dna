@@ -27,7 +27,7 @@ public class Curve extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 59;
+	public static final int __DNA__SDNA_INDEX = 60;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -794,6 +794,30 @@ public class Curve extends CFacade {
 	public static final long[] __DNA__FIELD__bevel_mode = new long[]{267, 351};
 
 	/**
+	 * Field descriptor (offset) for struct member 'taper_radius_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Curve curve = ...;
+	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD__taper_radius_mode);
+	 * CPointer&lt;Byte&gt; p_taper_radius_mode = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'taper_radius_mode'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__taper_radius_mode = new long[]{268, 352};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -802,16 +826,16 @@ public class Curve extends CFacade {
 	 * <pre>
 	 * Curve curve = ...;
 	 * CPointer&lt;Object&gt; p = curve.__dna__addressof(Curve.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Byte&gt; p__pad = p.cast(new Class[]{Byte.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{268, 352};
+	public static final long[] __DNA__FIELD___pad = new long[]{269, 353};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lines'.
@@ -2738,20 +2762,52 @@ public class Curve extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'taper_radius_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
+	 * @see #__DNA__FIELD__taper_radius_mode
+	 */
+	
+	public byte getTaper_radius_mode() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 352);
+		} else {
+			return __io__block.readByte(__io__address + 268);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'taper_radius_mode'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Determine how the effective radius of the spline point is computed when a taper object is specified<h4>Blender Source Code:</h4>
+	 * <p> Determine how the effective radius of the bevel point is computed when a taper object is specified. The effective radius is a function of the bevel point radius and the taper radius. </p>
+	 * @see #__DNA__FIELD__taper_radius_mode
+	 */
+	
+	public void setTaper_radius_mode(byte taper_radius_mode) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 352, taper_radius_mode);
+		} else {
+			__io__block.writeByte(__io__address + 268, taper_radius_mode);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public CArrayFacade<Byte> get_pad() throws IOException
+	public byte get_pad() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 352, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 353);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readByte(__io__address + 269);
 		}
 	}
 
@@ -2760,20 +2816,12 @@ public class Curve extends CFacade {
 	 * @see #__DNA__FIELD___pad
 	 */
 	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	public void set_pad(byte _pad) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 352;
+			__io__block.writeByte(__io__address + 353, _pad);
 		} else {
-			__dna__offset = 268;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeByte(__io__address + 269, _pad);
 		}
 	}
 

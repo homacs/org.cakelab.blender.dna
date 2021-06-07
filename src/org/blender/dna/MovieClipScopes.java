@@ -27,7 +27,7 @@ public class MovieClipScopes extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 597;
+	public static final int __DNA__SDNA_INDEX = 627;
 
 	/**
 	 * Field descriptor (offset) for struct member 'ok'.
@@ -214,7 +214,7 @@ public class MovieClipScopes extends CFacade {
 	 * Field descriptor (offset) for struct member 'track_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Sub-pizel position of marker in track ImBuf. </p>
+	 * <p> Sub-pixel position of marker in track ImBuf. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -280,27 +280,27 @@ public class MovieClipScopes extends CFacade {
 	public static final long[] __DNA__FIELD__track_locked = new long[]{98, 106};
 
 	/**
-	 * Field descriptor (offset) for struct member 'framenr'.
+	 * Field descriptor (offset) for struct member 'scene_framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Frame number scopes are created for. </p>
+	 * <p> Frame number scopes are created for (measured in scene frames). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * MovieClipScopes movieclipscopes = ...;
-	 * CPointer&lt;Object&gt; p = movieclipscopes.__dna__addressof(MovieClipScopes.__DNA__FIELD__framenr);
-	 * CPointer&lt;Integer&gt; p_framenr = p.cast(new Class[]{Integer.class});
+	 * CPointer&lt;Object&gt; p = movieclipscopes.__dna__addressof(MovieClipScopes.__DNA__FIELD__scene_framenr);
+	 * CPointer&lt;Integer&gt; p_scene_framenr = p.cast(new Class[]{Integer.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'framenr'</li>
+	 * <li>Field: 'scene_framenr'</li>
 	 * <li>Signature: 'int'</li>
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__framenr = new long[]{100, 108};
+	public static final long[] __DNA__FIELD__scene_framenr = new long[]{100, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'track'.
@@ -352,7 +352,7 @@ public class MovieClipScopes extends CFacade {
 	 * Field descriptor (offset) for struct member 'slide_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scale used for sliding from previewe area. </p>
+	 * <p> Scale used for sliding from preview area. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -665,7 +665,7 @@ public class MovieClipScopes extends CFacade {
 	 * Get method for struct member 'track_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Sub-pizel position of marker in track ImBuf. </p>
+	 * <p> Sub-pixel position of marker in track ImBuf. </p>
 	 * @see #__DNA__FIELD__track_pos
 	 */
 	
@@ -686,7 +686,7 @@ public class MovieClipScopes extends CFacade {
 	 * Set method for struct member 'track_pos'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Sub-pizel position of marker in track ImBuf. </p>
+	 * <p> Sub-pixel position of marker in track ImBuf. </p>
 	 * @see #__DNA__FIELD__track_pos
 	 */
 	
@@ -776,14 +776,14 @@ public class MovieClipScopes extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'framenr'.
+	 * Get method for struct member 'scene_framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Frame number scopes are created for. </p>
-	 * @see #__DNA__FIELD__framenr
+	 * <p> Frame number scopes are created for (measured in scene frames). </p>
+	 * @see #__DNA__FIELD__scene_framenr
 	 */
 	
-	public int getFramenr() throws IOException
+	public int getScene_framenr() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return __io__block.readInt(__io__address + 108);
@@ -793,19 +793,19 @@ public class MovieClipScopes extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'framenr'.
+	 * Set method for struct member 'scene_framenr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Frame number scopes are created for. </p>
-	 * @see #__DNA__FIELD__framenr
+	 * <p> Frame number scopes are created for (measured in scene frames). </p>
+	 * @see #__DNA__FIELD__scene_framenr
 	 */
 	
-	public void setFramenr(int framenr) throws IOException
+	public void setScene_framenr(int scene_framenr) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 108, framenr);
+			__io__block.writeInt(__io__address + 108, scene_framenr);
 		} else {
-			__io__block.writeInt(__io__address + 100, framenr);
+			__io__block.writeInt(__io__address + 100, scene_framenr);
 		}
 	}
 
@@ -889,7 +889,7 @@ public class MovieClipScopes extends CFacade {
 	 * Get method for struct member 'slide_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scale used for sliding from previewe area. </p>
+	 * <p> Scale used for sliding from preview area. </p>
 	 * @see #__DNA__FIELD__slide_scale
 	 */
 	
@@ -910,7 +910,7 @@ public class MovieClipScopes extends CFacade {
 	 * Set method for struct member 'slide_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scale used for sliding from previewe area. </p>
+	 * <p> Scale used for sliding from preview area. </p>
 	 * @see #__DNA__FIELD__slide_scale
 	 */
 	

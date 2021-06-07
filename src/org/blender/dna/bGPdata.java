@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'DataBlock' </p>
  */
 
-@CMetaData(size32=444, size64=536)
+@CMetaData(size32=452, size64=544)
 public class bGPdata extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPdata extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 515;
+	public static final int __DNA__SDNA_INDEX = 544;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -642,6 +642,49 @@ public class bGPdata extends CFacade {
 	public static final long[] __DNA__FIELD__onion_keytype = new long[]{262, 326};
 
 	/**
+	 * Field descriptor (offset) for struct member 'select_last_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD__select_last_index);
+	 * CPointer&lt;Integer&gt; p_select_last_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'select_last_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__select_last_index = new long[]{264, 328};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPdata bgpdata = ...;
+	 * CPointer&lt;Object&gt; p = bgpdata.__dna__addressof(bGPdata.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{268, 332};
+
+	/**
 	 * Field descriptor (offset) for struct member 'grid'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -659,7 +702,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 40/40</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__grid = new long[]{264, 328};
+	public static final long[] __DNA__FIELD__grid = new long[]{272, 336};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -679,7 +722,7 @@ public class bGPdata extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 140/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{304, 368};
+	public static final long[] __DNA__FIELD__runtime = new long[]{312, 376};
 
 	public bGPdata(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1668,6 +1711,80 @@ public class bGPdata extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'select_last_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
+	 * @see #__DNA__FIELD__select_last_index
+	 */
+	
+	public int getSelect_last_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 328);
+		} else {
+			return __io__block.readInt(__io__address + 264);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'select_last_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection last index. Used to generate a unique selection index. </p>
+	 * @see #__DNA__FIELD__select_last_index
+	 */
+	
+	public void setSelect_last_index(int select_last_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 328, select_last_index);
+		} else {
+			__io__block.writeInt(__io__address + 264, select_last_index);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CArrayFacade<Byte> get_pad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 268, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 332;
+		} else {
+			__dna__offset = 268;
+		}
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else {
+			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'grid'.
 	 * @see #__DNA__FIELD__grid
 	 */
@@ -1675,9 +1792,9 @@ public class bGPdata extends CFacade {
 	public bGPgrid getGrid() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPgrid(__io__address + 328, __io__block, __io__blockTable);
+			return new bGPgrid(__io__address + 336, __io__block, __io__blockTable);
 		} else {
-			return new bGPgrid(__io__address + 264, __io__block, __io__blockTable);
+			return new bGPgrid(__io__address + 272, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1690,9 +1807,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
+			__dna__offset = 336;
 		} else {
-			__dna__offset = 264;
+			__dna__offset = 272;
 		}
 		if (__io__equals(grid, __io__address + __dna__offset)) {
 			return;
@@ -1711,9 +1828,9 @@ public class bGPdata extends CFacade {
 	public bGPdata_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPdata_Runtime(__io__address + 368, __io__block, __io__blockTable);
+			return new bGPdata_Runtime(__io__address + 376, __io__block, __io__blockTable);
 		} else {
-			return new bGPdata_Runtime(__io__address + 304, __io__block, __io__blockTable);
+			return new bGPdata_Runtime(__io__address + 312, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1726,9 +1843,9 @@ public class bGPdata extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 368;
+			__dna__offset = 376;
 		} else {
-			__dna__offset = 304;
+			__dna__offset = 312;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

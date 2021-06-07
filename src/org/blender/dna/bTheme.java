@@ -19,7 +19,7 @@ import org.cakelab.blender.nio.CPointer;
  * </p>
  */
 
-@CMetaData(size32=16312, size64=16320)
+@CMetaData(size32=17192, size64=17200)
 public class bTheme extends CFacade {
 
 	/**
@@ -30,7 +30,7 @@ public class bTheme extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 256;
+	public static final int __DNA__SDNA_INDEX = 266;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -453,6 +453,26 @@ public class bTheme extends CFacade {
 	public static final long[] __DNA__FIELD__tstatusbar = new long[]{15072, 15080};
 
 	/**
+	 * Field descriptor (offset) for struct member 'space_spreadsheet'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bTheme btheme = ...;
+	 * CPointer&lt;Object&gt; p = btheme.__dna__addressof(bTheme.__DNA__FIELD__space_spreadsheet);
+	 * CPointer&lt;ThemeSpace&gt; p_space_spreadsheet = p.cast(new Class[]{ThemeSpace.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'space_spreadsheet'</li>
+	 * <li>Signature: 'ThemeSpace'</li>
+	 * <li>Actual Size (32bit/64bit): 880/880</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__space_spreadsheet = new long[]{15952, 15960};
+
+	/**
 	 * Field descriptor (offset) for struct member 'tarm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -473,7 +493,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 320/320</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__tarm = new long[]{15952, 15960};
+	public static final long[] __DNA__FIELD__tarm = new long[]{16832, 16840};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collection_color'.
@@ -496,7 +516,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 32/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collection_color = new long[]{16272, 16280};
+	public static final long[] __DNA__FIELD__collection_color = new long[]{17152, 17160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'active_theme_area'.
@@ -516,7 +536,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__active_theme_area = new long[]{16304, 16312};
+	public static final long[] __DNA__FIELD__active_theme_area = new long[]{17184, 17192};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -536,7 +556,7 @@ public class bTheme extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{16308, 16316};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{17188, 17196};
 
 	public bTheme(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1299,6 +1319,42 @@ public class bTheme extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'space_spreadsheet'.
+	 * @see #__DNA__FIELD__space_spreadsheet
+	 */
+	
+	public ThemeSpace getSpace_spreadsheet() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ThemeSpace(__io__address + 15960, __io__block, __io__blockTable);
+		} else {
+			return new ThemeSpace(__io__address + 15952, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'space_spreadsheet'.
+	 * @see #__DNA__FIELD__space_spreadsheet
+	 */
+	
+	public void setSpace_spreadsheet(ThemeSpace space_spreadsheet) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 15960;
+		} else {
+			__dna__offset = 15952;
+		}
+		if (__io__equals(space_spreadsheet, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, space_spreadsheet)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, space_spreadsheet);
+		} else {
+			__io__generic__copy( getSpace_spreadsheet(), space_spreadsheet);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'tarm'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1313,9 +1369,9 @@ public class bTheme extends CFacade {
 			20
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ThemeWireColor>(__io__address + 15960, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeWireColor>(__io__address + 16840, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<ThemeWireColor>(__io__address + 15952, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeWireColor>(__io__address + 16832, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1331,9 +1387,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 15960;
+			__dna__offset = 16840;
 		} else {
-			__dna__offset = 15952;
+			__dna__offset = 16832;
 		}
 		if (__io__equals(tarm, __io__address + __dna__offset)) {
 			return;
@@ -1359,9 +1415,9 @@ public class bTheme extends CFacade {
 			8
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<ThemeCollectionColor>(__io__address + 16280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeCollectionColor>(__io__address + 17160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<ThemeCollectionColor>(__io__address + 16272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<ThemeCollectionColor>(__io__address + 17152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1377,9 +1433,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16280;
+			__dna__offset = 17160;
 		} else {
-			__dna__offset = 16272;
+			__dna__offset = 17152;
 		}
 		if (__io__equals(collection_color, __io__address + __dna__offset)) {
 			return;
@@ -1398,9 +1454,9 @@ public class bTheme extends CFacade {
 	public int getActive_theme_area() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 16312);
+			return __io__block.readInt(__io__address + 17192);
 		} else {
-			return __io__block.readInt(__io__address + 16304);
+			return __io__block.readInt(__io__address + 17184);
 		}
 	}
 
@@ -1412,9 +1468,9 @@ public class bTheme extends CFacade {
 	public void setActive_theme_area(int active_theme_area) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 16312, active_theme_area);
+			__io__block.writeInt(__io__address + 17192, active_theme_area);
 		} else {
-			__io__block.writeInt(__io__address + 16304, active_theme_area);
+			__io__block.writeInt(__io__address + 17184, active_theme_area);
 		}
 	}
 
@@ -1430,9 +1486,9 @@ public class bTheme extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 16316, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 17196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 16308, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 17188, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1445,9 +1501,9 @@ public class bTheme extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 16316;
+			__dna__offset = 17196;
 		} else {
-			__dna__offset = 16308;
+			__dna__offset = 17188;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;

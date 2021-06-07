@@ -27,7 +27,7 @@ public class UserDef extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 271;
+	public static final int __DNA__SDNA_INDEX = 281;
 
 	/**
 	 * Field descriptor (offset) for struct member 'versionfile'.
@@ -312,6 +312,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Field descriptor (offset) for struct member 'pythondir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1562,6 +1565,72 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__light_ambient = new long[]{9040, 9112};
 
 	/**
+	 * Field descriptor (offset) for struct member 'gizmo_flag'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gizmo_flag);
+	 * CPointer&lt;Byte&gt; p_gizmo_flag = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_flag'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_flag = new long[]{9052, 9124};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Generic gizmo size. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gizmo_size);
+	 * CPointer&lt;Byte&gt; p_gizmo_size = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_size'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_size = new long[]{9053, 9125};
+
+	/**
+	 * Field descriptor (offset) for struct member 'gizmo_size_navigate_v3d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Navigate gizmo size. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef userdef = ...;
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gizmo_size_navigate_v3d);
+	 * CPointer&lt;Byte&gt; p_gizmo_size_navigate_v3d = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'gizmo_size_navigate_v3d'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__gizmo_size_navigate_v3d = new long[]{9054, 9126};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1575,51 +1644,11 @@ public class UserDef extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * <li>Signature: 'char[5]'</li>
+	 * <li>Actual Size (32bit/64bit): 5/5</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{9052, 9124};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gizmo_flag'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef userdef = ...;
-	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gizmo_flag);
-	 * CPointer&lt;Short&gt; p_gizmo_flag = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gizmo_flag'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gizmo_flag = new long[]{9056, 9128};
-
-	/**
-	 * Field descriptor (offset) for struct member 'gizmo_size'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef userdef = ...;
-	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__gizmo_size);
-	 * CPointer&lt;Short&gt; p_gizmo_size = p.cast(new Class[]{Short.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'gizmo_size'</li>
-	 * <li>Signature: 'short'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__gizmo_size = new long[]{9058, 9130};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{9055, 9127};
 
 	/**
 	 * Field descriptor (offset) for struct member 'edit_studio_light'.
@@ -3142,24 +3171,27 @@ public class UserDef extends CFacade {
 	public static final long[] __DNA__FIELD__sequencer_disk_cache_flag = new long[]{13092, 13164};
 
 	/**
-	 * Field descriptor (offset) for struct member '_pad5'.
+	 * Field descriptor (offset) for struct member 'sequencer_proxy_setup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_SeqProxySetup </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * UserDef userdef = ...;
-	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD___pad5);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad5 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * CPointer&lt;Object&gt; p = userdef.__dna__addressof(UserDef.__DNA__FIELD__sequencer_proxy_setup);
+	 * CPointer&lt;Short&gt; p_sequencer_proxy_setup = p.cast(new Class[]{Short.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: '_pad5'</li>
-	 * <li>Signature: 'char[2]'</li>
+	 * <li>Field: 'sequencer_proxy_setup'</li>
+	 * <li>Signature: 'short'</li>
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad5 = new long[]{13094, 13166};
+	public static final long[] __DNA__FIELD__sequencer_proxy_setup = new long[]{13094, 13166};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collection_instance_empty_size'.
@@ -3818,6 +3850,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Get method for struct member 'pythondir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * @see #__DNA__FIELD__pythondir
 	 */
 	
@@ -3836,6 +3871,9 @@ public class UserDef extends CFacade {
 
 	/**
 	 * Set method for struct member 'pythondir'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Optional user location for scripts.</p><p><code></code> .</p><p><h2>Note</h2><p><code></code><code></code><code></code><em></em>  have been in gets complicated.</p><code></code>  is refreshed when loading preferences. This is done to support #PREFERENCES_OT_copy_prev which is available to the user when they launch with a new version of Blender. In this case setting the script path on top of factory settings will work without problems. </p>
 	 * @see #__DNA__FIELD__pythondir
 	 */
 	
@@ -5851,6 +5889,102 @@ public class UserDef extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'gizmo_flag'.
+	 * @see #__DNA__FIELD__gizmo_flag
+	 */
+	
+	public byte getGizmo_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9124);
+		} else {
+			return __io__block.readByte(__io__address + 9052);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_flag'.
+	 * @see #__DNA__FIELD__gizmo_flag
+	 */
+	
+	public void setGizmo_flag(byte gizmo_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9124, gizmo_flag);
+		} else {
+			__io__block.writeByte(__io__address + 9052, gizmo_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Generic gizmo size. </p>
+	 * @see #__DNA__FIELD__gizmo_size
+	 */
+	
+	public byte getGizmo_size() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9125);
+		} else {
+			return __io__block.readByte(__io__address + 9053);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_size'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Generic gizmo size. </p>
+	 * @see #__DNA__FIELD__gizmo_size
+	 */
+	
+	public void setGizmo_size(byte gizmo_size) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9125, gizmo_size);
+		} else {
+			__io__block.writeByte(__io__address + 9053, gizmo_size);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'gizmo_size_navigate_v3d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Navigate gizmo size. </p>
+	 * @see #__DNA__FIELD__gizmo_size_navigate_v3d
+	 */
+	
+	public byte getGizmo_size_navigate_v3d() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9126);
+		} else {
+			return __io__block.readByte(__io__address + 9054);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'gizmo_size_navigate_v3d'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Navigate gizmo size. </p>
+	 * @see #__DNA__FIELD__gizmo_size_navigate_v3d
+	 */
+	
+	public void setGizmo_size_navigate_v3d(byte gizmo_size_navigate_v3d) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9126, gizmo_size_navigate_v3d);
+		} else {
+			__io__block.writeByte(__io__address + 9054, gizmo_size_navigate_v3d);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad3'.
 	 * @see #__DNA__FIELD___pad3
 	 */
@@ -5859,12 +5993,12 @@ public class UserDef extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			4
+			5
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 9124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9127, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 9052, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 9055, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -5877,9 +6011,9 @@ public class UserDef extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9124;
+			__dna__offset = 9127;
 		} else {
-			__dna__offset = 9052;
+			__dna__offset = 9055;
 		}
 		if (__io__equals(_pad3, __io__address + __dna__offset)) {
 			return;
@@ -5887,62 +6021,6 @@ public class UserDef extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
 		} else {
 			__io__generic__copy( get_pad3(), _pad3);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gizmo_flag'.
-	 * @see #__DNA__FIELD__gizmo_flag
-	 */
-	
-	public short getGizmo_flag() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 9128);
-		} else {
-			return __io__block.readShort(__io__address + 9056);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gizmo_flag'.
-	 * @see #__DNA__FIELD__gizmo_flag
-	 */
-	
-	public void setGizmo_flag(short gizmo_flag) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 9128, gizmo_flag);
-		} else {
-			__io__block.writeShort(__io__address + 9056, gizmo_flag);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'gizmo_size'.
-	 * @see #__DNA__FIELD__gizmo_size
-	 */
-	
-	public short getGizmo_size() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 9130);
-		} else {
-			return __io__block.readShort(__io__address + 9058);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'gizmo_size'.
-	 * @see #__DNA__FIELD__gizmo_size
-	 */
-	
-	public void setGizmo_size(short gizmo_size) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 9130, gizmo_size);
-		} else {
-			__io__block.writeShort(__io__address + 9058, gizmo_size);
 		}
 	}
 
@@ -8251,42 +8329,36 @@ public class UserDef extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member '_pad5'.
-	 * @see #__DNA__FIELD___pad5
+	 * Get method for struct member 'sequencer_proxy_setup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_SeqProxySetup </p>
+	 * @see #__DNA__FIELD__sequencer_proxy_setup
 	 */
 	
-	public CArrayFacade<Byte> get_pad5() throws IOException
+	public short getSequencer_proxy_setup() throws IOException
 	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 13166, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 13166);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 13094, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return __io__block.readShort(__io__address + 13094);
 		}
 	}
 
 	/**
-	 * Set method for struct member '_pad5'.
-	 * @see #__DNA__FIELD___pad5
+	 * Set method for struct member 'sequencer_proxy_setup'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> eUserpref_SeqProxySetup </p>
+	 * @see #__DNA__FIELD__sequencer_proxy_setup
 	 */
 	
-	public void set_pad5(CArrayFacade<Byte> _pad5) throws IOException
+	public void setSequencer_proxy_setup(short sequencer_proxy_setup) throws IOException
 	{
-		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 13166;
+			__io__block.writeShort(__io__address + 13166, sequencer_proxy_setup);
 		} else {
-			__dna__offset = 13094;
-		}
-		if (__io__equals(_pad5, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad5)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad5);
-		} else {
-			__io__generic__copy( get_pad5(), _pad5);
+			__io__block.writeShort(__io__address + 13094, sequencer_proxy_setup);
 		}
 	}
 

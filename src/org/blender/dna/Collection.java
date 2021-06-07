@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=204, size64=288)
+@CMetaData(size32=212, size64=304)
 public class Collection extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Collection extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 326;
+	public static final int __DNA__SDNA_INDEX = 336;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -209,6 +209,30 @@ public class Collection extends CFacade {
 	public static final long[] __DNA__FIELD__tag = new long[]{174, 234};
 
 	/**
+	 * Field descriptor (offset) for struct member 'lineart_usage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <p> Line Art engine specific </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Collection collection = ...;
+	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD__lineart_usage);
+	 * CPointer&lt;Short&gt; p_lineart_usage = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lineart_usage'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lineart_usage = new long[]{176, 236};
+
+	/**
 	 * Field descriptor (offset) for struct member 'color_tag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -229,27 +253,7 @@ public class Collection extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__color_tag = new long[]{176, 236};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Collection collection = ...;
-	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[2]'</li>
-	 * <li>Actual Size (32bit/64bit): 2/2</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{178, 238};
+	public static final long[] __DNA__FIELD__color_tag = new long[]{178, 238};
 
 	/**
 	 * Field descriptor (offset) for struct member 'object_cache'.
@@ -275,6 +279,29 @@ public class Collection extends CFacade {
 	public static final long[] __DNA__FIELD__object_cache = new long[]{180, 240};
 
 	/**
+	 * Field descriptor (offset) for struct member 'object_cache_instanced'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Need this for line art sub-collection selections. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Collection collection = ...;
+	 * CPointer&lt;Object&gt; p = collection.__dna__addressof(Collection.__DNA__FIELD__object_cache_instanced);
+	 * CPointer&lt;ListBase&gt; p_object_cache_instanced = p.cast(new Class[]{ListBase.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'object_cache_instanced'</li>
+	 * <li>Signature: 'ListBase'</li>
+	 * <li>Actual Size (32bit/64bit): 8/16</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__object_cache_instanced = new long[]{188, 256};
+
+	/**
 	 * Field descriptor (offset) for struct member 'parents'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -295,7 +322,7 @@ public class Collection extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__parents = new long[]{188, 256};
+	public static final long[] __DNA__FIELD__parents = new long[]{196, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collection'.
@@ -320,7 +347,7 @@ public class Collection extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collection = new long[]{196, 272};
+	public static final long[] __DNA__FIELD__collection = new long[]{204, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'view_layer'.
@@ -345,7 +372,7 @@ public class Collection extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__view_layer = new long[]{200, 280};
+	public static final long[] __DNA__FIELD__view_layer = new long[]{208, 296};
 
 	public Collection(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -658,6 +685,42 @@ public class Collection extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'lineart_usage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <p> Line Art engine specific </p>
+	 * @see #__DNA__FIELD__lineart_usage
+	 */
+	
+	public short getLineart_usage() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 236);
+		} else {
+			return __io__block.readShort(__io__address + 176);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lineart_usage'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * How to use this collection in line art<h4>Blender Source Code:</h4>
+	 * <p> Line Art engine specific </p>
+	 * @see #__DNA__FIELD__lineart_usage
+	 */
+	
+	public void setLineart_usage(short lineart_usage) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 236, lineart_usage);
+		} else {
+			__io__block.writeShort(__io__address + 176, lineart_usage);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'color_tag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -668,9 +731,9 @@ public class Collection extends CFacade {
 	public short getColor_tag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 236);
+			return __io__block.readShort(__io__address + 238);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 178);
 		}
 	}
 
@@ -685,49 +748,9 @@ public class Collection extends CFacade {
 	public void setColor_tag(short color_tag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 236, color_tag);
+			__io__block.writeShort(__io__address + 238, color_tag);
 		} else {
-			__io__block.writeShort(__io__address + 176, color_tag);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			2
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 238, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 238;
-		} else {
-			__dna__offset = 178;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeShort(__io__address + 178, color_tag);
 		}
 	}
 
@@ -774,6 +797,48 @@ public class Collection extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'object_cache_instanced'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Need this for line art sub-collection selections. </p>
+	 * @see #__DNA__FIELD__object_cache_instanced
+	 */
+	
+	public ListBase getObject_cache_instanced() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+		} else {
+			return new ListBase(__io__address + 188, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'object_cache_instanced'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Need this for line art sub-collection selections. </p>
+	 * @see #__DNA__FIELD__object_cache_instanced
+	 */
+	
+	public void setObject_cache_instanced(ListBase object_cache_instanced) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 256;
+		} else {
+			__dna__offset = 188;
+		}
+		if (__io__equals(object_cache_instanced, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, object_cache_instanced)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, object_cache_instanced);
+		} else {
+			__io__generic__copy( getObject_cache_instanced(), object_cache_instanced);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'parents'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -784,9 +849,9 @@ public class Collection extends CFacade {
 	public ListBase getParents() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new ListBase(__io__address + 256, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 272, __io__block, __io__blockTable);
 		} else {
-			return new ListBase(__io__address + 188, __io__block, __io__blockTable);
+			return new ListBase(__io__address + 196, __io__block, __io__blockTable);
 		}
 	}
 
@@ -802,9 +867,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 256;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 188;
+			__dna__offset = 196;
 		}
 		if (__io__equals(parents, __io__address + __dna__offset)) {
 			return;
@@ -829,9 +894,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 272);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{SceneCollection.class};
 		return new CPointer<SceneCollection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, SceneCollection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -851,9 +916,9 @@ public class Collection extends CFacade {
 	{
 		long __address = ((collection == null) ? 0 : collection.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 272, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -871,9 +936,9 @@ public class Collection extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 296);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ViewLayer.class};
 		return new CPointer<ViewLayer>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ViewLayer.__DNA__SDNA_INDEX), __io__blockTable);
@@ -893,9 +958,9 @@ public class Collection extends CFacade {
 	{
 		long __address = ((view_layer == null) ? 0 : view_layer.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 296, __address);
 		} else {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		}
 	}
 

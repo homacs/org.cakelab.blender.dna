@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> ........ Motion {@link Path}  data cache (mpath)<ul><li><p> for elements providing transforms (i.e. Objects or PoseChannels) </p></li></ul> 
+ * <p> ........ Motion Path data cache (mpath)<ul><li><p> for elements providing transforms (i.e. Objects or PoseChannels) </p></li></ul> 
  * for elements providing transforms (i.e. Objects or PoseChannels) 
  * 
  * </p>
@@ -31,13 +31,13 @@ public class bMotionPath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 330;
+	public static final int __DNA__SDNA_INDEX = 340;
 
 	/**
 	 * Field descriptor (offset) for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  samples. </p>
+	 * <p> Path samples. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -289,7 +289,7 @@ public class bMotionPath extends CFacade {
 	 * Get method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  samples. </p>
+	 * <p> Path samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	
@@ -309,7 +309,7 @@ public class bMotionPath extends CFacade {
 	 * Set method for struct member 'points'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p>{@link Path}  samples. </p>
+	 * <p> Path samples. </p>
 	 * @see #__DNA__FIELD__points
 	 */
 	

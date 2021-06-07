@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> the basis for a Node tree, all links and nodes reside internal here only re-usable node trees are in the library though, materials and textures allocate own tree struct </p>
  */
 
-@CMetaData(size32=360, size64=488)
+@CMetaData(size32=364, size64=496)
 public class bNodeTree extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bNodeTree extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 383;
+	public static final int __DNA__SDNA_INDEX = 393;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -728,6 +728,26 @@ public class bNodeTree extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__udh = new long[]{356, 480};
+
+	/**
+	 * Field descriptor (offset) for struct member 'ui_storage'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeTree bnodetree = ...;
+	 * CPointer&lt;Object&gt; p = bnodetree.__dna__addressof(bNodeTree.__DNA__FIELD__ui_storage);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p_ui_storage = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_storage'</li>
+	 * <li>Signature: 'NodeTreeUIStorage*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_storage = new long[]{360, 488};
 
 	public bNodeTree(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1892,6 +1912,38 @@ public class bNodeTree extends CFacade {
 			__io__block.writeLong(__io__address + 480, __address);
 		} else {
 			__io__block.writeLong(__io__address + 356, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'ui_storage'.
+	 * @see #__DNA__FIELD__ui_storage
+	 */
+	
+	public CPointer<Object> getUi_storage() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 488);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'ui_storage'.
+	 * @see #__DNA__FIELD__ui_storage
+	 */
+	
+	public void setUi_storage(CPointer<Object> ui_storage) throws IOException
+	{
+		long __address = ((ui_storage == null) ? 0 : ui_storage.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 488, __address);
+		} else {
+			__io__block.writeLong(__io__address + 360, __address);
 		}
 	}
 

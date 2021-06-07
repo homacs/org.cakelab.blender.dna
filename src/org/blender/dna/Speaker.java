@@ -27,7 +27,7 @@ public class Speaker extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 591;
+	public static final int __DNA__SDNA_INDEX = 621;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -169,7 +169,7 @@ public class Speaker extends CFacade {
 	 * Field descriptor (offset) for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Reference distance at which volume is 100 %
+	 * Reference distance at which volume is 100%
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -238,7 +238,7 @@ public class Speaker extends CFacade {
 	 * Field descriptor (offset) for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Angle of the inner cone, in degrees, inside the cone the volume is 100 %
+	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -598,7 +598,7 @@ public class Speaker extends CFacade {
 	 * Get method for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Reference distance at which volume is 100 %
+	 * Reference distance at which volume is 100%
 	 * @see #__DNA__FIELD__distance_reference
 	 */
 	
@@ -615,7 +615,7 @@ public class Speaker extends CFacade {
 	 * Set method for struct member 'distance_reference'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Reference distance at which volume is 100 %
+	 * Reference distance at which volume is 100%
 	 * @see #__DNA__FIELD__distance_reference
 	 */
 	
@@ -700,7 +700,7 @@ public class Speaker extends CFacade {
 	 * Get method for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Angle of the inner cone, in degrees, inside the cone the volume is 100 %
+	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * @see #__DNA__FIELD__cone_angle_inner
 	 */
 	
@@ -717,7 +717,7 @@ public class Speaker extends CFacade {
 	 * Set method for struct member 'cone_angle_inner'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Angle of the inner cone, in degrees, inside the cone the volume is 100 %
+	 * Angle of the inner cone, in degrees, inside the cone the volume is 100%
 	 * @see #__DNA__FIELD__cone_angle_inner
 	 */
 	

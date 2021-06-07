@@ -27,7 +27,7 @@ public class FileAssetSelectParams extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 229;
+	public static final int __DNA__SDNA_INDEX = 232;
 
 	/**
 	 * Field descriptor (offset) for struct member 'base_params'.

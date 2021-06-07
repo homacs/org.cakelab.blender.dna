@@ -3,7 +3,6 @@ package org.blender.dna;
 import java.io.IOException;
 import org.cakelab.blender.io.block.Block;
 import org.cakelab.blender.io.block.BlockTable;
-import org.cakelab.blender.nio.CArrayFacade;
 import org.cakelab.blender.nio.CFacade;
 import org.cakelab.blender.nio.CMetaData;
 import org.cakelab.blender.nio.CPointer;
@@ -16,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=8, size64=8)
+@CMetaData(size32=4, size64=4)
 public class NodeGeometryAlignRotationToVector extends CFacade {
 
 	/**
@@ -27,7 +26,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 461;
+	public static final int __DNA__SDNA_INDEX = 478;
 
 	/**
 	 * Field descriptor (offset) for struct member 'axis'.
@@ -53,6 +52,29 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	public static final long[] __DNA__FIELD__axis = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'pivot_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * NodeGeometryAlignRotationToVector nodegeometryalignrotationtovector = ...;
+	 * CPointer&lt;Object&gt; p = nodegeometryalignrotationtovector.__dna__addressof(NodeGeometryAlignRotationToVector.__DNA__FIELD__pivot_axis);
+	 * CPointer&lt;Byte&gt; p_pivot_axis = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'pivot_axis'</li>
+	 * <li>Signature: 'uchar'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__pivot_axis = new long[]{1, 1};
+
+	/**
 	 * Field descriptor (offset) for struct member 'input_type_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -73,7 +95,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__input_type_factor = new long[]{1, 1};
+	public static final long[] __DNA__FIELD__input_type_factor = new long[]{2, 2};
 
 	/**
 	 * Field descriptor (offset) for struct member 'input_type_vector'.
@@ -93,27 +115,7 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__input_type_vector = new long[]{2, 2};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * NodeGeometryAlignRotationToVector nodegeometryalignrotationtovector = ...;
-	 * CPointer&lt;Object&gt; p = nodegeometryalignrotationtovector.__dna__addressof(NodeGeometryAlignRotationToVector.__DNA__FIELD___pad);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[5]'</li>
-	 * <li>Actual Size (32bit/64bit): 5/5</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{3, 3};
+	public static final long[] __DNA__FIELD__input_type_vector = new long[]{3, 3};
 
 	public NodeGeometryAlignRotationToVector(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -158,6 +160,40 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'pivot_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
+	 * @see #__DNA__FIELD__pivot_axis
+	 */
+	
+	public byte getPivot_axis() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1);
+		} else {
+			return __io__block.readByte(__io__address + 1);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'pivot_axis'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> GeometryNodeAlignRotationToVectorPivotAxis </p>
+	 * @see #__DNA__FIELD__pivot_axis
+	 */
+	
+	public void setPivot_axis(byte pivot_axis) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1, pivot_axis);
+		} else {
+			__io__block.writeByte(__io__address + 1, pivot_axis);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'input_type_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -168,9 +204,9 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	public byte getInput_type_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1);
+			return __io__block.readByte(__io__address + 2);
 		} else {
-			return __io__block.readByte(__io__address + 1);
+			return __io__block.readByte(__io__address + 2);
 		}
 	}
 
@@ -185,9 +221,9 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	public void setInput_type_factor(byte input_type_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1, input_type_factor);
+			__io__block.writeByte(__io__address + 2, input_type_factor);
 		} else {
-			__io__block.writeByte(__io__address + 1, input_type_factor);
+			__io__block.writeByte(__io__address + 2, input_type_factor);
 		}
 	}
 
@@ -199,9 +235,9 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	public byte getInput_type_vector() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2);
+			return __io__block.readByte(__io__address + 3);
 		} else {
-			return __io__block.readByte(__io__address + 2);
+			return __io__block.readByte(__io__address + 3);
 		}
 	}
 
@@ -213,49 +249,9 @@ public class NodeGeometryAlignRotationToVector extends CFacade {
 	public void setInput_type_vector(byte input_type_vector) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2, input_type_vector);
+			__io__block.writeByte(__io__address + 3, input_type_vector);
 		} else {
-			__io__block.writeByte(__io__address + 2, input_type_vector);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public CArrayFacade<Byte> get_pad() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			5
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 3, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 3, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad'.
-	 * @see #__DNA__FIELD___pad
-	 */
-	
-	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 3;
-		} else {
-			__dna__offset = 3;
-		}
-		if (__io__equals(_pad, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
-		} else {
-			__io__generic__copy( get_pad(), _pad);
+			__io__block.writeByte(__io__address + 3, input_type_vector);
 		}
 	}
 

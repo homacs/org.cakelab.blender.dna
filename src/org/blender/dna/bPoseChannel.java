@@ -29,7 +29,7 @@ public class bPoseChannel extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 333;
+	public static final int __DNA__SDNA_INDEX = 343;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -746,7 +746,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Matrix result of loc/quat/size, and where we put deform in, see next line </p>
+	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -769,7 +769,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space. </p>
+	 * <p><code></code>  this matrix is object space. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -815,7 +815,7 @@ public class bPoseChannel extends CFacade {
 	 * Field descriptor (offset) for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For display, pose_mat with bone length applied and translated to tai.l </p>
+	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2631,7 +2631,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Matrix result of loc/quat/size, and where we put deform in, see next line </p>
+	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -2653,7 +2653,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'chan_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Matrix result of loc/quat/size, and where we put deform in, see next line </p>
+	 * <p><code></code>  (without {@link Bone.arm_mat} ). </p>
 	 * @see #__DNA__FIELD__chan_mat
 	 */
 	
@@ -2678,7 +2678,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space. </p>
+	 * <p><code></code>  this matrix is object space. </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
 	
@@ -2700,7 +2700,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'pose_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Constraints accumulate here. in the end, pose_mat = bone->arm_mat * chan_mat this matrix is object space. </p>
+	 * <p><code></code>  this matrix is object space. </p>
 	 * @see #__DNA__FIELD__pose_mat
 	 */
 	
@@ -2772,7 +2772,7 @@ public class bPoseChannel extends CFacade {
 	 * Get method for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For display, pose_mat with bone length applied and translated to tai.l </p>
+	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * @see #__DNA__FIELD__disp_tail_mat
 	 */
 	
@@ -2794,7 +2794,7 @@ public class bPoseChannel extends CFacade {
 	 * Set method for struct member 'disp_tail_mat'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> For display, pose_mat with bone length applied and translated to tai.l </p>
+	 * <p> For display, pose_mat with bone length applied and translated to tail. </p>
 	 * @see #__DNA__FIELD__disp_tail_mat
 	 */
 	

@@ -27,7 +27,7 @@ public class uiList extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 279;
+	public static final int __DNA__SDNA_INDEX = 289;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -122,7 +122,7 @@ public class uiList extends CFacade {
 	 * Field descriptor (offset) for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list. </p>
+	 * <p> How items are laid out in the list. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -516,7 +516,7 @@ public class uiList extends CFacade {
 	 * Get method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list. </p>
+	 * <p> How items are laid out in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
 	
@@ -533,7 +533,7 @@ public class uiList extends CFacade {
 	 * Set method for struct member 'layout_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How items are layedout in the list. </p>
+	 * <p> How items are laid out in the list. </p>
 	 * @see #__DNA__FIELD__layout_type
 	 */
 	

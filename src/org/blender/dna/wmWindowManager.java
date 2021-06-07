@@ -28,7 +28,7 @@ public class wmWindowManager extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 548;
+	public static final int __DNA__SDNA_INDEX = 578;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -229,27 +229,27 @@ public class wmWindowManager extends CFacade {
 	public static final long[] __DNA__FIELD__operators = new long[]{160, 216};
 
 	/**
-	 * Field descriptor (offset) for struct member 'queue'.
+	 * Field descriptor (offset) for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Refresh/redraw wmNotifier structs. </p>
+	 * <p> Refresh/redraw #wmNotifier structs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
 	 * </p>
 	 * <pre>
 	 * wmWindowManager wmwindowmanager = ...;
-	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__queue);
-	 * CPointer&lt;ListBase&gt; p_queue = p.cast(new Class[]{ListBase.class});
+	 * CPointer&lt;Object&gt; p = wmwindowmanager.__dna__addressof(wmWindowManager.__DNA__FIELD__notifier_queue);
+	 * CPointer&lt;ListBase&gt; p_notifier_queue = p.cast(new Class[]{ListBase.class});
 	 * </pre>
 	 * <h3>Metadata</h3>
 	 * <ul>
-	 * <li>Field: 'queue'</li>
+	 * <li>Field: 'notifier_queue'</li>
 	 * <li>Signature: 'ListBase'</li>
 	 * <li>Actual Size (32bit/64bit): 8/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__queue = new long[]{168, 232};
+	public static final long[] __DNA__FIELD__notifier_queue = new long[]{168, 232};
 
 	/**
 	 * Field descriptor (offset) for struct member 'reports'.
@@ -919,14 +919,14 @@ public class wmWindowManager extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'queue'.
+	 * Get method for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Refresh/redraw wmNotifier structs. </p>
-	 * @see #__DNA__FIELD__queue
+	 * <p> Refresh/redraw #wmNotifier structs. </p>
+	 * @see #__DNA__FIELD__notifier_queue
 	 */
 	
-	public ListBase getQueue() throws IOException
+	public ListBase getNotifier_queue() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
 			return new ListBase(__io__address + 232, __io__block, __io__blockTable);
@@ -936,14 +936,14 @@ public class wmWindowManager extends CFacade {
 	}
 
 	/**
-	 * Set method for struct member 'queue'.
+	 * Set method for struct member 'notifier_queue'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Refresh/redraw wmNotifier structs. </p>
-	 * @see #__DNA__FIELD__queue
+	 * <p> Refresh/redraw #wmNotifier structs. </p>
+	 * @see #__DNA__FIELD__notifier_queue
 	 */
 	
-	public void setQueue(ListBase queue) throws IOException
+	public void setNotifier_queue(ListBase notifier_queue) throws IOException
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
@@ -951,12 +951,12 @@ public class wmWindowManager extends CFacade {
 		} else {
 			__dna__offset = 168;
 		}
-		if (__io__equals(queue, __io__address + __dna__offset)) {
+		if (__io__equals(notifier_queue, __io__address + __dna__offset)) {
 			return;
-		} else if (__io__same__encoding(this, queue)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, queue);
+		} else if (__io__same__encoding(this, notifier_queue)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, notifier_queue);
 		} else {
-			__io__generic__copy( getQueue(), queue);
+			__io__generic__copy( getNotifier_queue(), notifier_queue);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=272, size64=344)
+@CMetaData(size32=280, size64=352)
 public class Material extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class Material extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 50;
+	public static final int __DNA__SDNA_INDEX = 51;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -922,6 +922,29 @@ public class Material extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__gp_style = new long[]{268, 336};
+
+	/**
+	 * Field descriptor (offset) for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for material
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Material material = ...;
+	 * CPointer&lt;Object&gt; p = material.__dna__addressof(Material.__DNA__FIELD__lineart);
+	 * CPointer&lt;MaterialLineArt&gt; p_lineart = p.cast(new Class[]{MaterialLineArt.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lineart'</li>
+	 * <li>Signature: 'MaterialLineArt'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lineart = new long[]{272, 344};
 
 	public Material(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2312,6 +2335,48 @@ public class Material extends CFacade {
 			__io__block.writeLong(__io__address + 336, __address);
 		} else {
 			__io__block.writeLong(__io__address + 268, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for material
+	 * @see #__DNA__FIELD__lineart
+	 */
+	
+	public MaterialLineArt getLineart() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new MaterialLineArt(__io__address + 344, __io__block, __io__blockTable);
+		} else {
+			return new MaterialLineArt(__io__address + 272, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for material
+	 * @see #__DNA__FIELD__lineart
+	 */
+	
+	public void setLineart(MaterialLineArt lineart) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 344;
+		} else {
+			__dna__offset = 272;
+		}
+		if (__io__equals(lineart, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, lineart)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, lineart);
+		} else {
+			__io__generic__copy( getLineart(), lineart);
 		}
 	}
 

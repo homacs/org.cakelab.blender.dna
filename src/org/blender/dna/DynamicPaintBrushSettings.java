@@ -28,7 +28,7 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 615;
+	public static final int __DNA__SDNA_INDEX = 645;
 
 	/**
 	 * Field descriptor (offset) for struct member 'pmd'.
@@ -57,7 +57,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code><code></code> . </p>
+	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -548,7 +550,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Get method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code><code></code> . </p>
+	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	
@@ -568,7 +572,9 @@ public class DynamicPaintBrushSettings extends CFacade {
 	 * Set method for struct member 'psys'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p><code></code><code></code> . </p>
+	 * <p><h2>Note</h2><p><code></code><code></code> . </p> Storing the particle system pointer here is very weak, as it prevents modifiers' data copying to be self-sufficient (extra external code needs to ensure the pointer remains valid when the modifier data is copied from one object to another). See e.g. BKE_object_copy_particlesystems or BKE_object_copy_modifier. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__psys
 	 */
 	

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Actions -----------------------------------<mdash/>  Action - reusable F-Curve 'bag' (act)</p><p> This contains F-Curves that may affect settings from more than one {@link ID}  blocktype and/or datablock (i.e. sub-data linked/used directly to the {@link ID}  block that the animation data is linked to), but with the restriction that the other unrelated data (i.e. data that is not directly used or linked to by the source {@link ID}  block).</p><p> It serves as a 'unit' of reusable animation information (i.e. keyframes/motion data), that affects a group of related settings (as defined by the user). </p>
  */
 
-@CMetaData(size32=184, size64=256)
+@CMetaData(size32=188, size64=264)
 public class bAction extends CFacade {
 
 	/**
@@ -28,13 +28,13 @@ public class bAction extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 338;
+	public static final int __DNA__SDNA_INDEX = 348;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> -serialisation for relinking. </p>
+	 * <p> -serialization for relinking. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -236,6 +236,26 @@ public class bAction extends CFacade {
 	 */
 	public static final long[] __DNA__FIELD___pad = new long[]{180, 252};
 
+	/**
+	 * Field descriptor (offset) for struct member 'preview'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bAction baction = ...;
+	 * CPointer&lt;Object&gt; p = baction.__dna__addressof(bAction.__DNA__FIELD__preview);
+	 * CPointer&lt;CPointer&lt;PreviewImage&gt;&gt; p_preview = p.cast(new Class[]{CPointer.class, PreviewImage.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'preview'</li>
+	 * <li>Signature: 'PreviewImage*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__preview = new long[]{184, 256};
+
 	public bAction(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
 	}
@@ -248,7 +268,7 @@ public class bAction extends CFacade {
 	 * Get method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> -serialisation for relinking. </p>
+	 * <p> -serialization for relinking. </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -265,7 +285,7 @@ public class bAction extends CFacade {
 	 * Set method for struct member 'id'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> -serialisation for relinking. </p>
+	 * <p> -serialization for relinking. </p>
 	 * @see #__DNA__FIELD__id
 	 */
 	
@@ -597,6 +617,38 @@ public class bAction extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public CPointer<PreviewImage> getPreview() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 184);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
+		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member 'preview'.
+	 * @see #__DNA__FIELD__preview
+	 */
+	
+	public void setPreview(CPointer<PreviewImage> preview) throws IOException
+	{
+		long __address = ((preview == null) ? 0 : preview.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 256, __address);
+		} else {
+			__io__block.writeLong(__io__address + 184, __address);
 		}
 	}
 

@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Layer' </p>
  */
 
-@CMetaData(size32=476, size64=512)
+@CMetaData(size32=644, size64=680)
 public class bGPDlayer extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDlayer extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 512;
+	public static final int __DNA__SDNA_INDEX = 541;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -683,6 +683,129 @@ public class bGPDlayer extends CFacade {
 	public static final long[] __DNA__FIELD___pad2 = new long[]{460, 492};
 
 	/**
+	 * Field descriptor (offset) for struct member 'location'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer transforms. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__location);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_location = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'location'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__location = new long[]{464, 496};
+
+	/**
+	 * Field descriptor (offset) for struct member 'rotation'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__rotation);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_rotation = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'rotation'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__rotation = new long[]{476, 508};
+
+	/**
+	 * Field descriptor (offset) for struct member 'scale'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__scale);
+	 * CPointer&lt;CArrayFacade&lt;Float&gt;&gt; p_scale = p.cast(new Class[]{CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'scale'</li>
+	 * <li>Signature: 'float[3]'</li>
+	 * <li>Actual Size (32bit/64bit): 12/12</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__scale = new long[]{488, 520};
+
+	/**
+	 * Field descriptor (offset) for struct member 'layer_mat'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__layer_mat);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_layer_mat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'layer_mat'</li>
+	 * <li>Signature: 'float[4][4]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__layer_mat = new long[]{500, 532};
+
+	/**
+	 * Field descriptor (offset) for struct member 'layer_invmat'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD__layer_invmat);
+	 * CPointer&lt;CArrayFacade&lt;CArrayFacade&lt;Float&gt;&gt;&gt; p_layer_invmat = p.cast(new Class[]{CArrayFacade.class, CArrayFacade.class, Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'layer_invmat'</li>
+	 * <li>Signature: 'float[4][4]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__layer_invmat = new long[]{564, 596};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDlayer bgpdlayer = ...;
+	 * CPointer&lt;Object&gt; p = bgpdlayer.__dna__addressof(bGPDlayer.__DNA__FIELD___pad3);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{628, 660};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -700,7 +823,7 @@ public class bGPDlayer extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{464, 496};
+	public static final long[] __DNA__FIELD__runtime = new long[]{632, 664};
 
 	public bGPDlayer(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1832,6 +1955,254 @@ public class bGPDlayer extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'location'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer transforms. </p>
+	 * @see #__DNA__FIELD__location
+	 */
+	
+	public CArrayFacade<Float> getLocation() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 496, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 464, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'location'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Layer transforms. </p>
+	 * @see #__DNA__FIELD__location
+	 */
+	
+	public void setLocation(CArrayFacade<Float> location) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 496;
+		} else {
+			__dna__offset = 464;
+		}
+		if (__io__equals(location, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, location)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, location);
+		} else {
+			__io__generic__copy( getLocation(), location);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public CArrayFacade<Float> getRotation() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 508, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 476, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'rotation'.
+	 * @see #__DNA__FIELD__rotation
+	 */
+	
+	public void setRotation(CArrayFacade<Float> rotation) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 508;
+		} else {
+			__dna__offset = 476;
+		}
+		if (__io__equals(rotation, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, rotation)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, rotation);
+		} else {
+			__io__generic__copy( getRotation(), rotation);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'scale'.
+	 * @see #__DNA__FIELD__scale
+	 */
+	
+	public CArrayFacade<Float> getScale() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Float.class};
+		int[] __dna__dimensions = new int[]{
+			3
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Float>(__io__address + 520, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Float>(__io__address + 488, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'scale'.
+	 * @see #__DNA__FIELD__scale
+	 */
+	
+	public void setScale(CArrayFacade<Float> scale) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 520;
+		} else {
+			__dna__offset = 488;
+		}
+		if (__io__equals(scale, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, scale)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, scale);
+		} else {
+			__io__generic__copy( getScale(), scale);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'layer_mat'.
+	 * @see #__DNA__FIELD__layer_mat
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getLayer_mat() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			4,
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 532, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 500, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'layer_mat'.
+	 * @see #__DNA__FIELD__layer_mat
+	 */
+	
+	public void setLayer_mat(CArrayFacade<CArrayFacade<Float>> layer_mat) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 532;
+		} else {
+			__dna__offset = 500;
+		}
+		if (__io__equals(layer_mat, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, layer_mat)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, layer_mat);
+		} else {
+			__io__generic__copy( getLayer_mat(), layer_mat);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'layer_invmat'.
+	 * @see #__DNA__FIELD__layer_invmat
+	 */
+	
+	public CArrayFacade<CArrayFacade<Float>> getLayer_invmat() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{CArrayFacade.class, Float.class};
+		int[] __dna__dimensions = new int[]{
+			4,
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 596, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<CArrayFacade<Float>>(__io__address + 564, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'layer_invmat'.
+	 * @see #__DNA__FIELD__layer_invmat
+	 */
+	
+	public void setLayer_invmat(CArrayFacade<CArrayFacade<Float>> layer_invmat) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 596;
+		} else {
+			__dna__offset = 564;
+		}
+		if (__io__equals(layer_invmat, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, layer_invmat)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, layer_invmat);
+		} else {
+			__io__generic__copy( getLayer_invmat(), layer_invmat);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CArrayFacade<Byte> get_pad3() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 660, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 628, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 660;
+		} else {
+			__dna__offset = 628;
+		}
+		if (__io__equals(_pad3, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad3)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
+		} else {
+			__io__generic__copy( get_pad3(), _pad3);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -1839,9 +2210,9 @@ public class bGPDlayer extends CFacade {
 	public bGPDlayer_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPDlayer_Runtime(__io__address + 496, __io__block, __io__blockTable);
+			return new bGPDlayer_Runtime(__io__address + 664, __io__block, __io__blockTable);
 		} else {
-			return new bGPDlayer_Runtime(__io__address + 464, __io__block, __io__blockTable);
+			return new bGPDlayer_Runtime(__io__address + 632, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1854,9 +2225,9 @@ public class bGPDlayer extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 496;
+			__dna__offset = 664;
 		} else {
-			__dna__offset = 464;
+			__dna__offset = 632;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

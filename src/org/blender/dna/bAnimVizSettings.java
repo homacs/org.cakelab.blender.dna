@@ -28,7 +28,7 @@ public class bAnimVizSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 331;
+	public static final int __DNA__SDNA_INDEX = 341;
 
 	/**
 	 * Field descriptor (offset) for struct member 'recalc'.
@@ -57,7 +57,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion Path Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -297,7 +297,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Get method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion Path Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	
@@ -314,7 +314,7 @@ public class bAnimVizSettings extends CFacade {
 	 * Set method for struct member 'path_type'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Motion {@link Path}  Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
+	 * <p> Motion Path Settings ----------------<mdash/>  {@link eMotionPath_Types} . </p>
 	 * @see #__DNA__FIELD__path_type
 	 */
 	

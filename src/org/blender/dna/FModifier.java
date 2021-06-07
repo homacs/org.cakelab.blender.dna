@@ -18,7 +18,7 @@ import org.cakelab.blender.nio.CPointer;
  *  F-Curve DataTypes Modifiers -----------------------------------<mdash/>  F-Curve Modifiers (fcm)</p><p> These alter the way F-Curves behave, by altering the value that is returned when evaluating the curve's data at some time (t). </p>
  */
 
-@CMetaData(size32=104, size64=120)
+@CMetaData(size32=112, size64=128)
 public class FModifier extends CFacade {
 
 	/**
@@ -29,7 +29,7 @@ public class FModifier extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 556;
+	public static final int __DNA__SDNA_INDEX = 586;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -188,6 +188,49 @@ public class FModifier extends CFacade {
 	public static final long[] __DNA__FIELD__flag = new long[]{82, 98};
 
 	/**
+	 * Field descriptor (offset) for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  total panels). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FModifier fmodifier = ...;
+	 * CPointer&lt;Object&gt; p = fmodifier.__dna__addressof(FModifier.__DNA__FIELD__ui_expand_flag);
+	 * CPointer&lt;Short&gt; p_ui_expand_flag = p.cast(new Class[]{Short.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'ui_expand_flag'</li>
+	 * <li>Signature: 'short'</li>
+	 * <li>Actual Size (32bit/64bit): 2/2</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__ui_expand_flag = new long[]{84, 100};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * FModifier fmodifier = ...;
+	 * CPointer&lt;Object&gt; p = fmodifier.__dna__addressof(FModifier.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{86, 102};
+
+	/**
 	 * Field descriptor (offset) for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -209,7 +252,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__influence = new long[]{84, 100};
+	public static final long[] __DNA__FIELD__influence = new long[]{92, 108};
 
 	/**
 	 * Field descriptor (offset) for struct member 'sfra'.
@@ -232,7 +275,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sfra = new long[]{88, 104};
+	public static final long[] __DNA__FIELD__sfra = new long[]{96, 112};
 
 	/**
 	 * Field descriptor (offset) for struct member 'efra'.
@@ -255,7 +298,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__efra = new long[]{92, 108};
+	public static final long[] __DNA__FIELD__efra = new long[]{100, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendin'.
@@ -278,7 +321,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendin = new long[]{96, 112};
+	public static final long[] __DNA__FIELD__blendin = new long[]{104, 120};
 
 	/**
 	 * Field descriptor (offset) for struct member 'blendout'.
@@ -301,7 +344,7 @@ public class FModifier extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__blendout = new long[]{100, 116};
+	public static final long[] __DNA__FIELD__blendout = new long[]{108, 124};
 
 	public FModifier(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -568,6 +611,80 @@ public class FModifier extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  total panels). </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
+	 */
+	
+	public short getUi_expand_flag() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readShort(__io__address + 100);
+		} else {
+			return __io__block.readShort(__io__address + 84);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'ui_expand_flag'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p><code></code>  total panels). </p>
+	 * @see #__DNA__FIELD__ui_expand_flag
+	 */
+	
+	public void setUi_expand_flag(short ui_expand_flag) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeShort(__io__address + 100, ui_expand_flag);
+		} else {
+			__io__block.writeShort(__io__address + 84, ui_expand_flag);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			6
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 102, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 86, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 102;
+		} else {
+			__dna__offset = 86;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'influence'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -579,9 +696,9 @@ public class FModifier extends CFacade {
 	public float getInfluence() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 108);
 		} else {
-			return __io__block.readFloat(__io__address + 84);
+			return __io__block.readFloat(__io__address + 92);
 		}
 	}
 
@@ -597,9 +714,9 @@ public class FModifier extends CFacade {
 	public void setInfluence(float influence) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 100, influence);
+			__io__block.writeFloat(__io__address + 108, influence);
 		} else {
-			__io__block.writeFloat(__io__address + 84, influence);
+			__io__block.writeFloat(__io__address + 92, influence);
 		}
 	}
 
@@ -614,9 +731,9 @@ public class FModifier extends CFacade {
 	public float getSfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 104);
+			return __io__block.readFloat(__io__address + 112);
 		} else {
-			return __io__block.readFloat(__io__address + 88);
+			return __io__block.readFloat(__io__address + 96);
 		}
 	}
 
@@ -631,9 +748,9 @@ public class FModifier extends CFacade {
 	public void setSfra(float sfra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 104, sfra);
+			__io__block.writeFloat(__io__address + 112, sfra);
 		} else {
-			__io__block.writeFloat(__io__address + 88, sfra);
+			__io__block.writeFloat(__io__address + 96, sfra);
 		}
 	}
 
@@ -648,9 +765,9 @@ public class FModifier extends CFacade {
 	public float getEfra() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 92);
+			return __io__block.readFloat(__io__address + 100);
 		}
 	}
 
@@ -665,9 +782,9 @@ public class FModifier extends CFacade {
 	public void setEfra(float efra) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 108, efra);
+			__io__block.writeFloat(__io__address + 116, efra);
 		} else {
-			__io__block.writeFloat(__io__address + 92, efra);
+			__io__block.writeFloat(__io__address + 100, efra);
 		}
 	}
 
@@ -682,9 +799,9 @@ public class FModifier extends CFacade {
 	public float getBlendin() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 96);
+			return __io__block.readFloat(__io__address + 104);
 		}
 	}
 
@@ -699,9 +816,9 @@ public class FModifier extends CFacade {
 	public void setBlendin(float blendin) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, blendin);
+			__io__block.writeFloat(__io__address + 120, blendin);
 		} else {
-			__io__block.writeFloat(__io__address + 96, blendin);
+			__io__block.writeFloat(__io__address + 104, blendin);
 		}
 	}
 
@@ -716,9 +833,9 @@ public class FModifier extends CFacade {
 	public float getBlendout() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 124);
 		} else {
-			return __io__block.readFloat(__io__address + 100);
+			return __io__block.readFloat(__io__address + 108);
 		}
 	}
 
@@ -733,9 +850,9 @@ public class FModifier extends CFacade {
 	public void setBlendout(float blendout) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, blendout);
+			__io__block.writeFloat(__io__address + 124, blendout);
 		} else {
-			__io__block.writeFloat(__io__address + 100, blendout);
+			__io__block.writeFloat(__io__address + 108, blendout);
 		}
 	}
 

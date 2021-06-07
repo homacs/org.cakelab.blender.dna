@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
  * <p><hr/> 
- *  {@link KeyingSet}  Datatypes {@link Path}  for use in {@link KeyingSet}  definitions (ksp)</p><p> Paths may be either specific (specifying the exact sub-ID dynamic data-block - such as PoseChannels - to act upon, ala Maya's 'Character Sets' and XSI's 'Marking Sets'), or they may be generic (using various placeholder template tags that will be replaced with appropriate information from the context). </p>
+ *  {@link KeyingSet}  Datatypes Path for use in {@link KeyingSet}  definitions (ksp)</p><p> Paths may be either specific (specifying the exact sub-ID dynamic data-block - such as PoseChannels - to act upon, ala Maya's 'Character Sets' and XSI's 'Marking Sets'), or they may be generic (using various placeholder template tags that will be replaced with appropriate information from the context). </p>
  */
 
 @CMetaData(size32=96, size64=112)
@@ -29,7 +29,7 @@ public class KS_Path extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 573;
+	public static final int __DNA__SDNA_INDEX = 603;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

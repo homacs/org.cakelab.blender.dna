@@ -28,7 +28,7 @@ public class LightProbeCache extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 687;
+	public static final int __DNA__SDNA_INDEX = 717;
 
 	/**
 	 * Field descriptor (offset) for struct member 'position'.

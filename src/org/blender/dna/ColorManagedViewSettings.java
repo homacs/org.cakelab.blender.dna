@@ -27,7 +27,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 470;
+	public static final int __DNA__SDNA_INDEX = 499;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -122,7 +122,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> Fstop exposure. </p>
+	 * <p> F-stop exposure. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -386,7 +386,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> Fstop exposure. </p>
+	 * <p> F-stop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	
@@ -404,7 +404,7 @@ public class ColorManagedViewSettings extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Exposure (stops) applied before display transform<h4>Blender Source Code:</h4>
-	 * <p> Fstop exposure. </p>
+	 * <p> F-stop exposure. </p>
 	 * @see #__DNA__FIELD__exposure
 	 */
 	

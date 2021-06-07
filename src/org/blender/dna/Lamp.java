@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=348, size64=408)
+@CMetaData(size32=356, size64=416)
 public class Lamp extends CFacade {
 
 	/**
@@ -870,6 +870,26 @@ public class Lamp extends CFacade {
 	public static final long[] __DNA__FIELD__area_sizez = new long[]{272, 320};
 
 	/**
+	 * Field descriptor (offset) for struct member 'area_spread'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lamp lamp = ...;
+	 * CPointer&lt;Object&gt; p = lamp.__dna__addressof(Lamp.__DNA__FIELD__area_spread);
+	 * CPointer&lt;Float&gt; p_area_spread = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'area_spread'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__area_spread = new long[]{276, 324};
+
+	/**
 	 * Field descriptor (offset) for struct member 'sun_angle'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -887,27 +907,7 @@ public class Lamp extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__sun_angle = new long[]{276, 324};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad3'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * Lamp lamp = ...;
-	 * CPointer&lt;Object&gt; p = lamp.__dna__addressof(Lamp.__DNA__FIELD___pad3);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad3 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad3'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{280, 328};
+	public static final long[] __DNA__FIELD__sun_angle = new long[]{280, 328};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texact'.
@@ -1190,6 +1190,46 @@ public class Lamp extends CFacade {
 	public static final long[] __DNA__FIELD__contact_thickness = new long[]{328, 380};
 
 	/**
+	 * Field descriptor (offset) for struct member 'diff_fac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lamp lamp = ...;
+	 * CPointer&lt;Object&gt; p = lamp.__dna__addressof(Lamp.__DNA__FIELD__diff_fac);
+	 * CPointer&lt;Float&gt; p_diff_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'diff_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__diff_fac = new long[]{332, 384};
+
+	/**
+	 * Field descriptor (offset) for struct member 'volume_fac'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Lamp lamp = ...;
+	 * CPointer&lt;Object&gt; p = lamp.__dna__addressof(Lamp.__DNA__FIELD__volume_fac);
+	 * CPointer&lt;Float&gt; p_volume_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'volume_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__volume_fac = new long[]{336, 388};
+
+	/**
 	 * Field descriptor (offset) for struct member 'spec_fac'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1207,7 +1247,7 @@ public class Lamp extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__spec_fac = new long[]{332, 384};
+	public static final long[] __DNA__FIELD__spec_fac = new long[]{340, 392};
 
 	/**
 	 * Field descriptor (offset) for struct member 'att_dist'.
@@ -1227,7 +1267,7 @@ public class Lamp extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__att_dist = new long[]{336, 388};
+	public static final long[] __DNA__FIELD__att_dist = new long[]{344, 396};
 
 	/**
 	 * Field descriptor (offset) for struct member 'preview'.
@@ -1247,7 +1287,7 @@ public class Lamp extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__preview = new long[]{340, 392};
+	public static final long[] __DNA__FIELD__preview = new long[]{348, 400};
 
 	/**
 	 * Field descriptor (offset) for struct member 'nodetree'.
@@ -1267,7 +1307,7 @@ public class Lamp extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__nodetree = new long[]{344, 400};
+	public static final long[] __DNA__FIELD__nodetree = new long[]{352, 408};
 
 	public Lamp(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2494,6 +2534,34 @@ public class Lamp extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'area_spread'.
+	 * @see #__DNA__FIELD__area_spread
+	 */
+	
+	public float getArea_spread() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 324);
+		} else {
+			return __io__block.readFloat(__io__address + 276);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'area_spread'.
+	 * @see #__DNA__FIELD__area_spread
+	 */
+	
+	public void setArea_spread(float area_spread) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 324, area_spread);
+		} else {
+			__io__block.writeFloat(__io__address + 276, area_spread);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'sun_angle'.
 	 * @see #__DNA__FIELD__sun_angle
 	 */
@@ -2501,9 +2569,9 @@ public class Lamp extends CFacade {
 	public float getSun_angle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 324);
+			return __io__block.readFloat(__io__address + 328);
 		} else {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 280);
 		}
 	}
 
@@ -2515,49 +2583,9 @@ public class Lamp extends CFacade {
 	public void setSun_angle(float sun_angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 324, sun_angle);
+			__io__block.writeFloat(__io__address + 328, sun_angle);
 		} else {
-			__io__block.writeFloat(__io__address + 276, sun_angle);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public CArrayFacade<Byte> get_pad3() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 328, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 280, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad3'.
-	 * @see #__DNA__FIELD___pad3
-	 */
-	
-	public void set_pad3(CArrayFacade<Byte> _pad3) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 328;
-		} else {
-			__dna__offset = 280;
-		}
-		if (__io__equals(_pad3, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad3)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad3);
-		} else {
-			__io__generic__copy( get_pad3(), _pad3);
+			__io__block.writeFloat(__io__address + 280, sun_angle);
 		}
 	}
 
@@ -2970,6 +2998,62 @@ public class Lamp extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'diff_fac'.
+	 * @see #__DNA__FIELD__diff_fac
+	 */
+	
+	public float getDiff_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 384);
+		} else {
+			return __io__block.readFloat(__io__address + 332);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'diff_fac'.
+	 * @see #__DNA__FIELD__diff_fac
+	 */
+	
+	public void setDiff_fac(float diff_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 384, diff_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 332, diff_fac);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'volume_fac'.
+	 * @see #__DNA__FIELD__volume_fac
+	 */
+	
+	public float getVolume_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 388);
+		} else {
+			return __io__block.readFloat(__io__address + 336);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'volume_fac'.
+	 * @see #__DNA__FIELD__volume_fac
+	 */
+	
+	public void setVolume_fac(float volume_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 388, volume_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 336, volume_fac);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'spec_fac'.
 	 * @see #__DNA__FIELD__spec_fac
 	 */
@@ -2977,9 +3061,9 @@ public class Lamp extends CFacade {
 	public float getSpec_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 384);
+			return __io__block.readFloat(__io__address + 392);
 		} else {
-			return __io__block.readFloat(__io__address + 332);
+			return __io__block.readFloat(__io__address + 340);
 		}
 	}
 
@@ -2991,9 +3075,9 @@ public class Lamp extends CFacade {
 	public void setSpec_fac(float spec_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 384, spec_fac);
+			__io__block.writeFloat(__io__address + 392, spec_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 332, spec_fac);
+			__io__block.writeFloat(__io__address + 340, spec_fac);
 		}
 	}
 
@@ -3005,9 +3089,9 @@ public class Lamp extends CFacade {
 	public float getAtt_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 388);
+			return __io__block.readFloat(__io__address + 396);
 		} else {
-			return __io__block.readFloat(__io__address + 336);
+			return __io__block.readFloat(__io__address + 344);
 		}
 	}
 
@@ -3019,9 +3103,9 @@ public class Lamp extends CFacade {
 	public void setAtt_dist(float att_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 388, att_dist);
+			__io__block.writeFloat(__io__address + 396, att_dist);
 		} else {
-			__io__block.writeFloat(__io__address + 336, att_dist);
+			__io__block.writeFloat(__io__address + 344, att_dist);
 		}
 	}
 
@@ -3034,9 +3118,9 @@ public class Lamp extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 392);
+			__dna__targetAddress = __io__block.readLong(__io__address + 400);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 340);
+			__dna__targetAddress = __io__block.readLong(__io__address + 348);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{PreviewImage.class};
 		return new CPointer<PreviewImage>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, PreviewImage.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3051,9 +3135,9 @@ public class Lamp extends CFacade {
 	{
 		long __address = ((preview == null) ? 0 : preview.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 392, __address);
+			__io__block.writeLong(__io__address + 400, __address);
 		} else {
-			__io__block.writeLong(__io__address + 340, __address);
+			__io__block.writeLong(__io__address + 348, __address);
 		}
 	}
 
@@ -3066,9 +3150,9 @@ public class Lamp extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 400);
+			__dna__targetAddress = __io__block.readLong(__io__address + 408);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bNodeTree.class};
 		return new CPointer<bNodeTree>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bNodeTree.__DNA__SDNA_INDEX), __io__blockTable);
@@ -3083,9 +3167,9 @@ public class Lamp extends CFacade {
 	{
 		long __address = ((nodetree == null) ? 0 : nodetree.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 400, __address);
+			__io__block.writeLong(__io__address + 408, __address);
 		} else {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		}
 	}
 

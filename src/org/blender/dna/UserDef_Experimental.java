@@ -27,7 +27,7 @@ public class UserDef_Experimental extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 270;
+	public static final int __DNA__SDNA_INDEX = 280;
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_undo_legacy'.
@@ -53,6 +53,26 @@ public class UserDef_Experimental extends CFacade {
 	public static final long[] __DNA__FIELD__use_undo_legacy = new long[]{0, 0};
 
 	/**
+	 * Field descriptor (offset) for struct member 'no_override_auto_resync'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__no_override_auto_resync);
+	 * CPointer&lt;Byte&gt; p_no_override_auto_resync = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'no_override_auto_resync'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__no_override_auto_resync = new long[]{1, 1};
+
+	/**
 	 * Field descriptor (offset) for struct member 'use_cycles_debug'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -70,7 +90,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_cycles_debug = new long[]{1, 1};
+	public static final long[] __DNA__FIELD__use_cycles_debug = new long[]{2, 2};
 
 	/**
 	 * Field descriptor (offset) for struct member 'SANITIZE_AFTER_HERE'.
@@ -90,7 +110,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__SANITIZE_AFTER_HERE = new long[]{2, 2};
+	public static final long[] __DNA__FIELD__SANITIZE_AFTER_HERE = new long[]{3, 3};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_hair_type'.
@@ -113,7 +133,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_new_hair_type = new long[]{3, 3};
+	public static final long[] __DNA__FIELD__use_new_hair_type = new long[]{4, 4};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_new_point_cloud_type'.
@@ -133,7 +153,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_new_point_cloud_type = new long[]{4, 4};
+	public static final long[] __DNA__FIELD__use_new_point_cloud_type = new long[]{5, 5};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_sculpt_vertex_colors'.
@@ -153,27 +173,7 @@ public class UserDef_Experimental extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__use_sculpt_vertex_colors = new long[]{5, 5};
-
-	/**
-	 * Field descriptor (offset) for struct member 'use_switch_object_operator'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * UserDef_Experimental userdef_experimental = ...;
-	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_switch_object_operator);
-	 * CPointer&lt;Byte&gt; p_use_switch_object_operator = p.cast(new Class[]{Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: 'use_switch_object_operator'</li>
-	 * <li>Signature: 'char'</li>
-	 * <li>Actual Size (32bit/64bit): 1/1</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD__use_switch_object_operator = new long[]{6, 6};
+	public static final long[] __DNA__FIELD__use_sculpt_vertex_colors = new long[]{6, 6};
 
 	/**
 	 * Field descriptor (offset) for struct member 'use_sculpt_tools_tilt'.
@@ -216,6 +216,26 @@ public class UserDef_Experimental extends CFacade {
 	public static final long[] __DNA__FIELD__use_asset_browser = new long[]{8, 8};
 
 	/**
+	 * Field descriptor (offset) for struct member 'use_override_templates'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * UserDef_Experimental userdef_experimental = ...;
+	 * CPointer&lt;Object&gt; p = userdef_experimental.__dna__addressof(UserDef_Experimental.__DNA__FIELD__use_override_templates);
+	 * CPointer&lt;Byte&gt; p_use_override_templates = p.cast(new Class[]{Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'use_override_templates'</li>
+	 * <li>Signature: 'char'</li>
+	 * <li>Actual Size (32bit/64bit): 1/1</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__use_override_templates = new long[]{9, 9};
+
+	/**
 	 * Field descriptor (offset) for struct member '_pad'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -229,11 +249,11 @@ public class UserDef_Experimental extends CFacade {
 	 * <h3>Metadata</h3>
 	 * <ul>
 	 * <li>Field: '_pad'</li>
-	 * <li>Signature: 'char[7]'</li>
-	 * <li>Actual Size (32bit/64bit): 7/7</li>
+	 * <li>Signature: 'char[6]'</li>
+	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{9, 9};
+	public static final long[] __DNA__FIELD___pad = new long[]{10, 10};
 
 	public UserDef_Experimental(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -278,6 +298,34 @@ public class UserDef_Experimental extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'no_override_auto_resync'.
+	 * @see #__DNA__FIELD__no_override_auto_resync
+	 */
+	
+	public byte getNo_override_auto_resync() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 1);
+		} else {
+			return __io__block.readByte(__io__address + 1);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'no_override_auto_resync'.
+	 * @see #__DNA__FIELD__no_override_auto_resync
+	 */
+	
+	public void setNo_override_auto_resync(byte no_override_auto_resync) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 1, no_override_auto_resync);
+		} else {
+			__io__block.writeByte(__io__address + 1, no_override_auto_resync);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'use_cycles_debug'.
 	 * @see #__DNA__FIELD__use_cycles_debug
 	 */
@@ -285,9 +333,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_cycles_debug() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 1);
+			return __io__block.readByte(__io__address + 2);
 		} else {
-			return __io__block.readByte(__io__address + 1);
+			return __io__block.readByte(__io__address + 2);
 		}
 	}
 
@@ -299,9 +347,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_cycles_debug(byte use_cycles_debug) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 1, use_cycles_debug);
+			__io__block.writeByte(__io__address + 2, use_cycles_debug);
 		} else {
-			__io__block.writeByte(__io__address + 1, use_cycles_debug);
+			__io__block.writeByte(__io__address + 2, use_cycles_debug);
 		}
 	}
 
@@ -313,9 +361,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getSANITIZE_AFTER_HERE() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 2);
+			return __io__block.readByte(__io__address + 3);
 		} else {
-			return __io__block.readByte(__io__address + 2);
+			return __io__block.readByte(__io__address + 3);
 		}
 	}
 
@@ -327,9 +375,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setSANITIZE_AFTER_HERE(byte SANITIZE_AFTER_HERE) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 2, SANITIZE_AFTER_HERE);
+			__io__block.writeByte(__io__address + 3, SANITIZE_AFTER_HERE);
 		} else {
-			__io__block.writeByte(__io__address + 2, SANITIZE_AFTER_HERE);
+			__io__block.writeByte(__io__address + 3, SANITIZE_AFTER_HERE);
 		}
 	}
 
@@ -344,9 +392,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_new_hair_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 3);
+			return __io__block.readByte(__io__address + 4);
 		} else {
-			return __io__block.readByte(__io__address + 3);
+			return __io__block.readByte(__io__address + 4);
 		}
 	}
 
@@ -361,9 +409,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_new_hair_type(byte use_new_hair_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 3, use_new_hair_type);
+			__io__block.writeByte(__io__address + 4, use_new_hair_type);
 		} else {
-			__io__block.writeByte(__io__address + 3, use_new_hair_type);
+			__io__block.writeByte(__io__address + 4, use_new_hair_type);
 		}
 	}
 
@@ -375,9 +423,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_new_point_cloud_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 4);
+			return __io__block.readByte(__io__address + 5);
 		} else {
-			return __io__block.readByte(__io__address + 4);
+			return __io__block.readByte(__io__address + 5);
 		}
 	}
 
@@ -389,9 +437,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_new_point_cloud_type(byte use_new_point_cloud_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 4, use_new_point_cloud_type);
+			__io__block.writeByte(__io__address + 5, use_new_point_cloud_type);
 		} else {
-			__io__block.writeByte(__io__address + 4, use_new_point_cloud_type);
+			__io__block.writeByte(__io__address + 5, use_new_point_cloud_type);
 		}
 	}
 
@@ -403,9 +451,9 @@ public class UserDef_Experimental extends CFacade {
 	public byte getUse_sculpt_vertex_colors() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 6);
 		} else {
-			return __io__block.readByte(__io__address + 5);
+			return __io__block.readByte(__io__address + 6);
 		}
 	}
 
@@ -417,37 +465,9 @@ public class UserDef_Experimental extends CFacade {
 	public void setUse_sculpt_vertex_colors(byte use_sculpt_vertex_colors) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 5, use_sculpt_vertex_colors);
+			__io__block.writeByte(__io__address + 6, use_sculpt_vertex_colors);
 		} else {
-			__io__block.writeByte(__io__address + 5, use_sculpt_vertex_colors);
-		}
-	}
-
-	/**
-	 * Get method for struct member 'use_switch_object_operator'.
-	 * @see #__DNA__FIELD__use_switch_object_operator
-	 */
-	
-	public byte getUse_switch_object_operator() throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 6);
-		} else {
-			return __io__block.readByte(__io__address + 6);
-		}
-	}
-
-	/**
-	 * Set method for struct member 'use_switch_object_operator'.
-	 * @see #__DNA__FIELD__use_switch_object_operator
-	 */
-	
-	public void setUse_switch_object_operator(byte use_switch_object_operator) throws IOException
-	{
-		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 6, use_switch_object_operator);
-		} else {
-			__io__block.writeByte(__io__address + 6, use_switch_object_operator);
+			__io__block.writeByte(__io__address + 6, use_sculpt_vertex_colors);
 		}
 	}
 
@@ -508,6 +528,34 @@ public class UserDef_Experimental extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'use_override_templates'.
+	 * @see #__DNA__FIELD__use_override_templates
+	 */
+	
+	public byte getUse_override_templates() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readByte(__io__address + 9);
+		} else {
+			return __io__block.readByte(__io__address + 9);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'use_override_templates'.
+	 * @see #__DNA__FIELD__use_override_templates
+	 */
+	
+	public void setUse_override_templates(byte use_override_templates) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeByte(__io__address + 9, use_override_templates);
+		} else {
+			__io__block.writeByte(__io__address + 9, use_override_templates);
+		}
+	}
+
+	/**
 	 * Get method for struct member '_pad'.
 	 * @see #__DNA__FIELD___pad
 	 */
@@ -516,12 +564,12 @@ public class UserDef_Experimental extends CFacade {
 	{
 		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
 		int[] __dna__dimensions = new int[]{
-			7
+			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 9, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 10, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -534,9 +582,9 @@ public class UserDef_Experimental extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 9;
+			__dna__offset = 10;
 		} else {
-			__dna__offset = 9;
+			__dna__offset = 10;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

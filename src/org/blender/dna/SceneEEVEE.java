@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=272, size64=280)
+@CMetaData(size32=280, size64=288)
 public class SceneEEVEE extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class SceneEEVEE extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 207;
+	public static final int __DNA__SDNA_INDEX = 210;
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -665,6 +665,29 @@ public class SceneEEVEE extends CFacade {
 	public static final long[] __DNA__FIELD__gtao_quality = new long[]{108, 108};
 
 	/**
+	 * Field descriptor (offset) for struct member 'bokeh_overblur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Apply blur to each jittered sample to reduce under-sampling artifacts
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SceneEEVEE sceneeevee = ...;
+	 * CPointer&lt;Object&gt; p = sceneeevee.__dna__addressof(SceneEEVEE.__DNA__FIELD__bokeh_overblur);
+	 * CPointer&lt;Float&gt; p_bokeh_overblur = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bokeh_overblur'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bokeh_overblur = new long[]{112, 112};
+
+	/**
 	 * Field descriptor (offset) for struct member 'bokeh_max_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -685,7 +708,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bokeh_max_size = new long[]{112, 112};
+	public static final long[] __DNA__FIELD__bokeh_max_size = new long[]{116, 116};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bokeh_threshold'.
@@ -708,7 +731,53 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bokeh_threshold = new long[]{116, 116};
+	public static final long[] __DNA__FIELD__bokeh_threshold = new long[]{120, 120};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bokeh_neighbor_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SceneEEVEE sceneeevee = ...;
+	 * CPointer&lt;Object&gt; p = sceneeevee.__dna__addressof(SceneEEVEE.__DNA__FIELD__bokeh_neighbor_max);
+	 * CPointer&lt;Float&gt; p_bokeh_neighbor_max = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bokeh_neighbor_max'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bokeh_neighbor_max = new long[]{124, 124};
+
+	/**
+	 * Field descriptor (offset) for struct member 'bokeh_denoise_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of flicker removal applied to bokeh highlights
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * SceneEEVEE sceneeevee = ...;
+	 * CPointer&lt;Object&gt; p = sceneeevee.__dna__addressof(SceneEEVEE.__DNA__FIELD__bokeh_denoise_fac);
+	 * CPointer&lt;Float&gt; p_bokeh_denoise_fac = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bokeh_denoise_fac'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bokeh_denoise_fac = new long[]{128, 128};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_color'.
@@ -731,7 +800,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_color = new long[]{120, 120};
+	public static final long[] __DNA__FIELD__bloom_color = new long[]{132, 132};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_threshold'.
@@ -754,7 +823,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_threshold = new long[]{132, 132};
+	public static final long[] __DNA__FIELD__bloom_threshold = new long[]{144, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_knee'.
@@ -777,7 +846,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_knee = new long[]{136, 136};
+	public static final long[] __DNA__FIELD__bloom_knee = new long[]{148, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_intensity'.
@@ -800,7 +869,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_intensity = new long[]{140, 140};
+	public static final long[] __DNA__FIELD__bloom_intensity = new long[]{152, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_radius'.
@@ -823,7 +892,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_radius = new long[]{144, 144};
+	public static final long[] __DNA__FIELD__bloom_radius = new long[]{156, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bloom_clamp'.
@@ -846,7 +915,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bloom_clamp = new long[]{148, 148};
+	public static final long[] __DNA__FIELD__bloom_clamp = new long[]{160, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_samples'.
@@ -871,7 +940,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_samples = new long[]{152, 152};
+	public static final long[] __DNA__FIELD__motion_blur_samples = new long[]{164, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_max'.
@@ -894,7 +963,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_max = new long[]{156, 156};
+	public static final long[] __DNA__FIELD__motion_blur_max = new long[]{168, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_steps'.
@@ -917,7 +986,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_steps = new long[]{160, 160};
+	public static final long[] __DNA__FIELD__motion_blur_steps = new long[]{172, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_position'.
@@ -940,7 +1009,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_position = new long[]{164, 164};
+	public static final long[] __DNA__FIELD__motion_blur_position = new long[]{176, 176};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_shutter'.
@@ -963,7 +1032,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_shutter = new long[]{168, 168};
+	public static final long[] __DNA__FIELD__motion_blur_shutter = new long[]{180, 180};
 
 	/**
 	 * Field descriptor (offset) for struct member 'motion_blur_depth_scale'.
@@ -986,27 +1055,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__motion_blur_depth_scale = new long[]{172, 172};
-
-	/**
-	 * Field descriptor (offset) for struct member '_pad0'.
-	 * <h3>Pointer Arithmetics</h3>
-	 * <p>
-	 * This is how you get a reference on the corresponding field in the struct:
-	 * </p>
-	 * <pre>
-	 * SceneEEVEE sceneeevee = ...;
-	 * CPointer&lt;Object&gt; p = sceneeevee.__dna__addressof(SceneEEVEE.__DNA__FIELD___pad0);
-	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad0 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
-	 * </pre>
-	 * <h3>Metadata</h3>
-	 * <ul>
-	 * <li>Field: '_pad0'</li>
-	 * <li>Signature: 'char[4]'</li>
-	 * <li>Actual Size (32bit/64bit): 4/4</li>
-	 * </ul>
-	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{176, 176};
+	public static final long[] __DNA__FIELD__motion_blur_depth_scale = new long[]{184, 184};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_method'.
@@ -1031,7 +1080,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadow_method = new long[]{180, 180};
+	public static final long[] __DNA__FIELD__shadow_method = new long[]{188, 188};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_cube_size'.
@@ -1054,7 +1103,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadow_cube_size = new long[]{184, 184};
+	public static final long[] __DNA__FIELD__shadow_cube_size = new long[]{192, 192};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shadow_cascade_size'.
@@ -1077,7 +1126,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shadow_cascade_size = new long[]{188, 188};
+	public static final long[] __DNA__FIELD__shadow_cascade_size = new long[]{196, 196};
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_cache'.
@@ -1102,7 +1151,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__light_cache = new long[]{192, 192};
+	public static final long[] __DNA__FIELD__light_cache = new long[]{200, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_cache_data'.
@@ -1122,7 +1171,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__light_cache_data = new long[]{196, 200};
+	public static final long[] __DNA__FIELD__light_cache_data = new long[]{204, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_cache_info'.
@@ -1142,7 +1191,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__light_cache_info = new long[]{200, 208};
+	public static final long[] __DNA__FIELD__light_cache_info = new long[]{208, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'overscan'.
@@ -1162,7 +1211,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__overscan = new long[]{264, 272};
+	public static final long[] __DNA__FIELD__overscan = new long[]{272, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'light_threshold'.
@@ -1185,7 +1234,7 @@ public class SceneEEVEE extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__light_threshold = new long[]{268, 276};
+	public static final long[] __DNA__FIELD__light_threshold = new long[]{276, 284};
 
 	public SceneEEVEE(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -2130,6 +2179,40 @@ public class SceneEEVEE extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'bokeh_overblur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Apply blur to each jittered sample to reduce under-sampling artifacts
+	 * @see #__DNA__FIELD__bokeh_overblur
+	 */
+	
+	public float getBokeh_overblur() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 112);
+		} else {
+			return __io__block.readFloat(__io__address + 112);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bokeh_overblur'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Apply blur to each jittered sample to reduce under-sampling artifacts
+	 * @see #__DNA__FIELD__bokeh_overblur
+	 */
+	
+	public void setBokeh_overblur(float bokeh_overblur) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 112, bokeh_overblur);
+		} else {
+			__io__block.writeFloat(__io__address + 112, bokeh_overblur);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'bokeh_max_size'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
@@ -2140,9 +2223,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBokeh_max_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 116);
 		} else {
-			return __io__block.readFloat(__io__address + 112);
+			return __io__block.readFloat(__io__address + 116);
 		}
 	}
 
@@ -2157,9 +2240,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBokeh_max_size(float bokeh_max_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 112, bokeh_max_size);
+			__io__block.writeFloat(__io__address + 116, bokeh_max_size);
 		} else {
-			__io__block.writeFloat(__io__address + 112, bokeh_max_size);
+			__io__block.writeFloat(__io__address + 116, bokeh_max_size);
 		}
 	}
 
@@ -2174,9 +2257,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBokeh_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -2191,9 +2274,77 @@ public class SceneEEVEE extends CFacade {
 	public void setBokeh_threshold(float bokeh_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 116, bokeh_threshold);
+			__io__block.writeFloat(__io__address + 120, bokeh_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 116, bokeh_threshold);
+			__io__block.writeFloat(__io__address + 120, bokeh_threshold);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bokeh_neighbor_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
+	 * @see #__DNA__FIELD__bokeh_neighbor_max
+	 */
+	
+	public float getBokeh_neighbor_max() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 124);
+		} else {
+			return __io__block.readFloat(__io__address + 124);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bokeh_neighbor_max'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Maximum brightness to consider when rejecting bokeh sprites based on neighborhood (lower is faster)
+	 * @see #__DNA__FIELD__bokeh_neighbor_max
+	 */
+	
+	public void setBokeh_neighbor_max(float bokeh_neighbor_max) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 124, bokeh_neighbor_max);
+		} else {
+			__io__block.writeFloat(__io__address + 124, bokeh_neighbor_max);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'bokeh_denoise_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of flicker removal applied to bokeh highlights
+	 * @see #__DNA__FIELD__bokeh_denoise_fac
+	 */
+	
+	public float getBokeh_denoise_fac() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 128);
+		} else {
+			return __io__block.readFloat(__io__address + 128);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bokeh_denoise_fac'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * Amount of flicker removal applied to bokeh highlights
+	 * @see #__DNA__FIELD__bokeh_denoise_fac
+	 */
+	
+	public void setBokeh_denoise_fac(float bokeh_denoise_fac) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 128, bokeh_denoise_fac);
+		} else {
+			__io__block.writeFloat(__io__address + 128, bokeh_denoise_fac);
 		}
 	}
 
@@ -2212,9 +2363,9 @@ public class SceneEEVEE extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2230,9 +2381,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 120;
+			__dna__offset = 132;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 132;
 		}
 		if (__io__equals(bloom_color, __io__address + __dna__offset)) {
 			return;
@@ -2254,9 +2405,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBloom_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 132);
+			return __io__block.readFloat(__io__address + 144);
 		}
 	}
 
@@ -2271,9 +2422,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBloom_threshold(float bloom_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 132, bloom_threshold);
+			__io__block.writeFloat(__io__address + 144, bloom_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 132, bloom_threshold);
+			__io__block.writeFloat(__io__address + 144, bloom_threshold);
 		}
 	}
 
@@ -2288,9 +2439,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBloom_knee() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 148);
 		}
 	}
 
@@ -2305,9 +2456,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBloom_knee(float bloom_knee) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, bloom_knee);
+			__io__block.writeFloat(__io__address + 148, bloom_knee);
 		} else {
-			__io__block.writeFloat(__io__address + 136, bloom_knee);
+			__io__block.writeFloat(__io__address + 148, bloom_knee);
 		}
 	}
 
@@ -2322,9 +2473,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBloom_intensity() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 152);
 		}
 	}
 
@@ -2339,9 +2490,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBloom_intensity(float bloom_intensity) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, bloom_intensity);
+			__io__block.writeFloat(__io__address + 152, bloom_intensity);
 		} else {
-			__io__block.writeFloat(__io__address + 140, bloom_intensity);
+			__io__block.writeFloat(__io__address + 152, bloom_intensity);
 		}
 	}
 
@@ -2356,9 +2507,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBloom_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 156);
 		} else {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 156);
 		}
 	}
 
@@ -2373,9 +2524,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBloom_radius(float bloom_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, bloom_radius);
+			__io__block.writeFloat(__io__address + 156, bloom_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 144, bloom_radius);
+			__io__block.writeFloat(__io__address + 156, bloom_radius);
 		}
 	}
 
@@ -2390,9 +2541,9 @@ public class SceneEEVEE extends CFacade {
 	public float getBloom_clamp() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 160);
 		} else {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 160);
 		}
 	}
 
@@ -2407,9 +2558,9 @@ public class SceneEEVEE extends CFacade {
 	public void setBloom_clamp(float bloom_clamp) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, bloom_clamp);
+			__io__block.writeFloat(__io__address + 160, bloom_clamp);
 		} else {
-			__io__block.writeFloat(__io__address + 148, bloom_clamp);
+			__io__block.writeFloat(__io__address + 160, bloom_clamp);
 		}
 	}
 
@@ -2426,9 +2577,9 @@ public class SceneEEVEE extends CFacade {
 	public int getMotion_blur_samples() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 164);
 		}
 	}
 
@@ -2445,9 +2596,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_samples(int motion_blur_samples) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, motion_blur_samples);
+			__io__block.writeInt(__io__address + 164, motion_blur_samples);
 		} else {
-			__io__block.writeInt(__io__address + 152, motion_blur_samples);
+			__io__block.writeInt(__io__address + 164, motion_blur_samples);
 		}
 	}
 
@@ -2462,9 +2613,9 @@ public class SceneEEVEE extends CFacade {
 	public int getMotion_blur_max() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 168);
 		}
 	}
 
@@ -2479,9 +2630,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_max(int motion_blur_max) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, motion_blur_max);
+			__io__block.writeInt(__io__address + 168, motion_blur_max);
 		} else {
-			__io__block.writeInt(__io__address + 156, motion_blur_max);
+			__io__block.writeInt(__io__address + 168, motion_blur_max);
 		}
 	}
 
@@ -2496,9 +2647,9 @@ public class SceneEEVEE extends CFacade {
 	public int getMotion_blur_steps() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 172);
 		} else {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 172);
 		}
 	}
 
@@ -2513,9 +2664,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_steps(int motion_blur_steps) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 160, motion_blur_steps);
+			__io__block.writeInt(__io__address + 172, motion_blur_steps);
 		} else {
-			__io__block.writeInt(__io__address + 160, motion_blur_steps);
+			__io__block.writeInt(__io__address + 172, motion_blur_steps);
 		}
 	}
 
@@ -2530,9 +2681,9 @@ public class SceneEEVEE extends CFacade {
 	public int getMotion_blur_position() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 176);
 		} else {
-			return __io__block.readInt(__io__address + 164);
+			return __io__block.readInt(__io__address + 176);
 		}
 	}
 
@@ -2547,9 +2698,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_position(int motion_blur_position) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 164, motion_blur_position);
+			__io__block.writeInt(__io__address + 176, motion_blur_position);
 		} else {
-			__io__block.writeInt(__io__address + 164, motion_blur_position);
+			__io__block.writeInt(__io__address + 176, motion_blur_position);
 		}
 	}
 
@@ -2564,9 +2715,9 @@ public class SceneEEVEE extends CFacade {
 	public float getMotion_blur_shutter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 180);
 		} else {
-			return __io__block.readFloat(__io__address + 168);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -2581,9 +2732,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_shutter(float motion_blur_shutter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 168, motion_blur_shutter);
+			__io__block.writeFloat(__io__address + 180, motion_blur_shutter);
 		} else {
-			__io__block.writeFloat(__io__address + 168, motion_blur_shutter);
+			__io__block.writeFloat(__io__address + 180, motion_blur_shutter);
 		}
 	}
 
@@ -2598,9 +2749,9 @@ public class SceneEEVEE extends CFacade {
 	public float getMotion_blur_depth_scale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 184);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -2615,49 +2766,9 @@ public class SceneEEVEE extends CFacade {
 	public void setMotion_blur_depth_scale(float motion_blur_depth_scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 172, motion_blur_depth_scale);
+			__io__block.writeFloat(__io__address + 184, motion_blur_depth_scale);
 		} else {
-			__io__block.writeFloat(__io__address + 172, motion_blur_depth_scale);
-		}
-	}
-
-	/**
-	 * Get method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public CArrayFacade<Byte> get_pad0() throws IOException
-	{
-		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
-		int[] __dna__dimensions = new int[]{
-			4
-		};
-		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		} else {
-			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
-		}
-	}
-
-	/**
-	 * Set method for struct member '_pad0'.
-	 * @see #__DNA__FIELD___pad0
-	 */
-	
-	public void set_pad0(CArrayFacade<Byte> _pad0) throws IOException
-	{
-		long __dna__offset;
-		if ((__io__pointersize == 8)) {
-			__dna__offset = 176;
-		} else {
-			__dna__offset = 176;
-		}
-		if (__io__equals(_pad0, __io__address + __dna__offset)) {
-			return;
-		} else if (__io__same__encoding(this, _pad0)) {
-			__io__native__copy(__io__block, __io__address + __dna__offset, _pad0);
-		} else {
-			__io__generic__copy( get_pad0(), _pad0);
+			__io__block.writeFloat(__io__address + 184, motion_blur_depth_scale);
 		}
 	}
 
@@ -2674,9 +2785,9 @@ public class SceneEEVEE extends CFacade {
 	public int getShadow_method() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		} else {
-			return __io__block.readInt(__io__address + 180);
+			return __io__block.readInt(__io__address + 188);
 		}
 	}
 
@@ -2693,9 +2804,9 @@ public class SceneEEVEE extends CFacade {
 	public void setShadow_method(int shadow_method) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 180, shadow_method);
+			__io__block.writeInt(__io__address + 188, shadow_method);
 		} else {
-			__io__block.writeInt(__io__address + 180, shadow_method);
+			__io__block.writeInt(__io__address + 188, shadow_method);
 		}
 	}
 
@@ -2710,9 +2821,9 @@ public class SceneEEVEE extends CFacade {
 	public int getShadow_cube_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 192);
 		} else {
-			return __io__block.readInt(__io__address + 184);
+			return __io__block.readInt(__io__address + 192);
 		}
 	}
 
@@ -2727,9 +2838,9 @@ public class SceneEEVEE extends CFacade {
 	public void setShadow_cube_size(int shadow_cube_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 184, shadow_cube_size);
+			__io__block.writeInt(__io__address + 192, shadow_cube_size);
 		} else {
-			__io__block.writeInt(__io__address + 184, shadow_cube_size);
+			__io__block.writeInt(__io__address + 192, shadow_cube_size);
 		}
 	}
 
@@ -2744,9 +2855,9 @@ public class SceneEEVEE extends CFacade {
 	public int getShadow_cascade_size() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 196);
 		} else {
-			return __io__block.readInt(__io__address + 188);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -2761,9 +2872,9 @@ public class SceneEEVEE extends CFacade {
 	public void setShadow_cascade_size(int shadow_cascade_size) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 188, shadow_cascade_size);
+			__io__block.writeInt(__io__address + 196, shadow_cascade_size);
 		} else {
-			__io__block.writeInt(__io__address + 188, shadow_cascade_size);
+			__io__block.writeInt(__io__address + 196, shadow_cascade_size);
 		}
 	}
 
@@ -2781,9 +2892,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 192);
+			__dna__targetAddress = __io__block.readLong(__io__address + 200);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightCache.class};
 		return new CPointer<LightCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2803,9 +2914,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __address = ((light_cache == null) ? 0 : light_cache.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		} else {
-			__io__block.writeLong(__io__address + 192, __address);
+			__io__block.writeLong(__io__address + 200, __address);
 		}
 	}
 
@@ -2818,9 +2929,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 200);
+			__dna__targetAddress = __io__block.readLong(__io__address + 208);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 196);
+			__dna__targetAddress = __io__block.readLong(__io__address + 204);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{LightCache.class};
 		return new CPointer<LightCache>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, LightCache.__DNA__SDNA_INDEX), __io__blockTable);
@@ -2835,9 +2946,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __address = ((light_cache_data == null) ? 0 : light_cache_data.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 200, __address);
+			__io__block.writeLong(__io__address + 208, __address);
 		} else {
-			__io__block.writeLong(__io__address + 196, __address);
+			__io__block.writeLong(__io__address + 204, __address);
 		}
 	}
 
@@ -2853,9 +2964,9 @@ public class SceneEEVEE extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 216, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 208, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -2868,9 +2979,9 @@ public class SceneEEVEE extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 208;
+			__dna__offset = 216;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 208;
 		}
 		if (__io__equals(light_cache_info, __io__address + __dna__offset)) {
 			return;
@@ -2889,9 +3000,9 @@ public class SceneEEVEE extends CFacade {
 	public float getOverscan() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 264);
+			return __io__block.readFloat(__io__address + 272);
 		}
 	}
 
@@ -2903,9 +3014,9 @@ public class SceneEEVEE extends CFacade {
 	public void setOverscan(float overscan) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, overscan);
+			__io__block.writeFloat(__io__address + 280, overscan);
 		} else {
-			__io__block.writeFloat(__io__address + 264, overscan);
+			__io__block.writeFloat(__io__address + 272, overscan);
 		}
 	}
 
@@ -2920,9 +3031,9 @@ public class SceneEEVEE extends CFacade {
 	public float getLight_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 276);
+			return __io__block.readFloat(__io__address + 284);
 		} else {
-			return __io__block.readFloat(__io__address + 268);
+			return __io__block.readFloat(__io__address + 276);
 		}
 	}
 
@@ -2937,9 +3048,9 @@ public class SceneEEVEE extends CFacade {
 	public void setLight_threshold(float light_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 276, light_threshold);
+			__io__block.writeFloat(__io__address + 284, light_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 268, light_threshold);
+			__io__block.writeFloat(__io__address + 276, light_threshold);
 		}
 	}
 

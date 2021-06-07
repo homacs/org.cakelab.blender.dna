@@ -27,7 +27,7 @@ public class SoftBody extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 167;
+	public static final int __DNA__SDNA_INDEX = 170;
 
 	/**
 	 * Field descriptor (offset) for struct member 'totpoint'.
@@ -228,7 +228,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Softbody amount of gravitaion to apply. </p>
+	 * <p> Softbody amount of gravitation to apply. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1165,7 +1165,7 @@ public class SoftBody extends CFacade {
 	 * Field descriptor (offset) for struct member 'lcom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> reverse esimated obmatrix .. no need to store in blend file .. how ever who cares </p>
+	 * <p> Reverse estimated object-matrix (run-time data, no need to store in the file). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1558,7 +1558,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Softbody amount of gravitaion to apply. </p>
+	 * <p> Softbody amount of gravitation to apply. </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -1575,7 +1575,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'grav'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Softbody amount of gravitaion to apply. </p>
+	 * <p> Softbody amount of gravitation to apply. </p>
 	 * @see #__DNA__FIELD__grav
 	 */
 	
@@ -2972,7 +2972,7 @@ public class SoftBody extends CFacade {
 	 * Get method for struct member 'lcom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> reverse esimated obmatrix .. no need to store in blend file .. how ever who cares </p>
+	 * <p> Reverse estimated object-matrix (run-time data, no need to store in the file). </p>
 	 * @see #__DNA__FIELD__lcom
 	 */
 	
@@ -2993,7 +2993,7 @@ public class SoftBody extends CFacade {
 	 * Set method for struct member 'lcom'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> reverse esimated obmatrix .. no need to store in blend file .. how ever who cares </p>
+	 * <p> Reverse estimated object-matrix (run-time data, no need to store in the file). </p>
 	 * @see #__DNA__FIELD__lcom
 	 */
 	

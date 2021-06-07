@@ -13,7 +13,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> Follow {@link Path}  constraints </p>
+ * <p> Follow Path constraints </p>
  */
 
 @CMetaData(size32=20, size64=24)
@@ -27,7 +27,7 @@ public class bFollowPathConstraint extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 360;
+	public static final int __DNA__SDNA_INDEX = 370;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tar'.

@@ -28,7 +28,7 @@ public class wmKeyMapItem extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 550;
+	public static final int __DNA__SDNA_INDEX = 580;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -295,7 +295,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Field descriptor (offset) for struct member 'keymodifier'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rawkey modifier. </p>
+	 * <p> Raw-key modifier. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -407,7 +407,9 @@ public class wmKeyMapItem extends CFacade {
 	 * Field descriptor (offset) for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rna pointer to access properties. </p>
+	 * <p> RNA pointer to access properties.</p><p><h2>Note</h2><p><code></code>  value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. </p> The ptr.owner_id value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. 
+	 * 
+	 * </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -852,7 +854,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Get method for struct member 'keymodifier'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rawkey modifier. </p>
+	 * <p> Raw-key modifier. </p>
 	 * @see #__DNA__FIELD__keymodifier
 	 */
 	
@@ -869,7 +871,7 @@ public class wmKeyMapItem extends CFacade {
 	 * Set method for struct member 'keymodifier'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rawkey modifier. </p>
+	 * <p> Raw-key modifier. </p>
 	 * @see #__DNA__FIELD__keymodifier
 	 */
 	
@@ -1028,7 +1030,9 @@ public class wmKeyMapItem extends CFacade {
 	 * Get method for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rna pointer to access properties. </p>
+	 * <p> RNA pointer to access properties.</p><p><h2>Note</h2><p><code></code>  value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. </p> The ptr.owner_id value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	
@@ -1048,7 +1052,9 @@ public class wmKeyMapItem extends CFacade {
 	 * Set method for struct member 'ptr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Rna pointer to access properties. </p>
+	 * <p> RNA pointer to access properties.</p><p><h2>Note</h2><p><code></code>  value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. </p> The ptr.owner_id value must be NULL, as a signal not to use the context when running property callbacks such as ENUM item functions. 
+	 * 
+	 * </p>
 	 * @see #__DNA__FIELD__ptr
 	 */
 	

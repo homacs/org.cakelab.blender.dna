@@ -28,7 +28,7 @@ public class ClothSimSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 496;
+	public static final int __DNA__SDNA_INDEX = 525;
 
 	/**
 	 * Field descriptor (offset) for struct member 'cache'.
@@ -151,8 +151,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. <br/> 
-	 *  </p>
+	 * <p> This is the duration of our time step, computed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -455,7 +454,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector forces (see #softbody_calc_forces). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -478,8 +477,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
-	 *  </p>
+	 * <p> Scaling of effector wind (see #softbody_calc_forces). </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -745,7 +743,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'uniform_pressure_force'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Air pressure The uniform pressure that is constanty applied to the mesh. Can be negative </p>
+	 * <p> Air pressure The uniform pressure that is constantly applied to the mesh. Can be negative. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -791,7 +789,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'pressure_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The scaling factor to apply to the actual pressure. pressure=( (current_volume/target_volume) - 1 + uniform_pressure_force) * pressure_factor </p>
+	 * <p><code></code>  </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -814,7 +812,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'fluid_density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Density of the fluid inside or outside the object for use in the hydrostatic pressure gradient. </p>
+	 * <p> Density of the fluid inside or outside the object for use in the hydro-static pressure gradient. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1410,7 +1408,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'internal_spring_max_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The maximum lenght an internal spring can have during creation. </p>
+	 * <p> The maximum length an internal spring can have during creation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1433,7 +1431,7 @@ public class ClothSimSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'internal_spring_max_diversion'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How much the interal spring can diverge from the vertex normal during creation. </p>
+	 * <p> How much the internal spring can diverge from the vertex normal during creation. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1797,8 +1795,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. <br/> 
-	 *  </p>
+	 * <p> This is the duration of our time step, computed. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -1815,8 +1812,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'dt'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> This is the duration of our time step, computed.. <br/> 
-	 *  </p>
+	 * <p> This is the duration of our time step, computed. </p>
 	 * @see #__DNA__FIELD__dt
 	 */
 	
@@ -2249,7 +2245,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector forces (see #softbody_calc_forces). </p>
 	 * @see #__DNA__FIELD__eff_force_scale
 	 */
 	
@@ -2266,7 +2262,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'eff_force_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector forces (see softbody_calc_forces).. </p>
+	 * <p> Scaling of effector forces (see #softbody_calc_forces). </p>
 	 * @see #__DNA__FIELD__eff_force_scale
 	 */
 	
@@ -2283,8 +2279,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
-	 *  </p>
+	 * <p> Scaling of effector wind (see #softbody_calc_forces). </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -2301,8 +2296,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'eff_wind_scale'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Scaling of effector wind (see softbody_calc_forces).. <br/> 
-	 *  </p>
+	 * <p> Scaling of effector wind (see #softbody_calc_forces). </p>
 	 * @see #__DNA__FIELD__eff_wind_scale
 	 */
 	
@@ -2673,7 +2667,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'uniform_pressure_force'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Air pressure The uniform pressure that is constanty applied to the mesh. Can be negative </p>
+	 * <p> Air pressure The uniform pressure that is constantly applied to the mesh. Can be negative. </p>
 	 * @see #__DNA__FIELD__uniform_pressure_force
 	 */
 	
@@ -2690,7 +2684,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'uniform_pressure_force'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Air pressure The uniform pressure that is constanty applied to the mesh. Can be negative </p>
+	 * <p> Air pressure The uniform pressure that is constantly applied to the mesh. Can be negative. </p>
 	 * @see #__DNA__FIELD__uniform_pressure_force
 	 */
 	
@@ -2741,7 +2735,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'pressure_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The scaling factor to apply to the actual pressure. pressure=( (current_volume/target_volume) - 1 + uniform_pressure_force) * pressure_factor </p>
+	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__pressure_factor
 	 */
 	
@@ -2758,7 +2752,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'pressure_factor'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The scaling factor to apply to the actual pressure. pressure=( (current_volume/target_volume) - 1 + uniform_pressure_force) * pressure_factor </p>
+	 * <p><code></code>  </p>
 	 * @see #__DNA__FIELD__pressure_factor
 	 */
 	
@@ -2775,7 +2769,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'fluid_density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Density of the fluid inside or outside the object for use in the hydrostatic pressure gradient. </p>
+	 * <p> Density of the fluid inside or outside the object for use in the hydro-static pressure gradient. </p>
 	 * @see #__DNA__FIELD__fluid_density
 	 */
 	
@@ -2792,7 +2786,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'fluid_density'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Density of the fluid inside or outside the object for use in the hydrostatic pressure gradient. </p>
+	 * <p> Density of the fluid inside or outside the object for use in the hydro-static pressure gradient. </p>
 	 * @see #__DNA__FIELD__fluid_density
 	 */
 	
@@ -3659,7 +3653,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'internal_spring_max_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The maximum lenght an internal spring can have during creation. </p>
+	 * <p> The maximum length an internal spring can have during creation. </p>
 	 * @see #__DNA__FIELD__internal_spring_max_length
 	 */
 	
@@ -3676,7 +3670,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'internal_spring_max_length'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> The maximum lenght an internal spring can have during creation. </p>
+	 * <p> The maximum length an internal spring can have during creation. </p>
 	 * @see #__DNA__FIELD__internal_spring_max_length
 	 */
 	
@@ -3693,7 +3687,7 @@ public class ClothSimSettings extends CFacade {
 	 * Get method for struct member 'internal_spring_max_diversion'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How much the interal spring can diverge from the vertex normal during creation. </p>
+	 * <p> How much the internal spring can diverge from the vertex normal during creation. </p>
 	 * @see #__DNA__FIELD__internal_spring_max_diversion
 	 */
 	
@@ -3710,7 +3704,7 @@ public class ClothSimSettings extends CFacade {
 	 * Set method for struct member 'internal_spring_max_diversion'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> How much the interal spring can diverge from the vertex normal during creation. </p>
+	 * <p> How much the internal spring can diverge from the vertex normal during creation. </p>
 	 * @see #__DNA__FIELD__internal_spring_max_diversion
 	 */
 	

@@ -28,7 +28,7 @@ public class UserDef_SpaceData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 268;
+	public static final int __DNA__SDNA_INDEX = 278;
 
 	/**
 	 * Field descriptor (offset) for struct member 'section_active'.

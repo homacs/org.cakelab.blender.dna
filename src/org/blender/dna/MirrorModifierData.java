@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=136, size64=160)
+@CMetaData(size32=144, size64=168)
 public class MirrorModifierData extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class MirrorModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 95;
+	public static final int __DNA__SDNA_INDEX = 97;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -115,6 +115,46 @@ public class MirrorModifierData extends CFacade {
 	public static final long[] __DNA__FIELD__tolerance = new long[]{112, 132};
 
 	/**
+	 * Field descriptor (offset) for struct member 'bisect_threshold'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MirrorModifierData mirrormodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mirrormodifierdata.__dna__addressof(MirrorModifierData.__DNA__FIELD__bisect_threshold);
+	 * CPointer&lt;Float&gt; p_bisect_threshold = p.cast(new Class[]{Float.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'bisect_threshold'</li>
+	 * <li>Signature: 'float'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__bisect_threshold = new long[]{116, 136};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * MirrorModifierData mirrormodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = mirrormodifierdata.__dna__addressof(MirrorModifierData.__DNA__FIELD___pad);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad = new long[]{120, 140};
+
+	/**
 	 * Field descriptor (offset) for struct member 'uv_offset'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -132,7 +172,7 @@ public class MirrorModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_offset = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__uv_offset = new long[]{124, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'uv_offset_copy'.
@@ -152,7 +192,7 @@ public class MirrorModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 8/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__uv_offset_copy = new long[]{124, 144};
+	public static final long[] __DNA__FIELD__uv_offset_copy = new long[]{132, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mirror_ob'.
@@ -172,7 +212,7 @@ public class MirrorModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mirror_ob = new long[]{132, 152};
+	public static final long[] __DNA__FIELD__mirror_ob = new long[]{140, 160};
 
 	public MirrorModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -313,6 +353,74 @@ public class MirrorModifierData extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'bisect_threshold'.
+	 * @see #__DNA__FIELD__bisect_threshold
+	 */
+	
+	public float getBisect_threshold() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readFloat(__io__address + 136);
+		} else {
+			return __io__block.readFloat(__io__address + 116);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'bisect_threshold'.
+	 * @see #__DNA__FIELD__bisect_threshold
+	 */
+	
+	public void setBisect_threshold(float bisect_threshold) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeFloat(__io__address + 136, bisect_threshold);
+		} else {
+			__io__block.writeFloat(__io__address + 116, bisect_threshold);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public CArrayFacade<Byte> get_pad() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad'.
+	 * @see #__DNA__FIELD___pad
+	 */
+	
+	public void set_pad(CArrayFacade<Byte> _pad) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 140;
+		} else {
+			__dna__offset = 120;
+		}
+		if (__io__equals(_pad, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
+		} else {
+			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'uv_offset'.
 	 * @see #__DNA__FIELD__uv_offset
 	 */
@@ -324,9 +432,9 @@ public class MirrorModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -339,9 +447,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 136;
+			__dna__offset = 144;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 124;
 		}
 		if (__io__equals(uv_offset, __io__address + __dna__offset)) {
 			return;
@@ -364,9 +472,9 @@ public class MirrorModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -379,9 +487,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 132;
 		}
 		if (__io__equals(uv_offset_copy, __io__address + __dna__offset)) {
 			return;
@@ -401,9 +509,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 152);
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 132);
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -418,9 +526,9 @@ public class MirrorModifierData extends CFacade {
 	{
 		long __address = ((mirror_ob == null) ? 0 : mirror_ob.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 152, __address);
+			__io__block.writeLong(__io__address + 160, __address);
 		} else {
-			__io__block.writeLong(__io__address + 132, __address);
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

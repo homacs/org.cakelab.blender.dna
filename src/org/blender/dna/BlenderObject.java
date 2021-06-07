@@ -39,7 +39,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1136, size64=1416)
+@CMetaData(size32=1152, size64=1440)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -50,7 +50,7 @@ public class BlenderObject extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 161;
+	public static final int __DNA__SDNA_INDEX = 164;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -452,7 +452,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
 	 * </p>
@@ -2666,6 +2666,29 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD__preview = new long[]{1024, 1264};
 
 	/**
+	 * Field descriptor (offset) for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for the object
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD__lineart);
+	 * CPointer&lt;ObjectLineArt&gt; p_lineart = p.cast(new Class[]{ObjectLineArt.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'lineart'</li>
+	 * <li>Signature: 'ObjectLineArt'</li>
+	 * <li>Actual Size (32bit/64bit): 8/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__lineart = new long[]{1028, 1272};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -2683,10 +2706,10 @@ public class BlenderObject extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Object_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 108/144</li>
+	 * <li>Actual Size (32bit/64bit): 116/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1028, 1272};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1036, 1280};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3359,7 +3382,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
 	 * </p>
@@ -3383,7 +3406,7 @@ public class BlenderObject extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Java .Blend:</h4>
 	 * old animation system. @depricated<h4>Blender Source Code:</h4>
-	 * <p> struct {@link Path}  *path; <p> XXX deprecated... old animation system </p>
+	 * <p> struct Path *path; <p> XXX deprecated... old animation system </p>
 	 * @deprecated
 	 *  DeprecatedXXX deprecated... old animation system 
 	 * </p>
@@ -7152,6 +7175,48 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for the object
+	 * @see #__DNA__FIELD__lineart
+	 */
+	
+	public ObjectLineArt getLineart() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return new ObjectLineArt(__io__address + 1272, __io__block, __io__blockTable);
+		} else {
+			return new ObjectLineArt(__io__address + 1028, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'lineart'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Python API:</h4>
+	 * (read-only)    Line art settings for the object
+	 * @see #__DNA__FIELD__lineart
+	 */
+	
+	public void setLineart(ObjectLineArt lineart) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 1272;
+		} else {
+			__dna__offset = 1028;
+		}
+		if (__io__equals(lineart, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, lineart)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, lineart);
+		} else {
+			__io__generic__copy( getLineart(), lineart);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -7162,9 +7227,9 @@ public class BlenderObject extends CFacade {
 	public Object_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Object_Runtime(__io__address + 1272, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1280, __io__block, __io__blockTable);
 		} else {
-			return new Object_Runtime(__io__address + 1028, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1036, __io__block, __io__blockTable);
 		}
 	}
 
@@ -7180,9 +7245,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1272;
+			__dna__offset = 1280;
 		} else {
-			__dna__offset = 1028;
+			__dna__offset = 1036;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

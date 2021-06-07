@@ -28,7 +28,7 @@ public class RigidBodyWorld extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 624;
+	public static final int __DNA__SDNA_INDEX = 654;
 
 	/**
 	 * Field descriptor (offset) for struct member 'effector_weights'.
@@ -105,7 +105,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
+	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -194,7 +194,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->pointcache. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -219,7 +219,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->ptcaches. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * <h3>Pointer Arithmetics</h3>
@@ -310,7 +310,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Field descriptor (offset) for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -482,7 +482,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
+	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -503,7 +503,7 @@ public class RigidBodyWorld extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * Collection containing rigid body constraint objects<h4>Blender Source Code:</h4>
-	 * <p> Group containing objects to use for Rigid Body Constraint.s </p>
+	 * <p> Group containing objects to use for Rigid Body Constraints. </p>
 	 * @see #__DNA__FIELD__constraints
 	 */
 	
@@ -633,7 +633,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->pointcache. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pointcache
@@ -655,7 +655,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'pointcache'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->pointcache. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__pointcache
@@ -675,7 +675,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->ptcaches. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
@@ -694,7 +694,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'ptcaches'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Moved to shared->ptcaches. 
+	 * <p><code></code> . 
 	 * @deprecated
 	 *  Deprecated</p>
 	 * @see #__DNA__FIELD__ptcaches
@@ -817,7 +817,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Get method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	
@@ -834,7 +834,7 @@ public class RigidBodyWorld extends CFacade {
 	 * Set method for struct member 'flag'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> (eRigidBodyWorld_Flag) settings for this {@link RigidBodyWorld} . </p>
+	 * <p> ({@link eRigidBodyWorld_Flag} ) settings for this {@link RigidBodyWorld} . </p>
 	 * @see #__DNA__FIELD__flag
 	 */
 	

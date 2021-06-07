@@ -27,7 +27,7 @@ public class Histogram extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 468;
+	public static final int __DNA__SDNA_INDEX = 497;
 
 	/**
 	 * Field descriptor (offset) for struct member 'channels'.
@@ -213,7 +213,7 @@ public class Histogram extends CFacade {
 	 * Field descriptor (offset) for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Channels to display when drawing the histogram
+	 * Channels to display in the histogram
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -619,7 +619,7 @@ public class Histogram extends CFacade {
 	 * Get method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Channels to display when drawing the histogram
+	 * Channels to display in the histogram
 	 * @see #__DNA__FIELD__mode
 	 */
 	
@@ -636,7 +636,7 @@ public class Histogram extends CFacade {
 	 * Set method for struct member 'mode'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Channels to display when drawing the histogram
+	 * Channels to display in the histogram
 	 * @see #__DNA__FIELD__mode
 	 */
 	

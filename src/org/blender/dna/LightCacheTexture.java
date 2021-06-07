@@ -14,7 +14,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  * <h3>Class Documentation</h3>
  * <h4>Blender Source Code:</h4>
- * <p> These are used as ubo data. They need to be aligned to size of vec4. ---<mdash/>  Eevee Lightcache ----<mdash/>  </p>
+ * <p> These are used as UBO data. They need to be aligned to size of vec4. ---<mdash/>  Eevee Lightcache ----<mdash/>  </p>
  */
 
 @CMetaData(size32=24, size64=32)
@@ -28,7 +28,7 @@ public class LightCacheTexture extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 689;
+	public static final int __DNA__SDNA_INDEX = 719;
 
 	/**
 	 * Field descriptor (offset) for struct member 'tex'.

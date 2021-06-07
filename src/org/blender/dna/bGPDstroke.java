@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=412, size64=448)
+@CMetaData(size32=420, size64=456)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -28,7 +28,7 @@ public class bGPDstroke extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 507;
+	public static final int __DNA__SDNA_INDEX = 536;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -498,6 +498,49 @@ public class bGPDstroke extends CFacade {
 	public static final long[] __DNA__FIELD__uv_scale = new long[]{228, 244};
 
 	/**
+	 * Field descriptor (offset) for struct member 'select_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection index. </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD__select_index);
+	 * CPointer&lt;Integer&gt; p_select_index = p.cast(new Class[]{Integer.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'select_index'</li>
+	 * <li>Signature: 'int'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__select_index = new long[]{232, 248};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad4'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD___pad4);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p__pad4 = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad4'</li>
+	 * <li>Signature: 'char[4]'</li>
+	 * <li>Actual Size (32bit/64bit): 4/4</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad4 = new long[]{236, 252};
+
+	/**
 	 * Field descriptor (offset) for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -518,7 +561,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__dvert = new long[]{232, 248};
+	public static final long[] __DNA__FIELD__dvert = new long[]{240, 256};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad3'.
@@ -538,7 +581,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad3 = new long[]{236, 256};
+	public static final long[] __DNA__FIELD___pad3 = new long[]{244, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vert_color_fill'.
@@ -561,7 +604,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 16/16</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vert_color_fill = new long[]{240, 264};
+	public static final long[] __DNA__FIELD__vert_color_fill = new long[]{248, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'editcurve'.
@@ -584,7 +627,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__editcurve = new long[]{256, 280};
+	public static final long[] __DNA__FIELD__editcurve = new long[]{264, 288};
 
 	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
@@ -604,7 +647,7 @@ public class bGPDstroke extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 152/160</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{260, 288};
+	public static final long[] __DNA__FIELD__runtime = new long[]{268, 296};
 
 	public bGPDstroke(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1397,6 +1440,80 @@ public class bGPDstroke extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member 'select_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection index. </p>
+	 * @see #__DNA__FIELD__select_index
+	 */
+	
+	public int getSelect_index() throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			return __io__block.readInt(__io__address + 248);
+		} else {
+			return __io__block.readInt(__io__address + 232);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'select_index'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Stroke selection index. </p>
+	 * @see #__DNA__FIELD__select_index
+	 */
+	
+	public void setSelect_index(int select_index) throws IOException
+	{
+		if ((__io__pointersize == 8)) {
+			__io__block.writeInt(__io__address + 248, select_index);
+		} else {
+			__io__block.writeInt(__io__address + 232, select_index);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public CArrayFacade<Byte> get_pad4() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			4
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 252, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 236, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member '_pad4'.
+	 * @see #__DNA__FIELD___pad4
+	 */
+	
+	public void set_pad4(CArrayFacade<Byte> _pad4) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 252;
+		} else {
+			__dna__offset = 236;
+		}
+		if (__io__equals(_pad4, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, _pad4)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, _pad4);
+		} else {
+			__io__generic__copy( get_pad4(), _pad4);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'dvert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
@@ -1408,9 +1525,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 248);
+			__dna__targetAddress = __io__block.readLong(__io__address + 256);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 232);
+			__dna__targetAddress = __io__block.readLong(__io__address + 240);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{MDeformVert.class};
 		return new CPointer<MDeformVert>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, MDeformVert.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1428,9 +1545,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((dvert == null) ? 0 : dvert.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 248, __address);
+			__io__block.writeLong(__io__address + 256, __address);
 		} else {
-			__io__block.writeLong(__io__address + 232, __address);
+			__io__block.writeLong(__io__address + 240, __address);
 		}
 	}
 
@@ -1443,9 +1560,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 236);
+			__dna__targetAddress = __io__block.readLong(__io__address + 244);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
 		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
@@ -1460,9 +1577,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		} else {
-			__io__block.writeLong(__io__address + 236, __address);
+			__io__block.writeLong(__io__address + 244, __address);
 		}
 	}
 
@@ -1481,9 +1598,9 @@ public class bGPDstroke extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 264, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 272, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 240, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 248, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1499,9 +1616,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 264;
+			__dna__offset = 272;
 		} else {
-			__dna__offset = 240;
+			__dna__offset = 248;
 		}
 		if (__io__equals(vert_color_fill, __io__address + __dna__offset)) {
 			return;
@@ -1524,9 +1641,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 280);
+			__dna__targetAddress = __io__block.readLong(__io__address + 288);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 256);
+			__dna__targetAddress = __io__block.readLong(__io__address + 264);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{bGPDcurve.class};
 		return new CPointer<bGPDcurve>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, bGPDcurve.__DNA__SDNA_INDEX), __io__blockTable);
@@ -1544,9 +1661,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __address = ((editcurve == null) ? 0 : editcurve.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 280, __address);
+			__io__block.writeLong(__io__address + 288, __address);
 		} else {
-			__io__block.writeLong(__io__address + 256, __address);
+			__io__block.writeLong(__io__address + 264, __address);
 		}
 	}
 
@@ -1558,9 +1675,9 @@ public class bGPDstroke extends CFacade {
 	public bGPDstroke_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new bGPDstroke_Runtime(__io__address + 288, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 296, __io__block, __io__blockTable);
 		} else {
-			return new bGPDstroke_Runtime(__io__address + 260, __io__block, __io__blockTable);
+			return new bGPDstroke_Runtime(__io__address + 268, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1573,9 +1690,9 @@ public class bGPDstroke extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 288;
+			__dna__offset = 296;
 		} else {
-			__dna__offset = 260;
+			__dna__offset = 268;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

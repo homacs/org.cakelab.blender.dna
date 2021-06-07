@@ -27,7 +27,7 @@ public class ParticleSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 494;
+	public static final int __DNA__SDNA_INDEX = 523;
 
 	/**
 	 * Field descriptor (offset) for struct member 'id'.
@@ -720,7 +720,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'integrator'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
+	 * Algorithm used to calculate physics, from the fastest to the most stable and accurate: Midpoint, Euler, Verlet, RK4
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -1841,7 +1841,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'child_nbr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
+	 * Number of children per parent
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2517,7 +2517,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'path_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
+	 * Starting time of path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2540,7 +2540,7 @@ public class ParticleSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'path_end'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
+	 * End time of path
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -4171,7 +4171,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'integrator'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
+	 * Algorithm used to calculate physics, from the fastest to the most stable and accurate: Midpoint, Euler, Verlet, RK4
 	 * @see #__DNA__FIELD__integrator
 	 */
 	
@@ -4188,7 +4188,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'integrator'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Algorithm used to calculate physics, from the fastest to the most stable/accurate: Midpoint, Euler, Verlet, RK4 (Old)
+	 * Algorithm used to calculate physics, from the fastest to the most stable and accurate: Midpoint, Euler, Verlet, RK4
 	 * @see #__DNA__FIELD__integrator
 	 */
 	
@@ -5861,7 +5861,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'child_nbr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
+	 * Number of children per parent
 	 * @see #__DNA__FIELD__child_nbr
 	 */
 	
@@ -5878,7 +5878,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'child_nbr'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Number of children/parent
+	 * Number of children per parent
 	 * @see #__DNA__FIELD__child_nbr
 	 */
 	
@@ -6853,7 +6853,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'path_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
+	 * Starting time of path
 	 * @see #__DNA__FIELD__path_start
 	 */
 	
@@ -6870,7 +6870,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'path_start'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Starting time of drawn path
+	 * Starting time of path
 	 * @see #__DNA__FIELD__path_start
 	 */
 	
@@ -6887,7 +6887,7 @@ public class ParticleSettings extends CFacade {
 	 * Get method for struct member 'path_end'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
+	 * End time of path
 	 * @see #__DNA__FIELD__path_end
 	 */
 	
@@ -6904,7 +6904,7 @@ public class ParticleSettings extends CFacade {
 	 * Set method for struct member 'path_end'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * End time of drawn path
+	 * End time of path
 	 * @see #__DNA__FIELD__path_end
 	 */
 	

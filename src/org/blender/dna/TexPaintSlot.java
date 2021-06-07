@@ -57,7 +57,7 @@ public class TexPaintSlot extends CFacade {
 	 * Field descriptor (offset) for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Customdata index for uv layer, MAX_NAM.E </p>
+	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -103,7 +103,7 @@ public class TexPaintSlot extends CFacade {
 	 * Field descriptor (offset) for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copy of node inteporlation setting. </p>
+	 * <p> Copy of node interpolation setting. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -172,7 +172,7 @@ public class TexPaintSlot extends CFacade {
 	 * Get method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Customdata index for uv layer, MAX_NAM.E </p>
+	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -192,7 +192,7 @@ public class TexPaintSlot extends CFacade {
 	 * Set method for struct member 'uvname'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Customdata index for uv layer, MAX_NAM.E </p>
+	 * <p> Custom-data index for uv layer, {@link MAX_NAME} . </p>
 	 * @see #__DNA__FIELD__uvname
 	 */
 	
@@ -244,7 +244,7 @@ public class TexPaintSlot extends CFacade {
 	 * Get method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copy of node inteporlation setting. </p>
+	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */
 	
@@ -261,7 +261,7 @@ public class TexPaintSlot extends CFacade {
 	 * Set method for struct member 'interp'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> Copy of node inteporlation setting. </p>
+	 * <p> Copy of node interpolation setting. </p>
 	 * @see #__DNA__FIELD__interp
 	 */
 	

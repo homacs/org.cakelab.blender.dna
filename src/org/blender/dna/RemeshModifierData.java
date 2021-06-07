@@ -26,7 +26,7 @@ public class RemeshModifierData extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 132;
+	public static final int __DNA__SDNA_INDEX = 134;
 
 	/**
 	 * Field descriptor (offset) for struct member 'modifier'.
@@ -52,7 +52,7 @@ public class RemeshModifierData extends CFacade {
 	 * Field descriptor (offset) for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> floodfill option, controls how small components can be before they are removed </p>
+	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -288,7 +288,7 @@ public class RemeshModifierData extends CFacade {
 	 * Get method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> floodfill option, controls how small components can be before they are removed </p>
+	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * @see #__DNA__FIELD__threshold
 	 */
 	
@@ -305,7 +305,7 @@ public class RemeshModifierData extends CFacade {
 	 * Set method for struct member 'threshold'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> floodfill option, controls how small components can be before they are removed </p>
+	 * <p> Flood-fill option, controls how small components can be before they are removed. </p>
 	 * @see #__DNA__FIELD__threshold
 	 */
 	

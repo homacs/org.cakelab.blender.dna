@@ -27,7 +27,7 @@ public class FluidDomainSettings extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 588;
+	public static final int __DNA__SDNA_INDEX = 618;
 
 	/**
 	 * Field descriptor (offset) for struct member 'fmd'.
@@ -2014,7 +2014,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behaviour)<h4>Blender Source Code:</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
 	 * <p> Diffusion options. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -3429,7 +3429,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Field descriptor (offset) for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Thickness of smoke drawing in the viewport
+	 * Thickness of smoke display in the viewport
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -7461,7 +7461,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behaviour)<h4>Blender Source Code:</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
 	 * <p> Diffusion options. </p>
 	 * @see #__DNA__FIELD__surface_tension
 	 */
@@ -7479,7 +7479,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'surface_tension'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Surface tension of liquid (higher value results in greater hydrophobic behaviour)<h4>Blender Source Code:</h4>
+	 * Surface tension of liquid (higher value results in greater hydrophobic behavior)<h4>Blender Source Code:</h4>
 	 * <p> Diffusion options. </p>
 	 * @see #__DNA__FIELD__surface_tension
 	 */
@@ -9607,7 +9607,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Get method for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Thickness of smoke drawing in the viewport
+	 * Thickness of smoke display in the viewport
 	 * @see #__DNA__FIELD__display_thickness
 	 */
 	
@@ -9624,7 +9624,7 @@ public class FluidDomainSettings extends CFacade {
 	 * Set method for struct member 'display_thickness'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
-	 * Thickness of smoke drawing in the viewport
+	 * Thickness of smoke display in the viewport
 	 * @see #__DNA__FIELD__display_thickness
 	 */
 	

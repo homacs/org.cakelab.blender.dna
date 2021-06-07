@@ -36,7 +36,7 @@ public class WorkSpaceDataRelation extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 684;
+	public static final int __DNA__SDNA_INDEX = 714;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.

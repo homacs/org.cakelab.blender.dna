@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=92, size64=104)
+@CMetaData(size32=156, size64=168)
 public class bNodeTreePath extends CFacade {
 
 	/**
@@ -27,7 +27,7 @@ public class bNodeTreePath extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 238;
+	public static final int __DNA__SDNA_INDEX = 241;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -177,6 +177,26 @@ public class bNodeTreePath extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__node_name = new long[]{28, 40};
+
+	/**
+	 * Field descriptor (offset) for struct member 'display_name'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bNodeTreePath bnodetreepath = ...;
+	 * CPointer&lt;Object&gt; p = bnodetreepath.__dna__addressof(bNodeTreePath.__DNA__FIELD__display_name);
+	 * CPointer&lt;CArrayFacade&lt;Byte&gt;&gt; p_display_name = p.cast(new Class[]{CArrayFacade.class, Byte.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: 'display_name'</li>
+	 * <li>Signature: 'char[64]'</li>
+	 * <li>Actual Size (32bit/64bit): 64/64</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD__display_name = new long[]{92, 104};
 
 	public bNodeTreePath(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -453,6 +473,46 @@ public class bNodeTreePath extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, node_name);
 		} else {
 			__io__generic__copy( getNode_name(), node_name);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'display_name'.
+	 * @see #__DNA__FIELD__display_name
+	 */
+	
+	public CArrayFacade<Byte> getDisplay_name() throws IOException
+	{
+		Class<?>[] __dna__targetTypes = new Class[]{Byte.class};
+		int[] __dna__dimensions = new int[]{
+			64
+		};
+		if ((__io__pointersize == 8)) {
+			return new CArrayFacade<Byte>(__io__address + 104, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		} else {
+			return new CArrayFacade<Byte>(__io__address + 92, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+		}
+	}
+
+	/**
+	 * Set method for struct member 'display_name'.
+	 * @see #__DNA__FIELD__display_name
+	 */
+	
+	public void setDisplay_name(CArrayFacade<Byte> display_name) throws IOException
+	{
+		long __dna__offset;
+		if ((__io__pointersize == 8)) {
+			__dna__offset = 104;
+		} else {
+			__dna__offset = 92;
+		}
+		if (__io__equals(display_name, __io__address + __dna__offset)) {
+			return;
+		} else if (__io__same__encoding(this, display_name)) {
+			__io__native__copy(__io__block, __io__address + __dna__offset, display_name);
+		} else {
+			__io__generic__copy( getDisplay_name(), display_name);
 		}
 	}
 

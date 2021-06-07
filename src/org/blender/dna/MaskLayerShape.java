@@ -28,7 +28,7 @@ public class MaskLayerShape extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 621;
+	public static final int __DNA__SDNA_INDEX = 651;
 
 	/**
 	 * Field descriptor (offset) for struct member 'next'.
@@ -97,7 +97,7 @@ public class MaskLayerShape extends CFacade {
 	 * Field descriptor (offset) for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> To ensure no buffer overruns's: alloc size is (tot_vert * MASK_OBJECT_SHAPE_ELEM_SIZE). </p>
+	 * <p><code></code> . </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -296,7 +296,7 @@ public class MaskLayerShape extends CFacade {
 	 * Get method for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> To ensure no buffer overruns's: alloc size is (tot_vert * MASK_OBJECT_SHAPE_ELEM_SIZE). </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__tot_vert
 	 */
 	
@@ -313,7 +313,7 @@ public class MaskLayerShape extends CFacade {
 	 * Set method for struct member 'tot_vert'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> To ensure no buffer overruns's: alloc size is (tot_vert * MASK_OBJECT_SHAPE_ELEM_SIZE). </p>
+	 * <p><code></code> . </p>
 	 * @see #__DNA__FIELD__tot_vert
 	 */
 	

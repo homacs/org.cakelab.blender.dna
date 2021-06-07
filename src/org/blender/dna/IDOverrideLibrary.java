@@ -58,7 +58,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
-	 * <p> List of IDOverrideProperty structs. </p>
+	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -173,7 +173,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
-	 * <p> List of IDOverrideProperty structs. </p>
+	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	
@@ -191,7 +191,7 @@ public class IDOverrideLibrary extends CFacade {
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Python API:</h4>
 	 * (read-only)    List of overridden properties<h4>Blender Source Code:</h4>
-	 * <p> List of IDOverrideProperty structs. </p>
+	 * <p> List of {@link IDOverrideLibraryProperty}  structs. </p>
 	 * @see #__DNA__FIELD__properties
 	 */
 	

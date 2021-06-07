@@ -28,7 +28,7 @@ public class ThemeSpace extends CFacade {
 	 * @see {@link org.cakelab.blender.io.dna.internal.StructDNA}
 	 * @see {@link org.cakelab.blender.io.block.BlockTable#allocate}
 	 */
-	public static final int __DNA__SDNA_INDEX = 253;
+	public static final int __DNA__SDNA_INDEX = 263;
 
 	/**
 	 * Field descriptor (offset) for struct member 'back'.
@@ -1233,7 +1233,7 @@ public class ThemeSpace extends CFacade {
 	 * Field descriptor (offset) for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color. </p>
+	 * <p> Selected color. </p>
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -7030,7 +7030,7 @@ public class ThemeSpace extends CFacade {
 	 * Get method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color. </p>
+	 * <p> Selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
 	
@@ -7051,7 +7051,7 @@ public class ThemeSpace extends CFacade {
 	 * Set method for struct member 'face_dot'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
-	 * <p> selected color. </p>
+	 * <p> Selected color. </p>
 	 * @see #__DNA__FIELD__face_dot
 	 */
 	
