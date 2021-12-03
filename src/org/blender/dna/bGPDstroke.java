@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Grease-Pencil Annotations - 'Stroke' -> A stroke represents a (simplified version) of the curve drawn by the user in one 'mouse-down'->'mouse-up' operation </p>
  */
 
-@CMetaData(size32=420, size64=456)
+@CMetaData(size32=424, size64=464)
 public class bGPDstroke extends CFacade {
 
 	/**
@@ -648,6 +648,26 @@ public class bGPDstroke extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__runtime = new long[]{268, 296};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad5'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * bGPDstroke bgpdstroke = ...;
+	 * CPointer&lt;Object&gt; p = bgpdstroke.__dna__addressof(bGPDstroke.__DNA__FIELD___pad5);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad5 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad5'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad5 = new long[]{420, 456};
 
 	public bGPDstroke(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1700,6 +1720,38 @@ public class bGPDstroke extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, runtime);
 		} else {
 			__io__generic__copy( getRuntime(), runtime);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad5'.
+	 * @see #__DNA__FIELD___pad5
+	 */
+	
+	public CPointer<Object> get_pad5() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 456);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 420);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad5'.
+	 * @see #__DNA__FIELD___pad5
+	 */
+	
+	public void set_pad5(CPointer<Object> _pad5) throws IOException
+	{
+		long __address = ((_pad5 == null) ? 0 : _pad5.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 456, __address);
+		} else {
+			__io__block.writeLong(__io__address + 420, __address);
 		}
 	}
 

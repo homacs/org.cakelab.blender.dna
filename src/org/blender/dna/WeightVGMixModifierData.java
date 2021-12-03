@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=468, size64=496)
+@CMetaData(size32=472, size64=504)
 public class WeightVGMixModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name_a = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__defgrp_name_a = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name_b'.
@@ -93,7 +93,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name_b = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__defgrp_name_b = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight_a'.
@@ -116,7 +116,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_weight_a = new long[]{236, 256};
+	public static final long[] __DNA__FIELD__default_weight_a = new long[]{240, 264};
 
 	/**
 	 * Field descriptor (offset) for struct member 'default_weight_b'.
@@ -139,7 +139,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__default_weight_b = new long[]{240, 260};
+	public static final long[] __DNA__FIELD__default_weight_b = new long[]{244, 268};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_mode'.
@@ -162,7 +162,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_mode = new long[]{244, 264};
+	public static final long[] __DNA__FIELD__mix_mode = new long[]{248, 272};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mix_set'.
@@ -185,7 +185,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mix_set = new long[]{245, 265};
+	public static final long[] __DNA__FIELD__mix_set = new long[]{249, 273};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad0'.
@@ -205,7 +205,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad0 = new long[]{246, 266};
+	public static final long[] __DNA__FIELD___pad0 = new long[]{250, 274};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_constant'.
@@ -228,7 +228,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_constant = new long[]{252, 272};
+	public static final long[] __DNA__FIELD__mask_constant = new long[]{256, 280};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_defgrp_name'.
@@ -251,7 +251,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_defgrp_name = new long[]{256, 276};
+	public static final long[] __DNA__FIELD__mask_defgrp_name = new long[]{260, 284};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_use_channel'.
@@ -274,7 +274,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_use_channel = new long[]{320, 340};
+	public static final long[] __DNA__FIELD__mask_tex_use_channel = new long[]{324, 348};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_texture'.
@@ -297,7 +297,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_texture = new long[]{324, 344};
+	public static final long[] __DNA__FIELD__mask_texture = new long[]{328, 352};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_obj'.
@@ -320,7 +320,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_map_obj = new long[]{328, 352};
+	public static final long[] __DNA__FIELD__mask_tex_map_obj = new long[]{332, 360};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_map_bone'.
@@ -343,7 +343,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_map_bone = new long[]{332, 360};
+	public static final long[] __DNA__FIELD__mask_tex_map_bone = new long[]{336, 368};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_mapping'.
@@ -366,7 +366,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_mapping = new long[]{396, 424};
+	public static final long[] __DNA__FIELD__mask_tex_mapping = new long[]{400, 432};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mask_tex_uvlayer_name'.
@@ -389,7 +389,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mask_tex_uvlayer_name = new long[]{400, 428};
+	public static final long[] __DNA__FIELD__mask_tex_uvlayer_name = new long[]{404, 436};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -409,7 +409,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{464, 492};
+	public static final long[] __DNA__FIELD__flag = new long[]{468, 500};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad1'.
@@ -432,7 +432,7 @@ public class WeightVGMixModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 3/3</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad1 = new long[]{465, 493};
+	public static final long[] __DNA__FIELD___pad1 = new long[]{469, 501};
 
 	public WeightVGMixModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -493,9 +493,9 @@ public class WeightVGMixModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -511,9 +511,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 112;
 		}
 		if (__io__equals(defgrp_name_a, __io__address + __dna__offset)) {
 			return;
@@ -539,9 +539,9 @@ public class WeightVGMixModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 200, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 172, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 176, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -557,9 +557,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 192;
+			__dna__offset = 200;
 		} else {
-			__dna__offset = 172;
+			__dna__offset = 176;
 		}
 		if (__io__equals(defgrp_name_b, __io__address + __dna__offset)) {
 			return;
@@ -581,9 +581,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public float getDefault_weight_a() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 256);
+			return __io__block.readFloat(__io__address + 264);
 		} else {
-			return __io__block.readFloat(__io__address + 236);
+			return __io__block.readFloat(__io__address + 240);
 		}
 	}
 
@@ -598,9 +598,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setDefault_weight_a(float default_weight_a) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 256, default_weight_a);
+			__io__block.writeFloat(__io__address + 264, default_weight_a);
 		} else {
-			__io__block.writeFloat(__io__address + 236, default_weight_a);
+			__io__block.writeFloat(__io__address + 240, default_weight_a);
 		}
 	}
 
@@ -615,9 +615,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public float getDefault_weight_b() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 260);
+			return __io__block.readFloat(__io__address + 268);
 		} else {
-			return __io__block.readFloat(__io__address + 240);
+			return __io__block.readFloat(__io__address + 244);
 		}
 	}
 
@@ -632,9 +632,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setDefault_weight_b(float default_weight_b) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 260, default_weight_b);
+			__io__block.writeFloat(__io__address + 268, default_weight_b);
 		} else {
-			__io__block.writeFloat(__io__address + 240, default_weight_b);
+			__io__block.writeFloat(__io__address + 244, default_weight_b);
 		}
 	}
 
@@ -649,9 +649,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public byte getMix_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 264);
+			return __io__block.readByte(__io__address + 272);
 		} else {
-			return __io__block.readByte(__io__address + 244);
+			return __io__block.readByte(__io__address + 248);
 		}
 	}
 
@@ -666,9 +666,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setMix_mode(byte mix_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 264, mix_mode);
+			__io__block.writeByte(__io__address + 272, mix_mode);
 		} else {
-			__io__block.writeByte(__io__address + 244, mix_mode);
+			__io__block.writeByte(__io__address + 248, mix_mode);
 		}
 	}
 
@@ -683,9 +683,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public byte getMix_set() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 265);
+			return __io__block.readByte(__io__address + 273);
 		} else {
-			return __io__block.readByte(__io__address + 245);
+			return __io__block.readByte(__io__address + 249);
 		}
 	}
 
@@ -700,9 +700,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setMix_set(byte mix_set) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 265, mix_set);
+			__io__block.writeByte(__io__address + 273, mix_set);
 		} else {
-			__io__block.writeByte(__io__address + 245, mix_set);
+			__io__block.writeByte(__io__address + 249, mix_set);
 		}
 	}
 
@@ -718,9 +718,9 @@ public class WeightVGMixModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 266, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 274, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 246, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 250, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -733,9 +733,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 266;
+			__dna__offset = 274;
 		} else {
-			__dna__offset = 246;
+			__dna__offset = 250;
 		}
 		if (__io__equals(_pad0, __io__address + __dna__offset)) {
 			return;
@@ -757,9 +757,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public float getMask_constant() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 272);
+			return __io__block.readFloat(__io__address + 280);
 		} else {
-			return __io__block.readFloat(__io__address + 252);
+			return __io__block.readFloat(__io__address + 256);
 		}
 	}
 
@@ -774,9 +774,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setMask_constant(float mask_constant) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 272, mask_constant);
+			__io__block.writeFloat(__io__address + 280, mask_constant);
 		} else {
-			__io__block.writeFloat(__io__address + 252, mask_constant);
+			__io__block.writeFloat(__io__address + 256, mask_constant);
 		}
 	}
 
@@ -795,9 +795,9 @@ public class WeightVGMixModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 276, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 284, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 256, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 260, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -813,9 +813,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 276;
+			__dna__offset = 284;
 		} else {
-			__dna__offset = 256;
+			__dna__offset = 260;
 		}
 		if (__io__equals(mask_defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -837,9 +837,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public int getMask_tex_use_channel() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 340);
+			return __io__block.readInt(__io__address + 348);
 		} else {
-			return __io__block.readInt(__io__address + 320);
+			return __io__block.readInt(__io__address + 324);
 		}
 	}
 
@@ -854,9 +854,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setMask_tex_use_channel(int mask_tex_use_channel) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 340, mask_tex_use_channel);
+			__io__block.writeInt(__io__address + 348, mask_tex_use_channel);
 		} else {
-			__io__block.writeInt(__io__address + 320, mask_tex_use_channel);
+			__io__block.writeInt(__io__address + 324, mask_tex_use_channel);
 		}
 	}
 
@@ -872,9 +872,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 344);
+			__dna__targetAddress = __io__block.readLong(__io__address + 352);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 324);
+			__dna__targetAddress = __io__block.readLong(__io__address + 328);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -892,9 +892,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __address = ((mask_texture == null) ? 0 : mask_texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 344, __address);
+			__io__block.writeLong(__io__address + 352, __address);
 		} else {
-			__io__block.writeLong(__io__address + 324, __address);
+			__io__block.writeLong(__io__address + 328, __address);
 		}
 	}
 
@@ -910,9 +910,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 352);
+			__dna__targetAddress = __io__block.readLong(__io__address + 360);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 328);
+			__dna__targetAddress = __io__block.readLong(__io__address + 332);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -930,9 +930,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __address = ((mask_tex_map_obj == null) ? 0 : mask_tex_map_obj.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 352, __address);
+			__io__block.writeLong(__io__address + 360, __address);
 		} else {
-			__io__block.writeLong(__io__address + 328, __address);
+			__io__block.writeLong(__io__address + 332, __address);
 		}
 	}
 
@@ -951,9 +951,9 @@ public class WeightVGMixModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 360, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 368, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 332, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 336, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -969,9 +969,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 360;
+			__dna__offset = 368;
 		} else {
-			__dna__offset = 332;
+			__dna__offset = 336;
 		}
 		if (__io__equals(mask_tex_map_bone, __io__address + __dna__offset)) {
 			return;
@@ -993,9 +993,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public int getMask_tex_mapping() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 424);
+			return __io__block.readInt(__io__address + 432);
 		} else {
-			return __io__block.readInt(__io__address + 396);
+			return __io__block.readInt(__io__address + 400);
 		}
 	}
 
@@ -1010,9 +1010,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setMask_tex_mapping(int mask_tex_mapping) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 424, mask_tex_mapping);
+			__io__block.writeInt(__io__address + 432, mask_tex_mapping);
 		} else {
-			__io__block.writeInt(__io__address + 396, mask_tex_mapping);
+			__io__block.writeInt(__io__address + 400, mask_tex_mapping);
 		}
 	}
 
@@ -1031,9 +1031,9 @@ public class WeightVGMixModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 428, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 436, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 400, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 404, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1049,9 +1049,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 428;
+			__dna__offset = 436;
 		} else {
-			__dna__offset = 400;
+			__dna__offset = 404;
 		}
 		if (__io__equals(mask_tex_uvlayer_name, __io__address + __dna__offset)) {
 			return;
@@ -1070,9 +1070,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 492);
+			return __io__block.readByte(__io__address + 500);
 		} else {
-			return __io__block.readByte(__io__address + 464);
+			return __io__block.readByte(__io__address + 468);
 		}
 	}
 
@@ -1084,9 +1084,9 @@ public class WeightVGMixModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 492, flag);
+			__io__block.writeByte(__io__address + 500, flag);
 		} else {
-			__io__block.writeByte(__io__address + 464, flag);
+			__io__block.writeByte(__io__address + 468, flag);
 		}
 	}
 
@@ -1105,9 +1105,9 @@ public class WeightVGMixModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 493, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 501, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 465, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 469, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -1123,9 +1123,9 @@ public class WeightVGMixModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 493;
+			__dna__offset = 501;
 		} else {
-			__dna__offset = 465;
+			__dna__offset = 469;
 		}
 		if (__io__equals(_pad1, __io__address + __dna__offset)) {
 			return;

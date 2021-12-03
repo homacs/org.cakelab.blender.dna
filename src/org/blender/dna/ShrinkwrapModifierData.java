@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=196, size64=224)
+@CMetaData(size32=200, size64=232)
 public class ShrinkwrapModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__target = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__target = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'auxTarget'.
@@ -93,7 +93,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__auxTarget = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__auxTarget = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'vgroup_name'.
@@ -116,7 +116,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__vgroup_name = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__vgroup_name = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'keepDist'.
@@ -139,7 +139,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__keepDist = new long[]{180, 208};
+	public static final long[] __DNA__FIELD__keepDist = new long[]{184, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkType'.
@@ -162,7 +162,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shrinkType = new long[]{184, 212};
+	public static final long[] __DNA__FIELD__shrinkType = new long[]{188, 220};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkOpts'.
@@ -185,7 +185,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shrinkOpts = new long[]{186, 214};
+	public static final long[] __DNA__FIELD__shrinkOpts = new long[]{190, 222};
 
 	/**
 	 * Field descriptor (offset) for struct member 'shrinkMode'.
@@ -208,7 +208,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__shrinkMode = new long[]{187, 215};
+	public static final long[] __DNA__FIELD__shrinkMode = new long[]{191, 223};
 
 	/**
 	 * Field descriptor (offset) for struct member 'projLimit'.
@@ -231,7 +231,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__projLimit = new long[]{188, 216};
+	public static final long[] __DNA__FIELD__projLimit = new long[]{192, 224};
 
 	/**
 	 * Field descriptor (offset) for struct member 'projAxis'.
@@ -254,7 +254,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__projAxis = new long[]{192, 220};
+	public static final long[] __DNA__FIELD__projAxis = new long[]{196, 228};
 
 	/**
 	 * Field descriptor (offset) for struct member 'subsurfLevels'.
@@ -277,7 +277,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__subsurfLevels = new long[]{193, 221};
+	public static final long[] __DNA__FIELD__subsurfLevels = new long[]{197, 229};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -297,7 +297,7 @@ public class ShrinkwrapModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{194, 222};
+	public static final long[] __DNA__FIELD___pad = new long[]{198, 230};
 
 	public ShrinkwrapModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -355,9 +355,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -375,9 +375,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __address = ((target == null) ? 0 : target.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -393,9 +393,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -413,9 +413,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __address = ((auxTarget == null) ? 0 : auxTarget.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -434,9 +434,9 @@ public class ShrinkwrapModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 144, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -452,9 +452,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 144;
+			__dna__offset = 152;
 		} else {
-			__dna__offset = 116;
+			__dna__offset = 120;
 		}
 		if (__io__equals(vgroup_name, __io__address + __dna__offset)) {
 			return;
@@ -476,9 +476,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public float getKeepDist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 208);
+			return __io__block.readFloat(__io__address + 216);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -493,9 +493,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setKeepDist(float keepDist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 208, keepDist);
+			__io__block.writeFloat(__io__address + 216, keepDist);
 		} else {
-			__io__block.writeFloat(__io__address + 180, keepDist);
+			__io__block.writeFloat(__io__address + 184, keepDist);
 		}
 	}
 
@@ -510,9 +510,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public short getShrinkType() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 212);
+			return __io__block.readShort(__io__address + 220);
 		} else {
-			return __io__block.readShort(__io__address + 184);
+			return __io__block.readShort(__io__address + 188);
 		}
 	}
 
@@ -527,9 +527,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setShrinkType(short shrinkType) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 212, shrinkType);
+			__io__block.writeShort(__io__address + 220, shrinkType);
 		} else {
-			__io__block.writeShort(__io__address + 184, shrinkType);
+			__io__block.writeShort(__io__address + 188, shrinkType);
 		}
 	}
 
@@ -544,9 +544,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public byte getShrinkOpts() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 214);
+			return __io__block.readByte(__io__address + 222);
 		} else {
-			return __io__block.readByte(__io__address + 186);
+			return __io__block.readByte(__io__address + 190);
 		}
 	}
 
@@ -561,9 +561,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setShrinkOpts(byte shrinkOpts) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 214, shrinkOpts);
+			__io__block.writeByte(__io__address + 222, shrinkOpts);
 		} else {
-			__io__block.writeByte(__io__address + 186, shrinkOpts);
+			__io__block.writeByte(__io__address + 190, shrinkOpts);
 		}
 	}
 
@@ -578,9 +578,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public byte getShrinkMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 215);
+			return __io__block.readByte(__io__address + 223);
 		} else {
-			return __io__block.readByte(__io__address + 187);
+			return __io__block.readByte(__io__address + 191);
 		}
 	}
 
@@ -595,9 +595,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setShrinkMode(byte shrinkMode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 215, shrinkMode);
+			__io__block.writeByte(__io__address + 223, shrinkMode);
 		} else {
-			__io__block.writeByte(__io__address + 187, shrinkMode);
+			__io__block.writeByte(__io__address + 191, shrinkMode);
 		}
 	}
 
@@ -612,9 +612,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public float getProjLimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 216);
+			return __io__block.readFloat(__io__address + 224);
 		} else {
-			return __io__block.readFloat(__io__address + 188);
+			return __io__block.readFloat(__io__address + 192);
 		}
 	}
 
@@ -629,9 +629,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setProjLimit(float projLimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 216, projLimit);
+			__io__block.writeFloat(__io__address + 224, projLimit);
 		} else {
-			__io__block.writeFloat(__io__address + 188, projLimit);
+			__io__block.writeFloat(__io__address + 192, projLimit);
 		}
 	}
 
@@ -646,9 +646,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public byte getProjAxis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 220);
+			return __io__block.readByte(__io__address + 228);
 		} else {
-			return __io__block.readByte(__io__address + 192);
+			return __io__block.readByte(__io__address + 196);
 		}
 	}
 
@@ -663,9 +663,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setProjAxis(byte projAxis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 220, projAxis);
+			__io__block.writeByte(__io__address + 228, projAxis);
 		} else {
-			__io__block.writeByte(__io__address + 192, projAxis);
+			__io__block.writeByte(__io__address + 196, projAxis);
 		}
 	}
 
@@ -680,9 +680,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public byte getSubsurfLevels() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 221);
+			return __io__block.readByte(__io__address + 229);
 		} else {
-			return __io__block.readByte(__io__address + 193);
+			return __io__block.readByte(__io__address + 197);
 		}
 	}
 
@@ -697,9 +697,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	public void setSubsurfLevels(byte subsurfLevels) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 221, subsurfLevels);
+			__io__block.writeByte(__io__address + 229, subsurfLevels);
 		} else {
-			__io__block.writeByte(__io__address + 193, subsurfLevels);
+			__io__block.writeByte(__io__address + 197, subsurfLevels);
 		}
 	}
 
@@ -715,9 +715,9 @@ public class ShrinkwrapModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 222, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 230, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 194, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -730,9 +730,9 @@ public class ShrinkwrapModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 222;
+			__dna__offset = 230;
 		} else {
-			__dna__offset = 194;
+			__dna__offset = 198;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

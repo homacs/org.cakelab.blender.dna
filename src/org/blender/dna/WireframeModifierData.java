@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> many of these options match 'solidify' </p>
  */
 
-@CMetaData(size32=196, size64=216)
+@CMetaData(size32=200, size64=224)
 public class WireframeModifierData extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class WireframeModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -71,7 +71,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset'.
@@ -91,7 +91,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset = new long[]{172, 192};
+	public static final long[] __DNA__FIELD__offset = new long[]{176, 200};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac'.
@@ -111,7 +111,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__offset_fac = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'offset_fac_vg'.
@@ -131,7 +131,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{180, 200};
+	public static final long[] __DNA__FIELD__offset_fac_vg = new long[]{184, 208};
 
 	/**
 	 * Field descriptor (offset) for struct member 'crease_weight'.
@@ -151,7 +151,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__crease_weight = new long[]{184, 204};
+	public static final long[] __DNA__FIELD__crease_weight = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -171,7 +171,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{188, 208};
+	public static final long[] __DNA__FIELD__flag = new long[]{192, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mat_ofs'.
@@ -191,7 +191,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mat_ofs = new long[]{190, 210};
+	public static final long[] __DNA__FIELD__mat_ofs = new long[]{194, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -211,7 +211,7 @@ public class WireframeModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{192, 212};
+	public static final long[] __DNA__FIELD___pad = new long[]{196, 220};
 
 	public WireframeModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -272,9 +272,9 @@ public class WireframeModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 108, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -290,9 +290,9 @@ public class WireframeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 128;
+			__dna__offset = 136;
 		} else {
-			__dna__offset = 108;
+			__dna__offset = 112;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -311,9 +311,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 192);
+			return __io__block.readFloat(__io__address + 200);
 		} else {
-			return __io__block.readFloat(__io__address + 172);
+			return __io__block.readFloat(__io__address + 176);
 		}
 	}
 
@@ -325,9 +325,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset(float offset) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 192, offset);
+			__io__block.writeFloat(__io__address + 200, offset);
 		} else {
-			__io__block.writeFloat(__io__address + 172, offset);
+			__io__block.writeFloat(__io__address + 176, offset);
 		}
 	}
 
@@ -339,9 +339,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset_fac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 196);
+			return __io__block.readFloat(__io__address + 204);
 		} else {
-			return __io__block.readFloat(__io__address + 176);
+			return __io__block.readFloat(__io__address + 180);
 		}
 	}
 
@@ -353,9 +353,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset_fac(float offset_fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 196, offset_fac);
+			__io__block.writeFloat(__io__address + 204, offset_fac);
 		} else {
-			__io__block.writeFloat(__io__address + 176, offset_fac);
+			__io__block.writeFloat(__io__address + 180, offset_fac);
 		}
 	}
 
@@ -367,9 +367,9 @@ public class WireframeModifierData extends CFacade {
 	public float getOffset_fac_vg() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 200);
+			return __io__block.readFloat(__io__address + 208);
 		} else {
-			return __io__block.readFloat(__io__address + 180);
+			return __io__block.readFloat(__io__address + 184);
 		}
 	}
 
@@ -381,9 +381,9 @@ public class WireframeModifierData extends CFacade {
 	public void setOffset_fac_vg(float offset_fac_vg) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 200, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 208, offset_fac_vg);
 		} else {
-			__io__block.writeFloat(__io__address + 180, offset_fac_vg);
+			__io__block.writeFloat(__io__address + 184, offset_fac_vg);
 		}
 	}
 
@@ -395,9 +395,9 @@ public class WireframeModifierData extends CFacade {
 	public float getCrease_weight() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -409,9 +409,9 @@ public class WireframeModifierData extends CFacade {
 	public void setCrease_weight(float crease_weight) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, crease_weight);
+			__io__block.writeFloat(__io__address + 212, crease_weight);
 		} else {
-			__io__block.writeFloat(__io__address + 184, crease_weight);
+			__io__block.writeFloat(__io__address + 188, crease_weight);
 		}
 	}
 
@@ -423,9 +423,9 @@ public class WireframeModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 216);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 192);
 		}
 	}
 
@@ -437,9 +437,9 @@ public class WireframeModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, flag);
+			__io__block.writeShort(__io__address + 216, flag);
 		} else {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 192, flag);
 		}
 	}
 
@@ -451,9 +451,9 @@ public class WireframeModifierData extends CFacade {
 	public short getMat_ofs() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 194);
 		}
 	}
 
@@ -465,9 +465,9 @@ public class WireframeModifierData extends CFacade {
 	public void setMat_ofs(short mat_ofs) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, mat_ofs);
+			__io__block.writeShort(__io__address + 218, mat_ofs);
 		} else {
-			__io__block.writeShort(__io__address + 190, mat_ofs);
+			__io__block.writeShort(__io__address + 194, mat_ofs);
 		}
 	}
 
@@ -483,9 +483,9 @@ public class WireframeModifierData extends CFacade {
 			4
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 212, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 220, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 192, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 196, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -498,9 +498,9 @@ public class WireframeModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 212;
+			__dna__offset = 220;
 		} else {
-			__dna__offset = 192;
+			__dna__offset = 196;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

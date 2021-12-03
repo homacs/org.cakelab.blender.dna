@@ -37,7 +37,7 @@ public class MainLib extends MainLibBase {
 	 * This is the subversion of blender, the data model was generated from. It's also called Blender file sub-version, which can differ from the patch-level of the Blender program.
 	 * Implicitly, it is the maximum file sub-version the generated import code can understand.
 	 */
-	public static final short BLENDER_SUBVERSION = 20;
+	public static final short BLENDER_SUBVERSION = 21;
 
 	/**
 	 * This is the minimal Blender file version, the generated data model corresponds to.
@@ -58,7 +58,7 @@ public class MainLib extends MainLibBase {
 	 * @see #BLENDER_VERSION
 	 * @see #BLENDER_SUBVERSION
 	 */
-	public static final String BLENDER_VERSION_STRING = "2.93.20";
+	public static final String BLENDER_VERSION_STRING = "2.93.21";
 
 	/**
 	 * #BLENDER_MINVERSION and _MINSUBVERSION as a String.

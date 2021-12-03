@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Not saved in file! </p>
  */
 
-@CMetaData(size32=116, size64=160)
+@CMetaData(size32=120, size64=168)
 public class Object_Runtime extends CFacade {
 
 	/**
@@ -477,6 +477,26 @@ public class Object_Runtime extends CFacade {
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD___pad2 = new long[]{110, 154};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad3'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Object_Runtime object_runtime = ...;
+	 * CPointer&lt;Object&gt; p = object_runtime.__dna__addressof(Object_Runtime.__DNA__FIELD___pad3);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad3 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad3'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad3 = new long[]{116, 160};
 
 	public Object_Runtime(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -1239,6 +1259,38 @@ public class Object_Runtime extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad2);
 		} else {
 			__io__generic__copy( get_pad2(), _pad2);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public CPointer<Object> get_pad3() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 160);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad3'.
+	 * @see #__DNA__FIELD___pad3
+	 */
+	
+	public void set_pad3(CPointer<Object> _pad3) throws IOException
+	{
+		long __address = ((_pad3 == null) ? 0 : _pad3.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 160, __address);
+		} else {
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=140, size64=168)
+@CMetaData(size32=144, size64=176)
 public class VolumeDisplaceModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__texture = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_map_object'.
@@ -87,7 +87,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_map_object = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__texture_map_object = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_map_mode'.
@@ -107,7 +107,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_map_mode = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__texture_map_mode = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'strength'.
@@ -127,7 +127,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__strength = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__strength = new long[]{124, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_mid_level'.
@@ -147,7 +147,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 12/12</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_mid_level = new long[]{124, 152};
+	public static final long[] __DNA__FIELD__texture_mid_level = new long[]{128, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'texture_sample_radius'.
@@ -167,7 +167,7 @@ public class VolumeDisplaceModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__texture_sample_radius = new long[]{136, 164};
+	public static final long[] __DNA__FIELD__texture_sample_radius = new long[]{140, 172};
 
 	public VolumeDisplaceModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -222,9 +222,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Tex.class};
 		return new CPointer<Tex>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Tex.__DNA__SDNA_INDEX), __io__blockTable);
@@ -239,9 +239,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	{
 		long __address = ((texture == null) ? 0 : texture.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -254,9 +254,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -271,9 +271,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	{
 		long __address = ((texture_map_object == null) ? 0 : texture_map_object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -285,9 +285,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public int getTexture_map_mode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 144);
+			return __io__block.readInt(__io__address + 152);
 		} else {
-			return __io__block.readInt(__io__address + 116);
+			return __io__block.readInt(__io__address + 120);
 		}
 	}
 
@@ -299,9 +299,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public void setTexture_map_mode(int texture_map_mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 144, texture_map_mode);
+			__io__block.writeInt(__io__address + 152, texture_map_mode);
 		} else {
-			__io__block.writeInt(__io__address + 116, texture_map_mode);
+			__io__block.writeInt(__io__address + 120, texture_map_mode);
 		}
 	}
 
@@ -313,9 +313,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public float getStrength() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 148);
+			return __io__block.readFloat(__io__address + 156);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -327,9 +327,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public void setStrength(float strength) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 148, strength);
+			__io__block.writeFloat(__io__address + 156, strength);
 		} else {
-			__io__block.writeFloat(__io__address + 120, strength);
+			__io__block.writeFloat(__io__address + 124, strength);
 		}
 	}
 
@@ -345,9 +345,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 			3
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Float>(__io__address + 152, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Float>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Float>(__io__address + 128, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -360,9 +360,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 152;
+			__dna__offset = 160;
 		} else {
-			__dna__offset = 124;
+			__dna__offset = 128;
 		}
 		if (__io__equals(texture_mid_level, __io__address + __dna__offset)) {
 			return;
@@ -381,9 +381,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public float getTexture_sample_radius() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 164);
+			return __io__block.readFloat(__io__address + 172);
 		} else {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 140);
 		}
 	}
 
@@ -395,9 +395,9 @@ public class VolumeDisplaceModifierData extends CFacade {
 	public void setTexture_sample_radius(float texture_sample_radius) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 164, texture_sample_radius);
+			__io__block.writeFloat(__io__address + 172, texture_sample_radius);
 		} else {
-			__io__block.writeFloat(__io__address + 136, texture_sample_radius);
+			__io__block.writeFloat(__io__address + 140, texture_sample_radius);
 		}
 	}
 

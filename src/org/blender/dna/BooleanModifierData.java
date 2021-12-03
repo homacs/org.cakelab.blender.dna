@@ -15,7 +15,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=124, size64=152)
+@CMetaData(size32=128, size64=160)
 public class BooleanModifierData extends CFacade {
 
 	/**
@@ -43,7 +43,7 @@ public class BooleanModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -66,7 +66,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__object = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__object = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'collection'.
@@ -86,7 +86,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__collection = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__collection = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'double_threshold'.
@@ -106,7 +106,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__double_threshold = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__double_threshold = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'operation'.
@@ -126,7 +126,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__operation = new long[]{120, 148};
+	public static final long[] __DNA__FIELD__operation = new long[]{124, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'solver'.
@@ -146,7 +146,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__solver = new long[]{121, 149};
+	public static final long[] __DNA__FIELD__solver = new long[]{125, 157};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -166,7 +166,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{122, 150};
+	public static final long[] __DNA__FIELD__flag = new long[]{126, 158};
 
 	/**
 	 * Field descriptor (offset) for struct member 'bm_flag'.
@@ -186,7 +186,7 @@ public class BooleanModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bm_flag = new long[]{123, 151};
+	public static final long[] __DNA__FIELD__bm_flag = new long[]{127, 159};
 
 	public BooleanModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -241,9 +241,9 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{BlenderObject.class};
 		return new CPointer<BlenderObject>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, BlenderObject.__DNA__SDNA_INDEX), __io__blockTable);
@@ -258,9 +258,9 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __address = ((object == null) ? 0 : object.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -273,9 +273,9 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Collection.class};
 		return new CPointer<Collection>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Collection.__DNA__SDNA_INDEX), __io__blockTable);
@@ -290,9 +290,9 @@ public class BooleanModifierData extends CFacade {
 	{
 		long __address = ((collection == null) ? 0 : collection.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -304,9 +304,9 @@ public class BooleanModifierData extends CFacade {
 	public float getDouble_threshold() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -318,9 +318,9 @@ public class BooleanModifierData extends CFacade {
 	public void setDouble_threshold(float double_threshold) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, double_threshold);
+			__io__block.writeFloat(__io__address + 152, double_threshold);
 		} else {
-			__io__block.writeFloat(__io__address + 116, double_threshold);
+			__io__block.writeFloat(__io__address + 120, double_threshold);
 		}
 	}
 
@@ -332,9 +332,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getOperation() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 148);
+			return __io__block.readByte(__io__address + 156);
 		} else {
-			return __io__block.readByte(__io__address + 120);
+			return __io__block.readByte(__io__address + 124);
 		}
 	}
 
@@ -346,9 +346,9 @@ public class BooleanModifierData extends CFacade {
 	public void setOperation(byte operation) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 148, operation);
+			__io__block.writeByte(__io__address + 156, operation);
 		} else {
-			__io__block.writeByte(__io__address + 120, operation);
+			__io__block.writeByte(__io__address + 124, operation);
 		}
 	}
 
@@ -360,9 +360,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getSolver() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 149);
+			return __io__block.readByte(__io__address + 157);
 		} else {
-			return __io__block.readByte(__io__address + 121);
+			return __io__block.readByte(__io__address + 125);
 		}
 	}
 
@@ -374,9 +374,9 @@ public class BooleanModifierData extends CFacade {
 	public void setSolver(byte solver) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 149, solver);
+			__io__block.writeByte(__io__address + 157, solver);
 		} else {
-			__io__block.writeByte(__io__address + 121, solver);
+			__io__block.writeByte(__io__address + 125, solver);
 		}
 	}
 
@@ -388,9 +388,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 150);
+			return __io__block.readByte(__io__address + 158);
 		} else {
-			return __io__block.readByte(__io__address + 122);
+			return __io__block.readByte(__io__address + 126);
 		}
 	}
 
@@ -402,9 +402,9 @@ public class BooleanModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 150, flag);
+			__io__block.writeByte(__io__address + 158, flag);
 		} else {
-			__io__block.writeByte(__io__address + 122, flag);
+			__io__block.writeByte(__io__address + 126, flag);
 		}
 	}
 
@@ -416,9 +416,9 @@ public class BooleanModifierData extends CFacade {
 	public byte getBm_flag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 151);
+			return __io__block.readByte(__io__address + 159);
 		} else {
-			return __io__block.readByte(__io__address + 123);
+			return __io__block.readByte(__io__address + 127);
 		}
 	}
 
@@ -430,9 +430,9 @@ public class BooleanModifierData extends CFacade {
 	public void setBm_flag(byte bm_flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 151, bm_flag);
+			__io__block.writeByte(__io__address + 159, bm_flag);
 		} else {
-			__io__block.writeByte(__io__address + 123, bm_flag);
+			__io__block.writeByte(__io__address + 127, bm_flag);
 		}
 	}
 

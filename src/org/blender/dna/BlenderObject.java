@@ -39,7 +39,7 @@ import org.cakelab.blender.nio.CPointer;
  * 			</p>
  */
 
-@CMetaData(size32=1152, size64=1440)
+@CMetaData(size32=1160, size64=1456)
 public class BlenderObject extends CFacade {
 
 	/**
@@ -2689,10 +2689,30 @@ public class BlenderObject extends CFacade {
 	public static final long[] __DNA__FIELD__lineart = new long[]{1028, 1272};
 
 	/**
-	 * Field descriptor (offset) for struct member 'runtime'.
+	 * Field descriptor (offset) for struct member '_pad9'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Runtime evaluation data (keep last). </p>
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * BlenderObject blenderobject = ...;
+	 * CPointer&lt;Object&gt; p = blenderobject.__dna__addressof(BlenderObject.__DNA__FIELD___pad9);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad9 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad9'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad9 = new long[]{1036, 1280};
+
+	/**
+	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
 	 * This is how you get a reference on the corresponding field in the struct:
@@ -2706,10 +2726,10 @@ public class BlenderObject extends CFacade {
 	 * <ul>
 	 * <li>Field: 'runtime'</li>
 	 * <li>Signature: 'Object_Runtime'</li>
-	 * <li>Actual Size (32bit/64bit): 116/160</li>
+	 * <li>Actual Size (32bit/64bit): 120/168</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1036, 1280};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1040, 1288};
 
 	public BlenderObject(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -7217,27 +7237,59 @@ public class BlenderObject extends CFacade {
 	}
 
 	/**
-	 * Get method for struct member 'runtime'.
+	 * Get method for struct member '_pad9'.
 	 * <h3>Field Documentation</h3>
 	 * <h4>Blender Source Code:</h4>
 	 * <p> Runtime evaluation data (keep last). </p>
+	 * @see #__DNA__FIELD___pad9
+	 */
+	
+	public CPointer<Object> get_pad9() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1280);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1036);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad9'.
+	 * <h3>Field Documentation</h3>
+	 * <h4>Blender Source Code:</h4>
+	 * <p> Runtime evaluation data (keep last). </p>
+	 * @see #__DNA__FIELD___pad9
+	 */
+	
+	public void set_pad9(CPointer<Object> _pad9) throws IOException
+	{
+		long __address = ((_pad9 == null) ? 0 : _pad9.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1280, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1036, __address);
+		}
+	}
+
+	/**
+	 * Get method for struct member 'runtime'.
 	 * @see #__DNA__FIELD__runtime
 	 */
 	
 	public Object_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Object_Runtime(__io__address + 1280, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1288, __io__block, __io__blockTable);
 		} else {
-			return new Object_Runtime(__io__address + 1036, __io__block, __io__blockTable);
+			return new Object_Runtime(__io__address + 1040, __io__block, __io__blockTable);
 		}
 	}
 
 	/**
 	 * Set method for struct member 'runtime'.
-	 * <h3>Field Documentation</h3>
-	 * <h4>Blender Source Code:</h4>
-	 * <p> Runtime evaluation data (keep last). </p>
 	 * @see #__DNA__FIELD__runtime
 	 */
 	
@@ -7245,9 +7297,9 @@ public class BlenderObject extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1280;
+			__dna__offset = 1288;
 		} else {
-			__dna__offset = 1036;
+			__dna__offset = 1040;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

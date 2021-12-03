@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * <p> Skin modifier </p>
  */
 
-@CMetaData(size32=116, size64=136)
+@CMetaData(size32=120, size64=144)
 public class SkinModifierData extends CFacade {
 
 	/**
@@ -45,7 +45,7 @@ public class SkinModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -68,7 +68,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__branch_smoothing = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__branch_smoothing = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -88,7 +88,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__flag = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_axes'.
@@ -108,7 +108,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetry_axes = new long[]{113, 133};
+	public static final long[] __DNA__FIELD__symmetry_axes = new long[]{117, 141};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -128,7 +128,7 @@ public class SkinModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{114, 134};
+	public static final long[] __DNA__FIELD___pad = new long[]{118, 142};
 
 	public SkinModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -182,9 +182,9 @@ public class SkinModifierData extends CFacade {
 	public float getBranch_smoothing() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -196,9 +196,9 @@ public class SkinModifierData extends CFacade {
 	public void setBranch_smoothing(float branch_smoothing) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, branch_smoothing);
+			__io__block.writeFloat(__io__address + 136, branch_smoothing);
 		} else {
-			__io__block.writeFloat(__io__address + 108, branch_smoothing);
+			__io__block.writeFloat(__io__address + 112, branch_smoothing);
 		}
 	}
 
@@ -210,9 +210,9 @@ public class SkinModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 132);
+			return __io__block.readByte(__io__address + 140);
 		} else {
-			return __io__block.readByte(__io__address + 112);
+			return __io__block.readByte(__io__address + 116);
 		}
 	}
 
@@ -224,9 +224,9 @@ public class SkinModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 132, flag);
+			__io__block.writeByte(__io__address + 140, flag);
 		} else {
-			__io__block.writeByte(__io__address + 112, flag);
+			__io__block.writeByte(__io__address + 116, flag);
 		}
 	}
 
@@ -238,9 +238,9 @@ public class SkinModifierData extends CFacade {
 	public byte getSymmetry_axes() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 133);
+			return __io__block.readByte(__io__address + 141);
 		} else {
-			return __io__block.readByte(__io__address + 113);
+			return __io__block.readByte(__io__address + 117);
 		}
 	}
 
@@ -252,9 +252,9 @@ public class SkinModifierData extends CFacade {
 	public void setSymmetry_axes(byte symmetry_axes) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 133, symmetry_axes);
+			__io__block.writeByte(__io__address + 141, symmetry_axes);
 		} else {
-			__io__block.writeByte(__io__address + 113, symmetry_axes);
+			__io__block.writeByte(__io__address + 117, symmetry_axes);
 		}
 	}
 
@@ -270,9 +270,9 @@ public class SkinModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 142, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 114, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 118, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -285,9 +285,9 @@ public class SkinModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 134;
+			__dna__offset = 142;
 		} else {
-			__dna__offset = 114;
+			__dna__offset = 118;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

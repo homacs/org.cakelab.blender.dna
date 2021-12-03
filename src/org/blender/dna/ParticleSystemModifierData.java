@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=136, size64=168)
+@CMetaData(size32=144, size64=184)
 public class ParticleSystemModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -72,7 +72,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__psys = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__psys = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_final'.
@@ -95,7 +95,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_final = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__mesh_final = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mesh_original'.
@@ -118,7 +118,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/8</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mesh_original = new long[]{116, 144};
+	public static final long[] __DNA__FIELD__mesh_original = new long[]{120, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdmvert'.
@@ -138,7 +138,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totdmvert = new long[]{120, 152};
+	public static final long[] __DNA__FIELD__totdmvert = new long[]{124, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdmedge'.
@@ -158,7 +158,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totdmedge = new long[]{124, 156};
+	public static final long[] __DNA__FIELD__totdmedge = new long[]{128, 164};
 
 	/**
 	 * Field descriptor (offset) for struct member 'totdmface'.
@@ -178,7 +178,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__totdmface = new long[]{128, 160};
+	public static final long[] __DNA__FIELD__totdmface = new long[]{132, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -198,7 +198,7 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{132, 164};
+	public static final long[] __DNA__FIELD__flag = new long[]{136, 172};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -218,7 +218,27 @@ public class ParticleSystemModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{134, 166};
+	public static final long[] __DNA__FIELD___pad = new long[]{138, 174};
+
+	/**
+	 * Field descriptor (offset) for struct member '_pad1'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * ParticleSystemModifierData particlesystemmodifierdata = ...;
+	 * CPointer&lt;Object&gt; p = particlesystemmodifierdata.__dna__addressof(ParticleSystemModifierData.__DNA__FIELD___pad1);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad1 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad1'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad1 = new long[]{140, 176};
 
 	public ParticleSystemModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -278,9 +298,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 128);
+			__dna__targetAddress = __io__block.readLong(__io__address + 136);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 108);
+			__dna__targetAddress = __io__block.readLong(__io__address + 112);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{ParticleSystem.class};
 		return new CPointer<ParticleSystem>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, ParticleSystem.__DNA__SDNA_INDEX), __io__blockTable);
@@ -300,9 +320,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __address = ((psys == null) ? 0 : psys.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 128, __address);
+			__io__block.writeLong(__io__address + 136, __address);
 		} else {
-			__io__block.writeLong(__io__address + 108, __address);
+			__io__block.writeLong(__io__address + 112, __address);
 		}
 	}
 
@@ -318,9 +338,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 136);
+			__dna__targetAddress = __io__block.readLong(__io__address + 144);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 112);
+			__dna__targetAddress = __io__block.readLong(__io__address + 116);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
 		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
@@ -338,9 +358,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __address = ((mesh_final == null) ? 0 : mesh_final.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 136, __address);
+			__io__block.writeLong(__io__address + 144, __address);
 		} else {
-			__io__block.writeLong(__io__address + 112, __address);
+			__io__block.writeLong(__io__address + 116, __address);
 		}
 	}
 
@@ -356,9 +376,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __dna__targetAddress;
 		if ((__io__pointersize == 8)) {
-			__dna__targetAddress = __io__block.readLong(__io__address + 144);
+			__dna__targetAddress = __io__block.readLong(__io__address + 152);
 		} else {
-			__dna__targetAddress = __io__block.readLong(__io__address + 116);
+			__dna__targetAddress = __io__block.readLong(__io__address + 120);
 		}
 		Class<?>[] __dna__targetTypes = new Class[]{Mesh.class};
 		return new CPointer<Mesh>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, Mesh.__DNA__SDNA_INDEX), __io__blockTable);
@@ -376,9 +396,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __address = ((mesh_original == null) ? 0 : mesh_original.getAddress());
 		if ((__io__pointersize == 8)) {
-			__io__block.writeLong(__io__address + 144, __address);
+			__io__block.writeLong(__io__address + 152, __address);
 		} else {
-			__io__block.writeLong(__io__address + 116, __address);
+			__io__block.writeLong(__io__address + 120, __address);
 		}
 	}
 
@@ -390,9 +410,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public int getTotdmvert() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 152);
+			return __io__block.readInt(__io__address + 160);
 		} else {
-			return __io__block.readInt(__io__address + 120);
+			return __io__block.readInt(__io__address + 124);
 		}
 	}
 
@@ -404,9 +424,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public void setTotdmvert(int totdmvert) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 152, totdmvert);
+			__io__block.writeInt(__io__address + 160, totdmvert);
 		} else {
-			__io__block.writeInt(__io__address + 120, totdmvert);
+			__io__block.writeInt(__io__address + 124, totdmvert);
 		}
 	}
 
@@ -418,9 +438,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public int getTotdmedge() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 156);
+			return __io__block.readInt(__io__address + 164);
 		} else {
-			return __io__block.readInt(__io__address + 124);
+			return __io__block.readInt(__io__address + 128);
 		}
 	}
 
@@ -432,9 +452,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public void setTotdmedge(int totdmedge) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 156, totdmedge);
+			__io__block.writeInt(__io__address + 164, totdmedge);
 		} else {
-			__io__block.writeInt(__io__address + 124, totdmedge);
+			__io__block.writeInt(__io__address + 128, totdmedge);
 		}
 	}
 
@@ -446,9 +466,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public int getTotdmface() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 160);
+			return __io__block.readInt(__io__address + 168);
 		} else {
-			return __io__block.readInt(__io__address + 128);
+			return __io__block.readInt(__io__address + 132);
 		}
 	}
 
@@ -460,9 +480,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public void setTotdmface(int totdmface) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 160, totdmface);
+			__io__block.writeInt(__io__address + 168, totdmface);
 		} else {
-			__io__block.writeInt(__io__address + 128, totdmface);
+			__io__block.writeInt(__io__address + 132, totdmface);
 		}
 	}
 
@@ -474,9 +494,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 164);
+			return __io__block.readShort(__io__address + 172);
 		} else {
-			return __io__block.readShort(__io__address + 132);
+			return __io__block.readShort(__io__address + 136);
 		}
 	}
 
@@ -488,9 +508,9 @@ public class ParticleSystemModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 164, flag);
+			__io__block.writeShort(__io__address + 172, flag);
 		} else {
-			__io__block.writeShort(__io__address + 132, flag);
+			__io__block.writeShort(__io__address + 136, flag);
 		}
 	}
 
@@ -506,9 +526,9 @@ public class ParticleSystemModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 166, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 174, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 138, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -521,9 +541,9 @@ public class ParticleSystemModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 166;
+			__dna__offset = 174;
 		} else {
-			__dna__offset = 134;
+			__dna__offset = 138;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -531,6 +551,38 @@ public class ParticleSystemModifierData extends CFacade {
 			__io__native__copy(__io__block, __io__address + __dna__offset, _pad);
 		} else {
 			__io__generic__copy( get_pad(), _pad);
+		}
+	}
+
+	/**
+	 * Get method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public CPointer<Object> get_pad1() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 176);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 140);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad1'.
+	 * @see #__DNA__FIELD___pad1
+	 */
+	
+	public void set_pad1(CPointer<Object> _pad1) throws IOException
+	{
+		long __address = ((_pad1 == null) ? 0 : _pad1.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 176, __address);
+		} else {
+			__io__block.writeLong(__io__address + 140, __address);
 		}
 	}
 

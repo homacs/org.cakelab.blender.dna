@@ -17,7 +17,7 @@ import org.cakelab.blender.nio.CPointer;
  * Wrapper for referencing Objects in a Scene
  */
 
-@CMetaData(size32=1580, size64=1792)
+@CMetaData(size32=1584, size64=1800)
 public class Mesh extends CFacade {
 
 	/**
@@ -1204,6 +1204,26 @@ public class Mesh extends CFacade {
 	public static final long[] __DNA__FIELD__face_sets_color_default = new long[]{1440, 1612};
 
 	/**
+	 * Field descriptor (offset) for struct member '_pad2'.
+	 * <h3>Pointer Arithmetics</h3>
+	 * <p>
+	 * This is how you get a reference on the corresponding field in the struct:
+	 * </p>
+	 * <pre>
+	 * Mesh mesh = ...;
+	 * CPointer&lt;Object&gt; p = mesh.__dna__addressof(Mesh.__DNA__FIELD___pad2);
+	 * CPointer&lt;CPointer&lt;Object&gt;&gt; p__pad2 = p.cast(new Class[]{CPointer.class, Object.class});
+	 * </pre>
+	 * <h3>Metadata</h3>
+	 * <ul>
+	 * <li>Field: '_pad2'</li>
+	 * <li>Signature: 'void*'</li>
+	 * <li>Actual Size (32bit/64bit): 4/8</li>
+	 * </ul>
+	 */
+	public static final long[] __DNA__FIELD___pad2 = new long[]{1444, 1616};
+
+	/**
 	 * Field descriptor (offset) for struct member 'runtime'.
 	 * <h3>Pointer Arithmetics</h3>
 	 * <p>
@@ -1221,7 +1241,7 @@ public class Mesh extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 136/176</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__runtime = new long[]{1444, 1616};
+	public static final long[] __DNA__FIELD__runtime = new long[]{1448, 1624};
 
 	public Mesh(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -3110,6 +3130,38 @@ public class Mesh extends CFacade {
 	}
 
 	/**
+	 * Get method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public CPointer<Object> get_pad2() throws IOException
+	{
+		long __dna__targetAddress;
+		if ((__io__pointersize == 8)) {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1616);
+		} else {
+			__dna__targetAddress = __io__block.readLong(__io__address + 1444);
+		}
+		Class<?>[] __dna__targetTypes = new Class[]{Object.class};
+		return new CPointer<Object>(__dna__targetAddress, __dna__targetTypes, __io__blockTable.getBlock(__dna__targetAddress, -1), __io__blockTable);
+	}
+
+	/**
+	 * Set method for struct member '_pad2'.
+	 * @see #__DNA__FIELD___pad2
+	 */
+	
+	public void set_pad2(CPointer<Object> _pad2) throws IOException
+	{
+		long __address = ((_pad2 == null) ? 0 : _pad2.getAddress());
+		if ((__io__pointersize == 8)) {
+			__io__block.writeLong(__io__address + 1616, __address);
+		} else {
+			__io__block.writeLong(__io__address + 1444, __address);
+		}
+	}
+
+	/**
 	 * Get method for struct member 'runtime'.
 	 * @see #__DNA__FIELD__runtime
 	 */
@@ -3117,9 +3169,9 @@ public class Mesh extends CFacade {
 	public Mesh_Runtime getRuntime() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new Mesh_Runtime(__io__address + 1616, __io__block, __io__blockTable);
+			return new Mesh_Runtime(__io__address + 1624, __io__block, __io__blockTable);
 		} else {
-			return new Mesh_Runtime(__io__address + 1444, __io__block, __io__blockTable);
+			return new Mesh_Runtime(__io__address + 1448, __io__block, __io__blockTable);
 		}
 	}
 
@@ -3132,9 +3184,9 @@ public class Mesh extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 1616;
+			__dna__offset = 1624;
 		} else {
-			__dna__offset = 1444;
+			__dna__offset = 1448;
 		}
 		if (__io__equals(runtime, __io__address + __dna__offset)) {
 			return;

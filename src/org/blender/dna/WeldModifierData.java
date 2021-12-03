@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=200)
+@CMetaData(size32=184, size64=208)
 public class WeldModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class WeldModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class WeldModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__merge_dist = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__merge_dist = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -93,7 +93,7 @@ public class WeldModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -113,7 +113,7 @@ public class WeldModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__mode = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -133,7 +133,7 @@ public class WeldModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{177, 197};
+	public static final long[] __DNA__FIELD__flag = new long[]{181, 205};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -153,7 +153,7 @@ public class WeldModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{178, 198};
+	public static final long[] __DNA__FIELD___pad = new long[]{182, 206};
 
 	public WeldModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -210,9 +210,9 @@ public class WeldModifierData extends CFacade {
 	public float getMerge_dist() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -227,9 +227,9 @@ public class WeldModifierData extends CFacade {
 	public void setMerge_dist(float merge_dist) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, merge_dist);
+			__io__block.writeFloat(__io__address + 136, merge_dist);
 		} else {
-			__io__block.writeFloat(__io__address + 108, merge_dist);
+			__io__block.writeFloat(__io__address + 112, merge_dist);
 		}
 	}
 
@@ -248,9 +248,9 @@ public class WeldModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -266,9 +266,9 @@ public class WeldModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 116;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -287,9 +287,9 @@ public class WeldModifierData extends CFacade {
 	public byte getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 196);
+			return __io__block.readByte(__io__address + 204);
 		} else {
-			return __io__block.readByte(__io__address + 176);
+			return __io__block.readByte(__io__address + 180);
 		}
 	}
 
@@ -301,9 +301,9 @@ public class WeldModifierData extends CFacade {
 	public void setMode(byte mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 196, mode);
+			__io__block.writeByte(__io__address + 204, mode);
 		} else {
-			__io__block.writeByte(__io__address + 176, mode);
+			__io__block.writeByte(__io__address + 180, mode);
 		}
 	}
 
@@ -315,9 +315,9 @@ public class WeldModifierData extends CFacade {
 	public byte getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 197);
+			return __io__block.readByte(__io__address + 205);
 		} else {
-			return __io__block.readByte(__io__address + 177);
+			return __io__block.readByte(__io__address + 181);
 		}
 	}
 
@@ -329,9 +329,9 @@ public class WeldModifierData extends CFacade {
 	public void setFlag(byte flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 197, flag);
+			__io__block.writeByte(__io__address + 205, flag);
 		} else {
-			__io__block.writeByte(__io__address + 177, flag);
+			__io__block.writeByte(__io__address + 181, flag);
 		}
 	}
 
@@ -347,9 +347,9 @@ public class WeldModifierData extends CFacade {
 			2
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 198, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 206, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 178, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 182, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -362,9 +362,9 @@ public class WeldModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 198;
+			__dna__offset = 206;
 		} else {
-			__dna__offset = 178;
+			__dna__offset = 182;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=228, size64=256)
+@CMetaData(size32=232, size64=264)
 public class CorrectiveSmoothModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__bind_coords_num = new long[]{112, 136};
+	public static final long[] __DNA__FIELD__bind_coords_num = new long[]{116, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'lambda'.
@@ -90,7 +90,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__lambda = new long[]{116, 140};
+	public static final long[] __DNA__FIELD__lambda = new long[]{120, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'scale'.
@@ -110,7 +110,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__scale = new long[]{120, 144};
+	public static final long[] __DNA__FIELD__scale = new long[]{124, 152};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -130,7 +130,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{124, 148};
+	public static final long[] __DNA__FIELD__repeat = new long[]{128, 156};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -150,7 +150,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{126, 150};
+	public static final long[] __DNA__FIELD__flag = new long[]{130, 158};
 
 	/**
 	 * Field descriptor (offset) for struct member 'smooth_type'.
@@ -170,7 +170,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__smooth_type = new long[]{128, 152};
+	public static final long[] __DNA__FIELD__smooth_type = new long[]{132, 160};
 
 	/**
 	 * Field descriptor (offset) for struct member 'rest_source'.
@@ -190,7 +190,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__rest_source = new long[]{129, 153};
+	public static final long[] __DNA__FIELD__rest_source = new long[]{133, 161};
 
 	/**
 	 * Field descriptor (offset) for struct member '_pad'.
@@ -210,7 +210,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 6/6</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD___pad = new long[]{130, 154};
+	public static final long[] __DNA__FIELD___pad = new long[]{134, 162};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -233,7 +233,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{136, 160};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{140, 168};
 
 	/**
 	 * Field descriptor (offset) for struct member 'delta_cache'.
@@ -256,7 +256,7 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 28/32</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__delta_cache = new long[]{200, 224};
+	public static final long[] __DNA__FIELD__delta_cache = new long[]{204, 232};
 
 	public CorrectiveSmoothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -313,9 +313,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public int getBind_coords_num() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 136);
+			return __io__block.readInt(__io__address + 144);
 		} else {
-			return __io__block.readInt(__io__address + 112);
+			return __io__block.readInt(__io__address + 116);
 		}
 	}
 
@@ -330,9 +330,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setBind_coords_num(int bind_coords_num) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 136, bind_coords_num);
+			__io__block.writeInt(__io__address + 144, bind_coords_num);
 		} else {
-			__io__block.writeInt(__io__address + 112, bind_coords_num);
+			__io__block.writeInt(__io__address + 116, bind_coords_num);
 		}
 	}
 
@@ -344,9 +344,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public float getLambda() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 140);
+			return __io__block.readFloat(__io__address + 148);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -358,9 +358,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setLambda(float lambda) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 140, lambda);
+			__io__block.writeFloat(__io__address + 148, lambda);
 		} else {
-			__io__block.writeFloat(__io__address + 116, lambda);
+			__io__block.writeFloat(__io__address + 120, lambda);
 		}
 	}
 
@@ -372,9 +372,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public float getScale() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 144);
+			return __io__block.readFloat(__io__address + 152);
 		} else {
-			return __io__block.readFloat(__io__address + 120);
+			return __io__block.readFloat(__io__address + 124);
 		}
 	}
 
@@ -386,9 +386,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setScale(float scale) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 144, scale);
+			__io__block.writeFloat(__io__address + 152, scale);
 		} else {
-			__io__block.writeFloat(__io__address + 120, scale);
+			__io__block.writeFloat(__io__address + 124, scale);
 		}
 	}
 
@@ -400,9 +400,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public short getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 148);
+			return __io__block.readShort(__io__address + 156);
 		} else {
-			return __io__block.readShort(__io__address + 124);
+			return __io__block.readShort(__io__address + 128);
 		}
 	}
 
@@ -414,9 +414,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setRepeat(short repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 148, repeat);
+			__io__block.writeShort(__io__address + 156, repeat);
 		} else {
-			__io__block.writeShort(__io__address + 124, repeat);
+			__io__block.writeShort(__io__address + 128, repeat);
 		}
 	}
 
@@ -428,9 +428,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 150);
+			return __io__block.readShort(__io__address + 158);
 		} else {
-			return __io__block.readShort(__io__address + 126);
+			return __io__block.readShort(__io__address + 130);
 		}
 	}
 
@@ -442,9 +442,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 150, flag);
+			__io__block.writeShort(__io__address + 158, flag);
 		} else {
-			__io__block.writeShort(__io__address + 126, flag);
+			__io__block.writeShort(__io__address + 130, flag);
 		}
 	}
 
@@ -456,9 +456,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public byte getSmooth_type() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 152);
+			return __io__block.readByte(__io__address + 160);
 		} else {
-			return __io__block.readByte(__io__address + 128);
+			return __io__block.readByte(__io__address + 132);
 		}
 	}
 
@@ -470,9 +470,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setSmooth_type(byte smooth_type) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 152, smooth_type);
+			__io__block.writeByte(__io__address + 160, smooth_type);
 		} else {
-			__io__block.writeByte(__io__address + 128, smooth_type);
+			__io__block.writeByte(__io__address + 132, smooth_type);
 		}
 	}
 
@@ -484,9 +484,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public byte getRest_source() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 153);
+			return __io__block.readByte(__io__address + 161);
 		} else {
-			return __io__block.readByte(__io__address + 129);
+			return __io__block.readByte(__io__address + 133);
 		}
 	}
 
@@ -498,9 +498,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public void setRest_source(byte rest_source) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 153, rest_source);
+			__io__block.writeByte(__io__address + 161, rest_source);
 		} else {
-			__io__block.writeByte(__io__address + 129, rest_source);
+			__io__block.writeByte(__io__address + 133, rest_source);
 		}
 	}
 
@@ -516,9 +516,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 			6
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 154, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 162, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 130, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 134, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -531,9 +531,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 154;
+			__dna__offset = 162;
 		} else {
-			__dna__offset = 130;
+			__dna__offset = 134;
 		}
 		if (__io__equals(_pad, __io__address + __dna__offset)) {
 			return;
@@ -559,9 +559,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 160, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 168, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 136, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -577,9 +577,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 160;
+			__dna__offset = 168;
 		} else {
-			__dna__offset = 136;
+			__dna__offset = 140;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -601,9 +601,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	public CorrectiveSmoothDeltaCache getDelta_cache() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return new CorrectiveSmoothDeltaCache(__io__address + 224, __io__block, __io__blockTable);
+			return new CorrectiveSmoothDeltaCache(__io__address + 232, __io__block, __io__blockTable);
 		} else {
-			return new CorrectiveSmoothDeltaCache(__io__address + 200, __io__block, __io__blockTable);
+			return new CorrectiveSmoothDeltaCache(__io__address + 204, __io__block, __io__blockTable);
 		}
 	}
 
@@ -619,9 +619,9 @@ public class CorrectiveSmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 224;
+			__dna__offset = 232;
 		} else {
-			__dna__offset = 200;
+			__dna__offset = 204;
 		}
 		if (__io__equals(delta_cache, __io__address + __dna__offset)) {
 			return;

@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=196, size64=216)
+@CMetaData(size32=200, size64=224)
 public class DecimateModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class DecimateModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -70,7 +70,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__percent = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__percent = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'iter'.
@@ -93,7 +93,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__iter = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__iter = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'delimit'.
@@ -116,7 +116,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__delimit = new long[]{114, 134};
+	public static final long[] __DNA__FIELD__delimit = new long[]{118, 142};
 
 	/**
 	 * Field descriptor (offset) for struct member 'symmetry_axis'.
@@ -139,7 +139,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 1/1</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__symmetry_axis = new long[]{115, 135};
+	public static final long[] __DNA__FIELD__symmetry_axis = new long[]{119, 143};
 
 	/**
 	 * Field descriptor (offset) for struct member 'angle'.
@@ -162,7 +162,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__angle = new long[]{116, 136};
+	public static final long[] __DNA__FIELD__angle = new long[]{120, 144};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -185,7 +185,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{120, 140};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{124, 148};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_factor'.
@@ -205,7 +205,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_factor = new long[]{184, 204};
+	public static final long[] __DNA__FIELD__defgrp_factor = new long[]{188, 212};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -225,7 +225,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{188, 208};
+	public static final long[] __DNA__FIELD__flag = new long[]{192, 216};
 
 	/**
 	 * Field descriptor (offset) for struct member 'mode'.
@@ -245,7 +245,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__mode = new long[]{190, 210};
+	public static final long[] __DNA__FIELD__mode = new long[]{194, 218};
 
 	/**
 	 * Field descriptor (offset) for struct member 'face_count'.
@@ -268,7 +268,7 @@ public class DecimateModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__face_count = new long[]{192, 212};
+	public static final long[] __DNA__FIELD__face_count = new long[]{196, 220};
 
 	public DecimateModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -325,9 +325,9 @@ public class DecimateModifierData extends CFacade {
 	public float getPercent() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -342,9 +342,9 @@ public class DecimateModifierData extends CFacade {
 	public void setPercent(float percent) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, percent);
+			__io__block.writeFloat(__io__address + 136, percent);
 		} else {
-			__io__block.writeFloat(__io__address + 108, percent);
+			__io__block.writeFloat(__io__address + 112, percent);
 		}
 	}
 
@@ -359,9 +359,9 @@ public class DecimateModifierData extends CFacade {
 	public short getIter() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 132);
+			return __io__block.readShort(__io__address + 140);
 		} else {
-			return __io__block.readShort(__io__address + 112);
+			return __io__block.readShort(__io__address + 116);
 		}
 	}
 
@@ -376,9 +376,9 @@ public class DecimateModifierData extends CFacade {
 	public void setIter(short iter) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 132, iter);
+			__io__block.writeShort(__io__address + 140, iter);
 		} else {
-			__io__block.writeShort(__io__address + 112, iter);
+			__io__block.writeShort(__io__address + 116, iter);
 		}
 	}
 
@@ -393,9 +393,9 @@ public class DecimateModifierData extends CFacade {
 	public byte getDelimit() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 134);
+			return __io__block.readByte(__io__address + 142);
 		} else {
-			return __io__block.readByte(__io__address + 114);
+			return __io__block.readByte(__io__address + 118);
 		}
 	}
 
@@ -410,9 +410,9 @@ public class DecimateModifierData extends CFacade {
 	public void setDelimit(byte delimit) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 134, delimit);
+			__io__block.writeByte(__io__address + 142, delimit);
 		} else {
-			__io__block.writeByte(__io__address + 114, delimit);
+			__io__block.writeByte(__io__address + 118, delimit);
 		}
 	}
 
@@ -427,9 +427,9 @@ public class DecimateModifierData extends CFacade {
 	public byte getSymmetry_axis() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readByte(__io__address + 135);
+			return __io__block.readByte(__io__address + 143);
 		} else {
-			return __io__block.readByte(__io__address + 115);
+			return __io__block.readByte(__io__address + 119);
 		}
 	}
 
@@ -444,9 +444,9 @@ public class DecimateModifierData extends CFacade {
 	public void setSymmetry_axis(byte symmetry_axis) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeByte(__io__address + 135, symmetry_axis);
+			__io__block.writeByte(__io__address + 143, symmetry_axis);
 		} else {
-			__io__block.writeByte(__io__address + 115, symmetry_axis);
+			__io__block.writeByte(__io__address + 119, symmetry_axis);
 		}
 	}
 
@@ -461,9 +461,9 @@ public class DecimateModifierData extends CFacade {
 	public float getAngle() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 136);
+			return __io__block.readFloat(__io__address + 144);
 		} else {
-			return __io__block.readFloat(__io__address + 116);
+			return __io__block.readFloat(__io__address + 120);
 		}
 	}
 
@@ -478,9 +478,9 @@ public class DecimateModifierData extends CFacade {
 	public void setAngle(float angle) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 136, angle);
+			__io__block.writeFloat(__io__address + 144, angle);
 		} else {
-			__io__block.writeFloat(__io__address + 116, angle);
+			__io__block.writeFloat(__io__address + 120, angle);
 		}
 	}
 
@@ -499,9 +499,9 @@ public class DecimateModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 148, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 120, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 124, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -517,9 +517,9 @@ public class DecimateModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 140;
+			__dna__offset = 148;
 		} else {
-			__dna__offset = 120;
+			__dna__offset = 124;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -538,9 +538,9 @@ public class DecimateModifierData extends CFacade {
 	public float getDefgrp_factor() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 204);
+			return __io__block.readFloat(__io__address + 212);
 		} else {
-			return __io__block.readFloat(__io__address + 184);
+			return __io__block.readFloat(__io__address + 188);
 		}
 	}
 
@@ -552,9 +552,9 @@ public class DecimateModifierData extends CFacade {
 	public void setDefgrp_factor(float defgrp_factor) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 204, defgrp_factor);
+			__io__block.writeFloat(__io__address + 212, defgrp_factor);
 		} else {
-			__io__block.writeFloat(__io__address + 184, defgrp_factor);
+			__io__block.writeFloat(__io__address + 188, defgrp_factor);
 		}
 	}
 
@@ -566,9 +566,9 @@ public class DecimateModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 208);
+			return __io__block.readShort(__io__address + 216);
 		} else {
-			return __io__block.readShort(__io__address + 188);
+			return __io__block.readShort(__io__address + 192);
 		}
 	}
 
@@ -580,9 +580,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 208, flag);
+			__io__block.writeShort(__io__address + 216, flag);
 		} else {
-			__io__block.writeShort(__io__address + 188, flag);
+			__io__block.writeShort(__io__address + 192, flag);
 		}
 	}
 
@@ -594,9 +594,9 @@ public class DecimateModifierData extends CFacade {
 	public short getMode() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 210);
+			return __io__block.readShort(__io__address + 218);
 		} else {
-			return __io__block.readShort(__io__address + 190);
+			return __io__block.readShort(__io__address + 194);
 		}
 	}
 
@@ -608,9 +608,9 @@ public class DecimateModifierData extends CFacade {
 	public void setMode(short mode) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 210, mode);
+			__io__block.writeShort(__io__address + 218, mode);
 		} else {
-			__io__block.writeShort(__io__address + 190, mode);
+			__io__block.writeShort(__io__address + 194, mode);
 		}
 	}
 
@@ -625,9 +625,9 @@ public class DecimateModifierData extends CFacade {
 	public int getFace_count() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readInt(__io__address + 212);
+			return __io__block.readInt(__io__address + 220);
 		} else {
-			return __io__block.readInt(__io__address + 192);
+			return __io__block.readInt(__io__address + 196);
 		}
 	}
 
@@ -642,9 +642,9 @@ public class DecimateModifierData extends CFacade {
 	public void setFace_count(int face_count) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeInt(__io__address + 212, face_count);
+			__io__block.writeInt(__io__address + 220, face_count);
 		} else {
-			__io__block.writeInt(__io__address + 192, face_count);
+			__io__block.writeInt(__io__address + 196, face_count);
 		}
 	}
 

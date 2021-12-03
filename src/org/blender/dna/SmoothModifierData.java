@@ -16,7 +16,7 @@ import org.cakelab.blender.nio.CPointer;
  * 
  */
 
-@CMetaData(size32=180, size64=200)
+@CMetaData(size32=184, size64=208)
 public class SmoothModifierData extends CFacade {
 
 	/**
@@ -44,7 +44,7 @@ public class SmoothModifierData extends CFacade {
 	 * <ul>
 	 * <li>Field: 'modifier'</li>
 	 * <li>Signature: 'ModifierData'</li>
-	 * <li>Actual Size (32bit/64bit): 108/128</li>
+	 * <li>Actual Size (32bit/64bit): 112/136</li>
 	 * </ul>
 	 */
 	public static final long[] __DNA__FIELD__modifier = new long[]{0, 0};
@@ -67,7 +67,7 @@ public class SmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 4/4</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__fac = new long[]{108, 128};
+	public static final long[] __DNA__FIELD__fac = new long[]{112, 136};
 
 	/**
 	 * Field descriptor (offset) for struct member 'defgrp_name'.
@@ -90,7 +90,7 @@ public class SmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 64/64</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__defgrp_name = new long[]{112, 132};
+	public static final long[] __DNA__FIELD__defgrp_name = new long[]{116, 140};
 
 	/**
 	 * Field descriptor (offset) for struct member 'flag'.
@@ -110,7 +110,7 @@ public class SmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__flag = new long[]{176, 196};
+	public static final long[] __DNA__FIELD__flag = new long[]{180, 204};
 
 	/**
 	 * Field descriptor (offset) for struct member 'repeat'.
@@ -130,7 +130,7 @@ public class SmoothModifierData extends CFacade {
 	 * <li>Actual Size (32bit/64bit): 2/2</li>
 	 * </ul>
 	 */
-	public static final long[] __DNA__FIELD__repeat = new long[]{178, 198};
+	public static final long[] __DNA__FIELD__repeat = new long[]{182, 206};
 
 	public SmoothModifierData(long __address, Block __block, BlockTable __blockTable) {
 		super(__address, __block, __blockTable);
@@ -184,9 +184,9 @@ public class SmoothModifierData extends CFacade {
 	public float getFac() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readFloat(__io__address + 128);
+			return __io__block.readFloat(__io__address + 136);
 		} else {
-			return __io__block.readFloat(__io__address + 108);
+			return __io__block.readFloat(__io__address + 112);
 		}
 	}
 
@@ -198,9 +198,9 @@ public class SmoothModifierData extends CFacade {
 	public void setFac(float fac) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeFloat(__io__address + 128, fac);
+			__io__block.writeFloat(__io__address + 136, fac);
 		} else {
-			__io__block.writeFloat(__io__address + 108, fac);
+			__io__block.writeFloat(__io__address + 112, fac);
 		}
 	}
 
@@ -219,9 +219,9 @@ public class SmoothModifierData extends CFacade {
 			64
 		};
 		if ((__io__pointersize == 8)) {
-			return new CArrayFacade<Byte>(__io__address + 132, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 140, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		} else {
-			return new CArrayFacade<Byte>(__io__address + 112, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
+			return new CArrayFacade<Byte>(__io__address + 116, __dna__targetTypes, __dna__dimensions, __io__block, __io__blockTable);
 		}
 	}
 
@@ -237,9 +237,9 @@ public class SmoothModifierData extends CFacade {
 	{
 		long __dna__offset;
 		if ((__io__pointersize == 8)) {
-			__dna__offset = 132;
+			__dna__offset = 140;
 		} else {
-			__dna__offset = 112;
+			__dna__offset = 116;
 		}
 		if (__io__equals(defgrp_name, __io__address + __dna__offset)) {
 			return;
@@ -258,9 +258,9 @@ public class SmoothModifierData extends CFacade {
 	public short getFlag() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 196);
+			return __io__block.readShort(__io__address + 204);
 		} else {
-			return __io__block.readShort(__io__address + 176);
+			return __io__block.readShort(__io__address + 180);
 		}
 	}
 
@@ -272,9 +272,9 @@ public class SmoothModifierData extends CFacade {
 	public void setFlag(short flag) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 196, flag);
+			__io__block.writeShort(__io__address + 204, flag);
 		} else {
-			__io__block.writeShort(__io__address + 176, flag);
+			__io__block.writeShort(__io__address + 180, flag);
 		}
 	}
 
@@ -286,9 +286,9 @@ public class SmoothModifierData extends CFacade {
 	public short getRepeat() throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			return __io__block.readShort(__io__address + 198);
+			return __io__block.readShort(__io__address + 206);
 		} else {
-			return __io__block.readShort(__io__address + 178);
+			return __io__block.readShort(__io__address + 182);
 		}
 	}
 
@@ -300,9 +300,9 @@ public class SmoothModifierData extends CFacade {
 	public void setRepeat(short repeat) throws IOException
 	{
 		if ((__io__pointersize == 8)) {
-			__io__block.writeShort(__io__address + 198, repeat);
+			__io__block.writeShort(__io__address + 206, repeat);
 		} else {
-			__io__block.writeShort(__io__address + 178, repeat);
+			__io__block.writeShort(__io__address + 182, repeat);
 		}
 	}
 
